@@ -146,11 +146,19 @@
   {/if}
 
   {#if watchlistRows.length > 0}
-    <section class="mb-8">
-      <header class="mb-3 flex items-center justify-between">
-        <h2 class="text-sm font-semibold tracking-tight">Watchlist</h2>
-        <span class="text-[10px] uppercase tracking-wider text-zinc-500">edit data/watchlist.json</span>
-      </header>
+    <details open class="mb-8 group">
+      <summary class="mb-3 flex cursor-pointer list-none items-center justify-between select-none">
+        <h2 class="text-sm font-semibold tracking-tight">
+          <span class="inline-block w-3 text-zinc-500 transition-transform group-open:rotate-90">▸</span>
+          Watchlist
+          <span class="ml-1 text-[10px] font-normal text-zinc-500">
+            ({watchlistRows.length})
+          </span>
+        </h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">
+          {watchlistRows.map(({ ticker }) => ticker).join(' · ')}
+        </span>
+      </summary>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {#each watchlistRows as { row, ticker } (ticker)}
           {#if row}
@@ -166,14 +174,20 @@
           {/if}
         {/each}
       </div>
-    </section>
+    </details>
   {/if}
 
-  <section>
-    <header class="mb-3 flex items-center justify-between">
-      <h2 class="text-sm font-semibold tracking-tight">All scan</h2>
+  <details class="group">
+    <summary class="mb-3 flex cursor-pointer list-none items-center justify-between select-none">
+      <h2 class="text-sm font-semibold tracking-tight">
+        <span class="inline-block w-3 text-zinc-500 transition-transform group-open:rotate-90">▸</span>
+        All scan
+        <span class="ml-1 text-[10px] font-normal text-zinc-500">
+          ({filteredRows.length})
+        </span>
+      </h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">sortable, searchable</span>
-    </header>
+    </summary>
     <ScanTable rows={filteredRows} {watchlist} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
-  </section>
+  </details>
 {/if}
