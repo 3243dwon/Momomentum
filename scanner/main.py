@@ -48,19 +48,15 @@ def run(
     window = windows.detect(now)
     log.info("Market window: %s at %s", window.value, now.isoformat())
 
-    skip_equity = (not force) and windows.skip_equity_scan(window)
-    rows: list[dict] = []
-    uni_size = 0
-
-    if not skip_equity:
-        tickers = universe.load(force_rebuild=rebuild_universe)
-        if limit:
-            tickers = tickers[:limit]
-        uni_size = len(tickers)
-        log.info("Loaded universe: %d tickers", uni_size)
-        rows = technicals.scan(tickers)
-    else:
-        log.info("Window %s: skipping equity scan (macro-only run)", window.value)
+    # Always run the technicals scan so the UI shows prices/watchlist even
+    # off-hours. yfinance returns the last available close on weekends, and
+    # Tier 0 routing filters out non-movers before any LLM cost is incurred.
+    tickers = universe.load(force_rebuild=rebuild_universe)
+    if limit:
+        tickers = tickers[:limit]
+    uni_size = len(tickers)
+    log.info("Loaded universe: %d tickers", uni_size)
+    rows = technicals.scan(tickers)
 
     deltas = state.compute_and_persist(rows, now)
 
