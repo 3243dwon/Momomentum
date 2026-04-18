@@ -1,60 +1,54 @@
 {
-  "generated_at": "2026-04-18T10:36:36.269826-04:00",
+  "generated_at": "2026-04-18T11:03:30.716014-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Iran has reportedly closed the Strait of Hormuz again, firing on a vessel attempting to transit \u2014 threatening ~20% of global seaborne oil flows.",
+      "event_summary": "Iran has closed the Strait of Hormuz again, firing on a vessel attempting to cross \u2014 threatening ~20% of global oil flows and LNG shipments.",
       "primary_drivers": [
-        "Oil supply disruption risk \u2192 crude price spike",
-        "Shipping route disruption \u2192 tanker rates spike and insurance costs surge",
-        "Geopolitical risk premium \u2192 defense spending expectations rise, safe-haven flows"
+        "Oil supply shock / Brent spike from blocked Hormuz transit (~17-20M bpd choke point)",
+        "LNG disruption (Qatar's entire LNG export flows through Hormuz)",
+        "Geopolitical risk premium \u2192 defense spending, safe-haven flows, tanker rates"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with large upstream production outside the Gulf; every $10 move in Brent adds materially to earnings. Limited direct Hormuz transit exposure vs. Gulf-heavy peers.",
+          "rationale": "Large integrated with significant non-Gulf upstream (Permian, Guyana); benefits from Brent spike without the direct Hormuz transit exposure. Every $10 Brent move is material to EPS.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CVX",
-          "rationale": "US-heavy upstream (Permian, Gulf of Mexico) benefits from higher crude without proportional Hormuz operational risk. Direct leverage to Brent spike.",
+          "rationale": "Similar to XOM \u2014 US/Permian-weighted production benefits from global price spike; Tengiz volumes route via CPC, not Hormuz.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian producer \u2014 zero Middle East exposure, maximum leverage to US WTI price surge as Hormuz shutdown forces buyers toward non-Gulf barrels.",
+          "rationale": "Pure-play Permian producer with zero Middle East exposure; highest torque to WTI/Brent among large E&Ps.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "EQT",
-          "rationale": "Largest US natgas producer; Hormuz closure disrupts Qatari LNG (~20% of global LNG) shipping, sending global gas prices higher and lifting Henry Hub via LNG export arbitrage.",
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 product tanker rates spike on Hormuz closure as cargoes reroute and ton-miles explode. Direct rate-sensitivity.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "FRO",
-          "rationale": "Frontline tanker fleet \u2014 VLCC/Suezmax day rates spike dramatically when Hormuz routes are disrupted; rerouting around Africa doubles ton-miles. Direct rate beneficiary.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere is the largest US LNG exporter; Qatari LNG supply disruption through Hormuz drives premium pricing for Gulf Coast cargoes and boosts spot margins.",
+          "rationale": "Frontline \u2014 VLCC/Suezmax operator; crude tanker day-rates surge on rerouting and scarcity of non-Hormuz crude shipments.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Defense prime with direct Patriot/THAAD/missile-defense exposure; Gulf escalation typically accelerates FMS orders from Saudi/UAE and raises US supplemental defense spending odds.",
+          "rationale": "Lockheed \u2014 elevated Middle East conflict risk drives near-term missile defense (THAAD, PAC-3) and munitions reorders; clearest defense prime beneficiary.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "RTX",
-          "rationale": "Raytheon missile defense (SM-3, Patriot) and Pratt engines see accelerated demand in Gulf conflict scenarios; also benefits from Navy/carrier group deployment replenishment.",
+          "ticker": "LNG",
+          "rationale": "Cheniere \u2014 US LNG export capacity becomes scarcer/more valuable if Qatari cargoes are stranded; spot LNG price spike lifts marketing margins.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -62,45 +56,45 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has meaningful international long-haul exposure and is highly sensitive to jet fuel prices \u2014 no fuel hedges in recent years, so crude spike hits margins directly within the quarter.",
+          "rationale": "Delta \u2014 highest jet fuel sensitivity among legacy carriers; Brent spike directly hits unhedged fuel costs, pressuring margins.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "United's transpacific/Europe-India routes face both fuel cost shock and potential airspace rerouting around Iran; jet fuel is ~25% of opex with minimal hedging.",
+          "rationale": "United \u2014 similar jet-fuel cost exposure plus international long-haul routes (including Gulf-adjacent) face rerouting and insurance cost hikes.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest \u2014 historically hedged but hedge book has thinned; 100% domestic means no fare mix offset from international premium.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival bunker fuel costs spike with crude; also consumer discretionary demand sensitive to pump prices. Double hit on cost and demand.",
+          "rationale": "Carnival \u2014 bunker fuel is a top-3 cost line; also consumer discretionary pullback on recession/oil-shock fears compounds the hit.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "American Airlines has the weakest balance sheet among US majors \u2014 fuel cost shock compounds leverage concerns. Historically the highest-beta name to oil spikes.",
-          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "FedEx Express air network is jet-fuel intensive; Hormuz-driven crude spike raises costs faster than contractual fuel surcharges can recapture.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
           "ticker": "DOW",
-          "rationale": "Dow's ethylene/petrochemical feedstock costs rise with naphtha/ethane linkage to crude; margin compression as price pass-through lags in contracted volumes.",
+          "rationale": "Dow Chemical \u2014 ethane/naphtha feedstock cost spike plus European ops face gas price surge from lost Qatari LNG; margin compression.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "WMT",
-          "rationale": "Walmart's low-income consumer base is acutely sensitive to gasoline prices \u2014 every $0.25 at the pump historically compresses discretionary basket size. Also diesel hits inbound logistics costs.",
-          "confidence": "medium",
+          "rationale": "Walmart \u2014 low-income consumer gets squeezed by gasoline pump prices (pass-through from Brent), pressuring discretionary basket and traffic.",
+          "confidence": "low",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx \u2014 jet fuel + ground diesel costs; express air network has limited ability to pass through a sudden fuel surcharge before contract resets.",
+          "confidence": "medium",
+          "horizon": "days"
         }
       ],
       "dedup_group": "iran_strait_hormuz_closure_april_2026",
@@ -112,101 +106,101 @@
       ]
     },
     {
-      "event_summary": "Iran war and $4 gasoline are crimping US consumer discretionary spending, with a narrowing window to revive it before the economy deteriorates further.",
+      "event_summary": "Iran war and $4 gasoline are suppressing US consumer discretionary spending, with concerns about limited time to revive the consumer economy.",
       "primary_drivers": [
-        "Elevated gasoline prices acting as a tax on discretionary income",
-        "Geopolitical risk premium in oil keeping energy costs high",
-        "Consumer sentiment deterioration compressing discretionary spend"
+        "Higher gasoline prices acting as a consumer tax, reducing discretionary income",
+        "Geopolitical risk premium in oil prices from Middle East conflict",
+        "Shift in consumer wallet from discretionary to staples/energy"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with direct upstream leverage to elevated crude prices from Iran conflict risk premium; large US production base insulates from Middle East supply disruption.",
+          "rationale": "Integrated major with significant upstream exposure; direct earnings leverage to sustained $80+ crude from Iran conflict risk premium. Refining margins also elevated at $4 gas.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "COP",
-          "rationale": "Pure-play US E&P with highest torque to sustained crude price levels; no downstream drag, direct beneficiary of geopolitical risk premium.",
+          "ticker": "CVX",
+          "rationale": "Similar integrated leverage to XOM; every $10/bbl move in Brent adds meaningful EPS. Direct beneficiary of geopolitical premium.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Pure-play US refiner; $4 retail gas implies fat crack spreads. Marathon's retail/Speedway exposure captures pump-level margin.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "WMT",
-          "rationale": "Defensive consumer staples retailer that gains share when pinched consumers trade down from discretionary retailers and restaurants; grocery/value mix benefits from stagflationary consumer behavior.",
+          "rationale": "Consumer trade-down beneficiary \u2014 when gas eats discretionary budgets, Walmart gains share from higher-income shoppers and grocery wallet. Historically outperforms in stagflation-lite environments.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DG",
-          "rationale": "Dollar store model directly benefits from lower-income consumer stress and gas-price-driven trade-down; historically outperforms in gas-price-shock periods.",
+          "ticker": "DLTR",
+          "rationale": "Deep-discount retailer benefits from consumer trade-down; fixed price points become more attractive as real incomes compress from gas prices.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime defense contractor with direct exposure to increased DoD munitions/missile demand from active Iran conflict (PAC-3, THAAD, JASSM).",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Permian-weighted producer with high oil beta; geopolitical premium flows directly to cash flow given unhedged US-heavy production.",
+          "rationale": "Active Iran conflict drives munitions replenishment and supplemental defense appropriations; direct revenue exposure via PAC-3, THAAD, JASSM.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "months"
         }
       ],
       "losers": [
         {
           "ticker": "CCL",
-          "rationale": "Cruise operator hit on both sides: fuel is a major cost input with limited ability to pass through, and discretionary travel demand softens as consumers pull back; also direct Middle East itinerary disruption.",
+          "rationale": "Cruise operator with double hit: jet/bunker fuel cost inflation and discretionary travel demand compression as consumer wallets shrink. Also highly levered balance sheet.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "AAL",
-          "rationale": "Airline with high jet fuel sensitivity and leisure travel exposure; $4 gas correlates with consumer travel pullback while fuel costs compress margins.",
+          "ticker": "NCLH",
+          "rationale": "Same mechanism as CCL \u2014 fuel costs and discretionary travel squeeze; Mediterranean itinerary exposure adds geopolitical cancellation risk from Iran conflict.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DRI",
+          "rationale": "Darden (Olive Garden, LongHorn) \u2014 casual dining traffic is highly sensitive to gas prices; $4 gas historically correlates with negative same-store traffic at middle-income chains.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "CMG",
-          "rationale": "Discretionary fast-casual dining with premium price points loses traffic when gas prices tax low/mid-income wallets; historically sees comp deceleration in gas-shock periods.",
+          "rationale": "Consumer discretionary restaurant with premium pricing; at $4 gas the marginal $12 burrito faces demand elasticity, particularly for lower-income cohort.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "RCL",
-          "rationale": "Royal Caribbean shares Carnival's fuel cost pressure and discretionary travel demand risk; Middle East/Mediterranean itinerary rerouting adds operational cost.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TGT",
-          "rationale": "Discretionary-heavy merchandise mix (apparel, home) makes Target more exposed than Walmart to gas-price-squeezed consumer; recent quarters already showed traffic sensitivity to fuel.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LVS",
-          "rationale": "Las Vegas Sands reliant on discretionary gaming/leisure spend which contracts first in consumer slowdowns; Asia exposure adds geopolitical overhang.",
-          "confidence": "medium",
+          "ticker": "LUV",
+          "rationale": "Southwest has no fuel hedges structurally and domestic leisure exposure; jet fuel tracks crude, and leisure travel demand softens with gas-pinched consumers.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "F",
-          "rationale": "Auto OEM exposed to both weakening discretionary big-ticket demand and consumer shift away from lower-MPG trucks/SUVs where Ford has highest margin mix.",
+          "rationale": "Auto demand \u2014 particularly trucks/SUVs that are Ford's profit center \u2014 is inversely correlated with gas prices; affordability already stretched and $4 gas accelerates mix shift away from F-150.",
           "confidence": "medium",
           "horizon": "months"
         },
         {
-          "ticker": "EXPE",
-          "rationale": "Online travel agency revenue tied to discretionary travel booking volume; high gas prices and war uncertainty directly suppress leisure trip planning.",
+          "ticker": "BKNG",
+          "rationale": "Online travel platform levered to discretionary trip bookings; Iran conflict suppresses international travel appetite and higher airfare from fuel costs dampens volume.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "M",
+          "rationale": "Macy's \u2014 middle-income apparel/department store is classic casualty when gas acts as a tax on discretionary; already weak consumer, this compounds.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "iran_conflict_gas_prices_consumer_sentiment",
+      "dedup_group": "iran_conflict_consumer_economy_impact",
       "source_news_ids": [
         "f7962f6b698ad6d2"
       ],
@@ -215,47 +209,41 @@
       ]
     },
     {
-      "event_summary": "Trump's expected Fed chair nominee Kevin Warsh is reportedly aligned with cutting interest rates, signaling a more dovish Fed regime ahead.",
+      "event_summary": "Trump's Fed chair nominee Kevin Warsh is expected to pursue rate cuts, signaling a more dovish Fed regime ahead.",
       "primary_drivers": [
-        "Lower expected policy rate path \u2192 lower discount rate on long-duration cash flows",
-        "Steeper yield curve / lower front-end rates benefit rate-sensitive sectors",
-        "Weaker USD implied by dovish Fed pivot"
+        "Lower expected policy rate path \u2192 lower discount rate on long-duration assets",
+        "Steeper yield curve / lower funding costs for rate-sensitive sectors",
+        "Weaker USD expectation on dovish Fed pivot"
       ],
       "beneficiaries": [
         {
           "ticker": "DHI",
-          "rationale": "Homebuilders are a pure rate-duration play \u2014 mortgage rates track the 10Y and dovish Fed expectations compress them, directly boosting affordability and order volume. D.R. Horton is the largest US builder with highest entry-level exposure.",
+          "rationale": "D.R. Horton's volume is directly tied to 30Y mortgage rates; lower policy rate expectations compress mortgage spreads and revive buyer affordability in entry-level housing where DHI dominates.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "PLTR",
-          "rationale": "High-multiple growth name where valuation is dominated by terminal value \u2014 direct beneficiary of lower discount rate assumptions in DCF.",
-          "confidence": "medium",
+          "rationale": "High-multiple growth name whose valuation is extremely rate-sensitive; retail-favored vehicle for expressing a dovish Fed pivot alongside momentum flows.",
+          "confidence": "low",
           "horizon": "days"
         },
         {
-          "ticker": "CVNA",
-          "rationale": "Highly levered consumer finance / auto retailer; lower rates reduce floorplan financing costs and boost auto loan affordability for subprime buyers.",
+          "ticker": "RKT",
+          "rationale": "Rocket Companies is a pure-play on mortgage origination volume; lower rate expectations trigger refi wave anticipation. Extremely high beta to 10Y yield moves.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "JPM",
-          "rationale": "Large money-center banks face net interest margin compression if the front end is cut aggressively while deposit costs remain sticky; also lose on lower reinvestment yields.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
           "ticker": "SCHW",
-          "rationale": "Schwab's earnings are heavily tied to net interest income on client cash sweeps; aggressive front-end cuts directly compress this spread.",
+          "rationale": "Charles Schwab's cash sweep earnings shrink as short rates fall; net interest revenue is highly exposed to front-end of curve which a dovish chair directly lowers.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "months"
         }
       ],
-      "dedup_group": "kevin_warsh_fed_chair_rate_cut_expectations",
+      "dedup_group": "trump_fed_chair_warsh_rate_cuts",
       "source_news_ids": [
         "9b19374626b8f20e"
       ],
@@ -264,51 +252,70 @@
       ]
     },
     {
-      "event_summary": "Op-ed frames post-Iran war outcome as cementing US as the world's most secure energy power, implying sustained US hydrocarbon dominance and likely degraded Iranian/Middle East supply competition.",
+      "event_summary": "Post-Iran war commentary frames the US as the world's most secure energy power, implying durable structural demand for US-sourced oil, gas and LNG exports while Middle East supply risk premium compresses.",
       "primary_drivers": [
-        "Reduced Iranian oil export competition benefits US producers' market share",
-        "Narrative-driven rotation into US energy security / domestic E&P names",
-        "LNG export demand from allies seeking non-Middle East supply"
+        "US energy export dominance / LNG and crude export infrastructure value rises",
+        "Middle East geopolitical risk premium in oil prices compresses, pressuring marginal high-cost producers but benefiting US integrateds with export leverage",
+        "Policy tailwind for domestic E&P, pipelines, and LNG terminals as 'strategic assets'"
       ],
       "beneficiaries": [
         {
           "ticker": "LNG",
-          "rationale": "Cheniere is the largest US LNG exporter; 'America as secure energy power' narrative directly supports long-dated LNG export contracts with European/Asian buyers diversifying from Middle East risk.",
+          "rationale": "Cheniere Energy is the largest US LNG exporter (Sabine Pass, Corpus Christi); a narrative of US as 'most secure energy power' directly validates long-term LNG offtake contracts and expansion economics. Europe/Asia buyers prioritize US supply over Qatari/Gulf routes.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "XOM",
-          "rationale": "ExxonMobil has the largest US Permian footprint plus Guyana; benefits from both reduced Iranian barrel competition and the geopolitical premium on Western-aligned supply.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "ConocoPhillips is a near-pure-play US/North America upstream producer \u2014 direct beneficiary of narrative favoring domestic barrels over OPEC/Iran supply.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback Energy is a pure-play Permian producer; US energy-security narrative channels capital into domestic shale names with lowest geopolitical risk.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "EQT",
-          "rationale": "Largest US natural gas producer; gas-side beneficiary of LNG export thesis and allied demand for US molecules over Qatari/Iranian alternatives.",
+          "ticker": "CQP",
+          "rationale": "Cheniere Energy Partners owns Sabine Pass liquefaction \u2014 pure-play on US LNG export throughput, directly levered to the structural demand shift toward US molecules.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "VLO",
-          "rationale": "Valero is a US Gulf Coast refiner \u2014 benefits if Iranian crude remains sanctioned/constrained, widening sour crude discounts and protecting domestic refining margins.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "XOM",
+          "rationale": "ExxonMobil has the largest Permian footprint post-Pioneer deal plus Golden Pass LNG coming online; benefits from both domestic production premium and export capacity monetization.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "EQT",
+          "rationale": "Largest US natural gas pure-play producer (Appalachia); direct beneficiary of expanded LNG export narrative tightening domestic gas balances.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KMI",
+          "rationale": "Kinder Morgan operates the largest US natural gas pipeline network feeding Gulf Coast LNG terminals; toll-road exposure to rising export volumes without commodity price risk.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WMB",
+          "rationale": "Williams Companies' Transco pipeline is the primary artery moving Appalachian gas to Gulf Coast LNG export \u2014 direct volume beneficiary of the export-security thesis.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a Permian pure-play; low-cost US barrels become strategically preferred over OPEC supply in a 'energy security' policy frame, supporting premium valuation.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
-      "losers": [],
+      "losers": [
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton has meaningful Middle East service exposure; if regional reconstruction lags and US policy favors domestic production, international services mix weakens. Also pressured if crude drops on risk-premium unwind.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Occidental has higher breakeven than Permian pure-plays and carries leverage; more vulnerable to any crude price decline from geopolitical premium compression despite US-centric footprint.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
       "dedup_group": "iran_war_us_energy_security",
       "source_news_ids": [
         "65456242270d0852"
@@ -318,34 +325,34 @@
       ]
     },
     {
-      "event_summary": "Iran claims the Strait of Hormuz is \"under strict control,\" appearing to de-escalate shipping chokepoint fears while Tesla earnings loom as a separate catalyst.",
+      "event_summary": "Iran claims the Strait of Hormuz is \"under strict control,\" suggesting no imminent disruption to the critical oil chokepoint, which could ease a geopolitical risk premium in oil ahead of Tesla earnings.",
       "primary_drivers": [
-        "De-escalation of Hormuz shipping disruption risk \u2192 oil risk premium compression",
-        "Lower crude = relief for fuel-cost-sensitive transport/airlines",
-        "Reduced tanker rate spike tailwind for shipping names"
+        "Reduction in geopolitical risk premium on crude oil",
+        "Lower input costs for fuel-sensitive sectors",
+        "Reduced safe-haven demand"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of airline opex; de-escalation compresses crude risk premium, directly improving near-term margin outlook. Delta has historically traded inversely to Brent on geopolitical shocks.",
+          "ticker": "UAL",
+          "rationale": "Jet fuel is ~20-25% of operating costs; easing oil risk premium directly improves margin outlook. UAL has high operating leverage to fuel price moves.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel sensitivity as DAL; UAL has higher international/long-haul exposure making it more fuel-levered than domestic-heavy peers.",
+          "ticker": "DAL",
+          "rationale": "Same fuel-cost mechanism as UAL; Delta hedges less than some peers so benefits faster from spot crude relief.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest has unwound most of its fuel hedges in recent years, leaving it more spot-exposed; drop in crude risk premium is a direct P&L tailwind.",
+          "rationale": "Southwest has historically been fuel-price sensitive; a pullback in Brent from eased Hormuz fears flows to near-term guidance.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Cruise line bunker fuel is a major cost line; Hormuz de-escalation also removes Middle East itinerary disruption risk for Mediterranean/Red Sea routes.",
+          "ticker": "FDX",
+          "rationale": "Fuel is a major cost line for the Express segment; receding oil risk premium supports margin expectations.",
           "confidence": "low",
           "horizon": "days"
         }
@@ -353,36 +360,18 @@
       "losers": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with upstream leverage to Brent; a compression of the Hormuz war premium removes a recent tailwind to crude prices and E&P cash flow expectations.",
+          "rationale": "Integrated major with significant upstream leverage to Brent; an unwind of the Hormuz risk premium pressures crude and E&P earnings expectations.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high beta to WTI/Brent; geopolitical premium unwind pressures the name disproportionately vs. diversified majors.",
+          "rationale": "High-beta US E&P name (Permian-focused but trades with Brent sentiment); geopolitical risk unwinds typically hit OXY harder than majors.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play, highly levered to crude spot \u2014 loses the geopolitical risk premium bid that had supported recent strength.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline tanker rates spike on Hormuz disruption fears; de-escalation removes the rerouting/scarcity bid for VLCC day rates.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates were bid on Hormuz diversion scenarios; 'strict control' narrative removes that catalyst.",
-          "confidence": "low",
           "horizon": "days"
         }
       ],
-      "dedup_group": "iran_hormuz_geopolitical_risk",
+      "dedup_group": "iran_hormuz_market_preview",
       "source_news_ids": [
         "1d96ae0190c26865"
       ],
