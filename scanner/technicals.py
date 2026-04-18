@@ -21,6 +21,17 @@ log = logging.getLogger(__name__)
 BATCH_SIZE = 150
 HISTORY_PERIOD = "3mo"
 
+# Yahoo's bot detection rejects vanilla requests in 2025+. curl_cffi
+# impersonates a real Chrome handshake (TLS + JA3 fingerprint) which
+# gets through. Falls back to default yfinance session if unavailable.
+try:
+    from curl_cffi import requests as _cureq
+    _SESSION = _cureq.Session(impersonate="chrome")
+    log.info("Using curl_cffi Chrome impersonation for yfinance")
+except Exception as _e:
+    _SESSION = None
+    log.warning("curl_cffi unavailable (%s); using default yfinance session", _e)
+
 
 def _rsi(close: pd.Series, period: int = 14) -> float:
     if len(close) < period + 1:
@@ -108,7 +119,7 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
 
 
 def _download_batch(tickers: list[str]) -> pd.DataFrame:
-    return yf.download(
+    kwargs = dict(
         tickers=tickers,
         period=HISTORY_PERIOD,
         interval="1d",
@@ -117,6 +128,9 @@ def _download_batch(tickers: list[str]) -> pd.DataFrame:
         threads=True,
         progress=False,
     )
+    if _SESSION is not None:
+        kwargs["session"] = _SESSION
+    return yf.download(**kwargs)
 
 
 def scan(tickers: Iterable[str]) -> list[dict]:
