@@ -35,10 +35,16 @@ try:
 
     if ALPACA_API_KEY and ALPACA_API_SECRET:
         _CLIENT = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_API_SECRET)
-        log.info("Alpaca data client initialized")
+        log.info(
+            "Alpaca client initialized (key prefix: %s..., len key=%d, len secret=%d)",
+            ALPACA_API_KEY[:6], len(ALPACA_API_KEY), len(ALPACA_API_SECRET),
+        )
     else:
         _CLIENT = None
-        log.warning("ALPACA_API_KEY / ALPACA_API_SECRET not set; technicals disabled")
+        log.warning(
+            "ALPACA_API_KEY/SECRET missing (key set=%s, secret set=%s)",
+            bool(ALPACA_API_KEY), bool(ALPACA_API_SECRET),
+        )
 except ImportError as _e:
     _CLIENT = None
     log.warning("alpaca-py not installed (%s); technicals disabled", _e)
@@ -143,7 +149,10 @@ def _fetch_batch(symbols: list[str], start_dt: datetime, end_dt: datetime) -> di
         )
         bars = _CLIENT.get_stock_bars(req)
     except Exception as e:
-        log.warning("Alpaca batch fetch failed (%d symbols): %s", len(symbols), e)
+        log.warning(
+            "Alpaca batch fetch failed (%d symbols, %s..%s): %s: %s",
+            len(symbols), symbols[0], symbols[-1], type(e).__name__, e,
+        )
         return {}
 
     out: dict[str, pd.DataFrame] = {}
@@ -166,9 +175,37 @@ def _fetch_batch(symbols: list[str], start_dt: datetime, end_dt: datetime) -> di
     return out
 
 
+def _ping() -> bool:
+    """One-symbol probe so credential / endpoint failures show up as a hard error."""
+    if not _CLIENT:
+        return False
+    end_dt = datetime.now(timezone.utc) - timedelta(minutes=20)
+    start_dt = end_dt - timedelta(days=10)
+    try:
+        req = StockBarsRequest(
+            symbol_or_symbols=["AAPL"],
+            timeframe=TimeFrame.Day,
+            start=start_dt,
+            end=end_dt,
+            feed=DataFeed.IEX,
+            adjustment=Adjustment.ALL,
+        )
+        bars = _CLIENT.get_stock_bars(req)
+        n = 0 if (bars.df is None or bars.df.empty) else len(bars.df)
+        log.info("Alpaca ping OK: AAPL returned %d bars", n)
+        return True
+    except Exception as e:
+        log.error("Alpaca ping FAILED: %s: %s", type(e).__name__, e)
+        return False
+
+
 def scan(tickers: Iterable[str]) -> list[dict]:
     if not _CLIENT:
         log.error("No Alpaca client; returning empty scan. Check ALPACA_API_KEY / ALPACA_API_SECRET.")
+        return []
+
+    if not _ping():
+        log.error("Alpaca credentials/endpoint probe failed; aborting scan to avoid wasted batches")
         return []
 
     tickers = list(tickers)
