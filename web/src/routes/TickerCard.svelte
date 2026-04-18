@@ -54,6 +54,16 @@
     {:else if row.macd_cross === 'bearish'}
       <span>·</span><span class="text-signal-down">MACD↓</span>
     {/if}
+    {#if row.snapshot?.gap_pct != null}
+      <span>·</span>
+      <span>gap {fmtPct(row.snapshot.gap_pct)}</span>
+    {/if}
+    {#if row.intraday?.above_vwap != null}
+      <span>·</span>
+      <span class={row.intraday.above_vwap ? 'text-signal-up' : 'text-signal-down'}>
+        {row.intraday.above_vwap ? '>VWAP' : '<VWAP'}
+      </span>
+    {/if}
   </div>
 
   <div class="mt-2 flex flex-wrap gap-1">

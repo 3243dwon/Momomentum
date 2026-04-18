@@ -21,6 +21,7 @@ ALERT_AUDIT_DIR = config.AUDIT_DIR
 
 
 HEADER_TEMPLATES = {
+    "catalyst": "carmine",
     "watchlist": "blue",
     "big_move": "orange",
     "unusual_volume": "yellow",

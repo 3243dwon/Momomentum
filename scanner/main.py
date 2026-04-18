@@ -65,6 +65,16 @@ def run(
 
     routed, watchlist = router.route(rows, deltas, window) if rows else ([], sorted(router.load_watchlist()))
 
+    # Pre-market gap + intraday VWAP/HOD/LOD for routed tickers only
+    # (cheap because Tier 0 already cut us down to ~50-200 names).
+    routed_for_intraday = sorted(set(routed) | set(watchlist))
+    snapshots: dict[str, dict] = {}
+    intraday: dict[str, dict] = {}
+    if routed_for_intraday:
+        snapshots = technicals.fetch_snapshots(routed_for_intraday)
+        if window in (windows.Window.RTH, windows.Window.AH_PRE, windows.Window.AH_POST):
+            intraday = technicals.fetch_intraday(routed_for_intraday)
+
     ticker_news: dict[str, list[dict]] = {}
     macro_news: list[dict] = []
     if use_news:
@@ -113,6 +123,8 @@ def run(
         rows, window, now, uni_size,
         syntheses_by_ticker=syntheses,
         news_count_by_ticker=news_count_by_ticker,
+        snapshots_by_ticker=snapshots,
+        intraday_by_ticker=intraday,
     )
     render.write_news(ticker_news_enriched, macro_analyses, now)
 

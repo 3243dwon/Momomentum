@@ -78,6 +78,35 @@ def build_alerts(
     ah_min_volume = config.MIN_AH_VOLUME if window in (Window.AH_PRE, Window.AH_POST) else 0
     suffix = _ah_suffix(window)
 
+    # === A0. Catalyst alerts (highest priority) ===
+    # Synthesis with high/medium confidence + verdict=news_explains_move on a
+    # ticker also showing big_move or unusual_volume = pro-grade catalyst signal.
+    for r in rows:
+        t = r["ticker"]
+        synth = syntheses.get(t)
+        if not synth:
+            continue
+        if synth.get("verdict") != "news_explains_move":
+            continue
+        if synth.get("confidence") not in ("high", "medium"):
+            continue
+        flags = r.get("flags", []) or []
+        if "big_move" not in flags and "unusual_volume" not in flags:
+            continue
+        pct = r.get("pct_1d") or 0
+        rel_vol = r.get("rel_volume") or 0
+        body = (
+            f"**{t}** {_fmt_pct(pct)}{suffix} on {rel_vol:.1f}x avg volume\n\n"
+            f"*{synth.get('summary', '')}*\n\n"
+            f"`confidence: {synth.get('confidence')}` `verdict: {synth.get('verdict').replace('_', ' ')}`"
+        )
+        _emit(
+            alerts, throttle,
+            ticker=t, alert_type="catalyst",
+            title=f"🎯 {t} {_fmt_pct(pct)} — catalyst-driven",
+            body_md=body, signal=pct,
+        )
+
     # === A. Threshold alerts ===
     for r in rows:
         t = r["ticker"]

@@ -29,8 +29,8 @@ RATE_LIMIT_DELAY = 0.35  # ~3 req/sec — well under Alpaca's 200/min free-tier 
 
 try:
     from alpaca.data.historical import StockHistoricalDataClient
-    from alpaca.data.requests import StockBarsRequest
-    from alpaca.data.timeframe import TimeFrame
+    from alpaca.data.requests import StockBarsRequest, StockSnapshotRequest
+    from alpaca.data.timeframe import TimeFrame, TimeFrameUnit
     from alpaca.data.enums import DataFeed, Adjustment
 
     if ALPACA_API_KEY and ALPACA_API_SECRET:
@@ -235,3 +235,116 @@ def scan(tickers: Iterable[str]) -> list[dict]:
         len(rows), total, fetched_count,
     )
     return rows
+
+
+# === Pre-market gap + intraday VWAP / HOD / LOD =============================
+# Run only on routed (mover/watchlist/news-bearer) tickers — keeps cost down
+# and matches the pro workflow: pinpoint catalyst names first, then drill.
+
+def fetch_snapshots(symbols: list[str]) -> dict[str, dict]:
+    """Latest trade + previous daily close → live price + gap%.
+
+    Catches pre-market and post-market moves that daily-bar scans miss
+    until the next regular session close.
+    """
+    if not _CLIENT or not symbols:
+        return {}
+    out: dict[str, dict] = {}
+    for i in range(0, len(symbols), 200):
+        batch = symbols[i : i + 200]
+        try:
+            req = StockSnapshotRequest(symbol_or_symbols=batch, feed=DataFeed.IEX)
+            snaps = _CLIENT.get_stock_snapshot(req)
+        except Exception as e:
+            log.warning("Snapshot batch failed (%d): %s: %s", len(batch), type(e).__name__, e)
+            continue
+        for symbol, snap in snaps.items():
+            try:
+                live_price = None
+                for src in (
+                    getattr(snap, "latest_trade", None),
+                    getattr(snap, "minute_bar", None),
+                    getattr(snap, "daily_bar", None),
+                ):
+                    if src is not None:
+                        live_price = getattr(src, "price", None) or getattr(src, "close", None)
+                        if live_price:
+                            break
+                prev = getattr(snap, "previous_daily_bar", None)
+                prev_close = getattr(prev, "close", None) if prev else None
+                gap_pct = None
+                if live_price and prev_close:
+                    gap_pct = (live_price / prev_close - 1) * 100
+                out[symbol] = {
+                    "live_price": round(float(live_price), 2) if live_price else None,
+                    "prev_close": round(float(prev_close), 2) if prev_close else None,
+                    "gap_pct": round(float(gap_pct), 2) if gap_pct is not None else None,
+                }
+            except Exception:
+                pass
+    log.info("Snapshots fetched for %d symbols", len(out))
+    return out
+
+
+def fetch_intraday(symbols: list[str]) -> dict[str, dict]:
+    """5-min bars from today's session → VWAP, HOD, LOD, last vs VWAP.
+
+    VWAP is the institutional momentum benchmark: above-VWAP = buyers in
+    control; below = momentum dying.
+    """
+    if not _CLIENT or not symbols:
+        return {}
+    et_now = datetime.now(config.MARKET_TZ)
+    today_open_et = et_now.replace(hour=9, minute=30, second=0, microsecond=0)
+    if today_open_et > et_now:
+        today_open_et -= timedelta(days=1)
+    start_dt = today_open_et.astimezone(timezone.utc)
+    end_dt = datetime.now(timezone.utc) - timedelta(minutes=20)
+
+    out: dict[str, dict] = {}
+    for i in range(0, len(symbols), 100):
+        batch = symbols[i : i + 100]
+        try:
+            req = StockBarsRequest(
+                symbol_or_symbols=batch,
+                timeframe=TimeFrame(5, TimeFrameUnit.Minute),
+                start=start_dt,
+                end=end_dt,
+                feed=DataFeed.IEX,
+                adjustment=Adjustment.ALL,
+            )
+            bars = _CLIENT.get_stock_bars(req)
+        except Exception as e:
+            log.warning("Intraday batch failed (%d): %s: %s", len(batch), type(e).__name__, e)
+            continue
+
+        if bars.df is None or bars.df.empty:
+            continue
+        df = bars.df
+        if "symbol" not in df.index.names:
+            continue
+        for symbol in df.index.get_level_values("symbol").unique():
+            sub = df.xs(symbol, level="symbol")
+            if sub.empty:
+                continue
+            try:
+                typical = (sub["high"] + sub["low"] + sub["close"]) / 3.0
+                vol = sub["volume"].astype(float)
+                total_vol = float(vol.sum())
+                vwap = float((typical * vol).sum() / total_vol) if total_vol > 0 else None
+                hod = float(sub["high"].max())
+                lod = float(sub["low"].min())
+                last = float(sub["close"].iloc[-1])
+                out[symbol] = {
+                    "vwap": round(vwap, 2) if vwap else None,
+                    "hod": round(hod, 2),
+                    "lod": round(lod, 2),
+                    "last": round(last, 2),
+                    "above_vwap": (last > vwap) if vwap else None,
+                    "bars": len(sub),
+                }
+            except Exception:
+                pass
+        time.sleep(RATE_LIMIT_DELAY)
+    log.info("Intraday metrics fetched for %d symbols", len(out))
+    return out

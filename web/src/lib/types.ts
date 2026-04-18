@@ -29,6 +29,19 @@ export interface ScanRow {
   news_count?: number;
   tier?: 'mega' | 'large' | 'midsmall';
   membership?: string[];
+  snapshot?: {
+    live_price: number | null;
+    prev_close: number | null;
+    gap_pct: number | null;
+  };
+  intraday?: {
+    vwap: number | null;
+    hod: number;
+    lod: number;
+    last: number;
+    above_vwap: boolean | null;
+    bars: number;
+  };
   synthesis?: Synthesis;
 }
 

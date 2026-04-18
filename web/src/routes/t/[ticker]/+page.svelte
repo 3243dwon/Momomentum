@@ -67,6 +67,58 @@
     {/if}
   </section>
 
+  {#if row.snapshot || row.intraday}
+    <section class="card mb-6 p-4">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">Intraday signals</h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">pro-grade indicators</span>
+      </header>
+      <div class="grid grid-cols-2 gap-3 sm:grid-cols-4">
+        {#if row.snapshot?.gap_pct != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">Gap (vs prev close)</div>
+            <div class="num text-sm {pctClass(row.snapshot.gap_pct)}">{fmtPct(row.snapshot.gap_pct)}</div>
+          </div>
+        {/if}
+        {#if row.snapshot?.live_price != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">Live price</div>
+            <div class="num text-sm">${fmtPrice(row.snapshot.live_price)}</div>
+          </div>
+        {/if}
+        {#if row.intraday?.vwap != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">VWAP</div>
+            <div class="num text-sm">${fmtPrice(row.intraday.vwap)}</div>
+          </div>
+        {/if}
+        {#if row.intraday?.above_vwap != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">Trend</div>
+            <div class="text-sm font-medium {row.intraday.above_vwap ? 'text-signal-up' : 'text-signal-down'}">
+              {row.intraday.above_vwap ? '↑ above VWAP' : '↓ below VWAP'}
+            </div>
+          </div>
+        {/if}
+        {#if row.intraday?.hod != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">High of day</div>
+            <div class="num text-sm">${fmtPrice(row.intraday.hod)}</div>
+          </div>
+        {/if}
+        {#if row.intraday?.lod != null}
+          <div>
+            <div class="text-[10px] uppercase tracking-wider text-zinc-500">Low of day</div>
+            <div class="num text-sm">${fmtPrice(row.intraday.lod)}</div>
+          </div>
+        {/if}
+      </div>
+      {#if row.intraday}
+        <p class="mt-3 text-[10px] text-zinc-500">From {row.intraday.bars} 5-min bars today (IEX feed).</p>
+      {/if}
+    </section>
+  {/if}
+
   {#if row.synthesis}
     <section class="card mb-6 p-4">
       <header class="mb-2 flex items-center justify-between">

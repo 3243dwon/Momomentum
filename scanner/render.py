@@ -30,9 +30,13 @@ def write_scan(
     universe_size: int,
     syntheses_by_ticker: dict[str, dict] | None = None,
     news_count_by_ticker: dict[str, int] | None = None,
+    snapshots_by_ticker: dict[str, dict] | None = None,
+    intraday_by_ticker: dict[str, dict] | None = None,
 ) -> None:
     syntheses_by_ticker = syntheses_by_ticker or {}
     news_count_by_ticker = news_count_by_ticker or {}
+    snapshots_by_ticker = snapshots_by_ticker or {}
+    intraday_by_ticker = intraday_by_ticker or {}
     tags_by_ticker = universe.load_tags()
 
     enriched_rows = []
@@ -42,6 +46,10 @@ def write_scan(
         out["news_count"] = news_count_by_ticker.get(t, 0)
         out["tier"] = _tier_for(tags_by_ticker.get(t, []))
         out["membership"] = tags_by_ticker.get(t, [])
+        if t in snapshots_by_ticker:
+            out["snapshot"] = snapshots_by_ticker[t]
+        if t in intraday_by_ticker:
+            out["intraday"] = intraday_by_ticker[t]
         if t in syntheses_by_ticker:
             out["synthesis"] = syntheses_by_ticker[t]
         enriched_rows.append(out)
