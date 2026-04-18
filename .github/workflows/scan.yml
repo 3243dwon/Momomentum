@@ -64,10 +64,22 @@ jobs:
         run: |
           git config user.name "momentum-bot"
           git config user.email "momentum-bot@users.noreply.github.com"
-          git add data/scan.json data/deltas.json data/universe.json 2>/dev/null || true
-          if ! git diff --cached --quiet; then
-            git commit -m "scan: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push
-          else
+          git add data/scan.json data/deltas.json data/universe.json data/news.json 2>/dev/null || true
+          if git diff --cached --quiet; then
             echo "No data changes to commit"
+            exit 0
           fi
+          git commit -m "scan: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          # Retry-with-rebase: the user (or another scan) may have pushed
+          # while we were running. Up to 5 attempts with rebase between.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push attempt $attempt rejected; pulling --rebase and retrying"
+            git pull --rebase origin main
+            sleep 2
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
