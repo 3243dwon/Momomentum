@@ -25,6 +25,16 @@ jobs:
           python-version: '3.12'
           cache: pip
 
+      # Read rolling state from the scan workflow's cache so weekly.py sees
+      # the accumulated events log.
+      - name: Restore scanner state cache
+        uses: actions/cache@v4
+        with:
+          path: data/cache
+          key: momentum-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            momentum-state-
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip

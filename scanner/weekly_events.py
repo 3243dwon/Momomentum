@@ -15,7 +15,7 @@ from scanner import config
 
 log = logging.getLogger(__name__)
 
-EVENTS_FILE = config.DATA_DIR / "weekly_events.json"
+EVENTS_FILE = config.CACHE_DIR / "weekly_events.json"  # gitignored + cached across runs
 RETENTION_DAYS = 9  # keep a little beyond 7 for Sat analysis + buffer
 CAP = 20000  # safety cap in case a hot week generates thousands of events
 

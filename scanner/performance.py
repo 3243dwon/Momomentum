@@ -19,8 +19,8 @@ from scanner import config
 
 log = logging.getLogger(__name__)
 
-ALERTS_LOG = config.DATA_DIR / "alerts_log.jsonl"
-PERFORMANCE_FILE = config.DATA_DIR / "performance.json"
+ALERTS_LOG = config.CACHE_DIR / "alerts_log.jsonl"       # gitignored + cached across runs
+PERFORMANCE_FILE = config.DATA_DIR / "performance.json"  # aggregates only; web UI reads it
 
 RETENTION_DAYS = 45
 HORIZONS = [1, 3, 5]  # days

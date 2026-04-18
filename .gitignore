@@ -34,3 +34,7 @@ Thumbs.db
 data/cache/
 data/audit/
 data/.last_scan_state.json
+# Belt-and-braces: these files hold sensitive rolling state and should only
+# ever live under data/cache/ (not data/). Explicitly block both locations.
+data/alerts_log.jsonl
+data/weekly_events.json
