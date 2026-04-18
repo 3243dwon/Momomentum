@@ -26,27 +26,28 @@
     vwap: 'any'
   });
 
-  function passes(r: ScanRow): boolean {
-    if (filters.size === 'large' && r.tier !== 'mega' && r.tier !== 'large') return false;
-    if (filters.size === 'midsmall' && r.tier !== 'midsmall') return false;
-    if (filters.move === 'p3' && (r.pct_1d == null || Math.abs(r.pct_1d) < 3)) return false;
-    if (filters.move === 'p5' && (r.pct_1d == null || Math.abs(r.pct_1d) < 5)) return false;
-    if (filters.volume === 'unusual' && (r.rel_volume == null || r.rel_volume < 2)) return false;
-    if (filters.news === 'with' && !((newsCountByTicker.get(r.ticker) ?? 0) > 0)) return false;
-    if (filters.vwap === 'above' && r.intraday?.above_vwap !== true) return false;
-    return true;
-  }
+  const filteredRows = $derived.by(() => {
+    if (!scan) return [];
+    return scan.rows.filter((r) => {
+      if (filters.size === 'large' && r.tier !== 'mega' && r.tier !== 'large') return false;
+      if (filters.size === 'midsmall' && r.tier !== 'midsmall') return false;
+      if (filters.move === 'p3' && (r.pct_1d == null || Math.abs(r.pct_1d) < 3)) return false;
+      if (filters.move === 'p5' && (r.pct_1d == null || Math.abs(r.pct_1d) < 5)) return false;
+      if (filters.volume === 'unusual' && (r.rel_volume == null || r.rel_volume < 2)) return false;
+      if (filters.news === 'with' && !((newsCountByTicker.get(r.ticker) ?? 0) > 0)) return false;
+      if (filters.vwap === 'above' && r.intraday?.above_vwap !== true) return false;
+      return true;
+    });
+  });
 
-  const filteredRows = $derived(scan ? scan.rows.filter(passes) : []);
-
-  const top20 = $derived(
+  const top20 = $derived.by(() =>
     [...filteredRows]
       .filter((r) => r.pct_1d != null)
       .sort((a, b) => Math.abs(b.pct_1d!) - Math.abs(a.pct_1d!))
       .slice(0, 20)
   );
 
-  const freshNewsTickers = $derived(() => {
+  const freshNewsTickers = $derived.by(() => {
     const top20Set = new Set(top20.map((r) => r.ticker));
     const filteredSet = new Set(filteredRows.map((r) => r.ticker));
     const tickers = Object.entries(news?.ticker_news ?? {})
@@ -67,9 +68,9 @@
     return tickers;
   });
 
-  const watchlistRows = $derived(() => {
+  const watchlistRows = $derived.by(() => {
     const top20Set = new Set(top20.map((r) => r.ticker));
-    const newsSet = new Set(freshNewsTickers().map((x) => x.ticker));
+    const newsSet = new Set(freshNewsTickers.map((x) => x.ticker));
     return watchlist
       .filter((t) => !top20Set.has(t) && !newsSet.has(t))
       .map((t) => ({ ticker: t, row: rowsByTicker.get(t) }));
@@ -123,14 +124,14 @@
     {/if}
   </section>
 
-  {#if freshNewsTickers().length > 0}
+  {#if freshNewsTickers.length > 0}
     <section class="mb-8">
       <header class="mb-3 flex items-center justify-between">
         <h2 class="text-sm font-semibold tracking-tight">Fresh news</h2>
         <span class="text-[10px] uppercase tracking-wider text-zinc-500">tickers with new headlines</span>
       </header>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {#each freshNewsTickers().slice(0, 12) as item (item.ticker)}
+        {#each freshNewsTickers.slice(0, 12) as item (item.ticker)}
           {@const row = rowsByTicker.get(item.ticker)}
           {#if row}
             <TickerCard
@@ -144,14 +145,14 @@
     </section>
   {/if}
 
-  {#if watchlistRows().length > 0}
+  {#if watchlistRows.length > 0}
     <section class="mb-8">
       <header class="mb-3 flex items-center justify-between">
         <h2 class="text-sm font-semibold tracking-tight">Watchlist</h2>
         <span class="text-[10px] uppercase tracking-wider text-zinc-500">edit data/watchlist.json</span>
       </header>
       <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {#each watchlistRows() as { row, ticker } (ticker)}
+        {#each watchlistRows as { row, ticker } (ticker)}
           {#if row}
             <TickerCard row={row} pinned news={news?.ticker_news[ticker] ?? []} />
           {:else}

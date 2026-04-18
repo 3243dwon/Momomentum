@@ -35,7 +35,7 @@
     return dir === 'asc' ? av - bv : bv - av;
   }
 
-  const sorted = $derived(() => {
+  const sorted = $derived.by(() => {
     const q = query.trim().toUpperCase();
     let r = q ? rows.filter((x) => x.ticker.includes(q)) : rows;
     return [...r].sort((a, b) => {
@@ -53,7 +53,7 @@
     });
   });
 
-  const visible = $derived(sorted().slice(0, 250));
+  const visible = $derived.by(() => sorted.slice(0, 250));
   const sortIndicator = (k: SortKey) => (sortKey === k ? (sortDir === 'asc' ? '▲' : '▼') : '');
 </script>
 
@@ -66,7 +66,7 @@
       class="num w-32 rounded bg-ink-800 px-2 py-1 text-xs uppercase placeholder:text-zinc-600 focus:outline-none focus:ring-1 focus:ring-signal-info"
     />
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">
-      showing {Math.min(visible.length, 250)} of {sorted().length}
+      showing {Math.min(visible.length, 250)} of {sorted.length}
     </span>
   </div>
 

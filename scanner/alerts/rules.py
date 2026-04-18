@@ -2,12 +2,14 @@
 
 Composes alerts from scan rows, deltas, ticker syntheses, and macro analyses.
 Each candidate alert is checked against the throttle before being emitted.
+After building, the full list is ranked by priority and truncated to
+config.MAX_ALERTS_PER_SCAN so Feishu doesn't flood on noisy days.
 
 Alert types fired (matched to design):
-  A. Threshold      \u2014 watchlist move, big move + volume spike, fresh news
-  B. Delta          \u2014 new top-20 entrant, rank jump, momentum acceleration
-  C. Macro          \u2014 macro event with beneficiary analysis
-  S. Synthesis      \u2014 high-confidence Sonnet "why" worth surfacing
+  A. Catalyst       \u2014 news-explained move + volume (highest priority)
+  B. Macro          \u2014 macro event with beneficiary analysis
+  C. Threshold      \u2014 watchlist move, big move + volume spike
+  D. Delta          \u2014 new top-20 entrant, rank jump, momentum acceleration
 """
 from __future__ import annotations
 
@@ -18,6 +20,24 @@ from scanner.alerts.throttle import Throttle
 from scanner.windows import Window
 
 log = logging.getLogger(__name__)
+
+ALERT_TYPE_PRIORITY = {
+    "catalyst": 100,
+    "macro": 90,
+    "watchlist": 80,
+    "big_move": 60,
+    "delta_new_top20": 45,
+    "delta_rank_jump": 40,
+    "delta_accel": 35,
+}
+
+
+def _score_alert(alert: dict) -> float:
+    base = ALERT_TYPE_PRIORITY.get(alert.get("type", "").split(":")[0], 0)
+    signal = alert.get("_signal_abs")
+    if signal is not None:
+        base += min(signal, 20)  # magnitude tiebreaker, capped so type dominates
+    return base
 
 
 def _fmt_pct(x: float | None) -> str:
@@ -52,6 +72,7 @@ def _emit(
             "title": title,
             "body_md": body_md,
             "link": link,
+            "_signal_abs": abs(signal) if signal is not None else None,
         }
     )
     throttle.record(key_id, alert_type, signal_pct=signal)
@@ -206,5 +227,19 @@ def build_alerts(
             body_md=body,
         )
 
-    log.info("Built %d alerts after throttling", len(alerts))
+    # Budget cap: keep only the top-priority alerts per scan. Prevents flood
+    # on market-wide move days. Catalyst > macro > watchlist > big move > delta.
+    pre_cap = len(alerts)
+    alerts.sort(key=_score_alert, reverse=True)
+    if len(alerts) > config.MAX_ALERTS_PER_SCAN:
+        alerts = alerts[: config.MAX_ALERTS_PER_SCAN]
+
+    # Strip internal scoring field before dispatch.
+    for a in alerts:
+        a.pop("_signal_abs", None)
+
+    log.info(
+        "Built %d alerts after throttling; keeping top %d (cap %d)",
+        pre_cap, len(alerts), config.MAX_ALERTS_PER_SCAN,
+    )
     return alerts, throttle

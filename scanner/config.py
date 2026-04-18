@@ -29,9 +29,10 @@ PCT_MOVE_THRESHOLD_AH = 5.0
 REL_VOLUME_THRESHOLD = 2.0
 MIN_AH_VOLUME = 100_000
 
-RANK_JUMP_THRESHOLD = 10
+RANK_JUMP_THRESHOLD = 15  # raised from 10 — only significant rank shifts
 
 ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
+MAX_ALERTS_PER_SCAN = 8  # hard cap on Feishu pings per scan run
 
 # Hard caps per scan to bound monthly LLM spend. When over, we score and
 # send the most-informative candidates first.
