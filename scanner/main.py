@@ -230,9 +230,9 @@ def run(
         log.info("Alerts: built %d, sent %d", len(alerts), sent)
         performance.log_alerts(alerts, rows, now)
 
-    # Mom digest: purely additive Chinese-language macro digest to a second
-    # Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
-    mom_digest.run(macro_analyses, client)
+    # Mom digest: purely additive Chinese-language macro+industry digest to a
+    # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
+    mom_digest.run(macro_analyses, client, rows=rows)
 
     # Evaluate past alerts whose 1d/3d/5d horizons have elapsed.
     from datetime import timezone as _tz

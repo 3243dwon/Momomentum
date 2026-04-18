@@ -30,6 +30,26 @@ THROTTLE_FILE = config.CACHE_DIR / "mom_digest_throttle.json"
 AUDIT_DIR = config.AUDIT_DIR
 THROTTLE_SECONDS = 4 * 60 * 60  # 4 hours between mom digests
 
+# Industry/sector tracking — mom's watched list (hardcoded defaults; could be
+# externalized to data/mom_config.json later). Maps GICS sector name → Chinese.
+MOM_WATCHED_SECTORS: dict[str, str] = {
+    "Energy": "能源",
+    "Health Care": "医药医疗",
+    "Information Technology": "科技/半导体",
+    "Materials": "原材料",
+}
+
+# Precious metals has no clean GICS bucket — track by ticker allowlist instead.
+PRECIOUS_METALS_TICKERS = {
+    "GLD", "SLV", "IAU", "SGOL", "GDX", "GDXJ", "SIL", "SILJ",
+    "GOLD", "NEM", "WPM", "AEM", "FNV", "AU", "KGC", "PAAS", "HL", "CDE",
+}
+PRECIOUS_METALS_LABEL_ZH = "黄金/白银"
+
+SECTOR_MOMENTUM_MIN_BIG_MOVERS = 3     # e.g. ≥3 tickers in sector moving ≥3% same way
+SECTOR_MOMENTUM_BIG_MOVE_PCT = 3.0
+SECTOR_MOMENTUM_MIN_AVG_PCT = 1.5       # OR sector's avg |%chg| >= 1.5%
+
 CHINA_KEYWORDS = re.compile(
     r"\b(china|chinese|beijing|shanghai|shenzhen|hong kong|hk|taiwan|"
     r"yuan|renminbi|rmb|pboc|csrc|sse|hkex|a[- ]?shares?|csi ?300|hang seng|hstech|"
@@ -54,6 +74,84 @@ def _load_throttle() -> dict:
 
 def _save_throttle(state: dict) -> None:
     THROTTLE_FILE.write_text(json.dumps(state, indent=2))
+
+
+def _sector_momentum(rows: list[dict]) -> list[dict]:
+    """Aggregate scan rows by mom's watched sectors. Return only sectors with
+    significant movement (3+ big movers same direction OR avg |%chg| >= threshold)."""
+    if not rows:
+        return []
+
+    # Sector metadata lives in universe.json (from S&P 500 Wikipedia table).
+    # Load it directly here since mom_digest runs before render.py enriches rows.
+    from scanner import universe as _universe
+    sectors_map = _universe.load_sectors()
+
+    by_sector: dict[str, list[dict]] = {}
+    precious: list[dict] = []
+
+    for r in rows:
+        t = r.get("ticker")
+        pct = r.get("pct_1d")
+        if pct is None:
+            continue
+        if t in PRECIOUS_METALS_TICKERS:
+            precious.append(r)
+            continue
+        sector = sectors_map.get(t)
+        if sector in MOM_WATCHED_SECTORS:
+            by_sector.setdefault(sector, []).append(r)
+
+    out: list[dict] = []
+
+    def _summarize(label_en: str, label_zh: str, group: list[dict]) -> dict | None:
+        if not group:
+            return None
+        big_up = [r for r in group if (r.get("pct_1d") or 0) >= SECTOR_MOMENTUM_BIG_MOVE_PCT]
+        big_down = [r for r in group if (r.get("pct_1d") or 0) <= -SECTOR_MOMENTUM_BIG_MOVE_PCT]
+        avg_pct = sum((r.get("pct_1d") or 0) for r in group) / len(group)
+
+        significant = (
+            len(big_up) >= SECTOR_MOMENTUM_MIN_BIG_MOVERS
+            or len(big_down) >= SECTOR_MOMENTUM_MIN_BIG_MOVERS
+            or abs(avg_pct) >= SECTOR_MOMENTUM_MIN_AVG_PCT
+        )
+        if not significant:
+            return None
+
+        direction = "up" if avg_pct > 0 else "down" if avg_pct < 0 else "mixed"
+        if len(big_up) and len(big_down) >= SECTOR_MOMENTUM_MIN_BIG_MOVERS:
+            direction = "mixed"
+
+        top = sorted(group, key=lambda r: abs(r.get("pct_1d") or 0), reverse=True)[:5]
+        return {
+            "sector_en": label_en,
+            "sector_zh": label_zh,
+            "direction": direction,
+            "avg_pct": round(avg_pct, 2),
+            "n_big_up": len(big_up),
+            "n_big_down": len(big_down),
+            "top_movers": [
+                {
+                    "ticker": r["ticker"],
+                    "pct_1d": r.get("pct_1d"),
+                    "rel_volume": r.get("rel_volume"),
+                    "news_count": r.get("news_count", 0),
+                }
+                for r in top
+            ],
+        }
+
+    for sector_en, group in by_sector.items():
+        entry = _summarize(sector_en, MOM_WATCHED_SECTORS[sector_en], group)
+        if entry:
+            out.append(entry)
+
+    pm_entry = _summarize("Precious Metals", PRECIOUS_METALS_LABEL_ZH, precious)
+    if pm_entry:
+        out.append(pm_entry)
+
+    return out
 
 
 def _is_china_relevant(event: dict) -> tuple[bool, str]:
@@ -126,16 +224,39 @@ MOM_DIGEST_TOOL = {
                 "items": {"type": "string"},
                 "description": "3-5 specific A-share/HK/ETF names to watch, formatted '中文名 (代码)'. Mix .SH/.SZ and .HK. Examples: '比亚迪 (002594.SZ)', '腾讯控股 (0700.HK)', '恒生科技ETF (513180.SH)'.",
             },
+            "industry_commentary_zh": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "sector_zh": {"type": "string", "description": "Sector label in Chinese (e.g. 能源, 科技/半导体, 黄金/白银)."},
+                        "direction": {"type": "string", "enum": ["up", "down", "mixed"]},
+                        "commentary_zh": {
+                            "type": "string",
+                            "description": "1-2 sentences in Chinese: what's happening in this sector TODAY in US markets, and the read-across to A-share/HK equivalents (e.g. oil up → 中石油/中海油; US semis up → 中芯/韦尔股份).",
+                        },
+                        "china_hk_parallels_zh": {
+                            "type": "array",
+                            "items": {"type": "string"},
+                            "description": "1-3 A-share / HK-listed analogues for this sector, formatted '中文名 (代码)'.",
+                        },
+                    },
+                    "required": ["sector_zh", "direction", "commentary_zh"],
+                },
+                "description": "One entry per US sector showing meaningful movement today. Include ALL sectors from input industry_trends data.",
+            },
             "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
             "horizon_days": {"type": "integer", "description": "How long these effects persist, in days."},
         },
-        "required": ["worth_sending", "events_considered_zh", "title_zh", "summary_zh", "affected_industries_zh", "a_share_impact", "hk_impact", "markets_reason_zh", "confidence"],
+        "required": ["worth_sending", "events_considered_zh", "title_zh", "summary_zh", "affected_industries_zh", "a_share_impact", "hk_impact", "markets_reason_zh", "industry_commentary_zh", "confidence"],
     },
 }
 
 MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资者（比如一位退休人士）撰写市场速报。
 
-你收到今天发生的1到5条全球宏观事件。这些事件**可能直接提到中国，也可能不提**——但许多全球宏观事件（美联储利率决议、关税政策、大宗商品波动、地缘政治等）都会通过跨市场传导影响A股和港股。
+你收到两类输入：
+1. **今天的宏观事件** (1-5 条)：可能直接提到中国，也可能不提。许多全球宏观事件（美联储利率决议、关税政策、大宗商品波动、地缘政治等）都会通过跨市场传导影响A股和港股。
+2. **美股行业动态** (0-N 条)：今天美股中能源、医药医疗、科技/半导体、原材料、黄金/白银几个用户关注板块的显著走势。这些走势经常映射到A股和港股对应板块（例：美股油股涨→中石油/中海油；美股半导体涨→中芯国际/台积电）。
 
 ## 第一步：评估每一条事件
 
@@ -149,20 +270,33 @@ MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资�
   * "none" — 纯美国本土事件，对中国/港股无传导效应（例：某个美国州的监管变化、与中国无关的美股个股财报）
 - relevance_reason_zh: 一句中文解释该事件如何（或为何不）影响中国/港股
 
-## 第二步：决定是否发送
+## 第二步：填写行业板块评论 (industry_commentary_zh)
 
-如果**所有**事件都是 "none"（纯美国本土），设置 worth_sending=false，其他字段可以简略或留空。不发送给妈妈。
+对输入里提供的**每一个**美股板块动态，写一条中文点评：
+- sector_zh: 板块中文名（直接用输入提供的）
+- direction: up / down / mixed（直接用输入提供的）
+- commentary_zh: 1-2句话描述今天美股该板块的走势以及对A股/港股对应板块的启示。例："今日美股半导体板块普涨，NVDA涨4%、台积电ADR涨2%，A股半导体链预期跟涨，中芯国际、韦尔股份、北方华创值得关注。"
+- china_hk_parallels_zh: 1-3只A股/港股对应标的
 
-如果**至少一条**事件是 direct/indirect/minimal（有任何传导可能），设置 worth_sending=true，然后根据这些相关事件撰写：
-- title_zh: 最重要一条事件的中文标题
-- summary_zh: 综合所有相关事件写3-5句中文摘要，普通人能读懂
-- affected_industries_zh: 跨所有相关事件受影响的行业
+## 第三步：决定是否发送
+
+设置 worth_sending=true 的条件（满足任一即可）：
+- 至少一条宏观事件被标记为 direct/indirect（真实传导效应）
+- 至少一个美股板块有显著走势（这已经过我们的阈值过滤，基本都值得关注）
+
+设置 worth_sending=false 的条件：
+- 所有宏观事件都是 "none"（纯美国本土）**且**无美股板块动态输入。
+
+如果 worth_sending=true，撰写：
+- title_zh: 最重要一条事件或板块的中文标题
+- summary_zh: 3-5 句中文摘要，覆盖宏观事件**和**板块动态
+- affected_industries_zh: 受影响的行业合集
 - a_share_impact / hk_impact: 分别判断两个市场方向
   * A股（上证、沪深300）以内资为主，主要受国内政策驱动
   * 港股（恒生、恒生科技）有大量外资，对美联储、汇率、全球流动性更敏感
   * 两个市场经常分化——分别独立判断
 - markets_reason_zh: 综合解释两个市场的反应，分化时说明原因
-- watchlist_zh: 3-5只具体标的，混合A股和港股，例如"腾讯控股 (0700.HK)"、"比亚迪 (002594.SZ)"
+- watchlist_zh: 3-5只综合标的（结合宏观和板块），混合A股和港股
 
 ## 风格要求
 
@@ -174,7 +308,7 @@ MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资�
 """
 
 
-def _format_user(qualifying_events: list[dict]) -> str:
+def _format_user(qualifying_events: list[dict], sector_momentum: list[dict]) -> str:
     payload = {
         "events": [
             {
@@ -185,7 +319,8 @@ def _format_user(qualifying_events: list[dict]) -> str:
                 "losers": e.get("losers", []),
             }
             for e in qualifying_events
-        ]
+        ],
+        "industry_trends": sector_momentum,
     }
     return json.dumps(payload, indent=2, ensure_ascii=False)
 
@@ -229,9 +364,22 @@ def _build_card(digest: dict) -> dict:
             f"  _{e.get('relevance_reason_zh', '')}_\n"
         )
 
+    # Industry commentary block
+    direction_labels = {"up": "📈 偏多", "down": "📉 偏空", "mixed": "⚖️ 分化"}
+    industries_block = ""
+    for ic in digest.get("industry_commentary_zh", []) or []:
+        dir_label = direction_labels.get(ic.get("direction", ""), "")
+        industries_block += f"\n{dir_label} **{ic.get('sector_zh', '')}**\n"
+        industries_block += f"  {ic.get('commentary_zh', '')}\n"
+        parallels = ic.get("china_hk_parallels_zh") or []
+        if parallels:
+            industries_block += "  " + "、".join(parallels) + "\n"
+
     body = f"{digest.get('summary_zh', '')}\n"
     if events_block:
         body += f"\n**今日事件：**{events_block}"
+    if industries_block:
+        body += f"\n**美股板块映射：**{industries_block}"
     body += (
         f"\n**受影响行业：** {industries}\n\n"
         f"**A股方向：** {a_label}\n"
@@ -281,18 +429,31 @@ def _send(webhook_url: str, card: dict) -> tuple[bool, dict | None, str | None]:
         return False, None, str(e)
 
 
-def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
+def run(
+    macro_analyses: list[dict],
+    client: LLMClient | None,
+    rows: list[dict] | None = None,
+) -> None:
     webhook = getattr(config, "FEISHU_MOM_WEBHOOK_URL", None)
     if not webhook:
         return  # disabled — no config
     if not client:
         log.info("Mom digest: no LLM client, skipping")
         return
-    if not macro_analyses:
+
+    sector_momentum = _sector_momentum(rows or [])
+    if sector_momentum:
+        for s in sector_momentum:
+            log.info(
+                "Mom digest sector: %s (%s) avg %s%%, %d↑ %d↓",
+                s["sector_zh"], s["direction"], s["avg_pct"], s["n_big_up"], s["n_big_down"],
+            )
+
+    if not macro_analyses and not sector_momentum:
+        log.info("Mom digest: no macro events and no sector momentum — skip")
         return
 
     # Send ALL macro events to Opus — it gatekeeps per-event relevance itself.
-    # Direct keyword short-circuit just for logging visibility.
     for m in macro_analyses:
         relevant, _ = _is_china_relevant(m)
         summary_preview = (m.get("event_summary", "") or "")[:70]
@@ -302,13 +463,18 @@ def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
             summary_preview,
         )
     qualifying = list(macro_analyses)
-    log.info("Mom digest: sending %d events to Opus for Chinese relevance judgment", len(qualifying))
+    log.info(
+        "Mom digest: sending %d macro events + %d sector trends to Opus",
+        len(qualifying), len(sector_momentum),
+    )
 
-    # Throttle: don't re-send within THROTTLE_SECONDS, unless new dedup_group appears
+    # Throttle: don't re-send within THROTTLE_SECONDS, unless the signal-set changes
+    # (new macro event OR different sector-direction combo).
     state = _load_throttle()
     last_sent_iso = state.get("last_sent_at")
     last_groups = set(state.get("last_groups", []))
-    current_groups = {m.get("dedup_group") for m in qualifying}
+    current_groups = {m.get("dedup_group") for m in qualifying if m.get("dedup_group")}
+    current_groups.update(f"sector:{s['sector_en']}:{s['direction']}" for s in sector_momentum)
 
     if last_sent_iso:
         try:
@@ -327,11 +493,11 @@ def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
     result = client.call_structured(
         model=config.OPUS_MODEL,
         system=MOM_SYSTEM,
-        user=_format_user(qualifying),
+        user=_format_user(qualifying, sector_momentum),
         output_tool=MOM_DIGEST_TOOL,
         audit_tier="opus_mom",
         audit_key=hashlib.sha1(str(sorted(current_groups)).encode()).hexdigest()[:12],
-        max_tokens=3072,
+        max_tokens=4096,
     )
     if not result:
         log.warning("Mom digest: Opus returned no result")
