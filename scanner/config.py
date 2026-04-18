@@ -33,6 +33,12 @@ RANK_JUMP_THRESHOLD = 10
 
 ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
 
+# Hard caps per scan to bound monthly LLM spend. When over, we score and
+# send the most-informative candidates first.
+MAX_HAIKU_NEWS_ITEMS_PER_SCAN = 100
+MAX_SONNET_SYNTHESES_PER_SCAN = 20
+MAX_OPUS_MACRO_PER_SCAN = 5
+
 UNIVERSE_REBUILD_AFTER_DAYS = 7
 
 HAIKU_MODEL = os.environ.get("HAIKU_MODEL", "claude-haiku-4-5-20251001")

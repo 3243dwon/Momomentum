@@ -17,6 +17,41 @@
     vwap: 'any'
   };
 
+  // Named scan presets based on professional momentum setups. Each applies
+  // a combo of filters; clicking again deselects back to defaults.
+  const PRESETS: { id: string; label: string; desc: string; apply: Filters }[] = [
+    {
+      id: 'gap-go',
+      label: 'Gap & Go',
+      desc: 'catalyst-driven open — big move + heavy volume + above VWAP',
+      apply: { ...DEFAULTS, move: 'p3', volume: 'unusual', vwap: 'above' }
+    },
+    {
+      id: 'catalyst',
+      label: 'Catalyst Movers',
+      desc: 'news-explained movers only — the actionable set',
+      apply: { ...DEFAULTS, move: 'p3', news: 'with' }
+    },
+    {
+      id: 'high-conviction',
+      label: 'High Conviction',
+      desc: 'big move + news + above VWAP — pro institutional setup',
+      apply: { ...DEFAULTS, move: 'p3', news: 'with', vwap: 'above' }
+    },
+    {
+      id: 'midsmall-play',
+      label: 'Mid/Small Plays',
+      desc: 'outsized moves in mid+small cap where risk-reward lives',
+      apply: { ...DEFAULTS, size: 'midsmall', move: 'p5' }
+    },
+    {
+      id: 'momentum-burst',
+      label: 'Momentum Burst',
+      desc: 'explosive 5%+ moves on 2x volume — regardless of news',
+      apply: { ...DEFAULTS, move: 'p5', volume: 'unusual' }
+    }
+  ];
+
   const STORAGE_KEY = 'momentum:filters';
 
   function load(): Filters {
@@ -115,7 +150,38 @@
     filters = { ...filters, [key]: value };
     persist();
   }
+
+  function applyPreset(preset: Filters) {
+    filters = { ...preset };
+    persist();
+  }
+
+  function matches(preset: Filters): boolean {
+    return (
+      filters.size === preset.size &&
+      filters.move === preset.move &&
+      filters.volume === preset.volume &&
+      filters.news === preset.news &&
+      filters.vwap === preset.vwap
+    );
+  }
 </script>
+
+<section class="card mb-2 flex flex-wrap items-center gap-1.5 p-2 text-[10px] uppercase tracking-wider">
+  <span class="px-1 text-zinc-500">Scan preset</span>
+  {#each PRESETS as p}
+    <button
+      type="button"
+      onclick={() => applyPreset(p.apply)}
+      title={p.desc}
+      class="rounded px-2 py-1 transition-colors {matches(p.apply)
+        ? 'bg-signal-warn/15 text-signal-warn'
+        : 'text-zinc-400 hover:bg-ink-800 hover:text-zinc-200'}"
+    >
+      {p.label}
+    </button>
+  {/each}
+</section>
 
 <section class="card mb-4 flex flex-wrap items-center gap-2 p-2 text-[10px] uppercase tracking-wider">
   {#each groups as g}

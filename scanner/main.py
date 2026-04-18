@@ -36,6 +36,67 @@ from scanner.llm.client import get_client
 log = logging.getLogger("scanner")
 
 
+def _rank_news_for_haiku(
+    ticker_news: dict[str, list[dict]],
+    macro_news: list[dict],
+    rows: list[dict],
+    watchlist: set[str],
+) -> list[dict]:
+    """Score each news item so that if we hit the Haiku cap, we classify the
+    most informative items first (bigger movers, watchlist, macro)."""
+    by_ticker = {r["ticker"]: r for r in rows}
+
+    def score(item: dict) -> float:
+        if item.get("scope") == "macro":
+            return 40.0  # all macro gets classified before low-signal ticker news
+        t = item.get("ticker")
+        s = 0.0
+        if t in watchlist:
+            s += 50
+        row = by_ticker.get(t or "")
+        if row:
+            pct = abs(row.get("pct_1d") or 0)
+            s += pct * 2
+            rv = row.get("rel_volume") or 0
+            s += min(rv, 10)
+        return s
+
+    all_items = [n for items in ticker_news.values() for n in items] + macro_news
+    all_items.sort(key=score, reverse=True)
+    return all_items
+
+
+def _rank_synthesis_targets(
+    candidates: set[str],
+    ticker_news_enriched: dict[str, list[dict]],
+    rows: list[dict],
+    watchlist: set[str],
+) -> list[str]:
+    """Order synthesis candidates by priority. Watchlist first, then big movers
+    with news, then big movers, then rest."""
+    by_ticker = {r["ticker"]: r for r in rows}
+
+    def score(t: str) -> float:
+        s = 0.0
+        if t in watchlist:
+            s += 200  # always synthesize watchlist first
+        row = by_ticker.get(t)
+        if row:
+            s += abs(row.get("pct_1d") or 0) * 10
+            s += min(row.get("rel_volume") or 0, 10) * 5
+            flags = row.get("flags", []) or []
+            if "big_move" in flags:
+                s += 20
+            if "unusual_volume" in flags:
+                s += 15
+        news_items = ticker_news_enriched.get(t, [])
+        if any(n.get("impact") == "high" for n in news_items):
+            s += 40
+        return s
+
+    return sorted(candidates, key=score, reverse=True)
+
+
 def run(
     limit: int | None = None,
     rebuild_universe: bool = False,
@@ -89,7 +150,14 @@ def run(
 
     client = get_client() if (use_llm and use_news) else None
     if client and (ticker_news or macro_news):
-        all_items = [n for items in ticker_news.values() for n in items] + macro_news
+        # --- Haiku budget: cap to MAX_HAIKU_NEWS_ITEMS_PER_SCAN ---
+        all_items = _rank_news_for_haiku(ticker_news, macro_news, rows, router.load_watchlist())
+        if len(all_items) > config.MAX_HAIKU_NEWS_ITEMS_PER_SCAN:
+            log.info(
+                "Haiku budget: %d items → capping to %d",
+                len(all_items), config.MAX_HAIKU_NEWS_ITEMS_PER_SCAN,
+            )
+            all_items = all_items[: config.MAX_HAIKU_NEWS_ITEMS_PER_SCAN]
         classifications = classify.classify(all_items, client)
 
         for ticker, items in ticker_news.items():
@@ -98,21 +166,38 @@ def run(
         macro_news_enriched = classify.attach(macro_news, classifications)
         macro_news_dedup = classify.dedup(macro_news_enriched)
 
+        # --- Sonnet budget: score tickers, cap at MAX_SONNET_SYNTHESES ---
         scanned_tickers = {r["ticker"] for r in rows}
+        watchlist_set = router.load_watchlist()
         must_synth = set(deltas.get("new_top20_entrants", []))
         must_synth.update(j["ticker"] for j in deltas.get("rank_jumps", []))
-        must_synth.update(t for t in router.load_watchlist() if t in scanned_tickers)
+        must_synth.update(t for t in watchlist_set if t in scanned_tickers)
+        ranked_synth_targets = _rank_synthesis_targets(
+            must_synth, ticker_news_enriched, rows, watchlist_set,
+        )[: config.MAX_SONNET_SYNTHESES_PER_SCAN]
+        log.info(
+            "Sonnet budget: %d candidates → synthesizing top %d",
+            len(must_synth), len(ranked_synth_targets),
+        )
         syntheses = synthesize.synthesize(
             ticker_news_enriched,
             {r["ticker"]: r for r in rows},
             client,
-            must_synthesize=must_synth,
+            must_synthesize=set(ranked_synth_targets),
         )
 
-        macro_for_opus = [
-            m for m in macro_news_dedup
-            if m.get("impact") in ("high", "medium") and (m.get("type") or "").startswith("macro_")
-        ]
+        # --- Opus budget: cap macro events, sort by impact ---
+        macro_for_opus = sorted(
+            [
+                m for m in macro_news_dedup
+                if m.get("impact") in ("high", "medium") and (m.get("type") or "").startswith("macro_")
+            ],
+            key=lambda m: 0 if m.get("impact") == "high" else 1,
+        )[: config.MAX_OPUS_MACRO_PER_SCAN]
+        log.info(
+            "Opus budget: analyzing top %d macro events (cap %d)",
+            len(macro_for_opus), config.MAX_OPUS_MACRO_PER_SCAN,
+        )
         macro_analyses = macro.analyze(macro_for_opus, client)
     else:
         ticker_news_enriched = ticker_news
