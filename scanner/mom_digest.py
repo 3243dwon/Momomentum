@@ -85,19 +85,24 @@ MOM_DIGEST_TOOL = {
                 "items": {"type": "string"},
                 "description": "Industries affected, in Chinese (e.g. 半导体, 房地产, 新能源车, 银行, 消费). Max 4.",
             },
-            "shanghai_impact": {
+            "a_share_impact": {
                 "type": "string",
                 "enum": ["bullish", "bearish", "mixed", "neutral"],
-                "description": "Directional bias for Shanghai A-shares / CSI 300 overall.",
+                "description": "Directional bias for Shanghai/Shenzhen A-shares (上证/沪深300).",
             },
-            "shanghai_impact_reason_zh": {
+            "hk_impact": {
                 "type": "string",
-                "description": "One sentence in Chinese explaining why Shanghai market reacts this way.",
+                "enum": ["bullish", "bearish", "mixed", "neutral"],
+                "description": "Directional bias for HK market (恒生/HSTECH). A-shares and HK frequently diverge — judge them independently.",
+            },
+            "markets_reason_zh": {
+                "type": "string",
+                "description": "One short paragraph in Chinese explaining the reasoning for BOTH A-shares and HK. If they diverge, say why.",
             },
             "watchlist_zh": {
                 "type": "array",
                 "items": {"type": "string"},
-                "description": "2-4 specific A-share / HK / ETF names to watch, formatted as '中文名 (代码)'. e.g. '比亚迪 (002594.SZ)', '台积电 (2330.TW)', '沪深300ETF (510300.SH)'. Only names plausibly tied to the event.",
+                "description": "3-5 specific A-share / HK-listed / ETF names to watch, formatted as '中文名 (代码)'. Mix A-shares (.SH/.SZ) and HK (.HK) when both markets are affected. Examples: '比亚迪 (002594.SZ)', '腾讯控股 (0700.HK)', '恒生科技ETF (513180.SH)', '中芯国际 (0981.HK)'. Only names plausibly tied to the event.",
             },
             "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
             "horizon_days": {
@@ -105,23 +110,27 @@ MOM_DIGEST_TOOL = {
                 "description": "How long this effect persists, in days.",
             },
         },
-        "required": ["title_zh", "summary_zh", "affected_industries_zh", "shanghai_impact", "shanghai_impact_reason_zh", "confidence"],
+        "required": ["title_zh", "summary_zh", "affected_industries_zh", "a_share_impact", "hk_impact", "markets_reason_zh", "confidence"],
     },
 }
 
 MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资者（比如一位退休人士）撰写每日市场速报。
 
-你收到1条或多条今天发生的、对中国/上海股市有直接或间接影响的全球宏观事件。你的任务：
+你收到1条或多条今天发生的、对中国大陆A股或香港股市有直接或间接影响的全球宏观事件。你的任务：
 1. 用简体中文写一份清晰、简短的摘要，让普通人能读懂。
 2. 明确指出受影响的行业（用中文表达，不要用英文缩写）。
-3. 给出对上海A股市场的方向性判断（看涨/看跌/混合/中性）。
-4. 推荐2-4只相关的A股/港股/ETF。使用公司中文名称加股票代码，例如"比亚迪 (002594.SZ)"。
+3. **分别**判断两个市场的方向：
+   - 上海/深圳 A股 (上证, 沪深300)
+   - 香港股市 (恒生指数, 恒生科技)
+   两个市场经常因为投资者结构不同（A股偏内资，港股有海外资金）出现分化，请独立判断。
+4. 推荐3-5只相关标的：混合A股(.SH/.SZ)和港股(.HK)。使用公司中文名称加股票代码，例如"比亚迪 (002594.SZ)"、"腾讯控股 (0700.HK)"。
 
 ## 风格要求
 - 语言通俗易懂。不用"点位"、"流动性"、"久期"这类术语，除非紧接着用日常语言解释。
 - 句子短、有力。不用"或许"、"可能"、"似乎"这类模糊措辞。
 - 不捏造。如果事件跟中国关联较弱，标记为"混合"或"中性"，置信度选"low"。
 - 推荐的标的必须与事件有明确因果逻辑。不要胡乱推荐。
+- A股与港股分化时（例如：美联储降息对港股偏利好但对A股影响有限），在 markets_reason_zh 中说明原因。
 
 ## 请勿
 - 不要用繁体字。
@@ -162,20 +171,35 @@ def _audit(payload: dict, response: dict | None, error: str | None) -> None:
 def _build_card(digest: dict) -> dict:
     industries = "、".join(digest.get("affected_industries_zh", []))
     watchlist = "\n".join(f"  • {w}" for w in digest.get("watchlist_zh", []))
-    impact_map = {"bullish": "偏多", "bearish": "偏空", "mixed": "混合", "neutral": "中性"}
-    impact_label = impact_map.get(digest.get("shanghai_impact", ""), "未知")
+    impact_map = {"bullish": "偏多 📈", "bearish": "偏空 📉", "mixed": "混合 ⚖️", "neutral": "中性 ➖"}
+    a_label = impact_map.get(digest.get("a_share_impact", ""), "未知")
+    hk_label = impact_map.get(digest.get("hk_impact", ""), "未知")
 
     body = (
-        f"**{digest.get('summary_zh', '')}**\n\n"
+        f"{digest.get('summary_zh', '')}\n\n"
         f"**受影响行业：** {industries}\n\n"
-        f"**上海A股方向：** {impact_label} · {digest.get('shanghai_impact_reason_zh', '')}"
+        f"**A股方向：** {a_label}\n"
+        f"**港股方向：** {hk_label}\n\n"
+        f"**原因：** {digest.get('markets_reason_zh', '')}"
     )
     if watchlist:
         body += f"\n\n**建议关注：**\n{watchlist}"
     body += f"\n\n_置信度：{digest.get('confidence', '—')} · 预计持续：{digest.get('horizon_days', '—')} 天_"
 
-    template_map = {"bullish": "green", "bearish": "red", "mixed": "orange", "neutral": "blue"}
-    template = template_map.get(digest.get("shanghai_impact", ""), "blue")
+    # Card header color: worst-case directional signal across both markets.
+    a, h = digest.get("a_share_impact", ""), digest.get("hk_impact", "")
+    if a == "bullish" and h == "bullish":
+        template = "green"
+    elif a == "bearish" and h == "bearish":
+        template = "red"
+    elif "bullish" in (a, h) and "bearish" in (a, h):
+        template = "orange"  # divergence
+    elif "bearish" in (a, h):
+        template = "red"
+    elif "bullish" in (a, h):
+        template = "green"
+    else:
+        template = "blue"
 
     return {
         "msg_type": "interactive",
