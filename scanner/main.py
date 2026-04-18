@@ -85,7 +85,16 @@ def run(
         macro_news_enriched = classify.attach(macro_news, classifications)
         macro_news_dedup = classify.dedup(macro_news_enriched)
 
-        syntheses = synthesize.synthesize(ticker_news_enriched, {r["ticker"]: r for r in rows}, client)
+        scanned_tickers = {r["ticker"] for r in rows}
+        must_synth = set(deltas.get("new_top20_entrants", []))
+        must_synth.update(j["ticker"] for j in deltas.get("rank_jumps", []))
+        must_synth.update(t for t in router.load_watchlist() if t in scanned_tickers)
+        syntheses = synthesize.synthesize(
+            ticker_news_enriched,
+            {r["ticker"]: r for r in rows},
+            client,
+            must_synthesize=must_synth,
+        )
 
         macro_for_opus = [
             m for m in macro_news_dedup

@@ -120,17 +120,36 @@ def synthesize(
     enriched_news_by_ticker: dict[str, list[dict]],
     technicals_by_ticker: dict[str, dict],
     client: LLMClient,
+    must_synthesize: set[str] | None = None,
 ) -> dict[str, dict]:
-    """For each ticker with route_to_synthesis news, produce one synthesis dict."""
-    targets: list[tuple[str, dict, list[dict]]] = []
+    """Produce one 'why' per ticker.
+
+    Synthesizes for:
+      - any ticker with high-impact news flagged route_to_synthesis (default), AND
+      - every ticker in must_synthesize (typically watchlist + new top-20 entrants),
+        even if no news exists — Sonnet will return verdict='move_unexplained_by_news'.
+    """
+    must_synthesize = must_synthesize or set()
+    target_tickers: set[str] = set()
+
     for ticker, items in enriched_news_by_ticker.items():
-        routed = [n for n in items if n.get("route_to_synthesis")]
-        if not routed:
-            continue
+        if any(n.get("route_to_synthesis") for n in items):
+            target_tickers.add(ticker)
+
+    for ticker in must_synthesize:
+        if ticker in technicals_by_ticker:
+            target_tickers.add(ticker)
+
+    targets: list[tuple[str, dict, list[dict]]] = []
+    for ticker in target_tickers:
         tech = technicals_by_ticker.get(ticker)
         if not tech:
             continue
-        targets.append((ticker, tech, routed))
+        items = enriched_news_by_ticker.get(ticker, [])
+        # Prefer routed/high-impact news; fall back to any news; then empty.
+        routed = [n for n in items if n.get("route_to_synthesis")]
+        news_for_call = routed or items[:5]
+        targets.append((ticker, tech, news_for_call))
 
     if not targets:
         log.info("Sonnet: no tickers reached synthesis tier")

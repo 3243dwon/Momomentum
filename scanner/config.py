@@ -20,7 +20,7 @@ for d in (DATA_DIR, CACHE_DIR, AUDIT_DIR):
 MARKET_TZ = ZoneInfo("America/New_York")
 
 MIN_PRICE = 3.0
-MIN_AVG_VOLUME_20D = 500_000
+MIN_AVG_VOLUME_20D = 100_000  # includes mid + small caps; below this %chg gets noisy
 
 TOP_N_MOVERS = 20
 

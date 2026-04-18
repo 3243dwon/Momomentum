@@ -46,8 +46,7 @@
     const newsSet = new Set(freshNewsTickers().map((x) => x.ticker));
     return watchlist
       .filter((t) => !top20Set.has(t) && !newsSet.has(t))
-      .map((t) => ({ ticker: t, row: rowsByTicker.get(t) }))
-      .filter((x) => x.row);
+      .map((t) => ({ ticker: t, row: rowsByTicker.get(t) }));
   });
 
   const newEntrants = new Set(deltas?.new_top20_entrants ?? []);
@@ -127,6 +126,14 @@
         {#each watchlistRows() as { row, ticker } (ticker)}
           {#if row}
             <TickerCard row={row} pinned news={news?.ticker_news[ticker] ?? []} />
+          {:else}
+            <a href={`/t/${ticker}`} class="card row-link p-3 opacity-60">
+              <div class="flex items-baseline justify-between">
+                <span class="text-base font-semibold tracking-tight">{ticker} <span class="text-zinc-500">★</span></span>
+                <span class="text-[10px] uppercase tracking-wider text-zinc-500">awaiting next scan</span>
+              </div>
+              <p class="mt-1 text-xs text-zinc-500">Pinned. Will populate when included in a scan.</p>
+            </a>
           {/if}
         {/each}
       </div>
