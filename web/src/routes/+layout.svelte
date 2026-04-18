@@ -30,6 +30,11 @@
         class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/macro') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Macro</a
       >
+      <a
+        href="/weekly"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/weekly') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Weekly</a
+      >
       <span class="mx-1 h-4 w-px bg-ink-700"></span>
       <ThemeToggle />
     </nav>

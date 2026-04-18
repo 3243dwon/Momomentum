@@ -30,6 +30,7 @@ HEADER_TEMPLATES = {
     "delta_accel": "purple",
     "macro": "red",
     "synthesis": "green",
+    "weekly": "turquoise",
 }
 
 

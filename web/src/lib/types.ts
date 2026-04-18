@@ -111,3 +111,44 @@ export interface NewsData {
 export interface Watchlist {
   tickers: string[];
 }
+
+export type WeeklyClassification = 'real_momentum' | 'fakeout' | 'unclear';
+export type WeeklyPrediction = 'continuation' | 'reversal' | 'rangebound';
+
+export interface WeeklyAnalysis {
+  classification: WeeklyClassification;
+  classification_reasoning: string;
+  prediction: WeeklyPrediction;
+  prediction_confidence: Confidence;
+  prediction_rationale: string;
+  support_level?: number;
+  resistance_level?: number;
+  catalysts_ahead?: string[];
+  horizon_days?: number;
+}
+
+export interface WeeklyMetrics {
+  week_return_pct: number;
+  week_high: number;
+  week_low: number;
+  week_close: number;
+  retention_of_peak: number;
+  vol_persistence: number;
+  event_count: number;
+  news_density: number;
+}
+
+export interface WeeklyTickerEntry {
+  ticker: string;
+  event_count: number;
+  heuristic_classification: WeeklyClassification;
+  metrics: WeeklyMetrics;
+  analysis: WeeklyAnalysis | null;
+}
+
+export interface WeeklyData {
+  generated_at: string;
+  week_ending: string;
+  ticker_count: number;
+  analyses: WeeklyTickerEntry[];
+}

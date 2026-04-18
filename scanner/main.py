@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, news, render, router, state, technicals, universe, windows
+from scanner import config, news, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -210,6 +210,16 @@ def run(
         news_count_by_ticker=news_count_by_ticker,
         snapshots_by_ticker=snapshots,
         intraday_by_ticker=intraday,
+    )
+
+    # Log notable momentum events for the Saturday weekly summary.
+    weekly_events.record(
+        rows=rows,
+        ticker_news=ticker_news_enriched,
+        syntheses=syntheses,
+        window=window.value,
+        now=now,
+        watchlist=set(router.load_watchlist()),
     )
     render.write_news(ticker_news_enriched, macro_analyses, now)
 
