@@ -189,6 +189,42 @@
   {/each}
 </section>
 
+<details class="mb-2 text-xs">
+  <summary class="cursor-pointer px-2 py-1 text-[10px] uppercase tracking-wider text-zinc-500 hover:text-zinc-300">
+    What do these presets mean?
+  </summary>
+  <div class="card mt-1 space-y-2 p-3 leading-relaxed">
+    <p>
+      <span class="font-medium text-zinc-200">All</span>
+      <span class="text-zinc-500">— no filters. Widest funnel, most noise. Good for browsing.</span>
+    </p>
+    <p>
+      <span class="font-medium text-zinc-200">Gap &amp; Go</span>
+      <span class="text-zinc-500">— ≥3% move + ≥2× volume + above VWAP. Classic open-session play: stock gapped on news, buyers are still holding it. Use pre-market / first hour of trading.</span>
+    </p>
+    <p>
+      <span class="font-medium text-zinc-200">Catalyst Movers</span>
+      <span class="text-zinc-500">— ≥3% move + has news. Best default. Filters to movers with a published "why" you can skim in seconds. You won't trade blind momentum.</span>
+    </p>
+    <p>
+      <span class="font-medium text-zinc-200">High Conviction</span>
+      <span class="text-zinc-500">— Catalyst Movers + above VWAP. Tightest set: news-driven AND institutional buyers still in control. When this has names, they're the setups worth acting on.</span>
+    </p>
+    <p>
+      <span class="font-medium text-zinc-200">Mid/Small Plays</span>
+      <span class="text-zinc-500">— mid+small cap with ≥5% move. Excludes mega-caps. Small caps make bigger % moves — bigger potential upside and downside.</span>
+    </p>
+    <p>
+      <span class="font-medium text-zinc-200">Momentum Burst</span>
+      <span class="text-zinc-500">— ≥5% move on ≥2× volume. News or not. Something's happening, figure out why later. Riskier without catalyst context.</span>
+    </p>
+    <p class="border-t border-ink-700 pt-2 text-zinc-500">
+      <span class="font-medium text-zinc-400">Heads up:</span>
+      VWAP is an intraday metric (5-min bars during market hours 9:30–16:00 ET). Off-hours, presets using &ldquo;above VWAP&rdquo; (Gap &amp; Go, High Conviction) will usually be empty. Default to Catalyst Movers after hours.
+    </p>
+  </div>
+</details>
+
 <section class="card mb-4 flex flex-wrap items-center gap-2 p-2 text-[10px] uppercase tracking-wider">
   {#each groups as g}
     <div class="flex items-center gap-1">
