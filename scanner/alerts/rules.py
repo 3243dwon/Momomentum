@@ -227,19 +227,32 @@ def build_alerts(
             body_md=body,
         )
 
-    # Budget cap: keep only the top-priority alerts per scan. Prevents flood
-    # on market-wide move days. Catalyst > macro > watchlist > big move > delta.
-    pre_cap = len(alerts)
-    alerts.sort(key=_score_alert, reverse=True)
-    if len(alerts) > config.MAX_ALERTS_PER_SCAN:
-        alerts = alerts[: config.MAX_ALERTS_PER_SCAN]
-
-    # Strip internal scoring field before dispatch.
+    # Two-tier cap:
+    #   - High-conviction (catalyst, macro:*, watchlist) always fires — if Sonnet
+    #     or Opus surfaced it as a real signal, you should never miss it.
+    #   - Standard (big_move, delta_*) is capped by signal magnitude so heavy
+    #     broad-market move days don't flood the Feishu channel.
+    high_conviction_types = {"catalyst", "watchlist"}
+    high, standard = [], []
     for a in alerts:
+        t = a.get("type", "")
+        if t in high_conviction_types or t.startswith("macro:"):
+            high.append(a)
+        else:
+            standard.append(a)
+
+    standard.sort(key=_score_alert, reverse=True)
+    dropped = max(0, len(standard) - config.MAX_STANDARD_ALERTS_PER_SCAN)
+    standard = standard[: config.MAX_STANDARD_ALERTS_PER_SCAN]
+
+    # High-conviction first so they render at top of any notification stack.
+    final = high + standard
+
+    for a in final:
         a.pop("_signal_abs", None)
 
     log.info(
-        "Built %d alerts after throttling; keeping top %d (cap %d)",
-        pre_cap, len(alerts), config.MAX_ALERTS_PER_SCAN,
+        "Alerts: %d total (%d high-conviction always-fire, %d standard kept, %d standard dropped by cap %d)",
+        len(final), len(high), len(standard), dropped, config.MAX_STANDARD_ALERTS_PER_SCAN,
     )
-    return alerts, throttle
+    return final, throttle

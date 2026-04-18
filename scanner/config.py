@@ -32,7 +32,9 @@ MIN_AH_VOLUME = 100_000
 RANK_JUMP_THRESHOLD = 15  # raised from 10 — only significant rank shifts
 
 ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
-MAX_ALERTS_PER_SCAN = 8  # hard cap on Feishu pings per scan run
+# High-conviction alerts (catalyst, macro, watchlist) always fire — no cap.
+# Standard alerts (big_move, delta_*) get capped to avoid noise flood.
+MAX_STANDARD_ALERTS_PER_SCAN = 5
 
 # Hard caps per scan to bound monthly LLM spend. When over, we score and
 # send the most-informative candidates first.
