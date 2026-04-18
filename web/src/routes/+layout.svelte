@@ -5,7 +5,7 @@
   let { children } = $props();
 </script>
 
-<div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 py-4 sm:px-6 lg:px-8">
+<div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 sm:px-6 lg:px-8 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))]">
   <header class="mb-4 flex items-center justify-between">
     <a href="/" class="group flex items-center gap-2">
       <span class="grid h-8 w-8 place-items-center rounded-md bg-signal-info/10 text-signal-info">
