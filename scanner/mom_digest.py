@@ -238,12 +238,19 @@ def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
     qualifying = []
     for m in macro_analyses:
         relevant, reason = _is_china_relevant(m)
+        summary_preview = (m.get("event_summary", "") or "")[:70]
+        log.info(
+            "Mom digest filter: %s '%s...'",
+            "✓ MATCH" if relevant else "✗ skip ",
+            summary_preview,
+        )
         if relevant:
             qualifying.append(m)
 
     if not qualifying:
-        log.info("Mom digest: no China-relevant macro events this scan")
+        log.info("Mom digest: no China-relevant macro events this scan (%d events evaluated)", len(macro_analyses))
         return
+    log.info("Mom digest: %d/%d events matched China filter; calling Opus", len(qualifying), len(macro_analyses))
 
     # Throttle: don't re-send within THROTTLE_SECONDS, unless new dedup_group appears
     state = _load_throttle()
