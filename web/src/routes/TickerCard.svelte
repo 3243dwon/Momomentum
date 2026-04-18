@@ -74,6 +74,11 @@
   {/if}
 
   <div class="mt-2 flex flex-wrap gap-1">
+    {#if row.caution_level === 'stretched'}
+      <span class="pill-down" title={row.caution_reasons?.join(' · ')}>⛔ stretched · late entry risk</span>
+    {:else if row.caution_level === 'caution'}
+      <span class="pill-warn" title={row.caution_reasons?.join(' · ')}>⚠️ extended</span>
+    {/if}
     {#if row.sector}<span class="pill-flat">{row.sector.toLowerCase()}</span>{/if}
     {#if row.tier === 'mega'}<span class="pill-flat">mega</span>{:else if row.tier === 'large'}<span class="pill-flat">large</span>{:else if row.tier === 'midsmall'}<span class="pill-flat">mid/small</span>{/if}
     {#if isNewEntrant}<span class="pill-info">new top-20</span>{/if}

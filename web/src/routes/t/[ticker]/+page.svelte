@@ -65,6 +65,25 @@
         {/each}
       </div>
     {/if}
+
+    {#if row.caution_level}
+      <div class="mt-4 rounded border {row.caution_level === 'stretched' ? 'border-signal-down/30 bg-signal-down/5' : 'border-signal-warn/30 bg-signal-warn/5'} p-3">
+        <div class="mb-1 flex items-center gap-2">
+          <span class="text-sm font-semibold {row.caution_level === 'stretched' ? 'text-signal-down' : 'text-signal-warn'}">
+            {row.caution_level === 'stretched' ? '⛔ Late-entry risk high' : '⚠️ Move extended'}
+          </span>
+        </div>
+        <p class="text-xs text-zinc-400">
+          Momentum scanners lag by 15–30 minutes. By the time you see a move, it may already be topping.
+          The following signals suggest this one might be played out:
+        </p>
+        <ul class="mt-2 space-y-0.5 text-xs text-zinc-300">
+          {#each row.caution_reasons ?? [] as reason}
+            <li>· {reason}</li>
+          {/each}
+        </ul>
+      </div>
+    {/if}
   </section>
 
   {#if row.snapshot || row.intraday}

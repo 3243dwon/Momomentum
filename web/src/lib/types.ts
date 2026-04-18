@@ -31,6 +31,8 @@ export interface ScanRow {
   membership?: string[];
   sector?: string;
   spark?: number[];
+  caution_level?: 'caution' | 'stretched';
+  caution_reasons?: string[];
   snapshot?: {
     live_price: number | null;
     prev_close: number | null;

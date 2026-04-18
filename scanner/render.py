@@ -5,7 +5,7 @@ import json
 import logging
 from datetime import datetime
 
-from scanner import config, universe
+from scanner import config, staleness, universe
 from scanner.windows import Window
 
 log = logging.getLogger(__name__)
@@ -55,6 +55,11 @@ def write_scan(
             out["intraday"] = intraday_by_ticker[t]
         if t in syntheses_by_ticker:
             out["synthesis"] = syntheses_by_ticker[t]
+        # Late-entry / chase-risk score (computed from the enriched row)
+        level, reasons = staleness.compute(out)
+        if level != "none":
+            out["caution_level"] = level
+            out["caution_reasons"] = reasons
         enriched_rows.append(out)
 
     payload = {
