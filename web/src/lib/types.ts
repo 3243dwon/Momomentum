@@ -27,6 +27,8 @@ export interface ScanRow {
   macd_cross: 'bullish' | 'bearish' | null;
   flags: string[];
   news_count?: number;
+  tier?: 'mega' | 'large' | 'midsmall';
+  membership?: string[];
   synthesis?: Synthesis;
 }
 

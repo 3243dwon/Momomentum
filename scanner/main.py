@@ -52,6 +52,9 @@ def run(
     # off-hours. yfinance returns the last available close on weekends, and
     # Tier 0 routing filters out non-movers before any LLM cost is incurred.
     tickers = universe.load(force_rebuild=rebuild_universe)
+    # Prioritize watchlist + S&P 500 + NDX before any partial-scan limit kicks in,
+    # so a small --limit run still surfaces the most informative names.
+    tickers = universe.prioritize(tickers, set(router.load_watchlist()))
     if limit:
         tickers = tickers[:limit]
     uni_size = len(tickers)

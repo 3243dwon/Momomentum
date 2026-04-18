@@ -5,13 +5,22 @@ import json
 import logging
 from datetime import datetime
 
-from scanner import config
+from scanner import config, universe
 from scanner.windows import Window
 
 log = logging.getLogger(__name__)
 
 SCAN_FILE = config.DATA_DIR / "scan.json"
 NEWS_FILE = config.DATA_DIR / "news.json"
+
+
+def _tier_for(memberships: list[str]) -> str:
+    """Heuristic size tier based on index membership (proxy for market cap)."""
+    if "ndx" in memberships:
+        return "mega"  # NDX-100 is dominated by mega-cap tech
+    if "sp500" in memberships:
+        return "large"
+    return "midsmall"
 
 
 def write_scan(
@@ -24,12 +33,15 @@ def write_scan(
 ) -> None:
     syntheses_by_ticker = syntheses_by_ticker or {}
     news_count_by_ticker = news_count_by_ticker or {}
+    tags_by_ticker = universe.load_tags()
 
     enriched_rows = []
     for r in rows:
         out = dict(r)
         t = r["ticker"]
         out["news_count"] = news_count_by_ticker.get(t, 0)
+        out["tier"] = _tier_for(tags_by_ticker.get(t, []))
+        out["membership"] = tags_by_ticker.get(t, [])
         if t in syntheses_by_ticker:
             out["synthesis"] = syntheses_by_ticker[t]
         enriched_rows.append(out)

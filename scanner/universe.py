@@ -136,6 +136,48 @@ def load(force_rebuild: bool = False) -> list[str]:
     return json.loads(UNIVERSE_FILE.read_text())["tickers"]
 
 
+def load_tags() -> dict[str, list[str]]:
+    """Return {ticker: ['sp500', 'ndx', 'nyse', 'nasdaq']} (overlapping memberships)."""
+    if not UNIVERSE_FILE.exists():
+        return {}
+    payload = json.loads(UNIVERSE_FILE.read_text())
+    sources = payload.get("sources", {})
+    tags: dict[str, list[str]] = {}
+    for src_name, ticker_list in sources.items():
+        for t in ticker_list:
+            tags.setdefault(t, []).append(src_name)
+    return tags
+
+
+def prioritize(tickers: list[str], watchlist: set[str]) -> list[str]:
+    """Reorder tickers so a partial scan still hits the most informative names.
+
+    Priority: watchlist → S&P 500 → NDX-100 → everything else (alphabetical).
+    No ticker appears twice.
+    """
+    if not UNIVERSE_FILE.exists():
+        return tickers
+    sources = json.loads(UNIVERSE_FILE.read_text()).get("sources", {})
+    sp500 = set(sources.get("sp500", []))
+    ndx = set(sources.get("ndx", []))
+
+    universe = set(tickers)
+    seen: set[str] = set()
+    ordered: list[str] = []
+
+    def push(seq):
+        for t in seq:
+            if t in universe and t not in seen:
+                ordered.append(t)
+                seen.add(t)
+
+    push(sorted(t for t in watchlist if t in universe))
+    push(sorted(sp500))
+    push(sorted(ndx))
+    push(t for t in tickers if t not in seen)
+    return ordered
+
+
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(message)s")
     payload = build()

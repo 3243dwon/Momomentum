@@ -57,6 +57,7 @@
   </div>
 
   <div class="mt-2 flex flex-wrap gap-1">
+    {#if row.tier === 'mega'}<span class="pill-flat">mega</span>{:else if row.tier === 'large'}<span class="pill-flat">large</span>{:else if row.tier === 'midsmall'}<span class="pill-flat">mid/small</span>{/if}
     {#if isNewEntrant}<span class="pill-info">new top-20</span>{/if}
     {#if jump}<span class="pill-info">↑{jump.delta} ranks</span>{/if}
     {#if isAccel}<span class="pill-warn">accel</span>{/if}
