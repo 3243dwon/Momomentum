@@ -45,14 +45,25 @@ def _valid_ticker(t: str) -> bool:
     return bool(re.fullmatch(r"[A-Z0-9\-]+", t))
 
 
-def fetch_sp500() -> set[str]:
+def fetch_sp500() -> tuple[set[str], dict[str, str]]:
+    """Returns (tickers, {ticker: GICS sector})."""
     log.info("Fetching S&P 500 from Wikipedia")
     tables = pd.read_html(SP500_URL, storage_options={"User-Agent": config.USER_AGENT})
     df = tables[0]
-    col = next((c for c in df.columns if str(c).lower() in ("symbol", "ticker")), None)
-    if col is None:
+    sym_col = next((c for c in df.columns if str(c).lower() in ("symbol", "ticker")), None)
+    if sym_col is None:
         raise RuntimeError(f"Could not find ticker column in S&P 500 table: {df.columns}")
-    return {_normalize(t) for t in df[col].astype(str) if _valid_ticker(_normalize(t))}
+    sec_col = next((c for c in df.columns if "sector" in str(c).lower() and "sub" not in str(c).lower()), None)
+    tickers: set[str] = set()
+    sectors: dict[str, str] = {}
+    for _, row in df.iterrows():
+        t = _normalize(str(row[sym_col]))
+        if not _valid_ticker(t):
+            continue
+        tickers.add(t)
+        if sec_col is not None:
+            sectors[t] = str(row[sec_col]).strip()
+    return tickers, sectors
 
 
 def fetch_ndx() -> set[str]:
@@ -96,7 +107,7 @@ def fetch_nasdaq() -> set[str]:
 
 
 def build() -> dict:
-    sp500 = fetch_sp500()
+    sp500, sp500_sectors = fetch_sp500()
     ndx = fetch_ndx()
     nyse = fetch_nyse()
     nasdaq = fetch_nasdaq()
@@ -109,14 +120,24 @@ def build() -> dict:
             "nyse": sorted(nyse),
             "nasdaq": sorted(nasdaq),
         },
+        "sectors": sp500_sectors,
         "tickers": sorted(combined),
     }
     UNIVERSE_FILE.write_text(json.dumps(payload, indent=2))
     log.info(
-        "Universe built: %d S&P500 + %d NDX + %d NYSE + %d NASDAQ = %d unique",
-        len(sp500), len(ndx), len(nyse), len(nasdaq), len(combined),
+        "Universe built: %d S&P500 + %d NDX + %d NYSE + %d NASDAQ = %d unique (+ %d sectors)",
+        len(sp500), len(ndx), len(nyse), len(nasdaq), len(combined), len(sp500_sectors),
     )
     return payload
+
+
+def load_sectors() -> dict[str, str]:
+    if not UNIVERSE_FILE.exists():
+        return {}
+    try:
+        return json.loads(UNIVERSE_FILE.read_text()).get("sectors", {}) or {}
+    except Exception:
+        return {}
 
 
 def is_stale(path: Path = UNIVERSE_FILE) -> bool:

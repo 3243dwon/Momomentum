@@ -29,6 +29,8 @@ export interface ScanRow {
   news_count?: number;
   tier?: 'mega' | 'large' | 'midsmall';
   membership?: string[];
+  sector?: string;
+  spark?: number[];
   snapshot?: {
     live_price: number | null;
     prev_close: number | null;
@@ -151,4 +153,26 @@ export interface WeeklyData {
   week_ending: string;
   ticker_count: number;
   analyses: WeeklyTickerEntry[];
+}
+
+export interface HorizonStats {
+  evaluated: number;
+  hit_rate: number | null;
+  avg_return_pct: number | null;
+}
+
+export interface AlertTypeStats {
+  count: number;
+  horizons: {
+    '1d'?: HorizonStats;
+    '3d'?: HorizonStats;
+    '5d'?: HorizonStats;
+  };
+}
+
+export interface PerformanceData {
+  generated_at: string;
+  window_days: number;
+  total_alerts: number;
+  per_type: Record<string, AlertTypeStats>;
 }

@@ -38,6 +38,7 @@ def write_scan(
     snapshots_by_ticker = snapshots_by_ticker or {}
     intraday_by_ticker = intraday_by_ticker or {}
     tags_by_ticker = universe.load_tags()
+    sectors_by_ticker = universe.load_sectors()
 
     enriched_rows = []
     for r in rows:
@@ -46,6 +47,8 @@ def write_scan(
         out["news_count"] = news_count_by_ticker.get(t, 0)
         out["tier"] = _tier_for(tags_by_ticker.get(t, []))
         out["membership"] = tags_by_ticker.get(t, [])
+        if t in sectors_by_ticker:
+            out["sector"] = sectors_by_ticker[t]
         if t in snapshots_by_ticker:
             out["snapshot"] = snapshots_by_ticker[t]
         if t in intraday_by_ticker:

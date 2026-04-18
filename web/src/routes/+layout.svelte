@@ -2,6 +2,7 @@
   import '../app.css';
   import { page } from '$app/stores';
   import ThemeToggle from './ThemeToggle.svelte';
+  import SearchBox from './SearchBox.svelte';
   let { children } = $props();
 </script>
 
@@ -35,7 +36,13 @@
         class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/weekly') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Weekly</a
       >
+      <a
+        href="/performance"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/performance') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Perf</a
+      >
       <span class="mx-1 h-4 w-px bg-ink-700"></span>
+      <SearchBox />
       <ThemeToggle />
     </nav>
   </header>

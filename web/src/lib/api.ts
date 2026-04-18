@@ -1,6 +1,6 @@
 // Data loaders. Static JSON shipped via Vite static folder; cache-bust by
 // pinning the URL with the file's generated_at when refetching client-side.
-import type { ScanData, NewsData, DeltaData, Watchlist, WeeklyData } from './types';
+import type { ScanData, NewsData, DeltaData, Watchlist, WeeklyData, PerformanceData } from './types';
 
 type Fetch = typeof fetch;
 
@@ -32,6 +32,10 @@ export async function loadWatchlist(fetch: Fetch) {
 
 export async function loadWeekly(fetch: Fetch) {
   return getJson<WeeklyData>(fetch, 'weekly.json');
+}
+
+export async function loadPerformance(fetch: Fetch) {
+  return getJson<PerformanceData>(fetch, 'performance.json');
 }
 
 export async function loadAll(fetch: Fetch) {

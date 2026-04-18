@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, news, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, news, performance, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -228,6 +228,12 @@ def run(
         sent = feishu.send_batch(alerts)
         throttle.commit()
         log.info("Alerts: built %d, sent %d", len(alerts), sent)
+        performance.log_alerts(alerts, rows, now)
+
+    # Evaluate past alerts whose 1d/3d/5d horizons have elapsed.
+    from datetime import timezone as _tz
+    performance.evaluate_pending(getattr(technicals, "_CLIENT", None), datetime.now(_tz.utc))
+    performance.compile_stats(datetime.now(config.MARKET_TZ))
 
     return 0
 

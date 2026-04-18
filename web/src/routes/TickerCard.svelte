@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { ScanRow, NewsItem, RankJump } from '$lib/types';
   import { fmtPct, fmtPrice, fmtRelVol, pctClass, fmtRelative } from '$lib/format';
+  import Sparkline from './Sparkline.svelte';
 
   let {
     row,
@@ -66,7 +67,14 @@
     {/if}
   </div>
 
+  {#if row.spark && row.spark.length >= 2}
+    <div class="mt-2">
+      <Sparkline values={row.spark} up={(row.pct_1d ?? 0) >= 0} />
+    </div>
+  {/if}
+
   <div class="mt-2 flex flex-wrap gap-1">
+    {#if row.sector}<span class="pill-flat">{row.sector.toLowerCase()}</span>{/if}
     {#if row.tier === 'mega'}<span class="pill-flat">mega</span>{:else if row.tier === 'large'}<span class="pill-flat">large</span>{:else if row.tier === 'midsmall'}<span class="pill-flat">mid/small</span>{/if}
     {#if isNewEntrant}<span class="pill-info">new top-20</span>{/if}
     {#if jump}<span class="pill-info">↑{jump.delta} ranks</span>{/if}

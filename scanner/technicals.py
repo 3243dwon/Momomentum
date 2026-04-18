@@ -120,6 +120,8 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
         elif rsi <= 30:
             flags.append("oversold")
 
+    spark = [round(float(x), 2) for x in close.tail(20).tolist()]
+
     return {
         "ticker": ticker,
         "price": round(last_close, 2),
@@ -132,6 +134,7 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
         "macd_hist": round(macd_hist, 3) if not math.isnan(macd_hist) else None,
         "macd_cross": macd_cross,
         "flags": flags,
+        "spark": spark,
     }
 
 
