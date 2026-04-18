@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, news, performance, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, mom_digest, news, performance, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -229,6 +229,10 @@ def run(
         throttle.commit()
         log.info("Alerts: built %d, sent %d", len(alerts), sent)
         performance.log_alerts(alerts, rows, now)
+
+    # Mom digest: purely additive Chinese-language macro digest to a second
+    # Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
+    mom_digest.run(macro_analyses, client)
 
     # Evaluate past alerts whose 1d/3d/5d horizons have elapsed.
     from datetime import timezone as _tz
