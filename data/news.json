@@ -1,60 +1,54 @@
 {
-  "generated_at": "2026-04-18T06:34:30.189031-04:00",
+  "generated_at": "2026-04-18T08:44:49.961424-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Conflicting signals: Trump hints at positive Iran developments while Tehran claims the Strait of Hormuz is closed, creating oil supply disruption risk.",
+      "event_summary": "Iran has reportedly closed the Strait of Hormuz again, firing on a vessel attempting transit \u2014 threatening ~20% of global seaborne oil and most Gulf LNG flows.",
       "primary_drivers": [
-        "Strait of Hormuz handles ~20% of global seaborne oil \u2014 closure spikes crude prices",
-        "Tanker rerouting and war-risk premiums benefit shippers",
-        "Higher energy input costs hurt airlines and transport-heavy consumer names"
+        "Crude oil price spike from supply disruption risk (~17-20M bpd transits Hormuz)",
+        "Tanker rates surge on rerouting and war-risk premiums",
+        "Defense/geopolitical risk premium; flight to safety"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Large integrated with substantial US/Permian upstream production \u2014 direct leverage to Brent/WTI spike from Hormuz closure, limited Iran/Gulf physical asset risk relative to peers.",
+          "rationale": "Integrated major with large non-Gulf production (Permian, Guyana, offshore); direct beneficiary of Brent spike with minimal Hormuz transit exposure on its own barrels.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CVX",
-          "rationale": "US-weighted integrated oil major; benefits from crude price spike with Permian and Gulf of Mexico production. Tengiz Kazakhstan exposure is a minor offset but CPC pipeline is non-Hormuz.",
+          "rationale": "Similar to XOM \u2014 Permian/US-heavy upstream realizes higher crude prices; Gulf exposure is smaller share of production mix.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with no Middle East exposure \u2014 highest torque domestic name to a WTI spike driven by Hormuz closure.",
+          "rationale": "Pure-play Permian producer with near-100% US onshore production \u2014 direct leverage to WTI spike with zero Hormuz transit risk.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "FTI",
-          "rationale": "Oilfield services/subsea equipment; higher crude prices drive capex cycle and near-term order flow expectations.",
-          "confidence": "medium",
+          "ticker": "FRO",
+          "rationale": "Frontline \u2014 largest listed crude tanker operator (VLCC/Suezmax); Hormuz closure forces rerouting around Africa, war-risk insurance premiums spike, day rates jump sharply (historical analog: 2019 tanker attacks saw VLCC rates triple).",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Product tanker operator \u2014 Hormuz disruption forces rerouting around Africa, ton-mile demand and spot rates spike materially, as seen in prior Red Sea/Hormuz scares.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
           "ticker": "INSW",
-          "rationale": "Crude tanker operator; war-risk insurance surcharges and rerouting around closed Hormuz lanes drive VLCC/Suezmax rates sharply higher.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 Qatari LNG exports transit Hormuz; closure removes ~20% of global LNG supply, making US Gulf LNG the marginal replacement with pricing power.",
+          "rationale": "International Seaways \u2014 US-listed crude/product tanker operator directly leveraged to rerouting ton-mile demand and spot rate spikes.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Defense prime with missile defense (THAAD, PAC-3) directly relevant to Gulf escalation; Patriot restocking and allied FMS demand accelerate on Iran confrontation.",
+          "rationale": "Prime contractor for PAC-3/THAAD missile defense and F-35; Gulf escalation drives FMS demand from Saudi/UAE/Israel and supplemental US defense appropriations.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot, SM-3, Tomahawk \u2014 direct munitions resupply beneficiary if kinetic US response in Gulf; also GTF engine exposure to F-35 supply chain.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -62,39 +56,51 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25% of operating cost; crude spike from Hormuz closure compresses margins immediately, and Delta has less fuel hedging than peers historically.",
+          "rationale": "Delta \u2014 jet fuel is ~25-30% of opex with limited hedging post-refinery; Brent spike compresses margin directly, plus any Gulf/Asia routing disruption.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "International route exposure (Middle East/India overflight rerouting) plus jet fuel cost shock \u2014 double hit from Gulf escalation.",
+          "rationale": "United has largest international/Pacific exposure of US carriers \u2014 hit by both fuel cost surge and potential Gulf overflight disruptions on Asia routes.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Domestic carrier with thin margins and historically unhedged fuel \u2014 most sensitive US airline to a WTI spike.",
+          "ticker": "AAL",
+          "rationale": "American Airlines \u2014 unhedged jet fuel exposure, highly leveraged balance sheet amplifies margin hit from oil spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Bunker fuel costs spike with crude; Middle East itineraries (Dubai/Gulf) require rerouting. Consumer discretionary cyclicality adds risk in a geopolitical shock.",
+          "rationale": "Carnival \u2014 bunker fuel is major opex line; also consumer discretionary travel demand softens on geopolitical fear and higher gas prices at pump.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Fuel surcharge lag plus air freight rerouting around Gulf airspace \u2014 margin pressure from an oil shock of this magnitude.",
+          "ticker": "DOW",
+          "rationale": "Dow Chemical \u2014 naphtha/ethane feedstock costs rise with crude; commodity chemicals have limited pricing power to pass through quickly.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LYB",
+          "rationale": "LyondellBasell \u2014 petrochemical producer with direct feedstock cost exposure to crude-linked naphtha; margin squeeze from input spike.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "WMT",
-          "rationale": "Transportation/diesel cost passthrough and consumer spending pressure from higher gasoline prices; thin retail margins amplify the hit.",
+          "rationale": "Walmart \u2014 diesel/transport costs feed into supply chain; low-income consumer (core customer) sees discretionary wallet squeezed by gasoline pump prices.",
           "confidence": "low",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx \u2014 jet fuel + diesel dual exposure; surcharge lag means near-term margin compression before pass-through.",
+          "confidence": "medium",
+          "horizon": "days"
         }
       ],
       "dedup_group": "iran_strait_hormuz_closure_april_2026",
@@ -102,7 +108,164 @@
         "50ee17f32cfa7636"
       ],
       "headlines": [
-        "Trump says U.S. has 'good news' on Iran as Tehran says the Strait of Hormuz is closed again"
+        "Iran says Strait of Hormuz is closed again as vessel attempting to cross comes under gunfire"
+      ]
+    },
+    {
+      "event_summary": "Post-Iran war commentary framing the US as the world's most secure energy power, implying sustained demand for US oil & gas exports and reduced geopolitical risk premium shifting toward US producers.",
+      "primary_drivers": [
+        "Structural shift of global energy buyers toward US supply (Middle East supply risk premium now attached to the region, not the US)",
+        "Increased demand for US LNG export capacity from allies seeking secure supply",
+        "Likely supportive US policy backdrop for domestic production, pipelines, and export terminals"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere Energy is the largest US LNG exporter (Sabine Pass, Corpus Christi); a narrative of US as secure energy supplier directly drives long-term LNG offtake contracts from European and Asian utilities looking to diversify away from Middle East exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VG",
+          "rationale": "Venture Global LNG \u2014 pure-play US LNG export developer (Calcasieu Pass, Plaquemines) with new capacity coming online; direct beneficiary of incremental allied demand for US-sourced gas.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a pure-play Permian producer; a thesis that elevates US as the stable marginal barrel supplier supports volume growth and export-linked pricing for Permian crude.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "EOG Resources \u2014 low-cost US shale producer with strong FCF; benefits from a structurally higher US share of global supply and any policy tailwind for domestic drilling.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMB",
+          "rationale": "Williams Companies operates Transco, the largest US natgas pipeline system feeding Gulf Coast LNG export terminals; rising export throughput translates directly into contracted volume growth.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KMI",
+          "rationale": "Kinder Morgan \u2014 largest US natgas pipeline network; direct volume beneficiary of higher LNG feedgas demand tied to the 'secure US energy' thesis.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TPL",
+          "rationale": "Texas Pacific Land Corp owns Permian surface/royalty rights; benefits from sustained US production growth without capex exposure \u2014 leveraged to volume, not price.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Exxon has significant international/Middle East upstream exposure and benefits from high crude prices more than from US volume growth; a lower global risk premium compresses realized pricing even as US volumes rise \u2014 net neutral to slightly negative vs pure-play US shale.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton has outsized Middle East service revenue (~20%+); post-war reconstruction is uncertain and regional capex may pause, while a US-centric narrative favors peers more levered to North American land (e.g. LBRT).",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_conflict_us_energy_security",
+      "source_news_ids": [
+        "65456242270d0852"
+      ],
+      "headlines": [
+        "The real outcome of the Iran war: America is now the world\u2019s most secure energy power"
+      ]
+    },
+    {
+      "event_summary": "Analyst argues that AI compute rationing (GPU scarcity/cost) is constraining AI-native competitors and benefiting traditional SaaS incumbents whose workloads don't require massive GPU capacity.",
+      "primary_drivers": [
+        "GPU supply scarcity raising unit economics cost for AI-native challengers",
+        "Traditional SaaS margin defense as AI disruption threat is deferred",
+        "Capex discipline pressure on hyperscalers/AI labs"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "CRM",
+          "rationale": "Salesforce is the canonical 'traditional SaaS' incumbent facing AI-native CRM/agent disruption threats; compute rationing delays when startups like Sierra/Decagon can scale to threaten seat-based revenue. Narrative-driven multiple re-rating candidate.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ADBE",
+          "rationale": "Adobe has been the poster child of 'AI disruption fears' (vs Midjourney, Runway, OpenAI image/video). If generative AI competitors can't afford inference at scale, Adobe's Creative Cloud moat holds longer. Direct beneficiary of the exact thesis in the article.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NOW",
+          "rationale": "ServiceNow is a traditional enterprise SaaS workflow platform; same incumbency argument \u2014 AI agent startups targeting ITSM workflows face compute cost walls.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WDAY",
+          "rationale": "Workday HR/Finance SaaS faces similar AI-agent displacement narratives; compute rationing extends runway for incumbent defense. Sentiment/rotation trade.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "INTU",
+          "rationale": "Intuit (TurboTax, QuickBooks) has been flagged as AI-disruption risk by standalone AI tax/accounting agents; those challengers are most compute-constrained.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NVDA",
+          "rationale": "If the narrative shifts to 'AI companies are rationing compute because they can't afford it,' that questions sustainability of GPU demand at current pricing \u2014 direct pressure on Nvidia's forward revenue thesis. Headline-risk trade, not fundamental yet.",
+          "confidence": "low",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Palantir trades as an AI-native winner at premium multiple; any narrative that 'AI companies are compute-constrained vs traditional software' pressures the AI-premium stocks on relative rotation.",
+          "confidence": "low",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "AI",
+          "rationale": "C3.ai is a pure-play AI-native software name; 'traditional SaaS wins' framing is a direct negative rotation signal.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "ai_compute_rationing_software_impact",
+      "source_news_ids": [
+        "13625d6522e59973"
+      ],
+      "headlines": [
+        "AI companies are rationing compute. That\u2019s a boon for traditional software, one analyst says."
+      ]
+    },
+    {
+      "event_summary": "A Yahoo Finance opinion/analysis piece citing experts warning that US recession risks are rising, with guidance for investor positioning.",
+      "primary_drivers": [
+        "Commentary-level recession narrative with no new data \u2014 limited direct market impact",
+        "Potential mild defensive rotation if piece gets traction on social/financial media",
+        "No policy change, no earnings revision catalyst"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "recession_risk_warning_investors",
+      "source_news_ids": [
+        "850500af846a2aaf"
+      ],
+      "headlines": [
+        "Experts Warn That Recession Risks Are Increasing. Here's What That Means for Investors"
       ]
     }
   ]
