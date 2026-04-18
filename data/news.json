@@ -1,23 +1,109 @@
 {
-  "generated_at": "2026-04-18T04:40:59.701377-04:00",
-  "ticker_news": {
-    "RCL": [
-      {
-        "id": "150e5e76dabbaa82",
-        "source": "finviz",
-        "publisher": "(Investing.com)",
-        "ticker": "RCL",
-        "scope": "ticker",
-        "title": "What is the AI opportunity for cruise lines?",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/ai-opportunity-cruise-lines-034300365.html",
-        "published_at": "2026-04-18T03:43:00+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rcl_ai_opportunity_analysis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-04-18T06:34:30.189031-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "Conflicting signals: Trump hints at positive Iran developments while Tehran claims the Strait of Hormuz is closed, creating oil supply disruption risk.",
+      "primary_drivers": [
+        "Strait of Hormuz handles ~20% of global seaborne oil \u2014 closure spikes crude prices",
+        "Tanker rerouting and war-risk premiums benefit shippers",
+        "Higher energy input costs hurt airlines and transport-heavy consumer names"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Large integrated with substantial US/Permian upstream production \u2014 direct leverage to Brent/WTI spike from Hormuz closure, limited Iran/Gulf physical asset risk relative to peers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "US-weighted integrated oil major; benefits from crude price spike with Permian and Gulf of Mexico production. Tengiz Kazakhstan exposure is a minor offset but CPC pipeline is non-Hormuz.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian E&P with no Middle East exposure \u2014 highest torque domestic name to a WTI spike driven by Hormuz closure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "Oilfield services/subsea equipment; higher crude prices drive capex cycle and near-term order flow expectations.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker operator \u2014 Hormuz disruption forces rerouting around Africa, ton-mile demand and spot rates spike materially, as seen in prior Red Sea/Hormuz scares.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "Crude tanker operator; war-risk insurance surcharges and rerouting around closed Hormuz lanes drive VLCC/Suezmax rates sharply higher.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere \u2014 Qatari LNG exports transit Hormuz; closure removes ~20% of global LNG supply, making US Gulf LNG the marginal replacement with pricing power.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Defense prime with missile defense (THAAD, PAC-3) directly relevant to Gulf escalation; Patriot restocking and allied FMS demand accelerate on Iran confrontation.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25% of operating cost; crude spike from Hormuz closure compresses margins immediately, and Delta has less fuel hedging than peers historically.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "International route exposure (Middle East/India overflight rerouting) plus jet fuel cost shock \u2014 double hit from Gulf escalation.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Domestic carrier with thin margins and historically unhedged fuel \u2014 most sensitive US airline to a WTI spike.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel costs spike with crude; Middle East itineraries (Dubai/Gulf) require rerouting. Consumer discretionary cyclicality adds risk in a geopolitical shock.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Fuel surcharge lag plus air freight rerouting around Gulf airspace \u2014 margin pressure from an oil shock of this magnitude.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Transportation/diesel cost passthrough and consumer spending pressure from higher gasoline prices; thin retail margins amplify the hit.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_strait_hormuz_closure_april_2026",
+      "source_news_ids": [
+        "50ee17f32cfa7636"
+      ],
+      "headlines": [
+        "Trump says U.S. has 'good news' on Iran as Tehran says the Strait of Hormuz is closed again"
+      ]
+    }
+  ]
 }
