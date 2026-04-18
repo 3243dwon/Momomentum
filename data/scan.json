@@ -1,8 +1,75 @@
 {
-  "generated_at": "2026-04-18T00:59:47.416579-04:00",
+  "generated_at": "2026-04-18T01:06:46.401859-04:00",
   "window": "WEEKEND",
   "universe_size": 100,
-  "row_count": 0,
-  "synthesized_count": 0,
-  "rows": []
+  "row_count": 4,
+  "synthesized_count": 1,
+  "rows": [
+    {
+      "ticker": "AAL",
+      "price": 12.77,
+      "pct_1d": 4.16,
+      "pct_5d": 12.91,
+      "volume": 3045771,
+      "avg_volume_20d": 2314419,
+      "rel_volume": 1.32,
+      "rsi_14": 67.2,
+      "macd_hist": 0.285,
+      "macd_cross": null,
+      "flags": [
+        "big_move"
+      ],
+      "news_count": 0
+    },
+    {
+      "ticker": "ADMA",
+      "price": 11.03,
+      "pct_1d": 2.6,
+      "pct_5d": 13.71,
+      "volume": 258466,
+      "avg_volume_20d": 555295,
+      "rel_volume": 0.47,
+      "rsi_14": 45.6,
+      "macd_hist": 0.37,
+      "macd_cross": null,
+      "flags": [],
+      "news_count": 0
+    },
+    {
+      "ticker": "ACHR",
+      "price": 6.1,
+      "pct_1d": 0.25,
+      "pct_5d": 12.75,
+      "volume": 789487,
+      "avg_volume_20d": 753865,
+      "rel_volume": 1.05,
+      "rsi_14": 55.1,
+      "macd_hist": 0.15,
+      "macd_cross": null,
+      "flags": [],
+      "news_count": 0
+    },
+    {
+      "ticker": "AAPL",
+      "price": 270.2,
+      "pct_1d": 2.61,
+      "pct_5d": 3.75,
+      "volume": 1390506,
+      "avg_volume_20d": 1056939,
+      "rel_volume": 1.32,
+      "rsi_14": 64.8,
+      "macd_hist": 1.742,
+      "macd_cross": null,
+      "flags": [],
+      "news_count": 1,
+      "synthesis": {
+        "summary": "Apple won a ruling at a US trade tribunal blocking a renewed attempt to ban Apple Watch imports, removing a meaningful near-term revenue risk for its wearables segment. The news provides a clear positive catalyst, though a 2.6% single-day move on volume only modestly above average suggests broader market or sector tailwinds may also be contributing.",
+        "supporting_news_ids": [
+          "678b3e3e0ef1ed06"
+        ],
+        "verdict": "partial_explanation",
+        "confidence": "medium"
+      }
+    }
+  ]
 }
