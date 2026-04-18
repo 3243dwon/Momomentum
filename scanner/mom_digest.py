@@ -68,74 +68,109 @@ def _is_china_relevant(event: dict) -> tuple[bool, str]:
 
 MOM_DIGEST_TOOL = {
     "name": "mom_china_digest",
-    "description": "Summarize today's China-relevant macro event(s) for a Chinese-reading non-professional audience.",
+    "description": "For a Chinese-reading non-professional audience, evaluate today's macro events (which may or may not mention China directly) and produce a Chinese digest covering only those with China/HK market implications.",
     "input_schema": {
         "type": "object",
         "properties": {
+            "worth_sending": {
+                "type": "boolean",
+                "description": "True if at least one event has material (direct OR indirect) China/HK market implications worth alerting a retiree investor. False if ALL events are purely US-domestic with no plausible cross-border transmission.",
+            },
+            "events_considered_zh": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "headline_en": {"type": "string", "description": "Original event summary, English."},
+                        "headline_zh": {"type": "string", "description": "Chinese translation/paraphrase of the event."},
+                        "china_hk_relevance": {
+                            "type": "string",
+                            "enum": ["direct", "indirect", "minimal", "none"],
+                            "description": "direct = names China/HK/yuan/Chinese company; indirect = Fed/tariff/commodity with cross-asset pull; minimal = weak theoretical link; none = US-only domestic issue.",
+                        },
+                        "relevance_reason_zh": {"type": "string", "description": "One sentence: how this affects China/HK markets, in Chinese."},
+                    },
+                    "required": ["headline_en", "headline_zh", "china_hk_relevance", "relevance_reason_zh"],
+                },
+                "description": "One entry per input event. Include ALL events, even 'none' — lets the user see you considered everything.",
+            },
             "title_zh": {
                 "type": "string",
-                "description": "Headline in Simplified Chinese, under 25 chars. No jargon.",
+                "description": "Headline covering the most important relevant event. Simplified Chinese, under 30 chars.",
             },
             "summary_zh": {
                 "type": "string",
-                "description": "2-4 sentences in Simplified Chinese. Plain language a retiree could follow. Explain any financial term used.",
+                "description": "3-5 sentences in Simplified Chinese. Cover the events with direct or indirect relevance. Plain language. Can reference multiple events if several are relevant.",
             },
             "affected_industries_zh": {
                 "type": "array",
                 "items": {"type": "string"},
-                "description": "Industries affected, in Chinese (e.g. 半导体, 房地产, 新能源车, 银行, 消费). Max 4.",
+                "description": "Industries affected across all relevant events, Chinese (e.g. 半导体, 房地产, 新能源车, 银行, 消费, 能源, 航运). Max 5.",
             },
             "a_share_impact": {
                 "type": "string",
                 "enum": ["bullish", "bearish", "mixed", "neutral"],
-                "description": "Directional bias for Shanghai/Shenzhen A-shares (上证/沪深300).",
+                "description": "Net directional bias for A-shares across all relevant events.",
             },
             "hk_impact": {
                 "type": "string",
                 "enum": ["bullish", "bearish", "mixed", "neutral"],
-                "description": "Directional bias for HK market (恒生/HSTECH). A-shares and HK frequently diverge — judge them independently.",
+                "description": "Net directional bias for HK market. A-shares and HK frequently diverge — judge independently.",
             },
             "markets_reason_zh": {
                 "type": "string",
-                "description": "One short paragraph in Chinese explaining the reasoning for BOTH A-shares and HK. If they diverge, say why.",
+                "description": "Paragraph in Chinese explaining reasoning for BOTH A-shares and HK. Flag divergences.",
             },
             "watchlist_zh": {
                 "type": "array",
                 "items": {"type": "string"},
-                "description": "3-5 specific A-share / HK-listed / ETF names to watch, formatted as '中文名 (代码)'. Mix A-shares (.SH/.SZ) and HK (.HK) when both markets are affected. Examples: '比亚迪 (002594.SZ)', '腾讯控股 (0700.HK)', '恒生科技ETF (513180.SH)', '中芯国际 (0981.HK)'. Only names plausibly tied to the event.",
+                "description": "3-5 specific A-share/HK/ETF names to watch, formatted '中文名 (代码)'. Mix .SH/.SZ and .HK. Examples: '比亚迪 (002594.SZ)', '腾讯控股 (0700.HK)', '恒生科技ETF (513180.SH)'.",
             },
             "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
-            "horizon_days": {
-                "type": "integer",
-                "description": "How long this effect persists, in days.",
-            },
+            "horizon_days": {"type": "integer", "description": "How long these effects persist, in days."},
         },
-        "required": ["title_zh", "summary_zh", "affected_industries_zh", "a_share_impact", "hk_impact", "markets_reason_zh", "confidence"],
+        "required": ["worth_sending", "events_considered_zh", "title_zh", "summary_zh", "affected_industries_zh", "a_share_impact", "hk_impact", "markets_reason_zh", "confidence"],
     },
 }
 
-MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资者（比如一位退休人士）撰写每日市场速报。
+MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资者（比如一位退休人士）撰写市场速报。
 
-你收到1条或多条今天发生的、对中国大陆A股或香港股市有直接或间接影响的全球宏观事件。你的任务：
-1. 用简体中文写一份清晰、简短的摘要，让普通人能读懂。
-2. 明确指出受影响的行业（用中文表达，不要用英文缩写）。
-3. **分别**判断两个市场的方向：
-   - 上海/深圳 A股 (上证, 沪深300)
-   - 香港股市 (恒生指数, 恒生科技)
-   两个市场经常因为投资者结构不同（A股偏内资，港股有海外资金）出现分化，请独立判断。
-4. 推荐3-5只相关标的：混合A股(.SH/.SZ)和港股(.HK)。使用公司中文名称加股票代码，例如"比亚迪 (002594.SZ)"、"腾讯控股 (0700.HK)"。
+你收到今天发生的1到5条全球宏观事件。这些事件**可能直接提到中国，也可能不提**——但许多全球宏观事件（美联储利率决议、关税政策、大宗商品波动、地缘政治等）都会通过跨市场传导影响A股和港股。
+
+## 第一步：评估每一条事件
+
+对每一条输入事件，在 events_considered_zh 中填入：
+- headline_en: 原始英文标题
+- headline_zh: 翻译成简体中文（不是逐字翻译，用自然中文改写）
+- china_hk_relevance:
+  * "direct" — 事件直接涉及中国/香港/人民币/中国公司（华为、腾讯、台积电等）
+  * "indirect" — 事件间接影响中国/港股（例：美联储降息→港股估值提升；油价暴涨→中石油受益；美国对华关税→半导体供应链）
+  * "minimal" — 理论上有微弱联系但实际影响不大
+  * "none" — 纯美国本土事件，对中国/港股无传导效应（例：某个美国州的监管变化、与中国无关的美股个股财报）
+- relevance_reason_zh: 一句中文解释该事件如何（或为何不）影响中国/港股
+
+## 第二步：决定是否发送
+
+如果**所有**事件都是 "none"（纯美国本土），设置 worth_sending=false，其他字段可以简略或留空。不发送给妈妈。
+
+如果**至少一条**事件是 direct/indirect/minimal（有任何传导可能），设置 worth_sending=true，然后根据这些相关事件撰写：
+- title_zh: 最重要一条事件的中文标题
+- summary_zh: 综合所有相关事件写3-5句中文摘要，普通人能读懂
+- affected_industries_zh: 跨所有相关事件受影响的行业
+- a_share_impact / hk_impact: 分别判断两个市场方向
+  * A股（上证、沪深300）以内资为主，主要受国内政策驱动
+  * 港股（恒生、恒生科技）有大量外资，对美联储、汇率、全球流动性更敏感
+  * 两个市场经常分化——分别独立判断
+- markets_reason_zh: 综合解释两个市场的反应，分化时说明原因
+- watchlist_zh: 3-5只具体标的，混合A股和港股，例如"腾讯控股 (0700.HK)"、"比亚迪 (002594.SZ)"
 
 ## 风格要求
-- 语言通俗易懂。不用"点位"、"流动性"、"久期"这类术语，除非紧接着用日常语言解释。
-- 句子短、有力。不用"或许"、"可能"、"似乎"这类模糊措辞。
-- 不捏造。如果事件跟中国关联较弱，标记为"混合"或"中性"，置信度选"low"。
-- 推荐的标的必须与事件有明确因果逻辑。不要胡乱推荐。
-- A股与港股分化时（例如：美联储降息对港股偏利好但对A股影响有限），在 markets_reason_zh 中说明原因。
 
-## 请勿
-- 不要用繁体字。
-- 不要出现"投资建议"字样——这不是投资建议，是事件速报。
-- 不要重复事件原文；你在做的是解读，不是转述。
+- 简体字，不用繁体。
+- 通俗易懂。不用"点位"、"流动性"、"久期"等术语，除非紧接着用日常语言解释。
+- 不捏造。关联弱就选 minimal，整体偏弱就设 confidence=low。
+- 不要出现"投资建议"字样——这是事件速报，不是推荐。
+- 不重复事件原文；你在做的是解读和翻译。
 """
 
 
@@ -175,12 +210,33 @@ def _build_card(digest: dict) -> dict:
     a_label = impact_map.get(digest.get("a_share_impact", ""), "未知")
     hk_label = impact_map.get(digest.get("hk_impact", ""), "未知")
 
-    body = (
-        f"{digest.get('summary_zh', '')}\n\n"
-        f"**受影响行业：** {industries}\n\n"
+    # Show each event's translated headline with its relevance tag so mom
+    # sees both the original news AND why it matters (or doesn't) for China/HK.
+    relevance_labels = {
+        "direct": "🎯 直接相关",
+        "indirect": "🔗 间接影响",
+        "minimal": "〰️ 弱关联",
+        "none": "➖ 无关",
+    }
+    events_block = ""
+    for e in digest.get("events_considered_zh", []):
+        rel = e.get("china_hk_relevance", "none")
+        if rel == "none":
+            continue  # mom doesn't need to see irrelevant ones
+        tag = relevance_labels.get(rel, rel)
+        events_block += (
+            f"\n{tag} **{e.get('headline_zh', '')}**\n"
+            f"  _{e.get('relevance_reason_zh', '')}_\n"
+        )
+
+    body = f"{digest.get('summary_zh', '')}\n"
+    if events_block:
+        body += f"\n**今日事件：**{events_block}"
+    body += (
+        f"\n**受影响行业：** {industries}\n\n"
         f"**A股方向：** {a_label}\n"
         f"**港股方向：** {hk_label}\n\n"
-        f"**原因：** {digest.get('markets_reason_zh', '')}"
+        f"**市场逻辑：** {digest.get('markets_reason_zh', '')}"
     )
     if watchlist:
         body += f"\n\n**建议关注：**\n{watchlist}"
@@ -235,22 +291,18 @@ def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
     if not macro_analyses:
         return
 
-    qualifying = []
+    # Send ALL macro events to Opus — it gatekeeps per-event relevance itself.
+    # Direct keyword short-circuit just for logging visibility.
     for m in macro_analyses:
-        relevant, reason = _is_china_relevant(m)
+        relevant, _ = _is_china_relevant(m)
         summary_preview = (m.get("event_summary", "") or "")[:70]
         log.info(
-            "Mom digest filter: %s '%s...'",
-            "✓ MATCH" if relevant else "✗ skip ",
+            "Mom digest pre-check: %s '%s...'",
+            "[direct China keyword]" if relevant else "[no direct China kw — Opus will judge indirect]",
             summary_preview,
         )
-        if relevant:
-            qualifying.append(m)
-
-    if not qualifying:
-        log.info("Mom digest: no China-relevant macro events this scan (%d events evaluated)", len(macro_analyses))
-        return
-    log.info("Mom digest: %d/%d events matched China filter; calling Opus", len(qualifying), len(macro_analyses))
+    qualifying = list(macro_analyses)
+    log.info("Mom digest: sending %d events to Opus for Chinese relevance judgment", len(qualifying))
 
     # Throttle: don't re-send within THROTTLE_SECONDS, unless new dedup_group appears
     state = _load_throttle()
@@ -279,10 +331,22 @@ def run(macro_analyses: list[dict], client: LLMClient | None) -> None:
         output_tool=MOM_DIGEST_TOOL,
         audit_tier="opus_mom",
         audit_key=hashlib.sha1(str(sorted(current_groups)).encode()).hexdigest()[:12],
-        max_tokens=2048,
+        max_tokens=3072,
     )
     if not result:
         log.warning("Mom digest: Opus returned no result")
+        return
+
+    if not result.get("worth_sending", False):
+        # Log each event's relevance call for observability.
+        for e in result.get("events_considered_zh", []):
+            log.info(
+                "Mom digest: Opus judged '%s' → %s (%s)",
+                (e.get("headline_en", "") or "")[:50],
+                e.get("china_hk_relevance", "?"),
+                (e.get("relevance_reason_zh", "") or "")[:60],
+            )
+        log.info("Mom digest: Opus judged no events worth sending — skipping")
         return
 
     card = _build_card(result)
