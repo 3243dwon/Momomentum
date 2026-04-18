@@ -21,6 +21,12 @@
   // a combo of filters; clicking again deselects back to defaults.
   const PRESETS: { id: string; label: string; desc: string; apply: Filters }[] = [
     {
+      id: 'all',
+      label: 'All',
+      desc: 'no filters — show everything',
+      apply: { ...DEFAULTS }
+    },
+    {
       id: 'gap-go',
       label: 'Gap & Go',
       desc: 'catalyst-driven open — big move + heavy volume + above VWAP',
