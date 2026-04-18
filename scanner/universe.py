@@ -24,6 +24,7 @@ UNIVERSE_FILE = config.DATA_DIR / "universe.json"
 SP500_URL = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies"
 NDX_URL = "https://en.wikipedia.org/wiki/Nasdaq-100"
 NYSE_URL = "https://www.nasdaqtrader.com/dynamic/SymDir/otherlisted.txt"
+NASDAQ_URL = "https://www.nasdaqtrader.com/dynamic/SymDir/nasdaqlisted.txt"
 
 NON_COMMON_TERMS = re.compile(
     r"\b(preferred|pfd\.?|warrant|right|unit|notes?|depositary|trust units)\b",
@@ -80,24 +81,40 @@ def fetch_nyse() -> set[str]:
     return tickers
 
 
+def fetch_nasdaq() -> set[str]:
+    """All NASDAQ-listed common stocks (catches mid-caps not in NDX-100, e.g. RKLB)."""
+    log.info("Fetching NASDAQ listings from nasdaqtrader.com")
+    resp = requests.get(NASDAQ_URL, headers={"User-Agent": config.USER_AGENT}, timeout=30)
+    resp.raise_for_status()
+    df = pd.read_csv(io.StringIO(resp.text), sep="|")
+    df = df[df.get("ETF", "N") == "N"]
+    df = df[df.get("Test Issue", "N") == "N"]
+    df = df[df.get("Financial Status", "N") == "N"]  # drop deficient/delinquent issuers
+    df = df[~df["Security Name"].astype(str).str.contains(NON_COMMON_TERMS, na=False)]
+    tickers = {_normalize(t) for t in df["Symbol"].astype(str) if _valid_ticker(_normalize(t))}
+    return tickers
+
+
 def build() -> dict:
     sp500 = fetch_sp500()
     ndx = fetch_ndx()
     nyse = fetch_nyse()
-    combined = sp500 | ndx | nyse
+    nasdaq = fetch_nasdaq()
+    combined = sp500 | ndx | nyse | nasdaq
     payload = {
         "built_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
             "sp500": sorted(sp500),
             "ndx": sorted(ndx),
             "nyse": sorted(nyse),
+            "nasdaq": sorted(nasdaq),
         },
         "tickers": sorted(combined),
     }
     UNIVERSE_FILE.write_text(json.dumps(payload, indent=2))
     log.info(
-        "Universe built: %d S&P500 + %d NDX + %d NYSE = %d unique",
-        len(sp500), len(ndx), len(nyse), len(combined),
+        "Universe built: %d S&P500 + %d NDX + %d NYSE + %d NASDAQ = %d unique",
+        len(sp500), len(ndx), len(nyse), len(nasdaq), len(combined),
     )
     return payload
 
