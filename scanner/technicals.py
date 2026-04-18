@@ -1,36 +1,47 @@
-"""Batched yfinance pull + technical indicators.
+"""Alpaca Markets daily-bar fetcher + technical indicators.
 
-Produces one row per ticker with price, volume, RSI-14, MACD histogram,
-percent change (1d/5d), and a relative-volume reading vs the 20d average.
-Applies the liquidity + price floor here; tickers below the floor are dropped.
+Replaces yfinance — Yahoo's bot detection is hostile to scraping in 2026
+and was returning empty data even from GitHub Actions runners. Alpaca
+free paper-trading account gives 200 req/min on a real, official API.
+Default IEX feed is sufficient for daily-bar momentum scanning.
 """
 from __future__ import annotations
 
 import logging
 import math
+import os
+import time
+from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
-import numpy as np
 import pandas as pd
-import yfinance as yf
 
 from scanner import config
 
 log = logging.getLogger(__name__)
 
-BATCH_SIZE = 150
-HISTORY_PERIOD = "3mo"
+ALPACA_API_KEY = os.environ.get("ALPACA_API_KEY")
+ALPACA_API_SECRET = os.environ.get("ALPACA_API_SECRET")
 
-# Yahoo's bot detection rejects vanilla requests in 2025+. curl_cffi
-# impersonates a real Chrome handshake (TLS + JA3 fingerprint) which
-# gets through. Falls back to default yfinance session if unavailable.
+BATCH_SIZE = 100
+HISTORY_DAYS = 90
+RATE_LIMIT_DELAY = 0.35  # ~3 req/sec — well under Alpaca's 200/min free-tier cap
+
 try:
-    from curl_cffi import requests as _cureq
-    _SESSION = _cureq.Session(impersonate="chrome")
-    log.info("Using curl_cffi Chrome impersonation for yfinance")
-except Exception as _e:
-    _SESSION = None
-    log.warning("curl_cffi unavailable (%s); using default yfinance session", _e)
+    from alpaca.data.historical import StockHistoricalDataClient
+    from alpaca.data.requests import StockBarsRequest
+    from alpaca.data.timeframe import TimeFrame
+    from alpaca.data.enums import DataFeed, Adjustment
+
+    if ALPACA_API_KEY and ALPACA_API_SECRET:
+        _CLIENT = StockHistoricalDataClient(ALPACA_API_KEY, ALPACA_API_SECRET)
+        log.info("Alpaca data client initialized")
+    else:
+        _CLIENT = None
+        log.warning("ALPACA_API_KEY / ALPACA_API_SECRET not set; technicals disabled")
+except ImportError as _e:
+    _CLIENT = None
+    log.warning("alpaca-py not installed (%s); technicals disabled", _e)
 
 
 def _rsi(close: pd.Series, period: int = 14) -> float:
@@ -118,50 +129,72 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
     }
 
 
-def _download_batch(tickers: list[str]) -> pd.DataFrame:
-    kwargs = dict(
-        tickers=tickers,
-        period=HISTORY_PERIOD,
-        interval="1d",
-        group_by="ticker",
-        auto_adjust=True,
-        threads=True,
-        progress=False,
-    )
-    if _SESSION is not None:
-        kwargs["session"] = _SESSION
-    return yf.download(**kwargs)
+def _fetch_batch(symbols: list[str], start_dt: datetime, end_dt: datetime) -> dict[str, pd.DataFrame]:
+    if not _CLIENT:
+        return {}
+    try:
+        req = StockBarsRequest(
+            symbol_or_symbols=symbols,
+            timeframe=TimeFrame.Day,
+            start=start_dt,
+            end=end_dt,
+            feed=DataFeed.IEX,
+            adjustment=Adjustment.ALL,
+        )
+        bars = _CLIENT.get_stock_bars(req)
+    except Exception as e:
+        log.warning("Alpaca batch fetch failed (%d symbols): %s", len(symbols), e)
+        return {}
+
+    out: dict[str, pd.DataFrame] = {}
+    if bars.df is None or bars.df.empty:
+        return out
+
+    df = bars.df
+    if "symbol" in df.index.names:
+        for symbol in df.index.get_level_values("symbol").unique():
+            sub = df.xs(symbol, level="symbol").copy()
+            sub = sub.rename(
+                columns={"open": "Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume"}
+            )
+            out[symbol] = sub
+    else:
+        sub = df.rename(
+            columns={"open": "Open", "high": "High", "low": "Low", "close": "Close", "volume": "Volume"}
+        )
+        out[symbols[0]] = sub
+    return out
 
 
 def scan(tickers: Iterable[str]) -> list[dict]:
+    if not _CLIENT:
+        log.error("No Alpaca client; returning empty scan. Check ALPACA_API_KEY / ALPACA_API_SECRET.")
+        return []
+
     tickers = list(tickers)
     rows: list[dict] = []
     total = len(tickers)
-    log.info("Scanning %d tickers in batches of %d", total, BATCH_SIZE)
+    log.info("Scanning %d tickers via Alpaca in batches of %d", total, BATCH_SIZE)
 
+    end_dt = datetime.now(timezone.utc) - timedelta(minutes=20)
+    start_dt = end_dt - timedelta(days=HISTORY_DAYS)
+
+    fetched_count = 0
     for i in range(0, total, BATCH_SIZE):
         batch = tickers[i : i + BATCH_SIZE]
-        try:
-            df = _download_batch(batch)
-        except Exception as e:
-            log.warning("Batch %d failed (%s); falling back to per-ticker", i, e)
-            df = None
-
-        for t in batch:
+        per_symbol = _fetch_batch(batch, start_dt, end_dt)
+        fetched_count += len(per_symbol)
+        for symbol, sub in per_symbol.items():
             try:
-                if df is None:
-                    sub = yf.Ticker(t).history(period=HISTORY_PERIOD, auto_adjust=True)
-                elif len(batch) == 1:
-                    sub = df
-                else:
-                    sub = df[t] if t in df.columns.get_level_values(0) else None
-                if sub is None or sub.empty:
-                    continue
-                row = _compute_row(t, sub)
+                row = _compute_row(symbol, sub)
                 if row:
                     rows.append(row)
             except Exception as e:
-                log.debug("Skipping %s: %s", t, e)
+                log.debug("Skipping %s: %s", symbol, e)
+        time.sleep(RATE_LIMIT_DELAY)
 
-    log.info("Scan complete: %d tickers survived filters out of %d", len(rows), total)
+    log.info(
+        "Scan complete: %d rows / %d tickers (Alpaca returned data for %d)",
+        len(rows), total, fetched_count,
+    )
     return rows
