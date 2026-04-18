@@ -4,6 +4,7 @@
   import TickerCard from './TickerCard.svelte';
   import ScanTable from './ScanTable.svelte';
   import StatPill from './StatPill.svelte';
+  import FilterBar, { type Filters } from './FilterBar.svelte';
 
   let { data } = $props();
 
@@ -13,9 +14,33 @@
   const watchlist = data.watchlist?.tickers ?? [];
 
   const rowsByTicker = new Map<string, ScanRow>(scan?.rows.map((r) => [r.ticker, r]) ?? []);
+  const newsCountByTicker = new Map<string, number>(
+    Object.entries(news?.ticker_news ?? {}).map(([t, items]) => [t, items.length])
+  );
+
+  let filters = $state<Filters>({
+    size: 'any',
+    move: 'any',
+    volume: 'any',
+    news: 'any',
+    vwap: 'any'
+  });
+
+  function passes(r: ScanRow): boolean {
+    if (filters.size === 'large' && r.tier !== 'mega' && r.tier !== 'large') return false;
+    if (filters.size === 'midsmall' && r.tier !== 'midsmall') return false;
+    if (filters.move === 'p3' && (r.pct_1d == null || Math.abs(r.pct_1d) < 3)) return false;
+    if (filters.move === 'p5' && (r.pct_1d == null || Math.abs(r.pct_1d) < 5)) return false;
+    if (filters.volume === 'unusual' && (r.rel_volume == null || r.rel_volume < 2)) return false;
+    if (filters.news === 'with' && !((newsCountByTicker.get(r.ticker) ?? 0) > 0)) return false;
+    if (filters.vwap === 'above' && r.intraday?.above_vwap !== true) return false;
+    return true;
+  }
+
+  const filteredRows = $derived(scan ? scan.rows.filter(passes) : []);
 
   const top20 = $derived(
-    [...(scan?.rows ?? [])]
+    [...filteredRows]
       .filter((r) => r.pct_1d != null)
       .sort((a, b) => Math.abs(b.pct_1d!) - Math.abs(a.pct_1d!))
       .slice(0, 20)
@@ -23,6 +48,7 @@
 
   const freshNewsTickers = $derived(() => {
     const top20Set = new Set(top20.map((r) => r.ticker));
+    const filteredSet = new Set(filteredRows.map((r) => r.ticker));
     const tickers = Object.entries(news?.ticker_news ?? {})
       .map(([ticker, items]) => ({
         ticker,
@@ -33,7 +59,7 @@
           items[0]?.published_at ?? ''
         )
       }))
-      .filter((x) => !top20Set.has(x.ticker))
+      .filter((x) => !top20Set.has(x.ticker) && filteredSet.has(x.ticker))
       .sort((a, b) => {
         if (a.highImpact !== b.highImpact) return a.highImpact ? -1 : 1;
         return b.latest.localeCompare(a.latest);
@@ -64,13 +90,15 @@
     <p class="mt-2 text-xs">Trigger the GitHub Actions workflow to populate <code>data/scan.json</code>.</p>
   </div>
 {:else}
-  <section class="mb-6 flex flex-wrap items-center gap-2 text-xs">
+  <section class="mb-3 flex flex-wrap items-center gap-2 text-xs">
     <StatPill label="Window" value={scan.window} accent={scan.window === 'RTH' ? 'up' : 'flat'} />
-    <StatPill label="Tickers" value={String(scan.row_count)} accent="info" />
+    <StatPill label="Tickers" value={`${filteredRows.length}/${scan.row_count}`} accent="info" />
     <StatPill label="Synthesized" value={String(scan.synthesized_count)} accent={scan.synthesized_count > 0 ? 'info' : 'flat'} />
     <StatPill label="Macro events" value={String(news?.macro_events.length ?? 0)} accent={news?.macro_events.length ? 'warn' : 'flat'} />
     <span class="ml-auto text-zinc-500">last scan {fmtRelative(scan.generated_at)} · {fmtClock(scan.generated_at)}</span>
   </section>
+
+  <FilterBar bind:filters />
 
   <section class="mb-8">
     <header class="mb-3 flex items-center justify-between">
@@ -145,6 +173,6 @@
       <h2 class="text-sm font-semibold tracking-tight">All scan</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">sortable, searchable</span>
     </header>
-    <ScanTable rows={scan.rows} {watchlist} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
+    <ScanTable rows={filteredRows} {watchlist} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
   </section>
 {/if}
