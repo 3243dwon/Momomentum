@@ -1,0 +1,71 @@
+name: Momentum scan
+
+on:
+  schedule:
+    # Mon-Fri, every 30 min during extended trading hours
+    # (covers 04:00-20:00 ET across both EST and EDT)
+    - cron: '*/30 8-23 * * 1-5'
+    # Mon-Fri overnight: every 2 hours
+    - cron: '0 0,2,4,6 * * 1-5'
+    # Weekends: every 2 hours (macro news watch)
+    - cron: '0 */2 * * 6,0'
+  workflow_dispatch:
+    inputs:
+      rebuild_universe:
+        description: 'Force-rebuild universe.json'
+        type: boolean
+        default: false
+      limit:
+        description: 'Scan only first N tickers (dev)'
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: momentum-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scanner
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+        run: |
+          args=()
+          if [ "${{ github.event.inputs.rebuild_universe }}" = "true" ]; then
+            args+=(--rebuild-universe)
+          fi
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            args+=(--limit "${{ github.event.inputs.limit }}")
+          fi
+          python -m scanner.main "${args[@]}"
+
+      - name: Commit updated data
+        run: |
+          git config user.name "momentum-bot"
+          git config user.email "momentum-bot@users.noreply.github.com"
+          git add data/scan.json data/deltas.json data/universe.json 2>/dev/null || true
+          if ! git diff --cached --quiet; then
+            git commit -m "scan: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          else
+            echo "No data changes to commit"
+          fi

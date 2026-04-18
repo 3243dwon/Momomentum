@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "sveltekit",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
+  "headers": [
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=60, s-maxage=60, stale-while-revalidate=300" }
+      ]
+    },
+    {
+      "source": "/manifest.webmanifest",
+      "headers": [
+        { "key": "Content-Type", "value": "application/manifest+json" }
+      ]
+    }
+  ]
+}
