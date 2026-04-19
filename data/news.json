@@ -1,174 +1,406 @@
 {
-  "generated_at": "2026-04-19T14:38:45.100102-04:00",
+  "generated_at": "2026-04-19T16:29:49.927605-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "TotalEnergies signals strong Q1 earnings driven by elevated oil/gas prices amid a US-Iran war, implying a sustained crude price shock.",
+      "event_summary": "Trump announced US military struck and seized an Iranian-flagged cargo ship in the Gulf of Oman, marking a direct kinetic escalation with Iran near the Strait of Hormuz.",
       "primary_drivers": [
-        "Middle East war risk premium lifting Brent/WTI crude prices",
-        "Potential disruption to Strait of Hormuz flows (~20% of global oil) raising LNG and shipping rates",
-        "Refining crack spreads widening on supply uncertainty"
+        "Middle East geopolitical risk premium on crude oil",
+        "Shipping/tanker rate spike from Strait of Hormuz chokepoint risk",
+        "Defense spending and safe-haven flows"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a pure-play Permian US onshore producer \u2014 directly benefits from higher crude prices driven by Iran risk premium without Middle East operational exposure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with significant upstream leverage to crude; rises on oil risk premium. Limited direct Iran asset risk.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline is a pure-play crude tanker (VLCC/Suezmax) operator \u2014 Strait of Hormuz disruption fears directly spike tanker day rates as re-routing and war-risk premiums increase.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways operates crude and product tankers; same mechanism as FRO \u2014 tanker rates rise on Hormuz chokepoint fears. Pure-play US-listed tanker.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin is a direct beneficiary of Middle East escalation \u2014 THAAD/PAC-3 missile defense and munitions demand rises on Iran confrontation; well-established peer pattern.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot/SM-series interceptors and Tomahawks \u2014 direct beneficiary of Gulf munitions expenditure and replenishment orders in escalation scenarios.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "UAL",
+          "rationale": "United has material transpacific/international route exposure and is the most jet-fuel-sensitive major US airline; crude spike compresses margins and Middle East airspace disruption adds routing cost.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has significant international exposure and high jet fuel cost sensitivity; crude price spike flows directly to unit costs.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel costs rise with crude, and Middle East cruise itineraries (including Gulf routes) face cancellation/re-routing risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SBLK",
+          "rationale": "Star Bulk \u2014 dry bulk shipper; while tankers benefit, dry bulk faces higher bunker fuel costs without the same rate tailwind from Hormuz disruption.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Retailers with thin margins take a hit from consumer gasoline prices cutting into discretionary spending if oil spike sustains; Walmart is the bellwether for squeezed low-end consumer.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_iran_cargo_ship_seizure_april_2026",
+      "source_news_ids": [
+        "c204b692f70fef77"
+      ],
+      "headlines": [
+        "Trump says U.S. struck and seized Iranian-flagged cargo ship in Gulf of Oman"
+      ]
+    },
+    {
+      "event_summary": "Weekend developments involving Iran have investors bracing for renewed market volatility heading into the new trading week.",
+      "primary_drivers": [
+        "Middle East geopolitical risk premium on crude oil",
+        "Flight-to-safety flows into defense, gold, and Treasuries",
+        "Risk-off rotation out of high-beta equities and cyclicals"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with large upstream leverage to Brent; every $10/bbl sustained move adds roughly $4-5B to annual earnings. Direct peer readthrough from TotalEnergies' Q1 guide.",
+          "rationale": "Integrated major with heavy upstream leverage; direct beneficiary of any Iran-related Brent spike via higher realized prices on unhedged production.",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Similar integrated upstream exposure as XOM; Permian + international production levered directly to crude price. Peer-correlation trade off TTE commentary.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "Pure-play E&P with no refining hedge \u2014 highest beta to crude among large caps. US-Iran war scenario drives sustained >$90 Brent which flows nearly 1:1 to FCF.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "High-leverage domestic E&P (Permian-heavy) with debt-load that deleverages rapidly on higher oil; Buffett-backed name typically leads tape on Middle East shocks.",
+          "rationale": "High-beta US E&P with Permian pure-play exposure; historically one of the strongest movers on geopolitical oil spikes due to unhedged production and leverage.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Prime contractor for THAAD, PAC-3, and Javelin \u2014 systems directly relevant to Middle East escalation and replenishment orders; defense primes rally on Iran headlines historically.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "LNG",
-          "rationale": "Cheniere: US LNG export prices spike if Hormuz/Qatar LNG flows are threatened; European/Asian buyers pay up for US cargoes. Direct beneficiary of Iran war scenario.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback \u2014 pure Permian E&P, extremely high operating leverage to WTI. Will outperform majors on sustained crude spike.",
+          "ticker": "NOC",
+          "rationale": "Missile defense and long-range strike exposure (B-21, GBSD); a direct beneficiary if US posture toward Iran hardens.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates surge on Middle East disruption as ton-miles extend (rerouting around Hormuz). Direct war premium.",
-          "confidence": "medium",
+          "ticker": "RTX",
+          "rationale": "Raytheon segment makes Patriot, SM-3, SM-6 interceptors \u2014 exactly the munitions consumed/replenished in Middle East conflict scenarios.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "HAL",
-          "rationale": "Halliburton \u2014 oilfield services benefits from upstream capex response to sustained high prices; US shale activity re-accelerates.",
+          "rationale": "Oilfield services leveraged to higher oil prices via increased E&P capex; second-order beneficiary of sustained Brent strength.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta \u2014 jet fuel is ~25% of operating costs and unhedged; sustained crude spike from Iran war directly compresses margins. Most fuel-sensitive major airline.",
+          "rationale": "Jet fuel is ~25-30% of operating costs and largely unhedged at majors; Brent spike compresses margins directly, and airlines are historic losers on Middle East shocks.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "High international exposure including Middle East routes; dual hit from fuel costs and potential route/airspace disruption.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise lines carry heavy bunker fuel exposure and consumer discretionary risk-off beta; geopolitical shocks historically crush the group.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Jet fuel and diesel cost pass-through lag revenue; Brent spike pressures near-term margins on the Express segment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MAR",
+          "rationale": "International hotel footprint with meaningful Middle East/Europe exposure; travel demand softens on geopolitical fear and higher fuel-driven airfares.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_volatility_market_caution_april_2026",
+      "source_news_ids": [
+        "8e980e27c08f7f7a"
+      ],
+      "headlines": [
+        "Investors brace for renewed volatility after this weekend\u2019s Iran developments"
+      ]
+    },
+    {
+      "event_summary": "Iran war is disrupting Middle East refined product flows, creating a jet fuel supply shortage heading into European summer travel season.",
+      "primary_drivers": [
+        "Jet fuel crack spread widening due to Middle East refining/export disruption",
+        "Higher fuel costs passed through to airlines eroding margins",
+        "US refiners with export optionality capture arbitrage to Europe"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "VLO",
+          "rationale": "Valero has large Gulf Coast refining capacity with export infrastructure; a European jet fuel shortage widens distillate/jet cracks and VLO is among the most export-levered US refiners.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Marathon Petroleum, largest US refiner by capacity, benefits directly from wider jet/distillate crack spreads as Europe sources replacement barrels from USGC.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PBF",
+          "rationale": "PBF has East Coast refining assets (Delaware, Paulsboro) ideally positioned to ship jet fuel to Europe; highest beta to crack spread moves among US refiners.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DINO",
+          "rationale": "HF Sinclair is a mid-con/Rockies refiner with distillate-heavy yield that benefits from the broader distillate complex rally dragged up by jet fuel tightness.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DK",
+          "rationale": "Delek operates a refinery in Israel (via holdings) and US Gulf/Permian assets; regional refining margin spike plus Middle East disruption premium.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest famously does not hedge fuel aggressively anymore; global jet fuel price rise flows straight to CASM even though it's a domestic US carrier, as jet fuel is a global market.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has significant transatlantic exposure and operates the Trainer refinery, but net fuel costs still rise materially; premium cabin demand may absorb some pass-through but margin hit is real.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "United \u2014 similar jet fuel exposure as DAL, minimal hedging. International routes also face Middle East airspace disruption costs.",
+          "rationale": "United has the largest transatlantic network among US carriers; European fuel purchases directly exposed to the shortage, and European demand softness from higher ticket prices is a second hit.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Southwest \u2014 historically hedged but hedge book has rolled off; domestic-only means no fare offset from international premium cabins. High fuel beta.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel costs spike; Mediterranean/Middle East itineraries cancelled or rerouted adding further cost. Double hit from war scenario.",
+          "ticker": "JBLU",
+          "rationale": "JetBlue operates thin margins with significant transatlantic expansion (London routes); fuel cost sensitivity highest among US carriers on a margin basis.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 diesel/jet fuel a major variable cost; surcharges lag price moves by weeks, compressing near-term margins.",
+          "ticker": "AAL",
+          "rationale": "American Airlines carries highest debt load among legacies; fuel cost spike with limited hedging is a direct hit to already thin free cash flow.",
           "confidence": "medium",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow \u2014 naphtha/ethane feedstock costs rise with crude; chemicals demand already weak so cost pass-through is limited.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart \u2014 consumer discretionary spend contracts as gasoline prices surge; historical correlation of retail sales to pump prices is negative and meaningful.",
-          "confidence": "low",
-          "horizon": "months"
         }
       ],
-      "dedup_group": "totalenergies_q1_iran_war",
+      "dedup_group": "europe_jet_fuel_crisis_iran_conflict",
       "source_news_ids": [
-        "4dfe9dfff1b13826"
+        "fb3f33695f256a31"
       ],
       "headlines": [
-        "TotalEnergies Expecting Strong Q1 Earnings Amid US-Iran War"
+        "Europe Faces Summer Jet Fuel Crisis as Iran War Slashes Supply"
       ]
     },
     {
-      "event_summary": "Wells Fargo issues a bullish long-term gold call suggesting prices could nearly double to $8,000/oz, despite gold just suffering its worst monthly drop in a decade.",
+      "event_summary": "The UAE has requested a wartime financial lifeline from the US, signaling active conflict involvement in the Middle East and potential deepening of US-Gulf military/financial entanglement.",
       "primary_drivers": [
-        "Sell-side price target upgrade reinforcing structural gold bull thesis",
-        "Potential dip-buying rotation back into gold miners after sharp monthly drawdown",
-        "Operating leverage of miners to gold price \u2014 every $100 move in spot translates to outsized FCF changes"
+        "Middle East conflict escalation raising defense demand and oil risk premium",
+        "US arms export and financing flows to Gulf allies",
+        "Geopolitical risk-off flows into safe havens"
       ],
       "beneficiaries": [
         {
-          "ticker": "NEM",
-          "rationale": "Newmont is the largest US-listed gold producer; AISC ~$1,500/oz means any move back toward prior highs (let alone $8k) is pure operating leverage to FCF. Most direct, liquid way to express a Wells Fargo gold upgrade.",
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin is the prime contractor for THAAD, PAC-3 Patriot interceptors, and F-35s \u2014 all systems the UAE has purchased or requested. A US wartime financing package typically earmarks FMS (foreign military sales) credits that flow directly to LMT missile defense backlog.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "GOLD",
-          "rationale": "Barrick Gold \u2014 large-cap pure-play producer, highly correlated to gold spot, benefits directly from sell-side price target upgrades driving flow back into senior miners after the worst monthly drop in a decade.",
+          "ticker": "RTX",
+          "rationale": "RTX makes Patriot systems, Stinger, and Tomahawk \u2014 core munitions consumed in Gulf air defense. UAE has active Patriot contracts and interceptor replenishment orders accelerate under wartime financing.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "AEM",
-          "rationale": "Agnico Eagle \u2014 senior producer with high-quality assets, typically one of the first names bid when gold-miner sentiment reverses; leveraged to spot price via low AISC.",
+          "ticker": "NOC",
+          "rationale": "Northrop provides Global Hawk, IBCS battle management, and munitions used in Gulf air defense architecture. Benefits from same FMS financing envelope.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics supplies munitions (OTS) and combat systems; UAE is an existing customer. Wartime resupply flows lift munitions backlog specifically.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Direct Middle East supply-risk premium on crude. Exxon has Gulf upstream exposure and integrated margin lift from higher Brent if regional conflict expands.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "WPM",
-          "rationale": "Wheaton Precious Metals \u2014 streaming model with fixed costs means nearly all gold upside flows to margin; analyst-driven gold rallies historically lift streamers alongside miners.",
+          "ticker": "LHX",
+          "rationale": "L3Harris makes tactical radios, EW, and missile components used across Gulf coalition forces; direct beneficiary of US-funded resupply to UAE.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has significant transatlantic and Middle East routing exposure (JFK-DXB codeshare with Emirates, Tel Aviv service). Higher jet fuel from Gulf risk premium plus potential airspace disruption compresses margins.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FNV",
-          "rationale": "Franco-Nevada \u2014 royalty/streaming pure-play on precious metals prices with no operating cost inflation risk; direct beneficiary of a bullish gold price target.",
+          "ticker": "UAL",
+          "rationale": "United flies direct to Dubai and Tel Aviv with meaningful Gulf/India routing exposure; jet fuel spike and possible route suspensions hit revenue and unit costs simultaneously.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "PAAS",
-          "rationale": "Pan American Silver has meaningful gold exposure alongside silver; smaller-cap miners show higher beta to sell-side gold upgrades and post-selloff rebounds.",
+          "ticker": "CCL",
+          "rationale": "Carnival has Middle East/Red Sea itinerary exposure; escalation forces rerouting (as seen in 2024 Red Sea disruptions), driving higher bunker fuel costs and cancellation refunds.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "High-beta discretionary name historically sold on geopolitical risk-off days; no direct Gulf link but vulnerable to multiple compression if VIX spikes on wartime headlines.",
           "confidence": "low",
           "horizon": "intraday"
+        }
+      ],
+      "dedup_group": "uae_wartime_financial_aid_us",
+      "source_news_ids": [
+        "99521654dad7f0a9"
+      ],
+      "headlines": [
+        "U.A.E. Asks U.S. for a Wartime Financial Lifeline"
+      ]
+    },
+    {
+      "event_summary": "Stock and oil futures set to open Sunday evening ahead of a new round of Iran nuclear/diplomatic talks, raising the possibility of sanctions relief and additional Iranian crude supply returning to market.",
+      "primary_drivers": [
+        "Potential easing of Iran oil export sanctions \u2192 incremental global crude supply \u2192 lower oil prices",
+        "Reduced Middle East geopolitical risk premium",
+        "Shift in risk-on sentiment if talks progress"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating cost; lower crude from Iranian barrels returning directly compresses fuel expense and expands margins. Delta has historically been the most leveraged legacy carrier to fuel moves given its refinery ownership dynamics and unhedged book.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
-          "ticker": "AU",
-          "rationale": "AngloGold Ashanti \u2014 high-beta senior producer, historically one of the largest movers on bullish gold calls given operating leverage and prior underperformance.",
+          "ticker": "LUV",
+          "rationale": "Southwest is structurally fuel-sensitive with minimal hedging in recent years; a crude selloff on Iran supply prospects is a direct EPS tailwind.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is a major cost line for cruise operators; lower oil directly benefits margins, and Carnival is the most fuel-levered name given its fleet size and leverage.",
           "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "losers": [],
-      "dedup_group": "wells_fargo_gold_8000_forecast",
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Iranian barrels (~1-1.5mbpd of potential incremental supply) returning would pressure Brent; ExxonMobil's upstream earnings have high oil price beta and it is the largest-cap pure-play US integrated.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian pure-play with high oil price leverage and elevated debt \u2014 one of the most oil-price-sensitive large caps. Direct hit from any Iran-driven crude selloff.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "High-beta E&P with significant unhedged production; historically one of the biggest decliners on bearish supply headlines.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services capex is tied to crude price expectations; a sustained decline on Iran supply return pressures North American completions activity and service pricing.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback is a Permian pure-play with the tightest correlation to WTI among large-cap E&Ps; sells off hard on bearish supply news.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere's long-term contract economics are linked to global gas/oil spreads; softer oil indirectly pressures oil-indexed LNG contract pricing and spot cargo economics.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_talks_oil_markets",
       "source_news_ids": [
-        "b476aa971f2d484a"
+        "4810d252b33ef8e9"
       ],
       "headlines": [
-        "Wells Fargo says gold could nearly double to $8,000 an ounce \u2014 even after its worst monthly drop in a decade"
+        "Stock, Oil Futures Poised to Open Ahead of New Iran Talks"
       ]
     }
   ]
