@@ -1,84 +1,174 @@
 {
-  "generated_at": "2026-04-19T12:32:39.484397-04:00",
+  "generated_at": "2026-04-19T14:38:45.100102-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "AI-agent traffic to US retailer websites jumped 393% YoY in Q1 2026, with agentic shoppers spending more per session than human shoppers.",
+      "event_summary": "TotalEnergies signals strong Q1 earnings driven by elevated oil/gas prices amid a US-Iran war, implying a sustained crude price shock.",
       "primary_drivers": [
-        "Agentic AI shifts e-commerce discovery away from human browsing toward API/agent-mediated purchases",
-        "Retailers with strong product data feeds and agent-friendly infrastructure capture disproportionate share",
-        "Disintermediation risk for ad-supported search and traditional shopping UX"
+        "Middle East war risk premium lifting Brent/WTI crude prices",
+        "Potential disruption to Strait of Hormuz flows (~20% of global oil) raising LNG and shipping rates",
+        "Refining crack spreads widening on supply uncertainty"
       ],
       "beneficiaries": [
         {
-          "ticker": "SHOP",
-          "rationale": "Shopify has publicly rolled out agent-commerce infrastructure (Shop Pay, Catalog API, MCP integrations with OpenAI/Perplexity). Higher agentic checkout volume flows directly through merchants on its platform and takes rate.",
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream leverage to Brent; every $10/bbl sustained move adds roughly $4-5B to annual earnings. Direct peer readthrough from TotalEnergies' Q1 guide.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "AMZN",
-          "rationale": "Amazon's Rufus agent and structured product catalog make it a primary destination/endpoint for third-party shopping agents; larger basket sizes from agent shoppers directly lift GMV and ad revenue.",
+          "ticker": "CVX",
+          "rationale": "Similar integrated upstream exposure as XOM; Permian + international production levered directly to crude price. Peer-correlation trade off TTE commentary.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play E&P with no refining hedge \u2014 highest beta to crude among large caps. US-Iran war scenario drives sustained >$90 Brent which flows nearly 1:1 to FCF.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-leverage domestic E&P (Permian-heavy) with debt-load that deleverages rapidly on higher oil; Buffett-backed name typically leads tape on Middle East shocks.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere: US LNG export prices spike if Hormuz/Qatar LNG flows are threatened; European/Asian buyers pay up for US cargoes. Direct beneficiary of Iran war scenario.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback \u2014 pure Permian E&P, extremely high operating leverage to WTI. Will outperform majors on sustained crude spike.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 product tanker rates surge on Middle East disruption as ton-miles extend (rerouting around Hormuz). Direct war premium.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton \u2014 oilfield services benefits from upstream capex response to sustained high prices; US shale activity re-accelerates.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta \u2014 jet fuel is ~25% of operating costs and unhedged; sustained crude spike from Iran war directly compresses margins. Most fuel-sensitive major airline.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United \u2014 similar jet fuel exposure as DAL, minimal hedging. International routes also face Middle East airspace disruption costs.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest \u2014 historically hedged but hedge book has rolled off; domestic-only means no fare offset from international premium cabins. High fuel beta.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel costs spike; Mediterranean/Middle East itineraries cancelled or rerouted adding further cost. Double hit from war scenario.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx \u2014 diesel/jet fuel a major variable cost; surcharges lag price moves by weeks, compressing near-term margins.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow \u2014 naphtha/ethane feedstock costs rise with crude; chemicals demand already weak so cost pass-through is limited.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "WMT",
-          "rationale": "Walmart launched Sparky agent and partnered with OpenAI for agentic checkout; domestic retailer with structured inventory feeds directly benefits from higher agentic conversion.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MELI",
-          "rationale": "Peer e-commerce platform read-through; MercadoLibre has been building agent-compatible APIs and would rally on the thesis that agent traffic expands TAM for platform commerce.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GLBE",
-          "rationale": "Global-E provides cross-border checkout infrastructure increasingly consumed by agents that route purchases internationally; benefits from any surge in programmatic checkout volume.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KLAR",
-          "rationale": "Klarna has partnered with OpenAI on agentic checkout and BNPL-at-agent-layer; higher agentic retail traffic drives payment volume through its rails.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "GOOGL",
-          "rationale": "Agent-mediated shopping bypasses Google Search and Shopping ads \u2014 agents query product APIs directly. A 393% jump in agent traffic implies meaningful share shift away from the ad-funded discovery funnel that drives ~$60B+ of Google's retail ad revenue.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "META",
-          "rationale": "Similar disintermediation risk for Instagram/Facebook shopping ads; if agents complete purchases without social discovery, ad-impression value to retail advertisers declines.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "PINS",
-          "rationale": "Pinterest monetizes human visual discovery before purchase; agent shoppers skip the inspiration funnel entirely, eroding the shopping-ad narrative Pinterest has been selling.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "TTD",
-          "rationale": "Trade Desk's open-internet ad thesis weakens if an increasing share of retail transactions occur via agent APIs that don't pass through programmatic display ad auctions.",
+          "rationale": "Walmart \u2014 consumer discretionary spend contracts as gasoline prices surge; historical correlation of retail sales to pump prices is negative and meaningful.",
           "confidence": "low",
           "horizon": "months"
         }
       ],
-      "dedup_group": "ai_retail_traffic_q1_2026",
+      "dedup_group": "totalenergies_q1_iran_war",
       "source_news_ids": [
-        "705eb10c2a6f9400"
+        "4dfe9dfff1b13826"
       ],
       "headlines": [
-        "AI Traffic to US Retailers Jumps 393% in Q1 as Agentic Shoppers Outspend Humans"
+        "TotalEnergies Expecting Strong Q1 Earnings Amid US-Iran War"
+      ]
+    },
+    {
+      "event_summary": "Wells Fargo issues a bullish long-term gold call suggesting prices could nearly double to $8,000/oz, despite gold just suffering its worst monthly drop in a decade.",
+      "primary_drivers": [
+        "Sell-side price target upgrade reinforcing structural gold bull thesis",
+        "Potential dip-buying rotation back into gold miners after sharp monthly drawdown",
+        "Operating leverage of miners to gold price \u2014 every $100 move in spot translates to outsized FCF changes"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NEM",
+          "rationale": "Newmont is the largest US-listed gold producer; AISC ~$1,500/oz means any move back toward prior highs (let alone $8k) is pure operating leverage to FCF. Most direct, liquid way to express a Wells Fargo gold upgrade.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "GOLD",
+          "rationale": "Barrick Gold \u2014 large-cap pure-play producer, highly correlated to gold spot, benefits directly from sell-side price target upgrades driving flow back into senior miners after the worst monthly drop in a decade.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AEM",
+          "rationale": "Agnico Eagle \u2014 senior producer with high-quality assets, typically one of the first names bid when gold-miner sentiment reverses; leveraged to spot price via low AISC.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WPM",
+          "rationale": "Wheaton Precious Metals \u2014 streaming model with fixed costs means nearly all gold upside flows to margin; analyst-driven gold rallies historically lift streamers alongside miners.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FNV",
+          "rationale": "Franco-Nevada \u2014 royalty/streaming pure-play on precious metals prices with no operating cost inflation risk; direct beneficiary of a bullish gold price target.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PAAS",
+          "rationale": "Pan American Silver has meaningful gold exposure alongside silver; smaller-cap miners show higher beta to sell-side gold upgrades and post-selloff rebounds.",
+          "confidence": "low",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "AU",
+          "rationale": "AngloGold Ashanti \u2014 high-beta senior producer, historically one of the largest movers on bullish gold calls given operating leverage and prior underperformance.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "wells_fargo_gold_8000_forecast",
+      "source_news_ids": [
+        "b476aa971f2d484a"
+      ],
+      "headlines": [
+        "Wells Fargo says gold could nearly double to $8,000 an ounce \u2014 even after its worst monthly drop in a decade"
       ]
     }
   ]
