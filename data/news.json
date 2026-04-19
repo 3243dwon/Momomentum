@@ -1,5 +1,85 @@
 {
-  "generated_at": "2026-04-19T10:37:02.372309-04:00",
+  "generated_at": "2026-04-19T12:32:39.484397-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "AI-agent traffic to US retailer websites jumped 393% YoY in Q1 2026, with agentic shoppers spending more per session than human shoppers.",
+      "primary_drivers": [
+        "Agentic AI shifts e-commerce discovery away from human browsing toward API/agent-mediated purchases",
+        "Retailers with strong product data feeds and agent-friendly infrastructure capture disproportionate share",
+        "Disintermediation risk for ad-supported search and traditional shopping UX"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "SHOP",
+          "rationale": "Shopify has publicly rolled out agent-commerce infrastructure (Shop Pay, Catalog API, MCP integrations with OpenAI/Perplexity). Higher agentic checkout volume flows directly through merchants on its platform and takes rate.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMZN",
+          "rationale": "Amazon's Rufus agent and structured product catalog make it a primary destination/endpoint for third-party shopping agents; larger basket sizes from agent shoppers directly lift GMV and ad revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart launched Sparky agent and partnered with OpenAI for agentic checkout; domestic retailer with structured inventory feeds directly benefits from higher agentic conversion.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MELI",
+          "rationale": "Peer e-commerce platform read-through; MercadoLibre has been building agent-compatible APIs and would rally on the thesis that agent traffic expands TAM for platform commerce.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "GLBE",
+          "rationale": "Global-E provides cross-border checkout infrastructure increasingly consumed by agents that route purchases internationally; benefits from any surge in programmatic checkout volume.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KLAR",
+          "rationale": "Klarna has partnered with OpenAI on agentic checkout and BNPL-at-agent-layer; higher agentic retail traffic drives payment volume through its rails.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "GOOGL",
+          "rationale": "Agent-mediated shopping bypasses Google Search and Shopping ads \u2014 agents query product APIs directly. A 393% jump in agent traffic implies meaningful share shift away from the ad-funded discovery funnel that drives ~$60B+ of Google's retail ad revenue.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "META",
+          "rationale": "Similar disintermediation risk for Instagram/Facebook shopping ads; if agents complete purchases without social discovery, ad-impression value to retail advertisers declines.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "PINS",
+          "rationale": "Pinterest monetizes human visual discovery before purchase; agent shoppers skip the inspiration funnel entirely, eroding the shopping-ad narrative Pinterest has been selling.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TTD",
+          "rationale": "Trade Desk's open-internet ad thesis weakens if an increasing share of retail transactions occur via agent APIs that don't pass through programmatic display ad auctions.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "ai_retail_traffic_q1_2026",
+      "source_news_ids": [
+        "705eb10c2a6f9400"
+      ],
+      "headlines": [
+        "AI Traffic to US Retailers Jumps 393% in Q1 as Agentic Shoppers Outspend Humans"
+      ]
+    }
+  ]
 }
