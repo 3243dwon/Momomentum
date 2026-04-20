@@ -1,132 +1,59 @@
 {
-  "generated_at": "2026-04-20T05:49:59.762485-04:00",
+  "generated_at": "2026-04-20T07:12:59.562731-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Oil futures rally after the Strait of Hormuz is closed again amid breakdown in peace talks, threatening ~20% of global seaborne oil flows.",
+      "event_summary": "Kevin Warsh's upcoming Fed Chair confirmation hearing is the next major catalyst for US Treasuries, with markets watching for signals on monetary policy direction.",
       "primary_drivers": [
-        "Supply shock premium priced into crude (Brent/WTI spike)",
-        "Shipping disruption and rerouting around the chokepoint",
-        "Risk-off flows into defense and safe havens"
+        "Uncertainty over future Fed policy stance under new leadership",
+        "Warsh's known hawkish reputation could steepen curve / lift long-end yields",
+        "Repricing of rate path expectations ahead of testimony"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with ~2.4M bpd upstream production largely outside the Gulf; realized crude price rises directly flow to upstream earnings while its limited Hormuz transit exposure shields it.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Upstream-heavy major; every $10 sustained Brent move adds roughly $4B to annual operating cash flow. Minimal Hormuz shipping exposure post-divestitures.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian producer (Diamondback) \u2014 100% US onshore, no Middle East exposure, highest beta to WTI among large E&Ps.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 US LNG exporter. Hormuz closure cuts Qatari LNG (~20% of global LNG) from reaching Asia/Europe, redirecting demand and spot pricing to US Gulf Coast cargoes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates spike on forced rerouting around Africa, extending ton-miles materially. Direct rate beneficiary.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FTI",
-          "rationale": "TechnipFMC \u2014 subsea/offshore services provider benefits as sustained high prices accelerate non-OPEC offshore FIDs; also peer-rotation proxy in oil services.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed \u2014 escalation in the Gulf raises probability of expanded US military posture and missile-defense (THAAD, PAC-3) replenishment orders; defense names rally on Hormuz headlines historically.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta \u2014 jet fuel is ~25% of opex and unhedged since 2022; sustained crude spike compresses margins directly. Also trans-Atlantic route exposure to any broader conflict.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United \u2014 similar jet fuel exposure to DAL plus heavier international long-haul mix where rerouting and insurance premiums bite hardest.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest \u2014 domestic carrier but fuel is the largest controllable cost; legacy hedge book largely rolled off. High beta to crude spikes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel costs spike and Middle East/Red Sea itineraries get canceled (repeat of 2024 Houthi playbook), forcing costly rerouting.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Inc. \u2014 ethane/naphtha feedstock costs rise with oil; limited ability to pass through in weak chemical demand environment compresses spreads.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart \u2014 gasoline price spike acts as consumer tax, pressuring discretionary basket size; diesel also raises inbound logistics costs.",
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab benefits from higher/steeper yields via net interest margin expansion on cash sweeps; a hawkish Warsh signal lifts front-end yields and reduces cash-sorting pressure.",
           "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 jet fuel and diesel are major cost lines; surcharge pass-through lags by 4-6 weeks, creating margin compression in the interim.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "strait_hormuz_closure_oil_tension",
-      "source_news_ids": [
-        "9574091ea950ff9a"
-      ],
-      "headlines": [
-        "Oil futures climb after Strait of Hormuz closed again as peace talks thrown into uncertainty"
-      ]
-    },
-    {
-      "event_summary": "Market commentary highlights that a single company (overwhelmingly likely NVIDIA) is responsible for roughly half of S&P 500 earnings revisions, underscoring extreme concentration risk in the current rally.",
-      "primary_drivers": [
-        "Earnings concentration risk \u2014 breadth deterioration raises fragility of index-level gains",
-        "Narrative reinforcement of AI capex cycle being the sole EPS growth engine",
-        "Potential positioning rotation warning for risk-parity and equal-weight strategies"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "NVDA",
-          "rationale": "The article's framing \u2014 one company driving ~50% of S&P 500 EPS revisions \u2014 points directly to NVIDIA, whose datacenter revenue guide-ups have been the single largest contributor to index EPS since 2023. Reinforced narrative attracts incremental momentum/benchmark-chasing flows.",
-          "confidence": "high",
           "horizon": "days"
         }
       ],
       "losers": [],
-      "dedup_group": "sp500_earnings_concentration_risk",
+      "dedup_group": "warsh_fed_confirmation_hearing",
       "source_news_ids": [
-        "28c9516d181d7359"
+        "435d8cfc0843f512"
       ],
       "headlines": [
-        "The narrow foundations of the current rally \u2014 one company is responsible for half of S&P 500 earnings revisions"
+        "Warsh\u2019s Fed Confirmation Hearing Is Next Driver for US Debt"
+      ]
+    },
+    {
+      "event_summary": "Analyst piece arguing the petrodollar system faces structural threats as China pushes yuan-denominated oil settlement \u2014 a thematic/narrative article rather than a concrete policy event.",
+      "primary_drivers": [
+        "Long-term USD reserve-currency erosion narrative",
+        "De-dollarization of commodity trade flows",
+        "Gold and alternative reserve asset demand"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NEM",
+          "rationale": "Largest US-listed gold miner; leveraged beta to gold price moves driven by reserve-diversification narratives. Operating leverage means ~1% gold move \u2192 2-3% equity move.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCJ",
+          "rationale": "Uranium/hard-asset thesis rides alongside gold on de-dollarization narratives; Cameco is the liquid Western pure-play and tends to trade with commodity reserve-asset flows on thematic days.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "petrodollar_yuan_competition",
+      "source_news_ids": [
+        "effcb0e5c17359de"
+      ],
+      "headlines": [
+        "Petrodollar System Faces 3 Threats as Yuan Challenges Dollar"
       ]
     }
   ]
