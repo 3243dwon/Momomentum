@@ -1,96 +1,35 @@
 {
-  "generated_at": "2026-04-20T15:55:28.713446-04:00",
+  "generated_at": "2026-04-20T16:38:05.973415-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Disruptions in the Strait of Hormuz are hitting Yiwu, China (the \"Christmas capital\" that supplies most of the world's holiday decorations and small goods), threatening global holiday retail supply and spending.",
+      "event_summary": "Businesses attempting to claim refunds on previously-paid tariffs are encountering bureaucratic and procedural obstacles, delaying cash recovery.",
       "primary_drivers": [
-        "Shipping route disruption raising container freight rates and transit times from China to Europe/US",
-        "Holiday goods supply shortfall / inventory risk for retailers sourcing from Yiwu",
-        "Oil price / energy risk premium from Hormuz tensions"
+        "Delayed working capital recovery for tariff-paying importers",
+        "Administrative friction in CBP refund processing",
+        "Uncertainty around timing/magnitude of cash refunds already booked as receivables"
       ],
-      "beneficiaries": [
-        {
-          "ticker": "ZIM",
-          "rationale": "ZIM Integrated Shipping is highly levered to container spot rates; Hormuz disruption forces Cape of Good Hope rerouting, tightening capacity and spiking rates on Asia-Europe lanes where ZIM has exposure. Pure-play operator with highest beta to spot container rates.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MATX",
-          "rationale": "Matson's trans-Pacific premium expedited service benefits as shippers pay up for fastest/most reliable route to US when Suez/Hormuz alternatives are disrupted; historically saw margin expansion during Red Sea disruption.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DAC",
-          "rationale": "Danaos containership lessor benefits as charter rates reset higher when liners need more vessels to cover longer rerouted voyages around Africa.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Hormuz tensions embed a geopolitical risk premium in crude; ExxonMobil as a major integrated with non-Gulf production (Permian, Guyana) captures higher realized prices without direct Hormuz chokepoint exposure.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FIVE",
-          "rationale": "Five Below sources heavily from China for seasonal/holiday SKUs but has historically front-loaded inventory; if competitors run short of holiday goods, Five Below's stocked shelves could gain share \u2014 but this is offset by their own cost exposure, so lower confidence.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
+      "beneficiaries": [],
       "losers": [
         {
-          "ticker": "DLTR",
-          "rationale": "Dollar Tree/Family Dollar sources a large share of its $1.25-$5 holiday assortment directly from Yiwu-area suppliers; freight cost spikes and supply shortfalls compress already thin gross margins on price-point-constrained SKUs that cannot easily pass through cost.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Dollar General holiday/seasonal import exposure plus limited pricing power at the low end; freight surcharges on Asia-Europe/US lanes directly hit Q3/Q4 GM.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "FND",
-          "rationale": "Floor & Decor imports roughly a third of product from China; rerouting adds weeks of transit and hundreds of dollars per container, pressuring margins.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WSM",
-          "rationale": "Williams-Sonoma's Pottery Barn/West Elm holiday d\u00e9cor assortment has heavy Yiwu/China sourcing; delays into holiday season risk missed sell-through on seasonal goods that cannot be sold after December.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ETSY",
-          "rationale": "Many Etsy sellers resell/repackage Yiwu-sourced inputs; rising landed costs and shipping delays hit GMV during the critical Q4 holiday period.",
+          "ticker": "FIVE",
+          "rationale": "Five Below sources heavily from China; had been expected to recover tariff payments as refunds. Delays extend working capital drag on a low-margin discount retailer.",
           "confidence": "low",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "AMZN",
-          "rationale": "Third-party marketplace sellers (over half of GMV) source heavily from Yiwu small-goods ecosystem; freight spike pressures 3P seller economics and FBA inbound timing for holiday. Effect is diluted by AMZN's size.",
+          "ticker": "BBY",
+          "rationale": "Best Buy's consumer electronics imports from China made it a large tariff payer; delayed refund processing pushes back cash flow recovery modeled into prior guidance.",
           "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Higher jet fuel from Hormuz risk premium pressures airline margins; Delta most fuel-exposed among majors without full hedging.",
-          "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "dedup_group": "hormuz_disruptions_2026_april",
+      "dedup_group": "tariff_refund_claims_problems",
       "source_news_ids": [
-        "bedf14bb4e3aef18"
+        "27f8bfc10f187387"
       ],
       "headlines": [
-        "Hormuz disruptions hit China\u2019s Christmas capital \u2014 and holiday spending"
+        "Businesses trying to claim tariff refunds are already running into problems"
       ]
     }
   ]
