@@ -141,26 +141,40 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
 def _fetch_batch(symbols: list[str], start_dt: datetime, end_dt: datetime) -> dict[str, pd.DataFrame]:
     if not _CLIENT:
         return {}
-    try:
-        req = StockBarsRequest(
-            symbol_or_symbols=symbols,
-            timeframe=TimeFrame.Day,
-            start=start_dt,
-            end=end_dt,
-            feed=DataFeed.IEX,
-            adjustment=Adjustment.ALL,
-        )
-        bars = _CLIENT.get_stock_bars(req)
-    except Exception as e:
+
+    # Retry with backoff: without this, a single transient Alpaca hiccup silently
+    # wipes the whole batch (observed: batch 0 losing all watchlist + top S&P 500
+    # tickers for an entire scan). An empty response on a full batch of liquid
+    # names is treated as a transient failure, not a real no-data result.
+    bars = None
+    last_err: Exception | None = None
+    for attempt in range(3):
+        try:
+            req = StockBarsRequest(
+                symbol_or_symbols=symbols,
+                timeframe=TimeFrame.Day,
+                start=start_dt,
+                end=end_dt,
+                feed=DataFeed.IEX,
+                adjustment=Adjustment.ALL,
+            )
+            bars = _CLIENT.get_stock_bars(req)
+            if bars.df is not None and not bars.df.empty:
+                break
+            last_err = RuntimeError("empty response")
+        except Exception as e:
+            last_err = e
+        if attempt < 2:
+            time.sleep(1.0 * (attempt + 1))
+
+    if bars is None or bars.df is None or bars.df.empty:
         log.warning(
-            "Alpaca batch fetch failed (%d symbols, %s..%s): %s: %s",
-            len(symbols), symbols[0], symbols[-1], type(e).__name__, e,
+            "Alpaca batch fetch failed after 3 attempts (%d symbols, %s..%s): %s",
+            len(symbols), symbols[0], symbols[-1], last_err,
         )
         return {}
 
     out: dict[str, pd.DataFrame] = {}
-    if bars.df is None or bars.df.empty:
-        return out
 
     df = bars.df
     if "symbol" in df.index.names:
