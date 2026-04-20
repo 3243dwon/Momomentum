@@ -90,7 +90,7 @@ jobs:
               exit 0
             fi
             echo "Push attempt $attempt rejected; pulling --rebase and retrying"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main
             sleep 2
           done
           echo "Push failed after 5 attempts"

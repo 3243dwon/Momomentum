@@ -64,7 +64,7 @@ jobs:
               exit 0
             fi
             echo "Push attempt $attempt rejected; pulling --rebase"
-            git pull --rebase origin main
+            git pull --rebase -X theirs origin main
             sleep 2
           done
           exit 1
