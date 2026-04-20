@@ -1,133 +1,65 @@
 {
-  "generated_at": "2026-04-20T12:55:50.983467-04:00",
+  "generated_at": "2026-04-20T13:52:35.719258-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Trump escalates rhetoric against Iran as a ceasefire deadline approaches, while US simultaneously prepares for peace talks \u2014 creating elevated Middle East tail risk with a two-sided outcome.",
+      "event_summary": "US government begins issuing tariff refunds on Monday, with import-heavy retailers positioned to receive significant cash paybacks.",
       "primary_drivers": [
-        "Middle East geopolitical risk premium on crude oil",
-        "Defense spending / munitions demand expectations",
-        "Safe-haven flows into gold and Treasuries"
+        "Direct cash refund inflows from previously paid tariffs boosting FCF and EPS",
+        "Margin recapture for retailers with high China/import COGS exposure",
+        "Sentiment rotation into tariff-loser names as the overhang reverses"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with highest absolute earnings leverage to a Brent risk premium; Iran escalation threatens Strait of Hormuz flows (~20% of global seaborne oil).",
+          "ticker": "FIVE",
+          "rationale": "Five Below sources ~60%+ of merchandise from China at low price points; tariffs were a direct margin headwind and refunds translate to material per-share cash recovery given the small market cap.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "High-beta US E&P with Permian concentration; moves ~1.5-2x WTI on geopolitical spikes, no Middle East production exposure so pure upside to crude price.",
+          "ticker": "DLTR",
+          "rationale": "Dollar Tree's $1.25-$7 price architecture was squeezed hardest by China tariffs; heavy import mix means refund checks are meaningful vs. operating income base.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Maker of THAAD, PAC-3 Patriot interceptors and JASSM \u2014 exactly the munitions being drawn down in Israel/Gulf air defense; direct replenishment contract beneficiary if conflict reignites.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon produces Standard Missile-3/6 and Tomahawks used by CENTCOM naval assets; prior Red Sea/Iran flareups drove visible backlog growth.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "B-2 sustainment and long-range strike prime; any actual Iran strike scenario flows to Northrop via munitions and ISR contracts.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25% of operating costs and Delta is largely unhedged; every $10 Brent move is material to EPS. Also highest international long-haul exposure among US carriers.",
+          "ticker": "BBY",
+          "rationale": "Best Buy consumer electronics COGS is heavily China-sourced (TVs, laptops, appliances); tariff paybacks are a direct cash windfall on a large import base.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "UAL",
-          "rationale": "Heavy transpacific/transatlantic route mix passing near affected airspace; fuel cost sensitivity plus potential route diversions around Iranian airspace.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with Mediterranean/Red Sea itineraries; prior Iran escalations forced re-routes and bunker fuel costs spiked.",
+          "ticker": "WSM",
+          "rationale": "Williams-Sonoma furniture/home goods imports carried Section 301 tariffs; refunds recover margin on a high-ticket import category.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Global air freight network with high jet fuel exposure; Express segment margins compress on crude spikes faster than surcharges reset.",
+          "ticker": "RH",
+          "rationale": "RH furniture sourced from Asia faced steep tariff costs that compressed gross margins; refund offers both cash and a sentiment reversal on a heavily shorted name.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
+        },
+        {
+          "ticker": "YETI",
+          "rationale": "YETI drinkware manufactured heavily in China was a named tariff loser; refund recovers prior paid duties directly to the P&L.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "WMT",
-          "rationale": "Thin-margin retailer exposed to diesel/transport cost passthrough and consumer discretionary pullback if gasoline prices spike into summer driving season.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "trump_iran_ceasefire_apr2026",
-      "source_news_ids": [
-        "74c11efa7be34781"
-      ],
-      "headlines": [
-        "Trump threatens Iran again as ceasefire deadline looms, U.S. gears up for peace talks"
-      ]
-    },
-    {
-      "event_summary": "Kevin Warsh, nominee for Fed Chair, tells Senate confirmation hearing that monetary policy should remain independent but the Fed must \"stay in its lane\" \u2014 signaling a narrower mandate focus and likely a more hawkish/orthodox approach than the current regime.",
-      "primary_drivers": [
-        "Signal of tighter-for-longer monetary policy / reluctance to ease aggressively",
-        "Narrower Fed mandate \u2014 less focus on climate, regulation, financial conditions management",
-        "Reduced perceived 'Fed put' raising real rates and term premium"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab's net interest margin benefits directly from a higher-for-longer front-end rate regime; a Warsh Fed seen as less eager to cut supports client cash yields and reduces the cash-sorting drag that pressured the stock in prior easing cycles.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MCO",
-          "rationale": "Moody's and rating agencies benefit if Warsh's 'stay in its lane' stance implies lighter Fed involvement in bank regulation/stress testing, shifting more credit assessment reliance back to NRSROs. Also benefits from any uptick in refinancing if long rates eventually stabilize.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "CME Group sees higher volumes in SOFR and Treasury futures when Fed policy path is contested/uncertain. A hawkish nominee repricing the curve drives immediate rates-complex volume \u2014 direct revenue exposure.",
+          "rationale": "Walmart is the largest US importer by volume; absolute refund dollars are huge but diluted across a $600B+ revenue base, so per-share impact is smaller than pure-play importers.",
           "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "BAC",
-          "rationale": "Bank of America has the largest asset sensitivity among money-center banks; a higher-for-longer rate path directly expands NIM on its ~$1T+ of low-cost deposits. Warsh is also viewed as friendlier to traditional banking vs. non-bank oversight.",
-          "confidence": "medium",
-          "horizon": "weeks"
         }
       ],
-      "losers": [
-        {
-          "ticker": "PLTR",
-          "rationale": "High-multiple, long-duration growth names with terminal-value-heavy DCFs de-rate when the market prices in a less dovish Fed reaction function. Palantir trades at ~60x sales and is among the most rate-sensitive momentum names.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "warsh_fed_chair_nominee_independence",
+      "losers": [],
+      "dedup_group": "tariff_refunds_april_2026",
       "source_news_ids": [
-        "23f5cd103ed6cb1e"
+        "8a97e98aba274b83"
       ],
       "headlines": [
-        "Fed Chair nominee Warsh says monetary policy should remain independent, but Fed must 'stay in its lane'"
+        "Tariff refunds begin on Monday. These retailers are due big paydays"
       ]
     }
   ]
