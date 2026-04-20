@@ -1,60 +1,103 @@
 {
-  "generated_at": "2026-04-19T18:28:39.213000-04:00",
+  "generated_at": "2026-04-19T23:28:19.339534-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Oil prices spiked after Iran and U.S. forces attacked commercial ships, escalating tensions over the Strait of Hormuz, a critical chokepoint for ~20% of global oil flows.",
+      "event_summary": "China's PBOC held its benchmark Loan Prime Rates unchanged as recent growth data firmed, while Middle East geopolitical risks remain a backdrop concern.",
       "primary_drivers": [
-        "Higher crude price realization for upstream producers",
-        "Geopolitical risk premium on tanker day-rates and insurance",
-        "Energy security bid for domestic/non-Gulf production"
+        "No incremental Chinese monetary stimulus despite market hopes",
+        "Signal that Chinese growth is stabilizing without needing rate cuts",
+        "Middle East risk overhang keeping oil/safe-haven bid"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FCX",
+          "rationale": "Freeport-McMoRan copper revenue is highly levered to Chinese industrial demand; a 'growth revving up' narrative without needing stimulus supports copper price and volume assumptions.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar's Asia-Pacific construction/mining equipment sales track Chinese fixed-asset activity; stabilizing growth without deflationary rate cuts is mildly positive for order book.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Direct beneficiary of the Middle East risk premium in crude; a sustained geopolitical bid lifts realized prices on integrated upstream operations.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere benefits from Mideast shipping/supply risk increasing European and Asian willingness to pay for US LNG as an alternative to Gulf-routed cargoes.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LVS",
+          "rationale": "Las Vegas Sands Macau revenue depends on Chinese consumer discretionary strength; no rate cut means no incremental consumer liquidity boost, and Mideast risk pressures travel sentiment.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "china_lending_rates_april_2026_stable",
+      "source_news_ids": [
+        "803f725ed7b6e0a0"
+      ],
+      "headlines": [
+        "China keeps benchmark lending rates unchanged as economic growth revs up, Mideast risks loom"
+      ]
+    },
+    {
+      "event_summary": "U.S.-Iran tensions escalate after Iran seizes a ship, raising Middle East geopolitical risk and potential for oil supply disruption via the Strait of Hormuz.",
+      "primary_drivers": [
+        "Geopolitical risk premium in crude oil prices",
+        "Strait of Hormuz shipping disruption risk raising tanker rates",
+        "Flight-to-safety and defense spending expectations"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with significant upstream leverage; each $10/bbl Brent move translates to meaningful EPS upside. Direct beneficiary of higher realized crude prices without Hormuz transit exposure relative to Gulf NOCs.",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; direct beneficiary of higher crude prices from Middle East risk premium. No Iranian production exposure to lose.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Upstream-weighted major; Permian and US GoM production benefits from higher prices while Chevron's Hormuz transit risk is limited vs. regional peers.",
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale producer (Permian) with high oil price sensitivity and no Iranian exposure; earnings leverage to WTI is among the highest in large-cap E&P.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil cut (~65%) and operational leverage; every dollar of Brent flows near-directly to cash flow. Classic geopolitical spike beneficiary.",
+          "rationale": "Permian pure-play with ~100% oil-weighted production; every $5 move in WTI materially flows to FCF. Clean beneficiary of geopolitical crude premium.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Product tanker operator \u2014 Hormuz disruption reroutes cargoes on longer ton-mile voyages and spikes clean tanker spot rates; insurance war-risk premiums also lift charter economics.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "ticker": "INSW",
+          "rationale": "International Seaways operates VLCC/Suezmax tankers; Hormuz disruption or ship seizures drive tanker day rates higher as rerouting lengthens ton-miles and insurance premia rise.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "FRO",
-          "rationale": "Crude tanker (VLCC/Suezmax) pure-play; Hormuz escalation historically drives VLCC spot rates sharply higher on rerouting and war-risk insurance passthrough.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 US LNG exporter benefits as European/Asian buyers pay up for non-Gulf supply; Qatari LNG (~20% of global) transits Hormuz, making US cargoes a security premium substitute.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense prime with direct exposure to Middle East munitions demand (PAC-3, THAAD, Javelin restocking) if conflict broadens; historically bid on Iran escalation headlines.",
+          "rationale": "Frontline is a pure-play crude tanker operator; historical precedent (2019 Gulf tanker attacks) shows immediate spot rate spikes on Iran escalation events.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services leveraged to North American completion activity; sustained >$85 Brent typically accelerates US shale capex plans, benefiting frac and pressure-pumping pricing.",
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin sells PAC-3/THAAD missile defense systems heavily deployed in the Gulf; escalation raises near-term order flow expectations from regional allies and US replenishment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Maker of Patriot, SM-3, Tomahawk \u2014 directly consumed in any Gulf engagement; ship seizures increase probability of naval escort/strike scenarios driving munitions demand.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -62,138 +105,41 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of Delta's operating costs; a sustained crude spike directly compresses margins with limited ability to pass through via fares in the short term.",
+          "rationale": "Delta has highest jet fuel exposure as % of opex among US legacy carriers and unhedged fuel book; crude spike directly compresses margins, plus Middle East route disruption risk.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "Same fuel-cost exposure as DAL; United carries meaningful international long-haul capacity making fuel burn per ASM particularly sensitive to crude.",
-          "confidence": "high",
+          "rationale": "United has significant Gulf/Asia-via-Gulf routing and Newark-Dubai-India connectivity; Hormuz airspace/fuel cost risk is a direct cost headwind.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest has historically hedged but fuel remains a top-2 cost line; domestic leisure-heavy network has limited pricing power to offset fuel shocks.",
-          "confidence": "high",
+          "rationale": "Southwest is 100% domestic but runs unhedged on fuel and operates on thin unit margins; sustained crude premium directly hits EPS with no international premium traffic offset.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Cruise operator with ~10% opex from bunker fuel; simultaneously faces itinerary risk if Middle East/Red Sea routes require rerouting, double-hit to margins and bookings.",
+          "rationale": "Carnival has high bunker fuel exposure and Mediterranean/Middle East itineraries; escalation forces costly reroutes and raises fuel cost per ALBD.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "FDX",
-          "rationale": "Express air freight network with high jet fuel intensity; fuel surcharges recover costs with a lag and B2B volume softening limits passthrough.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock exposure; oil-linked feedstock costs rise faster than contract pricing can reset, compressing spreads.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Consumer discretionary pressure from higher gasoline prices acts as a tax on low/middle-income consumers \u2014 Walmart's core demographic sees reduced discretionary wallet share.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_us_hormuz_tensions_april_2026",
-      "source_news_ids": [
-        "6e257b6736ff5302"
-      ],
-      "headlines": [
-        "Oil prices jump after Iran and U.S. attack commercial ships as tensions escalate over Strait of Hormuz"
-      ]
-    },
-    {
-      "event_summary": "AI startups absorbed $242B in Q1 2026 venture funding, exceeding all of 2025, signaling continued massive capital flows into AI infrastructure and model development.",
-      "primary_drivers": [
-        "VC dollars flow downstream to AI compute/infrastructure suppliers (GPUs, networking, power, cooling)",
-        "Validates AI capex super-cycle thesis, supporting hyperscaler and semi multiples",
-        "Capital concentration in private AI raises competitive/funding pressure on public AI software incumbents and small-cap competitors"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "NVDA",
-          "rationale": "VC funding into AI startups converts directly into GPU orders; OpenAI, Anthropic, xAI, and Mistral-tier raises historically translate to ~50-70% of compute spend going to NVIDIA H100/B200/GB200 systems. Most direct revenue link to private AI capex.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AVGO",
-          "rationale": "Custom AI ASIC and networking (Tomahawk/Jericho) beneficiary as hyperscalers and large AI labs build out clusters funded partly by these VC rounds; second-largest AI silicon vendor by revenue.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CRWV",
-          "rationale": "Pure-play GPU cloud (CoreWeave) is a primary destination for VC-funded AI startups that don't want to commit to AWS/Azure long-term contracts; backlog directly tracks AI startup formation.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "VRT",
-          "rationale": "Vertiv supplies liquid cooling and power distribution for AI data centers; capex pull-through from AI buildouts has driven order book growth. Direct exposure to data center expansion funded by this capital.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ANET",
-          "rationale": "Arista provides 400G/800G Ethernet switching for AI back-end networks; tier-2 cloud and neocloud buildouts (often funded by these VC dollars) increasingly favor Arista over InfiniBand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NBIS",
-          "rationale": "Nebius is another neocloud / GPU-as-a-service provider directly competing for AI startup workloads; smaller float makes it more sensitive to AI capex headlines than CRWV.",
+          "rationale": "FedEx operates Dubai hub and trans-Gulf freight lanes; jet fuel is largest variable cost and Gulf airspace disruption threatens Express network economics.",
           "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "TSM",
-          "rationale": "All advanced AI silicon (NVIDIA, AMD, Broadcom ASICs) is fabbed at TSMC on N4/N3/CoWoS; sustained AI startup funding extends the leading-edge wafer and advanced-packaging demand cycle.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "MU",
-          "rationale": "HBM3e/HBM4 supply is sold out through 2026; every incremental GPU shipment to a VC-funded AI lab pulls Micron HBM content. Tightest supply-demand link in memory.",
-          "confidence": "medium",
-          "horizon": "weeks"
         }
       ],
-      "losers": [
-        {
-          "ticker": "SNOW",
-          "rationale": "Increasingly competing with VC-funded AI-native data platforms (e.g., private LLM/agent infra startups); $242B funding pool intensifies competitive pressure on legacy data warehouse pricing and AI workload share.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "PATH",
-          "rationale": "RPA incumbent vulnerable to agentic-AI startups absorbing this VC capital (e.g., Adept-style, Sierra, Decagon); core automation TAM under direct attack from better-funded private competitors.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "WDAY",
-          "rationale": "HR/finance SaaS faces emerging AI-native back-office startups well-funded by this capital wave; risk of seat-based pricing model erosion as agents replace users.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "ai_venture_funding_q1_2026",
+      "dedup_group": "us_iran_tensions_ship_seizure_april_2026",
       "source_news_ids": [
-        "7334cda99af96985"
+        "bbdefd0bf2669342"
       ],
       "headlines": [
-        "AI Absorbs $242 Billion in Q1 Venture Funding, Exceeding All of 2025 Combined"
+        "Asia markets mostly rise as U.S.-Iran tensions escalate after ship seizure"
       ]
     }
   ]
