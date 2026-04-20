@@ -1,103 +1,72 @@
 {
-  "generated_at": "2026-04-19T23:28:19.339534-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-04-20T02:20:39.824080-04:00",
+  "ticker_news": {
+    "UMC": [
+      {
+        "id": "f0bbd14be21e3392",
+        "source": "finviz",
+        "publisher": "(DigiTimes)",
+        "ticker": "UMC",
+        "scope": "ticker",
+        "title": "As 2D NAND fades, UMC faces steep hurdles to enter a shrinking market",
+        "url": "https://www.digitimes.com/news/a20260420PD207/umc-nand-flash-price-production.html",
+        "published_at": "2026-04-20T01:45:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "umc_2d_nand_market_challenges",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "China's PBOC held its benchmark Loan Prime Rates unchanged as recent growth data firmed, while Middle East geopolitical risks remain a backdrop concern.",
+      "event_summary": "Gulf tanker attacks threaten a regional ceasefire, pressuring European equities and raising Middle East shipping/energy risk premiums.",
       "primary_drivers": [
-        "No incremental Chinese monetary stimulus despite market hopes",
-        "Signal that Chinese growth is stabilizing without needing rate cuts",
-        "Middle East risk overhang keeping oil/safe-haven bid"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "FCX",
-          "rationale": "Freeport-McMoRan copper revenue is highly levered to Chinese industrial demand; a 'growth revving up' narrative without needing stimulus supports copper price and volume assumptions.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar's Asia-Pacific construction/mining equipment sales track Chinese fixed-asset activity; stabilizing growth without deflationary rate cuts is mildly positive for order book.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Direct beneficiary of the Middle East risk premium in crude; a sustained geopolitical bid lifts realized prices on integrated upstream operations.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere benefits from Mideast shipping/supply risk increasing European and Asian willingness to pay for US LNG as an alternative to Gulf-routed cargoes.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LVS",
-          "rationale": "Las Vegas Sands Macau revenue depends on Chinese consumer discretionary strength; no rate cut means no incremental consumer liquidity boost, and Mideast risk pressures travel sentiment.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "china_lending_rates_april_2026_stable",
-      "source_news_ids": [
-        "803f725ed7b6e0a0"
-      ],
-      "headlines": [
-        "China keeps benchmark lending rates unchanged as economic growth revs up, Mideast risks loom"
-      ]
-    },
-    {
-      "event_summary": "U.S.-Iran tensions escalate after Iran seizes a ship, raising Middle East geopolitical risk and potential for oil supply disruption via the Strait of Hormuz.",
-      "primary_drivers": [
-        "Geopolitical risk premium in crude oil prices",
-        "Strait of Hormuz shipping disruption risk raising tanker rates",
-        "Flight-to-safety and defense spending expectations"
+        "Middle East geopolitical risk premium on crude oil",
+        "Shipping insurance/war risk surcharges and tanker rate spikes",
+        "Flight-to-safety flows and defense procurement tailwinds"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream leverage; direct beneficiary of higher crude prices from Middle East risk premium. No Iranian production exposure to lose.",
+          "rationale": "Integrated major with large upstream leverage to Brent; every $5 move in Brent flows through directly to E&P earnings. Gulf disruption risk lifts crude curve.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US shale producer (Permian) with high oil price sensitivity and no Iranian exposure; earnings leverage to WTI is among the highest in large-cap E&P.",
+          "rationale": "High-beta US E&P with concentrated oil (vs gas) production; realized price is near-pure Brent/WTI-linked, making it a preferred crude-spike trade.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play with ~100% oil-weighted production; every $5 move in WTI materially flows to FCF. Clean beneficiary of geopolitical crude premium.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways operates VLCC/Suezmax tankers; Hormuz disruption or ship seizures drive tanker day rates higher as rerouting lengthens ton-miles and insurance premia rise.",
+          "ticker": "FTI",
+          "rationale": "TechnipFMC benefits from higher subsea/offshore capex signaling as Gulf supply security concerns push NOCs and majors to accelerate non-Gulf project FIDs.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "FRO",
-          "rationale": "Frontline is a pure-play crude tanker operator; historical precedent (2019 Gulf tanker attacks) shows immediate spot rate spikes on Iran escalation events.",
-          "confidence": "medium",
+          "rationale": "Frontline is a pure-play crude tanker operator; war-risk premiums and rerouting away from Hormuz lift ton-mile demand and VLCC day rates directly.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers product-tanker fleet benefits from refined-product rerouting and insurance-driven rate spikes on any Gulf transit disruption.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Lockheed Martin sells PAC-3/THAAD missile defense systems heavily deployed in the Gulf; escalation raises near-term order flow expectations from regional allies and US replenishment.",
+          "rationale": "Lockheed is the prime on PAC-3/THAAD air defense interceptors heavily resupplied to Gulf partners; escalation raises FMS replenishment orders.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Maker of Patriot, SM-3, Tomahawk \u2014 directly consumed in any Gulf engagement; ship seizures increase probability of naval escort/strike scenarios driving munitions demand.",
+          "rationale": "Raytheon supplies Patriot systems and missile defense widely deployed with Gulf customers; tanker attacks drive replenishment and expanded orders.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -105,41 +74,41 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has highest jet fuel exposure as % of opex among US legacy carriers and unhedged fuel book; crude spike directly compresses margins, plus Middle East route disruption risk.",
+          "rationale": "Delta has high jet fuel cost sensitivity (~25-30% of opex) with limited hedging; Brent spike compresses margins and transatlantic route demand softens on geopolitical risk.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "United has significant Gulf/Asia-via-Gulf routing and Newark-Dubai-India connectivity; Hormuz airspace/fuel cost risk is a direct cost headwind.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is 100% domestic but runs unhedged on fuel and operates on thin unit margins; sustained crude premium directly hits EPS with no international premium traffic offset.",
-          "confidence": "medium",
+          "rationale": "United's international long-haul exposure (Europe, India via Gulf airspace) is directly hit by fuel cost rise and potential airspace rerouting around Gulf.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival has high bunker fuel exposure and Mediterranean/Middle East itineraries; escalation forces costly reroutes and raises fuel cost per ALBD.",
+          "rationale": "Carnival's Mediterranean/Middle East itineraries face cancellation risk plus bunker fuel cost spike; European consumer softness compounds demand risk.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "FedEx operates Dubai hub and trans-Gulf freight lanes; jet fuel is largest variable cost and Gulf airspace disruption threatens Express network economics.",
-          "confidence": "medium",
+          "ticker": "BUD",
+          "rationale": "AB InBev is Europe-listed ADR with Stoxx correlation plus EM/energy-sensitive consumer exposure; caught in both the European index drawdown and input cost lift.",
+          "confidence": "low",
           "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow Inc. is naphtha/ethane feedstock sensitive with large European operations; Brent spike compresses chemical spreads while Euro demand weakens.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "us_iran_tensions_ship_seizure_april_2026",
+      "dedup_group": "us_iran_ceasefire_brink_april_2026",
       "source_news_ids": [
-        "bbdefd0bf2669342"
+        "a41d5f3a770911ad"
       ],
       "headlines": [
-        "Asia markets mostly rise as U.S.-Iran tensions escalate after ship seizure"
+        "European stocks set to slump as Gulf tanker attacks threaten ceasefire"
       ]
     }
   ]
