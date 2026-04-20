@@ -1,381 +1,138 @@
 {
-  "generated_at": "2026-04-20T08:44:36.545648-04:00",
+  "generated_at": "2026-04-20T09:52:42.978728-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Rising U.S.-Iran tensions are pushing oil prices higher and weighing on broad equity indices.",
+      "event_summary": "Markets are whipsawing on conflicting Iran war headlines, with analysts warning investors may be too complacent about the conflict's trajectory.",
       "primary_drivers": [
-        "Higher crude prices lift upstream E&P revenue and cash flow",
-        "Geopolitical risk premium on Middle East supply (Strait of Hormuz exposure)",
-        "Defense budget/procurement tailwind from escalation risk",
-        "Higher energy input costs pressure fuel-sensitive consumer businesses"
+        "Geopolitical risk premium in crude oil with Strait of Hormuz exposure",
+        "Flight-to-safety flows into defense, gold, and Treasuries",
+        "Volatility expansion on headline uncertainty"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Large integrated with significant upstream leverage; every $10/bbl move in Brent materially lifts EPS. Direct revenue beneficiary of higher crude.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high oil beta (Permian-heavy); share price historically one of the most sensitive names to WTI spikes.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "Pure upstream E&P with no downstream hedge; near-linear exposure to crude price increases.",
+          "rationale": "Largest US integrated oil major with leveraged earnings to Brent; Iran conflict risks Strait of Hormuz (20% of global oil flow) creating direct crude price tailwind regardless of which direction headlines whipsaw.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime contractor for THAAD/PAC-3 missile defense and munitions actively used/replenished in Middle East operations; direct procurement beneficiary from escalation.",
-          "confidence": "medium",
+          "rationale": "Prime contractor for PAC-3/THAAD missile defense and munitions being drawn down in Middle East; sustained Iran conflict directly accelerates DoD replenishment orders. Pure defense exposure with no consumer cyclical drag.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Maker of Patriot/Tomahawk/SM-series missiles \u2014 consumables in any Iran confrontation, driving replenishment orders.",
-          "confidence": "medium",
+          "rationale": "Makes Patriot interceptors, Tomahawks, and AIM-120s being consumed in Red Sea/Israel theater; Iran escalation means direct munitions restocking contracts.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "NOC",
-          "rationale": "Defense pure-play with missile defense and ISR exposure; typically bid on Middle East escalation headlines.",
+          "rationale": "B-21, Global Hawk ISR, and ICBM exposure \u2014 benefits from both Middle East ops tempo and broader strategic deterrence budget pressure from Iran situation.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services leverage to higher crude prices driving producer capex; high-beta to oil rallies.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TNK",
-          "rationale": "Crude tanker operator \u2014 Strait of Hormuz disruption fears reroute flows and spike tanker day rates; direct beneficiary of shipping risk premium.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LUV",
-          "rationale": "Jet fuel is ~25-30% of airline opex and Southwest has historically been less hedged than peers; oil spike hits margins directly with limited near-term pricing offset.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Major carrier with heavy jet fuel exposure; refining margin (crack spreads) widen on crude spikes, compounding the hit.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost exposure as DAL/AAL; international route mix adds geopolitical overhang.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with bunker fuel exposure plus discretionary consumer risk-off on geopolitical shock.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Fuel is a major variable cost for air/ground network; surcharge lag means margin compression before pass-through catches up.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DRI",
-          "rationale": "Casual dining discretionary exposure \u2014 consumers pull back on dining out when gasoline prices rise sharply.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "us_iran_tensions_market_reaction",
-      "source_news_ids": [
-        "cd7661040d0e84c5"
-      ],
-      "headlines": [
-        "Stock Market Today: Dow Slides On Rising U.S.-Iran Tensions; Oil Prices Jumping Again (Live Coverage)"
-      ]
-    },
-    {
-      "event_summary": "SocGen analysis of Iran war oil-price crisis suggests elevated oil prices will persist before normalizing, framing the current conflict against historical Middle East crises since 1956.",
-      "primary_drivers": [
-        "Sustained crude oil price premium from Middle East supply risk",
-        "Shipping/tanker rate spike from Strait of Hormuz risk",
-        "Defense spending tailwind from regional conflict"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with high upstream leverage to Brent; every $10 sustained increase in crude adds several billion to annual cash flow. Direct price-taker benefit with limited Iran/Iranian-proxy asset exposure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "Pure-play upstream E&P with highest beta to oil price among large caps; no refining offset means near-full passthrough of sustained Brent premium to earnings.",
-          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "High-leverage Permian producer with operational gearing to crude; Buffett-backed balance sheet means sustained price premium flows directly to FCF and buybacks.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play with low breakeven; sustained oil premium translates to outsized FCF yield versus peers given lean cost structure.",
+          "rationale": "Leveraged Permian pure-play with highest beta to crude among US E&Ps; Buffett-backed name that rallies disproportionately on oil spikes from Middle East risk.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "FRO",
-          "rationale": "Frontline tanker rates spike on Hormuz disruption/rerouting risk; VLCC day rates historically 2-3x during Middle East crises as shippers avoid Gulf or demand war-risk premiums.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio product tanker fleet benefits from refined product arbitrage and longer ton-miles when Middle East crude flows are disrupted; direct rate-spike beneficiary.",
+          "ticker": "COP",
+          "rationale": "Largest US independent E&P with ~50% international production; direct leverage to Brent premium from Hormuz risk without refining drag.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Prime contractor for Patriot/THAAD missile defense systems being drawn down and resupplied during Iran conflict; direct replenishment order pipeline from DoD and Gulf allies.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon produces the interceptors (SM-3, Patriot PAC-3 MSE) being expended against Iranian missile/drone salvos; sustained conflict means multi-year replenishment contracts.",
-          "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "LUV",
-          "rationale": "Southwest has minimal fuel hedging relative to peers and runs thin domestic margins; sustained jet fuel premium from crude spike compresses unit economics directly.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "American Airlines carries heavy debt and no meaningful fuel hedge program; sustained crude premium amplifies interest-coverage stress and earnings compression.",
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25% of operating costs; sustained crude price elevation from Iran conflict directly compresses margins. Also exposure to reduced international/leisure travel on geopolitical anxiety.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "International route exposure including Middle East/Asia routings affected by airspace closures plus unhedged fuel cost inflation; double exposure to conflict persistence.",
-          "confidence": "medium",
+          "rationale": "Highest international route exposure among US carriers (Europe/Asia flights often overfly or route around Middle East); fuel cost + rerouting + demand hit is triple-whammy.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival bunker fuel is ~10% of operating costs with no hedging; sustained crude premium directly hits margins already recovering from post-pandemic debt load.",
+          "rationale": "Cruise operator with significant Mediterranean itineraries; Middle East escalation triggers cancellations and bunker fuel cost spike. Consumer discretionary + fuel sensitivity.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs correlate with crude; sustained premium compresses chemical spreads at a time of weak end-market demand, with limited passthrough ability.",
+          "ticker": "MAR",
+          "rationale": "Large Middle East hotel footprint (UAE, Saudi, Egypt, Jordan); regional travel disruption and business travel pullback directly hits RevPAR.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Diesel/transport cost passthrough hits Walmart's logistics-heavy low-margin model; gasoline premium also squeezes core low-income consumer discretionary spend.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "socgen_iran_crisis_oil_analysis",
+      "dedup_group": "iran_war_market_reaction",
       "source_news_ids": [
-        "58f2f6e958893713"
+        "0bcd276ad9fcefda"
       ],
       "headlines": [
-        "SocGen benchmarked the Iran war to every crisis since 1956. Here\u2019s when oil prices return to normal."
+        "Investors are misreading news about the Iran war, analysts say as markets whipsaw"
       ]
     },
     {
-      "event_summary": "Bitcoin and Ethereum prices are rising Monday morning despite escalating U.S.-Iran geopolitical tensions, showing crypto strength as a risk asset/alternative store of value.",
+      "event_summary": "Strategy (formerly MicroStrategy) announced a $2.5B Bitcoin purchase, its third-largest ever, signaling continued aggressive corporate BTC accumulation.",
       "primary_drivers": [
-        "Rising crypto spot prices directly lifting trading volumes and on-balance-sheet crypto holdings",
-        "Safe-haven/alt-asset bid amid geopolitical risk",
-        "Mining economics improve with higher BTC price"
+        "Large spot BTC demand absorbing supply",
+        "Signal of institutional/corporate conviction boosting crypto sentiment",
+        "Reflexive flows into BTC-leveraged equities and miners"
       ],
       "beneficiaries": [
         {
-          "ticker": "COIN",
-          "rationale": "Coinbase revenue is directly tied to crypto trading volumes and BTC/ETH price levels; higher prices lift transaction fees and custody AUC fees. Highest-beta pure-play to crypto price action among US large caps.",
+          "ticker": "MSTR",
+          "rationale": "Strategy itself \u2014 the buyer. Its equity trades as a leveraged BTC proxy with NAV premium; a $2.5B purchase increases BTC holdings and, if BTC rallies on the news, mNAV expands.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "MSTR",
-          "rationale": "Strategy (MicroStrategy) holds >500k BTC on balance sheet; NAV and share price move near 1.5-2x BTC price. Direct mark-to-market beneficiary of BTC rally.",
+          "ticker": "COIN",
+          "rationale": "Coinbase is the primary US execution/custody venue for institutional BTC buys; higher corporate treasury accumulation drives trading volume and custody fees, and sentiment correlation to BTC price is direct.",
           "confidence": "high",
-          "horizon": "intraday"
+          "horizon": "days"
         },
         {
           "ticker": "MARA",
-          "rationale": "Marathon Digital is a pure-play BTC miner; revenue per coin mined rises linearly with BTC price while costs are largely fixed, so operating leverage is high.",
+          "rationale": "Largest US-listed pure-play BTC miner; equity beta to BTC spot price is ~2-3x, so any BTC move on the news translates directly into MARA price action.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIOT",
-          "rationale": "Riot Platforms BTC miner with similar operating leverage dynamics; typically trades in tight correlation with BTC spot price and MARA.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HOOD",
-          "rationale": "Robinhood derives a meaningful and growing share of transaction-based revenue from crypto trading (BTC/ETH/DOGE); retail crypto engagement rises with price rallies.",
-          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CLSK",
-          "rationale": "CleanSpark pure-play BTC miner with high operational leverage to BTC price; often the highest-beta name in the mining cohort on rally days.",
+          "rationale": "CleanSpark is a high-beta BTC miner that also holds BTC on balance sheet; benefits from both spot price lift and sector rotation into miners on Strategy-driven headlines.",
           "confidence": "medium",
           "horizon": "days"
+        },
+        {
+          "ticker": "RIOT",
+          "rationale": "Riot Platforms \u2014 large US miner with substantial BTC treasury; peer-correlation trade alongside MARA/CLSK on any crypto-sentiment surge.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HOOD",
+          "rationale": "Robinhood derives a meaningful and growing share of transaction revenue from crypto; retail engagement spikes on headline-driven BTC rallies, lifting volumes.",
+          "confidence": "medium",
+          "horizon": "intraday"
         }
       ],
       "losers": [],
-      "dedup_group": "crypto_prices_iran_tensions",
+      "dedup_group": "strategy_bitcoin_2_5bn_purchase",
       "source_news_ids": [
-        "01438e03c12ab9a9"
+        "d640afa2e09273a2"
       ],
       "headlines": [
-        "Bitcoin and ethereum price today, Monday, April 20, 2026: Prices rising this morning despite U.S.-Iranian tensions"
-      ]
-    },
-    {
-      "event_summary": "Kevin Warsh faces Senate confirmation hearing for Fed Chair nomination, with central bank independence as the central debate.",
-      "primary_drivers": [
-        "Perceived shift toward more hawkish/orthodox monetary policy under Warsh vs. a politicized dovish Fed",
-        "Uncertainty about Fed independence premium in long-end Treasuries and USD",
-        "Repricing of rate path expectations"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GS",
-          "rationale": "Warsh is a former Morgan Stanley banker and known advocate of normalized rates and lighter regulatory touch; capital markets franchises benefit from curve steepening and deregulatory tone associated with his nomination.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SCHW",
-          "rationale": "Direct beneficiary if Warsh hearing reinforces a higher-for-longer short-rate path \u2014 net interest margin on client cash sweeps is highly rate-sensitive.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COIN",
-          "rationale": "Bitcoin and crypto proxies bid on central bank independence/fiat credibility concerns; Coinbase is the most liquid US equity expression of that theme.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [],
-      "dedup_group": "fed_chair_warsh_confirmation",
-      "source_news_ids": [
-        "5b2117bcc69ff430"
-      ],
-      "headlines": [
-        "Central bank independence in focus as Fed chair nominee Kevin Warsh faces confirmation hearing"
-      ]
-    },
-    {
-      "event_summary": "Gold rebounds and silver holds flat amid renewed U.S.-Iran geopolitical tensions.",
-      "primary_drivers": [
-        "Safe-haven bid lifting gold prices",
-        "Middle East geopolitical risk premium on oil",
-        "Precious metals miner operating leverage to spot gold"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "NEM",
-          "rationale": "Newmont is the largest US-listed gold producer; earnings have high operating leverage to spot gold \u2014 a sustained bid from safe-haven flows flows directly to margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AEM",
-          "rationale": "Agnico Eagle is a pure-play senior gold miner with low-cost ounces; spot gold rallies translate near-linearly into FCF expansion.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GOLD",
-          "rationale": "Barrick Gold \u2014 senior producer with direct spot exposure; typically rallies with GLD on geopolitical risk-off days.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "U.S.-Iran escalation raises Strait of Hormuz/Gulf shipping risk premium on crude; ExxonMobil's upstream earnings benefit from higher Brent.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Occidental has high torque to crude prices given leveraged balance sheet; benefits from Iran-related oil risk premium.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin \u2014 Middle East flare-ups historically drive defense-name bids on expectations of elevated munitions/missile-defense demand (PAC-3, THAAD exposure).",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WPM",
-          "rationale": "Wheaton Precious Metals \u2014 streaming model provides direct spot-gold/silver leverage without mining opex risk; tends to outperform on safe-haven days.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta is the most jet-fuel-sensitive US airline given limited hedging; higher crude from Iran risk premium pressures unit costs.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest \u2014 jet fuel is ~25% of opex and hedges have rolled off; crude spike on Mideast tension directly pressures margins.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival has both bunker fuel cost exposure and itinerary risk if Middle East/Red Sea routes are affected by escalation.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "gold_silver_uran_tensions",
-      "source_news_ids": [
-        "3e6d7158849d4c8a"
-      ],
-      "headlines": [
-        "Gold and silver prices today, Monday, April 20: Gold rebounds early, silver stays flat, as U.S.-Iranian tensions flare yet again"
+        "Strategy Buys $2.5 Billion Of Bitcoin, Its Third-Largest Purchase Ever"
       ]
     }
   ]
