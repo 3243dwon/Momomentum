@@ -1,138 +1,132 @@
 {
-  "generated_at": "2026-04-20T09:52:42.978728-04:00",
+  "generated_at": "2026-04-20T10:29:17.818898-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Markets are whipsawing on conflicting Iran war headlines, with analysts warning investors may be too complacent about the conflict's trajectory.",
+      "event_summary": "VIX spiked 9.7% as rising oil prices drove broader market fear and volatility.",
       "primary_drivers": [
-        "Geopolitical risk premium in crude oil with Strait of Hormuz exposure",
-        "Flight-to-safety flows into defense, gold, and Treasuries",
-        "Volatility expansion on headline uncertainty"
+        "Higher crude oil prices flowing through to input costs and inflation expectations",
+        "Volatility spike increasing demand for hedges and volatility-linked products",
+        "Risk-off rotation away from consumer discretionary and into energy/defensives"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with leveraged earnings to Brent; Iran conflict risks Strait of Hormuz (20% of global oil flow) creating direct crude price tailwind regardless of which direction headlines whipsaw.",
+          "rationale": "Integrated major with direct upstream leverage to crude prices; each $10/bbl move meaningfully shifts upstream earnings. Pure-play beneficiary of the oil spike driving the fear.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Prime contractor for PAC-3/THAAD missile defense and munitions being drawn down in Middle East; sustained Iran conflict directly accelerates DoD replenishment orders. Pure defense exposure with no consumer cyclical drag.",
+          "ticker": "CVX",
+          "rationale": "Same direct upstream crude price leverage as XOM; US large-cap integrated that typically leads oil-driven sector rotations.",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Makes Patriot interceptors, Tomahawks, and AIM-120s being consumed in Red Sea/Israel theater; Iran escalation means direct munitions restocking contracts.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "B-21, Global Hawk ISR, and ICBM exposure \u2014 benefits from both Middle East ops tempo and broader strategic deterrence budget pressure from Iran situation.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Leveraged Permian pure-play with highest beta to crude among US E&Ps; Buffett-backed name that rallies disproportionately on oil spikes from Middle East risk.",
-          "confidence": "medium",
+          "rationale": "Permian-weighted E&P with high oil price beta (roughly 2x crude moves historically); pure-play US shale producer benefits directly from oil fear rally.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "COP",
-          "rationale": "Largest US independent E&P with ~50% international production; direct leverage to Brent premium from Hormuz risk without refining drag.",
+          "rationale": "Pure-play E&P with no downstream offset; leveraged directly to WTI/Brent spot prices driving today's move.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CBOE",
+          "rationale": "Operator of the VIX complex and SPX options \u2014 volatility spikes drive options volumes and VIX product trading, a direct revenue tailwind.",
           "confidence": "medium",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25% of operating costs; sustained crude price elevation from Iran conflict directly compresses margins. Also exposure to reduced international/leisure travel on geopolitical anxiety.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Highest international route exposure among US carriers (Europe/Asia flights often overfly or route around Middle East); fuel cost + rerouting + demand hit is triple-whammy.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with significant Mediterranean itineraries; Middle East escalation triggers cancellations and bunker fuel cost spike. Consumer discretionary + fuel sensitivity.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAR",
-          "rationale": "Large Middle East hotel footprint (UAE, Saudi, Egypt, Jordan); regional travel disruption and business travel pullback directly hits RevPAR.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_war_market_reaction",
-      "source_news_ids": [
-        "0bcd276ad9fcefda"
-      ],
-      "headlines": [
-        "Investors are misreading news about the Iran war, analysts say as markets whipsaw"
-      ]
-    },
-    {
-      "event_summary": "Strategy (formerly MicroStrategy) announced a $2.5B Bitcoin purchase, its third-largest ever, signaling continued aggressive corporate BTC accumulation.",
-      "primary_drivers": [
-        "Large spot BTC demand absorbing supply",
-        "Signal of institutional/corporate conviction boosting crypto sentiment",
-        "Reflexive flows into BTC-leveraged equities and miners"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "MSTR",
-          "rationale": "Strategy itself \u2014 the buyer. Its equity trades as a leveraged BTC proxy with NAV premium; a $2.5B purchase increases BTC holdings and, if BTC rallies on the news, mNAV expands.",
+          "ticker": "LUV",
+          "rationale": "Jet fuel is ~25-30% of operating costs for Southwest and it has historically been less hedged than peers; direct margin hit from oil spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
+          "ticker": "DAL",
+          "rationale": "Jet fuel cost pass-through with lag; oil spikes compress near-term airline margins and airlines are the classic funding short in oil-fear trades.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with heavy bunker fuel exposure plus discretionary travel demand sensitivity \u2014 hit on both cost and demand sides from oil-driven risk-off.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CARR",
+          "rationale": "Consumer discretionary plus freight/trucking oil cost exposure \u2014 wait, replacing with more direct name.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMZN",
+          "rationale": "Last-mile logistics and freight fuel costs plus discretionary consumer exposure; typical underperformer in oil-shock risk-off tapes.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "vix_spike_oil_fears_april_2026",
+      "source_news_ids": [
+        "9adbb90033a93e6e"
+      ],
+      "headlines": [
+        "CBOE VIX Index Spikes 9.7% as Oil-Fueled Fears Grip Markets"
+      ]
+    },
+    {
+      "event_summary": "Crypto ETFs recorded their largest weekly inflow since January, signaling renewed institutional demand for digital asset exposure.",
+      "primary_drivers": [
+        "Institutional flows into spot crypto ETFs increase AUM-based fees for issuers",
+        "Rising BTC/ETH spot demand from ETF creations lifts crypto-correlated equities",
+        "Positive flow momentum re-rates miners and exchanges via higher transaction/fee volume expectations"
+      ],
+      "beneficiaries": [
+        {
           "ticker": "COIN",
-          "rationale": "Coinbase is the primary US execution/custody venue for institutional BTC buys; higher corporate treasury accumulation drives trading volume and custody fees, and sentiment correlation to BTC price is direct.",
+          "rationale": "Coinbase is custodian for most major spot BTC ETFs (including IBIT) and earns custody fees plus benefits from rising retail trading volumes that typically accompany ETF inflow cycles. Direct revenue link to crypto AUM and volume.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "MicroStrategy holds ~500K+ BTC on balance sheet and trades as a leveraged BTC proxy with a persistent NAV premium that expands during inflow-driven rallies.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "MARA",
-          "rationale": "Largest US-listed pure-play BTC miner; equity beta to BTC spot price is ~2-3x, so any BTC move on the news translates directly into MARA price action.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CLSK",
-          "rationale": "CleanSpark is a high-beta BTC miner that also holds BTC on balance sheet; benefits from both spot price lift and sector rotation into miners on Strategy-driven headlines.",
+          "rationale": "Largest publicly traded Bitcoin miner; revenue is direct function of BTC price, and miners show high beta (1.5-2x) to BTC moves during inflow periods.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "RIOT",
-          "rationale": "Riot Platforms \u2014 large US miner with substantial BTC treasury; peer-correlation trade alongside MARA/CLSK on any crypto-sentiment surge.",
+          "ticker": "CLSK",
+          "rationale": "Pure-play BTC miner with significant treasury holdings; historically rallies alongside ETF inflow cycles via BTC price beta.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "HOOD",
-          "rationale": "Robinhood derives a meaningful and growing share of transaction revenue from crypto; retail engagement spikes on headline-driven BTC rallies, lifting volumes.",
+          "rationale": "Robinhood derives a meaningful and growing share of transaction revenue from crypto; renewed retail interest following ETF inflows typically lifts crypto trading volumes on the platform.",
           "confidence": "medium",
-          "horizon": "intraday"
+          "horizon": "days"
         }
       ],
       "losers": [],
-      "dedup_group": "strategy_bitcoin_2_5bn_purchase",
+      "dedup_group": "crypto_etf_inflows_weekly_surge",
       "source_news_ids": [
-        "d640afa2e09273a2"
+        "4daa9a129c546217"
       ],
       "headlines": [
-        "Strategy Buys $2.5 Billion Of Bitcoin, Its Third-Largest Purchase Ever"
+        "Crypto ETFs See Biggest Weekly Inflow Since January"
       ]
     }
   ]
