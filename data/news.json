@@ -1,236 +1,248 @@
 {
-  "generated_at": "2026-04-21T05:17:58.572473-04:00",
+  "generated_at": "2026-04-21T06:48:53.928373-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "US-Iran tensions escalate with hostile rhetoric as peace talks stall, raising geopolitical risk premium in oil and Middle East conflict exposure.",
+      "event_summary": "Kevin Warsh, nominated as Fed Chair, faces his Senate confirmation hearing Tuesday, with markets focused on his historically hawkish/hard-money leanings versus pressure to align with the administration's easier-policy preferences.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude oil from potential Strait of Hormuz/Gulf disruption",
-        "Increased probability of military engagement driving defense procurement expectations",
-        "Safe-haven rotation into gold and defensive assets"
+        "Rate path uncertainty \u2014 Warsh historically hawkish on inflation but nominated by an administration wanting cuts; hearing tone will shift 2026 cut odds",
+        "Fed independence/credibility signaling affecting long-end yields and dollar",
+        "Regulatory posture \u2014 Warsh viewed as lighter-touch on bank regulation than Powell-era framework"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "GS",
+          "rationale": "Warsh spent years at Morgan Stanley and is viewed as Wall Street-friendly; market expects lighter bank capital/Basel III Endgame enforcement under his Fed. Direct regulatory relief for large broker-dealers with capital markets revenue exposure.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MS",
+          "rationale": "Same thesis as GS \u2014 Warsh's former employer, perceived regulatory tailwind for capital markets/trading businesses if he signals softer supervisory stance in testimony.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "warsh_fed_chair_nomination_hearing_april_2026",
+      "source_news_ids": [
+        "448d03faf4996971"
+      ],
+      "headlines": [
+        "Here's what to expect from Fed chair nominee Kevin Warsh's Senate hearing Tuesday"
+      ]
+    },
+    {
+      "event_summary": "Associated British Foods (Primark owner) warns that the Iran war is hurting its retail outlook, becoming one of the first European retailers to flag the conflict as a drag on consumer demand and costs.",
+      "primary_drivers": [
+        "Middle East conflict raising energy/freight costs and denting European consumer confidence",
+        "Shipping route disruption (Red Sea / Strait of Hormuz risk) lifting logistics costs for apparel importers",
+        "Defense spending tailwind from escalating regional war"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Iran tensions drive Brent risk premium; Exxon has highest absolute upstream leverage to crude prices among US majors with ~60% of earnings from upstream.",
+          "rationale": "Direct beneficiary of higher crude prices from Iran war risk premium; Strait of Hormuz concerns support Brent, and XOM's upstream leverage is among the highest of US supermajors.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US upstream with high beta to WTI/Brent; Permian-weighted production means direct earnings torque from any crude spike tied to Gulf disruption risk.",
-          "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Escalation rhetoric increases demand for missile defense (THAAD, PAC-3) and munitions; Lockheed is prime contractor for systems actively deployed to counter Iranian missile/drone threats.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "rationale": "Lockheed sells Patriot, THAAD and PAC-3 missile defense systems being actively consumed/ordered in the Israel-Iran theater; direct order-book tailwind.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon makes Patriot interceptors and SM-series missiles used heavily in Red Sea/Gulf operations; replenishment orders accelerate on Iran escalation scenarios.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Strategic deterrence (B-21, ICBM Sentinel) and ISR exposure; benefits from elevated defense budget posture during Middle East confrontations.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "ConocoPhillips is a near pure-play E&P with high crude beta and no refining hedge, making it a cleaner vehicle for an Iran-driven oil spike than integrated majors.",
+          "rationale": "Raytheon makes the interceptors (SM-3, SM-6, AMRAAM) being expended in Middle East air defense; restocking orders are a direct revenue driver.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "months"
+        },
+        {
+          "ticker": "ZIM",
+          "rationale": "Container shipper that benefits from Red Sea/Hormuz rerouting spiking spot freight rates \u2014 same dynamic that lifted ZIM during 2024 Houthi attacks.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "UAL",
-          "rationale": "United has the largest international long-haul exposure among US carriers including Middle East/India routes; jet fuel cost spike from crude rally directly compresses margins and any Gulf airspace disruption forces costly rerouting.",
-          "confidence": "high",
+          "ticker": "TJX",
+          "rationale": "Off-price apparel retailer with business model closest to Primark's; if ABF is flagging weaker apparel demand and higher sourcing/freight costs, TJX faces the same margin pressure on European ops (TK Maxx) and similar consumer headwinds.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ROST",
+          "rationale": "Pure-play off-price apparel peer of Primark; a named competitor warning on outlook is a direct read-across for discretionary apparel demand and import freight costs.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HNRG",
+          "rationale": "European consumer exposure via mass-market apparel \u2014 wait, better pick:",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "URBN",
+          "rationale": "Urban Outfitters has meaningful European exposure and discretionary young-consumer skew \u2014 the exact cohort Primark serves \u2014 so a Primark demand warning is a negative read-across.",
+          "confidence": "low",
           "horizon": "days"
         },
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating cost; Delta's limited fuel hedging means a crude spike on Iran risk flows straight to EPS estimates.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival has Mediterranean and Middle East itineraries plus high bunker fuel sensitivity; escalation scenarios trigger itinerary changes and fuel cost pressure.",
+          "rationale": "Higher jet fuel from Iran war premium directly compresses airline margins; Delta has significant transatlantic exposure that is also demand-sensitive to Middle East travel fears.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Global air freight network with significant jet fuel exposure and Dubai hub operations; crude spike plus potential airspace closures hit both cost and routing.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Consumer discretionary margin pressure if gasoline spikes from Iran risk premium; Walmart's low-income consumer base is most gasoline-price-sensitive, historically correlated with comp pressure during oil spikes.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "us_iran_rhetoric_ceasefire",
+      "dedup_group": "primark_parent_iran_war_outlook_warning",
       "source_news_ids": [
-        "714c63c4b3b683ea"
+        "11b374f8a6745fa4"
       ],
       "headlines": [
-        "\u2018New cards on the battlefield\u2019: U.S., Iran ratchet up rhetoric with peace talks in limbo"
+        "Primark owner warns of impact of war in Iran on outlook \u2014 making it one of the first European retailers to do so"
       ]
     },
     {
-      "event_summary": "Japan reverses its long-standing pacifist policy and lifts the ban on exporting lethal weapons, opening a new export market for Japanese and allied defense primes.",
+      "event_summary": "Kevin Warsh, a known hawk and balance sheet critic, faces confirmation hearing (likely for Fed Chair) as a framework for a materially smaller Fed balance sheet emerges.",
       "primary_drivers": [
-        "Expanded addressable defense export market for Japan and its co-production partners",
-        "Increased defense industrial cooperation between US primes and Japanese firms (Mitsubishi Heavy, Kawasaki, IHI)",
-        "Regional rearmament signal (China/North Korea containment) boosting allied defense spending expectations"
+        "Reduced Fed reserve demand / faster QT implies tighter financial conditions and higher term premia",
+        "Steeper yield curve / higher long-end rates from reduced Fed Treasury holdings",
+        "Hawkish leadership signal reduces expectations of rate cuts and liquidity backstop"
       ],
       "beneficiaries": [
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed co-produces F-35 components and PAC-3 Patriot interceptors with Mitsubishi Heavy Industries in Japan; lifting export ban allows Japanese-built PAC-3s to flow to US/allies, directly expanding Lockheed's licensed production pipeline (already announced for US backfill to Ukraine).",
+          "ticker": "SCHW",
+          "rationale": "Higher short rates and steeper curve lift net interest margin on client cash sweep balances; Schwab's earnings are directly levered to the short end staying higher-for-longer under a hawkish Fed regime.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MET",
+          "rationale": "Life insurers benefit from higher long-end yields on reinvestment of fixed income portfolios; a smaller Fed balance sheet and steeper curve directly raises book-yield trajectory.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BAC",
+          "rationale": "Large asset-sensitive bank with heavy long-duration securities book; steeper curve from reduced Fed Treasury holdings improves NIM and reduces AOCI drag as existing hedges roll.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Rate volatility and reduced Fed market footprint drives higher Treasury and SOFR futures volumes; CME is the direct toll-taker on any increase in rates hedging activity.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple, long-duration tech name trading on terminal value; rising long-end yields from QT framework compresses the multiple mechanically via DCF.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income and other bond-proxy REITs trade inversely to 10Y yields; a smaller Fed balance sheet framework raises long rates and widens cap rates, hitting NAV and dividend-yield spread attractiveness.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "warsh_fed_hearing_balance_sheet",
+      "source_news_ids": [
+        "7828f071b40b77c8"
+      ],
+      "headlines": [
+        "As Warsh faces hearing, a framework for smaller Fed balance sheet emerges"
+      ]
+    },
+    {
+      "event_summary": "Wall Street strategists warn markets may be too complacent about Iran war risks as stocks trade at record highs, suggesting mispriced geopolitical tail risk.",
+      "primary_drivers": [
+        "Underpriced Middle East geopolitical risk premium",
+        "Potential oil supply disruption (Strait of Hormuz / Iranian exports)",
+        "Possible volatility spike if complacency reverses"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; any Iran-related supply disruption or risk premium lifts Brent, directly flowing to E&P earnings. Not Middle East asset-heavy, so limited downside from regional escalation.",
           "confidence": "high",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play US E&P with ~100% upstream exposure \u2014 highest beta to crude price spike from Iran supply shock. No downstream drag.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed makes THAAD, PAC-3 missiles and F-35s \u2014 direct beneficiaries of increased Middle East defense demand and US munitions restocking if Iran conflict escalates.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon partners with Mitsubishi on Patriot missile production and AIM-120 components in Japan; export liberalization increases joint-venture throughput and royalty/licensing revenue on Japanese-manufactured units sold to third countries.",
+          "rationale": "Raytheon produces Patriot interceptors and Tomahawks being consumed in Middle East operations; munitions replenishment contracts are a direct earnings tailwind.",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "Boeing Defense has extensive Japanese co-production (F-15J upgrades, CH-47, P-1 subsystems, KC-46); Japanese export capability allows Boeing-designed platforms to be sold via Japan, increasing program economics and offset opportunities.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GD",
-          "rationale": "General Dynamics supplies naval combat systems and munitions where Japanese shipbuilders (MHI, Kawasaki) are potential export competitors AND partners; broader Asian naval buildup triggered by Japan's pivot lifts regional surface combatant and Virginia-class adjacent demand.",
-          "confidence": "medium",
           "horizon": "months"
         },
         {
           "ticker": "NOC",
-          "rationale": "Northrop's Global Hawk and missile defense sensors (including co-developed SM-3 Block IIA with MHI) benefit from Japanese export capability; SM-3 IIA is the most obvious near-term export candidate to Poland/Europe.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Northrop's missile defense and strategic systems are direct beneficiaries of elevated Iran tensions and increased DoD supplemental funding.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
-          "ticker": "LHX",
-          "rationale": "L3Harris supplies tactical radios and EW systems integrated into Japanese platforms; export liberalization expands the international sales envelope for jointly-integrated systems and communications backbone.",
-          "confidence": "low",
+          "ticker": "OXY",
+          "rationale": "US-focused E&P with high oil beta; Buffett-backed name often sees flows on oil risk premium trades. Slightly less pure than COP but higher liquidity in options.",
+          "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "KTOS",
-          "rationale": "Kratos competes in lower-cost tactical drones and target systems where Japanese entrants (Kawasaki, IHI unmanned programs) could undercut on price for Asian allies now that Japanese exports are permitted \u2014 modest share pressure in out-years.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "AVAV",
-          "rationale": "AeroVironment faces potential longer-term competition from newly exportable Japanese small UAS, though near-term impact is minimal given Japan's limited drone export catalogue.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "japan_lethal_weapons_export_policy_shift",
-      "source_news_ids": [
-        "bd1bf485e35f6ba6"
-      ],
-      "headlines": [
-        "Japan scraps ban on lethal weapons exports in major shift of pacifist policy"
-      ]
-    },
-    {
-      "event_summary": "MarketWatch thought-piece arguing that geopolitical fragmentation (Red Sea attacks, US-China tensions, sanctions regimes) is permanently ending the post-WWII \"freedom of the seas\" regime, implying structurally higher shipping costs, longer routes, and more naval/insurance overhead.",
-      "primary_drivers": [
-        "Structurally higher freight rates from rerouting and risk premiums",
-        "Increased defense/naval spending to protect sea lanes",
-        "Reshoring/nearshoring pressure as global supply chains become less reliable"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "ZIM",
-          "rationale": "Container shipper with heavy spot-rate exposure; benefits directly when Red Sea rerouting via Cape of Good Hope tightens capacity and lifts freight rates. Pure-play leverage to the thesis.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MATX",
-          "rationale": "Matson operates Pacific trade lanes and benefits from premium expedited shipping demand when Suez/Red Sea routes become unreliable; shippers pay up for reliable alternatives.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates spike on longer ton-miles from rerouting around Africa; direct beneficiary of the exact mechanism the article describes.",
+          "ticker": "DAL",
+          "rationale": "Delta has highest jet fuel cost sensitivity among US majors; Iran-driven crude spike compresses margins immediately, and Middle East route disruptions add secondary pressure.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "FRO",
-          "rationale": "Frontline crude tanker fleet benefits from elevated ton-miles and geopolitical risk premiums on seaborne oil transport; sanctions regimes on Russian/Iranian crude boost compliant tanker demand.",
+          "ticker": "UAL",
+          "rationale": "United has meaningful international long-haul exposure including routes affected by Middle East airspace closures; fuel cost and rerouting both negative.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 cruise operator with Mediterranean/Middle East itineraries; fuel costs plus itinerary disruption plus demand hit from conflict headlines. Triple exposure.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin is the prime contractor for Aegis and naval missile systems; a doctrine shift toward defending contested sea lanes increases naval procurement budgets.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "HII",
-          "rationale": "Huntington Ingalls is the sole US builder of nuclear aircraft carriers and a key surface combatant yard; direct beneficiary of any sustained push to expand the Navy to police sea lanes.",
+          "ticker": "LUV",
+          "rationale": "Southwest is domestic-only but unhedged on fuel relative to peers historically; pure jet fuel cost shock with no international revenue offset.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HLT",
+          "rationale": "Hilton has Middle East franchise exposure and broader travel demand sensitivity to geopolitical shocks; leisure travel bookings historically soften on regional war escalation.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "losers": [
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart imports ~20%+ of COGS from Asia via ocean freight; structurally higher shipping costs and longer transit times compress gross margin and working capital efficiency.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NKE",
-          "rationale": "Nike sources the vast majority of footwear from Vietnam/Indonesia/China \u2014 heavily exposed to Asia-Europe and trans-Pacific ocean freight inflation with limited ability to fully pass through.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "EXPD",
-          "rationale": "Expeditors is an asset-light freight forwarder; while they can pass rates through, prolonged disruption hurts volumes and air-freight substitution is margin-neutral at best. Mixed exposure but thesis article implies volume destruction long-term.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Dollar General's low-price model depends on cheap Asian imports; structurally higher landed costs on general merchandise pressure the consumable/non-consumable margin mix with no pricing power at the low end.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "global_shipping_geopolitical_disruption",
+      "dedup_group": "iran_war_stocks_optimism",
       "source_news_ids": [
-        "19895bc687d268d9"
+        "053f7f198c2053d8"
       ],
       "headlines": [
-        "The end of freedom of the seas: Why global shipping may never be the same"
+        "Wall Street fears 'too much optimism' about Iran war as stocks hit record highs"
       ]
     }
   ]
