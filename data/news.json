@@ -1,54 +1,90 @@
 {
-  "generated_at": "2026-04-21T16:03:19.387489-04:00",
+  "generated_at": "2026-04-21T17:09:20.636433-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Kevin Warsh survives a contentious Senate confirmation hearing with his proposed Fed \"regime-change\" agenda (hawkish, anti-QE, shrink-the-balance-sheet, more rules-based policy) still intact, raising odds he becomes Fed Chair.",
+      "event_summary": "Trump extended a ceasefire in Iran, describing the Iranian government as \"seriously fractured,\" suggesting reduced near-term risk of Middle East military escalation.",
       "primary_drivers": [
-        "Hawkish Fed leadership repricing: higher real rates / steeper curve / reduced balance sheet support",
-        "Reduced implicit 'Fed put' \u2014 less accommodation for risk assets in stress",
-        "Stronger USD expectations from tighter-for-longer framework"
+        "Reduced geopolitical risk premium in crude oil",
+        "Lower demand for defense/war-related hedges",
+        "Risk-on rotation as Middle East tail risk fades"
       ],
       "beneficiaries": [
         {
-          "ticker": "SCHW",
-          "rationale": "Schwab earnings are highly sensitive to the short end and to bank reserves; a Warsh regime that keeps rates higher for longer and continues QT supports net interest margin on its cash sweep and reduces the deposit-flight concern that hurt it in 2023.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "DAL",
+          "rationale": "Delta is the most jet-fuel-sensitive US legacy carrier; a crude selloff on fading Iran risk directly lowers its largest variable cost. Fuel is ~20-25% of opex and the airline does not aggressively hedge.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
-          "ticker": "MCO",
-          "rationale": "A more rules-based, credible anti-inflation Fed tends to compress credit spreads over time and supports issuance volumes \u2014 Moody's ratings revenue is directly leveraged to debt issuance activity under a stable, predictable policy regime.",
+          "ticker": "UAL",
+          "rationale": "United has heavy international long-haul exposure including transatlantic routes that overfly/near Middle East; ceasefire extension reduces rerouting costs and fuel burn, plus direct jet fuel cost relief.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is unhedged on fuel post-2022 and domestic-only, making it a pure play on lower crude with no offsetting geopolitical revenue hit.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with Mediterranean itineraries; ceasefire both lowers bunker fuel costs and removes itinerary-disruption risk in the Eastern Med.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "EXPE",
+          "rationale": "Travel booking platform benefits from lower oil (cheaper airfare stimulates bookings) and reduced Middle East/Europe travel anxiety; second-order but clean transmission.",
           "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "Regime change at the Fed with more policy volatility and genuine two-way rate risk (vs. forward-guidance suppression) drives rates futures and options volume \u2014 CME's interest rate complex is its largest revenue segment.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "PLTR",
-          "rationale": "Extreme-multiple momentum name whose valuation is almost entirely terminal-value/discount-rate sensitive; a credible hawkish regime change compresses the multiple that drove the 2025 run.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "XOM",
+          "rationale": "Exxon's upstream earnings lever directly to Brent; a geopolitical risk premium unwind typically pulls crude down $3-8, compressing near-term upstream cash flow. Largest US integrated, most index-weight sensitive.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
-          "ticker": "MSTR",
-          "rationale": "MicroStrategy is a levered bitcoin proxy; bitcoin trades as a liquidity/debasement asset and underperforms when the Fed credibly commits to balance-sheet shrinkage and positive real rates.",
+          "ticker": "OXY",
+          "rationale": "Occidental is among the highest-beta US E&Ps to crude given Permian leverage and debt load; unhedged Brent exposure means ceasefire-driven selloff hits hardest.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "APA has direct Egypt/offshore Suriname exposure and is a high-beta small-cap E&P that trades as a levered proxy for crude; removal of Middle East risk premium hits twice (price + its own regional assets re-rating).",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed is the prime beneficiary of Middle East munitions replenishment (PAC-3, THAAD, JASSM); a durable ceasefire slows the urgency narrative around FMS orders even if backlog is unchanged.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon's missile defense franchise (Patriot, SM-series) has been bid on Iran escalation; ceasefire extension removes the near-term headline catalyst that had supported the multiple.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Northrop trades with the defense complex on Middle East headlines despite less direct munitions exposure; sector rotation out of defense on ceasefire is the mechanism.",
+          "confidence": "low",
+          "horizon": "intraday"
         }
       ],
-      "dedup_group": "warsh_fed_hearing_regime_change",
+      "dedup_group": "trump_iran_ceasefire_april_2026",
       "source_news_ids": [
-        "52bf709ae99b07b8"
+        "d507b1c189a85933"
       ],
       "headlines": [
-        "Analysis: Warsh emerges from a difficult hearing with his Fed 'regime-change' plan intact"
+        "Trump extends ceasefire in Iran, citing 'seriously fractured' Iranian government"
       ]
     }
   ]
