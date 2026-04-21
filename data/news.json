@@ -1,206 +1,48 @@
 {
-  "generated_at": "2026-04-21T06:48:53.928373-04:00",
+  "generated_at": "2026-04-21T07:54:40.965621-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Kevin Warsh, nominated as Fed Chair, faces his Senate confirmation hearing Tuesday, with markets focused on his historically hawkish/hard-money leanings versus pressure to align with the administration's easier-policy preferences.",
+      "event_summary": "UBS compares the current oil shock to the first Gulf War, suggesting crude prices remain elevated with a best-case path down to mid-$80s \u2014 implying a sustained geopolitical risk premium rather than an immediate collapse.",
       "primary_drivers": [
-        "Rate path uncertainty \u2014 Warsh historically hawkish on inflation but nominated by an administration wanting cuts; hearing tone will shift 2026 cut odds",
-        "Fed independence/credibility signaling affecting long-end yields and dollar",
-        "Regulatory posture \u2014 Warsh viewed as lighter-touch on bank regulation than Powell-era framework"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GS",
-          "rationale": "Warsh spent years at Morgan Stanley and is viewed as Wall Street-friendly; market expects lighter bank capital/Basel III Endgame enforcement under his Fed. Direct regulatory relief for large broker-dealers with capital markets revenue exposure.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MS",
-          "rationale": "Same thesis as GS \u2014 Warsh's former employer, perceived regulatory tailwind for capital markets/trading businesses if he signals softer supervisory stance in testimony.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [],
-      "dedup_group": "warsh_fed_chair_nomination_hearing_april_2026",
-      "source_news_ids": [
-        "448d03faf4996971"
-      ],
-      "headlines": [
-        "Here's what to expect from Fed chair nominee Kevin Warsh's Senate hearing Tuesday"
-      ]
-    },
-    {
-      "event_summary": "Associated British Foods (Primark owner) warns that the Iran war is hurting its retail outlook, becoming one of the first European retailers to flag the conflict as a drag on consumer demand and costs.",
-      "primary_drivers": [
-        "Middle East conflict raising energy/freight costs and denting European consumer confidence",
-        "Shipping route disruption (Red Sea / Strait of Hormuz risk) lifting logistics costs for apparel importers",
-        "Defense spending tailwind from escalating regional war"
+        "Sustained geopolitical risk premium in crude prices",
+        "Elevated realized prices boosting upstream cash flow",
+        "Input cost headwind for fuel-intensive consumers"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Direct beneficiary of higher crude prices from Iran war risk premium; Strait of Hormuz concerns support Brent, and XOM's upstream leverage is among the highest of US supermajors.",
+          "rationale": "Integrated major with ~40%+ upstream earnings mix; every $10 sustained on Brent adds materially to FCF. Direct leverage to a prolonged risk-premium regime analogous to 1990-91.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed sells Patriot, THAAD and PAC-3 missile defense systems being actively consumed/ordered in the Israel-Iran theater; direct order-book tailwind.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon makes the interceptors (SM-3, SM-6, AMRAAM) being expended in Middle East air defense; restocking orders are a direct revenue driver.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ZIM",
-          "rationale": "Container shipper that benefits from Red Sea/Hormuz rerouting spiking spot freight rates \u2014 same dynamic that lifted ZIM during 2024 Houthi attacks.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "TJX",
-          "rationale": "Off-price apparel retailer with business model closest to Primark's; if ABF is flagging weaker apparel demand and higher sourcing/freight costs, TJX faces the same margin pressure on European ops (TK Maxx) and similar consumer headwinds.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ROST",
-          "rationale": "Pure-play off-price apparel peer of Primark; a named competitor warning on outlook is a direct read-across for discretionary apparel demand and import freight costs.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HNRG",
-          "rationale": "European consumer exposure via mass-market apparel \u2014 wait, better pick:",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "URBN",
-          "rationale": "Urban Outfitters has meaningful European exposure and discretionary young-consumer skew \u2014 the exact cohort Primark serves \u2014 so a Primark demand warning is a negative read-across.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Higher jet fuel from Iran war premium directly compresses airline margins; Delta has significant transatlantic exposure that is also demand-sensitive to Middle East travel fears.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "primark_parent_iran_war_outlook_warning",
-      "source_news_ids": [
-        "11b374f8a6745fa4"
-      ],
-      "headlines": [
-        "Primark owner warns of impact of war in Iran on outlook \u2014 making it one of the first European retailers to do so"
-      ]
-    },
-    {
-      "event_summary": "Kevin Warsh, a known hawk and balance sheet critic, faces confirmation hearing (likely for Fed Chair) as a framework for a materially smaller Fed balance sheet emerges.",
-      "primary_drivers": [
-        "Reduced Fed reserve demand / faster QT implies tighter financial conditions and higher term premia",
-        "Steeper yield curve / higher long-end rates from reduced Fed Treasury holdings",
-        "Hawkish leadership signal reduces expectations of rate cuts and liquidity backstop"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Higher short rates and steeper curve lift net interest margin on client cash sweep balances; Schwab's earnings are directly levered to the short end staying higher-for-longer under a hawkish Fed regime.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MET",
-          "rationale": "Life insurers benefit from higher long-end yields on reinvestment of fixed income portfolios; a smaller Fed balance sheet and steeper curve directly raises book-yield trajectory.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "BAC",
-          "rationale": "Large asset-sensitive bank with heavy long-duration securities book; steeper curve from reduced Fed Treasury holdings improves NIM and reduces AOCI drag as existing hedges roll.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "Rate volatility and reduced Fed market footprint drives higher Treasury and SOFR futures volumes; CME is the direct toll-taker on any increase in rates hedging activity.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "PLTR",
-          "rationale": "High-multiple, long-duration tech name trading on terminal value; rising long-end yields from QT framework compresses the multiple mechanically via DCF.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income and other bond-proxy REITs trade inversely to 10Y yields; a smaller Fed balance sheet framework raises long rates and widens cap rates, hitting NAV and dividend-yield spread attractiveness.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "warsh_fed_hearing_balance_sheet",
-      "source_news_ids": [
-        "7828f071b40b77c8"
-      ],
-      "headlines": [
-        "As Warsh faces hearing, a framework for smaller Fed balance sheet emerges"
-      ]
-    },
-    {
-      "event_summary": "Wall Street strategists warn markets may be too complacent about Iran war risks as stocks trade at record highs, suggesting mispriced geopolitical tail risk.",
-      "primary_drivers": [
-        "Underpriced Middle East geopolitical risk premium",
-        "Potential oil supply disruption (Strait of Hormuz / Iranian exports)",
-        "Possible volatility spike if complacency reverses"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream leverage; any Iran-related supply disruption or risk premium lifts Brent, directly flowing to E&P earnings. Not Middle East asset-heavy, so limited downside from regional escalation.",
+          "ticker": "CVX",
+          "rationale": "Similar upstream leverage to XOM with Permian and Gulf of Mexico production; cash return program (buyback+dividend) scales directly with realized oil price.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "COP",
-          "rationale": "Pure-play US E&P with ~100% upstream exposure \u2014 highest beta to crude price spike from Iran supply shock. No downstream drag.",
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian E&P with high oil mix (~55%+) and low breakevens \u2014 maximum torque to sustained $85+ crude vs. diversified majors.",
           "confidence": "high",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed makes THAAD, PAC-3 missiles and F-35s \u2014 direct beneficiaries of increased Middle East defense demand and US munitions restocking if Iran conflict escalates.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon produces Patriot interceptors and Tomahawks being consumed in Middle East operations; munitions replenishment contracts are a direct earnings tailwind.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Northrop's missile defense and strategic systems are direct beneficiaries of elevated Iran tensions and increased DoD supplemental funding.",
-          "confidence": "medium",
-          "horizon": "months"
         },
         {
           "ticker": "OXY",
-          "rationale": "US-focused E&P with high oil beta; Buffett-backed name often sees flows on oil risk premium trades. Slightly less pure than COP but higher liquidity in options.",
+          "rationale": "High-beta domestic oil producer with significant debt; sustained elevated crude accelerates deleveraging and is the stock Buffett has been accumulating on this exact thesis.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services levered to North American completion activity; a sustained price shock (not a spike-and-crash) is what triggers capex budget upgrades by E&Ps.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TPL",
+          "rationale": "Texas Pacific Land \u2014 royalty/surface rights owner in the Permian; near-zero cost structure means nearly 100% of incremental oil price flows to earnings.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -208,41 +50,47 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has highest jet fuel cost sensitivity among US majors; Iran-driven crude spike compresses margins immediately, and Middle East route disruptions add secondary pressure.",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has less hedging than peers and sustained crude at current levels directly compresses unit margins heading into summer travel season.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "United has meaningful international long-haul exposure including routes affected by Middle East airspace closures; fuel cost and rerouting both negative.",
+          "rationale": "Same jet fuel exposure as DAL; minimal hedging program makes UAL among the most fuel-price-sensitive US carriers.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 cruise operator with Mediterranean/Middle East itineraries; fuel costs plus itinerary disruption plus demand hit from conflict headlines. Triple exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
           "ticker": "LUV",
-          "rationale": "Southwest is domestic-only but unhedged on fuel relative to peers historically; pure jet fuel cost shock with no international revenue offset.",
+          "rationale": "Southwest historically hedged aggressively but has pulled back; point-to-point domestic model leaves little ability to pass fuel costs through to price-sensitive leisure travelers.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "HLT",
-          "rationale": "Hilton has Middle East franchise exposure and broader travel demand sensitivity to geopolitical shocks; leisure travel bookings historically soften on regional war escalation.",
-          "confidence": "low",
+          "ticker": "FDX",
+          "rationale": "Ground and air freight fuel surcharges lag spot prices by weeks; sustained elevated diesel/jet fuel squeezes margins before surcharge catch-up.",
+          "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs track crude; commodity chemical spreads compress when oil is elevated but end-demand (housing, autos) is soft.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Sustained gasoline prices act as a direct tax on the low-income consumer; Walmart management has repeatedly cited pump prices as affecting discretionary basket mix.",
+          "confidence": "low",
+          "horizon": "months"
         }
       ],
-      "dedup_group": "iran_war_stocks_optimism",
+      "dedup_group": "ubs_oil_shock_gulf_war_comparison",
       "source_news_ids": [
-        "053f7f198c2053d8"
+        "be476da32b2c046d"
       ],
       "headlines": [
-        "Wall Street fears 'too much optimism' about Iran war as stocks hit record highs"
+        "The current oil shock most resembles the first Gulf War, says UBS. What that means for prices."
       ]
     }
   ]
