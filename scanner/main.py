@@ -225,9 +225,9 @@ def run(
 
     if use_alerts:
         alerts, throttle = alert_rules.build_alerts(rows, deltas, syntheses, macro_analyses, window)
-        sent = feishu.send_batch(alerts)
+        sent = feishu.send_consolidated(alerts)
         throttle.commit()
-        log.info("Alerts: built %d, sent %d", len(alerts), sent)
+        log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)
         performance.log_alerts(alerts, rows, now)
 
     # Mom digest: purely additive Chinese-language macro+industry digest to a
