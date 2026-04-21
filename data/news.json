@@ -1,96 +1,230 @@
 {
-  "generated_at": "2026-04-21T07:54:40.965621-04:00",
+  "generated_at": "2026-04-21T09:02:05.400971-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "UBS compares the current oil shock to the first Gulf War, suggesting crude prices remain elevated with a best-case path down to mid-$80s \u2014 implying a sustained geopolitical risk premium rather than an immediate collapse.",
+      "event_summary": "Trump told CNBC he expects the U.S. to reach a \"great deal\" with Iran, signaling de-escalation and potential sanctions relief.",
       "primary_drivers": [
-        "Sustained geopolitical risk premium in crude prices",
-        "Elevated realized prices boosting upstream cash flow",
-        "Input cost headwind for fuel-intensive consumers"
+        "Lower geopolitical risk premium in oil",
+        "Potential Iranian crude re-entering global supply if sanctions ease",
+        "Reduced Middle East conflict risk lowering defense demand expectations"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is a domestic carrier with no fuel hedges in recent years \u2014 most jet-fuel-sensitive major US airline. Lower crude on Iran deal directly expands margin.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~20-25% of operating cost. A diplomatic deal pressuring Brent lower flows directly to airline opex within weeks.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with heavy bunker fuel exposure; also benefits from reduced Middle East travel-disruption risk. Double lever on de-escalation.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals producer where naphtha/ethane feedstock tracks oil. Lower crude compresses input costs while demand unchanged.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with significant upstream leverage to Brent. Iranian barrels returning to market (potentially 1-1.5mbpd over time) pressures crude and E&P earnings.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta Permian pure-play E&P with leveraged balance sheet \u2014 most oil-price-sensitive large cap. Direct hit from lower crude expectations.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Small-cap E&P with historical Egyptian operations and high oil-price torque; moves hardest on Middle East de-escalation headlines.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed's missile defense (THAAD, PAC-3) and munitions demand has been fueled by Iran/Israel tensions. Diplomatic track softens the near-term replenishment thesis.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot interceptor demand and Middle East FMS pipeline priced on sustained tension. Peace headline compresses the defense risk-premium trade.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Defense prime leveraged to Middle East threat narrative; typically sells off on Iran de-escalation headlines alongside LMT/RTX as a group trade.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        }
+      ],
+      "dedup_group": "trump_iran_deal_negotiations",
+      "source_news_ids": [
+        "be242f8c740381e1"
+      ],
+      "headlines": [
+        "Trump tells CNBC he expects U.S. to make \u2018great deal\u2019 with Iran"
+      ]
+    },
+    {
+      "event_summary": "March retail sales posted a 3-year high, partly driven by surging gasoline prices but also showing resilient underlying consumer demand.",
+      "primary_drivers": [
+        "Higher gasoline prices inflating nominal retail sales at gas stations",
+        "Resilient consumer spending suggests sticky inflation and pushes back Fed cut expectations",
+        "Higher-for-longer rates = stronger USD, higher yields, pressure on duration-sensitive names"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with ~40%+ upstream earnings mix; every $10 sustained on Brent adds materially to FCF. Direct leverage to a prolonged risk-premium regime analogous to 1990-91.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Integrated major with large US downstream/retail footprint; rising gasoline prices directly boost refining margins and gas-station revenue captured in the retail sales print.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Similar upstream leverage to XOM with Permian and Gulf of Mexico production; cash return program (buyback+dividend) scales directly with realized oil price.",
+          "ticker": "MPC",
+          "rationale": "Marathon owns the largest US refining system and Speedway legacy wholesale fuel distribution; direct leverage to higher pump prices feeding the retail sales beat.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil mix (~55%+) and low breakevens \u2014 maximum torque to sustained $85+ crude vs. diversified majors.",
+          "ticker": "PSX",
+          "rationale": "Pure-play refiner with branded retail gasoline exposure; crack spreads and retail fuel margins expand with pump price surge cited as driver.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "High-beta domestic oil producer with significant debt; sustained elevated crude accelerates deleveraging and is the stock Buffett has been accumulating on this exact thesis.",
+          "ticker": "CASY",
+          "rationale": "Casey's General Stores \u2014 convenience/gas retailer where higher fuel prices lift revenue and in-store traffic holds up given 'consumers aren't showing any quit'.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Resilient consumer narrative supports staples retailers; Walmart also captures fuel station revenue and benefits from trade-down dynamics if gas squeezes discretionary budgets.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services levered to North American completion activity; a sustained price shock (not a spike-and-crash) is what triggers capex budget upgrades by E&Ps.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "TPL",
-          "rationale": "Texas Pacific Land \u2014 royalty/surface rights owner in the Permian; near-zero cost structure means nearly 100% of incremental oil price flows to earnings.",
+          "ticker": "COST",
+          "rationale": "Membership warehouse with significant fuel sales; strong consumer print validates traffic trends and Costco's gas pumps capture the price surge.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has less hedging than peers and sustained crude at current levels directly compresses unit margins heading into summer travel season.",
-          "confidence": "high",
+          "ticker": "DLTR",
+          "rationale": "Dollar Tree's low-income customer is most squeezed by gasoline price surge \u2014 fuel is a bigger share of wallet; despite headline strength, this cohort's discretionary spend compresses.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel exposure as DAL; minimal hedging program makes UAL among the most fuel-price-sensitive US carriers.",
-          "confidence": "high",
+          "ticker": "DG",
+          "rationale": "Dollar General same dynamic \u2014 core customer earns <$40k and has already cited gas prices as cause of traffic weakness in recent quarters.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest historically hedged aggressively but has pulled back; point-to-point domestic model leaves little ability to pass fuel costs through to price-sensitive leisure travelers.",
+          "rationale": "Southwest lacks fuel hedges; surging crude/gasoline complex raises jet fuel costs with limited pass-through given price-sensitive leisure customer.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_retail_sales_march_2026_surge",
+      "source_news_ids": [
+        "4a9024d14993320f"
+      ],
+      "headlines": [
+        "Retail sales jump to 3-year high due to surging gas prices, but consumers also aren\u2019t showing any quit"
+      ]
+    },
+    {
+      "event_summary": "Steel Dynamics guides to multi-year strong demand citing Trump tariff tailwinds; STLD and Nucor shares break out.",
+      "primary_drivers": [
+        "Tariff-driven import substitution raising domestic steel pricing power",
+        "Sustained volume demand outlook from onshoring/infrastructure",
+        "Sector re-rating as peers read across from STLD commentary"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NUE",
+          "rationale": "Largest US domestic steel producer, near-pure-play EAF minimill; directly benefits from same tariff-protected pricing and demand backdrop STLD just validated. Already cited in headline as breaking out on read-across.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STLD",
+          "rationale": "The company itself \u2014 guided to years of strong demand, confirming tariff tailwind to pricing and volumes. Direct earnings impact.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CLF",
+          "rationale": "Cleveland-Cliffs is a major US integrated steelmaker heavily levered to domestic auto/flat-rolled pricing; tariff protection disproportionately helps CLF given its higher cost structure vs imports. Highest operating leverage to HRC prices among peers.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CMC",
+          "rationale": "Commercial Metals \u2014 domestic rebar/long-products minimill, benefits from same import-substitution dynamic and infrastructure demand narrative STLD is calling out.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Ground and air freight fuel surcharges lag spot prices by weeks; sustained elevated diesel/jet fuel squeezes margins before surcharge catch-up.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
+          "ticker": "MT",
+          "rationale": "ArcelorMittal has significant US operations (former AM/NS Calvert and North American segment) that benefit from Section 232-style tariff regime; partial but real exposure.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
         {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs track crude; commodity chemical spreads compress when oil is elevated but end-demand (housing, autos) is soft.",
+          "ticker": "F",
+          "rationale": "Ford is a major US steel buyer; sustained elevated domestic HRC prices from tariffs are a direct COGS headwind on vehicle margins. Auto OEMs are the pay-side of the steel trade.",
           "confidence": "medium",
           "horizon": "months"
         },
         {
-          "ticker": "WMT",
-          "rationale": "Sustained gasoline prices act as a direct tax on the low-income consumer; Walmart management has repeatedly cited pump prices as affecting discretionary basket mix.",
+          "ticker": "GM",
+          "rationale": "Same as Ford \u2014 large flat-rolled steel consumer with limited ability to import-substitute; tariff-elevated domestic steel prices compress auto margins.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WHR",
+          "rationale": "Whirlpool's appliance COGS are steel-heavy; prolonged tariff-supported pricing is a margin headwind, particularly as consumer demand limits passthrough.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "DE",
+          "rationale": "Deere uses substantial steel in equipment manufacturing; higher sustained domestic steel prices pressure gross margins absent equivalent price increases.",
           "confidence": "low",
           "horizon": "months"
         }
       ],
-      "dedup_group": "ubs_oil_shock_gulf_war_comparison",
+      "dedup_group": "steel_dynamics_trump_tariffs_demand",
       "source_news_ids": [
-        "be476da32b2c046d"
+        "16d083b292ead18f"
       ],
       "headlines": [
-        "The current oil shock most resembles the first Gulf War, says UBS. What that means for prices."
+        "Steel Dynamics Sees Strong Demand For Years Amid Trump Tariffs; STLD, Nucor Break Out"
       ]
     }
   ]
