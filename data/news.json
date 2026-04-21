@@ -1,5 +1,188 @@
 {
-  "generated_at": "2026-04-21T12:07:02.447844-04:00",
+  "generated_at": "2026-04-21T13:32:45.642781-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "CNBC report warns of a potential jet fuel shortage heading into summer 2026 travel season, which could raise fuel costs and disrupt airline operations.",
+      "primary_drivers": [
+        "Higher jet fuel (crack spread) prices squeeze airline margins since fuel is 20-30% of operating costs",
+        "Refiners with jet fuel yield capture wider distillate crack spreads",
+        "Potential flight capacity cuts / fare increases if shortage materializes"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "VLO",
+          "rationale": "Valero is the largest US independent refiner with significant distillate/jet fuel output; a jet fuel shortage widens crack spreads directly boosting refining margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PSX",
+          "rationale": "Phillips 66 refining segment benefits from wider jet/distillate crack spreads; Gulf Coast and West Coast refineries supply major airport hubs.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Marathon Petroleum is the largest US refiner by capacity with meaningful jet fuel production; tight supply lifts realized margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DK",
+          "rationale": "Delek US operates refineries with distillate exposure; smaller-cap refiners show higher torque to crack spread moves.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PBF",
+          "rationale": "PBF Energy is a pure-play refiner with high operating leverage to jet/diesel crack spreads; historically outperforms peers on distillate tightness.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest Airlines has minimal fuel hedging in recent years and runs a single-fleet domestic-heavy model highly sensitive to jet fuel spikes; fuel ~25% of opex.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines carries heavy debt load and does not hedge fuel; margin compression from higher jet fuel hits EPS hardest among legacy carriers.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United Airlines unhedged on fuel; summer is peak international long-haul season where fuel burn is highest, amplifying cost exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta owns the Trainer refinery which provides some internal hedge, but net airline exposure still dominates; shortage risk pressures unit costs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JBLU",
+          "rationale": "JetBlue has weak balance sheet and thin margins; any fuel cost step-up or capacity disruption disproportionately hits profitability.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ALK",
+          "rationale": "Alaska Air is leisure/West Coast exposed for summer travel; fuel shortage could force capacity cuts during peak revenue period.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "jet_fuel_shortage_summer_2026",
+      "source_news_ids": [
+        "a653b21d43540c42"
+      ],
+      "headlines": [
+        "What a looming jet fuel shortage could mean for summer travel"
+      ]
+    },
+    {
+      "event_summary": "The US benchmark diesel price just posted its biggest weekly drop since late 2022, sharply lowering fuel costs for diesel-intensive industries.",
+      "primary_drivers": [
+        "Lower diesel input cost flows directly to trucking/rail/logistics operating margins via fuel expense line",
+        "Fuel surcharge lag \u2014 carriers collect surcharges set on prior higher prices while paying lower pump costs, expanding spread short-term",
+        "Negative for refiners with heavy distillate exposure as crack spreads compress"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "KNX",
+          "rationale": "Knight-Swift is a pure-play truckload carrier; fuel is ~15-20% of operating costs and fuel surcharge programs lag spot diesel, so a sharp drop widens margin in the near term before surcharges reset.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WERN",
+          "rationale": "Werner Enterprises \u2014 same TL carrier mechanics as KNX, diesel is a top-3 cost line and surcharge lag is a direct tailwind to OR (operating ratio).",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JBHT",
+          "rationale": "J.B. Hunt's intermodal and dedicated segments consume large diesel volumes; lower fuel cost improves dedicated contract margin where surcharge pass-through is imperfect.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XPO",
+          "rationale": "LTL carrier with meaningful diesel exposure; LTL fuel surcharges are tariff-based and lag spot prices, creating a short-term margin tailwind.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SAIA",
+          "rationale": "Pure-play LTL; same surcharge-lag mechanism as XPO, and Saia's high operating leverage amplifies fuel cost moves to EPS.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Ground and Freight burn significant diesel; fuel surcharge resets monthly/weekly on trailing averages so a sharp spot drop benefits near-term margin.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UPS",
+          "rationale": "Large diesel-fueled ground fleet; fuel surcharge index lags, and lower diesel also reduces cost for subcontracted linehaul.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CHRW",
+          "rationale": "C.H. Robinson as a 3PL/broker benefits when carrier fuel costs fall faster than shipper-paid linehaul rates reset, widening net revenue margin per load.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PSX",
+          "rationale": "Phillips 66 has high distillate yield exposure; a sharp drop in diesel prices compresses distillate crack spreads and pressures refining segment earnings.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Valero is the largest US independent refiner with major diesel output; falling diesel benchmark directly hits the 3-2-1 and distillate cracks that drive Valero's earnings beta.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Marathon Petroleum's refining margin is heavily levered to distillate cracks; a benchmark-level diesel drop flows to segment EBITDA via ULSD crack compression.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DK",
+          "rationale": "Delek US \u2014 smaller refiner with concentrated distillate exposure and thin margin cushion; more sensitive to crack compression than integrated peers.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PARR",
+          "rationale": "Par Pacific \u2014 small refiner; diesel crack compression has outsized EPS impact given limited diversification.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "diesel_price_drop_april_2026",
+      "source_news_ids": [
+        "742f6bde40413106"
+      ],
+      "headlines": [
+        "Biggest drop in benchmark diesel price since late 2022"
+      ]
+    }
+  ]
 }
