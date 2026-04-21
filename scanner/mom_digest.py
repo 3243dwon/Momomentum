@@ -397,8 +397,13 @@ def _build_card(digest: dict) -> dict:
         "minimal": "〰️ 弱关联",
         "none": "➖ 无关",
     }
+    # Opus occasionally returns events_considered_zh / industry_commentary_zh as
+    # lists of strings instead of the schema-required objects. Skip malformed
+    # entries rather than crashing the whole scan.
     events_block = ""
-    for e in digest.get("events_considered_zh", []):
+    for e in digest.get("events_considered_zh", []) or []:
+        if not isinstance(e, dict):
+            continue
         rel = e.get("china_hk_relevance", "none")
         if rel == "none":
             continue  # mom doesn't need to see irrelevant ones
@@ -412,6 +417,8 @@ def _build_card(digest: dict) -> dict:
     direction_labels = {"up": "📈 偏多", "down": "📉 偏空", "mixed": "⚖️ 分化"}
     industries_block = ""
     for ic in digest.get("industry_commentary_zh", []) or []:
+        if not isinstance(ic, dict):
+            continue
         dir_label = direction_labels.get(ic.get("direction", ""), "")
         industries_block += f"\n{dir_label} **{ic.get('sector_zh', '')}**\n"
         industries_block += f"  {ic.get('commentary_zh', '')}\n"
@@ -550,7 +557,9 @@ def run(
 
     if not result.get("worth_sending", False):
         # Log each event's relevance call for observability.
-        for e in result.get("events_considered_zh", []):
+        for e in result.get("events_considered_zh", []) or []:
+            if not isinstance(e, dict):
+                continue
             log.info(
                 "Mom digest: Opus judged '%s' → %s (%s)",
                 (e.get("headline_en", "") or "")[:50],
