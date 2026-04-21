@@ -1,59 +1,54 @@
 {
-  "generated_at": "2026-04-21T14:58:43.335241-04:00",
+  "generated_at": "2026-04-21T16:03:19.387489-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "White House is reportedly discussing a currency swap line with the UAE, an unusual arrangement typically reserved for close allies and suggesting deeper US-UAE financial integration (headline also references Iran war context).",
+      "event_summary": "Kevin Warsh survives a contentious Senate confirmation hearing with his proposed Fed \"regime-change\" agenda (hawkish, anti-QE, shrink-the-balance-sheet, more rules-based policy) still intact, raising odds he becomes Fed Chair.",
       "primary_drivers": [
-        "Deepening US-UAE strategic/financial alignment implying favored status for UAE-linked commercial deals",
-        "Geopolitical risk premium tied to Iran conflict context referenced in headline",
-        "Dollar liquidity backstop reducing counterparty/FX risk for US firms operating in UAE"
+        "Hawkish Fed leadership repricing: higher real rates / steeper curve / reduced balance sheet support",
+        "Reduced implicit 'Fed put' \u2014 less accommodation for risk assets in stress",
+        "Stronger USD expectations from tighter-for-longer framework"
       ],
       "beneficiaries": [
         {
-          "ticker": "MSFT",
-          "rationale": "$1.5B strategic investment in UAE's G42 plus Abu Dhabi AI campus buildout; closer US-UAE financial plumbing supports export license continuity and expansion of that partnership.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "UAE is a major FMS customer (THAAD, F-16 Block 60, Patriot). Tighter US-UAE alignment amid Iran war context supports continued/expanded arms sales pipeline.",
+          "ticker": "SCHW",
+          "rationale": "Schwab earnings are highly sensitive to the short end and to bank reserves; a Warsh regime that keeps rates higher for longer and continues QT supports net interest margin on its cash sweep and reduces the deposit-flight concern that hurt it in 2023.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "RTX",
-          "rationale": "Patriot and missile defense sales to UAE; Iran conflict backdrop plus financial alignment raises probability of accelerated replenishment and new orders from Gulf allies.",
+          "ticker": "MCO",
+          "rationale": "A more rules-based, credible anti-inflation Fed tends to compress credit spreads over time and supports issuance volumes \u2014 Moody's ratings revenue is directly leveraged to debt issuance activity under a stable, predictable policy regime.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Regime change at the Fed with more policy volatility and genuine two-way rate risk (vs. forward-guidance suppression) drives rates futures and options volume \u2014 CME's interest rate complex is its largest revenue segment.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GE",
-          "rationale": "GE Aerospace and GE Vernova have large UAE exposure (Etihad/Emirates engines, ADNOC gas turbines); swap line de-risks large-dollar contracts and receivables.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Significant JV/operational relationship with ADNOC in Gulf gas; closer US-UAE financial ties reinforce long-term Gulf upstream partnerships, and Iran-war context lifts crude risk premium.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NVDA",
-          "rationale": "UAE (via G42) is one of the largest Middle East buyers of Nvidia accelerators under negotiated export frameworks; a swap line signals Treasury/WH comfort deepening UAE as an AI hub, supporting sustained chip allocations.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "losers": [],
-      "dedup_group": "white_house_uae_currency_swap_line",
+      "losers": [
+        {
+          "ticker": "PLTR",
+          "rationale": "Extreme-multiple momentum name whose valuation is almost entirely terminal-value/discount-rate sensitive; a credible hawkish regime change compresses the multiple that drove the 2025 run.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "MicroStrategy is a levered bitcoin proxy; bitcoin trades as a liquidity/debasement asset and underperforms when the Fed credibly commits to balance-sheet shrinkage and positive real rates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "warsh_fed_hearing_regime_change",
       "source_news_ids": [
-        "ed41381807b1431b"
+        "52bf709ae99b07b8"
       ],
       "headlines": [
-        "White House discussing currency swap line with United Arab Emirates"
+        "Analysis: Warsh emerges from a difficult hearing with his Fed 'regime-change' plan intact"
       ]
     }
   ]
