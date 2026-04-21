@@ -1,102 +1,236 @@
 {
-  "generated_at": "2026-04-20T23:20:02.569911-04:00",
+  "generated_at": "2026-04-21T05:17:58.572473-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Oil prices fall as investors weigh mixed signals on Iran peace talks ahead of a ceasefire deadline, reducing the geopolitical risk premium.",
+      "event_summary": "US-Iran tensions escalate with hostile rhetoric as peace talks stall, raising geopolitical risk premium in oil and Middle East conflict exposure.",
       "primary_drivers": [
-        "Lower crude price removes geopolitical risk premium",
-        "Reduced Strait of Hormuz disruption risk lowers shipping/insurance premia",
-        "Compressed refining and E&P margins on lower oil"
+        "Geopolitical risk premium on crude oil from potential Strait of Hormuz/Gulf disruption",
+        "Increased probability of military engagement driving defense procurement expectations",
+        "Safe-haven rotation into gold and defensive assets"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has highest unhedged fuel exposure among legacies, so lower crude directly expands margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar unhedged jet fuel exposure; United's international long-haul routes (larger fuel burn per ASM) amplify the benefit of lower crude.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedges but remaining uncovered portion still benefits; airline peer rotation trade on oil declines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Fuel is a major variable cost for the express/ground network; lower crude reduces surcharges drag and improves operating leverage.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Bunker fuel is a top-3 cost for cruise operators; lower oil plus easing Middle East risk also reduces itinerary disruption concerns.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
           "ticker": "XOM",
-          "rationale": "Integrated major with direct upstream earnings leverage to crude; consensus EPS sensitivity is meaningful per $5/bbl move.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Similar upstream leverage; also holds Middle East/Kazakhstan assets where a de-escalation removes the scarcity bid.",
+          "rationale": "Iran tensions drive Brent risk premium; Exxon has highest absolute upstream leverage to crude prices among US majors with ~60% of earnings from upstream.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Permian pure-play E&P with high torque to WTI; lower oil directly compresses cash flow and buyback pace.",
+          "rationale": "Pure-play US upstream with high beta to WTI/Brent; Permian-weighted production means direct earnings torque from any crude spike tied to Gulf disruption risk.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "APA",
-          "rationale": "Smaller-cap E&P with high beta to crude prices; peace-talk optimism accelerates selloff in higher-beta energy names.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services revenue tracks E&P capex budgets which are set off strip prices; sustained lower oil pressures 2026 activity guidance.",
+          "ticker": "LMT",
+          "rationale": "Escalation rhetoric increases demand for missile defense (THAAD, PAC-3) and munitions; Lockheed is prime contractor for systems actively deployed to counter Iranian missile/drone threats.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FTI",
-          "rationale": "Subsea/offshore equipment backlog partially tied to Middle East projects; reduced regional tension cools urgency for capacity additions.",
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot interceptors and SM-series missiles used heavily in Red Sea/Gulf operations; replenishment orders accelerate on Iran escalation scenarios.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Strategic deterrence (B-21, ICBM Sentinel) and ISR exposure; benefits from elevated defense budget posture during Middle East confrontations.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "ConocoPhillips is a near pure-play E&P with high crude beta and no refining hedge, making it a cleaner vehicle for an Iran-driven oil spike than integrated majors.",
+          "confidence": "high",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "UAL",
+          "rationale": "United has the largest international long-haul exposure among US carriers including Middle East/India routes; jet fuel cost spike from crude rally directly compresses margins and any Gulf airspace disruption forces costly rerouting.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating cost; Delta's limited fuel hedging means a crude spike on Iran risk flows straight to EPS estimates.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival has Mediterranean and Middle East itineraries plus high bunker fuel sensitivity; escalation scenarios trigger itinerary changes and fuel cost pressure.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Global air freight network with significant jet fuel exposure and Dubai hub operations; crude spike plus potential airspace closures hit both cost and routing.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Consumer discretionary margin pressure if gasoline spikes from Iran risk premium; Walmart's low-income consumer base is most gasoline-price-sensitive, historically correlated with comp pressure during oil spikes.",
           "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_iran_rhetoric_ceasefire",
+      "source_news_ids": [
+        "714c63c4b3b683ea"
+      ],
+      "headlines": [
+        "\u2018New cards on the battlefield\u2019: U.S., Iran ratchet up rhetoric with peace talks in limbo"
+      ]
+    },
+    {
+      "event_summary": "Japan reverses its long-standing pacifist policy and lifts the ban on exporting lethal weapons, opening a new export market for Japanese and allied defense primes.",
+      "primary_drivers": [
+        "Expanded addressable defense export market for Japan and its co-production partners",
+        "Increased defense industrial cooperation between US primes and Japanese firms (Mitsubishi Heavy, Kawasaki, IHI)",
+        "Regional rearmament signal (China/North Korea containment) boosting allied defense spending expectations"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed co-produces F-35 components and PAC-3 Patriot interceptors with Mitsubishi Heavy Industries in Japan; lifting export ban allows Japanese-built PAC-3s to flow to US/allies, directly expanding Lockheed's licensed production pipeline (already announced for US backfill to Ukraine).",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon partners with Mitsubishi on Patriot missile production and AIM-120 components in Japan; export liberalization increases joint-venture throughput and royalty/licensing revenue on Japanese-manufactured units sold to third countries.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BA",
+          "rationale": "Boeing Defense has extensive Japanese co-production (F-15J upgrades, CH-47, P-1 subsystems, KC-46); Japanese export capability allows Boeing-designed platforms to be sold via Japan, increasing program economics and offset opportunities.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics supplies naval combat systems and munitions where Japanese shipbuilders (MHI, Kawasaki) are potential export competitors AND partners; broader Asian naval buildup triggered by Japan's pivot lifts regional surface combatant and Virginia-class adjacent demand.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Northrop's Global Hawk and missile defense sensors (including co-developed SM-3 Block IIA with MHI) benefit from Japanese export capability; SM-3 IIA is the most obvious near-term export candidate to Poland/Europe.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LHX",
+          "rationale": "L3Harris supplies tactical radios and EW systems integrated into Japanese platforms; export liberalization expands the international sales envelope for jointly-integrated systems and communications backbone.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos competes in lower-cost tactical drones and target systems where Japanese entrants (Kawasaki, IHI unmanned programs) could undercut on price for Asian allies now that Japanese exports are permitted \u2014 modest share pressure in out-years.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AVAV",
+          "rationale": "AeroVironment faces potential longer-term competition from newly exportable Japanese small UAS, though near-term impact is minimal given Japan's limited drone export catalogue.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "japan_lethal_weapons_export_policy_shift",
+      "source_news_ids": [
+        "bd1bf485e35f6ba6"
+      ],
+      "headlines": [
+        "Japan scraps ban on lethal weapons exports in major shift of pacifist policy"
+      ]
+    },
+    {
+      "event_summary": "MarketWatch thought-piece arguing that geopolitical fragmentation (Red Sea attacks, US-China tensions, sanctions regimes) is permanently ending the post-WWII \"freedom of the seas\" regime, implying structurally higher shipping costs, longer routes, and more naval/insurance overhead.",
+      "primary_drivers": [
+        "Structurally higher freight rates from rerouting and risk premiums",
+        "Increased defense/naval spending to protect sea lanes",
+        "Reshoring/nearshoring pressure as global supply chains become less reliable"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "ZIM",
+          "rationale": "Container shipper with heavy spot-rate exposure; benefits directly when Red Sea rerouting via Cape of Good Hope tightens capacity and lifts freight rates. Pure-play leverage to the thesis.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MATX",
+          "rationale": "Matson operates Pacific trade lanes and benefits from premium expedited shipping demand when Suez/Red Sea routes become unreliable; shippers pay up for reliable alternatives.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "STNG",
-          "rationale": "Product tanker rates have carried a Strait of Hormuz/Red Sea risk premium; ceasefire progress compresses tanker day rates.",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "Scorpio Tankers \u2014 product tanker rates spike on longer ton-miles from rerouting around Africa; direct beneficiary of the exact mechanism the article describes.",
+          "confidence": "high",
+          "horizon": "weeks"
         },
         {
           "ticker": "FRO",
-          "rationale": "Crude tanker (VLCC) spot rates are levered to Middle East disruption premia; de-escalation removes the tailwind that's supported 2025-26 rates.",
+          "rationale": "Frontline crude tanker fleet benefits from elevated ton-miles and geopolitical risk premiums on seaborne oil transport; sanctions regimes on Russian/Iranian crude boost compliant tanker demand.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin is the prime contractor for Aegis and naval missile systems; a doctrine shift toward defending contested sea lanes increases naval procurement budgets.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "HII",
+          "rationale": "Huntington Ingalls is the sole US builder of nuclear aircraft carriers and a key surface combatant yard; direct beneficiary of any sustained push to expand the Navy to police sea lanes.",
+          "confidence": "medium",
+          "horizon": "months"
         }
       ],
-      "dedup_group": "iran_peace_talks_april_2026",
+      "losers": [
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart imports ~20%+ of COGS from Asia via ocean freight; structurally higher shipping costs and longer transit times compress gross margin and working capital efficiency.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "NKE",
+          "rationale": "Nike sources the vast majority of footwear from Vietnam/Indonesia/China \u2014 heavily exposed to Asia-Europe and trans-Pacific ocean freight inflation with limited ability to fully pass through.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "EXPD",
+          "rationale": "Expeditors is an asset-light freight forwarder; while they can pass rates through, prolonged disruption hurts volumes and air-freight substitution is margin-neutral at best. Mixed exposure but thesis article implies volume destruction long-term.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "DG",
+          "rationale": "Dollar General's low-price model depends on cheap Asian imports; structurally higher landed costs on general merchandise pressure the consumable/non-consumable margin mix with no pricing power at the low end.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "global_shipping_geopolitical_disruption",
       "source_news_ids": [
-        "bb0c2474aa84f905"
+        "19895bc687d268d9"
       ],
       "headlines": [
-        "Oil falls as investors assess mixed messaging on Iran peace talks ahead of ceasefire deadline"
+        "The end of freedom of the seas: Why global shipping may never be the same"
       ]
     }
   ]
