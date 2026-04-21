@@ -1,5 +1,103 @@
 {
-  "generated_at": "2026-04-20T19:35:15.430363-04:00",
+  "generated_at": "2026-04-20T23:20:02.569911-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Oil prices fall as investors weigh mixed signals on Iran peace talks ahead of a ceasefire deadline, reducing the geopolitical risk premium.",
+      "primary_drivers": [
+        "Lower crude price removes geopolitical risk premium",
+        "Reduced Strait of Hormuz disruption risk lowers shipping/insurance premia",
+        "Compressed refining and E&P margins on lower oil"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has highest unhedged fuel exposure among legacies, so lower crude directly expands margins.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Similar unhedged jet fuel exposure; United's international long-haul routes (larger fuel burn per ASM) amplify the benefit of lower crude.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest historically hedges but remaining uncovered portion still benefits; airline peer rotation trade on oil declines.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Fuel is a major variable cost for the express/ground network; lower crude reduces surcharges drag and improves operating leverage.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is a top-3 cost for cruise operators; lower oil plus easing Middle East risk also reduces itinerary disruption concerns.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with direct upstream earnings leverage to crude; consensus EPS sensitivity is meaningful per $5/bbl move.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Similar upstream leverage; also holds Middle East/Kazakhstan assets where a de-escalation removes the scarcity bid.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian pure-play E&P with high torque to WTI; lower oil directly compresses cash flow and buyback pace.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Smaller-cap E&P with high beta to crude prices; peace-talk optimism accelerates selloff in higher-beta energy names.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services revenue tracks E&P capex budgets which are set off strip prices; sustained lower oil pressures 2026 activity guidance.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "Subsea/offshore equipment backlog partially tied to Middle East projects; reduced regional tension cools urgency for capacity additions.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker rates have carried a Strait of Hormuz/Red Sea risk premium; ceasefire progress compresses tanker day rates.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Crude tanker (VLCC) spot rates are levered to Middle East disruption premia; de-escalation removes the tailwind that's supported 2025-26 rates.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_peace_talks_april_2026",
+      "source_news_ids": [
+        "bb0c2474aa84f905"
+      ],
+      "headlines": [
+        "Oil falls as investors assess mixed messaging on Iran peace talks ahead of ceasefire deadline"
+      ]
+    }
+  ]
 }
