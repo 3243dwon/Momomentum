@@ -1,169 +1,144 @@
 {
-  "generated_at": "2026-04-22T07:53:52.154039-04:00",
+  "generated_at": "2026-04-22T09:03:22.415277-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Senator Warren is pressing the Trump administration on evacuation of Americans amid an active Iran war, confirming ongoing US-Iran military conflict.",
+      "event_summary": "Dow rises on news of a Trump-brokered ceasefire (implied Middle East/Iran-related), with Tesla earnings due after the close.",
       "primary_drivers": [
-        "Middle East oil supply risk premium (Strait of Hormuz exposure)",
-        "Elevated defense spending and munitions replenishment demand",
-        "Flight-to-safety bid in defensives and energy"
+        "Geopolitical risk premium unwind lowers oil prices and boosts risk-on sentiment",
+        "Reduced Middle East tail risk compresses defense/safe-haven demand",
+        "Tesla earnings is an idiosyncratic catalyst independent of ceasefire"
       ],
       "beneficiaries": [
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin is the prime contractor for THAAD and PAC-3 missile interceptors actively used against Iranian ballistic missiles; an active war drives immediate munitions replenishment orders and supplemental defense appropriations.",
+          "ticker": "DAL",
+          "rationale": "Airlines are among the most direct beneficiaries of a Middle East ceasefire via lower jet fuel costs; fuel is ~20-30% of opex and Brent tends to drop on de-escalation. Delta has high fuel sensitivity and limited hedging.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Similar jet fuel cost leverage as DAL plus international route exposure (including Middle East overflights) that benefits from reduced war-risk insurance and rerouting costs.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise lines benefit from lower bunker fuel costs and reduced geopolitical drag on international travel demand; Carnival has the highest fuel intensity per revenue dollar among major cruise operators.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemical producers benefit from lower naphtha/ethane feedstock costs when crude falls on de-escalation; Dow Inc has direct oil-linked input exposure.",
+          "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Lower diesel/gasoline prices reduce trucking and last-mile logistics costs and increase consumer discretionary wallet share; Walmart has the largest US freight footprint to benefit.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin is the purest large-cap beneficiary of Middle East tension (Patriot, THAAD, missile demand); ceasefire compresses the geopolitical premium embedded in defense names even if order books remain intact.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon makes Patriot, SM-3/SM-6, Tomahawk, and AMRAAM \u2014 all consumed heavily in a Gulf conflict. Direct revenue uplift from DoD replenishment contracts typically signed within weeks of expenditure.",
+          "rationale": "Raytheon's missiles & defense segment (Stinger, SM-series, Iron Dome components) rallied on Iran escalation fears; de-escalation unwinds that trade.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "LHX",
-          "rationale": "L3Harris provides ISR, tactical radios, and electronic warfare systems with direct CENTCOM exposure; active conflict accelerates procurement timelines.",
+          "ticker": "NOC",
+          "rationale": "Northrop Grumman similarly held a conflict premium; ceasefire headlines pressure the defense complex as a group trade regardless of company-specific fundamentals.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "XOM",
-          "rationale": "ExxonMobil is the most liquid integrated oil major; any Strait of Hormuz disruption risk (20% of global seaborne oil) directly lifts Brent, widening upstream margins. Limited direct Iran/Gulf production exposure means pure price leverage.",
+          "rationale": "Integrated oil majors lose the geopolitical risk premium in crude; Exxon's upstream leverage means EPS estimates drop with Brent on de-escalation.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "ConocoPhillips is a pure-play upstream E&P with no refining drag and no Iranian/Gulf producing assets at risk \u2014 highest beta to a Brent spike among US majors.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KTOS",
-          "rationale": "Kratos supplies loitering munitions, target drones, and tactical UAVs increasingly used in CENTCOM operations; small base means any wartime order is materially accretive.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GD",
-          "rationale": "General Dynamics benefits via munitions (Ordnance & Tactical Systems) plus combat systems; also owns Gulfstream which sees evacuation/charter demand spike.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TNK",
-          "rationale": "Teekay Tankers \u2014 product tanker rates spike on Hormuz rerouting and war-risk insurance premiums; direct beneficiary of tonne-mile expansion as cargoes avoid Gulf.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has significant transatlantic and codeshare exposure; higher jet fuel prices from Brent spike plus Middle East airspace closures force costly reroutes. Jet fuel is ~25% of operating costs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United has the most international long-haul exposure of US carriers including India/South Asia routes that transit or skirt Iranian airspace, forcing fuel-burning reroutes on top of fuel cost spike.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is unhedged on fuel as of recent disclosures and runs thin margins; domestic-only but still exposed to full Brent-driven jet fuel passthrough with no international premium pricing to offset.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival has cancelled/rerouted Middle East and Red Sea itineraries in prior regional conflicts; bunker fuel costs rise with Brent and consumer discretionary travel demand softens on war headlines.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAR",
-          "rationale": "Marriott has meaningful Middle East property exposure (UAE, Saudi, Qatar, Jordan) with evacuations and travel advisories directly hitting RevPAR in the region.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XPO",
-          "rationale": "Trucking/LTL operators face diesel cost spike from crude jump; XPO's thin operating margins amplify fuel passthrough lag.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "us_iran_war_evacuation_april_2026",
-      "source_news_ids": [
-        "c4e8350dd2588a49"
-      ],
-      "headlines": [
-        "Warren presses Trump administration for answers on evacuation of Americans amid Iran war"
-      ]
-    },
-    {
-      "event_summary": "Trump extended the Iran ceasefire, reducing Middle East geopolitical risk premium, while markets await Tesla earnings.",
-      "primary_drivers": [
-        "Lower geopolitical risk premium in crude oil",
-        "Reduced safe-haven demand",
-        "Improved risk-on sentiment lowering shipping/insurance risk through Strait of Hormuz"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of airline operating costs; a sustained ceasefire caps crude and directly improves margins. Delta has limited hedging vs peers so gets full benefit of spot declines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost sensitivity as DAL; United also has meaningful international/transatlantic exposure where lower oil + reduced Mideast airspace risk both help route economics.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with ~10-12% of costs in bunker fuel; lower Brent from ceasefire extension directly compresses fuel expense and lifts margin estimates.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Earnings catalyst tonight \u2014 unrelated to ceasefire but explicitly flagged in headline as the binary event driving tape; options-implied move is the actual trade.",
-          "confidence": "high",
-          "horizon": "intraday"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream earnings leverage to Brent; a ceasefire extension bleeds the geopolitical premium out of crude, pressuring E&P segment earnings estimates.",
-          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US oil producer with high beta to WTI; loss of Iran-risk premium is a direct hit to realized price assumptions. Higher leverage amplifies the move vs XOM.",
+          "rationale": "Pure-play US E&P with high oil-price sensitivity; crude pullback on ceasefire directly compresses cash flow estimates and the Buffett-halo trade.",
+          "confidence": "high",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "trump_ceasefire_market_reaction_apr2026",
+      "source_news_ids": [
+        "68ee495850f9b466"
+      ],
+      "headlines": [
+        "Stock Market Today: Dow Rises On Trump Ceasefire; Tesla Earnings Due (Live Coverage)"
+      ]
+    },
+    {
+      "event_summary": "Bitcoin and ethereum prices rising on news of a ceasefire extension, boosting risk-on sentiment in crypto markets.",
+      "primary_drivers": [
+        "Higher crypto spot prices lift transaction volumes and balance sheet crypto holdings",
+        "Risk-on rotation benefits crypto-correlated equities",
+        "Geopolitical de-escalation reduces safe-haven bid, supports risk assets"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "COIN",
+          "rationale": "Coinbase revenue is directly tied to crypto trading volumes and spot prices; BTC/ETH rallies drive transaction fees, which are ~50%+ of revenue.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "Strategy (MicroStrategy) holds ~500k+ BTC on balance sheet; stock trades as a leveraged BTC proxy with premium-to-NAV expansion on rallies.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "MARA",
+          "rationale": "Marathon Digital's mining economics and treasury BTC holdings benefit directly from higher BTC price; high-beta miner.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RIOT",
+          "rationale": "Riot Platforms mining revenue per hash scales with BTC price; pure-play US miner with high operating leverage.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CLSK",
+          "rationale": "CleanSpark is a pure-play BTC miner with large treasury holdings; high beta to BTC price moves.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Defense prime with heavy missile/air-defense mix (PAC-3, THAAD, Javelin) that rallied on Iran tensions; ceasefire extension removes near-term urgency narrative for replenishment orders.",
-          "confidence": "low",
+          "ticker": "HOOD",
+          "rationale": "Robinhood crypto trading is a growing revenue segment; retail crypto volumes spike on rallies, benefiting transaction-based revenue.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CIFR",
+          "rationale": "Cipher Mining's revenue directly scales with BTC price; smaller-cap miner with higher beta.",
+          "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "dedup_group": "trump_extends_iran_ceasefire_market_open",
+      "losers": [],
+      "dedup_group": "btc_eth_ceasefire_rally",
       "source_news_ids": [
-        "d0374206cd8554b6"
+        "5d513ef9c5ccfa74"
       ],
       "headlines": [
-        "Dow Jones Futures Rise As Trump Extends Iran Ceasefire; Tesla Earnings Due"
+        "Bitcoin and ethereum prices today, Wednesday, April 22, 2026: Prices rising following ceasefire extension"
       ]
     }
   ]
