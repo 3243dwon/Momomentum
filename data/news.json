@@ -1,133 +1,212 @@
 {
-  "generated_at": "2026-04-22T05:12:22.510075-04:00",
+  "generated_at": "2026-04-22T06:45:35.465582-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "UK, France, and Italy (\"BIF\") are paying premium yields as bond investors question their fiscal credibility amid elevated debt-to-GDP and sticky inflation.",
+      "event_summary": "Two ships were attacked in the Strait of Hormuz per UK maritime authorities, raising Middle East shipping/oil supply risk despite the extended US-Iran ceasefire.",
       "primary_drivers": [
-        "European sovereign credit premium widening / fiscal credibility discount",
-        "Capital rotation from European sovereigns toward USTs and USD assets",
-        "Higher European long-end yields pressuring rate-sensitive European financials and domestic consumers"
+        "Oil supply risk premium on ~20% of global seaborne crude transiting Hormuz",
+        "Tanker rates spike from rerouting and war-risk insurance premiums",
+        "Defense demand / geopolitical risk-off bid"
       ],
       "beneficiaries": [
         {
-          "ticker": "ICE",
-          "rationale": "Intercontinental Exchange owns major fixed-income trading and clearing infrastructure (BondPoint, ICE bond indices, credit futures); volatility spikes in European sovereigns drive clearing volume and data revenue.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "UST futures and Euro-BTP/Bund/Gilt futures complex sees volume surge when European sovereign spreads widen; direct volumetric beneficiary of fiscal credibility stress.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MCO",
-          "rationale": "Moody's \u2014 sovereign downgrade cycle on BIF names drives ratings action revenue and elevates demand for credit research; precedent from 2011-12 periphery crisis.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "SAN",
-          "rationale": "Banco Santander \u2014 large Spanish/European bank with meaningful French and Italian exposure via consumer and corporate lending; sovereign spread widening increases funding costs and mark-to-market losses on held sovereigns.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BCS",
-          "rationale": "Barclays \u2014 UK balance sheet carries large Gilt holdings in HQLA; rising UK term premium compresses NIM via deposit repricing and hits AFS portfolio marks.",
+          "ticker": "FRO",
+          "rationale": "Frontline is a pure-play crude tanker operator (VLCC/Suezmax); Hormuz attacks spike spot tanker rates and war-risk insurance, directly lifting day rates on its fleet.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "ING",
-          "rationale": "ING Groep \u2014 Dutch bank with significant peripheral European sovereign holdings and corporate lending book across France/Italy; spread widening compresses book value.",
-          "confidence": "medium",
+          "ticker": "INSW",
+          "rationale": "International Seaways operates crude and product tankers with significant Middle East Gulf loading exposure; rerouting and risk premiums flow directly to spot rates.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "STLA",
-          "rationale": "Stellantis \u2014 revenue heavily concentrated in France/Italy domestic auto markets; rising consumer borrowing costs from higher sovereign yields hit auto financing demand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "europe_sovereign_borrowing_costs_q2_2026",
-      "source_news_ids": [
-        "0551abe15b4755b3"
-      ],
-      "headlines": [
-        "Why 3 of Europe's biggest economies are paying a premium for borrowing as bond traders baulk at 'BIF' debt credibility"
-      ]
-    },
-    {
-      "event_summary": "UK March CPI accelerated to 3.3% driven by surging fuel prices linked to the ongoing Iran war, signaling sustained energy-driven inflation and delayed BoE cuts.",
-      "primary_drivers": [
-        "Crude/refined fuel price spike from Iran war supply risk premium",
-        "Sticky headline inflation delays central bank easing (BoE, with spillover read-through to Fed/ECB)",
-        "Higher-for-longer real rates pressure duration-sensitive assets"
-      ],
-      "beneficiaries": [
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers is the largest pure-play product tanker operator; Hormuz disruption tightens product tanker market as refined products from Gulf refiners reroute.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DHT",
+          "rationale": "DHT Holdings is a pure-play VLCC operator entirely spot/time-charter exposed to Middle East Gulf loadings \u2014 highest beta to Hormuz rate spikes.",
+          "confidence": "high",
+          "horizon": "days"
+        },
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with large upstream leverage to Brent; sustained fuel price surge from Iran conflict directly lifts realizations and refining crack spreads. UK CPI print confirms pass-through is happening, not fading.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same upstream Brent leverage as XOM; beneficiary of persistent war risk premium in crude that the UK print validates.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Oilfield services activity accelerates when Brent stays elevated and NOCs/majors greenlight capex; Iran-driven sustained price regime supports bookings.",
+          "rationale": "Integrated major with large upstream book; brent crude premium from Hormuz risk lifts near-term realizations, and limited MidEast upstream exposure means more upside than downside risk.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "VLO",
-          "rationale": "Pure-play refiner \u2014 UK fuel price surge indicates wide product cracks globally; Valero captures the gasoline/diesel margin directly.",
-          "confidence": "high",
+          "ticker": "LMT",
+          "rationale": "Lockheed makes PAC-3/THAAD interceptors and munitions replenished after Gulf escalation; any Iran-linked escalation reinforces FY defense budget tailwind.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "MPC",
-          "rationale": "Largest US refiner by capacity; same crack-spread tailwind from elevated global fuel prices evidenced by UK CPI composition.",
-          "confidence": "high",
+          "ticker": "RTX",
+          "rationale": "Raytheon supplies Patriot missiles and naval air defense (SM-series) \u2014 direct beneficiary of any renewed Gulf maritime defense tasking and restock orders.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "LNG",
-          "rationale": "Cheniere benefits from European energy insecurity driving sustained US LNG offtake premium; Iran war keeps Europe bidding up alternatives.",
+          "rationale": "Cheniere is largest US LNG exporter; Hormuz risk threatens Qatari LNG flows (~20% of global supply), making US Gulf LNG a premium substitute \u2014 TTF spread widens.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "BCS",
-          "rationale": "UK bank \u2014 sticky inflation + stagflation risk raises loan loss provisioning concerns and delays the rate-cut-driven mortgage volume rebound UK banks have been pricing in.",
+          "ticker": "DAL",
+          "rationale": "Delta has higher jet fuel sensitivity than peers and limited fuel hedging; Brent spike directly pressures CASM-ex and Q2 margin guide.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United's long-haul international network (including Gulf routings) is exposed to both jet fuel spike and potential airspace reroutes over Iran/Iraq.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's all-domestic model still makes it one of the most fuel-cost-sensitive US carriers; unhedged exposure to crude spike compresses near-term EPS.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival burns ~3M barrels/year of marine fuel; bunker prices track Brent and Middle East cruise itineraries face cancellation/rerouting risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Express jet fuel is a top-3 cost line; Brent spike pressures margins and Middle East hub (Dubai) transit faces elevated risk surcharges.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "strait_hormuz_ship_attacks_april_2026",
+      "source_news_ids": [
+        "46e79c6a2247f803"
+      ],
+      "headlines": [
+        "Two ships attacked in Strait of Hormuz, UK says, after U.S. extends Iran ceasefire"
+      ]
+    },
+    {
+      "event_summary": "Micron is lobbying US Congress to tighten export controls on semiconductor manufacturing equipment sales to Chinese memory chip rivals (CXMT, YMTC).",
+      "primary_drivers": [
+        "Export control tightening reduces Chinese memory capacity buildout",
+        "Reduced supply from Chinese DRAM/NAND competitors supports global memory pricing",
+        "Revenue hit to US/allied equipment makers with China exposure"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MU",
+          "rationale": "Direct instigator and primary beneficiary \u2014 slowing CXMT's DRAM ramp protects Micron's ~23% global DRAM share and supports HBM/DDR5 pricing power. CXMT has been flooding the low-end DRAM market in 2025-26, pressuring commodity DRAM ASPs.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WDC",
+          "rationale": "Western Digital's NAND/flash business competes directly with YMTC; restrictions on tools to Chinese NAND makers reduce supply pressure in an already oversupplied NAND market.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DAL",
-          "rationale": "Transatlantic carrier with meaningful jet fuel cost exposure; Iran-war fuel surge validated by UK print raises unit costs faster than fare hikes can follow.",
+          "ticker": "SNDK",
+          "rationale": "Pure-play NAND flash (post-WDC spin); same dynamic \u2014 constrained YMTC capacity supports NAND pricing which is the entire P&L.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "uk_inflation_march_2026_fuel_iran",
+      "losers": [
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials derives ~30%+ of revenue from China; tighter controls on memory tool sales directly cuts TAM. Memory equipment is a core segment and China memory fabs have been a growth driver.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research is the most memory-equipment-exposed US WFE vendor (etch/deposition for 3D NAND and DRAM) with ~30% China revenue exposure. Direct revenue hit if memory tool restrictions expand.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "KLA's process control tools ship to Chinese memory fabs; less exposed than LRCX/AMAT but still material China revenue (~25%) at risk from expanded memory-specific controls.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "Already restricted on EUV; additional DUV restrictions to Chinese memory customers would further cut China service/DUV revenue (was ~20-30% of shipments). US-listed ADR directly exposed.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ACMR",
+          "rationale": "ACM Research sells wet-clean tools primarily to Chinese fabs including CXMT/YMTC; secondary-sanctions or customer-capex risk if their key customers can't get complementary US tools to build out fabs.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "micron_chip_tools_china_export_lobbying",
       "source_news_ids": [
-        "e363948ef99ba258"
+        "e26299c870703aca"
       ],
       "headlines": [
-        "UK inflation jumps to 3.3% in March as fuel prices surge amid Iran war"
+        "Micron pushes US Congress to crack down on chip tool sales to Chinese rivals, sources say"
+      ]
+    },
+    {
+      "event_summary": "Rift Helium lists on London's AIM market, highlighting tightening global helium supply amid geopolitical risks to Russian and Qatari production.",
+      "primary_drivers": [
+        "Tightening global helium supply raising spot prices",
+        "Increased investor attention on helium-exposed producers",
+        "Supply security premium for non-Russian/Qatari sources"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "APD",
+          "rationale": "Air Products is one of the largest global helium distributors with long-term sourcing contracts; tighter supply lets them reprice contracts higher and widen margins on the helium segment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LIN",
+          "rationale": "Linde is a top-3 global industrial gas player with significant helium sourcing and distribution exposure; benefits from pricing power in a constrained market.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DCTH",
+          "rationale": "Not helium \u2014 ignore. Replaced by: sentiment-driven peer rotation into small-cap helium names often pulls in US-listed exploration plays.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "ASML",
+          "rationale": "Semiconductor lithography tools and fab operations consume significant helium for cooling; sustained helium price increases raise operating costs for ASML customers and indirectly for ASML's own testing, though pass-through is likely. Weak second-order link.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "rift_helium_listing_supply_geopolitics",
+      "source_news_ids": [
+        "d1f857646d829037"
+      ],
+      "headlines": [
+        "Rift Helium lists on AIM as geopolitical risk tightens global supply"
       ]
     }
   ]
