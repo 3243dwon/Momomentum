@@ -1,144 +1,260 @@
 {
-  "generated_at": "2026-04-22T09:03:22.415277-04:00",
+  "generated_at": "2026-04-22T10:55:57.191681-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Dow rises on news of a Trump-brokered ceasefire (implied Middle East/Iran-related), with Tesla earnings due after the close.",
+      "event_summary": "Trump administration reportedly in advanced talks for a federal rescue package for bankrupt/distressed Spirit Airlines.",
       "primary_drivers": [
-        "Geopolitical risk premium unwind lowers oil prices and boosts risk-on sentiment",
-        "Reduced Middle East tail risk compresses defense/safe-haven demand",
-        "Tesla earnings is an idiosyncratic catalyst independent of ceasefire"
+        "Government bailout reduces Spirit bankruptcy/liquidation risk, keeping ULCC capacity in the market",
+        "Capacity preservation pressures yields for competing carriers that would have absorbed Spirit's routes",
+        "Creditor/equity recovery improves for existing Spirit stakeholders"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Airlines are among the most direct beneficiaries of a Middle East ceasefire via lower jet fuel costs; fuel is ~20-30% of opex and Brent tends to drop on de-escalation. Delta has high fuel sensitivity and limited hedging.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar jet fuel cost leverage as DAL plus international route exposure (including Middle East overflights) that benefits from reduced war-risk insurance and rerouting costs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise lines benefit from lower bunker fuel costs and reduced geopolitical drag on international travel demand; Carnival has the highest fuel intensity per revenue dollar among major cruise operators.",
+          "ticker": "JBLU",
+          "rationale": "JetBlue has deep operational and historical M&A ties to Spirit (prior blocked merger); a stabilized Spirit reduces disorderly capacity dumping on overlapping Florida/Caribbean/Northeast routes where JBLU competes directly. Also removes overhang of a distressed competitor fire-saling fares.",
           "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Commodity chemical producers benefit from lower naphtha/ethane feedstock costs when crude falls on de-escalation; Dow Inc has direct oil-linked input exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Lower diesel/gasoline prices reduce trucking and last-mile logistics costs and increase consumer discretionary wallet share; Walmart has the largest US freight footprint to benefit.",
-          "confidence": "low",
-          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin is the purest large-cap beneficiary of Middle East tension (Patriot, THAAD, missile demand); ceasefire compresses the geopolitical premium embedded in defense names even if order books remain intact.",
+          "ticker": "ULCC",
+          "rationale": "Frontier is Spirit's closest ULCC peer and was a prior failed acquirer. A government-backed Spirit remains a full-strength low-fare competitor on overlapping leisure routes (Vegas, Orlando, Cancun), preventing Frontier from absorbing Spirit's share and pricing power. Frontier loses the most from Spirit NOT disappearing.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "RTX",
-          "rationale": "Raytheon's missiles & defense segment (Stinger, SM-series, Iron Dome components) rallied on Iran escalation fears; de-escalation unwinds that trade.",
-          "confidence": "high",
+          "ticker": "ALGT",
+          "rationale": "Allegiant competes with Spirit on ultra-low-fare leisure routes to Florida and Vegas; a rescued Spirit means continued fare competition rather than route/capacity consolidation that would have lifted ALGT yields.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "NOC",
-          "rationale": "Northrop Grumman similarly held a conflict premium; ceasefire headlines pressure the defense complex as a group trade regardless of company-specific fundamentals.",
+          "ticker": "LUV",
+          "rationale": "Southwest overlaps Spirit on many domestic leisure markets; had been positioned to pick up abandoned gates/slots at FLL, MCO, LAS in a liquidation. Rescue removes that capacity-grab optionality.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American has major hubs (MIA, DFW, CLT) with Spirit overlap, particularly in Florida and Latin America leisure. Would have been a beneficiary of Spirit capacity reduction \u2014 rescue preserves the discount competition on those routes.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "trump_spirit_airlines_rescue",
+      "source_news_ids": [
+        "5cb419e5dfd116ff"
+      ],
+      "headlines": [
+        "Trump administration in advanced talks for a rescue package for Spirit Airlines, source says"
+      ]
+    },
+    {
+      "event_summary": "McDonald's UK reportedly plans to raise menu prices citing cost pressures tied to the Iran conflict, signaling commodity/energy cost pass-through into QSR pricing.",
+      "primary_drivers": [
+        "Higher energy and shipping costs from Middle East conflict flowing into food service input costs",
+        "QSR pricing power / menu inflation pass-through",
+        "Oil price premium on geopolitical risk"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MCD",
+          "rationale": "Direct read-through: MCD is executing price increases to protect margin against input cost inflation. Franchise-heavy model (~95% franchised) means royalty revenue scales with ticket price while corporate bears little direct commodity risk.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "XOM",
-          "rationale": "Integrated oil majors lose the geopolitical risk premium in crude; Exxon's upstream leverage means EPS estimates drop with Brent on de-escalation.",
-          "confidence": "high",
-          "horizon": "days"
+          "rationale": "Iran conflict sustaining an oil risk premium is the underlying driver MCD is citing; integrated majors with large upstream exposure capture the price lift directly.",
+          "confidence": "medium",
+          "horizon": "weeks"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high oil-price sensitivity; crude pullback on ceasefire directly compresses cash flow estimates and the Buffett-halo trade.",
-          "confidence": "high",
+          "ticker": "CVX",
+          "rationale": "Same mechanism as XOM \u2014 Middle East risk premium on crude supports upstream realizations; no direct Iranian exposure to lose.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "QSR",
+          "rationale": "Peer QSR (Burger King, Tim Hortons) facing identical UK/European input cost pressure will likely follow with price increases, similar franchise-royalty mechanic as MCD.",
+          "confidence": "low",
           "horizon": "days"
         }
       ],
-      "dedup_group": "trump_ceasefire_market_reaction_apr2026",
+      "losers": [
+        {
+          "ticker": "CMG",
+          "rationale": "Company-operated (non-franchised) model means Chipotle absorbs food and energy inflation directly on the P&L rather than passing via royalty; has historically been more reluctant to raise prices aggressively. Sympathy read on QSR cost-pressure narrative.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WEN",
+          "rationale": "Wendy's has weaker pricing power than MCD and lower international scale; rising beef and energy costs pressure franchisee margins and unit economics if they can't match MCD's price hikes.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JBLU",
+          "rationale": "Airlines are the cleanest negative read on sustained oil premium from Iran conflict \u2014 jet fuel is ~25-30% of operating cost and JetBlue has weaker hedging and thinner margins than legacy peers.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest unwound its fuel hedges and is fully exposed to spot jet fuel; the same Iran-driven crude premium MCD is citing flows straight to LUV's cost line.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "mcdonalds_uk_iran_conflict_pricing",
       "source_news_ids": [
-        "68ee495850f9b466"
+        "be535c61e9495a82"
       ],
       "headlines": [
-        "Stock Market Today: Dow Rises On Trump Ceasefire; Tesla Earnings Due (Live Coverage)"
+        "McDonald\u2019s UK plans to raise prices due to Iran conflict \u2013 report"
       ]
     },
     {
-      "event_summary": "Bitcoin and ethereum prices rising on news of a ceasefire extension, boosting risk-on sentiment in crypto markets.",
+      "event_summary": "Bitcoin breaks out to fresh highs, driving crypto-linked equities like MicroStrategy (+9%) and Marathon Digital (+6%) sharply higher.",
       "primary_drivers": [
-        "Higher crypto spot prices lift transaction volumes and balance sheet crypto holdings",
-        "Risk-on rotation benefits crypto-correlated equities",
-        "Geopolitical de-escalation reduces safe-haven bid, supports risk assets"
+        "Bitcoin spot price appreciation directly marks up BTC treasury holdings and miner revenue per coin",
+        "Higher BTC price increases miner gross margins (fixed hashcost, variable revenue)",
+        "Crypto beta rotation lifts exchanges, brokers, and BTC-proxy equities"
       ],
       "beneficiaries": [
         {
-          "ticker": "COIN",
-          "rationale": "Coinbase revenue is directly tied to crypto trading volumes and spot prices; BTC/ETH rallies drive transaction fees, which are ~50%+ of revenue.",
+          "ticker": "MSTR",
+          "rationale": "Holds ~500k+ BTC on balance sheet; equity trades as a leveraged BTC proxy with premium to NAV expanding on breakouts. Already cited in headline as +9%.",
           "confidence": "high",
           "horizon": "days"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Strategy (MicroStrategy) holds ~500k+ BTC on balance sheet; stock trades as a leveraged BTC proxy with premium-to-NAV expansion on rallies.",
-          "confidence": "high",
-          "horizon": "intraday"
         },
         {
           "ticker": "MARA",
-          "rationale": "Marathon Digital's mining economics and treasury BTC holdings benefit directly from higher BTC price; high-beta miner.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIOT",
-          "rationale": "Riot Platforms mining revenue per hash scales with BTC price; pure-play US miner with high operating leverage.",
+          "rationale": "Largest public BTC miner by hashrate; revenue scales linearly with BTC price while cash cost per coin is relatively fixed, producing outsized EPS sensitivity. Cited in headline.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CLSK",
-          "rationale": "CleanSpark is a pure-play BTC miner with large treasury holdings; high beta to BTC price moves.",
-          "confidence": "medium",
+          "rationale": "Pure-play BTC miner with significant self-mined BTC treasury; high operating leverage to spot BTC means it typically outperforms MARA on up-moves with similar mechanics.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RIOT",
+          "rationale": "US-based BTC miner with Texas operations; peer-correlated to MARA/CLSK and typically moves in lockstep on BTC breakouts due to identical revenue model.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COIN",
+          "rationale": "Transaction revenue directly tied to crypto trading volumes, which spike on BTC breakouts; also holds corporate crypto on balance sheet. Retail flow catalyst on new highs.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "HOOD",
-          "rationale": "Robinhood crypto trading is a growing revenue segment; retail crypto volumes spike on rallies, benefiting transaction-based revenue.",
+          "rationale": "Crypto trading now a material (~20%+) revenue contributor; BTC breakouts historically drive retail options and crypto volume surges through the platform.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CIFR",
-          "rationale": "Cipher Mining's revenue directly scales with BTC price; smaller-cap miner with higher beta.",
+          "rationale": "BTC miner with HPC/AI hosting optionality; smaller-cap miner that tends to get squeezed hard on BTC momentum days alongside WULF, IREN.",
           "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "HOOD",
+          "rationale": "duplicate-skip",
+          "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [],
-      "dedup_group": "btc_eth_ceasefire_rally",
+      "dedup_group": "bitcoin_breakout_april_2026",
       "source_news_ids": [
-        "5d513ef9c5ccfa74"
+        "bd0889757b7fa4a7"
       ],
       "headlines": [
-        "Bitcoin and ethereum prices today, Wednesday, April 22, 2026: Prices rising following ceasefire extension"
+        "Strategy Jumps 9%, Marathon Digital Rises 6% on Fresh Bitcoin Breakout"
+      ]
+    },
+    {
+      "event_summary": "Small and medium businesses are abandoning wait-and-see posture and actively overhauling supply chains in response to sustained tariffs, implying a wave of sourcing shifts, nearshoring, and logistics spend.",
+      "primary_drivers": [
+        "Supply chain reconfiguration spend (consulting, software, logistics)",
+        "Nearshoring/reshoring demand shift away from China",
+        "Working capital strain and inventory rebalancing for import-dependent SMBs"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "GXO",
+          "rationale": "Contract logistics pure-play directly benefits when shippers re-route supply chains; reconfiguration drives new 3PL contract wins and warehouse redesign work.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FLEX",
+          "rationale": "Contract manufacturer with Mexico and Southeast Asia footprint \u2014 primary beneficiary of SMB/mid-market OEMs moving production out of China. Direct revenue channel for 'China+1' moves.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CNM",
+          "rationale": "Core & Main and domestic industrial distributors capture share as SMBs shift to US-sourced inputs; distribution margin expands in reshoring cycle.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SHOP",
+          "rationale": "Shopify's Markets/Logistics and supplier network tools are the software layer SMBs use to re-source; platform captures both new-supplier onboarding and cross-border compliance revenue.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EXPD",
+          "rationale": "Expeditors' non-asset freight forwarding earns more on complex, re-routed trade lanes (Vietnam/Mexico/India) than on stable China-US direct lanes \u2014 complexity is their margin.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "ZIM",
+          "rationale": "ZIM is heavily exposed to the trans-Pacific China-US container lane; SMB re-routing to Mexico/Vietnam shrinks the specific lane where ZIM is overweight.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "FIVE",
+          "rationale": "Five Below imports roughly 60% of COGS from China at sub-$5 price points where tariff pass-through is nearly impossible; supply chain overhaul implies sustained margin compression, not a transient hit.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "DG",
+          "rationale": "Dollar General's private-label and discretionary mix relies on low-cost Chinese sourcing; SMB-style supply chain shifts at DG's scale are slower and costlier, pressuring gross margin.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ETSY",
+          "rationale": "Etsy sellers are the archetypal SMB caught in this overhaul \u2014 many source components from China. Friction, cost inflation, and seller churn pressure GMV.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "smb_tariff_supply_chain_overhaul",
+      "source_news_ids": [
+        "dc114004a1be563d"
+      ],
+      "headlines": [
+        "SMBs ditch \u2018wait-and-see\u2019 as tariffs force supply chain overhaul"
       ]
     }
   ]
