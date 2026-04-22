@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-04-22T06:45:35.465582-04:00",
+  "generated_at": "2026-04-22T07:53:52.154039-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Two ships were attacked in the Strait of Hormuz per UK maritime authorities, raising Middle East shipping/oil supply risk despite the extended US-Iran ceasefire.",
+      "event_summary": "Senator Warren is pressing the Trump administration on evacuation of Americans amid an active Iran war, confirming ongoing US-Iran military conflict.",
       "primary_drivers": [
-        "Oil supply risk premium on ~20% of global seaborne crude transiting Hormuz",
-        "Tanker rates spike from rerouting and war-risk insurance premiums",
-        "Defense demand / geopolitical risk-off bid"
+        "Middle East oil supply risk premium (Strait of Hormuz exposure)",
+        "Elevated defense spending and munitions replenishment demand",
+        "Flight-to-safety bid in defensives and energy"
       ],
       "beneficiaries": [
         {
-          "ticker": "FRO",
-          "rationale": "Frontline is a pure-play crude tanker operator (VLCC/Suezmax); Hormuz attacks spike spot tanker rates and war-risk insurance, directly lifting day rates on its fleet.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways operates crude and product tankers with significant Middle East Gulf loading exposure; rerouting and risk premiums flow directly to spot rates.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers is the largest pure-play product tanker operator; Hormuz disruption tightens product tanker market as refined products from Gulf refiners reroute.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DHT",
-          "rationale": "DHT Holdings is a pure-play VLCC operator entirely spot/time-charter exposed to Middle East Gulf loadings \u2014 highest beta to Hormuz rate spikes.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream book; brent crude premium from Hormuz risk lifts near-term realizations, and limited MidEast upstream exposure means more upside than downside risk.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
           "ticker": "LMT",
-          "rationale": "Lockheed makes PAC-3/THAAD interceptors and munitions replenished after Gulf escalation; any Iran-linked escalation reinforces FY defense budget tailwind.",
-          "confidence": "medium",
+          "rationale": "Lockheed Martin is the prime contractor for THAAD and PAC-3 missile interceptors actively used against Iranian ballistic missiles; an active war drives immediate munitions replenishment orders and supplemental defense appropriations.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon supplies Patriot missiles and naval air defense (SM-series) \u2014 direct beneficiary of any renewed Gulf maritime defense tasking and restock orders.",
+          "rationale": "Raytheon makes Patriot, SM-3/SM-6, Tomahawk, and AMRAAM \u2014 all consumed heavily in a Gulf conflict. Direct revenue uplift from DoD replenishment contracts typically signed within weeks of expenditure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LHX",
+          "rationale": "L3Harris provides ISR, tactical radios, and electronic warfare systems with direct CENTCOM exposure; active conflict accelerates procurement timelines.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LNG",
-          "rationale": "Cheniere is largest US LNG exporter; Hormuz risk threatens Qatari LNG flows (~20% of global supply), making US Gulf LNG a premium substitute \u2014 TTF spread widens.",
+          "ticker": "XOM",
+          "rationale": "ExxonMobil is the most liquid integrated oil major; any Strait of Hormuz disruption risk (20% of global seaborne oil) directly lifts Brent, widening upstream margins. Limited direct Iran/Gulf production exposure means pure price leverage.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "ConocoPhillips is a pure-play upstream E&P with no refining drag and no Iranian/Gulf producing assets at risk \u2014 highest beta to a Brent spike among US majors.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos supplies loitering munitions, target drones, and tactical UAVs increasingly used in CENTCOM operations; small base means any wartime order is materially accretive.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics benefits via munitions (Ordnance & Tactical Systems) plus combat systems; also owns Gulfstream which sees evacuation/charter demand spike.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TNK",
+          "rationale": "Teekay Tankers \u2014 product tanker rates spike on Hormuz rerouting and war-risk insurance premiums; direct beneficiary of tonne-mile expansion as cargoes avoid Gulf.",
           "confidence": "medium",
           "horizon": "days"
         }
@@ -62,151 +62,108 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has higher jet fuel sensitivity than peers and limited fuel hedging; Brent spike directly pressures CASM-ex and Q2 margin guide.",
+          "rationale": "Delta has significant transatlantic and codeshare exposure; higher jet fuel prices from Brent spike plus Middle East airspace closures force costly reroutes. Jet fuel is ~25% of operating costs.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "United's long-haul international network (including Gulf routings) is exposed to both jet fuel spike and potential airspace reroutes over Iran/Iraq.",
+          "rationale": "United has the most international long-haul exposure of US carriers including India/South Asia routes that transit or skirt Iranian airspace, forcing fuel-burning reroutes on top of fuel cost spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest's all-domestic model still makes it one of the most fuel-cost-sensitive US carriers; unhedged exposure to crude spike compresses near-term EPS.",
+          "rationale": "Southwest is unhedged on fuel as of recent disclosures and runs thin margins; domestic-only but still exposed to full Brent-driven jet fuel passthrough with no international premium pricing to offset.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival burns ~3M barrels/year of marine fuel; bunker prices track Brent and Middle East cruise itineraries face cancellation/rerouting risk.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx Express jet fuel is a top-3 cost line; Brent spike pressures margins and Middle East hub (Dubai) transit faces elevated risk surcharges.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "strait_hormuz_ship_attacks_april_2026",
-      "source_news_ids": [
-        "46e79c6a2247f803"
-      ],
-      "headlines": [
-        "Two ships attacked in Strait of Hormuz, UK says, after U.S. extends Iran ceasefire"
-      ]
-    },
-    {
-      "event_summary": "Micron is lobbying US Congress to tighten export controls on semiconductor manufacturing equipment sales to Chinese memory chip rivals (CXMT, YMTC).",
-      "primary_drivers": [
-        "Export control tightening reduces Chinese memory capacity buildout",
-        "Reduced supply from Chinese DRAM/NAND competitors supports global memory pricing",
-        "Revenue hit to US/allied equipment makers with China exposure"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "MU",
-          "rationale": "Direct instigator and primary beneficiary \u2014 slowing CXMT's DRAM ramp protects Micron's ~23% global DRAM share and supports HBM/DDR5 pricing power. CXMT has been flooding the low-end DRAM market in 2025-26, pressuring commodity DRAM ASPs.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WDC",
-          "rationale": "Western Digital's NAND/flash business competes directly with YMTC; restrictions on tools to Chinese NAND makers reduce supply pressure in an already oversupplied NAND market.",
+          "rationale": "Carnival has cancelled/rerouted Middle East and Red Sea itineraries in prior regional conflicts; bunker fuel costs rise with Brent and consumer discretionary travel demand softens on war headlines.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "SNDK",
-          "rationale": "Pure-play NAND flash (post-WDC spin); same dynamic \u2014 constrained YMTC capacity supports NAND pricing which is the entire P&L.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "AMAT",
-          "rationale": "Applied Materials derives ~30%+ of revenue from China; tighter controls on memory tool sales directly cuts TAM. Memory equipment is a core segment and China memory fabs have been a growth driver.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LRCX",
-          "rationale": "Lam Research is the most memory-equipment-exposed US WFE vendor (etch/deposition for 3D NAND and DRAM) with ~30% China revenue exposure. Direct revenue hit if memory tool restrictions expand.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KLAC",
-          "rationale": "KLA's process control tools ship to Chinese memory fabs; less exposed than LRCX/AMAT but still material China revenue (~25%) at risk from expanded memory-specific controls.",
+          "ticker": "MAR",
+          "rationale": "Marriott has meaningful Middle East property exposure (UAE, Saudi, Qatar, Jordan) with evacuations and travel advisories directly hitting RevPAR in the region.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "ASML",
-          "rationale": "Already restricted on EUV; additional DUV restrictions to Chinese memory customers would further cut China service/DUV revenue (was ~20-30% of shipments). US-listed ADR directly exposed.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ACMR",
-          "rationale": "ACM Research sells wet-clean tools primarily to Chinese fabs including CXMT/YMTC; secondary-sanctions or customer-capex risk if their key customers can't get complementary US tools to build out fabs.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "micron_chip_tools_china_export_lobbying",
-      "source_news_ids": [
-        "e26299c870703aca"
-      ],
-      "headlines": [
-        "Micron pushes US Congress to crack down on chip tool sales to Chinese rivals, sources say"
-      ]
-    },
-    {
-      "event_summary": "Rift Helium lists on London's AIM market, highlighting tightening global helium supply amid geopolitical risks to Russian and Qatari production.",
-      "primary_drivers": [
-        "Tightening global helium supply raising spot prices",
-        "Increased investor attention on helium-exposed producers",
-        "Supply security premium for non-Russian/Qatari sources"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "APD",
-          "rationale": "Air Products is one of the largest global helium distributors with long-term sourcing contracts; tighter supply lets them reprice contracts higher and widen margins on the helium segment.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LIN",
-          "rationale": "Linde is a top-3 global industrial gas player with significant helium sourcing and distribution exposure; benefits from pricing power in a constrained market.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DCTH",
-          "rationale": "Not helium \u2014 ignore. Replaced by: sentiment-driven peer rotation into small-cap helium names often pulls in US-listed exploration plays.",
+          "ticker": "XPO",
+          "rationale": "Trucking/LTL operators face diesel cost spike from crude jump; XPO's thin operating margins amplify fuel passthrough lag.",
           "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "us_iran_war_evacuation_april_2026",
+      "source_news_ids": [
+        "c4e8350dd2588a49"
+      ],
+      "headlines": [
+        "Warren presses Trump administration for answers on evacuation of Americans amid Iran war"
+      ]
+    },
+    {
+      "event_summary": "Trump extended the Iran ceasefire, reducing Middle East geopolitical risk premium, while markets await Tesla earnings.",
+      "primary_drivers": [
+        "Lower geopolitical risk premium in crude oil",
+        "Reduced safe-haven demand",
+        "Improved risk-on sentiment lowering shipping/insurance risk through Strait of Hormuz"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~20-25% of airline operating costs; a sustained ceasefire caps crude and directly improves margins. Delta has limited hedging vs peers so gets full benefit of spot declines.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost sensitivity as DAL; United also has meaningful international/transatlantic exposure where lower oil + reduced Mideast airspace risk both help route economics.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with ~10-12% of costs in bunker fuel; lower Brent from ceasefire extension directly compresses fuel expense and lifts margin estimates.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Earnings catalyst tonight \u2014 unrelated to ceasefire but explicitly flagged in headline as the binary event driving tape; options-implied move is the actual trade.",
+          "confidence": "high",
           "horizon": "intraday"
         }
       ],
       "losers": [
         {
-          "ticker": "ASML",
-          "rationale": "Semiconductor lithography tools and fab operations consume significant helium for cooling; sustained helium price increases raise operating costs for ASML customers and indirectly for ASML's own testing, though pass-through is likely. Weak second-order link.",
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream earnings leverage to Brent; a ceasefire extension bleeds the geopolitical premium out of crude, pressuring E&P segment earnings estimates.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US oil producer with high beta to WTI; loss of Iran-risk premium is a direct hit to realized price assumptions. Higher leverage amplifies the move vs XOM.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Defense prime with heavy missile/air-defense mix (PAC-3, THAAD, Javelin) that rallied on Iran tensions; ceasefire extension removes near-term urgency narrative for replenishment orders.",
           "confidence": "low",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
-      "dedup_group": "rift_helium_listing_supply_geopolitics",
+      "dedup_group": "trump_extends_iran_ceasefire_market_open",
       "source_news_ids": [
-        "d1f857646d829037"
+        "d0374206cd8554b6"
       ],
       "headlines": [
-        "Rift Helium lists on AIM as geopolitical risk tightens global supply"
+        "Dow Jones Futures Rise As Trump Extends Iran Ceasefire; Tesla Earnings Due"
       ]
     }
   ]
