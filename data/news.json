@@ -1,260 +1,247 @@
 {
-  "generated_at": "2026-04-22T10:55:57.191681-04:00",
+  "generated_at": "2026-04-22T12:03:52.869209-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Trump administration reportedly in advanced talks for a federal rescue package for bankrupt/distressed Spirit Airlines.",
-      "primary_drivers": [
-        "Government bailout reduces Spirit bankruptcy/liquidation risk, keeping ULCC capacity in the market",
-        "Capacity preservation pressures yields for competing carriers that would have absorbed Spirit's routes",
-        "Creditor/equity recovery improves for existing Spirit stakeholders"
-      ],
       "beneficiaries": [
         {
-          "ticker": "JBLU",
-          "rationale": "JetBlue has deep operational and historical M&A ties to Spirit (prior blocked merger); a stabilized Spirit reduces disorderly capacity dumping on overlapping Florida/Caribbean/Northeast routes where JBLU competes directly. Also removes overhang of a distressed competitor fire-saling fares.",
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a pure-play Permian Basin US onshore producer with zero Middle East exposure; Hormuz closure removes ~20% of global seaborne crude supply, spiking WTI and directly lifting realized prices on every barrel.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "US onshore crude producer, no tanker/Strait exposure, high operating leverage to WTI price spike driven by ~17-20 mbpd of Gulf crude being stranded.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter from Gulf Coast (Sabine Pass, Corpus Christi); Qatar LNG (~20% of global supply) transits Hormuz, so closure forces European/Asian buyers to pay premium for US cargoes and lifts spot LNG margins on uncontracted volumes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FLNG",
+          "rationale": "Flex LNG owns modern LNG carriers on spot/short-term charters; Qatari LNG outage forces ton-mile expansion (US/Australia to Europe/Asia), spiking LNG shipping day rates.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers operates product tanker fleet; ship seizures in Hormuz + rerouting around Africa dramatically extend ton-miles and lift clean product tanker rates, with direct war-risk premium on remaining Gulf transits.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways crude tanker operator benefits from VLCC/Suezmax day-rate spike as non-Gulf crude (US, Brazil, W. Africa) must be shipped longer distances to Asia, and war-risk insurance forces rate repricing.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed makes THAAD, PAC-3 Patriot interceptors, and JASSM \u2014 exactly the munitions being expended/replenished in a Gulf escalation with ship seizures; Pentagon restock orders follow within weeks of sustained conflict.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "months"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large Permian/Guyana upstream benefits from WTI spike; refining margins also expand as Gulf crude dislocation widens light-heavy and Brent-WTI spreads. Hormuz exposure is limited vs pure upside on price.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "ULCC",
-          "rationale": "Frontier is Spirit's closest ULCC peer and was a prior failed acquirer. A government-backed Spirit remains a full-strength low-fare competitor on overlapping leisure routes (Vegas, Orlando, Cancun), preventing Frontier from absorbing Spirit's share and pricing power. Frontier loses the most from Spirit NOT disappearing.",
+          "ticker": "DAL",
+          "rationale": "Delta has no fuel hedges and ~30% of operating costs are jet fuel; a sustained WTI spike from Hormuz closure hits unit costs immediately with limited near-term ability to pass through in fares.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United runs long-haul international routes (incl. India/Asia via Europe) that may require rerouting around Iranian/Gulf airspace, adding block hours plus unhedged jet fuel cost spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's hedge book has been reduced vs prior cycles; domestic leisure demand is price-elastic and fuel is the largest variable cost \u2014 margin compression is direct.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival burns bunker fuel fleet-wide and has material Med/Middle East itineraries; both fuel cost spike and itinerary cancellations/rerouting hit near-term earnings.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow Chemical's ethylene/polyethylene cost curve is naphtha-linked in Europe/Asia; Gulf feedstock disruption lifts global petrochemical input costs while demand destruction from higher oil weighs on volumes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart's low-income consumer is directly exposed to gasoline price spike, which acts as a regressive tax and compresses discretionary GM wallet share; diesel also lifts inbound logistics costs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Express jet fuel is a large cost bucket and fuel surcharges lag spot prices by weeks; Middle East hub (Dubai) operations also face rerouting/insurance friction.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Not a direct fuel loser, but Shanghai Gigafactory exports to Europe/Middle East face shipping cost spike and insurance issues; broader risk-off from geopolitical shock hits high-beta names first.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "event_summary": "Strait of Hormuz remains effectively shut as Iran seizes ships despite a Trump-brokered ceasefire extension, choking ~20% of global seaborne oil and a large share of LNG.",
+      "dedup_group": "iran_hormuz_ceasefire_energy_disruption",
+      "source_news_ids": [
+        "1897e33493741e7d"
+      ],
+      "headlines": [
+        "Strait of Hormuz remains basically closed as Iran seizes ships after Trump ceasefire extension"
+      ]
+    },
+    {
+      "event_summary": "Kevin Warsh, Trump's pick for Fed Chair, held his confirmation hearing, with strategist Tom Lee highlighting four key takeaways suggesting a policy direction.",
+      "primary_drivers": [
+        "Anticipated shift in Fed leadership/policy stance under Warsh",
+        "Market repricing of rate path expectations",
+        "Perception of Fed independence and dovish/hawkish lean"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "fed_chair_warsh_confirmation_hearing",
+      "source_news_ids": [
+        "ca2772dafd642127"
+      ],
+      "headlines": [
+        "The top four takeaways from Trump Fed pick Kevin Warsh\u2019s confirmation hearing, according to strategist Tom Lee"
+      ]
+    },
+    {
+      "event_summary": "Industries from airlines to chemicals are cutting output after earlier price hikes, signaling demand destruction and potential stagflationary conditions.",
+      "primary_drivers": [
+        "Demand destruction following prior price increases",
+        "Volume declines pressuring operating leverage in capital-intensive industries",
+        "Stagflation signal \u2014 weakening real activity with sticky prices"
+      ],
+      "beneficiaries": [],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Airlines are named directly in the story. Delta has high operating leverage \u2014 a capacity/output cut after fare hikes means unit costs rise while RASM growth stalls, compressing margins.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "ALGT",
-          "rationale": "Allegiant competes with Spirit on ultra-low-fare leisure routes to Florida and Vegas; a rescued Spirit means continued fare competition rather than route/capacity consolidation that would have lifted ALGT yields.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest overlaps Spirit on many domestic leisure markets; had been positioned to pick up abandoned gates/slots at FLL, MCO, LAS in a liquidation. Rescue removes that capacity-grab optionality.",
-          "confidence": "medium",
+          "ticker": "UAL",
+          "rationale": "Same airline demand-destruction dynamic cited in the headline; United has outsized exposure to discretionary leisure and international premium, both sensitive to post-price-hike demand rollover.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "AAL",
-          "rationale": "American has major hubs (MIA, DFW, CLT) with Spirit overlap, particularly in Florida and Latin America leisure. Would have been a beneficiary of Spirit capacity reduction \u2014 rescue preserves the discount competition on those routes.",
-          "confidence": "low",
+          "rationale": "Most levered airline balance sheet; output cuts after price increases imply weaker cash flow coverage of debt service, amplifying equity downside vs peers.",
+          "confidence": "medium",
           "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Chemicals explicitly named. Dow is a commodity chemicals pure-play \u2014 falling volumes crush fixed-cost absorption at ethylene/polyethylene plants, and they've already pushed prices, limiting further pricing offset.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LYB",
+          "rationale": "LyondellBasell is similarly exposed to polyolefin volume declines; commodity chemical producers see EBITDA drop disproportionately when utilization falls below ~85%.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EMN",
+          "rationale": "Eastman Chemical \u2014 specialty/intermediate chemicals with significant exposure to packaging, auto, and construction end-markets all softening; output cuts signal destocking cycle deepening.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CE",
+          "rationale": "Celanese has high financial leverage post-DuPont M&M deal; any sustained volume weakness in acetyls/engineered materials pressures deleveraging path.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "trump_spirit_airlines_rescue",
+      "dedup_group": "industrial_output_contraction_inflation_aftermath",
       "source_news_ids": [
-        "5cb419e5dfd116ff"
+        "58392f9be975156d"
       ],
       "headlines": [
-        "Trump administration in advanced talks for a rescue package for Spirit Airlines, source says"
+        "First came the price rises. Now output is falling in industries ranging from airlines to chemicals."
       ]
     },
     {
-      "event_summary": "McDonald's UK reportedly plans to raise menu prices citing cost pressures tied to the Iran conflict, signaling commodity/energy cost pass-through into QSR pricing.",
+      "event_summary": "Medicare policy change to cover obesity drugs (GLP-1s), expanding the addressable market for Eli Lilly and Novo Nordisk, though implementation details remain uncertain.",
       "primary_drivers": [
-        "Higher energy and shipping costs from Middle East conflict flowing into food service input costs",
-        "QSR pricing power / menu inflation pass-through",
-        "Oil price premium on geopolitical risk"
+        "Expanded reimbursed TAM for GLP-1 obesity drugs via Medicare Part D coverage",
+        "Increased volume demand flowing through GLP-1 supply chain",
+        "Competitive pressure on legacy obesity/bariatric alternatives and anti-GLP-1 thesis stocks"
       ],
       "beneficiaries": [
         {
-          "ticker": "MCD",
-          "rationale": "Direct read-through: MCD is executing price increases to protect margin against input cost inflation. Franchise-heavy model (~95% franchised) means royalty revenue scales with ticket price while corporate bears little direct commodity risk.",
-          "confidence": "medium",
-          "horizon": "days"
+          "ticker": "LLY",
+          "rationale": "Direct maker of Zepbound (tirzepatide) for obesity \u2014 Medicare coverage materially expands reimbursed script volume in the 65+ demographic where obesity prevalence is high. Zepbound is one of two drugs explicitly at the center of this policy.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
-          "ticker": "XOM",
-          "rationale": "Iran conflict sustaining an oil risk premium is the underlying driver MCD is citing; integrated majors with large upstream exposure capture the price lift directly.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "NVO",
+          "rationale": "Direct maker of Wegovy (semaglutide) \u2014 the other core product in scope. ADR-listed, so US-traded NVO gets the same revenue uplift from Medicare obesity reimbursement.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Same mechanism as XOM \u2014 Middle East risk premium on crude supports upstream realizations; no direct Iranian exposure to lose.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "QSR",
-          "rationale": "Peer QSR (Burger King, Tim Hortons) facing identical UK/European input cost pressure will likely follow with price increases, similar franchise-royalty mechanic as MCD.",
+          "ticker": "HIMS",
+          "rationale": "Telehealth platform with a GLP-1/weight-loss vertical; broader cultural and payer validation of obesity as a treated disease supports demand funnel and cash-pay/compounded offerings, plus peer-rotation correlation with GLP-1 names on headlines.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "CMG",
-          "rationale": "Company-operated (non-franchised) model means Chipotle absorbs food and energy inflation directly on the P&L rather than passing via royalty; has historically been more reluctant to raise prices aggressively. Sympathy read on QSR cost-pressure narrative.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "ISRG",
+          "rationale": "Intuitive Surgical's bariatric surgery procedure volumes face structural headwind as pharmacological obesity treatment becomes reimbursed for Medicare population \u2014 a demographic that is a meaningful share of bariatric candidates.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
-          "ticker": "WEN",
-          "rationale": "Wendy's has weaker pricing power than MCD and lower international scale; rising beef and energy costs pressure franchisee margins and unit economics if they can't match MCD's price hikes.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "JBLU",
-          "rationale": "Airlines are the cleanest negative read on sustained oil premium from Iran conflict \u2014 jet fuel is ~25-30% of operating cost and JetBlue has weaker hedging and thinner margins than legacy peers.",
+          "ticker": "WW",
+          "rationale": "WeightWatchers' lifestyle/program model is directly disintermediated by reimbursed pharmacotherapy; Medicare-covered GLP-1s further erode the legacy weight-management franchise.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Southwest unwound its fuel hedges and is fully exposed to spot jet fuel; the same Iran-driven crude premium MCD is citing flows straight to LUV's cost line.",
-          "confidence": "medium",
+          "ticker": "VKTX",
+          "rationale": "Viking Therapeutics' investment thesis partly rests on GLP-1 incumbent supply/access constraints leaving room for next-gen entrants \u2014 entrenched Medicare reimbursement for LLY/NVO products raises the payer-formulary bar for later entrants and narrows the launch window.",
+          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "mcdonalds_uk_iran_conflict_pricing",
+      "dedup_group": "medicare_obesity_drug_coverage_change",
       "source_news_ids": [
-        "be535c61e9495a82"
+        "66da62536d2656fc"
       ],
       "headlines": [
-        "McDonald\u2019s UK plans to raise prices due to Iran conflict \u2013 report"
-      ]
-    },
-    {
-      "event_summary": "Bitcoin breaks out to fresh highs, driving crypto-linked equities like MicroStrategy (+9%) and Marathon Digital (+6%) sharply higher.",
-      "primary_drivers": [
-        "Bitcoin spot price appreciation directly marks up BTC treasury holdings and miner revenue per coin",
-        "Higher BTC price increases miner gross margins (fixed hashcost, variable revenue)",
-        "Crypto beta rotation lifts exchanges, brokers, and BTC-proxy equities"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "MSTR",
-          "rationale": "Holds ~500k+ BTC on balance sheet; equity trades as a leveraged BTC proxy with premium to NAV expanding on breakouts. Already cited in headline as +9%.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MARA",
-          "rationale": "Largest public BTC miner by hashrate; revenue scales linearly with BTC price while cash cost per coin is relatively fixed, producing outsized EPS sensitivity. Cited in headline.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CLSK",
-          "rationale": "Pure-play BTC miner with significant self-mined BTC treasury; high operating leverage to spot BTC means it typically outperforms MARA on up-moves with similar mechanics.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIOT",
-          "rationale": "US-based BTC miner with Texas operations; peer-correlated to MARA/CLSK and typically moves in lockstep on BTC breakouts due to identical revenue model.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COIN",
-          "rationale": "Transaction revenue directly tied to crypto trading volumes, which spike on BTC breakouts; also holds corporate crypto on balance sheet. Retail flow catalyst on new highs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HOOD",
-          "rationale": "Crypto trading now a material (~20%+) revenue contributor; BTC breakouts historically drive retail options and crypto volume surges through the platform.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CIFR",
-          "rationale": "BTC miner with HPC/AI hosting optionality; smaller-cap miner that tends to get squeezed hard on BTC momentum days alongside WULF, IREN.",
-          "confidence": "medium",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "HOOD",
-          "rationale": "duplicate-skip",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [],
-      "dedup_group": "bitcoin_breakout_april_2026",
-      "source_news_ids": [
-        "bd0889757b7fa4a7"
-      ],
-      "headlines": [
-        "Strategy Jumps 9%, Marathon Digital Rises 6% on Fresh Bitcoin Breakout"
-      ]
-    },
-    {
-      "event_summary": "Small and medium businesses are abandoning wait-and-see posture and actively overhauling supply chains in response to sustained tariffs, implying a wave of sourcing shifts, nearshoring, and logistics spend.",
-      "primary_drivers": [
-        "Supply chain reconfiguration spend (consulting, software, logistics)",
-        "Nearshoring/reshoring demand shift away from China",
-        "Working capital strain and inventory rebalancing for import-dependent SMBs"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GXO",
-          "rationale": "Contract logistics pure-play directly benefits when shippers re-route supply chains; reconfiguration drives new 3PL contract wins and warehouse redesign work.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FLEX",
-          "rationale": "Contract manufacturer with Mexico and Southeast Asia footprint \u2014 primary beneficiary of SMB/mid-market OEMs moving production out of China. Direct revenue channel for 'China+1' moves.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CNM",
-          "rationale": "Core & Main and domestic industrial distributors capture share as SMBs shift to US-sourced inputs; distribution margin expands in reshoring cycle.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "SHOP",
-          "rationale": "Shopify's Markets/Logistics and supplier network tools are the software layer SMBs use to re-source; platform captures both new-supplier onboarding and cross-border compliance revenue.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EXPD",
-          "rationale": "Expeditors' non-asset freight forwarding earns more on complex, re-routed trade lanes (Vietnam/Mexico/India) than on stable China-US direct lanes \u2014 complexity is their margin.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "ZIM",
-          "rationale": "ZIM is heavily exposed to the trans-Pacific China-US container lane; SMB re-routing to Mexico/Vietnam shrinks the specific lane where ZIM is overweight.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "FIVE",
-          "rationale": "Five Below imports roughly 60% of COGS from China at sub-$5 price points where tariff pass-through is nearly impossible; supply chain overhaul implies sustained margin compression, not a transient hit.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Dollar General's private-label and discretionary mix relies on low-cost Chinese sourcing; SMB-style supply chain shifts at DG's scale are slower and costlier, pressuring gross margin.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ETSY",
-          "rationale": "Etsy sellers are the archetypal SMB caught in this overhaul \u2014 many source components from China. Friction, cost inflation, and seller churn pressure GMV.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "smb_tariff_supply_chain_overhaul",
-      "source_news_ids": [
-        "dc114004a1be563d"
-      ],
-      "headlines": [
-        "SMBs ditch \u2018wait-and-see\u2019 as tariffs force supply chain overhaul"
+        "Obesity Drugs Covered In Medicare Change. Questions Remain For Lilly, Novo."
       ]
     }
   ]
