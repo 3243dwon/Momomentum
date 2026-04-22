@@ -1,77 +1,121 @@
 {
-  "generated_at": "2026-04-22T13:30:55.739035-04:00",
+  "generated_at": "2026-04-22T14:59:44.872593-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "A House Republican proposed a small-business tax cut to be paired with the GOP federal budget package.",
+      "event_summary": "Treasury Secretary Bessent revealed many US allies have requested dollar currency swap lines amid Iran war-driven FX volatility, signaling dollar liquidity stress abroad and reinforcing USD reserve-currency demand.",
       "primary_drivers": [
-        "Lower effective tax rate for small-business-heavy customer bases increases discretionary spend and loan demand",
-        "Improved after-tax cash flow for pass-through entities boosts payroll/software/insurance spending",
-        "Legislative proposal only \u2014 not enacted \u2014 so impact is sentiment/positioning rather than earnings"
+        "Global dollar shortage / flight-to-USD funding demand during Middle East conflict",
+        "Elevated FX and rates volatility from war risk premium",
+        "Defense/geopolitical risk premium embedded in energy and defense names"
       ],
       "beneficiaries": [
         {
-          "ticker": "PAYX",
-          "rationale": "Paychex derives the majority of revenue from SMB payroll/HR services; lower small-business taxes free up cash for hiring and retention of payroll platforms, and historically Paychex trades as a proxy for SMB health.",
+          "ticker": "CME",
+          "rationale": "Currency swap demand and FX volatility drive record FX futures and rates futures volumes at CME; war-driven hedging is a direct revenue tailwind via transaction fees.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ICE",
+          "rationale": "Runs Brent crude complex and key FX/rates venues; Iran war turbulence plus allied hedging demand boosts energy and FX trading volumes directly tied to transaction revenue.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Iran war escalation (implied by Bessent framing it as an active 'war') sustains munitions/missile-defense demand; Lockheed's PAC-3 and THAAD are directly consumed in Middle East theater.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Iran war sustains elevated Brent risk premium; ExxonMobil's upstream leverage to crude prices is among the highest in US large-cap energy.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "INTU",
-          "rationale": "Intuit's QuickBooks and TurboTax Small Business segments have direct SMB revenue exposure; tax cuts increase SMB formation and retention, expanding TAM for QuickBooks Online subscriptions.",
+          "ticker": "GS",
+          "rationale": "FX trading desk is a top-tier beneficiary of cross-currency basis stress and volatility; Goldman historically monetizes swap-line-era FX dislocations in its FICC segment.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ONEW",
-          "rationale": "Actually use LPRO \u2014 correcting: LendingTree/SMB lenders. Skipping this entry.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LPRO",
-          "rationale": "Open Lending and small-business-focused lenders see improved credit quality and higher originations when SMBs have more after-tax cash; however link is indirect.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TCBI",
-          "rationale": "Texas Capital and other SMB-heavy regional banks benefit from stronger small-business borrower balance sheets and potential loan demand pickup from reinvestment of tax savings.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "losers": [],
-      "dedup_group": "gop_smallbiz_tax_cut_proposal",
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "US airlines with transatlantic/Middle East routes face both higher jet fuel (Brent premium) and route disruption risk from active Iran war conditions.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Heavier international exposure than domestic peers; Middle East airspace disruption plus fuel spike is a direct earnings headwind.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "bessent_currency_swaps_iran",
       "source_news_ids": [
-        "7e04f700af364f0b"
+        "8b6ab5f4222f5302"
       ],
       "headlines": [
-        "House Republican proposes small-business tax cut to pair with GOP federal budget package"
+        "Bessent says 'many' U.S. allies have asked for currency swaps amid Iran war turbulence"
       ]
     },
     {
-      "event_summary": "Kevin Warsh, Trump's pick for Fed Chair, signals his approach to interest rates ahead of a potential leadership change at the Federal Reserve.",
+      "event_summary": "Trump is reportedly preparing to reclassify cannabis (likely Schedule I \u2192 Schedule III), which would remove the 280E tax penalty and ease banking/research restrictions for US operators.",
       "primary_drivers": [
-        "Shift in monetary policy expectations under new Fed leadership",
-        "Perceived Fed independence / political alignment with Trump administration",
-        "Rate path repricing depending on whether Warsh signals hawkish or dovish tilt"
+        "Removal of IRS Section 280E tax burden dramatically improves cash flow for US plant-touching operators",
+        "Regulatory de-risking drives institutional capital back to the sector",
+        "Path toward expanded legal market and banking access (SAFE-style reforms) becomes more credible"
       ],
       "beneficiaries": [
         {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab's earnings are highly sensitive to the short-end rate path and deposit dynamics; a Warsh-led Fed perceived as willing to cut faster under Trump pressure reduces cash-sorting pressure and lifts client cash balances.",
+          "ticker": "TLRY",
+          "rationale": "Named in the headline; Canadian LP with US beverage/hemp exposure \u2014 catches sector sentiment flow and is the most liquid retail cannabis vehicle.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CGC",
+          "rationale": "Canopy Growth has structured US option on Acreage Holdings specifically to capitalize on US federal rescheduling; rescheduling triggers re-rating of that optionality.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SMG",
+          "rationale": "Scotts Miracle-Gro's Hawthorne division sells hydroponics/cultivation supplies to growers; rescheduling accelerates legal cultivation expansion and ends the Hawthorne earnings drag.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "losers": [],
-      "dedup_group": "warsh_fed_leadership_rates",
+      "losers": [
+        {
+          "ticker": "STZ",
+          "rationale": "Constellation Brands (Corona, Modelo) \u2014 cannabis beverages become more competitive with alcohol as legal access broadens; also holds CGC equity stake but core beer franchise faces share loss risk over time.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BUD",
+          "rationale": "Anheuser-Busch InBev faces the same alcohol-substitution risk as cannabis use normalizes under a less restrictive federal schedule.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GEO",
+          "rationale": "GEO Group private prisons \u2014 lower federal drug scheduling reduces cannabis-related incarceration pipeline, a marginal negative for detention demand.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "trump_cannabis_reclassification",
       "source_news_ids": [
-        "f8b0c1f71f35a4fe"
+        "98554e0b6a94af04"
       ],
       "headlines": [
-        "Trump\u2019s Fed pick Kevin Warsh signals approach to rates \u2014 what a leadership change means for consumers"
+        "Tilray and other cannabis stocks soar as Trump is reportedly ready to reclassify the substance"
       ]
     }
   ]
