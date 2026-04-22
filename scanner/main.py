@@ -122,6 +122,20 @@ def run(
     log.info("Loaded universe: %d tickers", uni_size)
     rows = technicals.scan(tickers)
 
+    # Watchlist safety net: the first Alpaca batch has been returning empty
+    # consistently (not just transiently), which silently drops every watchlist
+    # ticker from the scan. Re-fetch the missing ones in a tiny dedicated pass
+    # — different batch composition tends to succeed where batch 0 didn't.
+    watchlist_set = router.load_watchlist()
+    scanned_set = {r["ticker"] for r in rows}
+    missing_wl = sorted(t for t in watchlist_set if t not in scanned_set)
+    if missing_wl:
+        log.info("Watchlist safety net: re-fetching %d missing: %s", len(missing_wl), missing_wl)
+        extra = technicals.scan(missing_wl)
+        if extra:
+            rows.extend(extra)
+            log.info("Watchlist safety net: recovered %d/%d", len(extra), len(missing_wl))
+
     deltas = state.compute_and_persist(rows, now)
 
     routed, watchlist = router.route(rows, deltas, window) if rows else ([], sorted(router.load_watchlist()))
