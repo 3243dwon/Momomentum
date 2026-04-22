@@ -1,5 +1,79 @@
 {
-  "generated_at": "2026-04-21T19:57:53.747230-04:00",
+  "generated_at": "2026-04-21T22:43:18.341040-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Oil prices edge lower as a fragile Iran ceasefire extension reduces near-term Middle East supply risk premium.",
+      "primary_drivers": [
+        "Lower geopolitical risk premium in crude",
+        "Reduced probability of Iranian supply disruption / Strait of Hormuz risk",
+        "Lower jet fuel and diesel input costs for transport"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~20-25% of operating costs; a sustained drop in crude from easing Iran risk directly expands margins. Delta has historically been the most fuel-price-sensitive of the legacy carriers given limited hedging.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Similar jet fuel cost structure to DAL, unhedged exposure makes UAL a direct beneficiary of lower crude; also highest beta among legacy carriers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest has partial hedges but still benefits materially from lower spot jet fuel; domestic-focused carrier sees clean passthrough to margins.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Fuel is a major cost line for the Express air network; lower crude translates directly to lower fuel surcharges net of passthrough lag, boosting near-term margin.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is one of Carnival's largest variable costs; lower Brent feeds marine fuel prices, expanding cruise operating margin.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with upstream earnings highly levered to Brent; lower crude directly compresses upstream cash flow. Also a bellwether that trades with the tape on oil moves.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-focused E&P with high operating leverage to WTI; unhedged barrels mean near-1:1 earnings sensitivity to crude price declines.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Smaller-cap E&P with higher beta to crude than majors; de-risking of Middle East premium hits names with geopolitical-premium exposure hardest.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand is tied to operator capex, which is set off crude price expectations; softening oil outlook pressures completions activity sentiment.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_ceasefire_extended_trump",
+      "source_news_ids": [
+        "765235c2cc258c30"
+      ],
+      "headlines": [
+        "Oil edge lower as fragile Iran ceasefire extension clouds outlook"
+      ]
+    }
+  ]
 }
