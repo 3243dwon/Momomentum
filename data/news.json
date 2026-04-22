@@ -1,78 +1,114 @@
 {
-  "generated_at": "2026-04-21T22:43:18.341040-04:00",
+  "generated_at": "2026-04-21T23:18:43.766483-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Oil prices edge lower as a fragile Iran ceasefire extension reduces near-term Middle East supply risk premium.",
-      "primary_drivers": [
-        "Lower geopolitical risk premium in crude",
-        "Reduced probability of Iranian supply disruption / Strait of Hormuz risk",
-        "Lower jet fuel and diesel input costs for transport"
-      ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of operating costs; a sustained drop in crude from easing Iran risk directly expands margins. Delta has historically been the most fuel-price-sensitive of the legacy carriers given limited hedging.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar jet fuel cost structure to DAL, unhedged exposure makes UAL a direct beneficiary of lower crude; also highest beta among legacy carriers.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest has partial hedges but still benefits materially from lower spot jet fuel; domestic-focused carrier sees clean passthrough to margins.",
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin is the prime contractor for F-35, PAC-3/THAAD missile defense, and LRASM \u2014 all directly relevant to a Pacific/Taiwan contingency. Heightened China-war rhetoric accelerates DoD Pacific Deterrence Initiative funding and FMS demand from Japan/Australia/Taiwan.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Fuel is a major cost line for the Express air network; lower crude translates directly to lower fuel surcharges net of passthrough lag, boosting near-term margin.",
+          "ticker": "RTX",
+          "rationale": "RTX makes Tomahawk, SM-6, AIM-120, and Patriot \u2014 munitions explicitly being restocked under Pacific contingency planning. Raytheon has backlog visibility tied directly to munitions replenishment narratives that intensify on China war headlines.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Bunker fuel is one of Carnival's largest variable costs; lower Brent feeds marine fuel prices, expanding cruise operating margin.",
+          "ticker": "LHX",
+          "rationale": "L3Harris has direct exposure to Pacific ISR, tactical comms, and the Tomahawk propulsion (via Aerojet). Smaller-cap defense prime with higher beta to geopolitical escalation headlines than LMT/RTX.",
           "confidence": "medium",
           "horizon": "days"
-        }
-      ],
-      "losers": [
+        },
+        {
+          "ticker": "HII",
+          "rationale": "Huntington Ingalls is the sole builder of US nuclear aircraft carriers and a key Virginia-class submarine builder \u2014 both central to any Pacific naval buildup narrative. Pure-play naval shipbuilder benefits most from Pacific war discussion.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with upstream earnings highly levered to Brent; lower crude directly compresses upstream cash flow. Also a bellwether that trades with the tape on oil moves.",
+          "rationale": "Hormuz disruption + Pacific escalation fears drive oil risk premium; Exxon has the largest upstream leverage among US majors and benefits from any Strait-of-Hormuz / South China Sea shipping risk repricing.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Palantir's Maven/TITAN contracts and Gotham are framed as AI-warfare infrastructure; retail and momentum flows rotate into PLTR on escalation headlines as a high-beta defense-tech proxy.",
+          "confidence": "low",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos builds Valkyrie unmanned combat aircraft and target drones explicitly pitched for Pacific loyal-wingman missions; small-cap with highest headline beta to Pacific war narratives.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "event_summary": "Singapore's foreign minister publicly warned that the Strait of Hormuz crisis is a \"dry run\" for a potential US-China war in the Pacific, elevating Taiwan/South China Sea tail risk in mainstream discourse.",
+      "losers": [
+        {
+          "ticker": "LVS",
+          "rationale": "Las Vegas Sands derives the vast majority of EBITDA from Macau and Singapore \u2014 both directly in the blast radius of a US-China Pacific conflict scenario. First to sell on Taiwan/China war escalation headlines.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Permian-focused E&P with high operating leverage to WTI; unhedged barrels mean near-1:1 earnings sensitivity to crude price declines.",
+          "ticker": "WYNN",
+          "rationale": "Wynn Resorts has ~70% of property EBITDA from Macau; same Taiwan-Strait risk exposure as LVS and trades as a direct pair on China conflict fears.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "APA",
-          "rationale": "Smaller-cap E&P with higher beta to crude than majors; de-risking of Middle East premium hits names with geopolitical-premium exposure hardest.",
+          "ticker": "TSM",
+          "rationale": "Taiwan Semi is the single most-exposed US-listed ADR to a Pacific war \u2014 fabs physically in Taiwan. Any headline elevating Taiwan invasion probability repricing drives TSM lower on risk premium.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NKE",
+          "rationale": "Nike has ~15% revenue from Greater China plus significant Vietnam/Asia manufacturing; Pacific conflict scenario disrupts both demand and supply chains. Consumer discretionary most exposed to a China decoupling narrative.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services demand is tied to operator capex, which is set off crude price expectations; softening oil outlook pressures completions activity sentiment.",
+          "ticker": "AAPL",
+          "rationale": "Apple's supply chain is ~80% concentrated in China/Taiwan assembly and has ~19% China revenue exposure \u2014 the textbook single-stock loser in a Pacific war tail-risk repricing despite its megacap status.",
           "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Shanghai Gigafactory produces ~50% of Tesla's global deliveries and China is ~22% of revenue; any US-China decoupling escalation directly threatens unit economics.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ZIM",
+          "rationale": "ZIM Integrated Shipping's network is heavily Asia-US Pacific trans-Pacific lanes; a Pacific war scenario shuts down its highest-margin routes. Pure-play container shipper with direct Pacific exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "YUMC",
+          "rationale": "Yum China (KFC/Pizza Hut China) is a pure-play China consumer name listed in the US \u2014 directly hit on any Taiwan/Pacific war headline as an ADR risk-off proxy.",
+          "confidence": "high",
           "horizon": "days"
         }
       ],
-      "dedup_group": "iran_ceasefire_extended_trump",
+      "primary_drivers": [
+        "Geopolitical risk premium on Taiwan Strait / South China Sea conflict",
+        "Defense budget reallocation toward Pacific Deterrence munitions and naval platforms",
+        "China-revenue and Taiwan-supply-chain exposure repricing in multinationals"
+      ],
+      "dedup_group": "china_us_pacific_conflict_hormuz_warning",
       "source_news_ids": [
-        "765235c2cc258c30"
+        "ae94550d9383337f"
       ],
       "headlines": [
-        "Oil edge lower as fragile Iran ceasefire extension clouds outlook"
+        "Hormuz is just a \u2018dry run\u2019 if China and U.S. go to war in the Pacific, Singapore foreign minister warns"
       ]
     }
   ]
