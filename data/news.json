@@ -1,138 +1,133 @@
 {
-  "generated_at": "2026-04-22T02:03:41.579669-04:00",
-  "ticker_news": {
-    "SNAP": [
-      {
-        "id": "d30d280a1664a038",
-        "source": "finviz",
-        "publisher": "(Reuters)",
-        "ticker": "SNAP",
-        "scope": "ticker",
-        "title": "Australian social media ban marred by weak platform checks, tech providers say",
-        "url": "https://finance.yahoo.com/sectors/technology/articles/australian-social-media-ban-marred-035805855.html",
-        "published_at": "2026-04-22T03:58:00+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "australia_social_media_ban_platform_checks",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
+  "generated_at": "2026-04-22T05:12:22.510075-04:00",
+  "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Trump refuses to lift a US-enforced Strait of Hormuz blockade, threatening ~20% of global seaborne oil flows and sending European equities lower.",
+      "event_summary": "UK, France, and Italy (\"BIF\") are paying premium yields as bond investors question their fiscal credibility amid elevated debt-to-GDP and sticky inflation.",
       "primary_drivers": [
-        "Crude oil supply shock / spike in Brent and WTI prices",
-        "Shipping and tanker rate surge due to rerouting and war-risk premiums",
-        "Risk-off flight to defense, energy, and safe havens; pressure on oil-consuming sectors (airlines, chemicals)"
+        "European sovereign credit premium widening / fiscal credibility discount",
+        "Capital rotation from European sovereigns toward USTs and USD assets",
+        "Higher European long-end yields pressuring rate-sensitive European financials and domestic consumers"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure; higher Brent directly flows to E&P earnings. Minimal Gulf production at risk relative to price upside on its global barrels.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Similar upstream leverage to crude; Permian/US-weighted production benefits from price spike without Hormuz transit risk.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with no Middle East exposure \u2014 maximum torque to WTI price spike from Hormuz disruption.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates surge on Hormuz rerouting around Cape of Good Hope; tonne-miles expand sharply.",
-          "confidence": "high",
+          "ticker": "ICE",
+          "rationale": "Intercontinental Exchange owns major fixed-income trading and clearing infrastructure (BondPoint, ICE bond indices, credit futures); volatility spikes in European sovereigns drive clearing volume and data revenue.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FRO",
-          "rationale": "Frontline VLCC/Suezmax fleet directly benefits from war-risk premiums and rerouting; crude tanker spot rates historically spike 3-5x on Hormuz scares.",
-          "confidence": "high",
+          "ticker": "CME",
+          "rationale": "UST futures and Euro-BTP/Bund/Gilt futures complex sees volume surge when European sovereign spreads widen; direct volumetric beneficiary of fiscal credibility stress.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed \u2014 missile defense (THAAD, PAC-3) and F-35 demand accelerates on active Middle East conflict; direct supplier to Gulf allies ramping procurement.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 US LNG exports become premium-priced substitute for Qatari LNG that transits Hormuz; European buyers pay up for Atlantic Basin cargoes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVE",
-          "rationale": "Cenovus \u2014 Canadian heavy oil producer with zero Gulf exposure; TMX pipeline gives Pacific export optionality as Asian buyers scramble for non-Hormuz barrels.",
-          "confidence": "medium",
+          "ticker": "MCO",
+          "rationale": "Moody's \u2014 sovereign downgrade cycle on BIF names drives ratings action revenue and elevates demand for credit research; precedent from 2011-12 periphery crisis.",
+          "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Delta \u2014 jet fuel is ~25% of operating costs; unhedged exposure to crude spike compresses margins immediately. Also transatlantic demand hit from European risk-off.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United \u2014 heaviest international long-haul exposure among US carriers, including Gulf-adjacent routes that may require rerouting; fuel cost shock compounds.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest \u2014 fuel hedges have been reduced in recent years; 100% domestic means no international offset, pure cost hit.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Chemical \u2014 ethylene/polyethylene margins compress on naphtha and natural gas feedstock inflation tied to crude; European ops directly hit.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel cost spike plus likely Mediterranean/Middle East itinerary cancellations; consumer discretionary under risk-off.",
+          "ticker": "SAN",
+          "rationale": "Banco Santander \u2014 large Spanish/European bank with meaningful French and Italian exposure via consumer and corporate lending; sovereign spread widening increases funding costs and mark-to-market losses on held sovereigns.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 jet fuel surcharge lag hurts near-term margins; global air freight network exposed to Gulf rerouting and fuel spike.",
+          "ticker": "BCS",
+          "rationale": "Barclays \u2014 UK balance sheet carries large Gilt holdings in HQLA; rising UK term premium compresses NIM via deposit repricing and hits AFS portfolio marks.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ING",
+          "rationale": "ING Groep \u2014 Dutch bank with significant peripheral European sovereign holdings and corporate lending book across France/Italy; spread widening compresses book value.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STLA",
+          "rationale": "Stellantis \u2014 revenue heavily concentrated in France/Italy domestic auto markets; rising consumer borrowing costs from higher sovereign yields hit auto financing demand.",
           "confidence": "medium",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "HMC",
-          "rationale": "Honda ADR \u2014 Japanese autos sell into Europe and rely on Gulf-transit crude for domestic refining; demand destruction risk from European recession impulse.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BUD",
-          "rationale": "AB InBev \u2014 European-listed consumer staple with significant EU revenue exposure facing broad European equity selloff and consumer confidence hit.",
-          "confidence": "low",
-          "horizon": "days"
         }
       ],
-      "dedup_group": "trump_strait_hormuz_blockade_april2026",
+      "dedup_group": "europe_sovereign_borrowing_costs_q2_2026",
       "source_news_ids": [
-        "3d6a0a53b16609fc"
+        "0551abe15b4755b3"
       ],
       "headlines": [
-        "European stocks set to open lower as Trump refuses to lift Strait of Hormuz blockade"
+        "Why 3 of Europe's biggest economies are paying a premium for borrowing as bond traders baulk at 'BIF' debt credibility"
+      ]
+    },
+    {
+      "event_summary": "UK March CPI accelerated to 3.3% driven by surging fuel prices linked to the ongoing Iran war, signaling sustained energy-driven inflation and delayed BoE cuts.",
+      "primary_drivers": [
+        "Crude/refined fuel price spike from Iran war supply risk premium",
+        "Sticky headline inflation delays central bank easing (BoE, with spillover read-through to Fed/ECB)",
+        "Higher-for-longer real rates pressure duration-sensitive assets"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream leverage to Brent; sustained fuel price surge from Iran conflict directly lifts realizations and refining crack spreads. UK CPI print confirms pass-through is happening, not fading.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream Brent leverage as XOM; beneficiary of persistent war risk premium in crude that the UK print validates.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services activity accelerates when Brent stays elevated and NOCs/majors greenlight capex; Iran-driven sustained price regime supports bookings.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Pure-play refiner \u2014 UK fuel price surge indicates wide product cracks globally; Valero captures the gasoline/diesel margin directly.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Largest US refiner by capacity; same crack-spread tailwind from elevated global fuel prices evidenced by UK CPI composition.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere benefits from European energy insecurity driving sustained US LNG offtake premium; Iran war keeps Europe bidding up alternatives.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "BCS",
+          "rationale": "UK bank \u2014 sticky inflation + stagflation risk raises loan loss provisioning concerns and delays the rate-cut-driven mortgage volume rebound UK banks have been pricing in.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Transatlantic carrier with meaningful jet fuel cost exposure; Iran-war fuel surge validated by UK print raises unit costs faster than fare hikes can follow.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "uk_inflation_march_2026_fuel_iran",
+      "source_news_ids": [
+        "e363948ef99ba258"
+      ],
+      "headlines": [
+        "UK inflation jumps to 3.3% in March as fuel prices surge amid Iran war"
       ]
     }
   ]
