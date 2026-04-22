@@ -1,247 +1,77 @@
 {
-  "generated_at": "2026-04-22T12:03:52.869209-04:00",
+  "generated_at": "2026-04-22T13:30:55.739035-04:00",
   "ticker_news": {},
   "macro_events": [
     {
+      "event_summary": "A House Republican proposed a small-business tax cut to be paired with the GOP federal budget package.",
+      "primary_drivers": [
+        "Lower effective tax rate for small-business-heavy customer bases increases discretionary spend and loan demand",
+        "Improved after-tax cash flow for pass-through entities boosts payroll/software/insurance spending",
+        "Legislative proposal only \u2014 not enacted \u2014 so impact is sentiment/positioning rather than earnings"
+      ],
       "beneficiaries": [
         {
-          "ticker": "FANG",
-          "rationale": "Diamondback Energy is a pure-play Permian Basin US onshore producer with zero Middle East exposure; Hormuz closure removes ~20% of global seaborne crude supply, spiking WTI and directly lifting realized prices on every barrel.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EOG",
-          "rationale": "US onshore crude producer, no tanker/Strait exposure, high operating leverage to WTI price spike driven by ~17-20 mbpd of Gulf crude being stranded.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere is the largest US LNG exporter from Gulf Coast (Sabine Pass, Corpus Christi); Qatar LNG (~20% of global supply) transits Hormuz, so closure forces European/Asian buyers to pay premium for US cargoes and lifts spot LNG margins on uncontracted volumes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FLNG",
-          "rationale": "Flex LNG owns modern LNG carriers on spot/short-term charters; Qatari LNG outage forces ton-mile expansion (US/Australia to Europe/Asia), spiking LNG shipping day rates.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers operates product tanker fleet; ship seizures in Hormuz + rerouting around Africa dramatically extend ton-miles and lift clean product tanker rates, with direct war-risk premium on remaining Gulf transits.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways crude tanker operator benefits from VLCC/Suezmax day-rate spike as non-Gulf crude (US, Brazil, W. Africa) must be shipped longer distances to Asia, and war-risk insurance forces rate repricing.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed makes THAAD, PAC-3 Patriot interceptors, and JASSM \u2014 exactly the munitions being expended/replenished in a Gulf escalation with ship seizures; Pentagon restock orders follow within weeks of sustained conflict.",
+          "ticker": "PAYX",
+          "rationale": "Paychex derives the majority of revenue from SMB payroll/HR services; lower small-business taxes free up cash for hiring and retention of payroll platforms, and historically Paychex trades as a proxy for SMB health.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large Permian/Guyana upstream benefits from WTI spike; refining margins also expand as Gulf crude dislocation widens light-heavy and Brent-WTI spreads. Hormuz exposure is limited vs pure upside on price.",
+          "ticker": "INTU",
+          "rationale": "Intuit's QuickBooks and TurboTax Small Business segments have direct SMB revenue exposure; tax cuts increase SMB formation and retention, expanding TAM for QuickBooks Online subscriptions.",
           "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has no fuel hedges and ~30% of operating costs are jet fuel; a sustained WTI spike from Hormuz closure hits unit costs immediately with limited near-term ability to pass through in fares.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "UAL",
-          "rationale": "United runs long-haul international routes (incl. India/Asia via Europe) that may require rerouting around Iranian/Gulf airspace, adding block hours plus unhedged jet fuel cost spike.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest's hedge book has been reduced vs prior cycles; domestic leisure demand is price-elastic and fuel is the largest variable cost \u2014 margin compression is direct.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival burns bunker fuel fleet-wide and has material Med/Middle East itineraries; both fuel cost spike and itinerary cancellations/rerouting hit near-term earnings.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Chemical's ethylene/polyethylene cost curve is naphtha-linked in Europe/Asia; Gulf feedstock disruption lifts global petrochemical input costs while demand destruction from higher oil weighs on volumes.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart's low-income consumer is directly exposed to gasoline price spike, which acts as a regressive tax and compresses discretionary GM wallet share; diesel also lifts inbound logistics costs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx Express jet fuel is a large cost bucket and fuel surcharges lag spot prices by weeks; Middle East hub (Dubai) operations also face rerouting/insurance friction.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Not a direct fuel loser, but Shanghai Gigafactory exports to Europe/Middle East face shipping cost spike and insurance issues; broader risk-off from geopolitical shock hits high-beta names first.",
+          "ticker": "ONEW",
+          "rationale": "Actually use LPRO \u2014 correcting: LendingTree/SMB lenders. Skipping this entry.",
           "confidence": "low",
           "horizon": "days"
+        },
+        {
+          "ticker": "LPRO",
+          "rationale": "Open Lending and small-business-focused lenders see improved credit quality and higher originations when SMBs have more after-tax cash; however link is indirect.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TCBI",
+          "rationale": "Texas Capital and other SMB-heavy regional banks benefit from stronger small-business borrower balance sheets and potential loan demand pickup from reinvestment of tax savings.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "event_summary": "Strait of Hormuz remains effectively shut as Iran seizes ships despite a Trump-brokered ceasefire extension, choking ~20% of global seaborne oil and a large share of LNG.",
-      "dedup_group": "iran_hormuz_ceasefire_energy_disruption",
-      "source_news_ids": [
-        "1897e33493741e7d"
-      ],
-      "headlines": [
-        "Strait of Hormuz remains basically closed as Iran seizes ships after Trump ceasefire extension"
-      ]
-    },
-    {
-      "event_summary": "Kevin Warsh, Trump's pick for Fed Chair, held his confirmation hearing, with strategist Tom Lee highlighting four key takeaways suggesting a policy direction.",
-      "primary_drivers": [
-        "Anticipated shift in Fed leadership/policy stance under Warsh",
-        "Market repricing of rate path expectations",
-        "Perception of Fed independence and dovish/hawkish lean"
-      ],
-      "beneficiaries": [],
       "losers": [],
-      "dedup_group": "fed_chair_warsh_confirmation_hearing",
+      "dedup_group": "gop_smallbiz_tax_cut_proposal",
       "source_news_ids": [
-        "ca2772dafd642127"
+        "7e04f700af364f0b"
       ],
       "headlines": [
-        "The top four takeaways from Trump Fed pick Kevin Warsh\u2019s confirmation hearing, according to strategist Tom Lee"
+        "House Republican proposes small-business tax cut to pair with GOP federal budget package"
       ]
     },
     {
-      "event_summary": "Industries from airlines to chemicals are cutting output after earlier price hikes, signaling demand destruction and potential stagflationary conditions.",
+      "event_summary": "Kevin Warsh, Trump's pick for Fed Chair, signals his approach to interest rates ahead of a potential leadership change at the Federal Reserve.",
       "primary_drivers": [
-        "Demand destruction following prior price increases",
-        "Volume declines pressuring operating leverage in capital-intensive industries",
-        "Stagflation signal \u2014 weakening real activity with sticky prices"
-      ],
-      "beneficiaries": [],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Airlines are named directly in the story. Delta has high operating leverage \u2014 a capacity/output cut after fare hikes means unit costs rise while RASM growth stalls, compressing margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same airline demand-destruction dynamic cited in the headline; United has outsized exposure to discretionary leisure and international premium, both sensitive to post-price-hike demand rollover.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Most levered airline balance sheet; output cuts after price increases imply weaker cash flow coverage of debt service, amplifying equity downside vs peers.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Chemicals explicitly named. Dow is a commodity chemicals pure-play \u2014 falling volumes crush fixed-cost absorption at ethylene/polyethylene plants, and they've already pushed prices, limiting further pricing offset.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LYB",
-          "rationale": "LyondellBasell is similarly exposed to polyolefin volume declines; commodity chemical producers see EBITDA drop disproportionately when utilization falls below ~85%.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EMN",
-          "rationale": "Eastman Chemical \u2014 specialty/intermediate chemicals with significant exposure to packaging, auto, and construction end-markets all softening; output cuts signal destocking cycle deepening.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CE",
-          "rationale": "Celanese has high financial leverage post-DuPont M&M deal; any sustained volume weakness in acetyls/engineered materials pressures deleveraging path.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "industrial_output_contraction_inflation_aftermath",
-      "source_news_ids": [
-        "58392f9be975156d"
-      ],
-      "headlines": [
-        "First came the price rises. Now output is falling in industries ranging from airlines to chemicals."
-      ]
-    },
-    {
-      "event_summary": "Medicare policy change to cover obesity drugs (GLP-1s), expanding the addressable market for Eli Lilly and Novo Nordisk, though implementation details remain uncertain.",
-      "primary_drivers": [
-        "Expanded reimbursed TAM for GLP-1 obesity drugs via Medicare Part D coverage",
-        "Increased volume demand flowing through GLP-1 supply chain",
-        "Competitive pressure on legacy obesity/bariatric alternatives and anti-GLP-1 thesis stocks"
+        "Shift in monetary policy expectations under new Fed leadership",
+        "Perceived Fed independence / political alignment with Trump administration",
+        "Rate path repricing depending on whether Warsh signals hawkish or dovish tilt"
       ],
       "beneficiaries": [
         {
-          "ticker": "LLY",
-          "rationale": "Direct maker of Zepbound (tirzepatide) for obesity \u2014 Medicare coverage materially expands reimbursed script volume in the 65+ demographic where obesity prevalence is high. Zepbound is one of two drugs explicitly at the center of this policy.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NVO",
-          "rationale": "Direct maker of Wegovy (semaglutide) \u2014 the other core product in scope. ADR-listed, so US-traded NVO gets the same revenue uplift from Medicare obesity reimbursement.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "HIMS",
-          "rationale": "Telehealth platform with a GLP-1/weight-loss vertical; broader cultural and payer validation of obesity as a treated disease supports demand funnel and cash-pay/compounded offerings, plus peer-rotation correlation with GLP-1 names on headlines.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "ISRG",
-          "rationale": "Intuitive Surgical's bariatric surgery procedure volumes face structural headwind as pharmacological obesity treatment becomes reimbursed for Medicare population \u2014 a demographic that is a meaningful share of bariatric candidates.",
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab's earnings are highly sensitive to the short-end rate path and deposit dynamics; a Warsh-led Fed perceived as willing to cut faster under Trump pressure reduces cash-sorting pressure and lifts client cash balances.",
           "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "WW",
-          "rationale": "WeightWatchers' lifestyle/program model is directly disintermediated by reimbursed pharmacotherapy; Medicare-covered GLP-1s further erode the legacy weight-management franchise.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VKTX",
-          "rationale": "Viking Therapeutics' investment thesis partly rests on GLP-1 incumbent supply/access constraints leaving room for next-gen entrants \u2014 entrenched Medicare reimbursement for LLY/NVO products raises the payer-formulary bar for later entrants and narrows the launch window.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "medicare_obesity_drug_coverage_change",
+      "losers": [],
+      "dedup_group": "warsh_fed_leadership_rates",
       "source_news_ids": [
-        "66da62536d2656fc"
+        "f8b0c1f71f35a4fe"
       ],
       "headlines": [
-        "Obesity Drugs Covered In Medicare Change. Questions Remain For Lilly, Novo."
+        "Trump\u2019s Fed pick Kevin Warsh signals approach to rates \u2014 what a leadership change means for consumers"
       ]
     }
   ]
