@@ -1,40 +1,125 @@
 {
-  "generated_at": "2026-04-23T02:09:27.582260-04:00",
-  "ticker_news": {
-    "INTC": [
-      {
-        "id": "e5782a7dea072fd5",
-        "source": "finviz",
-        "publisher": "(Bloomberg)",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "SoftBank Seeks $10 Billion Loan Backed by OpenAI Shares",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/softbank-seeks-10-billion-loan-035112359.html",
-        "published_at": "2026-04-23T03:51:00+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "softbank_openai_loan_april_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TMUS": [
-      {
-        "id": "e5782a7dea072fd5",
-        "source": "finviz",
-        "publisher": "(Bloomberg)",
-        "ticker": "TMUS",
-        "scope": "ticker",
-        "title": "SoftBank Seeks $10 Billion Loan Backed by OpenAI Shares",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/softbank-seeks-10-billion-loan-035112359.html",
-        "published_at": "2026-04-23T03:51:00+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "softbank_openai_loan_april_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-04-23T05:18:58.972465-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "IEA chief warns of the \"biggest energy security threat in history\" amid Iran war and fuel shortage concerns, signaling elevated oil supply risk.",
+      "primary_drivers": [
+        "Oil supply disruption risk premium raising crude prices",
+        "Geopolitical risk driving energy security/defense spending",
+        "Push toward domestic energy production and LNG export capacity"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with substantial US/Guyana/Permian upstream production; crude price spike flows directly to upstream earnings with limited Iran/Strait of Hormuz operational exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "US-weighted integrated producer (Permian, Gulf of Mexico, Kazakhstan) benefits from higher realized crude prices; diversified away from direct Iran exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play upstream E&P with ~100% leverage to crude prices and heavy US shale exposure; highest earnings sensitivity among large-caps to a sustained oil price premium.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter; energy security narrative accelerates European/Asian demand for non-Russian, non-Middle East gas supply, supporting long-term contract pricing.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-concentrated producer with high operating leverage to WTI; every $10 move in crude materially shifts FCF given debt load.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services sees activity/pricing power inflect when sustained high crude triggers upstream capex response; North America-weighted revenue mix.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Iran war escalation and energy security framing drives defense budget tailwinds; Lockheed's missile defense (PAC-3, THAAD) directly relevant to Middle East force posture.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TPL",
+          "rationale": "Texas Pacific Land \u2014 pure Permian royalty/surface owner with zero opex leverage to crude; quintessential oil-price call option with no operational Middle East risk.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has historically lower fuel hedging than peers; jet fuel is ~25-30% of operating costs, and sustained crude spike compresses margins directly.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United runs long-haul international routes (including Middle East/India) \u2014 double hit from fuel costs and potential airspace closures/rerouting around Iran.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is 100% jet fuel exposed with recently expired favorable hedges; domestic pricing power limited to pass through fuel cost spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with heavy bunker fuel costs and discretionary travel demand that weakens on geopolitical anxiety; Mediterranean/Middle East itinerary disruption risk.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals producer with naphtha/natural gas liquids feedstock exposure; margin compression when oil-linked input costs outrun end-product pricing.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Energy cost shock acts as consumer tax on low-end shopper discretionary spend; diesel/logistics cost inflation pressures already-thin retail margins.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "iea_energy_security_warning_april_2026",
+      "source_news_ids": [
+        "e14f49811614e691"
+      ],
+      "headlines": [
+        "'We are facing the biggest energy security threat in history,' IEA chief tells CNBC"
+      ]
+    },
+    {
+      "event_summary": "Former Canadian PM Trudeau claims U.S. and European economic coercion (tariffs/trade friction) nearly pushed Canada to deepen ties with China \u2014 a rhetorical/political commentary piece rather than a new policy action.",
+      "primary_drivers": [
+        "Political commentary without new policy \u2014 no change in tariff schedules, trade flows, or capital controls",
+        "Retrospective framing of existing US-Canada trade tensions already priced in"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "trudeau_economic_coercion_canada_china_april_2026",
+      "source_news_ids": [
+        "6e4d53797205507f"
+      ],
+      "headlines": [
+        "Economic coercion from U.S. and Europe almost drove Canada 'into China's arms,' says Trudeau"
+      ]
+    }
+  ]
 }
