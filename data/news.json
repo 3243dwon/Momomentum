@@ -1,175 +1,84 @@
 {
-  "generated_at": "2026-04-23T06:52:10.545090-04:00",
+  "generated_at": "2026-04-23T07:54:34.076962-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Middle East oil exporters are searching for alternative export routes bypassing the Strait of Hormuz, signaling elevated risk of closure/disruption of the critical chokepoint through which ~20% of global oil flows.",
+      "event_summary": "Energy stocks are leading the market in 2026 on Iran war-driven crude premium, but MarketWatch warns the war rally may be peaking and gains could erode from here.",
       "primary_drivers": [
-        "Hormuz chokepoint risk premium lifts crude prices",
-        "Shift in export flows away from Gulf seaborne routes benefits non-Gulf producers and alternative logistics",
-        "Higher tanker rates / longer voyage distances benefit shipping capacity"
+        "Crude oil war-risk premium potentially unwinding",
+        "Profit-taking in extended energy sector leadership",
+        "Demand destruction risk if oil stays elevated"
       ],
       "beneficiaries": [
         {
-          "ticker": "FANG",
-          "rationale": "Diamondback is a pure-play Permian producer with zero Hormuz exposure; a Gulf supply disruption directly raises WTI realizations with no offsetting risk to their operations.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EOG",
-          "rationale": "Large US onshore producer (Permian, Eagle Ford) \u2014 direct crude price leverage with domestic-only production base insulated from Hormuz risk.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline operates VLCCs/Suezmaxes; Hormuz disruption forces longer-haul routings (e.g., around Africa) which tightens tanker supply and spikes day rates \u2014 direct revenue mechanism.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways crude tanker fleet benefits from ton-mile expansion as cargoes reroute; 2019 Hormuz tensions saw VLCC rates spike 50%+.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TRGP",
-          "rationale": "Targa Resources \u2014 US midstream/NGL export infrastructure gains strategic value as global buyers seek non-Gulf LPG/NGL sources; direct beneficiary of export route substitution.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere's US Gulf Coast LNG export capacity becomes more valuable as Qatari LNG (transits Hormuz) faces routing risk; European/Asian buyers pay premium for non-Hormuz supply.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Diversified upstream footprint (Guyana, Permian, Brazil) with limited relative Hormuz dependency vs peers; crude price spike leverages non-Gulf production barrels.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
           "ticker": "DAL",
-          "rationale": "Delta has limited fuel hedges and jet fuel is ~20-25% of operating costs; a sustained crude spike from Hormuz risk compresses margins directly.",
-          "confidence": "high",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; any unwind of the Iran war crude premium directly expands margins. Delta is most fuel-sensitive of the legacy carriers and has been pressured by 2026 energy outperformance.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "UAL",
-          "rationale": "United runs unhedged jet fuel exposure; every $10 crude move translates to ~$1B annualized fuel cost headwind.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "American Airlines has the weakest balance sheet among majors and no fuel hedging \u2014 most vulnerable to a crude spike driven by Middle East supply disruption.",
-          "confidence": "high",
+          "ticker": "LUV",
+          "rationale": "Southwest has highest fuel cost as % of opex among majors and limited hedging vs peers; a crude pullback would disproportionately benefit its margin structure.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival's bunker fuel costs are a major opex line; cruise operators cannot pass through fuel costs quickly and margins compress on crude spikes.",
+          "rationale": "Cruise operators burn marine fuel heavily; bunker fuel costs track crude. A rollover in oil from Iran-war peak would be a direct COGS tailwind.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Dow's ethylene/petchem feedstock economics deteriorate when naphtha-linked crude rises faster than natgas-based US ethane advantage can offset at the margin.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "HUN",
-          "rationale": "Huntsman chemicals \u2014 hydrocarbon feedstock cost passthrough lags in specialty chemicals; margin compression in a crude spike scenario.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Retailer with long supply chains faces higher diesel/freight costs and consumer discretionary pressure as gasoline prices rise; low-margin business amplifies the hit.",
+          "ticker": "DG",
+          "rationale": "Dollar General's low-income customer is squeezed by gasoline prices; an oil pullback restores discretionary spend at the margin. Pure-play exposure to gas-price-sensitive consumer.",
           "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "hormuz_oil_routes_crisis",
-      "source_news_ids": [
-        "239767ec70fffb15"
-      ],
-      "headlines": [
-        "Oil exporters scramble for routes beyond Hormuz \u2014 but there are no easy options"
-      ]
-    },
-    {
-      "event_summary": "LVMH CEO Bernard Arnault publicly warns of a \"world catastrophe\" if the Middle East conflict is not resolved, highlighting geopolitical risk to luxury demand and global commerce.",
-      "primary_drivers": [
-        "Geopolitical risk premium rising (oil, safe havens)",
-        "Luxury demand concern from high-profile CEO commentary",
-        "Flight-to-safety sentiment shift"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Direct beneficiary of Middle East escalation risk premium in crude; Arnault framing as 'catastrophe' reinforces war-risk bid in oil. Integrated major with highest US-listed liquidity on geopolitical oil trades.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Prolonged/escalating Middle East conflict narrative supports defense budget expectations and foreign military sales; Lockheed has direct exposure via PAC-3, THAAD, F-35 deliveries to Israel and Gulf states.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon missile defense and munitions (Patriot, SM-series, AMRAAM) are being drawn down and reordered due to Middle East conflict; escalation rhetoric supports replenishment contract flow.",
-          "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "TPR",
-          "rationale": "Tapestry (Coach, Kate Spade) is the most liquid US-listed luxury peer and trades in sympathy with LVMH headlines; an Arnault warning on demand conditions directly pressures the luxury complex via peer correlation.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil by market cap and a core holding driving 2026 energy sector leadership; if war premium erodes, XOM sees direct downside on both upstream realizations and sentiment-driven multiple compression.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play US E&P with high leverage to WTI/Brent realizations \u2014 no downstream buffer. Among the biggest 2026 outperformers that would give back gains on a crude rollover.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta Permian producer with elevated leverage; earnings and equity most sensitive to crude price moves on the downside. Has benefited most from Iran premium.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services capex is set by E&P cash flows which track crude; a sustained pullback pressures 2026 capex guides and SLB's international-weighted book.",
           "confidence": "medium",
-          "horizon": "intraday"
+          "horizon": "weeks"
         },
         {
-          "ticker": "CPRI",
-          "rationale": "Capri Holdings (Versace, Jimmy Choo, Michael Kors) has direct luxury exposure and trades as a high-beta proxy to LVMH sentiment; CEO warning on macro conditions hits discretionary luxury multiples.",
+          "ticker": "HAL",
+          "rationale": "North American completions activity is the most crude-price-sensitive part of OFS; Halliburton earnings lever directly to WTI levels that drive frac demand.",
           "confidence": "medium",
-          "horizon": "intraday"
+          "horizon": "weeks"
         },
         {
-          "ticker": "EL",
-          "rationale": "Estee Lauder has significant prestige beauty exposure and travel-retail dependency; Middle East conflict escalation hits duty-free/travel retail channel and luxury consumer sentiment simultaneously.",
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with aggressive buybacks tied to oil-linked FCF; loses buyback capacity and multiple if crude premium deflates.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RL",
-          "rationale": "Ralph Lauren is a US-listed aspirational luxury name that trades in sympathy with the European luxury complex on demand-warning headlines.",
-          "confidence": "low",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has the highest premium-cabin and transatlantic exposure among US airlines; Middle East 'catastrophe' rhetoric hurts international premium travel demand and raises jet fuel cost risk simultaneously.",
-          "confidence": "low",
-          "horizon": "days"
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "lvmh_arnault_middle_east_warning",
+      "dedup_group": "iran_war_energy_sector_risk",
       "source_news_ids": [
-        "fb110c74f5078e18"
+        "4059def93794404f"
       ],
       "headlines": [
-        "LVMH CEO Arnault warns of 'world catastrophe' if Middle East conflict is not resolved"
+        "Energy stocks are trouncing the rest of the stock market in 2026. Why the Iran war could erode those gains from here."
       ]
     }
   ]
