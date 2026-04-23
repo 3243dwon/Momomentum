@@ -1,8 +1,10 @@
-"""News ingestion: Finviz per-ticker (only for routed tickers) + RSS macro feeds.
+"""News ingestion: Alpaca per-ticker news + RSS macro feeds.
 
-Per-ticker fetch is rate-limited and only run for the small set of tickers
-that pass the Tier 0 router — scraping Finviz for all 2,500 every 30min would
-get the IP blocked and isn't useful (most tickers have no news).
+Per-ticker news used to come from Finviz scraping, but GitHub Actions runner
+IPs get rate-limited / CAPTCHA-blocked during US business hours, so scans
+were returning 0 ticker news most of the time. Alpaca's /v1beta1/news
+endpoint takes the same API key as the bar fetcher, hits Benzinga's feed,
+and works from any IP. One batch call covers all routed tickers.
 
 A `seen` cache (data/cache/news_seen.json) prevents re-emitting the same URL
 across scans; only items not in the cache and within the freshness window
@@ -13,14 +15,12 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 import re
-import time
 from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
 import feedparser
-import requests
-from bs4 import BeautifulSoup
 
 from scanner import config
 
@@ -30,10 +30,24 @@ SEEN_FILE = config.CACHE_DIR / "news_seen.json"
 
 FRESH_WINDOW = timedelta(hours=6)
 SEEN_RETENTION = timedelta(hours=48)
-FINVIZ_REQUEST_DELAY_S = 1.0
-FINVIZ_TIMEOUT_S = 15
+NEWS_FETCH_WINDOW = timedelta(hours=12)  # Alpaca query window; fresh-filter narrows further
+NEWS_BATCH_SIZE = 50  # Alpaca caps symbols per request; be conservative
+NEWS_PER_REQUEST_LIMIT = 50  # items per page
 
-FINVIZ_URL = "https://finviz.com/quote.ashx?t={ticker}&p=d"
+ALPACA_API_KEY = os.environ.get("ALPACA_API_KEY")
+ALPACA_API_SECRET = os.environ.get("ALPACA_API_SECRET")
+
+try:
+    from alpaca.data.historical.news import NewsClient
+    from alpaca.data.requests import NewsRequest
+
+    if ALPACA_API_KEY and ALPACA_API_SECRET:
+        _NEWS_CLIENT: NewsClient | None = NewsClient(ALPACA_API_KEY, ALPACA_API_SECRET)
+    else:
+        _NEWS_CLIENT = None
+except ImportError as _e:
+    _NEWS_CLIENT = None
+    log.warning("alpaca-py news import failed (%s); ticker news disabled", _e)
 
 MACRO_FEEDS = [
     ("federal_reserve", "https://www.federalreserve.gov/feeds/press_all.xml"),
@@ -74,75 +88,108 @@ def _save_seen(seen: dict[str, str]) -> None:
     SEEN_FILE.write_text(json.dumps(seen, indent=2))
 
 
-def _parse_finviz_datetime(label: str, last_date: str | None) -> tuple[datetime | None, str]:
-    """Finviz news rows are either 'Apr-18-26 09:30AM' or just '09:30AM' (same day).
-
-    Returns (parsed datetime UTC, new last_date) — the last_date is propagated so
-    same-day rows can resolve their date.
-    """
-    label = label.strip()
-    parts = label.split(" ")
-    if len(parts) == 2:
-        date_part, time_part = parts
-        last_date = date_part
-    else:
-        time_part = label
-        date_part = last_date
-    if not date_part:
-        return None, last_date
-    try:
-        dt_naive = datetime.strptime(f"{date_part} {time_part}", "%b-%d-%y %I:%M%p")
-    except ValueError:
-        return None, last_date
-    et = dt_naive.replace(tzinfo=config.MARKET_TZ)
-    return et.astimezone(timezone.utc), last_date
-
-
 def fetch_ticker_news(tickers: Iterable[str]) -> dict[str, list[dict]]:
-    """Scrape Finviz news pages for each ticker. Polite 1 req/sec."""
+    """Fetch ticker news from Alpaca (Benzinga feed). One batch call fans out to
+    all routed tickers. Returns {ticker: [item, ...]} matching the existing item
+    schema; an article tagged to multiple symbols appears in each of their lists."""
+    tickers = [t for t in tickers if t]
     out: dict[str, list[dict]] = {}
-    headers = {"User-Agent": config.USER_AGENT}
-    for t in tickers:
-        try:
-            resp = requests.get(
-                FINVIZ_URL.format(ticker=t), headers=headers, timeout=FINVIZ_TIMEOUT_S
-            )
-            if resp.status_code != 200:
-                log.debug("Finviz %s: HTTP %s", t, resp.status_code)
-                continue
-            soup = BeautifulSoup(resp.text, "lxml")
-            table = soup.find("table", id="news-table")
-            if not table:
-                continue
-            items: list[dict] = []
-            last_date: str | None = None
-            for row in table.find_all("tr"):
-                cells = row.find_all("td")
-                if len(cells) < 2:
-                    continue
-                published, last_date = _parse_finviz_datetime(cells[0].get_text(), last_date)
-                link = cells[1].find("a", class_="tab-link-news")
-                if not link or not published:
-                    continue
-                source_span = cells[1].find("span")
-                items.append(
-                    {
-                        "id": _sha(link["href"]),
-                        "source": "finviz",
-                        "publisher": (source_span.get_text(strip=True) if source_span else ""),
-                        "ticker": t,
-                        "scope": "ticker",
-                        "title": link.get_text(strip=True),
-                        "url": link["href"],
-                        "published_at": published.isoformat(),
-                    }
+    if not tickers:
+        return out
+    if _NEWS_CLIENT is None:
+        log.warning("Alpaca news client not initialized (missing keys?) — skipping ticker news")
+        return out
+
+    routed_set = set(tickers)
+    start = _now() - NEWS_FETCH_WINDOW
+
+    for i in range(0, len(tickers), NEWS_BATCH_SIZE):
+        batch = tickers[i : i + NEWS_BATCH_SIZE]
+        page_token: str | None = None
+        pages = 0
+        batch_items = 0
+        while True:
+            try:
+                req = NewsRequest(
+                    symbols=",".join(batch),
+                    start=start,
+                    limit=NEWS_PER_REQUEST_LIMIT,
+                    sort="desc",
+                    exclude_contentless=True,
+                    page_token=page_token,
                 )
-            if items:
-                out[t] = items
-        except Exception as e:
-            log.debug("Finviz fetch failed for %s: %s", t, e)
-        time.sleep(FINVIZ_REQUEST_DELAY_S)
+                resp = _NEWS_CLIENT.get_news(req)
+            except Exception as e:
+                log.warning("Alpaca news batch fetch failed (%d symbols): %s: %s",
+                            len(batch), type(e).__name__, e)
+                break
+
+            articles = _flatten_news_response(resp)
+            if not articles:
+                break
+
+            for art in articles:
+                url = getattr(art, "url", None) or f"alpaca-news-{getattr(art, 'id', '')}"
+                headline = getattr(art, "headline", "") or ""
+                publisher = getattr(art, "source", "") or "alpaca"
+                created = getattr(art, "created_at", None)
+                if not headline or not created:
+                    continue
+                published_iso = (
+                    created.astimezone(timezone.utc).isoformat()
+                    if hasattr(created, "astimezone")
+                    else str(created)
+                )
+                item_id = _sha(f"alpaca:{getattr(art, 'id', url)}")
+                symbols = getattr(art, "symbols", []) or []
+                for sym in symbols:
+                    if sym not in routed_set:
+                        continue  # article tagged to a non-routed ticker — skip
+                    out.setdefault(sym, []).append(
+                        {
+                            "id": item_id,
+                            "source": "alpaca",
+                            "publisher": publisher,
+                            "ticker": sym,
+                            "scope": "ticker",
+                            "title": headline,
+                            "url": url,
+                            "published_at": published_iso,
+                        }
+                    )
+                    batch_items += 1
+
+            page_token = getattr(resp, "next_page_token", None) if hasattr(resp, "next_page_token") else None
+            pages += 1
+            if not page_token or pages >= 5:  # safety cap on pagination
+                break
+
+        log.debug("Alpaca news batch %d-%d: %d items distributed across %d tickers",
+                  i, i + len(batch), batch_items, len({k for k, v in out.items() if v}))
+
+    log.info("Alpaca news: %d tickers with news, %d total items",
+             len(out), sum(len(v) for v in out.values()))
     return out
+
+
+def _flatten_news_response(resp) -> list:
+    """Alpaca SDK returns NewsSet with .data = {key: [News, ...]}. The key is
+    sometimes the symbol, sometimes a single 'news' bucket — handle both, and
+    also the fallback where resp is already a flat list."""
+    data = getattr(resp, "data", None)
+    if data is None:
+        if isinstance(resp, list):
+            return resp
+        return []
+    if isinstance(data, dict):
+        flat: list = []
+        for v in data.values():
+            if isinstance(v, list):
+                flat.extend(v)
+        return flat
+    if isinstance(data, list):
+        return data
+    return []
 
 
 def fetch_macro_news() -> list[dict]:
