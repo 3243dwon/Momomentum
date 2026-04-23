@@ -1,40 +1,121 @@
 {
-  "generated_at": "2026-04-23T18:35:37.401616-04:00",
+  "generated_at": "2026-04-23T19:37:00.207654-04:00",
   "ticker_news": {
     "INTC": [
       {
-        "id": "6e2cfdef36958bfc",
+        "id": "a647e1feb692609e",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Intel Reports Q1 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52020195/intel-reports-q1-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-04-23T22:26:21+00:00",
-        "type": "earnings",
-        "impact": "high",
-        "dedup_group": "intc_q1_2026_earnings",
+        "title": "Trump Administration's Intel Stake Is Now Up 290% In Less Than A Year",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52020270/trump-administrations-intel-stake-is-now-up-290-in-less-than-a-year",
+        "published_at": "2026-04-23T22:45:31+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "trump_intc_stake_gain",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "SAP": [
-      {
-        "id": "c214b68c82303ca7",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAP",
-        "scope": "ticker",
-        "title": "SAP Q1 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52019997/sap-q1-2026-earnings-call-complete-transcript",
-        "published_at": "2026-04-23T22:04:41+00:00",
-        "type": "earnings",
-        "impact": "high",
-        "dedup_group": "sap_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Dow CEO warns the shipping logjam in the Strait of Hormuz will take nearly a year to clear, implying prolonged disruption to Middle East energy and petrochemical flows.",
+      "primary_drivers": [
+        "Prolonged supply disruption to Middle East crude/LNG/petrochemical exports lifting global energy prices",
+        "Tanker/shipping rate spike from rerouting and vessel scarcity",
+        "Input cost inflation and feedstock scarcity for global chemical producers reliant on Gulf ethane/naphtha"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline is a pure-play crude tanker operator; a year-long Hormuz logjam forces rerouting around Africa, extending ton-miles and tightening VLCC/Suezmax supply \u2014 directly lifts spot tanker day rates.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways operates VLCCs and product tankers; prolonged Gulf disruption increases product tanker demand as refined product trade patterns rebalance globally.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers is the largest product tanker fleet; Hormuz disruption of Gulf refined product exports (Saudi, UAE, Kuwait refineries) forces longer-haul replacements from US/Europe/Asia, lifting MR/LR rates.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Exxon has large US Gulf Coast and Permian production/refining exposure that benefits from higher Brent and widening light-heavy spreads as Middle East barrels get stranded; also benefits from higher downstream chemical margins as Gulf petchem competitors are sidelined.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter; Qatar LNG (~20% of global supply) routes through Hormuz \u2014 a year of disruption structurally redirects Asian/European buyers to US Gulf Coast cargoes, supporting utilization and spot margins.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LYB",
+          "rationale": "LyondellBasell is a major US ethylene/polyolefins producer using advantaged US ethane; Gulf petchem capacity (SABIC, Borouge, Sadara \u2014 Dow's JV) being constrained for a year directly tightens global polyethylene/polypropylene supply and lifts US producer margins.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WLK",
+          "rationale": "Westlake is a US-based PVC/chlorovinyls and polyethylene producer; benefits from the same global petchem supply tightness as Middle East volumes are trapped behind the logjam.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DOW",
+          "rationale": "Dow's own CEO flagging the disruption \u2014 Dow has the Sadara JV in Saudi Arabia and significant Gulf feedstock/logistics exposure; a year-long logjam impairs JV output, working capital, and supply commitments. Guidance risk into next print.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has no fuel hedges and high international exposure; sustained Brent premium from Hormuz disruption directly pressures unit fuel cost and margins.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United has the largest transpacific/international network among US carriers; prolonged jet fuel cost elevation from Middle East disruption hits CASM-ex through 2026.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival's bunker fuel is a major variable cost; a year of elevated crude from Hormuz disruption directly compresses margins, and Middle East/Asia itineraries may be rerouted.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart faces import cost pressure as Asia-Europe-US container rates rise on rerouting spillover and as plastic packaging/resin costs (tied to petchem tightness) climb \u2014 squeezes gross margin into back half.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CE",
+          "rationale": "Celanese relies on global acetyl and engineered materials supply chains with Middle East/Asia nodes; feedstock dislocation and trapped inventory create working capital and volume headwinds despite price benefits.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "strait_hormuz_logjam_dow_ceo",
+      "source_news_ids": [
+        "a2e5a0d1c4a47b6c"
+      ],
+      "headlines": [
+        "Dow CEO says clearing the Strait of Hormuz logjam will take almost a year"
+      ]
+    }
+  ]
 }
