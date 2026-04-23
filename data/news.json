@@ -1,57 +1,239 @@
 {
-  "generated_at": "2026-04-23T16:43:34.263421-04:00",
+  "generated_at": "2026-04-23T17:38:18.740594-04:00",
   "ticker_news": {
     "INTC": [
       {
-        "id": "e9714f27e873f0aa",
+        "id": "a59cc4dceb3a13ac",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Intel Stock Soars After Blockbuster Q1 Earnings: Here Are Details",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52017327/intel-stock-soars-after-blockbuster-q1-earnings-here-are-details",
-        "published_at": "2026-04-23T20:21:07+00:00",
+        "title": "AMD, Arm Stocks Ride Intel's Coattails After Blowout Q1 Report",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52019236/amd-arm-stocks-ride-intels-coattails-after-blowout-q1-report",
+        "published_at": "2026-04-23T21:10:36+00:00",
         "type": "earnings",
         "impact": "high",
-        "dedup_group": "intc_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
+        "dedup_group": "intc_q1_2026_blowout",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
         "route_to_synthesis": true
       }
     ],
-    "NDAQ": [
+    "SAP": [
       {
-        "id": "fd48f50e57aea9ca",
+        "id": "a4e1c1acef8ea0e5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NDAQ",
+        "ticker": "SAP",
         "scope": "ticker",
-        "title": "Nasdaq Hikes Dividend After Strong Quarter",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52012147/nasdaq-hikes-dividend-after-strong-quarter",
-        "published_at": "2026-04-23T18:13:58+00:00",
-        "type": "guidance",
-        "impact": "medium",
-        "dedup_group": "ndaq_q1_2026_dividend_hike",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "PCG": [
-      {
-        "id": "0dcdb74fe726c276",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PCG",
-        "scope": "ticker",
-        "title": "Transcript: PG&amp;E Q1 2026 Earnings Conference Call",
-        "url": "https://www.benzinga.com/insights/news/26/04/52006436/transcript-pg-amp-e-q1-2026-earnings-conference-call",
-        "published_at": "2026-04-23T15:58:54+00:00",
+        "title": "SAP Shares Climb After Mixed Q1 Report: Details",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52019551/sap-shares-climb-after-mixed-q1-report-details",
+        "published_at": "2026-04-23T21:26:14+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "pcg_q1_2026_earnings_call",
+        "dedup_group": "sap_q1_2026_mixed",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Trump warns Americans to expect higher gas prices \"for a little while,\" referencing Iran war and Strait of Hormuz tensions \u2014 signaling sustained oil supply risk premium.",
+      "primary_drivers": [
+        "Crude oil supply disruption risk premium from Strait of Hormuz / Iran conflict",
+        "Higher refined product crack spreads passed to consumers",
+        "Presidential acknowledgment removes near-term political pressure on producers to cap prices"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream exposure; every $10 sustained Brent move adds material EPS. Presidential signaling that high prices will persist removes SPR-release / jawboning overhang.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream leverage as XOM; US-domiciled, no Iranian/Russian asset risk. Direct beneficiary of sustained Brent premium with political cover.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-weighted pure-play E&P with high oil (vs gas) mix and operational leverage; among highest beta to WTI in large-cap E&P.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Largest US refiner by capacity; Hormuz disruption widens light-heavy and Brent-WTI spreads, boosting crack margins. Higher retail gasoline prices flow through Speedway/retail segment.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Gulf Coast refiner with complex refineries that benefit from sour crude discount widening if Mideast flows disrupted; gasoline crack expansion is direct revenue driver.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services leveraged to US onshore drilling response; sustained >$80 WTI typically triggers completion activity pickup within 1-2 quarters.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with low breakevens; strong FCF torque at elevated oil with variable dividend framework returning cash directly to holders.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs; sustained crude spike with limited hedging compresses margins. Delta historically under-hedged vs peers.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "Unhedged jet fuel exposure by policy; highly levered balance sheet magnifies margin compression from sustained fuel cost increase.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost passthrough issue; international route mix means both Brent-linked fuel costs and geopolitical demand softness (Mideast routes).",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Domestic leisure carrier most exposed to price-sensitive consumer; higher pump prices dampen discretionary travel demand in addition to direct fuel cost hit.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Ground and air fuel surcharges lag spot prices; Express segment jet fuel exposure meaningful. Consumer freight demand also pressured by gasoline-tax-like hit to wallets.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Lower-income consumer base disproportionately hit by gasoline as share of wallet; transportation/logistics fuel costs compress already-thin grocery margins.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is major cost input and cruise demand is discretionary; sustained oil spike hits both cost and demand sides simultaneously.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "trump_gas_prices_warning",
+      "source_news_ids": [
+        "d5a50992e54a3aeb"
+      ],
+      "headlines": [
+        "Trump says Americans should expect higher gas prices for 'a little while'"
+      ]
+    },
+    {
+      "event_summary": "Trump administration moves to reclassify marijuana (likely from Schedule I to Schedule III under the Controlled Substances Act), which would remove 280E tax penalties and ease banking/research restrictions for cannabis operators.",
+      "primary_drivers": [
+        "Removal of IRC Section 280E tax burden, dramatically improving cash flow and net income for plant-touching US cannabis operators",
+        "Reduced federal legal overhang expands institutional investor access and potential uplisting to major exchanges",
+        "Broader normalization path increases addressable market and M&A optionality"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "CGC",
+          "rationale": "Canopy Growth \u2014 holds Canopy USA structure with options on US MSOs (Wana, Jetty, Acreage); Schedule III reduces the friction of exercising that US optionality.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TLRY",
+          "rationale": "Tilray \u2014 has built US-adjacent platform (beverages, hemp) and explicit cannabis US optionality; benefits from sentiment and flows into the few Nasdaq-listed cannabis names that retail can access.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SMG",
+          "rationale": "Scotts Miracle-Gro via Hawthorne hydroponics subsidiary \u2014 direct revenue exposure to US cultivation capex cycle, which accelerates if federal reclassification spurs expansion.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "IIPR",
+          "rationale": "Innovative Industrial Properties \u2014 cannabis REIT whose tenants (MSOs) see improved credit quality post-280E; lower tenant default risk supports dividend and re-rating.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "STZ",
+          "rationale": "Constellation Brands \u2014 beer/alcohol franchise (Modelo, Corona) faces incremental long-term share loss as cannabis normalization accelerates cannabis-beverage substitution, particularly among younger consumers. Second-order and slow-moving.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BUD",
+          "rationale": "Anheuser-Busch InBev \u2014 same alcohol-substitution thesis as STZ; any federal cannabis normalization is a modest long-term headwind to US beer volumes.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "cannabis_rescheduling_trump",
+      "source_news_ids": [
+        "369c0612a5611128"
+      ],
+      "headlines": [
+        "What the Trump administration's move to reclassify marijuana means for investors"
+      ]
+    },
+    {
+      "event_summary": "Cannabis rescheduling announcement triggers a \"sell the news\" reaction despite being a long-awaited regulatory positive for the industry.",
+      "primary_drivers": [
+        "Schedule III reclassification removes IRS 280E tax penalty, materially improving operator cash flow",
+        "Sell-the-news profit-taking after multi-month run-up into the catalyst",
+        "Residual uncertainty on implementation timeline and interstate commerce/banking implications"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "CRON",
+          "rationale": "Cronos has a large cash position and Canadian operations; rescheduling in the US opens potential pathway for Canadian LPs to eventually enter US market via cross-border M&A as federal stigma eases.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "MO",
+          "rationale": "Altria's growth optionality partly rests on alternative nicotine/cannabis plays; a legitimized cannabis market with tax-advantaged MSOs becomes a more credible competitor for share of wallet versus tobacco, though exposure is modest.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "STZ",
+          "rationale": "Constellation Brands owns large stake in Canopy Growth (CGC) \u2014 but Canopy is structured around US access via Canopy USA; near-term read is mixed, and alcohol category faces incremental substitution risk from normalized cannabis.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "cannabis_rescheduling_selloff",
+      "source_news_ids": [
+        "cc8920a81bb10c66"
+      ],
+      "headlines": [
+        "The cannabis rescheduling is causing celebration \u2014 and confusion \u2014 as marijuana stocks sell off"
+      ]
+    }
+  ]
 }
