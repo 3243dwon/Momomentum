@@ -1,187 +1,923 @@
 {
-  "generated_at": "2026-04-24T09:01:10.724221-04:00",
+  "generated_at": "2026-04-24T10:51:21.236920-04:00",
   "ticker_news": {
-    "INTC": [
+    "NVDA": [
       {
-        "id": "58dc2100002cc1c8",
+        "id": "5d0d7cb135420ba1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "AMD Stock Tests Resistance As Intel Beat Sparks Sector Rally",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52027125/amd-stock-tests-resistance-as-intel-beat-sparks-sector-rally",
-        "published_at": "2026-04-24T12:57:18+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "intc_earnings_beat_sector_rally",
+        "title": "This Old-School Tech Name Is Emerging As An Unexpected AI Winner",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52034021/texas-instruments-stock-unexpected-ai-winner-txn",
+        "published_at": "2026-04-24T14:50:08+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "old_tech_ai_winner",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c702e2faa90c6541",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amkor_arizona_ai_packaging",
         "tickers_mentioned": [
-          "AMD"
+          "AMKR"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "dfeed2f71a15d9a0",
+        "id": "f55c5c83cb6cdf2f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Why Intel Stock Is Skyrocketing Friday",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026676/why-intel-stock-is-skyrocketing-friday",
-        "published_at": "2026-04-24T12:31:36+00:00",
+        "title": "Trade Strategy For SPY, QQQ, AAPL, MSFT, NVDA, GOOGL, META, And TSLA",
+        "url": "https://www.benzinga.com/Opinion/26/04/52030942/trade-strategy-for-spy-qqq-aapl-msft-nvda-googl-meta-and-tsla-12",
+        "published_at": "2026-04-24T14:08:31+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "trade_strategy_megacaps",
+        "tickers_mentioned": [
+          "SPY",
+          "QQQ",
+          "AAPL",
+          "MSFT",
+          "GOOGL",
+          "META",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "28a816eb170adf96",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "AI Did What Trump's Tariffs Didn't: Revive US Manufacturing",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52029854/ai-manufacturing-pmi-47-month-high-trump-tariffs",
+        "published_at": "2026-04-24T13:51:52+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "ai_manufacturing_revival",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "306d42e4d6c65535",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Analyzing NVIDIA In Comparison To Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/04/52023552/analyzing-nvidia-in-comparison-to-competitors-in-semiconductors-amp-semiconductor-equipment-industr",
+        "published_at": "2026-04-24T09:58:32+00:00",
         "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "intc_earnings_beat_sector_rally",
+        "impact": "low",
+        "dedup_group": "nvda_competitor_comparison_april_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "914d82dd00b0ef5f",
+        "id": "c702e2faa90c6541",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Friday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52026118/12-information-technology-stocks-moving-in-fridays-pre-market-session",
-        "published_at": "2026-04-24T12:05:32+00:00",
-        "type": "other",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "tech_premarket_movers_apr24",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "914d82dd00b0ef5f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Friday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52026118/12-information-technology-stocks-moving-in-fridays-pre-market-session",
-        "published_at": "2026-04-24T12:05:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_premarket_movers_apr24",
-        "tickers_mentioned": [],
+        "dedup_group": "amkor_arizona_ai_packaging",
+        "tickers_mentioned": [
+          "AMKR"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "IBM": [
+    "NEM": [
       {
-        "id": "6e5bbfe44c08b954",
+        "id": "b6dab3cdb2fa48a5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "IBM",
+        "ticker": "NEM",
         "scope": "ticker",
-        "title": "IBM AI Success Faces Macro Headwinds: Analyst Cuts Price Target",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52026331/ibm-ai-success-faces-macro-headwinds-analyst-cuts-price-target",
-        "published_at": "2026-04-24T12:13:16+00:00",
+        "title": "What's Behind The Drop In Citius Pharmaceuticals?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52033856/whats-behind-the-drop-in-citius-pharmaceuticals",
+        "published_at": "2026-04-24T14:47:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "citius_pharma_drop_coverage",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c29b4b8f6b35d7db",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NEM",
+        "scope": "ticker",
+        "title": "Newmont Rides Soaring Gold Prices To Blowout Earnings, Unleashes $6 Billion Buyback",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52023765/newmont-rides-soaring-gold-prices-to-blowout-earnings-unleashes-6-billion-buyback",
+        "published_at": "2026-04-24T10:07:44+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "newmont_q1_2026_earnings_gold_buyback",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "AMKR": [
+      {
+        "id": "c702e2faa90c6541",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AMKR",
+        "scope": "ticker",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amkor_arizona_ai_packaging",
+        "tickers_mentioned": [
+          "AMKR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c702e2faa90c6541",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AMKR",
+        "scope": "ticker",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amkor_arizona_ai_packaging",
+        "tickers_mentioned": [
+          "AMKR"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "c702e2faa90c6541",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amkor_arizona_ai_packaging",
+        "tickers_mentioned": [
+          "AMKR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f081d323d6be7af1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm Stock Is Climbing In Sympathy With Intel's Q1 Results",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52031420/qualcomm-stock-is-climbing-in-sympathy-with-intels-q1-results",
+        "published_at": "2026-04-24T14:16:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qcom_sympathy_intel_q1",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c702e2faa90c6541",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Amkor Technology: The Arizona AI Packaging Bet Is Real, But You're Already Paying For It",
+        "url": "https://www.benzinga.com/Opinion/26/04/52033089/amkor-technology-the-arizona-ai-packaging-bet-is-real-but-youre-already-paying-for-it",
+        "published_at": "2026-04-24T14:42:29+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amkor_arizona_ai_packaging",
+        "tickers_mentioned": [
+          "AMKR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f081d323d6be7af1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm Stock Is Climbing In Sympathy With Intel's Q1 Results",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52031420/qualcomm-stock-is-climbing-in-sympathy-with-intels-q1-results",
+        "published_at": "2026-04-24T14:16:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qcom_sympathy_intel_q1",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "8ac2b7ed3d78368f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Jim Cramer Says Intel Stock Is So Hot 'EVERYONE Will Have To Go To A Buy'",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52033068/jim-cramer-says-intel-stock-is-so-hot-everyone-will-have-to-go-to-a-buy",
+        "published_at": "2026-04-24T14:42:14+00:00",
         "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "ibm_analyst_cut_macro_headwinds",
-        "tickers_mentioned": [],
+        "impact": "low",
+        "dedup_group": "cramer_intel_bullish_call",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7aa81df79a8428f5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Arm Holdings Stock Rises On Intel's Q1 Results Boost",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52030388/arm-holdings-stock-rises-on-intels-q1-results-boost",
+        "published_at": "2026-04-24T13:59:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "arm_rises_intel_q1_boost",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "POET": [
+    "INTC": [
       {
-        "id": "914d82dd00b0ef5f",
+        "id": "8ac2b7ed3d78368f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "POET",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Friday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52026118/12-information-technology-stocks-moving-in-fridays-pre-market-session",
-        "published_at": "2026-04-24T12:05:32+00:00",
+        "title": "Jim Cramer Says Intel Stock Is So Hot 'EVERYONE Will Have To Go To A Buy'",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52033068/jim-cramer-says-intel-stock-is-so-hot-everyone-will-have-to-go-to-a-buy",
+        "published_at": "2026-04-24T14:42:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_intel_bullish_call",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tech_premarket_movers_apr24",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "728680e8f40fd416",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq Gains Over 100 Points; Intel Shares Jump After Strong Q1 Results",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52031448/nasdaq-gains-over-100-points-intel-shares-jump-after-strong-q1-results",
+        "published_at": "2026-04-24T14:17:12+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "intc_q1_2026_strong_results",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "f081d323d6be7af1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Qualcomm Stock Is Climbing In Sympathy With Intel's Q1 Results",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52031420/qualcomm-stock-is-climbing-in-sympathy-with-intels-q1-results",
+        "published_at": "2026-04-24T14:16:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qcom_sympathy_intel_q1",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7aa81df79a8428f5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Arm Holdings Stock Rises On Intel's Q1 Results Boost",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52030388/arm-holdings-stock-rises-on-intels-q1-results-boost",
+        "published_at": "2026-04-24T13:59:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "arm_rises_intel_q1_boost",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f081d323d6be7af1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Qualcomm Stock Is Climbing In Sympathy With Intel's Q1 Results",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52031420/qualcomm-stock-is-climbing-in-sympathy-with-intels-q1-results",
+        "published_at": "2026-04-24T14:16:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qcom_sympathy_intel_q1",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MXL": [
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MXL",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "728680e8f40fd416",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MXL",
+        "scope": "ticker",
+        "title": "Nasdaq Gains Over 100 Points; Intel Shares Jump After Strong Q1 Results",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52031448/nasdaq-gains-over-100-points-intel-shares-jump-after-strong-q1-results",
+        "published_at": "2026-04-24T14:17:12+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "intc_q1_2026_strong_results",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a410c9bb67e3df7a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MXL",
+        "scope": "ticker",
+        "title": "This Southwest Airlines Analyst Is No Longer Bearish; Here Are Top 4 Upgrades For Friday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/04/52028173/this-southwest-airlines-analyst-is-no-longer-bearish-here-are-top-4-upgrades-for-friday",
+        "published_at": "2026-04-24T13:30:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "southwest_upgrade_friday_042426",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "914d82dd00b0ef5f",
+        "id": "d46dca4ece236a84",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "POET",
+        "ticker": "MXL",
         "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Friday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52026118/12-information-technology-stocks-moving-in-fridays-pre-market-session",
-        "published_at": "2026-04-24T12:05:32+00:00",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tech_premarket_movers_apr24",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "OKLO": [
-      {
-        "id": "ec87527f3d97a791",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OKLO",
-        "scope": "ticker",
-        "title": "Top 2 Utilities Stocks That May Plunge In April",
-        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/04/52027101/top-2-utilities-stocks-that-may-plunge-in-april",
-        "published_at": "2026-04-24T12:56:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "utilities_forecast_april_plunge",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "e88325c3eff250b1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "What's Going On With Rocket Lab Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026352/whats-going-on-with-rocket-lab-stock-friday-5",
-        "published_at": "2026-04-24T12:15:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rklb_stock_movement_friday",
-        "tickers_mentioned": [],
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
         "route_to_synthesis": false
       }
     ],
     "OGN": [
       {
-        "id": "237d0436399c122b",
+        "id": "d46dca4ece236a84",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "OGN",
         "scope": "ticker",
-        "title": "12 Health Care Stocks Moving In Friday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52026121/12-health-care-stocks-moving-in-fridays-pre-market-session",
-        "published_at": "2026-04-24T12:05:43+00:00",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "healthcare_premarket_movers_apr24",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OGN",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "POET": [
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "deff418d0fbfdb7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "What's Going On With POET Technologies Stock Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52027534/whats-going-on-with-poet-technologies-stock-friday-2",
+        "published_at": "2026-04-24T13:08:42+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "poet_price_movement_recap_april_24",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SOUN": [
+    "RMBS": [
       {
-        "id": "73478f8c72792fb1",
+        "id": "d46dca4ece236a84",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SOUN",
+        "ticker": "RMBS",
         "scope": "ticker",
-        "title": "Jim Cramer Has A Clear Take On Rivian's Future \u2014 And A Warning About An AI Name",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52026365/jim-cramer-has-a-clear-take-on-rivians-future-and-a-warning-about-an-ai-name",
-        "published_at": "2026-04-24T12:16:07+00:00",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "cramer_commentary_rivian_ai_warning",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d46dca4ece236a84",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RMBS",
+        "scope": "ticker",
+        "title": "Sensient Technologies, Chemed, AMD, Arm And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52032722/sensient-technologies-chemed-amd-arm-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-04-24T14:36:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_recap_friday",
+        "tickers_mentioned": [
+          "AMD",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "PG": [
+      {
+        "id": "83297cc66a0b4057",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PG",
+        "scope": "ticker",
+        "title": "Procter &amp; Gamble Reports Q3 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/04/52029049/procter-amp-gamble-reports-q3-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-04-24T13:42:14+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_q3_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "f5a8b5a50cdcc4eb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PG",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 24, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52025003/earnings-scheduled-for-april-24-2026",
+        "published_at": "2026-04-24T11:11:15+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_q2_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "CAR": [
+      {
+        "id": "7aa4355a842bf68b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CAR",
+        "scope": "ticker",
+        "title": "What's Happening With Avis Budget Stock? Short-Seller Allegations In Focus",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52028086/whats-happening-with-avis-budget-stock-short-seller-allegations-in-focus",
+        "published_at": "2026-04-24T13:27:01+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "car_short_seller_allegations_april_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "SAP": [
+      {
+        "id": "bce4f7646e936a2d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SAP",
+        "scope": "ticker",
+        "title": "Germany's Improving Outlook: 3 Stocks To Watch",
+        "url": "https://www.benzinga.com/Opinion/26/04/52030560/germanys-improving-outlook-3-stocks-to-watch",
+        "published_at": "2026-04-24T14:01:23+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "germany_outlook_improvement",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
+    ],
+    "COUR": [
+      {
+        "id": "bda952cffc3f7caf",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COUR",
+        "scope": "ticker",
+        "title": "12 Consumer Discretionary Stocks Moving In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/04/52026127/12-consumer-discretionary-stocks-moving-in-fridays-pre-market-session",
+        "published_at": "2026-04-24T12:05:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_movers_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0a2e535b2dc338a3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COUR",
+        "scope": "ticker",
+        "title": "Boyd Gaming Posts Downbeat Q1 Results, Joins Coursera, Evotec And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026059/boyd-gaming-posts-downbeat-q1-results-joins-coursera-evotec-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-04-24T12:03:16+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "boyd_gaming_q1_downbeat_results",
+        "tickers_mentioned": [
+          "COUR",
+          "EVO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0a2e535b2dc338a3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COUR",
+        "scope": "ticker",
+        "title": "Boyd Gaming Posts Downbeat Q1 Results, Joins Coursera, Evotec And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026059/boyd-gaming-posts-downbeat-q1-results-joins-coursera-evotec-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-04-24T12:03:16+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "boyd_gaming_q1_downbeat_results",
+        "tickers_mentioned": [
+          "COUR",
+          "EVO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "STNE": [
+      {
+        "id": "0a2e535b2dc338a3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STNE",
+        "scope": "ticker",
+        "title": "Boyd Gaming Posts Downbeat Q1 Results, Joins Coursera, Evotec And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026059/boyd-gaming-posts-downbeat-q1-results-joins-coursera-evotec-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-04-24T12:03:16+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "boyd_gaming_q1_downbeat_results",
+        "tickers_mentioned": [
+          "COUR",
+          "EVO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0a2e535b2dc338a3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STNE",
+        "scope": "ticker",
+        "title": "Boyd Gaming Posts Downbeat Q1 Results, Joins Coursera, Evotec And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52026059/boyd-gaming-posts-downbeat-q1-results-joins-coursera-evotec-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-04-24T12:03:16+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "boyd_gaming_q1_downbeat_results",
+        "tickers_mentioned": [
+          "COUR",
+          "EVO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "dcc5c2f2351c9285",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Insights Into Micron Technology's Performance Versus Peers In Semiconductors &amp; Semiconductor Equipment Sector",
+        "url": "https://www.benzinga.com/insights/news/26/04/52023560/insights-into-micron-technologys-performance-versus-peers-in-semiconductors-amp-semiconductor-equip",
+        "published_at": "2026-04-24T09:59:03+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "micron_sector_performance_comparison",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSM": [
+      {
+        "id": "ab447c95bf489bfb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Taiwan Semiconductor Stock Hits 52-Week High - Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52024525/taiwan-semiconductor-stock-hits-52-week-high-heres-why",
+        "published_at": "2026-04-24T10:50:37+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "tsm_52week_high",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "5954b7c798430276",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Taiwan Semiconductor Snub Wipes $16 Billion Off ASML",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52023405/taiwan-semiconductor-snub-wipes-16-billion-off-asml",
+        "published_at": "2026-04-24T09:43:08+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "tsm_asml_supply_snub",
+        "tickers_mentioned": [
+          "ASML"
+        ],
+        "route_to_synthesis": true
+      }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "DOJ/Pirro drops investigation into Fed Chair Powell, clearing the path for Kevin Warsh's confirmation as next Fed Chair.",
+      "primary_drivers": [
+        "Reduced political/institutional uncertainty around Fed leadership transition",
+        "Warsh is viewed as more hawkish and markets-oriented than Powell, implying a potentially firmer dollar and less dovish reaction function",
+        "Removal of tail risk around Fed independence crisis"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "JPM",
+          "rationale": "Large money-center bank benefits from: (1) steeper curve / higher-for-longer scenario under a hawkish Warsh improving NIM, (2) reduced systemic tail risk from a politicized Fed. Jamie Dimon has publicly defended Fed independence.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GS",
+          "rationale": "Warsh is a former Morgan Stanley banker with deep Wall Street ties; broker-dealers benefit from clearer Fed policy path reducing rates volatility (MOVE index compression) and from Warsh's market-friendly regulatory posture.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Direct beneficiary of higher-for-longer short rates on client cash sweep spreads; Warsh confirmation reduces risk of an aggressive dovish pivot that would compress NII.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "doj_powell_warsh_confirmation",
+      "source_news_ids": [
+        "248fd90ac513064c"
+      ],
+      "headlines": [
+        "Pirro drops probe into Fed\u2019s Powell, paving way for Warsh confirmation"
+      ]
+    }
+  ]
 }
