@@ -1,217 +1,856 @@
 {
-  "generated_at": "2026-04-24T11:59:25.944250-04:00",
+  "generated_at": "2026-04-24T12:59:28.502631-04:00",
   "ticker_news": {
     "INTC": [
       {
-        "id": "bec04e426a8ea8dc",
+        "id": "a7747302989acc1f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "07058f14ea95cbd3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Intel Reports Q1 Beat, Yet These Analysts Remain Bearish",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52038412/intel-reports-q1-beat-yet-these-analysts-remain-bearish",
+        "published_at": "2026-04-24T16:11:35+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "intc_q1_2026_earnings_beat",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "bec04e426a8ea8dc",
+        "id": "a7747302989acc1f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
         "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "META": [
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "34a4ec0d9b18e810",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Meta Goes All-In On Amazon's Beast Chips",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52037972/meta-goes-all-in-on-amazons-beast-chips",
+        "published_at": "2026-04-24T16:02:10+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "meta_amazon_beast_chips_adoption",
+        "tickers_mentioned": [
+          "AMZN"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "911307897fff2838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "What's Going On With Broadcom Stock Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52030303/whats-going-on-with-broadcom-stock-friday-2",
+        "published_at": "2026-04-24T13:58:29+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "broadcom_stock_movement_analysis",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
         "route_to_synthesis": false
       }
     ],
     "MU": [
       {
-        "id": "bec04e426a8ea8dc",
+        "id": "a7747302989acc1f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "bec04e426a8ea8dc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "bec04e426a8ea8dc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "bec04e426a8ea8dc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "What's Going On With Micron Technology Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036959/whats-going-on-with-micron-technology-stock-friday",
-        "published_at": "2026-04-24T15:40:17+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_stock_movement_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MBLY": [
-      {
-        "id": "281f88d57ab2681f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MBLY",
-        "scope": "ticker",
-        "title": "These Analysts Revise Their Forecasts On Mobileye After Q1 Results",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52034611/these-analysts-revise-their-forecasts-on-mobileye-after-q1-results",
-        "published_at": "2026-04-24T14:58:28+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "mbly_q1_2026_analyst_revisions",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "CMPS": [
-      {
-        "id": "9e74cdd62c1b6271",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CMPS",
-        "scope": "ticker",
-        "title": "This Walker & Dunlop Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Friday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/04/52028754/this-walker-here-are-top-5-initiations-for-friday",
-        "published_at": "2026-04-24T13:39:36+00:00",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "cmps_analyst_initiation_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "LUV": [
-      {
-        "id": "696adfb7ed5c75db",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LUV",
-        "scope": "ticker",
-        "title": "Chevron CEO Expects Air Travel To 'Get Worse' Over The Next Few Weeks As Hormuz Crisis Pushes Fuel Costs Higher",
-        "url": "https://www.benzinga.com/news/travel/26/04/52028716/chevron-ceo-expects-air-travel-to-get-worse-over-the-next-few-weeks-as-hormuz-crisis-pushes-fuel-costs-higher",
-        "published_at": "2026-04-24T13:39:13+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "hormuz_crisis_oil_fuel_costs_air_travel",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
         "tickers_mentioned": [
-          "CVX"
+          "INTC",
+          "MU",
+          "AMD"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "b8bddcbefeeb9df4",
+        "id": "a7747302989acc1f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "LUV",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Will Gas Prices Hit $5 In 2026? Prediction Markets Say It Could Well Happen",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52027345/will-gas-prices-hit-5-in-2026-prediction-markets-say-it-could-well-happen",
-        "published_at": "2026-04-24T13:02:45+00:00",
-        "type": "macro_commodity",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "gas_prices_2026_prediction_markets",
-        "tickers_mentioned": [],
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "b8bddcbefeeb9df4",
+        "id": "a7747302989acc1f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "LUV",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Will Gas Prices Hit $5 In 2026? Prediction Markets Say It Could Well Happen",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52027345/will-gas-prices-hit-5-in-2026-prediction-markets-say-it-could-well-happen",
-        "published_at": "2026-04-24T13:02:45+00:00",
-        "type": "macro_commodity",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "gas_prices_2026_prediction_markets",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSM": [
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7747302989acc1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Intel, Micron, AMD: 5 Dot-Com-Era Red Flags Just Reappeared In The Market",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52040192/intel-amd-micron-txn-dot-com-red-flags-chip-stocks",
+        "published_at": "2026-04-24T16:53:16+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dot_com_era_red_flags_chip_sector",
+        "tickers_mentioned": [
+          "INTC",
+          "MU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MXL": [
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MXL",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MXL",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "PG": [
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PG",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "3ab26afbe81ae9cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PG",
+        "scope": "ticker",
+        "title": "Dow Falls Over 150 Points; Procter & Gamble Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52040104/dow-falls-over-150-points-procter-gamble-posts-upbeat-earnings",
+        "published_at": "2026-04-24T16:51:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pg_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "EW": [
+      {
+        "id": "7c97f78a81bed8f6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EW",
+        "scope": "ticker",
+        "title": "Edwards Lifesciences Stock Surges On Heart Valve Devices Growth",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52040050/edwards-lifesciences-stock-surges-on-heart-valve-devices-growth",
+        "published_at": "2026-04-24T16:50:05+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "ew_heart_valve_devices_growth",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "XOM": [
+    "ARM": [
       {
-        "id": "b8bddcbefeeb9df4",
+        "id": "bcc419c2f21f1c49",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "XOM",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Will Gas Prices Hit $5 In 2026? Prediction Markets Say It Could Well Happen",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52027345/will-gas-prices-hit-5-in-2026-prediction-markets-say-it-could-well-happen",
-        "published_at": "2026-04-24T13:02:45+00:00",
-        "type": "macro_commodity",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "gas_prices_2026_prediction_markets",
-        "tickers_mentioned": [],
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "b8bddcbefeeb9df4",
+        "id": "bcc419c2f21f1c49",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "XOM",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Will Gas Prices Hit $5 In 2026? Prediction Markets Say It Could Well Happen",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52027345/will-gas-prices-hit-5-in-2026-prediction-markets-say-it-could-well-happen",
-        "published_at": "2026-04-24T13:02:45+00:00",
-        "type": "macro_commodity",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "gas_prices_2026_prediction_markets",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bcc419c2f21f1c49",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Is Intel The Next Nvidia As Agentic AI Increases CPU Demand; Oil Storage Crunch May Force Iran To Strike Deal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52039279/is-intel-the-next-nvidia-as-agentic-ai-increases-cpu-demand-oil-storage-crunch-may-force-iran-to-strike-deal",
+        "published_at": "2026-04-24T16:29:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_next_nvidia_agentic_ai",
+        "tickers_mentioned": [
+          "INTC",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QS": [
+      {
+        "id": "4135549ba33b87f2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QS",
+        "scope": "ticker",
+        "title": "QuantumScape Shares Are Sliding Friday: What's Going On?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52036298/quantumscape-shares-are-sliding-friday-whats-going-on",
+        "published_at": "2026-04-24T15:28:38+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qs_price_movement_inquiry",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
+    ],
+    "SOUN": [
+      {
+        "id": "fdee9f30429d203e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SOUN",
+        "scope": "ticker",
+        "title": "SoundHound AI Stock Momentum Continues Amid LivePerson Deal: What Investors Need To Know",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52039594/soundhound-ai-stock-momentum-continues-amid-liveperson-deal-what-investors-need-to-know",
+        "published_at": "2026-04-24T16:38:31+00:00",
+        "type": "ma",
+        "impact": "medium",
+        "dedup_group": "soun_liveperson_deal",
+        "tickers_mentioned": [
+          "LPSN"
+        ],
+        "route_to_synthesis": true
+      }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Meta and Microsoft announce ~20,000 combined job cuts, raising fears that AI-driven labor displacement is accelerating.",
+      "primary_drivers": [
+        "AI-driven labor substitution lowering corporate opex",
+        "Margin expansion thesis for AI adopters",
+        "Demand destruction risk for staffing/white-collar-services firms",
+        "Political/regulatory backlash risk on AI labor displacement"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "META",
+          "rationale": "Headcount reductions directly lower opex; Meta has history of 'year of efficiency' being rewarded with multiple expansion. Cuts framed as AI-enabled productivity reinforce operating leverage narrative.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSFT",
+          "rationale": "Same mechanism \u2014 cuts flow through to opex and reinforce the 'AI makes us more efficient' story that supports Copilot monetization narrative. Direct subject of the headline.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NVDA",
+          "rationale": "Reinforces the narrative that enterprises are substituting AI compute for labor, supporting capex sustainability thesis at hyperscalers \u2014 NVDA's direct customer base.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Enterprise AI automation platform positioned as explicit labor-replacement tool; headline validates Palantir's AIP commercial pitch to CFOs cutting headcount.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CRM",
+          "rationale": "Agentforce is explicitly sold as replacing service/support headcount. Layoff headlines from peers strengthen the sales pitch and justify CRM's AI-agent pivot.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "UPWK",
+          "rationale": "Freelance marketplace heavily indexed to white-collar contract work (writing, coding, design) \u2014 categories most directly automatable by generative AI. Layoff wave at AI leaders signals freelance demand erosion ahead.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FVRR",
+          "rationale": "Same mechanism as UPWK \u2014 gig marketplace for creative/knowledge work directly in AI displacement crosshairs; already under pressure from prior AI-substitution concerns.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RHI",
+          "rationale": "Robert Half's core business is placing accounting/finance/tech professionals \u2014 exactly the white-collar roles being cut. Consensus AI-labor-crisis narrative compresses multiple.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MAN",
+          "rationale": "ManpowerGroup staffing revenue tied to corporate hiring cycles; narrative of AI-driven permanent headcount reduction is a direct thesis threat.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ZIP",
+          "rationale": "ZipRecruiter revenue is per-job-posting; fewer corporate reqs as AI absorbs roles hits top line directly. Small-cap makes it sentiment-sensitive to exactly this headline.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WDAY",
+          "rationale": "HCM software priced partly on employee seat counts; secular headcount compression at large enterprises is a long-term seat-growth headwind. Also competitive threat from AI-native HR tools.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "meta_microsoft_ai_labor_cuts_april_2026",
+      "source_news_ids": [
+        "26e78cdc521e5c69"
+      ],
+      "headlines": [
+        "20,000 job cuts at Meta, Microsoft raise concern that AI-driven labor crisis is here"
+      ]
+    }
+  ]
 }
