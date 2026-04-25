@@ -1,23 +1,61 @@
 {
-  "generated_at": "2026-04-25T16:31:51.673384-04:00",
-  "ticker_news": {
-    "NOW": [
-      {
-        "id": "ed5a1969e0e216e5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOW",
-        "scope": "ticker",
-        "title": "ServiceNow CEO Says AI Fear Is Missing Real Story: Customers Are Spending More",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52051619/servicenow-ceo-says-ai-fear-is-missing-real-story-customers-are-spending-more",
-        "published_at": "2026-04-25T19:51:07+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "servicenow_ai_spending_thesis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-04-25T18:29:44.293337-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "The ECB selected open European standards for the digital euro infrastructure, explicitly sidelining Visa and Mastercard from the rails.",
+      "primary_drivers": [
+        "Loss of European interchange/processing revenue for US card networks",
+        "Sovereign payment rail disintermediation reducing network effects",
+        "Regulatory precedent risk for card networks in other jurisdictions"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "ACIW",
+          "rationale": "ACI Worldwide provides real-time payment infrastructure software and has positioned for European instant-payment/CBDC rails; an open-standards digital euro favors infrastructure vendors over closed networks.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FIS",
+          "rationale": "Core processors with European bank relationships could be tapped to integrate digital euro into existing bank rails, bypassing card networks.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "V",
+          "rationale": "Visa derives ~25% of net revenue from Europe; an ECB-mandated open-standard digital euro directly disintermediates Visa's rails for euro-denominated retail payments and sets a precedent other central banks may follow.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MA",
+          "rationale": "Mastercard has even higher European revenue mix (~30%) than Visa and is explicitly named as sidelined; loss of euro-area volume on a future government-backed rail compresses long-term TAM and pricing power.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PYPL",
+          "rationale": "PayPal's European checkout business competes with bank-rail alternatives; a free, government-backed digital euro at point-of-sale erodes PayPal's value proposition for euro transactions where Europe is a major revenue region.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AXP",
+          "rationale": "American Express has smaller but premium European card volume; precedent of central-bank-backed rails sidelining closed networks is a structural negative for the closed-loop model, though AmEx's affluent niche provides some insulation.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "ecb_digital_euro_open_standards",
+      "source_news_ids": [
+        "95094d84fb24b550"
+      ],
+      "headlines": [
+        "ECB Picks Open European Standards for Digital Euro, Sidelining Visa and Mastercard"
+      ]
+    }
+  ]
 }
