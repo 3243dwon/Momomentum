@@ -1,163 +1,61 @@
 {
-  "generated_at": "2026-04-25T10:37:58.810772-04:00",
-  "ticker_news": {
-    "NVDA": [
-      {
-        "id": "70c805595a85a3e2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Pony AI Advances L4 Ambitions With Nvidia-Based Autonomous Driving Controller",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52050953/pony-ai-advances-l4-ambitions-with-nvidia-based-autonomous-driving-controller",
-        "published_at": "2026-04-25T14:11:38+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "pony_ai_l4_autonomous_driving_nvidia",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ]
-  },
+  "generated_at": "2026-04-25T12:34:01.161478-04:00",
+  "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "CEOs of Toyota, Honda, and Ford issued a stark warning that the global auto industry cannot survive without addressing China's dominance \u2014 likely referring to rare earth/critical mineral supply chokeholds and/or Chinese EV cost competitiveness.",
+      "event_summary": "Goldman Sachs reports Gulf oil output has fallen 57% from pre-war levels, signaling a major sustained supply shock to global crude markets.",
       "primary_drivers": [
-        "China's chokehold on rare earth magnets and critical minerals essential for EV motors",
-        "Chinese EV cost advantage (BYD et al.) threatening legacy OEM margins globally",
-        "Supply chain vulnerability driving urgency for non-China sourcing"
+        "Global crude supply shortfall driving oil prices higher",
+        "Increased demand for non-Gulf production (US shale, offshore, Canadian)",
+        "Higher refining margins on tight crude/product balances",
+        "Tanker rerouting and longer ton-miles boosting shipping rates"
       ],
       "beneficiaries": [
         {
-          "ticker": "MP",
-          "rationale": "MP Materials operates Mountain Pass, the only scaled rare earth mine in the US, and is building NdPr magnet production in Texas. A public CEO warning about China dependency directly elevates MP's strategic value and pricing power for offtake agreements with OEMs.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with Permian and Guyana production growth; direct beneficiary of higher Brent realizations as Gulf barrels are removed from market. Limited Middle East upstream exposure relative to peers.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "USAR",
-          "rationale": "USA Rare Earth is a domestic rare earth and neodymium magnet pure-play with a magnet facility in Oklahoma; small float means headline-driven rerating on China-supply-risk narratives.",
+          "ticker": "COP",
+          "rationale": "Pure-play E&P with heavy US shale (Permian, Eagle Ford) and Alaska exposure \u2014 leverages directly to higher crude prices with no Gulf production to lose.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TMC",
-          "rationale": "TMC the Metals Company offers seabed nickel/cobalt/manganese as a non-China critical minerals alternative; benefits from any policy/sentiment shift toward supply chain de-risking.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Tesla has the most vertically integrated non-China battery/motor supply chain among major OEMs (Nevada lithium, in-house drive units with reduced rare earth content) \u2014 a relative winner if peers like Toyota/Ford face supply constraints.",
-          "confidence": "medium",
           "horizon": "weeks"
         },
-        {
-          "ticker": "ALB",
-          "rationale": "Albemarle is the largest US-domiciled lithium producer with non-China processing capacity; CEO warnings about China dependency support the case for premium pricing on Western-sourced battery materials.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LAC",
-          "rationale": "Lithium Americas is developing Thacker Pass, the largest US lithium project, with DOE loan backing \u2014 direct beneficiary of China supply chain de-risking narrative.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "F",
-          "rationale": "Ford's own CEO is the one warning of existential risk; the headline itself is a negative tell on F's competitive positioning vs Chinese OEMs and its exposure to rare earth supply risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TM",
-          "rationale": "Toyota CEO directly cited in the existential warning; ADR exposed to both Chinese EV competition in global markets and rare earth dependency for hybrid motors (Toyota's largest product line).",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HMC",
-          "rationale": "Honda CEO directly cited; Honda has weakest EV pipeline among the three and highest relative exposure to losing share to BYD in Asia/emerging markets.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GM",
-          "rationale": "Not named but same structural exposure as Ford \u2014 legacy ICE OEM with rare earth motor dependency and direct competitive threat from Chinese EVs in markets where GM operates (notably its collapsing China JV).",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STLA",
-          "rationale": "Stellantis shares the same legacy-OEM vulnerabilities; trades in sympathy with Ford/GM on auto-sector China risk headlines and has weak EV transition execution.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MGA",
-          "rationale": "Magna is a tier-1 auto supplier with revenue concentrated in legacy OEM platforms (Ford, GM, Stellantis); margin compression at customers and supply chain disruption flow directly to suppliers.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "auto_ceos_china_warning_toyota_honda_ford",
-      "source_news_ids": [
-        "5d0f17f5a8080f78"
-      ],
-      "headlines": [
-        "\u2018We will not survive\u2019: Toyota, Honda and Ford CEOs issue chilling warning about China \u2014 and it could hit your portfolio"
-      ]
-    },
-    {
-      "event_summary": "A Strait of Hormuz disruption is causing an oil supply shock with concerns it will ultimately crash demand through high prices and economic slowdown.",
-      "primary_drivers": [
-        "Crude oil supply disruption spiking spot prices",
-        "Tanker rerouting and shipping rate spike",
-        "Demand destruction risk from sustained high prices hitting consumer/industrial end-markets"
-      ],
-      "beneficiaries": [
         {
           "ticker": "FANG",
-          "rationale": "Diamondback Energy is a pure-play Permian US onshore producer with no Middle East exposure; benefits directly from higher WTI realizations while supply is constrained.",
+          "rationale": "Permian pure-play; every $1 in WTI flows almost entirely to FCF. Highest beta to a sustained crude price shock among US large-cap E&Ps.",
           "confidence": "high",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "US onshore (Permian) leverage plus Gulf of Mexico offshore production benefits from supply-driven crude rally; high operating leverage given debt load.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "Subsea/offshore equipment provider \u2014 sustained 57% Gulf shortfall accelerates non-OPEC offshore project sanctioning (Brazil, Guyana, Namibia, GoM) where TechnipFMC dominates iEPCI contracts.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
           "ticker": "FRO",
-          "rationale": "Frontline VLCC tanker fleet \u2014 Hormuz disruption forces rerouting around the Cape, dramatically increasing ton-mile demand and spot tanker rates.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "VLCC tanker operator benefits from rerouting of crude flows and longer ton-miles as buyers source from Atlantic basin instead of Gulf; tight tanker market leads to spot rate spikes on supply dislocations.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
-          "ticker": "INSW",
-          "rationale": "International Seaways crude tanker operator \u2014 direct beneficiary of spiking VLCC/Suezmax day rates from Middle East rerouting.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere Energy is the dominant US LNG exporter; Hormuz disrupts ~20% of global LNG flows (Qatar), making US Gulf Coast LNG cargoes structurally more valuable.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Exxon's integrated upstream gets the WTI/Brent uplift, and its US Gulf Coast refining gets cheaper landlocked WTI feedstock vs spiked Brent product cracks.",
+          "ticker": "MPC",
+          "rationale": "US refiner with heavy/medium sour processing capacity captures wider crack spreads when product markets tighten on crude supply shock; less reliant on Gulf crude grades than coastal peers.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin \u2014 Middle East kinetic risk drives Patriot/THAAD/missile demand from Gulf allies and US replenishment; direct order-flow catalyst.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "TPL",
-          "rationale": "Texas Pacific Land \u2014 royalty stream on Permian production with no capex, pure leverage to higher oil price with no operational risk.",
+          "ticker": "CNQ",
+          "rationale": "Canadian heavy crude producer \u2014 WCS differentials narrow and absolute prices rise as global market scrambles for non-Gulf barrels; long-life, low-decline assets capture full price upside.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -165,59 +63,47 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta Air Lines \u2014 jet fuel is ~25-30% of operating costs and hedges are limited; a sustained Brent spike crushes margins, and the 'demand crash' framing means they cannot pass through via fares.",
+          "rationale": "Jet fuel is ~10-12% of operating costs; sustained crude rally from Gulf supply loss compresses margins, and hedge books are typically light. Largest absolute fuel exposure among US carriers.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "United Airlines has heavy international long-haul exposure (especially routes affected by Middle East airspace) plus full fuel cost exposure with no hedge book.",
+          "rationale": "Unhedged jet fuel exposure on long-haul international routes; higher crude flows directly to cost line with limited near-term ability to pass through via fares.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel is a major cost line and discretionary cruise demand is highly sensitive to consumer gasoline price shock; double hit.",
-          "confidence": "high",
+          "ticker": "LUV",
+          "rationale": "Domestic carrier with historically active hedging now largely unwound; jet fuel cost spike hits unit costs hard given low-fare model has limited pricing power.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "DOW",
-          "rationale": "Dow Inc \u2014 naphtha/ethane feedstock costs spike with crude while end-demand for plastics/chemicals weakens in the demand-destruction scenario; margin squeeze.",
+          "rationale": "Ethylene/polyethylene producer \u2014 naphtha and ethane-linked feedstock costs rise with crude; chemical demand softens if oil-driven inflation pressures consumer.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "F",
-          "rationale": "Ford \u2014 consumers facing $5+ gasoline pull back on discretionary auto purchases, particularly the high-margin F-150/SUV mix that drives Ford's profitability.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart \u2014 diesel/transport costs hit logistics; gasoline price spike directly drains low-income consumer wallet share that would otherwise go to general merchandise.",
+          "ticker": "LYB",
+          "rationale": "Polyolefins margins compress as crude-linked feedstocks rise faster than resin prices in a supply-shock-driven oil rally; European naphtha cracker exposure adds pressure.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "FDX",
-          "rationale": "FedEx \u2014 jet fuel and diesel are core cost inputs; B2B shipping volumes also weaken if the demand-destruction thesis plays out.",
+          "rationale": "Diesel/jet fuel is a major cost line for ground and Express segments; surcharge mechanism lags spot fuel by weeks, creating margin headwind on a sudden crude move.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAR",
-          "rationale": "Marriott \u2014 international travel demand particularly to/through Middle East corridors craters; airfare spike compresses leisure travel budgets globally.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "hormuz_oil_shock_demand",
+      "dedup_group": "gulf_oil_output_slump_57pct",
       "source_news_ids": [
-        "dd52b695d7b00c89"
+        "16b9f2158c66985a"
       ],
       "headlines": [
-        "The Hormuz billion-barrel oil shock is about to crash demand"
+        "Gulf Oil Output Slumps 57% From Pre-War Levels, Goldman Says"
       ]
     }
   ]
