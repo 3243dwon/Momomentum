@@ -1,162 +1,161 @@
 {
-  "generated_at": "2026-04-26T16:32:01.466222-04:00",
+  "generated_at": "2026-04-26T18:31:31.212972-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Senator Thom Tillis drops his opposition and will back Kevin Warsh's Fed confirmation, materially raising the probability Warsh joins the Federal Reserve (likely as Chair given his prominence as a Trump-favored candidate).",
+      "event_summary": "Four mega-cap tech earnings (GOOGL, AMZN, MSFT, META) coincide with Powell's final FOMC meeting on a single Wednesday \u2014 a rare convergence of idiosyncratic and macro catalysts.",
       "primary_drivers": [
-        "Hawkish tilt at the Fed \u2014 Warsh is historically inflation-hawkish and skeptical of QE/large balance sheet",
-        "Higher-for-longer real rates / steeper curve / stronger USD expectations",
-        "Reduced regulatory dovishness on bank capital \u2014 Warsh is viewed as friendly to deregulation but hawkish on monetary easing"
+        "Mega-cap earnings will set the tone for AI capex guidance and cloud growth",
+        "Powell's last meeting introduces succession/policy-path uncertainty affecting rate expectations",
+        "Volatility expansion around the event window benefits vol/options structures"
       ],
       "beneficiaries": [
         {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab benefits from a steeper curve and higher-for-longer short rates via net interest margin on cash sweep balances; Warsh's hawkish reputation supports front-end yields.",
+          "ticker": "NVDA",
+          "rationale": "AI capex guidance from MSFT/META/GOOGL/AMZN directly drives NVDA's data-center revenue forecast \u2014 these four are >40% of NVDA's hyperscaler demand. If any reaffirms or raises capex, NVDA re-rates immediately as the most direct read-through.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AVGO",
+          "rationale": "Direct beneficiary of META's custom ASIC (MTIA) and GOOGL's TPU programs plus networking silicon for hyperscaler buildouts. Capex commentary from these four reports translates almost 1:1 to AVGO AI revenue trajectory.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "VRT",
+          "rationale": "Vertiv supplies power/thermal infrastructure for hyperscaler data centers; capex reaffirmation from MSFT/AMZN/META/GOOGL is the single largest swing factor for VRT's order book.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Powell's final meeting drives elevated rate-futures and SOFR options volume regardless of direction; CME captures volume directly. Mega-cap earnings night also lifts equity-index futures volume.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "ARM",
+          "rationale": "Hyperscaler capex commentary and custom-silicon roadmaps (AWS Graviton, Microsoft Cobalt, Google Axion all license ARM) make ARM a direct beneficiary of capex reaffirmations from these four reports.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "SMCI",
+          "rationale": "Asymmetric risk: if hyperscaler capex disappoints or shifts to in-house/ODM build, SMCI is the most levered loser given concentration in AI server sales to these same customers. Also exposed to margin compression commentary.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "fomc_big_tech_earnings_powell_apr26_2026",
+      "source_news_ids": [
+        "2eed23944ebe5099"
+      ],
+      "headlines": [
+        "Wall Street\u2019s Super Bowl Wednesday: Alphabet, Amazon, Microsoft and Meta report along with Powell\u2019s last Fed meeting"
+      ]
+    },
+    {
+      "event_summary": "U.S. equity futures opened lower while oil prices rose ahead of a busy week of earnings and macro data on Wall Street.",
+      "primary_drivers": [
+        "Generic risk-off futures move ahead of event-heavy week",
+        "Higher crude prices"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "futures_oil_preview_week_apr26_2026",
+      "source_news_ids": [
+        "d2b61ff1c0ee4bfc"
+      ],
+      "headlines": [
+        "U.S. stock futures fall, oil rises ahead of a busy week for Wall Street"
+      ]
+    },
+    {
+      "event_summary": "Large $430M short bets on oil placed just before Trump announced an Iran ceasefire extension, suggesting possible information leak and signaling continued de-escalation that pressures crude prices lower.",
+      "primary_drivers": [
+        "Lower crude oil prices from reduced Middle East risk premium",
+        "Potential easing path for Iranian oil supply on the market",
+        "Lower input costs for oil-consuming industries"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs; Delta has historically had highest earnings sensitivity to crude among legacy carriers and benefits directly from a sustained drop in Brent.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost passthrough mechanism as DAL; high beta to crude moves and no fuel hedges leaves earnings directly exposed to spot fuel.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's fuel hedging program has been reduced; lower crude flows to margins quickly. Domestic-only exposure means no offsetting FX/geopolitical drag.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha feedstock costs track crude; lower oil widens chemical spreads. Dow has direct petrochemical margin sensitivity.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "MTB",
-          "rationale": "Regional bank with asset-sensitive balance sheet; benefits from Warsh's hawkish lean keeping short rates elevated plus his known preference for lighter bank capital regulation.",
+          "ticker": "LYB",
+          "rationale": "Olefins/polyolefins producer with naphtha-linked feedstock costs in Europe; lower crude improves global cracker spreads.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ALL",
-          "rationale": "P&C insurers benefit from higher reinvestment yields on float; Allstate has short-duration fixed income book that re-prices favorably under a hawkish Fed.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "PLTR",
-          "rationale": "High-multiple, long-duration growth name particularly sensitive to discount rate moves on hawkish Fed leadership news.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "kevin_warsh_fed_confirmation_tillis",
-      "source_news_ids": [
-        "3ae3660e049cbb71"
-      ],
-      "headlines": [
-        "Sen. Thom Tillis drops opposition, says he\u2019ll back Kevin Warsh\u2019s Fed confirmation"
-      ]
-    },
-    {
-      "event_summary": "Bond traders are positioning cautiously ahead of a packed week of central bank rate decisions, watching for sell signals in fixed income.",
-      "primary_drivers": [
-        "Anticipatory positioning ahead of central bank decisions",
-        "Potential for higher yields / steeper curve if hawkish surprises",
-        "Elevated rate-decision uncertainty"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "fed_rate_decisions_week_april_2026",
-      "source_news_ids": [
-        "fc8854bcb8f79b02"
-      ],
-      "headlines": [
-        "Bond traders eye packed week of rate decisions for sell signals"
-      ]
-    },
-    {
-      "event_summary": "Chevron's CEO warns that the Strait of Hormuz crisis is driving jet fuel costs higher and will worsen air travel disruptions over the coming weeks.",
-      "primary_drivers": [
-        "Higher crude/jet fuel prices from Hormuz supply disruption",
-        "Jet fuel cost passthrough squeezing airline margins",
-        "Upstream producers benefit from elevated oil prices and risk premium"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "CVX",
-          "rationale": "CEO directly framing the narrative; Chevron has significant upstream production that benefits from elevated Brent prices driven by Hormuz risk premium. Diversified away from direct Iranian exposure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
           "ticker": "XOM",
-          "rationale": "Largest US integrated with substantial upstream leverage to Brent. Limited Hormuz-transit exposure relative to peers; benefits from sustained crude price elevation and refining crack spreads on jet fuel.",
+          "rationale": "Integrated major with upstream earnings directly tied to realized crude prices; lower Brent compresses E&P segment cash flow. Largest-cap pure exposure to the move.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-heavy pure-play E&P with high leverage to WTI; Buffett-favored name often used as crude proxy. Earnings sensitivity to oil price is among the highest in S&P energy.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Smaller-cap E&P with significant leverage and direct realized-price exposure; oil-weighted production means downside crude moves hit cash flow disproportionately.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand tracks E&P capex which is set off forward strip; sustained lower crude pressures completion activity and pricing power.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "VLO",
-          "rationale": "Pure-play refiner with significant jet fuel and distillate output; widening crack spreads from constrained Middle East product flows directly expand margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MPC",
-          "rationale": "Largest US refiner by capacity; jet fuel/distillate crack expansion from Hormuz supply tightness flows directly to refining segment EBITDA.",
-          "confidence": "high",
+          "ticker": "SLB",
+          "rationale": "International services exposure including Middle East; ceasefire/de-escalation reduces risk premium on regional spending plus general crude downside drag on capex cycle.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "FANG",
-          "rationale": "Permian pure-play E&P with no Middle East exposure; full leverage to elevated WTI/Brent without transit risk. Classic Hormuz-crisis beneficiary.",
+          "rationale": "Permian pure-play producer with high oil-weighting; direct revenue hit from lower realized prices, no downstream offset.",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Domestic-heavy E&P with high oil-price sensitivity; benefits from sustained crude premium without Strait transit exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
-      "losers": [
-        {
-          "ticker": "UAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; United has the highest international/long-haul exposure among US carriers, with no fuel hedges in recent disclosures. Direct margin compression and demand destruction risk if airfares rise.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Most leveraged balance sheet among legacy carriers and historically unhedged on fuel; jet fuel cost spike directly threatens already-thin margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Owns Monroe refinery which provides partial hedge, but jet fuel still ~25% of cost base. CEO commentary about 'worse' travel implies demand softening on top of cost pressure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedged fuel but program has weakened; domestic-focused so less geopolitical demand offset, and price-sensitive leisure customer most likely to cut travel as fares rise.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "JBLU",
-          "rationale": "Smallest balance sheet cushion among major US carriers, leisure-heavy route map most vulnerable to demand destruction from higher fares; minimal fuel hedging.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ALK",
-          "rationale": "Domestic carrier with material jet fuel exposure and limited hedging; less international diversification to absorb cost shock.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "Second-order: sustained jet fuel pain pressures airline order books and delivery acceptance pace; airlines defer capex when margins compress. Multi-step chain so lower confidence.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "hormuz_crisis_fuel_costs_air_travel",
+      "dedup_group": "trump_iran_ceasefire_oil_betting",
       "source_news_ids": [
-        "c19e3c7bba497273"
+        "dd95bc774817f3d7"
       ],
       "headlines": [
-        "Chevron CEO Expects Air Travel To 'Get Worse' Over The Next Few Weeks As Hormuz Crisis Pushes Fuel Costs Higher"
+        "Traders Bet $430 Million On Oil Price Drop Moments Before Trump's Latest Iran Ceasefire Extension: Report"
       ]
     }
   ]
