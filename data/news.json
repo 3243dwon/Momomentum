@@ -1,124 +1,162 @@
 {
-  "generated_at": "2026-04-26T14:41:42.541030-04:00",
+  "generated_at": "2026-04-26T16:32:01.466222-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "A major bank issued a warning on gold prices, likely cautioning on overextension or downside risk after a strong rally.",
+      "event_summary": "Senator Thom Tillis drops his opposition and will back Kevin Warsh's Fed confirmation, materially raising the probability Warsh joins the Federal Reserve (likely as Chair given his prominence as a Trump-favored candidate).",
       "primary_drivers": [
-        "Sentiment shift on gold positioning from sell-side warning",
-        "Potential mean reversion in gold-linked equities which trade with leverage to spot price",
-        "Risk of fund outflows from gold ETFs if narrative turns"
-      ],
-      "beneficiaries": [],
-      "losers": [
-        {
-          "ticker": "NEM",
-          "rationale": "Newmont is the largest gold miner with operating leverage to gold prices (~2-3x beta to spot gold). A negative bank call on gold cascades directly into miner sentiment and flows.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GOLD",
-          "rationale": "Barrick Gold \u2014 pure-play senior producer, trades as high-beta proxy to spot gold; sell-side caution on the metal pressures the equity via ETF (GDX) outflows.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AEM",
-          "rationale": "Agnico Eagle \u2014 senior gold miner with high operating leverage; trades in lockstep with peer group on macro gold calls.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AG",
-          "rationale": "First Majestic Silver \u2014 silver/gold miner that typically overshoots on negative precious metals sentiment due to small-cap, high-beta profile.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "gold_price_warning",
-      "source_news_ids": [
-        "3c454e0d2a60e100"
-      ],
-      "headlines": [
-        "Top bank issues blunt warning on gold prices"
-      ]
-    },
-    {
-      "event_summary": "A strategist warns that companies moving to semiannual reporting (away from quarterly) could hurt valuations and trigger sell-offs due to reduced transparency.",
-      "primary_drivers": [
-        "Reduced disclosure frequency increases information asymmetry and uncertainty premium",
-        "Lower transparency raises equity risk premium / discount rate for affected names",
-        "Potential SEC/regulatory shift toward semiannual reporting"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "quarterly_earnings_report_elimination_debate",
-      "source_news_ids": [
-        "c3ee7857030ccba9"
-      ],
-      "headlines": [
-        "Companies Ditching Quarterly Reports May Hit Valuations And Spark Sell-Offs, Warns Strategist\u2014 'Need More...Not Less'"
-      ]
-    },
-    {
-      "event_summary": "Broad risk-on flows are driving record equity ETF inflows (~$7.5B/day) and lifting crypto sentiment.",
-      "primary_drivers": [
-        "Retail/institutional risk appetite expansion driving flows into high-beta and crypto-linked equities",
-        "Crypto price appreciation directly boosting earnings of exchanges, miners, and treasury holders",
-        "ETF inflow momentum mechanically lifting index constituents and asset managers' AUM-based fees"
+        "Hawkish tilt at the Fed \u2014 Warsh is historically inflation-hawkish and skeptical of QE/large balance sheet",
+        "Higher-for-longer real rates / steeper curve / stronger USD expectations",
+        "Reduced regulatory dovishness on bank capital \u2014 Warsh is viewed as friendly to deregulation but hawkish on monetary easing"
       ],
       "beneficiaries": [
         {
-          "ticker": "COIN",
-          "rationale": "Coinbase revenue is directly levered to crypto trading volumes and prices; risk-on crypto rallies expand transaction fees and custody AUC, the most direct equity proxy for the headline.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "MicroStrategy holds ~500k+ BTC on balance sheet; equity trades as a leveraged BTC proxy with positive premium expansion on risk-on crypto flows.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MARA",
-          "rationale": "Pure-play bitcoin miner \u2014 revenue scales 1:1 with BTC price; high-beta to the crypto leg of a risk-on move.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIOT",
-          "rationale": "Bitcoin miner with high operational leverage to BTC price; typically outperforms BTC on up-days during risk-on episodes.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HOOD",
-          "rationale": "Robinhood derives a large share of transaction revenue from crypto and options; record retail equity ETF inflows correlate with elevated retail trading activity on its platform.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BLK",
-          "rationale": "BlackRock runs IBIT (largest spot BTC ETF) and dominant equity ETF franchise (iShares); record $7.5B/day ETF flows directly grow AUM and management fees.",
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab benefits from a steeper curve and higher-for-longer short rates via net interest margin on cash sweep balances; Warsh's hawkish reputation supports front-end yields.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "IBKR",
-          "rationale": "Interactive Brokers earnings are levered to margin balances and trading volumes; risk-on regimes lift both, plus net interest income on customer cash.",
+          "ticker": "MTB",
+          "rationale": "Regional bank with asset-sensitive balance sheet; benefits from Warsh's hawkish lean keeping short rates elevated plus his known preference for lighter bank capital regulation.",
           "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ALL",
+          "rationale": "P&C insurers benefit from higher reinvestment yields on float; Allstate has short-duration fixed income book that re-prices favorably under a hawkish Fed.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple, long-duration growth name particularly sensitive to discount rate moves on hawkish Fed leadership news.",
+          "confidence": "low",
           "horizon": "days"
         }
       ],
-      "losers": [],
-      "dedup_group": "crypto_risk_on_etf_flows_surge",
+      "dedup_group": "kevin_warsh_fed_confirmation_tillis",
       "source_news_ids": [
-        "e8b1a1b4bb36f6f6"
+        "3ae3660e049cbb71"
       ],
       "headlines": [
-        "Risk-On Surge Lifts Crypto Outlook as Equity ETFs Hit Record $7.5 Billion Daily Pace"
+        "Sen. Thom Tillis drops opposition, says he\u2019ll back Kevin Warsh\u2019s Fed confirmation"
+      ]
+    },
+    {
+      "event_summary": "Bond traders are positioning cautiously ahead of a packed week of central bank rate decisions, watching for sell signals in fixed income.",
+      "primary_drivers": [
+        "Anticipatory positioning ahead of central bank decisions",
+        "Potential for higher yields / steeper curve if hawkish surprises",
+        "Elevated rate-decision uncertainty"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "fed_rate_decisions_week_april_2026",
+      "source_news_ids": [
+        "fc8854bcb8f79b02"
+      ],
+      "headlines": [
+        "Bond traders eye packed week of rate decisions for sell signals"
+      ]
+    },
+    {
+      "event_summary": "Chevron's CEO warns that the Strait of Hormuz crisis is driving jet fuel costs higher and will worsen air travel disruptions over the coming weeks.",
+      "primary_drivers": [
+        "Higher crude/jet fuel prices from Hormuz supply disruption",
+        "Jet fuel cost passthrough squeezing airline margins",
+        "Upstream producers benefit from elevated oil prices and risk premium"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "CVX",
+          "rationale": "CEO directly framing the narrative; Chevron has significant upstream production that benefits from elevated Brent prices driven by Hormuz risk premium. Diversified away from direct Iranian exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with substantial upstream leverage to Brent. Limited Hormuz-transit exposure relative to peers; benefits from sustained crude price elevation and refining crack spreads on jet fuel.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Pure-play refiner with significant jet fuel and distillate output; widening crack spreads from constrained Middle East product flows directly expand margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Largest US refiner by capacity; jet fuel/distillate crack expansion from Hormuz supply tightness flows directly to refining segment EBITDA.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play E&P with no Middle East exposure; full leverage to elevated WTI/Brent without transit risk. Classic Hormuz-crisis beneficiary.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Domestic-heavy E&P with high oil-price sensitivity; benefits from sustained crude premium without Strait transit exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "UAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs; United has the highest international/long-haul exposure among US carriers, with no fuel hedges in recent disclosures. Direct margin compression and demand destruction risk if airfares rise.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "Most leveraged balance sheet among legacy carriers and historically unhedged on fuel; jet fuel cost spike directly threatens already-thin margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Owns Monroe refinery which provides partial hedge, but jet fuel still ~25% of cost base. CEO commentary about 'worse' travel implies demand softening on top of cost pressure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest historically hedged fuel but program has weakened; domestic-focused so less geopolitical demand offset, and price-sensitive leisure customer most likely to cut travel as fares rise.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JBLU",
+          "rationale": "Smallest balance sheet cushion among major US carriers, leisure-heavy route map most vulnerable to demand destruction from higher fares; minimal fuel hedging.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ALK",
+          "rationale": "Domestic carrier with material jet fuel exposure and limited hedging; less international diversification to absorb cost shock.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BA",
+          "rationale": "Second-order: sustained jet fuel pain pressures airline order books and delivery acceptance pace; airlines defer capex when margins compress. Multi-step chain so lower confidence.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "hormuz_crisis_fuel_costs_air_travel",
+      "source_news_ids": [
+        "c19e3c7bba497273"
+      ],
+      "headlines": [
+        "Chevron CEO Expects Air Travel To 'Get Worse' Over The Next Few Weeks As Hormuz Crisis Pushes Fuel Costs Higher"
       ]
     }
   ]
