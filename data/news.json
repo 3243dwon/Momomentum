@@ -1,60 +1,41 @@
 {
-  "generated_at": "2026-04-25T18:29:44.293337-04:00",
+  "generated_at": "2026-04-25T22:04:11.390664-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "The ECB selected open European standards for the digital euro infrastructure, explicitly sidelining Visa and Mastercard from the rails.",
+      "event_summary": "A shooting incident occurred at the White House Correspondents' Dinner, with President Trump set to address the nation afterward.",
       "primary_drivers": [
-        "Loss of European interchange/processing revenue for US card networks",
-        "Sovereign payment rail disintermediation reducing network effects",
-        "Regulatory precedent risk for card networks in other jurisdictions"
+        "Risk-off sentiment / safe-haven flows on political violence headline",
+        "Potential renewed gun control vs. gun rights political debate driving firearms demand expectations",
+        "Security/defense spending narrative"
       ],
       "beneficiaries": [
         {
-          "ticker": "ACIW",
-          "rationale": "ACI Worldwide provides real-time payment infrastructure software and has positioned for European instant-payment/CBDC rails; an open-standards digital euro favors infrastructure vendors over closed networks.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FIS",
-          "rationale": "Core processors with European bank relationships could be tapped to integrate digital euro into existing bank rails, bypassing card networks.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "V",
-          "rationale": "Visa derives ~25% of net revenue from Europe; an ECB-mandated open-standard digital euro directly disintermediates Visa's rails for euro-denominated retail payments and sets a precedent other central banks may follow.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MA",
-          "rationale": "Mastercard has even higher European revenue mix (~30%) than Visa and is explicitly named as sidelined; loss of euro-area volume on a future government-backed rail compresses long-term TAM and pricing power.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PYPL",
-          "rationale": "PayPal's European checkout business competes with bank-rail alternatives; a free, government-backed digital euro at point-of-sale erodes PayPal's value proposition for euro transactions where Europe is a major revenue region.",
+          "ticker": "RGR",
+          "rationale": "Sturm Ruger is a pure-play US firearms manufacturer; high-profile shooting events historically drive a short-term spike in firearm sales on fears of tightened gun legislation (the 'Trump slump' reverses when gun-control rhetoric returns).",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "AXP",
-          "rationale": "American Express has smaller but premium European card volume; precedent of central-bank-backed rails sidelining closed networks is a structural negative for the closed-loop model, though AmEx's affluent niche provides some insulation.",
+          "ticker": "SWBI",
+          "rationale": "Smith & Wesson Brands \u2014 same mechanism as RGR; firearms manufacturer that sees demand pull-forward when gun-control legislation fears rise after high-profile shooting incidents.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AXON",
+          "rationale": "Axon Enterprise (Tasers, body cameras, security tech) \u2014 direct beneficiary of heightened security spending narrative following an attack at a high-profile political event.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
-      "dedup_group": "ecb_digital_euro_open_standards",
+      "losers": [],
+      "dedup_group": "trump_shooting_white_house_correspondents_dinner_april_2026",
       "source_news_ids": [
-        "95094d84fb24b550"
+        "17d8a8237b59bd93"
       ],
       "headlines": [
-        "ECB Picks Open European Standards for Digital Euro, Sidelining Visa and Mastercard"
+        "Watch: Trump set to speak after shooting at White House Correspondents' Dinner"
       ]
     }
   ]
