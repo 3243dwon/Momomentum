@@ -1,149 +1,556 @@
 {
-  "generated_at": "2026-04-27T08:04:50.115704-04:00",
+  "generated_at": "2026-04-27T10:32:26.602730-04:00",
   "ticker_news": {
-    "NVDA": [
+    "EVH": [
       {
-        "id": "765d3b62d1fd28d9",
+        "id": "db20e7304a2c4f87",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "EVH",
         "scope": "ticker",
-        "title": "Nvidia's $20 Trillion Path Just Hit A 2026 Problem",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52058494/nvidias-20-trillion-path-just-hit-a-2026-problem",
-        "published_at": "2026-04-27T11:59:31+00:00",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "nvda_2026_path_problem",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "cb3af29a3cbef4f9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Pony AI Stock Rises After NVIDIA-Powered Tech Reveal",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52058166/pony-ai-stock-rises-after-nvidia-powered-tech-reveal",
-        "published_at": "2026-04-27T11:43:47+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "pony_ai_nvidia_tech_reveal",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "AMKR": [
-      {
-        "id": "d082d77de1c73799",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AMKR",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For April 27, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/04/52057444/earnings-scheduled-for-april-27-2026",
-        "published_at": "2026-04-27T11:11:15+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "amkr_q1_2026_earnings_scheduled",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "da2f94e18cebde36",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AMKR",
-        "scope": "ticker",
-        "title": "Amkor Technology Likely To Report Higher Q1 Earnings; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52056942/amkor-technology-likely-to-report-higher-q1-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
-        "published_at": "2026-04-27T10:56:06+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "amkr_q1_2026_earnings_beat_expectations",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "d082d77de1c73799",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AMKR",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For April 27, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/04/52057444/earnings-scheduled-for-april-27-2026",
-        "published_at": "2026-04-27T11:11:15+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "amkr_q1_2026_earnings_scheduled",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RMBS": [
-      {
-        "id": "d082d77de1c73799",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RMBS",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For April 27, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/04/52057444/earnings-scheduled-for-april-27-2026",
-        "published_at": "2026-04-27T11:11:15+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "amkr_q1_2026_earnings_scheduled",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d082d77de1c73799",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RMBS",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For April 27, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/04/52057444/earnings-scheduled-for-april-27-2026",
-        "published_at": "2026-04-27T11:11:15+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "amkr_q1_2026_earnings_scheduled",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "ddd9acaa3afad687",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "OpenAI Eyes 'AI Agent' Smartphone With Qualcomm And MediaTek, Targets App-Free Experience By 2028: Report",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52056811/openai-eyes-ai-agent-smartphone-with-qualcomm-and-mediatek-targets-app-free-experience-by-2028-report",
-        "published_at": "2026-04-27T10:44:34+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "openai_ai_agent_smartphone_qcom_mediatek_2028",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
         "tickers_mentioned": [
-          "MEDIATEK"
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
         ],
-        "route_to_synthesis": true
-      }
-    ],
-    "PL": [
+        "route_to_synthesis": false
+      },
       {
-        "id": "cdfdf735a802593f",
+        "id": "db20e7304a2c4f87",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PL",
+        "ticker": "EVH",
         "scope": "ticker",
-        "title": "Jim Cramer Says No To This Industrial Stock: It Is Up 'Way Too Much'",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/04/52058245/jim-cramer-industrial-stock-is-up-way-too-much",
-        "published_at": "2026-04-27T11:49:50+00:00",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INDI": [
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INDI",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INDI",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "OGN": [
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OGN",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fa472aa3e3118909",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OGN",
+        "scope": "ticker",
+        "title": "12 Health Care Stocks Moving In Monday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/04/52058856/12-health-care-stocks-moving-in-mondays-pre-market-session",
+        "published_at": "2026-04-27T12:05:45+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_healthcare_premarket_monday",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OGN",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RPAY": [
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RPAY",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RPAY",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SLS": [
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNAP": [
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8cf9fcf96d34c769",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "Snap Stock Is Climbing Monday: What's Driving The Action?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52064817/snap-stock-is-climbing-monday-whats-driving-the-action",
+        "published_at": "2026-04-27T14:24:51+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "snap_stock_climbing_monday",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "db20e7304a2c4f87",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "XOMA Royalty, Oruka Therapeutics, Repay Holdings And Other Big Stocks Moving Higher On Monday",
+        "url": "https://www.benzinga.com/news/26/04/52064652/xoma-royalty-oruka-therapeutics-repay-holdings-and-other-big-stocks-moving-higher-on-monday",
+        "published_at": "2026-04-27T14:20:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_stocks_moving_higher_monday_batch",
+        "tickers_mentioned": [
+          "XOMA",
+          "ORKA",
+          "RPAY",
+          "OGN",
+          "EVH",
+          "SLS",
+          "INDI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "d3dfccdc61acc8b7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Stock Of The Day: Is The Intel Rally Over?",
+        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52063154/stock-of-the-day-is-the-intel-rally-over",
+        "published_at": "2026-04-27T13:55:59+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "jim_cramer_pl_overvalued_commentary",
+        "dedup_group": "intc_rally_analysis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "GLW": [
+      {
+        "id": "ba87261346b4264d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GLW",
+        "scope": "ticker",
+        "title": "Earnings Volatility Watch: What To Expect From Sandisk and 5 Mag Seven Stocks This Week",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52061245/earnings-volatility-watch-sandisk-magnificent-seven-april-2026",
+        "published_at": "2026-04-27T13:22:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "earnings_preview_week_of_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ba87261346b4264d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GLW",
+        "scope": "ticker",
+        "title": "Earnings Volatility Watch: What To Expect From Sandisk and 5 Mag Seven Stocks This Week",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52061245/earnings-volatility-watch-sandisk-magnificent-seven-april-2026",
+        "published_at": "2026-04-27T13:22:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "earnings_preview_week_of_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "ba87261346b4264d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Earnings Volatility Watch: What To Expect From Sandisk and 5 Mag Seven Stocks This Week",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52061245/earnings-volatility-watch-sandisk-magnificent-seven-april-2026",
+        "published_at": "2026-04-27T13:22:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "earnings_preview_week_of_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d4b28896eea10d2f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Why Sandisk Stock Is Surging To Fresh All-Time Highs Today",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52063413/why-sandisk-stock-is-surging-to-fresh-all-time-highs-today",
+        "published_at": "2026-04-27T13:58:45+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "sandisk_ath_move_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "ba87261346b4264d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Earnings Volatility Watch: What To Expect From Sandisk and 5 Mag Seven Stocks This Week",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52061245/earnings-volatility-watch-sandisk-magnificent-seven-april-2026",
+        "published_at": "2026-04-27T13:22:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "earnings_preview_week_of_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ALM": [
+      {
+        "id": "33b84febe2586200",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ALM",
+        "scope": "ticker",
+        "title": "Domino's Posts Downbeat Q1 Results, Joins Real Brokerage And Other Big Stocks Moving Lower In Monday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52058719/dominos-posts-downbeat-q1-results-joins-real-brokerage-and-other-big-stocks-moving-lower-in-mondays-pre-market-session",
+        "published_at": "2026-04-27T12:02:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dominos_q1_2026_downbeat",
+        "tickers_mentioned": [
+          "DPZ"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "33b84febe2586200",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ALM",
+        "scope": "ticker",
+        "title": "Domino's Posts Downbeat Q1 Results, Joins Real Brokerage And Other Big Stocks Moving Lower In Monday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52058719/dominos-posts-downbeat-q1-results-joins-real-brokerage-and-other-big-stocks-moving-lower-in-mondays-pre-market-session",
+        "published_at": "2026-04-27T12:02:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dominos_q1_2026_downbeat",
+        "tickers_mentioned": [
+          "DPZ"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UMC": [
+      {
+        "id": "33b84febe2586200",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UMC",
+        "scope": "ticker",
+        "title": "Domino's Posts Downbeat Q1 Results, Joins Real Brokerage And Other Big Stocks Moving Lower In Monday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52058719/dominos-posts-downbeat-q1-results-joins-real-brokerage-and-other-big-stocks-moving-lower-in-mondays-pre-market-session",
+        "published_at": "2026-04-27T12:02:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dominos_q1_2026_downbeat",
+        "tickers_mentioned": [
+          "DPZ"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "33b84febe2586200",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UMC",
+        "scope": "ticker",
+        "title": "Domino's Posts Downbeat Q1 Results, Joins Real Brokerage And Other Big Stocks Moving Lower In Monday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52058719/dominos-posts-downbeat-q1-results-joins-real-brokerage-and-other-big-stocks-moving-lower-in-mondays-pre-market-session",
+        "published_at": "2026-04-27T12:02:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dominos_q1_2026_downbeat",
+        "tickers_mentioned": [
+          "DPZ"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "POET": [
+      {
+        "id": "92d88595c1ff13d6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "POET Technologies Shares Plunge On Marvell Order Cancellation: What Investors Need To Know",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52062114/poet-technologies-shares-plunge-on-marvell-order-cancellation-what-investors-need-to-know",
+        "published_at": "2026-04-27T13:40:27+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "poet_marvell_order_cancellation",
+        "tickers_mentioned": [
+          "MRVL"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "cee92bcf060e1629",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "US Stocks Mixed; Nasdaq Falls Over 100 Points",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52063799/us-stocks-mixed-nasdaq-falls-over-100-points",
+        "published_at": "2026-04-27T14:03:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "us_stocks_mixed_april_27",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "VZ": [
+      {
+        "id": "640ad711e28ff9e6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VZ",
+        "scope": "ticker",
+        "title": "Full Transcript: Verizon Communications Q1 2026 Earnings Call",
+        "url": "https://www.benzinga.com/insights/news/26/04/52062883/full-transcript-verizon-communications-q1-2026-earnings-call",
+        "published_at": "2026-04-27T13:51:47+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "verizon_q1_2026_earnings_transcript",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "VRT": [
+      {
+        "id": "3b0b407fdf5b242e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "White House Grid Move Could Boost Electrification Stocks And ETFs, Says Anthony Pompliano",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52055631/white-house-grid-move-could-boost-electrification-stocks-and-etfs-says-anthony-pompliano",
+        "published_at": "2026-04-27T09:38:02+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "white_house_grid_electrification_policy",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -151,161 +558,155 @@
   },
   "macro_events": [
     {
-      "event_summary": "Goldman Sachs warns oil could reach $100/bbl by year-end if supply flows don't normalize, signaling a bullish crude price scenario.",
+      "event_summary": "Brent crude briefly spiked above $108/bbl after Iran peace talks collapsed, raising fears of Strait of Hormuz disruption.",
       "primary_drivers": [
-        "Higher crude price realizations lifting upstream margins",
-        "Increased capex/activity flowing to oilfield services",
-        "Margin pressure on fuel-cost-sensitive consumers (airlines, trucking, chemicals)"
+        "Crude oil price spike lifts upstream realizations",
+        "Geopolitical risk premium / Strait of Hormuz transit risk boosts tanker rates and defense demand",
+        "Higher fuel costs pressure airlines and fuel-intensive transports"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with significant upstream leverage; every $10/bbl move in Brent adds ~$4-5B to annual operating cash flow given ~2.4 mmboe/d production. Direct price-taker on crude.",
+          "rationale": "Integrated major with large upstream exposure; every $10/bbl move in Brent flows directly to E&P segment earnings. Liquid, default macro long for oil spike.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Highest oil-price beta among large caps due to Permian-weighted production (~1.4 mmboe/d, ~80% liquids) and remaining debt load that delevers fast at $100 oil. Buffett-backed, low hedge book.",
+          "rationale": "High-beta US E&P (Permian-weighted) with significant operating leverage to crude; historically one of the strongest movers on Brent spikes.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with low breakevens (~$40); $100 oil drives massive FCF yield (>20%) funding variable dividends and buybacks. High torque to crude.",
+          "rationale": "Pure-play Permian E&P, ~85%+ of cash flow tied to oil realizations; near 1:1 correlation with WTI/Brent on shock days.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "SLB",
-          "rationale": "Largest oilfield services firm; sustained $90-100 oil triggers international and offshore capex cycle extension where SLB has dominant share. Activity rebound is the transmission.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "North American pressure pumping leader benefits from completions activity uptick if US producers respond to $100 prints with rig adds. Short-cycle exposure.",
+          "ticker": "FTI",
+          "rationale": "TechnipFMC \u2014 subsea/offshore services provider; sustained $100+ Brent accelerates FID on offshore projects, expanding backlog.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "APA",
-          "rationale": "Smaller-cap E&P with high oil-price torque and unhedged production; tends to outperform on crude squeezes due to higher beta and short interest dynamics.",
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 product tanker rates spike on Hormuz transit risk as ton-miles extend around chokepoints; direct beneficiary of geopolitical shipping premium.",
           "confidence": "medium",
           "horizon": "days"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways \u2014 crude tanker operator; VLCC/Suezmax rates rise sharply when Middle East transit risk forces longer routings and insurance premia spike.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin \u2014 Iran escalation supports defense budget tailwinds and missile defense (THAAD, PAC-3) demand from Gulf allies; classic geopolitical hedge bid.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon \u2014 Patriot missiles and air defense systems see direct demand pull from Gulf states on Iran tail risk; F-35 engines via Pratt also benefit.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; $100 crude lifts jet fuel crack, and Delta has limited fuel hedging program. Each $10/bbl move pressures EPS by roughly $1+.",
+          "rationale": "Delta \u2014 jet fuel is ~25-30% of opex and Delta has historically had less hedging than peers; Brent at $108 directly compresses margins. Trans-Atlantic exposure also hit by Mideast risk.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "Same fuel cost mechanism as DAL; United runs no structural fuel hedges, making it the most exposed legacy carrier to crude spikes. Margin compression direct.",
+          "rationale": "United \u2014 heavy international long-haul exposure (Asia/Europe routes burn most fuel); unhedged jet fuel cost passthrough is slow, near-term EPS hit is direct.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines \u2014 most levered balance sheet among legacies and explicitly does not hedge fuel; highest earnings sensitivity to crude spikes.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest historically hedges fuel but coverage has shrunk; high fuel-cost share of opex (~30%) and price-sensitive leisure customers limit pass-through.",
+          "rationale": "Southwest \u2014 historically hedged but program has rolled off; fuel is the #1 opex line and a sustained $100+ Brent breaks consensus margin assumptions.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs rise with crude; commodity chemicals margins compress when oil rises faster than chemical prices. Direct cost-curve hit.",
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel is a major opex line and demand is discretionary; crude spike + Mideast cruise itinerary disruption (Red Sea/Gulf) is a double hit.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "FDX",
-          "rationale": "Diesel/jet fuel costs flow through Express segment; fuel surcharges lag spot moves by weeks, creating a margin air pocket on rapid crude moves.",
+          "rationale": "FedEx \u2014 air freight is highly fuel-intensive; surcharge passthrough lags by weeks and Express segment margin is the most exposed line in transports.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Cruise operator fuel costs are ~10-15% of opex with limited hedging; $100 oil reverses one of the recent margin tailwinds during a peak booking period.",
+          "ticker": "DOW",
+          "rationale": "Dow \u2014 naphtha/ethane feedstock costs rise with crude, and chemicals demand is already soft; margin squeeze with limited pricing power.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "oil_100_goldman_sachs_2026",
+      "dedup_group": "brent_oil_iran_peace_talks",
       "source_news_ids": [
-        "bedf66c02ecae6dd"
+        "827a5e1f0ed3bf11"
       ],
       "headlines": [
-        "Oil could end the year at $100 if flows don\u2019t normalize soon, says Goldman Sachs"
+        "Brent oil prices briefly top $108 per barrel after Iran peace talks unravel"
       ]
     },
     {
-      "event_summary": "Two months into a war with Iran, economic strain is spreading across emerging markets \u2014 implying sustained oil price elevation, USD strength, and EM capital outflows.",
+      "event_summary": "Chinese regulators blocked Meta's $2 billion acquisition of Chinese AI firm Manus, signaling continued US-China tech decoupling and M&A friction.",
       "primary_drivers": [
-        "Sustained higher oil prices from Middle East supply risk premium",
-        "EM currency weakness and capital flight to USD safe havens",
-        "Defense spending acceleration from prolonged conflict"
+        "US-China regulatory decoupling raising deal-execution risk for cross-border tech M&A",
+        "Meta forced to build/buy AI capability domestically instead of acquiring Chinese talent",
+        "Signal that Chinese AI assets remain walled off, raising scarcity value of accessible Western AI assets"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure; sustained Brent premium from a 2-month-old Iran conflict directly lifts realized prices on US/global production. Limited Iran/Strait of Hormuz transit exposure relative to peers.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "ticker": "PLTR",
+          "rationale": "With Chinese AI acquisitions blocked, US enterprises and government must source AI capability from domestic vendors; Palantir is a direct beneficiary of US-China AI decoupling narrative and has historically traded up on such headlines.",
+          "confidence": "low",
+          "horizon": "days"
         },
         {
-          "ticker": "COP",
-          "rationale": "Pure-play E&P with no downstream offset \u2014 highest leverage to sustained Brent/WTI elevation among large caps. Two months in, hedges roll off and realizations follow spot.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Prolonged Iran war drives munitions replenishment (PAC-3, THAAD interceptors used in Israeli/Gulf air defense) plus allied FMS orders; 2-month duration suggests supplemental defense appropriations becoming likely.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon segment supplies SM-3/SM-6, Patriot interceptors actively consumed in theater; sustained conflict converts inventory drawdown into multi-year contract awards.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Permian-weighted producer with high oil beta; Buffett-backed name often serves as institutional vehicle for sustained crude bull thesis.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "AI",
+          "rationale": "C3.ai positioned as a pure-play domestic enterprise AI vendor; tightening of cross-border AI M&A reinforces the 'buy American AI' thesis and small-cap AI names tend to react sharply to decoupling headlines.",
+          "confidence": "low",
+          "horizon": "intraday"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of opex; two months of elevated crude with no resolution in sight means hedge books are exhausted and Q2 guidance at risk. Also exposed to weakening international travel demand.",
+          "ticker": "META",
+          "rationale": "Direct loser \u2014 $2B deal blocked means Meta loses access to Manus's AI talent/tech and must redeploy capital to internal Llama development or alternative acquisitions; also signals Meta's China-facing strategic options are narrowing further.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Domestic carrier with historically aggressive fuel hedging \u2014 but hedges are short-dated; sustained 2-month war erodes hedge protection while it lacks international premium pricing power of legacy carriers.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with double exposure: bunker fuel costs rising, plus discretionary travel demand softening as recession fears mount from prolonged conflict.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "GS",
+          "rationale": "Goldman and other M&A advisors lose fees on blocked $2B deal; more importantly, signals continued chilling effect on cross-border tech M&A pipeline which is a meaningful advisory revenue line.",
+          "confidence": "low",
+          "horizon": "intraday"
         }
       ],
-      "dedup_group": "iran_war_two_months_emerging_markets",
+      "dedup_group": "china_blocks_meta_manus_acquisition",
       "source_news_ids": [
-        "94a9a4961eb067e4"
+        "5d400507306c3d18"
       ],
       "headlines": [
-        "Two months into Iran war, economic strain mounts across emerging markets"
+        "China blocks Meta\u2019s $2 billion acquisition of AI firm Manus"
       ]
     }
   ]
