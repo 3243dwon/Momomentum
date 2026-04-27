@@ -1,5 +1,147 @@
 {
-  "generated_at": "2026-04-26T23:35:26.348739-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-04-27T02:32:45.408776-04:00",
+  "ticker_news": {
+    "INTC": [
+      {
+        "id": "78842335cf2601c9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Will S&P 500 Open Up Or Down On April 27? Here's How Polymarket Traders Lean As Trump Halts Iran Talks And Oil Spikes",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52054194/will-sp-500-open-up-or-down-on-april-27-heres-how-polymarket-traders-lean-as-trump-halts-iran-talks-and-oil-spikes",
+        "published_at": "2026-04-27T06:10:06+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_talks_halt_apr2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "cc69b6b8efc65ebd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Bernie Sanders Says When Verizon CEO Predicts 20%-30% Unemployment Due To AI, People Should Pay Attention: 'We're Not Prepared'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52054184/bernie-sanders-warns-verizon-ceo-ai-20-30-unemployment-not-prepared",
+        "published_at": "2026-04-27T06:08:56+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sanders_verizon_ai_unemployment_commentary",
+        "tickers_mentioned": [
+          "VZ"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "OGN": [
+      {
+        "id": "0a933963aca94085",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OGN",
+        "scope": "ticker",
+        "title": "Organon To Be Acquired By Sun Pharma In $11.75B Deal, OGN Stock Spikes Nearly 17% On Robinhood 24-Hour Market",
+        "url": "https://www.benzinga.com/news/health-care/26/04/52054135/organon-sun-pharma-1175bn-acquisition-ogn-stock-spike",
+        "published_at": "2026-04-27T05:57:04+00:00",
+        "type": "ma",
+        "impact": "high",
+        "dedup_group": "ogn_sun_pharma_acquisition_11.75b",
+        "tickers_mentioned": [
+          "SUNPHARMA"
+        ],
+        "route_to_synthesis": true
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "Iran reportedly proposed a deal to the U.S. regarding the Strait of Hormuz, signaling potential de-escalation in the Persian Gulf, though talks remain stalled.",
+      "primary_drivers": [
+        "Reduced geopolitical risk premium in crude oil if deal progresses",
+        "Lower probability of Hormuz shipping disruption (~20% of global oil flows)",
+        "Compression of safe-haven bid in Treasuries/gold"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs; any easing of crude on Hormuz de-escalation directly expands airline margins. Delta has highest jet fuel sensitivity among legacy carriers post-hedge roll-off.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost mechanism as DAL; United has heavier international/long-haul exposure where fuel is a larger share of trip cost, amplifying the leverage to a crude pullback.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is a major variable cost for cruise operators; a Hormuz risk-premium unwind lowers Brent and bunker prices, plus reduces Middle East itinerary disruption risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs track crude; commodity chemical margins expand on a geopolitical risk-premium unwind. Direct input cost pass-through.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with significant upstream leverage to Brent; a Hormuz de-escalation compresses the geopolitical risk premium (~$5-10/bbl) directly hitting upstream realizations. Largest US-listed pure beneficiary of Gulf tension reversing.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta US E&P with heavy Permian crude leverage; oil price decline on risk-off-the-table headlines hits cash flow and buyback capacity disproportionately vs. peers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Smaller-cap E&P with direct WTI/Brent price sensitivity; high beta to crude moves makes it a clean short-vehicle for de-escalation trade.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services activity correlates with sustained crude prices; reduced geopolitical premium pressures upstream capex outlook and rig count expectations.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker rates spike on Hormuz disruption fears (longer ton-mile re-routing); de-escalation removes the war-risk premium and could compress spot tanker rates.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Crude tanker operator directly leveraged to Hormuz disruption pricing; VLCC rates incorporate war-risk insurance premium that unwinds on de-escalation news.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Defense primes carry a Middle East conflict premium; sustained de-escalation headlines pressure the sector even though backlog is unaffected near-term. Sentiment-driven derate.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_hormuz_strait_deal_proposal_apr2026",
+      "source_news_ids": [
+        "fd1b6701632dc560"
+      ],
+      "headlines": [
+        "Iran reportedly proposes Hormuz Strait deal to U.S. Here\u2019s where things stand \u2014 and what\u2019s next for markets"
+      ]
+    }
+  ]
 }
