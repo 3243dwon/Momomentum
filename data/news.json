@@ -1,52 +1,41 @@
 {
-  "generated_at": "2026-04-27T17:46:38.529189-04:00",
+  "generated_at": "2026-04-27T18:41:10.928557-04:00",
   "ticker_news": {
-    "RMBS": [
+    "INTC": [
       {
-        "id": "e5860b938c819806",
+        "id": "434d38486f3f8d1f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RMBS",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "Rambus Stock Sinks After Mixed Q1 Earnings Report",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52081294/rambus-stock-sinks-after-mixed-q1-earnings-report",
-        "published_at": "2026-04-27T21:07:15+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "rmbs_q1_2026_mixed_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "a02841a91513780b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RMBS",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Monday's After-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52081234/12-information-technology-stocks-moving-in-mondays-after-market-session",
-        "published_at": "2026-04-27T21:05:45+00:00",
+        "title": "Intel Vs. Nvidia Stock: Which Semiconductor Is Up More Since They Swapped Places In Dow Jones Industrial Average?",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52082077/intel-vs-nvidia-stock-which-semiconductor-is-up-more-since-they-swapped-places-in-dow-jones-industrial-average",
+        "published_at": "2026-04-27T22:00:18+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "it_stocks_monday_movers",
-        "tickers_mentioned": [],
+        "dedup_group": "nvda_intc_dow_swap_comparative",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "ERAS": [
+    "NVDA": [
       {
-        "id": "d3b66e70d5eb03c3",
+        "id": "434d38486f3f8d1f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ERAS",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "12 Health Care Stocks Moving In Monday's After-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52081236/12-health-care-stocks-moving-in-mondays-after-market-session",
-        "published_at": "2026-04-27T21:05:54+00:00",
+        "title": "Intel Vs. Nvidia Stock: Which Semiconductor Is Up More Since They Swapped Places In Dow Jones Industrial Average?",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52082077/intel-vs-nvidia-stock-which-semiconductor-is-up-more-since-they-swapped-places-in-dow-jones-industrial-average",
+        "published_at": "2026-04-27T22:00:18+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "healthcare_stocks_monday_movers",
-        "tickers_mentioned": [],
+        "dedup_group": "nvda_intc_dow_swap_comparative",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
         "route_to_synthesis": false
       }
     ]
