@@ -1,78 +1,201 @@
 {
-  "generated_at": "2026-04-28T02:33:41.082063-04:00",
+  "generated_at": "2026-04-28T06:07:15.472068-04:00",
   "ticker_news": {
-    "MU": [
-      {
-        "id": "613b1f81eba65014",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Forget Nvidia: Why 'Worker Bees' Like Micron Technology, Texas Instruments Are Real AI Winners",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52084068/nvidia-micron-technology-texas-instruments-real-ai-winners",
-        "published_at": "2026-04-28T06:12:31+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "analyst_forget_nvda_worker_bees",
-        "tickers_mentioned": [
-          "NVDA",
-          "TXN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "NVDA": [
       {
-        "id": "613b1f81eba65014",
+        "id": "fe4abd9b5301b346",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Forget Nvidia: Why 'Worker Bees' Like Micron Technology, Texas Instruments Are Real AI Winners",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52084068/nvidia-micron-technology-texas-instruments-real-ai-winners",
-        "published_at": "2026-04-28T06:12:31+00:00",
+        "title": "Competitor Analysis: Evaluating NVIDIA And Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/04/52085758/competitor-analysis-evaluating-nvidia-and-competitors-in-semiconductors-amp-semiconductor-equipment",
+        "published_at": "2026-04-28T09:58:27+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "analyst_forget_nvda_worker_bees",
+        "dedup_group": "nvda_competitor_analysis_april_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RMBS": [
+      {
+        "id": "e356065f73107c33",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RMBS",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500 Futures Drop, Dow Gains As Trump Floats 'New' Iran Proposal\u2014IBM, Bed Bath & Beyond, BP In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52085441/stock-market-today-sp-500-futures-drop-dow-gains-as-trump-floats-new-iran-proposal-ibm-bed-bath-beyond-bp-in-focus",
+        "published_at": "2026-04-28T09:11:28+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_proposal_april2026",
         "tickers_mentioned": [
-          "NVDA",
-          "TXN"
+          "IBM",
+          "BP"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "672be6b2c2aa92d4",
+        "id": "4b3fbd9115782d2c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "RMBS",
         "scope": "ticker",
-        "title": "Jim Cramer Says Nvidia Sellers 'Disappeared' As Stock Pops On Monday: What You Should Know",
-        "url": "https://www.benzinga.com/news/social-media/26/04/52083823/jim-cramer-nvidia-sellers-disappeared-stock-pops-monday-what-to-know",
-        "published_at": "2026-04-28T05:17:06+00:00",
-        "type": "analyst",
+        "title": "Why Bed Bath & Beyond Shares Are Trading Higher By Around 23%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/04/52085431/why-bed-bath-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-04-28T09:11:02+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "bed_bath_beyond_23pct_move_april2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "8e9e274a3550cb34",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RMBS",
+        "scope": "ticker",
+        "title": "Coca-Cola, General Motors And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52085087/coca-cola-general-motors-and-3-stocks-to-watch-heading-into-tuesday-2",
+        "published_at": "2026-04-28T08:27:08+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "cramer_nvda_sellers_disappeared",
+        "dedup_group": "market_watch_coke_gm_stocks",
         "tickers_mentioned": [
-          "NVDA"
+          "KO"
         ],
         "route_to_synthesis": false
       }
     ],
-    "INTC": [
+    "ERAS": [
       {
-        "id": "672be6b2c2aa92d4",
+        "id": "4b3fbd9115782d2c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "ERAS",
         "scope": "ticker",
-        "title": "Jim Cramer Says Nvidia Sellers 'Disappeared' As Stock Pops On Monday: What You Should Know",
-        "url": "https://www.benzinga.com/news/social-media/26/04/52083823/jim-cramer-nvidia-sellers-disappeared-stock-pops-monday-what-to-know",
-        "published_at": "2026-04-28T05:17:06+00:00",
-        "type": "analyst",
+        "title": "Why Bed Bath & Beyond Shares Are Trading Higher By Around 23%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/04/52085431/why-bed-bath-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-04-28T09:11:02+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "bed_bath_beyond_23pct_move_april2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "GM": [
+      {
+        "id": "a55314529f45b8ec",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "Will S&P 500 Open Up Or Down On April 28? Traders Weigh Record Highs Against Iran Uncertainty, Big Tech Earnings",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52085191/sp500-april-28-open-up-or-down-polymarket-record-highs-big-tech-fed",
+        "published_at": "2026-04-28T08:43:55+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "cramer_nvda_sellers_disappeared",
+        "dedup_group": "s_p_500_open_iran_uncertainty_april28",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "da35758752f249f2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "S&P 500 Closes At Another Record High Level: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52085171/sp-500-closes-at-another-record-high-level-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-04-28T08:39:43+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "s_p_500_record_high_sentiment_april28",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8e9e274a3550cb34",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "Coca-Cola, General Motors And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52085087/coca-cola-general-motors-and-3-stocks-to-watch-heading-into-tuesday-2",
+        "published_at": "2026-04-28T08:27:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_watch_coke_gm_stocks",
         "tickers_mentioned": [
-          "NVDA"
+          "KO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "251b472dacfff63d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "Trump Reportedly Warned By Foreign Automakers: No Trade Deal Could Mean Loss Of Cheap Cars",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52084573/trump-reportedly-warned-by-foreign-automakers-no-trade-deal-could-mean-loss-of-cheap-cars",
+        "published_at": "2026-04-28T07:05:44+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_automakers_trade_deal_warning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KO": [
+      {
+        "id": "a55314529f45b8ec",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KO",
+        "scope": "ticker",
+        "title": "Will S&P 500 Open Up Or Down On April 28? Traders Weigh Record Highs Against Iran Uncertainty, Big Tech Earnings",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52085191/sp500-april-28-open-up-or-down-polymarket-record-highs-big-tech-fed",
+        "published_at": "2026-04-28T08:43:55+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "s_p_500_open_iran_uncertainty_april28",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "da35758752f249f2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KO",
+        "scope": "ticker",
+        "title": "S&P 500 Closes At Another Record High Level: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52085171/sp-500-closes-at-another-record-high-level-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-04-28T08:39:43+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "s_p_500_record_high_sentiment_april28",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8e9e274a3550cb34",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KO",
+        "scope": "ticker",
+        "title": "Coca-Cola, General Motors And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52085087/coca-cola-general-motors-and-3-stocks-to-watch-heading-into-tuesday-2",
+        "published_at": "2026-04-28T08:27:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_watch_coke_gm_stocks",
+        "tickers_mentioned": [
+          "KO"
         ],
         "route_to_synthesis": false
       }
@@ -80,82 +203,361 @@
   },
   "macro_events": [
     {
-      "event_summary": "BP beat Q1 profit expectations, citing higher fuel prices driven by the Iran war, signaling broad upside for integrated oil majors and refiners benefiting from elevated crude and crack spreads.",
+      "event_summary": "German Chancellor Merz publicly states the US is \"being humiliated by Iran,\" signaling waning European patience and rising risk of escalation in the Iran standoff.",
       "primary_drivers": [
-        "Elevated crude oil prices from Iran war risk premium boosting upstream realized prices",
-        "Wider refining crack spreads from supply disruption fears lifting downstream margins",
-        "Peer read-through: BP beat sets positive expectations for Western oil major Q1 prints"
+        "Geopolitical risk premium on crude oil from potential Iran escalation/sanctions enforcement",
+        "Defense spending tailwind as European allies signal harder line",
+        "Safe-haven flows into gold and defensive assets"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated supermajor with similar upstream/downstream mix to BP; BP's beat signals XOM's upcoming Q1 will likely show similar leverage to elevated Brent and crack spreads. Direct peer read-through ahead of XOM earnings.",
-          "confidence": "high",
+          "rationale": "Largest US integrated oil major with no Iranian production exposure; benefits directly from any Brent risk premium driven by tighter Iran sanctions enforcement or Strait of Hormuz fears.",
+          "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Closest US integrated peer to BP with significant upstream exposure; BP's confirmation that Iran-driven prices boosted profits supports CVX Q1 expectations. Peer-rotation flow.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MPC",
-          "rationale": "Pure-play US refiner; BP's downstream strength implicates wider crack spreads from Iran disruption fears, directly boosting Marathon's refining margins which are ~90% of earnings.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VLO",
-          "rationale": "Largest independent US refiner; same crack spread tailwind BP cited in its downstream segment translates more purely to Valero given no upstream offset.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "Pure-play US E&P with high leverage to Brent prices; Iran war premium directly lifts realized prices with no downstream dilution.",
-          "confidence": "medium",
-          "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "US E&P with high operating leverage to crude prices and Permian-weighted production; Iran risk premium flows straight through to cash flow.",
+          "rationale": "High-beta Permian pure-play with strong leverage to crude price moves; geopolitical premium flows directly to free cash flow given low hedging.",
           "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Maker of THAAD, PAC-3 Patriot interceptors and JASSM \u2014 directly tied to Middle East air defense replenishment if Europe/US harden Iran posture.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot missile and Tomahawk producer; European allies hardening on Iran historically correlates with accelerated munitions orders and FMS pipeline.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LDOS",
+          "rationale": "Heavy DoD IT/ISR exposure; Middle East tension sustains intelligence and surveillance contract flow.",
+          "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; BP confirming sustained higher fuel prices means airlines face ongoing margin compression with limited near-term hedging relief.",
+          "rationale": "Highest jet fuel exposure among US legacies (~25-30% of opex) with limited hedging; crude spike from Iran risk compresses margin near-term.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Significant transatlantic and international route exposure; fuel cost passthrough plus potential Middle East airspace rerouting hits unit economics.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with heavy bunker fuel cost; oil spike directly pressures 2026 guidance which already assumes stable energy.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Air freight fuel-intensive; sustained crude premium pressures margins before surcharge passthrough catches up.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Consumer staples retailer exposed to gasoline-driven discretionary squeeze on lower-income shoppers if pump prices climb on Iran premium.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_us_tensions_merz_april_2026",
+      "source_news_ids": [
+        "96d7bb4e40516980"
+      ],
+      "headlines": [
+        "U.S. is 'being humiliated by Iran,' says Germany's Merz, as Europe's patience wanes"
+      ]
+    },
+    {
+      "event_summary": "Novartis CEO warns that the impact of Trump's \"Most Favored Nation\" drug pricing policy will become real over the next 18 months, signaling sustained margin pressure on branded pharma.",
+      "primary_drivers": [
+        "MFN reference pricing forcing US drug prices toward lower OECD benchmarks",
+        "Compression of US branded pharma gross margins (US is the highest-margin region)",
+        "Relative tailwind for generics/biosimilars and PBMs as branded pricing power erodes"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "VTRS",
+          "rationale": "Viatris is a pure-play generics/biosimilars name; branded price compression widens the relative attractiveness of generic substitutes in US formularies.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CI",
+          "rationale": "Cigna's Express Scripts PBM captures rebate spread and benefits when branded pharma loses pricing power \u2014 payers/PBMs gain leverage in MFN regime.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NVS",
+          "rationale": "Direct subject of the headline \u2014 Novartis CEO explicitly flagging margin/revenue risk from MFN; US is the company's highest-margin geography for branded drugs like Entresto, Cosentyx, Kisqali.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "PFE",
+          "rationale": "Large US branded portfolio (Eliquis, Vyndaqel, Ibrance) with US prices well above OECD comparators; MFN reference pricing directly compresses US revenue and gross margin.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "MRK",
+          "rationale": "Keytruda alone is ~$25B+ revenue with substantial US price premium vs ex-US; MFN is an existential margin risk to its largest asset and the company has limited near-term offset.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BMY",
+          "rationale": "Eliquis and Opdivo carry large US-vs-OECD price gaps; Eliquis already on IRA negotiation list and would be further compressed under MFN benchmark pricing.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LLY",
+          "rationale": "GLP-1 franchise (Mounjaro/Zepbound) priced multiples higher in the US than Europe; MFN reference pricing would directly cap the most important growth driver in pharma.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AMGN",
+          "rationale": "Repatha, Enbrel, Prolia all show large US-vs-ex-US price differentials; MFN compresses the high-margin US book that supports the dividend and pipeline reinvestment.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GILD",
+          "rationale": "HIV franchise (Biktarvy) has a steep US price premium; MFN benchmarking would erode the cash flow base funding oncology buildout.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "REGN",
+          "rationale": "Eylea faces US price compression under MFN on top of biosimilar entry; concentrated single-asset risk amplifies policy exposure.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "novartis_trump_drug_pricing_warning",
+      "source_news_ids": [
+        "9e0af095b6f97a5c"
+      ],
+      "headlines": [
+        "Novartis CEO warns reality of Trump's drug pricing policy will set in over 'the next 18 months'"
+      ]
+    },
+    {
+      "event_summary": "China blocked a deal between Meta and Chinese AI startup Manus, escalating US-China AI decoupling and signaling Beijing will restrict outbound AI tech/talent flows to US firms.",
+      "primary_drivers": [
+        "US-China AI decoupling forces domestic-only sourcing on both sides",
+        "Reduced access to Chinese AI talent/IP for US hyperscalers",
+        "Increased pressure to build sovereign/domestic AI stacks"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PLTR",
+          "rationale": "US gov/defense AI vendor \u2014 escalating AI cold war narrative drives Pentagon and allied procurement of sovereign US-built AI platforms. Direct peer-rotation winner whenever US-China AI tension headlines hit.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NVDA",
+          "rationale": "Bifurcated AI world means both sides race to build out compute domestically; while China export restrictions cap one channel, accelerated US hyperscaler capex (now unable to leverage Chinese AI labor/IP) increases domestic GPU demand. Net mixed but headline-positive for sovereign AI thesis.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "META",
+          "rationale": "Direct party to the blocked deal \u2014 loses access to Manus's agentic AI tech/team that it presumably valued enough to pursue. Signals Meta's open-source Llama strategy can't easily tap Chinese AI talent pool. Headline-negative and removes a strategic option.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAPL",
+          "rationale": "Most China-exposed megacap; any escalation in US-China tech decoupling raises tail risk of retaliatory measures on Apple's China revenue (~19%) and supply chain. Reads negatively on every decoupling headline.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Significant China revenue exposure (Shanghai gigafactory, ~22% revenue) and Musk's FSD/AI ambitions in China; broader AI decoupling raises risk that Chinese regulators tighten on US AI/auto firms next.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSFT",
+          "rationale": "Microsoft has wound down some China AI operations already; further decoupling caps OpenAI/Azure AI's addressable market in China and raises risk of reciprocal Chinese restrictions on Windows/Azure enterprise.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "meta_manus_china_ai_race",
+      "source_news_ids": [
+        "5ad09a0732c17e1f"
+      ],
+      "headlines": [
+        "'Draconian development' in Meta-Manus deal draws the line in China's AI race with the U.S."
+      ]
+    },
+    {
+      "event_summary": "Brent crude tops $110/bbl after reports that Trump rejected Iran's war-ending proposal, raising risk of continued/escalated Middle East conflict and Iranian oil supply disruption.",
+      "primary_drivers": [
+        "Higher crude prices boost upstream E&P revenue and margins",
+        "Geopolitical risk premium increases volatility and energy security demand",
+        "Higher fuel costs compress margins for transport/airline/chemical end-users"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with significant upstream leverage; every $10/bbl move in Brent flows directly to upstream EBITDA. Pure beneficiary of price spike with no Iranian asset exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-heavy pure-play E&P with high oil beta \u2014 among the most leveraged S&P names to WTI/Brent. Buffett-backed name typically rallies on geopolitical oil spikes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play upstream E&P, no refining drag; direct revenue lift from $110 Brent. Diversified non-OPEC production base insulated from Mideast supply risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with high oil-price sensitivity and strong free-cash-flow leverage to crude above $90. Typical outperformer in oil spike regimes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand rises as US producers accelerate completions to capture $110 strip; Halliburton has the most North American pressure-pumping leverage.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
+          "ticker": "LNG",
+          "rationale": "Cheniere benefits from European/Asian buyers paying up for non-Mideast LNG supply; geopolitical premium on US LNG cargoes widens netbacks.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Direct beneficiary of failed Iran diplomacy \u2014 sustained Mideast conflict drives missile/munitions reorder demand (PAC-3, THAAD, JASSM). Already-elevated backlog extends.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon air-defense (Patriot, SM-6, Stinger) directly tied to ongoing Mideast munitions consumption; failed peace proposal extends replenishment cycle.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LUV",
+          "rationale": "Jet fuel is ~25-30% of opex; Southwest runs minimal hedges versus peers, so a Brent move to $110 hits Q2 unit costs directly with limited fare pass-through in domestic leisure market.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Despite refinery ownership (Trainer), jet crack spreads spike alongside crude; ~$0.5B+ annualized cost headwind per $10 crude move. Heavy international exposure also faces demand drag if conflict widens.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
           "ticker": "UAL",
-          "rationale": "Same jet fuel cost exposure as DAL with less hedging than legacy peers; sustained Iran-driven crude strength directly hits unit costs.",
+          "rationale": "Highest international/long-haul mix among US carriers means biggest jet fuel burn per ASM; minimal hedging program leaves direct exposure to fuel spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator bunker fuel costs rise sharply at $110 Brent; Mideast itinerary cancellations (Red Sea, Gulf) compound the margin hit.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethylene/petchem feedstock costs rise with crude/naphtha; Dow's commodity chemicals book has limited ability to pass through in current weak end-demand environment.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "FDX",
-          "rationale": "Diesel and jet fuel are major opex line; persistent oil strength from geopolitical premium pressures margins on contracts not yet repriced with fuel surcharges.",
-          "confidence": "low",
+          "rationale": "Fuel surcharge mechanism lags spot price moves by 4-6 weeks; near-term margin compression in Express segment from $110 jet fuel.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/natural gas feedstock costs; sustained energy price elevation squeezes spreads if it can't pass through.",
+          "ticker": "WMT",
+          "rationale": "Consumer discretionary squeeze from higher gasoline prices at the pump diverts low/middle-income wallet share; Walmart historically sees mix shift to consumables and ticket pressure during $4+ gas regimes.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "months"
         }
       ],
-      "dedup_group": "iran_war_oil_prices_bp_beats",
+      "dedup_group": "crude_oil_110_iran_trump_april_2026",
       "source_news_ids": [
-        "b88a74b7c91bb8f9"
+        "7c76816019a3e932"
       ],
       "headlines": [
-        "Oil major BP beats profit expectations as Iran war boosts fuel prices"
+        "Global oil contract tops $110 after reports that Trump unhappy with proposal from Iran to end war"
+      ]
+    },
+    {
+      "event_summary": "A blocked Meta acquisition of an AI startup with China ties has raised regulatory risk for cross-border US-China tech M&A deals.",
+      "primary_drivers": [
+        "Heightened CFIUS / cross-border deal scrutiny reducing M&A optionality for China-linked tech assets",
+        "Forced reliance on domestic US AI build-out vs. acquisition",
+        "Discount applied to US-listed China tech names due to deal-block precedent"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "META",
+          "rationale": "Counterintuitively, the block forces Meta to build AI in-house rather than acquire \u2014 preserves capex into its existing Llama/Reality Labs roadmap and removes integration risk; also signals Meta won't overpay for external AI assets.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Domestic US AI/data analytics pure-play with no China entanglement; benefits from rotation as buyers favor 'clean' US AI names when cross-border deals get blocked.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AI",
+          "rationale": "C3.ai is a US-domiciled enterprise AI vendor with government/defense exposure \u2014 direct beneficiary of policy environment that walls off Chinese AI competitors and partnerships.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "meta_china_ai_startup_block",
+      "source_news_ids": [
+        "320c790c3769818d"
+      ],
+      "headlines": [
+        "Analysis-Blocking of Meta's AI startup buy raises risk for cross-border China tech deals"
       ]
     }
   ]
