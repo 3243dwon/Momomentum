@@ -1,965 +1,175 @@
 {
-  "generated_at": "2026-04-29T14:53:52.339682-04:00",
+  "generated_at": "2026-04-29T16:07:00.142610-04:00",
   "ticker_news": {
     "COIN": [
       {
-        "id": "942f08c93bd3f451",
+        "id": "5ab2b02ab6027110",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COIN",
         "scope": "ticker",
-        "title": "Three Bitcoin Analysts Give Three Very Different Outlooks: Who's Right?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52144994/three-bitcoin-analysts-give-three-very-different-outlooks-whos-right",
-        "published_at": "2026-04-29T18:29:23+00:00",
-        "type": "analyst",
+        "title": "Coinbase Stock Slides Amid Middle East Uncertainty",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52147062/coinbase-stock-slides-amid-middle-east-uncertainty",
+        "published_at": "2026-04-29T19:15:26+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "coin_btc_analyst_views_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "942f08c93bd3f451",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Three Bitcoin Analysts Give Three Very Different Outlooks: Who's Right?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52144994/three-bitcoin-analysts-give-three-very-different-outlooks-whos-right",
-        "published_at": "2026-04-29T18:29:23+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "coin_btc_analyst_views_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVDA": [
-      {
-        "id": "942f08c93bd3f451",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Three Bitcoin Analysts Give Three Very Different Outlooks: Who's Right?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52144994/three-bitcoin-analysts-give-three-very-different-outlooks-whos-right",
-        "published_at": "2026-04-29T18:29:23+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "coin_btc_analyst_views_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
+        "dedup_group": "coinbase_middle_east_uncertainty",
         "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "942f08c93bd3f451",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Three Bitcoin Analysts Give Three Very Different Outlooks: Who's Right?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52144994/three-bitcoin-analysts-give-three-very-different-outlooks-whos-right",
-        "published_at": "2026-04-29T18:29:23+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "coin_btc_analyst_views_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d1fd95b42e37afed",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Why Is Super Micro Computer Stock Falling On Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52143867/why-is-super-micro-computer-stock-falling-on-wednesday",
-        "published_at": "2026-04-29T18:03:42+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "smci_price_decline_apr_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2a82d7aa4e231be0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Alphabet Earnings Prediction Market Preview: What Will Sundar Pichai Say?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52142051/alphabet-earnings-prediction-market-preview-what-will-sundar-pichai-say",
-        "published_at": "2026-04-29T17:27:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "alphabet_earnings_preview_april_29",
-        "tickers_mentioned": [
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d1fd95b42e37afed",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Why Is Super Micro Computer Stock Falling On Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52143867/why-is-super-micro-computer-stock-falling-on-wednesday",
-        "published_at": "2026-04-29T18:03:42+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "smci_price_decline_apr_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "AXTI": [
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AXTI",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AXTI",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AXTI",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "0e5af3a4bc256c31",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Meta, Amazon, Google Face AI Reality Check: Can New Revenue Justify Billions In Spending?",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52143005/meta-amazon-google-face-ai-reality-check-can-new-revenue-justify-billions-in-spending",
-        "published_at": "2026-04-29T17:47:58+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "big_tech_ai_capex_justification",
-        "tickers_mentioned": [
-          "META",
-          "AMZN",
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "72e25965bfecd25d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142385/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-04-29T17:35:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_it_stocks_apr_29",
-        "tickers_mentioned": [
-          "AXTI"
+          "HOOD"
         ],
         "route_to_synthesis": false
       }
     ],
     "HOOD": [
       {
-        "id": "5b42a3bf3438a0bc",
+        "id": "5ab2b02ab6027110",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Robinhood's 'Less Durable' Revenue Model Raises Fresh Concerns",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/04/52142396/robinhoods-less-durable-revenue-model-raises-fresh-concerns",
-        "published_at": "2026-04-29T17:35:52+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "hood_revenue_durability_concerns",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SBUX": [
-      {
-        "id": "ae509dc89a446b84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SBUX",
-        "scope": "ticker",
-        "title": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142388/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:36+00:00",
-        "type": "other",
+        "title": "Coinbase Stock Slides Amid Middle East Uncertainty",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52147062/coinbase-stock-slides-amid-middle-east-uncertainty",
+        "published_at": "2026-04-29T19:15:26+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "whale_alerts_consumer_discretionary_apr_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "STX": [
-      {
-        "id": "ac59a2dc716a5946",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STX",
-        "scope": "ticker",
-        "title": "Western Digital Stock Surges After Seagate's Q3 Results",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144227/western-digital-stock-surges-after-seagates-q3-results",
-        "published_at": "2026-04-29T18:11:32+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "wdc_seagate_q3_spillover",
+        "dedup_group": "coinbase_middle_east_uncertainty",
         "tickers_mentioned": [
-          "STX"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "V": [
-      {
-        "id": "10ce3ad0dd566bfe",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "V",
-        "scope": "ticker",
-        "title": "Mastercard May Ride Visa's Momentum Into Earnings, Analyst Says",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144666/mastercard-may-ride-visas-momentum-into-earnings-analyst-says",
-        "published_at": "2026-04-29T18:20:15+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ma_analyst_note_visa_momentum",
-        "tickers_mentioned": [
-          "V"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "10ce3ad0dd566bfe",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "V",
-        "scope": "ticker",
-        "title": "Mastercard May Ride Visa's Momentum Into Earnings, Analyst Says",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144666/mastercard-may-ride-visas-momentum-into-earnings-analyst-says",
-        "published_at": "2026-04-29T18:20:15+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ma_analyst_note_visa_momentum",
-        "tickers_mentioned": [
-          "V"
+          "HOOD"
         ],
         "route_to_synthesis": false
       }
     ],
-    "WDC": [
+    "NVDA": [
       {
-        "id": "ac59a2dc716a5946",
+        "id": "a41f86ef477cfb6e",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "WDC",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Western Digital Stock Surges After Seagate's Q3 Results",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144227/western-digital-stock-surges-after-seagates-q3-results",
-        "published_at": "2026-04-29T18:11:32+00:00",
+        "title": "Microsoft Earnings Prediction Market Preview: What Will Satya Nadella Say?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52146745/microsoft-earnings-prediction-market-preview-what-will-satya-nadella-say",
+        "published_at": "2026-04-29T19:09:06+00:00",
         "type": "other",
-        "impact": "medium",
-        "dedup_group": "wdc_seagate_q3_spillover",
+        "impact": "low",
+        "dedup_group": "msft_earnings_preview_apr2026",
         "tickers_mentioned": [
-          "STX"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "FCEL": [
-      {
-        "id": "c3491bf4cd1e8ec4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FCEL",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142391/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_industrials_april_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c3491bf4cd1e8ec4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FCEL",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142391/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_industrials_april_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PSX": [
-      {
-        "id": "21f8e9baf5a07179",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PSX",
-        "scope": "ticker",
-        "title": "Phillips 66 Shares Surge on Strong Refining Performance",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52144879/phillips-66-shares-surge-on-strong-refining-performance",
-        "published_at": "2026-04-29T18:25:43+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "psx_refining_performance_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "SWK": [
-      {
-        "id": "77efcabc4b1bca46",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SWK",
-        "scope": "ticker",
-        "title": "Stanley Black & Decker Volume Takes A Hit From North America Slowdown, Stock Slides",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52144579/stanley-black-decker-volume-takes-a-hit-from-north-america-slowdown-stock-slides",
-        "published_at": "2026-04-29T18:18:03+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "swk_north_america_slowdown",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MA": [
-      {
-        "id": "10ce3ad0dd566bfe",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MA",
-        "scope": "ticker",
-        "title": "Mastercard May Ride Visa's Momentum Into Earnings, Analyst Says",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144666/mastercard-may-ride-visas-momentum-into-earnings-analyst-says",
-        "published_at": "2026-04-29T18:20:15+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ma_analyst_note_visa_momentum",
-        "tickers_mentioned": [
-          "V"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "10ce3ad0dd566bfe",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MA",
-        "scope": "ticker",
-        "title": "Mastercard May Ride Visa's Momentum Into Earnings, Analyst Says",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52144666/mastercard-may-ride-visas-momentum-into-earnings-analyst-says",
-        "published_at": "2026-04-29T18:20:15+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ma_analyst_note_visa_momentum",
-        "tickers_mentioned": [
-          "V"
+          "MSFT"
         ],
         "route_to_synthesis": false
       }
     ],
-    "SMCI": [
+    "NXPI": [
       {
-        "id": "d1fd95b42e37afed",
+        "id": "547a1b8602594b29",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SMCI",
+        "ticker": "NXPI",
         "scope": "ticker",
-        "title": "Why Is Super Micro Computer Stock Falling On Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52143867/why-is-super-micro-computer-stock-falling-on-wednesday",
-        "published_at": "2026-04-29T18:03:42+00:00",
+        "title": "NXP Semiconductors Stock Climbs 4% After Key Trading Signal",
+        "url": "https://www.benzinga.com/Opinion/26/04/52146398/nxp-semiconductors-stock-climbs-4-percent-after-key-trading-signal",
+        "published_at": "2026-04-29T19:01:08+00:00",
         "type": "other",
-        "impact": "medium",
-        "dedup_group": "smci_price_decline_apr_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d1fd95b42e37afed",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SMCI",
-        "scope": "ticker",
-        "title": "Why Is Super Micro Computer Stock Falling On Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52143867/why-is-super-micro-computer-stock-falling-on-wednesday",
-        "published_at": "2026-04-29T18:03:42+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "smci_price_decline_apr_29",
+        "impact": "low",
+        "dedup_group": "nxpi_trading_signal_apr2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "RKLB": [
+    "QCOM": [
       {
-        "id": "c3491bf4cd1e8ec4",
+        "id": "ac87f6449d4f6292",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RKLB",
+        "ticker": "QCOM",
         "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142391/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_industrials_april_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c3491bf4cd1e8ec4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142391/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_industrials_april_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SGHC": [
-      {
-        "id": "ae509dc89a446b84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SGHC",
-        "scope": "ticker",
-        "title": "10 Consumer Discretionary Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/04/52142388/10-consumer-discretionary-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-04-29T17:35:36+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_consumer_discretionary_apr_29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SLDE": [
-      {
-        "id": "ef4c19d7c51a4e18",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SLDE",
-        "scope": "ticker",
-        "title": "Full Transcript: Slide Insurance Holdings Q1 2026 Earnings Call",
-        "url": "https://www.benzinga.com/insights/news/26/04/52127613/full-transcript-slide-insurance-holdings-q1-2026-earnings-call",
-        "published_at": "2026-04-29T13:28:25+00:00",
+        "title": "Qualcomm Q2 Highlights: Double Beat, CEO Says AI Opportunity 'Reshaping Our Roadmap,' Data Center Details Coming",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52149152/qualcomm-q2-highlights-double-beat-ceo-says-ai-opportunity-reshaping-our-roadmap-data-center-details-coming",
+        "published_at": "2026-04-29T20:00:40+00:00",
         "type": "earnings",
-        "impact": "low",
-        "dedup_group": "slde_q1_2026_earnings_transcript",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TLRY": [
-      {
-        "id": "e7c8e112905b94e1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TLRY",
-        "scope": "ticker",
-        "title": "Why Akanda Stock Is Surging Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52143754/why-akanda-stock-is-surging-wednesday",
-        "published_at": "2026-04-29T18:01:49+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tlry_akanda_surge_apr29",
-        "tickers_mentioned": [
-          "AKND"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "VST": [
-      {
-        "id": "bd45ae9b4c6c530d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VST",
-        "scope": "ticker",
-        "title": "Here's How Much $100 Invested In Vistra 5 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/04/52140146/heres-how-much-100-invested-in-vistra-5-years-ago-would-be-worth-today",
-        "published_at": "2026-04-29T16:45:29+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "vst_historical_performance_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ZM": [
-      {
-        "id": "20692375b6778d5e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ZM",
-        "scope": "ticker",
-        "title": "What's Going On With Zoom Video Stock Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52139550/whats-going-on-with-zoom-video-stock-wednesday",
-        "published_at": "2026-04-29T16:35:58+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "zm_intraday_movement_apr29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TTD": [
-      {
-        "id": "07d3ac435c545d7e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TTD",
-        "scope": "ticker",
-        "title": "The Trade Desk Stock Is Rising: Is This $3 Billion Ad Trend The Next Growth Catalyst?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52133707/the-trade-desk-stock-is-rising-is-this-3-billion-ad-trend-the-next-growth-catalyst",
-        "published_at": "2026-04-29T14:57:23+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ttd_ad_trend_growth_catalyst",
+        "impact": "high",
+        "dedup_group": "qcom_q2_earnings_beat_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": true
+      }
+    ],
+    "AZN": [
+      {
+        "id": "96496928b79c1793",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AZN",
+        "scope": "ticker",
+        "title": "AstraZeneca Flexes Cancer Drugs Performance, Pipeline Strength",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52131694/astrazeneca-flexes-cancer-drugs-performance-pipeline-strength",
+        "published_at": "2026-04-29T14:27:12+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "azn_cancer_drugs_pipeline_strength",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Federal Reserve issued a routine FOMC statement; without details on the decision, surprise direction, or dot-plot revisions, no directional read is possible.",
+      "event_summary": "Fed Chair Powell announces he will remain on the Fed Board of Governors after his chair term ends, signaling continuity in monetary policy stance.",
       "primary_drivers": [
-        "Insufficient information \u2014 headline only, no policy delta disclosed"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "fed_fomc_apr29_2026_statement",
-      "source_news_ids": [
-        "d660eba3801fa410"
-      ],
-      "headlines": [
-        "Federal Reserve issues FOMC statement"
-      ]
-    },
-    {
-      "event_summary": "The Fed held rates steady at its April 2026 meeting, but the decision drew the highest level of FOMC dissent since 1992, signaling deep internal division over the policy path.",
-      "primary_drivers": [
-        "Policy uncertainty / wider distribution of rate path outcomes raises term premium and implied vol",
-        "Status quo on rates (no cut) is a near-term negative for long-duration assets vs. dovish expectations",
-        "Heightened dissent signals cuts may come sooner than the median dot \u2014 a delayed-but-coming dovish read for rate-sensitive sectors"
+        "Reduced uncertainty about Fed policy continuity / dovish-hawkish regime shift",
+        "Lower probability of a more dovish Trump-aligned chair packing the FOMC near-term",
+        "Marginal support for USD and real yields vs. expectations of a faster pivot"
       ],
       "beneficiaries": [
         {
-          "ticker": "CME",
-          "rationale": "FOMC dissent at a 34-year high directly increases interest rate volatility and hedging demand. CME's rate complex (SOFR futures/options, Fed Funds futures) sees volume spikes on policy uncertainty \u2014 this is its single most rate-sensitive product line.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MS",
-          "rationale": "Morgan Stanley's FICC trading desk benefits from elevated rate vol and client repositioning when Fed path becomes contested. Macro trading revenue correlates with MOVE index, which rises on dissent surprises.",
-          "confidence": "medium",
+          "ticker": "JPM",
+          "rationale": "Large money-center bank benefits from continued steady-rate regime and a credible Fed; Powell staying reduces tail risk of politicization that would steepen the curve via term premium but hurt bank credibility/credit spreads. Modest positive.",
+          "confidence": "low",
           "horizon": "days"
-        },
-        {
-          "ticker": "GS",
-          "rationale": "Same mechanism as MS \u2014 rates trading and macro hedging flows pick up materially when FOMC consensus fractures. Goldman has the largest rates franchise on the Street.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "IBKR",
-          "rationale": "Interactive Brokers earns net interest income on client cash balances; rates held steady (vs. priced-in cuts) preserves NII margin. Also benefits from active-trader engagement on volatile macro days.",
-          "confidence": "medium",
-          "horizon": "weeks"
         }
       ],
-      "losers": [
-        {
-          "ticker": "Z",
-          "rationale": "Zillow revenue is tied to housing transaction volume, which is gated on mortgage rates. Hold decision keeps existing-home turnover frozen near multi-decade lows.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "fed_fomc_apr29_2026_dissent",
-      "source_news_ids": [
-        "27ce05c7d4450aab"
-      ],
-      "headlines": [
-        "Fed holds rates steady but with highest level of dissent since 1992"
-      ]
-    },
-    {
-      "event_summary": "Powell announced he will remain on the Fed Board as a governor after his term as Chair ends in mid-May, signaling continuity in monetary policy voting bloc.",
-      "primary_drivers": [
-        "Reduced uncertainty around dovish/hawkish tilt of post-Powell Fed",
-        "Continuity of current policy framework limits regime-change risk",
-        "Signals Powell may act as institutional check against a more dovish Trump-appointed chair"
-      ],
-      "beneficiaries": [],
       "losers": [],
-      "dedup_group": "powell_fed_governor_apr29_2026",
+      "dedup_group": "powell_fed_governor_term_extension",
       "source_news_ids": [
-        "dbbf64e50b897626"
+        "6d48a55410a6940e"
       ],
       "headlines": [
-        "Powell says he\u2019ll stay at Fed as governor after his term as chair ends in mid-May"
+        "Kalshi bettors called it: Powell says he will stay on as Fed governor after chair term ends"
       ]
     },
     {
-      "event_summary": "A CNBC market-color piece noting traders are positioning for ~$800B of stock movement tied to upcoming earnings reports.",
+      "event_summary": "CNBC reports a major dissent at the Fed (implying internal disagreement on rate path), Powell staying in his role, and Boeing taking what the article frames as an unwarranted stock hit.",
       "primary_drivers": [
-        "Elevated implied volatility into earnings season",
-        "Options market makers hedging large gamma exposure"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "earnings_season_volatility_apr29_2026",
-      "source_news_ids": [
-        "bff693144a19b7cc"
-      ],
-      "headlines": [
-        "Traders brace for $800 billion in earnings-related stock movement"
-      ]
-    },
-    {
-      "event_summary": "Mortgage rates jumped to a nearly four-week high as Iran-related geopolitical headlines pushed Treasury yields higher and rattled markets.",
-      "primary_drivers": [
-        "Higher long-end Treasury yields lifting 30Y mortgage rate",
-        "Geopolitical risk premium / oil price spike from Iran tensions",
-        "Reduced housing affordability pressuring purchase and refi volumes"
+        "Fed policy uncertainty / dovish dissent signal raising odds of cuts",
+        "Powell continuity removes leadership-risk premium from rates/USD",
+        "Boeing-specific headline weakness creating potential dislocation in aerospace supply chain"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Direct beneficiary of Iran-driven crude price spike; integrated major with high upstream leverage to Brent moves.",
-          "confidence": "high",
+          "ticker": "BA",
+          "rationale": "CNBC explicitly frames the Boeing decline as 'unwarranted', which is a direct buy-the-dip call from a high-visibility outlet (Cramer/Investing Club). Headline-driven mean reversion candidate over intraday/days.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Permian-weighted pure-play E&P with high beta to crude; Iran headline risk lifts oil price deck.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Iran tensions raise defense spending expectations and missile/air-defense demand (PAC-3, THAAD); classic geopolitical hedge.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon missile and air-defense franchise directly tied to Middle East escalation procurement cycles.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ICE",
-          "rationale": "Owns mortgage tech (Black Knight/Encompass) but more importantly benefits from energy futures volume spike on its ICE Brent complex.",
+          "ticker": "GE",
+          "rationale": "GE Aerospace supplies LEAP engines for the 737 MAX; correlated rebound trade if Boeing dislocation is faded, plus benefits from any dovish Fed dissent via lower discount rate on long-duration aerospace cash flows.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "DHI",
-          "rationale": "Largest US homebuilder; mortgage rate spike directly hits buyer affordability and cancellation rates, requiring deeper rate buydowns that compress margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LEN",
-          "rationale": "Same mechanism as DHI \u2014 entry-level buyer mix is most rate-sensitive; four-week-high mortgage rates pressure spring selling season orders.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RKT",
-          "rationale": "Rocket Companies' refi-heavy origination volume falls sharply with each leg higher in mortgage rates; near-pure-play exposure.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UWMC",
-          "rationale": "Wholesale mortgage originator with thin margins; rate surge kills refi pipeline and slows purchase locks.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow transaction and Premier Agent revenue tied to housing turnover, which falls when mortgage rates spike and lock-in effect intensifies.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OPEN",
-          "rationale": "Opendoor holds inventory funded with floating-rate facilities; rising rates compress spreads and slow home resales, double hit.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Iran headlines push jet fuel higher via crude; airlines historically the cleanest short on Middle East geopolitical risk premium.",
-          "confidence": "medium",
+          "ticker": "AIR",
+          "rationale": "AAR Corp is an aftermarket/MRO play; if Boeing OEM narrative dominates and aerospace sentiment is mixed, less direct beneficiary of a BA-specific rebound.",
+          "confidence": "low",
           "horizon": "days"
         }
       ],
-      "dedup_group": "iran_headlines_mortgage_rates_apr29_2026",
+      "dedup_group": "fed_dissent_powell_extension",
       "source_news_ids": [
-        "54674637f3098078"
+        "f30b69105824a46f"
       ],
       "headlines": [
-        "Mortgage rates surge to nearly four-week high as Iran headlines impact markets"
+        "Major Fed rate dissent, Powell to stay on \u2014 plus, Boeing takes an unwarranted hit"
       ]
     }
   ]
