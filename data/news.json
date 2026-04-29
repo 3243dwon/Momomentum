@@ -1,23 +1,152 @@
 {
-  "generated_at": "2026-04-28T19:44:54.649773-04:00",
-  "ticker_news": {
-    "CCJ": [
-      {
-        "id": "27b5c6263e6df41f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CCJ",
-        "scope": "ticker",
-        "title": "If You Invested $100 In Cameco Stock 5 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/04/52116480/if-you-invested-100-in-cameco-stock-5-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-04-28T23:30:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ccj_historical_return_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-04-28T23:38:11.952704-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "U.S. Treasury warned global banks of sanctions risk for financing Chinese independent \"teapot\" refineries that process Iranian crude oil disguised as Malaysian blend, signaling escalation of secondary sanctions enforcement.",
+      "primary_drivers": [
+        "Reduced effective Iranian crude supply to global market via Chinese teapot channel",
+        "Higher compliance/financing friction for Iran-Russia barrel buyers, widening Brent-discounted-crude spreads",
+        "Bullish marginal-barrel pricing for non-sanctioned crude producers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with ~3.8M bpd upstream production; every $1 increase in Brent from tighter Iranian supply flows directly to upstream earnings. No Iranian/Russian crude exposure means pure beneficiary of price lift.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Pure-play beneficiary of Brent uplift with significant Permian and Kazakh production; no sanctioned-barrel exposure. Direct leverage to crude price step-up if Iranian ~1.5M bpd gets squeezed harder.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure E&P with highest beta to crude prices among large-caps; no downstream offset. Tighter sanctions enforcement = tighter global supply = direct EPS uplift.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with high crude-price torque; Diamondback's earnings sensitivity to WTI is among the highest in large-cap E&P, benefits directly from any sanctions-driven price firming.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "US Gulf Coast refiner that competes globally with Chinese teapot refiners for product exports (diesel, gasoline) to Latin America/Europe. If teapots lose discounted Iranian feedstock, their cost advantage erodes and Valero's export margins improve.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Largest US refiner by capacity; same teapot-competition dynamic \u2014 Chinese teapots running on cheap Iranian barrels have pressured Asian product cracks. Sanctions enforcement could lift global refining margins.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta US oil producer with concentrated Permian exposure and net-debt structure that benefits disproportionately from crude price upside via cash flow deleveraging.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PBR",
+          "rationale": "Petrobras sells heavy Brazilian crude into China; if teapots are starved of Iranian barrels, that's actually mixed \u2014 but Petrobras already supplies Chinese state refiners, not teapots, and faces risk if Chinese banks broadly de-risk crude trade financing.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAC",
+          "rationale": "Danaos and other product/crude tanker operators with exposure to the Iran-China dark-fleet trade could see disruption; though tighter sanctions historically lengthen ton-miles (positive), enforcement targeting financing could shrink the trade itself.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DK",
+          "rationale": "Delek and other small US refiners with thin margins face headwind if crude input costs rise faster than product cracks can re-price; smaller refiners have less hedging flexibility than majors.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "us_sanctions_iran_oil_china_refineries",
+      "source_news_ids": [
+        "c94b521c811e8a93"
+      ],
+      "headlines": [
+        "U.S. warns banks of sanctions risk over China \u2018teapot\u2019 refineries handling Iranian oil"
+      ]
+    },
+    {
+      "event_summary": "An unexpected OPEC supply decision (implied production shock) combined with tech sector weakness pressured Wall Street, with Asian markets opening mixed in response.",
+      "primary_drivers": [
+        "OPEC supply shock altering crude oil price trajectory",
+        "Tech sector de-risking / multiple compression",
+        "Cross-asset risk-off rotation into energy and away from high-duration growth"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with direct upstream leverage to crude price moves; an OPEC supply cut lifts realized prices on ~2.3M bpd of production. If the 'shock' is a surprise increase, flip to losers \u2014 but headline framing as 'shock' dragging equities suggests bullish-for-oil price action.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Pure peer-correlation play to XOM with similar upstream exposure; moves tightly with WTI/Brent on OPEC headlines.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-concentrated E&P with high oil-price beta (no refining offset); historically among the strongest movers on OPEC supply surprises. Buffett-backed positioning adds flow support.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services bellwether \u2014 sustained higher crude prices drive E&P capex revisions, directly lifting completions and drilling activity revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs at major US carriers; an OPEC-driven crude spike compresses margins with limited near-term hedging offset and weak pricing power into summer travel.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Most fuel-cost-sensitive major US airline (lower hedge book in recent years, point-to-point domestic model with thinner margins than legacies).",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NVDA",
+          "rationale": "Epicenter of 'tech jitters' framing; highest-beta megacap to AI-trade de-risking and the most-owned crowded long, making it the marginal sell when tech sentiment cracks.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operators have outsized bunker fuel exposure (~10-12% of opex) and discretionary demand sensitivity; double-hit from higher oil and risk-off tape.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "opec_production_shock_april_2026",
+      "source_news_ids": [
+        "30c3993ff6ee31b8"
+      ],
+      "headlines": [
+        "Asia-Pacific markets open mixed after OPEC shock, tech jitters drag Wall Street lower"
+      ]
+    }
+  ]
 }
