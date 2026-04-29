@@ -1,228 +1,468 @@
 {
-  "generated_at": "2026-04-29T05:57:48.015955-04:00",
+  "generated_at": "2026-04-29T07:27:02.403231-04:00",
   "ticker_news": {
-    "NVDA": [
-      {
-        "id": "fefe17b6c22dcb8e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "'This Is Madness': Investors Chasing Chip Stocks At Risky Extremes",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52120064/this-is-madness-investors-chasing-chip-stocks-at-risky-extremes",
-        "published_at": "2026-04-29T09:58:38+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "chip_stock_valuation_concerns",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "a826b3f69fcb623f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Insights Into NVIDIA's Performance Versus Peers In Semiconductors &amp; Semiconductor Equipment Sector",
-        "url": "https://www.benzinga.com/insights/news/26/04/52120063/insights-into-nvidias-performance-versus-peers-in-semiconductors-amp-semiconductor-equipment-sector",
-        "published_at": "2026-04-29T09:58:33+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvda_sector_performance_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "27587490bc838435",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Will S&P 500 Open Up Or Down On April 29?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52119469/sp500-april-29-open-up-or-down-polymarket-fed-big-tech-earnings",
-        "published_at": "2026-04-29T08:50:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_market_open_preview",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "OI": [
-      {
-        "id": "2db51104fbba019f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OI",
-        "scope": "ticker",
-        "title": "Why Seagate Shares Are Trading Higher By Around 18%; Here Are 20 Stocks Moving Premarket",
-        "url": "https://www.benzinga.com/news/26/04/52119923/why-seagate-shares-are-trading-higher-by-around-18-here-are-20-stocks-moving-premarket",
-        "published_at": "2026-04-29T09:39:19+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "seagate_premarket_move",
-        "tickers_mentioned": [
-          "STX"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ARM": [
-      {
-        "id": "524b518654fffdac",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "What's Going On With Taiwan Semiconductor Stock Tuesday?",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52119778/whats-going-on-with-taiwan-semiconductor-stock-tuesday-3",
-        "published_at": "2026-04-29T09:33:13+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "taiwan_semiconductor_price_move",
-        "tickers_mentioned": [
-          "TSM"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "GM": [
       {
-        "id": "d1c838017f8a703f",
+        "id": "6c0a207391d5a049",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GM",
         "scope": "ticker",
-        "title": "Nasdaq Tumbles Over 200 Points Amid Tech Sell-Off: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52119106/nasdaq-tumbles-over-200-points-amid-tech-sell-off-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
-        "published_at": "2026-04-29T08:00:02+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_tech_selloff_april_29_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "title": "GM To Roll Out Google Gemini AI Across 4 Million Cars: Here's What Owners Need To Know",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52123497/gm-to-roll-out-google-gemini-ai-across-4-million-cars-heres-what-owners-need-to-know",
+        "published_at": "2026-04-29T11:28:44+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "gm_google_gemini_ai_rollout",
+        "tickers_mentioned": [
+          "GOOGL"
+        ],
+        "route_to_synthesis": true
       }
     ],
-    "KO": [
+    "CNC": [
       {
-        "id": "d1c838017f8a703f",
+        "id": "8501f71f66da4066",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "KO",
+        "ticker": "CNC",
         "scope": "ticker",
-        "title": "Nasdaq Tumbles Over 200 Points Amid Tech Sell-Off: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52119106/nasdaq-tumbles-over-200-points-amid-tech-sell-off-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
-        "published_at": "2026-04-29T08:00:02+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_tech_selloff_april_29_2026",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
+      },
+      {
+        "id": "8501f71f66da4066",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CNC",
+        "scope": "ticker",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ],
-    "V": [
+    "RLAY": [
       {
-        "id": "29abcbe3f98ccbe1",
+        "id": "8501f71f66da4066",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "V",
+        "ticker": "RLAY",
         "scope": "ticker",
-        "title": "Visa Moves Billions, Makes Billions \u2014 And Raises Outlook",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52119989/visa-moves-billions-makes-billions-and-raises-outlook",
-        "published_at": "2026-04-29T09:48:19+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "visa_raised_outlook_april_2026",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "8501f71f66da4066",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RLAY",
+        "scope": "ticker",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
         "tickers_mentioned": [],
         "route_to_synthesis": true
       }
     ],
     "SBUX": [
       {
-        "id": "679a0f6d85e82437",
+        "id": "8501f71f66da4066",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SBUX",
         "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, Nasdaq Futures Gain Ahead Of Powell's Last Speech As Fed Chair\u2014 Robinhood, Starbucks, Alphabet In Focus",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52119481/stock-market-today-dow-jones-nasdaq-futures-gain-ahead-of-powells-last-speech-as-fed-chair-robinhood-starbucks-alphabet-in-focus",
-        "published_at": "2026-04-29T08:50:49+00:00",
-        "type": "macro_fed",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "8501f71f66da4066",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SBUX",
+        "scope": "ticker",
+        "title": "Starbucks To Rally More Than 18%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52123452/starbucks-to-rally-more-than-18-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-04-29T11:27:19+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sbux_analyst_forecasts_april_29",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "e8a4cb740d9d7d8c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia CEO Jensen Huang Calls AI 'Brand New' Jobs' Creator, But Warns It Will Transform Every Role: 'Many New Ones Will Be...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52123201/nvidia-ceo-jensen-huang-calls-ai-brand-new-jobs-creator-but-warns-it-will-transform-every-role-many-new-ones-will-be",
+        "published_at": "2026-04-29T11:13:34+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "powell_final_speech_april_29_2026",
+        "dedup_group": "jensen_huang_ai_jobs_commentary",
         "tickers_mentioned": [
-          "HOOD",
-          "GOOGL"
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e8a4cb740d9d7d8c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia CEO Jensen Huang Calls AI 'Brand New' Jobs' Creator, But Warns It Will Transform Every Role: 'Many New Ones Will Be...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52123201/nvidia-ceo-jensen-huang-calls-ai-brand-new-jobs-creator-but-warns-it-will-transform-every-role-many-new-ones-will-be",
+        "published_at": "2026-04-29T11:13:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "jensen_huang_ai_jobs_commentary",
+        "tickers_mentioned": [
+          "NVDA"
         ],
         "route_to_synthesis": false
       }
     ],
-    "SPOT": [
+    "RDDT": [
       {
-        "id": "123dde081c300036",
+        "id": "e8a4cb740d9d7d8c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SPOT",
+        "ticker": "RDDT",
         "scope": "ticker",
-        "title": "Spotify Executives Say AI Is Doubling Employee Productivity While Keeping Headcount Flat: 'We Did A Resizing...'",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52119038/spotify-executives-say-ai-is-doubling-employee-productivity-while-keeping-headcount-flat-we-did-a-resizing",
-        "published_at": "2026-04-29T07:36:11+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "spotify_ai_productivity_headcount",
+        "title": "Nvidia CEO Jensen Huang Calls AI 'Brand New' Jobs' Creator, But Warns It Will Transform Every Role: 'Many New Ones Will Be...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52123201/nvidia-ceo-jensen-huang-calls-ai-brand-new-jobs-creator-but-warns-it-will-transform-every-role-many-new-ones-will-be",
+        "published_at": "2026-04-29T11:13:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "jensen_huang_ai_jobs_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e8a4cb740d9d7d8c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RDDT",
+        "scope": "ticker",
+        "title": "Nvidia CEO Jensen Huang Calls AI 'Brand New' Jobs' Creator, But Warns It Will Transform Every Role: 'Many New Ones Will Be...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52123201/nvidia-ceo-jensen-huang-calls-ai-brand-new-jobs-creator-but-warns-it-will-transform-every-role-many-new-ones-will-be",
+        "published_at": "2026-04-29T11:13:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "jensen_huang_ai_jobs_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ETSY": [
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ETSY",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ETSY",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "GEHC": [
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GEHC",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GEHC",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KGC": [
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KGC",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KGC",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KRG": [
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KRG",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KRG",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee754d2c46ddac76",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For April 29, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/04/52123147/earnings-scheduled-for-april-29-2026",
+        "published_at": "2026-04-29T11:11:48+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "earnings_scheduled_april_29_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Oil prices extend rally with Brent topping $115/bbl after Trump issues new threat to Iran, raising Middle East supply risk premium.",
+      "event_summary": "Fed expected to hold rates steady at what may be Powell's final FOMC meeting, with succession uncertainty looming.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude from potential Iran sanctions/conflict",
-        "Higher realized crude prices boosting upstream cash flow",
-        "Higher fuel input costs squeezing transport/consumer margins"
+        "No change in policy rate (neutral for rate-sensitives)",
+        "Powell succession uncertainty raises probability of more dovish/politically-aligned successor",
+        "Term premium / long-end curve uncertainty around Fed independence"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "fed_april_2026_meeting_powell_era",
+      "source_news_ids": [
+        "3e98628f2248b05c"
+      ],
+      "headlines": [
+        "Fed likely to hold rates steady at what may be last meeting of Powell era"
+      ]
+    },
+    {
+      "event_summary": "Bond market is again pressuring Washington, with long-end Treasury yields rising as investors push back on US fiscal/policy stance.",
+      "primary_drivers": [
+        "Higher long-end Treasury yields raise discount rates on long-duration assets",
+        "Steeper curve / wider net interest margins for banks",
+        "Fiscal credibility concerns weaken USD-duration assets and support hard-asset hedges"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream production (~3.7M boe/d); each $10/bbl move in Brent flows directly to upstream EBITDA. Brent at $115 is well above marginal cost, driving FCF and buyback expansion.",
+          "ticker": "NEM",
+          "rationale": "Newmont's earnings lever directly to gold price; gold tends to bid when bond market signals loss of confidence in US fiscal policy.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Schwab's net interest revenue is highly sensitive to a steeper curve; rising long yields without commensurate front-end moves expand reinvestment yields on its securities portfolio.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Large-bank NIMs benefit from curve steepening as long-end yields rise; JPM's securities book reprices favorably on bond selloff.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MET",
+          "rationale": "Life insurer with long-dated liabilities \u2014 higher long yields improve reinvestment economics and discount value of liabilities, boosting book value and earnings power.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a pure long-duration triple-net REIT; cap-rate expansion from rising 10/30yr yields directly compresses its valuation multiple.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Similar pure-play integrated leverage to Brent; ~50%+ upstream earnings mix. Permian and Gulf assets monetize directly at higher crude realizations.",
+          "ticker": "DHI",
+          "rationale": "Homebuilders take a direct hit when 10yr yields rise \u2014 mortgage rates follow, suppressing affordability and order volumes; DHI is the largest US builder.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "bond_market_testing_washington",
+      "source_news_ids": [
+        "eb88da673c62e624"
+      ],
+      "headlines": [
+        "The bond market is testing Washington again: Chart of the Day"
+      ]
+    },
+    {
+      "event_summary": "Spot crude oil premiums are easing from record highs despite the Strait of Hormuz remaining closed, suggesting the market is pricing in either alternative supply routes, SPR releases, or expectations of a near-term resolution.",
+      "primary_drivers": [
+        "Mean-reversion in crude spot premiums after panic spike",
+        "Continued Hormuz closure keeps a structural risk premium in tankers/shipping and non-Gulf producers",
+        "Easing premiums relieve margin pressure on refiners and crude consumers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline operates VLCCs; Hormuz closure forces longer-haul routings (West Africa, Brazil, US Gulf to Asia) that structurally tighten tanker supply. Even with spot crude easing, ton-mile demand and tanker day rates remain elevated as long as the strait is shut.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Highest-beta US large-cap E&P to oil price due to Permian concentration and residual debt load \u2014 operating leverage amplifies move. Buffett-backed positioning attracts flows on oil rallies.",
+          "ticker": "INSW",
+          "rationale": "International Seaways \u2014 pure-play crude tanker operator benefiting from same ton-mile expansion thesis as FRO; rates lag spot crude moves and stay bid while routing disruption persists.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "APA",
-          "rationale": "Direct geopolitical exposure \u2014 operates in Egypt and has had North Sea/Suriname assets; high beta to Brent specifically (not just WTI) given international production mix.",
+          "ticker": "DHT",
+          "rationale": "DHT Holdings VLCC fleet directly leveraged to Hormuz-detour ton-mile demand; tanker equities often outperform when crude itself stops rising because the disruption premium migrates from barrels to freight.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PSX",
+          "rationale": "Phillips 66 refining margins compress when crude spikes faster than product cracks; easing crude premiums while gasoline/diesel cracks stay elevated (due to supply fears) expands 3-2-1 crack spread.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services with outsized international/Middle East revenue exposure (~60% intl); sustained $100+ Brent triggers capex upcycle and pricing power on completions.",
+          "ticker": "MPC",
+          "rationale": "Marathon Petroleum is largely a US Gulf/midcon refiner sourcing non-Gulf crude; benefits from crude price relief while retail/product prices remain sticky-high from the Hormuz scare.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "FANG",
-          "rationale": "Permian pure-play with low breakevens (~$40); $115 Brent translates to massive FCF yield and variable dividend uplift.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere benefits from oil-linked LNG contracts in Asia and wider TTF/Henry Hub spreads as European buyers price in Middle East supply risk to all hydrocarbons.",
+          "rationale": "Diamondback is a Permian pure-play; non-OPEC US shale producers retain a structural bid as long as Hormuz is closed (replacement-barrel thesis) even as spot premiums normalize from the spike.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -230,53 +470,23 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; airlines have limited near-term hedging at $115 Brent and weak pricing power to fully pass through. Direct margin compression.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost structure as DAL; international long-haul routes especially sensitive given fuel-burn intensity. Consensus EPS at risk on sustained crude rally.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedges but exposure remains; domestic leisure demand also softens as gasoline prices follow crude higher, hitting both cost and revenue sides.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Fuel surcharges lag spot diesel/jet by weeks; ground and Express segments see margin compression on rapid crude spikes before pricing catches up.",
-          "confidence": "medium",
+          "rationale": "Delta has minimal fuel hedges and jet fuel cracks remain elevated due to Hormuz fears; even with spot crude easing, jet fuel lags lower and the airline already priced in some relief on the initial spike \u2014 risk is asymmetric if premiums re-widen.",
+          "confidence": "low",
           "horizon": "days"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Bunker fuel is a major cost line for cruise operators; $115 Brent meaningfully pressures yields just as discretionary travel demand may also weaken on consumer fuel inflation.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstocks track crude; commodity chemicals face margin squeeze as input costs rise faster than they can pass through to industrial buyers.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Higher gasoline prices act as a tax on low/middle-income consumers \u2014 Walmart's core demographic \u2014 pressuring discretionary general merchandise mix even as grocery holds.",
+          "ticker": "XOM",
+          "rationale": "Integrated majors gave up some upside as crude premiums normalize; ExxonMobil's upstream leverage to oil price means it underperforms pure tankers/refiners in this specific 'crude down, freight up, cracks up' regime.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
-      "dedup_group": "oil_rally_iran_trump_april_2026",
+      "dedup_group": "crude_premiums_hormuz_closure",
       "source_news_ids": [
-        "4d7c2383cca19089"
+        "421de3ebf25ddc11"
       ],
       "headlines": [
-        "Oil prices extend multi-day rally as Trump issues new threat to Iran; Brent tops $115 per barrel"
+        "Spot crude premiums ease from record highs despite Hormuz closure"
       ]
     }
   ]
