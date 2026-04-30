@@ -1,198 +1,444 @@
 {
-  "generated_at": "2026-04-30T02:32:09.212123-04:00",
+  "generated_at": "2026-04-30T05:58:44.491429-04:00",
   "ticker_news": {
-    "INTC": [
-      {
-        "id": "0a20eeaf7923e1a7",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Trump Says US Made Over $30 Billion On Intel Stock In Just 90 Days: 'I Have Been Very Successful...'",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52158908/trump-says-us-made-30-billion-on-intel-stock-in-just-90-days",
-        "published_at": "2026-04-30T05:18:59+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_intel_stock_gains_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "NVDA": [
       {
-        "id": "791c05b0f1765596",
+        "id": "30b913545698dcb6",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Samsung Posts Record Profit As AI Memory Boom Drives Chip Surge",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52158642/samsung-posts-record-profit-as-ai-memory-boom-drives-chip-surge",
-        "published_at": "2026-04-30T04:10:38+00:00",
+        "title": "Inquiry Into NVIDIA's Competitor Dynamics In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/04/52161156/inquiry-into-nvidias-competitor-dynamics-in-semiconductors-amp-semiconductor-equipment-industry",
+        "published_at": "2026-04-30T09:58:26+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "nvda_competitor_dynamics_inquiry",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c2edc2ab0aad6eaa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Sergey Brin, Who Fled The Soviet Union, Now Warns California Could Head The Same Way As He Spends $57 Million Fighting Billionaire Tax",
+        "url": "https://www.benzinga.com/markets/treasuries/26/04/52161131/sergey-brin-who-fled-the-soviet-union-now-warns-california-could-head-the-same-way-as-he-spends-57-million-fighting-billionaire-tax",
+        "published_at": "2026-04-30T09:53:45+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "samsung_record_profit_ai_memory",
+        "dedup_group": "brin_california_tax_political",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0006f21c6d1fa016",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Could Ford Join The Robotaxi Race? Jim Farley's Cryptic Response Hints At Possible Ride-Hailing Goals",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52160284/could-ford-join-the-robotaxi-race-jim-farleys-cryptic-response-hints-at-possible-ride-hailing-goals",
+        "published_at": "2026-04-30T08:09:31+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "ford_robotaxi_speculation",
+        "tickers_mentioned": [
+          "F"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ff411b46bbae5c5f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Kevin O'Leary Calls California 'Worst Managed State,' Says Wealth Tax Plan Is 'Unconstitutional,' Will Drive Exodus",
+        "url": "https://www.benzinga.com/news/politics/26/04/52159855/kevin-oleary-calls-california-worst-managed-state-says-wealth-tax-plan-is-unconstitutional-will-drive-exodus",
+        "published_at": "2026-04-30T07:32:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "oleary_california_tax_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AZN": [
+      {
+        "id": "5b55109e7e4c0530",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AZN",
+        "scope": "ticker",
+        "title": "Elizabeth Warren Calls Trump's '600%' Drug Price Claim Mathematically Impossible: 'His Promise Is As Empty As\u2026'",
+        "url": "https://www.benzinga.com/news/health-care/26/04/52160530/elizabeth-warren-calls-trumps-600-drug-price-claim-mathematically-impossible-his-promise-is-as-empty-as",
+        "published_at": "2026-04-30T08:43:29+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_drug_price_claims_political",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MA": [
+      {
+        "id": "8a8eb8cf60a18d9d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MA",
+        "scope": "ticker",
+        "title": "Dow Tumbles Over 250 Points As Oil Prices Rally: Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52159755/dow-tumbles-over-250-points-as-oil-prices-rally-fear-index-remains-in-greed-zone",
+        "published_at": "2026-04-30T07:13:07+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "oil_rally_market_weakness_april_30",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "551da08ea52d4b71",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MA",
+        "scope": "ticker",
+        "title": "Top Wall Street Forecasters Revamp Mastercard Expectations Ahead Of Q1 Earnings",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52159538/top-wall-street-forecasters-revamp-mastercard-expectations-ahead-of-q1-earnings",
+        "published_at": "2026-04-30T06:59:49+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "ma_q1_analyst_revisions_april_30",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "af1a917a4e5b39bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Why Qualcomm Shares Are Trading Higher By Over 10%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52160875/why-qualcomm-shares-are-trading-higher-by-over-10-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-04-30T09:26:06+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qcom_premarket_move_april_30",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "XOM": [
+      {
+        "id": "c1d02e11fb954d16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "XOM",
+        "scope": "ticker",
+        "title": "Marathon Petroleum Stock Is Trending Overnight: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52160053/marathon-petroleum-stock-is-trending-overnight-heres-why",
+        "published_at": "2026-04-30T07:48:45+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mpc_stock_trending_apr2026",
+        "tickers_mentioned": [
+          "MPC"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Volkswagen Q1 profit fell 14% due to US tariff pressure and intensifying Chinese EV competition.",
+      "event_summary": "Oil spikes above $120/bbl to a four-year high on reports Trump is weighing further military action against Iran, raising Middle East supply-disruption risk.",
       "primary_drivers": [
-        "US auto tariff cost absorption squeezing foreign OEM margins",
-        "Chinese domestic EV makers taking share from legacy Western brands in China",
-        "Read-across to other European/Japanese OEMs with US import exposure"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GM",
-          "rationale": "Predominantly US-domestic production footprint vs VW; gains relative competitive positioning as tariffs hurt European imports. Also benefits from VW ceding ground but GM's own China JV (SAIC-GM) is a partial offset.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Similar to GM \u2014 heavy US manufacturing base means less tariff exposure than VW; Ford's truck/SUV mix has minimal overlap with VW's tariff-hit imports, allowing relative share gain in US.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Direct beneficiary in two ways: (1) US-built vehicles avoid import tariffs that hit VW's ID4/Audi lineup, (2) competes directly with VW EVs in Europe and US where VW is now margin-constrained.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "STLA",
-          "rationale": "Stellantis has very similar profile to VW: European-headquartered OEM with significant US import exposure (Jeep, Ram partially, plus Fiat/Alfa/Maserati fully imported) and weak China position. Tariff read-across is direct.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TM",
-          "rationale": "Toyota \u2014 large share of US sales are imports from Japan; same tariff transmission mechanism, though Toyota has more US plants than VW so impact is partial.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HMC",
-          "rationale": "Honda \u2014 meaningful US import share (especially Acura, CR-V from Canada/Mexico/Japan); tariff regime is a shared headwind highlighted by VW's miss.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APTV",
-          "rationale": "Aptiv supplies VW group heavily; lower VW production volumes and margin pressure flow through to component pricing/volumes for tier-1 suppliers.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MGA",
-          "rationale": "Magna is a major contract manufacturer/supplier to European OEMs including VW Group; weaker VW volumes and pricing pressure compress supplier orders.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "volkswagen_q1_tariff_china_pressure",
-      "source_news_ids": [
-        "1756cae53d813be8"
-      ],
-      "headlines": [
-        "Volkswagen posts 14% drop in first-quarter profit on tariff pressure, China competition"
-      ]
-    },
-    {
-      "event_summary": "Oil prices surge on Iran-related news pressuring European equities lower ahead of ECB and BOE rate decisions.",
-      "primary_drivers": [
-        "Crude oil price spike lifts E&P revenue and refining crack spreads",
-        "Geopolitical risk premium boosts defense and safe-haven demand",
-        "Higher energy input costs squeeze margins for fuel-intensive consumers (airlines, chemicals)"
+        "Geopolitical risk premium on crude (Strait of Hormuz / Iranian export disruption fears)",
+        "Higher realized prices flowing to upstream E&P revenue and cash flow",
+        "Cost-pass-through pressure on fuel-intensive consumers (airlines, transports, chemicals)"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with ~70% upstream earnings leverage; every $10/bbl move in Brent adds materially to quarterly EPS. Direct beneficiary of oil price surge.",
+          "rationale": "Largest US integrated with significant upstream Permian + offshore production; ~40-50% of earnings tied to upstream realizations, so a $120 print materially lifts quarterly EPS run-rate.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "Highest-beta US large-cap E&P to crude prices given Permian pure-play exposure and elevated leverage; trades as a leveraged bet on WTI.",
+          "rationale": "High-leverage Permian pure-play with elevated debt load \u2014 operating leverage to crude prices is among the highest in large-cap E&P; Buffett-backed name often used as oil-spike proxy.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play E&P with no refining offset; nearly 1:1 free-cash-flow sensitivity to WTI, and variable dividend policy means cash returns scale directly with crude.",
+          "confidence": "high",
+          "horizon": "weeks"
         },
         {
           "ticker": "APA",
-          "rationale": "Significant Egyptian/North Sea production gives direct Brent exposure; small-cap E&P with high oil-price torque.",
+          "rationale": "High-beta E&P with material Egyptian (Middle East-region) and North Sea exposure; historically among the largest movers on geopolitical oil spikes due to balance-sheet leverage.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Iran-related geopolitical escalation typically drives defense rotation; Lockheed has direct missile defense (THAAD, PAC-3) exposure to Middle East tensions.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Patriot missile and Tomahawk maker with material Middle East FMS pipeline; benefits from sustained Iran risk premium.",
+          "ticker": "HAL",
+          "rationale": "Oilfield services lever \u2014 sustained $120 crude reignites US shale completion activity and pricing power on frac fleets; Halliburton has the highest North America revenue mix among majors.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "VLO",
-          "rationale": "Refiner with high complexity; supply-disruption-driven crude spikes often widen product cracks more than crude rises, expanding margins.",
+          "ticker": "LNG",
+          "rationale": "Cheniere's LNG netbacks track Brent-linked Asian/European contracts; an Iran conflict raises European gas premia and lifts spot LNG cargo margins on its Sabine/Corpus volumes.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Direct beneficiary of Middle East kinetic action \u2014 PAC-3, THAAD, JASSM and Hellfire restock orders historically follow regional conflicts; Saudi/Israeli FMS pipeline accelerates.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot interceptor and Tomahawk producer; missile-defense consumption in any Iran exchange drives replenishment contracts, and Pratt engines benefit from higher defense flying hours.",
+          "confidence": "medium",
+          "horizon": "months"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs and Delta has limited hedging; oil surge directly compresses margins. Pure-play exposure to higher crude.",
+          "ticker": "AAL",
+          "rationale": "American Airlines has the weakest balance sheet among US legacy carriers and minimal fuel hedging; jet fuel is ~25% of opex and tracks crude with a lag \u2014 $120 oil compresses margins immediately.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same fuel-cost transmission as DAL; United runs largely unhedged and has high international exposure where ticket price elasticity is greater.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedged but current book is light; fuel is its largest variable cost and domestic competition limits fare passthrough.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Ethylene/petrochemical feedstock costs tied to naphtha and natural gas liquids; sustained oil surge compresses chemical margins.",
-          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LYB",
-          "rationale": "Olefins producer with direct hydrocarbon feedstock exposure; margin squeeze when crude rises faster than downstream polymer prices.",
+          "ticker": "UAL",
+          "rationale": "Significant international long-haul exposure (including Middle East/India routes that may face airspace closures) plus jet fuel cost shock; historically high beta to oil spikes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Despite owning Trainer refinery (partial hedge), Delta's overall fuel cost still rises with crack spreads; international premium-cabin demand softens on Middle East travel disruption.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "CCL",
-          "rationale": "Cruise operator with fuel as ~10-15% of costs and no pricing power mid-season; oil spike hits margins and consumer discretionary travel demand simultaneously.",
+          "rationale": "Bunker fuel is a major cost line for Carnival; cruise demand also softens on geopolitical anxiety and consumer-discretionary tightening from gasoline prices.",
           "confidence": "medium",
           "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Express is highly jet-fuel exposed and its fuel surcharge mechanism lags spot prices by weeks, creating a near-term margin squeeze.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha feedstock costs rise with crude; commodity chemicals producer with limited ability to pass through costs into a softening industrial demand backdrop.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Gasoline price spike acts as a regressive tax on Walmart's core lower-income consumer, compressing discretionary basket size \u2014 historically negative correlation with sustained oil shocks.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "european_markets_oil_surge_ecb_boe",
+      "dedup_group": "oil_prices_4yr_high_iran_military",
       "source_news_ids": [
-        "4b7edb29a7f99b6e"
+        "6cf8e4d47ef70a8d"
       ],
       "headlines": [
-        "European markets set for lower open as oil prices surge; ECB and BOE decisions ahead"
+        "Oil prices climb to four-year high above $120 after report that Trump is considering further military action in Iran"
+      ]
+    },
+    {
+      "event_summary": "The U.S. is considering reducing troop levels in Germany amid escalating tensions between the Trump administration and Berlin, signaling a potential shift in NATO burden-sharing.",
+      "primary_drivers": [
+        "Pressure on European allies to increase domestic defense spending to offset reduced U.S. presence",
+        "Geopolitical uncertainty raising risk premium on transatlantic relations",
+        "Potential reallocation of U.S. defense logistics/basing footprint"
+      ],
+      "beneficiaries": [],
+      "losers": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed has significant European F-35 backlog tied to U.S.-Germany alliance dynamics; a public Trump-Berlin rupture introduces tail risk that Germany could slow-walk or trim future F-35 follow-ons in favor of European alternatives (Eurofighter/FCAS). Second-order, not immediate cancellation.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics' European Land Systems unit competes directly with Rheinmetall; a 'buy European' political response in Berlin could disadvantage GDELS in upcoming Bundeswehr awards.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "trump_troops_germany_geopolitical",
+      "source_news_ids": [
+        "707872e4537dfd71"
+      ],
+      "headlines": [
+        "U.S. weighs 'reduction' of troops in Germany as Trump's feud with Berlin deepens"
+      ]
+    },
+    {
+      "event_summary": "Eurozone inflation reaccelerated to 3% while GDP growth nearly stalled, signaling stagflation risk in Europe.",
+      "primary_drivers": [
+        "ECB policy dilemma \u2014 sticky inflation prevents rate cuts despite weak growth",
+        "Euro weakness vs USD as growth differential favors US",
+        "European demand destruction hitting cyclicals with EU revenue exposure"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PM",
+          "rationale": "Philip Morris derives ~60%+ revenue ex-US with significant European exposure but pricing power in tobacco lets it pass through inflation; defensive cash flows outperform in stagflation.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "BUD",
+          "rationale": "AB InBev has substantial European volume exposure; weak EU consumer + inflation squeezing discretionary beer spending hits both volumes and margins, plus euro translation headwind to USD-reported earnings.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STLA",
+          "rationale": "Stellantis \u2014 European auto OEM with ~45% revenue from Europe; stalling growth crushes auto demand while sticky inflation prevents ECB from cutting to support credit-financed purchases.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PHG",
+          "rationale": "Philips \u2014 Netherlands-domiciled with heavy European healthcare capex exposure; hospital and consumer health budgets pressured by EU fiscal tightening amid sticky inflation.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DB",
+          "rationale": "Deutsche Bank \u2014 European bank NIM compressed if ECB forced to hold/cut into weak growth, while loan loss provisions rise on stalling EU economy. Direct stagflation casualty.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MCD",
+          "rationale": "McDonald's generates ~25% of operating income from Europe (IOM segment); weak EU consumer + euro translation drag hits comps and reported earnings.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "eurozone_inflation_3pct_q2_2026",
+      "source_news_ids": [
+        "b3e18940d4bfef02"
+      ],
+      "headlines": [
+        "Euro zone inflation jumps to 3% as economic growth almost stalls"
+      ]
+    },
+    {
+      "event_summary": "Concerns about private credit exposure are weighing on European banks heading into earnings, raising broader contagion fears for lenders with significant private credit and leveraged lending books.",
+      "primary_drivers": [
+        "Counterparty/credit risk repricing in private credit books",
+        "Sentiment spillover to US banks with private credit and leveraged lending exposure",
+        "Potential beneficiaries among direct lenders if banks retrench from the space"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "ARCC",
+          "rationale": "Ares Capital is the largest publicly-traded BDC; if banks pull back from leveraged lending due to scrutiny, direct lenders gain share. However, near-term sentiment may be negative on contagion fears \u2014 net positive only on a months horizon as bank retrenchment plays out.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BX",
+          "rationale": "Blackstone's credit arm (BXC) is a dominant private credit player; bank stress in this segment historically pushes borrowers toward non-bank lenders, expanding Blackstone's deployment opportunities at better spreads.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "GS",
+          "rationale": "Goldman Sachs has meaningful leveraged lending and private credit warehouse exposure; sentiment-driven sympathy selling on European bank private credit fears typically hits GS first among US banks.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "JEF",
+          "rationale": "Jefferies has been flagged repeatedly for leveraged finance and private credit exposure (First Brands, etc.); highest-beta US name to private credit contagion headlines.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MS",
+          "rationale": "Morgan Stanley has a sizeable private credit JV and leveraged lending book; correlates with European bank credit stress narratives.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ARES",
+          "rationale": "Pure-play alternative asset manager heavily levered to private credit AUM growth; mark-to-market and fundraising concerns rise if private credit asset quality is questioned broadly.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BCS",
+          "rationale": "Barclays explicitly named in the article as facing private credit scrutiny this earnings season; ADR will trade directly on the headline.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "UBS",
+          "rationale": "UBS explicitly named; ADR direct exposure to the headline and to private credit risk disclosures at earnings.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "SAN",
+          "rationale": "Santander explicitly named in the article; ADR will trade on private credit risk disclosure concerns at earnings.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "OBDC",
+          "rationale": "Blue Owl's flagship BDC \u2014 pure-play private credit vehicle; NAV and credit quality concerns flow directly through if private credit narrative deteriorates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "private_credit_europe_banks_earnings",
+      "source_news_ids": [
+        "9868e593c18a294a"
+      ],
+      "headlines": [
+        "Private credit fears loom large over Europe\u2019s banks this earnings season"
+      ]
+    },
+    {
+      "event_summary": "Morgan Stanley revised its Fed rate-cut forecast following the latest FOMC meeting \u2014 a sell-side recalibration rather than a fresh policy event.",
+      "primary_drivers": [
+        "Sell-side forecast revision (not actual policy change)",
+        "Ambiguous direction without headline content \u2014 could be more or fewer cuts than prior call"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "morgan_stanley_fed_rate_cuts_fomc",
+      "source_news_ids": [
+        "d59d3a303d96f99b"
+      ],
+      "headlines": [
+        "Why Morgan Stanley shifted its call on Federal Reserve rate cuts after the FOMC meeting"
       ]
     }
   ]
