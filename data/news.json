@@ -1,79 +1,23 @@
 {
-  "generated_at": "2026-04-30T18:42:18.827305-04:00",
+  "generated_at": "2026-04-30T19:43:24.912834-04:00",
   "ticker_news": {
-    "RIOT": [
+    "LLY": [
       {
-        "id": "1983551d7016788d",
+        "id": "634e5dc7595c3ba5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RIOT",
+        "ticker": "LLY",
         "scope": "ticker",
-        "title": "Riot Platforms Q1 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52201518/riot-platforms-q1-2026-earnings-call-complete-transcript",
-        "published_at": "2026-04-30T21:50:21+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "riot_q1_2026_earnings_transcript",
+        "title": "Here's How Much $1000 Invested In Eli Lilly 15 Years Ago Would Be Worth Today",
+        "url": "https://www.benzinga.com/insights/news/26/04/52202995/heres-how-much-1000-invested-in-eli-lilly-15-years-ago-would-be-worth-today",
+        "published_at": "2026-04-30T23:30:42+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "lly_historical_returns_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Gold posted its biggest two-month drop on record, though some analysts still see long-term upside potential of a doubling over five years.",
-      "primary_drivers": [
-        "Sharp decline in spot gold price compresses miner margins and AISC leverage",
-        "Reduced safe-haven demand suggests risk-on rotation / lower tail-risk pricing",
-        "Potential unwind of crowded long-gold positioning"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "JPM",
-          "rationale": "Large money-center bank benefits from risk-on rotation away from safe havens; gold weakness often coincides with stronger USD and risk appetite that supports trading/IB revenue.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "NEM",
-          "rationale": "Newmont is the largest pure-play gold miner; earnings have direct operating leverage to gold price (every $100/oz drop compresses margins materially given ~$1,400 AISC). Biggest 2-month drop ever directly hits Q2 realized prices.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GOLD",
-          "rationale": "Barrick Gold is a near-pure-play producer with similar AISC leverage; revenue and EPS estimates revise down mechanically with spot price decline of this magnitude.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AEM",
-          "rationale": "Agnico Eagle is a pure-play senior gold producer; same direct price exposure on realized ounces sold, and high-cost Canadian operations amplify margin compression.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WPM",
-          "rationale": "Wheaton Precious Metals is a streaming company whose revenue per ounce delivered tracks spot gold; record decline directly compresses cash margin per ounce on its silver/gold streams.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FNV",
-          "rationale": "Franco-Nevada royalty/streaming model has revenue tied to spot gold prices; though lower operating leverage than miners, NAV and dividend coverage compress with sharp price drops.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "gold_biggest_2month_drop_april_2026",
-      "source_news_ids": [
-        "59b86a533c850cb4"
-      ],
-      "headlines": [
-        "Gold posts its biggest 2-month drop ever. How its price could still double over the next 5 years."
-      ]
-    }
-  ]
+  "macro_events": []
 }
