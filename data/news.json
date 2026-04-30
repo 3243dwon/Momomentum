@@ -1,909 +1,481 @@
 {
-  "generated_at": "2026-04-30T11:26:35.845780-04:00",
+  "generated_at": "2026-04-30T12:55:39.886095-04:00",
   "ticker_news": {
-    "F": [
+    "ASTS": [
       {
-        "id": "bb11cf78214dbce4",
+        "id": "5a23c6c84b156bde",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "F",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "Ford Shares Fall Despite Q1 Double Beat",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52170470/ford-shares-fall-despite-q1-double-beat",
-        "published_at": "2026-04-30T13:29:54+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "ford_q1_2026_beat_shares_fall",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2831ca624cebf4af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "GM, Ford, Stellantis Risk Trump Ire With Tariff Refund Tailwind: Report",
-        "url": "https://www.benzinga.com/news/politics/26/04/52165639/gm-ford-stellantis-risk-trump-ire-with-tariff-refund-tailwind-report",
-        "published_at": "2026-04-30T11:30:40+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "gm_ford_stellantis_tariff_refund_trump",
-        "tickers_mentioned": [
-          "GM",
-          "STLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2831ca624cebf4af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "GM, Ford, Stellantis Risk Trump Ire With Tariff Refund Tailwind: Report",
-        "url": "https://www.benzinga.com/news/politics/26/04/52165639/gm-ford-stellantis-risk-trump-ire-with-tariff-refund-tailwind-report",
-        "published_at": "2026-04-30T11:30:40+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "gm_ford_stellantis_tariff_refund_trump",
-        "tickers_mentioned": [
-          "GM",
-          "STLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "CCC": [
-      {
-        "id": "dbc5d6cb2fd97c25",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CCC",
-        "scope": "ticker",
-        "title": "CCC Intelligent Solutions Reports Q1 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52170130/ccc-intelligent-solutions-reports-q1-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-04-30T13:18:52+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "ccc_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CWH": [
-      {
-        "id": "3102e1b4ac1c967a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CWH",
-        "scope": "ticker",
-        "title": "Transcript: Camping World Holdings Q1 2026 Earnings Conference Call",
-        "url": "https://www.benzinga.com/insights/news/26/04/52170012/transcript-camping-world-holdings-q1-2026-earnings-conference-call",
-        "published_at": "2026-04-30T13:15:19+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "camping_world_holdings_q1_2026_earnings_transcript",
-        "tickers_mentioned": [
-          "CWH"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "CMG": [
-      {
-        "id": "fe23b631b4468b31",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CMG",
-        "scope": "ticker",
-        "title": "Chipotle Stock Sizzles: Sales Top Estimates Despite Margin Pressure",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52169926/chipotle-stock-sizzles-sales-top-estimates-despite-margin-pressure",
-        "published_at": "2026-04-30T13:11:48+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "cmg_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ENTG": [
-      {
-        "id": "33030fe1fe5d2a55",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENTG",
-        "scope": "ticker",
-        "title": "Entegris Q1 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52169683/entegris-q1-2026-earnings-call-complete-transcript",
-        "published_at": "2026-04-30T13:07:35+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "entg_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ARM": [
-      {
-        "id": "d39add18918a8d38",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "SoftBank Eyes 2026 IPO For New AI-Robotics Venture, Targets Up To $100 Billion Valuation: Report",
-        "url": "https://www.benzinga.com/markets/ipos/26/04/52168304/softbank-eyes-2026-ipo-for-new-ai-robotics-venture-targets-up-to-100-billion-valuation-report",
-        "published_at": "2026-04-30T12:37:34+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "softbank_ai_robotics_ipo_2026_100b",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "FLS": [
-      {
-        "id": "834d9ea29b306e20",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLS",
-        "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Thursday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52167071/12-industrials-stocks-moving-in-thursdays-pre-market-session",
-        "published_at": "2026-04-30T12:05:54+00:00",
+        "title": "AST SpaceMobile Shares Rebound: What's Happening Today?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52178575/ast-spacemobile-shares-rebound-whats-happening-today",
+        "published_at": "2026-04-30T15:26:03+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "industrials_premarket_movers_april_2026",
-        "tickers_mentioned": [
-          "FLS"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "META": [
-      {
-        "id": "e60390c1905874f9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "One Line In Meta's Earnings Wiped Out The Celebration",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52173656/one-line-in-meta-earnings-wiped-out-the-celebration",
-        "published_at": "2026-04-30T14:15:34+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "meta_earnings_msft_reaction_commentary",
-        "tickers_mentioned": [
-          "META"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b494c8bfa1c52c53",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "China's President Xi Jinping Pushes 'Original And Disruptive' Innovation As US Tightens Tech Grip",
-        "url": "https://www.benzinga.com/markets/asia/26/04/52170176/chinas-president-xi-jinping-pushes-original-and-disruptive-innovation-as-us-tightens-tech-grip",
-        "published_at": "2026-04-30T13:20:28+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "china_xi_innovation_us_tech_restrictions",
-        "tickers_mentioned": [
-          "META"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "8d4b12fef7bfd966",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "Q1 GDP Rises Less Than Expected, Fed's Favorite Inflation Gauge Jumps 3.2% In March (UPDATED)",
-        "url": "https://www.benzinga.com/markets/macro-economic-events/26/04/52168494/us-gdp-q1-pce-inflation-march-2026",
-        "published_at": "2026-04-30T13:11:14+00:00",
-        "type": "macro_econ",
-        "impact": "high",
-        "dedup_group": "q1_2026_gdp_pce_inflation",
+        "dedup_group": "asts_daily_move_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      },
+      }
+    ],
+    "LLY": [
       {
-        "id": "15207d06e1d5610b",
+        "id": "b352c160a9769a88",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "META",
+        "ticker": "LLY",
         "scope": "ticker",
-        "title": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52169569/the-prove-it-quarter-how-meta-microsoft-amazon-and-alphabet-backed-ai-capex-with-real-run-rates",
-        "published_at": "2026-04-30T13:05:09+00:00",
+        "title": "Eli Lilly Raises 2026 Outlook On Strong Mounjaro And Zepbound Demand",
+        "url": "https://www.benzinga.com/markets/earnings/26/04/52180776/eli-lilly-raises-2026-outlook-on-strong-mounjaro-and-zepbound-demand",
+        "published_at": "2026-04-30T16:03:37+00:00",
+        "type": "guidance",
+        "impact": "high",
+        "dedup_group": "lly_2026_guidance_raise_mounjaro_zepbound",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "6965b8dbb7dfb62c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "LLY",
+        "scope": "ticker",
+        "title": "Eli Lilly Q1 2026 Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/04/52178702/eli-lilly-q1-2026-earnings-call-transcript",
+        "published_at": "2026-04-30T15:27:48+00:00",
         "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tech_earnings_ai_capex_analysis_meta_msft_amzn_googl",
-        "tickers_mentioned": [
-          "META",
-          "AMZN",
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "da1be38dae125a51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain As Trump Weighs 'Short And Powerful' Iran Strikes\u2014 Alphabet, Meta, Amazon In Focus (UPDATED)",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52160887/stock-market-today-dow-jones-futures-drop-nasdaq-gains-as-trump-weighs-short-and-powerful-iran-strikes-alphabet-meta-amazon-in-focus",
-        "published_at": "2026-04-30T12:58:29+00:00",
-        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "market_daily_iran_strikes_tech_watch",
-        "tickers_mentioned": [
-          "GOOGL",
-          "META",
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "STLA": [
-      {
-        "id": "2831ca624cebf4af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STLA",
-        "scope": "ticker",
-        "title": "GM, Ford, Stellantis Risk Trump Ire With Tariff Refund Tailwind: Report",
-        "url": "https://www.benzinga.com/news/politics/26/04/52165639/gm-ford-stellantis-risk-trump-ire-with-tariff-refund-tailwind-report",
-        "published_at": "2026-04-30T11:30:40+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "gm_ford_stellantis_tariff_refund_trump",
-        "tickers_mentioned": [
-          "GM",
-          "STLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2831ca624cebf4af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STLA",
-        "scope": "ticker",
-        "title": "GM, Ford, Stellantis Risk Trump Ire With Tariff Refund Tailwind: Report",
-        "url": "https://www.benzinga.com/news/politics/26/04/52165639/gm-ford-stellantis-risk-trump-ire-with-tariff-refund-tailwind-report",
-        "published_at": "2026-04-30T11:30:40+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "gm_ford_stellantis_tariff_refund_trump",
-        "tickers_mentioned": [
-          "GM",
-          "STLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "APLD": [
-      {
-        "id": "4ae0a47e6a719c8e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "APLD",
-        "scope": "ticker",
-        "title": "Jim Cramer Says 'No' To Flagstar Bank And 'Yes' To This Basic Materials Stock",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/04/52165358/jim-cramer-says-no-to-flagstar-bank-and-yes-to-this-basic-materials-stock",
-        "published_at": "2026-04-30T11:22:09+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "cramer_stock_picks_commentary",
-        "tickers_mentioned": [
-          "FSK"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "IP": [
-      {
-        "id": "d88d28b89e5439fa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IP",
-        "scope": "ticker",
-        "title": "International Paper Reports Q1 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52177392/international-paper-reports-q1-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-04-30T15:08:49+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "ip_q1_2026_earnings",
+        "dedup_group": "lly_2026_guidance_raise_mounjaro_zepbound",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "OPCH": [
       {
-        "id": "d3edb1db2fe1fcb3",
+        "id": "b6440e3836ef66ed",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "OPCH",
         "scope": "ticker",
-        "title": "Dow Jumps 300 POints; Amazon Posts Upbeat Earnings",
-        "url": "https://www.benzinga.com/news/26/04/52172052/dow-jumps-300-points-amazon-posts-upbeat-earnings",
-        "published_at": "2026-04-30T13:55:07+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dow_amzn_earnings_recap",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f6314605a6ba8444",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OPCH",
-        "scope": "ticker",
-        "title": "Transcript: Option Care Health Q1 2026 Earnings Conference Call",
-        "url": "https://www.benzinga.com/insights/news/26/04/52172032/transcript-option-care-health-q1-2026-earnings-conference-call",
-        "published_at": "2026-04-30T13:54:49+00:00",
+        "title": "Crude Oil Down 2%; Caterpillar Earnings Top Views",
+        "url": "https://www.benzinga.com/markets/market-summary/26/04/52181604/crude-oil-down-2-caterpillar-earnings-top-views",
+        "published_at": "2026-04-30T16:15:16+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "opch_q1_2026_earnings",
-        "tickers_mentioned": [],
+        "dedup_group": "caterpillar_q1_2026_earnings_beat",
+        "tickers_mentioned": [
+          "CAT"
+        ],
         "route_to_synthesis": true
-      },
-      {
-        "id": "d777ebc2e9c2e512",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OPCH",
-        "scope": "ticker",
-        "title": "12 Health Care Stocks Moving In Thursday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/04/52167073/12-health-care-stocks-moving-in-thursdays-pre-market-session",
-        "published_at": "2026-04-30T12:06:00+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "healthcare_premarket_movers_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
       }
     ],
     "RCL": [
       {
-        "id": "b57ed80d26c2c1ee",
+        "id": "3cab0e7b5e110772",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "RCL",
         "scope": "ticker",
-        "title": "Royal Caribbean Delivers Profit Surprise, Stock Climbs As Demand Holds Strong",
-        "url": "https://www.benzinga.com/markets/earnings/26/04/52175089/royal-caribbean-delivers-profit-surprise-stock-climbs-as-demand-holds-strong",
-        "published_at": "2026-04-30T14:35:00+00:00",
+        "title": "Royal Caribbean Gr Q1 2026 Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/04/52179685/royal-caribbean-gr-q1-2026-earnings-call-transcript",
+        "published_at": "2026-04-30T15:43:51+00:00",
         "type": "earnings",
-        "impact": "high",
-        "dedup_group": "rcl_q1_2026_earnings_beat",
+        "impact": "low",
+        "dedup_group": "rcl_q1_2026_earnings",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ],
     "GOOG": [
       {
-        "id": "f6311e9e8dc175dc",
+        "id": "1da3e2cabbb716f5",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Alphabet's 'Phenomenal' Quarter Powers Biggest Stock Breakout Since 2004",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52178444/alphabet-phenomenal-quarter-powers-biggest-stock-rally-since-2004",
-        "published_at": "2026-04-30T15:23:38+00:00",
-        "type": "earnings",
-        "impact": "high",
-        "dedup_group": "googl_q1_2026_earnings_beat",
+        "title": "Alphabet Stock Is Showing Incredible Strength: What's Happening?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52183411/alphabet-stock-is-showing-incredible-strength-whats-happening",
+        "published_at": "2026-04-30T16:48:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "alphabet_strength_unexplained",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "e60390c1905874f9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOG",
-        "scope": "ticker",
-        "title": "One Line In Meta's Earnings Wiped Out The Celebration",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52173656/one-line-in-meta-earnings-wiped-out-the-celebration",
-        "published_at": "2026-04-30T14:15:34+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "meta_earnings_msft_reaction_commentary",
-        "tickers_mentioned": [
-          "META"
-        ],
         "route_to_synthesis": false
       },
       {
-        "id": "15207d06e1d5610b",
+        "id": "dd6d8b1dabb76498",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52169569/the-prove-it-quarter-how-meta-microsoft-amazon-and-alphabet-backed-ai-capex-with-real-run-rates",
-        "published_at": "2026-04-30T13:05:09+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tech_earnings_ai_capex_analysis_meta_msft_amzn_googl",
-        "tickers_mentioned": [
-          "META",
-          "AMZN",
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "da1be38dae125a51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOG",
-        "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain As Trump Weighs 'Short And Powerful' Iran Strikes\u2014 Alphabet, Meta, Amazon In Focus (UPDATED)",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52160887/stock-market-today-dow-jones-futures-drop-nasdaq-gains-as-trump-weighs-short-and-powerful-iran-strikes-alphabet-meta-amazon-in-focus",
-        "published_at": "2026-04-30T12:58:29+00:00",
-        "type": "macro_geopol",
+        "title": "Alphabet Soars, Meta Sinks As Big Tech Splits \u2014 ETFs Let You Pick The Right Side",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52178697/alphabet-soars-meta-sinks-as-big-tech-splits-etfs-let-you-pick-the-right-side",
+        "published_at": "2026-04-30T15:27:41+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "market_daily_iran_strikes_tech_watch",
+        "dedup_group": "big_tech_splits_etf_commentary",
         "tickers_mentioned": [
           "GOOGL",
-          "META",
-          "AMZN"
+          "META"
         ],
         "route_to_synthesis": false
       }
     ],
     "GOOGL": [
       {
-        "id": "f6311e9e8dc175dc",
+        "id": "1da3e2cabbb716f5",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOGL",
         "scope": "ticker",
-        "title": "Alphabet's 'Phenomenal' Quarter Powers Biggest Stock Breakout Since 2004",
-        "url": "https://www.benzinga.com/markets/tech/26/04/52178444/alphabet-phenomenal-quarter-powers-biggest-stock-rally-since-2004",
-        "published_at": "2026-04-30T15:23:38+00:00",
-        "type": "earnings",
-        "impact": "high",
-        "dedup_group": "googl_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "178e65609548b187",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "Apple Earnings Prediction Market Preview: What Will Tim Cook Say?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52177424/apple-earnings-prediction-market-preview-what-will-tim-cook-say",
-        "published_at": "2026-04-30T15:09:22+00:00",
+        "title": "Alphabet Stock Is Showing Incredible Strength: What's Happening?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52183411/alphabet-stock-is-showing-incredible-strength-whats-happening",
+        "published_at": "2026-04-30T16:48:11+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "aapl_q1_2026_earnings_preview",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
+        "dedup_group": "alphabet_strength_unexplained",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "e60390c1905874f9",
+        "id": "83571ebe035ca9c1",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOGL",
         "scope": "ticker",
-        "title": "One Line In Meta's Earnings Wiped Out The Celebration",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52173656/one-line-in-meta-earnings-wiped-out-the-celebration",
-        "published_at": "2026-04-30T14:15:34+00:00",
+        "title": "Microsoft's AI Engine Roars: Analysts See Real Demand, Not Just Hype",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/04/52182849/microsofts-ai-engine-roars-analysts-see-real-demand-not-just-hype",
+        "published_at": "2026-04-30T16:36:59+00:00",
         "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "msft_ai_demand_analyst_view",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dd6d8b1dabb76498",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOGL",
+        "scope": "ticker",
+        "title": "Alphabet Soars, Meta Sinks As Big Tech Splits \u2014 ETFs Let You Pick The Right Side",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52178697/alphabet-soars-meta-sinks-as-big-tech-splits-etfs-let-you-pick-the-right-side",
+        "published_at": "2026-04-30T15:27:41+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "meta_earnings_msft_reaction_commentary",
+        "dedup_group": "big_tech_splits_etf_commentary",
         "tickers_mentioned": [
+          "GOOGL",
           "META"
         ],
         "route_to_synthesis": false
-      },
-      {
-        "id": "9bfc59a37f8aa36d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "What's Going On With Microsoft Stock Thursday?",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52170503/whats-going-on-with-microsoft-stock-thursday-3",
-        "published_at": "2026-04-30T13:31:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "msft_stock_movement_daily_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "8d4b12fef7bfd966",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "Q1 GDP Rises Less Than Expected, Fed's Favorite Inflation Gauge Jumps 3.2% In March (UPDATED)",
-        "url": "https://www.benzinga.com/markets/macro-economic-events/26/04/52168494/us-gdp-q1-pce-inflation-march-2026",
-        "published_at": "2026-04-30T13:11:14+00:00",
-        "type": "macro_econ",
-        "impact": "high",
-        "dedup_group": "q1_2026_gdp_pce_inflation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "15207d06e1d5610b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52169569/the-prove-it-quarter-how-meta-microsoft-amazon-and-alphabet-backed-ai-capex-with-real-run-rates",
-        "published_at": "2026-04-30T13:05:09+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tech_earnings_ai_capex_analysis_meta_msft_amzn_googl",
-        "tickers_mentioned": [
-          "META",
-          "AMZN",
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "eada05502ff46e13",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "Amazon To Rally More Than 26%? Here Are 10 Top Analyst Forecasts For Thursday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52169306/amazon-to-rally-more-than-26-here-are-10-top-analyst-forecasts-for-thursday",
-        "published_at": "2026-04-30T13:00:33+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "amzn_analyst_forecasts_roundup",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "da1be38dae125a51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain As Trump Weighs 'Short And Powerful' Iran Strikes\u2014 Alphabet, Meta, Amazon In Focus (UPDATED)",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52160887/stock-market-today-dow-jones-futures-drop-nasdaq-gains-as-trump-weighs-short-and-powerful-iran-strikes-alphabet-meta-amazon-in-focus",
-        "published_at": "2026-04-30T12:58:29+00:00",
-        "type": "macro_geopol",
-        "impact": "low",
-        "dedup_group": "market_daily_iran_strikes_tech_watch",
-        "tickers_mentioned": [
-          "GOOGL",
-          "META",
-          "AMZN"
-        ],
-        "route_to_synthesis": false
       }
     ],
-    "NVDA": [
+    "FCEL": [
       {
-        "id": "6b33ff3fc99529bf",
+        "id": "6145f62aaac15bee",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "FCEL",
         "scope": "ticker",
-        "title": "Intel's 115% Stock Boom Is Shattering Records After Years Of Doubt",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52172123/intel-stock-intc-record-rally",
-        "published_at": "2026-04-30T13:55:34+00:00",
+        "title": "Why Is FuelCell Energy Stock Trading Lower On Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52183080/why-is-fuelcell-energy-stock-trading-lower-on-thursday",
+        "published_at": "2026-04-30T16:41:45+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "intc_stock_rally_recap",
-        "tickers_mentioned": [
-          "INTC"
-        ],
+        "dedup_group": "fcel_daily_move_recap",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "178e65609548b187",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Apple Earnings Prediction Market Preview: What Will Tim Cook Say?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/04/52177424/apple-earnings-prediction-market-preview-what-will-tim-cook-say",
-        "published_at": "2026-04-30T15:09:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "aapl_q1_2026_earnings_preview",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "8a4d6176c9c901af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Caterpillar Posts Upbeat Q1 Results, Joins Garrett Motion, Wesco International, TTM Technologies And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/04/52173471/caterpillar-posts-upbeat-q1-results-joins-garrett-motion-wesco-international-ttm-technologies-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-04-30T14:13:38+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "caterpillar_q1_2026_upbeat_results",
-        "tickers_mentioned": [
-          "CAT",
-          "GMRH",
-          "WCC",
-          "TTMI"
-        ],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "8a4d6176c9c901af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Caterpillar Posts Upbeat Q1 Results, Joins Garrett Motion, Wesco International, TTM Technologies And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/04/52173471/caterpillar-posts-upbeat-q1-results-joins-garrett-motion-wesco-international-ttm-technologies-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-04-30T14:13:38+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "caterpillar_q1_2026_upbeat_results",
-        "tickers_mentioned": [
-          "CAT",
-          "GMRH",
-          "WCC",
-          "TTMI"
-        ],
-        "route_to_synthesis": true
       }
     ],
     "PLUG": [
       {
-        "id": "4cb27f6d32f49440",
+        "id": "6145f62aaac15bee",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PLUG",
         "scope": "ticker",
-        "title": "Plug Power Stock Is Sliding: What's Driving The Pullback?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52177244/plug-power-stock-is-sliding-whats-driving-the-pullback",
-        "published_at": "2026-04-30T15:06:13+00:00",
+        "title": "Why Is FuelCell Energy Stock Trading Lower On Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52183080/why-is-fuelcell-energy-stock-trading-lower-on-thursday",
+        "published_at": "2026-04-30T16:41:45+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "plug_stock_movement_inquiry",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "1c3873acfa6ac8e2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Is Crypto 'Irrelevant'? Here's Who Says Bitcoin Replacing The Dollar Is 'Laughable'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52176544/is-crypto-irrelevant-heres-who-says-bitcoin-replacing-the-dollar-is-laughable",
-        "published_at": "2026-04-30T14:54:12+00:00",
-        "type": "macro_commodity",
-        "impact": "low",
-        "dedup_group": "bitcoin_dollar_replacement_debate",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MRVL": [
-      {
-        "id": "49d141fe44bae7b8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRVL",
-        "scope": "ticker",
-        "title": "Here's How Much $1000 Invested In Marvell Technology 10 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/04/52175979/heres-how-much-1000-invested-in-marvell-technology-10-years-ago-would-be-worth-today",
-        "published_at": "2026-04-30T14:46:04+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mrvl_10year_historical_return",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MTG": [
-      {
-        "id": "3abeaa1e0e0ae682",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MTG",
-        "scope": "ticker",
-        "title": "MGIC Investment Reports Q1 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/04/52175831/mgic-investment-reports-q1-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-04-30T14:44:34+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "mtg_q1_2026_earnings",
+        "dedup_group": "fcel_daily_move_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSFT": [
       {
-        "id": "e60390c1905874f9",
+        "id": "83571ebe035ca9c1",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "One Line In Meta's Earnings Wiped Out The Celebration",
-        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52173656/one-line-in-meta-earnings-wiped-out-the-celebration",
-        "published_at": "2026-04-30T14:15:34+00:00",
+        "title": "Microsoft's AI Engine Roars: Analysts See Real Demand, Not Just Hype",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/04/52182849/microsofts-ai-engine-roars-analysts-see-real-demand-not-just-hype",
+        "published_at": "2026-04-30T16:36:59+00:00",
         "type": "analyst",
-        "impact": "low",
-        "dedup_group": "meta_earnings_msft_reaction_commentary",
-        "tickers_mentioned": [
-          "META"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "9bfc59a37f8aa36d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "What's Going On With Microsoft Stock Thursday?",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52170503/whats-going-on-with-microsoft-stock-thursday-3",
-        "published_at": "2026-04-30T13:31:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "msft_stock_movement_daily_recap",
+        "impact": "medium",
+        "dedup_group": "msft_ai_demand_analyst_view",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "15207d06e1d5610b",
+        "id": "d98f07c09dd621b9",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "The 'Prove It' Quarter: How Meta, Microsoft, Amazon, And Alphabet Backed AI Capex With Real Run Rates",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52169569/the-prove-it-quarter-how-meta-microsoft-amazon-and-alphabet-backed-ai-capex-with-real-run-rates",
-        "published_at": "2026-04-30T13:05:09+00:00",
+        "title": "Why Is Broadcom Stock Surging On Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52180449/why-is-broadcom-stock-surging-on-thursday",
+        "published_at": "2026-04-30T15:58:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "broadcom_surge_recap",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "62a7018f1ab461c5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "Microsoft Stock Falls On Q3 Earnings: Analyst Predicts Growth Ahead \u2014 'Leading Horseman Of The AI Revolution'",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/04/52179944/microsoft-stock-falls-on-q3-earnings-analyst-predicts-growth-ahead-leading-horseman-of-the-ai-revolution",
+        "published_at": "2026-04-30T15:48:24+00:00",
         "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tech_earnings_ai_capex_analysis_meta_msft_amzn_googl",
-        "tickers_mentioned": [
-          "META",
-          "AMZN",
-          "GOOGL"
-        ],
-        "route_to_synthesis": false
+        "impact": "high",
+        "dedup_group": "msft_q3_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       },
       {
-        "id": "eada05502ff46e13",
+        "id": "dd6d8b1dabb76498",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Amazon To Rally More Than 26%? Here Are 10 Top Analyst Forecasts For Thursday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52169306/amazon-to-rally-more-than-26-here-are-10-top-analyst-forecasts-for-thursday",
-        "published_at": "2026-04-30T13:00:33+00:00",
-        "type": "analyst",
+        "title": "Alphabet Soars, Meta Sinks As Big Tech Splits \u2014 ETFs Let You Pick The Right Side",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52178697/alphabet-soars-meta-sinks-as-big-tech-splits-etfs-let-you-pick-the-right-side",
+        "published_at": "2026-04-30T15:27:41+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "amzn_analyst_forecasts_roundup",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "da1be38dae125a51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain As Trump Weighs 'Short And Powerful' Iran Strikes\u2014 Alphabet, Meta, Amazon In Focus (UPDATED)",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52160887/stock-market-today-dow-jones-futures-drop-nasdaq-gains-as-trump-weighs-short-and-powerful-iran-strikes-alphabet-meta-amazon-in-focus",
-        "published_at": "2026-04-30T12:58:29+00:00",
-        "type": "macro_geopol",
-        "impact": "low",
-        "dedup_group": "market_daily_iran_strikes_tech_watch",
+        "dedup_group": "big_tech_splits_etf_commentary",
         "tickers_mentioned": [
           "GOOGL",
-          "META",
-          "AMZN"
+          "META"
         ],
         "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "640c021a0a316d66",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Stock Of The Day: Will The Nvidia Breakout Hold?",
+        "url": "https://www.benzinga.com/trading-ideas/technicals/26/04/52182471/stock-of-the-day-will-the-nvidia-breakout-hold",
+        "published_at": "2026-04-30T16:29:04+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvda_breakout_analysis_april_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4ec54b346337a7bb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "AI Chip Shortage Warning: TSM Ramps Up Production",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52181796/ai-chip-shortage-warning-tsm-ramps-up-production",
+        "published_at": "2026-04-30T16:18:40+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tsm_ai_chip_production_ramp_april_2026",
+        "tickers_mentioned": [
+          "TSM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dd6d8b1dabb76498",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Alphabet Soars, Meta Sinks As Big Tech Splits \u2014 ETFs Let You Pick The Right Side",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52178697/alphabet-soars-meta-sinks-as-big-tech-splits-etfs-let-you-pick-the-right-side",
+        "published_at": "2026-04-30T15:27:41+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "big_tech_splits_etf_commentary",
+        "tickers_mentioned": [
+          "GOOGL",
+          "META"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORLY": [
+      {
+        "id": "8d93d883f0ee6c19",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORLY",
+        "scope": "ticker",
+        "title": "O'Reilly Automotive Reports Q1 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/04/52180905/oreilly-automotive-reports-q1-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-04-30T16:05:45+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "orly_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "OKE": [
+      {
+        "id": "f98c8d8fcb94d60e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OKE",
+        "scope": "ticker",
+        "title": "These Analysts Revise Their Forecasts On ONEOK Following Q1 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52180717/these-analysts-revise-their-forecasts-on-oneok-following-q1-results",
+        "published_at": "2026-04-30T16:02:42+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "oke_q1_2026_analyst_revisions",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "META": [
+      {
+        "id": "d98f07c09dd621b9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Why Is Broadcom Stock Surging On Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/04/52180449/why-is-broadcom-stock-surging-on-thursday",
+        "published_at": "2026-04-30T15:58:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "broadcom_surge_recap",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dd6d8b1dabb76498",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Alphabet Soars, Meta Sinks As Big Tech Splits \u2014 ETFs Let You Pick The Right Side",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/04/52178697/alphabet-soars-meta-sinks-as-big-tech-splits-etfs-let-you-pick-the-right-side",
+        "published_at": "2026-04-30T15:27:41+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "big_tech_splits_etf_commentary",
+        "tickers_mentioned": [
+          "GOOGL",
+          "META"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MEOH": [
+      {
+        "id": "bcbe316d13dc7f65",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MEOH",
+        "scope": "ticker",
+        "title": "Methanex Q1 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/04/52180078/methanex-q1-2026-earnings-call-complete-transcript",
+        "published_at": "2026-04-30T15:50:34+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "meoh_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INVH": [
+      {
+        "id": "e99ffa7bc6b40abf",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INVH",
+        "scope": "ticker",
+        "title": "Transcript: Invitation Homes Q1 2026 Earnings Conference Call",
+        "url": "https://www.benzinga.com/insights/news/26/04/52180068/transcript-invitation-homes-q1-2026-earnings-conference-call",
+        "published_at": "2026-04-30T15:50:28+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "invh_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KKR": [
+      {
+        "id": "66f14ccc79bbb044",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KKR",
+        "scope": "ticker",
+        "title": "Cramer Puts Pressure On Private Equity: 'You Gotta Sell Something'",
+        "url": "https://www.benzinga.com/markets/private-markets/26/04/52179330/cramer-puts-pressure-on-private-equity-you-gotta-sell-something",
+        "published_at": "2026-04-30T15:39:15+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cramer_pe_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "3e35102b61d6b66d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm Posts Q2 Beat, Analysts Expect Handset Headwinds To Continue",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/04/52181151/qualcomm-posts-q2-beat-analysts-expect-handset-headwinds-to-continue",
+        "published_at": "2026-04-30T16:09:45+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "qcom_q2_2026_beat_handset_headwinds",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ],
     "TER": [
       {
-        "id": "8a4d6176c9c901af",
+        "id": "996884be1381c708",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TER",
         "scope": "ticker",
-        "title": "Caterpillar Posts Upbeat Q1 Results, Joins Garrett Motion, Wesco International, TTM Technologies And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/04/52173471/caterpillar-posts-upbeat-q1-results-joins-garrett-motion-wesco-international-ttm-technologies-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-04-30T14:13:38+00:00",
-        "type": "earnings",
+        "title": "Cathie Wood's Robotics Bet Dips After 350% Run \u2014 JPMorgan Says Buy",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52179790/cathie-woods-robotics-bet-dips-after-350-run-jpmorgan-says-buy",
+        "published_at": "2026-04-30T15:45:48+00:00",
+        "type": "analyst",
         "impact": "medium",
-        "dedup_group": "caterpillar_q1_2026_upbeat_results",
-        "tickers_mentioned": [
-          "CAT",
-          "GMRH",
-          "WCC",
-          "TTMI"
-        ],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "8a4d6176c9c901af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TER",
-        "scope": "ticker",
-        "title": "Caterpillar Posts Upbeat Q1 Results, Joins Garrett Motion, Wesco International, TTM Technologies And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/04/52173471/caterpillar-posts-upbeat-q1-results-joins-garrett-motion-wesco-international-ttm-technologies-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-04-30T14:13:38+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "caterpillar_q1_2026_upbeat_results",
-        "tickers_mentioned": [
-          "CAT",
-          "GMRH",
-          "WCC",
-          "TTMI"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "RCAT": [
-      {
-        "id": "8fb8169804938ef4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RCAT",
-        "scope": "ticker",
-        "title": "$1000 Invested In Red Cat Holdings 5 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/04/52174887/1000-invested-in-red-cat-holdings-5-years-ago-would-be-worth-this-much-today",
-        "published_at": "2026-04-30T14:30:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rcat_retrospective_valuation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SOFI": [
-      {
-        "id": "c37454666af59e8f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SOFI",
-        "scope": "ticker",
-        "title": "What's Going On With SoFi Technologies Stock Today?",
-        "url": "https://www.benzinga.com/markets/equities/26/04/52173062/whats-going-on-with-sofi-technologies-stock-today-3",
-        "published_at": "2026-04-30T14:09:02+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sofi_stock_movement_daily_recap",
+        "dedup_group": "ter_jpm_buy_after_350pct_run",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -911,296 +483,112 @@
   },
   "macro_events": [
     {
-      "event_summary": "Trump administration is pursuing a Strait of Hormuz blockade strategy against Iran, risking disruption of ~20% of global seaborne oil flows.",
+      "event_summary": "Oil prices pulled back after hitting a four-year high, with the spike driven by fears of US-Iran military escalation.",
       "primary_drivers": [
-        "Oil supply shock risk premium from Hormuz chokepoint disruption",
-        "Tanker rerouting and ton-mile demand surge",
-        "Defense spending / geopolitical risk hedging",
-        "Higher input costs for energy-intensive consumers and airlines"
+        "Geopolitical risk premium in crude (Strait of Hormuz/Iran supply risk)",
+        "Higher sustained oil price level despite intraday retreat",
+        "Input cost pressure on fuel-consuming industries"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated supermajor with large non-Gulf upstream (Permian, Guyana) \u2014 directly benefits from higher Brent/WTI without proportional Hormuz transit exposure. Earnings leverage to $10+/bbl premium is material.",
+          "rationale": "Integrated major with large upstream exposure; realized prices benefit from elevated Brent/WTI even after intraday retreat. Limited Iran/Hormuz operational exposure relative to peers.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Similar to XOM \u2014 US/Kazakhstan/Australia weighted upstream, captures price premium. Note Tengiz oil partially routes through alternative pipelines, less Hormuz-dependent than peers.",
+          "ticker": "COP",
+          "rationale": "Pure-play E&P with high leverage to crude price; no refining offset means full upside to sustained 4-year-high oil levels.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with no Middle East exposure \u2014 full operating leverage to higher WTI. Hedge book typically rolls so spot price gains flow to cash flow within 2 quarters.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline (VLCC tanker) \u2014 Hormuz disruption forces longer-haul routing from Atlantic basin to Asia, spiking ton-miles and day rates. Tanker equities historically 2-3x leveraged to such events.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers (product tankers) \u2014 refined product flows from Mideast Gulf get rerouted, MR/LR rates spike. Direct, well-established relationship in prior Hormuz scares (2019, 2024).",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 US LNG export economics improve as Qatari LNG (which transits Hormuz) becomes uncertain; European/Asian buyers pay premium for Atlantic-basin supply. Tolling model captures volume not price, but utilization and contract pricing on spot cargoes lift.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed \u2014 direct beneficiary of escalation: PAC-3/THAAD demand for Gulf allies, replenishment of munitions used in any kinetic Iran action. Already-strong backlog gets reinforced.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon \u2014 Patriot, SM-3, Tomahawk supplier; Saudi/UAE/Israel air defense restocking accelerates on Iran confrontation. Most direct missile-defense pure play.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta \u2014 jet fuel is ~25-30% of opex, no fuel hedging program (unhedged since 2010s). Every $10/bbl crude move = ~$1.5B annualized cost. Most exposed major US carrier to oil spikes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United \u2014 similar unhedged jet fuel exposure plus heavier transpacific routing that may be affected by Gulf airspace risk and longer reroutes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "American Airlines \u2014 highest leverage (most levered balance sheet of majors) means fuel cost shock has outsized EPS impact; also unhedged.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel is major cost line, cruise demand also sensitive to geopolitical anxiety; double hit. Mediterranean/Mideast itinerary cancellations also possible.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Chemical \u2014 natural gas and naphtha feedstock costs rise with crude; commodity chemicals have limited pass-through in slowing demand environment. Margin compression direct.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart \u2014 low-income consumer is gasoline-price sensitive; sustained $4+/gal pump prices historically compress discretionary GM categories and pressure same-store comps.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 jet fuel + diesel cost spike with limited near-term surcharge pass-through; Express segment particularly fuel-sensitive.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "trump_hormuz_blockade_iran_strategy",
-      "source_news_ids": [
-        "3f1707a2e9420751"
-      ],
-      "headlines": [
-        "Trump bets Hormuz blockade will break Iran before triggering a global crisis"
-      ]
-    },
-    {
-      "event_summary": "U.S. weekly initial jobless claims fell to a 57-year low, signaling an extremely tight labor market where layoffs are rare but hiring is also slow (\"low-fire, low-hire\").",
-      "primary_drivers": [
-        "Labor hoarding / very low layoff rate supports consumer income and spending",
-        "Reduced odds of near-term Fed rate cuts as labor market remains too strong to justify easing",
-        "Low hiring velocity hurts staffing/recruitment volume-driven businesses"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SYF",
-          "rationale": "Synchrony's consumer credit book benefits directly from continued employment \u2014 low layoffs keep delinquency/charge-off rates contained, the single biggest swing factor in its earnings.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COF",
-          "rationale": "Capital One's subprime-skewed card portfolio is highly sensitive to unemployment; sustained low claims reduce loss provisioning needs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ALLY",
-          "rationale": "Auto lender with subprime exposure \u2014 employed borrowers stay current on auto loans; net charge-offs track unemployment closely.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "RHI",
-          "rationale": "Robert Half's revenue is driven by job placement/staffing volume, not employment levels. A 'low-fire, low-hire' market with minimal job churn directly suppresses placement fees \u2014 exactly the dynamic the headline describes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAN",
-          "rationale": "ManpowerGroup's temp/perm staffing volumes contract when hiring activity slows, regardless of low unemployment. Low job-finding rate is a direct headwind.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KFY",
-          "rationale": "Korn Ferry's executive search and RPO businesses are volume-dependent on hiring activity; sluggish hiring directly compresses revenue.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "jobless_claims_57yr_low_april_2026",
-      "source_news_ids": [
-        "f9b46039a4975ee3"
-      ],
-      "headlines": [
-        "U.S. jobless claims sink to a 57-year low. Jobs aren\u2019t easy to find \u2014 or lose."
-      ]
-    },
-    {
-      "event_summary": "Dow rallies 600 points on softer-than-expected inflation data; Caterpillar breaks out on strong results while Meta plunges post-earnings.",
-      "primary_drivers": [
-        "Lower-than-expected inflation print \u2192 lower discount rate / rate cut expectations",
-        "Caterpillar earnings beat signals industrial/capex strength",
-        "Meta earnings disappointment (likely capex guide or ad softness) drags megacap tech sentiment"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DE",
-          "rationale": "Direct industrial peer to Caterpillar; CAT's beat on construction/mining equipment demand reads through to Deere's ag and construction equipment outlook via shared end-markets and dealer channel commentary.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "URI",
-          "rationale": "United Rentals is the largest customer-facing proxy for non-residential construction activity that drives CAT demand; positive CAT print validates rental fleet utilization and pricing thesis.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PCAR",
-          "rationale": "Heavy-truck cyclical with direct correlation to Caterpillar's industrial demand signal; Class 8 orders track non-res construction and freight.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "GOOGL",
-          "rationale": "Direct ad-market peer to Meta; if Meta's plunge reflects ad softness or capex blowout, Alphabet's digital ad revenue (~75%) and own AI capex guide come under scrutiny via read-across.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PINS",
-          "rationale": "Smaller pure-play digital ad peer with high beta to Meta sentiment; Meta's ad-targeting/Reels narrative is the bull case for Pinterest, so Meta disappointment removes that tailwind.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SNAP",
-          "rationale": "Highest-beta digital ad peer to Meta; structurally weaker but trades as Meta-correlated sentiment vehicle on ad-spend headlines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APP",
-          "rationale": "AppLovin's AXON ad-tech thesis is tied to mobile ad market health that Meta dominates; Meta ad weakness signals broader mobile DR ad softness.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TTD",
-          "rationale": "Trade Desk reads through any digital ad demand softness signaled by Meta; CTV/programmatic budgets correlate with overall ad spend cycle.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "market_inflation_data_dow_rally_april_2026",
-      "source_news_ids": [
-        "0bc2a5c851853962"
-      ],
-      "headlines": [
-        "Stock Market Today: Dow Up 600 Points On Inflation Data; Caterpillar Soars Past Entry, Meta Plunges (Live Coverage)"
-      ]
-    },
-    {
-      "event_summary": "March/April PCE inflation came in hot as a war-related shock pushed prices higher, reducing odds of near-term Fed cuts.",
-      "primary_drivers": [
-        "Higher-for-longer rate path (higher discount rate, pressure on long-duration assets)",
-        "Commodity/energy-driven inflation pass-through tied to wartime supply disruption",
-        "Real yield rise pressuring rate-sensitive sectors"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Hot PCE driven partly by wartime energy prices implies sustained crude/refined product margins; XOM's integrated upstream leverage means EPS estimates likely revised up alongside Brent.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same energy-pass-through mechanism as XOM; war-driven oil premium directly lifts upstream realizations and refining cracks.",
+          "rationale": "Permian pure-play producer with high operating leverage to WTI; cash flow torque is among the highest in large-cap E&P.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "Permian-heavy pure-play with high beta to WTI; hot inflation print signals sticky energy component, supports buyback/dividend cash flow.",
+          "rationale": "High-beta domestic crude producer; benefits doubly from elevated prices and zero Middle East operational risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand rises as producers reinvest at sustained high prices; second-derivative play on capex cycle reawakening.",
           "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere benefits as global gas/LNG prices track oil higher on Middle East risk; European buyers pay up for non-Russian, non-Gulf supply.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Defense prime with Patriot/missile defense exposure directly relevant to US-Iran escalation scenario; supplemental DoD spending likely.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
           "ticker": "LMT",
-          "rationale": "War heating up directly drives munitions/missile reorder cycle; PCE narrative confirms conflict intensity. Direct revenue link to DoD supplemental.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Same defense thesis \u2014 strategic systems and munitions demand tied to active conflict; revenue visibility lengthens with sustained war footing.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "JPM",
-          "rationale": "Higher-for-longer rates support net interest margin at the largest US bank with deposit-franchise advantage; rate-cut delay is direct NII tailwind.",
+          "rationale": "Direct beneficiary of any Middle East kinetic escalation via missile, THAAD, and F-35 demand; historical pattern around Iran tensions.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "months"
         }
       ],
       "losers": [
         {
-          "ticker": "WMT",
-          "rationale": "Hot PCE signals consumer real-income squeeze; Walmart's low-end consumer base trades down further and gross margin pressure from sticky goods inflation.",
+          "ticker": "LUV",
+          "rationale": "Southwest has minimal fuel hedging vs peers; jet fuel is ~25% of opex. Sustained high crude directly compresses margins with no offset.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines runs largely unhedged on jet fuel and carries high financial leverage; oil at 4-year highs is a direct EPS hit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Despite owning a refinery (Trainer), Delta's overall fuel cost rises with crude; international routes near Gulf airspace also face rerouting risk if escalation materializes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United has heavy Asia/Europe routes that fly near affected airspace; jet fuel exposure plus potential overflight disruptions if Iran conflict escalates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Air freight margins compress on jet fuel spikes; surcharge pass-through lags by a quarter.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to crude; margin squeeze if prices stay elevated.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MAR",
+          "rationale": "Higher fuel prices = higher airfares = weaker leisure travel demand; consumer discretionary travel spend is the marginal pressure point.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "fed_pce_inflation_april_2026_iran_war",
+      "dedup_group": "oil_retreat_us_iran_escalation_fears",
       "source_news_ids": [
-        "4bd07ff5086239e7"
+        "e9dbfceedd9568b8"
       ],
       "headlines": [
-        "Fed's favored inflation gauge shows rising prices as war heated up"
+        "Oil retreats after hitting four-year high on concern of US-Iran war escalation"
       ]
     }
   ]
