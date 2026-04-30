@@ -1,83 +1,150 @@
 {
-  "generated_at": "2026-04-29T23:39:11.925735-04:00",
+  "generated_at": "2026-04-30T02:32:09.212123-04:00",
   "ticker_news": {
-    "COIN": [
+    "INTC": [
       {
-        "id": "255a848d42b1993e",
+        "id": "0a20eeaf7923e1a7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COIN",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP Stagnate, But Dogecoin Rallies After Fed Leaves Rates Unchanged: Analyst Flags 'Insufficient Evidence' To Suggest Bull Cycle",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/52158311/bitcoin-ethereum-xrp-stagnate-but-dogecoin-rallies-after-fed-leaves-rates-unchanged-analyst-flags-insufficient-evidence-to-suggest-bull-cycle",
-        "published_at": "2026-04-30T02:24:24+00:00",
-        "type": "macro_fed",
+        "title": "Trump Says US Made Over $30 Billion On Intel Stock In Just 90 Days: 'I Have Been Very Successful...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52158908/trump-says-us-made-30-billion-on-intel-stock-in-just-90-days",
+        "published_at": "2026-04-30T05:18:59+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "fed_april_2026_rates_unchanged",
-        "tickers_mentioned": [
-          "BTC",
-          "ETH",
-          "XRP",
-          "DOGE"
-        ],
+        "dedup_group": "trump_intel_stock_gains_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "791c05b0f1765596",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Samsung Posts Record Profit As AI Memory Boom Drives Chip Surge",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52158642/samsung-posts-record-profit-as-ai-memory-boom-drives-chip-surge",
+        "published_at": "2026-04-30T04:10:38+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "samsung_record_profit_ai_memory",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Brent crude surges above $121/bbl on reports US military will brief Trump on potential action against Iran, raising risk of Middle East conflict and oil supply disruption.",
+      "event_summary": "Volkswagen Q1 profit fell 14% due to US tariff pressure and intensifying Chinese EV competition.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude with potential Strait of Hormuz disruption (~20% of global oil flows)",
-        "Higher realized prices for upstream producers and refining crack spreads",
-        "Defense spending tailwind and safe-haven flows; airline/transport fuel cost shock"
+        "US auto tariff cost absorption squeezing foreign OEM margins",
+        "Chinese domestic EV makers taking share from legacy Western brands in China",
+        "Read-across to other European/Japanese OEMs with US import exposure"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "GM",
+          "rationale": "Predominantly US-domestic production footprint vs VW; gains relative competitive positioning as tariffs hurt European imports. Also benefits from VW ceding ground but GM's own China JV (SAIC-GM) is a partial offset.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "F",
+          "rationale": "Similar to GM \u2014 heavy US manufacturing base means less tariff exposure than VW; Ford's truck/SUV mix has minimal overlap with VW's tariff-hit imports, allowing relative share gain in US.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Direct beneficiary in two ways: (1) US-built vehicles avoid import tariffs that hit VW's ID4/Audi lineup, (2) competes directly with VW EVs in Europe and US where VW is now margin-constrained.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "STLA",
+          "rationale": "Stellantis has very similar profile to VW: European-headquartered OEM with significant US import exposure (Jeep, Ram partially, plus Fiat/Alfa/Maserati fully imported) and weak China position. Tariff read-across is direct.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TM",
+          "rationale": "Toyota \u2014 large share of US sales are imports from Japan; same tariff transmission mechanism, though Toyota has more US plants than VW so impact is partial.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HMC",
+          "rationale": "Honda \u2014 meaningful US import share (especially Acura, CR-V from Canada/Mexico/Japan); tariff regime is a shared headwind highlighted by VW's miss.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APTV",
+          "rationale": "Aptiv supplies VW group heavily; lower VW production volumes and margin pressure flow through to component pricing/volumes for tier-1 suppliers.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MGA",
+          "rationale": "Magna is a major contract manufacturer/supplier to European OEMs including VW Group; weaker VW volumes and pricing pressure compress supplier orders.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "volkswagen_q1_tariff_china_pressure",
+      "source_news_ids": [
+        "1756cae53d813be8"
+      ],
+      "headlines": [
+        "Volkswagen posts 14% drop in first-quarter profit on tariff pressure, China competition"
+      ]
+    },
+    {
+      "event_summary": "Oil prices surge on Iran-related news pressuring European equities lower ahead of ECB and BOE rate decisions.",
+      "primary_drivers": [
+        "Crude oil price spike lifts E&P revenue and refining crack spreads",
+        "Geopolitical risk premium boosts defense and safe-haven demand",
+        "Higher energy input costs squeeze margins for fuel-intensive consumers (airlines, chemicals)"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure; every $10/bbl move in Brent adds materially to FCF. Direct leverage to higher realized crude prices.",
+          "rationale": "Integrated major with ~70% upstream earnings leverage; every $10/bbl move in Brent adds materially to quarterly EPS. Direct beneficiary of oil price surge.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Highly leveraged Permian pure-play producer with above-average oil mix and balance sheet leverage; Brent at $121 drives outsized FCF and equity beta to crude.",
+          "rationale": "Highest-beta US large-cap E&P to crude prices given Permian pure-play exposure and elevated leverage; trades as a leveraged bet on WTI.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play E&P with high oil cut and low breakevens; direct beneficiary of sustained Brent above $100 via cash returns/buybacks.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "ticker": "APA",
+          "rationale": "Significant Egyptian/North Sea production gives direct Brent exposure; small-cap E&P with high oil-price torque.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime contractor for THAAD, PAC-3 Patriot missiles, and F-35 \u2014 direct beneficiaries of any Iran kinetic action and likely supplemental defense appropriations and allied restocking.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Iran-related geopolitical escalation typically drives defense rotation; Lockheed has direct missile defense (THAAD, PAC-3) exposure to Middle East tensions.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "RTX",
-          "rationale": "Maker of Patriot, Tomahawk, and SM-series interceptors heavily used in Middle East theater; missile inventory drawdowns drive replenishment orders.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "B-2/B-21 stealth bomber and Global Hawk ISR provider \u2014 directly relevant assets if strikes on hardened Iranian nuclear sites occur.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TDW",
-          "rationale": "Offshore oil services vessel operator with global fleet; sustained high crude pulls forward offshore activity and dayrate momentum, plus Middle East exposure premium.",
+          "rationale": "Patriot missile and Tomahawk maker with material Middle East FMS pipeline; benefits from sustained Iran risk premium.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "VLO",
-          "rationale": "Largest US independent refiner; geopolitical disruption typically widens crack spreads as product prices rise faster than crude inputs, especially distillates.",
+          "rationale": "Refiner with high complexity; supply-disruption-driven crude spikes often widen product cracks more than crude rises, expanding margins.",
           "confidence": "medium",
           "horizon": "days"
         }
@@ -85,53 +152,47 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs and Delta does not hedge; Brent at $121 directly compresses margins with limited near-term ability to pass through via fares.",
+          "rationale": "Jet fuel is ~25-30% of operating costs and Delta has limited hedging; oil surge directly compresses margins. Pure-play exposure to higher crude.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "Unhedged fuel exposure; international long-haul routes exposed to both fuel cost and potential Middle East airspace closures/rerouting costs.",
+          "rationale": "Same fuel-cost transmission as DAL; United runs largely unhedged and has high international exposure where ticket price elasticity is greater.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "AAL",
-          "rationale": "Highest financial leverage among legacy carriers and unhedged on fuel \u2014 most vulnerable to sustained crude shock on both EPS and balance sheet.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with massive bunker fuel exposure and discretionary consumer demand; double hit from fuel costs and potential Middle East itinerary cancellations.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Express air freight network with heavy jet fuel burn; fuel surcharges lag spot prices, creating margin compression in the interim.",
+          "ticker": "LUV",
+          "rationale": "Southwest historically hedged but current book is light; fuel is its largest variable cost and domestic competition limits fare passthrough.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstocks linked to crude; energy-intensive operations face margin squeeze if pass-through lags.",
+          "rationale": "Ethylene/petrochemical feedstock costs tied to naphtha and natural gas liquids; sustained oil surge compresses chemical margins.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "WMT",
-          "rationale": "Mass retailer where rising gasoline prices act as a regressive tax on core low-income consumer, redirecting wallet share away from discretionary categories.",
-          "confidence": "low",
+          "ticker": "LYB",
+          "rationale": "Olefins producer with direct hydrocarbon feedstock exposure; margin squeeze when crude rises faster than downstream polymer prices.",
+          "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with fuel as ~10-15% of costs and no pricing power mid-season; oil spike hits margins and consumer discretionary travel demand simultaneously.",
+          "confidence": "medium",
+          "horizon": "days"
         }
       ],
-      "dedup_group": "brent_crude_iran_military_action_april_2026",
+      "dedup_group": "european_markets_oil_surge_ecb_boe",
       "source_news_ids": [
-        "58d33b8afa5f7f04"
+        "4b7edb29a7f99b6e"
       ],
       "headlines": [
-        "Brent crude tops $121 as U.S. military to reportedly brief Trump on potential action against Iran"
+        "European markets set for lower open as oil prices surge; ECB and BOE decisions ahead"
       ]
     }
   ]
