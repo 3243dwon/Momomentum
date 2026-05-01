@@ -1,266 +1,371 @@
 {
-  "generated_at": "2026-05-01T11:30:57.751988-04:00",
+  "generated_at": "2026-05-01T12:44:56.606597-04:00",
   "ticker_news": {
+    "EGO": [
+      {
+        "id": "76686d0eb667f62a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EGO",
+        "scope": "ticker",
+        "title": "Transcript: Eldorado Gold Q1 2026 Earnings Conference Call",
+        "url": "https://www.benzinga.com/insights/news/26/05/52222804/transcript-eldorado-gold-q1-2026-earnings-conference-call",
+        "published_at": "2026-05-01T16:24:21+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "eldorado_gold_q1_2026_earnings_transcript",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
     "INTC": [
       {
-        "id": "7c29f485c07f5bd5",
+        "id": "f3362fa57805f953",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Semiconductor ETFs SOXX, SMH Just Logged Their Best Month Ever \u2014 What's Driving This Rally?",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52217332/soxx-smh-best-month-ever-april-2026-nvidia-lagged-chip-rally",
-        "published_at": "2026-05-01T14:47:15+00:00",
+        "title": "Intel's Best Month Ever Powers One Of 2026's Biggest ETF Wins",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/05/52219865/intels-best-month-powers-one-of-2026s-biggest-etf-wins",
+        "published_at": "2026-05-01T15:30:56+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "soxx_smh_may_rally_recap",
+        "dedup_group": "intc_may_2026_strong_month_etf_momentum",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TWLO": [
+      {
+        "id": "2567849b7254b6d4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TWLO",
+        "scope": "ticker",
+        "title": "Twilio's AI Transformation: Why The Stock Just Hit A New 52-Week High",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/05/52222963/twilios-ai-transformation-why-the-stock-just-hit-a-new-52-week-high",
+        "published_at": "2026-05-01T16:27:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "twlo_ai_transformation_52week_high",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RIVN": [
+      {
+        "id": "b02254934e47a0a1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RIVN",
+        "scope": "ticker",
+        "title": "Tesla's Lead Is Narrowing\u2014Rivian's Quarter Shows Why",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52220074/teslas-lead-is-narrowing-rivians-quarter-shows-why",
+        "published_at": "2026-05-01T15:35:07+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "rivian_q1_2026_earnings",
         "tickers_mentioned": [
-          "SOXX",
-          "SMH"
+          "TSLA"
         ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ASTS": [
+        "route_to_synthesis": true
+      },
       {
-        "id": "72b978477b73ae78",
+        "id": "b02254934e47a0a1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ASTS",
+        "ticker": "RIVN",
         "scope": "ticker",
-        "title": "AST SpaceMobile Shares Edge Lower: What's Driving The Action?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52216203/ast-spacemobile-shares-edge-lower-whats-driving-the-action",
-        "published_at": "2026-05-01T14:30:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "asts_price_movement_analysis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CL": [
-      {
-        "id": "a2a800e96cf8f64d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CL",
-        "scope": "ticker",
-        "title": "Colgate Sees Middle East Conflict Pressuring Costs And Consumer Spending Worldwide",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52215831/colgate-sees-middle-east-conflict-pressuring-costs-and-consumer-spending-worldwide",
-        "published_at": "2026-05-01T14:24:08+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "colgate_middle_east_conflict_costs",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "DINO": [
-      {
-        "id": "9afb9047c6df4ce3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DINO",
-        "scope": "ticker",
-        "title": "Full Transcript: HF Sinclair Q1 2026 Earnings Call",
-        "url": "https://www.benzinga.com/insights/news/26/05/52211345/full-transcript-hf-sinclair-q1-2026-earnings-call",
-        "published_at": "2026-05-01T13:22:54+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "dino_q1_2026_earnings_transcript",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SMMT": [
-      {
-        "id": "f675f266ab7cb20f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SMMT",
-        "scope": "ticker",
-        "title": "Summit Therapeutics Stock Dips After Q1 Financial Report",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52218827/summit-therapeutics-stock-dips-after-q1-financial-report",
-        "published_at": "2026-05-01T15:12:01+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "smmt_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RDDT": [
-      {
-        "id": "ca352a6fa28fe652",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RDDT",
-        "scope": "ticker",
-        "title": "Reddit Rallies As Ad Growth Drowns Out User Miss",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52219791/reddit-rallies-as-ad-growth-drowns-out-user-miss",
-        "published_at": "2026-05-01T15:29:40+00:00",
+        "title": "Tesla's Lead Is Narrowing\u2014Rivian's Quarter Shows Why",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52220074/teslas-lead-is-narrowing-rivians-quarter-shows-why",
+        "published_at": "2026-05-01T15:35:07+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "rddt_q1_2026_earnings_ad_growth",
-        "tickers_mentioned": [],
+        "dedup_group": "rivian_q1_2026_earnings",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
         "route_to_synthesis": true
       }
     ],
-    "ORCL": [
+    "XOM": [
       {
-        "id": "a1e85cbdf223d048",
+        "id": "7bffd5fdaf5ed3e6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "XOM",
         "scope": "ticker",
-        "title": "This House of Representative Just Sold Up To $405K In Oracle Stock",
-        "url": "https://www.benzinga.com/insights/government/26/05/52218305/this-house-of-representative-just-sold-up-to-405k-in-oracle-stock",
-        "published_at": "2026-05-01T15:02:48+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "house_representative_orcl_stock_sale",
+        "title": "Exxon Mobil Beats On Revenue Despite Middle East Turbulence, Profit Slides",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52222075/exxon-mobil-ceo-tested-strength-profit-declines-and-cash-flow-weakens",
+        "published_at": "2026-05-01T16:08:56+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "xom_q1_2026_revenue_beat_profit_decline",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "QCOM": [
+    "PLTR": [
       {
-        "id": "a1e85cbdf223d048",
+        "id": "dd792b39769ad461",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "QCOM",
+        "ticker": "PLTR",
         "scope": "ticker",
-        "title": "This House of Representative Just Sold Up To $405K In Oracle Stock",
-        "url": "https://www.benzinga.com/insights/government/26/05/52218305/this-house-of-representative-just-sold-up-to-405k-in-oracle-stock",
-        "published_at": "2026-05-01T15:02:48+00:00",
-        "type": "other",
+        "title": "Palantir Rallies Before May 4 Earnings \u2014 What Analysts And Charts Signal",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52221561/palantir-rallies-before-may-4-earnings-what-analysts-and-charts-signal",
+        "published_at": "2026-05-01T16:00:15+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "house_representative_orcl_stock_sale",
+        "dedup_group": "palantir_pre_earnings_analyst_preview",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "PSKY": [
+    "TSLA": [
       {
-        "id": "11736a4fc4440cf8",
+        "id": "b02254934e47a0a1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PSKY",
+        "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Paramount Stock Is On The Move: The Chart Tells An Interesting Story",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52217919/paramount-stock-is-on-the-move-the-chart-tells-an-interesting-story",
-        "published_at": "2026-05-01T14:55:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "paramount_stock_chart_analysis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "082fe458a4269514",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "MSTR Surges 33% In April: Is Peter Schiff Wrong About The 'Largest Ponzi In The World'?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52216711/mstr-surges-33-in-april-is-peter-schiff-wrong-about-the-largest-ponzi-in-the-world",
-        "published_at": "2026-05-01T14:38:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mstr_april_surge_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ZM": [
-      {
-        "id": "da615ac924dce5e6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ZM",
-        "scope": "ticker",
-        "title": "Netflix, Cisco, Zoom And A Health Care Stock On CNBC's 'Final Trades'",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52208892/netflix-cisco-zoom-and-a-health-care-stock-on-cnbcs-final-trades",
-        "published_at": "2026-05-01T11:55:26+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cnbc_final_trades_recap",
+        "title": "Tesla's Lead Is Narrowing\u2014Rivian's Quarter Shows Why",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52220074/teslas-lead-is-narrowing-rivians-quarter-shows-why",
+        "published_at": "2026-05-01T15:35:07+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "rivian_q1_2026_earnings",
         "tickers_mentioned": [
-          "NFLX",
-          "CSCO"
+          "TSLA"
         ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "415e86081e114604",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Robotaxis Set To Explode Into $54 Billion Market By 2035: Analyst",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52223521/robotaxis-set-to-explode-into-54-billion-market-by-2035-analyst",
+        "published_at": "2026-05-01T16:38:43+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "robotaxi_market_analyst_projection",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
+      },
+      {
+        "id": "b02254934e47a0a1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Tesla's Lead Is Narrowing\u2014Rivian's Quarter Shows Why",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52220074/teslas-lead-is-narrowing-rivians-quarter-shows-why",
+        "published_at": "2026-05-01T15:35:07+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "rivian_q1_2026_earnings",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "ROKU": [
+      {
+        "id": "ce325e99518f7442",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ROKU",
+        "scope": "ticker",
+        "title": "Roku Rewinds Doubters With Ad-Fueled Earnings Beat",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52216378/roku-rewinds-doubters-with-ad-fueled-earnings-beat",
+        "published_at": "2026-05-01T14:33:39+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "roku_q1_2026_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "UK exports to the US fell 25% following Trump's \"liberation day\" tariff regime, confirming meaningful trade destruction on UK-origin goods.",
+      "event_summary": "Trump publicly rejects current Iran deal terms, signaling continued/escalated tensions with Iran rather than near-term diplomatic resolution.",
       "primary_drivers": [
-        "Tariff cost pass-through reducing UK-origin import volumes",
-        "Substitution toward US domestic producers and non-tariffed suppliers",
-        "Revenue/margin hit for US-listed companies with UK manufacturing footprints exporting to US"
+        "Geopolitical risk premium on crude oil from potential supply disruption / sanctions enforcement",
+        "Increased likelihood of sustained or expanded Iran sanctions reducing global oil supply",
+        "Defense spending tailwind from heightened Middle East tensions"
       ],
       "beneficiaries": [
         {
-          "ticker": "GM",
-          "rationale": "Direct substitute for UK-built premium vehicles (Jaguar Land Rover, Bentley, Mini, Rolls-Royce) facing tariff-inflated US prices; GM's US-built Cadillac/Escalade lineup competes in the same premium segment with no tariff burden.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Ford's US-assembled Lincoln/F-Series benefits modestly from UK premium-import substitution, though primary UK auto exporters (JLR, Aston Martin) target a narrow luxury slice.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DEO",
-          "rationale": "Diageo is UK-domiciled but produces Scotch whisky (Johnnie Walker, etc.) only in Scotland \u2014 tariffs hurt them, NOT a beneficiary. Removing.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "MGPI",
-          "rationale": "MGP Ingredients is a US-based distilled spirits producer supplying American whiskey to brands; gains shelf share as UK Scotch becomes 25%+ more expensive at retail.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DEO",
-          "rationale": "Diageo derives ~45% of net sales from North America and Scotch whisky must be produced in Scotland by law \u2014 cannot relocate production to escape tariff. Direct margin compression or volume loss on Johnnie Walker, Buchanan's, Talisker exports to US.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with direct leverage to higher Brent/WTI; every $5 oil move materially impacts upstream earnings. No Iranian production exposure to lose.",
           "confidence": "high",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "STZ",
-          "rationale": "Constellation Brands distributes Casa Noble and other imports; while primarily Mexican beer focused, its UK-sourced premium spirits portfolio faces the same tariff drag. Smaller exposure than DEO.",
+          "ticker": "OXY",
+          "rationale": "High-beta US shale pure-play (Permian); historically one of the strongest movers on Iran/Middle East risk headlines due to leveraged balance sheet and unhedged production.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed makes THAAD and PAC-3 missile defense systems deployed in Gulf states; sustained Iran tensions support FMS pipeline and supplemental defense appropriations.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon Patriot interceptors and Tomahawks are the direct munitions used/replenished in any Iran-linked conflict; replenishment contracts already elevated.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Prime on Global Hawk ISR and B-21; Middle East ISR demand and strategic deterrence narrative strengthen on prolonged standoff.",
           "confidence": "low",
           "horizon": "weeks"
         },
         {
-          "ticker": "AZN",
-          "rationale": "AstraZeneca is UK-headquartered with significant UK manufacturing for US-bound pharmaceuticals; if pharma is included in the tariff scope (the 25% headline export drop suggests broad coverage), US revenue (~43% of total) faces direct cost pressure.",
+          "ticker": "FANG",
+          "rationale": "Diamondback is a Permian pure-play with ~100% US onshore exposure; benefits from oil price spike without geopolitical operational risk.",
           "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "BTI",
-          "rationale": "British American Tobacco exports UK-manufactured tobacco products and has UK cost base; tariff plus FX pressure on US-bound shipments hits already-stressed margins. ~44% revenue from US.",
-          "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
-      "dedup_group": "uk_exports_us_tariff_slump_may_2026",
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has the lowest fuel hedge ratio among US legacies; jet fuel is ~25-30% of operating costs and tracks crude with a lag. Direct margin compression on oil spike.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United similarly unhedged on fuel; international long-haul routes also exposed to Middle East airspace rerouting costs if tensions escalate.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest historically hedged but current book is light; single-fleet 737 operator with no fuel cost diversification, high sensitivity to crude.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival bunker fuel costs rise with crude; Mediterranean/Middle East itineraries face rerouting risk if Strait of Hormuz tensions escalate.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Express jet fuel is a major cost line; Middle East hub in Dubai exposes operations to regional escalation risk.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "trump_iran_deal_negotiations_may_2026",
       "source_news_ids": [
-        "ba3d90f035d43e1f"
+        "0b28f7a4986be82a"
       ],
       "headlines": [
-        "UK exports to U.S. plunge by 25% after Trump's 'liberation day' tariffs blitz"
+        "Trump says 'Iran wants to make a deal, but I'm not satisfied with it'"
+      ]
+    },
+    {
+      "event_summary": "Oil prices fall as traders interpret Iran's signals as moving toward ending hostilities, easing geopolitical risk premium.",
+      "primary_drivers": [
+        "Reduced geopolitical risk premium in crude",
+        "Lower input/fuel costs for transport and consumer-facing businesses",
+        "Compressed margins for upstream E&P producers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; falling crude directly expands margins. Delta has historically been one of the most fuel-cost-leveraged majors with limited hedging.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost mechanism as DAL; United runs minimal fuel hedges so spot crude drop flows directly to margin.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's fuel costs are a major P&L line; lower crude reduces breakeven load factor and supports near-term EPS estimates.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Diesel and jet fuel are key cost inputs for ground and Express segments; lower oil reduces fuel surcharge drag and supports margin.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs track crude; lower oil widens petrochemical spreads for an integrated chemicals producer.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream exposure; lower crude directly compresses E&P realizations and segment EBITDA.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US oil-weighted E&P with high operating leverage to crude prices; cash flow falls roughly linearly with WTI.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Upstream-only major with no downstream offset, so falling crude hits earnings without refining margin cushion.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand and pricing power tied to E&P capex, which gets cut when crude falls and geopolitical premium evaporates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "International-weighted services franchise particularly exposed to Middle East activity; an Iran de-escalation reduces both prices and regional spending intensity.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with high crude-price beta; lower oil pressures buyback capacity and variable dividend.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Smaller-cap E&P with higher debt and operating leverage; among the most crude-sensitive names on the down move.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_peace_talks_oil_volatility",
+      "source_news_ids": [
+        "86debf537793a1c9"
+      ],
+      "headlines": [
+        "Oil Falls as Traders Parse Iran\u2019s Stance to End War"
       ]
     }
   ]
