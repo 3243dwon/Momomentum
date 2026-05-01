@@ -1,23 +1,142 @@
 {
-  "generated_at": "2026-04-30T19:43:24.912834-04:00",
+  "generated_at": "2026-04-30T23:51:45.465529-04:00",
   "ticker_news": {
-    "LLY": [
+    "RBLX": [
       {
-        "id": "634e5dc7595c3ba5",
+        "id": "4c498e5390efff5b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "LLY",
+        "ticker": "RBLX",
         "scope": "ticker",
-        "title": "Here's How Much $1000 Invested In Eli Lilly 15 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/04/52202995/heres-how-much-1000-invested-in-eli-lilly-15-years-ago-would-be-worth-today",
-        "published_at": "2026-04-30T23:30:42+00:00",
+        "title": "Apple, Exxon Mobil And 3 Stocks To Watch Heading Into Friday",
+        "url": "https://www.benzinga.com/markets/equities/26/04/52204166/apple-exxon-mobil-and-3-stocks-to-watch-heading-into-friday-2",
+        "published_at": "2026-05-01T03:41:35+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "lly_historical_returns_recap",
-        "tickers_mentioned": [],
+        "dedup_group": "stocks_to_watch_friday_may_2026",
+        "tickers_mentioned": [
+          "AAPL",
+          "XOM"
+        ],
         "route_to_synthesis": false
+      }
+    ],
+    "MSFT": [
+      {
+        "id": "fa8384bd0b68d062",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "Elon Musk Testifies He 'Didn't Read' OpenAI's For-Profit Fine Print, Claims Sam Altman Misled Him: 'Can't Steal A Charity'",
+        "url": "https://www.benzinga.com/news/legal/26/04/52204115/elon-musk-testifies-he-didnt-read-openais-for-profit-fine-print-claims-sam-altman-misled-him-cant-steal-a-charity",
+        "published_at": "2026-05-01T03:09:15+00:00",
+        "type": "litigation",
+        "impact": "low",
+        "dedup_group": "musk_openai_testimony_altman",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "META": [
+      {
+        "id": "31b18a3bc67e027a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Mark Zuckerberg Says Meta Layoffs Are Being Driven By Soaring AI Spending, Warns More Job Cuts May Follow: 'I Wish That I Can Tell You...'",
+        "url": "https://www.benzinga.com/markets/tech/26/04/52204038/mark-zuckerberg-says-meta-layoffs-are-being-driven-by-soaring-ai-spending-warns-more-job-cuts-may-follow-i-wish-that-i-can-tell-you",
+        "published_at": "2026-05-01T02:36:04+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "meta_layoffs_ai_spending_zuckerberg",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Oil prices rise after the White House says an Iran ceasefire halts a 60-day war deadline, easing immediate war risk but keeping geopolitical premium in crude.",
+      "primary_drivers": [
+        "Higher crude prices lift upstream E&P revenue and cash flow",
+        "Reduced tail risk of Strait of Hormuz disruption lowers shipping/insurance spike scenarios",
+        "Sustained geopolitical premium supports oil services capex outlook"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with significant upstream leverage; ~$1 move in Brent translates directly to upstream EBITDA. Direct beneficiary of higher realized crude prices.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta Permian pure-play E&P with substantial unhedged oil exposure; among the most rate-of-change sensitive names to WTI moves.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback is a near-pure Permian oil producer with low hedge ratios; cash flow scales almost linearly with WTI.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Largest oilfield services name with heavy Middle East exposure (Saudi, UAE). Sustained higher crude + reduced regional war risk supports international capex cycle thesis.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oil services peer; rotates with SLB on crude price moves and Middle East activity outlook.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs; rising crude directly compresses airline margins. Delta has limited hedging vs peers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's fuel cost structure is highly crude-sensitive after legacy hedges rolled off; near-pure domestic carrier with limited fare pricing power.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost passthrough mechanism; airline group typically sells off as a basket on crude spikes.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Ceasefire reduces near-term urgency for missile defense/munitions reorders that had been bid up on Iran war risk premium; defense primes typically fade on de-escalation headlines.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot/SM-series and Tomahawk demand narrative weakens at the margin on ceasefire; defense basket rotation lower on de-escalation.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_ceasefire_60day_deadline_may_2026",
+      "source_news_ids": [
+        "e86c625e07100acb"
+      ],
+      "headlines": [
+        "Oil rises as White House says Iran ceasefire halts 60-day war deadline"
+      ]
+    }
+  ]
 }
