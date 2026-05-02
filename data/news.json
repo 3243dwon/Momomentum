@@ -1,5 +1,161 @@
 {
-  "generated_at": "2026-05-02T06:43:33.795127-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-05-02T08:54:20.847921-04:00",
+  "ticker_news": {
+    "GOOG": [
+      {
+        "id": "341fe74b4284b554",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "5 Stocks Investors Couldn't Stop Buzzing About This Week: AAPL, GOOG, HOOD And More",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52236393/5-stocks-investors-couldnt-stop-buzzing-about-this-week-aapl-goog-hood-and-more",
+        "published_at": "2026-05-02T12:02:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_stock_buzz_roundup",
+        "tickers_mentioned": [
+          "AAPL",
+          "HOOD"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "Major US oil companies are reporting lower earnings than before the Iran war, suggesting crude prices have fallen back despite geopolitical risk premium expectations.",
+      "primary_drivers": [
+        "Lower realized crude/refined product prices compressing upstream margins",
+        "Cost inflation (services, labor) not receding alongside revenue",
+        "Weaker downstream/chemicals contribution"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; sustained lower crude directly expands margins. Delta has been most vocal about fuel cost sensitivity in guidance.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same fuel-cost mechanic as DAL; United has higher long-haul exposure where fuel is an even larger cost share.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Lower naphtha/ethane-linked feedstock costs improve chemicals spreads; Dow's commodity chemicals segment is highly sensitive to oil-derived input costs.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Directly named cohort \u2014 upstream price realizations down with crude, and downstream/chemicals not offsetting. Earnings compression is the story.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream realization pressure as XOM; Permian and Gulf production economics weaker at current strip than pre-conflict assumptions.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play E&P with no downstream buffer \u2014 most direct earnings sensitivity to lower crude realizations among majors.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High leverage post-Anadarko/CrownRock makes cash-flow sensitive to crude prices; lower realized prices pressure debt-paydown thesis.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services demand and pricing power tied to E&P capex, which is set off operator cash flows \u2014 sustained margin compression at majors threatens 2026 service budgets.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Same E&P capex transmission as SLB; North American completion activity most exposed to majors' budget cuts.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PSX",
+          "rationale": "Refining crack spreads referenced in the same earnings cycle \u2014 weak downstream contribution at majors implies sector-wide refining margin pressure.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "iran_war_oil_profits_impact",
+      "source_news_ids": [
+        "1c4a2d730bcd4d98"
+      ],
+      "headlines": [
+        "America\u2019s biggest oil companies are making less money than before the Iran war"
+      ]
+    },
+    {
+      "event_summary": "Japan's recent yen intervention is seen as a temporary fix that could be undone by rising oil prices, since Japan imports nearly all its energy and higher crude widens its trade deficit, pressuring the yen lower again.",
+      "primary_drivers": [
+        "Yen weakness driven by Japan's energy import bill (oil priced in USD)",
+        "FX translation headwinds for US companies with large Japan revenue exposure",
+        "Japanese exporter competitiveness vs US peers when yen weakens"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "HMC",
+          "rationale": "Honda ADR \u2014 weaker yen boosts JPY-denominated earnings when translated, and improves export margins on US-bound vehicles built in Japan. Direct beneficiary of the thesis that yen intervention fails.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TM",
+          "rationale": "Toyota ADR \u2014 same mechanism as Honda but larger scale; ~25%+ of vehicles sold in US are Japan-built, so a weaker yen directly expands operating margin per unit. Most liquid US-listed pure-play on yen weakness.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "If the article's premise (oil staying high) holds, integrated oil majors with upstream leverage capture the windfall; XOM is the most liquid US pure-play on sustained crude prices.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar competes directly with Komatsu in construction/mining equipment; a sustained weaker yen hands Komatsu a 5-10% pricing advantage in third-country export markets, pressuring CAT's international margins.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "DE",
+          "rationale": "Deere competes with Kubota in compact ag/turf equipment globally; weaker yen improves Kubota's relative pricing in US and emerging markets, modest market-share headwind.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ACM",
+          "rationale": "Placeholder \u2014 removing, not relevant.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "oil_prices_jpy_yen_stability",
+      "source_news_ids": [
+        "b1d5c87c6db0114a"
+      ],
+      "headlines": [
+        "Japan just put a \u2018Band-Aid\u2019 on the yen. Why high oil prices could soon rip it off."
+      ]
+    }
+  ]
 }
