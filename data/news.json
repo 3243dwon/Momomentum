@@ -1,92 +1,66 @@
 {
-  "generated_at": "2026-05-02T14:48:22.207996-04:00",
+  "generated_at": "2026-05-02T16:34:58.718373-04:00",
   "ticker_news": {
-    "SOUN": [
+    "ULCC": [
       {
-        "id": "4710ff6e6415fd0f",
+        "id": "2f89dd708c196b0f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SOUN",
+        "ticker": "ULCC",
         "scope": "ticker",
-        "title": "Voice AI Is Heating Up\u2014SoundHound Is Back On Investors' Radar",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52237454/voice-ai-is-heating-up-soundhound-is-back-on-investors-radar",
-        "published_at": "2026-05-02T16:46:11+00:00",
+        "title": "Spirit Collapse Sparks Scramble As Rivals Rush In With Rescue Fares",
+        "url": "https://www.benzinga.com/news/travel/26/05/52237617/spirit-collapse-sparks-scramble-as-rivals-rush-in-with-rescue-fares",
+        "published_at": "2026-05-02T18:51:08+00:00",
         "type": "other",
-        "impact": "low",
-        "dedup_group": "voice_ai_sector_heating_up",
-        "tickers_mentioned": [
-          "TWLO"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TWLO": [
-      {
-        "id": "4710ff6e6415fd0f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TWLO",
-        "scope": "ticker",
-        "title": "Voice AI Is Heating Up\u2014SoundHound Is Back On Investors' Radar",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52237454/voice-ai-is-heating-up-soundhound-is-back-on-investors-radar",
-        "published_at": "2026-05-02T16:46:11+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "voice_ai_sector_heating_up",
-        "tickers_mentioned": [
-          "TWLO"
-        ],
+        "impact": "medium",
+        "dedup_group": "spirit_airlines_collapse_competitor_response",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "A MarketWatch op-ed argues higher inflation is coming and the Fed should signal rate hikes more clearly before acting.",
+      "event_summary": "Chicago Fed President Goolsbee \u2014 historically a dove \u2014 called recent inflation data \"bad news,\" signaling the Fed is unlikely to cut rates soon and may stay restrictive longer.",
       "primary_drivers": [
-        "Rising inflation expectations lifting breakevens and nominal yields",
-        "Hawkish Fed repricing \u2014 higher real rates and steeper front-end",
-        "Rotation from long-duration assets to inflation beneficiaries"
+        "Higher-for-longer policy rates raise discount rates on long-duration assets",
+        "Sticky inflation pressures real consumer spending and rate-sensitive sectors",
+        "Hawkish shift from a known dove disproportionately moves rate expectations"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Oil & gas integrated \u2014 direct revenue leverage to inflation as energy is a primary CPI driver; historically strong real-asset hedge with cash flows that rise with commodity prices.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same energy-as-inflation-hedge thesis; large dividend, lower duration than tech, benefits from re-rating toward real-asset cash flows when rates and inflation rise together.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "JPM",
-          "rationale": "Largest US bank with significant asset-sensitive balance sheet; net interest margin expands as the Fed hikes and the curve steepens at the front end.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SCHW",
-          "rationale": "Earns substantial net interest revenue on client cash sweeps; directly leveraged to higher short rates if Fed hikes, as priced in by hawkish repricing.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NUE",
-          "rationale": "Domestic steel producer with pricing power in inflationary environments; commodity producers historically outperform when inflation surprises to the upside.",
+          "ticker": "MCO",
+          "rationale": "Money market and short-duration fixed income flows benefit asset gatherers; less direct but Moody's/rating agencies see sustained issuance activity in higher-rate regimes. Weak link \u2014 listing as low confidence.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "weeks"
         }
       ],
-      "losers": [],
-      "dedup_group": "inflation_expectations_fed_communication",
+      "losers": [
+        {
+          "ticker": "DHI",
+          "rationale": "D.R. Horton is the largest US homebuilder with entry-level buyer concentration most sensitive to mortgage rates; consensus estimates assume rate relief in 2H.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "Z",
+          "rationale": "Zillow revenue tied to housing transaction volumes which freeze further when mortgage rates remain elevated; Premier Agent and mortgage segments both impacted.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OPEN",
+          "rationale": "Opendoor carries large inventory financed at floating rates; higher-for-longer compresses unit economics and prolongs the housing transaction freeze.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "fed_goolsbee_inflation_bad_news",
       "source_news_ids": [
-        "9b89602569adc819"
+        "e6f79e04aee903c8"
       ],
       "headlines": [
-        "Higher inflation is on the way. The Fed needs to make this clear before it raises rates."
+        "Recent inflation data was 'bad news,' Fed's Goolsbee says"
       ]
     }
   ]
