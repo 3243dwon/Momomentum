@@ -1,169 +1,92 @@
 {
-  "generated_at": "2026-05-02T12:39:00.520051-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-02T14:48:22.207996-04:00",
+  "ticker_news": {
+    "SOUN": [
+      {
+        "id": "4710ff6e6415fd0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SOUN",
+        "scope": "ticker",
+        "title": "Voice AI Is Heating Up\u2014SoundHound Is Back On Investors' Radar",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52237454/voice-ai-is-heating-up-soundhound-is-back-on-investors-radar",
+        "published_at": "2026-05-02T16:46:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "voice_ai_sector_heating_up",
+        "tickers_mentioned": [
+          "TWLO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "TWLO": [
+      {
+        "id": "4710ff6e6415fd0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TWLO",
+        "scope": "ticker",
+        "title": "Voice AI Is Heating Up\u2014SoundHound Is Back On Investors' Radar",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52237454/voice-ai-is-heating-up-soundhound-is-back-on-investors-radar",
+        "published_at": "2026-05-02T16:46:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "voice_ai_sector_heating_up",
+        "tickers_mentioned": [
+          "TWLO"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "Gas prices are surging fastest in five Trump-supporting states while US consumer sentiment hits an all-time low.",
+      "event_summary": "A MarketWatch op-ed argues higher inflation is coming and the Fed should signal rate hikes more clearly before acting.",
       "primary_drivers": [
-        "Higher retail gasoline prices boost refiner crack spreads and upstream realizations",
-        "Consumer sentiment collapse pressures discretionary spending, especially low-income/value retail and travel",
-        "Real disposable income squeeze from energy inflation acts like a tax on consumption"
+        "Rising inflation expectations lifting breakevens and nominal yields",
+        "Hawkish Fed repricing \u2014 higher real rates and steeper front-end",
+        "Rotation from long-duration assets to inflation beneficiaries"
       ],
       "beneficiaries": [
-        {
-          "ticker": "MPC",
-          "rationale": "Marathon Petroleum is the largest US independent refiner with heavy exposure to Midwest/Gulf retail gasoline cracks; surging pump prices typically widen 3-2-1 crack spreads and lift refining margins directly.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PSX",
-          "rationale": "Phillips 66 refining segment benefits from elevated retail gasoline prices; also owns marketing/midstream that captures pricing pass-through.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VLO",
-          "rationale": "Valero is the most gasoline-levered US pure-play refiner; crack spread expansion flows almost directly to EPS given limited integration drag.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
         {
           "ticker": "XOM",
-          "rationale": "ExxonMobil's integrated upstream + downstream model captures both higher crude realizations and refining margin; large US retail footprint in affected states.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Dollar General's core customer is the low-income consumer in rural Trump-state geographies precisely hit by gas prices; historically gains traffic share in trade-down cycles even as ticket pressures.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart's US comp is heavily tied to lower/middle-income consumer in red-state geographies; record-low sentiment plus gas-price tax on disposable income compresses general merchandise mix.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TGT",
-          "rationale": "Target skews more discretionary than Walmart; sentiment collapse and energy-driven wallet squeeze hits apparel/home categories hardest, where Target has been already weak.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DRI",
-          "rationale": "Darden (Olive Garden, LongHorn) casual dining traffic is highly sensitive to gas prices and consumer sentiment \u2014 historical correlation between AAA pump price and casual dining comps is strongly negative.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival's customer base overlaps with the gas-pinched middle-income consumer; bookings curve historically rolls over when sentiment hits cycle lows and fuel costs also pressure cruise opex.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Ford has heavy F-150/truck mix exposure to red-state buyers facing gas-price shock; truck demand and financing affordability deteriorate when pump prices spike alongside weak sentiment.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "YUM",
-          "rationale": "Yum Brands (Taco Bell, KFC, Pizza Hut) low-income QSR traffic falls when gas prices eat into discretionary cash; recent quarters already showed value-customer pullback.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "American Airlines faces double hit: jet fuel costs track crude/refined product prices higher, while leisure demand softens with sentiment at all-time lows.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "gas_prices_surge_consumer_sentiment",
-      "source_news_ids": [
-        "4206c842bd15798f"
-      ],
-      "headlines": [
-        "Gas prices are surging fastest in 5 states that backed Trump \u2014 and consumer sentiment hit an all-time low"
-      ]
-    },
-    {
-      "event_summary": "Medicare Advantage insurers are narrowing provider networks, forcing seniors to either pay more out-of-pocket or switch plans/providers.",
-      "primary_drivers": [
-        "MA insurers cutting costs by trimming provider networks amid margin pressure from higher utilization and CMS rate adjustments",
-        "Member churn and disenrollment risk as retirees seek new plans/providers",
-        "Reputational and regulatory scrutiny on MA business model"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "CVS",
-          "rationale": "CVS Aetna has been more aggressive on retaining broad networks vs. UNH/HUM in recent cycles; network disruption at competitors drives AEP/SEP switching into Aetna MA plans. MA is a core growth pillar for CVS.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CNC",
-          "rationale": "Centene's MA footprint is small relative to Medicaid, so it's less exposed to network-cut backlash; can opportunistically gain share in dual-eligible/low-income MA segments where competitors are pruning.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ALHC",
-          "rationale": "Alignment Healthcare is a pure-play MA disruptor that markets itself on stable, senior-focused networks; competitor network shakeups are a direct selling point during enrollment periods.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "HUM",
-          "rationale": "Humana derives ~85% of revenue from Medicare Advantage \u2014 the most concentrated pure-play. Network disruption stories directly hit member retention thesis and add political/regulatory headline risk into AEP. Already under margin pressure from MLR.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UNH",
-          "rationale": "UnitedHealth's UnitedHealthcare is the largest MA carrier and has been publicly cited for narrowing networks and dropping providers; story compounds existing DOJ/MLR overhang and feeds the 'MA business model breaking' narrative.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVS",
-          "rationale": "Counter-listed: while Aetna may gain share, CVS is also a major MA player and the broad sector de-rating from MA headline risk drags it. Net direction uncertain \u2014 including as a loser given sector beta dominates.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ELV",
-          "rationale": "Elevance has meaningful MA exposure and trades correlated with the managed care peer group; sector rotation away from MA names on regulatory/reputation risk hits it even though Medicaid/commercial is larger.",
+          "rationale": "Oil & gas integrated \u2014 direct revenue leverage to inflation as energy is a primary CPI driver; historically strong real-asset hedge with cash flows that rise with commodity prices.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "HCA",
-          "rationale": "Hospital operators face revenue risk if narrowed MA networks exclude their facilities or push insurers to negotiate harder rates; HCA has high MA mix in its payer book.",
+          "ticker": "CVX",
+          "rationale": "Same energy-as-inflation-hedge thesis; large dividend, lower duration than tech, benefits from re-rating toward real-asset cash flows when rates and inflation rise together.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "THC",
-          "rationale": "Tenet similarly exposed to MA reimbursement disputes; network exclusions reduce admissions volume from MA members in affected geographies.",
+          "ticker": "JPM",
+          "rationale": "Largest US bank with significant asset-sensitive balance sheet; net interest margin expands as the Fed hikes and the curve steepens at the front end.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Earns substantial net interest revenue on client cash sweeps; directly leveraged to higher short rates if Fed hikes, as priced in by hawkish repricing.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NUE",
+          "rationale": "Domestic steel producer with pricing power in inflationary environments; commodity producers historically outperform when inflation surprises to the upside.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
-      "dedup_group": "medicare_advantage_network_changes",
+      "losers": [],
+      "dedup_group": "inflation_expectations_fed_communication",
       "source_news_ids": [
-        "1c91927bab4444bc"
+        "9b89602569adc819"
       ],
       "headlines": [
-        "Network shakeups hit Medicare Advantage, forcing retirees to pay up or find new care"
+        "Higher inflation is on the way. The Fed needs to make this clear before it raises rates."
       ]
     }
   ]
