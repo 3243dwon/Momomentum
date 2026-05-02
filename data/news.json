@@ -1,22 +1,122 @@
 {
-  "generated_at": "2026-05-02T08:54:20.847921-04:00",
+  "generated_at": "2026-05-02T10:41:28.884137-04:00",
   "ticker_news": {
-    "GOOG": [
+    "CLX": [
       {
-        "id": "341fe74b4284b554",
+        "id": "94d4818b1ba3bb82",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GOOG",
+        "ticker": "CLX",
         "scope": "ticker",
-        "title": "5 Stocks Investors Couldn't Stop Buzzing About This Week: AAPL, GOOG, HOOD And More",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52236393/5-stocks-investors-couldnt-stop-buzzing-about-this-week-aapl-goog-hood-and-more",
-        "published_at": "2026-05-02T12:02:00+00:00",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "weekly_stock_buzz_roundup",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
         "tickers_mentioned": [
           "AAPL",
-          "HOOD"
+          "INTC",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "94d4818b1ba3bb82",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CLX",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
+        "tickers_mentioned": [
+          "AAPL",
+          "INTC",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "94d4818b1ba3bb82",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
+        "tickers_mentioned": [
+          "AAPL",
+          "INTC",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "94d4818b1ba3bb82",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
+        "tickers_mentioned": [
+          "AAPL",
+          "INTC",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RBLX": [
+      {
+        "id": "94d4818b1ba3bb82",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RBLX",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
+        "tickers_mentioned": [
+          "AAPL",
+          "INTC",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "94d4818b1ba3bb82",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RBLX",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Apple, Intel, Tesla \u2014 And Markets Extend April Rally",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52236474/benzinga-bulls-and-bears-apple-intel-tesla-and-markets-extend-april-rally",
+        "published_at": "2026-05-02T13:02:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_april_rally_recap",
+        "tickers_mentioned": [
+          "AAPL",
+          "INTC",
+          "TSLA"
         ],
         "route_to_synthesis": false
       }
@@ -24,137 +124,82 @@
   },
   "macro_events": [
     {
-      "event_summary": "Major US oil companies are reporting lower earnings than before the Iran war, suggesting crude prices have fallen back despite geopolitical risk premium expectations.",
+      "event_summary": "Jamie Dimon publicly warns the next credit crisis will be worse than markets expect, amplifying concerns surfaced in big bank earnings about deteriorating credit quality.",
       "primary_drivers": [
-        "Lower realized crude/refined product prices compressing upstream margins",
-        "Cost inflation (services, labor) not receding alongside revenue",
-        "Weaker downstream/chemicals contribution"
+        "Rising credit loss provisions / NPL fears compress bank earnings",
+        "Risk-off rotation away from levered/sub-prime credit exposure",
+        "Flight to quality benefiting safe-haven assets and credit-quality monitors"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; sustained lower crude directly expands margins. Delta has been most vocal about fuel cost sensitivity in guidance.",
+          "ticker": "MCO",
+          "rationale": "Moody's revenue rises with credit downgrade cycles and increased demand for credit risk analytics; ratings activity historically picks up during stress periods.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "UAL",
-          "rationale": "Same fuel-cost mechanic as DAL; United has higher long-haul exposure where fuel is an even larger cost share.",
+          "ticker": "SPGI",
+          "rationale": "S&P Global ratings/risk services see higher engagement as credit dispersion widens; also benefits from defensive subscription revenue mix.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Lower naphtha/ethane-linked feedstock costs improve chemicals spreads; Dow's commodity chemicals segment is highly sensitive to oil-derived input costs.",
+          "ticker": "JPM",
+          "rationale": "Counterintuitive beneficiary: Dimon's own bank is positioned as the 'fortress balance sheet' \u2014 in prior credit cycles JPM gained share and acquired distressed assets (Bear, WaMu, FRC). Relative outperformance vs. regional peers.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "XOM",
-          "rationale": "Directly named cohort \u2014 upstream price realizations down with crude, and downstream/chemicals not offsetting. Earnings compression is the story.",
+          "ticker": "ALLY",
+          "rationale": "Heavy auto loan exposure with rising sub-prime delinquencies; most credit-sensitive of the consumer lenders and trades as a high-beta proxy for consumer credit deterioration.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Same upstream realization pressure as XOM; Permian and Gulf production economics weaker at current strip than pre-conflict assumptions.",
+          "ticker": "COF",
+          "rationale": "Capital One is dominated by credit card and sub-prime auto; charge-off rates already elevated and Dimon's warning amplifies provision-build fears.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "COP",
-          "rationale": "Pure-play E&P with no downstream buffer \u2014 most direct earnings sensitivity to lower crude realizations among majors.",
+          "ticker": "SYF",
+          "rationale": "Synchrony's private-label card book is concentrated in lower-FICO consumers \u2014 first to crack in a credit downturn; direct read-through from Dimon's consumer credit commentary.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "High leverage post-Anadarko/CrownRock makes cash-flow sensitive to crude prices; lower realized prices pressure debt-paydown thesis.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "ticker": "ZION",
+          "rationale": "Pure-play regional with outsized CRE concentration relative to capital; sentiment-driven selloffs in regionals whenever credit-crisis rhetoric escalates (echoes 2023 SVB pattern).",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
-          "ticker": "SLB",
-          "rationale": "Oilfield services demand and pricing power tied to E&P capex, which is set off operator cash flows \u2014 sustained margin compression at majors threatens 2026 service budgets.",
+          "ticker": "BXSL",
+          "rationale": "Blackstone's BDC \u2014 private credit / direct lending vehicles are at the center of the 'next credit crisis' narrative; mark-to-market and NAV concerns intensify on systemic warnings.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Same E&P capex transmission as SLB; North American completion activity most exposed to majors' budget cuts.",
+          "ticker": "ARCC",
+          "rationale": "Largest publicly traded BDC; direct exposure to middle-market leveraged loans which are the specific area Dimon and other bank CEOs have flagged as opaque/risky.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "PSX",
-          "rationale": "Refining crack spreads referenced in the same earnings cycle \u2014 weak downstream contribution at majors implies sector-wide refining margin pressure.",
+          "ticker": "SLM",
+          "rationale": "Sallie Mae \u2014 consumer credit (private student loans) with rising delinquency trends; high-beta to any 'consumer is cracking' narrative coming from bank earnings.",
           "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "dedup_group": "iran_war_oil_profits_impact",
+      "dedup_group": "dimon_credit_crisis_warning_banking_outlook",
       "source_news_ids": [
-        "1c4a2d730bcd4d98"
+        "8c0191cf6cdb18ec"
       ],
       "headlines": [
-        "America\u2019s biggest oil companies are making less money than before the Iran war"
-      ]
-    },
-    {
-      "event_summary": "Japan's recent yen intervention is seen as a temporary fix that could be undone by rising oil prices, since Japan imports nearly all its energy and higher crude widens its trade deficit, pressuring the yen lower again.",
-      "primary_drivers": [
-        "Yen weakness driven by Japan's energy import bill (oil priced in USD)",
-        "FX translation headwinds for US companies with large Japan revenue exposure",
-        "Japanese exporter competitiveness vs US peers when yen weakens"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "HMC",
-          "rationale": "Honda ADR \u2014 weaker yen boosts JPY-denominated earnings when translated, and improves export margins on US-bound vehicles built in Japan. Direct beneficiary of the thesis that yen intervention fails.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TM",
-          "rationale": "Toyota ADR \u2014 same mechanism as Honda but larger scale; ~25%+ of vehicles sold in US are Japan-built, so a weaker yen directly expands operating margin per unit. Most liquid US-listed pure-play on yen weakness.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "If the article's premise (oil staying high) holds, integrated oil majors with upstream leverage capture the windfall; XOM is the most liquid US pure-play on sustained crude prices.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar competes directly with Komatsu in construction/mining equipment; a sustained weaker yen hands Komatsu a 5-10% pricing advantage in third-country export markets, pressuring CAT's international margins.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "DE",
-          "rationale": "Deere competes with Kubota in compact ag/turf equipment globally; weaker yen improves Kubota's relative pricing in US and emerging markets, modest market-share headwind.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ACM",
-          "rationale": "Placeholder \u2014 removing, not relevant.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "oil_prices_jpy_yen_stability",
-      "source_news_ids": [
-        "b1d5c87c6db0114a"
-      ],
-      "headlines": [
-        "Japan just put a \u2018Band-Aid\u2019 on the yen. Why high oil prices could soon rip it off."
+        "Jamie Dimon says the next credit crisis will be 'worse than people expect' \u2014 here's what big bank earnings have revealed"
       ]
     }
   ]
