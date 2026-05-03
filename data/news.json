@@ -1,5 +1,206 @@
 {
-  "generated_at": "2026-05-03T16:35:29.630712-04:00",
+  "generated_at": "2026-05-03T18:34:00.565189-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Trump pledges U.S. military action to free ships trapped in the Persian Gulf following a closure of the Strait of Hormuz, signaling escalation with Iran and major disruption to global oil/LNG flows.",
+      "primary_drivers": [
+        "Oil supply shock \u2014 ~20% of global oil and ~20% of LNG transits Hormuz; closure removes barrels from market",
+        "Tanker rerouting / vessel scarcity drives spot tanker rates higher",
+        "Geopolitical risk premium boosts defense spending expectations and safe-haven flows"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback is a pure-play Permian crude producer with zero Middle East exposure; a Hormuz closure removes ~17M bpd of seaborne supply, sending WTI sharply higher and directly lifting realized prices on every barrel.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "Domestic US shale producer with high oil cut and low hedging ratio historically; direct beneficiary of the WTI spike from a Hormuz supply shock with no operational risk in the region.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline operates VLCC/Suezmax tankers; Hormuz closure forces global rerouting around Africa, ton-mile demand spikes, and spot tanker rates historically multiply 3-5x in such events.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers runs product tankers (MR/LR2); Gulf product flows disrupted forces arbitrage cargoes from US Gulf and Atlantic basin, lifting clean tanker TCE rates dramatically.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter; Qatar's ~77 mtpa of LNG (\u224820% of global) is stranded behind Hormuz, making US Gulf Coast LNG the marginal replacement supply with massive spot price uplift on uncontracted volumes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed makes THAAD, PAC-3 Patriot interceptors and Aegis components \u2014 direct restock demand from US/allied forces operating in the Gulf, plus likely emergency FMS orders from Saudi/UAE/Israel.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon supplies SM-2/SM-3/SM-6 ship-defense missiles and Tomahawks; active Gulf naval operations against Iranian assets drive immediate munitions consumption and replenishment contracts.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "ExxonMobil's integrated model captures upstream WTI/Brent uplift while its US refining benefits from cheap domestic crude vs. spiked international product prices; limited direct Gulf production exposure relative to peers.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has minimal fuel hedging and jet fuel is its second-largest cost (~25% of opex); a Brent spike of $20-40 from Hormuz closure compresses margins by hundreds of millions per quarter.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United runs heavy international long-haul exposure with no fuel hedges; jet fuel cost shock plus potential Gulf airspace rerouting (longer flights, more fuel burn) is a double hit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's all-domestic 737 fleet still consumes ~2B gallons/year of jet fuel; historically hedged but current hedge book is limited \u2014 direct margin compression from crude spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival operates cruise ships with bunker fuel as major variable cost; also faces itinerary disruption and consumer discretionary pullback if a broader Mideast war narrative takes hold.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Schlumberger has significant Middle East service revenue (~25-30%) including operations in the Gulf states; physical conflict risk threatens activity, personnel, and contract continuity.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton has meaningful Saudi/UAE/Iraq service exposure; Gulf hostilities risk operational shutdown and asset stranding in the region.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MAR",
+          "rationale": "Marriott has large Middle East franchise and managed footprint (UAE, Saudi, Qatar); active conflict halts business and tourism travel in the Gulf, directly hitting RevPAR.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx Express network depends on Dubai as a major hub; Gulf airspace disruption and jet fuel surge hit both routing and unit economics simultaneously.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "trump_hormuz_strait_reopening_plan",
+      "source_news_ids": [
+        "ddf0e935298289c6"
+      ],
+      "headlines": [
+        "Trump says U.S. will 'free' ships trapped in Persian Gulf by Strait of Hormuz closure"
+      ]
+    },
+    {
+      "event_summary": "Trump administration approves a new \"Keystone Light\" cross-border oil pipeline expanding Canadian heavy crude flow into the US.",
+      "primary_drivers": [
+        "Improved takeaway capacity for Canadian heavy crude reduces WCS-WTI differential",
+        "Direct construction/operating revenue for pipeline owner and contractors",
+        "Cheaper heavy crude feedstock for US Gulf/Midcon refiners configured for heavy sour"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "TRP",
+          "rationale": "TC Energy is the original Keystone operator; a 'Keystone Light' approval most plausibly accrues to TRP as builder/operator, adding tariff-bearing volumes and rate-base growth.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ENB",
+          "rationale": "Enbridge benefits from peer rotation and a more permissive cross-border permitting backdrop; even if not the operator, Mainline economics improve when Canadian egress bottlenecks ease and producers ramp.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CNQ",
+          "rationale": "Canadian Natural Resources is the largest heavy oil/oil sands producer; narrower WCS differential from added pipeline egress directly lifts realized prices and netbacks.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SU",
+          "rationale": "Suncor's integrated oil sands production sees higher realized prices on tighter WCS-WTI spread once incremental takeaway capacity is sanctioned.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CVE",
+          "rationale": "Cenovus is heavily levered to WCS pricing; pipeline egress relief is the single biggest swing factor for upstream margins.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "MPC",
+          "rationale": "Marathon Petroleum's Garyville and Midcon refineries are configured for heavy sour; cheaper, more reliable Canadian heavy feedstock improves crack capture vs Gulf imports.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "PSX",
+          "rationale": "Phillips 66's Wood River and Borger refineries run Canadian heavy; expanded Keystone capacity lowers feedstock cost and reduces reliance on waterborne heavy barrels.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "PUMP",
+          "rationale": "ProPetro and Canadian oilfield service names see incremental completion activity if WCS strengthens and oil sands/heavy producers sanction growth capex on improved egress.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "USEG",
+          "rationale": "Domestic small-cap producers of light sweet crude face relative pressure as Canadian heavy gains market share at US refiners and broader crude differentials compress against light grades.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CRK",
+          "rationale": "Not directly exposed to crude, but pipeline approval signals a permitting environment shift that primarily helps oil infrastructure over gas; relative rotation risk.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Valero's Gulf Coast refining complex already sources advantaged heavy via waterborne Latin American barrels; competitors gaining pipeline-delivered Canadian heavy erodes Valero's relative feedstock edge.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "trump_keystone_light_approval",
+      "source_news_ids": [
+        "4d6eaf77902273d4"
+      ],
+      "headlines": [
+        "Trump Approves \"Keystone Light\" Canada-U.S. Oil Pipeline"
+      ]
+    }
+  ]
 }
