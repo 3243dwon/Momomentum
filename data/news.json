@@ -1,23 +1,170 @@
 {
-  "generated_at": "2026-05-03T06:48:22.033491-04:00",
-  "ticker_news": {
-    "GOOG": [
-      {
-        "id": "6d405b9d4ec938a6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOG",
-        "scope": "ticker",
-        "title": "US GDP Grows 2%, Gas Prices Soar, Mark Cuban's Warning: This Week In Economy",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52238268/us-gdp-grows-2-gas-prices-soar-mark-cubans-warning-this-week-in-economy",
-        "published_at": "2026-05-03T10:02:32+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "weekly_economy_recap_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-05-03T08:54:07.138724-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "U.S. crude oil exports hit a record as tankers divert to the Gulf Coast amid an Iran war, with global buyers seeking non-Middle East barrels.",
+      "primary_drivers": [
+        "Middle East supply risk premium redirecting demand to U.S. Gulf Coast barrels",
+        "Higher crude export volumes and widening Brent-WTI spread benefiting Gulf Coast logistics",
+        "Elevated tanker rates from rerouted/longer-haul shipments"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "EPD",
+          "rationale": "Enterprise Products Partners operates the largest Gulf Coast crude export terminal infrastructure (EHT at Houston, Beaumont). Record export volumes drive throughput fees directly; volume-linked midstream revenue with little commodity risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ET",
+          "rationale": "Energy Transfer owns Nederland terminal on the Gulf Coast, a major crude export facility. Surging tanker loadings translate directly into terminal and pipeline tariff revenue.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MPLX",
+          "rationale": "Operates Gulf Coast export logistics tied to MPC's refining/export complex; benefits from increased dock and pipeline utilization as exports hit records.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a pure-play Permian producer whose barrels feed Gulf Coast exports; widening Brent-WTI spread and elevated WTI realize directly into cash flow with low hedging.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "Large U.S. shale producer, unhedged exposure to WTI; record export pull tightens domestic supply and supports realized pricing.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline is a pure-play crude tanker operator (VLCC/Suezmax). Tankers 'flocking' to the Gulf and longer-haul routes (US\u2192Asia/Europe replacing Mideast barrels) directly spike day rates.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways crude tanker fleet benefits from the same ton-mile expansion as US Gulf exports replace shorter-haul Middle East flows.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TRGP",
+          "rationale": "Targa Resources operates Galena Park Gulf Coast export terminal and Permian gathering; volume throughput rises with record export tempo.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DK",
+          "rationale": "Delek US is a Gulf Coast refiner whose feedstock costs rise as domestic crude is pulled into export markets, narrowing crack spreads on U.S. medium/light barrels just as WTI rises.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PBF",
+          "rationale": "PBF Energy refining margins compressed by higher domestic crude costs as record exports tighten Gulf Coast supply; limited upstream offset.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has the largest jet fuel exposure among US carriers and minimal hedging; sustained crude strength from Iran war directly raises operating costs.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest Airlines is highly fuel-sensitive and largely unhedged in current cycle; rising sustained crude prices pressure margins.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "us_crude_exports_surge_iran_tensions",
+      "source_news_ids": [
+        "92067aa09f30e613"
+      ],
+      "headlines": [
+        "U.S. crude oil exports surge to record as tankers flock to Gulf Coast during Iran war"
+      ]
+    },
+    {
+      "event_summary": "OPEC+ announced a modest 188k bpd output increase at its first meeting without the UAE, signaling both a small supply bump and a fracture in cartel cohesion.",
+      "primary_drivers": [
+        "Marginal crude supply increase pressuring oil prices",
+        "Loss of UAE signals weakening OPEC+ discipline \u2014 risk premium on future cohesion",
+        "Lower oil price input costs for fuel consumers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating costs for legacy carriers; a softer crude tape from incremental supply + cartel-discipline concerns directly compresses fuel cost outlook. Delta has historically had the cleanest fuel-cost leverage among legacies.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's all-737 fleet and domestic exposure make it one of the most fuel-cost-sensitive US airlines; its hedge book is also lighter than peers, so spot crude declines flow through faster.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha-linked petrochemical feedstocks track crude; lower oil reduces input costs and improves spreads for commodity chemical producers.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with ~60% upstream earnings exposure; any incremental supply + signs of OPEC+ fragmentation (UAE departure raises risk of further quota-busting) pressures realized crude prices and forward strip.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Similar upstream exposure to XOM with heavy Permian + international production; direct price-taker on Brent/WTI which both face downside from supply add and cartel-cohesion concerns.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US E&P with high operating leverage to WTI; Permian-weighted, lightly hedged, debt-laden balance sheet means crude downside hits equity disproportionately.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Small-cap E&P with high beta to crude and meaningful UAE/Egypt offshore operations \u2014 both crude-price and direct geopolitical/operational read-through to UAE departure narrative.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services revenue tracks E&P capex which is set off forward crude curve; a weaker strip + signal of less coordinated production discipline pressures international service activity outlook.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "North American completions exposure makes Halliburton highly sensitive to US shale capex, which retraces quickly on WTI weakness.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "opec_plus_188k_bpd_increase_may_2026",
+      "source_news_ids": [
+        "4afcd038ad259656"
+      ],
+      "headlines": [
+        "OPEC+ announces 188,000 barrels-per-day output increase in first meeting without UAE"
+      ]
+    }
+  ]
 }
