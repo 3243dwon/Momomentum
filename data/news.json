@@ -1,254 +1,168 @@
 {
-  "generated_at": "2026-05-04T02:44:17.590890-04:00",
+  "generated_at": "2026-05-04T06:06:31.306045-04:00",
   "ticker_news": {
-    "GOOG": [
+    "AXTI": [
       {
-        "id": "606cbebbb8a2ec1e",
+        "id": "13cc4917ae7a8008",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GOOG",
+        "ticker": "AXTI",
         "scope": "ticker",
-        "title": "Mark Cuban Predicts 5 Years Of Corporate Chaos: Why 'Walled Gardens' From AI Giants Like Microsoft, Alphabet Will Break Big Business",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52240279/mark-cuban-predicts-5-years-of-corporate-chaos-why-walled-gardens-from-ai-giants-like-microsoft-alphabet-will-break-big-business",
-        "published_at": "2026-05-04T06:32:37+00:00",
+        "title": "5 Stocks In The Spotlight Last Week:  Wall Street's Most Accurate Analysts Weigh In",
+        "url": "https://www.benzinga.com/news/26/05/52240905/5-stocks-in-the-spotlight-last-week-wall-streets-most-accurate-analysts-weigh-in-8",
+        "published_at": "2026-05-04T08:32:42+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "mark_cuban_ai_walled_gardens",
-        "tickers_mentioned": [
-          "MSFT"
-        ],
+        "dedup_group": "wall_street_analysts_spotlight_week",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
-      },
+      }
+    ],
+    "GOOG": [
       {
-        "id": "69e73597576dc5c8",
+        "id": "c4f6bdde894fb762",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
-        "published_at": "2026-05-04T05:21:39+00:00",
-        "type": "analyst",
+        "title": "Data Center Boom Meets Energy Limits As Denmark Halts New Projects Amid AI-Driven Power Crisis",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240792/data-center-boom-meets-energy-limits-as-denmark-halts-new-projects-amid-ai-driven-power-crisis",
+        "published_at": "2026-05-04T08:12:16+00:00",
+        "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "dedup_group": "denmark_datacenters_power_crisis",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "69e73597576dc5c8",
+        "id": "91f25b629b26fc3a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
-        "published_at": "2026-05-04T05:21:39+00:00",
-        "type": "analyst",
+        "title": "Chamath Palihapitiya Warns Power Crunch Could Cripple OpenAI And Anthropic, Says Elon Musk Holds Massive AI Leverage",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240337/chamath-palihapitiya-warns-power-crunch-could-cripple-openai-and-anthropic-says-elon-musk-holds-massive-ai-leverage",
+        "published_at": "2026-05-04T06:49:10+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "dedup_group": "chamath_ai_power_crunch_warning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "91f25b629b26fc3a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "Chamath Palihapitiya Warns Power Crunch Could Cripple OpenAI And Anthropic, Says Elon Musk Holds Massive AI Leverage",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240337/chamath-palihapitiya-warns-power-crunch-could-cripple-openai-and-anthropic-says-elon-musk-holds-massive-ai-leverage",
+        "published_at": "2026-05-04T06:49:10+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "chamath_ai_power_crunch_warning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "6b3dc69facaab360",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Peter Schiff Calls Strategy's Preferred Stock 'Most Obvious' Ponzi Scheme Because The Michael Saylor-Led Company Is 'Open' About It",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52240434/peter-schiff-calls-strategys-preferred-stock-most-obvious-ponzi-scheme-because-the-michael-saylor-led-company-is-open-about-it",
+        "published_at": "2026-05-04T06:55:34+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mstr_schiff_ponzi_critique",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "ORCL": [
       {
-        "id": "69e73597576dc5c8",
+        "id": "91f25b629b26fc3a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "ORCL",
         "scope": "ticker",
-        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
-        "published_at": "2026-05-04T05:21:39+00:00",
-        "type": "analyst",
+        "title": "Chamath Palihapitiya Warns Power Crunch Could Cripple OpenAI And Anthropic, Says Elon Musk Holds Massive AI Leverage",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240337/chamath-palihapitiya-warns-power-crunch-could-cripple-openai-and-anthropic-says-elon-musk-holds-massive-ai-leverage",
+        "published_at": "2026-05-04T06:49:10+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "dedup_group": "chamath_ai_power_crunch_warning",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "69e73597576dc5c8",
+        "id": "91f25b629b26fc3a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "ORCL",
         "scope": "ticker",
-        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
-        "published_at": "2026-05-04T05:21:39+00:00",
-        "type": "analyst",
+        "title": "Chamath Palihapitiya Warns Power Crunch Could Cripple OpenAI And Anthropic, Says Elon Musk Holds Massive AI Leverage",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240337/chamath-palihapitiya-warns-power-crunch-could-cripple-openai-and-anthropic-says-elon-musk-holds-massive-ai-leverage",
+        "published_at": "2026-05-04T06:49:10+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "dedup_group": "chamath_ai_power_crunch_warning",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ULCC": [
+    "TSN": [
       {
-        "id": "946faf1aac943019",
+        "id": "62a6d2a723f62cfe",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ULCC",
+        "ticker": "TSN",
         "scope": "ticker",
-        "title": "Gavin Newsom Slams Trump's 'Iran War Tax' As California Gas Price Breaks $6/Gallon Threshold",
-        "url": "https://www.benzinga.com/news/politics/26/05/52240178/gavin-newsom-slams-trumps-iran-war-tax-as-california-gas-price-breaks-6-gallon-threshold",
-        "published_at": "2026-05-04T06:20:44+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_war_fuel_prices_ulcc",
+        "title": "Will S&P 500 Open Up Or Down On May 4?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52241278/sp500-may-4-open-up-or-down-polymarket-record-highs-iran-project-freedom",
+        "published_at": "2026-05-04T09:23:44+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_morning_preview_may4",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       },
       {
-        "id": "2d0d0224741e9069",
+        "id": "fece5e9272b1ca17",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ULCC",
+        "ticker": "TSN",
         "scope": "ticker",
-        "title": "Elizabeth Warren Says Trump's Iran War Was Final 'Nail In The Coffin' For Spirit Airlines: 'Spiking Fuel Prices\u2026'",
-        "url": "https://www.benzinga.com/news/politics/26/05/52239889/elizabeth-warren-says-trumps-iran-war-was-final-nail-in-the-coffin-for-spirit-airlines-spiking-fuel-prices",
-        "published_at": "2026-05-04T04:20:36+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_war_fuel_prices_ulcc",
+        "title": "S&P 500 Settles At New High As Apple Shares Gain: Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52240416/sp-500-settles-at-new-high-as-apple-shares-gain-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-04T06:54:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_close_may4_apple_vix",
+        "tickers_mentioned": [
+          "AAPL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "111a5f2bdcae2c45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSN",
+        "scope": "ticker",
+        "title": "Tyson Foods, Williams Companies And 3 Stocks To Watch Heading Into Monday",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52240312/tyson-foods-williams-companies-and-3-stocks-to-watch-heading-into-monday",
+        "published_at": "2026-05-04T06:44:15+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_watchlist_may4",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "India is ramping up coal-fired power generation as a heatwave drives record electricity demand and the Iran war tightens global LNG supply, pushing gas prices higher and making coal the marginal fuel.",
-      "primary_drivers": [
-        "LNG supply disruption from Iran/Middle East conflict raising global gas prices",
-        "Coal substitution for gas in power generation when gas becomes uneconomic",
-        "Tight seaborne thermal coal market as India increases imports"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "BTU",
-          "rationale": "Peabody Energy is the largest US thermal coal producer with seaborne export exposure; tighter global thermal coal market from Indian import demand directly lifts Newcastle/API benchmark prices and BTU's export realizations.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AMR",
-          "rationale": "Alpha Metallurgical primarily exports met coal but global coal price complex moves together; spillover from thermal tightness lifts overall coal equity sentiment and pricing.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TGS",
-          "rationale": "Transocean and offshore drillers \u2014 wait, replacing \u2014 Teekay Tankers benefit from longer-haul LNG and coal shipping routes; rerouted energy flows lift tanker tonne-miles.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere Energy is the largest US LNG exporter; Iran-driven supply loss and elevated JKM/TTF spot prices increase the value of its uncontracted volumes and marketing margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EQT",
-          "rationale": "Largest US natgas producer with leverage to Henry Hub strength as US LNG export demand intensifies on global gas tightness from the Iran war.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "HNRG",
-          "rationale": "Hallador Energy is a small-cap Illinois Basin thermal coal producer \u2014 high-beta play on US thermal coal price increases as global tightness backs up into domestic markets.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "FSLR",
-          "rationale": "First Solar \u2014 actually a stretch here; Indian utilities pivoting to coal for reliability under heat stress is a marginal negative for solar-as-baseload narrative, but FSLR has limited India revenue. Low conviction loser.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "IBN",
-          "rationale": "ICICI Bank \u2014 Indian banks face indirect headwind if power-sector NPLs rise on coal cost inflation and if rupee weakens forcing RBI to defend currency rather than cut rates.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "india_coal_surge_heat_iran_war",
-      "source_news_ids": [
-        "0de0942dab06cae6"
-      ],
-      "headlines": [
-        "India is burning more coal as extreme heat and the Iran war squeeze energy supplies"
-      ]
-    },
-    {
-      "event_summary": "Trump threatens new auto tariffs, pressuring European markets and foreign automakers ahead of the open.",
-      "primary_drivers": [
-        "Tariff cost passthrough on imported vehicles raising effective prices for foreign OEMs",
-        "Relative competitive advantage shift toward US-domiciled auto manufacturers",
-        "Supply chain disruption risk for cross-border auto parts flows"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "F",
-          "rationale": "Ford has the highest share of US-built vehicles among Detroit Three; tariffs on European/imported autos make domestically produced F-150, Explorer relatively cheaper vs European luxury/mass imports.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GM",
-          "rationale": "Predominantly North American production footprint; tariffs raise sticker price of European import competitors (BMW, Mercedes, VW Audi), boosting GM's relative pricing power in US market.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "100% US-manufactured for US market; direct beneficiary as European EV imports (Porsche Taycan, Audi e-tron, Mercedes EQ line) become more expensive, removing premium EV competition.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIVN",
-          "rationale": "US-only manufacturing in Normal, IL with no European import exposure; benefits from any pricing umbrella raised by tariffed European premium SUVs/trucks.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "STLA",
-          "rationale": "Stellantis has heavy European manufacturing exposure (Fiat, Peugeot, Alfa Romeo, Maserati imports to US); tariffs directly hit cost structure on EU-built models shipped stateside.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TM",
-          "rationale": "Although Japanese, Toyota imports a meaningful share of vehicles (Land Cruiser, some Lexus) and faces risk that 'auto tariffs' broaden beyond Europe to all imports as Trump tariff rhetoric historically expands.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APTV",
-          "rationale": "Aptiv has substantial European manufacturing footprint for wiring/electrical systems shipped into global auto supply chains; tariffs disrupt cross-border parts flows and pressure OEM customer volumes.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MGA",
-          "rationale": "Magna International is a major auto parts supplier with European plants serving European OEMs that ship to US; volume declines at BMW/Mercedes/VW US sales flow back through Magna's order book.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "trump_auto_tariffs_may_2026",
-      "source_news_ids": [
-        "259ba295add34d44"
-      ],
-      "headlines": [
-        "European markets set to open lower as Trump threatens new auto tariffs"
-      ]
-    }
-  ]
+  "macro_events": []
 }
