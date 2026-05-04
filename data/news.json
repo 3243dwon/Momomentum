@@ -1,551 +1,926 @@
 {
-  "generated_at": "2026-05-04T12:26:47.785570-04:00",
+  "generated_at": "2026-05-04T13:58:33.671505-04:00",
   "ticker_news": {
-    "DDOG": [
+    "EBAY": [
       {
-        "id": "195e2455080953c6",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "DDOG",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "$100 Invested In Datadog 5 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52254563/100-invested-in-datadog-5-years-ago-would-be-worth-this-much-today",
-        "published_at": "2026-05-04T15:46:02+00:00",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "ddog_historical_performance_retrospective",
-        "tickers_mentioned": [],
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
         "route_to_synthesis": false
-      }
-    ],
-    "CRWV": [
+      },
       {
-        "id": "cace8b10da7cc4e3",
+        "id": "7890fb59480f170a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CRWV",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "Why Is CoreWeave Stock Surging Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52253747/why-is-coreweave-stock-surging-monday",
-        "published_at": "2026-05-04T15:26:23+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "crwv_stock_surge_may_4_2026",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "f4dfb0d394ec92b7",
+        "id": "c088bb8854857dba",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CRWV",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "Earnings Volatility Watch: 7 AI-Linked Stocks Are Set For Double-Digit Moves This Week",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52251701/earnings-volatility-watch-arm-coreweave-applovin-may-2026",
-        "published_at": "2026-05-04T14:45:07+00:00",
+        "title": "eBay Is GameStop's $100 Billion Shortcut \u2014 Ryan Cohen's 'Genius Or Foolish' Moment Is Here",
+        "url": "https://www.benzinga.com/m-a/26/05/52256713/ebay-is-gamestops-100-billion-shortcut-ryan-cohens-genius-or-foolish-moment-is-here",
+        "published_at": "2026-05-04T16:33:36+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "gamestop_ebay_partnership_ambitions",
+        "tickers_mentioned": [
+          "GME"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EBAY",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "earnings_volatility_watch_ai_stocks_may_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
         "route_to_synthesis": false
-      }
-    ],
-    "ARM": [
+      },
       {
-        "id": "f4dfb0d394ec92b7",
+        "id": "7890fb59480f170a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ARM",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "Earnings Volatility Watch: 7 AI-Linked Stocks Are Set For Double-Digit Moves This Week",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52251701/earnings-volatility-watch-arm-coreweave-applovin-may-2026",
-        "published_at": "2026-05-04T14:45:07+00:00",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EBAY",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "earnings_volatility_watch_ai_stocks_may_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
         "route_to_synthesis": false
-      }
-    ],
-    "EQNR": [
+      },
       {
-        "id": "98f038febe744a8f",
+        "id": "7890fb59480f170a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "EQNR",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "What's Going On With Equinor Stock Monday?",
-        "url": "https://www.benzinga.com/markets/large-cap/26/05/52242688/whats-going-on-with-equinor-stock-monday",
-        "published_at": "2026-05-04T11:03:36+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "eqnr_stock_movement_may_4_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NCLH": [
-      {
-        "id": "f160b9b8e9757fd6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NCLH",
-        "scope": "ticker",
-        "title": "Gold Falls Over 2%; US Factory Orders Rise In March",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52255436/gold-falls-over-2-us-factory-orders-rise-in-march",
-        "published_at": "2026-05-04T16:05:01+00:00",
-        "type": "macro_commodity",
-        "impact": "low",
-        "dedup_group": "gold_falls_us_factory_orders_march_2026",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "INTC": [
       {
-        "id": "24b224fd35c9d868",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Nvidia, Apple, Tesla Are Shut Out Of S&P 500's New Ruling Class",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52254624/nvidia-apple-tesla-are-shut-out-of-sp-500s-new-ruling-class",
-        "published_at": "2026-05-04T15:47:25+00:00",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sp500_new_ruling_class_nvidia_apple_tesla_excluded",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL",
-          "TSLA"
+          "PLTR",
+          "GME"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "437587567109cf99",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Intel Clears Antitrust Hurdle For SambaNova Deal",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52246555/intel-clears-antitrust-hurdle-for-sambanova-deal",
-        "published_at": "2026-05-04T13:03:31+00:00",
-        "type": "ma",
-        "impact": "medium",
-        "dedup_group": "intel_sambanova_antitrust_cleared",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "24b224fd35c9d868",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nvidia, Apple, Tesla Are Shut Out Of S&P 500's New Ruling Class",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52254624/nvidia-apple-tesla-are-shut-out-of-sp-500s-new-ruling-class",
-        "published_at": "2026-05-04T15:47:25+00:00",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sp500_new_ruling_class_nvidia_apple_tesla_excluded",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL",
-          "TSLA"
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
         ],
         "route_to_synthesis": false
       }
     ],
     "SNDK": [
       {
-        "id": "24b224fd35c9d868",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Nvidia, Apple, Tesla Are Shut Out Of S&P 500's New Ruling Class",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52254624/nvidia-apple-tesla-are-shut-out-of-sp-500s-new-ruling-class",
-        "published_at": "2026-05-04T15:47:25+00:00",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sp500_new_ruling_class_nvidia_apple_tesla_excluded",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL",
-          "TSLA"
+          "PLTR",
+          "GME"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "24b224fd35c9d868",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Nvidia, Apple, Tesla Are Shut Out Of S&P 500's New Ruling Class",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52254624/nvidia-apple-tesla-are-shut-out-of-sp-500s-new-ruling-class",
-        "published_at": "2026-05-04T15:47:25+00:00",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sp500_new_ruling_class_nvidia_apple_tesla_excluded",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL",
-          "TSLA"
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
         ],
         "route_to_synthesis": false
       }
     ],
-    "ORCL": [
+    "UPS": [
       {
-        "id": "ca92f5722baccd16",
+        "id": "16c40760ecc7f326",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "UPS",
         "scope": "ticker",
-        "title": "Oracle Secures Classified AI Deal With US Defense Department",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52253261/oracle-secures-classified-ai-deal-with-us-defense-department",
-        "published_at": "2026-05-04T15:16:55+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "orcl_classified_ai_defense_department_deal",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "HOOD": [
-      {
-        "id": "1811e7b1ecce1223",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Robinhood Stock Is Climbing Monday: What Investors Need To Know",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52251924/robinhood-stock-is-climbing-monday-what-investors-need-to-know",
-        "published_at": "2026-05-04T14:50:01+00:00",
-        "type": "rumor",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "hood_stock_climbing_may_4_2026",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPS",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPS",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPS",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "16c40760ecc7f326",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPS",
+        "scope": "ticker",
+        "title": "Palantir Earnings Loom; GameStop's eBay Ambitions; China's Defiance Of US Sanctions",
+        "url": "https://www.benzinga.com/Opinion/26/05/52259168/palantir-earnings-loom-gamestops-ebay-ambitions-chinas-defiance-of-us-sanctions",
+        "published_at": "2026-05-04T17:43:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_earnings_gme_ebay_china_sanctions_roundup",
+        "tickers_mentioned": [
+          "PLTR",
+          "GME"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPS",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "PPG": [
+    "APLD": [
       {
-        "id": "a1482b73cf6130e4",
+        "id": "929524349ce2ea9f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PPG",
+        "ticker": "APLD",
         "scope": "ticker",
-        "title": "Everyone Is Chasing Nvidia Stock \u2014 BlackRock Is Watching Paint",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52251783/everyone-is-chasing-nvidia-stock-blackrock-is-watching-paint",
-        "published_at": "2026-05-04T14:46:51+00:00",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "ppg_blackrock_investment_strategy",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "APLD",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "APLD",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CRWD": [
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWD",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWD",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWD",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CRWV": [
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ONDS": [
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a8b273d616cb8f55",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Nvidia's Forbidden Fruit: Chinese Buyers Shell Out $1M Per B300 Server",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52259195/nvidias-forbidden-fruit-chinese-buyers-shell-out-1-million-per-b300-server",
+        "published_at": "2026-05-04T17:44:01+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvidia_b300_china_demand",
         "tickers_mentioned": [
           "NVDA"
         ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "929524349ce2ea9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "7 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52258858/7-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-04T17:35:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwd_whale_alert_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8e3d291f27f9d620",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Supermicro Expands AI Lineup: New Liquid-Cooled Servers Drive Stock Gains",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52254181/supermicro-expands-ai-lineup-new-liquid-cooled-servers-drive-stock-gains",
+        "published_at": "2026-05-04T15:35:25+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "supermicro_liquid_cooled_ai_servers",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "79670541e86a8bd8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Bitcoin Breaks $80,000: Is The Bull Run Coming Back?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52258506/bitcoin-breaks-80000-is-the-bull-run-coming-back",
+        "published_at": "2026-05-04T17:26:34+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "bitcoin_80k_breakout_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de50141f22435676",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "What's Driving Coinbase Stock Higher Ahead Of Earnings This Week?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52256673/whats-driving-coinbase-stock-higher-ahead-of-earnings-this-week",
+        "published_at": "2026-05-04T16:32:11+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "coin_earnings_week_momentum",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "79670541e86a8bd8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Bitcoin Breaks $80,000: Is The Bull Run Coming Back?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52258506/bitcoin-breaks-80000-is-the-bull-run-coming-back",
+        "published_at": "2026-05-04T17:26:34+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "bitcoin_80k_breakout_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NCLH": [
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "055b3cc55d4d04d6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Norwegian Cruise CEO Flags 'Self-Inflicted Wounds' As 2026 Outlook Sinks",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52257410/norwegian-cruise-ceo-flags-self-inflicted-wounds-as-2026-outlook-sinks",
+        "published_at": "2026-05-04T16:54:00+00:00",
+        "type": "guidance",
+        "impact": "high",
+        "dedup_group": "nclh_2026_outlook_downgrade",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "7890fb59480f170a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Stock Market Today: Oil Jumps 5%, S&P 500 Drops As Iran Strikes UAE Port",
+        "url": "https://www.benzinga.com/news/26/05/52258811/oil-jumps-5-percent-sp500-drops-logistics-crushed-iran-uae-port-markets-monday",
+        "published_at": "2026-05-04T17:34:04+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_strikes_uae_port_oil_spike",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "8115881559ced381",
+        "id": "79670541e86a8bd8",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Ripple-Backed Evernorth Eyes 'Strategy-Style' Model For XRP: What Does That Mean?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52249503/ripple-backed-evernorth-eyes-strategy-style-model-for-xrp-what-does-that-mean",
-        "published_at": "2026-05-04T14:03:25+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "ripple_evernorth_xrp_strategy_model",
-        "tickers_mentioned": [
-          "XRP"
-        ],
+        "title": "Bitcoin Breaks $80,000: Is The Bull Run Coming Back?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52258506/bitcoin-breaks-80000-is-the-bull-run-coming-back",
+        "published_at": "2026-05-04T17:26:34+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "bitcoin_80k_breakout_may_2026",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "8dc5003ce656124e",
+        "id": "79670541e86a8bd8",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Michael Saylor Pauses Bitcoin Buys, But A $3B Acquisition Frenzy Could Start This Week, Analyst Says",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52244874/michael-saylor-pauses-bitcoin-buys-but-a-3b-acquisition-frenzy-could-start-this-week-analyst-says",
-        "published_at": "2026-05-04T12:28:56+00:00",
-        "type": "rumor",
+        "title": "Bitcoin Breaks $80,000: Is The Bull Run Coming Back?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52258506/bitcoin-breaks-80000-is-the-bull-run-coming-back",
+        "published_at": "2026-05-04T17:26:34+00:00",
+        "type": "macro_commodity",
         "impact": "medium",
-        "dedup_group": "mstr_michael_saylor_bitcoin_acquisitions_may_2026",
+        "dedup_group": "bitcoin_80k_breakout_may_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "TSN": [
+    "ZM": [
       {
-        "id": "b20165572afe9b9c",
+        "id": "963904c191bffffc",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSN",
+        "ticker": "ZM",
         "scope": "ticker",
-        "title": "Tyson Foods Reports Q2 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52249829/tyson-foods-reports-q2-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-05-04T14:09:36+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tsn_q2_2026_earnings_results",
+        "title": "Why Is Zoom Stock Surging On Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52257429/why-is-zoom-stock-surging-on-monday",
+        "published_at": "2026-05-04T16:54:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "zoom_surge_monday_may_4_2026",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "2c1a6d195017ce5a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSN",
-        "scope": "ticker",
-        "title": "Dow Falls Over 150 Points; Tyson Foods Posts Upbeat Earnings",
-        "url": "https://www.benzinga.com/news/26/05/52247855/dow-falls-over-150-points-tyson-foods-posts-upbeat-earnings",
-        "published_at": "2026-05-04T13:40:19+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "tsn_q2_2026_earnings_results",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "UAE reports being under attack by Iranian missiles and drones despite a ceasefire, escalating Persian Gulf conflict risk.",
+      "event_summary": "A Yahoo Finance opinion piece flags a rare technical/valuation warning signal in the stock market and speculates on NASDAQ's historical path forward.",
       "primary_drivers": [
-        "Gulf oil supply/shipping disruption risk drives crude prices higher",
-        "Defense procurement demand surge from Middle East allies",
-        "Safe-haven flows into gold and defensive assets"
+        "editorial/opinion content with no new fundamental information",
+        "no policy, earnings, or data catalyst attached"
       ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream leverage; direct beneficiary of Brent spike from Gulf supply risk premium. Strait of Hormuz carries ~20% of global oil flows.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "High-beta US E&P with strong leverage to crude price spikes; historically outperforms majors on geopolitical oil shocks.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Maker of THAAD and PAC-3 missile defense systems already deployed in UAE; direct restock/expansion demand if interceptors are being expended against Iranian missiles/drones.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Patriot missile manufacturer with active UAE contracts; interceptor consumption against drone/missile attacks drives near-term replenishment orders.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Global Hawk and integrated air/missile defense systems supplier; benefits from increased Gulf air defense procurement.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KTOS",
-          "rationale": "Pure-play counter-drone and target drone systems; directly relevant as UAE faces drone swarm attacks driving counter-UAS demand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian-focused pure-play E&P with high oil-price torque; benefits from sustained crude premium without international asset risk.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Major operator of long-haul routes through/near Gulf airspace; jet fuel cost spike plus potential rerouting/airspace closures hit margins. Middle East overflight disruptions raise costs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "International exposure including Gulf hub connectivity; jet fuel is largest variable cost and crude spike directly compresses margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Highly leveraged airline with thin margins; most sensitive to fuel cost shock among US carriers.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with Middle East/Red Sea itineraries already disrupted; further escalation forces cancellations and bunker fuel cost rises.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "EXPE",
-          "rationale": "Travel demand softens on geopolitical fear; Middle East booking exposure plus broader risk-off travel sentiment.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Low-income consumer discretionary squeezed by gasoline price passthrough from crude spike; gas prices are the most visible inflation indicator for core customer.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_uae_missile_attack",
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "nasdaq_warning_signal_2026",
       "source_news_ids": [
-        "0bc9eada01b70e88"
+        "7ac34e0fb2ad3098"
       ],
       "headlines": [
-        "UAE says it's under attack from Iranian missiles and drones despite ceasefire"
-      ]
-    },
-    {
-      "event_summary": "A compromise version of the Clarity Act preserves stablecoin yield/rewards programs, sending Circle (USDC issuer) up 16%.",
-      "primary_drivers": [
-        "Regulatory clarity removes existential overhang on stablecoin business model",
-        "Preserved rewards/yield mechanism keeps USDC competitive vs bank deposits and Treasuries-only stablecoins",
-        "Validation of crypto-native payment rails increases addressable market for issuers and distributors"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "CRCL",
-          "rationale": "Direct subject of headline \u2014 USDC issuer whose core revenue model (reserve interest + rewards-driven distribution) is preserved by the compromise. Removes binary regulatory risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COIN",
-          "rationale": "Coinbase has a revenue-sharing agreement with Circle on USDC reserve interest (~50% split on USDC held on platform). Stablecoin revenue is one of Coinbase's largest non-trading revenue lines; preserved rewards directly increases this stream.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HOOD",
-          "rationale": "Robinhood has been expanding USDC rewards/yield to retail users and is part of the Global Dollar Network stablecoin consortium. Clarity on rewards directly enables their stablecoin yield product roadmap.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Broad crypto regulatory de-risking lifts the entire digital asset complex; Strategy is the highest-beta liquid crypto proxy on US exchanges and trades on regulatory sentiment.",
-          "confidence": "medium",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "PYPL",
-          "rationale": "Issues PYUSD stablecoin via Paxos; preserved rewards framework legitimizes their consumer-facing stablecoin strategy and the PayPal/Venmo yield offerings.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GLXY",
-          "rationale": "Galaxy Digital has direct stablecoin/crypto infrastructure exposure and benefits from any improvement in US crypto regulatory clarity that drives institutional adoption.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Stablecoin rewards programs paying ~4-5% on dollar balances directly compete with brokerage cash sweep economics; preservation of the rewards model is a structural negative for cash-sweep net interest income at brokerages. Schwab is most exposed given heavy reliance on NII from idle cash.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ALLY",
-          "rationale": "Online banks competing for retail dollar deposits face a more entrenched competitor in yield-bearing stablecoins now that the rewards mechanism survives legislation.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "clarity_act_stablecoin_compromise",
-      "source_news_ids": [
-        "5122614c85bbe101"
-      ],
-      "headlines": [
-        "Circle jumps 16% on Clarity Act compromise that preserves stablecoin rewards"
-      ]
-    },
-    {
-      "event_summary": "Nvidia CEO Jensen Huang publicly states Nvidia now has zero market share in China, confirming complete loss of the Chinese AI chip market due to US export controls.",
-      "primary_drivers": [
-        "US export controls fully shutting Nvidia out of China AI accelerator market",
-        "Domestic Chinese chip designers filling the vacuum",
-        "Revenue headwind to Nvidia partially offset by oversubscribed non-China demand"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "AMD",
-          "rationale": "Not a direct beneficiary in China (same export rules) but benefits competitively ex-China: if Nvidia's TAM is now structurally smaller, AMD's MI300/MI350 share gains in US/EU hyperscalers look relatively more valuable, and any Nvidia weakness drives rotation within AI-accelerator trade.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AVGO",
-          "rationale": "Custom ASIC partner to Google/Meta; Nvidia's lost China revenue reinforces the narrative that hyperscaler custom silicon (TPU, MTIA via Broadcom) is the structural share-taker against merchant GPUs.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "Server OEM whose China exposure was already curtailed; with Nvidia confirming zero China share, US/EU AI server demand remains the entire pie and SMCI keeps its allocation without China-diversion risk weighing on supply.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "NVDA",
-          "rationale": "CEO explicitly confirms 0% China share \u2014 China was historically ~20-25% of data center revenue pre-controls and management had still been guiding to some H20 recovery. Zero confirms a permanent loss of a multi-billion-dollar revenue stream and removes any optionality on license relief.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSM",
-          "rationale": "Nvidia is TSMC's largest or second-largest customer; permanent loss of China demand caps Nvidia wafer orders at the margin (CoWoS allocations for China-spec parts go to zero).",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ASML",
-          "rationale": "Reduced Nvidia China-spec volume plus accelerated Chinese domestic foundry/AI-chip self-sufficiency narrative reinforces that China is a closed market for Western leading-edge tools \u2014 pressures long-term WFE TAM assumptions.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ARM",
-          "rationale": "Nvidia is a key Arm licensee for Grace CPU; lost China GPU+CPU systems revenue reduces royalty pull-through, and Chinese self-sufficiency push favors RISC-V over Arm at the margin.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VRT",
-          "rationale": "Vertiv's AI data center cooling/power orderbook is heavily tied to Nvidia GPU deployment cadence; any narrative crack in Nvidia growth (China = 0) drives high-beta sympathy selling in AI infrastructure picks-and-shovels.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "nvidia_zero_china_market_share_geopolitical",
-      "source_news_ids": [
-        "a114f0c63c13ec2d"
-      ],
-      "headlines": [
-        "Nvidia CEO Jensen Huang says company now has zero market share in China"
+        "The Stock Market Flashes a Warning Not Seen for Over 2 Decades: Here's Where History Says the NASDAQ Is Headed Next"
       ]
     }
   ]
