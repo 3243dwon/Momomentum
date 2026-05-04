@@ -1,107 +1,253 @@
 {
-  "generated_at": "2026-05-03T23:41:33.645893-04:00",
+  "generated_at": "2026-05-04T02:44:17.590890-04:00",
   "ticker_news": {
     "GOOG": [
       {
-        "id": "0f71d6557cc70075",
+        "id": "606cbebbb8a2ec1e",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Jim Cramer Says AI Spending Is No Bubble As Alphabet, Amazon, Apple Surge, While Microsoft And Meta Face Pressure",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52239745/jim-cramer-says-ai-spending-is-no-bubble-as-alphabet-amazon-apple-surge-while-microsoft-and-meta-face-pressure",
-        "published_at": "2026-05-04T02:47:55+00:00",
+        "title": "Mark Cuban Predicts 5 Years Of Corporate Chaos: Why 'Walled Gardens' From AI Giants Like Microsoft, Alphabet Will Break Big Business",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52240279/mark-cuban-predicts-5-years-of-corporate-chaos-why-walled-gardens-from-ai-giants-like-microsoft-alphabet-will-break-big-business",
+        "published_at": "2026-05-04T06:32:37+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "cramer_ai_spending_thesis",
+        "dedup_group": "mark_cuban_ai_walled_gardens",
         "tickers_mentioned": [
-          "AMZN",
-          "AAPL",
-          "MSFT",
-          "META"
+          "MSFT"
         ],
         "route_to_synthesis": false
+      },
+      {
+        "id": "69e73597576dc5c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
+        "published_at": "2026-05-04T05:21:39+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "69e73597576dc5c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
+        "published_at": "2026-05-04T05:21:39+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "69e73597576dc5c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
+        "published_at": "2026-05-04T05:21:39+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "69e73597576dc5c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "David Sacks Says AI Could Drive 75% Of US GDP Growth As Morgan Stanley Sees Big Tech AI Capex Surging Past $800 Billion In 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52240027/david-sacks-says-ai-could-drive-75-of-us-gdp-growth-as-morgan-stanley-sees-big-tech-ai-capex-surging-past-800-billion-in-2026",
+        "published_at": "2026-05-04T05:21:39+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "morgan_stanley_ai_capex_forecast_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ULCC": [
+      {
+        "id": "946faf1aac943019",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ULCC",
+        "scope": "ticker",
+        "title": "Gavin Newsom Slams Trump's 'Iran War Tax' As California Gas Price Breaks $6/Gallon Threshold",
+        "url": "https://www.benzinga.com/news/politics/26/05/52240178/gavin-newsom-slams-trumps-iran-war-tax-as-california-gas-price-breaks-6-gallon-threshold",
+        "published_at": "2026-05-04T06:20:44+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_war_fuel_prices_ulcc",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "2d0d0224741e9069",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ULCC",
+        "scope": "ticker",
+        "title": "Elizabeth Warren Says Trump's Iran War Was Final 'Nail In The Coffin' For Spirit Airlines: 'Spiking Fuel Prices\u2026'",
+        "url": "https://www.benzinga.com/news/politics/26/05/52239889/elizabeth-warren-says-trumps-iran-war-was-final-nail-in-the-coffin-for-spirit-airlines-spiking-fuel-prices",
+        "published_at": "2026-05-04T04:20:36+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_war_fuel_prices_ulcc",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Oil prices trade choppy as Trump announces plans to free ships stranded in the Middle East amid ongoing regional conflict, signaling potential US intervention to restore Strait of Hormuz shipping flows.",
+      "event_summary": "India is ramping up coal-fired power generation as a heatwave drives record electricity demand and the Iran war tightens global LNG supply, pushing gas prices higher and making coal the marginal fuel.",
       "primary_drivers": [
-        "Potential easing of Strait of Hormuz shipping disruption lowers crude risk premium",
-        "Tanker rate normalization if stranded ships are freed",
-        "Geopolitical risk repricing for Middle East exposed names"
+        "LNG supply disruption from Iran/Middle East conflict raising global gas prices",
+        "Coal substitution for gas in power generation when gas becomes uneconomic",
+        "Tight seaborne thermal coal market as India increases imports"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Major US airline with high jet fuel cost sensitivity; any easing of Mideast crude risk premium directly improves fuel cost outlook. Jet fuel ~25-30% of operating costs.",
+          "ticker": "BTU",
+          "rationale": "Peabody Energy is the largest US thermal coal producer with seaborne export exposure; tighter global thermal coal market from Indian import demand directly lifts Newcastle/API benchmark prices and BTU's export realizations.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMR",
+          "rationale": "Alpha Metallurgical primarily exports met coal but global coal price complex moves together; spillover from thermal tightness lifts overall coal equity sentiment and pricing.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "UAL",
-          "rationale": "International route exposure means both fuel cost relief and reduced Mideast airspace/routing disruption if conflict de-escalates.",
+          "ticker": "TGS",
+          "rationale": "Transocean and offshore drillers \u2014 wait, replacing \u2014 Teekay Tankers benefit from longer-haul LNG and coal shipping routes; rerouted energy flows lift tanker tonne-miles.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere Energy is the largest US LNG exporter; Iran-driven supply loss and elevated JKM/TTF spot prices increase the value of its uncontracted volumes and marketing margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EQT",
+          "rationale": "Largest US natgas producer with leverage to Henry Hub strength as US LNG export demand intensifies on global gas tightness from the Iran war.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HNRG",
+          "rationale": "Hallador Energy is a small-cap Illinois Basin thermal coal producer \u2014 high-beta play on US thermal coal price increases as global tightness backs up into domestic markets.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "FSLR",
+          "rationale": "First Solar \u2014 actually a stretch here; Indian utilities pivoting to coal for reliability under heat stress is a marginal negative for solar-as-baseload narrative, but FSLR has limited India revenue. Low conviction loser.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "IBN",
+          "rationale": "ICICI Bank \u2014 Indian banks face indirect headwind if power-sector NPLs rise on coal cost inflation and if rupee weakens forcing RBI to defend currency rather than cut rates.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "india_coal_surge_heat_iran_war",
+      "source_news_ids": [
+        "0de0942dab06cae6"
+      ],
+      "headlines": [
+        "India is burning more coal as extreme heat and the Iran war squeeze energy supplies"
+      ]
+    },
+    {
+      "event_summary": "Trump threatens new auto tariffs, pressuring European markets and foreign automakers ahead of the open.",
+      "primary_drivers": [
+        "Tariff cost passthrough on imported vehicles raising effective prices for foreign OEMs",
+        "Relative competitive advantage shift toward US-domiciled auto manufacturers",
+        "Supply chain disruption risk for cross-border auto parts flows"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "F",
+          "rationale": "Ford has the highest share of US-built vehicles among Detroit Three; tariffs on European/imported autos make domestically produced F-150, Explorer relatively cheaper vs European luxury/mass imports.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker operator. 'Freeing' stranded ships normalizes fleet utilization and could relieve the chokepoint disruption that has distorted tanker routing; direct operational beneficiary.",
+          "ticker": "GM",
+          "rationale": "Predominantly North American production footprint; tariffs raise sticker price of European import competitors (BMW, Mercedes, VW Audi), boosting GM's relative pricing power in US market.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Global air freight network with significant fuel exposure; lower crude tail risk reduces fuel surcharge volatility.",
+          "ticker": "TSLA",
+          "rationale": "100% US-manufactured for US market; direct beneficiary as European EV imports (Porsche Taycan, Audi e-tron, Mercedes EQ line) become more expensive, removing premium EV competition.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RIVN",
+          "rationale": "US-only manufacturing in Normal, IL with no European import exposure; benefits from any pricing umbrella raised by tariffed European premium SUVs/trucks.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated oil major; if Trump's intervention successfully de-risks Hormuz flows, the Mideast risk premium embedded in crude compresses, pressuring upstream realizations.",
-          "confidence": "medium",
+          "ticker": "STLA",
+          "rationale": "Stellantis has heavy European manufacturing exposure (Fiat, Peugeot, Alfa Romeo, Maserati imports to US); tariffs directly hit cost structure on EU-built models shipped stateside.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "High-beta US E&P with leverage to crude price; choppy/lower oil from de-escalation hits earnings sensitivity hardest among large-cap producers.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback \u2014 pure-play Permian E&P, high crude price sensitivity with no downstream offset; loses if geopolitical premium fades.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TNK",
-          "rationale": "Teekay Tankers \u2014 crude tanker rates have been elevated by Hormuz disruption forcing longer routings; freeing ships and normalizing flows compresses spot tanker rates.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline \u2014 VLCC operator that benefits from Mideast routing dislocations; resolution of stranded-ship situation reduces tanker day-rate spike.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense prime with Mideast munitions/missile defense demand; any signal of de-escalation or diplomatic resolution caps the conflict-premium bid in defense names.",
+          "ticker": "TM",
+          "rationale": "Although Japanese, Toyota imports a meaningful share of vehicles (Land Cruiser, some Lexus) and faces risk that 'auto tariffs' broaden beyond Europe to all imports as Trump tariff rhetoric historically expands.",
           "confidence": "low",
           "horizon": "days"
+        },
+        {
+          "ticker": "APTV",
+          "rationale": "Aptiv has substantial European manufacturing footprint for wiring/electrical systems shipped into global auto supply chains; tariffs disrupt cross-border parts flows and pressure OEM customer volumes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MGA",
+          "rationale": "Magna International is a major auto parts supplier with European plants serving European OEMs that ship to US; volume declines at BMW/Mercedes/VW US sales flow back through Magna's order book.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "oil_mideast_shipping_trump_intervention",
+      "dedup_group": "trump_auto_tariffs_may_2026",
       "source_news_ids": [
-        "4e4d84c6fafe66d3"
+        "259ba295add34d44"
       ],
       "headlines": [
-        "Oil prices mixed in choppy trade as Trump plans to 'free' ships stranded due to Mideast conflict"
+        "European markets set to open lower as Trump threatens new auto tariffs"
       ]
     }
   ]
