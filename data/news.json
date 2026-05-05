@@ -1,40 +1,97 @@
 {
-  "generated_at": "2026-05-05T18:47:14.244791-04:00",
-  "ticker_news": {
-    "NVTS": [
-      {
-        "id": "3c9cba0c1ee0c93f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVTS",
-        "scope": "ticker",
-        "title": "Full Transcript: Navitas Semiconductor Q1 2026 Earnings Call",
-        "url": "https://www.benzinga.com/insights/news/26/05/52309138/full-transcript-navitas-semiconductor-q1-2026-earnings-call",
-        "published_at": "2026-05-05T22:18:32+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "navitas_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MBC": [
-      {
-        "id": "0872d71033ee3858",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MBC",
-        "scope": "ticker",
-        "title": "MasterBrand Q1 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52308994/masterbrand-q1-2026-earnings-call-complete-transcript",
-        "published_at": "2026-05-05T22:11:20+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "masterbrand_q1_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-05-05T19:40:18.539296-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "Trump pauses a U.S. naval initiative to escort ships through the Strait of Hormuz, citing progress on an Iran nuclear/sanctions deal \u2014 signaling de-escalation in the Persian Gulf.",
+      "primary_drivers": [
+        "Lower geopolitical risk premium in crude oil",
+        "Potential return of Iranian barrels to global supply if sanctions ease",
+        "Reduced shipping risk/insurance costs through Hormuz chokepoint"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has minimal fuel hedging and is highly sensitive to jet fuel/crude prices; a $5/bbl drop in crude flows directly to margin. De-escalation removes Hormuz risk premium.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United similarly under-hedged on fuel; lower crude from Iran de-escalation directly reduces its largest variable cost line.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest historically hedged but exposure remains material; lower crude from easing Gulf tensions improves cost outlook for a fuel-sensitive domestic carrier.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethylene/petrochemical feedstock costs fall with lower crude and naphtha; Dow's commodity chemical margins expand on input cost relief.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with massive upstream exposure; lower crude price from Iran deal progress + potential Iranian barrel return directly compresses E&P realizations.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream sensitivity as XOM; pure crude price taker on majority of production. Iran deal raises supply, lowers price deck.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-heavy pure-play E&P with high beta to WTI; removal of Hormuz risk premium and prospect of Iranian supply directly hits revenue per barrel.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback is a near-pure-play Permian E&P with no downstream offset; highest WTI sensitivity among large caps to a geopolitical risk-off in crude.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand tracks E&P capex, which falls with lower crude; Halliburton's North American completions business is most exposed to a sustained price drop.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "International services leader; lower crude prices and a potential Iran sanctions easing reshuffle pricing power and could compress Middle East service rates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline VLCC tanker rates are partly supported by Hormuz risk premia and longer-haul re-routing; de-escalation compresses rates and Iranian barrels coming legal shortens trade routes vs. shadow fleet.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed defense demand has a geopolitical premium component; visible Iran de-escalation reduces near-term urgency for missile defense/munitions reorders that had been bid up.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "trump_hormuz_pause_iran_negotiations",
+      "source_news_ids": [
+        "95c3780c0d72adc5"
+      ],
+      "headlines": [
+        "Trump pauses U.S. bid to guide ships out of Strait of Hormuz, cites Iran deal progress"
+      ]
+    }
+  ]
 }
