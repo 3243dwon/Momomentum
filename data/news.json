@@ -1,74 +1,286 @@
 {
-  "generated_at": "2026-05-05T02:22:08.390920-04:00",
+  "generated_at": "2026-05-05T05:54:04.698676-04:00",
   "ticker_news": {
+    "INTC": [
+      {
+        "id": "8e1b279efbebc4e0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Apple Stock Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52273448/apple-hunts-backup-as-chip-shortage-bites-intel-samsung-step-in",
+        "published_at": "2026-05-05T09:29:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "aapl_stock_movement_may5",
+        "tickers_mentioned": [
+          "AAPL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0e14253eacc2027f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Apple Eyes US Chip Production With Intel, Samsung To Reduce TSMC Reliance: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52273074/apple-eyes-us-chip-production-with-intel-samsung-to-reduce-tsmc-reliance-report",
+        "published_at": "2026-05-05T08:42:38+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "aapl_intel_samsung_chip_partnership",
+        "tickers_mentioned": [
+          "AAPL",
+          "TSMC"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
     "COIN": [
       {
-        "id": "d013395150a8c4dd",
+        "id": "71c98ac72a399118",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COIN",
         "scope": "ticker",
-        "title": "Senator Thom Tillis Says 'We Respectfully Agree To Disagree' After Banking Industry Criticizes Stablecoin Yield Compromise",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52271821/senator-thom-tillis-says-we-respectfully-agree-to-disagree-after-banking-industry-criticizes-stablecoin-yield-compromise",
-        "published_at": "2026-05-05T05:17:58+00:00",
-        "type": "product",
+        "title": "Coinbase Q1 Preview: Can Brian Armstrong's Crypto Giant Beat Bearish Expectations?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52272929/coinbase-q1-preview-can-brian-armstrongs-crypto-giant-beat-bearish-expectations",
+        "published_at": "2026-05-05T08:25:09+00:00",
+        "type": "earnings",
         "impact": "low",
-        "dedup_group": "stablecoin_yield_regulation_tillis_compromise",
+        "dedup_group": "coinbase_q1_earnings_preview",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SHOP": [
+    "MU": [
       {
-        "id": "3196e235f066f532",
+        "id": "a016b1fbf3aa2e50",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SHOP",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Shopify Gears Up For Q1 Print; Here Are The Recent Forecast Changes From Wall Street's Most Accurate Analysts",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52272054/shopify-gears-up-for-q1-print-here-are-the-recent-forecast-changes-from-wall-streets-most-accurate-analysts-2",
-        "published_at": "2026-05-05T06:14:59+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "shop_q1_2026_earnings_preview",
+        "title": "Jim Cramer Says 'Overheated' Storage Stocks Still Have Room To Run: SanDisk, Seagate, Western Digital Will 'Gallop' Higher",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272704/jim-cramer-says-overheated-storage-stocks-still-have-room-to-run-sandisk-seagate-western-digital-will-gallop-higher",
+        "published_at": "2026-05-05T07:44:57+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_storage_stocks_bullish_call",
+        "tickers_mentioned": [
+          "SNDK",
+          "STX",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a016b1fbf3aa2e50",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Jim Cramer Says 'Overheated' Storage Stocks Still Have Room To Run: SanDisk, Seagate, Western Digital Will 'Gallop' Higher",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272704/jim-cramer-says-overheated-storage-stocks-still-have-room-to-run-sandisk-seagate-western-digital-will-gallop-higher",
+        "published_at": "2026-05-05T07:44:57+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_storage_stocks_bullish_call",
+        "tickers_mentioned": [
+          "SNDK",
+          "STX",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "a016b1fbf3aa2e50",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Jim Cramer Says 'Overheated' Storage Stocks Still Have Room To Run: SanDisk, Seagate, Western Digital Will 'Gallop' Higher",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272704/jim-cramer-says-overheated-storage-stocks-still-have-room-to-run-sandisk-seagate-western-digital-will-gallop-higher",
+        "published_at": "2026-05-05T07:44:57+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_storage_stocks_bullish_call",
+        "tickers_mentioned": [
+          "SNDK",
+          "STX",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a016b1fbf3aa2e50",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Jim Cramer Says 'Overheated' Storage Stocks Still Have Room To Run: SanDisk, Seagate, Western Digital Will 'Gallop' Higher",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272704/jim-cramer-says-overheated-storage-stocks-still-have-room-to-run-sandisk-seagate-western-digital-will-gallop-higher",
+        "published_at": "2026-05-05T07:44:57+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_storage_stocks_bullish_call",
+        "tickers_mentioned": [
+          "SNDK",
+          "STX",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "EBAY": [
+      {
+        "id": "74bdf329df837ae1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EBAY",
+        "scope": "ticker",
+        "title": "GameStop's Ryan Cohen Leaves Viewers Baffled After Strange Interview Over $56 Billion eBay Bid\u2014 'Masterclass In What Not To Do'",
+        "url": "https://www.benzinga.com/m-a/26/05/52272661/gamestop-ceo-ryan-cohen-bizarre-cnbc-interview-ebay-bid-56-billion",
+        "published_at": "2026-05-05T07:38:56+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "gamestop_ryan_cohen_ebay_bid_rumor",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NCLH": [
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NCLH",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PYPL": [
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PYPL",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PYPL",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSN": [
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSN",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "caa70b2be1d32a16",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSN",
+        "scope": "ticker",
+        "title": "Dow Dips 550 Points Amid Iran War Flareup: Investor Sentiment Declines, But Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52272088/dow-dips-550-points-amid-iran-war-flareup-investor-sentiment-declines-but-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-05T06:24:24+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "iran_conflict_may_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "PINS": [
       {
-        "id": "facc2ab61c8ee3cb",
+        "id": "7bdee9e79778c689",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PINS",
         "scope": "ticker",
-        "title": "Pfizer, Pinterest And 3 Stocks To Watch Heading Into Tuesday",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52271984/pfizer-pinterest-and-3-stocks-to-watch-heading-into-tuesday",
-        "published_at": "2026-05-05T05:59:00+00:00",
-        "type": "other",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise As Traders Monitor US-Iran Ceasefire\u2014 Duolingo, Pinterest, AMD In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52273324/stock-market-today-dow-jones-sp-500-futures-rise-as-traders-monitor-us-iran-ceasefire-duolingo-pinterest-amd-in-focus",
+        "published_at": "2026-05-05T09:19:43+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "stocks_to_watch_roundup_may5",
+        "dedup_group": "market_open_iran_ceasefire_monitoring",
         "tickers_mentioned": [
-          "PFE"
+          "DUOL",
+          "AMD"
         ],
         "route_to_synthesis": false
-      }
-    ],
-    "PYPL": [
+      },
       {
-        "id": "facc2ab61c8ee3cb",
+        "id": "aaa90214614f9ed0",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PYPL",
+        "ticker": "PINS",
         "scope": "ticker",
-        "title": "Pfizer, Pinterest And 3 Stocks To Watch Heading Into Tuesday",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52271984/pfizer-pinterest-and-3-stocks-to-watch-heading-into-tuesday",
-        "published_at": "2026-05-05T05:59:00+00:00",
+        "title": "Why Sterling Infrastructure Shares Are Trading Higher By Over 22%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52273096/why-sterling-infrastructure-shares-are-trading-higher-by-over-22-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-05T08:46:20+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "stocks_to_watch_roundup_may5",
+        "dedup_group": "sterling_infrastructure_premarket_movers",
         "tickers_mentioned": [
-          "PFE"
+          "STRL"
         ],
         "route_to_synthesis": false
       }
@@ -76,119 +288,131 @@
   },
   "macro_events": [
     {
-      "event_summary": "The Reserve Bank of Australia raised rates again and signaled inflation will remain elevated longer than expected, an unexpectedly hawkish stance.",
+      "event_summary": "Iranian drones reportedly struck Amazon (AWS/logistics) facilities in the Middle East, marking a direct attack on US corporate infrastructure in the region.",
       "primary_drivers": [
-        "AUD currency strength vs USD on widening rate differential expectations",
-        "Hawkish read-across to other DM central banks (Fed, ECB) raising global discount rates",
-        "Higher-for-longer inflation narrative pressuring long-duration assets"
+        "Geopolitical risk premium spike (oil, defense)",
+        "Direct operational/insurance hit to Amazon Middle East infrastructure",
+        "Escalation risk pricing into defense/cyber/missile-defense names"
       ],
       "beneficiaries": [
         {
-          "ticker": "RIO",
-          "rationale": "Rio Tinto's largest operating base is the Pilbara (Australia); AUD strength + RBA reaffirming inflation persistence reinforces real-asset/commodity exposure. Direct peer to BHP with same FX/inflation transmission.",
+          "ticker": "LMT",
+          "rationale": "Lockheed makes THAAD and PAC-3 missile interceptors \u2014 the exact systems used to defend Gulf US/allied assets from Iranian drone/missile attacks. Direct strike on US corporate infrastructure raises probability of expanded regional missile-defense FMS orders.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot and produces Coyote counter-drone interceptors actively deployed in CENTCOM. Drone attack on US corporate sites is the highest-probability catalyst for accelerated counter-UAS procurement.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos is a pure-play unmanned systems and counter-drone target/training provider; small-cap leverage to any counter-UAS supplemental funding response.",
           "confidence": "medium",
           "horizon": "days"
-        }
-      ],
-      "losers": [
+        },
         {
-          "ticker": "WEC",
-          "rationale": "Long-duration regulated utility with high leverage; if RBA's higher-for-longer message reinforces global bond term-premium repricing, US utility yields back up and bond proxies underperform. Second-order via global rate sympathy.",
+          "ticker": "AVAV",
+          "rationale": "AeroVironment's Switchblade loitering munitions and Puma ISR drones are the direct counter to Shahed-class threats; Pentagon counter-drone budgets typically expand after such incidents.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Brent risk premium widens on any Iran-linked kinetic event in the Gulf; Exxon has the largest US-major leverage to higher crude with low Iran-direct asset risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PANW",
+          "rationale": "Palo Alto is the leading enterprise cybersecurity name; an attack on Amazon facilities (even kinetic) raises board-level scrutiny on cloud/critical-infrastructure security spend, especially against Iranian APT groups.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
-      "dedup_group": "australia_rba_rate_hike_may_2026",
-      "source_news_ids": [
-        "1e27c62a1aa42dd9"
-      ],
-      "headlines": [
-        "Australia hikes rates again and warns inflation will stay higher for longer"
-      ]
-    },
-    {
-      "event_summary": "European equities open lower on rising fears of war with Iran, with oil prices climbing on Middle East risk premium.",
-      "primary_drivers": [
-        "Geopolitical risk premium pushing crude oil prices higher",
-        "Risk-off rotation away from cyclicals into defensives and safe havens",
-        "Potential Strait of Hormuz disruption threatening tanker/LNG flows"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated oil; direct earnings leverage to Brent/WTI spike from Middle East risk premium. Every $10/bbl move adds material upstream cash flow.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high oil beta; Permian-weighted production benefits directly from crude price spike without Middle East operational risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense prime contractor with direct exposure to missile defense (PAC-3, THAAD) and munitions demand if Iran conflict escalates; classic war-premium trade.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Defense prime with missile, ISR, and strategic systems exposure; benefits from elevated supplemental defense spending probability if conflict materializes.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Product tanker operator \u2014 Strait of Hormuz disruption fears drive tanker day rates higher as routes lengthen and risk premiums on Gulf shipping spike.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services leveraged to higher crude prices spurring increased US drilling activity if oil sustains above $90.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; oil spike directly compresses margins and Delta lacks the fuel hedging buffer it once had.",
+          "ticker": "AMZN",
+          "rationale": "Direct asset damage, AWS Middle East region (Bahrain/UAE) service risk, insurance/remediation costs, and customer concern over data sovereignty in the region. Even if financial impact is modest, headline risk dominates intraday.",
           "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has significant Middle East routing exposure via JFK-DXB/TLV partnerships; airspace closures and rerouting around Gulf raise fuel burn just as oil spikes \u2014 double hit.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "Same jet fuel cost passthrough; United also has higher international/transatlantic exposure where war fears suppress booking demand.",
-          "confidence": "high",
+          "rationale": "United operates the most US-carrier nonstops to the Gulf and India via Middle East airspace; rerouting cost and demand softness on Gulf routes.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Cruise operator hit twice \u2014 bunker fuel cost spike plus discretionary travel demand softening on geopolitical anxiety; Mediterranean itineraries directly affected.",
+          "rationale": "Carnival's Middle East/Red Sea itineraries already disrupted by Houthi activity; an Iran-linked escalation extends cancellations and rerouting into peak booking window.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GOOGL",
+          "rationale": "Google Cloud also operates Middle East regions (Doha, Dammam, Tel Aviv); peer-rotation risk as enterprises reassess hyperscaler regional concentration even though no direct strike.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "dedup_group": "iranian_drones_strike_amazon_sites",
+      "source_news_ids": [
+        "ec15ced84d9259ae"
+      ],
+      "headlines": [
+        "Iranian drones strike Amazon sites in Middle East"
+      ]
+    },
+    {
+      "event_summary": "Deutsche Post (DHL) at its AGM flagged ongoing tariff-related disruption to global trade flows but raised its dividend to \u20ac1.90 and reaffirmed its 2026 EBIT outlook.",
+      "primary_drivers": [
+        "Global logistics read-through: a major freight carrier reaffirming guidance signals stable parcel/freight volumes despite tariffs",
+        "Tariff turmoil commentary reinforces ongoing cross-border trade friction theme",
+        "Dividend hike signals management confidence in cash flows"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "UPS",
+          "rationale": "Direct US-listed peer to Deutsche Post/DHL Express in international parcel and freight. DHL reaffirming 2026 EBIT despite tariff headwinds is a positive read-through for UPS international segment volumes and pricing.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "FDX",
-          "rationale": "Air freight diesel/jet fuel cost passthrough lags; oil spike compresses near-term margins on fixed-price contracts.",
+          "rationale": "FedEx competes directly with DHL in international express and air freight. Stable DHL guidance suggests cross-border volumes are holding up better than feared, supporting FDX's international priority margins.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "BKNG",
-          "rationale": "Online travel platform \u2014 European/Mediterranean leisure bookings most exposed; Iran war fears trigger cancellation risk and lower forward bookings.",
+          "ticker": "EXPD",
+          "rationale": "Expeditors is a freight forwarder whose ocean/air volumes track the same global trade flows DHL reports on. A 'tariff turmoil but guidance intact' message implies forwarders are successfully repricing rather than losing volume.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "FWRD",
+          "rationale": "Forward Air is more domestic/LTL exposed; DHL's reaffirmation specifically benefits international peers and highlights that the freight strength is in cross-border express, not in segments where FWRD competes. Relative-rotation loser.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
-      "dedup_group": "iran_conflict_escalation_may_2026",
+      "dedup_group": "deutsche_post_tariff_concerns_dividend",
       "source_news_ids": [
-        "bafd20e011504e72"
+        "3bf692acbb187fe2"
       ],
       "headlines": [
-        "European stocks set to open lower as Iran war concerns grow"
+        "Deutsche Post AGM: CEO flags tariff turmoil, lifts dividend to \u20ac1.90 and backs 2026 EBIT view"
       ]
     }
   ]
