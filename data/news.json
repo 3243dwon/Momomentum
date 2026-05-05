@@ -1,137 +1,40 @@
 {
-  "generated_at": "2026-05-05T17:32:33.046116-04:00",
+  "generated_at": "2026-05-05T18:47:14.244791-04:00",
   "ticker_news": {
     "NVTS": [
       {
-        "id": "f80e2e3981ebeea8",
+        "id": "3c9cba0c1ee0c93f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVTS",
         "scope": "ticker",
-        "title": "Navitas Semiconductor Q1 Report Beats Expectations",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52308296/navitas-semiconductor-q1-report-beats-expectations",
-        "published_at": "2026-05-05T21:30:41+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "nvts_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "ATEC": [
-      {
-        "id": "e02f33f2abccb409",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ATEC",
-        "scope": "ticker",
-        "title": "Transcript: Alphatec Holdings Q1 2026 Earnings Conference Call",
-        "url": "https://www.benzinga.com/insights/news/26/05/52308264/transcript-alphatec-holdings-q1-2026-earnings-conference-call",
-        "published_at": "2026-05-05T21:29:50+00:00",
+        "title": "Full Transcript: Navitas Semiconductor Q1 2026 Earnings Call",
+        "url": "https://www.benzinga.com/insights/news/26/05/52309138/full-transcript-navitas-semiconductor-q1-2026-earnings-call",
+        "published_at": "2026-05-05T22:18:32+00:00",
         "type": "earnings",
         "impact": "low",
-        "dedup_group": "atec_q1_2026_earnings_transcript",
+        "dedup_group": "navitas_q1_2026_earnings",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SWKS": [
+    "MBC": [
       {
-        "id": "68603dfd831b0000",
+        "id": "0872d71033ee3858",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SWKS",
+        "ticker": "MBC",
         "scope": "ticker",
-        "title": "Skyworks Solutions Q2 2026 Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52308007/skyworks-solutions-q2-2026-earnings-call-transcript",
-        "published_at": "2026-05-05T21:20:26+00:00",
+        "title": "MasterBrand Q1 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52308994/masterbrand-q1-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-05T22:11:20+00:00",
         "type": "earnings",
         "impact": "low",
-        "dedup_group": "swks_q2_2026_earnings_transcript",
+        "dedup_group": "masterbrand_q1_2026_earnings",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "US labor market data suggests the \"hiring recession\" is ending with hiring picking up, but an active Iran war poses downside risks to job growth.",
-      "primary_drivers": [
-        "Improving labor demand supports cyclical/consumer earnings",
-        "Iran war = sustained oil price risk premium and defense spending",
-        "Mixed Fed signal: stronger labor reduces rate cut odds, war raises stagflation risk"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "RHI",
-          "rationale": "Robert Half is a near-pure-play US staffing firm; revenue moves directly with white-collar hiring volumes. End of hiring recession = direct topline driver.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAN",
-          "rationale": "ManpowerGroup revenue tracks temp/perm placement volume; recovering hiring directly lifts billable hours and placement fees.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed is largest US defense prime with direct exposure to munitions replenishment (PAC-3, JASSM, Hellfire) being consumed/ordered amid Iran conflict.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon makes Patriot, SM-3, Tomahawk \u2014 directly being expended in Middle East operations, supporting orders and replenishment backlog.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Iran war sustains geopolitical risk premium in crude (Strait of Hormuz risk); Exxon's upstream realizations rise with Brent, no Iranian production exposure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PAYX",
-          "rationale": "Paychex revenue scales with SMB employee count on its payroll platform; rising hiring = more checks processed and float income.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has significant transatlantic and Middle East-adjacent routing; Iran war elevates jet fuel costs and may force route diversions, squeezing CASM.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United has the most Middle East/India routing exposure among US carriers via Newark hub; airspace closures and fuel spike hit margins hardest.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is unhedged on fuel and has thin margins; sustained crude premium from Iran war directly compresses earnings even without route exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival has Mediterranean/Middle East itineraries plus bunker fuel cost exposure; war headlines depress booking curves and raise opex.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "hiring_recession_recovery_iran_geopolitical",
-      "source_news_ids": [
-        "122b62fec39d9208"
-      ],
-      "headlines": [
-        "Data suggests 'hiring recession' may be behind us \u2014 but the Iran war poses job market risks"
-      ]
-    }
-  ]
+  "macro_events": []
 }
