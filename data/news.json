@@ -1,23 +1,103 @@
 {
-  "generated_at": "2026-05-04T19:43:54.988092-04:00",
+  "generated_at": "2026-05-04T23:27:43.852234-04:00",
   "ticker_news": {
-    "EBAY": [
+    "COIN": [
       {
-        "id": "3f463c3724001d37",
+        "id": "4db0bb3ed05a5cf2",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "EBAY",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "Here's How Much You Would Have Made Owning eBay Stock In The Last 10 Years",
-        "url": "https://www.benzinga.com/insights/news/26/05/52270603/heres-how-much-you-would-have-made-owning-ebay-stock-in-the-last-10-years",
-        "published_at": "2026-05-04T23:31:58+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ebay_10yr_performance_recap",
+        "title": "Bitcoin, Ethereum Surge, While XRP, Dogecoin Stall Amid Iran War Flareup: Analyst Says BTC Closing Above This Level Could Open Path to $92,000",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52271377/bitcoin-ethereum-surge-while-xrp-dogecoin-stall-amid-iran-war-flareup-analyst-says-btc-closing-above-this-level-could-open-path-to-92000",
+        "published_at": "2026-05-05T02:18:11+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_attack_crypto_surge_may2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Oil prices decline as traders assess Middle East developments, though Iran-related attacks keep markets on edge.",
+      "primary_drivers": [
+        "Lower crude oil prices reduce E&P revenue and refiner input costs",
+        "Persistent geopolitical risk premium supports defense and tanker rates despite price drop",
+        "Lower fuel costs benefit transport margins"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~20-25% of operating costs for Delta; lower crude directly expands margins. Falling oil with stable demand is the cleanest tailwind for legacy carriers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest has limited fuel hedging vs peers, so spot crude declines flow through to earnings faster than UAL/AAL.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Diesel and jet fuel are major variable costs; lower crude reduces ground and air freight expense, with limited offset since pricing is contracted.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers and product tanker operators benefit from sustained Middle East shipping risk premium and rerouting around Hormuz risk, even as crude price falls \u2014 tanker day rates track disruption, not price.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Iran attacks keeping markets jittery sustains defense spending narrative; Lockheed missile defense (PAC-3, THAAD) directly tied to Middle East replenishment demand.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Exxon upstream earnings have direct leverage to Brent/WTI; sliding crude compresses E&P segment margins. Largest US integrated with highest absolute oil price sensitivity.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Occidental is among the most oil-price-sensitive large E&Ps (Permian pure-play, levered balance sheet); falling crude hits cash flow and debt paydown thesis directly.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Mid-cap E&P with high beta to oil price and Egyptian/offshore exposure; tends to underperform on crude declines more than majors.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton revenue tracks E&P capex, which is set against forward oil price decks; sustained price weakness pressures completions activity and pricing power.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Schlumberger international and offshore exposure means a softening oil tape pressures customer FIDs and service pricing.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_attack_oil_reaction_may2026",
+      "source_news_ids": [
+        "5830c9f1efbc48c0"
+      ],
+      "headlines": [
+        "Oil slides as traders assess Middle East developments with Iran attacks keeping markets jittery"
+      ]
+    }
+  ]
 }
