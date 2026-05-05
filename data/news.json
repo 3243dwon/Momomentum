@@ -1,102 +1,194 @@
 {
-  "generated_at": "2026-05-04T23:27:43.852234-04:00",
+  "generated_at": "2026-05-05T02:22:08.390920-04:00",
   "ticker_news": {
     "COIN": [
       {
-        "id": "4db0bb3ed05a5cf2",
+        "id": "d013395150a8c4dd",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COIN",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum Surge, While XRP, Dogecoin Stall Amid Iran War Flareup: Analyst Says BTC Closing Above This Level Could Open Path to $92,000",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52271377/bitcoin-ethereum-surge-while-xrp-dogecoin-stall-amid-iran-war-flareup-analyst-says-btc-closing-above-this-level-could-open-path-to-92000",
-        "published_at": "2026-05-05T02:18:11+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_attack_crypto_surge_may2026",
+        "title": "Senator Thom Tillis Says 'We Respectfully Agree To Disagree' After Banking Industry Criticizes Stablecoin Yield Compromise",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52271821/senator-thom-tillis-says-we-respectfully-agree-to-disagree-after-banking-industry-criticizes-stablecoin-yield-compromise",
+        "published_at": "2026-05-05T05:17:58+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "stablecoin_yield_regulation_tillis_compromise",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SHOP": [
+      {
+        "id": "3196e235f066f532",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SHOP",
+        "scope": "ticker",
+        "title": "Shopify Gears Up For Q1 Print; Here Are The Recent Forecast Changes From Wall Street's Most Accurate Analysts",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52272054/shopify-gears-up-for-q1-print-here-are-the-recent-forecast-changes-from-wall-streets-most-accurate-analysts-2",
+        "published_at": "2026-05-05T06:14:59+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "shop_q1_2026_earnings_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PINS": [
+      {
+        "id": "facc2ab61c8ee3cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PINS",
+        "scope": "ticker",
+        "title": "Pfizer, Pinterest And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52271984/pfizer-pinterest-and-3-stocks-to-watch-heading-into-tuesday",
+        "published_at": "2026-05-05T05:59:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_to_watch_roundup_may5",
+        "tickers_mentioned": [
+          "PFE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "PYPL": [
+      {
+        "id": "facc2ab61c8ee3cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PYPL",
+        "scope": "ticker",
+        "title": "Pfizer, Pinterest And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52271984/pfizer-pinterest-and-3-stocks-to-watch-heading-into-tuesday",
+        "published_at": "2026-05-05T05:59:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_to_watch_roundup_may5",
+        "tickers_mentioned": [
+          "PFE"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Oil prices decline as traders assess Middle East developments, though Iran-related attacks keep markets on edge.",
+      "event_summary": "The Reserve Bank of Australia raised rates again and signaled inflation will remain elevated longer than expected, an unexpectedly hawkish stance.",
       "primary_drivers": [
-        "Lower crude oil prices reduce E&P revenue and refiner input costs",
-        "Persistent geopolitical risk premium supports defense and tanker rates despite price drop",
-        "Lower fuel costs benefit transport margins"
+        "AUD currency strength vs USD on widening rate differential expectations",
+        "Hawkish read-across to other DM central banks (Fed, ECB) raising global discount rates",
+        "Higher-for-longer inflation narrative pressuring long-duration assets"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of operating costs for Delta; lower crude directly expands margins. Falling oil with stable demand is the cleanest tailwind for legacy carriers.",
+          "ticker": "RIO",
+          "rationale": "Rio Tinto's largest operating base is the Pilbara (Australia); AUD strength + RBA reaffirming inflation persistence reinforces real-asset/commodity exposure. Direct peer to BHP with same FX/inflation transmission.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "WEC",
+          "rationale": "Long-duration regulated utility with high leverage; if RBA's higher-for-longer message reinforces global bond term-premium repricing, US utility yields back up and bond proxies underperform. Second-order via global rate sympathy.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "australia_rba_rate_hike_may_2026",
+      "source_news_ids": [
+        "1e27c62a1aa42dd9"
+      ],
+      "headlines": [
+        "Australia hikes rates again and warns inflation will stay higher for longer"
+      ]
+    },
+    {
+      "event_summary": "European equities open lower on rising fears of war with Iran, with oil prices climbing on Middle East risk premium.",
+      "primary_drivers": [
+        "Geopolitical risk premium pushing crude oil prices higher",
+        "Risk-off rotation away from cyclicals into defensives and safe havens",
+        "Potential Strait of Hormuz disruption threatening tanker/LNG flows"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil; direct earnings leverage to Brent/WTI spike from Middle East risk premium. Every $10/bbl move adds material upstream cash flow.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Southwest has limited fuel hedging vs peers, so spot crude declines flow through to earnings faster than UAL/AAL.",
+          "ticker": "OXY",
+          "rationale": "Pure-play US E&P with high oil beta; Permian-weighted production benefits directly from crude price spike without Middle East operational risk.",
           "confidence": "high",
           "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Diesel and jet fuel are major variable costs; lower crude reduces ground and air freight expense, with limited offset since pricing is contracted.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers and product tanker operators benefit from sustained Middle East shipping risk premium and rerouting around Hormuz risk, even as crude price falls \u2014 tanker day rates track disruption, not price.",
-          "confidence": "medium",
-          "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Iran attacks keeping markets jittery sustains defense spending narrative; Lockheed missile defense (PAC-3, THAAD) directly tied to Middle East replenishment demand.",
+          "rationale": "Defense prime contractor with direct exposure to missile defense (PAC-3, THAAD) and munitions demand if Iran conflict escalates; classic war-premium trade.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Defense prime with missile, ISR, and strategic systems exposure; benefits from elevated supplemental defense spending probability if conflict materializes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker operator \u2014 Strait of Hormuz disruption fears drive tanker day rates higher as routes lengthen and risk premiums on Gulf shipping spike.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services leveraged to higher crude prices spurring increased US drilling activity if oil sustains above $90.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "XOM",
-          "rationale": "Exxon upstream earnings have direct leverage to Brent/WTI; sliding crude compresses E&P segment margins. Largest US integrated with highest absolute oil price sensitivity.",
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; oil spike directly compresses margins and Delta lacks the fuel hedging buffer it once had.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Occidental is among the most oil-price-sensitive large E&Ps (Permian pure-play, levered balance sheet); falling crude hits cash flow and debt paydown thesis directly.",
+          "ticker": "UAL",
+          "rationale": "Same jet fuel cost passthrough; United also has higher international/transatlantic exposure where war fears suppress booking demand.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "APA",
-          "rationale": "Mid-cap E&P with high beta to oil price and Egyptian/offshore exposure; tends to underperform on crude declines more than majors.",
-          "confidence": "high",
+          "ticker": "CCL",
+          "rationale": "Cruise operator hit twice \u2014 bunker fuel cost spike plus discretionary travel demand softening on geopolitical anxiety; Mediterranean itineraries directly affected.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Halliburton revenue tracks E&P capex, which is set against forward oil price decks; sustained price weakness pressures completions activity and pricing power.",
+          "ticker": "FDX",
+          "rationale": "Air freight diesel/jet fuel cost passthrough lags; oil spike compresses near-term margins on fixed-price contracts.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "SLB",
-          "rationale": "Schlumberger international and offshore exposure means a softening oil tape pressures customer FIDs and service pricing.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "BKNG",
+          "rationale": "Online travel platform \u2014 European/Mediterranean leisure bookings most exposed; Iran war fears trigger cancellation risk and lower forward bookings.",
+          "confidence": "low",
+          "horizon": "days"
         }
       ],
-      "dedup_group": "iran_attack_oil_reaction_may2026",
+      "dedup_group": "iran_conflict_escalation_may_2026",
       "source_news_ids": [
-        "5830c9f1efbc48c0"
+        "bafd20e011504e72"
       ],
       "headlines": [
-        "Oil slides as traders assess Middle East developments with Iran attacks keeping markets jittery"
+        "European stocks set to open lower as Iran war concerns grow"
       ]
     }
   ]
