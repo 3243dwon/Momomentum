@@ -1,300 +1,90 @@
 {
-  "generated_at": "2026-05-05T23:38:36.036090-04:00",
+  "generated_at": "2026-05-06T02:34:33.433246-04:00",
   "ticker_news": {
-    "INTC": [
+    "SWKS": [
       {
-        "id": "c98e8360ded1b8ef",
+        "id": "d358a17cb71fd8e7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "SWKS",
         "scope": "ticker",
-        "title": "AMD, Super Micro Computer, Intel, Arista Networks And Micron Technology: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52310631/amd-super-micro-computer-intel-arista-networks-and-micron-technology-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-06T01:31:04+00:00",
+        "title": "Skyworks Solutions (SKWS) Stock Is Trending Overnight: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52311226/skyworks-solutions-skws-stock-is-trending-overnight-heres-why",
+        "published_at": "2026-05-06T04:46:09+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "multi_stock_roundup_may_2026",
-        "tickers_mentioned": [
-          "AMD",
-          "SMCI",
-          "INTC",
-          "ANET"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "c98e8360ded1b8ef",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "AMD, Super Micro Computer, Intel, Arista Networks And Micron Technology: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52310631/amd-super-micro-computer-intel-arista-networks-and-micron-technology-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-06T01:31:04+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "multi_stock_roundup_may_2026",
-        "tickers_mentioned": [
-          "AMD",
-          "SMCI",
-          "INTC",
-          "ANET"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SHOP": [
-      {
-        "id": "f930287ad2d9cf02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SHOP",
-        "scope": "ticker",
-        "title": "Cathie Wood Dumps $16 Million Of AMD Stock On Post-Earnings Rally, Snaps Up $27 Million Of This Amazon Rival's Stock",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/05/52310965/cathie-wood-sells-amd-buys-amazon-rival-stock-ark-trade-shift",
-        "published_at": "2026-05-06T02:47:46+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cathie_wood_fund_trades_may_2026",
-        "tickers_mentioned": [
-          "AMD"
-        ],
+        "dedup_group": "swks_trending_overnight",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "China hosts Iran's foreign minister days before Trump's visit to Beijing, signaling Iran-China alignment ahead of high-stakes US-China diplomacy that may touch on Middle East, oil, and sanctions.",
+      "event_summary": "Lufthansa warns of nearly $2 billion in additional fuel costs due to Middle East conflict forcing route diversions and elevated jet fuel prices.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude oil from Iran/Hormuz signaling",
-        "Potential negotiation leverage swap (Iran sanctions relief vs. China trade concessions) creating uncertainty",
-        "Defense posture amid Iran-China-Russia axis visibility"
+        "Elevated jet fuel/crude prices from Middle East supply risk",
+        "Airspace closures forcing longer reroutes (more fuel burn, lower aircraft utilization)",
+        "Margin compression for fuel-exposed, long-haul carriers"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil producer with high leverage to Brent. Iran-China diplomatic coordination ahead of Trump talks raises Hormuz/sanctions risk premium; XOM has minimal Iran exposure but full upside to crude price spike.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US shale (Permian) with high oil beta and no Iran/China revenue exposure. Benefits directly from any Hormuz/Strait risk premium without geopolitical offset.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Prime contractor for THAAD, PAC-3 Patriot interceptors deployed in Gulf states; Iran-China alignment narrative supports Middle East missile defense FMS pipeline regardless of Trump-Xi outcome.",
+          "rationale": "Integrated major with large upstream exposure; benefits directly from sustained higher crude/refined product prices driving the fuel cost spike Lufthansa is citing.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "RTX",
-          "rationale": "Patriot, SM-3, Tomahawk producer with direct exposure to Gulf restocking and CENTCOM demand if Iran tensions escalate during/after Trump's Beijing visit.",
+          "ticker": "CVX",
+          "rationale": "Same upstream crude leverage as XOM; Middle East conflict premium in oil supports realized prices and refining crack spreads on jet fuel.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play, US-domestic crude leverage with no China revenue. Benefits from oil tape on geopolitical headline without tariff/China risk overhang affecting industrials.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "BA",
-          "rationale": "Boeing's China order book recovery is a key bull thesis; pre-Trump-visit positioning where China is openly hosting US adversary Iran reduces probability of large goodwill aircraft order announcement and raises tariff retaliation risk.",
+          "ticker": "VLO",
+          "rationale": "Pure-play refiner with strong distillate/jet fuel exposure; jet fuel crack spreads widen when geopolitical supply fears hit while demand is intact.",
           "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Shanghai Gigafactory accounts for ~40% of global production; deteriorating US-China optics around Trump visit raises risk of regulatory friction or consumer backlash in China, the swing market for FY guidance.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WYNN",
-          "rationale": "Macau gaming revenue ~70% of total; any escalation in US-China rhetoric around Trump's visit historically pressures Macau-exposed names via license/visa risk perception.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Airlines are the most direct losers from a crude spike on Hormuz risk premium; jet fuel is ~25-30% of operating cost and DAL has no fuel hedges.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Unhedged jet fuel exposure plus trans-Pacific route dependency on stable US-China relations; double exposure to oil spike and diplomatic deterioration.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "china_iran_trump_diplomacy_may_2026",
-      "source_news_ids": [
-        "de9b4d91df7f3bfe"
-      ],
-      "headlines": [
-        "China hosts Iran's top diplomat just days ahead of Trump's high-stakes visit"
-      ]
-    },
-    {
-      "event_summary": "Sanctioned Chinese AI firm (SenseTime) argues cheaper, cost-efficient models can compete in the global AI race, echoing the DeepSeek-style narrative that frontier compute spend may not be necessary.",
-      "primary_drivers": [
-        "AI capex efficiency narrative pressuring high-multiple compute names",
-        "Commoditization risk for frontier model providers",
-        "Renewed focus on inference/edge over training infrastructure"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "AAPL",
-          "rationale": "On-device/edge inference beneficiary if cheaper models become viable; Apple's strategy of running smaller models locally validated by cost-efficient model thesis.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "META",
-          "rationale": "Open-source Llama strategy validated by 'cheaper models can win' narrative; reduces relative cost disadvantage vs closed frontier labs and benefits from open-weight ecosystem momentum.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "IBM",
-          "rationale": "Pitches smaller, domain-specific enterprise models (Granite) \u2014 narrative tailwind that cost-efficient models suffice for enterprise workloads.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "NVDA",
-          "rationale": "Headline reinforces DeepSeek-style fear that frontier training capex is unnecessary; any narrative questioning the need for top-tier GPUs at scale pressures Nvidia's hyperscaler demand thesis. Sensitive to these stories given peer-correlation with prior China-AI-efficiency selloffs.",
-          "confidence": "medium",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "AI server pure-play with high beta to GPU capex narrative; sells off harder than NVDA on efficiency/cheaper-model headlines.",
-          "confidence": "medium",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "VRT",
-          "rationale": "AI datacenter power/cooling pure-play; cheaper-models narrative threatens the hyperscaler buildout thesis driving the stock's multiple.",
-          "confidence": "low",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "CRWV",
-          "rationale": "GPU cloud pure-play with thesis tied directly to insatiable training demand; most exposed to any 'we need less compute' narrative.",
-          "confidence": "medium",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "ARM",
-          "rationale": "Less directly exposed but trades as part of AI compute basket; rotation out of AI-infrastructure complex on efficiency headlines.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "china_sanctioned_ai_models_may_2026",
-      "source_news_ids": [
-        "ed0f4ebe1f0c6cbc"
-      ],
-      "headlines": [
-        "In the global AI race, a sanctioned Chinese firm says cheaper models can still win"
-      ]
-    },
-    {
-      "event_summary": "Oil prices fall after Trump pauses a US naval escort effort through the Strait of Hormuz, easing Middle East shipping risk premium.",
-      "primary_drivers": [
-        "Lower geopolitical risk premium in crude prices",
-        "Reduced shipping/insurance war-risk premia in the Gulf",
-        "Lower input costs for fuel-consuming industries"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; falling crude directly expands airline margins. Delta has minimal hedging vs peers, so spot price drops flow through fastest.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost lever; United is largely unhedged on fuel and is a high-beta name to crude moves.",
-          "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest historically hedges but residual exposure remains; lower crude reduces forward fuel cost curve and improves unit economics.",
-          "confidence": "medium",
+          "rationale": "Domestic-only US carrier with no transatlantic/Middle East routing exposure and historically heaviest fuel hedging program among US airlines \u2014 relative outperformer vs. legacy carriers on this story.",
+          "confidence": "low",
           "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Petrochemical feedstock (naphtha/ethane economics) and energy costs decline with crude; margin expansion for commodity chemicals.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Fuel surcharge lag means falling diesel/jet fuel boosts near-term margin before surcharges reset lower.",
-          "confidence": "medium",
-          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with ~60%+ of earnings tied to upstream realizations; lower crude directly compresses E&P cash flow.",
+          "ticker": "DAL",
+          "rationale": "Largest US transatlantic carrier with significant European/Middle East/India routing; same reroute and fuel cost dynamic Lufthansa flagged hits Delta's international segment directly. Delta also runs its own refinery (Trainer) but net exposure to jet fuel is still negative.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "CVX",
-          "rationale": "Similar upstream leverage to Brent/WTI; falling geopolitical premium hits realized prices and reduces buyback capacity at the margin.",
+          "ticker": "UAL",
+          "rationale": "Heaviest US international long-haul exposure (Asia/Europe/India routes) of US3; most reliant on routes that get rerouted around Middle East airspace, mirroring Lufthansa's cost structure.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high oil-price beta and leveraged balance sheet post-Anadarko; falls disproportionately on crude declines.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services demand is a function of E&P capex, which keys off forward crude; sustained price drops pressure North America completion activity.",
+          "ticker": "AAL",
+          "rationale": "Unhedged fuel program and weakest balance sheet among legacy US carriers \u2014 most operating-leverage downside to a sustained jet fuel spike.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "FTI",
-          "rationale": "Subsea/offshore services have direct Middle East exposure; reduced geopolitical urgency may also slow defensive Gulf project FIDs.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Reduced Hormuz escort posture trims near-term naval operations tempo narrative; modest sentiment headwind for defense primes tied to Gulf force projection.",
-          "confidence": "low",
-          "horizon": "intraday"
+          "ticker": "JBLU",
+          "rationale": "Thin margins, no fuel hedging, transatlantic expansion exposure; high sensitivity to jet fuel moves on a low-margin base.",
+          "confidence": "medium",
+          "horizon": "days"
         }
       ],
-      "dedup_group": "oil_prices_trump_hormuz_may_2026",
+      "dedup_group": "lufthansa_middle_east_fuel_costs",
       "source_news_ids": [
-        "0bba72550778feb7"
+        "c4a55d64fefbeafd"
       ],
       "headlines": [
-        "Oil prices fall as Trump pauses Hormuz escort effort"
+        "Lufthansa faces nearly $2 billion in extra fuel costs amid Middle East conflict"
       ]
     }
   ]
