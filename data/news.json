@@ -1,219 +1,108 @@
 {
-  "generated_at": "2026-05-07T18:53:29.647166-04:00",
-  "ticker_news": {
-    "NVDA": [
-      {
-        "id": "b6260abd724b52cc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "IREN Stock Spikes On Nvidia Deal, Q3 Results: What To Know",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52397044/iren-stock-spikes-on-nvidia-deal-q3-results-what-to-know",
-        "published_at": "2026-05-07T22:06:19+00:00",
-        "type": "ma",
-        "impact": "high",
-        "dedup_group": "iren_nvidia_ai_infra_deal",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "IREN": [
-      {
-        "id": "b6260abd724b52cc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IREN",
-        "scope": "ticker",
-        "title": "IREN Stock Spikes On Nvidia Deal, Q3 Results: What To Know",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52397044/iren-stock-spikes-on-nvidia-deal-q3-results-what-to-know",
-        "published_at": "2026-05-07T22:06:19+00:00",
-        "type": "ma",
-        "impact": "high",
-        "dedup_group": "iren_nvidia_ai_infra_deal",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "XYZ": [
-      {
-        "id": "ee7999a99c848263",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "XYZ",
-        "scope": "ticker",
-        "title": "Block Shares Climb After Q1 Report \u2014 Here's Why",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52396622/block-shares-climb-after-q1-report-heres-why",
-        "published_at": "2026-05-07T21:47:37+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "block_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ]
-  },
+  "generated_at": "2026-05-07T19:44:31.099817-04:00",
+  "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "U.S. and Iranian forces exchanged fire in the Strait of Hormuz, raising fears of a broader military conflict that could disrupt ~20% of global seaborne oil flows.",
+      "event_summary": "Oil prices spike on US-Iran military exchange while a US court strikes down Trump's tariffs, removing import cost pressure on US-listed importers.",
       "primary_drivers": [
-        "Oil supply risk premium from potential Strait of Hormuz disruption",
-        "Defense spending / munitions demand acceleration",
-        "Flight-to-safety bid for gold, USD, Treasuries; risk-off in cyclicals and consumer discretionary exposed to fuel costs"
+        "Middle East supply risk premium pushing crude higher",
+        "Removal of tariff cost passthrough on importers/retailers",
+        "Geopolitical risk-on for defense primes"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream leverage; spot Brent spike on Hormuz disruption flows directly to upstream realizations. Limited Iranian/Gulf production exposure means it benefits from price without bearing asset risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same upstream price leverage as XOM; Permian-heavy production base is geographically insulated from Middle East asset risk while realizations rise with Brent.",
+          "rationale": "Largest US integrated oil major; upstream earnings rise ~linearly with Brent. Direct beneficiary of Iran-driven supply risk premium.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US onshore (Permian) producer with high oil beta and no Middle East operating exposure; historically one of the highest-beta names to crude spikes.",
+          "rationale": "High-beta US E&P with Permian leverage; among the most crude-sensitive names per dollar of oil move, no hedging drag vs peers.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime contractor for THAAD, PAC-3 Patriot interceptors, and JASSM \u2014 exactly the munitions consumed/restocked in a Gulf shooting conflict. Direct DoD replenishment orders historically follow such events.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Direct prime on missile defense (THAAD, PAC-3) and munitions resupply; Iran kinetic exchanges historically drive immediate order-flow expectations.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "RTX",
-          "rationale": "Makes Standard Missile family (SM-2/3/6) used by US Navy destroyers in the Gulf, plus Tomahawks via Raytheon. Naval engagement directly consumes their inventory and triggers reorders.",
+          "rationale": "Patriot/Stinger/Tomahawk supplier; Middle East escalation directly increases munitions replenishment pipeline.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FIVE",
+          "rationale": "Five Below sources ~60% from China; tariff strikedown materially reduces COGS pressure that had been compressing gross margin guidance.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "FTI",
-          "rationale": "TechnipFMC \u2014 subsea equipment provider; shift toward non-Gulf production (offshore Brazil, Guyana, GoM) accelerates with Hormuz risk premium, and near-term oil price strength supports project FIDs.",
+          "ticker": "BBY",
+          "rationale": "Consumer electronics retailer with heavy China-sourced SKUs (TVs, appliances); tariff removal lifts gross margin outlook directly.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NKE",
+          "rationale": "Significant Vietnam/China footwear and apparel imports; tariff rejection removes a known earnings headwind embedded in sell-side models.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates spike when Hormuz routing is disrupted as cargoes are rerouted longer distances (ton-mile demand). Pure-play product tanker fleet with no Gulf-flagged exposure.",
+          "ticker": "HAL",
+          "rationale": "Oilfield services leverage to higher crude \u2192 US E&P capex; sustained $80+ Brent reactivates frac/completion demand.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has historically been the least-hedged US legacy carrier on jet fuel; a Brent spike of $10+ flows almost immediately into unit costs and pressures Q2 guidance. Consumer discretionary travel demand also wobbles on geopolitical fear.",
+          "rationale": "Jet fuel is ~25-30% of operating costs; spike in crude on Iran tensions directly compresses near-term margins, and Delta hedges less than peers.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost exposure as DAL plus heavier international/long-haul mix that depends on Middle East airspace routing; potential rerouting adds block hours and burn.",
+          "ticker": "LUV",
+          "rationale": "Southwest's hedge book has rolled off in recent years; jet fuel exposure makes it acutely sensitive to a sustained crude move.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel is a top-3 cost; cruise demand also softens on geopolitical headlines. Highly levered balance sheet amplifies any margin hit.",
+          "rationale": "Cruise operator burning bunker fuel; oil spike hits opex while Middle East tensions also threaten itinerary disruption.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Express air network has direct jet fuel exposure with imperfect surcharge pass-through lag; ground fleet diesel costs also rise. Industrial freight demand softens in risk-off.",
+          "ticker": "NUE",
+          "rationale": "Domestic steel producer whose pricing power relies on tariff-protected import parity; ruling pressures steel price deck.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "WMT",
-          "rationale": "Low-income consumer is most exposed to gasoline price shock; gas-pump inflation directly compresses discretionary spend on Walmart's general merchandise mix. Also bears diesel/transport cost increases.",
+          "ticker": "CLF",
+          "rationale": "Cleveland-Cliffs is the most tariff-levered US flat-rolled steelmaker; management has explicitly cited tariffs as supportive of domestic pricing.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FSLR",
+          "rationale": "First Solar's premium valuation rests partially on tariff/AD-CVD walls against Asian solar imports; broad tariff strikedown raises overhang risk on pricing.",
           "confidence": "low",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "LYV",
-          "rationale": "Live Nation \u2014 discretionary consumer spend on concerts/events is sensitive to gasoline price shocks and geopolitical risk-off sentiment; international tour logistics also affected.",
-          "confidence": "low",
-          "horizon": "weeks"
         }
       ],
-      "dedup_group": "us_iran_strait_hormuz_escalation",
+      "dedup_group": "us_iran_tensions_tariff_court_may2026",
       "source_news_ids": [
-        "7a849c167da46395"
+        "e446dbc3067d13a1"
       ],
       "headlines": [
-        "U.S. and Iran trade fire in Strait of Hormuz; each claims other shot first"
-      ]
-    },
-    {
-      "event_summary": "Treasury yields and borrowing costs remain elevated due to a new market concern, keeping rate-sensitive assets under pressure.",
-      "primary_drivers": [
-        "Higher long-end Treasury yields raise discount rates on long-duration equities",
-        "Elevated borrowing costs compress margins for leveraged/capital-intensive businesses",
-        "Higher net interest margin tailwind for banks with asset-sensitive balance sheets"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Schwab's earnings are highly sensitive to short-end rates via client cash sweep yields and securities reinvestment; sustained higher yields directly lift net interest revenue.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MET",
-          "rationale": "Life insurer with large fixed-income portfolio \u2014 higher reinvestment yields lift book yield and spread income on annuity/liability book.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ALL",
-          "rationale": "Allstate's float is invested largely in fixed income; higher yields improve investment income, a direct earnings tailwind independent of underwriting.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "Z",
-          "rationale": "Zillow's transaction volume and Premier Agent revenue are tightly correlated with mortgage rates; sustained high yields freeze housing turnover.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income is a long-duration bond proxy (net-lease REIT with 10+ year leases); rising long yields directly compress equity value via higher cap rates and refinancing costs.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCI",
-          "rationale": "Crown Castle carries heavy debt load with refinancing exposure; tower REIT cash flows are long-duration and highly rate-sensitive.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVNA",
-          "rationale": "Carvana relies on securitization markets and consumer auto financing; higher yields raise both its funding costs and customer monthly payments, double hit to volumes and margins.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "treasury_yields_borrowing_costs_concern",
-      "source_news_ids": [
-        "f907547d2881ee01"
-      ],
-      "headlines": [
-        "There\u2019s a new worry keeping Treasury yields and borrowing costs higher"
+        "Oil futures rise after U.S., Iran trade fire; stock futures quiet after court rejects Trump\u2019s tariffs"
       ]
     }
   ]
