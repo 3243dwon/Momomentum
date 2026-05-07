@@ -1,262 +1,694 @@
 {
-  "generated_at": "2026-05-07T02:42:14.267656-04:00",
+  "generated_at": "2026-05-07T06:14:28.968794-04:00",
   "ticker_news": {
-    "DIS": [
+    "DDOG": [
       {
-        "id": "c00eb8780925e4e6",
+        "id": "f566467489fcd962",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "DIS",
+        "ticker": "DDOG",
         "scope": "ticker",
-        "title": "Disney CFO Hugh Johnston Says Relationship With NFL Remains 'Broad And Deep' Even As ESPN Yet To Engage In NFL Renewal Talks",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52354224/disney-cfo-hugh-johnston-espn-nfl-renewal-talks-relationship-broad-deep",
-        "published_at": "2026-05-07T05:19:08+00:00",
-        "type": "product",
+        "title": "Will S&P 500 Open Up Or Down On May 7?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52356296/sp500-may-7-open-up-or-down-polymarket-iran-deal-record-highs",
+        "published_at": "2026-05-07T09:34:59+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "dis_espn_nfl_renewal_talks_ongoing",
+        "dedup_group": "sp500_market_direction_may7",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c0c073de0fc5d67b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DDOG",
+        "scope": "ticker",
+        "title": "Datadog Gears Up For Q1 Print; Here Are The Recent Forecast Changes From Wall Street's Most Accurate Analysts",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52355192/datadog-gears-up-for-q1-print-here-are-the-recent-forecast-changes-from-wall-streets-most-accurate-analysts-2",
+        "published_at": "2026-05-07T07:23:59+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "ddog_q1_earnings_preview_analyst_forecasts",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ASTS": [
+    "ARM": [
       {
-        "id": "99a5b5212406ec91",
+        "id": "819a80d5d3c34944",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ASTS",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Why Is AST SpaceMobile (ASTS) Stock Surging In After Hours?",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52353895/why-is-ast-spacemobile-asts-stock-surging-in-after-hours",
-        "published_at": "2026-05-07T04:29:51+00:00",
-        "type": "other",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "asts_after_hours_surge_may_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
         "route_to_synthesis": false
       }
     ],
     "NVDA": [
       {
-        "id": "975b64dbee3717e4",
+        "id": "819a80d5d3c34944",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Elon Musk Fires Back As Calls To Tax Billionaires Grow Louder, Says Paid More Taxes Than 'Anyone In History'",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52354413/elon-musk-fires-back-tax-billionaires-grow-paid-more-taxes-than-anyone-in-history",
-        "published_at": "2026-05-07T05:55:17+00:00",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "388c5ef7dee1ac4f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Uber CEO Dara Khosrowshahi Sees 'Trillion-Dollar' Self-Driving Opportunity, Says Waymo Hasn't Impacted Business",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52356451/uber-ceo-dara-khosrowshahi-sees-trillion-dollar-self-driving-opportunity-says-waymo-hasnt-impacted-business",
+        "published_at": "2026-05-07T09:44:07+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "elon_musk_tax_comments_may_2026",
+        "dedup_group": "uber_ceo_autonomous_driving_waymo",
+        "tickers_mentioned": [
+          "WAYMO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "36851e268d751428",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Pentagon Boosts Meta-Backed Scale AI Contract To $500 Million Amid Military AI Push",
+        "url": "https://www.benzinga.com/markets/private-markets/26/05/52356238/pentagon-boosts-meta-backed-scale-ai-contract-to-500-million-amid-military-ai-push",
+        "published_at": "2026-05-07T09:27:31+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "pentagon_scale_ai_contract_500m",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "819a80d5d3c34944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Arm Faces Questions Over AI CPU Niche Erosion As Competition From AMD, Intel, Nvidia Heats Up, But CEO Says Nice To See 'Rest Of Market' Catch Up",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355368/arm-ai-cpu-competition-amd-intel-nvidia-market-catching-up-ceo",
+        "published_at": "2026-05-07T07:41:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ai_cpu_competition_niche_erosion",
+        "tickers_mentioned": [
+          "AMD",
+          "INTC",
+          "NVIDIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4ed26ed95a0067ce",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Ron DeSantis Praises Elon Musk's 'Pro-Human' AI Vision After SpaceX-Anthropic Partnership",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52355107/ron-desantis-elon-musks-pro-human-ai-vision-spacex-anthropic-partnership",
+        "published_at": "2026-05-07T07:14:10+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "desantis_musk_spacex_anthropic_ai",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "388c5ef7dee1ac4f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Uber CEO Dara Khosrowshahi Sees 'Trillion-Dollar' Self-Driving Opportunity, Says Waymo Hasn't Impacted Business",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52356451/uber-ceo-dara-khosrowshahi-sees-trillion-dollar-self-driving-opportunity-says-waymo-hasnt-impacted-business",
+        "published_at": "2026-05-07T09:44:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "uber_ceo_autonomous_driving_waymo",
+        "tickers_mentioned": [
+          "WAYMO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "DIS": [
+      {
+        "id": "ff84542e1787ab5c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DIS",
+        "scope": "ticker",
+        "title": "S&P 500 Settles Above 7,300: Investor Sentiment Improves Further, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52355097/sp-500-settles-above-7300-investor-sentiment-improves-further-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-07T07:11:11+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "sp500_market_sentiment_may7_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "PL": [
+    "ALK": [
       {
-        "id": "6e3164b4c114feeb",
+        "id": "f3a50aa67d479469",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PL",
+        "ticker": "ALK",
         "scope": "ticker",
-        "title": "HawkEye Set For NYSE Debut After Raising $416 Million, IPO Priced At $26",
-        "url": "https://www.benzinga.com/markets/ipos/26/05/52353868/hawkeye-set-for-nyse-debut-after-raising-416-million-ipo-priced-at-26",
-        "published_at": "2026-05-07T04:16:17+00:00",
-        "type": "product",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
         "impact": "medium",
-        "dedup_group": "hawkeye_nyse_ipo_416m_raised",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f3a50aa67d479469",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ALK",
+        "scope": "ticker",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UAL": [
+      {
+        "id": "f3a50aa67d479469",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAL",
+        "scope": "ticker",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f3a50aa67d479469",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAL",
+        "scope": "ticker",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ULCC": [
+      {
+        "id": "f3a50aa67d479469",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ULCC",
+        "scope": "ticker",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f3a50aa67d479469",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ULCC",
+        "scope": "ticker",
+        "title": "US Airlines Spent $5 Billion On Fuel In March Alone As Energy Crisis Deepens: Here's How Airline Stocks Have Fared Since Iran War Began",
+        "url": "https://www.benzinga.com/news/travel/26/05/52354895/us-airlines-5bn-fuel-costs-march-energy-crisis-airline-stocks-iran-war",
+        "published_at": "2026-05-07T06:43:08+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "us_airlines_fuel_crisis_iran_war",
+        "tickers_mentioned": [
+          "ALK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSM": [
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "aa7be73c11ef66f3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Alibaba's T-Head Hype Sparks Stock Surge As Tencent Struggles To Impress",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52356421/alibabas-t-head-hype-sparks-stock-surge-as-tencent-struggles-to-impress",
+        "published_at": "2026-05-07T09:40:09+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "alibaba_thead_tencent_comparison",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "140c44eb7991e73a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "The NVIDIA Alternative: AMD Cements Status As The Only Other AI Full-Stack King",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52356228/the-nvidia-alternative-amd-cements-status-as-the-only-other-ai-full-stack-king",
+        "published_at": "2026-05-07T09:26:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "amd_ai_full_stack_positioning",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FLNC": [
+      {
+        "id": "7be308e7912a0eed",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FLNC",
+        "scope": "ticker",
+        "title": "Why Kulicke And Soffa Industries Shares Are Trading Higher By 19%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52356013/why-kulicke-and-soffa-industries-shares-are-trading-higher-by-19-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-07T09:04:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "flnc_premarket_movers_may7",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "UBER": [
+      {
+        "id": "388c5ef7dee1ac4f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UBER",
+        "scope": "ticker",
+        "title": "Uber CEO Dara Khosrowshahi Sees 'Trillion-Dollar' Self-Driving Opportunity, Says Waymo Hasn't Impacted Business",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52356451/uber-ceo-dara-khosrowshahi-sees-trillion-dollar-self-driving-opportunity-says-waymo-hasnt-impacted-business",
+        "published_at": "2026-05-07T09:44:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "uber_ceo_autonomous_driving_waymo",
+        "tickers_mentioned": [
+          "WAYMO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "388c5ef7dee1ac4f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UBER",
+        "scope": "ticker",
+        "title": "Uber CEO Dara Khosrowshahi Sees 'Trillion-Dollar' Self-Driving Opportunity, Says Waymo Hasn't Impacted Business",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52356451/uber-ceo-dara-khosrowshahi-sees-trillion-dollar-self-driving-opportunity-says-waymo-hasnt-impacted-business",
+        "published_at": "2026-05-07T09:44:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "uber_ceo_autonomous_driving_waymo",
+        "tickers_mentioned": [
+          "WAYMO"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Shell beat Q1 profit estimates on higher oil prices driven by the Iran war, but cut its share buyback pace.",
+      "event_summary": "EU is considering restricting use of US hyperscaler cloud platforms (AWS, Azure, GCP) for processing sensitive European government data, citing data sovereignty concerns.",
       "primary_drivers": [
-        "Higher crude prices from Iran war geopolitical risk premium boosting upstream margins",
-        "Reduced shareholder returns (buyback cut) signaling capital discipline concerns despite windfall",
-        "Sector read-through to other integrated oil majors and E&Ps reporting into the same price environment"
+        "Data sovereignty regulation reducing addressable EU public-sector TAM for US hyperscalers",
+        "Substitution toward European sovereign cloud providers and on-prem alternatives",
+        "Headline/regulatory overhang on US hyperscaler multiples"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "ExxonMobil is the closest US-listed peer to Shell with similar upstream/integrated mix; Shell's earnings beat on higher Brent confirms the same tailwind flows to XOM's Q2 results, and XOM has historically traded tightly with Shell on earnings days.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Chevron has heavy upstream leverage to Brent/WTI and Permian production; the same Iran-war price surge that drove Shell's beat lifts CVX cash flow per barrel directly.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COP",
-          "rationale": "ConocoPhillips is a pure-play E&P with no refining offset, so it captures Brent upside more cleanly than integrateds \u2014 direct beneficiary of the same price environment Shell cited.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Occidental has high oil-price torque due to Permian leverage and remaining debt load; every $5 Brent move materially shifts FCF, and Iran-war premium directly accrues.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback Energy is a Permian pure-play with variable dividend tied to oil prices; sustained Iran-driven premium translates directly into higher shareholder distributions.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Schlumberger benefits as sustained high oil prices incentivize upstream capex; if Iran war keeps Brent elevated, E&P drilling budgets get revised up, lifting oilfield services bookings.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has the highest jet fuel exposure among US legacy carriers without a meaningful hedge book in recent quarters; sustained Iran-war oil premium directly compresses operating margin.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United Airlines fuel costs are ~25-30% of opex and largely unhedged; rising Brent from Iran conflict directly hits next-quarter EPS guidance.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedged but current hedge coverage is light; as a domestic-focused carrier with no fuel surcharge mechanism, margin compression from sustained high crude is acute.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx has large jet fuel and diesel exposure across Express and Ground; fuel surcharges lag spot prices by weeks, creating margin drag during a sustained crude spike.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Inc. uses oil-derivative feedstocks (naphtha) for parts of its chemicals production; sustained Brent premium raises COGS faster than they can pass through to customers.",
+          "ticker": "OTEX",
+          "rationale": "OpenText is Canadian-domiciled with strong EU enterprise content/information management footprint and sovereign-cloud-friendly positioning; direct substitute for US hyperscaler-hosted document/data workloads in regulated EU public sector.",
           "confidence": "low",
           "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "shell_earnings_iran_war_oil_boost_may_2026",
-      "source_news_ids": [
-        "201655c84836bb05"
-      ],
-      "headlines": [
-        "Shell tops profit estimates as Iran war boosts oil price, cuts share buybacks"
-      ]
-    },
-    {
-      "event_summary": "Iran war is driving an energy security pivot, lifting both Big Oil and wind majors who reported profit beats as Europe accelerates renewables buildout alongside fossil fuel substitution.",
-      "primary_drivers": [
-        "Higher crude/gas prices from Iran conflict supply risk premium",
-        "Energy security policy push accelerating renewables permitting and offtake demand",
-        "Improved economics for wind developers as fossil power prices reset higher"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GE",
-          "rationale": "GE Vernova (the relevant pure-play US-listed wind/grid equipment maker spun from GE) is the primary US beneficiary of accelerated European and US offshore/onshore wind procurement; direct turbine OEM exposure to the policy pivot described.",
-          "confidence": "high",
-          "horizon": "weeks"
         },
         {
-          "ticker": "GEV",
-          "rationale": "GE Vernova is a near-pure-play wind turbine OEM and grid equipment supplier; profit beats from Vestas/Siemens Gamesa peers and an energy-security driven order pipeline read directly across to its backlog and pricing.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "ExxonMobil has the largest US-listed integrated upstream exposure to a Middle East supply premium; Iran conflict directly widens crude realizations and refining crack spreads.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Chevron's upstream weighting and LNG/Permian leverage capture both higher Brent and the European gas substitution bid that follows Iran-driven supply risk.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NEE",
-          "rationale": "NextEra is the largest US wind/solar IPP; an explicit policy pivot toward renewables for energy security improves PPA pricing and project IRRs on its development backlog.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "FSLR",
-          "rationale": "First Solar is a domestic utility-scale solar pure-play; energy-security framing strengthens IRA-aligned demand and module pricing power as a non-fossil substitute.",
+          "ticker": "IBM",
+          "rationale": "IBM has explicitly marketed sovereign cloud (IBM Cloud for European regulated industries, partnerships with Deutsche Telekom/T-Systems) and on-prem/hybrid via Red Hat OpenShift \u2014 direct beneficiary if EU governments shift workloads off AWS/Azure/GCP. Less exposed than the big three to EU public-sector restrictions.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Occidental's high oil-beta and Permian leverage make it one of the most sensitive US large-caps to a sustained Brent risk premium from Iran conflict.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TDW",
-          "rationale": "Tidewater's offshore service vessel fleet benefits from both higher offshore oil capex and offshore wind installation activity \u2014 direct dual exposure to the article's thesis.",
-          "confidence": "medium",
+          "ticker": "ORCL",
+          "rationale": "Oracle EU Sovereign Cloud (launched specifically for this use case, isolated from non-EU operations) is one of few US options that may meet the new bar; could capture share if rules permit US vendors operating sovereign-isolated regions even as AWS/Azure/GCP face restrictions.",
+          "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Delta has the highest jet fuel cost sensitivity among US legacy carriers and limited hedging; a sustained Brent premium from Iran conflict directly compresses unit margins.",
+          "ticker": "AMZN",
+          "rationale": "AWS is the largest US hyperscaler in EU public sector; restriction on processing sensitive government data directly removes a growing revenue vertical. EU public sector is a small but high-margin slice \u2014 bigger risk is precedent extending to regulated industries (banking, healthcare).",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United's long-haul international network and minimal fuel hedging make it acutely exposed to crude spikes; Middle East airspace disruption adds routing cost on top.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest's all-domestic, fuel-intensive short-haul model and reduced hedge book leave EPS highly exposed to a sustained oil shock.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival's bunker fuel costs are a top-3 opex line; a sustained crude premium pressures margins just as it deleverages.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow's ethylene/petrochemical feedstock costs rise with naphtha and natural gas; a Middle East supply shock compresses chemical spreads.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ENPH",
-          "rationale": "While renewables broadly benefit, residential solar inverters do not capture the utility-scale energy-security bid; Enphase rotation risk as capital flows to wind/utility-scale names highlighted in the article.",
-          "confidence": "low",
           "horizon": "days"
+        },
+        {
+          "ticker": "MSFT",
+          "rationale": "Azure has aggressively pursued EU government contracts (including Bundeswehr, French ministries via Bleu JV with Capgemini/Orange). Direct headline risk; sensitive-data restriction would force costly sovereign partnerships and cap growth in the segment.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "GOOGL",
+          "rationale": "Google Cloud has S3NS sovereign JV with Thales in France targeting exactly this use case; EU restrictions on US cloud could either be neutralized by S3NS or, if rules disqualify any US-parent vendor, hit GCP hardest as the smallest of the three with less existing public-sector book to defend.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SNOW",
+          "rationale": "Snowflake runs on top of AWS/Azure/GCP; if EU government/regulated data must stay off US hyperscalers, Snowflake's EU public-sector and regulated-industry pipeline takes collateral damage absent a sovereign deployment option.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DDOG",
+          "rationale": "Datadog's observability SaaS is hosted on US hyperscalers; EU sensitive-data customers may be forced to alternatives or self-hosted tools. Second-order but real revenue exposure to EU regulated accounts.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "wind_energy_profits_iran_war_may_2026",
+      "dedup_group": "eu_restricting_us_cloud_platforms",
       "source_news_ids": [
-        "b0fda4c9f7e1ad0e"
+        "8d426f7f60918ce2"
       ],
       "headlines": [
-        "It\u2019s not just Big Oil. Wind giants welcome profit beats as Iran war spurs energy pivot"
+        "EU weighs restricting use of U.S. cloud platforms to process sensitive government data, sources tell CNBC"
       ]
     }
   ]
