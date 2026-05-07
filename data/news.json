@@ -1,5 +1,211 @@
 {
-  "generated_at": "2026-05-06T20:51:14.119625-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-05-06T23:38:31.042270-04:00",
+  "ticker_news": {
+    "ARM": [
+      {
+        "id": "067fafa3098b1f41",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Arm, IonQ, AppLovin, Snap And Beyond Meat: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/news/26/05/52353084/arm-ionq-applovin-snap-and-beyond-meat-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-07T01:25:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ionq_applov_snap_bmd_investor_radar",
+        "tickers_mentioned": [
+          "IONQ",
+          "APPLOV",
+          "SNAP",
+          "BYND"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "067fafa3098b1f41",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Arm, IonQ, AppLovin, Snap And Beyond Meat: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/news/26/05/52353084/arm-ionq-applovin-snap-and-beyond-meat-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-07T01:25:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ionq_applov_snap_bmd_investor_radar",
+        "tickers_mentioned": [
+          "IONQ",
+          "APPLOV",
+          "SNAP",
+          "BYND"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "IONQ": [
+      {
+        "id": "067fafa3098b1f41",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IONQ",
+        "scope": "ticker",
+        "title": "Arm, IonQ, AppLovin, Snap And Beyond Meat: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/news/26/05/52353084/arm-ionq-applovin-snap-and-beyond-meat-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-07T01:25:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ionq_applov_snap_bmd_investor_radar",
+        "tickers_mentioned": [
+          "IONQ",
+          "APPLOV",
+          "SNAP",
+          "BYND"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "067fafa3098b1f41",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IONQ",
+        "scope": "ticker",
+        "title": "Arm, IonQ, AppLovin, Snap And Beyond Meat: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/news/26/05/52353084/arm-ionq-applovin-snap-and-beyond-meat-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-07T01:25:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_ionq_applov_snap_bmd_investor_radar",
+        "tickers_mentioned": [
+          "IONQ",
+          "APPLOV",
+          "SNAP",
+          "BYND"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "cc82bced334ce2e1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Elon Musk Calls Nvidia GB300  'The Best AI Computer' As SpaceX And Anthropic Strike Deal",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52353665/elon-musk-nvidia-gb300-best-ai-computer-spacex-anthropic-deal",
+        "published_at": "2026-05-07T03:21:36+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvda_gb300_musk_endorsement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "Oil prices rise as U.S.-Iran tensions raise the risk of disruption to the Strait of Hormuz, through which ~20% of global oil flows.",
+      "primary_drivers": [
+        "Geopolitical risk premium in crude prices",
+        "Potential supply disruption through Strait of Hormuz chokepoint",
+        "Higher input costs for fuel-intensive industries"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with significant upstream production; realized prices on US/non-Gulf barrels rise with Brent without direct Hormuz transit risk. Highest earnings sensitivity per dollar of crude among US integrateds.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream price-leverage thesis as XOM; Permian and US GoM production captures higher realizations while Hormuz transit risk is minimal for its barrels.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian E&P with no international exposure \u2014 captures higher WTI prices with zero Hormuz transit risk. Highest beta to crude among US large-cap E&Ps.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "US-focused E&P (Permian-heavy) with high operating leverage to crude; benefits from price spike without Iran-region exposure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Has Egyptian production but the bulk of value is US shale; smaller-cap E&P with high crude beta on geopolitical risk-on trades.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "Subsea/offshore equipment provider \u2014 sustained higher crude prices accelerate offshore project FIDs and order book; classic second-derivative beneficiary of a risk premium that lingers.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere \u2014 US LNG exporter. Hormuz risk threatens Qatari LNG flows (~20% of global LNG); buyers diversify to US Gulf supply, supporting term-contract pricing and spot premiums.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways \u2014 crude tanker operator. Hormuz tensions extend voyage distances (rerouting around Cape) and spike VLCC day rates; tanker equities historically rip on Hormuz scares.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest has the least fuel hedging among US legacy carriers and jet fuel is ~25-30% of opex; direct EPS hit from sustained crude spike.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines \u2014 high leverage, minimal hedging, fuel is largest variable cost. Geopolitical crude spikes historically cause 3-5% intraday drawdowns in AAL.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same fuel cost passthrough as peers; international routes also face overflight rerouting if Iran airspace closes, adding fuel burn.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta operates its own refinery (Trainer) which provides a partial hedge, but net exposure to higher crack spreads and crude is still negative for margins.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Fuel surcharges lag spot prices by weeks; near-term margin compression on air freight network which is fuel-intensive.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel is a major opex line and cruise pricing is sticky; sustained crude rise compresses margins. Also middle-east itinerary risk.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "uran_tensions_strait_hormuz_oil",
+      "source_news_ids": [
+        "ac880866db5cd325"
+      ],
+      "headlines": [
+        "Oil rises as U.S.-Iran tensions keep traders focused on Strait of Hormuz risks"
+      ]
+    }
+  ]
 }
