@@ -50,8 +50,12 @@ OPUS_MODEL = os.environ.get("OPUS_MODEL", "claude-opus-4-7")
 
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 FEISHU_WEBHOOK_URL = os.environ.get("FEISHU_WEBHOOK_URL")
+# Optional: signing secret for the primary bot. Set this when the Feishu bot
+# has "Signature verification" enabled. Leave unset for keyword/IP-only bots.
+FEISHU_SIGNING_SECRET = os.environ.get("FEISHU_SIGNING_SECRET")
 # Optional: separate Feishu group for Chinese-language macro digests (e.g. mom's).
 # If not set, the mom-digest module is a no-op.
 FEISHU_MOM_WEBHOOK_URL = os.environ.get("FEISHU_MOM_WEBHOOK_URL")
+FEISHU_MOM_SIGNING_SECRET = os.environ.get("FEISHU_MOM_SIGNING_SECRET")
 
 USER_AGENT = "MomentumScanner/0.1 (github.com/yourhandle/momentum)"

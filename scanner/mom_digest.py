@@ -22,6 +22,7 @@ from pathlib import Path
 import requests
 
 from scanner import config
+from scanner.alerts.feishu import sign_payload
 from scanner.llm.client import LLMClient
 
 log = logging.getLogger(__name__)
@@ -471,7 +472,11 @@ def _build_card(digest: dict) -> dict:
 
 def _send(webhook_url: str, card: dict) -> tuple[bool, dict | None, str | None]:
     try:
-        resp = requests.post(webhook_url, json=card, timeout=10)
+        resp = requests.post(
+            webhook_url,
+            json=sign_payload(card, config.FEISHU_MOM_SIGNING_SECRET),
+            timeout=10,
+        )
         body = resp.json() if resp.headers.get("content-type", "").startswith("application/json") else {"text": resp.text}
         if resp.status_code == 200 and body.get("StatusCode") in (0, None):
             return True, body, None

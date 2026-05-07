@@ -2,11 +2,20 @@
 
 We render alerts as interactive cards with a colored header by alert type.
 Each send writes an audit record to data/audit/ so we can trace what fired.
+
+Bots with "Signature verification" enabled require `timestamp` + `sign` fields
+on the payload. We inject them when ``FEISHU_SIGNING_SECRET`` is configured;
+without it the payload goes through unsigned (works for bots with only
+keyword/IP-allowlist verification or no verification at all).
 """
 from __future__ import annotations
 
+import base64
+import hashlib
+import hmac
 import json
 import logging
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Literal
@@ -16,6 +25,23 @@ import requests
 from scanner import config
 
 log = logging.getLogger(__name__)
+
+
+def _gen_sign(timestamp: str, secret: str) -> str:
+    """Feishu signature: HMAC-SHA256 over an empty body, with key
+    f'{timestamp}\\n{secret}', base64-encoded. Per Feishu docs."""
+    string_to_sign = f"{timestamp}\n{secret}"
+    digest = hmac.new(string_to_sign.encode("utf-8"), digestmod=hashlib.sha256).digest()
+    return base64.b64encode(digest).decode("utf-8")
+
+
+def sign_payload(payload: dict, secret: str | None) -> dict:
+    """Return payload with timestamp+sign injected if a secret is given.
+    Returns the payload unchanged when secret is empty/None."""
+    if not secret:
+        return payload
+    ts = str(int(time.time()))
+    return {**payload, "timestamp": ts, "sign": _gen_sign(ts, secret)}
 
 ALERT_AUDIT_DIR = config.AUDIT_DIR
 
@@ -87,7 +113,7 @@ def send(alert: dict) -> bool:
         _audit(alert, None, "FEISHU_WEBHOOK_URL not configured")
         return False
 
-    payload = _build_card(alert)
+    payload = sign_payload(_build_card(alert), config.FEISHU_SIGNING_SECRET)
     try:
         resp = requests.post(
             config.FEISHU_WEBHOOK_URL,
@@ -198,7 +224,11 @@ def _post_card(card: dict, stub_alert: dict) -> bool:
         _audit(stub_alert, None, "FEISHU_WEBHOOK_URL not configured")
         return False
     try:
-        resp = requests.post(config.FEISHU_WEBHOOK_URL, json=card, timeout=10)
+        resp = requests.post(
+            config.FEISHU_WEBHOOK_URL,
+            json=sign_payload(card, config.FEISHU_SIGNING_SECRET),
+            timeout=10,
+        )
         body = resp.json() if resp.headers.get("content-type", "").startswith("application/json") else {"text": resp.text}
         if resp.status_code == 200 and body.get("StatusCode") in (0, None):
             _audit(stub_alert, body, None)
