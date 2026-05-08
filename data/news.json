@@ -1,192 +1,578 @@
 {
-  "generated_at": "2026-05-08T05:06:21.833953-04:00",
+  "generated_at": "2026-05-08T06:52:21.579087-04:00",
   "ticker_news": {
+    "CRWV": [
+      {
+        "id": "c3f707561c0166f8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "53707d6cda541bcb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Rise Amid Trump's 'Love Tap' To Iran Near Hormuz Strait\u2014Cloudflare, BILL, CoreWeave In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52401243/stock-market-today-sp-500-dow-jones-futures-rise-amid-trumps-love-tap-to-iran-near-hormuz-strait-cloudflare-bill-coreweave-in-focus",
+        "published_at": "2026-05-08T09:10:04+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_iran_hormuz_strait_may8_2026",
+        "tickers_mentioned": [
+          "NET",
+          "BILL",
+          "CORE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c3f707561c0166f8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "53707d6cda541bcb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Rise Amid Trump's 'Love Tap' To Iran Near Hormuz Strait\u2014Cloudflare, BILL, CoreWeave In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52401243/stock-market-today-sp-500-dow-jones-futures-rise-amid-trumps-love-tap-to-iran-near-hormuz-strait-cloudflare-bill-coreweave-in-focus",
+        "published_at": "2026-05-08T09:10:04+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_iran_hormuz_strait_may8_2026",
+        "tickers_mentioned": [
+          "NET",
+          "BILL",
+          "CORE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "IREN": [
+      {
+        "id": "c3f707561c0166f8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IREN",
+        "scope": "ticker",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c3f707561c0166f8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IREN",
+        "scope": "ticker",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
     "NVDA": [
       {
-        "id": "f9facd8c7abf2e15",
+        "id": "c3f707561c0166f8",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "US Job Cuts Rise 38% In April As AI-Driven Layoffs Hit Hiring Plans",
-        "url": "https://www.benzinga.com/markets/economic-data/26/05/52401136/us-job-cuts-rise-38-in-april-as-ai-driven-layoffs-hit-hiring-plans",
-        "published_at": "2026-05-08T09:00:24+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "us_jobcuts_april_2026_ai_layoffs",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "71b42aa6a04b9711",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Boeing's China Order Hopes Revive As Trump Invites CEO To Beijing Visit: Report",
-        "url": "https://www.benzinga.com/news/politics/26/05/52401129/boeings-china-order-hopes-revive-as-trump-invites-ceo-to-beijing-visit-report",
-        "published_at": "2026-05-08T09:00:05+00:00",
-        "type": "ma",
-        "impact": "low",
-        "dedup_group": "boeing_china_trade_trump",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "71b42aa6a04b9711",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Boeing's China Order Hopes Revive As Trump Invites CEO To Beijing Visit: Report",
-        "url": "https://www.benzinga.com/news/politics/26/05/52401129/boeings-china-order-hopes-revive-as-trump-invites-ceo-to-beijing-visit-report",
-        "published_at": "2026-05-08T09:00:05+00:00",
-        "type": "ma",
-        "impact": "low",
-        "dedup_group": "boeing_china_trade_trump",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "71b42aa6a04b9711",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Boeing's China Order Hopes Revive As Trump Invites CEO To Beijing Visit: Report",
-        "url": "https://www.benzinga.com/news/politics/26/05/52401129/boeings-china-order-hopes-revive-as-trump-invites-ceo-to-beijing-visit-report",
-        "published_at": "2026-05-08T09:00:05+00:00",
-        "type": "ma",
-        "impact": "low",
-        "dedup_group": "boeing_china_trade_trump",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "71b42aa6a04b9711",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Boeing's China Order Hopes Revive As Trump Invites CEO To Beijing Visit: Report",
-        "url": "https://www.benzinga.com/news/politics/26/05/52401129/boeings-china-order-hopes-revive-as-trump-invites-ceo-to-beijing-visit-report",
-        "published_at": "2026-05-08T09:00:05+00:00",
-        "type": "ma",
-        "impact": "low",
-        "dedup_group": "boeing_china_trade_trump",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "FLR": [
-      {
-        "id": "5181ff4a290a394e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLR",
-        "scope": "ticker",
-        "title": "Dow Tumbles Over 300 Points: Investor Sentiment Declines, Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52400160/dow-tumbles-over-300-points-investor-sentiment-declines-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-08T06:01:36+00:00",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "dow_sentiment_decline_vix_greed",
-        "tickers_mentioned": [],
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0d5b83e408c0eb7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Super Micro, NVIDIA Chips And Alibaba: Inside The Explosive AI Smuggling Allegations",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52402122/super-micro-nvidia-chips-and-alibaba-inside-the-explosive-ai-smuggling-allegations",
+        "published_at": "2026-05-08T10:08:48+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "smci_nvda_alibaba_ai_chip_smuggling",
+        "tickers_mentioned": [
+          "NVDA",
+          "BABA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "70e28e8c46658173",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "NVIDIA Supplier Taiwan Semiconductor Posts Strong April Sales",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401644/nvidia-supplier-taiwan-semiconductor-posts-strong-april-sales",
+        "published_at": "2026-05-08T09:39:54+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "tsm_april_sales_strong",
+        "tickers_mentioned": [
+          "TSM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c3f707561c0166f8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "CoreWeave CEO Says Nvidia Must Expand AI Capacity Or Risk Losing Customers To AMD As IREN Deal Boosts Infrastructure",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52401603/coreweave-ceo-says-nvidia-must-expand-ai-capacity-or-risk-losing-customers-to-amd-as-iren-deal-boosts-infrastructure",
+        "published_at": "2026-05-08T09:35:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crwv_ceo_nvidia_amd_commentary",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0d5b83e408c0eb7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Super Micro, NVIDIA Chips And Alibaba: Inside The Explosive AI Smuggling Allegations",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52402122/super-micro-nvidia-chips-and-alibaba-inside-the-explosive-ai-smuggling-allegations",
+        "published_at": "2026-05-08T10:08:48+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "smci_nvda_alibaba_ai_chip_smuggling",
+        "tickers_mentioned": [
+          "NVDA",
+          "BABA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "TTD": [
+      {
+        "id": "53707d6cda541bcb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Rise Amid Trump's 'Love Tap' To Iran Near Hormuz Strait\u2014Cloudflare, BILL, CoreWeave In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52401243/stock-market-today-sp-500-dow-jones-futures-rise-amid-trumps-love-tap-to-iran-near-hormuz-strait-cloudflare-bill-coreweave-in-focus",
+        "published_at": "2026-05-08T09:10:04+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_iran_hormuz_strait_may8_2026",
+        "tickers_mentioned": [
+          "NET",
+          "BILL",
+          "CORE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "53707d6cda541bcb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Rise Amid Trump's 'Love Tap' To Iran Near Hormuz Strait\u2014Cloudflare, BILL, CoreWeave In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52401243/stock-market-today-sp-500-dow-jones-futures-rise-amid-trumps-love-tap-to-iran-near-hormuz-strait-cloudflare-bill-coreweave-in-focus",
+        "published_at": "2026-05-08T09:10:04+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_iran_hormuz_strait_may8_2026",
+        "tickers_mentioned": [
+          "NET",
+          "BILL",
+          "CORE"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "MCD": [
+    "SMCI": [
       {
-        "id": "5181ff4a290a394e",
+        "id": "0d5b83e408c0eb7b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MCD",
+        "ticker": "SMCI",
         "scope": "ticker",
-        "title": "Dow Tumbles Over 300 Points: Investor Sentiment Declines, Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52400160/dow-tumbles-over-300-points-investor-sentiment-declines-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-08T06:01:36+00:00",
+        "title": "Super Micro, NVIDIA Chips And Alibaba: Inside The Explosive AI Smuggling Allegations",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52402122/super-micro-nvidia-chips-and-alibaba-inside-the-explosive-ai-smuggling-allegations",
+        "published_at": "2026-05-08T10:08:48+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "smci_nvda_alibaba_ai_chip_smuggling",
+        "tickers_mentioned": [
+          "NVDA",
+          "BABA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "0d5b83e408c0eb7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Super Micro, NVIDIA Chips And Alibaba: Inside The Explosive AI Smuggling Allegations",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52402122/super-micro-nvidia-chips-and-alibaba-inside-the-explosive-ai-smuggling-allegations",
+        "published_at": "2026-05-08T10:08:48+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "smci_nvda_alibaba_ai_chip_smuggling",
+        "tickers_mentioned": [
+          "NVDA",
+          "BABA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "FROG": [
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FROG",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "dow_sentiment_decline_vix_greed",
-        "tickers_mentioned": [],
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FROG",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FROG",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RXT": [
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RXT",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RXT",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RXT",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UPWK": [
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPWK",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPWK",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9e9c14eab5d61946",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UPWK",
+        "scope": "ticker",
+        "title": "Why Akamai Shares Are Trading Higher By 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52401819/why-akamai-shares-are-trading-higher-by-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-08T09:54:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_premarket_roundup_may8_2026",
+        "tickers_mentioned": [
+          "AKAM"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Trump threatens \"much higher\" tariffs on the EU if a trade deal isn't signed by a new deadline, escalating transatlantic trade tensions.",
+      "event_summary": "Bank of America's internal card/spending data shows a sudden slump in US consumer spending with no clear explanation, signaling potential consumer weakness.",
       "primary_drivers": [
-        "Tariff cost pass-through on EU imports raises COGS for US importers and reduces margins for EU exporters with US revenue exposure",
-        "Retaliation risk for US exporters into EU (agriculture, aircraft, spirits, tech)",
-        "Domestic substitution / reshoring tailwind for US producers competing with EU imports"
+        "Consumer discretionary demand softening",
+        "Flight-to-quality / defensive rotation",
+        "Lower forward earnings outlook for credit-sensitive lenders"
       ],
       "beneficiaries": [
         {
-          "ticker": "STLA",
-          "rationale": "Stellantis has significant US manufacturing footprint vs. pure-EU peers; though European-domiciled, its Detroit-based Jeep/Ram production is largely tariff-insulated, gaining relative share if BMW/Mercedes/Audi imports get tariffed. Caveat: STLA is also EU-listed exposure, so confidence trimmed.",
+          "ticker": "WMT",
+          "rationale": "Trade-down beneficiary: when consumer spending softens, Walmart historically gains share from higher-end retail and grocery competitors as households shift toward value. Grocery (~60% of revenue) is also non-discretionary.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DG",
+          "rationale": "Dollar General is a pure-play discount retailer serving lower-income consumers; spending slumps amplify trade-down traffic to dollar stores. Direct revenue exposure to weakening consumer.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KR",
+          "rationale": "Kroger is grocery-heavy and non-discretionary; defensive staple with relative outperformance when discretionary spend weakens.",
           "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Ford's nearly fully domestic US production (F-150, Bronco, Explorer) directly competes with European luxury/premium imports (BMW, Mercedes, Audi, Porsche, VW). EU tariffs raise competitor pricing, supporting Ford ASPs and share in crossovers/SUVs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GM",
-          "rationale": "Same domestic-production thesis as Ford; Cadillac/Buick benefit if European luxury imports face tariff-driven price hikes. Minimal EU revenue exposure means low retaliation risk.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Tesla's US-built Model Y/3/S/X gain pricing power vs. tariffed German EVs (Porsche Taycan, Mercedes EQ, BMW i-series, Audi e-tron). Berlin Gigafactory production for European market is unaffected by US import tariffs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MGPI",
-          "rationale": "MGP Ingredients (American whiskey/bourbon distiller) gains domestic share if EU spirits (Scotch via Diageo, Irish whiskey, French cognac) face retaliatory escalation that disrupts the existing tariff truce on spirits. Pure-play US distiller.",
-          "confidence": "low",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "DEO",
-          "rationale": "Diageo's Scotch whisky (Johnnie Walker) and gin portfolio is UK/EU-produced and US-imported; ~45% of operating profit from North America. Prior 2019-21 tariff cycle showed direct earnings hit. Retaliation risk if EU counters.",
+          "ticker": "BAC",
+          "rationale": "BofA is the source of the data and a major card issuer/consumer lender \u2014 weak spending implies softer interchange revenue and rising credit risk on its own portfolio. Direct read-through.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "COF",
+          "rationale": "Capital One is highly levered to US consumer card spending and credit; a spending slump signals both lower transaction volume and rising charge-offs on subprime-skewed book.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SYF",
+          "rationale": "Synchrony is a pure-play private-label/store-card issuer tied directly to retail spending; revenue and credit losses both sensitive to consumer pullback.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "V",
+          "rationale": "Visa revenue is a direct function of US payment volume; a broad spending slump compresses transaction growth, the core earnings driver.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MA",
+          "rationale": "Same mechanism as Visa \u2014 payment volume directly tied to consumer spending levels.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RH",
+          "rationale": "RH sells big-ticket discretionary home furnishings to higher-end consumers \u2014 among the first categories cut when households tighten budgets.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "BA",
-          "rationale": "Boeing is the canonical EU retaliation target (Airbus subsidy dispute history). EU could impose retaliatory tariffs or accelerate Airbus orders at Boeing's expense. 2019 precedent saw direct measures.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DE",
-          "rationale": "Deere has meaningful EU agricultural and construction equipment exports; retaliatory tariffs on US ag machinery would directly hit a known target category from prior trade disputes.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "STZ",
-          "rationale": "Constellation Brands imports Italian and other European wines (Robert Mondavi imports, prior portfolio); though Mexican beer is the core, the European wine segment faces direct tariff cost. Lower confidence given divestitures.",
+          "ticker": "TPR",
+          "rationale": "Tapestry (Coach/Kate Spade) is aspirational discretionary apparel/accessories; sensitive to handbag and gifting spend pullbacks flagged in card data.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "trump_eu_tariffs_deadline_threat",
+      "dedup_group": "us_consumer_spending_slump_may8",
       "source_news_ids": [
-        "efd9eb1b9ec06a9d"
+        "c78f60aa4149bdaf"
       ],
       "headlines": [
-        "Trump threatens EU with \u2018much higher\u2019 tariffs if no trade deal signed by new deadline"
+        "Spending in the U.S. just slumped, and Bank of America isn\u2019t sure why"
       ]
     }
   ]
