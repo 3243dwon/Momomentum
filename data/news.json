@@ -1,5 +1,55 @@
 {
-  "generated_at": "2026-05-09T05:12:01.228039-04:00",
+  "generated_at": "2026-05-09T06:51:19.761280-04:00",
   "ticker_news": {},
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "U.S. imposed new sanctions on companies and individuals in the Middle East and China accused of helping Iran, tightening enforcement of Iran-related restrictions.",
+      "primary_drivers": [
+        "Tighter enforcement reduces Iranian oil/petrochemical flows reaching global markets, supporting crude prices",
+        "Geopolitical risk premium on Middle East assets",
+        "Secondary sanctions risk on Chinese intermediaries raises US-China trade tension"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Sanctions on Iran-enabling entities tighten effective Iranian crude/petrochemical exports; marginal supply removal supports Brent. ExxonMobil's upstream earnings have direct leverage to crude price (~$1B EBIT per ~$10/bbl).",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale producer with high crude price sensitivity; benefits from any tightening of global supply via Iran enforcement.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Escalating Iran sanctions enforcement and geopolitical posture supports defense spending narrative; Lockheed has direct Middle East FMS exposure (PAC-3, THAAD, F-35).",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services leveraged to higher oil prices driving capex; Halliburton has high North America completion exposure that responds to crude moves.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of opex for legacy carriers; any crude price uplift from tighter Iran enforcement compresses near-term margins. Delta lacks the hedging protection of some peers.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "us_iran_sanctions_may2026",
+      "source_news_ids": [
+        "a1763b9d2e2f702a"
+      ],
+      "headlines": [
+        "U.S. sanctions companies and individuals in the Middle East and China for helping Iran"
+      ]
+    }
+  ]
 }
