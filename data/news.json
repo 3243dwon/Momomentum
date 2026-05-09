@@ -1,54 +1,276 @@
 {
-  "generated_at": "2026-05-09T06:51:19.761280-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-09T09:00:37.762935-04:00",
+  "ticker_news": {
+    "RKLB": [
+      {
+        "id": "223e38ccd50428a2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab, Super Micro Computer, eBay And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52434700/rocket-lab-super-micro-computer-ebay-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-09T12:00:53+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_weekly_investor_buzz_roundup",
+        "tickers_mentioned": [
+          "RKLB",
+          "EBAY"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "223e38ccd50428a2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab, Super Micro Computer, eBay And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52434700/rocket-lab-super-micro-computer-ebay-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-09T12:00:53+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_weekly_investor_buzz_roundup",
+        "tickers_mentioned": [
+          "RKLB",
+          "EBAY"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "223e38ccd50428a2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Rocket Lab, Super Micro Computer, eBay And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52434700/rocket-lab-super-micro-computer-ebay-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-09T12:00:53+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_weekly_investor_buzz_roundup",
+        "tickers_mentioned": [
+          "RKLB",
+          "EBAY"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "223e38ccd50428a2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Rocket Lab, Super Micro Computer, eBay And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52434700/rocket-lab-super-micro-computer-ebay-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-09T12:00:53+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_weekly_investor_buzz_roundup",
+        "tickers_mentioned": [
+          "RKLB",
+          "EBAY"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "U.S. imposed new sanctions on companies and individuals in the Middle East and China accused of helping Iran, tightening enforcement of Iran-related restrictions.",
+      "event_summary": "Oil executives warn that an Iran war is reshaping global energy markets, implying sustained higher oil prices, supply risk premia, and a structural shift toward energy security.",
       "primary_drivers": [
-        "Tighter enforcement reduces Iranian oil/petrochemical flows reaching global markets, supporting crude prices",
-        "Geopolitical risk premium on Middle East assets",
-        "Secondary sanctions risk on Chinese intermediaries raises US-China trade tension"
+        "Crude supply disruption risk premium (Strait of Hormuz / Iranian barrels offline)",
+        "Increased demand for non-Middle East energy supply (US shale, LNG, refining capacity)",
+        "Higher defense and shipping/insurance costs from regional conflict"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Sanctions on Iran-enabling entities tighten effective Iranian crude/petrochemical exports; marginal supply removal supports Brent. ExxonMobil's upstream earnings have direct leverage to crude price (~$1B EBIT per ~$10/bbl).",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "Largest US integrated with significant upstream leverage to Brent; ~40% of earnings from upstream means direct EPS uplift on sustained higher crude. Limited Iran/Hormuz operational exposure relative to European majors.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Permian-weighted upstream production benefits directly from higher realized crude prices; minimal Iranian operational exposure. Historically high beta to Brent shocks.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian producer with ~100% US onshore production; every $10 sustained Brent move drops nearly fully to FCF given low hedge ratios in 2026.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter; Middle East conflict raises European/Asian premium for non-Gulf LNG cargoes and supports long-term contract pricing power.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US shale producer with high crude price sensitivity; benefits from any tightening of global supply via Iran enforcement.",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "US onshore producer with high oil-weighted production mix; direct beneficiary of sustained crude premium with no Iran exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Escalating Iran sanctions enforcement and geopolitical posture supports defense spending narrative; Lockheed has direct Middle East FMS exposure (PAC-3, THAAD, F-35).",
-          "confidence": "low",
-          "horizon": "days"
+          "rationale": "Prime contractor for THAAD, PAC-3 Patriot interceptors and missiles being consumed/replenished in Middle East theater; restocking orders likely accelerate FY26 backlog.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services leveraged to higher oil prices driving capex; Halliburton has high North America completion exposure that responds to crude moves.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "RTX",
+          "rationale": "Raytheon supplies Patriot, SM-3, AMRAAM \u2014 all heavily used in regional missile defense; replenishment contracts and allied FMS demand rise structurally.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker rates spike when Hormuz transit risk forces ton-mile re-routing around Africa; Scorpio is largest pure-play product tanker with high spot exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of opex for legacy carriers; any crude price uplift from tighter Iran enforcement compresses near-term margins. Delta lacks the hedging protection of some peers.",
+          "rationale": "Jet fuel is ~25% of operating cost; Delta has historically lower hedging than peers, so sustained Brent above $90 directly compresses margins. Also has trans-Atlantic routes potentially affected by airspace closures.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "International long-haul exposure (including Tel Aviv, Gulf routings) plus unhedged jet fuel cost \u2014 double hit from rerouting and fuel price.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is unhedged on fuel as of 2026 and runs thin domestic margins; every $10 in crude is a material EPS hit with limited fare pass-through in leisure-heavy network.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival's bunker fuel costs rise with crude; Mediterranean/Middle East itineraries (a meaningful share of summer 2026 capacity) face cancellations and rerouting costs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs rise with crude complex; commodity chemicals have limited ability to pass through in weak global demand backdrop.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Diesel/freight cost inflation hits trucking and last-mile costs; consumer discretionary spending pressured by higher gasoline prices at the pump squeezes low-income core customer.",
           "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Halliburton has meaningful Middle East services exposure (Saudi, Iraq, UAE) \u2014 escalation risks operational disruption and contract delays even as US activity may rise, creating mixed near-term setup.",
+          "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "dedup_group": "us_iran_sanctions_may2026",
+      "dedup_group": "iran_war_global_energy_markets",
       "source_news_ids": [
-        "a1763b9d2e2f702a"
+        "f7830291fb70d753"
       ],
       "headlines": [
-        "U.S. sanctions companies and individuals in the Middle East and China for helping Iran"
+        "The Iran war will change global energy markets in these important ways, oil executives say"
+      ]
+    },
+    {
+      "event_summary": "Wall Street is promoting a \"NACHO\" trade thesis betting on higher oil prices and persistent/sticky inflation.",
+      "primary_drivers": [
+        "Higher crude oil prices lift E&P revenue and reserves valuations",
+        "Persistent inflation supports real assets, commodities, and pricing-power names while pressuring long-duration assets",
+        "Higher-for-longer rate expectations compress growth multiples and lift bank NIMs"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with high leverage to crude price; ~60% of earnings tied to upstream oil & gas realizations.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Direct upstream oil price exposure via Permian and offshore production; cash flow scales linearly with WTI/Brent.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Highest-beta large-cap E&P to oil; Permian pure-play with elevated operating leverage to crude above $80.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FCX",
+          "rationale": "Copper/gold producer benefits from persistent inflation thesis as real-asset hedge; commodity basket trade.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NEM",
+          "rationale": "Largest gold miner; gold typically bid in sticky-inflation regimes as monetary debasement hedge.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services leader; higher sustained crude drives upstream capex and rig activity globally.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "Low-cost shale producer with pricing leverage; FCF grows materially with each $5/bbl move in WTI.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LUV",
+          "rationale": "Airline with jet fuel as ~25-30% of opex and limited hedging; higher crude compresses margins directly.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Major airline highly sensitive to jet fuel costs; every $10/bbl increase materially reduces EPS.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Low-margin retailer with consumer staples mix; sustained inflation pressures real wages and discretionary basket size, while fuel raises logistics cost.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with heavy bunker fuel exposure and discretionary consumer demand; double-hit from oil and inflation-pressured consumer.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "nacho_trade_oil_inflation_bet",
+      "source_news_ids": [
+        "625c0a49679cdc67"
+      ],
+      "headlines": [
+        "Introducing the \u2018NACHO\u2019 trade: How Wall Street is betting on higher oil prices and persistent inflation"
       ]
     }
   ]
