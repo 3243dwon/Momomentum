@@ -1,5 +1,40 @@
 {
-  "generated_at": "2026-05-09T22:13:49.694200-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-10T02:29:47.773074-04:00",
+  "ticker_news": {
+    "QCOM": [
+      {
+        "id": "5a54ab826ed12b64",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm CEO Says OpenAI, Meta Are Working On AI Wearables That Could Replace Smartphones",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52436593/qualcomm-ceo-says-openai-meta-are-working-on-ai-wearables-that-could-replace-smartphones",
+        "published_at": "2026-05-10T05:44:56+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "qcom_openai_meta_ai_wearables",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "770811cfe2d2bdd0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia's AI Investment Bets Top $40 Billion In 2026, Led By OpenAI Stake",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52436424/nvidia-ai-investor-40-billion-equity-commitments-2026",
+        "published_at": "2026-05-10T02:40:50+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvda_40b_ai_investment_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": []
 }
