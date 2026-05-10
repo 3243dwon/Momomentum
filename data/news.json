@@ -1,58 +1,40 @@
 {
-  "generated_at": "2026-05-10T12:45:04.243449-04:00",
+  "generated_at": "2026-05-10T14:51:41.666722-04:00",
   "ticker_news": {
-    "EQPT": [
+    "MU": [
       {
-        "id": "beeef1a7a2705abc",
+        "id": "eff9200bbd75cbb1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "EQPT",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Earnings Volatility Watch: 10 Stocks With More Than 17% Implied Moves This Week",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52437560/earnings-volatility-watch-may-11-14-2026-niq-icl-doximity",
-        "published_at": "2026-05-10T16:01:11+00:00",
-        "type": "other",
+        "title": "$6.2 Billion in 30 Days: How Sandisk, Micron And Seagate Powered One Of The Fastest ETF Launches Ever",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52437780/6-2-billion-in-30-days-how-sandisk-micron-and-seagate-powered-one-of-the-fastest-etf-launches-ever",
+        "published_at": "2026-05-10T18:41:11+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "earnings_volatility_watch_list",
+        "dedup_group": "sandisk_micron_seagate_etf_launch",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVDA": [
-      {
-        "id": "8255f243dffe0746",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Trump's Trip To China Is Here: These 3 Stocks May Be Big Winners",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52437628/trumps-trip-to-china-is-here-these-3-stocks-may-be-big-winners",
-        "published_at": "2026-05-10T16:41:32+00:00",
-        "type": "macro_geopol",
-        "impact": "low",
-        "dedup_group": "trump_china_trip_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "0239d9185d028b75",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Uber's $10 Billion Robotaxi Push Could Challenge Tesla And Waymo Dominance",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52437488/ubers-10-billion-robotaxi-push-could-challenge-tesla-and-waymo-dominance",
-        "published_at": "2026-05-10T15:01:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "uber_robotaxi_10b_push",
-        "tickers_mentioned": [
-          "TSLA",
-          "WAYMO"
-        ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "An opinion/analysis piece warns that the S&P 500's AI-driven rally has reached a rare technical extreme seen only 3 times before, suggesting elevated risk of a pullback.",
+      "primary_drivers": [
+        "Technical overextension / mean reversion risk in AI-concentrated index",
+        "Sentiment/positioning crowding in AI megacap leaders"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "sp500_technical_warning_ai_rally",
+      "source_news_ids": [
+        "128b21f51d7e2cbd"
+      ],
+      "headlines": [
+        "The S&P 500 Just Did Something It\u2019s Only Done 3 Times Before. Why Trump\u2019s AI Rally Is in Danger"
+      ]
+    }
+  ]
 }
