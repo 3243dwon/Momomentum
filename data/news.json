@@ -1,260 +1,217 @@
 {
-  "generated_at": "2026-05-10T16:40:39.216656-04:00",
+  "generated_at": "2026-05-10T18:39:29.014867-04:00",
   "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Netanyahu signals the Israel-Iran conflict will continue and Trump rejects Iran's latest peace offer, suggesting prolonged Middle East military tensions.",
+      "event_summary": "Trump rejected Iran's latest war-ending offer as \"totally unacceptable,\" sending oil prices surging and US stock futures lower on renewed Middle East escalation risk.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude oil from threat to Strait of Hormuz / Iranian supply",
-        "Increased near-term defense procurement and munitions replenishment demand",
-        "Flight-to-safety bid into gold and defensive assets"
+        "Higher crude oil prices on Middle East supply risk premium",
+        "Risk-off equity flows into defense and safe havens",
+        "Potential disruption to Strait of Hormuz shipping/tanker rates"
       ],
       "beneficiaries": [
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed makes PAC-3 interceptors, THAAD, and JASSM munitions actively being drawn down in Israel/Mideast operations; prolonged conflict accelerates DoD replenishment orders.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; every $10/bbl move in Brent flows directly to E&P earnings. Pure beneficiary of geopolitical risk premium in crude.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta US E&P with Permian-concentrated production and high oil price sensitivity (no hedges to speak of historically); tends to outperform peers on crude spikes.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Largest US defense prime; direct beneficiary of escalation involving Iran given missile defense (THAAD, PAC-3) demand from Israel/Gulf allies and replenishment of munitions stocks.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon produces the Patriot system and Tomahawks; direct beneficiary of Israeli air-defense interceptor consumption and US Navy missile expenditure in the region.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Northrop supplies the IBCS air-defense command system and solid rocket motors (via subsidiary) feeding nearly every interceptor program being expended.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated with significant upstream leverage; brent risk premium from Hormuz/Iranian supply threat flows directly to E&P earnings.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "High-beta domestic crude producer with Permian leverage; outsized move on any sustained oil spike given debt-levered cash flow profile.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LHX",
-          "rationale": "L3Harris supplies tactical comms and EW systems plus Aerojet solid rocket motors post-acquisition \u2014 direct munitions replenishment exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has the largest transatlantic and Mideast-routing exposure of US legacy carriers; higher jet fuel from crude spike plus airspace closures compress margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United operates the most Tel Aviv and India routes among US carriers, both of which are disrupted by Iranian airspace closures; fuel cost passthrough lag hurts near-term.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival has Mediterranean itineraries directly impacted by Mideast tourism aversion plus bunker fuel cost spike; consumer discretionary + fuel double-hit.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ONON",
-          "rationale": "On Holding is Swiss-listed but the CEO/founders are heavily exposed to Israeli operations and the brand has notable Israeli partnership tilt; sentiment-driven flow risk.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WYNN",
-          "rationale": "Discretionary travel/leisure with Mideast (UAE Wynn Al Marjan under construction) exposure; regional escalation risk delays project timelines and hurts sentiment.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TGT",
-          "rationale": "Discretionary retailer with thin margins highly sensitive to gasoline pump prices eating consumer wallet share if crude sustains above $90.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_israel_tensions_may_2026",
-      "source_news_ids": [
-        "f8d0a39c14a32333"
-      ],
-      "headlines": [
-        "Netanyahu says Iran war is 'not over' as Trump rejects latest Iranian offer"
-      ]
-    },
-    {
-      "event_summary": "Wall Street is promoting a new \"NACHO\" basket trade positioning for higher oil prices and persistent/sticky inflation.",
-      "primary_drivers": [
-        "Higher crude oil prices lifting E&P revenue and cash flow",
-        "Persistent inflation favoring real assets and pricing-power names over long-duration growth",
-        "Sector rotation flows into energy and commodity-linked equities"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with direct upstream leverage to crude prices; every $10/bbl move materially shifts EPS, and it's the default large-cap vehicle for inflation/oil rotation flows.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same direct upstream oil price leverage as XOM; large-cap, high-liquidity name that absorbs basket inflows when 'higher oil' trades get marketed.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "High-beta Permian pure-play with significant leverage to WTI; historically one of the best performers in oil-up regimes and a Buffett-endorsed name that attracts thematic flows.",
+          "rationale": "Maker of Patriot missiles, Tomahawks, and AIM-120s \u2014 exactly the systems consumed in any Iran conflict scenario. Direct order-flow exposure on escalation.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "FANG",
-          "rationale": "Permian E&P pure-play with low breakevens; cash flow scales nearly linearly with crude, making it a preferred vehicle for the 'higher oil' leg of the trade.",
+          "rationale": "Pure-play Permian operator with no international exposure; benefits cleanly from higher WTI without the geopolitical operational risk that hits majors with overseas assets.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 product tanker rates spike when Strait of Hormuz risk forces rerouting and tonne-mile demand jumps. Direct beneficiary of Middle East shipping disruption fears.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Missile defense and strategic systems exposure; secondary defense beneficiary behind LMT/RTX but moves with the basket on geopolitical headlines.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services lever to higher crude \u2014 sustained price strength drives US shale completion activity and pricing power on frac/pressure pumping.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has historically high fuel sensitivity and limited hedging. Direct margin hit from crude spike.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same fuel cost exposure as DAL plus heavy international/long-haul mix that's more fuel-intensive per ASM. Unhedged carrier.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's historical fuel hedging program has been wound down; now fully exposed to spot jet fuel, and lower-fare model has less ability to pass costs through.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operators consume bunker fuel and face discretionary travel demand pressure if conflict escalates; double hit from costs and consumer sentiment.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Express/air freight is fuel-intensive; surcharges lag spot fuel by weeks and Trump-Iran escalation pressures global trade volumes simultaneously.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to oil; margin compression on input cost spike that can't be passed through quickly.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Consumer staples retailer with thin margins faces both fuel/logistics cost inflation and squeezed low-end consumer if gasoline prices spike at the pump.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "trump_iran_nuclear_tensions_may_2026",
+      "source_news_ids": [
+        "9b94d726880507c4"
+      ],
+      "headlines": [
+        "U.S. stock futures fall, oil surges as Trump calls Iran\u2019s latest offer to end war \u2018totally unacceptable\u2019"
+      ]
+    },
+    {
+      "event_summary": "Global oil market spare capacity buffer is being depleted as an ongoing supply shock worsens, suggesting tighter physical crude markets and higher price risk premium.",
+      "primary_drivers": [
+        "Reduced global spare capacity raises crude price floor and tail-risk premium",
+        "Tighter supply favors producers with unhedged upstream exposure",
+        "Higher sustained crude prices pressure fuel-cost-sensitive consumers (airlines, chemicals)"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with significant unhedged upstream Permian and Guyana production; every $10/bbl move in Brent translates to several billion in incremental upstream earnings.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "High upstream leverage via Permian and Tengiz; minimal hedging means direct flow-through of higher realizations to FCF and buyback capacity.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian E&P with high oil cut (~65%); unhedged volumes give near-1:1 EBITDA sensitivity to WTI.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DVN",
+          "rationale": "Permian-weighted independent with variable dividend tied directly to commodity cash flow; higher crude lifts payout and share price.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High operating leverage to oil via Permian and DJ Basin; carries debt that delevers fastest under sustained higher crude \u2014 Buffett's structural backstop adds flow support.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "SLB",
-          "rationale": "Largest oilfield services name; higher sustained oil prices drive E&P capex which directly flows to SLB revenue with a 1-2 quarter lag.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FCX",
-          "rationale": "Copper/gold producer that benefits from the broader 'persistent inflation = real assets' thesis embedded in the NACHO framing; copper is also a core inflation-hedge commodity.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NEM",
-          "rationale": "Largest US-listed gold miner; sticky inflation narrative supports gold prices, and NEM has direct operating leverage to bullion.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MOS",
-          "rationale": "Fertilizer producer with direct exposure to agricultural commodity inflation; pricing power asset that fits the persistent-inflation leg of the trade.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LUV",
-          "rationale": "Domestic airline with jet fuel as ~25-30% of operating cost and limited hedging vs. peers; sustained higher crude directly compresses margins.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel cost passthrough is imperfect and lagged; sustained oil rally erodes unit margins until fares re-price.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DG",
-          "rationale": "Low-income consumer discretionary spend is highly sensitive to gasoline prices; higher oil acts as a direct tax on Dollar General's core customer.",
+          "rationale": "Sustained tight supply forces incremental drilling/completion activity globally; Schlumberger is the most international-exposed oilfield services name and benefits from OPEC+ and Middle East spend cycles.",
           "confidence": "medium",
           "horizon": "months"
-        }
-      ],
-      "dedup_group": "nacho_trade_oil_inflation_hedge",
-      "source_news_ids": [
-        "89480fc61df9ccba"
-      ],
-      "headlines": [
-        "Introducing the \u2018NACHO\u2019 trade: How Wall Street is betting on higher oil prices and persistent inflation"
-      ]
-    },
-    {
-      "event_summary": "Fed Vice Chair for Supervision Bowman publicly warns about systemic risks from the shift of lending into the $1.4T private credit market, signaling potential regulatory scrutiny.",
-      "primary_drivers": [
-        "Regulatory overhang risk on non-bank private credit lenders (BDCs, alt asset managers)",
-        "Potential competitive relief for traditional banks if private credit faces tighter rules",
-        "Spread/credit quality concerns in middle-market direct lending"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "JPM",
-          "rationale": "Largest US bank with significant middle-market and leveraged lending business; tighter rules on private credit competitors would let banks recapture share they lost to direct lenders since 2022.",
-          "confidence": "low",
-          "horizon": "days"
         },
         {
-          "ticker": "GS",
-          "rationale": "Has been trying to rebuild leveraged finance/syndicated loan business; regulatory friction on private credit shadow lenders is a relative tailwind for bank-led syndication.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "TPL",
+          "rationale": "Texas Pacific Land collects royalties on Permian production with zero capex; royalty cash flow scales directly with realized oil prices.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "ARES",
-          "rationale": "Ares Management is the most pure-play public alt manager levered to private credit \u2014 direct lending is its largest segment ($300B+ AUM in credit). Explicit regulatory warnings from a Fed Governor raise the tail risk of capital/disclosure rules on the business.",
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25-30% of operating cost; Delta has historically been less hedged than peers, leaving direct margin compression from sustained higher crude.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "BXSL",
-          "rationale": "Blackstone Private Credit-adjacent BDC; pure-play direct lender to middle-market borrowers, exactly the activity Bowman is flagging. Sentiment hit on regulatory headline risk.",
+          "ticker": "UAL",
+          "rationale": "Unhedged fuel exposure (United explicitly does not hedge); every $10/bbl rise in crude flows directly to unit cost.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "BX",
-          "rationale": "Blackstone's credit & insurance segment (BXCI) is its fastest-growing AUM bucket and centers on private credit; regulatory scrutiny threatens the growth narrative driving the multiple.",
+          "ticker": "AAL",
+          "rationale": "Highly leveraged balance sheet plus unhedged fuel policy makes American the most fuel-cost-fragile US legacy carrier.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's historical fuel hedge advantage has largely rolled off; rising jet fuel directly hits CASM ex-fuel guidance.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "OBDC",
-          "rationale": "Blue Owl's flagship BDC, ~$13B portfolio of direct middle-market loans. Direct target of any 'private credit' rulemaking; trades on regulatory headline.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OWL",
-          "rationale": "Blue Owl Capital \u2014 highest revenue concentration in direct lending among listed alt managers; FRE growth thesis depends on continued private credit fundraising that regulation could slow.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APO",
-          "rationale": "Apollo's Athene/credit complex originates heavily in private credit and asset-based finance; Bowman has previously flagged insurance-linked private credit specifically.",
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha-based chemicals producer; sustained higher oil raises naphtha-cracker feedstock cost globally and compresses olefin spreads.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "ARCC",
-          "rationale": "Largest publicly traded BDC; bellwether for direct lending sentiment and would be directly affected by any leverage or transparency rules.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KKR",
-          "rationale": "Private credit is a core growth pillar alongside insurance (Global Atlantic); regulatory headline pressures the AUM growth multiple.",
+          "ticker": "LYB",
+          "rationale": "Polyolefin spreads compress when crude-linked naphtha feedstock rises faster than polymer prices; direct margin headwind.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Diesel/jet fuel surcharge mechanisms lag actual fuel cost moves by weeks, creating near-term margin drag on express and ground volumes.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "fed_bowman_private_credit_warning",
+      "dedup_group": "oil_supply_shock_inventory_pressure",
       "source_news_ids": [
-        "3a8cef05457bf479"
+        "039ac8b3dc3320ed"
       ],
       "headlines": [
-        "Fed\u2019s Bowman warns on shift to $1.4T private credit market"
+        "Oil Market Runs Down Safety Cushion as Supply Shock Worsens"
       ]
     }
   ]
