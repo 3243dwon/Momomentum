@@ -1,127 +1,42 @@
 {
-  "generated_at": "2026-05-10T05:24:14.369727-04:00",
+  "generated_at": "2026-05-10T06:56:44.711954-04:00",
   "ticker_news": {
-    "QCOM": [
+    "NVDA": [
       {
-        "id": "edbded786ab793d3",
+        "id": "8f8cbd600ab5a62a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "QCOM",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Aaron Levie Says AI Agents Will Make Work More Accessible While Giving Experts A 'Huge Edge'",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52436727/aaron-levie-says-ai-agents-will-make-work-more-accessible-while-giving-experts-a-huge-edge",
-        "published_at": "2026-05-10T08:35:58+00:00",
+        "title": "Even Uber CEO Dara Khosrowshahi Can't Crack 4.9 Rider Rating \u2014 Here's What He's Doing To Fix It",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52436828/uber-ceo-dara-khosrowshahi-rider-rating",
+        "published_at": "2026-05-10T09:22:47+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "aaron_levie_ai_agents_commentary",
+        "dedup_group": "uber_ceo_rating_anecdote",
+        "tickers_mentioned": [
+          "UBER"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "9878d8b37f16e0ea",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Tech Stocks Are Looking Cheap Again As AI Earnings Keep Delivering, Analysts Reportedly Say: 'Fantastic Entry Point' For Investors",
+        "url": "https://www.benzinga.com/news/26/05/52436955/tech-stocks-looking-cheap-again-ai-earnings",
+        "published_at": "2026-05-10T10:50:12+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "tech_stocks_valuation_analysts_may_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Saudi Aramco's Q1 profit surged 26% as its East-West pipeline (bypassing the Strait of Hormuz) hit full capacity amid the ongoing Iran war, signaling sustained high oil prices and constrained Gulf export logistics.",
-      "primary_drivers": [
-        "Elevated crude prices from Iran war risk premium boosting upstream margins",
-        "Strait of Hormuz / Gulf shipping disruption rerouting flows and lifting tanker rates",
-        "Pipeline capacity bottleneck increasing value of non-Gulf supply sources"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated with significant upstream leverage; Aramco's 26% profit jump is a direct readthrough \u2014 ExxonMobil's Permian and Guyana barrels capture the same crude price uplift without Gulf transit risk.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Upstream-heavy major with Permian/Kazakhstan production; benefits from same Brent-linked pricing driving Aramco results, and Tengiz volumes route via non-Hormuz channels.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil cut and low breakeven; maximum torque to sustained $90+ Brent that the Aramco print confirms.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EOG",
-          "rationale": "Domestic onshore E&P, zero Gulf transit exposure, leveraged to elevated oil prices implied by the war premium and pipeline-bottlenecked Saudi exports.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline tanker fleet directly benefits from Hormuz disruption \u2014 Aramco pipeline 'at capacity' means residual barrels need longer-haul tanker routing, driving VLCC day rates.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways crude tanker exposure; same dynamic as FRO \u2014 rerouted Gulf cargoes and war-risk insurance premia on Hormuz transit lift spot rates.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TRGP",
-          "rationale": "Targa midstream operates US Gulf Coast NGL/crude export infrastructure; tightness in Saudi pipeline capacity increases premium for reliable non-Mideast export pathways.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere LNG exports become more strategically valuable as Gulf energy logistics strain; European/Asian buyers diversify away from Hormuz-routed cargoes.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has highest jet fuel exposure among US carriers and limited hedging; sustained crude strength confirmed by Aramco print directly compresses Q2 margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United similarly unhedged on fuel; Brent staying elevated due to Iran war premium is a direct cost hit to CASM-ex.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest's traditional fuel hedge program has thinned; high oil price environment pressures unit costs against price-sensitive leisure demand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Ethane/naphtha feedstock costs track crude; sustained high oil environment compresses petrochemical spreads on top of weak demand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LYB",
-          "rationale": "LyondellBasell olefins margins squeezed when crude-linked feedstocks stay elevated without commensurate polymer pricing power.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Fuel surcharges lag actual cost increases; sustained jet/diesel strength from Iran war premium pressures express margins.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "saudi_aramco_q1_2026_profit_pipeline",
-      "source_news_ids": [
-        "5995666e999191f3"
-      ],
-      "headlines": [
-        "Saudi Aramco Q1 profit jumps 26% as key pipeline reaches capacity amid Iran war"
-      ]
-    }
-  ]
+  "macro_events": []
 }
