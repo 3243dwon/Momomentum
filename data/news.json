@@ -1,217 +1,339 @@
 {
-  "generated_at": "2026-05-10T18:39:29.014867-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-10T23:59:08.936343-04:00",
+  "ticker_news": {
+    "NVDA": [
+      {
+        "id": "1da3ddb639a6cfc6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Michael Saylor's Strategy Back To Buying Bitcoin After 1-Week Pause? BTC Bull Says 'No More Bears'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52438723/michael-saylor-strategy-buying-bitcoin-no-more-bears",
+        "published_at": "2026-05-11T03:33:30+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "saylor_bitcoin_buying_pause_ended",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "Trump rejected Iran's latest war-ending offer as \"totally unacceptable,\" sending oil prices surging and US stock futures lower on renewed Middle East escalation risk.",
+      "event_summary": "Iran-US tensions escalate as Tehran rejects de-escalation and Trump rebuffs Iran's peace counteroffer, prolonging Middle East conflict with implied risk to Strait of Hormuz oil flows.",
       "primary_drivers": [
-        "Higher crude oil prices on Middle East supply risk premium",
-        "Risk-off equity flows into defense and safe havens",
-        "Potential disruption to Strait of Hormuz shipping/tanker rates"
+        "Crude oil price spike on Hormuz transit risk premium",
+        "Defense procurement / munitions replenishment demand",
+        "Risk-off rotation into safe havens and away from oil-sensitive consumer names"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream leverage; every $10/bbl move in Brent flows directly to E&P earnings. Pure beneficiary of geopolitical risk premium in crude.",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; every $10/bbl move in Brent flows directly to upstream earnings. Direct beneficiary of Hormuz risk premium without Iran-exposed assets.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "High-beta US E&P with Permian-concentrated production and high oil price sensitivity (no hedges to speak of historically); tends to outperform peers on crude spikes.",
+          "rationale": "High-beta US shale pure-play (Permian) with above-peer leverage to crude prices; trades as a levered call on oil. No Middle East operational exposure.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Largest US defense prime; direct beneficiary of escalation involving Iran given missile defense (THAAD, PAC-3) demand from Israel/Gulf allies and replenishment of munitions stocks.",
+          "rationale": "Prime contractor for THAAD, PAC-3 Patriot interceptors, and JASSM \u2014 all directly consumed/replenished in Middle East air defense and strike operations. Conflict prolongation extends munitions burn rate.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Maker of Patriot missiles, Tomahawks, and AIM-120s \u2014 exactly the systems consumed in any Iran conflict scenario. Direct order-flow exposure on escalation.",
+          "rationale": "Maker of Patriot missiles, Tomahawks, and AIM-120; Raytheon segment is the most direct munitions-replenishment beneficiary of a prolonged Iran conflict.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian operator with no international exposure; benefits cleanly from higher WTI without the geopolitical operational risk that hits majors with overseas assets.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers \u2014 product tanker rates spike when Strait of Hormuz risk forces rerouting and tonne-mile demand jumps. Direct beneficiary of Middle East shipping disruption fears.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
           "ticker": "NOC",
-          "rationale": "Missile defense and strategic systems exposure; secondary defense beneficiary behind LMT/RTX but moves with the basket on geopolitical headlines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services lever to higher crude \u2014 sustained price strength drives US shale completion activity and pricing power on frac/pressure pumping.",
+          "rationale": "B-2/B-21 stealth bomber prime and ICBM/strategic deterrent contractor; benefits from elevated defense spending posture and potential strike-package activity.",
           "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "TechnipFMC \u2014 subsea equipment provider benefits from oil capex pull-forward as majors lock in projects amid sustained high crude; less direct than E&Ps but clear linkage.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STRL",
+          "rationale": "Tanker rates spike on Hormuz disruption fears as shippers reroute \u2014 though note: pick one tanker name. Actually using FRO instead.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline \u2014 VLCC tanker operator; Hormuz transit disruption and rerouting around Cape of Good Hope dramatically increases ton-miles and spot tanker rates.",
+          "confidence": "high",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines \u2014 jet fuel is ~25% of operating costs and is unhedged; sustained crude spike compresses margins directly. Also exposed to Middle East airspace rerouting on international routes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United has the largest international/long-haul exposure of US carriers including Middle East/India routes that overfly the region; fuel cost passthrough + rerouting drag.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel cost sensitivity plus direct itinerary disruption risk for Mediterranean/Middle East cruises which typically rebook at lower margins.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx \u2014 jet fuel exposure for Express segment and global air network; rising crude squeezes margins and Middle East hub (Dubai) is operationally affected.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DG",
+          "rationale": "Dollar General \u2014 low-income consumer is most sensitive to gasoline price spikes which act as a regressive tax; same-store traffic historically inversely correlates with pump prices.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta operates its own refinery (Trainer) providing partial hedge, but still net exposed to jet crack spreads widening on a crude shock.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_trump_peace_collapse_middle_east",
+      "source_news_ids": [
+        "0286a66bd643cf1a"
+      ],
+      "headlines": [
+        "Iran says it will 'never bow' as Trump rejects peace counteroffer, prolonging Middle East conflict"
+      ]
+    },
+    {
+      "event_summary": "Oil prices rising on escalating Middle East tensions after hawkish remarks from Netanyahu and Trump raise risk of Iran-related conflict.",
+      "primary_drivers": [
+        "Geopolitical risk premium in crude prices",
+        "Potential supply disruption risk from Strait of Hormuz / Iranian exports",
+        "Defense spending tailwind from heightened conflict risk"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated major with significant upstream leverage; ~$1 move in Brent flows directly to E&P earnings. Pure beta to crude price.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-leverage Permian pure-play with strong torque to WTI; balance sheet still levered means oil price moves amplify equity beta. Buffett-held adds flow support.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "E&P with direct Egypt/offshore operations and high crude beta; small-cap E&Ps typically lead the tape on geopolitical oil spikes.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Direct beneficiary of Israel/Middle East tensions \u2014 maker of THAAD, PAC-3 Patriot interceptors, F-35s already in heavy demand from Israel and Gulf allies. Escalation = restock orders.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot missile and interceptor producer; Israel and Saudi air-defense restocking pipeline expands on regional conflict risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TDW",
+          "rationale": "Offshore vessel operator with heavy Middle East/Gulf exposure; day rates and utilization rise with sustained $80+ crude.",
+          "confidence": "medium",
+          "horizon": "days"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; Delta has historically high fuel sensitivity and limited hedging. Direct margin hit from crude spike.",
+          "rationale": "Jet fuel is ~25% of operating cost; airlines lack hedging discipline they once had. Direct margin compression from crude spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "Same fuel cost exposure as DAL plus heavy international/long-haul mix that's more fuel-intensive per ASM. Unhedged carrier.",
+          "rationale": "Same fuel cost passthrough mechanism as DAL; international routing also exposed to Middle East airspace disruption rerouting costs.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest's historical fuel hedging program has been wound down; now fully exposed to spot jet fuel, and lower-fare model has less ability to pass costs through.",
+          "rationale": "Domestic carrier with thinnest margin buffer to fuel cost shocks; historically the most fuel-price-sensitive US airline equity.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "CCL",
-          "rationale": "Cruise operators consume bunker fuel and face discretionary travel demand pressure if conflict escalates; double hit from costs and consumer sentiment.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
           "ticker": "FDX",
-          "rationale": "Express/air freight is fuel-intensive; surcharges lag spot fuel by weeks and Trump-Iran escalation pressures global trade volumes simultaneously.",
+          "rationale": "Jet fuel + diesel exposure across air and ground fleet; fuel surcharges lag the spot move so near-term margin hit.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to oil; margin compression on input cost spike that can't be passed through quickly.",
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is a major cost line and Mediterranean/Red Sea itineraries face rerouting risk if tensions escalate further.",
           "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "oil_middle_east_tensions_may_2026",
+      "source_news_ids": [
+        "f18967890d7b62b2"
+      ],
+      "headlines": [
+        "Oil climbs as Netanyahu and Trump remarks stoke worries over rising Middle East tensions"
+      ]
+    },
+    {
+      "event_summary": "Global leaders are closely watching an upcoming Trump-Xi summit, with agenda speculation spanning Iran, Taiwan, and the Strait of Hormuz alongside US-China trade relations.",
+      "primary_drivers": [
+        "Potential US-China tariff/trade de-escalation reducing supply chain risk premium",
+        "Geopolitical headline volatility around Taiwan and Iran",
+        "Sentiment rotation into China-exposed US equities ahead of summit"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "BA",
+          "rationale": "Boeing aircraft orders from Chinese carriers are a recurring summit deliverable; past Trump-Xi meetings have produced 737/787 order announcements.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WYNN",
+          "rationale": "Macau gaming revenue ~70% of EBITDA; benefits from any easing of cross-strait/China travel and capital flow rhetoric.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FCX",
+          "rationale": "Copper bellwether \u2014 a successful summit reduces global growth tail risk and lifts industrial metals on China demand hopes.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed's Taiwan arms sales and F-35 program are explicit Chinese demands at any summit; concessions or freezes would hit the Taiwan revenue line and broader China-relations overhang.",
+          "confidence": "low",
           "horizon": "weeks"
         },
         {
-          "ticker": "WMT",
-          "rationale": "Consumer staples retailer with thin margins faces both fuel/logistics cost inflation and squeezed low-end consumer if gasoline prices spike at the pump.",
+          "ticker": "XOM",
+          "rationale": "Strait of Hormuz is on the agenda \u2014 any Iran de-escalation framework reduces the geopolitical risk premium currently embedded in crude.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TXN",
+          "rationale": "Domestic-fab semis benefit from US-China tech decoupling; a summit easing of chip export controls would erode the reshoring premium relative to China-exposed peers.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "trump_iran_nuclear_tensions_may_2026",
+      "dedup_group": "trump_xi_summit_speculation",
       "source_news_ids": [
-        "9b94d726880507c4"
+        "39641e9bfbd1ebe7"
       ],
       "headlines": [
-        "U.S. stock futures fall, oil surges as Trump calls Iran\u2019s latest offer to end war \u2018totally unacceptable\u2019"
+        "From Singapore to Brussels, world leaders eye Trump-Xi summit\u00a0from afar"
       ]
     },
     {
-      "event_summary": "Global oil market spare capacity buffer is being depleted as an ongoing supply shock worsens, suggesting tighter physical crude markets and higher price risk premium.",
+      "event_summary": "China's April CPI and PPI came in hotter than expected, driven by higher energy costs stemming from the ongoing Iran war pushing oil prices up.",
       "primary_drivers": [
-        "Reduced global spare capacity raises crude price floor and tail-risk premium",
-        "Tighter supply favors producers with unhedged upstream exposure",
-        "Higher sustained crude prices pressure fuel-cost-sensitive consumers (airlines, chemicals)"
+        "Higher crude oil prices flowing through to global inflation prints",
+        "Reduced room for PBoC easing if imported inflation persists",
+        "Energy supply risk premium from Middle East conflict"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated with significant unhedged upstream Permian and Guyana production; every $10/bbl move in Brent translates to several billion in incremental upstream earnings.",
+          "rationale": "Integrated major with significant upstream leverage to Brent; sustained $80+ oil from Iran war supply premium directly lifts E&P earnings and buyback capacity.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "CVX",
-          "rationale": "High upstream leverage via Permian and Tengiz; minimal hedging means direct flow-through of higher realizations to FCF and buyback capacity.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil cut (~65%); unhedged volumes give near-1:1 EBITDA sensitivity to WTI.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DVN",
-          "rationale": "Permian-weighted independent with variable dividend tied directly to commodity cash flow; higher crude lifts payout and share price.",
+          "rationale": "Same upstream oil price leverage as XOM; Permian and global upstream production benefits directly from elevated crude driven by Middle East supply risk.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "High operating leverage to oil via Permian and DJ Basin; carries debt that delevers fastest under sustained higher crude \u2014 Buffett's structural backstop adds flow support.",
-          "confidence": "medium",
+          "rationale": "Higher beta to oil price than majors due to Permian-heavy production mix and leverage; benefits disproportionately from sustained crude strength.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play upstream with no downstream offset; direct earnings sensitivity to Brent prices elevated by Iran conflict supply premium.",
+          "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "SLB",
-          "rationale": "Sustained tight supply forces incremental drilling/completion activity globally; Schlumberger is the most international-exposed oilfield services name and benefits from OPEC+ and Middle East spend cycles.",
+          "rationale": "Oilfield services activity rises with sustained high oil prices as producers boost capex; China inflation print signals demand isn't collapsing.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "weeks"
         },
         {
-          "ticker": "TPL",
-          "rationale": "Texas Pacific Land collects royalties on Permian production with zero capex; royalty cash flow scales directly with realized oil prices.",
+          "ticker": "LNG",
+          "rationale": "Cheniere benefits as Middle East conflict raises premium on non-Gulf LNG supply; European and Asian buyers pay up for US cargoes.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating cost; Delta has historically been less hedged than peers, leaving direct margin compression from sustained higher crude.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Unhedged fuel exposure (United explicitly does not hedge); every $10/bbl rise in crude flows directly to unit cost.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Highly leveraged balance sheet plus unhedged fuel policy makes American the most fuel-cost-fragile US legacy carrier.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
           "ticker": "LUV",
-          "rationale": "Southwest's historical fuel hedge advantage has largely rolled off; rising jet fuel directly hits CASM ex-fuel guidance.",
+          "rationale": "Domestic airline with limited fuel hedging; sustained higher jet fuel from Iran war crude premium directly compresses operating margins.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Fuel is ~25% of opex; persistent oil strength from Middle East supply risk pressures CASM-ex and Q2 guide.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "DOW",
-          "rationale": "Ethane/naphtha-based chemicals producer; sustained higher oil raises naphtha-cracker feedstock cost globally and compresses olefin spreads.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LYB",
-          "rationale": "Polyolefin spreads compress when crude-linked naphtha feedstock rises faster than polymer prices; direct margin headwind.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Diesel/jet fuel surcharge mechanisms lag actual fuel cost moves by weeks, creating near-term margin drag on express and ground volumes.",
+          "rationale": "Naphtha and natural gas liquids feedstock costs rise with crude; commodity chemical margins compressed when end-demand can't absorb passthrough.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "oil_supply_shock_inventory_pressure",
+      "dedup_group": "china_inflation_april_2026",
       "source_news_ids": [
-        "039ac8b3dc3320ed"
+        "c81f5f28af13a272"
       ],
       "headlines": [
-        "Oil Market Runs Down Safety Cushion as Supply Shock Worsens"
+        "China consumer, wholesale inflation tops estimates in April as Iran war drives energy costs higher"
       ]
     }
   ]
