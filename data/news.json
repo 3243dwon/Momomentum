@@ -1,16 +1,65 @@
 {
-  "generated_at": "2026-05-12T16:58:58.579338-04:00",
+  "generated_at": "2026-05-12T18:11:55.901691-04:00",
   "ticker_news": {
+    "WDC": [
+      {
+        "id": "e6464e286e518396",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "If You Invested $1000 In Western Digital Stock 20 Years Ago, You Would Have This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/05/52509393/if-you-invested-1000-in-western-digital-stock-20-years-ago-you-would-have-this-much-today",
+        "published_at": "2026-05-12T21:15:28+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "wdc_20year_retrospective",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NXT": [
+      {
+        "id": "b29688bfe3748dab",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "Nextpower Shares Climb After Q4 Earnings Beat Estimates",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52509055/nextpower-shares-climb-after-q4-earnings-beat-estimates",
+        "published_at": "2026-05-12T21:09:17+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "nxt_q4_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "6d5d7e4a6577c6cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "12 Industrials Stocks Moving In Tuesday's After-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52508854/12-industrials-stocks-moving-in-tuesdays-after-market-session",
+        "published_at": "2026-05-12T21:05:58+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxt_afterhours_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
     "OKLO": [
       {
-        "id": "9d11dbbbc1d5eb76",
+        "id": "f5974735515a7756",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "OKLO",
         "scope": "ticker",
-        "title": "Oklo Reports Q1 Earnings, Shares Slide",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52507685/oklo-reports-q1-earnings-shares-slide",
-        "published_at": "2026-05-12T20:32:50+00:00",
+        "title": "Oklo Q1 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52510872/oklo-q1-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-12T22:10:03+00:00",
         "type": "earnings",
         "impact": "medium",
         "dedup_group": "oklo_q1_2026_earnings",
@@ -21,64 +70,76 @@
   },
   "macro_events": [
     {
-      "event_summary": "Speculation that Boeing may resume/expand aircraft deliveries to China, potentially reopening a major end-market that has been largely closed amid US-China trade tensions.",
+      "event_summary": "Copper prices hit a record high, driven by AI/data center electrification demand plus broader structural supply tightness.",
       "primary_drivers": [
-        "Restored access to China market lifting Boeing's order book and delivery cadence",
-        "Supplier flow-through on increased 737 MAX / 787 production rates",
-        "Competitive share shift away from Airbus in China"
+        "Higher realized copper prices flow directly to miner revenue/margin (operating leverage on fixed mining costs)",
+        "Structural demand from AI data center power buildout, grid electrification, and EVs against constrained mine supply",
+        "Input cost inflation for copper-intensive downstream manufacturers"
       ],
       "beneficiaries": [
         {
-          "ticker": "BA",
-          "rationale": "Direct beneficiary \u2014 China historically accounted for ~20-25% of Boeing's commercial backlog; reopening unlocks deferred 737 MAX deliveries and new widebody orders, materially improving FCF trajectory.",
+          "ticker": "FCX",
+          "rationale": "Freeport-McMoRan is the largest US-listed pure-play copper miner; ~70%+ of revenue from copper. Every $0.10/lb move in copper adds roughly $400M+ to annual EBITDA \u2014 record prices directly translate to earnings upgrades.",
           "confidence": "high",
-          "horizon": "months"
+          "horizon": "weeks"
         },
         {
-          "ticker": "HXL",
-          "rationale": "Hexcel supplies advanced composites for 787 (widebody most demanded by Chinese carriers) and 737; rate increases tied to China deliveries flow through to volume.",
+          "ticker": "SCCO",
+          "rationale": "Southern Copper is a near-pure-play copper producer (Peru/Mexico) with among the lowest cash costs in the industry; record copper prices expand margins disproportionately given the fixed-cost base.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TECK",
+          "rationale": "Teck Resources has pivoted to a copper-focused major after coal divestment; QB2 ramp gives it rising copper volume leverage into record prices.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ERO",
+          "rationale": "Ero Copper is a smaller-cap pure-play Brazilian copper miner with high operating leverage; record copper directly boosts cash flow and momentum-driven re-rating in small-cap miners.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "HWM",
-          "rationale": "Howmet makes engine components and fasteners with high content per Boeing aircraft; benefits from build rate increases on both narrowbody and widebody programs.",
+          "ticker": "RIO",
+          "rationale": "Rio Tinto's Oyu Tolgoi underground ramp is bringing on large incremental copper volumes; record prices accelerate the segment's contribution to group earnings.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "GE",
-          "rationale": "GE Aerospace's CFM JV (with Safran) is sole engine supplier on 737 MAX; more China deliveries means more LEAP engine shipments plus high-margin aftermarket over time.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Collins Aerospace content on 737/787 (avionics, interiors, landing systems) scales with Boeing delivery volumes to China.",
+          "ticker": "CMCO",
+          "rationale": "Copper royalty/streaming names and explorers tend to rotate with the spot price; Cuprum/explorer peer flows lift speculative copper-leveraged names alongside the majors.",
           "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "TDG",
-          "rationale": "TransDigm supplies proprietary components on Boeing platforms; higher OE deliveries plus future aftermarket on installed Chinese fleet.",
-          "confidence": "low",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "JOBY",
-          "rationale": "Not a direct loser \u2014 leaving empty exposure here would be more honest.",
+          "ticker": "ENPH",
+          "rationale": "Enphase microinverters and balance-of-system solar hardware are copper-intensive; sustained record copper raises BOM costs at a time when residential solar pricing power is already weak.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GNRC",
+          "rationale": "Generac generators and home energy products use significant copper windings; input cost inflation pressures gross margin if it can't be passed through to channel.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "F",
+          "rationale": "EVs use ~3-4x the copper of ICE vehicles; record copper raises BOM cost on already-money-losing EV programs (Model e segment for Ford), pressuring the EV transition economics.",
           "confidence": "low",
           "horizon": "months"
         }
       ],
-      "dedup_group": "boeing_china_business_reopening_2026",
+      "dedup_group": "copper_record_highs_may_2026",
       "source_news_ids": [
-        "a2d683f0455c4ea0"
+        "5874b65984aabe96"
       ],
       "headlines": [
-        "Boeing could finally reignite its China business. Will that breathe new life into its stock?"
+        "Copper prices are now at their highest level on record. AI is only part of the story."
       ]
     }
   ]
