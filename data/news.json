@@ -1,146 +1,23 @@
 {
-  "generated_at": "2026-05-12T18:11:55.901691-04:00",
+  "generated_at": "2026-05-12T19:34:22.097041-04:00",
   "ticker_news": {
-    "WDC": [
-      {
-        "id": "e6464e286e518396",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDC",
-        "scope": "ticker",
-        "title": "If You Invested $1000 In Western Digital Stock 20 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52509393/if-you-invested-1000-in-western-digital-stock-20-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-05-12T21:15:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "wdc_20year_retrospective",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "NXT": [
       {
-        "id": "b29688bfe3748dab",
+        "id": "3223abb870b51911",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NXT",
         "scope": "ticker",
-        "title": "Nextpower Shares Climb After Q4 Earnings Beat Estimates",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52509055/nextpower-shares-climb-after-q4-earnings-beat-estimates",
-        "published_at": "2026-05-12T21:09:17+00:00",
+        "title": "NEXTracker Q4 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52511214/nextracker-q4-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-12T22:33:21+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "nxt_q4_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "6d5d7e4a6577c6cb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NXT",
-        "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Tuesday's After-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52508854/12-industrials-stocks-moving-in-tuesdays-after-market-session",
-        "published_at": "2026-05-12T21:05:58+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxt_afterhours_roundup",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "OKLO": [
-      {
-        "id": "f5974735515a7756",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OKLO",
-        "scope": "ticker",
-        "title": "Oklo Q1 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52510872/oklo-q1-2026-earnings-call-complete-transcript",
-        "published_at": "2026-05-12T22:10:03+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "oklo_q1_2026_earnings",
+        "dedup_group": "nxt_q4_2026_earnings",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Copper prices hit a record high, driven by AI/data center electrification demand plus broader structural supply tightness.",
-      "primary_drivers": [
-        "Higher realized copper prices flow directly to miner revenue/margin (operating leverage on fixed mining costs)",
-        "Structural demand from AI data center power buildout, grid electrification, and EVs against constrained mine supply",
-        "Input cost inflation for copper-intensive downstream manufacturers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "FCX",
-          "rationale": "Freeport-McMoRan is the largest US-listed pure-play copper miner; ~70%+ of revenue from copper. Every $0.10/lb move in copper adds roughly $400M+ to annual EBITDA \u2014 record prices directly translate to earnings upgrades.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SCCO",
-          "rationale": "Southern Copper is a near-pure-play copper producer (Peru/Mexico) with among the lowest cash costs in the industry; record copper prices expand margins disproportionately given the fixed-cost base.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TECK",
-          "rationale": "Teck Resources has pivoted to a copper-focused major after coal divestment; QB2 ramp gives it rising copper volume leverage into record prices.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ERO",
-          "rationale": "Ero Copper is a smaller-cap pure-play Brazilian copper miner with high operating leverage; record copper directly boosts cash flow and momentum-driven re-rating in small-cap miners.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RIO",
-          "rationale": "Rio Tinto's Oyu Tolgoi underground ramp is bringing on large incremental copper volumes; record prices accelerate the segment's contribution to group earnings.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CMCO",
-          "rationale": "Copper royalty/streaming names and explorers tend to rotate with the spot price; Cuprum/explorer peer flows lift speculative copper-leveraged names alongside the majors.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "ENPH",
-          "rationale": "Enphase microinverters and balance-of-system solar hardware are copper-intensive; sustained record copper raises BOM costs at a time when residential solar pricing power is already weak.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GNRC",
-          "rationale": "Generac generators and home energy products use significant copper windings; input cost inflation pressures gross margin if it can't be passed through to channel.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "F",
-          "rationale": "EVs use ~3-4x the copper of ICE vehicles; record copper raises BOM cost on already-money-losing EV programs (Model e segment for Ford), pressuring the EV transition economics.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "copper_record_highs_may_2026",
-      "source_news_ids": [
-        "5874b65984aabe96"
-      ],
-      "headlines": [
-        "Copper prices are now at their highest level on record. AI is only part of the story."
-      ]
-    }
-  ]
+  "macro_events": []
 }
