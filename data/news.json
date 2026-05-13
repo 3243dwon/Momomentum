@@ -1,353 +1,934 @@
 {
-  "generated_at": "2026-05-13T08:26:54.362510-04:00",
+  "generated_at": "2026-05-13T11:22:21.311990-04:00",
   "ticker_news": {
-    "INTC": [
+    "COHR": [
       {
-        "id": "fbe7c9a30ac8c422",
+        "id": "1d9a177c6fb21688",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "COHR",
         "scope": "ticker",
-        "title": "Apple, ServiceNow, Netflix And An Energy Stock On CNBC's 'Final Trades'",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52519705/apple-servicenow-netflix-and-an-energy-stock-on-cnbcs-final-trades",
-        "published_at": "2026-05-13T12:14:26+00:00",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COHR",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COHR",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COHR",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "0e1ff6635b2e9807",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "AMD Reveals A $6.5 Million Marvell Bet That's Already Soaring",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52525481/amd-reveals-a-6-5-million-marvell-bet-thats-already-soaring",
+        "published_at": "2026-05-13T14:03:51+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amd_marvell_investment_position",
+        "tickers_mentioned": [
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "b59e6c2f4035bbfc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Why Is Micron Tech Stock Trending On Trump's China Visit?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52521257/whys-is-micron-tech-stock-trending-on-trumps-china-visit",
+        "published_at": "2026-05-13T13:03:24+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_china_visit_micron",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cda04e9f62e20d55",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nvidia's $5.4 Trillion Moment Hides A Much Bigger Story About China",
+        "url": "https://www.benzinga.com/Opinion/26/05/52521695/nvidias-5-trillion-moment-hides-a-much-bigger-story-about-china",
+        "published_at": "2026-05-13T13:11:20+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "nvidia_china_geopolitics",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1d9a177c6fb21688",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Micron Just Got A New $950 Price Tag: BofA Raised 4 Other AI Chip Stocks Too",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52530222/micron-950-price-boost-bofa-raises-nvidia-amd-marvell-coherent",
+        "published_at": "2026-05-13T15:17:29+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "bofa_micron_950_target_ai_chips",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d860d1e70f8d72c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "2026's Biggest IPO So Far: AI Chipmaker Cerebras Targets $4.8 Billion Raise, But What Do Prediction Markets Say?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52527192/2026s-biggest-ipo-so-far-ai-chipmaker-cerebras-targets-4-8-billion-raise-but-what-do-prediction-markets-say",
+        "published_at": "2026-05-13T14:29:45+00:00",
+        "type": "ma",
+        "impact": "low",
+        "dedup_group": "cerebras_ipo_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0e1ff6635b2e9807",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "AMD Reveals A $6.5 Million Marvell Bet That's Already Soaring",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52525481/amd-reveals-a-6-5-million-marvell-bet-thats-already-soaring",
+        "published_at": "2026-05-13T14:03:51+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amd_marvell_investment_position",
+        "tickers_mentioned": [
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0407a42e78b67ce6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Why Nvidia Earnings May Matter More To The S&P 500 Than Fed Minutes Right Now",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52525316/why-nvidia-earnings-may-matter-more-to-the-sp-500-than-fed-minutes",
+        "published_at": "2026-05-13T14:01:29+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "cnbc_final_trades_may13",
+        "dedup_group": "nvda_earnings_sp500_importance",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bdcf80d25826f506",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nebius Reinforces 'Second Wave' Of The AI ETF Trade As Investors Look Beyond Nvidia Chips",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52524782/nebius-reinforces-second-wave-of-the-ai-etf-trade-as-investors-look-beyond-nvidia-chips",
+        "published_at": "2026-05-13T13:55:42+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "nebius_ai_etf_second_wave",
         "tickers_mentioned": [
-          "AAPL",
-          "NOW",
-          "NFLX"
+          "NBIS"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "b59e6c2f4035bbfc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Why Is Micron Tech Stock Trending On Trump's China Visit?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52521257/whys-is-micron-tech-stock-trending-on-trumps-china-visit",
+        "published_at": "2026-05-13T13:03:24+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_china_visit_micron",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cda04e9f62e20d55",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia's $5.4 Trillion Moment Hides A Much Bigger Story About China",
+        "url": "https://www.benzinga.com/Opinion/26/05/52521695/nvidias-5-trillion-moment-hides-a-much-bigger-story-about-china",
+        "published_at": "2026-05-13T13:11:20+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "nvidia_china_geopolitics",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0217edd8052cce85",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "AMD Stock Gains As Trump Taps Nvidia CEO For China Trip",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52521657/amd-stock-gains-as-trump-taps-nvidia-ceo-for-china-trip",
+        "published_at": "2026-05-13T13:10:35+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_china_visit_semiconductor_impact",
+        "tickers_mentioned": [
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "754747cfdbbb5429",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Intel Stock Surges As Jensen Huang Joins Trump's China Trip To Push For Market Access",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52521128/intel-stock-surges-as-jensen-huang-joins-trumps-china-trip-to-push-for-market-access",
+        "published_at": "2026-05-13T13:00:55+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_china_visit_semiconductor_impact",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "865fe22ffa9c0b7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "NVIDIA-Backed Nebius Stuns Wall Street With Monster AI Growth",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52520181/nvidia-backed-nebius-stuns-wall-street-with-monster-ai-growth",
+        "published_at": "2026-05-13T12:33:25+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "nebius_earnings_ai_growth",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "680f23ad31f3cefb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia CEO Jensen Huang Joins Trump's China Delegation",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52516539/nvidia-ceo-jensen-huang-joins-trumps-china-delegation",
+        "published_at": "2026-05-13T10:17:23+00:00",
+        "type": "macro_geopol",
+        "impact": "high",
+        "dedup_group": "huang_trump_china_delegation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cc8fbdcd78facf95",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Understanding NVIDIA's Position In Semiconductors &amp; Semiconductor Equipment Industry Compared To Competitors",
+        "url": "https://www.benzinga.com/insights/news/26/05/52515677/understanding-nvidias-position-in-semiconductors-amp-semiconductor-equipment-industry-compared-to-c",
+        "published_at": "2026-05-13T09:58:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvda_competitor_positioning_analysis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AAOI": [
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "LITE": [
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "LITE",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a2e4499d0e8a1e45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "LITE",
+        "scope": "ticker",
+        "title": "SanDisk And Micron Had Their Run \u2013 This New 'Photonics' ETF Has 15 Triple-Digit Gainers Inside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52529509/photonics-etf-euv-versus-dram-sandisk-micron-lumentum-coherent-axt-top-performing-ai-stocks-2026",
+        "published_at": "2026-05-13T15:05:40+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "photonics_etf_triple_digit_gainers",
+        "tickers_mentioned": [
+          "SNDK"
         ],
         "route_to_synthesis": false
       }
     ],
     "EOSE": [
       {
-        "id": "b24dcd2e9b8f8dbd",
+        "id": "f59287a0f660bd40",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "EOSE",
         "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52519326/12-industrials-stocks-moving-in-wednesdays-pre-market-session",
-        "published_at": "2026-05-13T12:06:10+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxt_premarket_movers",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EOSE",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
+        "title": "Eos Energy Enterprises Q1 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52524172/eos-energy-enterprises-q1-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-13T13:48:30+00:00",
         "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b24dcd2e9b8f8dbd",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EOSE",
-        "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52519326/12-industrials-stocks-moving-in-wednesdays-pre-market-session",
-        "published_at": "2026-05-13T12:06:10+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxt_premarket_movers",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EOSE",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
+        "impact": "medium",
+        "dedup_group": "eose_q1_2026_earnings_transcript",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "NXT": [
       {
-        "id": "b24dcd2e9b8f8dbd",
+        "id": "2848a2e922c70186",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NXT",
         "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52519326/12-industrials-stocks-moving-in-wednesdays-pre-market-session",
-        "published_at": "2026-05-13T12:06:10+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxt_premarket_movers",
+        "title": "Aramark To Rally Around 20%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52521264/aramark-to-rally-around-20-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-05-13T13:03:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "aramark_analyst_forecasts_may13",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "b24dcd2e9b8f8dbd",
+        "id": "2848a2e922c70186",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NXT",
         "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52519326/12-industrials-stocks-moving-in-wednesdays-pre-market-session",
-        "published_at": "2026-05-13T12:06:10+00:00",
+        "title": "Aramark To Rally Around 20%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52521264/aramark-to-rally-around-20-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-05-13T13:03:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "aramark_analyst_forecasts_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RCAT": [
+      {
+        "id": "70492f0aafe3716d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCAT",
+        "scope": "ticker",
+        "title": "Why Is Red Cat Stock Tumbling Today?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52519515/red-cat-shares-are-sliding-in-premarket-trading-today",
+        "published_at": "2026-05-13T12:11:01+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "nxt_premarket_movers",
+        "dedup_group": "rcat_stock_decline_may_13",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "a9bf2efe96bfda05",
+        "id": "eeb6d7899d6e6752",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NXT",
+        "ticker": "RCAT",
         "scope": "ticker",
-        "title": "Nextpower Stock Hits 52-Week High - Here's Why",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52516894/nextpower-stock-hits-52-week-high-heres-why",
-        "published_at": "2026-05-13T10:40:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxt_52week_high",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WDC": [
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDC",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "00649a4bf8764513",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDC",
-        "scope": "ticker",
-        "title": "Forget Nvidia: New Memory-Focused ETF Soars 90% As CEO Calls Chips AI's 'Biggest Bottleneck'",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52519135/forget-nvidia-new-memory-focused-etf-soars-90-as-ceo-calls-chips-ais-biggest-bottleneck",
-        "published_at": "2026-05-13T12:00:43+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "memory_etf_ai_bottleneck",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "EQPT": [
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EQPT",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
+        "title": "QuickLogic Posts Downbeat Q1 Results, Joins Resideo Technologies And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52519191/quicklogic-posts-downbeat-q1-results-joins-resideo-technologies-and-other-big-stocks-moving-lower-in-wednesdays-pre-market-session",
+        "published_at": "2026-05-13T12:02:07+00:00",
         "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EQPT",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "STUB": [
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STUB",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STUB",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
+        "impact": "medium",
+        "dedup_group": "qlci_q1_2026_downbeat_premarket",
+        "tickers_mentioned": [
+          "QLCI",
+          "REZI"
+        ],
         "route_to_synthesis": false
       }
     ],
     "VSH": [
       {
-        "id": "dbd14f37fa5ea3bb",
+        "id": "187c3bb6c7ad6e1d",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "VSH",
         "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
+        "title": "Vishay Intertechnology Q1 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52525666/vishay-intertechnology-q1-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-13T14:06:39+00:00",
         "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dbd14f37fa5ea3bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VSH",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For May 13, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/05/52517807/earnings-scheduled-for-may-13-2026",
-        "published_at": "2026-05-13T11:11:36+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "stub_vsh_earnings_scheduled_may13",
+        "impact": "medium",
+        "dedup_group": "vishay_intertechnology_q1_2026_earnings",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "WOLF": [
+    "F": [
       {
-        "id": "ce7dd6134d83b30f",
+        "id": "4207c9a0aa9bb371",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "WOLF",
+        "ticker": "F",
         "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52519317/12-information-technology-stocks-moving-in-wednesdays-pre-market-session",
-        "published_at": "2026-05-13T12:06:04+00:00",
+        "title": "North American EV Demand Drops Sharply Despite Rising Global Sales, Iran War",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52516684/north-american-ev-demand-drops-sharply-despite-rising-global-sales-iran-war",
+        "published_at": "2026-05-13T10:30:44+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "ev_demand_north_america_decline_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4207c9a0aa9bb371",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "North American EV Demand Drops Sharply Despite Rising Global Sales, Iran War",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52516684/north-american-ev-demand-drops-sharply-despite-rising-global-sales-iran-war",
+        "published_at": "2026-05-13T10:30:44+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "ev_demand_north_america_decline_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSLA": [
+      {
+        "id": "4207c9a0aa9bb371",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "North American EV Demand Drops Sharply Despite Rising Global Sales, Iran War",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52516684/north-american-ev-demand-drops-sharply-despite-rising-global-sales-iran-war",
+        "published_at": "2026-05-13T10:30:44+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "ev_demand_north_america_decline_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "077e0f32cea77dd2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Elon Musk's Tesla Launches Affordable Financing Plan After Dropping Out Of China's Top EV 10 Makers",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52515630/elon-musks-tesla-launches-affordable-financing-plan-after-dropping-out-of-chinas-top-ev-10-makers",
+        "published_at": "2026-05-13T09:51:48+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "it_premarket_moves_may13_2026",
+        "dedup_group": "unclassified_077e0f32cea77dd2",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4207c9a0aa9bb371",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "North American EV Demand Drops Sharply Despite Rising Global Sales, Iran War",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52516684/north-american-ev-demand-drops-sharply-despite-rising-global-sales-iran-war",
+        "published_at": "2026-05-13T10:30:44+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "ev_demand_north_america_decline_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2163c71a3037db45",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Comparative Study: Tesla And Industry Competitors In Automobiles Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52515679/comparative-study-tesla-and-industry-competitors-in-automobiles-industry",
+        "published_at": "2026-05-13T09:58:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_2163c71a3037db45",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "077e0f32cea77dd2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Elon Musk's Tesla Launches Affordable Financing Plan After Dropping Out Of China's Top EV 10 Makers",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52515630/elon-musks-tesla-launches-affordable-financing-plan-after-dropping-out-of-chinas-top-ev-10-makers",
+        "published_at": "2026-05-13T09:51:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_077e0f32cea77dd2",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KOPN": [
+      {
+        "id": "f8995981b3a53e7c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KOPN",
+        "scope": "ticker",
+        "title": "What's Going On With Kopin Stock Today?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52522128/kopin-shares-edge-up-after-q1-revenue-beat-highlights-ai-data-center-opportunity",
+        "published_at": "2026-05-13T13:20:52+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "kopin_daily_movement_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ST": [
+      {
+        "id": "2848a2e922c70186",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ST",
+        "scope": "ticker",
+        "title": "Aramark To Rally Around 20%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52521264/aramark-to-rally-around-20-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-05-13T13:03:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "aramark_analyst_forecasts_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2848a2e922c70186",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ST",
+        "scope": "ticker",
+        "title": "Aramark To Rally Around 20%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52521264/aramark-to-rally-around-20-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-05-13T13:03:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "aramark_analyst_forecasts_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3c99c8878115c3e1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ST",
+        "scope": "ticker",
+        "title": "This Zebra Technologies Analyst Turns Bullish; Here Are Top 5 Upgrades For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/05/52519756/this-zebra-technologies-analyst-turns-bullish-here-are-top-5-upgrades-for-wednesday",
+        "published_at": "2026-05-13T12:16:27+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "zebra_technologies_upgrade_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SLS": [
+      {
+        "id": "31259cada2f9fa8f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "SELLAS Life Sciences Nears Pivotal Trial Readout As Leukemia Pipeline Progresses",
+        "url": "https://www.benzinga.com/markets/biotech/26/05/52526497/sellas-life-sciences-nears-pivotal-trial-readout-as-leukemia-pipeline-progresses",
+        "published_at": "2026-05-13T14:18:30+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "sls_leukemia_trial_readout",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "5b577c7ab027360b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "12 Health Care Stocks Moving In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52519328/12-health-care-stocks-moving-in-wednesdays-pre-market-session",
+        "published_at": "2026-05-13T12:06:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "health_care_premarket_movers_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "3e0ed7a58e14d41f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Why Is Rocket Lab Stock Surging On Wednesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52530350/why-is-rocket-lab-stock-surging-on-wednesday",
+        "published_at": "2026-05-13T15:20:21+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "rklb_wednesday_surge",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QS": [
+      {
+        "id": "994c42372a4a06ce",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QS",
+        "scope": "ticker",
+        "title": "12 Consumer Discretionary Stocks Moving In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52519337/12-consumer-discretionary-stocks-moving-in-wednesdays-pre-market-session",
+        "published_at": "2026-05-13T12:06:21+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qs_premarket_movers",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PSNL": [
+      {
+        "id": "5b577c7ab027360b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PSNL",
+        "scope": "ticker",
+        "title": "12 Health Care Stocks Moving In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52519328/12-health-care-stocks-moving-in-wednesdays-pre-market-session",
+        "published_at": "2026-05-13T12:06:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "health_care_premarket_movers_may13",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "STLA": [
+      {
+        "id": "077e0f32cea77dd2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STLA",
+        "scope": "ticker",
+        "title": "Elon Musk's Tesla Launches Affordable Financing Plan After Dropping Out Of China's Top EV 10 Makers",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52515630/elon-musks-tesla-launches-affordable-financing-plan-after-dropping-out-of-chinas-top-ev-10-makers",
+        "published_at": "2026-05-13T09:51:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_077e0f32cea77dd2",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "077e0f32cea77dd2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STLA",
+        "scope": "ticker",
+        "title": "Elon Musk's Tesla Launches Affordable Financing Plan After Dropping Out Of China's Top EV 10 Makers",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52515630/elon-musks-tesla-launches-affordable-financing-plan-after-dropping-out-of-chinas-top-ev-10-makers",
+        "published_at": "2026-05-13T09:51:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_077e0f32cea77dd2",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "UAA": [
+      {
+        "id": "d1e9557a19ba9a40",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAA",
+        "scope": "ticker",
+        "title": "This Under Armour Analyst Is No Longer Bullish; Here Are Top 3 Downgrades For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/downgrades/26/05/52520114/this-under-armour-analyst-is-no-longer-bullish-here-are-top-3-downgrades-for-wednesday",
+        "published_at": "2026-05-13T12:30:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_d1e9557a19ba9a40",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -355,227 +936,313 @@
   },
   "macro_events": [
     {
-      "event_summary": "IEA warns oil price spike has further to run as global inventories are being drawn down at a record pace, implying sustained high crude prices.",
+      "event_summary": "April PPI surged 6% year-over-year \u2014 the hottest wholesale inflation print since 2022 \u2014 signaling renewed pipeline price pressure and likely pushing Fed rate cut expectations further out.",
       "primary_drivers": [
-        "Higher sustained crude prices boost upstream E&P realized prices and cash flow",
-        "Inventory drawdowns signal physical tightness, supporting backwardation and refiner margins",
-        "Energy cost inflation pressures margins for fuel-intensive industries (airlines, chemicals, transports)"
+        "Higher-for-longer rates repricing \u2192 higher discount rate on long-duration assets",
+        "Margin compression risk for firms unable to pass through input cost increases",
+        "Rotation into inflation beneficiaries: commodities, energy, pricing-power names"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with significant upstream exposure; every $10/bbl sustained crude increase materially boosts upstream earnings. Direct revenue lever.",
-          "confidence": "high",
+          "rationale": "Hot PPI typically coincides with elevated energy/commodity prices feeding the index; integrated oil majors with upstream leverage see direct revenue tailwind. Also a classic inflation-hedge rotation destination.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same mechanism as XOM \u2014 upstream production benefits from elevated crude/refined product pricing that feeds wholesale inflation; favored in inflation-rotation flows.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NEM",
+          "rationale": "Gold miner with direct leverage to gold prices; hot inflation prints with sticky-Fed implications drive real-rate uncertainty and gold bid as classic inflation hedge.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NUE",
+          "rationale": "Domestic steel producer with demonstrated pricing power; PPI strength signals industrial input inflation is being passed through, supporting steel realized prices.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COST",
+          "rationale": "Membership-fee model and demonstrated pricing power insulate margins; historically outperforms peers when input costs spike because members absorb modest passthrough.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "KHC",
+          "rationale": "Packaged food with limited pricing power post-2022 elasticity break; rising wholesale input costs compress gross margin when consumers resist further passthrough.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "COP",
-          "rationale": "Pure-play upstream E&P with minimal downstream offset, highest torque to sustained crude prices among large caps.",
-          "confidence": "high",
+          "ticker": "DG",
+          "rationale": "Dollar General serves low-income consumers most squeezed by sustained inflation; also faces input cost passthrough difficulty in its price-point model.",
+          "confidence": "low",
           "horizon": "weeks"
-        },
+        }
+      ],
+      "dedup_group": "april_2026_ppi_inflation_6pct",
+      "source_news_ids": [
+        "ce92886c662108de"
+      ],
+      "headlines": [
+        "Wholesale inflation jumps 6% in April on annual basis, biggest increase since 2022"
+      ]
+    },
+    {
+      "event_summary": "OPEC reports production has fallen more than 30% due to a Strait of Hormuz closure, while simultaneously cutting demand growth forecasts \u2014 a major supply shock from the Persian Gulf chokepoint.",
+      "primary_drivers": [
+        "Massive crude supply disruption from Hormuz closure (~20% of global oil transits this chokepoint)",
+        "Geopolitical risk premium on energy and shipping",
+        "Domestic/non-Gulf producers gain pricing power and volume share"
+      ],
+      "beneficiaries": [
         {
           "ticker": "FANG",
-          "rationale": "Permian pure-play shale producer with high oil-weighted production; directly leveraged to WTI realizations with low hedge ratio historically.",
+          "rationale": "Diamondback is a pure-play Permian US onshore producer with zero Hormuz exposure; benefits directly from crude price spike with high operating leverage to WTI.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "Large-cap US shale pure-play, no Middle East exposure. Spot crude spike from a 30%+ OPEC production loss flows directly to cash flow given low hedge ratios in 2026.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline tanker rates spike on Hormuz disruption \u2014 VLCC day rates historically multiply on Gulf chokepoint events as ton-miles surge from rerouting and scarcity bids.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways crude tanker fleet benefits from spot rate explosion as remaining non-Hormuz crude flows reroute longer distances (Atlantic basin to Asia).",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Integrated major with significant US/Permian and Kazakhstan/Australia production; upstream leverage to crude prices outweighs any modest downstream margin compression.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere US LNG exports become more valuable as European/Asian buyers scramble for non-Gulf hydrocarbons; spot LNG prices spike alongside oil on Hormuz closure (Qatar LNG also transits Hormuz).",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "OXY",
-          "rationale": "High-beta domestic oil producer (Permian + DJ basin) with elevated leverage that benefits disproportionately from sustained higher crude.",
-          "confidence": "high",
+          "rationale": "Permian-weighted US producer with high WTI leverage; Buffett-backed name often catches momentum bid in oil spike scenarios.",
+          "confidence": "medium",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Largest oilfield services firm; sustained high prices drive E&P capex budgets higher, lifting service pricing and rig demand.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "TRGP",
-          "rationale": "Midstream gathering/processing operator levered to Permian volume growth that follows sustained higher oil prices.",
-          "confidence": "medium",
-          "horizon": "months"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline opex; sustained crude spike directly compresses margins, and Delta has lower fuel hedging than peers. IEA tone implies prolonged pain.",
+          "rationale": "Delta's jet fuel cost is ~25-30% of operating expense; unhedged into a crude spike, margins compress sharply. Demand growth concerns from OPEC also signal slowing travel.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "Similar jet fuel exposure as DAL; United runs no systematic hedging program, fully exposed to spot crack spreads.",
+          "rationale": "United Airlines highly exposed to jet fuel costs and international long-haul routes that may face rerouting/insurance costs from Gulf airspace risk.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "LUV",
-          "rationale": "Southwest is most fuel-cost-sensitive among US carriers given low-fare model; even with some hedging, sustained higher oil compresses unit economics.",
+          "rationale": "Southwest historically hedges less than peers in recent years; pure domestic carrier hit directly by fuel cost spike with limited fare pass-through given price-sensitive customer base.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Diesel/jet fuel is a major cost input for ground and air freight; surcharge passthrough lags, compressing near-term margins.",
+          "ticker": "DOW",
+          "rationale": "Dow Chemical uses naphtha/ethane feedstocks; crude-linked feedstock costs spike while OPEC's demand cut signals industrial slowdown \u2014 double squeeze on petrochemical margins.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Petrochemical feedstock costs (naphtha/ethane) rise with sustained crude; weak demand environment limits ability to pass through to customers.",
+          "ticker": "LYB",
+          "rationale": "LyondellBasell olefins/polyolefins business margins compress on crude-linked feedstock costs combined with weakening end demand flagged by OPEC.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "weeks"
         },
         {
-          "ticker": "LYB",
-          "rationale": "Commodity chemicals producer with feedstock cost exposure and limited pricing power amid soft polyethylene demand.",
+          "ticker": "MAR",
+          "rationale": "Marriott exposed to Middle East hospitality footprint and global travel demand destruction from oil-driven recession fears and Gulf conflict escalation.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "F",
+          "rationale": "Ford and auto OEMs face demand destruction as gasoline prices spike to consumers; truck/SUV mix (Ford's profit center) most exposed to fuel-price elasticity.",
           "confidence": "medium",
           "horizon": "months"
         },
         {
           "ticker": "CCL",
-          "rationale": "Cruise operator with heavy bunker fuel consumption; sustained crude spike erodes operating margin and complicates the deleveraging story.",
+          "rationale": "Carnival bunker fuel costs spike with crude; cruise itineraries in Eastern Mediterranean/Middle East face cancellation and rerouting costs.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "oil_inventory_depletion_may2026",
+      "dedup_group": "opec_hormuz_closure_oil_production_drop",
       "source_news_ids": [
-        "b69c4b9b86fad91f"
+        "1aeb83d1e443095c"
       ],
       "headlines": [
-        "Oil price spike turmoil far from over, IEA says as inventories are depleted at \u201crecord pace\""
+        "OPEC sees slower demand growth this year as production falls more than 30% on Hormuz closure"
       ]
     },
     {
-      "event_summary": "Mortgage rates rose to a 5-week high, but homebuyer demand reportedly remained resilient.",
+      "event_summary": "Hot inflation print pressures the Dow, but semiconductors (Nvidia, Micron) rally and a solar name breaks out amid a Trump-Xi summit news backdrop.",
       "primary_drivers": [
-        "Higher mortgage rates pressure housing affordability and refi volumes",
-        "Resilient demand signals underlying housing market strength despite rate headwind"
+        "Hot CPI raises discount rate / pressures rate-sensitive cyclicals",
+        "AI/memory cycle demand outweighs rate headwind for semis",
+        "Solar group rotation breakout signaling sector-specific catalyst"
       ],
       "beneficiaries": [
         {
-          "ticker": "DHI",
-          "rationale": "D.R. Horton is the largest US homebuilder with heavy use of mortgage rate buydowns; resilient buyer demand despite higher rates supports order volumes and validates the builder incentive model.",
-          "confidence": "low",
+          "ticker": "MU",
+          "rationale": "Headline explicitly cites Micron rising; DRAM/HBM pricing momentum and AI memory demand driving the move independent of macro.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LEN",
-          "rationale": "Lennar similarly benefits from confirmation that demand is rate-insensitive at current levels; large-builder financing arms can absorb rate moves better than resale market.",
-          "confidence": "low",
+          "ticker": "NVDA",
+          "rationale": "Headline explicitly cites Nvidia rising; AI capex thesis dominates rate sensitivity at current positioning.",
+          "confidence": "high",
           "horizon": "days"
+        },
+        {
+          "ticker": "SNDK",
+          "rationale": "SanDisk named in article alongside Micron \u2014 direct NAND/memory peer benefiting from same memory pricing tailwind.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NBIS",
+          "rationale": "Nebius cited in headline URL as a market mover; AI infrastructure/GPU cloud peer riding the same semis-up tape.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "FSLR",
+          "rationale": "Most likely 'solar play breaks out' candidate \u2014 domestic pure-play solar manufacturer is the typical leader on solar rotation days and benefits from any Trump-Xi tariff posturing on Chinese solar imports.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "RKT",
-          "rationale": "Rocket Companies' revenue is heavily tied to mortgage origination and especially refinance volumes, which are most sensitive to rate moves to multi-week highs.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UWMC",
-          "rationale": "UWM Holdings is a pure-play wholesale mortgage originator; rates at 5-week highs directly compress origination volume and gain-on-sale margins.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow's Premier Agent and mortgage marketplace revenue correlates with existing-home transaction volume, which is more rate-sensitive than new-home sales captured by builders.",
+          "ticker": "INTC",
+          "rationale": "Named in article URL but not in the winners list with Nvidia/Micron, suggesting it is lagging the semis rally \u2014 relative underperformer as memory/AI names take share of capex narrative.",
           "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COMP",
-          "rationale": "Compass earns commissions on existing-home sales; higher rates tend to lock in existing owners with low-rate mortgages, suppressing turnover.",
-          "confidence": "low",
-          "horizon": "days"
+          "horizon": "intraday"
         }
       ],
-      "dedup_group": "mortgage_rates_5week_high_may2026",
+      "dedup_group": "may_13_2026_hot_inflation_market",
       "source_news_ids": [
-        "7da7d2f0c829a373"
+        "81ebebf1c79d9193"
       ],
       "headlines": [
-        "Mortgage rates move to highest level in 5 weeks, but homebuyers shake it off"
+        "Stock Market Today: Dow Falls On Hot Inflation But Nvidia, Micron Rise; Solar Play Breaks Out (Live Coverage)"
       ]
     },
     {
-      "event_summary": "President Trump is leading a large delegation of US CEOs to China, signaling potential thaw in US-China trade relations and possible deal-making.",
+      "event_summary": "Trump arrives in Beijing accompanied by US CEOs ahead of meetings with Xi Jinping, signaling potential US-China commercial deal-making and possible trade/tariff de-escalation.",
       "primary_drivers": [
-        "Reduced tariff/trade war risk premium on China-exposed revenues",
-        "Potential easing of export controls and market access",
-        "Sentiment-driven repricing of China ADRs and US multinationals with China revenue"
+        "Potential tariff rollback or trade deal reducing cost-of-goods and reopening China market access",
+        "Commercial deal announcements (aircraft, agriculture, semis) for accompanying CEOs",
+        "Risk-on sentiment for China-revenue-exposed US names"
       ],
       "beneficiaries": [
         {
           "ticker": "BA",
-          "rationale": "Boeing has historically been a marquee deliverable in US-China summits \u2014 large aircraft order announcements routinely accompany presidential China visits. Direct revenue catalyst if orders materialize.",
+          "rationale": "Boeing has historically been the marquee deliverable of US-China presidential summits via large aircraft orders; CEO almost certainly part of delegation. Past Trump-Xi visits have produced multi-hundred-plane announcements.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "TSLA",
-          "rationale": "Tesla has ~20%+ revenue from China (Shanghai Gigafactory + sales); Musk likely on the CEO delegation. Easing tensions reduce risk of retaliatory measures on Tesla China operations and FSD approval.",
+          "rationale": "Shanghai gigafactory makes Tesla among the most China-exposed US large caps (~20%+ revenue). Any tariff/EV-policy thaw or Musk presence in delegation directly impacts margins and market access.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "NVDA",
-          "rationale": "Any softening of export controls or licensing for China-bound chips (H20/B-series) would directly restore a multi-billion-dollar revenue stream NVDA has explicitly called out as lost.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PDD",
-          "rationale": "PDD (Temu parent) faces direct US regulatory risk on de minimis and Temu operations; warmer bilateral tone reduces probability of further crackdown.",
+          "rationale": "Export-control regime on H20/China-spec chips is the single biggest overhang; even rhetorical softening on semi export licenses materially expands addressable market. Huang has attended prior China-focused events.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "WYNN",
-          "rationale": "Wynn derives majority of EBITDA from Macau; improved US-China relations reduce risk of Beijing pressuring Macau concessionaires and support visitation/VIP flows.",
+          "rationale": "Macau gaming concession holder with >70% revenue from China; benefits from any improvement in cross-strait travel/visa or capital-flow rhetoric tied to summit deliverables.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "CAT",
-          "rationale": "Caterpillar's China construction equipment exposure and broader global cyclical read benefit from de-escalation; CEO likely on delegation given historical pattern.",
-          "confidence": "low",
+          "rationale": "Caterpillar is a standard beneficiary of China infrastructure/commercial deal packages and is highly sensitive to US-China industrial cooperation signaling; ~5-10% China revenue plus heavy peer correlation.",
+          "confidence": "medium",
           "horizon": "days"
+        },
+        {
+          "ticker": "ADM",
+          "rationale": "Agricultural commodity trader directly levered to any soybean/corn purchase commitments by China \u2014 a recurring template in Trump-Xi deal packages (cf. 2017, 2019 Phase One).",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "QCOM",
+          "rationale": "~~46% of revenue from China; benefits directly from any easing of licensing tensions and is a frequent participant in US-China commercial dialogues.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LVS",
+          "rationale": "Las Vegas Sands' entire operating business is Macau/Singapore; pure-play on China consumer reopening narrative typically rallying alongside summit headlines.",
+          "confidence": "low",
+          "horizon": "intraday"
         }
       ],
       "losers": [
         {
           "ticker": "LMT",
-          "rationale": "Defense primes with Taiwan/Pacific-deterrence narrative trade inversely with US-China rapprochement; reduced tail risk compresses the geopolitical premium in defense multiples.",
+          "rationale": "Defense primes underperform on US-China detente headlines as geopolitical risk premium compresses; Lockheed is the most Pacific-tension-correlated name given F-35 and Taiwan-related sales narratives.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Has rallied on US-China decoupling/defense-tech narrative; a thaw narrative compresses that premium, though fundamental impact is minimal.",
+          "confidence": "low",
+          "horizon": "intraday"
         },
         {
           "ticker": "MP",
-          "rationale": "MP Materials' bull case rests on US rare earth independence from China; any deal involving rare earth export normalization undermines pricing power and urgency premium.",
+          "rationale": "MP Materials' bull case rests on rare-earth supply-chain reshoring driven by China export restrictions; any framework deal easing rare-earth flows undercuts pricing power thesis.",
           "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "TXRH",
-          "rationale": "Domestic-only names with no China exposure underperform in a risk-on rotation toward China-revenue multinationals \u2014 relative, not absolute, loser.",
-          "confidence": "low",
-          "horizon": "intraday"
         }
       ],
-      "dedup_group": "trump_ceo_delegation_china_trade",
+      "dedup_group": "trump_beijing_xi_meeting_may_2026",
       "source_news_ids": [
-        "cee5f73be404eee0"
+        "0eaac4dd63910547"
       ],
       "headlines": [
-        "What\u2019s at stake as Trump and an army of CEOs go to China"
+        "Trump arrives in Beijing with CEOs ahead of Xi meetings"
       ]
     }
   ]
