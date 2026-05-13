@@ -1,160 +1,42 @@
 {
-  "generated_at": "2026-05-12T23:51:56.885473-04:00",
+  "generated_at": "2026-05-13T02:51:18.598999-04:00",
   "ticker_news": {
     "MSTR": [
       {
-        "id": "2ed9fac007dee9a3",
+        "id": "6cd53a81e7db7ef2",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin, Dogecoin Flat, While Ethereum, XRP Sink Amid Hotter-Than-Expected Consumer Inflation: Analyst Sees No BTC 'Exhaustion,' Targets This Range",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52512350/bitcoin-dogecoin-flat-ethereum-xrp-sink-hot-inflation-btc-exhaustion",
-        "published_at": "2026-05-13T01:46:21+00:00",
-        "type": "macro_econ",
+        "title": "Michael Saylor's Top Crypto Is Property Claim Disputed By Peter Schiff: 'Commercial Real Estate Has Actual Value\u2026What Value Does Bitcoin Have?'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52513386/peter-schiff-disputes-michael-saylor-bitcoin-property-claim",
+        "published_at": "2026-05-13T05:48:32+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "crypto_price_action_cpi_may_2026",
+        "dedup_group": "saylor_schiff_bitcoin_debate",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SNDK": [
+    "QCOM": [
       {
-        "id": "231ee6cd2e9a35b4",
+        "id": "382423a94a60634d",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SNDK",
+        "ticker": "QCOM",
         "scope": "ticker",
-        "title": "Oklo, Nextpower, Dreamland, SanDisk And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52512261/oklo-nextpower-dreamland-sandisk-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-13T01:28:36+00:00",
-        "type": "other",
+        "title": "Trump Personally Calls Nvidia CEO Jensen Huang To Join China Trip At Last Minute Amid Backlash Over AI Chip Sales To Beijing: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52513268/trump-jensen-huang-china-trip-xi-open-country",
+        "published_at": "2026-05-13T05:35:46+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "benzinga_5_stocks_radar_may_13_2026",
+        "dedup_group": "trump_huang_china_trip_phone_call",
         "tickers_mentioned": [
-          "SNDK",
-          "OKLO",
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "NXT": [
-      {
-        "id": "231ee6cd2e9a35b4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NXT",
-        "scope": "ticker",
-        "title": "Oklo, Nextpower, Dreamland, SanDisk And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52512261/oklo-nextpower-dreamland-sandisk-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-13T01:28:36+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "benzinga_5_stocks_radar_may_13_2026",
-        "tickers_mentioned": [
-          "SNDK",
-          "OKLO",
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "OKLO": [
-      {
-        "id": "231ee6cd2e9a35b4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OKLO",
-        "scope": "ticker",
-        "title": "Oklo, Nextpower, Dreamland, SanDisk And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52512261/oklo-nextpower-dreamland-sandisk-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-13T01:28:36+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "benzinga_5_stocks_radar_may_13_2026",
-        "tickers_mentioned": [
-          "SNDK",
-          "OKLO",
-          "TSLA"
+          "NVDA"
         ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Nvidia CEO Jensen Huang is joining President Trump's trip to China, signaling potential negotiation/easing of US chip export restrictions to China.",
-      "primary_drivers": [
-        "Potential easing of US semiconductor export controls to China",
-        "Restored China revenue stream for US chipmakers (was material % of NVDA/AMD revenue before bans)",
-        "Signaling of US-China tech detente reducing geopolitical risk premium"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "NVDA",
-          "rationale": "Direct beneficiary \u2014 Huang's presence on the trip suggests negotiating expanded H20/China-compliant chip sales. China was ~20-25% of NVDA data center revenue pre-restrictions; any loosening directly restores TAM.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AMD",
-          "rationale": "Peer read-through: if NVDA gets relief on China AI chip sales, AMD's MI-series China-compliant variants likely benefit from the same regulatory framework shift. Direct revenue exposure to same export rules.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AMAT",
-          "rationale": "Semiconductor equipment maker with significant historical China revenue exposure (~30%+ pre-restrictions). Any thaw in chip export tensions tends to extend to upstream WFE rules.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LRCX",
-          "rationale": "Same mechanism as AMAT \u2014 China was a major revenue contributor before BIS restrictions; sentiment rerates on any export-control easing signal.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KLAC",
-          "rationale": "Wafer inspection equipment with China exposure subject to same export control regime; benefits from regulatory thaw narrative.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ASML",
-          "rationale": "US-listed ADR \u2014 Dutch EUV/DUV maker constrained by US-aligned export rules to China. Any US softening pressures Netherlands to follow, restoring China shipments.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MU",
-          "rationale": "Was banned by China CAC in 2023 from critical infrastructure; any broader US-China tech detente increases probability of reciprocal relief on Micron's China sales.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "AVGO",
-          "rationale": "Custom ASIC competitor to NVDA (Google TPU, Meta MTIA partner). If NVDA regains full China AI chip market, hyperscaler urgency to diversify away from Nvidia via Broadcom custom silicon diminishes at the margin.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CRDO",
-          "rationale": "Domestic China AI chip beneficiary narrative \u2014 Cambricon/Huawei Ascend ecosystem suppliers (and US-listed proxies tied to China-domestic AI buildout thesis) lose if Chinese hyperscalers can again buy Nvidia instead.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "jensen_huang_trump_china_trip_may_2026",
-      "source_news_ids": [
-        "080b0fe18794e8e2"
-      ],
-      "headlines": [
-        "Jensen Huang is joining Trump's China trip after the U.S. president called the Nvidia CEO"
-      ]
-    }
-  ]
+  "macro_events": []
 }
