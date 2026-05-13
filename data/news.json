@@ -1,299 +1,40 @@
 {
-  "generated_at": "2026-05-13T17:18:27.272102-04:00",
+  "generated_at": "2026-05-13T18:42:41.014589-04:00",
   "ticker_news": {
-    "NVDA": [
+    "STUB": [
       {
-        "id": "d49ac7b49c3b4279",
+        "id": "a14d8991d8f7fda9",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "STUB",
         "scope": "ticker",
-        "title": "GraniteShares Launches MSTR, Coinbase ETFs As Bitcoin-Fueled Volatility Trade Heats Up",
-        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52543617/graniteshares-launches-mstr-coinbase-etfs-as-bitcoin-fueled-volatility-trade-heats-up",
-        "published_at": "2026-05-13T20:13:40+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "etf_launches_bitcoin_mstr_coinbase",
-        "tickers_mentioned": [
-          "MSTR"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b7c38b3fd680b5f1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Something Historic Is Quietly Lifting Commodities To Records \u2014 And It's Not Hormuz",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52543213/historical-rally-commodities-strait-of-hormuz-ai-race-buildout-copper-record-highs-silver-performance-2026",
-        "published_at": "2026-05-13T20:08:52+00:00",
-        "type": "macro_commodity",
+        "title": "Full Transcript: Stubhub Holdings Q1 2026 Earnings Call",
+        "url": "https://www.benzinga.com/insights/news/26/05/52548092/full-transcript-stubhub-holdings-q1-2026-earnings-call",
+        "published_at": "2026-05-13T22:06:17+00:00",
+        "type": "earnings",
         "impact": "medium",
-        "dedup_group": "commodities_rally_record_levels",
+        "dedup_group": "stub_q1_2026_earnings",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "672fa215a357a2a0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "'Tip Of The Iceberg': Culper Research Targets Nvidia's Alleged China Problem",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52542009/tip-of-the-iceberg-culper-research-targets-nvidias-alleged-china-problem",
-        "published_at": "2026-05-13T19:50:01+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "nvidia_china_compliance_allegations",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "WEN": [
-      {
-        "id": "845f5abbc8066d2d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WEN",
-        "scope": "ticker",
-        "title": "McDonald's Stock Hits 52-Week Lows: High Gas Prices Could Make Things Worse",
-        "url": "https://www.benzinga.com/news/restaurants/26/05/52542758/mcdonalds-stock-hits-52-week-lows-high-gas-prices-could-make-things-worse",
-        "published_at": "2026-05-13T20:04:45+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "mcd_52w_low_gas_headwinds",
-        "tickers_mentioned": [
-          "MCD"
-        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "April 2026 inflation print came in hot, pressuring Fed Chair Warsh to hike rates rather than cut.",
+      "event_summary": "Kevin Warsh appears poised to be confirmed as Fed Chair under Trump, with market speculation about whether he will deliver the dovish/accommodative policy Trump wants.",
       "primary_drivers": [
-        "Higher-for-longer / rising short-end rates lift NIM for asset-sensitive lenders",
-        "Higher discount rate compresses long-duration equity valuations",
-        "Persistent inflation supports real assets and pricing-power names; hurts rate-sensitive housing/REITs"
+        "Uncertainty over Fed independence and future rate path under new chair",
+        "Warsh's historically hawkish-on-inflation reputation conflicting with Trump's pressure for cuts",
+        "Potential weakening of USD if market prices in politicized dovish Fed"
       ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Highly asset-sensitive: client cash sweep yields and treasury reinvestment rates rise with short rates; previously hurt by deposit flight at higher rates but now benefits from steeper curve and reinvestment of low-yielding portfolio.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "JPM",
-          "rationale": "Largest US bank with positive asset sensitivity disclosed in 10-Q; +100bp parallel shift historically adds ~$2-3B to NII. Hot CPI removes cut expectations, supporting net interest margin.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "Interest rate futures/options (SOFR, Treasury) volumes spike on repricing of Fed path; CME's rate complex is ~40% of ADV and directly benefits from hike repricing.",
-          "confidence": "high",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "MFC",
-          "rationale": "Life insurers reinvest at higher yields; rising rates expand spread on annuity and GA portfolios. Manulife and peers (MET, PRU) are classic rate-up trades.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Energy is a key driver of any April inflation spike; integrated oils benefit from sustained crude/refining margins that are feeding the CPI print itself.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DHI",
-          "rationale": "Homebuilders are the most rate-sensitive equity group; mortgage rates re-spike on hike pricing, killing affordability and order growth. D.R. Horton is the largest pure-play.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income and triple-net REITs trade as bond proxies with high duration; cap rates widen with the 10Y, and dividend yield must reprice higher (price down).",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RKT",
-          "rationale": "Rocket Companies is levered to mortgage refi/origination volumes which collapse when rates back up; revenue is near-direct function of mortgage rate level.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Auto demand is rate-sensitive (financing) and Tesla's valuation has long-duration component; double hit from financing demand destruction and discount rate.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "april_inflation_spike_fed_rate_hike",
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "kevin_warsh_fed_appointment_2026",
       "source_news_ids": [
-        "10c58c21d527ee5e"
+        "93a82953a89ffb5a"
       ],
       "headlines": [
-        "April\u2019s inflation spike leaves Warsh and the Fed zero excuses not to raise rates"
-      ]
-    },
-    {
-      "event_summary": "CNBC highlights bullish options/equity positioning in China-exposed US stocks coinciding with a Trump visit to China, suggesting traders are betting on de-escalation or trade deal optimism.",
-      "primary_drivers": [
-        "Headline-driven sentiment around potential US-China trade d\u00e9tente",
-        "Re-rating of China-revenue-exposed US equities on lower tariff/geopolitical risk premium",
-        "Short-covering and options flow in names with heavy China revenue mix"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "WYNN",
-          "rationale": "Wynn Resorts derives ~70% of EBITDA from Macau; any thaw in US-China relations directly de-risks Macau license/operating environment and visa/travel flows. Classic pure-play China-headline trade.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LVS",
-          "rationale": "Las Vegas Sands is essentially a Macau/Singapore pure-play after divesting US assets; ~60%+ of EBITDA from Macau makes it the second canonical 'Trump-visits-China' long.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Shanghai Gigafactory accounts for ~40% of global Tesla deliveries; China sales and regulatory tailwinds (FSD approval, tariff relief on battery inputs) are highly sensitive to bilateral tone.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar has ~5-10% direct China revenue plus heavy exposure to global commodity demand tied to Chinese construction; serves as a cyclical proxy for China reflation hopes.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "Boeing is a recurring 'trade deal deliverable' \u2014 China aircraft orders are historically announced around bilateral summits. Visit creates optionality on a large 737/787 order headline.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LMT",
-          "rationale": "Defense primes can de-rate on US-China d\u00e9tente headlines as the geopolitical risk premium compresses; Lockheed is the most Pacific-theater-levered prime via F-35 and missile defense.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "Palantir's narrative premium partly rests on great-power competition; softening US-China rhetoric can compress its geopolitical-AI multiple at the margin.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "trump_china_visit_stock_trades",
-      "source_news_ids": [
-        "3e74ab69611b93eb"
-      ],
-      "headlines": [
-        "Bulls bet big on these three China-related stock trades during Trump visit"
-      ]
-    },
-    {
-      "event_summary": "A MarketWatch piece argues global oil supply has dropped by nearly 1 billion barrels over the past 75 days and that markets are underpricing the tightening, suggesting upside risk to crude prices.",
-      "primary_drivers": [
-        "Tightening physical crude balance / inventory drawdown supports higher spot and forward oil prices",
-        "Higher realized prices flow directly to upstream E&P revenue and margins; refiners face higher feedstock costs",
-        "Fuel cost passthrough pressures transportation-heavy consumers (airlines, trucking)"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure (Permian, Guyana); every $5/bbl move in Brent meaningfully lifts upstream EBITDA. Direct leverage to a supply-driven price rally.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Upstream-heavy integrated; Permian and TCO production give direct realized-price leverage. Trades as a high-beta proxy to crude among megacaps.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil cut (~70%+ liquids); among the highest cash-flow torque per dollar of crude move in the large-cap E&P group.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "EOG",
-          "rationale": "Low-cost, oil-weighted shale producer; FCF and buyback capacity scale directly with WTI. Historically one of the cleanest E&P beta plays to crude.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Highly oil-levered balance sheet (post-Anadarko/CrownRock); shares are among the most crude-sensitive large caps and benefit disproportionately from supply tightness narratives.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Global oilfield services leader \u2014 sustained higher prices reinforce operator capex plans internationally, where SLB has the largest footprint. Second-order but well-established linkage.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of operating costs; Delta has limited hedging vs peers, so a sustained crude move directly compresses unit margins. Highly crude-sensitive in sell-side models.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar fuel cost exposure as DAL with minimal hedging program; unit cost (CASM-ex) guidance is directly threatened by sustained higher crude.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is a single-fleet domestic carrier where fuel is the largest non-labor cost; partially hedged but still meaningfully exposed, and lacks international premium-cabin offset.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MPC",
-          "rationale": "Refiners face higher feedstock (crude) costs; while crack spreads can offset, a supply-shock-driven crude rally typically compresses refining margins before products catch up.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "VLO",
-          "rationale": "Merchant refiner with no upstream offset \u2014 purely long crack spreads. Crude-led rallies (vs product-led) typically pressure refining margins near-term.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ODFL",
-          "rationale": "LTL trucking with diesel as a major variable cost; fuel surcharges lag and during freight-recession conditions, full passthrough is harder to achieve.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "oil_supply_loss_1b_barrels",
-      "source_news_ids": [
-        "facc9c735a4b9bc1"
-      ],
-      "headlines": [
-        "The world lost nearly 1 billion barrels in oil supply over the past 75 days. Why investors aren\u2019t worrying enough."
+        "Analysis: Trump finally gets his man at the Fed. Will Kevin Warsh disappoint him?"
       ]
     }
   ]
