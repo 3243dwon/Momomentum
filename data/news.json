@@ -1,42 +1,382 @@
 {
-  "generated_at": "2026-05-13T02:51:18.598999-04:00",
+  "generated_at": "2026-05-13T06:13:57.305754-04:00",
   "ticker_news": {
-    "MSTR": [
+    "MU": [
       {
-        "id": "6cd53a81e7db7ef2",
+        "id": "698bb6b0957b6fd2",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Michael Saylor's Top Crypto Is Property Claim Disputed By Peter Schiff: 'Commercial Real Estate Has Actual Value\u2026What Value Does Bitcoin Have?'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52513386/peter-schiff-disputes-michael-saylor-bitcoin-property-claim",
-        "published_at": "2026-05-13T05:48:32+00:00",
-        "type": "rumor",
+        "title": "In-Depth Analysis: Micron Technology Versus Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52515678/in-depth-analysis-micron-technology-versus-competitors-in-semiconductors-amp-semiconductor-equipmen",
+        "published_at": "2026-05-13T09:58:41+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "saylor_schiff_bitcoin_debate",
+        "dedup_group": "micron_semiconductor_peer_analysis",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
+    "CRWV": [
+      {
+        "id": "f77f0593d5a6b21a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWV",
+        "scope": "ticker",
+        "title": "Elizabeth Warren Targets Amazon, Google, Microsoft And Meta After Warning That AI Data Centers 'Use As Much Electricity As 100,000 Households'",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52514582/elizabeth-warren-targets-amazon-google-microsoft-and-meta-after-warning-that-ai-data-centers-use-as-much-electricity-as-100000-households",
+        "published_at": "2026-05-13T08:08:58+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "warren_ai_data_center_electricity_warning",
+        "tickers_mentioned": [
+          "AMZN",
+          "GOOGL",
+          "MSFT",
+          "META"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "8af2f2d5469e90f0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Intel Is 'Still Undervalued:' Why Dan Niles Sees Massive AI Opportunity Beyond Nvidia's GPU Boom",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52514502/intel-is-still-undervalued-why-dan-niles-sees-massive-ai-opportunity-beyond-nvidias-gpu-boom",
+        "published_at": "2026-05-13T07:46:23+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intc_dan_niles_ai_opportunity",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NXT": [
+      {
+        "id": "1ef38adce874e781",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "Why Nextpower Shares Are Trading Higher By Over 12%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52515699/why-nextpower-shares-are-trading-higher-by-over-12-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-13T09:59:26+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nextpower_premarket_12pct_gain",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "0db9b9372a9da479",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones Futures Fall, S&P 500 Gains As Trump Takes Big Tech Leaders To China\u2014Nvidia, Nextpower, Red Cat In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52515464/stock-market-today-dow-jones-futures-fall-sp-500-gains-as-trump-takes-big-tech-leaders-to-china-nvidia-nextpower-red-cat-in-focus",
+        "published_at": "2026-05-13T09:42:09+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_tech_china_delegation_may2026",
+        "tickers_mentioned": [
+          "NVDA",
+          "RDCPF"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dfd37498c56bb5dd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "Cisco, Alibaba And 3 Stocks To Watch Heading Into Wednesday",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52514736/cisco-alibaba-and-3-stocks-to-watch-heading-into-wednesday",
+        "published_at": "2026-05-13T08:14:25+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxt_stock_watch_may13_2026",
+        "tickers_mentioned": [
+          "CSCO",
+          "BABA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WOLF": [
+      {
+        "id": "1ef38adce874e781",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WOLF",
+        "scope": "ticker",
+        "title": "Why Nextpower Shares Are Trading Higher By Over 12%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/05/52515699/why-nextpower-shares-are-trading-higher-by-over-12-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-05-13T09:59:26+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nextpower_premarket_12pct_gain",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
     "QCOM": [
       {
-        "id": "382423a94a60634d",
+        "id": "0db9b9372a9da479",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "QCOM",
         "scope": "ticker",
-        "title": "Trump Personally Calls Nvidia CEO Jensen Huang To Join China Trip At Last Minute Amid Backlash Over AI Chip Sales To Beijing: Report",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52513268/trump-jensen-huang-china-trip-xi-open-country",
-        "published_at": "2026-05-13T05:35:46+00:00",
-        "type": "rumor",
+        "title": "Stock Market Today: Dow Jones Futures Fall, S&P 500 Gains As Trump Takes Big Tech Leaders To China\u2014Nvidia, Nextpower, Red Cat In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52515464/stock-market-today-dow-jones-futures-fall-sp-500-gains-as-trump-takes-big-tech-leaders-to-china-nvidia-nextpower-red-cat-in-focus",
+        "published_at": "2026-05-13T09:42:09+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "trump_huang_china_trip_phone_call",
+        "dedup_group": "trump_tech_china_delegation_may2026",
         "tickers_mentioned": [
-          "NVDA"
+          "NVDA",
+          "RDCPF"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UA": [
+      {
+        "id": "f3ca18ba2eb5e083",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UA",
+        "scope": "ticker",
+        "title": "S&P 500 Falls From Record High Following Inflation Report: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52514854/sp-500-falls-from-record-high-following-inflation-report-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-13T08:35:04+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "sp500_inflation_report_may_13_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "UAA": [
+      {
+        "id": "f3ca18ba2eb5e083",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAA",
+        "scope": "ticker",
+        "title": "S&P 500 Falls From Record High Following Inflation Report: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52514854/sp-500-falls-from-record-high-following-inflation-report-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-13T08:35:04+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "sp500_inflation_report_may_13_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "VSH": [
+      {
+        "id": "f3ca18ba2eb5e083",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "S&P 500 Falls From Record High Following Inflation Report: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52514854/sp-500-falls-from-record-high-following-inflation-report-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-13T08:35:04+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "sp500_inflation_report_may_13_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dfd37498c56bb5dd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "Cisco, Alibaba And 3 Stocks To Watch Heading Into Wednesday",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52514736/cisco-alibaba-and-3-stocks-to-watch-heading-into-wednesday",
+        "published_at": "2026-05-13T08:14:25+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxt_stock_watch_may13_2026",
+        "tickers_mentioned": [
+          "CSCO",
+          "BABA"
         ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Nvidia CEO Jensen Huang joined a US presidential delegation to China on Air Force One, signaling potential easing of chip export restrictions and renewed access to the Chinese AI market.",
+      "primary_drivers": [
+        "Potential relaxation of US export controls on advanced AI chips to China",
+        "Restoration of Nvidia's China revenue stream (historically ~20-25% of data center sales pre-restrictions)",
+        "Diplomatic signaling that US-China tech decoupling may be softening"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NVDA",
+          "rationale": "Direct beneficiary \u2014 Huang's personal presence on AF1 suggests a deal involving Nvidia's China chip sales (H20 successor or similar export-compliant variants). China was historically ~20%+ of Nvidia data center revenue before restrictions; any relaxation directly restores billions in lost sales.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMD",
+          "rationale": "Direct peer with similar China AI accelerator exposure (MI-series). Any framework allowing Nvidia chip sales to China would almost certainly extend to AMD's export-compliant SKUs. Sympathy trade plus genuine revenue optionality.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "Dutch lithography supplier \u2014 eased US stance on China semis reduces pressure for further restrictions on ASML's DUV/EUV sales to Chinese fabs, a major overhang on the stock.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials derives meaningful revenue from Chinese fab equipment sales; any thaw in US-China tech tensions reduces incremental export-control risk on WFE shipments.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research has similar China WFE exposure (~30%+ of revenue at peak); benefits from same easing-of-controls narrative as AMAT.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MU",
+          "rationale": "Micron was specifically banned from sales to Chinese critical infrastructure operators in 2023. A broader US-China tech detente raises probability of that ban being relaxed or not extended.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSM",
+          "rationale": "TSMC fabs Nvidia's chips; restored China demand for Nvidia AI accelerators directly lifts TSMC wafer volumes at leading-edge nodes.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "AVGO",
+          "rationale": "Broadcom's custom AI ASIC business (Google TPU, Meta MTIA) is partly a hedge for hyperscalers against Nvidia dominance. If Nvidia's TAM expands via restored China access, the relative competitive narrative for custom silicon softens at the margin.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "INTC",
+          "rationale": "Intel's Gaudi accelerators were positioned partly as a China-compliant alternative. If Nvidia regains direct China access with competitive parts, Intel's already-weak AI accelerator pitch in China weakens further.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "nvidia_huang_trump_china_trip",
+      "source_news_ids": [
+        "43d22534ce6937b0"
+      ],
+      "headlines": [
+        "Nvidia\u2019s Jensen Huang got the last Air Force One seat to China. Why it\u2019s so crucial for the chipmaker."
+      ]
+    },
+    {
+      "event_summary": "Silver is being repriced alongside copper as an AI infrastructure build-out commodity, with industrial demand from data centers, power electronics, and solar driving the narrative.",
+      "primary_drivers": [
+        "Industrial silver demand from AI data center power electronics and solar PV",
+        "Momentum/rotation into precious-industrial metals as AI capex proxies",
+        "Tight physical silver market with structural deficit narrative"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PAAS",
+          "rationale": "Pan American Silver \u2014 large-cap pure-play primary silver miner with high revenue leverage to silver price; standard vehicle for institutional silver exposure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AG",
+          "rationale": "First Majestic Silver \u2014 among the highest silver revenue concentration (~50%+) of major listed miners; high beta to spot silver moves, common momentum vehicle on silver narrative days.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HL",
+          "rationale": "Hecla Mining \u2014 largest US-based primary silver producer; benefits from both silver price and 'US domestic critical minerals' framing tied to AI build-out.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WPM",
+          "rationale": "Wheaton Precious Metals \u2014 streaming company with major silver stream exposure and operating leverage to silver price without single-mine risk; institutional preferred vehicle.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FCX",
+          "rationale": "Freeport-McMoRan \u2014 already-established 'AI copper' name explicitly referenced as the peer silver is joining; reflexively bid as the trade broadens and gets re-flagged in media.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MP",
+          "rationale": "MP Materials \u2014 adjacent 'critical minerals for AI build-out' beneficiary; tends to rotate with copper/silver on AI-infrastructure-commodity theme days even without direct silver exposure.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "silver_ai_infrastructure_trade",
+      "source_news_ids": [
+        "cf432c36d4b5f2e7"
+      ],
+      "headlines": [
+        "Silver is joining copper in the AI build-out trade: Chart of the Day"
+      ]
+    },
+    {
+      "event_summary": "U.S. Treasury yields declined while the dollar firmed \u2014 a mixed signal with no clear catalyst named in the headline.",
+      "primary_drivers": [
+        "Lower discount rate from falling yields supports long-duration assets",
+        "Stronger dollar pressures multinationals with foreign revenue and commodity exporters"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "treasury_yields_dollar_may_2026",
+      "source_news_ids": [
+        "0c23d3a7ea5c8a40"
+      ],
+      "headlines": [
+        "U.S. Treasury Yields Decline, Dollar Firms"
+      ]
+    },
+    {
+      "event_summary": "Conventional mortgage and refinance rates ticked up across the board on May 13, 2026, modestly raising borrowing costs for homebuyers and refinancers.",
+      "primary_drivers": [
+        "Higher mortgage rates reduce home affordability and refi volume",
+        "Net interest margin tailwind for mortgage-rate-sensitive lenders is offset by lower origination volume",
+        "Routine daily rate move \u2014 not a regime change"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "mortgage_rates_may_2026",
+      "source_news_ids": [
+        "935fcf94f0e2fb6c"
+      ],
+      "headlines": [
+        "Mortgage and refinance interest rates today, May 13, 2026: Conventional rates up across the board"
+      ]
+    }
+  ]
 }
