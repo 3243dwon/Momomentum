@@ -1,1168 +1,147 @@
 {
-  "generated_at": "2026-05-14T15:15:46.423891-04:00",
+  "generated_at": "2026-05-14T16:50:46.764983-04:00",
   "ticker_news": {
+    "FIG": [
+      {
+        "id": "dfc86d87a7be1bec",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Figma Stock Jumps On Q1 Earnings Beat As Customers Go 'Bigger And Broader'",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52582384/figma-stock-jumps-on-q1-earnings-beat-as-customers-go-bigger-and-broader",
+        "published_at": "2026-05-14T20:37:54+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "figma_q1_2026_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
     "COIN": [
       {
-        "id": "b0e78a322b1130e2",
+        "id": "c613a8a4ea31ae31",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COIN",
         "scope": "ticker",
-        "title": "Coinbase Expands USDC Push On Hyperliquid As Onchain Trading Liquidity Accelerates",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52576749/coinbase-expands-usdc-push-on-hyperliquid-as-onchain-trading-liquidity-accelerates",
-        "published_at": "2026-05-14T18:58:37+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "coin_usdc_hyperliquid_expansion",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "01c2ea89ba26b503",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "CLARITY Act Passes Senate Banking Committee, Bitcoin, XRP, Ethereum Surge 2%",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52573344/clarity-act-passes-senate-banking-committee-bitcoin-xrp-ethereum-surge-2",
-        "published_at": "2026-05-14T17:28:12+00:00",
+        "title": "CLARITY Act Clears Senate Banking Committee, But Prediction Markets Slam The Breaks On The Euphoria",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52578066/clarity-act-clears-senate-banking-committee-but-prediction-markets-slam-the-breaks-on-the-euphoria",
+        "published_at": "2026-05-14T19:37:45+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "clarity_act_senate_banking_may14",
-        "tickers_mentioned": [],
+        "dedup_group": "clarity_act_senate_banking_may2026",
+        "tickers_mentioned": [
+          "HOOD"
+        ],
         "route_to_synthesis": false
-      },
+      }
+    ],
+    "HOOD": [
       {
-        "id": "85804e8beb99ecf2",
+        "id": "c613a8a4ea31ae31",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COIN",
+        "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Coinbase Shares Surge As Clarity Act Clears Senate Panel",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52573137/coinbase-shares-surge-as-clarity-act-clears-senate-panel",
-        "published_at": "2026-05-14T17:23:44+00:00",
+        "title": "CLARITY Act Clears Senate Banking Committee, But Prediction Markets Slam The Breaks On The Euphoria",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52578066/clarity-act-clears-senate-banking-committee-but-prediction-markets-slam-the-breaks-on-the-euphoria",
+        "published_at": "2026-05-14T19:37:45+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "clarity_act_senate_banking_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "01c2ea89ba26b503",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "CLARITY Act Passes Senate Banking Committee, Bitcoin, XRP, Ethereum Surge 2%",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52573344/clarity-act-passes-senate-banking-committee-bitcoin-xrp-ethereum-surge-2",
-        "published_at": "2026-05-14T17:28:12+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "clarity_act_senate_banking_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CSCO": [
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
+        "dedup_group": "clarity_act_senate_banking_may2026",
         "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "06b4d5f8909c8ecb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "Cisco Adds to AI Fever; Optimism About Trump's China Visit; 30-Year Bond Over 5%",
-        "url": "https://www.benzinga.com/Opinion/26/05/52573809/cisco-adds-to-ai-fever-optimism-about-trumps-china-visit-30-year-bond-over-5",
-        "published_at": "2026-05-14T17:39:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cisco_ai_trump_china_macro",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "06b4d5f8909c8ecb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "Cisco Adds to AI Fever; Optimism About Trump's China Visit; 30-Year Bond Over 5%",
-        "url": "https://www.benzinga.com/Opinion/26/05/52573809/cisco-adds-to-ai-fever-optimism-about-trumps-china-visit-30-year-bond-over-5",
-        "published_at": "2026-05-14T17:39:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cisco_ai_trump_china_macro",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CSCO",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "DASH": [
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DASH",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DASH",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVDA": [
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "06b4d5f8909c8ecb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Cisco Adds to AI Fever; Optimism About Trump's China Visit; 30-Year Bond Over 5%",
-        "url": "https://www.benzinga.com/Opinion/26/05/52573809/cisco-adds-to-ai-fever-optimism-about-trumps-china-visit-30-year-bond-over-5",
-        "published_at": "2026-05-14T17:39:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cisco_ai_trump_china_macro",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "13bed59751342092",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Cerebras IPO: The Market Is Already Mispricing The Real Risk",
-        "url": "https://www.benzinga.com/Opinion/26/05/52575489/cerebras-ipo-the-market-is-already-mispricing-the-real-risk",
-        "published_at": "2026-05-14T18:22:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cerebras_ipo_mispricing_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0baec3712d0013a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Why Is SMCI Stock Surging On Thursday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52575282/why-is-smci-stock-surging-on-thursday",
-        "published_at": "2026-05-14T18:18:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "smci_surge_may_2026",
-        "tickers_mentioned": [
-          "SMCI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "06b4d5f8909c8ecb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Cisco Adds to AI Fever; Optimism About Trump's China Visit; 30-Year Bond Over 5%",
-        "url": "https://www.benzinga.com/Opinion/26/05/52573809/cisco-adds-to-ai-fever-optimism-about-trumps-china-visit-30-year-bond-over-5",
-        "published_at": "2026-05-14T17:39:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cisco_ai_trump_china_macro",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c9540abf9cb85289",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Nvidia Stock Erupts To New Highs \u2014 Cantor Fitzgerald Sees 49% More Upside",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52573527/nvidia-stock-erupts-to-new-highs-cantor-fitzgerald-sees-49-more-upside",
-        "published_at": "2026-05-14T17:32:17+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "nvda_cantor_49pct_upside_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "31613e49d69e6e02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Cerebras CEO Warns US Chip Manufacturing Catch-Up Could Take 15 Years",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52573485/cerebras-ceo-warns-us-chip-manufacturing-catch-up-could-take-15-years",
-        "published_at": "2026-05-14T17:31:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cerebras_ceo_us_chip_manufacturing_timeline",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "31613e49d69e6e02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Cerebras CEO Warns US Chip Manufacturing Catch-Up Could Take 15 Years",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52573485/cerebras-ceo-warns-us-chip-manufacturing-catch-up-could-take-15-years",
-        "published_at": "2026-05-14T17:31:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cerebras_ceo_us_chip_manufacturing_timeline",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ORCL": [
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "233853c92dc37ae3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Trump's Trading Disclosure Shows Activity In Nvidia, AMD, Microsoft, Oracle And Other Major Stocks",
-        "url": "https://www.benzinga.com/news/politics/26/05/52576337/trump-q1-2026-trade-disclosure-nvidia-amd-palantir-microsoft-oracle",
-        "published_at": "2026-05-14T18:48:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "trump_trading_disclosure_may_2026",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD",
-          "MSFT",
-          "ORCL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ENPH": [
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "70e23be1c66c2531",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "9 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52573625/9-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-14T17:35:21+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "FRMI": [
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FRMI",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FRMI",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FRMI",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "KNX": [
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KNX",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KNX",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KNX",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
+          "HOOD"
         ],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "ceabd8d33a00cfc2",
+        "id": "c613a8a4ea31ae31",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "01c2ea89ba26b503",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "CLARITY Act Passes Senate Banking Committee, Bitcoin, XRP, Ethereum Surge 2%",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52573344/clarity-act-passes-senate-banking-committee-bitcoin-xrp-ethereum-surge-2",
-        "published_at": "2026-05-14T17:28:12+00:00",
+        "title": "CLARITY Act Clears Senate Banking Committee, But Prediction Markets Slam The Breaks On The Euphoria",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52578066/clarity-act-clears-senate-banking-committee-but-prediction-markets-slam-the-breaks-on-the-euphoria",
+        "published_at": "2026-05-14T19:37:45+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "clarity_act_senate_banking_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
+        "dedup_group": "clarity_act_senate_banking_may2026",
         "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
+          "HOOD"
         ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "01c2ea89ba26b503",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "CLARITY Act Passes Senate Banking Committee, Bitcoin, XRP, Ethereum Surge 2%",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52573344/clarity-act-passes-senate-banking-committee-bitcoin-xrp-ethereum-surge-2",
-        "published_at": "2026-05-14T17:28:12+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "clarity_act_senate_banking_may14",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ODFL": [
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ODFL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ODFL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ODFL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SAIL": [
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ceabd8d33a00cfc2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "S&P 500 Hits Record 7,500, Dow Crosses 50,000 As Cisco, Nvidia Power AI Rally: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52573931/wall-street-fresh-records-cisco-nvidia-power-tech-rally-markets-thursday",
-        "published_at": "2026-05-14T17:42:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "sp500_dow_record_ai_rally_may14",
-        "tickers_mentioned": [
-          "CSCO",
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "KLAR": [
-      {
-        "id": "70693a0ac4740776",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KLAR",
-        "scope": "ticker",
-        "title": "Buy Now, Pay Later Provider Klarna's Profit Revival Sends Stock Flying",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52575046/buy-now-pay-later-provider-klarnas-profit-revival-sends-stock-flying",
-        "published_at": "2026-05-14T18:12:42+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "klar_profit_revival_may2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "HOOD": [
-      {
-        "id": "a8dfb6130cc30919",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Robinhood Stock Jumps Following Robust April Trading And Lending Data",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52575975/robinhood-stock-jumps-following-robust-april-trading-and-lending-data",
-        "published_at": "2026-05-14T18:35:10+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "hood_april_trading_lending_data",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "AVTX": [
-      {
-        "id": "226caaf07f98feb6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AVTX",
-        "scope": "ticker",
-        "title": "These Analysts Revise Their Forecasts On Avalo Therapeutics After Q1 Results",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52559389/these-analysts-revise-their-forecasts-on-avalo-therapeutics-after-q1-results",
-        "published_at": "2026-05-14T13:18:39+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "avtx_q1_2026_analyst_revisions",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "INTC": [
-      {
-        "id": "c0baec3712d0013a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Why Is SMCI Stock Surging On Thursday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52575282/why-is-smci-stock-surging-on-thursday",
-        "published_at": "2026-05-14T18:18:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "smci_surge_may_2026",
-        "tickers_mentioned": [
-          "SMCI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSM": [
-      {
-        "id": "31613e49d69e6e02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSM",
-        "scope": "ticker",
-        "title": "Cerebras CEO Warns US Chip Manufacturing Catch-Up Could Take 15 Years",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52573485/cerebras-ceo-warns-us-chip-manufacturing-catch-up-could-take-15-years",
-        "published_at": "2026-05-14T17:31:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cerebras_ceo_us_chip_manufacturing_timeline",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "31613e49d69e6e02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSM",
-        "scope": "ticker",
-        "title": "Cerebras CEO Warns US Chip Manufacturing Catch-Up Could Take 15 Years",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52573485/cerebras-ceo-warns-us-chip-manufacturing-catch-up-could-take-15-years",
-        "published_at": "2026-05-14T17:31:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cerebras_ceo_us_chip_manufacturing_timeline",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "2f369e028a8d7c07",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "Rocket Lab Stock Is Climbing Today: What's Happening?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52576696/rocket-lab-stock-is-climbing-today-whats-happening",
-        "published_at": "2026-05-14T18:57:18+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rklb_stock_climbing_may14",
-        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Fed Governor Stephen Miran submitted his resignation from the Federal Reserve Board, effective when his successor is sworn in.",
+      "event_summary": "Bond market signals the Fed is behind the curve on inflation as Kevin Warsh (a known hawk) takes over the Fed chairmanship, implying higher-for-longer rates and a steeper curve.",
       "primary_drivers": [
-        "Governance/personnel change at the Fed with uncertain implications for the dovish/hawkish balance",
-        "Opens a board seat for a new Trump appointee, potentially tilting the FOMC more dovish given administration preferences"
+        "Higher long-end yields / bear steepening as inflation expectations un-anchor",
+        "Hawkish regime shift under Warsh \u2014 perceived tighter policy reaction function",
+        "Rising real rates compress long-duration equity valuations"
       ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "fed_miran_resignation_may2026",
+      "beneficiaries": [
+        {
+          "ticker": "JPM",
+          "rationale": "Large-cap bank with asset-sensitive balance sheet; steeper curve and higher reinvestment yields on securities book lift NII. Also a flight-to-quality bank if smaller banks wobble.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Rate volatility and repositioning around a new Fed chair drives record interest-rate futures/options volumes; CME's rate complex is direct revenue beneficiary of curve repricing.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Higher short rates lift net interest revenue on client cash sweeps; also benefits from elevated trading activity around Fed regime change.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Inflation-hedge proxy via energy; 'Fed behind the curve' narrative historically correlates with commodity bid as real assets outperform financial assets.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NEM",
+          "rationale": "Gold miner \u2014 rising inflation expectations with Fed credibility concerns is the textbook setup for gold outperformance; Newmont is the highest-beta liquid pure-play.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple software name with valuation almost entirely in terminal-value cash flows; acute duration risk on a hawkish regime change.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income \u2014 bond-proxy REIT with long-lease duration. Rising long yields directly compete with its dividend yield and pressure cap rates.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVNA",
+          "rationale": "Highly levered consumer finance-adjacent name; higher funding costs and consumer rate pressure compound. Squeezed on both balance sheet and demand sides.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "fed_warsh_inflation_curve",
       "source_news_ids": [
-        "2d91c7844238a72c"
+        "11a1680c681ff83d"
       ],
       "headlines": [
-        "Stephen I. Miran submits his resignation as a member of the Federal Reserve Board, effective when or shortly before his successor on the Board is sworn in"
+        "Bond market believes Fed behind the curve on inflation as Warsh takes over"
       ]
     }
   ]
