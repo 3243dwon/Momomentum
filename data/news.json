@@ -1,225 +1,38 @@
 {
-  "generated_at": "2026-05-13T23:51:31.425834-04:00",
+  "generated_at": "2026-05-14T02:49:15.484235-04:00",
   "ticker_news": {
-    "F": [
-      {
-        "id": "79b9a2c63767c033",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Cisco, Nokia, Ford, Quantum Cyber And Nebius Group: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52549400/cisco-nokia-ford-quantum-cyber-and-nebius-group-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-05-14T01:35:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ford_investor_radar_may_2026",
-        "tickers_mentioned": [
-          "CSCO",
-          "NOK",
-          "QCOM",
-          "NBIS"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "NVDA": [
       {
-        "id": "26f2a29658e9a990",
+        "id": "cf6bd125b4b579a9",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP Fall, But Dogecoin Gains Ahead Of Crypto Act Markup In Senate: This Analyst Is Bracing For More BTC Pain Ahead",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52549494/bitcoin-ethereum-xrp-fall-dogecoin-gains-crypto-act-btc-pain",
-        "published_at": "2026-05-14T01:48:34+00:00",
-        "type": "macro_commodity",
+        "title": "Nvidia Overtakes Silver To Become World's Second-Largest Asset At $5.52 Trillion, Market Commentator Calls It 'Historic Technological Revolution'",
+        "url": "https://www.benzinga.com/markets/economic-data/26/05/52550177/nvidia-overtakes-silver-second-largest-asset-5-52-trillion",
+        "published_at": "2026-05-14T05:28:24+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "crypto_volatility_may_2026",
+        "dedup_group": "nvda_market_cap_milestone",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "1fe57f2a06835b58",
+        "id": "5f857365e3fd11e9",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Trump Set To Meet Xi Jinping After President Arrives In Beijing: Dow Futures Gain 120 Points, Asian Markets Spike",
-        "url": "https://www.benzinga.com/news/politics/26/05/52549369/trump-meet-xi-jinping-beijing-dow-futures-asian-markets",
-        "published_at": "2026-05-14T01:23:28+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_xi_summit_may_2026",
+        "title": "Nvidia CEO Jensen Huang's Foundation Donates $108 Million In CoreWeave AI Computing Power To Universities",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52549951/jensen-huang-foundation-coreweave-ai-computing-universities",
+        "published_at": "2026-05-14T04:15:09+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "jensen_huang_foundation_donation",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Xi and Trump meet at a high-stakes Beijing summit covering trade, Taiwan, AI, Iran, rare earths and tariffs, with Xi framing the relationship around avoiding the \"Thucydides Trap\" \u2014 signaling at least a diplomatic de-escalation attempt.",
-      "primary_drivers": [
-        "Potential tariff/export-control de-escalation reducing China-revenue risk premium",
-        "Possible rare earth supply normalization vs. continued Western onshoring push",
-        "Geopolitical risk premium compression on Taiwan/AI chip export controls"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "TSLA",
-          "rationale": "~20% of revenue from China; Shanghai gigafactory is largest export hub. A diplomatic thaw directly reduces tariff retaliation risk and improves China FSD/regulatory approval optionality.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NVDA",
-          "rationale": "AI chip export controls to China are explicitly on the summit agenda. Any softening of H20/B-series licensing restrictions would unlock multi-billion dollar China data center revenue currently restricted.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "China has withheld 737 MAX deliveries as trade leverage; a thaw could unlock the long-stalled China order book worth tens of billions. Direct, well-telegraphed bargaining chip.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WYNN",
-          "rationale": "Macau gaming revenue (~70% of EBITDA) is highly sensitive to cross-strait/US-China tension and mainland visitor flows; diplomatic warming supports mainland travel approvals.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AMD",
-          "rationale": "Same China AI accelerator export-control exposure as NVDA, smaller but higher beta to any licensing relief on MI-series shipments to Chinese hyperscalers.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FCX",
-          "rationale": "Copper and industrial metals rally on reduced trade-war recession risk; Freeport is the highest-beta liquid US play on China demand normalization.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LVS",
-          "rationale": "Las Vegas Sands derives majority of EBITDA from Macau; same mainland-visitor and capital-flow sensitivity as WYNN, pure-play exposure.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "MP",
-          "rationale": "MP Materials' bull case rests on rare earth supply weaponization and DoD-backed onshoring premium. A US-China rare earth supply agreement directly compresses the scarcity premium in NdPr pricing and the strategic-asset multiple.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "USAR",
-          "rationale": "USA Rare Earth \u2014 same thesis as MP, more speculative. Government-backed rare earth independence narrative weakens if Beijing agrees to lift export curbs on gallium/germanium/rare earths.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense primes carry a Taiwan/Pacific tension premium; Lockheed has direct Taiwan FMS exposure (F-16s, HIMARS, Patriots). Diplomatic thaw compresses the geopolitical risk multiple on defense names.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "Trades at extreme multiple partly on defense/geopolitical tailwind narrative; de-escalation headlines historically pressure the high-multiple defense-tech cohort.",
-          "confidence": "low",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "TSM",
-          "rationale": "Arizona fab onshoring premium and CHIPS Act urgency narrative weakens at the margin if Taiwan tensions ease; however offset by general semi strength, so net effect is muted.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "trump_xi_summit_may_2026",
-      "source_news_ids": [
-        "3d9d9e91ff4f8bfc"
-      ],
-      "headlines": [
-        "Xi asks Trump if U.S. and China can avoid 'Thucydides Trap' at high-stakes summit"
-      ]
-    },
-    {
-      "event_summary": "Oil prices trade directionless as the IEA warns of greater volatility ahead and OPEC cuts its global demand forecast.",
-      "primary_drivers": [
-        "Weaker demand outlook compressing crude price expectations",
-        "Elevated forward volatility raising hedging/trading activity",
-        "Margin pressure on upstream producers vs. relief for fuel consumers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; softer crude demand outlook lowers a major cost input. Delta runs without a fuel hedging program, making it the most direct beneficiary among US legacy carriers.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar unhedged jet fuel exposure as DAL; lower crude demand forecasts directly compress a primary cost line.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "IEA explicitly flagging greater volatility ahead drives WTI/Brent futures and options volume, which is a direct revenue line for CME's energy complex.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane and broader hydrocarbon feedstock costs track crude; a softer demand outlook supports petrochemical margins for a domestic chem producer.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "OPEC demand cut directly weighs on forward crude price assumptions; upstream earnings sensitivity to Brent is the largest in the US majors complex on absolute dollar terms.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Higher beta to WTI than the integrated majors due to Permian-weighted upstream mix and leverage; demand downgrades hit EPS estimates disproportionately.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "Small-cap E&P with high operating leverage to crude; demand cut compounds existing pressure on independents with thinner margins.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "OFS activity tracks E&P capex, which is set off forward crude curves; a weaker demand outlook from OPEC pressures completion/frac demand in North America.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "International OFS leader with direct exposure to OPEC member capex programs; demand downgrade signals reduced incremental spend.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "oil_iea_opec_demand_may_2026",
-      "source_news_ids": [
-        "2459d340614c61d1"
-      ],
-      "headlines": [
-        "Oil struggles for direction as IEA flags greater volatility ahead, OPEC cuts demand forecast"
-      ]
-    }
-  ]
+  "macro_events": []
 }
