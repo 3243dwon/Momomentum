@@ -1,1553 +1,268 @@
 {
-  "generated_at": "2026-05-15T14:16:50.134876-04:00",
+  "generated_at": "2026-05-15T15:58:23.699902-04:00",
   "ticker_news": {
-    "COIN": [
+    "BAM": [
       {
-        "id": "de385ca8711a2f62",
+        "id": "810975c48bbddd3c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COIN",
+        "ticker": "BAM",
         "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
+        "title": "Deal Dispatch: GoPro Retains Houlihan Lokey In Strategic Review, Brookfield Buys World Freight Company, YesCare Corp. Bankruptcy",
+        "url": "https://www.benzinga.com/m-a/26/05/52611849/deal-dispatch-gopro-retains-houlihan-lokey-in-strategic-review-brookfield-buys-world-freight-company-yescare-corp-bankruptcy",
+        "published_at": "2026-05-15T18:44:35+00:00",
+        "type": "ma",
         "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "dedup_group": "gopro_strategic_review_brookfield_freight_yescare_bankruptcy",
         "tickers_mentioned": [
-          "INTC"
+          "GPRO"
         ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "de385ca8711a2f62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "de385ca8711a2f62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "HOOD": [
-      {
-        "id": "de385ca8711a2f62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "de385ca8711a2f62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "de385ca8711a2f62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
-        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "XOM": [
       {
-        "id": "de385ca8711a2f62",
+        "id": "76ee6e0c05bf26d0",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "XOM",
         "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "title": "'The Revenge Of Old Economy In Real Time:' Top Wall Street Voice Calls A Commodity Supercycle",
+        "url": "https://www.benzinga.com/markets/commodities/26/05/52610978/jeff-currie-commodity-supercycle-munificent-7-magnificent-7-old-economy-revenge",
+        "published_at": "2026-05-15T18:19:53+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "commodity_supercycle_call_old_economy",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "de385ca8711a2f62",
+        "id": "09a1a9959e55d2f1",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "XOM",
         "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
+        "title": "Bessent Says China Will Reopen Hormuz Behind The Scenes, But Polymarket Isn't Buying It",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52613139/bessent-says-china-will-reopen-hormuz-behind-the-scenes-but-polymarket-isnt-buying-it",
+        "published_at": "2026-05-15T19:27:15+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "dedup_group": "hormuz_closure_bessent_speculation",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "de385ca8711a2f62",
+        "id": "76ee6e0c05bf26d0",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "XOM",
         "scope": "ticker",
-        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
-        "published_at": "2026-05-15T18:00:07+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "title": "'The Revenge Of Old Economy In Real Time:' Top Wall Street Voice Calls A Commodity Supercycle",
+        "url": "https://www.benzinga.com/markets/commodities/26/05/52610978/jeff-currie-commodity-supercycle-munificent-7-magnificent-7-old-economy-revenge",
+        "published_at": "2026-05-15T18:19:53+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "commodity_supercycle_call_old_economy",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "AU": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "F": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "F",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "FIG": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "9836f54ad1abad02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Figma Stock Jumps On Strong Q1 Growth, But Analyst Questions AI Revenue Durability",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52608753/figma-stock-jumps-on-strong-q1-growth-but-analyst-questions-ai-revenue-durability",
-        "published_at": "2026-05-15T17:28:18+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "fig_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FIG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
         "route_to_synthesis": false
       }
     ],
     "NVDA": [
       {
-        "id": "59b26562f964aa01",
+        "id": "0346fb56f8a5f7cb",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "925997ccbdf6ffda",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
+        "title": "These New Nvidia And Tesla ETFs Want To Deliver Weekly Income Without Fully Sacrificing Upside",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52613567/these-new-nvidia-and-tesla-etfs-want-to-deliver-weekly-income-without-fully-sacrificing-upside",
+        "published_at": "2026-05-15T19:39:05+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "dedup_group": "nvda_tsla_weekly_income_etf_launch",
         "tickers_mentioned": [
           "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "59b26562f964aa01",
+        "id": "825c92d87b16f044",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
+        "title": "Wall Street's Next ETF Arms Race May Be About SpaceX \u2014 And Cerebras Just Showed The Blueprint",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/05/52611376/wall-streets-next-etf-arms-race-may-be-about-spacex-and-cerebras-just-showed-the-blueprint",
+        "published_at": "2026-05-15T18:29:28+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
+        "dedup_group": "spacex_etf_blueprint_cerebras",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "925997ccbdf6ffda",
+        "id": "0346fb56f8a5f7cb",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
+        "title": "These New Nvidia And Tesla ETFs Want To Deliver Weekly Income Without Fully Sacrificing Upside",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52613567/these-new-nvidia-and-tesla-etfs-want-to-deliver-weekly-income-without-fully-sacrificing-upside",
+        "published_at": "2026-05-15T19:39:05+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "dedup_group": "nvda_tsla_weekly_income_etf_launch",
         "tickers_mentioned": [
           "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "59b26562f964aa01",
+        "id": "825c92d87b16f044",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
+        "title": "Wall Street's Next ETF Arms Race May Be About SpaceX \u2014 And Cerebras Just Showed The Blueprint",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/05/52611376/wall-streets-next-etf-arms-race-may-be-about-spacex-and-cerebras-just-showed-the-blueprint",
+        "published_at": "2026-05-15T18:29:28+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
+        "dedup_group": "spacex_etf_blueprint_cerebras",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "4f8c8e781a4c6d7e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Trump Says US Doesn't Need A War '9,500 Miles Away,' But Do Prediction Markets Trust His Taiwan Policy?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52609034/trump-says-us-doesnt-need-a-war-9500-miles-away-but-do-prediction-markets-trust-his-taiwan-policy",
-        "published_at": "2026-05-15T17:35:03+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_taiwan_policy_prediction",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SEDG": [
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "22f8be7a6cab246d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Friday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52607887/12-information-technology-stocks-moving-in-fridays-intraday-session",
-        "published_at": "2026-05-15T17:05:48+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_stocks_intraday_may15",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SEDG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
         "route_to_synthesis": false
       }
     ],
     "TSLA": [
       {
-        "id": "59b26562f964aa01",
+        "id": "0346fb56f8a5f7cb",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "59b26562f964aa01",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
-        "published_at": "2026-05-15T17:49:48+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
-        "tickers_mentioned": [
-          "INTC"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e91f0d83e1e2551c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Tesla Stock Down 6% YTD As Wall Street Mood Shifts From Promises To Performance",
-        "url": "https://www.benzinga.com/Opinion/26/05/52608138/tesla-stock-down-6-ytd-as-wall-street-mood-shifts-from-promises-to-performance",
-        "published_at": "2026-05-15T17:13:29+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "tsla_ytd_performance_wall_street_sentiment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CTRI": [
-      {
-        "id": "2d97d95c09e3cd51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CTRI",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ctri_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2d97d95c09e3cd51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CTRI",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ctri_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "2d97d95c09e3cd51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ctri_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2d97d95c09e3cd51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ctri_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSFT": [
-      {
-        "id": "925997ccbdf6ffda",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "925997ccbdf6ffda",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c59042c99951b7aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-15T17:35:26+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "DDOG": [
-      {
-        "id": "925997ccbdf6ffda",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DDOG",
-        "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "925997ccbdf6ffda",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DDOG",
-        "scope": "ticker",
-        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
-        "published_at": "2026-05-15T18:01:14+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvidia_china_comeback_analyst_forecast",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "DXCM": [
-      {
-        "id": "a4f6ca2a291b2e26",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DXCM",
-        "scope": "ticker",
-        "title": "Diabetes Tech Player DexCom Lays Out 2030 Growth Vision",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52609312/diabetes-tech-player-dexcom-lays-out-2030-growth-vision",
-        "published_at": "2026-05-15T17:41:19+00:00",
+        "title": "These New Nvidia And Tesla ETFs Want To Deliver Weekly Income Without Fully Sacrificing Upside",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52613567/these-new-nvidia-and-tesla-etfs-want-to-deliver-weekly-income-without-fully-sacrificing-upside",
+        "published_at": "2026-05-15T19:39:05+00:00",
         "type": "product",
-        "impact": "medium",
-        "dedup_group": "dexcom_2030_growth_vision",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "EBAY": [
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EBAY",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
         "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "430910b5a56a6c52",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EBAY",
-        "scope": "ticker",
-        "title": "Warren Buffett, Steph Curry Charity Lunch Auction Ends: Here's The Winning Bid Amount",
-        "url": "https://www.benzinga.com/personal-finance/financial-advisors/26/05/52599409/warren-buffett-steph-curry-charity-lunch-auction-ends-heres-the-winning-bid-amount",
-        "published_at": "2026-05-15T14:18:54+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "buffett_curry_charity_auction",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EBAY",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "GM": [
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GM",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7be066c70168f50f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GM",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-05-15T17:35:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "DGXX": [
-      {
-        "id": "a84ef3ecfe102f4b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DGXX",
-        "scope": "ticker",
-        "title": "What's Happening With The Rise Of Digi Power X Stock Today?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52603466/whats-happening-with-the-rise-of-digi-power-x-stock-today",
-        "published_at": "2026-05-15T15:30:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dgxx_price_movement_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SG": [
-      {
-        "id": "396ab9af9951aaca",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SG",
-        "scope": "ticker",
-        "title": "12 Consumer Discretionary Stocks Moving In Friday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52607901/12-consumer-discretionary-stocks-moving-in-fridays-intraday-session",
-        "published_at": "2026-05-15T17:06:08+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "consumer_discretionary_movers_intraday",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "KLAR": [
-      {
-        "id": "a1a0ee85c08e9cde",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KLAR",
-        "scope": "ticker",
-        "title": "What's Going On With Klarna Stock Friday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52609505/whats-going-on-with-klarna-stock-friday",
-        "published_at": "2026-05-15T17:46:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "klarna_market_movement_may_15_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "8b7b825a7e593711",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Strategy Announces $1.5 Billion Note Repurchase: What Do Prediction Markets Say About Saylor Selling Bitcoin?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52608485/strategy-announces-1-5-billion-note-repurchase-what-do-prediction-markets-say-about-saylor-selling-bitcoin",
-        "published_at": "2026-05-15T17:22:51+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "mstr_1_5b_note_repurchase",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "WIX": [
-      {
-        "id": "a18211e774a7a489",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WIX",
-        "scope": "ticker",
-        "title": "This Unity Bancorp Analyst Begins Coverage On A Bullish Note; Here Are Top 4 Initiations For Friday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/05/52604425/this-unity-bancorp-analyst-begins-coverage-on-a-bullish-note-here-are-top-4-initiations-for-friday",
-        "published_at": "2026-05-15T15:49:45+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "unity_bancorp_wix_initiation",
+        "dedup_group": "nvda_tsla_weekly_income_etf_launch",
         "tickers_mentioned": [
-          "UBCP"
+          "NVDA"
         ],
         "route_to_synthesis": false
-      }
-    ],
-    "UAMY": [
+      },
       {
-        "id": "a053b3b5e8402355",
+        "id": "825c92d87b16f044",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "UAMY",
+        "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Americas Gold And Silver Earnings Miss Overshadows Production Surge",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52607604/americas-gold-and-silver-earnings-miss-overshadows-production-surge",
-        "published_at": "2026-05-15T16:57:55+00:00",
+        "title": "Wall Street's Next ETF Arms Race May Be About SpaceX \u2014 And Cerebras Just Showed The Blueprint",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/05/52611376/wall-streets-next-etf-arms-race-may-be-about-spacex-and-cerebras-just-showed-the-blueprint",
+        "published_at": "2026-05-15T18:29:28+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "spacex_etf_blueprint_cerebras",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0346fb56f8a5f7cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "These New Nvidia And Tesla ETFs Want To Deliver Weekly Income Without Fully Sacrificing Upside",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52613567/these-new-nvidia-and-tesla-etfs-want-to-deliver-weekly-income-without-fully-sacrificing-upside",
+        "published_at": "2026-05-15T19:39:05+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "nvda_tsla_weekly_income_etf_launch",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "825c92d87b16f044",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Wall Street's Next ETF Arms Race May Be About SpaceX \u2014 And Cerebras Just Showed The Blueprint",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/05/52611376/wall-streets-next-etf-arms-race-may-be-about-spacex-and-cerebras-just-showed-the-blueprint",
+        "published_at": "2026-05-15T18:29:28+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "spacex_etf_blueprint_cerebras",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "EQNR": [
+      {
+        "id": "b916d13a953cc339",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EQNR",
+        "scope": "ticker",
+        "title": "Why Equinor Still Matters To Investors",
+        "url": "https://www.benzinga.com/Opinion/26/05/52613170/why-equinor-still-matters-to-investors",
+        "published_at": "2026-05-15T19:27:46+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "eqnr_investor_thesis_piece",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "76ee6e0c05bf26d0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EQNR",
+        "scope": "ticker",
+        "title": "'The Revenge Of Old Economy In Real Time:' Top Wall Street Voice Calls A Commodity Supercycle",
+        "url": "https://www.benzinga.com/markets/commodities/26/05/52610978/jeff-currie-commodity-supercycle-munificent-7-magnificent-7-old-economy-revenge",
+        "published_at": "2026-05-15T18:19:53+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "commodity_supercycle_call_old_economy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "76ee6e0c05bf26d0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EQNR",
+        "scope": "ticker",
+        "title": "'The Revenge Of Old Economy In Real Time:' Top Wall Street Voice Calls A Commodity Supercycle",
+        "url": "https://www.benzinga.com/markets/commodities/26/05/52610978/jeff-currie-commodity-supercycle-munificent-7-magnificent-7-old-economy-revenge",
+        "published_at": "2026-05-15T18:19:53+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "commodity_supercycle_call_old_economy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QUBT": [
+      {
+        "id": "22e9747c68b1ffef",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QUBT",
+        "scope": "ticker",
+        "title": "Quantum Computing Shares Pull Back As Investors Digest Post-Earnings Surge",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52613775/quantum-computing-shares-pull-back-as-investors-digest-post-earnings-surge",
+        "published_at": "2026-05-15T19:44:31+00:00",
         "type": "earnings",
-        "impact": "low",
-        "dedup_group": "uamy_earnings_miss_production_surge",
+        "impact": "medium",
+        "dedup_group": "qubt_post_earnings_digest",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Fed funds futures have flipped to pricing the next Fed move as a hike rather than a cut, following a hot inflation print.",
-      "primary_drivers": [
-        "Higher-for-longer / rising front-end rates lifting NIM on floating-rate assets",
-        "Higher discount rate compressing long-duration equity multiples",
-        "Stronger USD pressuring commodity prices and multinational translation",
-        "Inflation persistence favoring real-asset and pricing-power names"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Schwab's earnings are highly geared to short rates via client cash sweep yields and reduced need for supplemental funding; a hike repricing directly lifts net interest revenue and removes the bank-deposit-flight overhang.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "IBKR",
-          "rationale": "Interactive Brokers earns net interest on ~$100B+ of customer cash and margin balances; every 25bp of additional Fed tightening flows almost directly to pretax income with minimal deposit beta.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MCO",
-          "rationale": "Moody's and ratings peers are not direct beneficiaries \u2014 replacing with better fit.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ALL",
-          "rationale": "Allstate and P&C insurers benefit from higher reinvestment yields on float portfolios; a hawkish repricing extends the tailwind to investment income that has been a key earnings driver.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "CME Group sees direct volume uplift in SOFR/Fed Funds futures and Treasury complex when rate path is repriced; hawkish surprises historically produce record interest-rate ADV days.",
-          "confidence": "high",
-          "horizon": "intraday"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DHI",
-          "rationale": "D.R. Horton and homebuilders face direct demand destruction as 30-year mortgage rates reprice higher off the back of a hawkish Fed path; affordability is already at multi-decade lows.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow's revenue is levered to housing transaction volumes, which collapse when mortgage rates spike; second-order hit on top of the homebuilder demand shock.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "High-multiple, long-duration software names with rich forward P/Es (PLTR ~70x+) see the largest DCF impact from discount-rate increases; positioning is also crowded which amplifies the unwind.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income and triple-net REITs trade as bond proxies with high duration; hawkish repricing widens the cap-rate vs. Treasury spread and pressures NAV.",
-          "confidence": "high",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "fed_rate_hike_expectation_may15",
-      "source_news_ids": [
-        "a788b93c38448cca"
-      ],
-      "headlines": [
-        "Traders now see next Fed interest rate move as a hike following inflation surge"
-      ]
-    }
-  ]
+  "macro_events": []
 }
