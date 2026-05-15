@@ -1,804 +1,1474 @@
 {
-  "generated_at": "2026-05-15T12:47:13.360053-04:00",
+  "generated_at": "2026-05-15T14:16:50.134876-04:00",
   "ticker_news": {
-    "ACHR": [
+    "COIN": [
       {
-        "id": "01d3d9223d7ee7ac",
+        "id": "de385ca8711a2f62",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ACHR",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "Archer Aviation Shares Slip As Heavy Cash Burn Overshadows Q1 Revenue Beat",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52601594/archer-aviation-shares-slip-as-heavy-cash-burn-overshadows-q1-revenue-beat",
-        "published_at": "2026-05-15T14:56:19+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "achr_q1_earnings_cash_burn",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "2279b1746da34510",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
-        "tickers_mentioned": [
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "583aa7998a013b31",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "The Great Chip Letdown: Why The Trump-Xi Summit Just Tanked NVIDIA And Intel",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52603560/the-great-chip-letdown-why-the-trump-xi-summit-just-tanked-nvidia-and-intel",
-        "published_at": "2026-05-15T15:32:36+00:00",
-        "type": "macro_geopol",
-        "impact": "high",
-        "dedup_group": "trump_xi_summit_chip_sector_selloff",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe69749488713b5f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "SpaceX IPO Prospectus Could Reportedly Drop Next Week\u2014Here's A Peek Into What Investors May Be Buying At Astronomical Valuations",
-        "url": "https://www.benzinga.com/Opinion/26/05/52601151/spacex-ipo-prospectus-could-reportedly-drop-next-week-a-peek-into-what-investors-may-be-buying-at-astronomical-valuations",
-        "published_at": "2026-05-15T14:48:18+00:00",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
         "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "spacex_ipo_prospectus_may2026",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "2279b1746da34510",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
-        "tickers_mentioned": [
-          "AMD"
-        ],
         "route_to_synthesis": false
       },
       {
-        "id": "583aa7998a013b31",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "The Great Chip Letdown: Why The Trump-Xi Summit Just Tanked NVIDIA And Intel",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52603560/the-great-chip-letdown-why-the-trump-xi-summit-just-tanked-nvidia-and-intel",
-        "published_at": "2026-05-15T15:32:36+00:00",
-        "type": "macro_geopol",
-        "impact": "high",
-        "dedup_group": "trump_xi_summit_chip_sector_selloff",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe69749488713b5f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "SpaceX IPO Prospectus Could Reportedly Drop Next Week\u2014Here's A Peek Into What Investors May Be Buying At Astronomical Valuations",
-        "url": "https://www.benzinga.com/Opinion/26/05/52601151/spacex-ipo-prospectus-could-reportedly-drop-next-week-a-peek-into-what-investors-may-be-buying-at-astronomical-valuations",
-        "published_at": "2026-05-15T14:48:18+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "spacex_ipo_prospectus_may2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "MSFT": [
-      {
-        "id": "285fb51f2960d34c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "285fb51f2960d34c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2b4d0442c17552b8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
         "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c43804da803518ea",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Bill Ackman Catches Another Falling Magnificent Seven Knife \u2014 Will It Work This Time?",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52602134/bill-ackman-catches-another-falling-magnificent-seven-knife-will-it-work-this-time",
-        "published_at": "2026-05-15T15:05:02+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ackman_magnificent_seven_buying",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "19c75a45254c8581",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Bill Ackman Buys Microsoft Stock, Calls It Compellingly Cheap",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52601186/bill-ackman-buys-microsoft-stock-calls-it-compellingly-cheap",
-        "published_at": "2026-05-15T14:49:07+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "ackman_msft_purchase_may2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "85d339dc6f5171c6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Microsoft Stock Is Pushing Higher Today: What's Going On?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52601064/microsoft-stock-is-pushing-higher-today-whats-going-on",
-        "published_at": "2026-05-15T14:46:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "msft_intraday_move_may2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "285fb51f2960d34c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "2b4d0442c17552b8",
+        "id": "de385ca8711a2f62",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSFT",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
         "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
         "route_to_synthesis": false
       }
     ],
     "HOOD": [
       {
-        "id": "285fb51f2960d34c",
+        "id": "de385ca8711a2f62",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "XOM": [
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "XOM",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "XOM",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "de385ca8711a2f62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "XOM",
+        "scope": "ticker",
+        "title": "Insider Alert? A Trump Iran Announcement Got Front-Ran By 'Well-Timed' Oil Bets",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52610071/insider-alert-a-trump-iran-announcement-got-front-ran-by-well-timed-oil-bets",
+        "published_at": "2026-05-15T18:00:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "trump_iran_oil_frontrun_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AU": [
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HOOD",
+        "ticker": "AU",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HOOD",
+        "ticker": "AU",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "F": [
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FIG": [
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9836f54ad1abad02",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Figma Stock Jumps On Strong Q1 Growth, But Analyst Questions AI Revenue Durability",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52608753/figma-stock-jumps-on-strong-q1-growth-but-analyst-questions-ai-revenue-durability",
+        "published_at": "2026-05-15T17:28:18+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "fig_q1_2026_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c59042c99951b7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "dedup_group": "tech_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c59042c99951b7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
         ],
         "route_to_synthesis": false
       }
     ],
     "MU": [
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "2279b1746da34510",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "AMD"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "2279b1746da34510",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "AMD"
+          "INTC"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "INTC"
         ],
         "route_to_synthesis": false
       }
     ],
     "NVDA": [
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2279b1746da34510",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
-        "tickers_mentioned": [
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "583aa7998a013b31",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "The Great Chip Letdown: Why The Trump-Xi Summit Just Tanked NVIDIA And Intel",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52603560/the-great-chip-letdown-why-the-trump-xi-summit-just-tanked-nvidia-and-intel",
-        "published_at": "2026-05-15T15:32:36+00:00",
-        "type": "macro_geopol",
-        "impact": "high",
-        "dedup_group": "trump_xi_summit_chip_sector_selloff",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "285fb51f2960d34c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ef274b0d81cf0c3e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Innovative AI-Themed ETF Arrives With New Filing By ProShares",
-        "url": "https://www.benzinga.com/etfs/new-etfs/26/05/52605479/innovative-ai-themed-etf-arrives-with-new-filing-by-proshares",
-        "published_at": "2026-05-15T16:09:03+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "proshares_ai_etf_filing",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2279b1746da34510",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Why Is AMD Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52604562/why-is-amd-stock-falling-friday",
-        "published_at": "2026-05-15T15:51:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_daily_decline_coverage",
-        "tickers_mentioned": [
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "583aa7998a013b31",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "The Great Chip Letdown: Why The Trump-Xi Summit Just Tanked NVIDIA And Intel",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52603560/the-great-chip-letdown-why-the-trump-xi-summit-just-tanked-nvidia-and-intel",
-        "published_at": "2026-05-15T15:32:36+00:00",
-        "type": "macro_geopol",
-        "impact": "high",
-        "dedup_group": "trump_xi_summit_chip_sector_selloff",
-        "tickers_mentioned": [
-          "NVDA",
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2b4d0442c17552b8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
         "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "925997ccbdf6ffda",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
         "tickers_mentioned": [
           "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "2b4d0442c17552b8",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
         "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c59042c99951b7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_may_2026",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "925997ccbdf6ffda",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c59042c99951b7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4f8c8e781a4c6d7e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Trump Says US Doesn't Need A War '9,500 Miles Away,' But Do Prediction Markets Trust His Taiwan Policy?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52609034/trump-says-us-doesnt-need-a-war-9500-miles-away-but-do-prediction-markets-trust-his-taiwan-policy",
+        "published_at": "2026-05-15T17:35:03+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_taiwan_policy_prediction",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SEDG": [
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "22f8be7a6cab246d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Friday's Intraday Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52607887/12-information-technology-stocks-moving-in-fridays-intraday-session",
+        "published_at": "2026-05-15T17:05:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_stocks_intraday_may15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
         "route_to_synthesis": false
       }
     ],
     "TSLA": [
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe69749488713b5f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "SpaceX IPO Prospectus Could Reportedly Drop Next Week\u2014Here's A Peek Into What Investors May Be Buying At Astronomical Valuations",
-        "url": "https://www.benzinga.com/Opinion/26/05/52601151/spacex-ipo-prospectus-could-reportedly-drop-next-week-a-peek-into-what-investors-may-be-buying-at-astronomical-valuations",
-        "published_at": "2026-05-15T14:48:18+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "spacex_ipo_prospectus_may2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "285fb51f2960d34c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2b4d0442c17552b8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
         "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "285fb51f2960d34c",
+        "id": "59b26562f964aa01",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Nvidia Stock Tops Robinhood's Most Traded List For First Four Months Of 2026: Here's The Top 10",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52606517/nvidia-stock-tops-robinhoods-most-traded-list-for-first-four-months-of-2026-heres-the-top-10",
-        "published_at": "2026-05-15T16:30:44+00:00",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7be066c70168f50f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "nvda_top_robinhood_trades_may_2026",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "59b26562f964aa01",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Nasdaq 100 Drops, Intel Crashes 7% On Rate-Hike Panic: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52609611/nasdaq-100-intel-crashes-stocks-slide-from-records-rate-hike-expectations-markets-friday",
+        "published_at": "2026-05-15T17:49:48+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_decline_rate_hike_panic_may_15_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7be066c70168f50f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e91f0d83e1e2551c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Tesla Stock Down 6% YTD As Wall Street Mood Shifts From Promises To Performance",
+        "url": "https://www.benzinga.com/Opinion/26/05/52608138/tesla-stock-down-6-ytd-as-wall-street-mood-shifts-from-promises-to-performance",
+        "published_at": "2026-05-15T17:13:29+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "tsla_ytd_performance_wall_street_sentiment",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CTRI": [
+      {
+        "id": "2d97d95c09e3cd51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CTRI",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ctri_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2d97d95c09e3cd51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CTRI",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ctri_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "2d97d95c09e3cd51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ctri_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2d97d95c09e3cd51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609054/10-industrials-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ctri_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSFT": [
+      {
+        "id": "925997ccbdf6ffda",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
         "tickers_mentioned": [
           "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "6418ceea941f6ea1",
+        "id": "c59042c99951b7aa",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Inside SpaceX's Starship V3 Before Tuesday's Debut: Three Things To Watch",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52604453/inside-spacexs-starship-v3-before-tuesdays-debut-three-things-to-watch",
-        "published_at": "2026-05-15T15:50:03+00:00",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "925997ccbdf6ffda",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c59042c99951b7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609050/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-15T17:35:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DDOG": [
+      {
+        "id": "925997ccbdf6ffda",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DDOG",
+        "scope": "ticker",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "925997ccbdf6ffda",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DDOG",
+        "scope": "ticker",
+        "title": "NVIDIA's China Comeback: Analyst Forecasts 'Godfather of AI' Will Spark New Global Tech Surge",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52610118/nvidias-china-comeback-analyst-forecasts-godfather-of-ai-will-spark-new-global-tech-surge",
+        "published_at": "2026-05-15T18:01:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_china_comeback_analyst_forecast",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "DXCM": [
+      {
+        "id": "a4f6ca2a291b2e26",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DXCM",
+        "scope": "ticker",
+        "title": "Diabetes Tech Player DexCom Lays Out 2030 Growth Vision",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52609312/diabetes-tech-player-dexcom-lays-out-2030-growth-vision",
+        "published_at": "2026-05-15T17:41:19+00:00",
         "type": "product",
         "impact": "medium",
-        "dedup_group": "spacex_starship_v3_debut_may2026",
+        "dedup_group": "dexcom_2030_growth_vision",
         "tickers_mentioned": [],
         "route_to_synthesis": true
-      },
+      }
+    ],
+    "EBAY": [
       {
-        "id": "2b4d0442c17552b8",
+        "id": "7be066c70168f50f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "Rising Oil And Yields Getting In The Way Of Dual Market Manias",
-        "url": "https://www.benzinga.com/Opinion/26/05/52602404/rising-oil-and-yields-getting-in-the-way-of-dual-stock-market-manias",
-        "published_at": "2026-05-15T15:10:53+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "oil_yields_tech_valuations_may_2026",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "fe69749488713b5f",
+        "id": "430910b5a56a6c52",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "EBAY",
         "scope": "ticker",
-        "title": "SpaceX IPO Prospectus Could Reportedly Drop Next Week\u2014Here's A Peek Into What Investors May Be Buying At Astronomical Valuations",
-        "url": "https://www.benzinga.com/Opinion/26/05/52601151/spacex-ipo-prospectus-could-reportedly-drop-next-week-a-peek-into-what-investors-may-be-buying-at-astronomical-valuations",
-        "published_at": "2026-05-15T14:48:18+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "spacex_ipo_prospectus_may2026",
+        "title": "Warren Buffett, Steph Curry Charity Lunch Auction Ends: Here's The Winning Bid Amount",
+        "url": "https://www.benzinga.com/personal-finance/financial-advisors/26/05/52599409/warren-buffett-steph-curry-charity-lunch-auction-ends-heres-the-winning-bid-amount",
+        "published_at": "2026-05-15T14:18:54+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "buffett_curry_charity_auction",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7be066c70168f50f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EBAY",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "GM": [
+      {
+        "id": "7be066c70168f50f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7be066c70168f50f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GM",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52609060/7-consumer-discretionary-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-15T17:35:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_alerts_general",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DGXX": [
+      {
+        "id": "a84ef3ecfe102f4b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DGXX",
+        "scope": "ticker",
+        "title": "What's Happening With The Rise Of Digi Power X Stock Today?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52603466/whats-happening-with-the-rise-of-digi-power-x-stock-today",
+        "published_at": "2026-05-15T15:30:45+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "dgxx_price_movement_may_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SG": [
+      {
+        "id": "396ab9af9951aaca",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SG",
+        "scope": "ticker",
+        "title": "12 Consumer Discretionary Stocks Moving In Friday's Intraday Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52607901/12-consumer-discretionary-stocks-moving-in-fridays-intraday-session",
+        "published_at": "2026-05-15T17:06:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_movers_intraday",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
       }
     ],
     "KLAR": [
       {
-        "id": "70b1098a8d57dc51",
+        "id": "a1a0ee85c08e9cde",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "KLAR",
         "scope": "ticker",
-        "title": "These Analysts Revise Their Forecasts On Klarna Group Following Q1 Results",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52603953/these-analysts-revise-their-forecasts-on-klarna-group-following-q1-results",
-        "published_at": "2026-05-15T15:40:38+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "klar_q1_analyst_revisions",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "JOBY": [
-      {
-        "id": "1ff2e162b0a58e18",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "JOBY",
-        "scope": "ticker",
-        "title": "Joby Aviation Shares Fall As Growth-Stock Sell-Off Overwhelms Q1 Beat",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52603278/joby-aviation-shares-fall-as-growth-stock-sell-off-overwhelms-q1-beat",
-        "published_at": "2026-05-15T15:27:08+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "joby_q1_2026_earnings_beat_growth_selloff",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TNGX": [
-      {
-        "id": "59fdc0d070551422",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TNGX",
-        "scope": "ticker",
-        "title": "Crude Oil Surges 3%; RBC Bearings Earnings Top Views",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52605864/crude-oil-surges-3-rbc-bearings-earnings-top-views",
-        "published_at": "2026-05-15T16:17:17+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "rbc_q1_2026_earnings_beat",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "POET": [
-      {
-        "id": "e45ff0afb1f5ad62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "POET",
-        "scope": "ticker",
-        "title": "What's Going On With POET Technologies Stock Today?",
-        "url": "https://www.benzinga.com/markets/offerings/26/05/52603629/whats-going-on-with-poet-technologies-stock-today",
-        "published_at": "2026-05-15T15:34:01+00:00",
+        "title": "What's Going On With Klarna Stock Friday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52609505/whats-going-on-with-klarna-stock-friday",
+        "published_at": "2026-05-15T17:46:30+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "poet_daily_movement_coverage",
+        "dedup_group": "klarna_market_movement_may_15_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "NOG": [
+    "MSTR": [
       {
-        "id": "2a59db81e76e4873",
+        "id": "8b7b825a7e593711",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NOG",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Wall Street's Most Accurate Analysts Give Their Take On 3 Energy Stocks Delivering High-Dividend Yields",
-        "url": "https://www.benzinga.com/trading-ideas/dividends/26/05/52592299/wall-streets-most-accurate-analysts-give-their-take-on-3-energy-stocks-delivering-high-dividend-yields-10",
-        "published_at": "2026-05-15T11:31:36+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "energy_dividend_stocks_analyst_take_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RVMD": [
-      {
-        "id": "2900e52307c80b9b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RVMD",
-        "scope": "ticker",
-        "title": "Cancer Centers Race To Access Revolution Medicines' Pancreatic Cancer Treatment: Report",
-        "url": "https://www.benzinga.com/news/health-care/26/05/52604307/cancer-centers-race-to-access-revolution-medicines-pancreatic-cancer-treatment-report",
-        "published_at": "2026-05-15T15:47:23+00:00",
+        "title": "Strategy Announces $1.5 Billion Note Repurchase: What Do Prediction Markets Say About Saylor Selling Bitcoin?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52608485/strategy-announces-1-5-billion-note-repurchase-what-do-prediction-markets-say-about-saylor-selling-bitcoin",
+        "published_at": "2026-05-15T17:22:51+00:00",
         "type": "product",
         "impact": "medium",
-        "dedup_group": "rvmd_pancreatic_cancer_treatment_access",
+        "dedup_group": "mstr_1_5b_note_repurchase",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SHOP": [
+    "WIX": [
       {
-        "id": "b96f3ab1424fbccb",
+        "id": "a18211e774a7a489",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SHOP",
+        "ticker": "WIX",
         "scope": "ticker",
-        "title": "$100 Invested In Shopify 10 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52603493/100-invested-in-shopify-10-years-ago-would-be-worth-this-much-today",
-        "published_at": "2026-05-15T15:31:09+00:00",
-        "type": "other",
+        "title": "This Unity Bancorp Analyst Begins Coverage On A Bullish Note; Here Are Top 4 Initiations For Friday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/05/52604425/this-unity-bancorp-analyst-begins-coverage-on-a-bullish-note-here-are-top-4-initiations-for-friday",
+        "published_at": "2026-05-15T15:49:45+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "shop_historical_returns_retrospective",
+        "dedup_group": "unity_bancorp_wix_initiation",
+        "tickers_mentioned": [
+          "UBCP"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UAMY": [
+      {
+        "id": "a053b3b5e8402355",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAMY",
+        "scope": "ticker",
+        "title": "Americas Gold And Silver Earnings Miss Overshadows Production Surge",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52607604/americas-gold-and-silver-earnings-miss-overshadows-production-surge",
+        "published_at": "2026-05-15T16:57:55+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "uamy_earnings_miss_production_surge",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -806,341 +1476,77 @@
   },
   "macro_events": [
     {
-      "event_summary": "Coordinated US-China action helped contain an oil price spike from a Middle East shock, keeping crude from running away despite Strait of Hormuz/Iran-related tensions.",
+      "event_summary": "Fed funds futures have flipped to pricing the next Fed move as a hike rather than a cut, following a hot inflation print.",
       "primary_drivers": [
-        "SPR releases / coordinated supply response capping crude prices",
-        "Reduced geopolitical risk premium in oil",
-        "Lower input costs for fuel-intensive industries"
+        "Higher-for-longer / rising front-end rates lifting NIM on floating-rate assets",
+        "Higher discount rate compressing long-duration equity multiples",
+        "Stronger USD pressuring commodity prices and multinational translation",
+        "Inflation persistence favoring real-asset and pricing-power names"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; capped crude prices directly relieve margin pressure at a fuel-heavy legacy carrier with limited hedging in recent years.",
+          "ticker": "SCHW",
+          "rationale": "Schwab's earnings are highly geared to short rates via client cash sweep yields and reduced need for supplemental funding; a hike repricing directly lifts net interest revenue and removes the bank-deposit-flight overhang.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost sensitivity as DAL; United runs minimal fuel hedges so each $10/bbl move flows almost directly to EPS.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest's fuel costs are a larger share of opex than at legacies and the carrier is more domestic-demand sensitive \u2014 a contained oil price preserves consumer travel demand and margins simultaneously.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock and energy costs are a major COGS line for commodity chemicals; a capped crude curve compresses input volatility right as spreads were threatened.",
-          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FDX",
-          "rationale": "Fuel surcharges lag and ground/air fuel is a top-3 cost line; avoided oil spike means less margin drag in the current quarter.",
-          "confidence": "medium",
+          "ticker": "IBKR",
+          "rationale": "Interactive Brokers earns net interest on ~$100B+ of customer cash and margin balances; every 25bp of additional Fed tightening flows almost directly to pretax income with minimal deposit beta.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MCO",
+          "rationale": "Moody's and ratings peers are not direct beneficiaries \u2014 replacing with better fit.",
+          "confidence": "low",
           "horizon": "days"
+        },
+        {
+          "ticker": "ALL",
+          "rationale": "Allstate and P&C insurers benefit from higher reinvestment yields on float portfolios; a hawkish repricing extends the tailwind to investment income that has been a key earnings driver.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "CME Group sees direct volume uplift in SOFR/Fed Funds futures and Treasury complex when rate path is repriced; hawkish surprises historically produce record interest-rate ADV days.",
+          "confidence": "high",
+          "horizon": "intraday"
         }
       ],
       "losers": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with significant upstream leverage \u2014 a successfully capped oil price removes the geopolitical premium that would have boosted realized prices on its non-hedged production.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Highest-beta large-cap US oil name to crude due to Permian leverage and post-Anadarko debt load; loses most when geopolitical premium gets drained.",
+          "ticker": "DHI",
+          "rationale": "D.R. Horton and homebuilders face direct demand destruction as 30-year mortgage rates reprice higher off the back of a hawkish Fed path; affordability is already at multi-decade lows.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "APA",
-          "rationale": "E&P with Egyptian and US onshore exposure that trades as a high-beta crude proxy; a contained Middle East premium directly compresses the headline-driven bid in the name.",
+          "ticker": "Z",
+          "rationale": "Zillow's revenue is levered to housing transaction volumes, which collapse when mortgage rates spike; second-order hit on top of the homebuilder demand shock.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple, long-duration software names with rich forward P/Es (PLTR ~70x+) see the largest DCF impact from discount-rate increases; positioning is also crowded which amplifies the unwind.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian producer with near-100% correlation to WTI; a capped oil price caps the multiple expansion thesis the geopolitical bid had been driving.",
+          "ticker": "O",
+          "rationale": "Realty Income and triple-net REITs trade as bond proxies with high duration; hawkish repricing widens the cap-rate vs. Treasury spread and pressures NAV.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services revenue is tied to producer capex which only ramps with sustained high crude prices; a successful US-China cap signals supply discipline, reducing reinvestment optimism.",
-          "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "us_china_middle_east_oil_coordination",
+      "dedup_group": "fed_rate_hike_expectation_may15",
       "source_news_ids": [
-        "15647ef38d518973"
+        "a788b93c38448cca"
       ],
       "headlines": [
-        "How China and U.S. eased the Middle East oil shock and kept prices from spiking even higher"
-      ]
-    },
-    {
-      "event_summary": "US manufacturing production accelerated in April, driven by motor vehicle output and AI-related capex, but supply shortages stemming from war are emerging as a forward risk.",
-      "primary_drivers": [
-        "Auto production rebound lifting OEM and supplier throughput",
-        "AI-related capex driving demand for industrial/electrical equipment",
-        "Looming war-driven supply chain disruption threatening input availability"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GM",
-          "rationale": "Direct beneficiary of accelerating US motor vehicle production \u2014 GM has the largest US-domiciled vehicle assembly footprint among the Detroit Three, so higher industrial production reads flow through to volume/operating leverage.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Same direct read-through as GM \u2014 Ford's F-150 and US truck plants are large contributors to motor vehicle IP index; rising auto output indicates resolving production bottlenecks and improving wholesale shipments.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MGA",
-          "rationale": "Magna is the largest North American auto parts supplier with revenue tied directly to OEM build rates; accelerating vehicle production translates linearly to parts demand.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ETN",
-          "rationale": "Eaton's electrical segment is a primary pure-play on AI datacenter electrical infrastructure capex \u2014 power management, switchgear \u2014 which the report flags as a driver of manufacturing strength.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VRT",
-          "rationale": "Vertiv's thermal/power products for AI datacenters are exactly the 'AI-boosting manufacturing' category cited; orders and backlog correlate to the industrial production strength being reported.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GEV",
-          "rationale": "GE Vernova's electrification and grid equipment business is a direct industrial beneficiary of AI-driven power infrastructure buildout flagged in the report.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "APTV",
-          "rationale": "Aptiv has significant exposure to global auto supply chains and electronics components; war-driven supply shortages on critical inputs (semis, wire harnesses, rare materials) hit suppliers before OEMs due to inventory absorption.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STLA",
-          "rationale": "Stellantis has greater European production exposure than GM/F, making it more vulnerable to war-related component shortages flagged as a forward risk; also already running below capacity.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BWA",
-          "rationale": "BorgWarner's powertrain components rely on European and globally-sourced inputs vulnerable to the war-related supply disruptions cited as a looming risk.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "us_manufacturing_production_may_2026_ai_vehicles",
-      "source_news_ids": [
-        "79abc8614d8fd530"
-      ],
-      "headlines": [
-        "Motor vehicles, AI boost US manufacturing production; supply shortages from war loom"
-      ]
-    },
-    {
-      "event_summary": "A Yahoo Finance piece argues that even speculative (\"phantom\") data center projects exposed pre-existing structural fragility in the US power grid, framing grid capacity and transmission as the binding constraint on AI/data center buildout.",
-      "primary_drivers": [
-        "Structural under-investment in transmission and generation capacity relative to data center load growth",
-        "Regulatory/utility focus shifting toward grid hardening and capacity additions",
-        "Persistent power demand thesis regardless of which specific data center projects materialize"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "GEV",
-          "rationale": "GE Vernova is the leading US supplier of gas turbines and grid equipment (transformers, switchgear); narrative reinforcing grid-as-bottleneck directly supports its multi-year backlog thesis and pricing power on long-lead-time equipment.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ETN",
-          "rationale": "Eaton's Electrical Americas segment supplies switchgear, busways, and grid interconnect gear; ~16% of revenue tied directly to data center electrification and grid infrastructure spend.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "VRT",
-          "rationale": "Vertiv sells power distribution and thermal management gear inside data centers; grid constraint narrative pushes hyperscalers toward on-site power solutions and higher-efficiency PDUs where Vertiv is a pure-play.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PWR",
-          "rationale": "Quanta Services is the largest US electric transmission and distribution contractor; an article explicitly framing the grid as 'broken' supports continued utility capex flowing to T&D buildout, which is ~50%+ of Quanta revenue.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CEG",
-          "rationale": "Constellation Energy operates the largest US nuclear fleet \u2014 the scarce dispatchable, carbon-free baseload power hyperscalers are paying premiums for (e.g., Three Mile Island/Microsoft PPA). Grid-constraint narrative reinforces nuclear PPA pricing power.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "VST",
-          "rationale": "Vistra owns dispatchable gas and nuclear (Comanche Peak) generation in ERCOT/PJM where data center load is concentrated; grid-tightness story directly supports forward power price curve and merchant generation margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TLN",
-          "rationale": "Talen Energy is a pure-play merchant generator with the Susquehanna nuclear-to-AWS data center campus deal \u2014 the canonical example of behind-the-meter generation bypassing the broken grid.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GEHC",
-          "rationale": "Wrong ticker for this thesis \u2014 replacing with NEE: NextEra is the largest US renewables developer plus FPL regulated utility, positioned for both new generation buildout and regulated T&D rate base growth.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DLR",
-          "rationale": "Digital Realty's growth pipeline depends on timely power delivery in constrained markets (Northern Virginia, Dallas); article reinforces that interconnect queues and substation lead times will throttle leasable capacity, capping near-term revenue conversion.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EQIX",
-          "rationale": "Equinix faces the same power-availability ceiling in tier-1 metros where land/power, not demand, gates expansion; narrative pressures the 'unlimited AI demand = unlimited DC REIT growth' multiple.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NVDA",
-          "rationale": "If grid is the binding constraint rather than chip supply, then GPU sell-through to new greenfield data centers gets stretched over a longer timeline \u2014 a second-order risk to the steepest part of the demand curve, though offset by retrofit demand.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "Super Micro's AI server growth is most exposed to new data center commissioning velocity; phantom/delayed projects directly translate to pushed-out rack deployment timelines.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "phantom_data_centers_power_grid_infrastructure",
-      "source_news_ids": [
-        "9866124e7e641234"
-      ],
-      "headlines": [
-        "Phantom Data Centers Didn't Break the Power Grid\u2014They Proved it Was Already Broken"
-      ]
-    },
-    {
-      "event_summary": "A Yahoo Finance opinion/listicle piece highlights three sub-$30 stocks purported to benefit from the Trump administration's domestic manufacturing push.",
-      "primary_drivers": [
-        "Reshoring policy / tariff-driven domestic capex",
-        "Industrial automation and infrastructure demand for new US factories"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "trump_manufacturing_push_tailwinds_sub_30",
-      "source_news_ids": [
-        "11a687c7338fbc81"
-      ],
-      "headlines": [
-        "Trump\u2019s Manufacturing Push Is Creating Tailwinds for These 3 Stocks Under $30"
-      ]
-    },
-    {
-      "event_summary": "Xi-Trump summit failed to produce meaningful de-escalation or demand-positive trade outcomes, allowing oil prices to rally as bulls regain control of the tape.",
-      "primary_drivers": [
-        "Higher crude prices flow directly to upstream E&P realized prices and cash flow",
-        "Failed US-China detente keeps geopolitical risk premium embedded in crude",
-        "Energy sector rotation/positioning unwinds bearish demand-destruction trade"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest US integrated with significant upstream leverage; every $5/bbl move in Brent drives meaningful upstream EPS revisions. Direct revenue exposure to crude realization.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Integrated major with US shale (Permian) and global upstream exposure; rising crude directly lifts realized prices and cash returns to shareholders.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Permian pure-play with highest beta to WTI among large caps due to leverage and unhedged production; rallies disproportionately on crude up-moves.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play E&P with high oil cut and minimal hedging; direct earnings leverage to spot WTI.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "High-beta E&P with international (Egypt, Suriname) exposure; geopolitical risk premium remaining elevated supports realized pricing.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Largest oilfield services name; sustained higher crude supports operator capex plans and rig demand, though lag is real.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of airline operating costs; rising crude directly compresses margins, and Delta has less hedging than peers.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedged less aggressively recently; jet fuel cost inflation directly hits unit costs with limited ability to pass through in competitive domestic market.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Diesel/jet fuel surcharges lag spot moves; near-term margin pressure from higher fuel before pricing adjusts.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Petrochemical feedstock (naphtha, ethane derivatives) costs rise with crude; margin compression in commodity chemicals where pricing power is limited.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "xi_trump_summit_oil",
-      "source_news_ids": [
-        "c3b07fe2fa5b5e6f"
-      ],
-      "headlines": [
-        "Xi-Trump Summit Disappoints as Oil Bulls Regain Momentum"
+        "Traders now see next Fed interest rate move as a hike following inflation surge"
       ]
     }
   ]
