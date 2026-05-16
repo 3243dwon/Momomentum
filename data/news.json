@@ -1,273 +1,62 @@
 {
-  "generated_at": "2026-05-16T10:49:45.205401-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-16T12:51:37.895396-04:00",
+  "ticker_news": {
+    "NVDA": [
+      {
+        "id": "f600af8a97736dac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Sandisk Stock Ripe for a Reversal? Here Are Three Reasons Why",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52622730/sandisk-stock-ripe-for-a-reversal-here-are-three-reasons-why",
+        "published_at": "2026-05-16T15:16:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sandisk_reversal_thesis",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "Kevin Warsh is reportedly entering the Fed (likely as Chair or senior official) and faces internal disagreement over the pace of interest rate cuts.",
+      "event_summary": "A Marketwatch analysis frames the ongoing Iran war's main economic cost as elevated uncertainty and market paralysis rather than direct inflation, suggesting a prolonged risk-off / wait-and-see regime.",
       "primary_drivers": [
-        "Leadership uncertainty at the Fed raising rate-path ambiguity",
-        "Warsh historically perceived as hawkish/anti-easy-money, potentially slowing cut expectations",
-        "Increased volatility in rate-sensitive assets"
+        "Elevated geopolitical risk premium and volatility (VIX/MOVE) suppressing capex, M&A, and IPO activity",
+        "Persistent Middle East oil supply risk premium even without an actual supply disruption",
+        "Flight-to-safety bid for defensives, gold, and defense primes"
       ],
       "beneficiaries": [
-        {
-          "ticker": "CME",
-          "rationale": "CME Group benefits directly from elevated interest rate futures and options volume (SOFR, Fed Funds futures) as Fed leadership uncertainty drives hedging activity. Rate complex is CME's largest revenue segment.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ICE",
-          "rationale": "Intercontinental Exchange benefits from increased rates volatility driving trading volumes in fixed income and derivatives complex.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [],
-      "dedup_group": "kevin_warsh_fed_rate_cuts_debate",
-      "source_news_ids": [
-        "a805191bdd343e67"
-      ],
-      "headlines": [
-        "Kevin Warsh comes into the Fed facing a big 'family fight' over cutting interest rates"
-      ]
-    },
-    {
-      "event_summary": "The UAE has formally exited OPEC, framing the departure as a strategic economic decision rather than a political one, which threatens cartel discipline and likely opens the door to higher global oil supply.",
-      "primary_drivers": [
-        "Weakened OPEC production discipline raises expected global crude supply",
-        "Lower forward oil price expectations compress upstream margins",
-        "Potential retaliatory production increases from Saudi Arabia / other OPEC members to defend market share"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of operating costs at Delta; a sustained drop in crude from supply uncertainty directly expands margins. Delta also lacks the fuel-hedging discipline of peers, so spot price drops flow through faster.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest historically hedges but remains highly fuel-cost sensitive; cheaper crude lowers unit costs (CASM-ex) materially given its short-haul, fuel-intensive route mix.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Largest absolute fuel consumer among US carriers; every $10/bbl move in crude shifts annual fuel bill by ~$1B. Direct beneficiary of softer oil.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha and ethane feedstock costs track crude; weaker oil widens chemical spreads for commodity petrochemical producers.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Upstream earnings highly levered to Brent; ExxonMobil's Permian and Guyana volumes can't offset a structural price decline if OPEC+ cohesion breaks and supply floods the market.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Similar to XOM \u2014 large integrated with significant upstream exposure; Chevron's recent capex on Permian/Kazakhstan growth assumes a price floor that OPEC's fracture undermines.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US shale leverage with highest oil-price beta among large caps; balance sheet still carrying Anadarko-era debt makes it sensitive to sustained price weakness. Buffett's stake doesn't insulate from fundamentals.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play; Diamondback's break-evens and free-cash-flow guide collapse if WTI sustainably trades below $60 on OPEC supply fears.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "Higher-cost producer with weaker balance sheet than supermajors; first to feel margin compression and most exposed to capex cuts.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Oilfield services demand tracks E&P capex; a price war scenario triggers immediate North American rig count cuts and pricing concessions on international contracts.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Heaviest North American shale services exposure; completions activity is first line item cut when operators preserve cash flow in a price decline.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "BKR",
-          "rationale": "Capital equipment and LNG/upstream services demand softens if E&Ps pull back on long-cycle investment in response to OPEC fragmentation.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "uae_leaves_opec_strategic_move",
-      "source_news_ids": [
-        "4df11312958433e1"
-      ],
-      "headlines": [
-        "UAE says its decision to leave OPEC was a strategic economic move, not a political one"
-      ]
-    },
-    {
-      "event_summary": "Bond market signals rising geopolitical risk around Iran, with an energy geopolitics expert warning of potential supply disruption / conflict escalation.",
-      "primary_drivers": [
-        "Crude oil supply risk premium (Strait of Hormuz / Iran exports)",
-        "Safe-haven flight to Treasuries and gold",
-        "Defense spending / conflict hedging"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with high leverage to Brent crude. A risk premium on Iran (sanctions tightening or Hormuz disruption) directly lifts realized prices on its upstream barrels; no Iranian production exposure to lose.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Same Brent-linked upstream leverage as XOM; US-domiciled major with no Iranian assets at risk. Pure beneficiary of oil risk premium.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "High-beta US E&P with significant unhedged Permian production; per-barrel earnings sensitivity to crude is among the highest in the S&P, so a geopolitical premium flows almost 1:1 to FCF.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "Mid-cap E&P with Egyptian and North Sea (Brent-linked) production; high oil-price torque and historically rallies hardest on Mideast risk headlines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
         {
           "ticker": "LMT",
-          "rationale": "Prime contractor on missile defense (THAAD, PAC-3 Patriot) \u2014 the exact systems used/replenished during Iran-Israel escalations. Bond-market signaling of conflict risk historically drives defense bid.",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "Direct beneficiary of sustained Middle East conflict \u2014 missile defense (THAAD, PAC-3) and F-35 demand from US replenishment and Gulf allies. War-duration extension directly raises FY backlog visibility.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "RTX",
-          "rationale": "Maker of Patriot interceptors and Tomahawks \u2014 direct replenishment beneficiary if kinetic escalation occurs in the Gulf; rallied on prior Iran flare-ups.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play with low hedging and high oil torque; beta to WTI spikes is among highest in large-cap E&P universe.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; a crude risk premium directly compresses margins and Delta carries less hedging than peers. Also exposed to Mideast route disruption.",
+          "rationale": "Raytheon makes Patriot, SM-3, SM-6, Tomahawk \u2014 the exact munitions being consumed/replenished in an Iran conflict. Direct revenue line, not sentiment.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "months"
         },
         {
-          "ticker": "UAL",
-          "rationale": "High international long-haul exposure including Gulf-region routings; fuel cost passthrough lagged, and demand-side hit if conflict escalates.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Highest financial leverage among US legacy carriers and no fuel hedging program \u2014 most fuel-cost-sensitive of the group to an Iran-driven crude spike.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Bunker fuel is a major cost line; cruise demand is also discretionary and historically softens on conflict headlines and consumer risk-off.",
+          "ticker": "NOC",
+          "rationale": "B-21, strategic deterrence, and missile defense systems benefit from elevated defense budget trajectory if war is prolonged.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "months"
         },
-        {
-          "ticker": "FDX",
-          "rationale": "Air freight network with heavy jet fuel exposure; surcharges lag spot fuel and a sharp move compresses near-term margins.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock exposure indirectly linked to crude; margin squeeze if oil rips while end-demand softens on growth-scare bond signal.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_geopolitics_bond_market_warning",
-      "source_news_ids": [
-        "0effb6264ed8374b"
-      ],
-      "headlines": [
-        "The bond market is flashing a warning over Iran. A veteran of energy geopolitics explains the risk"
-      ]
-    },
-    {
-      "event_summary": "A closure of the Strait of Hormuz risks driving global oil inventories to record lows, implying a sustained oil supply shock.",
-      "primary_drivers": [
-        "Acute crude supply disruption (~20% of global seaborne oil transits Hormuz)",
-        "Inventory drawdown forcing higher spot/term crude prices",
-        "Tanker rerouting and shipping rate spike",
-        "Inflationary passthrough to energy-sensitive end markets"
-      ],
-      "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated supermajor with large upstream production largely outside the Gulf; direct revenue/EPS leverage to higher Brent and WTI prices with limited Hormuz transit exposure for its core US/Guyana/Permian barrels.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Permian and US Gulf-weighted upstream benefits from higher crude realizations; refining margins also widen on dislocated global product flows.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian E&P with high oil cut and operating leverage \u2014 every $10/bbl move adds materially to FCF, no Middle East operational exposure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline VLCC tanker fleet \u2014 Hormuz closure forces longer-haul rerouting (e.g. Atlantic basin to Asia), spiking ton-mile demand and day rates. Direct beneficiary of shipping dislocation.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers product carrier fleet benefits from refined product arbitrage and rerouting as Gulf product exports get disrupted; product tanker rates historically spike harder than crude in Hormuz scares.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere \u2014 ~20% of global LNG also transits Hormuz (Qatar). US LNG export volumes become structurally more valuable; long-term contracts repricing and spot cargo margins surge.",
+          "rationale": "Persistent geopolitical risk premium on Brent supports upstream realizations even without actual Strait of Hormuz closure; ~40% of earnings tied to upstream price-takers.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "TRGP",
-          "rationale": "Targa Resources \u2014 US midstream/NGL exporter from Gulf Coast benefits as global buyers seek non-Hormuz hydrocarbon sources; throughput and export tariff economics improve.",
+          "ticker": "CME",
+          "rationale": "Volatility and uncertainty drive futures/options hedging volumes across energy, rates, and equity index complexes \u2014 direct revenue lever on elevated ADV.",
           "confidence": "medium",
           "horizon": "weeks"
         }
@@ -275,120 +64,47 @@
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has historically been underhedged on jet fuel; a sustained crude spike directly compresses margins as jet fuel is ~20-25% of operating costs and demand-side passthrough lags.",
+          "rationale": "Airlines face direct fuel cost pressure from Brent risk premium plus demand hit on transatlantic/Middle East routes; sector is most uncertainty-sensitive given operating leverage.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "United similarly carries minimal fuel hedges; international long-haul exposure also faces rerouting costs around Middle East airspace.",
+          "rationale": "Higher international exposure than peers (Tel Aviv, Dubai routes already disrupted) amplifies the war-duration drag on yields and capacity.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "LUV",
-          "rationale": "Southwest's fuel hedge book has been reduced versus prior cycles; domestic point-to-point model means full cost exposure with limited fare passthrough in price-sensitive leisure market.",
+          "ticker": "GS",
+          "rationale": "'Market paralysis' thesis directly hits IB pipeline \u2014 M&A and ECM/IPO issuance freeze when CEOs delay deals. Goldman is the highest-beta name to advisory/underwriting fees.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "months"
+        },
+        {
+          "ticker": "MS",
+          "rationale": "Same paralysis mechanism \u2014 Morgan Stanley's IB and wealth flows both suffer when corporates and HNW clients sit on hands during uncertainty.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival \u2014 bunker fuel is a major cost line, and Middle East/Red Sea cruise itineraries face cancellation/rerouting costs. Double hit on costs and revenue.",
+          "rationale": "Cruise demand is the most discretionary of consumer travel and most exposed to Mediterranean itinerary disruptions plus fuel surcharges.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Dow Chemical \u2014 naphtha/ethane feedstock costs rise with crude; commodity chemical spreads compress when oil rallies faster than downstream prices can adjust.",
+          "ticker": "KKR",
+          "rationale": "Private equity deployment and exits stall in market-paralysis regime; fee-related earnings growth depends on transaction activity that freezes under prolonged uncertainty.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart faces compounded freight/diesel cost inflation across its supply chain plus consumer wallet share squeeze as gasoline prices rise, pressuring discretionary basket sizes.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 jet fuel and diesel are the dominant variable cost; fuel surcharge passthrough lags by weeks, compressing near-term margins.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Counterintuitively a loser short-term: higher oil typically helps EV demand thesis, but Tesla's exposure here is via rates \u2014 a sustained oil-driven inflation impulse pushes the Fed hawkish, hurting long-duration growth multiples more than the EV tailwind helps near-term volumes.",
-          "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "months"
         }
       ],
-      "dedup_group": "oil_stockpiles_strait_hormuz_risk",
+      "dedup_group": "iran_war_market_impact",
       "source_news_ids": [
-        "2b6a80c65964111a"
+        "4367831c46b2b8fb"
       ],
       "headlines": [
-        "Global oil stockpiles could hit record lows if Strait of Hormuz remains closed"
-      ]
-    },
-    {
-      "event_summary": "A new projection warns Social Security trust funds could be depleted by 2032, with a typical retired couple facing ~$18,400/year in benefit cuts absent legislative action.",
-      "primary_drivers": [
-        "Increased demand for private retirement savings/annuity products as households self-insure against benefit cuts",
-        "Reduced discretionary spending power among current and near-retirees if cuts materialize",
-        "Heightened political pressure for reform \u2014 uncertain direction (tax hikes vs. benefit cuts vs. retirement age) creates planning demand"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "LPLA",
-          "rationale": "LPL Financial is the largest independent broker-dealer in the US with direct revenue exposure to retirement/financial planning advisory fees. Benefit-cut narratives historically drive household rollover and advisory account openings.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PRU",
-          "rationale": "Prudential is a top-3 US annuity writer; concerns about Social Security shortfalls directly boost demand for fixed and indexed annuities as guaranteed-income substitutes. Annuity sales already at record highs on similar fears.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "AIZ",
-          "rationale": "Assurant \u2014 actually better pure-play is the annuity-heavy carriers. Replacing with stronger fit.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "EQH",
-          "rationale": "Equitable Holdings derives the majority of earnings from individual retirement/annuity products. Direct beneficiary of households purchasing private guaranteed income to offset projected SS cuts.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "AMP",
-          "rationale": "Ameriprise Financial's core business is retirement-focused wealth management for mass-affluent households \u2014 exactly the demographic that responds to Social Security shortfall headlines by seeking advice.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "SILA",
-          "rationale": "Sila Realty (healthcare REIT) and senior-living/assisted-living operators face risk if retirees have less guaranteed income to spend on private-pay senior housing. Speculative link to a 2032 event.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "BKNG",
-          "rationale": "Discretionary travel by retirees is a meaningful demand segment; a credible benefit-cut narrative could weigh on long-dated retiree travel intentions. Very indirect for a 2032 horizon event.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "social_security_depletion_2032",
-      "source_news_ids": [
-        "ed1b51f24295ec0a"
-      ],
-      "headlines": [
-        "Social Security could be depleted by 2032 \u2014 and a typical retired couple stands to lose $18,400 a year"
+        "The real cost of the Iran war isn\u2019t higher prices \u2014 it\u2019s market paralysis"
       ]
     }
   ]
