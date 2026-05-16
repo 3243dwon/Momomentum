@@ -1,484 +1,479 @@
 {
-  "generated_at": "2026-05-09T10:18:10.494520-04:00",
-  "week_ending": "2026-05-09",
+  "generated_at": "2026-05-16T10:23:18.475044-04:00",
+  "week_ending": "2026-05-16",
   "ticker_count": 15,
   "analyses": [
     {
       "ticker": "RXT",
-      "event_count": 25,
-      "heuristic_classification": "real_momentum",
+      "event_count": 71,
+      "heuristic_classification": "unclear",
       "metrics": {
-        "week_return_pct": 249.68,
-        "week_high": 6.0,
-        "week_low": 1.43,
-        "week_close": 5.49,
-        "retention_of_peak": 0.88,
-        "vol_persistence": 0.18,
-        "event_count": 25,
-        "news_density": 0.24
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Rackspace Q1 FY26 earnings (typically early-to-mid May) \u2014 confirmation/denial of any operational catalyst",
-          "Any 8-K filing disclosing M&A, strategic review, or major contract win",
-          "Short interest update (mid-month FINRA report) \u2014 confirms or refutes squeeze thesis",
-          "Sector rotation in IT services / cloud names (peers GDS, IBM partnerships)",
-          "Reg SHO threshold list inclusion / removal"
-        ],
-        "classification": "unclear",
-        "classification_reasoning": "Week return of +250% with 88% retention of peak ($5.49 close vs $6.00 high) and sustained 6-9x relative volume across two days argues for real momentum mechanically. But every scan flagged the move as unexplained by news \u2014 no 8-K, earnings beat, or contract win in the feed. A $1.50 stock doubling twice on no disclosed catalyst with RSI ~89 is the textbook profile of a short squeeze or speculative chase, not a fundamentals-driven re-rate.",
-        "prediction": "reversal",
-        "prediction_confidence": "medium",
-        "prediction_rationale": "Base case is a sharp mean-reversion pullback within 5-15 days. Squeeze-pattern moves on low-priced names without a confirmed catalyst typically retrace 40-60% of the parabolic leg once forced-buying exhausts; RSI 89 and 3.5x vol-above-baseline are unsustainable. If a real catalyst (buyout, contract) surfaces, this view flips immediately \u2014 but absent disclosure, gravity wins.",
-        "horizon_days": 15,
-        "support_level": 2.45,
-        "resistance_level": 6.0
-      }
-    },
-    {
-      "ticker": "RKLB",
-      "event_count": 79,
-      "heuristic_classification": "real_momentum",
-      "metrics": {
-        "week_return_pct": 32.45,
-        "week_high": 105.58,
-        "week_low": 74.0,
-        "week_close": 105.5,
-        "retention_of_peak": 1.0,
-        "vol_persistence": 0.27,
-        "event_count": 79,
-        "news_density": 0.18
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Follow-through reaction to Q1 earnings (revenue >$200M, 64% growth, Anduril contract, Neutron backlog updates) - watch for sell-side price target raises in next 5 trading days",
-          "Neutron rocket first launch milestones - any slip in timeline would crack the thesis",
-          "Next government/defense contract announcement (DoD, Space Force, Anduril expansion)",
-          "Sector sympathy moves from SpaceX IPO chatter or peer space/defense names",
-          "Lockup/secondary offering risk after a 32% week - management could capitalize on the move with a raise"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "The +32.45% week closed at 105.50 vs week high 105.58 (100% retention of peak) on the highest volume day of the 2-week window (1.1M shares, ~3x prior averages). The Thursday Q1 print delivered a hard fundamental catalyst \u2014 revenue >$200M, 64% YoY growth, Anduril contract, Neutron progress \u2014 and the gap from 78.56 to 85.96 open then run to 105.58 on 2.99x relative volume is textbook institutional accumulation, not a low-float squeeze. The initial post-earnings -7% Thursday fade reversed violently Friday on confirmed news, indicating real money repriced the name.",
-        "prediction": "continuation",
-        "prediction_confidence": "medium",
-        "prediction_rationale": "Base case is a digestion week followed by continuation toward 115-120 as analysts revise estimates on the >$200M revenue print and Neutron backlog commentary. A 32% single-week move with full peak retention and MACD bullish on 3x volume rarely fully reverses without a fundamental crack; the typical pattern is a 5-10% pullback to fill part of the gap, then resumption. Confidence is medium not high because the stock is extended, RSI is now stretched, and a secondary offering becomes a real risk at these levels.",
-        "support_level": 92.0,
-        "resistance_level": 115.0,
-        "horizon_days": 15
-      }
-    },
-    {
-      "ticker": "DGXX",
-      "event_count": 73,
-      "heuristic_classification": "real_momentum",
-      "metrics": {
-        "week_return_pct": 95.01,
-        "week_high": 6.76,
-        "week_low": 2.94,
-        "week_close": 6.65,
-        "retention_of_peak": 0.97,
+        "week_return_pct": 228.53,
+        "week_high": 7.65,
+        "week_low": 1.5,
+        "week_close": 5.82,
+        "retention_of_peak": 0.69,
         "vol_persistence": 0.36,
-        "event_count": 73,
+        "event_count": 71,
         "news_density": 0.07
       },
       "analysis": {
         "catalysts_ahead": [
-          "Next 10-Q filing / any 8-K disclosure that could retroactively explain the move",
-          "Potential secondary offering or ATM raise \u2014 small-caps that double frequently use the spike to issue shares",
-          "Short interest / borrow rate updates (mid-month FINRA report) to confirm/deny squeeze thesis",
-          "Russell reconstitution announcements in late May/June if float grows",
-          "Any sector-peer (small-cap data center / crypto / Asia ADR depending on DGXX's actual business) news that re-ignites or kills the rotation"
+          "Rackspace Technology Q1 earnings follow-up commentary / any 8-K filing explaining the move",
+          "Potential SEC trading halt or unusual activity inquiry given the parabolic move from $1.50 to $7.65",
+          "Any S-1/424B prospectus filing \u2014 ATM/secondary offering is the most likely near-term overhang given dilution incentive at these levels",
+          "Short interest update (mid-month FINRA release) to confirm/deny squeeze thesis",
+          "Broader cloud/hyperscaler sector tape \u2014 RXT often trades on AI infrastructure sentiment"
         ],
-        "classification": "unclear",
-        "classification_reasoning": "The 95% week-return was held into Friday's close (retention 0.97) on genuinely huge volume \u2014 Tuesday traded 2.2M shares vs. a sub-80k baseline, and Wed-Fri held 590-760k. That price+volume combo isn't a fakeout. But every scan flagged \"move_unexplained_by_news\" \u2014 the only news hit was a Benzinga \"what's driving DGXX\" piece, which is a symptom, not a catalyst. Without an identifiable fundamental driver and with RSI ~86, this is squeeze/momentum geometry on a low-float name, not validated real momentum.",
-        "prediction": "rangebound",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case is a high-volatility consolidation between $5.30 and $6.76 over the next 1-2 weeks: Thursday's -7% intraday reversal that closed flat shows distribution is starting, but Friday reclaimed 7% on 2x volume, so neither side has won. Without a disclosed catalyst, low-float momentum names typically either get a follow-through squeeze on fresh news or bleed 30-50% back toward the breakout shelf \u2014 and there's no edge calling which without knowing the driver. A capital raise announcement is the single most likely path-changer and would skew this to reversal.",
-        "horizon_days": 15,
-        "support_level": 5.3,
-        "resistance_level": 6.76
-      }
-    },
-    {
-      "ticker": "INTC",
-      "event_count": 77,
-      "heuristic_classification": "real_momentum",
-      "metrics": {
-        "week_return_pct": 51.35,
-        "week_high": 130.54,
-        "week_low": 79.62,
-        "week_close": 124.91,
-        "retention_of_peak": 0.88,
-        "vol_persistence": 0.45,
-        "event_count": 77,
-        "news_density": 0.27
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Next Intel earnings report / any pre-announcement or guidance update",
-          "Confirmation/details on the Apple-Intel U.S. foundry production reports (potential customer win)",
-          "SambaNova deal closing milestones following antitrust clearance",
-          "Semiconductor sector tape \u2014 NVDA/AMD earnings reactions and any Trump trade-policy/Project Freedom follow-ups",
-          "Sell-side upgrades or price-target revisions chasing the move",
-          "Any 13D/13G filing or strategic investor announcement (rumor risk given size of move)"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "Stock closed at $124.91 vs week low $79.62, a +51% week with 88% retention of the $130.54 peak \u2014 that's not a fakeout pattern. Volume persisted (5.76M on Friday's 14% gap, well above the 2-week average) and there are real fundamental threads: Apple/Intel U.S. foundry sourcing reports, SambaNova antitrust clearance, and a broader semi sector bid. News density is thin relative to the magnitude, which is the one yellow flag \u2014 much of the move smells like short-cover/options gamma layered on top of a real foundry-customer narrative.",
-        "prediction": "rangebound",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case: digestion between ~$108 and $130 over the next 2-3 weeks. RSI has been pinned in the 80s for two weeks straight and every pullback (-3.9%, -3.0%) has been bought back within 24-48 hours, but a stock that has gone from $79 to $125 in 8 sessions on largely unexplained flow needs a real catalyst \u2014 earnings, a confirmed Apple foundry contract, or an analyst upgrade cycle \u2014 to push through $130 cleanly. Without a fresh headline, mean-reversion mechanics and profit-taking should cap it; with one, $130 breaks fast.",
-        "support_level": 108,
-        "resistance_level": 130.5,
+        "classification": "fakeout",
+        "classification_reasoning": "Stock ran from $1.77 to a $7.65 intraday peak (+332%) with zero company-specific news across 71 scans \u2014 textbook unexplained low-priced squeeze profile (RSI 89, sub-$2 base, float-driven). Friday's -20.3% reversal on 2.8x volume (the week's heaviest distribution print) gave back a large chunk of the late-week ramp, and peak retention is only 69% with vol persistence at 0.36. Without a fundamental anchor, the rally is mechanical (squeeze/options/retail) and the distribution day signals the unwind has started.",
+        "prediction": "reversal",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Friday's 20% drop on the highest volume of the week (1.46M shares vs. 600-800K typical post-spike) is classic momentum-unwind behavior after a 4x run with no news. Base case is continued mean reversion toward the $3.50-4.50 gap-fill zone over the next 2-3 weeks as squeezed shorts re-engage and the retail bid fades, especially with a heavily diluted, low-priced name where management has every incentive to issue equity at $5+.",
+        "support_level": 4.67,
+        "resistance_level": 7.3,
         "horizon_days": 15
       }
     },
     {
-      "ticker": "ESPR",
-      "event_count": 36,
+      "ticker": "POET",
+      "event_count": 62,
       "heuristic_classification": "real_momentum",
       "metrics": {
-        "week_return_pct": 63.97,
-        "week_high": 3.18,
-        "week_low": 1.81,
-        "week_close": 3.14,
-        "retention_of_peak": 0.97,
-        "vol_persistence": 0.36,
-        "event_count": 36,
-        "news_density": 0.0
+        "week_return_pct": 119.14,
+        "week_high": 20.81,
+        "week_low": 6.7,
+        "week_close": 16.03,
+        "retention_of_peak": 0.65,
+        "vol_persistence": 0.55,
+        "event_count": 62,
+        "news_density": 0.15
       },
       "analysis": {
         "catalysts_ahead": [
-          "Esperion Q1 2026 earnings report (typically early May) \u2014 guidance on Nexletol/Nexlizet sales trajectory and cash runway",
-          "CLEAR Outcomes label expansion / FDA supplemental approvals",
-          "Any 8-K disclosure explaining the May 1 gap (M&A, licensing deal, or partnership announcement most likely given the price-locked behavior)",
-          "Royalty/financing transaction announcement given the company's known cash needs"
+          "POET fiscal Q1 2026 earnings release (typically mid-May to early June) \u2014 any update on optical interposer customer wins or revenue ramp would re-ignite the move",
+          "Follow-through on the AI partnership referenced 5/14 \u2014 clarification of counterparty/economics could re-rate or unwind the squeeze",
+          "OFC/AI optical networking sector flow \u2014 sympathy moves with names like LITE, COHR, AAOI",
+          "Capital raise / ATM offering risk \u2014 POET has historically tapped equity markets after sharp run-ups; a filing would cap upside hard",
+          "Russell index reconstitution late June \u2014 float and passive flows"
         ],
         "classification": "unclear",
-        "classification_reasoning": "Stock gapped from $2.00 to $3.13 on May 1 with 4.3M shares (13x normal) and held 97% of the move through week-end at $3.14 \u2014 retention is excellent and a clean $1.13 step-up with no fade is not typical short-squeeze behavior (squeezes give back). However, no news catalyst is in the feed and the post-gap tape is suspiciously pinned (May 4-5 traded $3.11-3.12 in a sub-$0.02 range on 1M+ shares, May 8 closed $3.14 on just 125K) \u2014 that pattern is consistent with a known but undisclosed catalyst (buyout offer, tender, or arb-pinned deal price) rather than organic momentum buying. Until the catalyst surfaces, can't call it real momentum.",
+        "classification_reasoning": "Week return of +119% with a single-day +43% on 5/14 followed by a -22% reversal on 5/15 on the highest volume of the week (3.75M, ~1.8x) is the signature of a momentum squeeze, not durable accumulation. Only one piece of substantive news (an AI partnership on 5/14) was supplied \u2014 every other scan flagged \"move_unexplained_by_news.\" That said, retention of peak is 65% and the stock still closed +46% on the week, so it's not a pure fakeout either; the AI optical-interposer narrative has real sector tailwinds.",
         "prediction": "rangebound",
         "prediction_confidence": "medium",
-        "prediction_rationale": "The price-pinning around $3.12-3.16 with collapsing volume (4.3M \u2192 125K by Friday) suggests an anchor \u2014 most likely M&A speculation or a deal-related price level. Base case is the stock holds this band until the underlying catalyst is confirmed or denied; a confirmation breaks it higher, a denial collapses it back toward the $2.00 pre-gap base. Vol persistence of 0.36 and zero news density argue against treating this as a tradeable trend.",
+        "prediction_rationale": "After a 2x move in five sessions and a 22% blowoff reversal on peak volume, the base case is consolidation in the $13\u201318 zone while late longs get shaken out and the float resets. Real accumulation needs a confirming catalyst (earnings, named partnership) to justify levels above $20; absent that, gravity from the $10.95 pre-breakout pivot pulls the stock lower over 2\u20134 weeks. The overbought RSI (77+) and the fact that 5/15's down-volume exceeded any up-day this week argue against immediate continuation.",
         "horizon_days": 15,
-        "support_level": 3.1,
-        "resistance_level": 3.18
+        "support_level": 13.73,
+        "resistance_level": 20.81
       }
     },
     {
-      "ticker": "FLNC",
-      "event_count": 37,
-      "heuristic_classification": "real_momentum",
-      "metrics": {
-        "week_return_pct": 80.77,
-        "week_high": 26.94,
-        "week_low": 11.34,
-        "week_close": 24.16,
-        "retention_of_peak": 0.8,
-        "vol_persistence": 0.18,
-        "event_count": 37,
-        "news_density": 0.24
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "FLNC Q2 FY26 earnings report (Fluence typically reports early-May; if not yet released, the print is the dominant near-term catalyst)",
-          "Identification of the actual catalyst \u2014 contract win, large BESS order, or M&A rumor \u2014 that drove the 80% week",
-          "Energy storage / utility-scale battery sector flows (sympathy moves with TSLA Megapack, STEM, ENPH news)",
-          "Short interest update \u2014 confirmation/denial of squeeze dynamics",
-          "Sell-side rating changes following the move (upgrades or PT hikes would extend; downgrades on valuation would cap)"
-        ],
-        "classification": "unclear",
-        "classification_reasoning": "FLNC went from $12.67 to $24.16 (+80% week) on volume 6-8x normal and held 80% of the peak ($26.94) into Friday close \u2014 that retention plus volume persistence argues real demand, not a one-day pop. But every synthesis flagged the move as unexplained by news, and the price path (gap from $13.58 to $19.20 open, then $24.58 open the next day) has the fingerprint of a short squeeze or options gamma chase on a beaten-down energy storage name. Without an identifiable fundamental catalyst (contract, earnings beat, guidance), this can't be called real_momentum despite the technical retention.",
-        "prediction": "rangebound",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case is a volatile $19-27 range as the squeeze cools and longs take profits against a still-overbought RSI (~83). Two consecutive sessions of >1M shares (vs. ~200K baseline) means the float has rotated and new holders' cost basis sits in the high teens to low 20s \u2014 that creates a floor near $19-20 but heavy supply at $26-27. Without a confirmed fundamental catalyst surfacing, gravity wins on a 2-4 week view, but the holding of 80% of peak prevents calling outright reversal.",
-        "support_level": 19.0,
-        "resistance_level": 26.94,
-        "horizon_days": 15
-      }
-    },
-    {
-      "ticker": "DDOG",
+      "ticker": "NVDA",
       "event_count": 63,
       "heuristic_classification": "real_momentum",
       "metrics": {
-        "week_return_pct": 54.68,
-        "week_high": 200.32,
-        "week_low": 124.61,
-        "week_close": 200.23,
-        "retention_of_peak": 1.0,
-        "vol_persistence": 0.27,
+        "week_return_pct": 13.57,
+        "week_high": 236.54,
+        "week_low": 194.76,
+        "week_close": 225.31,
+        "retention_of_peak": 0.71,
+        "vol_persistence": 0.36,
         "event_count": 63,
-        "news_density": 0.11
+        "news_density": 0.56
       },
       "analysis": {
         "catalysts_ahead": [
-          "Q2 guidance commentary at upcoming investor conferences (JPM TMC, BofA Tech) \u2014 any softening reverses the move",
-          "Hyperscaler capex updates from MSFT/AMZN/GOOG \u2014 DDOG is a derivative play on cloud spend",
-          "Lock-up of post-earnings analyst upgrades; PT revisions above $210 would unlock continuation",
-          "Next earnings (early August 2026) \u2014 too far to drive 1-4 week tape",
-          "Sector rotation out of high-beta software if 10Y yields back up sharply"
+          "NVDA FQ1 2027 earnings (late May) \u2014 the dominant near-term catalyst; guidance on data center revenue and China contribution will set direction",
+          "Any follow-up on H200 China export licensing for Alibaba/Tencent \u2014 confirmation expands TAM, reversal kills the bull narrative",
+          "Computex Taipei (early June) \u2014 Jensen keynote historically a momentum event for product roadmap (Rubin/Blackwell Ultra)",
+          "FOMC meeting and CPI/PCE prints \u2014 overbought mega-cap tech is rate-sensitive; hot inflation extends the May 15 selloff",
+          "Further Culper Research / short-seller follow-ups on China compliance allegations"
         ],
         "classification": "real_momentum",
-        "classification_reasoning": "DDOG gapped from $143 to $188 on 5/7 with 1.08M shares (vs ~200-300K typical) \u2014 a confirmed earnings-driven repricing where AI product traction translated to a beat. Critically, the stock did NOT fade: it closed the week at $200.23, the absolute high, retaining 100% of peak gains, and 5/8 added another 6% on 1.8x volume. Peer Snowflake also lifted, confirming sector read-through rather than a single-name squeeze.",
-        "prediction": "continuation",
+        "classification_reasoning": "Week return of +13.57% with close at $225.31 retained 71% of the peak ($236.54) despite a -4.44% Friday flush, and the stock still closed well above the prior week's $215 base. Two identifiable fundamental catalysts supported the run \u2014 H200 export clearance to Alibaba/Tencent and BofA price-target hikes \u2014 and the uptrend was a clean stair-step (higher highs/higher lows Mon\u2013Thu) on consistent 3.7\u20134.5M share volume, not a one-day squeeze. Friday's drop on below-average volume (0.87x) following the Trump-Xi summit dud looks more like profit-taking on an RSI-77 stock than thesis breakage.",
+        "prediction": "rangebound",
         "prediction_confidence": "medium",
-        "prediction_rationale": "Post-earnings gaps that close at the highs with follow-through volume statistically continue for 2-3 weeks as analysts revise PTs and underweight funds rebuild positions. RSI at 84 argues for a 3-7 day digestion near $190-200, but the $146 pre-gap base is strong support and the path of least resistance is higher into the next set of cloud-software datapoints. Primary risk is a broad high-multiple software derate, not stock-specific.",
-        "resistance_level": 210,
-        "support_level": 185,
+        "prediction_rationale": "The stock is pinned between a hot-but-cooling momentum tape and a binary earnings event in the next 1-3 weeks, so the base case is consolidation between $215-$236 until earnings break the range. RSI hit 77 mid-week and the Friday -4.44% reversal already worked off some of that excess on light volume, suggesting buyers re-engage on dips but chasing new highs pre-print is unlikely. The China narrative is now two-sided (H200 approval bullish, summit dud bearish), neutralizing the macro tailwind that drove the week.",
+        "support_level": 215.0,
+        "resistance_level": 236.54,
         "horizon_days": 15
       }
     },
     {
       "ticker": "MU",
-      "event_count": 75,
-      "heuristic_classification": "real_momentum",
+      "event_count": 69,
+      "heuristic_classification": "unclear",
       "metrics": {
-        "week_return_pct": 50.55,
-        "week_high": 747.1,
-        "week_low": 488.44,
-        "week_close": 747.1,
-        "retention_of_peak": 1.0,
+        "week_return_pct": 33.53,
+        "week_high": 818.67,
+        "week_low": 511.24,
+        "week_close": 724.09,
+        "retention_of_peak": 0.66,
         "vol_persistence": 0.36,
-        "event_count": 75,
-        "news_density": 0.2
+        "event_count": 69,
+        "news_density": 0.32
       },
       "analysis": {
         "catalysts_ahead": [
-          "Micron next quarterly earnings report (June) \u2014 guidance on DRAM/HBM pricing and AI capex commentary",
-          "DRAM/NAND spot price prints and DRAMeXchange contract data \u2014 confirmation of 'memflation' thesis",
-          "NVIDIA earnings (late May) \u2014 HBM demand read-through",
-          "Hyperscaler capex commentary at upcoming tech conferences",
-          "Sell-side price target revisions following the 50% week \u2014 typical post-move catalyst",
-          "May CPI/PCE prints \u2014 rate path implications for high-beta semis"
+          "Micron FQ3 2026 earnings (late June) \u2014 guide on HBM revenue trajectory and DRAM pricing is the dominant catalyst",
+          "NVIDIA earnings (late May) \u2014 read-through to HBM/AI memory demand",
+          "Computex Taipei (late May/early June) \u2014 HBM4/AI memory roadmap updates from MU and peers",
+          "BofA $950 PT and follow-on sell-side moves \u2014 further AI memory upgrades would re-ignite bid",
+          "DRAM/NAND spot price prints (TrendForce, DRAMeXchange) \u2014 pricing rollover would validate the pullback"
         ],
         "classification": "real_momentum",
-        "classification_reasoning": "Stock closed at $747.10, the literal week high \u2014 100% retention of peak with a +50.55% week return and rising volume into the close (1.16M shares Friday vs ~650K baseline, ~1.7x rel vol). Move is anchored to identifiable fundamentals: 'memflation' DRAM/NAND pricing tightness, AI memory demand commentary, and an earnings beat referenced midweek. Pullback Thursday (-3% on 1.36x vol) was absorbed and immediately reversed with a +15.56% Friday on the highest volume of the period \u2014 textbook real-money accumulation, not a low-float squeeze.",
-        "prediction": "continuation",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case is continuation higher into next week given Friday's breakout close at the high on max weekly volume and an intact memory-pricing thesis, but confidence is low because RSI ~82, a +50% week, and a parabolic slope make any negative tape day a candidate for a 10-15% mean-reversion flush. Expect a test of $700 first, then either consolidation in the $700-770 band or extension toward $800 if hyperscaler/HBM headlines stay supportive. A close back below $646 (Thursday's low / prior breakout shelf) breaks the thesis.",
-        "horizon_days": 15,
-        "support_level": 646,
-        "resistance_level": 800
+        "classification_reasoning": "Even after a brutal -6.68% Friday, MU still closed +33.5% on the week and retained 66% of the peak ($724 vs $818 high), with the entire 2-week structure showing higher highs from $542 to $818 on persistently elevated volume (1.0\u20131.4M shares daily vs ~680K baseline). The move was anchored by real catalysts \u2014 BofA's $950 PT, broader AI memory/HBM sell-side upgrades, and AI chip cohort participation \u2014 not a low-float squeeze. Friday's selloff was profit-taking from overbought RSI (80+), not a thesis break.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case is a $700\u2013$810 consolidation range over the next 2-3 weeks as the stock digests a 50%+ two-week run into FQ3 earnings. The 7-day RSI was pinned >80 and Friday's -6.68% on rising volume confirms supply emerging near $815, but the BofA $950 PT and HBM narrative provide a strong bid into any pullback toward the $700 gap-fill. Without a fresh catalyst, neither bulls nor bears get a clean breakout before earnings.",
+        "support_level": 700,
+        "resistance_level": 815,
+        "horizon_days": 15
       }
     },
     {
-      "ticker": "SNDK",
-      "event_count": 67,
+      "ticker": "RKLB",
+      "event_count": 64,
       "heuristic_classification": "real_momentum",
       "metrics": {
-        "week_return_pct": 57.88,
-        "week_high": 1563.73,
-        "week_low": 949.38,
-        "week_close": 1562.14,
-        "retention_of_peak": 1.0,
+        "week_return_pct": 58.18,
+        "week_high": 133.11,
+        "week_low": 76.28,
+        "week_close": 124.68,
+        "retention_of_peak": 0.84,
+        "vol_persistence": 0.27,
+        "event_count": 64,
+        "news_density": 0.16
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "RKLB Q1 2026 earnings (typically reported early-to-mid May; if not yet posted, the report itself is the dominant near-term catalyst)",
+          "Neutron rocket maiden launch updates / static fire test cadence",
+          "Additional sell-side price target revisions following Needham's bump",
+          "Space Symposium / defense contract awards (USSF, NRO follow-ons)",
+          "Lockup or secondary offering risk after 60%+ run \u2014 watch for ATM activation"
+        ],
+        "classification": "real_momentum",
+        "classification_reasoning": "Week return +58% with 84% retention of the $133.11 peak into a $124.68 close \u2014 gains were largely held even after Friday's -5.9% mean-reversion day. The breakout was confirmed by genuine volume expansion (May 8 1.1M, May 11 1.1M vs. ~300-500K baseline), a Needham PT increase mid-week providing partial fundamental cover, and a clear stair-step pattern rather than a one-day spike-and-fade. News coverage was thin relative to the move, but consolidation at $117-$124 between leg-ups argues against a low-float squeeze profile.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case is consolidation in the $115-$133 zone over the next 2-3 weeks. RSI hit 78.8 mid-week and Friday already delivered a -5.9% reset on light volume (0.79x), so the parabolic leg is done, but 84% peak retention and the well-defined $105 breakout shelf argue against a full retrace. Vol persistence of just 0.27 means most days post-breakout traded below the surge baseline \u2014 that's digestion, not distribution.",
+        "support_level": 105.5,
+        "resistance_level": 133.11
+      }
+    },
+    {
+      "ticker": "NVTS",
+      "event_count": 72,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 22.26,
+        "week_high": 23.81,
+        "week_low": 14.95,
+        "week_close": 21.31,
+        "retention_of_peak": 0.61,
+        "vol_persistence": 0.36,
+        "event_count": 72,
+        "news_density": 0.07
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Next NVTS quarterly earnings report (Q2 print expected early August) \u2014 guidance on GaN/SiC design wins is the swing factor",
+          "Semiconductor sector data points (TSM monthly revenue, NVDA earnings late May) which drive sympathy flows in power-semi names",
+          "Any 8-K disclosure of M&A interest or strategic review \u2014 NVTS has been rumored as a takeout candidate in prior cycles",
+          "Lock-up/secondary offering risk \u2014 a capital raise into this strength would cap upside fast"
+        ],
+        "classification": "unclear",
+        "classification_reasoning": "Week closed +22% with the stock retaining 61% of its peak gain ($21.31 vs $23.81 high), and the 5/11 spike came on legitimate 2.45M shares (2.27x rel vol) \u2014 that's real participation, not a thin-tape squeeze. But zero identifiable news catalyst across 72 scans, a -16% reversal day on 5/12, and another -10% intraday flush on 5/15 show the move has no fundamental anchor. Classic unclear: real volume but unexplained, with violent two-way action.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case is a $19\u201323 range over the next 2-3 weeks. The 5/11 breakout established a new floor near $19 (defended twice on 5/12 and 5/15 intraday lows of $18.68 and $19.57), but without a news catalyst the $23.50\u201323.80 ceiling held twice (5/11 and 5/14 highs). Daily ranges of 10-15% with no follow-through volume after 5/11 say this is a digestion phase, not a trend leg.",
+        "resistance_level": 23.5,
+        "support_level": 19.25,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "INTC",
+      "event_count": 64,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 9.24,
+        "week_high": 132.71,
+        "week_low": 92.67,
+        "week_close": 108.87,
+        "retention_of_peak": 0.28,
         "vol_persistence": 0.45,
-        "event_count": 67,
-        "news_density": 0.22
+        "event_count": 64,
+        "news_density": 0.28
       },
       "analysis": {
         "catalysts_ahead": [
-          "SanDisk next earnings report (FQ4 2026) \u2014 guidance on AI/datacenter NAND demand and the $42B deal pipeline conversion will set the tone",
-          "Micron earnings/guidance \u2014 direct read-across for NAND/HBM-adjacent storage demand",
-          "Hyperscaler capex updates from MSFT/META/GOOG/AMZN \u2014 any softening hits the AI-storage thesis",
-          "Sell-side price target revisions / analyst initiations following the $42B AI deal announcement",
-          "Potential secondary offering or insider sales after a 58% week \u2014 would cap upside"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "Week closed at $1562.14, the absolute high (100% retention of peak), with a +57.9% return anchored by a concrete fundamental catalyst: the May 5 announcement of $42B in AI-related deals. Volume persisted at 1.5\u20132x average across multiple sessions (May 1: 496K, May 6: 486K vs ~200K baseline), and Friday's 16.6% rip to new highs on 1.15x rel-vol confirmed the dip on May 7 (-7.6% intraday) was bought aggressively. This is news-driven, not a low-float squeeze.",
-        "prediction": "continuation",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case is continuation higher over the next 1-2 weeks given the $42B contract narrative, fresh all-time-high close, and demonstrated dip-buying. Confidence is low rather than medium because RSI has been pinned >80 for a week, the stock nearly doubled in two weeks ($949 \u2192 $1562), and a single-day -7.6% air pocket already showed how thin liquidity is up here \u2014 any analyst downgrade or hyperscaler capex wobble triggers a fast 15-20% mean-reversion. Expect violent two-way action with an upward drift until the next catalyst.",
-        "resistance_level": 1700,
-        "support_level": 1290,
-        "horizon_days": 10
-      }
-    },
-    {
-      "ticker": "FSLY",
-      "event_count": 53,
-      "heuristic_classification": "unclear",
-      "metrics": {
-        "week_return_pct": -13.75,
-        "week_high": 32.76,
-        "week_low": 18.53,
-        "week_close": 20.51,
-        "retention_of_peak": -0.36,
-        "vol_persistence": 0.36,
-        "event_count": 53,
-        "news_density": 0.06
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Confirmation/clarification of the May 7 earnings event (10-Q filing, conference call transcript, analyst estimate revisions)",
-          "Sell-side downgrades or price target cuts following the gap-down \u2014 a wave of cuts would extend selling",
-          "Q2 guidance commentary or any pre-announcement at upcoming investor conferences",
-          "Sympathy moves from CDN/edge peers (NET, AKAM) on their prints",
-          "Short interest update \u2014 if SI spiked into the May 5 squeeze, covering dynamics flip"
+          "Confirmation/denial of the Apple chip supply partnership reported May 11 \u2014 official Intel or Apple statement would re-rate the stock either direction",
+          "May FOMC minutes and next CPI print \u2014 INTC has been trading as a high-beta proxy for rate-sensitive semis",
+          "Intel Foundry Direct Connect / any update on 18A node yields or major foundry customer wins",
+          "Semiconductor peer earnings/guidance (NVDA, AMD, MU) \u2014 sector contagion has been a key driver this week",
+          "Any 13F filings showing whether the run-up was institutionally sponsored or retail/options-driven"
         ],
         "classification": "fakeout",
-        "classification_reasoning": "FSLY ripped from ~$25 to a $32.76 peak on May 5\u20136 (+31% in 5 days) on only modestly elevated volume (1.03\u20131.38x), with zero supporting news \u2014 classic squeeze/options dynamics. The May 7 gap-down to $19.49 (-39% on 4x volume, almost certainly an earnings miss) erased the entire run and then some, with peak retention of -36%. A move that fully unwinds plus breaks the prior $23\u201326 base is the textbook fakeout.",
+        "classification_reasoning": "Stock ripped from ~$95 to a $132.71 peak on May 11 (+39% in 4 sessions) but closed the week at $108.87, retaining only 28% of the peak gain above the prior consolidation base. The one explanatory news item (Apple chip-supply report on May 11) appeared at the top, not at the start, of the move \u2014 meaning the bulk of the run had no catalyst and was likely short-covering/options-driven. Volume persistence collapsed to 0.45 and the down-days into Friday came on declining volume but with full price retracement, classic exhaustion pattern.",
         "prediction": "rangebound",
         "prediction_confidence": "medium",
-        "prediction_rationale": "Post-earnings gap-downs of this magnitude on small-cap SaaS typically base for 2\u20134 weeks in a tight range as forced selling exhausts and shorts cover into the hole. The $19.49 low and $20.51 close suggest a $18.50\u201322 consolidation zone, with the unfilled gap from $22.78 acting as overhead supply. No catalyst on deck supports a V-reversal back above $25, and the bearish MACD plus broken $23 support argues against fresh continuation lower absent new bad news.",
+        "prediction_rationale": "Base case is consolidation in the $100\u2013$118 zone over the next 2\u20133 weeks as the post-spike unwind completes and the stock digests whether the Apple report has substance. The selloff into Friday's $108.87 close happened on below-average volume (rel vol 0.55\u20130.66), arguing against a clean trend-down continuation, but the 18% drawdown from $132.71 destroyed the momentum bid. Without confirmation of the Apple deal or a fresh catalyst, neither bulls nor bears have conviction to take it out of the prior breakout zone.",
         "horizon_days": 15,
-        "support_level": 18.53,
-        "resistance_level": 22.85
+        "support_level": 99.66,
+        "resistance_level": 120.58
       }
     },
     {
-      "ticker": "ATEC",
-      "event_count": 60,
-      "heuristic_classification": "unclear",
-      "metrics": {
-        "week_return_pct": -31.07,
-        "week_high": 10.95,
-        "week_low": 6.87,
-        "week_close": 7.51,
-        "retention_of_peak": -61.55,
-        "vol_persistence": 0.27,
-        "event_count": 60,
-        "news_density": 0.07
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Alphatec confirmation/clarification on the May 6 catalyst (likely Q1 earnings or guidance cut) \u2014 any 8-K filing or management commentary",
-          "Follow-up sell-side rating/PT revisions over the next 1-2 weeks",
-          "Potential secondary offering or capital raise given the gap-down (would extend downside)",
-          "Industry conference presentations / spine sector readouts from peers (NUVA, GMED, SIBN) that recalibrate sector multiples"
-        ],
-        "classification": "fakeout",
-        "classification_reasoning": "Stock gapped down from $10.26 to a $6.87 low on May 6 with 6.5x relative volume \u2014 a -32% single-day collapse that wiped out all prior strength and closed the week at $7.51, down 31% on the week with -61% retention of the $10.95 peak. The May 7 +11% bounce came on declining volume (3.2x \u2192 1.12x by May 8) and immediately faded, confirming dead-cat dynamics rather than a base. Heuristic synthesis flagged the move as \"unexplained by news\" \u2014 typical of an earnings/guidance shock that hadn't yet hit the feed, which is the textbook fundamental break, not a clean reversal setup.",
-        "prediction": "rangebound",
-        "prediction_confidence": "medium",
-        "prediction_rationale": "Base case is a $6.87\u2013$8.10 consolidation as the gap zone ($8.04 open / $10.26 prior close) acts as heavy supply and the May 6 low gets retested. The bounce attempt already failed at $7.98 with volume collapsing to 1.12x, so neither side has control; expect chop until the underlying catalyst is digested or sell-side resets numbers. A clean break of $6.87 on volume opens $6 handle; reclaiming $8.10 with volume is needed before any continuation higher is credible.",
-        "horizon_days": 15,
-        "support_level": 6.87,
-        "resistance_level": 8.1
-      }
-    },
-    {
-      "ticker": "FLEX",
-      "event_count": 44,
+      "ticker": "REPL",
+      "event_count": 69,
       "heuristic_classification": "real_momentum",
       "metrics": {
-        "week_return_pct": 55.39,
-        "week_high": 142.56,
-        "week_low": 84.78,
-        "week_close": 142.09,
-        "retention_of_peak": 0.99,
-        "vol_persistence": 0.36,
-        "event_count": 44,
-        "news_density": 0.11
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "FLEX FY26 Q4/full-year earnings (typically reported mid-May) \u2014 will confirm or deny whether the 5/6 gap was an earnings/guidance leak",
-          "Any 8-K disclosure tied to the 5/6 gap (M&A, contract win, AI server datacenter deal \u2014 Nvidia/hyperscaler partnership rumors have repeatedly moved this name)",
-          "Sector read-throughs from CLS (Celestica) and JBL (Jabil) \u2014 peers with shared AI/cloud infrastructure exposure",
-          "Inclusion/weight changes in S&P 500 or sector ETFs following the ~55% repricing",
-          "Lockup of post-gap profit-taking around options expiry (5/16) given the IV expansion likely after the move"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "Stock gapped from $96 to $134 on 5/6 with ~1M shares (5x avg) and held: closed the week at $142.09, retaining 99% of the peak with volume persisting at 2-4x normal every subsequent day. That gap pattern (open at $119.50, no fill, higher highs each day on rising volume) is textbook institutional accumulation, not a squeeze fade. Catalyst is not in the supplied news feed but the price/volume signature \u2014 overnight gap + held + expanded \u2014 is consistent with an earnings beat/guidance raise or a major contract disclosure rather than a low-float squeeze (FLEX is a large-cap EMS name, not squeeze-prone).",
-        "prediction": "continuation",
-        "prediction_confidence": "medium",
-        "prediction_rationale": "Base case is grind-higher consolidation in the $130-150 zone with another leg if the underlying catalyst (likely earnings/AI-infrastructure deal) is confirmed and analysts revise. 99% peak retention plus Friday's close at the high on the week's heaviest volume (1.07M) is buying, not distribution \u2014 that almost always sees follow-through over 2-3 weeks before a real pullback. Risk is a one-day mean-reversion flush of 8-12% as fast money rotates, but the gap at $119.50 should hold as the new floor.",
-        "resistance_level": 150,
-        "support_level": 130,
-        "horizon_days": 15
-      }
-    },
-    {
-      "ticker": "PLNT",
-      "event_count": 54,
-      "heuristic_classification": "unclear",
-      "metrics": {
-        "week_return_pct": -34.11,
-        "week_high": 70.59,
-        "week_low": 37.03,
-        "week_close": 45.88,
-        "retention_of_peak": -25.01,
-        "vol_persistence": 0.18,
-        "event_count": 54,
-        "news_density": 0.07
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "Management commentary/conference appearances following Q1 miss \u2014 clarification on marketing execution issues and franchisee health",
-          "Sell-side rating/PT revisions cascading over next 1-2 weeks (downgrades typical post-guidance cut)",
-          "Peer reads from XPOF, LTH, and consumer discretionary May comps",
-          "June investor conferences where PLNT could reset narrative",
-          "Any 8-K disclosures on CEO/CMO accountability or strategic review"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "This is real (downside) momentum, not a fakeout. PLNT gapped from $63.95 to a $37.03 low on Q1 miss + guidance cut, closing -31% on 8.5x volume, and the next-day bounce only retraced to $45.88 \u2014 retaining roughly 70% of the loss. Volume persistence (1.16M then 731K vs. ~115K baseline) and confirmed fundamental catalyst (earnings miss, marketing execution failure, cut estimates) check every box for a genuine repricing event.",
-        "prediction": "rangebound",
-        "prediction_confidence": "medium",
-        "prediction_rationale": "Base case is a $40-50 consolidation range over the next 2-3 weeks as the post-gap dust settles. RSI at 15-20 typically produces a multi-day technical bounce (already started Friday +4.3%), but a 32% guidance-cut gap rarely V-recovers \u2014 sell-side downgrades and tax-loss/forced-fund selling cap rallies into the gap. Neither continuation lower nor reclaim of $60 is the base case until the next earnings print.",
-        "resistance_level": 52,
-        "support_level": 37,
-        "horizon_days": 15
-      }
-    },
-    {
-      "ticker": "FROG",
-      "event_count": 65,
-      "heuristic_classification": "real_momentum",
-      "metrics": {
-        "week_return_pct": 55.92,
-        "week_high": 72.01,
-        "week_low": 43.53,
-        "week_close": 70.54,
-        "retention_of_peak": 0.95,
-        "vol_persistence": 0.27,
-        "event_count": 65,
-        "news_density": 0.09
-      },
-      "analysis": {
-        "catalysts_ahead": [
-          "JFrog (FROG) Q1 2026 earnings report \u2014 likely the proximate driver and key risk for follow-through; a confirmed beat/raise sustains the move, an in-line print likely triggers profit-taking from RSI ~84",
-          "Confirmation/denial of M&A speculation \u2014 multiple sessions ran on unexplained volume, suggesting takeover chatter that needs a Reuters/Bloomberg confirm to extend",
-          "Sector read-throughs from DevSecOps peers (DDOG, GTLB, S) earnings prints in the next 2 weeks",
-          "Analyst price target revisions following the 56% weekly move \u2014 Street catch-up could sustain momentum"
-        ],
-        "classification": "real_momentum",
-        "classification_reasoning": "Week return of +55.9% with 95% retention of the peak (close 70.54 vs high 72.01) and Friday's 23.8% rip on 4.84x relative volume and 716k shares (vs ~150k baseline) is textbook institutional accumulation, not a low-float squeeze giveback. The move built progressively across 5 sessions (45\u219252\u219254\u219257\u219270) rather than spiking and fading, and Friday's gap-and-go from 65.71 open to 70.54 close held the bulk of intraday gains. Absence of explanatory news in the feed is a flag, but the volume signature points to a real catalyst (earnings leak, M&A rumor, or guidance pre-announce) rather than a fakeout.",
-        "prediction": "continuation",
-        "prediction_confidence": "low",
-        "prediction_rationale": "Base case is a continuation higher into the imminent earnings/catalyst that's being front-run, with RSI at 84 making a 5-10% pullback to the 63-65 gap fill the most likely path before the next leg. The unexplained 4.84x volume on Friday is the tell \u2014 that kind of print typically precedes a confirmable catalyst within 1-2 weeks, and post-confirmation Street upgrades extend the move. Confidence is low because if the catalyst is just an earnings beat already priced in, the 56% weekly gain is the entire move and mean reversion to the 57-60 breakout zone is the alternate path.",
-        "horizon_days": 15,
-        "support_level": 62.68,
-        "resistance_level": 72.01
-      }
-    },
-    {
-      "ticker": "FIGS",
-      "event_count": 67,
-      "heuristic_classification": "unclear",
-      "metrics": {
-        "week_return_pct": -29.59,
-        "week_high": 17.43,
-        "week_low": 10.76,
-        "week_close": 11.62,
-        "retention_of_peak": -5.31,
-        "vol_persistence": 0.27,
-        "event_count": 67,
+        "week_return_pct": 108.17,
+        "week_high": 5.46,
+        "week_low": 2.38,
+        "week_close": 5.22,
+        "retention_of_peak": 0.92,
+        "vol_persistence": 0.45,
+        "event_count": 69,
         "news_density": 0.04
       },
       "analysis": {
         "catalysts_ahead": [
-          "Q1 2026 earnings call follow-through and analyst rating revisions/price target cuts in the next 1-2 weeks",
-          "Potential 13D/13G filings or insider transaction disclosures following the 28% drop",
-          "Consumer discretionary sector data prints (retail sales, consumer confidence) over next 2-4 weeks",
-          "Q2 guidance updates or pre-announcements at upcoming consumer/retail conferences"
+          "Replimune Q4/FY2026 earnings expected late May/early June \u2014 guidance and cash runway commentary",
+          "FDA regulatory update on RP1 (vusolimogene oncolytic) following prior CRL \u2014 any resubmission/Type A meeting readout would be the dominant catalyst",
+          "ASCO Annual Meeting (late May/early June) \u2014 potential data presentations for oncolytic immunotherapy pipeline",
+          "Any 8-K disclosure tied to the May 13 30% volume spike (2.6x rel vol with no public news suggests a leak/pending announcement)"
+        ],
+        "classification": "real_momentum",
+        "classification_reasoning": "Week return of +108% closed at $5.22 vs week high $5.46 \u2014 that's 92% peak retention, which is not fakeout behavior. The May 13 leg (close $5.30 on 791K shares, ~2x prior session volume) showed unusual_volume confirmation, and Thursday's -7% pullback held above $4.50 before recovering to $5.22 Friday. The lack of identifiable news across 69 scans is a yellow flag (likely leak ahead of an FDA/clinical catalyst on a small-cap biotech), but the price action itself \u2014 higher highs, higher lows, expanding volume on up days \u2014 is mechanically real.",
+        "prediction": "continuation",
+        "prediction_confidence": "low",
+        "prediction_rationale": "Base case is continuation toward $6-7 over the next 2-3 weeks: the stock doubled with peak retention >90%, Friday closed strong on a quiet 211K-share session (no distribution), and small-cap biotechs running pre-catalyst typically grind higher into the event. Confidence is low because there is zero public news explaining the move \u2014 this is either a leak of a binary event (which can either confirm with a 50%+ spike or evaporate the entire run on bad news) or pure squeeze dynamics on a $5 biotech, both of which carry asymmetric downside.",
+        "horizon_days": 15,
+        "support_level": 4.5,
+        "resistance_level": 5.46
+      }
+    },
+    {
+      "ticker": "AAOI",
+      "event_count": 62,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 3.66,
+        "week_high": 233.47,
+        "week_low": 143.61,
+        "week_close": 190.29,
+        "retention_of_peak": 0.13,
+        "vol_persistence": 0.27,
+        "event_count": 62,
+        "news_density": 0.11
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Next AAOI quarterly earnings report (datapoint refresh on 800G/1.6T transceiver demand and hyperscaler order book)",
+          "OFC/sector conference commentary or peer prints (COHR, LITE, FN) shifting AI optics sentiment",
+          "Any 8-K filing addressing the unexplained 5/11-5/13 ramp (potential customer win, capacity expansion, or strategic announcement)",
+          "Broader AI capex / hyperscaler datapoints (NVDA earnings, hyperscaler capex revisions)"
         ],
         "classification": "fakeout",
-        "classification_reasoning": "The mid-week 6.2% rally on 2.93x volume into May 7 ($15.39 close) was completely erased and then some by the May 8 -24.5% gap-down to $11.62 on 3.46x volume \u2014 closing the week at $10.76 lows with a -29.6% return and negative retention (-5.3%). The pre-drop strength looks like a setup into earnings/event that delivered a brutal reaction; vol persistence of 0.27 confirms the buying didn't hold. No fundamental support emerged for the run-up.",
+        "classification_reasoning": "Stock ran from 148.99 close on 5/8 to a 233.47 intraday high on 5/13 (+57%) then collapsed back to 190.29 by Friday \u2014 retention of peak just 13% and the week finished +3.66%. Every scan synthesis flagged \"move_unexplained_by_news\"; relative volume on up days (1.05-1.38x) was elevated but not the kind of institutional-accumulation signature you'd expect for a real fundamental re-rating, and the 5/14 -8.76% / 5/15 -6.42% reversal printed with comparable or higher volume than the up days. Classic squeeze/options-gamma signature on a high-short-interest AI-optics name with no fundamental anchor.",
         "prediction": "rangebound",
         "prediction_confidence": "medium",
-        "prediction_rationale": "Post-earnings gap-downs of this magnitude on consumer discretionary names typically grind sideways for 2-4 weeks as analysts reset estimates and forced sellers clear. RSI ~32 supports a dead-cat bounce toward $12.50-13, but the broken $14 shelf now caps any rally. Base case: $10.50-13 range with selling into strength until a new catalyst resets the narrative.",
+        "prediction_rationale": "Base case: AAOI digests the squeeze in a wide 170-210 range over the next 2-3 weeks as gamma unwinds and momentum buyers exit. The 233 print is unlikely to be revisited without a named catalyst, but the 149 low also held convincingly so dip-buyers from the AI-optics thesis defend the 170s. Without earnings or a confirmed customer announcement on the immediate calendar, there's no fuel to break either side.",
+        "support_level": 170,
+        "resistance_level": 210,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "EOSE",
+      "event_count": 60,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 22.2,
+        "week_high": 9.93,
+        "week_low": 6.07,
+        "week_close": 7.87,
+        "retention_of_peak": 0.41,
+        "vol_persistence": 0.36,
+        "event_count": 60,
+        "news_density": 0.08
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Follow-up disclosures from the Q1 earnings call (project pipeline updates, DOE loan drawdown milestones)",
+          "Energy storage sector sentiment / IRA policy headlines",
+          "Next 13F filings showing whether institutions added on the breakout",
+          "Any contract award announcements from utility partners"
+        ],
+        "classification": "unclear",
+        "classification_reasoning": "EOSE ripped from $6.38 to a $9.93 intraday high (+56%) on massive volume (2.9M, 2.0M, 2.6M shares vs. ~700K baseline), but retention is poor: closed the week at $7.87, retaining only ~41% of peak gains. The 5/13 candle is a textbook blowoff \u2014 gapped open $9.87, tagged $9.93, closed $8.27 (engulfing bearish on 2.58M volume). Earnings transcript hit 5/13 but was only \"medium-impact\" with no clear beat, so the move was largely flow-driven (likely short squeeze given EOSE's chronic high short interest), not fundamentally underwritten.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case: $7.40\u2013$8.50 chop for 2-3 weeks as the squeeze unwinds and dip buyers defend the $8 breakout shelf. The blowoff top on 5/13 plus four consecutive lower closes (8.57 \u2192 8.08 \u2192 8.27 \u2192 8.16 \u2192 7.87) on declining volume signals exhaustion, but the stock has held well above the pre-spike $6.40 base, so a full retrace is unlikely without a fresh negative catalyst. No clear-cut earnings beat to fuel continuation.",
+        "resistance_level": 8.5,
+        "support_level": 7.4,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "FLNC",
+      "event_count": 61,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 70.23,
+        "week_high": 27.38,
+        "week_low": 11.76,
+        "week_close": 20.76,
+        "retention_of_peak": 0.56,
+        "vol_persistence": 0.45,
+        "event_count": 61,
+        "news_density": 0.03
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Fluence Energy fiscal Q2 2026 earnings (typically early-to-mid May report cadence \u2014 likely already partly responsible; watch for follow-up commentary/guidance revisions)",
+          "Any 8-K disclosure of major BESS contract wins or strategic review",
+          "Tariff/Section 301 policy updates on Chinese battery cells (direct margin impact on FLNC)",
+          "Peer reports (TSLA Megapack updates, STEM, energy storage names) shifting sector sentiment",
+          "Short interest update (mid-month NYSE settlement) \u2014 confirms or denies squeeze thesis"
+        ],
+        "classification": "unclear",
+        "classification_reasoning": "Stock ran from $13.58 to a $27.38 peak (+101%) then settled at $20.76, retaining only 56% of the peak gain \u2014 but it still closed +70% on the week with persistent 1.4-4.4x volume even on down days, which is not typical fakeout behavior (fakeouts usually see volume collapse on the retrace). Zero news in the feed across 61 scans is a red flag, yet the May 7 gap from $13.58 to $19.20 open on 1.3M shares (6x prior avg) has the signature of an earnings/contract reaction the scanner missed. Calling it 'real' without a confirmed catalyst is unjustified; calling it 'fakeout' ignores that $20+ has held for four sessions on heavy volume.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case is consolidation in the $19-23 zone for 2-3 weeks as the parabolic move digests \u2014 the May 12 -15.7% flush on 2.1x volume already cleared weak hands, and the May 13 rebound on 4.4x volume showed dip buyers are present. Without a fresh catalyst, the $27 high is unlikely to be revisited near-term, but the $19 gap-fill area from May 7 should hold absent broader sector weakness. The lack of identifiable news means a second-leg catalyst (or its absence) over the next 2 weeks decides whether this becomes a base for continuation or rolls back into the teens.",
+        "support_level": 19.05,
+        "resistance_level": 23.84,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "WOLF",
+      "event_count": 71,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 69.03,
+        "week_high": 73.09,
+        "week_low": 29.15,
+        "week_close": 62.16,
+        "retention_of_peak": 0.7,
+        "vol_persistence": 0.36,
+        "event_count": 71,
+        "news_density": 0.07
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Wolfspeed Q4 FY26 earnings / next quarterly update \u2014 any guidance revision on SiC demand or restructuring progress would dominate",
+          "Updates on the Chapter 11 restructuring / debt-for-equity plan that drove the equity revaluation post-emergence",
+          "EV / SiC demand commentary from peers (ONSEMI, STMicro, Infineon) over the next 2-4 weeks",
+          "Any CHIPS Act funding milestone or Mohawk Valley fab utilization update",
+          "Short interest update mid-month \u2014 squeeze fuel is the main bull driver here"
+        ],
+        "classification": "unclear",
+        "classification_reasoning": "Week return of +69% with retention of only 70% of peak and a -11.4% close on Friday signals the move is partially giving back. Volume persistence at 0.36 is weak \u2014 the blow-off on 5/13 (821k shares, 3x rel vol) wasn't sustained on 5/15 (231k, well below average). Every synthesis verdict flagged \"move_unexplained_by_news,\" consistent with a low-float squeeze on the post-restructuring share count rather than a fundamentally-driven re-rate.",
+        "prediction": "reversal",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "The setup is classic exhaustion: parabolic 6-day move from $36 to $73 high, RSI pinned 80-87 all week, then a -11.4% Friday on declining volume with no buyer step-in. Without a documented catalyst, squeeze-driven names typically retrace 50-61% of the spike once short covering completes. Base case is a fade toward the mid-$40s where the prior consolidation sat before the 5/12-13 gap.",
+        "support_level": 46.64,
+        "resistance_level": 70.14,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "MSTR",
+      "event_count": 69,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 0.1,
+        "week_high": 196.96,
+        "week_low": 169.43,
+        "week_close": 177.34,
+        "retention_of_peak": 0.01,
+        "vol_persistence": 0.27,
+        "event_count": 69,
+        "news_density": 0.2
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "BTC price action \u2014 MSTR trades as a ~2x BTC proxy; a break above $70k BTC or below $60k flips the bias",
+          "Q2 MSTR ATM equity issuance updates / weekly BTC purchase disclosures (typically Monday 8-K)",
+          "FOMC minutes and upcoming CPI print \u2014 rate-sensitive risk assets in this complex react sharply",
+          "Any convertible note refinancing or new debt issuance announcement",
+          "Saylor public appearances / Bitcoin conference circuit commentary"
+        ],
+        "classification": "fakeout",
+        "classification_reasoning": "The week was a whipsaw, not momentum: price tagged $196.96 Monday then closed the week at $177.34, retaining ~1% of peak gains for a flat 0.1% week return. Daily prints went +4.5%, -5.9%, -3.4%, +5.0%, -5.2% \u2014 classic high-beta BTC-proxy chop with no directional follow-through. Relative volume sat at 0.27 persistence and only spiked to 1.2x on Friday's decline, meaning sellers showed up with conviction while buyers didn't.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case: MSTR oscillates in a $170-$195 band over the next 2-3 weeks as BTC consolidates. The Friday rejection on the highest volume of the week (1.2x rel vol, -5.17%) marks $192-$197 as a clear supply zone, while the $169-$175 area held twice in the 2-week window. No fundamental catalyst this week \u2014 moves were pure BTC beta \u2014 so direction resolves only when BTC breaks its own range.",
+        "support_level": 170,
+        "resistance_level": 193,
+        "horizon_days": 15
+      }
+    },
+    {
+      "ticker": "QUBT",
+      "event_count": 53,
+      "heuristic_classification": "fakeout",
+      "metrics": {
+        "week_return_pct": 14.13,
+        "week_high": 14.45,
+        "week_low": 8.85,
+        "week_close": 10.5,
+        "retention_of_peak": 0.25,
+        "vol_persistence": 0.18,
+        "event_count": 53,
+        "news_density": 0.17
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Quantum computing peer earnings/updates (IONQ, RGTI) \u2014 sector beta typically drags QUBT \u00b110%",
+          "Any DOE/DARPA quantum contract announcements",
+          "Next QUBT 8-K or capital raise filing \u2014 secondaries are a real risk after the spike",
+          "Mid-June quantum industry conferences and any TQI Solutions commercial traction updates"
+        ],
+        "classification": "fakeout",
+        "classification_reasoning": "Stock spiked to $14.45 intraweek on a Q1 double-beat but closed the week at $10.50 \u2014 retention of peak was only 25% and Friday alone gave back 10.6% on below-average volume (0.8x). The earnings catalyst faded within 48 hours, the follow-through day (5/14, +6.4%) was unwound entirely the next session, and vol_persistence at 0.18 shows the 2.49\u20133.55x volume surge on 5/12 did not stick. Classic earnings-pop-then-fade on a low-float quantum name.",
+        "prediction": "rangebound",
+        "prediction_confidence": "medium",
+        "prediction_rationale": "Base case is chop in the $9.50\u2013$11.75 zone over the next 2-3 weeks. The earnings catalyst is spent, $14+ supply is now overhead from trapped longs, and below-average down-volume on Friday's flush suggests sellers aren't urgent but buyers aren't stepping up either. Without a fresh quantum-sector catalyst, mean reversion toward the pre-spike $9.50 base is the path of least resistance.",
         "horizon_days": 15,
-        "support_level": 10.5,
-        "resistance_level": 13
+        "support_level": 9.5,
+        "resistance_level": 11.75
+      }
+    },
+    {
+      "ticker": "DGXX",
+      "event_count": 68,
+      "heuristic_classification": "unclear",
+      "metrics": {
+        "week_return_pct": 101.07,
+        "week_high": 9.19,
+        "week_low": 3.34,
+        "week_close": 7.54,
+        "retention_of_peak": 0.7,
+        "vol_persistence": 0.36,
+        "event_count": 68,
+        "news_density": 0.06
+      },
+      "analysis": {
+        "catalysts_ahead": [
+          "Upcoming earnings date (referenced in 5/15 news item as a generic reminder) \u2014 confirmation/guidance would re-rate the move",
+          "Any 8-K disclosure or PR explaining the parabolic move (none surfaced through 5/16)",
+          "Potential secondary offering / ATM raise \u2014 common after a low-priced name doubles on no news; would cap upside hard",
+          "Russell index reconstitution flows in late June if float/market cap thresholds shift"
+        ],
+        "classification": "unclear",
+        "classification_reasoning": "DGXX doubled (+101% week, $3.34\u2192$9.19 high, closed $7.54) with zero identifiable news catalyst across 50+ scans \u2014 every synthesis tagged \"move_unexplained_by_news.\" Volume did persist (3x relative volume multiple days, 1.2M shares Wed), and the stock retained ~70% of peak gains rather than collapsing, which keeps it out of pure fakeout territory. But with no fundamental anchor, an RSI that hit 91, and a -16% intraday flush on Thursday giving back nearly half the week's late gains, this is speculative/low-float momentum, not real_momentum.",
+        "prediction": "rangebound",
+        "prediction_confidence": "low",
+        "prediction_rationale": "Base case is a $6.50\u2013$8.50 chop while the post-double range digests. The Thursday flush ($9.08 \u2192 $6.92) established a clear distribution zone at $9, and Friday's bounce off $6.80 on declining volume (672k vs 1.2M) shows buyers still active but not aggressive. Without a news catalyst to re-ignite, the stock lacks the fuel for a fresh leg up, but the held bid above $6.80 argues against an immediate collapse back to the $3-4 base.",
+        "resistance_level": 9.19,
+        "support_level": 6.8,
+        "horizon_days": 15
       }
     }
   ]
