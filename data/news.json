@@ -1,122 +1,242 @@
 {
-  "generated_at": "2026-05-16T06:57:23.801627-04:00",
-  "ticker_news": {},
-  "macro_events": [
-    {
-      "event_summary": "Taiwan emerged as the central issue in Trump-Xi talks, with reporting suggesting the US is again steering away from firm Taiwan commitments, implying a softer US posture toward China on the Taiwan question.",
-      "primary_drivers": [
-        "Reduced near-term cross-strait military risk premium",
-        "Signaling of US-China diplomatic thaw / lower tail risk of conflict",
-        "Potentially weaker US backing for Taiwan defense posture"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "TSM",
-          "rationale": "Taiwan Semiconductor is the single most direct beneficiary of any de-escalation in Taiwan invasion/blockade tail risk \u2014 the entire ADR carries a persistent geopolitical discount versus its earnings power. A softer US stance reducing near-term confrontation lowers that risk premium.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ASML",
-          "rationale": "Dutch lithography monopolist sees Taiwan supply chain risk as a key overhang on TSMC capex visibility; reduced Taiwan tension supports TSMC's leading-edge buildout cadence.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed is the prime contractor for F-16V deliveries and PAC-3 missiles to Taiwan; a US posture pulling back from Taiwan commitments threatens the FMS pipeline and broader Pacific deterrence spending narrative.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon supplies NASAMS, Patriot, and Stinger systems heavily marketed for Taiwan defense; weaker US support reduces near-term FMS order visibility for Taiwan-bound systems.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "INTC",
-          "rationale": "Intel's Foundry pitch to US policymakers leans heavily on the 'Taiwan is unsafe' argument to justify CHIPS Act subsidies and customer reshoring; a de-escalation narrative undermines the urgency premium behind US foundry support.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GFS",
-          "rationale": "GlobalFoundries similarly benefits from the Taiwan-risk reshoring narrative for trailing-edge capacity; thaw reduces customer urgency to dual-source out of Taiwan.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AVAV",
-          "rationale": "AeroVironment's Switchblade loitering munitions have been explicitly tied to Taiwan asymmetric defense packages; softer US Taiwan stance pressures the order narrative.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "taiwan_trump_xi_talks_may2026",
-      "source_news_ids": [
-        "aa95311cfc06a47e"
-      ],
-      "headlines": [
-        "Why Taiwan became the defining issue in the Trump-Xi talks"
-      ]
-    },
-    {
-      "event_summary": "Putin and Xi to meet in Beijing May 19-20, signaling deepening Russia-China strategic and economic ties.",
-      "primary_drivers": [
-        "Geopolitical bloc consolidation increases defense spending expectations",
-        "Potential expansion of Russia-China energy/commodity trade outside Western channels",
-        "Risk of secondary sanctions tightening on China-Russia trade flows"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "LMT",
-          "rationale": "Deepening Russia-China alignment reinforces Western defense procurement thesis; Lockheed is the largest pure-play prime with direct exposure to F-35, missile defense, and PAC-3 orders accelerated by NATO/Pacific allies in response to bloc dynamics.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon's missile and air defense segment (Patriot, AMRAAM, SM-series) benefits from heightened allied procurement when Russia-China summits reinforce two-theater threat narrative.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Northrop's strategic deterrent franchise (B-21, Sentinel ICBM) is most levered to a narrative of formalized Russia-China strategic partnership requiring nuclear modernization.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CEG",
-          "rationale": "If summit produces expanded China imports of Russian oil/gas, US LNG export economics tighten relative to pipeline gas; Constellation's nuclear baseload becomes more attractive as energy security hedge \u2014 but link is multi-step.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "PDD",
-          "rationale": "Temu parent faces compounded risk: ADR delisting/sanctions premium plus Temu's direct-from-China model is the most politically exposed if US tightens de minimis or secondary sanctions in response to Russia-China deepening.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Expanded China purchases of discounted Russian crude (ESPO blend) displace marginal seaborne demand and pressure Brent-WTI spreads; Exxon's upstream realizations most sensitive among US majors.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "putin_xi_beijing_may2026",
-      "source_news_ids": [
-        "d4b78479f725a979"
-      ],
-      "headlines": [
-        "Russia's Putin to meet China's Xi in Beijing from May 19-20, Beijing and Moscow say"
-      ]
-    }
-  ]
+  "generated_at": "2026-05-16T09:06:37.885120-04:00",
+  "ticker_news": {
+    "FIG": [
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "be1e6e66833f8f59",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nebius Group, Cisco Systems, Micron Technology And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52622497/nebius-group-cisco-systems-micron-technology-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-16T12:32:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_weekly_buzz_recap",
+        "tickers_mentioned": [
+          "NBIS",
+          "CSCO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NU": [
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NU",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NU",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "be1e6e66833f8f59",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nebius Group, Cisco Systems, Micron Technology And More: 5 Stocks Investors Couldn't Stop Buzzing About This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52622497/nebius-group-cisco-systems-micron-technology-and-more-5-stocks-investors-couldnt-stop-buzzing-about-this-week",
+        "published_at": "2026-05-16T12:32:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_weekly_buzz_recap",
+        "tickers_mentioned": [
+          "NBIS",
+          "CSCO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QUBT": [
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QUBT",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8fbe5cda9ed70b3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QUBT",
+        "scope": "ticker",
+        "title": "Benzinga Bulls And Bears: Nvidia, Cisco, Virgin Galactic \u2014 And Inflation Fears Rattle Investors",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52622528/benzinga-bulls-and-bears-nvidia-cisco-virgin-galactic-and-inflation-fears-rattle-investors",
+        "published_at": "2026-05-16T12:50:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_bulls_bears_weekly_roundup",
+        "tickers_mentioned": [
+          "NVDA",
+          "CSCO",
+          "SPCE"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": []
 }
