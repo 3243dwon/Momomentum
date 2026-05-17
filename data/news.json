@@ -1,103 +1,383 @@
 {
-  "generated_at": "2026-05-17T09:03:55.645162-04:00",
-  "ticker_news": {},
-  "macro_events": [
-    {
-      "event_summary": "G7 finance ministers convene over warnings about severe economic fallout from a prolonged Strait of Hormuz closure, implying ongoing disruption to ~20% of global seaborne oil and ~20% of LNG trade.",
-      "primary_drivers": [
-        "Oil and LNG supply shock from blocked Persian Gulf chokepoint drives crude/gas prices higher",
-        "Tanker rerouting and scarcity of available vessels spikes shipping day rates",
-        "Energy-driven inflation re-acceleration pressures central banks and risk assets"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback Energy is a pure-play Permian US onshore producer with zero Hormuz transit exposure; realized prices rise directly with WTI/Brent spike while production is unaffected.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "EOG",
-          "rationale": "EOG Resources is a low-cost US onshore E&P; every $10 sustained crude move translates roughly linearly to free cash flow given no Middle East operational footprint.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LNG",
-          "rationale": "Cheniere Energy is the largest US LNG exporter; with ~20% of global LNG transiting Hormuz (Qatari cargoes) blocked, US Gulf Coast LNG becomes the marginal replacement supply and spot/contract margins widen.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FLNG",
-          "rationale": "Flex LNG operates LNG carriers on spot/short-term charters; rerouting Qatari volumes plus tight global LNG shipping capacity drives charter rates sharply higher.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers (product tankers) benefits from refined product dislocations as Middle East refineries (Ruwais, Ras Tanura) are stranded and product must be sourced from longer-haul Atlantic basin routes \u2014 ton-miles surge.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways operates VLCCs/Suezmaxes; with Gulf crude flow disrupted, available tonnage outside the Gulf commands premium rates and Atlantic basin tanker day rates spike on rerouting.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "ExxonMobil has Permian/Guyana production unaffected by Hormuz, while its integrated trading and refining arms profit from crude price dislocations and crack spread widening.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta Air Lines has jet fuel as ~25-30% of operating costs and limited hedging; a sustained crude spike from Hormuz closure directly compresses margins with weak ability to pass through via fares in summer travel season.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United Airlines similarly exposed to jet fuel cost shock; also has higher international/long-haul mix where rerouted flights around Middle East add fuel burn.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival Cruise burns bunker fuel and faces discretionary travel demand destruction as recession fears from G7 warnings dampen booking trends.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow Inc uses natural gas and naphtha as primary feedstocks; spiking global energy prices compress chemical margins, and weakening industrial demand from inflation shock hits volumes.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart faces diesel/transport cost inflation across its supply chain plus consumer wallet squeeze as gasoline prices rise \u2014 historically a clear headwind to discretionary basket size.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GM",
-          "rationale": "General Motors faces double hit: consumer demand destruction from gas price spike (worst for trucks/SUVs which are highest-margin) plus input cost pressure from energy-intensive steel and logistics.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "g7_hormuz_strait_closure_warning",
-      "source_news_ids": [
-        "3b628d0e292cd3a5"
-      ],
-      "headlines": [
-        "G7 finance ministers to meet amid warning of economic consequences of prolonged Strait of Hormuz closure"
-      ]
-    }
-  ]
+  "generated_at": "2026-05-17T10:51:03.204351-04:00",
+  "ticker_news": {
+    "AAOI": [
+      {
+        "id": "6e80dcdb3abf0e8b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Rocket Lab, Tower Semiconductor, And Palo Alto Are Among Top 10 Large-Cap Gainers Last Week (May 11-May 15): Are the Others in Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/large-cap/26/05/52624919/rocket-lab-tower-semiconductor-and-palo-alto-are-among-top-10-large-cap-gainers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:21:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_gainers_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "6e80dcdb3abf0e8b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Rocket Lab, Tower Semiconductor, And Palo Alto Are Among Top 10 Large-Cap Gainers Last Week (May 11-May 15): Are the Others in Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/large-cap/26/05/52624919/rocket-lab-tower-semiconductor-and-palo-alto-are-among-top-10-large-cap-gainers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:21:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_gainers_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "6e80dcdb3abf0e8b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab, Tower Semiconductor, And Palo Alto Are Among Top 10 Large-Cap Gainers Last Week (May 11-May 15): Are the Others in Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/large-cap/26/05/52624919/rocket-lab-tower-semiconductor-and-palo-alto-are-among-top-10-large-cap-gainers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:21:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_gainers_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "6e80dcdb3abf0e8b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab, Tower Semiconductor, And Palo Alto Are Among Top 10 Large-Cap Gainers Last Week (May 11-May 15): Are the Others in Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/large-cap/26/05/52624919/rocket-lab-tower-semiconductor-and-palo-alto-are-among-top-10-large-cap-gainers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:21:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_gainers_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "FIG": [
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "POET": [
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1c285635a716f575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "Consumer Tech News (May 11-15): Trump\u2013Xi Talk Fails to Deliver Chip Deal, Elon Musk vs. OpenAI Trail & More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624904/consumer-tech-news-may-11-15-trump-xi-talk-fails-to-deliver-chip-deal-elon-musk-vs-openai-trail-more",
+        "published_at": "2026-05-17T13:20:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_tech_roundup_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AU": [
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "IREN": [
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IREN",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IREN",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "JBS": [
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "JBS",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "JBS",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "OKLO": [
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OKLO",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OKLO",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKT": [
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKT",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cbe6cd720b92462f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKT",
+        "scope": "ticker",
+        "title": "Oklo, Rocket Companies, And Carvana Are Among Top 10 Large-Cap Losers Last Week (May 11-May 15): Are The Others In Your Portfolio?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52624903/oklo-rocket-companies-and-carvana-are-among-top-10-large-cap-losers-last-week-may-11-may-15-are-the-others-in-your-portfolio",
+        "published_at": "2026-05-17T13:20:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_losers_week_of_may_11_15",
+        "tickers_mentioned": [
+          "OKLO",
+          "RKT",
+          "CVNA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "F": [
+      {
+        "id": "8b0169e176ef396c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "This Week In Tesla: Elon Musk's EV Giant Falls Out Of Top 10 EV Makers, Gavin Newsom's Semi Truck Boost, Ford's Challenge And More",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52624881/this-week-in-tesla-elon-musks-ev-giant-falls-out-of-top-10-ev-makers-gavin-newsoms-semi-truck-boost-fords-challenge-and-more",
+        "published_at": "2026-05-17T13:01:38+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tesla_ev_market_weekly_may_11_15",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": []
 }
