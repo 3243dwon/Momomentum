@@ -1,154 +1,90 @@
 {
-  "generated_at": "2026-05-17T14:58:20.193435-04:00",
-  "ticker_news": {
-    "NVDA": [
-      {
-        "id": "49186b2041ec6a76",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Walmart Stock Hits Key Resistance As Valuation Concerns Creep Up Ahead Of Earnings",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52625311/walmart-stock-hits-key-resistance-as-valuation-concerns-creep-up-ahead-of-earnings",
-        "published_at": "2026-05-17T18:30:29+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_valuation_concerns_may2026",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "804385893389248f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Jensen Huang's Mother Taught Him English Even Though She Didn't Speak Any, Here's How It Helped Develop The Mindset That 'Defines' Today's Nvidia",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52625244/jensen-huangs-mother-taught-him-english-even-though-she-didnt-speak-any-heres-how-it-helped-develop-the-mindset-that-defines-todays-nvidia",
-        "published_at": "2026-05-17T17:31:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "jensen_huang_biography_mother",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RXT": [
-      {
-        "id": "3a74f2eb11f33393",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RXT",
-        "scope": "ticker",
-        "title": "Benzinga's 'Stock Whisper' Index: 5 Stocks Investors Secretly Monitor But Don't Talk About Yet",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52625303/benzingas-stock-whisper-index-5-stocks-investors-secretly-monitor-but-dont-talk-about-yet-111",
-        "published_at": "2026-05-17T18:29:43+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "benzinga_whisper_index_roundup",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
+  "generated_at": "2026-05-17T16:41:28.157971-04:00",
+  "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "Trump issued an escalatory verbal threat against Iran, raising risk of US/Israeli military action and Middle East supply disruption.",
+      "event_summary": "Trump escalates rhetoric on Iran (\"clock is ticking\"), raising geopolitical risk premium on oil ahead of Nvidia earnings, with markets focused on crude prices and Treasury yields.",
       "primary_drivers": [
-        "Geopolitical risk premium on crude oil (Strait of Hormuz transit risk)",
-        "Defense spending / munitions demand expectations",
-        "Flight to safe-haven assets (gold, treasuries)"
+        "Geopolitical risk premium on crude oil from potential Iran supply disruption / Strait of Hormuz risk",
+        "Defense spending tailwind from heightened Middle East tensions",
+        "Risk-off flow into safe havens (gold, Treasuries) competing with rate concerns"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil major with ~40% upstream earnings leverage; direct beneficiary of any crude price spike from Middle East escalation. No Iranian operations to lose.",
+          "rationale": "Largest US integrated oil major with upstream leverage to higher Brent/WTI; ~40% of earnings tied to upstream realizations, direct beneficiary of geopolitical risk premium.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Major integrated with significant upstream exposure; Permian and international production gains pricing leverage on any Iran-driven crude spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Pure-play US shale producer (Permian-heavy) with high oil-price beta; every $5 WTI increase materially boosts FCF. No Iran exposure.",
+          "rationale": "Permian pure-play with highest beta to WTI among large caps; every $1 WTI move ~$200M FCF sensitivity.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Maker of THAAD, PAC-3 Patriot interceptors and JASSM \u2014 exactly the munitions consumed in a Gulf/Israel conflict scenario; replenishment orders likely accelerate.",
-          "confidence": "high",
+          "rationale": "Prime contractor for missile defense (THAAD, PAC-3) directly relevant to Israel/Gulf state demand if Iran conflict escalates; recent precedent of replenishment orders after Mideast strikes.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon produces Patriot, SM-3/SM-6 missiles and Tomahawks; direct munitions consumption beneficiary if strikes occur. Also Iron Dome Tamir co-production with Rafael.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "B-2 stealth bomber sustainment plus Global Hawk ISR \u2014 both directly relevant to Iran strike scenarios. Munitions/missile defense exposure via IBCS.",
+          "rationale": "Patriot missile and Tomahawk manufacturer; direct beneficiary of any kinetic action against Iran via munitions replenishment contracts.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FANG",
-          "rationale": "Diamondback Energy is pure Permian crude; among highest oil-beta names in S&P. Benefits from any Hormuz-related crude spike with no offsetting downside.",
-          "confidence": "high",
+          "ticker": "STNG",
+          "rationale": "Product tanker rates spike on Strait of Hormuz disruption risk as ~20% of global oil transits there; Scorpio is largest pure-play product tanker.",
+          "confidence": "medium",
           "horizon": "days"
-        },
-        {
-          "ticker": "KTOS",
-          "rationale": "Kratos makes target drones and tactical missile systems (now sole-source on some programs); smaller-cap defense name with higher beta to a sustained DoD munitions surge.",
-          "confidence": "medium",
-          "horizon": "weeks"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Delta has significant transatlantic and Middle East routing exposure; higher jet fuel costs from oil spike compress margins, and any Gulf airspace closure forces costly reroutes. Highest international mix among US legacy carriers.",
+          "rationale": "Jet fuel is ~25% of operating cost; Delta has historically had less hedging than peers, direct margin hit from crude spike.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "UAL",
-          "rationale": "United has the largest international/long-haul exposure among US carriers including Tel Aviv and Gulf routes; fuel cost spike directly hits 25%+ of operating expense base.",
+          "rationale": "Similar jet fuel exposure with significant international/transatlantic routes that could see demand softness if Mideast conflict broadens.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Domestic-only carrier with no fuel hedges remaining; pure cost-side exposure to crude move.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Carnival has material Mediterranean/Middle East itinerary exposure and is highly fuel-sensitive (bunker fuel); cruise cancellations + fuel cost spike is a double hit.",
+          "rationale": "Cruise operator with high bunker fuel costs and discretionary travel demand sensitivity if geopolitical anxiety rises.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "EXPE",
-          "rationale": "Expedia bookings drop on travel risk-off; Middle East and Europe cancellations directly hit take-rate revenue. Discretionary travel demand is the first thing to soften on war headlines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart's low-income consumer base is most exposed to gasoline price increases at the pump, which crowds out discretionary spend. Already cited fuel/inflation sensitivity in recent guides.",
+          "ticker": "NVDA",
+          "rationale": "Earnings tonight into a tape distracted by oil/yields; higher yields compress multiples on long-duration tech regardless of print quality, raising bar for post-earnings reaction.",
           "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MAR",
-          "rationale": "Marriott has meaningful EMEA RevPAR exposure and corporate travel demand is sensitive to geopolitical shock; conference and inbound US travel cancellations follow escalation headlines.",
-          "confidence": "low",
-          "horizon": "days"
+          "horizon": "intraday"
         }
       ],
-      "dedup_group": "trump_iran_threat_may2026",
+      "dedup_group": "trump_iran_tensions_oil_rates",
       "source_news_ids": [
-        "6b8c8392101aab7c"
+        "5823c45db0dda49a"
       ],
       "headlines": [
-        "Trump warns Iran to 'get moving' or 'there won\u2019t be anything left'"
+        "Dow Jones Futures: Oil Prices, Yields In Focus As Trump Says 'Clock Is Ticking' For Iran; Nvidia Earnings Ahead"
       ]
     }
   ]
