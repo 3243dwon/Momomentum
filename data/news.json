@@ -1,102 +1,103 @@
 {
-  "generated_at": "2026-05-17T06:59:32.189469-04:00",
-  "ticker_news": {
-    "INTC": [
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NOW": [
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOW",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOW",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "XOM": [
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "XOM",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e3d50cfdb6377b70",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "XOM",
-        "scope": "ticker",
-        "title": "Tim Cook Finds Purpose, OpenAI-Apple Relationship Sours, Intel Strikes Deal: This Week In Appleverse",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52624745/tim-cook-finds-purpose-openai-apple-relationship-sours-intel-strikes-deal-this-week-in-appleverse",
-        "published_at": "2026-05-17T11:00:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tim_cook_openai_apple_intel_weekly",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-05-17T09:03:55.645162-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "G7 finance ministers convene over warnings about severe economic fallout from a prolonged Strait of Hormuz closure, implying ongoing disruption to ~20% of global seaborne oil and ~20% of LNG trade.",
+      "primary_drivers": [
+        "Oil and LNG supply shock from blocked Persian Gulf chokepoint drives crude/gas prices higher",
+        "Tanker rerouting and scarcity of available vessels spikes shipping day rates",
+        "Energy-driven inflation re-acceleration pressures central banks and risk assets"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is a pure-play Permian US onshore producer with zero Hormuz transit exposure; realized prices rise directly with WTI/Brent spike while production is unaffected.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EOG",
+          "rationale": "EOG Resources is a low-cost US onshore E&P; every $10 sustained crude move translates roughly linearly to free cash flow given no Middle East operational footprint.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere Energy is the largest US LNG exporter; with ~20% of global LNG transiting Hormuz (Qatari cargoes) blocked, US Gulf Coast LNG becomes the marginal replacement supply and spot/contract margins widen.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FLNG",
+          "rationale": "Flex LNG operates LNG carriers on spot/short-term charters; rerouting Qatari volumes plus tight global LNG shipping capacity drives charter rates sharply higher.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers (product tankers) benefits from refined product dislocations as Middle East refineries (Ruwais, Ras Tanura) are stranded and product must be sourced from longer-haul Atlantic basin routes \u2014 ton-miles surge.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways operates VLCCs/Suezmaxes; with Gulf crude flow disrupted, available tonnage outside the Gulf commands premium rates and Atlantic basin tanker day rates spike on rerouting.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "ExxonMobil has Permian/Guyana production unaffected by Hormuz, while its integrated trading and refining arms profit from crude price dislocations and crack spread widening.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta Air Lines has jet fuel as ~25-30% of operating costs and limited hedging; a sustained crude spike from Hormuz closure directly compresses margins with weak ability to pass through via fares in summer travel season.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United Airlines similarly exposed to jet fuel cost shock; also has higher international/long-haul mix where rerouted flights around Middle East add fuel burn.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival Cruise burns bunker fuel and faces discretionary travel demand destruction as recession fears from G7 warnings dampen booking trends.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow Inc uses natural gas and naphtha as primary feedstocks; spiking global energy prices compress chemical margins, and weakening industrial demand from inflation shock hits volumes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart faces diesel/transport cost inflation across its supply chain plus consumer wallet squeeze as gasoline prices rise \u2014 historically a clear headwind to discretionary basket size.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GM",
+          "rationale": "General Motors faces double hit: consumer demand destruction from gas price spike (worst for trucks/SUVs which are highest-margin) plus input cost pressure from energy-intensive steel and logistics.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "g7_hormuz_strait_closure_warning",
+      "source_news_ids": [
+        "3b628d0e292cd3a5"
+      ],
+      "headlines": [
+        "G7 finance ministers to meet amid warning of economic consequences of prolonged Strait of Hormuz closure"
+      ]
+    }
+  ]
 }
