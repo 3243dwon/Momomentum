@@ -1,196 +1,154 @@
 {
-  "generated_at": "2026-05-17T12:50:28.346134-04:00",
+  "generated_at": "2026-05-17T14:58:20.193435-04:00",
   "ticker_news": {
     "NVDA": [
       {
-        "id": "ee93c9f183962749",
+        "id": "49186b2041ec6a76",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Cisco Stock Is Up 55% This Year, But Two Key Risks May Trigger Reversal",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52625053/cisco-stock-is-up-55-this-year-but-two-key-risks-may-trigger-reversal",
-        "published_at": "2026-05-17T15:04:07+00:00",
-        "type": "analyst",
+        "title": "Walmart Stock Hits Key Resistance As Valuation Concerns Creep Up Ahead Of Earnings",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52625311/walmart-stock-hits-key-resistance-as-valuation-concerns-creep-up-ahead-of-earnings",
+        "published_at": "2026-05-17T18:30:29+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "cisco_risk_analysis_article",
+        "dedup_group": "walmart_valuation_concerns_may2026",
         "tickers_mentioned": [
-          "CSCO"
+          "WMT"
         ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "804385893389248f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Jensen Huang's Mother Taught Him English Even Though She Didn't Speak Any, Here's How It Helped Develop The Mindset That 'Defines' Today's Nvidia",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52625244/jensen-huangs-mother-taught-him-english-even-though-she-didnt-speak-any-heres-how-it-helped-develop-the-mindset-that-defines-todays-nvidia",
+        "published_at": "2026-05-17T17:31:44+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "jensen_huang_biography_mother",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "RXT": [
       {
-        "id": "ee93c9f183962749",
+        "id": "3a74f2eb11f33393",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "RXT",
         "scope": "ticker",
-        "title": "Cisco Stock Is Up 55% This Year, But Two Key Risks May Trigger Reversal",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52625053/cisco-stock-is-up-55-this-year-but-two-key-risks-may-trigger-reversal",
-        "published_at": "2026-05-17T15:04:07+00:00",
-        "type": "analyst",
+        "title": "Benzinga's 'Stock Whisper' Index: 5 Stocks Investors Secretly Monitor But Don't Talk About Yet",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52625303/benzingas-stock-whisper-index-5-stocks-investors-secretly-monitor-but-dont-talk-about-yet-111",
+        "published_at": "2026-05-17T18:29:43+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "cisco_risk_analysis_article",
-        "tickers_mentioned": [
-          "CSCO"
-        ],
+        "dedup_group": "benzinga_whisper_index_roundup",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Walmart and Target earnings are imminent and expected to reveal how the Iran war has shifted US consumer shopping behavior (likely via higher gas prices, inflation anxiety, and trade-down behavior).",
+      "event_summary": "Trump issued an escalatory verbal threat against Iran, raising risk of US/Israeli military action and Middle East supply disruption.",
       "primary_drivers": [
-        "Higher oil/gas prices squeezing discretionary wallet share",
-        "Consumer trade-down to value/staples retailers",
-        "Inflation re-acceleration pressuring discretionary categories"
+        "Geopolitical risk premium on crude oil (Strait of Hormuz transit risk)",
+        "Defense spending / munitions demand expectations",
+        "Flight to safe-haven assets (gold, treasuries)"
       ],
       "beneficiaries": [
         {
-          "ticker": "WMT",
-          "rationale": "Primary beneficiary of consumer trade-down \u2014 grocery-heavy mix (~60% of US sales) and price leadership capture share when gas prices rise and middle-income consumers seek value. Pre-print read-through is typically positive when macro stress hits.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with ~40% upstream earnings leverage; direct beneficiary of any crude price spike from Middle East escalation. No Iranian operations to lose.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale producer (Permian-heavy) with high oil-price beta; every $5 WTI increase materially boosts FCF. No Iran exposure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Maker of THAAD, PAC-3 Patriot interceptors and JASSM \u2014 exactly the munitions consumed in a Gulf/Israel conflict scenario; replenishment orders likely accelerate.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "DG",
-          "rationale": "Dollar General's low-income core customer is most pressured by gas/food inflation from oil spike; historically peer-correlated rotation when WMT prints strong trade-down commentary.",
+          "ticker": "RTX",
+          "rationale": "Raytheon produces Patriot, SM-3/SM-6 missiles and Tomahawks; direct munitions consumption beneficiary if strikes occur. Also Iron Dome Tamir co-production with Rafael.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "B-2 stealth bomber sustainment plus Global Hawk ISR \u2014 both directly relevant to Iran strike scenarios. Munitions/missile defense exposure via IBCS.",
           "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback Energy is pure Permian crude; among highest oil-beta names in S&P. Benefits from any Hormuz-related crude spike with no offsetting downside.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "DLTR",
-          "rationale": "Same trade-down thesis as DG \u2014 fixed-price-point value retailer that gains traffic when consumer wallets are squeezed by energy inflation.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COST",
-          "rationale": "Membership warehouse model benefits from bulk-buying behavior during inflation; sympathy bid on positive WMT staples commentary.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KR",
-          "rationale": "Pure-play grocery \u2014 gains relative share-of-wallet as consumers shift from discretionary to food at home; reads through directly from WMT grocery comp.",
+          "ticker": "KTOS",
+          "rationale": "Kratos makes target drones and tactical missile systems (now sole-source on some programs); smaller-cap defense name with higher beta to a sustained DoD munitions surge.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "TGT",
-          "rationale": "Target's mix is ~50% discretionary (apparel, home, hardlines) vs WMT's staples tilt \u2014 most exposed to the exact behavior change the article flags. War-driven wallet squeeze hits TGT comps harder; the article framing itself implies a TGT-negative read.",
+          "ticker": "DAL",
+          "rationale": "Delta has significant transatlantic and Middle East routing exposure; higher jet fuel costs from oil spike compress margins, and any Gulf airspace closure forces costly reroutes. Highest international mix among US legacy carriers.",
           "confidence": "high",
-          "horizon": "weeks"
+          "horizon": "days"
         },
         {
-          "ticker": "BBY",
-          "rationale": "Consumer electronics is the most deferrable big-ticket category when gas prices rise and geopolitical anxiety hits; direct read-through from any soft TGT discretionary commentary.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RH",
-          "rationale": "High-end discretionary home furnishings \u2014 sentiment-sensitive consumer pulls back first during war/inflation shock; reads through from TGT home category weakness.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "W",
-          "rationale": "Wayfair's online furniture/home is pure discretionary with thin margins; trade-down environment pressures both demand and promo intensity.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KSS",
-          "rationale": "Mid-tier department store with discretionary apparel exposure to the same pressured middle-income consumer that trades down from TGT to WMT.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ETSY",
-          "rationale": "Discretionary non-essential gifting marketplace \u2014 first category cut when consumers triage spending under energy-price shock.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_war_consumer_behavior_walmart_target",
-      "source_news_ids": [
-        "575d17d2e75ff693"
-      ],
-      "headlines": [
-        "Walmart and Target are about to show just how much shopping habits have changed due to the Iran war"
-      ]
-    },
-    {
-      "event_summary": "Moody's economist Mark Zandi warns that job growth has slowed materially since Trump's tariffs took effect and that a recession may follow.",
-      "primary_drivers": [
-        "Recession risk repricing \u2192 bid for duration/safe-havens",
-        "Consumer discretionary demand destruction from tariff-driven cost increases and weakening labor market",
-        "Rate-cut expectations rise as Fed pivots to growth concerns"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "WMT",
-          "rationale": "Trade-down beneficiary if labor market weakens; Walmart historically gains share in recessions as middle-income shoppers shift from specialty/department stores to value grocery.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DLTR",
-          "rationale": "Dollar-store traffic accelerates in early-recession environments with weakening job growth; direct beneficiary of consumer trade-down.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "JPM",
-          "rationale": "Largest C&I lender; recession call from Moody's directly raises consensus loan-loss provisioning estimates and pressures investment banking pipeline.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "ticker": "UAL",
+          "rationale": "United has the largest international/long-haul exposure among US carriers including Tel Aviv and Gulf routes; fuel cost spike directly hits 25%+ of operating expense base.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
           "ticker": "CCL",
-          "rationale": "Cruise lines are highly cyclical discretionary with leveraged balance sheets; deteriorating job market hits forward bookings and pricing power directly.",
-          "confidence": "high",
+          "rationale": "Carnival has material Mediterranean/Middle East itinerary exposure and is highly fuel-sensitive (bunker fuel); cruise cancellations + fuel cost spike is a double hit.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "EXPE",
+          "rationale": "Expedia bookings drop on travel risk-off; Middle East and Europe cancellations directly hit take-rate revenue. Discretionary travel demand is the first thing to soften on war headlines.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart's low-income consumer base is most exposed to gasoline price increases at the pump, which crowds out discretionary spend. Already cited fuel/inflation sensitivity in recent guides.",
+          "confidence": "low",
           "horizon": "weeks"
         },
         {
           "ticker": "MAR",
-          "rationale": "Hotel RevPAR is one of the cleanest real-time recession indicators; business travel cuts come first when corporates see job growth roll over.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "F",
-          "rationale": "Auto demand is doubly hit: tariffs raise vehicle prices (Zandi's mechanism for the slowdown) while weakening employment crushes financing-dependent unit demand. Ford has high US dealer/credit exposure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RH",
-          "rationale": "High-end discretionary furniture with direct tariff cost exposure AND labor-market-sensitive demand; one of the clearest losers to Zandi's specific thesis.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "URI",
-          "rationale": "United Rentals is a leading cyclical \u2014 non-residential construction and industrial equipment rental demand inflects down 1-2 quarters before recession; high beta to job-growth deceleration.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "rationale": "Marriott has meaningful EMEA RevPAR exposure and corporate travel demand is sensitive to geopolitical shock; conference and inbound US travel cancellations follow escalation headlines.",
+          "confidence": "low",
+          "horizon": "days"
         }
       ],
-      "dedup_group": "moody_zandi_tariffs_job_growth_recession_warning",
+      "dedup_group": "trump_iran_threat_may2026",
       "source_news_ids": [
-        "34449a40ab5db1ee"
+        "6b8c8392101aab7c"
       ],
       "headlines": [
-        "Moody's Mark Zandi says job growth has declined since Trump's tariffs \u2014 and warns a recession may be next"
+        "Trump warns Iran to 'get moving' or 'there won\u2019t be anything left'"
       ]
     }
   ]
