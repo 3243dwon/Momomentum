@@ -1,5 +1,306 @@
 {
-  "generated_at": "2026-05-17T18:46:33.373917-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-05-18T00:08:07.222596-04:00",
+  "ticker_news": {
+    "NVDA": [
+      {
+        "id": "cffd8c29cdaaba66",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Anthony Scaramucci Says China Built Its Military And Became A Superpower On 'Back Of Deals' After WTO Entry: 'They Took Our Technology\u2026",
+        "url": "https://www.benzinga.com/news/politics/26/05/52625966/anthony-scaramucci-china-superpower-wto-technology",
+        "published_at": "2026-05-18T03:38:28+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "scaramucci_china_wto_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1be4076efa8776f0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Will NVIDIA Stock Explode? Prediction Market Bettors See Odds Of NVDA Surging Above This Level Amid Critical Q1 Earnings",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52625952/nvidia-stock-prediction-market-nvda-q1-earnings",
+        "published_at": "2026-05-18T03:30:37+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "nvda_prediction_market_q1_earnings_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "China's April economic data disappointed, with retail sales growth slowing to its weakest pace since 2022, signaling weakening Chinese consumer demand.",
+      "primary_drivers": [
+        "Weaker Chinese consumer spending hits US companies with high China revenue exposure",
+        "Softer Chinese industrial activity weighs on commodity demand (copper, iron ore, oil)",
+        "Disinflationary impulse from China supports lower global yields / duration"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart sources heavily from China; weaker Chinese domestic demand pressures Chinese exporters to discount, lowering Walmart's input/COGS and supporting margins.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LVS",
+          "rationale": "Las Vegas Sands derives the majority of EBITDA from Macau; slowing Chinese retail sales and consumer weakness directly threatens gaming/mass-market revenue.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WYNN",
+          "rationale": "Significant Macau exposure (~70% of property EBITDA); soft Chinese consumer is a direct headwind to gaming volumes.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "EL",
+          "rationale": "Estee Lauder has ~30% revenue from China/travel retail; weak Chinese retail sales directly hits prestige beauty sell-through, a recurring earnings risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NKE",
+          "rationale": "Greater China is ~15% of Nike revenue and has been a consistent disappointment; soft April retail print signals continued discretionary weakness.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SBUX",
+          "rationale": "China is Starbucks' second-largest market (~10% of revenue) facing intense local competition; weak consumer data compounds same-store sales pressure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FCX",
+          "rationale": "Freeport-McMoRan is highly levered to copper prices; China accounts for ~50%+ of global copper demand and weak industrial/property data pressures copper.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar's construction equipment demand correlates with Chinese fixed asset investment and global mining capex driven by Chinese commodity demand.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "China is ~20%+ of Tesla deliveries; weakening Chinese consumer and intensifying domestic EV price war pressures volume and margin outlook.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "china_april_retail_sales_miss_2026",
+      "source_news_ids": [
+        "ed564a04181d5a3b"
+      ],
+      "headlines": [
+        "China's April economic data underwhelms, with retail sales growth slowing to lowest since 2022"
+      ]
+    },
+    {
+      "event_summary": "Trump-Xi summit produces deals on US soybean purchases by China and rare earth supply arrangements, with China signaling tariff cuts.",
+      "primary_drivers": [
+        "Restored Chinese demand for US agricultural exports (soybeans)",
+        "Easing of rare earth export restrictions / supply normalization",
+        "Tariff de-escalation reducing input costs and trade friction for US importers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "ADM",
+          "rationale": "Archer Daniels Midland is a top US soybean processor/exporter; resumed Chinese soybean buying directly lifts crush margins and export volumes. China historically takes ~60% of US soybean exports.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BG",
+          "rationale": "Bunge is a pure-play global oilseed processor with major US soybean export infrastructure; direct beneficiary of restored China soy flows.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DE",
+          "rationale": "Deere \u2014 higher soybean prices and farmer income from restored China demand lifts ag equipment capex; farm income is the primary driver of large-tractor/combine sales.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CF",
+          "rationale": "CF Industries \u2014 restored soy/corn planting economics increases nitrogen fertilizer demand; farm-income sensitive.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MP",
+          "rationale": "MP Materials \u2014 if rare earth deal eases Chinese export restrictions, near-term spot prices could soften BUT a formal US-China framework legitimizes domestic supply chain and likely comes with continued US government support for MP as the domestic champion. Net direction ambiguous; momentum trade is positive on headline.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "BA",
+          "rationale": "Boeing \u2014 China tariff cuts and diplomatic thaw historically precede large Chinese aircraft order announcements; China is Boeing's single largest deferred-demand market.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx \u2014 tariff cuts and resumed trade flows increase trans-Pacific air freight volumes, where FDX has direct revenue exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar \u2014 direct China construction-equipment revenue exposure (~5-10%) plus broader cyclical re-rating on trade de-escalation.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "TLRY",
+          "rationale": "Not relevant \u2014 removing. (placeholder)",
+          "confidence": "low",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "TMC",
+          "rationale": "TMC the metals company \u2014 deep-sea critical minerals thesis partly relies on China supply weaponization risk; a US-China rare earth deal undermines the urgency narrative.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin \u2014 to the extent the summit signals broader US-China de-escalation, defense names tied to China-tension premium can see modest multiple compression. Weak link, headline-only.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "dedup_group": "trump_xi_summit_tariff_deals_may_2026",
+      "source_news_ids": [
+        "f9a8f041066956b4"
+      ],
+      "headlines": [
+        "White House touts deals on soybeans and rare earths after Trump-Xi summit, while China talks up tariff cuts"
+      ]
+    },
+    {
+      "event_summary": "Oil prices spike as Trump warns Iran \"clock is ticking,\" raising fears of military escalation and Strait of Hormuz supply disruption.",
+      "primary_drivers": [
+        "Higher crude prices lift upstream E&P revenue and margins",
+        "Geopolitical risk premium on Middle East supply (Strait of Hormuz transit risk)",
+        "Defense spending/tension premium on prime contractors"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream exposure; every $5 Brent move flows directly to E&P earnings. Limited Iranian supply exposure since U.S. sanctions already in place.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta domestic E&P (Permian-heavy) with significant leverage to WTI price; historically one of the largest movers on oil spikes.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Mid-cap E&P with Egypt/North Sea operations and high oil-price torque; tends to outperform on geopolitical premium days.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Prime beneficiary of Middle East tension narrative \u2014 Patriot/THAAD missile defense and PAC-3 demand rises with Iran escalation risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Tomahawks, SM-3/SM-6 interceptors used in any Iran strike scenario; consistent geopolitical-tension beta.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian operator with high oil-price sensitivity and low hedging; direct beneficiary of sustained WTI premium.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Product tanker operator \u2014 Hormuz disruption forces longer ton-mile routes, spiking clean tanker rates (similar pattern to 2019 tanker attacks).",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services leverage to higher activity if sustained prices encourage drilling; second-derivative trade behind E&Ps.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25% of operating costs; airlines are the cleanest short on oil spikes with limited near-term hedging coverage.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same jet fuel exposure as DAL; international long-haul routes also hit harder by sustained fuel premium.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest unwound much of its famous fuel hedge book \u2014 now directly exposed to crude spikes with thin margin buffer.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise lines burn marine fuel; bunker prices track crude and squeeze already-thin operating margins.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Fuel surcharges lag spot prices; jet + diesel exposure across Express and Ground compresses near-term margins.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs rise with crude; commodity chemicals struggle to pass through rapid input cost spikes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Consumer staples retailer pressured by gasoline-driven discretionary income drag; historically underperforms on sustained gas price spikes above $4.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "trump_iran_warning_oil_spike_may_2026",
+      "source_news_ids": [
+        "c77ccf79b441fd88"
+      ],
+      "headlines": [
+        "Oil jumps as Trump warns 'Clock is Ticking' for Iran, fanning fears of escalation in conflict"
+      ]
+    }
+  ]
 }
