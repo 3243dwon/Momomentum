@@ -1,305 +1,644 @@
 {
-  "generated_at": "2026-05-18T00:08:07.222596-04:00",
+  "generated_at": "2026-05-18T06:14:45.377611-04:00",
   "ticker_news": {
-    "NVDA": [
+    "MU": [
       {
-        "id": "cffd8c29cdaaba66",
+        "id": "d48ad53fcd43f1fe",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Anthony Scaramucci Says China Built Its Military And Became A Superpower On 'Back Of Deals' After WTO Entry: 'They Took Our Technology\u2026",
-        "url": "https://www.benzinga.com/news/politics/26/05/52625966/anthony-scaramucci-china-superpower-wto-technology",
-        "published_at": "2026-05-18T03:38:28+00:00",
-        "type": "macro_geopol",
+        "title": "What's Going On With Micron Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52628177/whats-going-on-with-micron-stock-monday-2",
+        "published_at": "2026-05-18T10:06:14+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "scaramucci_china_wto_commentary",
+        "dedup_group": "micron_stock_movement_monday",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "1be4076efa8776f0",
+        "id": "92c9913c58e635fd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Comparative Study: Micron Technology And Industry Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52627958/comparative-study-micron-technology-and-industry-competitors-in-semiconductors-amp-semiconductor-eq",
+        "published_at": "2026-05-18T09:59:06+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "micron_industry_comparative_study",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cac5634eb4ef0408",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Dogecoin Can Break Out, Says This Veteran Wall Street Macro Strategist: DOGE 'Quietly Signaling' The Next Crypto Move?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52626190/dogecoin-breakout-wall-street-macro-strategist-next-crypto-move",
+        "published_at": "2026-05-18T05:24:57+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "dogecoin_breakout_macro_strategist_view",
+        "tickers_mentioned": [
+          "DOGE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "d48ad53fcd43f1fe",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Will NVIDIA Stock Explode? Prediction Market Bettors See Odds Of NVDA Surging Above This Level Amid Critical Q1 Earnings",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52625952/nvidia-stock-prediction-market-nvda-q1-earnings",
-        "published_at": "2026-05-18T03:30:37+00:00",
-        "type": "rumor",
+        "title": "What's Going On With Micron Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52628177/whats-going-on-with-micron-stock-monday-2",
+        "published_at": "2026-05-18T10:06:14+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "nvda_prediction_market_q1_earnings_speculation",
+        "dedup_group": "micron_stock_movement_monday",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a2e3baaf2e549505",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Assessing NVIDIA's Performance Against Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52627957/assessing-nvidias-performance-against-competitors-in-semiconductors-amp-semiconductor-equipment-ind",
+        "published_at": "2026-05-18T09:58:35+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvda_competitive_assessment",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "86e8dd99e7270303",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Elizabeth Warren Warns AI Could Trigger Mass Layoffs, Says 'Your Health Care Should Not Be Dependent On Your Job'",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52627866/elizabeth-warren-warns-ai-could-trigger-mass-layoffs-says-your-health-care-should-not-be-dependent-on-your-job",
+        "published_at": "2026-05-18T09:44:30+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "elizabeth_warren_ai_layoff_warning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dd769020d629dbe4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Drop Following Drone Strike On UAE Nuclear Plant\u2014Regeneron Pharma, NextNRG, ServiceNow In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52627563/stock-market-today-dow-jones-sp-500-futures-drop-following-drone-strike-on-uae-nuclear-plant-regeneron-pharma-nextnrg-servicenow-in-focus",
+        "published_at": "2026-05-18T09:10:28+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "uae_nuclear_plant_drone_strike",
+        "tickers_mentioned": [
+          "REGN",
+          "NRG",
+          "NOW"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8d9fc052e6bcdbbc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia's Upcoming Results And ETFs With Skin In The Game",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52627154/nvidia-results-etfs-most-exposure",
+        "published_at": "2026-05-18T08:13:58+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "nvidia_upcoming_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "aa5d6cf7f9d4c88f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Sean Duffy Says 'Do-Nothing' Pete Buttigieg Sat On 'Mountains Of Cash,' Refused To Fix Air Traffic Control Towers",
+        "url": "https://www.benzinga.com/news/politics/26/05/52626074/sean-duffy-says-do-nothing-pete-buttigieg-sat-on-mountains-of-cash-refused-to-fix-air-traffic-control-towers",
+        "published_at": "2026-05-18T04:40:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sean_duffy_political_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ONDS": [
+      {
+        "id": "8941cad8b96019bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "Industry Comparison: Evaluating Ondas Against Competitors In Communications Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52628044/industry-comparison-evaluating-ondas-against-competitors-in-communications-equipment-industry",
+        "published_at": "2026-05-18T09:59:38+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ondas_industry_comparative_study",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NOW": [
+      {
+        "id": "40d573cf76035ae5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOW",
+        "scope": "ticker",
+        "title": "What's Going On With ServiceNow Stock Monday?",
+        "url": "https://www.benzinga.com/markets/large-cap/26/05/52627683/whats-going-on-with-servicenow-stock-monday",
+        "published_at": "2026-05-18T09:24:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "now_whats_going_on_generic",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dd769020d629dbe4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOW",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Drop Following Drone Strike On UAE Nuclear Plant\u2014Regeneron Pharma, NextNRG, ServiceNow In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52627563/stock-market-today-dow-jones-sp-500-futures-drop-following-drone-strike-on-uae-nuclear-plant-regeneron-pharma-nextnrg-servicenow-in-focus",
+        "published_at": "2026-05-18T09:10:28+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "uae_nuclear_plant_drone_strike",
+        "tickers_mentioned": [
+          "REGN",
+          "NRG",
+          "NOW"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "dd769020d629dbe4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Drop Following Drone Strike On UAE Nuclear Plant\u2014Regeneron Pharma, NextNRG, ServiceNow In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52627563/stock-market-today-dow-jones-sp-500-futures-drop-following-drone-strike-on-uae-nuclear-plant-regeneron-pharma-nextnrg-servicenow-in-focus",
+        "published_at": "2026-05-18T09:10:28+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "uae_nuclear_plant_drone_strike",
+        "tickers_mentioned": [
+          "REGN",
+          "NRG",
+          "NOW"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "China's April economic data disappointed, with retail sales growth slowing to its weakest pace since 2022, signaling weakening Chinese consumer demand.",
+      "event_summary": "Ongoing Iran war has already saddled global companies with $25B+ in direct costs (insurance, shipping, supply disruption, write-downs), with the bill still rising.",
       "primary_drivers": [
-        "Weaker Chinese consumer spending hits US companies with high China revenue exposure",
-        "Softer Chinese industrial activity weighs on commodity demand (copper, iron ore, oil)",
-        "Disinflationary impulse from China supports lower global yields / duration"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart sources heavily from China; weaker Chinese domestic demand pressures Chinese exporters to discount, lowering Walmart's input/COGS and supporting margins.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "LVS",
-          "rationale": "Las Vegas Sands derives the majority of EBITDA from Macau; slowing Chinese retail sales and consumer weakness directly threatens gaming/mass-market revenue.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "WYNN",
-          "rationale": "Significant Macau exposure (~70% of property EBITDA); soft Chinese consumer is a direct headwind to gaming volumes.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "EL",
-          "rationale": "Estee Lauder has ~30% revenue from China/travel retail; weak Chinese retail sales directly hits prestige beauty sell-through, a recurring earnings risk.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NKE",
-          "rationale": "Greater China is ~15% of Nike revenue and has been a consistent disappointment; soft April retail print signals continued discretionary weakness.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SBUX",
-          "rationale": "China is Starbucks' second-largest market (~10% of revenue) facing intense local competition; weak consumer data compounds same-store sales pressure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FCX",
-          "rationale": "Freeport-McMoRan is highly levered to copper prices; China accounts for ~50%+ of global copper demand and weak industrial/property data pressures copper.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar's construction equipment demand correlates with Chinese fixed asset investment and global mining capex driven by Chinese commodity demand.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "China is ~20%+ of Tesla deliveries; weakening Chinese consumer and intensifying domestic EV price war pressures volume and margin outlook.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "china_april_retail_sales_miss_2026",
-      "source_news_ids": [
-        "ed564a04181d5a3b"
-      ],
-      "headlines": [
-        "China's April economic data underwhelms, with retail sales growth slowing to lowest since 2022"
-      ]
-    },
-    {
-      "event_summary": "Trump-Xi summit produces deals on US soybean purchases by China and rare earth supply arrangements, with China signaling tariff cuts.",
-      "primary_drivers": [
-        "Restored Chinese demand for US agricultural exports (soybeans)",
-        "Easing of rare earth export restrictions / supply normalization",
-        "Tariff de-escalation reducing input costs and trade friction for US importers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "ADM",
-          "rationale": "Archer Daniels Midland is a top US soybean processor/exporter; resumed Chinese soybean buying directly lifts crush margins and export volumes. China historically takes ~60% of US soybean exports.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BG",
-          "rationale": "Bunge is a pure-play global oilseed processor with major US soybean export infrastructure; direct beneficiary of restored China soy flows.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DE",
-          "rationale": "Deere \u2014 higher soybean prices and farmer income from restored China demand lifts ag equipment capex; farm income is the primary driver of large-tractor/combine sales.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CF",
-          "rationale": "CF Industries \u2014 restored soy/corn planting economics increases nitrogen fertilizer demand; farm-income sensitive.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MP",
-          "rationale": "MP Materials \u2014 if rare earth deal eases Chinese export restrictions, near-term spot prices could soften BUT a formal US-China framework legitimizes domestic supply chain and likely comes with continued US government support for MP as the domestic champion. Net direction ambiguous; momentum trade is positive on headline.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "Boeing \u2014 China tariff cuts and diplomatic thaw historically precede large Chinese aircraft order announcements; China is Boeing's single largest deferred-demand market.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "FedEx \u2014 tariff cuts and resumed trade flows increase trans-Pacific air freight volumes, where FDX has direct revenue exposure.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar \u2014 direct China construction-equipment revenue exposure (~5-10%) plus broader cyclical re-rating on trade de-escalation.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "TLRY",
-          "rationale": "Not relevant \u2014 removing. (placeholder)",
-          "confidence": "low",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "TMC",
-          "rationale": "TMC the metals company \u2014 deep-sea critical minerals thesis partly relies on China supply weaponization risk; a US-China rare earth deal undermines the urgency narrative.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin \u2014 to the extent the summit signals broader US-China de-escalation, defense names tied to China-tension premium can see modest multiple compression. Weak link, headline-only.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "trump_xi_summit_tariff_deals_may_2026",
-      "source_news_ids": [
-        "f9a8f041066956b4"
-      ],
-      "headlines": [
-        "White House touts deals on soybeans and rare earths after Trump-Xi summit, while China talks up tariff cuts"
-      ]
-    },
-    {
-      "event_summary": "Oil prices spike as Trump warns Iran \"clock is ticking,\" raising fears of military escalation and Strait of Hormuz supply disruption.",
-      "primary_drivers": [
-        "Higher crude prices lift upstream E&P revenue and margins",
-        "Geopolitical risk premium on Middle East supply (Strait of Hormuz transit risk)",
-        "Defense spending/tension premium on prime contractors"
+        "Middle East oil supply risk premium / Strait of Hormuz disruption",
+        "Surging maritime war-risk insurance and shipping reroute costs",
+        "Defense spending acceleration on sustained conflict"
       ],
       "beneficiaries": [
         {
           "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure; every $5 Brent move flows directly to E&P earnings. Limited Iranian supply exposure since U.S. sanctions already in place.",
+          "rationale": "Largest US integrated with ~2.4M boe/d upstream production largely outside the Middle East; benefits directly from elevated Brent risk premium without proportional asset risk. Strait of Hormuz disruption widens light-sweet differentials in its favor.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "OXY",
-          "rationale": "High-beta domestic E&P (Permian-heavy) with significant leverage to WTI price; historically one of the largest movers on oil spikes.",
+          "ticker": "CVX",
+          "rationale": "Similar Brent-leveraged upstream exposure; Tengiz/Permian production benefits from oil price spike. Has Middle East exposure but primarily through Israel (Tamar/Leviathan gas) which sees increased European LNG demand premium.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "Mid-cap E&P with Egypt/North Sea operations and high oil-price torque; tends to outperform on geopolitical premium days.",
-          "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime beneficiary of Middle East tension narrative \u2014 Patriot/THAAD missile defense and PAC-3 demand rises with Iran escalation risk.",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "Direct beneficiary of sustained munitions consumption \u2014 THAAD, PAC-3 Patriot interceptors being drawn down by Israel/US CENTCOM in active Iran engagement. Replenishment contracts already flowing; backlog visibility extends.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon makes Tomahawks, SM-3/SM-6 interceptors used in any Iran strike scenario; consistent geopolitical-tension beta.",
-          "confidence": "medium",
-          "horizon": "days"
+          "rationale": "Patriot/SM-3/SM-6 interceptors are core consumables in this conflict. Raytheon segment seeing accelerated foreign military sales orders from Gulf states upgrading air defense.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "FANG",
-          "rationale": "Pure-play Permian operator with high oil-price sensitivity and low hedging; direct beneficiary of sustained WTI premium.",
+          "rationale": "Pure-play Permian producer with zero Middle East operational risk \u2014 captures full WTI price spike with no offsetting supply chain hit. Highest oil-price beta among US E&Ps.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "STNG",
-          "rationale": "Product tanker operator \u2014 Hormuz disruption forces longer ton-mile routes, spiking clean tanker rates (similar pattern to 2019 tanker attacks).",
+          "ticker": "LNG",
+          "rationale": "Cheniere is the dominant US LNG exporter; European/Asian buyers paying premium to lock in non-Middle East gas as Qatar LNG transit through Hormuz becomes risk-priced. TTF/JKM spreads widening.",
           "confidence": "medium",
-          "horizon": "weeks"
+          "horizon": "months"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services leverage to higher activity if sustained prices encourage drilling; second-derivative trade behind E&Ps.",
-          "confidence": "low",
-          "horizon": "weeks"
+          "ticker": "NOC",
+          "rationale": "Global Hawk ISR demand, B-21 program tailwinds, and solid rocket motor (Aerojet) production for interceptors all see direct pull from sustained conflict operations.",
+          "confidence": "medium",
+          "horizon": "months"
         }
       ],
       "losers": [
         {
           "ticker": "DAL",
-          "rationale": "Jet fuel is ~25% of operating costs; airlines are the cleanest short on oil spikes with limited near-term hedging coverage.",
+          "rationale": "Significant transatlantic and Asia routes rerouting around Middle East airspace, adding fuel burn and crew costs. Jet fuel crack spreads widening on top of higher Brent. Limited hedging coverage in current cycle.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "UAL",
-          "rationale": "Same jet fuel exposure as DAL; international long-haul routes also hit harder by sustained fuel premium.",
+          "rationale": "Heaviest international exposure among US carriers including India/Asia routes that traverse Iranian/Gulf airspace; rerouting adds ~1-3 hours flight time and material fuel cost. $25B global bill explicitly cites aviation rerouting.",
           "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest unwound much of its famous fuel hedge book \u2014 now directly exposed to crude spikes with thin margin buffer.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise lines burn marine fuel; bunker prices track crude and squeeze already-thin operating margins.",
-          "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
           "ticker": "FDX",
-          "rationale": "Fuel surcharges lag spot prices; jet + diesel exposure across Express and Ground compresses near-term margins.",
+          "rationale": "Global air freight network heavily uses Gulf hub transits; war-risk surcharges and rerouting hit unit economics. Memphis-Dubai-Asia lane disruption raises cost per package.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs rise with crude; commodity chemicals struggle to pass through rapid input cost spikes.",
+          "ticker": "CCL",
+          "rationale": "Mediterranean and Middle East cruise itineraries cancelled/rerouted; consumer travel demand to region collapses. Carnival has highest Med exposure among cruise operators.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "WMT",
-          "rationale": "Consumer staples retailer pressured by gasoline-driven discretionary income drag; historically underperforms on sustained gas price spikes above $4.",
+          "rationale": "Imported goods cost inflation from shipping reroutes + higher diesel/fuel passes into landed cost. Limited ability to raise prices on price-sensitive consumer; margin compression risk.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Schlumberger has meaningful Middle East services revenue (~25-30%); active conflict disrupts onshore operations, delays projects, and raises personnel evacuation/security costs. Already flagged regional headwinds.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Similar Middle East services exposure though smaller than SLB; operational disruption to Gulf-region completions and pressure pumping contracts.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "iran_war_global_companies_25b_impact",
+      "source_news_ids": [
+        "9cad504dc0f8d8d5"
+      ],
+      "headlines": [
+        "Iran war saddles global companies with $25 billion bill - and counting"
+      ]
+    },
+    {
+      "event_summary": "China's economy is slowing meaningfully, reigniting expectations of fresh fiscal and monetary stimulus from Beijing.",
+      "primary_drivers": [
+        "Weaker Chinese end-demand pressures companies with high China revenue exposure",
+        "Anticipation of PBOC/fiscal stimulus boosts commodity and China-proxy names on expected demand rebound",
+        "Lower Chinese growth weighs on industrial commodity prices near-term but stimulus hopes create a bid"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PDD",
+          "rationale": "Domestic Chinese consumption play; benefits disproportionately from consumer-targeted stimulus given low-income customer base most sensitive to subsidies.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LVS",
+          "rationale": "Las Vegas Sands derives ~65% of EBITDA from Macau; Chinese consumer slowdown directly hits gaming revenue and mass-market visitation before any stimulus impact lands.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WYNN",
+          "rationale": "Wynn Macau is ~70% of property EBITDA; same Macau gross gaming revenue exposure as LVS to weakening mainland consumer.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FCX",
+          "rationale": "Freeport copper revenue heavily tied to Chinese construction/property demand; slowdown pressures copper prices near-term despite stimulus-hope offset.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar has meaningful China construction equipment exposure; weaker fixed-asset investment from property/infrastructure slowdown hits Asia-Pacific segment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "China is ~22% of Tesla deliveries via Shanghai Gigafactory; consumer slowdown plus intensifying BYD competition pressures both volume and pricing.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "EL",
+          "rationale": "Est\u00e9e Lauder derives ~28% of sales from Asia/travel retail centered on Chinese consumer; prestige beauty is highly discretionary and first to be cut in slowdown.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NKE",
+          "rationale": "Greater China is ~15% of Nike revenue and has been a stated weak spot; consumer slowdown extends the China overhang already pressuring the stock.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MGM",
+          "rationale": "MGM China Macau exposure (~25% of property EBITDA) makes it the third casino name directly hit by mainland consumer weakness.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "china_economic_slowdown_stimulus_talk",
+      "source_news_ids": [
+        "f05ea2a27e09a644"
+      ],
+      "headlines": [
+        "China\u2019s Economy Succumbs to Slowdown and Reignites Stimulus Talk"
+      ]
+    },
+    {
+      "event_summary": "Ryanair's CFO warns of a jet fuel supply crunch in Europe that could push weaker European carriers out of business, with Ryanair preparing for an \"armageddon\" scenario.",
+      "primary_drivers": [
+        "European jet fuel supply tightness raising crack spreads and refining margins",
+        "Capacity exit by weaker European carriers benefits surviving low-cost incumbents",
+        "Higher fuel cost passthrough pressures unhedged airlines' margins"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PBF",
+          "rationale": "US refiner with high distillate yield; tight European jet fuel market widens transatlantic jet/distillate crack spreads, lifting margins on exports from East Coast/Gulf refineries.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Largest US independent refiner with significant export capacity to Europe and Latin America; benefits directly from elevated jet fuel cracks driven by European supply shortfall.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAC",
+          "rationale": "Danaos and tanker peers aside, product tanker demand rises on transatlantic jet fuel arbitrage; ton-mile demand expansion for clean product carriers shipping jet to Europe.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 pure-play product tanker operator; European jet fuel crunch increases long-haul clean product shipments (US Gulf, Middle East, India to Europe), tightening MR/LR rates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "JBLU",
+          "rationale": "JetBlue has weaker balance sheet and minimal fuel hedging; while US-focused, sympathy selling on any global jet fuel cost spike hits the most fuel-cost-sensitive US carrier hardest.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ALK",
+          "rationale": "Alaska Air \u2014 limited fuel hedging program and lower margin buffer than legacy carriers; rising jet crack spreads globally compress unit economics.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "American Airlines does not hedge fuel and carries high leverage; any sustained move higher in global jet fuel pricing (European crunch tightens global balances) directly hits EPS.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest unwound much of its famous hedging program; higher global jet fuel from European tightness pressures CASM-ex with limited offset.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "jet_fuel_crisis_european_carriers",
+      "source_news_ids": [
+        "bb641511733fbc5d"
+      ],
+      "headlines": [
+        "Ryanair has plans for 'armageddon' scenario as CFO warns weaker European carriers may not survive jet fuel crunch"
+      ]
+    },
+    {
+      "event_summary": "US Treasury yields surge alongside a global bond selloff driven by renewed inflation fears.",
+      "primary_drivers": [
+        "Higher long-end yields raise discount rates on long-duration cash flows",
+        "Steeper curve / higher rates expand net interest margins for banks",
+        "Inflation fears boost demand for real-asset and commodity hedges"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab earnings are highly leveraged to short-end rates via client cash sweep spreads; rising yields directly expand net interest revenue and ease bond-portfolio AOCI drag.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Large-cap money-center bank with significant asset sensitivity \u2014 higher yields lift NIM on floating-rate loan book, and steeper curve supports trading desk activity in rates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MET",
+          "rationale": "Life insurer with long-dated liability book; higher long yields improve reinvestment income on the float and lift book value of new fixed-income purchases. Direct duration beneficiary.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ALL",
+          "rationale": "P&C insurer float is reinvested at higher yields, boosting investment income; also benefits from inflation-driven premium repricing.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Bond rout drives record volumes in interest-rate futures and options (Treasury, SOFR complex), which is CME's largest revenue segment.",
+          "confidence": "high",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DHI",
+          "rationale": "Largest US homebuilder \u2014 higher 10Y yields push 30Y mortgage rates up, suppressing affordability and order volumes. Direct rate-sensitive demand channel.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "Z",
+          "rationale": "Zillow revenue tied to housing transaction volumes; mortgage rate spike from yield surge directly suppresses listings and Premier Agent demand.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a bond-proxy net-lease REIT with long-duration lease cash flows; rising yields compress cap-rate spreads and pressure the equity.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NEE",
+          "rationale": "NextEra carries heavy capex and leverage tied to renewables project finance; higher yields raise cost of capital and compress IRRs on new projects, plus utility bond-proxy de-rating.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple, long-duration software name trading on 2028+ FCF; among the most sensitive megacap-adjacent names to discount-rate shocks.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVNA",
+          "rationale": "Highly levered balance sheet with junk-rated debt; bond rout widens HY spreads and raises refi risk on already-stressed capital structure.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "treasury_yields_inflation_bond_rout",
+      "source_news_ids": [
+        "5cbd766b4f89e21f"
+      ],
+      "headlines": [
+        "Treasury yields rise as inflation fears drive global bond rout"
+      ]
+    },
+    {
+      "event_summary": "A potential strike by 47,000 Samsung workers in South Korea looms as the country's president pressures for a labor deal, threatening disruption to memory chip and smartphone production.",
+      "primary_drivers": [
+        "Supply disruption risk to global DRAM/NAND memory production",
+        "Competitive share gain for rival memory and foundry makers",
+        "Potential spot memory price spike benefiting non-Samsung memory suppliers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MU",
+          "rationale": "Micron is the most direct US-listed beneficiary \u2014 a Samsung production halt would tighten global DRAM/NAND supply, lifting spot memory prices where Micron has near-pure-play exposure (~75%+ of revenue from memory).",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WDC",
+          "rationale": "Western Digital's NAND flash business (Kioxia JV) gains pricing power and potential share if Samsung NAND output is disrupted.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSM",
+          "rationale": "TSMC is Samsung Foundry's main rival; a prolonged strike would push leading-edge foundry customers (Qualcomm, Nvidia AI chips) further toward TSMC, accelerating share gains.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AAPL",
+          "rationale": "Apple competes directly with Samsung smartphones globally; disruption to Galaxy production during a key sales window could marginally lift iPhone share, though Apple also sources OLED panels from Samsung Display (offsetting risk).",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LPL",
+          "rationale": "LG Display would gain OLED panel orders if Samsung Display operations are disrupted by the broader labor action.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "trump_iran_warning_oil_spike_may_2026",
+      "losers": [
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials counts Samsung among its top customers for wafer fab equipment; a labor dispute risks capex deferral and slows tool pull-ins for memory fabs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research has heavy memory-equipment exposure with Samsung as a key customer; production stoppage threatens near-term shipments and acceptance revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "KLA's process control tools sell into Samsung's memory and foundry lines; strike-driven capex hesitation hits backlog conversion.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "Samsung is a major EUV customer; extended labor disruption could delay lithography tool deliveries and acceptance milestones.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AVGO",
+          "rationale": "Broadcom supplies networking/custom silicon partly fabbed at Samsung Foundry; any output disruption pressures delivery commitments for AI accelerator customers.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DELL",
+          "rationale": "Dell PC and server builds depend on Samsung DRAM/NAND; a memory price spike from supply disruption compresses hardware gross margins.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HPQ",
+          "rationale": "HP PC margins are sensitive to DRAM/NAND spot prices; Samsung strike-driven memory inflation is a direct COGS headwind.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "samsung_strike_labor_dispute",
       "source_news_ids": [
-        "c77ccf79b441fd88"
+        "a5786647927203c7"
       ],
       "headlines": [
-        "Oil jumps as Trump warns 'Clock is Ticking' for Iran, fanning fears of escalation in conflict"
+        "Samsung strike involving 47,000 workers looms as South Korea\u2019s president urges labor deal"
       ]
     }
   ]
