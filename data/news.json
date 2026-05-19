@@ -1,170 +1,283 @@
 {
-  "generated_at": "2026-05-19T05:55:33.427283-04:00",
+  "generated_at": "2026-05-19T06:54:04.320920-04:00",
   "ticker_news": {
-    "AS": [
-      {
-        "id": "60d311ff716c441f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AS",
-        "scope": "ticker",
-        "title": "Nasdaq Falls Amid Decline In Tech Stocks: Investor Sentiment Drops, Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52653860/nasdaq-falls-amid-decline-in-tech-stocks-investor-sentiment-drops-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-19T05:41:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_tech_decline_sentiment_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "MU": [
       {
-        "id": "79837e938bce7f08",
+        "id": "882cabd77d20e29a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Ross Gerber Says 'Pay Attention' To Nvidia And Micron As Jensen Huang Predicts AI Explosion",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52655312/ross-gerber-nvidia-micron-jensen-huang-ai-explosion",
-        "published_at": "2026-05-19T09:11:06+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ross_gerber_nvidia_micron_commentary",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "9fb2814a9fe1c16e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
-        "published_at": "2026-05-19T08:45:17+00:00",
-        "type": "analyst",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
+        "type": "other",
         "impact": "medium",
-        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
         "tickers_mentioned": [
+          "STX",
           "MU",
-          "INTC"
+          "WDC"
         ],
         "route_to_synthesis": true
       },
       {
-        "id": "9fb2814a9fe1c16e",
+        "id": "a987e8f2c9070cb6",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
-        "published_at": "2026-05-19T08:45:17+00:00",
-        "type": "analyst",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
         "impact": "medium",
-        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
         "tickers_mentioned": [
+          "STX",
           "MU",
-          "INTC"
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "882cabd77d20e29a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a987e8f2c9070cb6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
         ],
         "route_to_synthesis": true
       }
     ],
     "SNDK": [
       {
-        "id": "9fb2814a9fe1c16e",
+        "id": "882cabd77d20e29a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
-        "published_at": "2026-05-19T08:45:17+00:00",
-        "type": "analyst",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
+        "type": "other",
         "impact": "medium",
-        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
         "tickers_mentioned": [
+          "STX",
           "MU",
-          "INTC"
+          "WDC"
         ],
         "route_to_synthesis": true
       },
       {
-        "id": "9fb2814a9fe1c16e",
+        "id": "a987e8f2c9070cb6",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
-        "published_at": "2026-05-19T08:45:17+00:00",
-        "type": "analyst",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
         "impact": "medium",
-        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
         "tickers_mentioned": [
+          "STX",
           "MU",
-          "INTC"
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "882cabd77d20e29a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a987e8f2c9070cb6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
         ],
         "route_to_synthesis": true
       }
     ],
     "STX": [
       {
-        "id": "64b76e647897d674",
+        "id": "882cabd77d20e29a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "STX",
         "scope": "ticker",
-        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52655126/sp500-may-19-open-up-or-down-polymarket-tech-selloff-ai-stocks",
-        "published_at": "2026-05-19T08:58:20+00:00",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
         "type": "other",
-        "impact": "low",
-        "dedup_group": "market_open_sentiment_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a987e8f2c9070cb6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "882cabd77d20e29a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "SanDisk, Seagate, Micron Decline In Tuesday Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52656591/sandisk-seagate-micron-decline-in-tuesday-pre-market-whats-going-on",
+        "published_at": "2026-05-19T10:48:16+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a987e8f2c9070cb6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "Micron, Seagate, Western Digital Sink On Capacity Crunch Fears",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52656297/micron-seagate-western-digital-sink-on-capacity-crunch-fears",
+        "published_at": "2026-05-19T10:33:23+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "stx_mu_sndk_capacity_crunch_may_2026",
+        "tickers_mentioned": [
+          "STX",
+          "MU",
+          "WDC"
+        ],
+        "route_to_synthesis": true
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Long-end Treasury sell-off continues with 30-year yield approaching highest level since 1999, signaling persistent inflation/fiscal concerns and tighter financial conditions for long-duration assets.",
+      "event_summary": "Japan and China are leading a foreign government exodus from US Treasurys amid Gulf War fallout and dollar/currency concerns, with Chinese holdings hitting an 18-year low.",
       "primary_drivers": [
-        "Higher long-end discount rate compresses present value of long-duration cash flows",
-        "Net interest margin expansion for asset-sensitive lenders and float-heavy insurers",
-        "Higher mortgage rates and capex hurdle rates pressure rate-sensitive sectors (housing, REITs, utilities)"
+        "Foreign demand decline at Treasury auctions pushes long-end yields higher",
+        "Dollar reserve status questioned \u2192 rotation into gold and hard assets",
+        "Higher term premium hurts long-duration assets and rate-sensitive sectors"
       ],
       "beneficiaries": [
         {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab's earnings are highly leveraged to short/intermediate yields on its cash sweep balances; sustained high-yield regime improves NIM and reduces the bank transfer/cash sorting drag that has weighed on the stock.",
+          "ticker": "NEM",
+          "rationale": "Newmont is the largest pure-play gold miner; foreign CB Treasury dumping historically coincides with reserve diversification into gold, lifting bullion prices and miner operating leverage.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AEM",
+          "rationale": "Agnico Eagle is a senior gold producer with high earnings sensitivity to spot gold; benefits directly from reserve diversification bid.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WPM",
+          "rationale": "Wheaton Precious Metals streaming model provides leveraged exposure to gold/silver price spike from reserve rotation without operating cost drag.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "MET",
-          "rationale": "MetLife's large general account is reinvested at higher long-end yields; 30Y at 25-year highs directly lifts new-money yields on annuity/life liabilities, a multi-year tailwind to spread income.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "PRU",
-          "rationale": "Prudential is the most duration-asset-sensitive lifeco \u2014 long-dated liability book gets reinvested at materially higher yields, expanding investment spread on its retirement and annuities business.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ALL",
-          "rationale": "Allstate's investment portfolio (~$70B) rolls into higher yields; P&C insurers with shorter-duration float see investment income step up within quarters while pricing power remains intact.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
           "ticker": "ICE",
-          "rationale": "Intercontinental Exchange owns the dominant Treasury and MBS trading/clearing infrastructure; record long-end volatility and yield repricing drive higher rates-complex volumes.",
+          "rationale": "Intercontinental Exchange owns Treasury trading venues and clearing; higher Treasury volatility and volumes from foreign selling boost transaction revenue.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "CME Group dominates Treasury futures and FX futures; surging hedging demand around UST volatility and dollar fears drives contract volumes.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "MicroStrategy is the listed proxy for the bitcoin debasement-hedge thesis; de-dollarization narrative drives BTC bid which it is levered to.",
           "confidence": "medium",
           "horizon": "days"
         }
@@ -172,185 +285,254 @@
       "losers": [
         {
           "ticker": "DHI",
-          "rationale": "D.R. Horton's volume and gross margins depend on 30Y mortgage rates which track the long bond; rates at 1999-era highs crush affordability and force incentive spend at the largest US homebuilder.",
+          "rationale": "D.R. Horton is the largest US homebuilder with direct mortgage-rate demand sensitivity; rising 10y yields from foreign UST selling raises mortgage rates.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "NEE",
-          "rationale": "NextEra is the bond-proxy utility with the most renewable capex pipeline; higher long rates raise WACC on long-payback projects and compress the valuation multiple on its regulated yield.",
-          "confidence": "high",
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab carries large AFS/HTM Treasury portfolios; renewed long-end yield spike re-opens unrealized loss wound from 2023 regional bank stress.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "O",
-          "rationale": "Realty Income's triple-net REIT model is essentially a bond \u2014 long-duration lease cash flows discounted at higher rates plus rising refinancing costs on its investment-grade debt stack.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ARM",
-          "rationale": "Long-duration, high-multiple growth name with limited near-term FCF; valuation compresses mechanically as the long-end discount rate rises to multi-decade highs.",
+          "rationale": "Realty Income is a long-duration triple-net REIT explicitly traded as a bond proxy; rising 10y from foreign UST selling directly compresses the multiple.",
           "confidence": "medium",
           "horizon": "weeks"
-        },
-        {
-          "ticker": "CCI",
-          "rationale": "Crown Castle carries heavy long-dated debt and a tower lease book that behaves like a bond; both refi cost and cap-rate-driven NAV move against it as 30Y yields spike.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "High terminal-value stock with auto loan demand sensitivity \u2014 higher long rates hit both DCF valuation and consumer financing affordability for its vehicles.",
-          "confidence": "medium",
-          "horizon": "days"
         }
       ],
-      "dedup_group": "us_treasury_30yr_yield_near_1999_high",
+      "dedup_group": "japan_china_treasury_retreat_gulf_war",
       "source_news_ids": [
-        "5fb8713e96364dfb"
+        "1f3906ead6e4f9d0"
       ],
       "headlines": [
-        "U.S. Treasury sell-off eases, traders eye highest 30-year yield since 1999"
+        "Japan, China lead foreign government retreat from U.S. Treasurys as Gulf War fallout stokes currency fears"
       ]
     },
     {
-      "event_summary": "Iran war is disrupting and exposing vulnerabilities in the global AI semiconductor supply chain, raising costs and questions about component/energy sourcing.",
+      "event_summary": "Home Depot reported Q1 2026 sales up 5% with management calling out a resilient core shopper despite higher gas prices.",
       "primary_drivers": [
-        "Middle East energy/shipping disruption raising input and logistics costs for chip fabs",
-        "Heightened urgency for diversified, onshore semiconductor and rare materials supply",
-        "Risk premium on AI hardware names with concentrated overseas exposure"
+        "Resilient discretionary spend by home improvement / Pro customer",
+        "Peer read-through to home improvement and housing-adjacent retailers",
+        "Signal that higher gas prices are not yet crimping middle/upper-income consumer"
       ],
       "beneficiaries": [
         {
-          "ticker": "INTC",
-          "rationale": "Largest US-domiciled leading-edge fab buildout (Arizona, Ohio). A narrative reframing AI supply chain fragility directly supports the onshoring thesis and CHIPS Act tailwinds for Intel Foundry.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MP",
-          "rationale": "MP Materials is the only scaled US rare earths/critical minerals producer. AI hardware supply chain fragility narrative drives reshoring bid for non-China material inputs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Direct beneficiary of higher Brent crude from Middle East conflict; integrated supermajor with limited Iranian/Strait of Hormuz operational exposure relative to peers.",
+          "ticker": "LOW",
+          "rationale": "Lowe's is the closest pure-play peer to HD with ~75% overlapping product mix; a positive HD comp print historically drives same-day sympathy moves and analyst read-throughs on Pro/DIY demand.",
           "confidence": "high",
           "horizon": "days"
         },
         {
+          "ticker": "FND",
+          "rationale": "Floor & Decor sells hard-surface flooring directly tied to home improvement / remodel demand; HD's resilient comp signals the remodel cycle isn't deteriorating, supporting FND's most-watched comp narrative.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SHW",
+          "rationale": "Sherwin-Williams sells paint through HD and tracks remodel/repaint demand closely; a strong HD print supports the Pro contractor activity thesis that drives SHW's largest segment.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSCO",
+          "rationale": "Tractor Supply shares the rural/Pro hardlines customer; HD's commentary on resilient core shopper supports the broader hardlines retail read despite gas headwinds.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WSM",
+          "rationale": "Williams-Sonoma's home furnishings demand is correlated with home improvement / remodel activity; HD's beat undercuts the bear case that the home category is rolling over.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "home_depot_q1_2026_resilient_shopper",
+      "source_news_ids": [
+        "a8043528dcf349d1"
+      ],
+      "headlines": [
+        "Home Depot says core shopper is resilient in the face of higher gas prices, sales rise 5%"
+      ]
+    },
+    {
+      "event_summary": "Putin visits Xi in Beijing seeking deeper China support on energy purchases, technology/components, and diplomatic backing amid ongoing Ukraine war and Western sanctions.",
+      "primary_drivers": [
+        "Deepening Russia-China axis raises Western secondary sanctions risk on Chinese firms",
+        "Continued redirection of Russian crude/gas to China entrenches discounted Asian energy flows",
+        "Geopolitical bloc-hardening reinforces defense spending and supply chain decoupling narratives"
+      ],
+      "beneficiaries": [
+        {
           "ticker": "LMT",
-          "rationale": "Iran war escalation drives munitions replenishment (PAC-3, THAAD interceptors used in Israel/Gulf theater) \u2014 direct revenue line, not sentiment.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Deepening Russia-China alignment reinforces the multi-year Western defense spending cycle; LMT is the most direct pure-play on US/NATO procurement (F-35, PAC-3, HIMARS) and benefits from sustained Ukraine-related munitions replenishment.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
           "ticker": "RTX",
-          "rationale": "Raytheon makes Patriot/SM-series interceptors actively consumed in Middle East theater; backlog visibility extends from active conflict.",
-          "confidence": "high",
-          "horizon": "weeks"
+          "rationale": "Patriot/Stinger/NASAMS demand directly tied to Ukraine resupply and NATO restocking; a visible Russia-China consolidation headline keeps the threat-environment thesis intact.",
+          "confidence": "medium",
+          "horizon": "days"
         },
         {
-          "ticker": "GFS",
-          "rationale": "GlobalFoundries is a US/Singapore/Germany trailing-edge fab \u2014 onshoring narrative beneficiary with no China leading-edge entanglement.",
+          "ticker": "NOC",
+          "rationale": "Strategic deterrence beneficiary (B-21, Sentinel ICBM, space) \u2014 narrative of two-front China+Russia challenge supports the strategic systems budget line.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CEG",
+          "rationale": "Energy security and US-domiciled baseload generation gain relative appeal as the Russia-China energy bloc reduces fungibility of global gas/oil; Constellation is the cleanest US nuclear pure-play.",
           "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "NVDA",
-          "rationale": "Highest-beta name to 'AI supply chain fragility' framing. Depends on TSMC Taiwan fab + CoWoS packaging + HBM from Korea \u2014 any cost passthrough or shipping/energy disruption compresses near-term margins and headline-trades the stock lower.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSM",
-          "rationale": "Article's premise is that AI chip supply chain has weak spots; TSMC is the single largest concentration point. Higher energy costs in Taiwan fabs + shipping insurance premiums hit gross margin directly.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AVGO",
-          "rationale": "Custom AI ASIC business depends on same TSMC/HBM stack as NVDA; networking silicon ships through chokepoints affected by Gulf shipping risk premia.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel cost spike from Brent rally on Iran conflict; international route disruption over Middle East airspace adds direct cost.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Heaviest international/long-haul exposure among US carriers; Middle East airspace closures force costly reroutes plus fuel headwind.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "AI server assembler with thin margins and full dependence on Nvidia GPU + HBM supply; any chip cost passthrough compresses already-pressured gross margin.",
+          "ticker": "WYNN",
+          "rationale": "Macau-concentrated revenue makes WYNN sensitive to a deteriorating US-China diplomatic backdrop and any tightening of cross-strait/sanctions rhetoric flowing from a Putin-Xi summit.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "days"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Continued Russian crude flowing to China at discount keeps marginal Asian barrels well-supplied, capping Brent upside; integrated majors lose the geopolitical risk premium tailwind on days when Russia-China energy cooperation is the headline.",
+          "confidence": "low",
+          "horizon": "intraday"
         }
       ],
-      "dedup_group": "iran_war_ai_supply_chain_vulnerability",
+      "dedup_group": "putin_beijing_russia_china_demands",
       "source_news_ids": [
-        "8c7aa7cfde76e3e1"
+        "792028bdbbd62f4a"
       ],
       "headlines": [
-        "The Iran war is exposing weak spots in the AI supply chain"
+        "Putin in Beijing: 3 things Russia needs from China"
       ]
     },
     {
-      "event_summary": "Barclays warns that the recent record pace of inflows into US equity funds may be peaking and could reverse, signaling potential positioning unwind risk.",
+      "event_summary": "A MarketWatch opinion/analysis piece argues that structurally higher interest rates may be the new regime for the coming generation, warning of a regime shift away from the low-rate era.",
       "primary_drivers": [
-        "Stretched positioning / crowded long risk",
-        "Potential fund flow reversal away from US equities toward international/cash",
-        "Sentiment indicator turning contrarian"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "equity_fund_inflows_barclays_reversal_warning",
-      "source_news_ids": [
-        "50cf315a6b00b95e"
-      ],
-      "headlines": [
-        "Investors are piling into U.S. equity funds at the fastest pace in years. But now the pendulum may swing back, warns Barclays"
-      ]
-    },
-    {
-      "event_summary": "Bank of Japan may slow its bond-purchase tapering after long-end JGB yields spiked and rattled global bond markets.",
-      "primary_drivers": [
-        "BOJ staying more accommodative weakens the yen and supports global duration",
-        "Lower-for-longer JGB yields reduce repatriation pressure from Japanese investors, keeping flows in US Treasuries and credit",
-        "Carry trade resumption (borrow JPY, buy higher-yielding assets)"
+        "Higher discount rate compresses long-duration equity valuations",
+        "Higher net interest margins and reinvestment yields for financials/insurers",
+        "Rising debt service costs pressure leveraged balance sheets and rate-sensitive sectors (REITs, utilities, homebuilders)"
       ],
       "beneficiaries": [
         {
-          "ticker": "TM",
-          "rationale": "Toyota \u2014 largest Japanese exporter ADR; ~25% of operating profit sensitivity to USD/JPY. Weaker yen from a dovish BOJ shift directly lifts translated earnings.",
-          "confidence": "high",
+          "ticker": "SCHW",
+          "rationale": "Schwab's earnings are highly levered to short rates via client cash sweep spreads and money market reinvestment; a structurally higher rate regime expands NIM and reduces the bull case for cash sorting reversal.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "MUFG",
-          "rationale": "Mitsubishi UFJ \u2014 a BOJ that tempers taper means JGB curve stays more stable, reducing mark-to-market losses on the bank's massive JGB book that hit headlines during the yield wobble.",
+          "ticker": "MET",
+          "rationale": "Life insurers like MetLife reinvest long-dated liability portfolios at higher yields; a sustained higher rate regime directly lifts spread income and reduces reserve strain on long-duration liabilities.",
           "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "MCO",
+          "rationale": "Higher rates and a structural rate regime shift drive sustained refinancing/issuance cycles and credit-rating demand; Moody's also earns float on cash. Note: opinion piece is low-impact catalyst.",
+          "confidence": "low",
           "horizon": "days"
         }
       ],
-      "losers": [],
-      "dedup_group": "boj_taper_bond_market_may2026",
+      "losers": [
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a bond-proxy net-lease REIT with ~6yr+ duration profile; higher structural rates raise its cost of capital and compress the spread investment model, plus dividend yield competes directly with risk-free rates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DHI",
+          "rationale": "D.R. Horton's volume is directly tied to mortgage affordability; a regime of structurally higher mortgage rates caps the addressable buyer pool and pressures margins via incentives/rate buydowns.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "NEE",
+          "rationale": "NextEra carries heavy debt to fund renewable capex; higher-for-longer rates raise refinancing costs and reduce the IRR spread on new project development versus risk-free benchmarks.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "higher_rates_outlook_2026",
       "source_news_ids": [
-        "c9f787d0f3f55f03"
+        "a280c0a8d47912d2"
       ],
       "headlines": [
-        "Analysis-BOJ could temper its taper as bond wobbles rattle markets"
+        "These charts offer a warning to the next generation \u2014 a new era of higher rates may be coming"
+      ]
+    },
+    {
+      "event_summary": "Aluminum prices forecast to potentially reach $4,000/ton amid the most bullish supply/demand setup in over 50 years.",
+      "primary_drivers": [
+        "Higher realized aluminum prices flow directly to primary producer margins",
+        "Smelter capacity constraints + power cost issues limit supply response",
+        "Downstream fabricators and aluminum-intensive buyers face input cost inflation"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AA",
+          "rationale": "Alcoa is the largest US-listed pure-play primary aluminum producer; ~every $100/ton move in LME aluminum translates roughly $150-200M to annual EBITDA. A move toward $4,000 from current ~$2,500 levels would be a step-change in earnings.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CENX",
+          "rationale": "Century Aluminum is a near-pure-play US primary aluminum smelter with high operating leverage; smaller cap means greater percentage earnings sensitivity to LME price than AA.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KALU",
+          "rationale": "Kaiser Aluminum is a fabricator but with pricing power tied to aluminum benchmarks via Midwest premium pass-through; benefits from rising contained-metal margins though less directly than smelters.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ACH",
+          "rationale": "Aluminum Corp of China (Chalco) ADR \u2014 global primary aluminum producer with direct LME price leverage; trades on the same thesis as AA/CENX.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "BA",
+          "rationale": "Boeing is a major aluminum consumer for airframes; sustained $4,000/ton aluminum raises input costs on already-thin commercial aircraft margins, though long-term fixed-price contracts dampen near-term impact.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BUD",
+          "rationale": "Anheuser-Busch InBev is one of the largest aluminum can buyers globally; rising aluminum costs (via Midwest premium) pressure packaging COGS for beverage makers.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KO",
+          "rationale": "Coca-Cola is heavily exposed to aluminum can costs; historical commentary shows aluminum is a top-3 commodity input. Sustained higher pricing pressures gross margin absent price hikes.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "F",
+          "rationale": "Ford's F-150 aluminum-body trucks are its highest-margin product; aluminum is a meaningful input cost and rising prices pressure auto gross margins more than peers using steel bodies.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "aluminum_4000_per_ton_bullish_setup",
+      "source_news_ids": [
+        "4acb5ebb530421af"
+      ],
+      "headlines": [
+        "Aluminum could hit $4,000 a ton amid most bullish set-up in over 50 years"
       ]
     }
   ]
