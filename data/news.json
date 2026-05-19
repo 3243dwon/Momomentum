@@ -1,23 +1,357 @@
 {
-  "generated_at": "2026-05-19T00:01:27.236919-04:00",
+  "generated_at": "2026-05-19T05:55:33.427283-04:00",
   "ticker_news": {
-    "MSTR": [
+    "AS": [
       {
-        "id": "99d52edbdad42e42",
+        "id": "60d311ff716c441f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "AS",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP Flat, While Dogecoin Slides  As Trump Steps Up War Rhetoric : Analyst Flags Significance Of $70,500 For BTC",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52653274/bitcoin-ethereum-xrp-flat-dogecoin-slides-trump-war-rhetoric-btc-70500",
-        "published_at": "2026-05-19T02:26:21+00:00",
-        "type": "macro_geopol",
+        "title": "Nasdaq Falls Amid Decline In Tech Stocks: Investor Sentiment Drops, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52653860/nasdaq-falls-amid-decline-in-tech-stocks-investor-sentiment-drops-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-19T05:41:33+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "trump_war_rhetoric_crypto_pressure",
+        "dedup_group": "nasdaq_tech_decline_sentiment_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "79837e938bce7f08",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Ross Gerber Says 'Pay Attention' To Nvidia And Micron As Jensen Huang Predicts AI Explosion",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52655312/ross-gerber-nvidia-micron-jensen-huang-ai-explosion",
+        "published_at": "2026-05-19T09:11:06+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ross_gerber_nvidia_micron_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9fb2814a9fe1c16e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
+        "published_at": "2026-05-19T08:45:17+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "tickers_mentioned": [
+          "MU",
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "9fb2814a9fe1c16e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
+        "published_at": "2026-05-19T08:45:17+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "tickers_mentioned": [
+          "MU",
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "9fb2814a9fe1c16e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
+        "published_at": "2026-05-19T08:45:17+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "tickers_mentioned": [
+          "MU",
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "9fb2814a9fe1c16e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Micron, Intel And SanDisk Could Have More Room To Run Amid AI Frenzy, Analyst Says: 'Just Took Our Targets Up'",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52655068/micron-intel-and-sandisk-could-have-more-room-to-run-amid-ai-frenzy-analyst-says-just-took-our-targets-up",
+        "published_at": "2026-05-19T08:45:17+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "analyst_target_raise_ai_memory_stocks",
+        "tickers_mentioned": [
+          "MU",
+          "INTC"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "STX": [
+      {
+        "id": "64b76e647897d674",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52655126/sp500-may-19-open-up-or-down-polymarket-tech-selloff-ai-stocks",
+        "published_at": "2026-05-19T08:58:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_sentiment_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Long-end Treasury sell-off continues with 30-year yield approaching highest level since 1999, signaling persistent inflation/fiscal concerns and tighter financial conditions for long-duration assets.",
+      "primary_drivers": [
+        "Higher long-end discount rate compresses present value of long-duration cash flows",
+        "Net interest margin expansion for asset-sensitive lenders and float-heavy insurers",
+        "Higher mortgage rates and capex hurdle rates pressure rate-sensitive sectors (housing, REITs, utilities)"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab's earnings are highly leveraged to short/intermediate yields on its cash sweep balances; sustained high-yield regime improves NIM and reduces the bank transfer/cash sorting drag that has weighed on the stock.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MET",
+          "rationale": "MetLife's large general account is reinvested at higher long-end yields; 30Y at 25-year highs directly lifts new-money yields on annuity/life liabilities, a multi-year tailwind to spread income.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "PRU",
+          "rationale": "Prudential is the most duration-asset-sensitive lifeco \u2014 long-dated liability book gets reinvested at materially higher yields, expanding investment spread on its retirement and annuities business.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ALL",
+          "rationale": "Allstate's investment portfolio (~$70B) rolls into higher yields; P&C insurers with shorter-duration float see investment income step up within quarters while pricing power remains intact.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ICE",
+          "rationale": "Intercontinental Exchange owns the dominant Treasury and MBS trading/clearing infrastructure; record long-end volatility and yield repricing drive higher rates-complex volumes.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DHI",
+          "rationale": "D.R. Horton's volume and gross margins depend on 30Y mortgage rates which track the long bond; rates at 1999-era highs crush affordability and force incentive spend at the largest US homebuilder.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NEE",
+          "rationale": "NextEra is the bond-proxy utility with the most renewable capex pipeline; higher long rates raise WACC on long-payback projects and compress the valuation multiple on its regulated yield.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income's triple-net REIT model is essentially a bond \u2014 long-duration lease cash flows discounted at higher rates plus rising refinancing costs on its investment-grade debt stack.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ARM",
+          "rationale": "Long-duration, high-multiple growth name with limited near-term FCF; valuation compresses mechanically as the long-end discount rate rises to multi-decade highs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCI",
+          "rationale": "Crown Castle carries heavy long-dated debt and a tower lease book that behaves like a bond; both refi cost and cap-rate-driven NAV move against it as 30Y yields spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "High terminal-value stock with auto loan demand sensitivity \u2014 higher long rates hit both DCF valuation and consumer financing affordability for its vehicles.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "us_treasury_30yr_yield_near_1999_high",
+      "source_news_ids": [
+        "5fb8713e96364dfb"
+      ],
+      "headlines": [
+        "U.S. Treasury sell-off eases, traders eye highest 30-year yield since 1999"
+      ]
+    },
+    {
+      "event_summary": "Iran war is disrupting and exposing vulnerabilities in the global AI semiconductor supply chain, raising costs and questions about component/energy sourcing.",
+      "primary_drivers": [
+        "Middle East energy/shipping disruption raising input and logistics costs for chip fabs",
+        "Heightened urgency for diversified, onshore semiconductor and rare materials supply",
+        "Risk premium on AI hardware names with concentrated overseas exposure"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "INTC",
+          "rationale": "Largest US-domiciled leading-edge fab buildout (Arizona, Ohio). A narrative reframing AI supply chain fragility directly supports the onshoring thesis and CHIPS Act tailwinds for Intel Foundry.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MP",
+          "rationale": "MP Materials is the only scaled US rare earths/critical minerals producer. AI hardware supply chain fragility narrative drives reshoring bid for non-China material inputs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Direct beneficiary of higher Brent crude from Middle East conflict; integrated supermajor with limited Iranian/Strait of Hormuz operational exposure relative to peers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Iran war escalation drives munitions replenishment (PAC-3, THAAD interceptors used in Israel/Gulf theater) \u2014 direct revenue line, not sentiment.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot/SM-series interceptors actively consumed in Middle East theater; backlog visibility extends from active conflict.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GFS",
+          "rationale": "GlobalFoundries is a US/Singapore/Germany trailing-edge fab \u2014 onshoring narrative beneficiary with no China leading-edge entanglement.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NVDA",
+          "rationale": "Highest-beta name to 'AI supply chain fragility' framing. Depends on TSMC Taiwan fab + CoWoS packaging + HBM from Korea \u2014 any cost passthrough or shipping/energy disruption compresses near-term margins and headline-trades the stock lower.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSM",
+          "rationale": "Article's premise is that AI chip supply chain has weak spots; TSMC is the single largest concentration point. Higher energy costs in Taiwan fabs + shipping insurance premiums hit gross margin directly.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AVGO",
+          "rationale": "Custom AI ASIC business depends on same TSMC/HBM stack as NVDA; networking silicon ships through chokepoints affected by Gulf shipping risk premia.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel cost spike from Brent rally on Iran conflict; international route disruption over Middle East airspace adds direct cost.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Heaviest international/long-haul exposure among US carriers; Middle East airspace closures force costly reroutes plus fuel headwind.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SMCI",
+          "rationale": "AI server assembler with thin margins and full dependence on Nvidia GPU + HBM supply; any chip cost passthrough compresses already-pressured gross margin.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_war_ai_supply_chain_vulnerability",
+      "source_news_ids": [
+        "8c7aa7cfde76e3e1"
+      ],
+      "headlines": [
+        "The Iran war is exposing weak spots in the AI supply chain"
+      ]
+    },
+    {
+      "event_summary": "Barclays warns that the recent record pace of inflows into US equity funds may be peaking and could reverse, signaling potential positioning unwind risk.",
+      "primary_drivers": [
+        "Stretched positioning / crowded long risk",
+        "Potential fund flow reversal away from US equities toward international/cash",
+        "Sentiment indicator turning contrarian"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "equity_fund_inflows_barclays_reversal_warning",
+      "source_news_ids": [
+        "50cf315a6b00b95e"
+      ],
+      "headlines": [
+        "Investors are piling into U.S. equity funds at the fastest pace in years. But now the pendulum may swing back, warns Barclays"
+      ]
+    },
+    {
+      "event_summary": "Bank of Japan may slow its bond-purchase tapering after long-end JGB yields spiked and rattled global bond markets.",
+      "primary_drivers": [
+        "BOJ staying more accommodative weakens the yen and supports global duration",
+        "Lower-for-longer JGB yields reduce repatriation pressure from Japanese investors, keeping flows in US Treasuries and credit",
+        "Carry trade resumption (borrow JPY, buy higher-yielding assets)"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "TM",
+          "rationale": "Toyota \u2014 largest Japanese exporter ADR; ~25% of operating profit sensitivity to USD/JPY. Weaker yen from a dovish BOJ shift directly lifts translated earnings.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MUFG",
+          "rationale": "Mitsubishi UFJ \u2014 a BOJ that tempers taper means JGB curve stays more stable, reducing mark-to-market losses on the bank's massive JGB book that hit headlines during the yield wobble.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "boj_taper_bond_market_may2026",
+      "source_news_ids": [
+        "c9f787d0f3f55f03"
+      ],
+      "headlines": [
+        "Analysis-BOJ could temper its taper as bond wobbles rattle markets"
+      ]
+    }
+  ]
 }
