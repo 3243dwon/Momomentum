@@ -1,70 +1,19 @@
 {
-  "generated_at": "2026-05-19T16:25:04.759262-04:00",
+  "generated_at": "2026-05-19T17:52:08.537378-04:00",
   "ticker_news": {
-    "INTC": [
+    "RBLX": [
       {
-        "id": "daa04aa0502714d4",
+        "id": "b1a737a79a7188e2",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "RBLX",
         "scope": "ticker",
-        "title": "AI Trade Faces Make-Or-Break Moment \u2013 Only Nvidia Earnings Will Tell",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52676518/ai-trade-make-or-break-moment-nvidia-earnings-preview",
-        "published_at": "2026-05-19T20:07:15+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "nvda_earnings_ai_sector_sentiment",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "11f1af672677b959",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "Rocket Lab Shares Rise Over 10% After Key Trading Signal",
-        "url": "https://www.benzinga.com/Opinion/26/05/52675978/rocket-lab-shares-rise-over-10-percent-after-key-trading-signal",
-        "published_at": "2026-05-19T19:59:24+00:00",
-        "type": "analyst",
+        "title": "Roblox Stock Rises After The Close: Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52678565/roblox-stock-rises-after-the-close-heres-why",
+        "published_at": "2026-05-19T20:53:09+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "rklb_technical_trading_signal",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7047520d357a5d73",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "Rocket Lab Stock Drops Amid Treasury Yields Rise And Inflation Worries",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52674395/rocket-lab-stock-drops-amid-treasury-yields-rise-and-inflation-worries",
-        "published_at": "2026-05-19T19:01:22+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "market_macro_yields_inflation_may_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PURR": [
-      {
-        "id": "b69f6271d6ee4a2b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PURR",
-        "scope": "ticker",
-        "title": "Cathie Woods' 21Shares Has A New ETF\u2014And It's In Big Demand",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52675613/cathie-woods-21shares-has-a-new-etf-and-its-in-big-demand",
-        "published_at": "2026-05-19T19:45:04+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "cathie_wood_21shares_new_etf_demand",
+        "dedup_group": "roblox_afterhours_move",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -72,149 +21,19 @@
   },
   "macro_events": [
     {
-      "event_summary": "CNBC reports that mortgage rates are likely to rise further later in 2026, signaling continued pressure on housing affordability.",
+      "event_summary": "CNBC piece discussing market expectations for when the Fed might resume rate hikes \u2014 speculative/forward-looking, not an actual policy action.",
       "primary_drivers": [
-        "Higher mortgage rates reduce housing affordability and purchase volume",
-        "Rate-sensitive duration assets repriced lower",
-        "Existing homeowners locked into low rates reduce inventory turnover"
+        "speculation about higher-for-longer or renewed hiking cycle",
+        "potential repricing of rate-sensitive duration assets"
       ],
-      "beneficiaries": [
-        {
-          "ticker": "ICE",
-          "rationale": "ICE Mortgage Technology benefits from refinancing volume volatility and owns Ellie Mae/Black Knight servicing platforms \u2014 higher rates increase demand for servicing analytics as portfolios stay on books longer. Secondary beneficiary only.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MCO",
-          "rationale": "Moody's structured finance ratings revenue is somewhat counter-cyclical to housing; rising rates push more activity into non-agency/private credit channels needing ratings. Indirect.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "EQR",
-          "rationale": "Equity Residential \u2014 large-cap multifamily REIT directly benefits from rent-vs-buy math tilting toward renting when mortgage rates rise; coastal urban exposure with limited new supply.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DHI",
-          "rationale": "D.R. Horton is the largest US homebuilder by volume with entry-level buyer concentration \u2014 the most rate-sensitive cohort. Higher mortgage rates directly compress order volumes and force more incentive spending (rate buydowns) that crush gross margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LEN",
-          "rationale": "Lennar has similar entry-level exposure to DHI and already runs aggressive mortgage rate buydown programs through its captive finance arm \u2014 rising rates make these buydowns more expensive, directly hitting margins.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RKT",
-          "rationale": "Rocket Companies is a pure-play mortgage originator; refinance volume is already depressed and purchase originations fall further as rates climb. Direct revenue hit with high operating leverage.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UWMC",
-          "rationale": "UWM Holdings is the largest wholesale mortgage lender \u2014 gain-on-sale margins compress and volume declines when rates rise, with limited ability to offset via servicing because it sells MSRs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow's IMT (premier agent) and mortgage segments both directly tied to home transaction volume; higher rates mean fewer transactions, lower lead value, and weaker mortgage attach rates.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OPEN",
-          "rationale": "Opendoor's iBuying model requires transaction velocity and stable/rising home prices; higher rates slow turnover, raise inventory holding costs, and force markdowns on existing book.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BLDR",
-          "rationale": "Builders FirstSource \u2014 building products supplier with ~40% single-family construction exposure; new home starts decline with mortgage rates, hitting lumber/truss/millwork volumes directly.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "mortgage_rates_outlook_2026",
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "fed_rate_hike_expectations_may_2026",
       "source_news_ids": [
-        "87686f0dc2313ea0"
+        "9ec107c7550f9dc8"
       ],
       "headlines": [
-        "What's the mortgage rate you'll be paying later this year? Probably higher"
-      ]
-    },
-    {
-      "event_summary": "Pentagon awards Shield AI a contract for a low-cost drone program as the Iran conflict drives demand for cheap, attritable drones.",
-      "primary_drivers": [
-        "Wartime demand surge for low-cost attritable drones",
-        "Pentagon procurement shift toward cheap autonomous systems over exquisite platforms",
-        "Validation of AI-enabled autonomy vendors over legacy primes"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "KTOS",
-          "rationale": "Kratos is the closest US-listed pure-play on low-cost attritable drones (Valkyrie XQ-58, Mako). A Pentagon program validating the cheap-drone thesis directly expands its addressable market and read-across pricing.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AVAV",
-          "rationale": "AeroVironment is the dominant listed small/tactical drone supplier (Switchblade loitering munitions, Puma). Iran-driven demand for cheap drones directly lifts Switchblade reorders and FMS pipeline.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RCAT",
-          "rationale": "Red Cat won the Army SRR short-range recon drone program; a Pentagon push toward low-cost drones reinforces its core procurement thesis and peer-rotation flows into small-cap drone names.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ONDS",
-          "rationale": "Ondas owns American Robotics/Airobotics and is a small-cap drone beneficiary of momentum/peer rotation when Pentagon awards highlight the cheap-drone category.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "Palantir provides the AI/autonomy software stack (Maven, TITAN) that pairs with autonomous drone fleets; Shield AI's win validates the AI-defense software thesis Palantir trades on.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed makes Hellfire/JAGM and partners on loitering munitions; Iran war escalation lifts munitions restock demand even as cheap drones compete with exquisite platforms \u2014 net positive on the war angle.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "GD",
-          "rationale": "General Dynamics' exquisite platform mix (combat vehicles, subs) is the implicit budget-share loser when Pentagon dollars rotate toward cheap attritable drones; also competes with Shield AI on some autonomy bids.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Northrop's high-end UAS portfolio (Global Hawk-class, MQ-4C Triton) represents the expensive-drone paradigm the Pentagon is explicitly moving away from with this low-cost program.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "pentagon_shield_ai_drone_program_iran",
-      "source_news_ids": [
-        "bb5071f6da3d35bb"
-      ],
-      "headlines": [
-        "Pentagon taps Shield AI for low-cost drone program as Iran war accelerates demand for cheap drones"
+        "Fed to hike? When traders see a rate increase coming"
       ]
     }
   ]
