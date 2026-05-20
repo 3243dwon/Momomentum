@@ -1,119 +1,78 @@
 {
-  "generated_at": "2026-05-19T18:57:13.733218-04:00",
-  "ticker_news": {
-    "ENPH": [
-      {
-        "id": "3347cc10a60f5a7b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "Here's How Much $100 Invested In Enphase Energy 10 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52680167/heres-how-much-100-invested-in-enphase-energy-10-years-ago-would-be-worth-today",
-        "published_at": "2026-05-19T22:33:54+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "enph_historical_return_retrospective",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "8db1d3344ad699d7",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Trump Helped Ignite Intel Stock's Monster Rally \u2014 Now Two Congressmen Are Cashing Out",
-        "url": "https://www.benzinga.com/news/politics/26/05/52680095/trump-helped-ignite-intel-stocks-monster-rally-now-two-congressmen-are-cashing-out",
-        "published_at": "2026-05-19T22:17:41+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "intc_trump_rally_congressional_selling",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
+  "generated_at": "2026-05-19T19:59:52.657174-04:00",
+  "ticker_news": {},
   "macro_events": [
     {
-      "event_summary": "US Senate advances a war powers resolution to end military action in Iran, signaling bipartisan pushback against the Trump administration and raising odds of de-escalation.",
+      "event_summary": "Asian markets brace for a mixed open as US Treasury yields spike and Middle East tensions with Iran escalate.",
       "primary_drivers": [
-        "Reduced geopolitical risk premium in oil/defense",
-        "Lower probability of sustained Middle East military operations reduces defense spending tailwind",
-        "Potential easing path on Iran oil export enforcement increases global supply expectations"
+        "Higher long-end Treasury yields raise discount rates and pressure duration-sensitive assets",
+        "Iran geopolitical risk premium on crude oil and defense spending",
+        "Risk-off rotation toward energy and defense, away from rate-sensitive growth"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; lower crude on de-escalation directly expands margins. Delta has highest fuel sensitivity among legacy carriers due to refinery ownership exposure.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "International route exposure to Middle East/Asia airspace; de-escalation reduces rerouting costs and fuel hedging pressure. High operating leverage to crude declines.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with heavy bunker fuel exposure (~10% of costs) and consumer discretionary sensitivity; lower oil + reduced geopolitical anxiety supports bookings.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs track crude; de-escalation lowers input costs for commodity chemicals with direct margin passthrough.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
           "ticker": "XOM",
-          "rationale": "Largest US integrated oil; geopolitical risk premium in Brent unwinds on de-escalation signal. Direct earnings sensitivity to crude price (~$0.5B EPS per $5/bbl).",
+          "rationale": "Integrated major with high leverage to crude prices; Iran tension typically adds a $3-8 geopolitical risk premium to Brent which flows directly to upstream earnings.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "OXY",
-          "rationale": "Highest beta US E&P to crude price among large caps due to Permian pure-play exposure and leverage; unwinds geopolitical premium fastest.",
+          "rationale": "Pure-play US shale producer with high oil-price beta (no refining offset); benefits most from a geopolitical crude premium.",
           "confidence": "high",
           "horizon": "days"
         },
         {
           "ticker": "LMT",
-          "rationale": "Prime contractor for missile defense/PAC-3 systems heavily deployed/restocked in Iran scenario; congressional pushback on war reduces supplemental defense appropriations probability.",
+          "rationale": "Largest US defense prime; Iran escalation supports missile defense (THAAD, PAC-3) demand and reinforces FY budget tailwinds.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
           "ticker": "RTX",
-          "rationale": "Tomahawk, SM-3, and Patriot missile production directly tied to Middle East munitions consumption; reduced operations slows restock orders.",
+          "rationale": "Raytheon missile/air defense exposure (Patriot, SM-3, Stinger) is direct beneficiary of Middle East restocking cycles.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "LDOS",
-          "rationale": "Defense IT/ISR contractor with elevated revenue tied to active CENTCOM operations; de-escalation trims near-term task order flow.",
-          "confidence": "low",
+          "ticker": "NOC",
+          "rationale": "Strategic deterrence and ISR platforms benefit from elevated Middle East tension and higher defense allocations.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "HAL",
-          "rationale": "Oilfield services capex sensitivity \u2014 sustained lower crude reduces NAM completion activity and pricing power.",
+          "ticker": "SLB",
+          "rationale": "Oilfield services activity ramps with sustained higher crude prices; international rig count most sensitive.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "senate_iran_military_action_measure",
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Airlines are squeezed by both higher jet fuel (Iran/crude) and weaker risk sentiment; jet fuel is ~25-30% of opex.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest has lower fuel hedging than peers historically and is highly exposed to a crude spike with limited pricing power.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income \u2014 bond-proxy REIT with high duration sensitivity; rising yields compress relative dividend yield appeal.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "asia_markets_treasury_yields_iran_tensions_may2026",
       "source_news_ids": [
-        "3af2b711c8bbdaec"
+        "cb89506716312a73"
       ],
       "headlines": [
-        "Senate advances measure to end military action in Iran in rebuke to Trump"
+        "Asia markets poised for mixed open amid spike in Treasury yields, Iran tensions"
       ]
     }
   ]
