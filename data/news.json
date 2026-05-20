@@ -1,23 +1,91 @@
 {
-  "generated_at": "2026-05-20T00:02:20.697723-04:00",
+  "generated_at": "2026-05-20T05:43:22.205562-04:00",
   "ticker_news": {
-    "CHWY": [
+    "AS": [
       {
-        "id": "f8ce3149899e1931",
+        "id": "6fe960c3923cc901",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CHWY",
+        "ticker": "AS",
         "scope": "ticker",
-        "title": "Meiwu Technology, Cava Group, Chewy,Keysight Technologies And Nvidia: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52681048/meiwu-cava-chewy-keysight-nvidia-stocks-watch",
-        "published_at": "2026-05-20T01:33:09+00:00",
+        "title": "S&P 500 Falls For Third Straight Session: Investor Sentiment Weakens, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52682730/sp-500-falls-for-third-straight-session-investor-sentiment-weakens-fear-index-remains-in-greed-zone",
+        "published_at": "2026-05-20T06:40:50+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "sp500_market_recap_20may2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "JHX": [
+      {
+        "id": "19c9262095b4b8da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "JHX",
+        "scope": "ticker",
+        "title": "James Hardie Industries Q4 2026 Earnings Call: Complete Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52682238/james-hardie-industries-q4-2026-earnings-call-complete-transcript",
+        "published_at": "2026-05-20T05:55:53+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "jhx_q4_2026_earnings_transcript",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ALAB": [
+      {
+        "id": "846460a4be664f78",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ALAB",
+        "scope": "ticker",
+        "title": "Why Is Astera Labs (ALAB) Stock Trending Overnight?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52682066/why-is-astera-labs-alab-stock-trending-overnight",
+        "published_at": "2026-05-20T05:23:06+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "investor_radar_multi_stock_roundup",
+        "dedup_group": "alab_stock_trending_overnight",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RBLX": [
+      {
+        "id": "34759f35ad03a872",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RBLX",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Nasdaq 100 Futures Gain As Street Awaits Nvidia's Q1 Report\u2014CAVA Group, AMC Entertainment, Roblox In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52683795/stock-market-today-sp-500-nasdaq-100-futures-gain-as-street-awaits-nvidias-q1-report-cava-group-amc-entertainment-roblox-in-focus",
+        "published_at": "2026-05-20T09:08:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_daily_roundup_may_20_2026",
         "tickers_mentioned": [
-          "MEIWU",
+          "NVDA",
           "CAVA",
-          "KEYS",
+          "AMC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a7de4a27a7739762",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RBLX",
+        "scope": "ticker",
+        "title": "Target, Nvidia And 3 Stocks To Watch Heading Into Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52682759/target-nvidia-and-3-stocks-to-watch-heading-into-wednesday-3",
+        "published_at": "2026-05-20T06:45:06+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "rblx_watch_list_segment",
+        "tickers_mentioned": [
+          "TGT",
           "NVDA"
         ],
         "route_to_synthesis": false
@@ -26,119 +94,256 @@
   },
   "macro_events": [
     {
-      "event_summary": "Strategists warn US Treasuries are in a \"danger zone,\" implying rising long-end yields and deteriorating demand for US sovereign debt.",
+      "event_summary": "Iran threatens to expand military conflict beyond the Middle East if the U.S. and Israel resume strikes, raising geopolitical risk premium on energy and defense.",
       "primary_drivers": [
-        "Higher long-end yields raising discount rates on long-duration assets",
-        "Term premium expansion / loss of safe-haven bid pressuring bond prices",
-        "Steeper curve / higher rates lifting bank NIM but hurting rate-sensitive sectors"
+        "Oil supply risk premium from potential Strait of Hormuz disruption",
+        "Elevated defense spending expectations and munitions replenishment demand",
+        "Flight-to-safety bid for gold and defensive assets"
       ],
       "beneficiaries": [
         {
-          "ticker": "IBKR",
-          "rationale": "Interactive Brokers earns substantial net interest income on client cash balances; higher front-end and long-end yields directly expand spread revenue, with no meaningful long-duration AFS book to mark down.",
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; direct beneficiary of Brent risk premium from Iran/Hormuz threat. ~40% of global seaborne crude transits Hormuz.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "High-beta US oil producer with Permian leverage; historically outperforms peers on crude spikes given operational leverage and no refining offset.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Prime contractor for THAAD, PAC-3 Patriot missiles and Javelins \u2014 exact systems being depleted/resupplied in Israel and Gulf allies. Direct munitions replenishment exposure.",
           "confidence": "high",
           "horizon": "weeks"
         },
         {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab benefits on a steeper curve via reinvestment of maturing securities at higher yields, though offset by AOCI marks \u2014 net positive at the operating level if curve steepens bear-style.",
+          "ticker": "RTX",
+          "rationale": "Maker of Patriot interceptors, SM-3/SM-6 (used by US Navy in Red Sea/Gulf) and Tomahawks. Direct beneficiary of munitions burn-rate from any renewed Iran strikes.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "B-21/B-2 bomber and missile defense systems exposure; benefits from elevated DoD supplemental funding probability if conflict re-escalates.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "BTU",
-          "rationale": "Hard-asset inflation hedge plays (coal, energy) tend to catch a bid when bond stress reflects fiscal/inflation concerns rather than growth concerns.",
+          "ticker": "TDG",
+          "rationale": "Aftermarket aerospace parts monopoly on legacy defense platforms; high incremental margins on any uptick in DoD flight hours/maintenance from regional surge.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "Offshore subsea equipment; tighter oil market + higher long-dated crude curve supports offshore capex sentiment. Second-order but reliable on sustained crude spikes.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Highest jet fuel sensitivity among US legacy carriers (~25-30% of opex); also most international exposure including Middle East/Europe routes that may require rerouting around Iranian airspace.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Significant transatlantic and India/Tel Aviv exposure; airspace closures over Iran/Iraq force costly reroutes. Jet fuel cost spike compounds margin pressure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Pure domestic carrier but unhedged on fuel for 2026; pure jet fuel cost passthrough hit with no international premium-cabin offset.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with Mediterranean and Middle East itineraries; bunker fuel costs rise with crude and itinerary cancellations historically follow regional escalations.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals \u2014 naphtha/ethane feedstock costs rise with crude; limited pricing power to pass through in current demand environment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Diesel-intensive logistics and consumer wallet share squeezed by gasoline prices; historically lags on oil spikes via consumer discretionary squeeze.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "High-beta growth name vulnerable to risk-off + rising long-end yields if oil spike re-stokes inflation expectations; positioning unwind risk.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
-      "losers": [
-        {
-          "ticker": "BAC",
-          "rationale": "Bank of America carries the largest unrealized HTM losses among US banks (~$100B+ range historically); rising long yields deepen AOCI hole and pressure tangible book value.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income is a long-duration bond proxy REIT \u2014 its dividend yield must reprice wider as the 10yr rises, mechanically pressuring the equity.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TOL",
-          "rationale": "Homebuilder demand is directly tied to the 10yr \u2192 mortgage rate channel; Treasury stress pushing the 10yr higher chokes affordability and order growth.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PLD",
-          "rationale": "Prologis is a high-quality but long-duration REIT with significant floating debt exposure; cap rate expansion from higher yields pressures NAV.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Highly leveraged balance sheet funded with convertibles \u2014 refinancing risk and equity duration both worsen as risk-free rate climbs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "us_treasury_yields_danger_zone_may2026",
+      "dedup_group": "iran_threatens_extended_conflict_may_2026",
       "source_news_ids": [
-        "7039bad6ece84193"
+        "f25ad55781cc6bf4"
       ],
       "headlines": [
-        "U.S. Treasurys are now firmly in the 'danger zone,' strategists say"
+        "Iran threatens to extend conflict \u2018beyond the region\u2019 if U.S. and Israel resume attacks"
       ]
     },
     {
-      "event_summary": "South Korea and Taiwan equity markets are surging as the AI boom drives a global reshuffling of market leadership toward Asian semiconductor hubs.",
+      "event_summary": "Putin and Xi revive the stalled Power of Siberia 2 gas pipeline deal amid an Iran war that is roiling global energy markets, redirecting Russian gas flows to China and tightening seaborne LNG/oil supply for everyone else.",
       "primary_drivers": [
-        "AI capex flowing to memory/HBM and foundry leaders concentrated in Korea and Taiwan",
-        "Positioning rotation into Asian tech as US megacap AI trade broadens",
-        "Currency and ADR translation of underlying Korean/Taiwanese tech gains"
+        "Iran war risk premium on Middle East oil & LNG supply (Strait of Hormuz exposure)",
+        "Russian pipeline gas re-routed to China reduces marginal seaborne LNG available to Europe/Asia spot market",
+        "Geopolitical realignment increases structural demand for US LNG export capacity and non-OPEC oil"
       ],
       "beneficiaries": [
         {
-          "ticker": "TSM",
-          "rationale": "TSMC ADR is the direct US-listed proxy for the Taiwan surge \u2014 sole leading-edge foundry for NVDA, AMD, AAPL AI silicon; Taiwan index rally is largely TSMC-driven given its ~40% weight in TAIEX.",
+          "ticker": "LNG",
+          "rationale": "Cheniere is the largest US LNG exporter; with Russian pipe gas going to China instead of marginal LNG cargoes and Middle East LNG (Qatar) transit at risk via Hormuz, European/Asian buyers bid up US Gulf Coast LNG. Direct margin and contract-pricing benefit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VLO",
+          "rationale": "Valero is a US Gulf Coast refiner with no Iranian/Russian crude exposure; benefits from wider crack spreads as Brent rallies on Iran war risk while it can source WTI/Canadian/Latam crude.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Diamondback is a pure-play Permian E&P with high oil beta and no international exposure; direct beneficiary of Brent/WTI risk premium from Iran conflict.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "MU",
-          "rationale": "Micron is the US-listed pure-play peer to SK Hynix and Samsung in HBM3E/HBM4; when Korean memory names rally on AI demand, MU trades in tight correlation as the only Western alternative supplier.",
+          "ticker": "EQT",
+          "rationale": "Largest US natural gas pure-play; Henry Hub strengthens as US LNG export demand rises on tighter global gas market from Russia-China pipeline diverting volumes away from spot LNG.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "ASML",
-          "rationale": "EUV monopoly supplier to TSMC and Samsung foundry \u2014 Taiwan/Korea capex acceleration implied by the surge feeds directly into ASML's order book; trades as a sympathy name on Asian foundry strength.",
+          "ticker": "TRGP",
+          "rationale": "Targa operates Permian gas gathering/processing and NGL export infrastructure at Mont Belvieu; benefits from higher US gas/NGL pricing and export volumes as global buyers turn to US.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "AMAT",
-          "rationale": "WFE supplier with heavy revenue exposure to Taiwan (TSMC) and Korea (Samsung/Hynix); rotation into Asian AI infrastructure narrative supports semicap equipment names.",
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream oil leverage to Brent plus growing LNG portfolio (Golden Pass coming online); double exposure to both transmission mechanisms.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "INTC",
-          "rationale": "Story frames TSMC and Samsung foundry as the AI winners; Intel's foundry strategy is the direct loser when narrative consolidates around Taiwan/Korea leading-edge dominance. Relative underperformance on rotation days.",
+          "ticker": "DAL",
+          "rationale": "Delta has the highest jet fuel cost sensitivity among US legacy carriers and limited fuel hedging; Brent spike from Iran war directly compresses margins, with no offsetting benefit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's hedging program has been wound down; domestic-heavy network means it can't pass through fuel costs as easily as international carriers. Direct margin hit from oil spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow's US ethylene crackers use natural gas/ethane feedstock \u2014 rising Henry Hub from LNG pull plus oil-linked global chemicals competition squeeze both ends. Also direct European gas exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar has meaningful China construction/mining equipment revenue; deepening Russia-China axis raises secondary sanctions risk and signals further US-China decoupling on dual-use goods.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Tesla Shanghai is ~40% of global production/sales; tighter US-China geopolitical tension from Russia-China energy axis increases tail risk of export controls or retaliation.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "putin_xi_russian_gas_pipeline_iran_war",
+      "source_news_ids": [
+        "3400534ce74b447b"
+      ],
+      "headlines": [
+        "Putin-Xi talks revive stalled Russian gas pipeline as Iran war rattles energy markets"
+      ]
+    },
+    {
+      "event_summary": "EU cleared a major procedural hurdle toward finalizing a U.S. trade pact, allowing it to avoid Trump's threatened tariff hikes, particularly on autos.",
+      "primary_drivers": [
+        "Removal of auto tariff overhang on European exporters to US",
+        "Reduced input cost risk for US importers of EU goods",
+        "Improved transatlantic trade flow certainty lifts industrials/logistics"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "STLA",
+          "rationale": "Stellantis manufactures key models in Italy/France (Maserati, Fiat 500e, some Jeep variants) and ships to US; avoidance of Trump auto tariff hike directly preserves US-market margin.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DEO",
+          "rationale": "Diageo's Scotch/Irish whiskey exports to US were caught in prior EU-US tariff disputes; a comprehensive deal lowers re-tariff risk on spirits category.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "ai_boom_market_rotation_south_korea_taiwan_2026",
+      "losers": [
+        {
+          "ticker": "F",
+          "rationale": "Ford is most US-domestic of Detroit 3; loses the relative competitive tailwind it would have gotten if EU rivals (Mercedes, BMW, VW) faced tariff walls in the US market.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "GM",
+          "rationale": "Same logic as Ford \u2014 GM's largely US/Mexico production base would have benefited from EU peers being tariffed; deal removes that potential moat.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Tesla's US-built fleet would have gained relative pricing advantage vs tariffed European EVs (Porsche Taycan, Audi e-tron, Mercedes EQ); deal neutralizes that edge.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "eu_us_trade_pact_trump_tariffs",
       "source_news_ids": [
-        "c7d9995c65a01449"
+        "1a291010077b92d0"
       ],
       "headlines": [
-        "AI boom reshuffles global stock market pecking order as South Korea and Taiwan surge"
+        "EU clears major hurdle to finalize U.S. trade pact \u2014 and sidestep Trump tariff hikes"
+      ]
+    },
+    {
+      "event_summary": "UK April CPI eased to 2.8%, but the BoE and analysts expect the disinflation to be temporary, limiting the scope for aggressive rate cuts.",
+      "primary_drivers": [
+        "Modest GBP/BoE rate path repricing \u2014 softer near-term print but sticky outlook caps the move",
+        "Limited direct US equity transmission since it's a UK domestic CPI release, not a global inflation shock"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "uk_inflation_april_2026_2_8_percent",
+      "source_news_ids": [
+        "52ed1cba854e95a3"
+      ],
+      "headlines": [
+        "UK inflation rate eases to 2.8% in April, but slowdown is expected to be short-lived"
       ]
     }
   ]
