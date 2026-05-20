@@ -1,78 +1,144 @@
 {
-  "generated_at": "2026-05-19T19:59:52.657174-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-20T00:02:20.697723-04:00",
+  "ticker_news": {
+    "CHWY": [
+      {
+        "id": "f8ce3149899e1931",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CHWY",
+        "scope": "ticker",
+        "title": "Meiwu Technology, Cava Group, Chewy,Keysight Technologies And Nvidia: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52681048/meiwu-cava-chewy-keysight-nvidia-stocks-watch",
+        "published_at": "2026-05-20T01:33:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "investor_radar_multi_stock_roundup",
+        "tickers_mentioned": [
+          "MEIWU",
+          "CAVA",
+          "KEYS",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": [
     {
-      "event_summary": "Asian markets brace for a mixed open as US Treasury yields spike and Middle East tensions with Iran escalate.",
+      "event_summary": "Strategists warn US Treasuries are in a \"danger zone,\" implying rising long-end yields and deteriorating demand for US sovereign debt.",
       "primary_drivers": [
-        "Higher long-end Treasury yields raise discount rates and pressure duration-sensitive assets",
-        "Iran geopolitical risk premium on crude oil and defense spending",
-        "Risk-off rotation toward energy and defense, away from rate-sensitive growth"
+        "Higher long-end yields raising discount rates on long-duration assets",
+        "Term premium expansion / loss of safe-haven bid pressuring bond prices",
+        "Steeper curve / higher rates lifting bank NIM but hurting rate-sensitive sectors"
       ],
       "beneficiaries": [
         {
-          "ticker": "XOM",
-          "rationale": "Integrated major with high leverage to crude prices; Iran tension typically adds a $3-8 geopolitical risk premium to Brent which flows directly to upstream earnings.",
+          "ticker": "IBKR",
+          "rationale": "Interactive Brokers earns substantial net interest income on client cash balances; higher front-end and long-end yields directly expand spread revenue, with no meaningful long-duration AFS book to mark down.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab benefits on a steeper curve via reinvestment of maturing securities at higher yields, though offset by AOCI marks \u2014 net positive at the operating level if curve steepens bear-style.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BTU",
+          "rationale": "Hard-asset inflation hedge plays (coal, energy) tend to catch a bid when bond stress reflects fiscal/inflation concerns rather than growth concerns.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "BAC",
+          "rationale": "Bank of America carries the largest unrealized HTM losses among US banks (~$100B+ range historically); rising long yields deepen AOCI hole and pressure tangible book value.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a long-duration bond proxy REIT \u2014 its dividend yield must reprice wider as the 10yr rises, mechanically pressuring the equity.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TOL",
+          "rationale": "Homebuilder demand is directly tied to the 10yr \u2192 mortgage rate channel; Treasury stress pushing the 10yr higher chokes affordability and order growth.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLD",
+          "rationale": "Prologis is a high-quality but long-duration REIT with significant floating debt exposure; cap rate expansion from higher yields pressures NAV.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "Highly leveraged balance sheet funded with convertibles \u2014 refinancing risk and equity duration both worsen as risk-free rate climbs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_treasury_yields_danger_zone_may2026",
+      "source_news_ids": [
+        "7039bad6ece84193"
+      ],
+      "headlines": [
+        "U.S. Treasurys are now firmly in the 'danger zone,' strategists say"
+      ]
+    },
+    {
+      "event_summary": "South Korea and Taiwan equity markets are surging as the AI boom drives a global reshuffling of market leadership toward Asian semiconductor hubs.",
+      "primary_drivers": [
+        "AI capex flowing to memory/HBM and foundry leaders concentrated in Korea and Taiwan",
+        "Positioning rotation into Asian tech as US megacap AI trade broadens",
+        "Currency and ADR translation of underlying Korean/Taiwanese tech gains"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "TSM",
+          "rationale": "TSMC ADR is the direct US-listed proxy for the Taiwan surge \u2014 sole leading-edge foundry for NVDA, AMD, AAPL AI silicon; Taiwan index rally is largely TSMC-driven given its ~40% weight in TAIEX.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "OXY",
-          "rationale": "Pure-play US shale producer with high oil-price beta (no refining offset); benefits most from a geopolitical crude premium.",
+          "ticker": "MU",
+          "rationale": "Micron is the US-listed pure-play peer to SK Hynix and Samsung in HBM3E/HBM4; when Korean memory names rally on AI demand, MU trades in tight correlation as the only Western alternative supplier.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "LMT",
-          "rationale": "Largest US defense prime; Iran escalation supports missile defense (THAAD, PAC-3) demand and reinforces FY budget tailwinds.",
+          "ticker": "ASML",
+          "rationale": "EUV monopoly supplier to TSMC and Samsung foundry \u2014 Taiwan/Korea capex acceleration implied by the surge feeds directly into ASML's order book; trades as a sympathy name on Asian foundry strength.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "RTX",
-          "rationale": "Raytheon missile/air defense exposure (Patriot, SM-3, Stinger) is direct beneficiary of Middle East restocking cycles.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Strategic deterrence and ISR platforms benefit from elevated Middle East tension and higher defense allocations.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Oilfield services activity ramps with sustained higher crude prices; international rig count most sensitive.",
+          "ticker": "AMAT",
+          "rationale": "WFE supplier with heavy revenue exposure to Taiwan (TSMC) and Korea (Samsung/Hynix); rotation into Asian AI infrastructure narrative supports semicap equipment names.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "DAL",
-          "rationale": "Airlines are squeezed by both higher jet fuel (Iran/crude) and weaker risk sentiment; jet fuel is ~25-30% of opex.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest has lower fuel hedging than peers historically and is highly exposed to a crude spike with limited pricing power.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income \u2014 bond-proxy REIT with high duration sensitivity; rising yields compress relative dividend yield appeal.",
+          "ticker": "INTC",
+          "rationale": "Story frames TSMC and Samsung foundry as the AI winners; Intel's foundry strategy is the direct loser when narrative consolidates around Taiwan/Korea leading-edge dominance. Relative underperformance on rotation days.",
           "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "asia_markets_treasury_yields_iran_tensions_may2026",
+      "dedup_group": "ai_boom_market_rotation_south_korea_taiwan_2026",
       "source_news_ids": [
-        "cb89506716312a73"
+        "c7d9995c65a01449"
       ],
       "headlines": [
-        "Asia markets poised for mixed open amid spike in Treasury yields, Iran tensions"
+        "AI boom reshuffles global stock market pecking order as South Korea and Taiwan surge"
       ]
     }
   ]
