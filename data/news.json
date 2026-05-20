@@ -1,55 +1,400 @@
 {
-  "generated_at": "2026-05-20T06:42:24.161476-04:00",
+  "generated_at": "2026-05-20T09:31:26.701957-04:00",
   "ticker_news": {
-    "INTC": [
+    "MU": [
       {
-        "id": "187f72bc09f95622",
+        "id": "7475d608334d4e1c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "What's Going On With Taiwan Semiconductor Stock Wednesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52684967/whats-going-on-with-taiwan-semiconductor-stock-wednesday",
-        "published_at": "2026-05-20T10:34:11+00:00",
+        "title": "What Is Going On With Micron Stock On Wednesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52688745/what-is-going-on-with-micron-stock-on-wednesday",
+        "published_at": "2026-05-20T13:03:02+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "intc_volatility_may_20",
+        "dedup_group": "mu_daily_movement_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
         "tickers_mentioned": [
-          "TSM"
+          "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "715efd263555296b",
+        "id": "1c173d6bcc0457c6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INTC",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "What's Going On With NVIDIA Stock Wednesday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52684749/whats-going-on-with-nvidia-stock-wednesday-4",
-        "published_at": "2026-05-20T10:22:54+00:00",
+        "title": "Inquiry Into Micron Technology's Competitor Dynamics In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/insights/news/26/05/52684207/inquiry-into-micron-technologys-competitor-dynamics-in-semiconductors-amp-semiconductor-equipment-i",
+        "published_at": "2026-05-20T09:58:48+00:00",
+        "type": "litigation",
+        "impact": "medium",
+        "dedup_group": "mu_competitor_dynamics_inquiry",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "intc_volatility_may_20",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
         "tickers_mentioned": [
           "NVDA"
         ],
         "route_to_synthesis": false
       }
     ],
-    "ONDS": [
+    "NWL": [
       {
-        "id": "06127ff975ff2ed4",
+        "id": "e0e9079029703fc6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ONDS",
+        "ticker": "NWL",
         "scope": "ticker",
-        "title": "Exploring The Competitive Space: Ondas Versus Industry Peers In Communications Equipment",
-        "url": "https://www.benzinga.com/insights/news/26/05/52684219/exploring-the-competitive-space-ondas-versus-industry-peers-in-communications-equipment",
-        "published_at": "2026-05-20T09:59:21+00:00",
+        "title": "This Cigna Analyst Is No Longer Bullish; Here Are Top 4 Downgrades For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/downgrades/26/05/52688363/this-cigna-analyst-is-no-longer-bullish-here-are-top-4-downgrades-for-wednesday",
+        "published_at": "2026-05-20T12:58:28+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "onds_competitive_positioning",
+        "dedup_group": "analyst_downgrades_daily_digest",
+        "tickers_mentioned": [
+          "CIA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "985595d11ed7bb79",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NWL",
+        "scope": "ticker",
+        "title": "CrowdStrike To Rally Around 7%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/news/26/05/52687604/crowdstrike-to-rally-around-7-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-05-20T12:31:13+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "analyst_forecasts_daily_digest",
+        "tickers_mentioned": [
+          "CRWD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "7c4141ae95dfd75e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Inside The AI Chip Crunch: Intel Pressures PC Makers To Upgrade Fast",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52687979/inside-the-ai-chip-crunch-intel-pressures-pc-makers-to-upgrade-fast",
+        "published_at": "2026-05-20T12:42:28+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "intc_ai_chip_upgrade_pressure",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CAVA": [
+      {
+        "id": "455bc2bbfa7408d6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CAVA",
+        "scope": "ticker",
+        "title": "How CAVA Defied The Economic Slump Without Desperate Promos",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52684186/how-cava-defied-the-economic-slump-without-desperate-promos",
+        "published_at": "2026-05-20T09:56:29+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "cava_earnings_resilience_no_promos",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "POET": [
+      {
+        "id": "4aaa3c2d69f2bac5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "POET",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52686944/12-information-technology-stocks-moving-in-wednesdays-pre-market-session",
+        "published_at": "2026-05-20T12:05:58+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_premarket_movers_may20",
+        "tickers_mentioned": [
+          "POET"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "97ce31e704eb4953",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "NVIDIA Started The AI Rally \u2014 Now Memory And Power Chip Stocks Are Stealing The Spotlight",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52686459/nvidia-started-the-ai-rally-now-memory-and-power-chip-stocks-are-stealing-the-spotlight",
+        "published_at": "2026-05-20T11:49:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "memory_power_chips_spotlight_may2026",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTU": [
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTU",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "39093f2236a09f8b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTU",
+        "scope": "ticker",
+        "title": "Intuit Likely To Report Higher Q3 Earnings; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52684905/intuit-likely-to-report-higher-q3-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
+        "published_at": "2026-05-20T10:31:08+00:00",
+        "type": "guidance",
+        "impact": "medium",
+        "dedup_group": "intu_q3_2026_earnings_revised_higher",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTU",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ROIV": [
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ROIV",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4f44e0ba478a83c4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ROIV",
+        "scope": "ticker",
+        "title": "Roivant Sciences Reports Q4 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52689542/roivant-sciences-reports-q4-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-05-20T13:28:16+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "roiv_q4_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ROIV",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TGT": [
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TGT",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c28605cd179bfaa0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TGT",
+        "scope": "ticker",
+        "title": "Target Reports Q1 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52689188/target-reports-q1-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-05-20T13:12:02+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "tgt_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "152bfd6b97482779",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TGT",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For May 20, 2026",
+        "url": "https://www.benzinga.com/insights/earnings/26/05/52685760/earnings-scheduled-for-may-20-2026",
+        "published_at": "2026-05-20T11:11:23+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "intu_q3_2026_earnings_scheduled",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "5416d83f3cac361b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TGT",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/05/52683645/sp500-may-20-open-up-or-down-polymarket-nvidia-earnings-bond-yields",
+        "published_at": "2026-05-20T08:54:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_daily_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SM": [
+      {
+        "id": "b3c242db7fb3cd47",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SM",
+        "scope": "ticker",
+        "title": "This CH Robinson Analyst Turns Bullish; Here Are Top 5 Upgrades For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/05/52688094/this-ch-robinson-analyst-turns-bullish-here-are-top-5-upgrades-for-wednesday",
+        "published_at": "2026-05-20T12:47:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ch_robinson_analyst_upgrade_may2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
@@ -57,82 +402,261 @@
   },
   "macro_events": [
     {
-      "event_summary": "WSJ piece argues that rising costs for AI data center components (GPUs, power equipment, memory, construction) could slow the pace of hyperscaler AI capex buildout.",
+      "event_summary": "Rising mortgage rates are pushing homebuyers toward riskier loan products (ARMs, non-QM, buydowns) as conventional fixed-rate affordability deteriorates.",
       "primary_drivers": [
-        "Input cost inflation compressing data center ROI",
-        "Potential capex deceleration / pushed-out orders from hyperscalers",
-        "Margin pressure on equipment suppliers vs. pricing power debate"
+        "Affordability squeeze forcing borrowers into ARMs and non-QM products",
+        "Higher rates compress refi volume but shift origination mix toward higher-margin/riskier loans",
+        "Reduced housing turnover and stretched borrower credit quality"
       ],
       "beneficiaries": [
         {
-          "ticker": "NVDA",
-          "rationale": "As the dominant GPU supplier with pricing power, NVDA is the entity raising prices \u2014 the article implicitly confirms it can pass through costs. Customers complaining about high prices means NVDA is capturing the margin.",
-          "confidence": "medium",
+          "ticker": "RKT",
+          "rationale": "Rocket Companies originates non-QM and ARM products; a mix shift toward riskier loans typically carries higher gain-on-sale margins per loan, partially offsetting volume declines. Also benefits from any buydown/specialty product marketing push.",
+          "confidence": "low",
           "horizon": "days"
         },
         {
-          "ticker": "VRT",
-          "rationale": "Vertiv provides power/thermal management gear; if AI buildouts continue but cost inflation is the story, suppliers with backlog visibility and pricing power benefit. However it cuts both ways \u2014 listed here as low confidence beneficiary on pricing power thesis.",
+          "ticker": "UWMC",
+          "rationale": "UWM is the largest wholesale lender and has aggressively pushed ARM and non-agency products through the broker channel; mix shift to ARMs is directly accretive to their margin per loan vs. agency-conforming.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "SMCI",
-          "rationale": "Super Micro is a lower-margin AI server integrator squeezed between rising GPU/component input costs and hyperscaler customers pushing back on prices. Margin compression risk if buildout slows.",
+          "ticker": "DHI",
+          "rationale": "D.R. Horton's entry-level buyer base is most sensitive to affordability; the fact that buyers need riskier loans to qualify signals demand destruction at the margin. Incentive/buydown costs compress gross margins.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "DELL",
-          "rationale": "Dell's AI server business runs thin margins on passed-through GPU costs; slower hyperscaler orders directly hits the ISG segment growth narrative.",
+          "ticker": "LEN",
+          "rationale": "Lennar similarly relies on mortgage rate buydowns to move inventory; rising rates force deeper buydown subsidies, hitting margins. Cancellation rates typically rise with this dynamic.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "ARM",
-          "rationale": "Trades on AI infrastructure growth multiple; any narrative of AI capex slowdown compresses the premium valuation even though royalty model is somewhat insulated.",
+          "ticker": "Z",
+          "rationale": "Zillow revenue tied to transaction volume via Premier Agent and mortgage marketplace; if affordability is forcing risky-loan workarounds, existing home turnover stays depressed, capping ad/lead revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OPEN",
+          "rationale": "Opendoor's iBuying model requires liquid resale market; rising rates and affordability stress slow home sales velocity and pressure their inventory mark-to-market.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "mortgage_rates_riskier_loans_surge",
+      "source_news_ids": [
+        "ff5adc95e6f6368c"
+      ],
+      "headlines": [
+        "Rising mortgage rates cause surge in demand for riskier loans"
+      ]
+    },
+    {
+      "event_summary": "Taiwan was a central topic in Xi's meeting with Trump during his China visit, but notably absent from Xi's discussions with Putin \u2014 suggesting Taiwan is being negotiated bilaterally with the US rather than as part of a broader anti-West axis.",
+      "primary_drivers": [
+        "Geopolitical risk premium on Taiwan-exposed semiconductor supply chain",
+        "Potential US-China diplomatic framework reducing near-term invasion tail risk",
+        "Defense spending implications depending on perceived US commitment to Taiwan"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "TSM",
+          "rationale": "Taiwan Semiconductor is the single most direct equity proxy for Taiwan geopolitical risk. If Xi-Trump dialogue is seen as constructive (Taiwan on the table for negotiation rather than military action), the Taiwan risk discount on TSM ADRs compresses. ~90% of advanced node capacity sits on the island.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "ASML's revenue is heavily tied to TSMC capex and advanced-node buildout in Taiwan. Reduced perceived invasion risk supports the durability of that customer base and the Taiwan fab roadmap.",
           "confidence": "low",
           "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "INTC",
+          "rationale": "Intel's foundry pitch and CHIPS Act subsidies are partly justified by the need to onshore from Taiwan risk. A diplomatic thaw where Taiwan is being negotiated peacefully erodes the strategic urgency premium investors assign to US-based leading-edge capacity.",
+          "confidence": "low",
+          "horizon": "weeks"
         },
         {
-          "ticker": "VRT",
-          "rationale": "Vertiv valuation embeds aggressive multi-year data center power/cooling capex; a 'buildout slowing' headline directly hits the growth narrative and multiple.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
+          "ticker": "LMT",
+          "rationale": "Lockheed is a major supplier of Taiwan arms packages (F-16Vs, HIMARS, Patriots). If Trump is bargaining over Taiwan with Xi directly, the pipeline of Taiwan FMS deals faces political uncertainty \u2014 a headwind on a high-visibility revenue line.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "taiwan_china_geopolitics_trump_xi",
+      "source_news_ids": [
+        "2e939a55655f6ef0"
+      ],
+      "headlines": [
+        "Taiwan was front and center during Trump's China trip \u2014 but absent from Xi\u2019s meeting with Putin"
+      ]
+    },
+    {
+      "event_summary": "Oil prices drop below $108/barrel as Trump signals quick end to Iran war and Strait of Hormuz tanker traffic normalizes, easing supply disruption fears.",
+      "primary_drivers": [
+        "Reduced geopolitical risk premium in crude",
+        "Restored Hormuz shipping flow lowers supply disruption probability",
+        "Lower input costs for oil-consuming industries"
+      ],
+      "beneficiaries": [
         {
-          "ticker": "CRWV",
-          "rationale": "CoreWeave's entire model is leveraged GPU buildout with debt-financed capex; higher equipment prices plus any demand pullback directly hits unit economics and the equity story.",
+          "ticker": "LUV",
+          "rationale": "Jet fuel is ~25-30% of operating costs; Southwest historically has limited hedging vs peers, so a sharp crude drop flows almost directly to margin expansion.",
           "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta operates its own Trainer refinery and jet fuel is its largest cost line; lower crude reduces both fuel expense and refining input costs.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Long-haul international carrier with high fuel cost exposure; every $10 drop in crude adds roughly $1B+ to annual pretax income.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "Air freight network is highly fuel-intensive; lower jet fuel and diesel directly reduce transportation cost per package, with fuel surcharges lagging the decline.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "NBIS",
-          "rationale": "Nebius is a pure-play GPU cloud build-out story; rising input costs and slower demand narrative directly hit thesis and multiple.",
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs track crude; lower oil widens chemical spreads for commodity petrochemical producers.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "PWR",
-          "rationale": "Quanta Services is heavily exposed to data center electrical infrastructure buildouts; capex deceleration narrative pressures backlog assumptions.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ANET",
-          "rationale": "Arista's networking gear revenue is concentrated in hyperscaler AI cluster buildouts (Meta, Microsoft); slowdown narrative directly threatens growth rate.",
+          "ticker": "CCL",
+          "rationale": "Cruise lines burn massive bunker fuel; Carnival's fuel expense is a top-3 cost, and crude below $108 vs prior elevated levels meaningfully improves unit economics.",
           "confidence": "medium",
           "horizon": "days"
         }
       ],
-      "dedup_group": "ai_infrastructure_cost_inflation",
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Upstream realizations fall directly with Brent; Exxon's integrated model partially offsets via downstream but net earnings sensitivity remains negative to crude declines from elevated levels.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-heavy pure-play E&P with high oil-weighted production; cash flow and buyback capacity scale directly with WTI.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COP",
+          "rationale": "Pure-play upstream with no downstream buffer; earnings sensitivity to crude is near-linear.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand and pricing power tied to E&P capex budgets, which compress when crude falls and the geopolitical risk premium deflates.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "International services exposure including Middle East; de-escalation reduces both crude price and any war-driven activity premium.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with high oil beta; Diamondback's free cash flow and variable dividend scale directly with WTI.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere's LNG netbacks correlate with global energy prices; easing of Middle East supply fear reduces European/Asian LNG premium and arbitrage spreads.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "oil_prices_iran_trump_hormuz",
       "source_news_ids": [
-        "8fa287d80520b6e3"
+        "2a604b48cb6b7c7d"
       ],
       "headlines": [
-        "Higher Prices Could Slow the AI Building Boom"
+        "Global oil prices drop below $108 a barrel after Trump reaffirms he would end the war in Iran \u2018very quickly\u2019; Hormuz sees increased tanker traffic"
+      ]
+    },
+    {
+      "event_summary": "A fund commentary article notes that geopolitical tensions weighed on Disney (DIS) performance in Q1 \u2014 a single-stock retrospective rather than a fresh macro catalyst.",
+      "primary_drivers": [
+        "Single-stock fund letter commentary, not a market-moving macro event",
+        "Retrospective attribution rather than forward-looking catalyst"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "dis_q1_geopolitical_headwinds",
+      "source_news_ids": [
+        "1912b190dc4c8592"
+      ],
+      "headlines": [
+        "Geopolitical Tensions Hurt The Walt Disney Company (DIS) in Q1"
+      ]
+    },
+    {
+      "event_summary": "Broad market drifts higher ahead of FOMC minutes release and Nvidia's earnings report, with NVDA rallying into the print.",
+      "primary_drivers": [
+        "Pre-earnings positioning in NVDA dragging AI complex higher via peer correlation",
+        "Anticipation of Fed minutes tone driving rate-sensitive positioning"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "SMCI",
+          "rationale": "Super Micro is the most direct NVDA-revenue-tied peer (AI server systems built around H100/Blackwell GPUs); historically trades with >0.7 intraday correlation into NVDA prints.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "AVGO",
+          "rationale": "Broadcom's custom AI ASIC and networking silicon (Tomahawk/Jericho) is the primary beneficiary of the same hyperscaler AI capex narrative that lifts NVDA; tracks NVDA into earnings.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "VRT",
+          "rationale": "Vertiv supplies thermal/power infrastructure for AI data centers \u2014 direct NVDA capex pull-through; rallies with NVDA on AI demand signals.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "ARM",
+          "rationale": "Arm's Grace CPU partnership with NVDA and royalty exposure to AI accelerators makes it a high-beta NVDA derivative trade.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "MU",
+          "rationale": "Micron HBM3E is sole-sourced into NVDA's H200/Blackwell; NVDA earnings commentary on supply/demand directly moves MU.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "fed_minutes_nvda_earnings_market_rally",
+      "source_news_ids": [
+        "fcb874a44521c22a"
+      ],
+      "headlines": [
+        "Stock Market Today: Dow Rises Ahead Of Fed Minutes; Nvidia Shares Rally With Earnings Due (Live Coverage)"
       ]
     }
   ]
