@@ -1,5 +1,122 @@
 {
-  "generated_at": "2026-05-20T20:01:10.323193-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-05-21T00:11:26.053946-04:00",
+  "ticker_news": {
+    "APLD": [
+      {
+        "id": "2aeb74aad7a5fc31",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "APLD",
+        "scope": "ticker",
+        "title": "Nvidia,Intuit, Applied Digital, AMD And ARM Holdings: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52708262/nvidia-intuit-applied-digital-amd-arm-stocks-watch",
+        "published_at": "2026-05-21T01:32:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "multiple_tech_stocks_investor_radar",
+        "tickers_mentioned": [
+          "NVDA",
+          "INTU",
+          "APLD",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "2aeb74aad7a5fc31",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Nvidia,Intuit, Applied Digital, AMD And ARM Holdings: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52708262/nvidia-intuit-applied-digital-amd-arm-stocks-watch",
+        "published_at": "2026-05-21T01:32:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "multiple_tech_stocks_investor_radar",
+        "tickers_mentioned": [
+          "NVDA",
+          "INTU",
+          "APLD",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVTS": [
+      {
+        "id": "42a0986d6e145111",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVTS",
+        "scope": "ticker",
+        "title": "Why Is Navitas Semiconductor (NVTS) Stock Trending Overnight?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52708564/why-is-navitas-semiconductor-nvts-stock-trending-overnight",
+        "published_at": "2026-05-21T03:10:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvts_trending_overnight",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "Japan's April exports surged 14.8% YoY, beating expectations, driven by a sharp jump in semiconductor shipments.",
+      "primary_drivers": [
+        "Confirmed strength in global semiconductor demand cycle",
+        "Japanese capex / equipment shipments accelerating, signaling fab build-out activity",
+        "Positive read-through to memory and logic chip end-demand"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials competes directly with Japanese WFE peers (Tokyo Electron, Screen). Japan semi export strength signals robust fab equipment ordering globally, directly lifting AMAT's revenue outlook.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research has heavy memory WFE exposure; surging Japanese chip-equipment exports correlates with memory capex recovery (Samsung/SK Hynix/Micron), a core LRCX revenue driver.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "KLA's process control tools ship alongside Japanese equipment into fabs; broad Japanese semi export strength implies accelerating fab tool installs that pull KLA inspection systems.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MU",
+          "rationale": "Japanese semiconductor export jump partly reflects memory chip and memory-related component shipments; confirms Micron's bullish memory pricing/demand narrative.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NVDA",
+          "rationale": "Japan's semi export surge is read by markets as confirmation of AI/datacenter chip demand cycle; NVDA is the highest-beta sentiment proxy for this read-through.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "ADR; Japanese WFE export strength corroborates global litho/equipment demand picking up, supporting ASML order book narrative ahead of next print.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "japan_exports_april_2026_semiconductors",
+      "source_news_ids": [
+        "7dbb69ecd5f9da13"
+      ],
+      "headlines": [
+        "Japan exports jump 14.8% in April, beating expectations as semiconductor shipments soar"
+      ]
+    }
+  ]
 }
