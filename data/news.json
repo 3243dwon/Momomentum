@@ -1,95 +1,133 @@
 {
-  "generated_at": "2026-05-21T18:47:05.496698-04:00",
-  "ticker_news": {
-    "ARM": [
-      {
-        "id": "43318a0d3a099336",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "A New Chipmaker Just Topped Micron's 2026 Return, Thanks To Nvidia",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52735056/arm-holdings-soxx-2026-best-performing-semiconductors-return-passes-micron-nvidia",
-        "published_at": "2026-05-21T21:16:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "chipmaker_performance_comparison_2026",
-        "tickers_mentioned": [
-          "MU"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "43318a0d3a099336",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "A New Chipmaker Just Topped Micron's 2026 Return, Thanks To Nvidia",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52735056/arm-holdings-soxx-2026-best-performing-semiconductors-return-passes-micron-nvidia",
-        "published_at": "2026-05-21T21:16:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "chipmaker_performance_comparison_2026",
-        "tickers_mentioned": [
-          "MU"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVDA": [
-      {
-        "id": "43318a0d3a099336",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "A New Chipmaker Just Topped Micron's 2026 Return, Thanks To Nvidia",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52735056/arm-holdings-soxx-2026-best-performing-semiconductors-return-passes-micron-nvidia",
-        "published_at": "2026-05-21T21:16:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "chipmaker_performance_comparison_2026",
-        "tickers_mentioned": [
-          "MU"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "43318a0d3a099336",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "A New Chipmaker Just Topped Micron's 2026 Return, Thanks To Nvidia",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52735056/arm-holdings-soxx-2026-best-performing-semiconductors-return-passes-micron-nvidia",
-        "published_at": "2026-05-21T21:16:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "chipmaker_performance_comparison_2026",
-        "tickers_mentioned": [
-          "MU"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "a265efb9bf064587",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Qualcomm Cofounder's Granddaughter, Now In Congress, Sells Almost $2 Million In QCOM Near Record High",
-        "url": "https://www.benzinga.com/news/politics/26/05/52735796/qualcomm-cofounders-granddaughter-now-in-congress-sells-almost-2-million-in-qcom-near-record-high",
-        "published_at": "2026-05-21T22:09:36+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qcom_insider_sale",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-05-21T19:56:32.474629-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "Japan's April core inflation came in softer than expected, reducing the likelihood of a near-term Bank of Japan rate hike and pressuring the yen lower.",
+      "primary_drivers": [
+        "Weaker yen vs USD from delayed BOJ tightening boosts Japanese exporter earnings translated to USD ADRs",
+        "Wider US-Japan rate differential supports carry trade and risk assets",
+        "Lower Japanese yields keep Japanese institutional capital flowing into US Treasuries and equities"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "TM",
+          "rationale": "Toyota ADR \u2014 weaker yen directly inflates yen-denominated export revenue when translated; every 1 yen of JPY weakness vs USD historically adds roughly \u00a545bn to operating profit. Delayed BOJ hike extends this tailwind.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HMC",
+          "rationale": "Honda ADR \u2014 similar FX translation mechanic as Toyota; majority of profits earned overseas but reported in yen, so yen weakness lifts reported earnings.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MUFG",
+          "rationale": "Counter-intuitive but ADR tracks Tokyo shares which rally on weak-yen/export theme; offset by lower NIM expectations from delayed hike makes this only medium confidence.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [],
+      "dedup_group": "japan_inflation_april_2026_softens",
+      "source_news_ids": [
+        "3038af4bb85f5866"
+      ],
+      "headlines": [
+        "Japan inflation softens more than expected in April, weakening case for BOJ rate hike"
+      ]
+    },
+    {
+      "event_summary": "Asia-Pacific markets poised to open higher as investors digest progress on U.S.-Iran peace deal diplomacy, implying lower geopolitical risk premium and softer oil.",
+      "primary_drivers": [
+        "Lower geopolitical risk premium in crude oil (Iranian barrels potentially returning to market)",
+        "Compressed Middle East tail risk reduces defense spending urgency narrative",
+        "Risk-on rotation favoring cyclicals, EM, and oil-consuming industries"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~20-25% of operating costs; a sanctions-relief-driven drop in Brent directly expands airline margins. Delta has historically shown highest beta to crude moves among US legacy carriers.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Same fuel-cost mechanism as DAL; United also has large international exposure that benefits from de-escalation reducing route/insurance costs over Middle East corridors.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is the least hedged major US carrier on jet fuel in recent years, giving it the most direct P&L leverage to a sustained Brent decline from Iran supply normalization.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is a top-3 cost line for cruise operators; Carnival has the largest fleet and highest fuel sensitivity. Also benefits from reduced Eastern Mediterranean itinerary disruption risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs fall with crude; Dow's commodity chemicals margins expand on lower oil. Also a high-beta cyclical that rallies in risk-on tape.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Direct revenue exposure to Brent realization prices. Iran returning ~1-1.5mbpd of additional barrels to legal market would pressure crude $5-10 lower, hitting upstream EPS sensitivity.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Highest oil-price beta in US large-cap E&P due to leveraged balance sheet and Permian pure-play exposure; every $1 Brent move ~2-3% EPS swing.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Mid-cap E&P with concentrated Permian + Egypt exposure; high operating leverage to crude price decks. Frequently the highest-beta name on oil down-days.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Patriot/THAAD/missile demand narrative weakens with Middle East de-escalation; Lockheed has the most direct exposure to Iran-deterrence-linked munitions and missile defense backlogs.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon missile segment (Standard Missile, SM-6, Patriot) is core to Gulf allies' Iran-deterrence procurement; peace dividend narrative compresses defense multiple.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Defense peer-rotation loser on de-escalation headlines; less direct Iran exposure than LMT/RTX but caught in sector multiple compression on peace-deal tape.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services capex is gated by operator FCF and oil price; sustained Brent decline from Iran supply pressures NAM completion activity and pricing power.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_iran_peace_deal_diplomacy",
+      "source_news_ids": [
+        "1312a4f03ce55def"
+      ],
+      "headlines": [
+        "Asia-Pacific markets set to open higher as investors assess U.S.-Iran peace deal diplomacy"
+      ]
+    }
+  ]
 }
