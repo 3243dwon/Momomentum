@@ -1,1643 +1,605 @@
 {
-  "generated_at": "2026-05-21T13:09:31.174009-04:00",
+  "generated_at": "2026-05-21T15:23:44.952444-04:00",
   "ticker_news": {
-    "FCEL": [
+    "ASTS": [
       {
-        "id": "8ca5d4311027f0c9",
+        "id": "93a1985a4d15cdfa",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "FCEL",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725944/12-industrials-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:53+00:00",
+        "title": "AST SpaceMobile Stock Is Climbing Today: What's Going On?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52728551/ast-spacemobile-stock-is-climbing-today-whats-going-on",
+        "published_at": "2026-05-21T18:17:15+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "fcel_industrials_intraday_movement",
+        "dedup_group": "asts_intraday_move_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "81d03b2fe4c3faee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ASTS",
+        "scope": "ticker",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_comms_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "81d03b2fe4c3faee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ASTS",
+        "scope": "ticker",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_comms_sector_052126",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "INFQ": [
+    "ENPH": [
       {
-        "id": "fe8f0f7edbf1540d",
+        "id": "8e3febf6d0664c1c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INFQ",
+        "ticker": "ENPH",
         "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
+        "title": "Enphase Energy Stock Surges Thursday: What's Happening?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52728335/enphase-energy-stock-surges-thursday-whats-happening",
+        "published_at": "2026-05-21T18:10:43+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "intraday_market_digest",
+        "dedup_group": "enph_stock_move_may21",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTU": [
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "4172f9d342b1e8c6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Intuit Stock Cracks After Layoffs, TurboTax Warning",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52724838/intuit-stock-cracks-after-layoffs-turbotax-warning",
-        "published_at": "2026-05-21T16:36:19+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "intu_q3_layoffs_turbotax_warning",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7647d68e64305584",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "These Analysts Cut Their Forecasts On Intuit After Q3 Results",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52723048/these-analysts-cut-their-forecasts-on-intuit-after-q3-results",
-        "published_at": "2026-05-21T15:49:54+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "intu_q3_analyst_downgrades",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QBTS": [
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RGTI": [
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fe8f0f7edbf1540d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "12 Information Technology Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725939/12-information-technology-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intraday_market_digest",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
         "route_to_synthesis": false
       }
     ],
     "COHR": [
       {
-        "id": "c67dc63844478fa2",
+        "id": "3ff0df0bbbac5aae",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COHR",
         "scope": "ticker",
-        "title": "Nvidia Just Opened A $1.9 Billion Position In A Critical AI Supplier",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52725621/nvidia-just-opened-a-1-9-billion-position-in-a-critical-ai-supplier",
-        "published_at": "2026-05-21T16:58:02+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_c67dc63844478fa2",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CRWV": [
-      {
-        "id": "c67dc63844478fa2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRWV",
-        "scope": "ticker",
-        "title": "Nvidia Just Opened A $1.9 Billion Position In A Critical AI Supplier",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52725621/nvidia-just-opened-a-1-9-billion-position-in-a-critical-ai-supplier",
-        "published_at": "2026-05-21T16:58:02+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_c67dc63844478fa2",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "d3a97705d15e616c",
+        "id": "3ff0df0bbbac5aae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CRWV",
+        "ticker": "COHR",
         "scope": "ticker",
-        "title": "Why Core Scientific Stock Is Surging On Thursday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52724532/why-core-scientific-stock-is-surging-on-thursday",
-        "published_at": "2026-05-21T16:28:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_d3a97705d15e616c",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "8006cbde9496f2cf",
+        "id": "3ff0df0bbbac5aae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CRWV",
+        "ticker": "COHR",
         "scope": "ticker",
-        "title": "CoreWeave Gains As GF Securities Sees AI Infrastructure Boom Driving Growth",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52724300/coreweave-gains-as-gf-securities-sees-ai-infrastructure-boom-driving-growth",
-        "published_at": "2026-05-21T16:22:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_8006cbde9496f2cf",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "IBM": [
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WMT": [
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "63bb5d15f983f39b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Drops After Nvidia's Earnings, Oil Reclaims $100: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52725563/nasdaq-100-falls-oil-tops-100-yields-climb-iran-standoff-markets-thursday",
-        "published_at": "2026-05-21T16:56:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_earnings_market_reaction",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b3f66d8d9f5581aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Costco Stock Dips After Walmart's Q1 Report: What's Going On?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52725534/costco-stock-dips-after-walmarts-q1-report-whats-going-on",
-        "published_at": "2026-05-21T16:55:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_b3f66d8d9f5581aa",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "c0e74078e6ee1fd9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Crude Oil Moves Higher; Walmart Shares Fall After Q1 Results",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52723820/crude-oil-moves-higher-walmart-shares-fall-after-q1-results",
-        "published_at": "2026-05-21T16:08:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "walmart_q1_earnings_market_digest",
-        "tickers_mentioned": [
-          "WMT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "IMVT": [
-      {
-        "id": "33ad7924f7696b36",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IMVT",
-        "scope": "ticker",
-        "title": "These Analysts Increase Their Forecasts On Immunovant After Q4 Results",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52723743/these-analysts-increase-their-forecasts-on-immunovant-after-q4-results",
-        "published_at": "2026-05-21T16:07:14+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_33ad7924f7696b36",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "IONQ": [
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IONQ",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IONQ",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QUBT": [
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e89c907c8043671d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Trump Admin To Take Quantum Stakes \u2014 D-Wave, Rigetti, IonQ Stocks Pop",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52720222/trump-admin-to-take-quantum-stakes-d-wave-rigetti-ionq-stocks-pop",
-        "published_at": "2026-05-21T14:38:27+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "trump_admin_quantum_investment_strategy",
-        "tickers_mentioned": [
-          "DWAV",
-          "RGTI"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "APLD": [
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "APLD",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "APLD",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "APLD",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ARM": [
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ARM",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "CRDO": [
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRDO",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRDO",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRDO",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RLAY": [
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RLAY",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RLAY",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RLAY",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WOLF": [
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WOLF",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WOLF",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "11c078c2efb7bd84",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WOLF",
-        "scope": "ticker",
-        "title": "Advance Auto Parts Posts Upbeat Q1 Earnings, Joins IBM, Ralph Lauren And Other Big Stocks Moving Higher On Thursday",
-        "url": "https://www.benzinga.com/news/26/05/52719853/advance-auto-parts-posts-upbeat-q1-earnings-joins-ibm-ralph-lauren-and-other-big-stocks-moving-higher-on-thursday",
-        "published_at": "2026-05-21T14:31:21+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "aap_q1_2026_upbeat",
-        "tickers_mentioned": [
-          "AAP",
-          "IBM",
-          "RL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "KD": [
-      {
-        "id": "cc295fbeefcd6d7f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KD",
-        "scope": "ticker",
-        "title": "This ZoomInfo Analyst Is No Longer Bullish; Here Are Top 3 Downgrades For Thursday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/downgrades/26/05/52716775/this-zoominfo-analyst-is-no-longer-bullish-here-are-top-3-downgrades-for-thursday",
-        "published_at": "2026-05-21T13:41:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_cc295fbeefcd6d7f",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "RKLB": [
       {
-        "id": "35dc86894f9b7692",
+        "id": "3ff0df0bbbac5aae",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "RKLB",
         "scope": "ticker",
-        "title": "Why Is Rocket Lab Stock Under Pressure?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52725978/why-is-rocket-lab-stock-under-pressure",
-        "published_at": "2026-05-21T17:06:53+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rklb_pressure",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ff0df0bbbac5aae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ff0df0bbbac5aae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "VRT": [
       {
-        "id": "c2e1622f57c6ce52",
+        "id": "3ff0df0bbbac5aae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "VRT",
         "scope": "ticker",
-        "title": "What Is Going On With Micron Stock On Thursday?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52712521/what-is-going-on-with-micron-stock-on-thursday-2",
-        "published_at": "2026-05-21T11:15:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "unclassified_c2e1622f57c6ce52",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ff0df0bbbac5aae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3ff0df0bbbac5aae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "A Manufacturing Boom Is Here: Is The Driver Trump's Tariffs Or AI?",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52728316/trump-manufacturing-boom-ai-tariffs",
+        "published_at": "2026-05-21T18:10:10+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "manufacturing_boom_tariffs_ai",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SLS": [
+    "CIFR": [
       {
-        "id": "775df9880129a285",
+        "id": "474be3c1be1a27ce",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SLS",
+        "ticker": "CIFR",
         "scope": "ticker",
-        "title": "12 Health Care Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/05/52725946/12-health-care-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-05-21T17:05:59+00:00",
+        "title": "Cipher Stock Is On The Move: The Chart Tells An Interesting Story",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52727710/cipher-stock-is-on-the-move-the-chart-tells-an-interesting-story",
+        "published_at": "2026-05-21T17:50:19+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "healthcare_intraday_digest",
+        "dedup_group": "cifr_stock_chart_move_may21",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SATS": [
+      {
+        "id": "81d03b2fe4c3faee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SATS",
+        "scope": "ticker",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_comms_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "81d03b2fe4c3faee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SATS",
+        "scope": "ticker",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_comms_sector_052126",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "SPOT": [
       {
-        "id": "a665a018b0e2bcda",
+        "id": "81d03b2fe4c3faee",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SPOT",
         "scope": "ticker",
-        "title": "Spotify Bets On Remix Economy, Audiobooks And Ads Fuel Growth",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52723732/spotify-bets-on-remix-economy-audiobooks-and-ads-fuel-growth",
-        "published_at": "2026-05-21T16:06:57+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "spot_remix_audiobooks_growth",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "cad23cf2ea75b234",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SPOT",
-        "scope": "ticker",
-        "title": "If You Invested $100 In Spotify Technology Stock 5 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52722512/if-you-invested-100-in-spotify-technology-stock-5-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-05-21T15:35:33+00:00",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "spot_5yr_historical_performance",
+        "dedup_group": "whale_alerts_comms_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "81d03b2fe4c3faee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SPOT",
+        "scope": "ticker",
+        "title": "10 Communication Services Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727173/10-communication-services-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-21T17:35:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_comms_sector_052126",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "USAR": [
+    "FCEL": [
       {
-        "id": "439b1922ebe061d6",
+        "id": "73fcad9b645002c6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "USAR",
+        "ticker": "FCEL",
         "scope": "ticker",
-        "title": "USA Rare Earth Stock Climbs After DOE Taps Company For Critical Materials Funding",
-        "url": "https://www.benzinga.com/markets/commodities/26/05/52721427/usa-rare-earth-stock-climbs-after-doe-taps-company-for-critical-materials-funding",
-        "published_at": "2026-05-21T15:10:44+00:00",
+        "title": "What's Going On With FuelCell Energy Stock Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52726808/whats-going-on-with-fuelcell-energy-stock-thursday-2",
+        "published_at": "2026-05-21T17:26:52+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "unclassified_439b1922ebe061d6",
+        "dedup_group": "fcel_stock_movement_recap",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IBM": [
+      {
+        "id": "7011bbe3ef7d589a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IBM",
+        "scope": "ticker",
+        "title": "IBM Launches America's First Quantum Foundry",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52727744/ibm-launches-americas-first-quantum-foundry",
+        "published_at": "2026-05-21T17:51:05+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "ibm_quantum_foundry_launch",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IBM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IBM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ELF": [
+      {
+        "id": "9ef866142d5ce7a4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ELF",
+        "scope": "ticker",
+        "title": "These Analysts Cut Their Forecasts On e.l.f. Beauty After Q4 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52722271/these-analysts-cut-their-forecasts-on-e-l-f-beauty-after-q4-results",
+        "published_at": "2026-05-21T15:28:14+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "elf_q4_analyst_cuts",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "F": [
+      {
+        "id": "a45021ffe3782927",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Ford Shares Edge Higher Thursday: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52721002/ford-shares-edge-higher-thursday-whats-driving-the-move",
+        "published_at": "2026-05-21T15:01:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ford_shares_move_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IONQ": [
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IONQ",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IONQ",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KEEL": [
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KEEL",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KEEL",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "54905d0dec863838",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52727166/10-information-technology-stocks-with-whale-alerts-in-todays-session",
+        "published_at": "2026-05-21T17:35:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "whale_alerts_it_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3f08176916b56925",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "What Is Going On With Qualcomm Stock On Thursday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52724245/what-is-going-on-with-qualcomm-stock-on-thursday",
+        "published_at": "2026-05-21T16:21:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stla_stock_move_recap",
+        "tickers_mentioned": [
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QS": [
+      {
+        "id": "66d6bdf56b208365",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QS",
+        "scope": "ticker",
+        "title": "QuantumScape Stock Is Surging Thursday: What's Going On?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52730250/quantumscape-stock-is-surging-thursday-whats-going-on",
+        "published_at": "2026-05-21T19:12:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "qs_intraday_move_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RPD": [
+      {
+        "id": "03cba4fe57d00610",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RPD",
+        "scope": "ticker",
+        "title": "Anthropic's Claude Mythos Was Supposed To End Cybersecurity: It Just Triggered The Sector's Best Rally On Record",
+        "url": "https://www.benzinga.com/news/26/05/52730098/claude-mythos-cybersecurity-stocks-record-rally-may-2026",
+        "published_at": "2026-05-21T19:06:21+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "anthropic_claude_cybersecurity_sector_052126",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "STLA": [
+      {
+        "id": "3f08176916b56925",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STLA",
+        "scope": "ticker",
+        "title": "What Is Going On With Qualcomm Stock On Thursday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52724245/what-is-going-on-with-qualcomm-stock-on-thursday",
+        "published_at": "2026-05-21T16:21:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stla_stock_move_recap",
+        "tickers_mentioned": [
+          "QCOM"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "Trump postponed signing an AI executive order, citing dissatisfaction with unspecified aspects, leaving regulatory direction for AI uncertain.",
+      "event_summary": "Bond market is signaling concern (likely rising yields or curve repricing) while equity markets continue to trade as if nothing is wrong, creating a stocks-vs-bonds divergence.",
       "primary_drivers": [
-        "Regulatory uncertainty delay \u2014 neither pro- nor anti-AI clarity",
-        "Removal of near-term catalyst for AI policy-sensitive names",
-        "Possible signal that final EO will be stricter (he didn't like 'certain aspects')"
-      ],
-      "beneficiaries": [],
-      "losers": [],
-      "dedup_group": "trump_ai_executive_order_postponed",
-      "source_news_ids": [
-        "5a39a320f814aba1"
-      ],
-      "headlines": [
-        "Trump postpones AI executive order signing: 'I didn't like certain aspects'"
-      ]
-    },
-    {
-      "event_summary": "30-year mortgage rates jumped above 6.5%, the highest level since the start of the Iran war, pressuring housing affordability.",
-      "primary_drivers": [
-        "Higher long-end Treasury yields raising mortgage financing costs",
-        "Reduced housing affordability suppressing purchase demand",
-        "Lock-in effect keeping existing homeowners in place, tightening resale supply"
+        "Rising long-end yields raise discount rates and pressure long-duration equities",
+        "Stock/bond divergence historically resolves via equity drawdown or yield reversal",
+        "Higher yields directly benefit net interest margin for banks and insurance float reinvestment"
       ],
       "beneficiaries": [
         {
-          "ticker": "ICE",
-          "rationale": "Owns Ellie Mae/Encompass mortgage tech platform; higher rates typically push originators toward refi/processing automation, and ICE earns per-loan fees regardless of rate direction with some pricing power as volumes consolidate.",
-          "confidence": "low",
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab's earnings are highly geared to short rates via cash sweep spreads and to long rates via reinvestment of its held-to-maturity book; sustained higher yields directly improve NIM and reduce the unrealized loss overhang.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "AGNC",
-          "rationale": "Agency mortgage REIT; if the rate jump reflects higher yields without a major spread widening, new MBS purchases lock in higher coupons. However very sensitive to vol \u2014 modest conviction.",
-          "confidence": "low",
+          "ticker": "MET",
+          "rationale": "MetLife's long-duration liability book benefits from higher reinvestment yields on its bond portfolio; life insurers are among the cleanest beneficiaries of a higher-for-longer long end.",
+          "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "EQR",
-          "rationale": "Apartment REIT \u2014 when mortgage rates spike above 6.5%, marginal buyers stay renters longer, supporting multifamily occupancy and rent pricing power in coastal markets.",
+          "ticker": "CME",
+          "rationale": "CME Group sees volume surges in Treasury and rate futures during periods of stock/bond divergence and rate volatility; transaction-fee revenue is directly tied to this volatility regime.",
           "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "INVH",
-          "rationale": "Single-family rental operator benefits as would-be homebuyers are priced out at 6.5%+ mortgage rates and remain in the rental pool; also competes less with new home supply.",
-          "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
-        {
-          "ticker": "DHI",
-          "rationale": "Largest US homebuilder by volume; 6.5%+ mortgage rates directly suppress entry-level buyer demand, forcing larger rate buydown incentives that compress gross margins. Already-reported mortgage incentive costs scale with rate level.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LEN",
-          "rationale": "Lennar similarly exposed to entry-level buyer affordability; mortgage rate buydowns are a key sales tool and become more expensive at 6.5%+, hitting both ASP and margin.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KBH",
-          "rationale": "Pure-play entry-level builder with highest sensitivity to first-time buyer affordability; smaller scale means less ability to absorb buydown costs than DHI/LEN.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RKT",
-          "rationale": "Rocket Companies is heavily refi-exposed; 6.5%+ rates kill refi origination volume and pressure gain-on-sale margins for purchase originations as well.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow's revenue is tied to housing transaction volume via Premier Agent and mortgage marketplace; higher rates suppress existing home sales turnover, the core funnel.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "COMP",
-          "rationale": "Compass earns commission on existing home sales; 6.5%+ mortgage rates intensify the lock-in effect and reduce transaction volume in its luxury/coastal markets.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OPEN",
-          "rationale": "Opendoor's iBuyer model requires transaction velocity and stable home prices; rising mortgage rates extend holding periods and pressure resale spreads.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "BLDR",
-          "rationale": "Builders FirstSource sells lumber/structural products predominantly to homebuilders; if starts decelerate due to affordability, volumes contract with operating leverage downside.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "dedup_group": "mortgage_rates_spike_65_percent",
-      "source_news_ids": [
-        "4a50d2f760d4f1d5"
-      ],
-      "headlines": [
-        "Mortgage rates jump to over 6.5% \u2014 the highest level since the Iran war started"
-      ]
-    },
-    {
-      "event_summary": "Commentary piece arguing Nvidia's chip supply is no longer the AI bottleneck \u2014 instead, hyperscaler AI buildout is constrained by power grid capacity and credit/financing strain.",
-      "primary_drivers": [
-        "Power generation and grid capacity as binding constraint on AI datacenter buildout",
-        "Credit market strain from massive hyperscaler capex financing",
-        "Reframing of AI bottleneck away from GPU supply toward physical infrastructure"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "VST",
-          "rationale": "Vistra owns nuclear and gas baseload generation directly contracted to AI datacenters; if power is THE bottleneck, merchant generators with available capacity capture pricing power. Pure-play on the thesis.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CEG",
-          "rationale": "Constellation is the largest US nuclear operator with direct hyperscaler PPAs (Microsoft Three Mile Island deal); narrative shift to 'power is the constraint' directly bids up nuclear baseload economics.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TLN",
-          "rationale": "Talen Energy sold datacenter campus power to AWS; merchant nuclear operator with scarcity value when power emerges as the binding AI constraint.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GEV",
-          "rationale": "GE Vernova sells gas turbines and grid equipment with multi-year backlogs; a power-bottleneck narrative reinforces the structural turbine shortage thesis driving order book growth.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ETN",
-          "rationale": "Eaton provides electrical distribution and datacenter power management gear; grid/power capex acceleration is direct revenue exposure with disclosed datacenter backlog growth.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "QCOM",
-          "rationale": "If hyperscaler capex is credit/power-constrained, edge/on-device AI inference (Qualcomm's positioning) becomes relatively more attractive vs. cloud \u2014 second-order beneficiary.",
-          "confidence": "low",
-          "horizon": "months"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "NVDA",
-          "rationale": "Article's framing \u2014 Nvidia 'can deliver chips but can't solve' the real bottleneck \u2014 directly questions whether GPU demand can be absorbed if customers lack power/financing to deploy. Caps the bull narrative even if numbers stay strong.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "META",
-          "rationale": "Hyperscaler with the most aggressive AI capex relative to current AI revenue; credit-strain framing puts spotlight on cash burn and debt issuance to fund datacenters.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ORCL",
-          "rationale": "Oracle has taken on significant debt to fund Stargate/OpenAI datacenter buildout; credit-strain narrative directly hits the most leveraged AI infrastructure bet among megacaps.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CRWV",
-          "rationale": "CoreWeave is the purest play on debt-financed GPU datacenter expansion; credit-tightening narrative is an existential overhang on the business model.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AMD",
-          "rationale": "Peer-correlation loser \u2014 if the bear thesis is 'AI buildout slows due to power/credit, not chip supply,' AMD's MI-series ramp story gets re-rated alongside NVDA.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "Super Micro's revenue is levered to hyperscaler GPU server deployment pace; if power/credit constrains deployment, order timing slips even with chip availability.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "tech_sector_power_grid_credit_crisis",
-      "source_news_ids": [
-        "75d44048c85b7319"
-      ],
-      "headlines": [
-        "Nvidia can deliver chips \u2014 but it can\u2019t buy Big Tech out of its credit and power-grid crisis"
-      ]
-    },
-    {
-      "event_summary": "Fed officials and staff are reportedly worried about elevated asset valuations and froth in financial markets, raising the prospect of more hawkish jawboning or tighter financial conditions.",
-      "primary_drivers": [
-        "Implicit hawkish signal / higher-for-longer rate expectations",
-        "Risk-off rotation away from frothy/high-multiple assets",
-        "Potential macroprudential or regulatory tightening rhetoric"
-      ],
-      "beneficiaries": [],
-      "losers": [
-        {
-          "ticker": "COIN",
-          "rationale": "Crypto exchange revenue is directly tied to speculative risk appetite; Fed concerns about market exuberance and any implied tightening of financial conditions hit crypto valuations first.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Levered bitcoin proxy \u2014 most exposed liquid equity to a froth-unwind given premium to NAV depends on speculative flows.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "AI-infrastructure names with stretched multiples are the poster children for current market froth; vulnerable to any Fed-driven multiple compression in speculative pockets.",
-          "confidence": "low",
-          "horizon": "days"
-        },
         {
           "ticker": "PLTR",
-          "rationale": "Trades at extreme revenue multiple driven by retail/momentum flows \u2014 high beta to any narrative that 'the Fed is uncomfortable with valuations'.",
+          "rationale": "High-multiple software name trading on long-dated cash flows with extreme duration sensitivity; among the most exposed individual large-caps to a discount-rate-driven multiple compression.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a pure bond-proxy REIT \u2014 its monthly dividend thesis directly competes with Treasury yields, and AFFO is pressured by higher refinancing costs on its large debt stack.",
+          "confidence": "medium",
+          "horizon": "weeks"
         }
       ],
-      "dedup_group": "fed_officials_financial_markets_concerns",
+      "dedup_group": "bond_market_inversion_concern_may2026",
       "source_news_ids": [
-        "d6136623e9f1a773"
+        "b855f6de89ed3053"
       ],
       "headlines": [
-        "Some Fed officials and staff are fretting about state of financial markets"
+        "The bond market just flipped the script on investors \u2014 Wall Street is acting like nothing\u2019s wrong"
       ]
     }
   ]
