@@ -2,9 +2,11 @@
   import type { ScanRow, NewsItem } from '$lib/types';
   import { fmtPct, fmtPrice, fmtRelVol, fmtClock, fmtRelative, pctClass } from '$lib/format';
   import TickerCard from './TickerCard.svelte';
+  import RecommendCard from './RecommendCard.svelte';
   import ScanTable from './ScanTable.svelte';
   import StatPill from './StatPill.svelte';
   import FilterBar, { type Filters } from './FilterBar.svelte';
+  import { recommend } from '$lib/recommend';
 
   let { data } = $props();
 
@@ -39,6 +41,8 @@
       return true;
     });
   });
+
+  const recommended = $derived.by(() => recommend(filteredRows));
 
   const top20 = $derived.by(() =>
     [...filteredRows]
@@ -100,6 +104,35 @@
   </section>
 
   <FilterBar bind:filters />
+
+  {#if recommended.longs.length > 0 || recommended.shorts.length > 0}
+    <section class="mb-8">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">Recommended</h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">momentum setups with confirmation</span>
+      </header>
+      {#if recommended.longs.length > 0}
+        <h3 class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
+          Long setups
+        </h3>
+        <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {#each recommended.longs as rec, i (rec.ticker)}
+            <RecommendCard {rec} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+          {/each}
+        </div>
+      {/if}
+      {#if recommended.shorts.length > 0}
+        <h3 class="mb-2 mt-4 text-[10px] font-semibold uppercase tracking-wider text-signal-down">
+          Short setups
+        </h3>
+        <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+          {#each recommended.shorts as rec, i (rec.ticker)}
+            <RecommendCard {rec} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+          {/each}
+        </div>
+      {/if}
+    </section>
+  {/if}
 
   <section class="mb-8">
     <header class="mb-3 flex items-center justify-between">
