@@ -200,14 +200,13 @@ def run(
             must_synthesize=set(ranked_synth_targets),
         )
 
-        # --- Opus budget: cap macro events, sort by impact ---
-        macro_for_opus = sorted(
-            [
-                m for m in macro_news_dedup
-                if m.get("impact") in ("high", "medium") and (m.get("type") or "").startswith("macro_")
-            ],
-            key=lambda m: 0 if m.get("impact") == "high" else 1,
-        )[: config.MAX_OPUS_MACRO_PER_SCAN]
+        # --- Opus budget: high-impact macro only, capped ---
+        # Opus is the priciest tier; medium-impact macro rarely justifies a
+        # full beneficiary breakdown, so it no longer reaches this tier.
+        macro_for_opus = [
+            m for m in macro_news_dedup
+            if m.get("impact") == "high" and (m.get("type") or "").startswith("macro_")
+        ][: config.MAX_OPUS_MACRO_PER_SCAN]
         log.info(
             "Opus budget: analyzing top %d macro events (cap %d)",
             len(macro_for_opus), config.MAX_OPUS_MACRO_PER_SCAN,

@@ -125,9 +125,10 @@ def synthesize(
     """Produce one 'why' per ticker.
 
     Synthesizes for:
-      - any ticker with high-impact news flagged route_to_synthesis (default), AND
-      - every ticker in must_synthesize (typically watchlist + new top-20 entrants),
-        even if no news exists — Sonnet will return verdict='move_unexplained_by_news'.
+      - any ticker with high-impact news flagged route_to_synthesis, AND
+      - tickers in must_synthesize (watchlist + new top-20 entrants) that have
+        at least one news item. No-news tickers are skipped — running Sonnet
+        just to get verdict='move_unexplained_by_news' isn't worth the spend.
     """
     must_synthesize = must_synthesize or set()
     target_tickers: set[str] = set()
@@ -137,7 +138,7 @@ def synthesize(
             target_tickers.add(ticker)
 
     for ticker in must_synthesize:
-        if ticker in technicals_by_ticker:
+        if ticker in technicals_by_ticker and enriched_news_by_ticker.get(ticker):
             target_tickers.add(ticker)
 
     targets: list[tuple[str, dict, list[dict]]] = []
