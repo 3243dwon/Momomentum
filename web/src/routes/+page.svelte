@@ -42,14 +42,20 @@
   });
 
   // Picks are computed by the backend (scanner/recommend.py) and shipped in
-  // scan.json; here we just narrow them to whatever the filters leave visible.
+  // scan.json. Bucket them by horizon — catalyst-backed = a thesis to hold
+  // beyond the next tick; technical = a price-action trade. Direction (long
+  // vs short bet) is shown per-card via the badge. Picks for tickers the
+  // filter excludes are dropped; within each bucket we sort by score.
   const recommended = $derived.by(() => {
     const recs = scan?.recommendations;
-    if (!recs) return { longs: [], shorts: [] };
+    if (!recs) return { longTerm: [], shortTerm: [] };
     const visible = new Set(filteredRows.map((r) => r.ticker));
+    const all = [...recs.longs, ...recs.shorts]
+      .filter((r) => visible.has(r.ticker))
+      .sort((a, b) => b.score - a.score);
     return {
-      longs: recs.longs.filter((r) => visible.has(r.ticker)),
-      shorts: recs.shorts.filter((r) => visible.has(r.ticker))
+      longTerm: all.filter((r) => (r.horizon ?? 'short') === 'long'),
+      shortTerm: all.filter((r) => (r.horizon ?? 'short') === 'short')
     };
   });
 
@@ -114,19 +120,24 @@
 
   <FilterBar bind:filters />
 
-  {#if recommended.longs.length > 0 || recommended.shorts.length > 0}
-    <section class="mb-8">
-      <header class="mb-3 flex items-center justify-between">
-        <h2 class="text-sm font-semibold tracking-tight">Recommended</h2>
-        <span class="text-[10px] uppercase tracking-wider text-zinc-500">momentum setups with confirmation</span>
-      </header>
-      {#if recommended.longs.length > 0}
-        <h3 class="mb-2 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
-          Long setups
-          <span class="font-normal normal-case tracking-normal text-zinc-500">bullish · confirmed uptrends with room to run</span>
+  <section class="mb-8">
+    <header class="mb-3 flex items-center justify-between">
+      <h2 class="text-sm font-semibold tracking-tight">Recommended</h2>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">momentum setups with confirmation</span>
+    </header>
+    {#if recommended.longTerm.length === 0 && recommended.shortTerm.length === 0}
+      <div class="card p-6 text-center text-xs text-zinc-500">
+        <p>No high-conviction setups this scan.</p>
+        <p class="mt-1">Fresh picks land here after the next refresh — usually within an hour.</p>
+      </div>
+    {:else}
+      {#if recommended.longTerm.length > 0}
+        <h3 class="mb-2 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-info">
+          Long-term picks
+          <span class="font-normal normal-case tracking-normal text-zinc-500">catalyst-backed · news explains the move</span>
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {#each recommended.longs as rec, i (rec.ticker)}
+          {#each recommended.longTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
               <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
@@ -134,13 +145,13 @@
           {/each}
         </div>
       {/if}
-      {#if recommended.shorts.length > 0}
-        <h3 class="mb-2 mt-4 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-down">
-          Short setups
-          <span class="font-normal normal-case tracking-normal text-zinc-500">bearish · confirmed breakdowns under selling pressure</span>
+      {#if recommended.shortTerm.length > 0}
+        <h3 class="mb-2 mt-4 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-zinc-300">
+          Short-term picks
+          <span class="font-normal normal-case tracking-normal text-zinc-500">pure technical · price-action trade</span>
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {#each recommended.shorts as rec, i (rec.ticker)}
+          {#each recommended.shortTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
               <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
@@ -148,8 +159,8 @@
           {/each}
         </div>
       {/if}
-    </section>
-  {/if}
+    {/if}
+  </section>
 
   <section class="mb-8">
     <header class="mb-3 flex items-center justify-between">

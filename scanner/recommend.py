@@ -135,10 +135,16 @@ def _score_row(row: dict, direction: str) -> dict | None:
 
     if score < MIN_SCORE:
         return None
+    # Horizon: news-backed picks have a thesis to hold beyond the next tick;
+    # pure-technical picks are intraday/days price-action trades.
+    catalyst_backed = bool(
+        syn and syn.get("verdict") in ("news_explains_move", "partial_explanation")
+    )
     return {
         "ticker": row["ticker"],
         "direction": direction,
         "score": score,
+        "horizon": "long" if catalyst_backed else "short",
         "reasons": reasons,
         "cautions": cautions,
     }

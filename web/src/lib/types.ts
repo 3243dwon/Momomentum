@@ -61,11 +61,16 @@ export interface ScanData {
 
 export type RecDirection = 'long' | 'short';
 
+// "long" = catalyst-backed (synthesis says news explains the move) — a thesis
+// to hold beyond the next tick. "short" = pure technical / price-action trade.
+export type RecHorizon = 'long' | 'short';
+
 // A pick from the backend scanner.recommend module, joined to its ScanRow by
 // ticker for display. Keep in sync with scanner/recommend.py compute().
 export interface Recommendation {
   ticker: string;
   direction: RecDirection;
+  horizon: RecHorizon;
   score: number;
   reasons: string[];
   cautions: string[];
