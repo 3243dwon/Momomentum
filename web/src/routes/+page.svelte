@@ -112,8 +112,9 @@
         <span class="text-[10px] uppercase tracking-wider text-zinc-500">momentum setups with confirmation</span>
       </header>
       {#if recommended.longs.length > 0}
-        <h3 class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
+        <h3 class="mb-2 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
           Long setups
+          <span class="font-normal normal-case tracking-normal text-zinc-500">bullish · confirmed uptrends with room to run</span>
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.longs as rec, i (rec.ticker)}
@@ -122,8 +123,9 @@
         </div>
       {/if}
       {#if recommended.shorts.length > 0}
-        <h3 class="mb-2 mt-4 text-[10px] font-semibold uppercase tracking-wider text-signal-down">
+        <h3 class="mb-2 mt-4 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-down">
           Short setups
+          <span class="font-normal normal-case tracking-normal text-zinc-500">bearish · confirmed breakdowns under selling pressure</span>
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.shorts as rec, i (rec.ticker)}
