@@ -23,16 +23,16 @@ def _tier_for(memberships: list[str]) -> str:
     return "midsmall"
 
 
-def write_scan(
+def enrich_rows(
     rows: list[dict],
-    window: Window,
-    now: datetime,
-    universe_size: int,
     syntheses_by_ticker: dict[str, dict] | None = None,
     news_count_by_ticker: dict[str, int] | None = None,
     snapshots_by_ticker: dict[str, dict] | None = None,
     intraday_by_ticker: dict[str, dict] | None = None,
-) -> None:
+) -> list[dict]:
+    """Attach tier / sector / snapshot / intraday / synthesis / caution to each
+    scan row. Returns new dicts; the input rows are left untouched. Split out
+    of write_scan so callers can score recommendations off the enriched rows."""
     syntheses_by_ticker = syntheses_by_ticker or {}
     news_count_by_ticker = news_count_by_ticker or {}
     snapshots_by_ticker = snapshots_by_ticker or {}
@@ -61,19 +61,35 @@ def write_scan(
             out["caution_level"] = level
             out["caution_reasons"] = reasons
         enriched_rows.append(out)
+    return enriched_rows
 
+
+def write_scan(
+    enriched_rows: list[dict],
+    window: Window,
+    now: datetime,
+    universe_size: int,
+    recommendations: dict | None = None,
+) -> None:
+    """Write data/scan.json from rows already enriched by enrich_rows()."""
+    recommendations = recommendations or {"longs": [], "shorts": []}
     payload = {
         "generated_at": now.isoformat(),
         "window": window.value,
         "universe_size": universe_size,
         "row_count": len(enriched_rows),
         "synthesized_count": sum(1 for r in enriched_rows if r.get("synthesis")),
+        "recommendations": recommendations,
         "rows": enriched_rows,
     }
     SCAN_FILE.write_text(json.dumps(payload, indent=2))
     log.info(
-        "Wrote %d rows (%d with synthesis) to %s",
-        len(enriched_rows), payload["synthesized_count"], SCAN_FILE,
+        "Wrote %d rows (%d with synthesis, %d long / %d short picks) to %s",
+        len(enriched_rows),
+        payload["synthesized_count"],
+        len(recommendations.get("longs", [])),
+        len(recommendations.get("shorts", [])),
+        SCAN_FILE,
     )
 
 

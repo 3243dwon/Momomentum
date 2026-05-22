@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, mom_digest, news, performance, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, mom_digest, news, performance, recommend, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -218,13 +218,16 @@ def run(
         macro_news_enriched = macro_news
 
     news_count_by_ticker = {t: len(v) for t, v in ticker_news_enriched.items()}
-    render.write_scan(
-        rows, window, now, uni_size,
+    enriched_rows = render.enrich_rows(
+        rows,
         syntheses_by_ticker=syntheses,
         news_count_by_ticker=news_count_by_ticker,
         snapshots_by_ticker=snapshots,
         intraday_by_ticker=intraday,
     )
+    recommendations = recommend.compute(enriched_rows)
+    render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations)
+    performance.log_recommendations(recommendations, rows, now)
 
     # Log notable momentum events for the Saturday weekly summary.
     weekly_events.record(
@@ -248,10 +251,14 @@ def run(
     # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
     mom_digest.run(macro_analyses, client, rows=rows)
 
-    # Evaluate past alerts whose 1d/3d/5d horizons have elapsed.
+    # Evaluate past alerts + recommendations whose 1d/3d/5d horizons elapsed.
     from datetime import timezone as _tz
-    performance.evaluate_pending(getattr(technicals, "_CLIENT", None), datetime.now(_tz.utc))
+    _alpaca = getattr(technicals, "_CLIENT", None)
+    _utc_now = datetime.now(_tz.utc)
+    performance.evaluate_pending(_alpaca, _utc_now)
+    performance.evaluate_pending_recommendations(_alpaca, _utc_now)
     performance.compile_stats(datetime.now(config.MARKET_TZ))
+    performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
 
     return 0
 
