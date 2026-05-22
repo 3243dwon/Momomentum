@@ -1,572 +1,123 @@
 {
-  "generated_at": "2026-05-22T05:37:43.883047-04:00",
+  "generated_at": "2026-05-22T06:42:04.014895-04:00",
   "ticker_news": {
-    "IBM": [
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IBM",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "QBTS": [
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QBTS",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RGTI": [
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "732b409fdd75c81d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Dan Ives Called IBM 'Sleeping Giant'\u2014Now Trump's $1 Billion Quantum Bet Is Proving Him Right",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738667/dan-ives-called-ibm-sleeping-giant-now-trumps-1-billion-quantum-bet-is-proving-him-right",
-        "published_at": "2026-05-22T08:19:48+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ibm_quantum_trump_investment",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RGTI",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INFQ": [
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f69661b2c45154b6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "D-Wave Vice President Sophie Ames Sells $437,000 Worth Of Shares: QBTS Stock Is Trending Overnight",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738125/d-wave-sophie-ames-sells-shares-qbts-stock-trending",
-        "published_at": "2026-05-22T06:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dwave_vp_ames_insider_sale_437k",
-        "tickers_mentioned": [
-          "QBTS"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTU": [
-      {
-        "id": "4abb51087463aa7f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Dow Rises To A Record Close: Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52737883/dow-rises-to-a-record-close-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-22T06:04:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dow_market_close_vix_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "4abb51087463aa7f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTU",
-        "scope": "ticker",
-        "title": "Dow Rises To A Record Close: Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52737883/dow-rises-to-a-record-close-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-22T06:04:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dow_market_close_vix_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "WMT": [
-      {
-        "id": "4abb51087463aa7f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Dow Rises To A Record Close: Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52737883/dow-rises-to-a-record-close-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-22T06:04:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dow_market_close_vix_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "df97244622f2de6b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Walmart Eats $175 Million Fuel Cost Hit To Protect Shoppers\u2014Now It's Warning Of Inflation Ahead",
-        "url": "https://www.benzinga.com/markets/earnings/26/05/52738048/walmart-eats-175-million-fuel-cost-hit-to-protect-shoppers-now-its-warning-of-inflation-ahead",
-        "published_at": "2026-05-22T06:25:11+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "walmart_fuel_cost_inflation_warning",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "4abb51087463aa7f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WMT",
-        "scope": "ticker",
-        "title": "Dow Rises To A Record Close: Fear Index Remains In 'Greed' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52737883/dow-rises-to-a-record-close-fear-index-remains-in-greed-zone",
-        "published_at": "2026-05-22T06:04:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dow_market_close_vix_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QUBT": [
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "34c4e5f8f5377243",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QUBT",
-        "scope": "ticker",
-        "title": "Quantum Computing (QUBT) Stock Is Trending Overnight: Here's Why",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52737569/quantum-computing-qubt-stock-is-trending-overnight-heres-why",
-        "published_at": "2026-05-22T05:32:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qubt_trending_overnight",
-        "tickers_mentioned": [
-          "QUBT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "NVDA": [
       {
-        "id": "e6965400fd367d18",
+        "id": "696b9947d721aa1f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "China's Chip Exports Double To $31 Billion As US Restrictions Fuel AI Demand",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52738788/chinas-chip-exports-double-to-31-billion-as-us-restrictions-fuel-ai-demand",
-        "published_at": "2026-05-22T08:42:57+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "china_chip_exports_surge_us_restrictions",
+        "title": "Asia's AI Trade Is Expanding Beyond Taiwan Semiconductor: Analyst",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52739864/asias-ai-trade-is-expanding-beyond-taiwan-semiconductor-analyst",
+        "published_at": "2026-05-22T10:32:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "asia_ai_trade_expansion_beyond_tsmc",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "ce9aa727768a5c36",
+        "id": "9427c23f61903bbc",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nvidia Is Going To Have To Do An Apple On Dividends, Says Jim Cramer: Sounds 'Boring' But It Works",
-        "url": "https://www.benzinga.com/markets/equities/26/05/52738655/nvidia-do-an-apple-boring-jim-cramer-growth-story",
-        "published_at": "2026-05-22T08:17:41+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvda_cramer_dividend_commentary",
+        "title": "WhiteFiber Locks In $160 Million AI Deal, Stock Soars",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52739570/whitefiber-locks-in-160-million-ai-deal-stock-soars",
+        "published_at": "2026-05-22T10:10:26+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "whitefiber_160m_ai_deal",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "STLA": [
+    "QCOM": [
       {
-        "id": "2df2271e7eb99d32",
+        "id": "8187b5c3d6778c00",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "STLA",
+        "ticker": "QCOM",
         "scope": "ticker",
-        "title": "Ford Takes Aim At Tesla And BYD In Europe With New Electric Hatchback, SUV Roadmap",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52738534/ford-jim-farley-european-push-with-seven-new-vehicles-2029-tesla-byd",
-        "published_at": "2026-05-22T07:48:49+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "ford_ev_hatchback_suv_roadmap",
+        "title": "Google's AI Glasses Threaten Meta's 80% Market Grip, Analyst Says",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/05/52739393/googles-ai-glasses-threaten-metas-80-market-grip-analyst-says",
+        "published_at": "2026-05-22T09:56:29+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "google_ai_glasses_meta_market_share",
         "tickers_mentioned": [
-          "TSLA",
-          "BYD"
+          "META"
         ],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
   "macro_events": [
     {
-      "event_summary": "U.S. and Iran signal diplomatic progress toward de-escalation, though disagreements remain over uranium enrichment and proposed Strait of Hormuz transit tolls.",
+      "event_summary": "NATO Secretary General Rutte announced hundreds of billions in new alliance defense spending while Trump pledged 5,000 additional US troops to Poland, the alliance's top defense spender.",
       "primary_drivers": [
-        "Reduced geopolitical risk premium in crude oil",
-        "Potential return of Iranian oil supply to global markets",
-        "Lower shipping/insurance risk through Strait of Hormuz"
+        "Increased NATO/European defense procurement budgets flowing to US prime contractors",
+        "Higher US troop forward deployment driving logistics, munitions, and equipment demand",
+        "Sustained multi-year backlog growth for missile defense, air defense, and ammunition makers"
       ],
       "beneficiaries": [
         {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; a drop in crude on Iran de-escalation directly expands margins. Delta has historically shown highest beta to crude moves among legacy carriers due to limited hedging.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Similar jet fuel cost exposure as DAL with minimal hedging; also has heavy international/long-haul exposure where fuel burn per ASM is highest.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Domestic carrier with high fuel cost sensitivity; benefits from lower crude though partially offset by its historical hedging program.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with bunker fuel as major variable cost; lower crude on Iran peace progress improves unit economics. Also reduced Middle East itinerary disruption risk.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs decline with crude; chemicals margins expand on a sustained oil pullback if Iranian barrels return.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Largest integrated US oil major; direct revenue/earnings hit from a lower crude price if Iran sanctions ease and ~1-1.5mbpd of Iranian supply normalizes. Upstream segment is the highest-margin contributor.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Integrated major with high upstream leverage to Brent; lower geopolitical risk premium compresses near-term realizations.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Highest crude-price beta among US large-cap E&Ps due to Permian pure-play exposure and leveraged balance sheet; falls hardest on geopolitical risk-off in oil.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "E&P with direct operations in Egypt and high sensitivity to Brent; also loses geopolitical scarcity premium that has benefited non-OPEC barrels.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play E&P; WTI-levered earnings compress directly if Iran barrels return to market.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
           "ticker": "LMT",
-          "rationale": "Defense prime with heavy Middle East FMS exposure (THAAD, PAC-3, F-35 to Gulf states); reduced regional tensions slow incremental order momentum and compress the geopolitical premium in shares.",
-          "confidence": "medium",
-          "horizon": "weeks"
+          "rationale": "Lockheed Martin is the prime on F-35 (Poland operates F-35s and is expanding), PAC-3 missiles, and HIMARS \u2014 all top procurement items for Poland and frontline NATO states. Direct backlog tailwind from European spending step-up.",
+          "confidence": "high",
+          "horizon": "months"
         },
         {
           "ticker": "RTX",
-          "rationale": "Patriot/missile defense demand has been bid on Iran tensions; de-escalation removes a near-term order catalyst, particularly for munitions replenishment.",
+          "rationale": "Raytheon supplies Patriot air defense systems (Poland's Wisla program) and AMRAAM/Stinger missiles; NATO spending hike directly expands Patriot interceptor and radar orders. Also supplies engines via Pratt.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics makes Abrams tanks (Poland ordered 250+ M1A2s) and ammunition through OTS; troop deployment to Poland increases armored vehicle support and 155mm shell demand.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Northrop Grumman supplies IBCS (Poland's integrated air/missile defense command system), Triton/Global Hawk surveillance, and is a key munitions/solid rocket motor supplier \u2014 direct Polish program exposure.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LDOS",
+          "rationale": "Leidos provides logistics, IT and base support services to US forces abroad; 5,000 additional troops in Poland expands its forward-deployment services contract base.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "HII",
+          "rationale": "Huntington Ingalls benefits indirectly via broader US defense topline expansion as NATO commitments pressure overall US budget upward, though naval exposure is less Poland-specific.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos supplies target drones, tactical drones, and hypersonic test systems used in expanding NATO training and missile defense testing; smaller-cap leverage to the spending wave.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "FTI",
-          "rationale": "Offshore/subsea services and energy equipment provider; capex cycle softens if crude rolls over on Iranian supply return.",
-          "confidence": "low",
+          "ticker": "AVAV",
+          "rationale": "AeroVironment's Switchblade loitering munitions and small UAS have been heavily used/ordered by NATO eastern flank members post-Ukraine; NATO budget hike sustains the order pipeline.",
+          "confidence": "medium",
           "horizon": "weeks"
         }
       ],
-      "dedup_group": "us_iran_peace_talks_uranium_hormuz",
+      "losers": [],
+      "dedup_group": "nato_defense_spending_trump_poland_troops",
       "source_news_ids": [
-        "e67e81481099314e"
+        "07c8a369bd3d1bb4"
       ],
       "headlines": [
-        "U.S., Iran signal peace progress \u2014 but remain at odds over enriched uranium, Strait of Hormuz tolls"
+        "NATO will spend hundreds of billions of dollars on defense, says Rutte, as Trump pledges 5,000 American troops to top spender Poland"
       ]
     }
   ]
