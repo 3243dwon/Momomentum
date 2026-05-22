@@ -2,9 +2,9 @@ name: Momentum scan
 
 on:
   schedule:
-    # Mon-Fri, every 30 min during extended trading hours
+    # Mon-Fri, hourly during extended trading hours
     # (covers 04:00-20:00 ET across both EST and EDT)
-    - cron: '*/30 8-23 * * 1-5'
+    - cron: '0 8-23 * * 1-5'
     # Mon-Fri overnight: every 2 hours
     - cron: '0 0,2,4,6 * * 1-5'
     # Weekends: every 2 hours (macro news watch)
@@ -78,7 +78,7 @@ jobs:
         run: |
           git config user.name "momentum-bot"
           git config user.email "momentum-bot@users.noreply.github.com"
-          git add data/scan.json data/deltas.json data/universe.json data/news.json 2>/dev/null || true
+          git add data/scan.json data/deltas.json data/universe.json data/news.json data/performance.json data/recommendation_performance.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No data changes to commit"
             exit 0
