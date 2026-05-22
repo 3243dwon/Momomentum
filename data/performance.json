@@ -1,0 +1,87 @@
+{
+  "generated_at": "2026-05-22T19:07:36.077004-04:00",
+  "window_days": 30,
+  "total_alerts": 2200,
+  "per_type": {
+    "watchlist": {
+      "count": 643,
+      "horizons": {
+        "1d": {
+          "evaluated": 630,
+          "hit_rate": 0.486,
+          "avg_return_pct": -0.62
+        },
+        "3d": {
+          "evaluated": 598,
+          "hit_rate": 0.625,
+          "avg_return_pct": 0.83
+        },
+        "5d": {
+          "evaluated": 567,
+          "hit_rate": 0.55,
+          "avg_return_pct": 1.24
+        }
+      }
+    },
+    "big_move": {
+      "count": 1259,
+      "horizons": {
+        "1d": {
+          "evaluated": 1217,
+          "hit_rate": 0.394,
+          "avg_return_pct": -0.25
+        },
+        "3d": {
+          "evaluated": 1167,
+          "hit_rate": 0.434,
+          "avg_return_pct": -1.19
+        },
+        "5d": {
+          "evaluated": 1121,
+          "hit_rate": 0.438,
+          "avg_return_pct": -1.08
+        }
+      }
+    },
+    "delta_new_top20": {
+      "count": 182,
+      "horizons": {
+        "1d": {
+          "evaluated": 179,
+          "hit_rate": 0.469,
+          "avg_return_pct": 0.67
+        },
+        "3d": {
+          "evaluated": 154,
+          "hit_rate": 0.494,
+          "avg_return_pct": -0.77
+        },
+        "5d": {
+          "evaluated": 117,
+          "hit_rate": 0.513,
+          "avg_return_pct": 0.16
+        }
+      }
+    },
+    "catalyst": {
+      "count": 116,
+      "horizons": {
+        "1d": {
+          "evaluated": 115,
+          "hit_rate": 0.522,
+          "avg_return_pct": 1.83
+        },
+        "3d": {
+          "evaluated": 108,
+          "hit_rate": 0.537,
+          "avg_return_pct": 1.66
+        },
+        "5d": {
+          "evaluated": 103,
+          "hit_rate": 0.583,
+          "avg_return_pct": 1.81
+        }
+      }
+    }
+  }
+}
