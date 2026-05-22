@@ -18,7 +18,7 @@ from scanner.llm.client import LLMClient
 
 log = logging.getLogger(__name__)
 
-BATCH_SIZE = 15
+BATCH_SIZE = 25
 
 NEWS_TYPES = [
     "earnings",
@@ -146,7 +146,7 @@ def _format_batch(items: list[dict]) -> str:
         }
         for item in items
     ]
-    return json.dumps(payload, indent=2)
+    return json.dumps(payload, separators=(",", ":"))
 
 
 def classify(items: list[dict], client: LLMClient) -> dict[str, dict]:

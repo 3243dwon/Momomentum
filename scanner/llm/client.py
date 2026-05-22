@@ -40,6 +40,8 @@ class LLMClient:
         if not key:
             raise LLMError("ANTHROPIC_API_KEY not set")
         self.client = anthropic.Anthropic(api_key=key, max_retries=3)
+        # Per-call usage records, accumulated across the scan for cost rollup.
+        self.calls: list[dict] = []
 
     def call_structured(
         self,
@@ -127,6 +129,9 @@ class LLMClient:
         error: str | None,
         elapsed: float,
     ) -> None:
+        # Accumulate usage for the end-of-scan cost rollup (see scanner.llm.cost).
+        self.calls.append({"tier": tier, "model": model, "usage": usage})
+
         now = datetime.now(timezone.utc)
         day_dir = config.AUDIT_DIR / now.strftime("%Y-%m-%d")
         day_dir.mkdir(parents=True, exist_ok=True)

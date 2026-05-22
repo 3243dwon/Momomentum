@@ -31,16 +31,30 @@ MIN_AH_VOLUME = 100_000
 
 RANK_JUMP_THRESHOLD = 15  # raised from 10 — only significant rank shifts
 
-ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
+ALERT_COOLDOWN_SECONDS = 3 * 60 * 60
 # High-conviction alerts (catalyst, macro, watchlist) always fire — no cap.
 # Standard alerts (big_move, delta_*) get capped to avoid noise flood.
-MAX_STANDARD_ALERTS_PER_SCAN = 5
+MAX_STANDARD_ALERTS_PER_SCAN = 3
+
+# Daily-digest delivery for standard alerts.
+#   - Breaking (catalyst, watchlist, macro:*): push live each scan.
+#   - Standard (big_move, delta_*): buffered to disk, flushed as a single
+#     consolidated card at each ET clock time below. Each (flush_time, date)
+#     fires once per day.
+# Set DIGEST_FLUSH_TIMES_ET = [] to disable buffering and revert to sending
+# everything live each scan.
+DIGEST_FLUSH_TIMES_ET = ["09:30", "16:00"]  # market open, market close
+DIGEST_MAX_PER_CARD = 30                    # readability cap; FIFO-drop oldest
+
+# Mom digest (Chinese macro channel): replaces the old 4h throttle with a
+# daily flush at this ET time. Empty list ⇒ immediate per-scan delivery.
+MOM_DIGEST_FLUSH_TIMES_ET = ["08:00", "20:00"]  # Asia evening recap + post-US-close (before A-share open)
 
 # Hard caps per scan to bound monthly LLM spend. When over, we score and
 # send the most-informative candidates first.
 MAX_HAIKU_NEWS_ITEMS_PER_SCAN = 100
-MAX_SONNET_SYNTHESES_PER_SCAN = 20
-MAX_OPUS_MACRO_PER_SCAN = 5
+MAX_SONNET_SYNTHESES_PER_SCAN = 12  # was 20 — caps only bite on news-heavy scans
+MAX_OPUS_MACRO_PER_SCAN = 3         # was 5
 
 UNIVERSE_REBUILD_AFTER_DAYS = 7
 

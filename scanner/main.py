@@ -28,9 +28,10 @@ import sys
 from datetime import datetime
 
 from scanner import config, mom_digest, news, performance, render, router, state, technicals, universe, weekly_events, windows
+from scanner.alerts import digest as alert_digest
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
-from scanner.llm import classify, macro, synthesize
+from scanner.llm import classify, cost, macro, synthesize
 from scanner.llm.client import get_client
 
 log = logging.getLogger("scanner")
@@ -238,15 +239,74 @@ def run(
     render.write_news(ticker_news_enriched, macro_analyses, now)
 
     if use_alerts:
-        alerts, throttle = alert_rules.build_alerts(rows, deltas, syntheses, macro_analyses, window)
-        sent = feishu.send_consolidated(alerts)
-        throttle.commit()
-        log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)
+        from datetime import timezone as _utc
+
+        alerts, throttle = alert_rules.build_alerts(
+            rows, deltas, syntheses, macro_analyses, window
+        )
+
+        # Log alerts for performance tracking at FIRE time (not delivery time),
+        # so a big_move buffered at 10:00 ET and flushed at 16:00 ET still gets
+        # its 1d/3d/5d horizons evaluated from when the move actually happened.
         performance.log_alerts(alerts, rows, now)
+
+        if not config.DIGEST_FLUSH_TIMES_ET:
+            # Digest disabled — old behavior: send everything live each scan.
+            sent = feishu.send_consolidated(alerts)
+            throttle.commit()
+            log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)
+        else:
+            # Breaking (catalyst/watchlist/macro:*) pushes live; standard
+            # (big_move/delta_*) buffers until the next scheduled flush.
+            breaking_types = {"catalyst", "watchlist"}
+            breaking = [
+                a for a in alerts
+                if a.get("type") in breaking_types
+                or (a.get("type") or "").startswith("macro")
+            ]
+            standard = [a for a in alerts if a not in breaking]
+
+            now_utc = datetime.now(_utc.utc)
+            digest_state = alert_digest._load()
+            flush_key = alert_digest.should_flush(
+                now_utc, digest_state.get("last_flush_by_time", {})
+            )
+
+            if flush_key:
+                buffered = alert_digest.drain_and_record(flush_key, now_utc)
+                buffered_for_card = alert_digest.annotate_for_card(buffered)
+                delivered = breaking + buffered_for_card + standard
+                sent = feishu.send_consolidated(delivered)
+                log.info(
+                    "Alerts (digest flush %s ET): %d breaking + %d buffered + %d new = %d sent in %d card(s)",
+                    flush_key, len(breaking), len(buffered), len(standard),
+                    len(delivered), sent,
+                )
+            else:
+                sent = feishu.send_consolidated(breaking) if breaking else 0
+                buffer_size = alert_digest.append(standard)
+                log.info(
+                    "Alerts: %d breaking sent in %d card(s); %d standard buffered (total %d, next flush %s ET)",
+                    len(breaking), sent, len(standard), buffer_size,
+                    config.DIGEST_FLUSH_TIMES_ET[0],
+                )
+
+            throttle.commit()
 
     # Mom digest: purely additive Chinese-language macro+industry digest to a
     # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
     mom_digest.run(macro_analyses, client, rows=rows)
+
+    # End-of-scan LLM cost rollup → data/cost.json (committed daily ledger).
+    if client and client.calls:
+        cost_summary = cost.record_scan(client.calls, now)
+        tier_bits = " ".join(
+            f"{t}=${v['usd']:.4f}" for t, v in sorted(cost_summary["by_tier"].items())
+        )
+        log.info(
+            "Scan LLM cost: $%.4f (%d calls) — %s",
+            cost_summary["total_usd"], cost_summary["calls"], tier_bits or "(none)",
+        )
 
     # Evaluate past alerts whose 1d/3d/5d horizons have elapsed.
     from datetime import timezone as _tz

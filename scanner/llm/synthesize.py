@@ -8,11 +8,18 @@ from __future__ import annotations
 
 import json
 import logging
+from datetime import datetime
 
 from scanner import config
 from scanner.llm.client import LLMClient
 
 log = logging.getLogger(__name__)
+
+# Cross-scan synthesis cache. A persistent move with no fresh news has the
+# same explanation every scan — re-asking Sonnet just burns tokens. We cache
+# the result per ticker and reuse it while the move stays in the same band
+# and no fresh news has arrived. Cleared at the start of each trading day.
+SYNTH_CACHE_FILE = config.CACHE_DIR / "synthesis_cache.json"
 
 SYNTH_TOOL = {
     "name": "synthesize_ticker_move",
@@ -101,7 +108,7 @@ def _format_user(ticker: str, technicals: dict, news_items: list[dict]) -> str:
             for n in news_items
         ],
     }
-    return json.dumps(payload, indent=2)
+    return json.dumps(payload, separators=(",", ":"))
 
 
 def _synthesize_one(client: LLMClient, ticker: str, technicals: dict, news_items: list[dict]) -> dict | None:
@@ -116,6 +123,53 @@ def _synthesize_one(client: LLMClient, ticker: str, technicals: dict, news_items
     )
 
 
+# A must_synthesize ticker with no news AND a small move would just produce a
+# generic "move_unexplained_by_news" — wasted Sonnet tokens. Require either
+# news or a move large enough to be worth a "mystery move" call.
+MIN_MOVE_FOR_NEWSLESS_SYNTH = 3.0
+
+
+def _move_band(pct: float | None) -> str:
+    """Coarse signed magnitude bucket. A synthesis stays valid while the move
+    stays in the same band; crossing a band boundary forces a re-synthesis."""
+    a = abs(pct or 0)
+    if a < 3:
+        band = "0_3"
+    elif a < 6:
+        band = "3_6"
+    elif a < 10:
+        band = "6_10"
+    elif a < 15:
+        band = "10_15"
+    else:
+        band = "15+"
+    return f"{'up' if (pct or 0) >= 0 else 'dn'}_{band}"
+
+
+def _load_cache() -> dict:
+    """Load the synthesis cache, dropping entries from prior trading days."""
+    if not SYNTH_CACHE_FILE.exists():
+        return {}
+    try:
+        cache = json.loads(SYNTH_CACHE_FILE.read_text())
+    except Exception:
+        return {}
+    today = datetime.now(config.MARKET_TZ).date().isoformat()
+    return {t: e for t, e in cache.items() if e.get("cached_date") == today}
+
+
+def _save_cache(cache: dict) -> None:
+    SYNTH_CACHE_FILE.write_text(json.dumps(cache, indent=2))
+
+
+def _cache_valid(cached: dict, tech: dict, today: str) -> bool:
+    """Reuse a cached synthesis only when it's from today and the move is
+    still in the same band/direction as when it was generated."""
+    if cached.get("cached_date") != today:
+        return False
+    return cached.get("move_band") == _move_band(tech.get("pct_1d"))
+
+
 def synthesize(
     enriched_news_by_ticker: dict[str, list[dict]],
     technicals_by_ticker: dict[str, dict],
@@ -125,9 +179,9 @@ def synthesize(
     """Produce one 'why' per ticker.
 
     Synthesizes for:
-      - any ticker with high-impact news flagged route_to_synthesis (default), AND
-      - every ticker in must_synthesize (typically watchlist + new top-20 entrants),
-        even if no news exists — Sonnet will return verdict='move_unexplained_by_news'.
+      - any ticker with high-impact news flagged route_to_synthesis, AND
+      - tickers in must_synthesize that either have news OR moved enough to
+        be worth a mystery-move synthesis (small moves with no news are skipped).
     """
     must_synthesize = must_synthesize or set()
     target_tickers: set[str] = set()
@@ -137,25 +191,47 @@ def synthesize(
             target_tickers.add(ticker)
 
     for ticker in must_synthesize:
-        if ticker in technicals_by_ticker:
+        tech = technicals_by_ticker.get(ticker)
+        if not tech:
+            continue
+        has_news = bool(enriched_news_by_ticker.get(ticker))
+        big_move = abs(tech.get("pct_1d") or 0) >= MIN_MOVE_FOR_NEWSLESS_SYNTH
+        if has_news or big_move:
             target_tickers.add(ticker)
 
+    cache = _load_cache()
+    today = datetime.now(config.MARKET_TZ).date().isoformat()
+
+    out: dict[str, dict] = {}
     targets: list[tuple[str, dict, list[dict]]] = []
-    for ticker in target_tickers:
+    reused = 0
+    for ticker in sorted(target_tickers):
         tech = technicals_by_ticker.get(ticker)
         if not tech:
             continue
         items = enriched_news_by_ticker.get(ticker, [])
+        # No fresh news this scan + a move-stable cached synthesis ⇒ reuse it.
+        # Any fresh news item forces a re-synthesis — that's genuinely new info.
+        if not items:
+            cached = cache.get(ticker)
+            if cached and _cache_valid(cached, tech, today):
+                out[ticker] = cached["synthesis"]
+                reused += 1
+                continue
         # Prefer routed/high-impact news; fall back to any news; then empty.
         routed = [n for n in items if n.get("route_to_synthesis")]
         news_for_call = routed or items[:5]
         targets.append((ticker, tech, news_for_call))
 
     if not targets:
-        log.info("Sonnet: no tickers reached synthesis tier")
-        return {}
+        log.info("Sonnet: 0 fresh syntheses needed (%d reused from cache)", reused)
+        _save_cache(cache)
+        return out
 
-    log.info("Sonnet: synthesizing %d tickers concurrently", len(targets))
+    log.info(
+        "Sonnet: synthesizing %d tickers concurrently (%d reused from cache)",
+        len(targets), reused,
+    )
 
     def worker(target):
         ticker, tech, routed = target
@@ -163,9 +239,17 @@ def synthesize(
 
     results = client.batch_structured(targets, worker, max_workers=8)
 
-    out: dict[str, dict] = {}
-    for (ticker, _tech, _routed), result in results:
+    for (ticker, tech, _routed), result in results:
         if result:
             out[ticker] = result
-    log.info("Sonnet: produced %d syntheses", len(out))
+            cache[ticker] = {
+                "synthesis": result,
+                "move_band": _move_band(tech.get("pct_1d")),
+                "cached_date": today,
+            }
+    _save_cache(cache)
+    log.info(
+        "Sonnet: produced %d syntheses (%d fresh, %d reused)",
+        len(out), len(out) - reused, reused,
+    )
     return out

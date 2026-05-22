@@ -1,11 +1,12 @@
-"""Tier 3 — Opus 4.7. Macro \u2192 beneficiary/loser reasoning.
+"""Tier 3 — Sonnet. Macro \u2192 beneficiary/loser reasoning.
 
-This is the differentiator vs commodity scanners. For each macro event
-(deduped, high-impact), Opus reasons about second-order beneficiaries and
-losers across the US equity universe — with explicit mechanism and confidence.
+For each macro event (deduped, high-impact), the model reasons about
+second-order beneficiaries and losers across the US equity universe — with
+explicit mechanism and confidence. Runs on Sonnet (was Opus) to cut token
+spend; macro events are infrequent enough that Sonnet's reasoning holds up.
 
 We constrain the output to tickers in our universe.json so the web app can
-link them; anything Opus names that's not in our universe gets dropped.
+link them; anything the model names that's not in our universe gets dropped.
 """
 from __future__ import annotations
 
@@ -133,11 +134,11 @@ def _format_user(group_items: list[dict]) -> str:
             for item in group_items
         ],
     }
-    return json.dumps(payload, indent=2)
+    return json.dumps(payload, separators=(",", ":"))
 
 
 def _filter_to_universe(result: dict) -> dict:
-    """Drop any ticker Opus named that isn't in our universe."""
+    """Drop any ticker the model named that isn't in our universe."""
     uni = _universe()
     if not uni:
         return result
@@ -157,16 +158,16 @@ def analyze(macro_news: list[dict], client: LLMClient) -> list[dict]:
         by_group.setdefault(g, []).append(item)
 
     groups = [(g, items) for g, items in by_group.items() if items]
-    log.info("Opus: analyzing %d macro event groups", len(groups))
+    log.info("Macro: analyzing %d event groups on Sonnet", len(groups))
 
     def worker(target):
         group_id, items = target
         result = client.call_structured(
-            model=config.OPUS_MODEL,
+            model=config.SONNET_MODEL,
             system=SYSTEM_PROMPT,
             user=_format_user(items),
             output_tool=MACRO_TOOL,
-            audit_tier="opus_macro",
+            audit_tier="macro",
             audit_key=group_id,
             max_tokens=2048,
         )
@@ -180,5 +181,5 @@ def analyze(macro_news: list[dict], client: LLMClient) -> list[dict]:
 
     results = client.batch_structured(groups, worker, max_workers=4)
     analyses = [r for _t, r in results if r]
-    log.info("Opus: produced %d macro analyses", len(analyses))
+    log.info("Macro: produced %d analyses", len(analyses))
     return analyses

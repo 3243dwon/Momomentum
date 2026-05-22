@@ -27,9 +27,14 @@ from scanner.llm.client import LLMClient
 
 log = logging.getLogger(__name__)
 
-THROTTLE_FILE = config.CACHE_DIR / "mom_digest_throttle.json"
+# Keep the legacy filename so the GHA actions/cache restore continues to find
+# rolling state across runs. Schema (post-digest-mode):
+#   buffered_events: list[dict]   — macro events accumulated since last flush
+#   buffered_sectors: list[dict]  — latest sector momentum snapshot
+#   last_flush_date: str|null     — ET-date of last successful flush
+#   recent_digests: list[dict]    — Opus dedup hints across recent flushes
+STATE_FILE = config.CACHE_DIR / "mom_digest_throttle.json"
 AUDIT_DIR = config.AUDIT_DIR
-THROTTLE_SECONDS = 4 * 60 * 60  # 4 hours between mom digests
 
 # Industry/sector tracking — mom's watched list (hardcoded defaults; could be
 # externalized to data/mom_config.json later). Maps GICS sector name → Chinese.
@@ -64,17 +69,42 @@ CHINA_KEYWORDS = re.compile(
 )
 
 
-def _load_throttle() -> dict:
-    if not THROTTLE_FILE.exists():
+def _load_state() -> dict:
+    if not STATE_FILE.exists():
         return {}
     try:
-        return json.loads(THROTTLE_FILE.read_text())
+        return json.loads(STATE_FILE.read_text())
     except Exception:
         return {}
 
 
-def _save_throttle(state: dict) -> None:
-    THROTTLE_FILE.write_text(json.dumps(state, indent=2))
+def _save_state(state: dict) -> None:
+    STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False))
+
+
+def _parse_hm(s: str) -> tuple[int, int]:
+    h, m = s.split(":")
+    return int(h), int(m)
+
+
+def _should_flush_mom_digest(now_utc: datetime, last_flush_date: str | None) -> bool:
+    """One flush per ET-date, triggered by the first scan at-or-after any
+    configured ``MOM_DIGEST_FLUSH_TIMES_ET`` entry. Empty flush list ⇒
+    always flush (immediate per-scan delivery, preserving the old behavior
+    as an escape hatch)."""
+    flush_times = getattr(config, "MOM_DIGEST_FLUSH_TIMES_ET", []) or []
+    if not flush_times:
+        return True
+    now_et = now_utc.astimezone(config.MARKET_TZ)
+    today_et = now_et.date().isoformat()
+    if last_flush_date == today_et:
+        return False
+    for ft_str in flush_times:
+        h, m = _parse_hm(ft_str)
+        flush_dt = now_et.replace(hour=h, minute=m, second=0, microsecond=0)
+        if now_et >= flush_dt:
+            return True
+    return False
 
 
 def _sector_momentum(rows: list[dict]) -> list[dict]:
@@ -339,7 +369,7 @@ def _format_user(
     }
     if previously_covered:
         payload["previously_covered"] = previously_covered
-    return json.dumps(payload, indent=2, ensure_ascii=False)
+    return json.dumps(payload, separators=(",", ":"), ensure_ascii=False)
 
 
 MAX_RECENT_DIGESTS = 3  # Opus sees this many prior digests for dedup
@@ -505,11 +535,17 @@ def run(
                 s["sector_zh"], s["direction"], s["avg_pct"], s["n_big_up"], s["n_big_down"],
             )
 
-    if not macro_analyses and not sector_momentum:
-        log.info("Mom digest: no macro events and no sector momentum — skip")
+    # Load buffer state up front: a scan with no fresh macro/sector data must
+    # still reach the flush-time check below if events are already buffered.
+    state = _load_state()
+    buffered_events: list[dict] = state.get("buffered_events", [])
+    buffered_sectors: list[dict] = state.get("buffered_sectors", [])
+
+    if not macro_analyses and not sector_momentum and not buffered_events and not buffered_sectors:
+        log.info("Mom digest: nothing new and buffer empty — skip")
         return
 
-    # Send ALL macro events to Opus — it gatekeeps per-event relevance itself.
+    # Pre-check logging — Opus still gatekeeps per-event China relevance itself.
     for m in macro_analyses:
         relevant, _ = _is_china_relevant(m)
         summary_preview = (m.get("event_summary", "") or "")[:70]
@@ -519,31 +555,58 @@ def run(
             summary_preview,
         )
     qualifying = list(macro_analyses)
-    log.info(
-        "Mom digest: sending %d macro events + %d sector trends to Opus",
-        len(qualifying), len(sector_momentum),
-    )
 
-    # Throttle: don't re-send within THROTTLE_SECONDS, unless the signal-set changes
-    # (new macro event OR different sector-direction combo).
-    state = _load_throttle()
-    last_sent_iso = state.get("last_sent_at")
-    last_groups = set(state.get("last_groups", []))
+    # Buffer + daily-flush model. We accumulate qualifying events through the
+    # day and only call Opus + send a card at the configured flush time(s).
+    # Cuts Opus calls from ~once-per-4h to ~once-per-ET-day. Empty flush list
+    # in config falls back to immediate delivery (legacy behavior).
+
+    # Append today's new events (dedupe by dedup_group; preserve buffer order).
+    existing_groups = {e.get("dedup_group") for e in buffered_events if e.get("dedup_group")}
+    new_events = [
+        m for m in qualifying
+        if m.get("dedup_group") and m.get("dedup_group") not in existing_groups
+    ]
+    buffered_events.extend(new_events)
+    state["buffered_events"] = buffered_events
+
+    # Sector snapshot: latest scan wins. Only the most recent rollup matters
+    # at flush time; we don't keep a sector history.
+    if sector_momentum:
+        buffered_sectors = sector_momentum
+        state["buffered_sectors"] = buffered_sectors
+
+    now_utc = datetime.now(timezone.utc)
+    if not _should_flush_mom_digest(now_utc, state.get("last_flush_date")):
+        _save_state(state)
+        log.info(
+            "Mom digest: %d events buffered (+%d new), %d sector trends; awaiting flush at %s ET",
+            len(buffered_events), len(new_events), len(buffered_sectors),
+            ", ".join(getattr(config, "MOM_DIGEST_FLUSH_TIMES_ET", []) or []) or "n/a",
+        )
+        return
+
+    # ---- Flush time ----
+    flush_events = list(buffered_events)
+    flush_sectors = list(buffered_sectors)
+    today_et = now_utc.astimezone(config.MARKET_TZ).date().isoformat()
+
+    if not flush_events and not flush_sectors:
+        log.info("Mom digest: flush time but buffer empty — marking flushed and skipping")
+        state["last_flush_date"] = today_et
+        _save_state(state)
+        return
+
+    # Use the flush buffer as Opus input.
+    qualifying = flush_events
+    sector_momentum = flush_sectors
     current_groups = {m.get("dedup_group") for m in qualifying if m.get("dedup_group")}
     current_groups.update(f"sector:{s['sector_en']}:{s['direction']}" for s in sector_momentum)
 
-    if last_sent_iso:
-        try:
-            last_sent = datetime.fromisoformat(last_sent_iso)
-            age = (datetime.now(timezone.utc) - last_sent).total_seconds()
-            if age < THROTTLE_SECONDS and current_groups.issubset(last_groups):
-                log.info(
-                    "Mom digest: throttled (sent %.0fm ago, same groups)",
-                    age / 60,
-                )
-                return
-        except Exception:
-            pass
+    log.info(
+        "Mom digest: flush time — calling Opus on %d events + %d sectors",
+        len(qualifying), len(sector_momentum),
+    )
 
     # Call Opus for Chinese digest
     previously_covered = state.get("recent_digests", [])[-MAX_RECENT_DIGESTS:]
@@ -557,11 +620,14 @@ def run(
         max_tokens=4096,
     )
     if not result:
-        log.warning("Mom digest: Opus returned no result")
+        # Don't clear the buffer or mark flushed: next scan retries with the
+        # same accumulated context. Avoids losing a day's events on transient
+        # Opus failure.
+        log.warning("Mom digest: Opus returned no result — keeping buffer for retry")
+        _save_state(state)
         return
 
     if not result.get("worth_sending", False):
-        # Log each event's relevance call for observability.
         for e in result.get("events_considered_zh", []) or []:
             if not isinstance(e, dict):
                 continue
@@ -571,7 +637,11 @@ def run(
                 e.get("china_hk_relevance", "?"),
                 (e.get("relevance_reason_zh", "") or "")[:60],
             )
-        log.info("Mom digest: Opus judged no events worth sending — skipping")
+        log.info("Mom digest: Opus judged no events worth sending — clearing today's buffer")
+        state["last_flush_date"] = today_et
+        state["buffered_events"] = []
+        state["buffered_sectors"] = []
+        _save_state(state)
         return
 
     card = _build_card(result)
@@ -579,12 +649,15 @@ def run(
     _audit({"digest": result, "events": qualifying}, response, err)
 
     if ok:
-        state["last_sent_at"] = datetime.now(timezone.utc).isoformat()
-        state["last_groups"] = sorted(current_groups)
+        state["last_flush_date"] = today_et
+        state["buffered_events"] = []
+        state["buffered_sectors"] = []
         recent = state.get("recent_digests", [])
         recent.append(_build_recent_digest_entry(qualifying, sector_momentum, result))
         state["recent_digests"] = recent[-MAX_RECENT_DIGESTS:]
-        _save_throttle(state)
+        _save_state(state)
         log.info("Mom digest sent: %s", result.get("title_zh"))
     else:
-        log.warning("Mom digest send failed: %s", err)
+        # Send failure — keep buffer so the next flush retries.
+        log.warning("Mom digest send failed: %s — keeping buffer for retry", err)
+        _save_state(state)
