@@ -19,7 +19,17 @@ export async function loadScan(fetch: Fetch) {
 }
 
 export async function loadNews(fetch: Fetch) {
-  return getJson<NewsData>(fetch, 'news.json');
+  const data = await getJson<NewsData>(fetch, 'news.json');
+  if (data) {
+    // The scanner's RSS ingest can repeat the same item; dedupe by id so
+    // downstream keyed {#each} blocks don't collide on duplicate keys.
+    for (const ticker of Object.keys(data.ticker_news)) {
+      data.ticker_news[ticker] = [
+        ...new Map(data.ticker_news[ticker].map((n) => [n.id, n])).values()
+      ];
+    }
+  }
+  return data;
 }
 
 export async function loadDeltas(fetch: Fetch) {
