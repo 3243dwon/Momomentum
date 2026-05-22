@@ -6,7 +6,6 @@
   import ScanTable from './ScanTable.svelte';
   import StatPill from './StatPill.svelte';
   import FilterBar, { type Filters } from './FilterBar.svelte';
-  import { recommend } from '$lib/recommend';
 
   let { data } = $props();
 
@@ -42,7 +41,17 @@
     });
   });
 
-  const recommended = $derived.by(() => recommend(filteredRows));
+  // Picks are computed by the backend (scanner/recommend.py) and shipped in
+  // scan.json; here we just narrow them to whatever the filters leave visible.
+  const recommended = $derived.by(() => {
+    const recs = scan?.recommendations;
+    if (!recs) return { longs: [], shorts: [] };
+    const visible = new Set(filteredRows.map((r) => r.ticker));
+    return {
+      longs: recs.longs.filter((r) => visible.has(r.ticker)),
+      shorts: recs.shorts.filter((r) => visible.has(r.ticker))
+    };
+  });
 
   const top20 = $derived.by(() =>
     [...filteredRows]
@@ -118,7 +127,10 @@
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.longs as rec, i (rec.ticker)}
-            <RecommendCard {rec} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+            {@const row = rowsByTicker.get(rec.ticker)}
+            {#if row}
+              <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+            {/if}
           {/each}
         </div>
       {/if}
@@ -129,7 +141,10 @@
         </h3>
         <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.shorts as rec, i (rec.ticker)}
-            <RecommendCard {rec} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+            {@const row = rowsByTicker.get(rec.ticker)}
+            {#if row}
+              <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+            {/if}
           {/each}
         </div>
       {/if}

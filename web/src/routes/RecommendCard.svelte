@@ -1,20 +1,20 @@
 <script lang="ts">
-  import type { NewsItem } from '$lib/types';
-  import type { Recommendation } from '$lib/recommend';
+  import type { NewsItem, Recommendation, ScanRow } from '$lib/types';
   import { fmtPct, fmtPrice, pctClass, fmtRelative } from '$lib/format';
   import Sparkline from './Sparkline.svelte';
 
   let {
     rec,
+    row,
     rank,
     news = []
   }: {
     rec: Recommendation;
+    row: ScanRow;
     rank: number;
     news?: NewsItem[];
   } = $props();
 
-  const row = rec.row;
   const isLong = rec.direction === 'long';
   const synth = row.synthesis;
 

@@ -55,7 +55,25 @@ export interface ScanData {
   universe_size: number;
   row_count: number;
   synthesized_count: number;
+  recommendations?: Recommendations;
   rows: ScanRow[];
+}
+
+export type RecDirection = 'long' | 'short';
+
+// A pick from the backend scanner.recommend module, joined to its ScanRow by
+// ticker for display. Keep in sync with scanner/recommend.py compute().
+export interface Recommendation {
+  ticker: string;
+  direction: RecDirection;
+  score: number;
+  reasons: string[];
+  cautions: string[];
+}
+
+export interface Recommendations {
+  longs: Recommendation[];
+  shorts: Recommendation[];
 }
 
 export interface RankJump {
@@ -177,4 +195,15 @@ export interface PerformanceData {
   window_days: number;
   total_alerts: number;
   per_type: Record<string, AlertTypeStats>;
+}
+
+// recommendation_performance.json — keep in sync with
+// scanner/performance.compile_recommendation_stats(). per_bucket is keyed
+// "<direction>_<band>", e.g. "long_hi", "short_lo".
+export interface RecommendationPerformance {
+  generated_at: string;
+  window_days: number;
+  total_picks: number;
+  high_score: number;
+  per_bucket: Record<string, AlertTypeStats>;
 }
