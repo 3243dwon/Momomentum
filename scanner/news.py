@@ -94,6 +94,7 @@ def fetch_ticker_news(tickers: Iterable[str]) -> dict[str, list[dict]]:
     schema; an article tagged to multiple symbols appears in each of their lists."""
     tickers = [t for t in tickers if t]
     out: dict[str, list[dict]] = {}
+    seen_article_ids: set[str] = set()
     if not tickers:
         return out
     if _NEWS_CLIENT is None:
@@ -141,6 +142,13 @@ def fetch_ticker_news(tickers: Iterable[str]) -> dict[str, list[dict]]:
                     else str(created)
                 )
                 item_id = _sha(f"alpaca:{getattr(art, 'id', url)}")
+                # Alpaca returns an article in every batch whose symbol set it
+                # intersects (and can repeat it across pages), so a multi-symbol
+                # story would otherwise be fanned out to its tickers once per
+                # batch. Distribute each article to its tickers exactly once.
+                if item_id in seen_article_ids:
+                    continue
+                seen_article_ids.add(item_id)
                 symbols = getattr(art, "symbols", []) or []
                 for sym in symbols:
                     if sym not in routed_set:
@@ -194,6 +202,7 @@ def _flatten_news_response(resp) -> list:
 
 def fetch_macro_news() -> list[dict]:
     items: list[dict] = []
+    seen_ids: set[str] = set()
     for source_name, url in MACRO_FEEDS:
         try:
             parsed = feedparser.parse(url, agent=config.USER_AGENT)
@@ -206,9 +215,15 @@ def fetch_macro_news() -> list[dict]:
             link = entry.get("link", "")
             if not title or not link:
                 continue
+            item_id = _sha(link)
+            # The same story is often syndicated across feeds (both CNBC feeds,
+            # Yahoo/MarketWatch reprints); keep only the first occurrence.
+            if item_id in seen_ids:
+                continue
+            seen_ids.add(item_id)
             items.append(
                 {
-                    "id": _sha(link),
+                    "id": item_id,
                     "source": source_name,
                     "publisher": source_name,
                     "ticker": None,
