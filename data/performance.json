@@ -1,48 +1,8 @@
 {
-  "generated_at": "2026-05-23T10:57:39.655114-04:00",
+  "generated_at": "2026-05-23T12:55:55.963538-04:00",
   "window_days": 30,
   "total_alerts": 2185,
   "per_type": {
-    "watchlist": {
-      "count": 641,
-      "horizons": {
-        "1d": {
-          "evaluated": 627,
-          "hit_rate": 0.494,
-          "avg_return_pct": -0.47
-        },
-        "3d": {
-          "evaluated": 595,
-          "hit_rate": 0.635,
-          "avg_return_pct": 1.16
-        },
-        "5d": {
-          "evaluated": 567,
-          "hit_rate": 0.556,
-          "avg_return_pct": 1.51
-        }
-      }
-    },
-    "big_move": {
-      "count": 1252,
-      "horizons": {
-        "1d": {
-          "evaluated": 1209,
-          "hit_rate": 0.395,
-          "avg_return_pct": -0.2
-        },
-        "3d": {
-          "evaluated": 1145,
-          "hit_rate": 0.433,
-          "avg_return_pct": -1.38
-        },
-        "5d": {
-          "evaluated": 1104,
-          "hit_rate": 0.446,
-          "avg_return_pct": -0.95
-        }
-      }
-    },
     "catalyst": {
       "count": 116,
       "horizons": {
@@ -63,6 +23,46 @@
         }
       }
     },
+    "watchlist": {
+      "count": 641,
+      "horizons": {
+        "1d": {
+          "evaluated": 627,
+          "hit_rate": 0.494,
+          "avg_return_pct": -0.43
+        },
+        "3d": {
+          "evaluated": 597,
+          "hit_rate": 0.638,
+          "avg_return_pct": 1.23
+        },
+        "5d": {
+          "evaluated": 565,
+          "hit_rate": 0.558,
+          "avg_return_pct": 1.58
+        }
+      }
+    },
+    "big_move": {
+      "count": 1252,
+      "horizons": {
+        "1d": {
+          "evaluated": 1209,
+          "hit_rate": 0.395,
+          "avg_return_pct": -0.22
+        },
+        "3d": {
+          "evaluated": 1141,
+          "hit_rate": 0.433,
+          "avg_return_pct": -1.42
+        },
+        "5d": {
+          "evaluated": 1099,
+          "hit_rate": 0.447,
+          "avg_return_pct": -0.93
+        }
+      }
+    },
     "delta_new_top20": {
       "count": 176,
       "horizons": {
@@ -72,9 +72,9 @@
           "avg_return_pct": 0.65
         },
         "3d": {
-          "evaluated": 163,
-          "hit_rate": 0.472,
-          "avg_return_pct": -0.84
+          "evaluated": 167,
+          "hit_rate": 0.473,
+          "avg_return_pct": -0.81
         },
         "5d": {
           "evaluated": 116,
