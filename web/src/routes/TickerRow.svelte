@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { ScanRow, NewsItem, RankJump } from '$lib/types';
-  import { fmtPct, fmtPrice, pctClass } from '$lib/format';
+  import { fmtPct, fmtPrice, pctClass, fmtRelative } from '$lib/format';
   import { flagsFor } from '$lib/flags';
   import Sparkline from './Sparkline.svelte';
   import IconCluster from './IconCluster.svelte';
@@ -27,6 +27,15 @@
 
   const newsHigh = news.some((n) => n.impact === 'high');
   const flags = $derived(flagsFor({ row, isNewEntrant, isAccel, pinned, jump, newsHigh }));
+
+  // "Why" line: synthesis summary if the LLM produced one, otherwise the top
+  // headline. Falsy when neither exists so the row stays single-line for the
+  // bare technical movers.
+  const headline = news[0];
+  const why = $derived(row.synthesis?.summary || headline?.title || null);
+  const whyMeta = $derived(
+    row.synthesis ? 'why' : headline ? fmtRelative(headline.published_at) : null
+  );
 </script>
 
 <a href={`/t/${row.ticker}`} class="ticker-row text-sm">
@@ -48,4 +57,10 @@
     {fmtPct(row.pct_1d)}
   </span>
   <IconCluster {flags} max={3} size="sm" />
+  {#if why}
+    <p class="col-span-6 -mt-1 pl-[94px] line-clamp-1 text-[11px] leading-relaxed text-zinc-500">
+      <span class="text-zinc-600">{whyMeta} ·</span>
+      {why}
+    </p>
+  {/if}
 </a>

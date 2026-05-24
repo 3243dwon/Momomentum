@@ -63,19 +63,20 @@ export function flagsFor(input: FlagInput): TickerFlag[] {
   return PRIORITY.filter((f) => out.has(f));
 }
 
-// Display metadata. Glyphs picked for legibility in a 12-14px cell — no script
-// faces, no emoji (emoji break layout in Firefox/Chrome at small sizes).
-export const FLAG_META: Record<TickerFlag, { glyph: string; label: string; tone: Tone }> = {
-  stretched:     { glyph: '▼', label: 'stretched · late entry',  tone: 'down' },
-  'news-hot':    { glyph: '◉', label: 'high-impact news',         tone: 'warn' },
-  'volume-spike':{ glyph: '⚡', label: 'volume spike',             tone: 'warn' },
-  'new-top-20':  { glyph: '◆', label: 'new in top-20',            tone: 'info' },
-  'rank-jump':   { glyph: '↑', label: 'rank jump',                tone: 'info' },
-  'macd-up':     { glyph: '↗', label: 'MACD bullish cross',       tone: 'up' },
-  'macd-down':   { glyph: '↘', label: 'MACD bearish cross',       tone: 'down' },
-  overbought:    { glyph: '◎', label: 'overbought',               tone: 'warn' },
-  extended:      { glyph: '▲', label: 'extended',                 tone: 'warn' },
-  watchlist:     { glyph: '★', label: 'on watchlist',             tone: 'mute' }
+// Short uppercase labels — readable at a glance without needing a legend.
+// `tip` is the long-form explanation shown on hover for anyone who wants to
+// know what "LATE" or "OB" actually means.
+export const FLAG_META: Record<TickerFlag, { label: string; tip: string; tone: Tone }> = {
+  stretched:     { label: 'LATE',  tip: 'Late entry risk — price is stretched well above its trend, chasing here is risky',  tone: 'down' },
+  'news-hot':    { label: 'NEWS',  tip: 'High-impact news headline today',                                                    tone: 'warn' },
+  'volume-spike':{ label: 'VOL',   tip: 'Volume is at least 2x its 20-day average — institutions are active',                tone: 'warn' },
+  'new-top-20':  { label: 'NEW',   tip: 'New entrant to the Top 20 since the last scan',                                      tone: 'info' },
+  'rank-jump':   { label: 'JUMP',  tip: 'Big rank jump or accelerating momentum vs. the last scan',                           tone: 'info' },
+  'macd-up':     { label: 'MACD↑', tip: 'MACD bullish cross — momentum turning up',                                           tone: 'up' },
+  'macd-down':   { label: 'MACD↓', tip: 'MACD bearish cross — momentum turning down',                                         tone: 'down' },
+  overbought:    { label: 'OB',    tip: 'Overbought (RSI > 70) — short-term pullback risk',                                  tone: 'warn' },
+  extended:      { label: 'EXT',   tip: 'Extended above moving averages — minor caution, not a strong sell signal',          tone: 'warn' },
+  watchlist:     { label: '★',     tip: 'On your watchlist',                                                                  tone: 'mute' }
 };
 
 export type Tone = 'up' | 'down' | 'warn' | 'info' | 'mute';
