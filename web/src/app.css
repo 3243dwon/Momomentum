@@ -28,32 +28,42 @@
     --body-grad: rgba(59, 130, 246, 0.06);
     --selection: rgba(59, 130, 246, 0.35);
 
+    /* Conviction tints — long/short directional card backgrounds */
+    --card-long: 20 35 28;
+    --card-short: 40 22 22;
+    --card-tint-alpha: 0.55;
+
     color-scheme: dark;
   }
 
   [data-theme='light'] {
-    --ink-950: 250 250 252;
-    --ink-900: 255 255 255;
-    --ink-800: 244 244 245;
-    --ink-700: 228 228 231;
-    --ink-600: 212 212 216;
-    --ink-500: 161 161 170;
+    /* Conviction palette: warm off-white canvas, white cards, ink type */
+    --ink-950: 250 250 247; /* #fafaf7 canvas */
+    --ink-900: 255 255 255; /* card */
+    --ink-800: 245 243 235; /* hover / muted bg */
+    --ink-700: 224 220 207; /* rule */
+    --ink-600: 196 192 180;
+    --ink-500: 138 134 120;
 
-    --text-100: 24 24 27;
-    --text-200: 39 39 42;
-    --text-300: 63 63 70;
-    --text-400: 82 82 91;
-    --text-500: 113 113 122;
-    --text-600: 161 161 170;
+    --text-100: 26 26 26;
+    --text-200: 38 38 38;
+    --text-300: 60 60 56;
+    --text-400: 90 90 82;
+    --text-500: 128 128 118;
+    --text-600: 168 165 155;
 
-    --signal-up: 5 150 105;
-    --signal-down: 220 38 38;
-    --signal-warn: 217 119 6;
+    --signal-up: 29 138 75; /* #1d8a4b */
+    --signal-down: 201 56 56; /* #c93838 */
+    --signal-warn: 196 122 28;
     --signal-info: 37 99 235;
-    --signal-flat: 113 113 122;
+    --signal-flat: 138 134 120;
 
-    --body-grad: rgba(37, 99, 235, 0.04);
-    --selection: rgba(37, 99, 235, 0.25);
+    --body-grad: rgba(0, 0, 0, 0);
+    --selection: rgba(29, 138, 75, 0.18);
+
+    --card-long: 240 250 243; /* #f0faf3 */
+    --card-short: 253 242 240; /* #fdf2f0 */
+    --card-tint-alpha: 1;
 
     color-scheme: light;
   }
@@ -101,5 +111,29 @@
   }
   .row-link {
     @apply block transition-colors hover:bg-ink-800/60 active:bg-ink-800;
+  }
+  /* PickCard: hero cards with directional tint. Long = green wash, short = red wash. */
+  .pick-card {
+    @apply card relative overflow-hidden p-4 transition-colors;
+  }
+  .pick-card-long {
+    background-color: rgb(var(--card-long) / var(--card-tint-alpha));
+  }
+  .pick-card-short {
+    background-color: rgb(var(--card-short) / var(--card-tint-alpha));
+  }
+  /* TickerRow: thin sortable rows. Tightly aligned grid.
+     Cols: rank | ticker | spark (fixed) | price (flex right) | pct | icons */
+  .ticker-row {
+    @apply grid items-center gap-3 border-b border-ink-700/60 py-2 px-3 transition-colors hover:bg-ink-800/40;
+    grid-template-columns: 22px 72px 180px minmax(0, 1fr) 72px auto;
+  }
+  .ticker-row:last-child {
+    border-bottom: 0;
+  }
+  /* Unicode block-char sparkline. Mono so glyphs align to a fixed cell. */
+  .spark-block {
+    @apply font-mono text-sm leading-none tabular-nums;
+    letter-spacing: -0.05em;
   }
 }

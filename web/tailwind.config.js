@@ -29,7 +29,8 @@ export default {
         }
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'monospace']
+        mono: ['JetBrains Mono', 'SF Mono', 'Monaco', 'monospace'],
+        display: ['"Playfair Display"', 'Georgia', 'serif']
       }
     }
   },

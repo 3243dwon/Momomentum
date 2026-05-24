@@ -2,7 +2,8 @@
   import type { ScanRow, NewsItem } from '$lib/types';
   import { fmtPct, fmtPrice, fmtRelVol, fmtClock, fmtRelative, pctClass } from '$lib/format';
   import TickerCard from './TickerCard.svelte';
-  import RecommendCard from './RecommendCard.svelte';
+  import TickerRow from './TickerRow.svelte';
+  import PickCard from './PickCard.svelte';
   import ScanTable from './ScanTable.svelte';
   import StatPill from './StatPill.svelte';
   import FilterBar, { type Filters } from './FilterBar.svelte';
@@ -136,11 +137,11 @@
           Long-term picks
           <span class="font-normal normal-case tracking-normal text-zinc-500">catalyst-backed · news explains the move</span>
         </h3>
-        <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.longTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
-              <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
             {/if}
           {/each}
         </div>
@@ -150,11 +151,11 @@
           Short-term picks
           <span class="font-normal normal-case tracking-normal text-zinc-500">pure technical · price-action trade</span>
         </h3>
-        <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {#each recommended.shortTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
-              <RecommendCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
             {/if}
           {/each}
         </div>
@@ -170,9 +171,9 @@
     {#if top20.length === 0}
       <p class="text-xs text-zinc-500">No movers in this scan.</p>
     {:else}
-      <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card overflow-hidden">
         {#each top20 as row, i (row.ticker)}
-          <TickerCard
+          <TickerRow
             row={row}
             rank={i + 1}
             isNewEntrant={newEntrants.has(row.ticker)}
@@ -220,17 +221,17 @@
           {watchlistRows.map(({ ticker }) => ticker).join(' · ')}
         </span>
       </summary>
-      <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="card overflow-hidden">
         {#each watchlistRows as { row, ticker } (ticker)}
           {#if row}
-            <TickerCard row={row} pinned news={news?.ticker_news[ticker] ?? []} />
+            <TickerRow row={row} pinned news={news?.ticker_news[ticker] ?? []} />
           {:else}
-            <a href={`/t/${ticker}`} class="card row-link p-3 opacity-60">
-              <div class="flex items-baseline justify-between">
-                <span class="text-base font-semibold tracking-tight">{ticker} <span class="text-zinc-500">★</span></span>
-                <span class="text-[10px] uppercase tracking-wider text-zinc-500">awaiting next scan</span>
-              </div>
-              <p class="mt-1 text-xs text-zinc-500">Pinned. Will populate when included in a scan.</p>
+            <a href={`/t/${ticker}`} class="ticker-row text-sm opacity-60">
+              <span></span>
+              <span class="font-semibold tracking-tight">{ticker} <span class="text-zinc-500">★</span></span>
+              <span class="text-[10px] uppercase tracking-wider text-zinc-500 col-span-4">
+                awaiting next scan
+              </span>
             </a>
           {/if}
         {/each}
