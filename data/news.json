@@ -1,128 +1,74 @@
 {
-  "generated_at": "2026-05-25T07:55:59.701672-04:00",
-  "ticker_news": {},
-  "macro_events": [
-    {
-      "event_summary": "Kevin Warsh sworn in as Fed Chair after a historically narrow Senate confirmation, raising concerns about Fed independence under perceived political pressure.",
-      "primary_drivers": [
-        "Perceived erosion of Fed independence \u2192 higher long-end term premium and steeper yield curve",
-        "Warsh's hawkish reputation on balance sheet but dovish-leaning under political pressure \u2192 USD weakness and inflation hedge bid",
-        "Uncertainty premium on US monetary policy credibility \u2192 gold/bitcoin/hard asset rotation"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "NEM",
-          "rationale": "Largest US-listed gold miner with high operating leverage to gold price. Newmont earnings sensitivity is roughly 3-4x spot gold moves at current cost structure.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Levered bitcoin proxy via treasury holdings; amplifies any debasement-trade flows into BTC with ~2x beta historically.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FCX",
-          "rationale": "Copper/gold producer benefits from weaker USD and hard-asset rotation; Freeport has direct gold byproduct exposure plus copper as inflation hedge.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "JPM",
-          "rationale": "Large money-center bank with significant long-duration securities portfolio and AOCI exposure; a bear steepener hurts the held-to-maturity book mark-to-market, even if NIM benefits modestly.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "kevin_warsh_fed_chair_confirmation_lowest_votes",
-      "source_news_ids": [
-        "78b9108171bf65e1"
-      ],
-      "headlines": [
-        "Kevin Warsh Sworn In as Fed Chair With Lowest Senate Votes Ever Amid Independence Concerns"
-      ]
-    },
-    {
-      "event_summary": "Fed funds futures have flipped from pricing cuts to pricing additional rate hikes through 2027, signaling a hawkish repricing of the entire policy path.",
-      "primary_drivers": [
-        "Higher-for-longer discount rate compresses long-duration equity valuations",
-        "Net interest margin expansion for banks with asset-sensitive balance sheets",
-        "Higher debt-service costs for leveraged borrowers and rate-sensitive consumers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SCHW",
-          "rationale": "Charles Schwab's earnings are highly rate-sensitive \u2014 higher short rates lift net interest income on client cash sweeps and reduce the drag from low-yielding legacy securities portfolio.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "IBKR",
-          "rationale": "Interactive Brokers earns a spread on customer cash balances tied directly to fed funds; each 25bp move adds materially to NII with near-zero deposit beta.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ALL",
-          "rationale": "P&C insurers like Allstate reinvest float at higher yields; sustained higher rates structurally lift investment income for years given long reinvestment runway.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CME",
-          "rationale": "CME Group benefits directly from elevated interest rate futures/options volume \u2014 a repricing of the entire 2026-2027 path drives record SOFR and Treasury futures trading.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MCO",
-          "rationale": "Hawkish repricing typically steepens credit spreads and accelerates refi/issuance activity ahead of further hikes, boosting rating agency revenue (also applies to SPGI).",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DHI",
-          "rationale": "D.R. Horton's order book is mortgage-rate sensitive; pricing hikes through 2027 implies 30-yr mortgage rates stay >7%, killing affordability and incentive costs rise.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "Z",
-          "rationale": "Zillow revenue tied to housing transaction volume \u2014 sustained high mortgage rates freeze existing-home turnover, the primary driver of Premier Agent and mortgage segments.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "O",
-          "rationale": "Realty Income is a bond-proxy net-lease REIT with long-duration cash flows and floating-rate debt cost pressure; cap rates expand as risk-free rate rises.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "Extreme-multiple growth name (>50x sales) \u2014 valuation is almost entirely terminal value and collapses under higher discount rates; classic hawkish-shock casualty.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVNA",
-          "rationale": "Carvana carries heavy debt load and depends on subprime auto financing; higher-for-longer crushes both refinancing economics and consumer auto affordability.",
-          "confidence": "high",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "fed_rate_hikes_pricing_2027_no_cuts",
-      "source_news_ids": [
-        "05de50341b4579cd"
-      ],
-      "headlines": [
-        "Markets Now Pricing in Rate Hikes Through 2027 as Fed Cut Expectations Evaporate"
-      ]
-    }
-  ]
+  "generated_at": "2026-05-25T11:19:52.396838-04:00",
+  "ticker_news": {
+    "COR": [
+      {
+        "id": "78dbc8ff12ffc33c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COR",
+        "scope": "ticker",
+        "title": "If You Invested $100 In Cencora Stock 10 Years Ago, You Would Have This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/05/52766603/if-you-invested-100-in-cencora-stock-10-years-ago-you-would-have-this-much-today",
+        "published_at": "2026-05-25T14:15:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cor_historical_return_retrospective",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "227178bf8a4d5551",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Ross Gerber Backs SpaceX IPO Following Successful Starship V3 Test Launch: 'Perfect Timing For...'",
+        "url": "https://www.benzinga.com/markets/private-markets/26/05/52766081/ross-gerber-backs-spacex-ipo-following-successful-starship-v3-test-launch-perfect-timing-for",
+        "published_at": "2026-05-25T11:55:34+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "spacex_ipo_speculation_gerber_comment",
+        "tickers_mentioned": [
+          "SPACEX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "2c7d081ed8084c0a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "AI's $8 Trillion Buildout Is Not A Bubble \u2013 It's A Bottleneck, Analyst Says",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52766675/ai-8-trillion-capex-spending-bubble-risks-visser",
+        "published_at": "2026-05-25T14:30:54+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ai_buildout_bottleneck_thesis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8632f852d83142c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Mohamed El-Erian Warns Investors Can No Longer Count On Central Banks To Rescue Markets During Selloffs",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52766095/mohamed-el-erian-warns-investors-can-no-longer-count-on-central-banks-to-rescue-markets-during-selloffs",
+        "published_at": "2026-05-25T11:58:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "el_erian_central_bank_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": []
 }
