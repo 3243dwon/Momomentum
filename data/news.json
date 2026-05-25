@@ -1,203 +1,87 @@
 {
-  "generated_at": "2026-05-25T13:47:12.678759-04:00",
+  "generated_at": "2026-05-25T15:47:00.511034-04:00",
   "ticker_news": {
-    "FLY": [
-      {
-        "id": "a853a765a0fefe4b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLY",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52767178/10-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-25T17:35:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_generic",
-        "tickers_mentioned": [
-          "FLY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "COIN": [
       {
-        "id": "d5d158e6e9812f03",
+        "id": "8bfe73673b1d3d66",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "COIN",
         "scope": "ticker",
-        "title": "Crypto Bulls Have A New Catalyst: It's Not Bitcoin's Price\u2014It's Washington",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767066/crypto-bulls-have-a-new-catalyst-its-not-bitcoins-price-its-washington",
-        "published_at": "2026-05-25T16:46:14+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "crypto_washington_catalyst",
-        "tickers_mentioned": [
-          "COIN"
-        ],
+        "title": "Coinbase, Circle, Bullish And Strategy Want More Than Bitcoin Exposure\u2014 They Want The Rails",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767387/coinbase-circle-bullish-and-strategy-want-more-than-bitcoin-exposure-they-want-the-rails",
+        "published_at": "2026-05-25T19:45:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crypto_platforms_infrastructure_strategy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fd5d74e163dabf35",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "'Just Buy More Bitcoin,' Says Crypto Expert Highlighting Institutional Investors' Ignorance On 4-Year Cycle",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767346/just-buy-more-bitcoin-says-crypto-expert-highlighting-institutional-investors-ignorance-on-4-year-cycle",
+        "published_at": "2026-05-25T19:16:08+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "crypto_expert_commentary_4year_cycle",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "HOOD": [
       {
-        "id": "d5d158e6e9812f03",
+        "id": "8bfe73673b1d3d66",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Crypto Bulls Have A New Catalyst: It's Not Bitcoin's Price\u2014It's Washington",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767066/crypto-bulls-have-a-new-catalyst-its-not-bitcoins-price-its-washington",
-        "published_at": "2026-05-25T16:46:14+00:00",
+        "title": "Coinbase, Circle, Bullish And Strategy Want More Than Bitcoin Exposure\u2014 They Want The Rails",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767387/coinbase-circle-bullish-and-strategy-want-more-than-bitcoin-exposure-they-want-the-rails",
+        "published_at": "2026-05-25T19:45:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "crypto_platforms_infrastructure_strategy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SAN": [
+      {
+        "id": "c772a54322d5031e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SAN",
+        "scope": "ticker",
+        "title": "Global Stocks Rally As Oil Sinks 7% On Iran Deal Hopes: Stock Market Today",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52767283/wall-street-closed-global-stocks-rally-oil-sinks-7-percent-iran-deal-hopes-markets-monday",
+        "published_at": "2026-05-25T18:43:30+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "crypto_washington_catalyst",
-        "tickers_mentioned": [
-          "COIN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "APLD": [
-      {
-        "id": "fe345aab0a6cc7c6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "APLD",
-        "scope": "ticker",
-        "title": "Forget Nvidia: IREN CEO Says A New AI Factory Built Today May Not Go Live Until 2030",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52766979/forget-nvidia-iren-ceo-says-a-new-ai-factory-built-today-may-not-go-live-until-2030",
-        "published_at": "2026-05-25T16:15:23+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ai_chip_capex_timelines",
+        "dedup_group": "iran_nuclear_deal_oil_rally_global_stocks",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "NVDA": [
+    "RXT": [
       {
-        "id": "fe345aab0a6cc7c6",
+        "id": "1388e7ed227260d1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "RXT",
         "scope": "ticker",
-        "title": "Forget Nvidia: IREN CEO Says A New AI Factory Built Today May Not Go Live Until 2030",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52766979/forget-nvidia-iren-ceo-says-a-new-ai-factory-built-today-may-not-go-live-until-2030",
-        "published_at": "2026-05-25T16:15:23+00:00",
+        "title": "7 Small-Cap Stocks More Than Doubled In May: Micron Did Only 46%",
+        "url": "https://www.benzinga.com/markets/market-summary/26/05/52767250/small-cap-stocks-rallied-100-percent-may-2026",
+        "published_at": "2026-05-25T18:16:08+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "ai_chip_capex_timelines",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "5394a0f2b2e2f852",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-25T17:35:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_generic",
+        "dedup_group": "small_cap_may_performance_recap",
         "tickers_mentioned": [
-          "INFQ",
-          "QCOM"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "1ada6cad6dff3c2a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Huawei Says It Has A Chipmaking Breakthrough. Did US Sanctions Backfire?",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52767143/huawei-says-it-has-a-chipmaking-breakthrough-did-us-sanctions-backfire",
-        "published_at": "2026-05-25T17:16:18+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "huawei_chipmaking_breakthrough_us_sanctions",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "0114ab81d29ab33b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVDA",
-        "scope": "ticker",
-        "title": "Nvidia's Biggest Bull Case Has A Catch: Uber And Microsoft Are Discovering AI's Hidden Cost",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52767032/nvidias-biggest-bull-case-has-a-catch-uber-and-microsoft-are-discovering-ais-hidden-cost",
-        "published_at": "2026-05-25T16:31:39+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "nvidia_bull_case_ai_cost_challenge",
-        "tickers_mentioned": [
-          "UBER",
-          "MSFT"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INFQ": [
-      {
-        "id": "5394a0f2b2e2f852",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INFQ",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-25T17:35:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_generic",
-        "tickers_mentioned": [
-          "INFQ",
-          "QCOM"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "5394a0f2b2e2f852",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-05-25T17:35:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_generic",
-        "tickers_mentioned": [
-          "INFQ",
-          "QCOM"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "NXPI": [
-      {
-        "id": "efc7867e30678435",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NXPI",
-        "scope": "ticker",
-        "title": "Here's How Much You Would Have Made Owning NXP Semiconductors Stock In The Last 15 Years",
-        "url": "https://www.benzinga.com/insights/news/26/05/52766845/heres-how-much-you-would-have-made-owning-nxp-semiconductors-stock-in-the-last-15-years",
-        "published_at": "2026-05-25T15:30:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxpi_historical_performance_recap",
-        "tickers_mentioned": [
-          "NXPI"
+          "MU"
         ],
         "route_to_synthesis": false
       }
