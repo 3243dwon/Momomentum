@@ -1,71 +1,204 @@
 {
-  "generated_at": "2026-05-25T11:19:52.396838-04:00",
+  "generated_at": "2026-05-25T13:47:12.678759-04:00",
   "ticker_news": {
-    "COR": [
+    "FLY": [
       {
-        "id": "78dbc8ff12ffc33c",
+        "id": "a853a765a0fefe4b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COR",
+        "ticker": "FLY",
         "scope": "ticker",
-        "title": "If You Invested $100 In Cencora Stock 10 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/05/52766603/if-you-invested-100-in-cencora-stock-10-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-05-25T14:15:32+00:00",
+        "title": "10 Industrials Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52767178/10-industrials-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-25T17:35:45+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "cor_historical_return_retrospective",
-        "tickers_mentioned": [],
+        "dedup_group": "industrials_whale_activity_generic",
+        "tickers_mentioned": [
+          "FLY"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "d5d158e6e9812f03",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Crypto Bulls Have A New Catalyst: It's Not Bitcoin's Price\u2014It's Washington",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767066/crypto-bulls-have-a-new-catalyst-its-not-bitcoins-price-its-washington",
+        "published_at": "2026-05-25T16:46:14+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "crypto_washington_catalyst",
+        "tickers_mentioned": [
+          "COIN"
+        ],
         "route_to_synthesis": false
       }
     ],
     "HOOD": [
       {
-        "id": "227178bf8a4d5551",
+        "id": "d5d158e6e9812f03",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Ross Gerber Backs SpaceX IPO Following Successful Starship V3 Test Launch: 'Perfect Timing For...'",
-        "url": "https://www.benzinga.com/markets/private-markets/26/05/52766081/ross-gerber-backs-spacex-ipo-following-successful-starship-v3-test-launch-perfect-timing-for",
-        "published_at": "2026-05-25T11:55:34+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_speculation_gerber_comment",
+        "title": "Crypto Bulls Have A New Catalyst: It's Not Bitcoin's Price\u2014It's Washington",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52767066/crypto-bulls-have-a-new-catalyst-its-not-bitcoins-price-its-washington",
+        "published_at": "2026-05-25T16:46:14+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "crypto_washington_catalyst",
         "tickers_mentioned": [
-          "SPACEX"
+          "COIN"
         ],
+        "route_to_synthesis": false
+      }
+    ],
+    "APLD": [
+      {
+        "id": "fe345aab0a6cc7c6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "APLD",
+        "scope": "ticker",
+        "title": "Forget Nvidia: IREN CEO Says A New AI Factory Built Today May Not Go Live Until 2030",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52766979/forget-nvidia-iren-ceo-says-a-new-ai-factory-built-today-may-not-go-live-until-2030",
+        "published_at": "2026-05-25T16:15:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ai_chip_capex_timelines",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "NVDA": [
       {
-        "id": "2c7d081ed8084c0a",
+        "id": "fe345aab0a6cc7c6",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "AI's $8 Trillion Buildout Is Not A Bubble \u2013 It's A Bottleneck, Analyst Says",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52766675/ai-8-trillion-capex-spending-bubble-risks-visser",
-        "published_at": "2026-05-25T14:30:54+00:00",
-        "type": "analyst",
+        "title": "Forget Nvidia: IREN CEO Says A New AI Factory Built Today May Not Go Live Until 2030",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52766979/forget-nvidia-iren-ceo-says-a-new-ai-factory-built-today-may-not-go-live-until-2030",
+        "published_at": "2026-05-25T16:15:23+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "ai_buildout_bottleneck_thesis",
+        "dedup_group": "ai_chip_capex_timelines",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "8632f852d83142c0",
+        "id": "5394a0f2b2e2f852",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Mohamed El-Erian Warns Investors Can No Longer Count On Central Banks To Rescue Markets During Selloffs",
-        "url": "https://www.benzinga.com/markets/market-summary/26/05/52766095/mohamed-el-erian-warns-investors-can-no-longer-count-on-central-banks-to-rescue-markets-during-selloffs",
-        "published_at": "2026-05-25T11:58:37+00:00",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-25T17:35:40+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "el_erian_central_bank_commentary",
+        "dedup_group": "tech_whale_activity_generic",
+        "tickers_mentioned": [
+          "INFQ",
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1ada6cad6dff3c2a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Huawei Says It Has A Chipmaking Breakthrough. Did US Sanctions Backfire?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52767143/huawei-says-it-has-a-chipmaking-breakthrough-did-us-sanctions-backfire",
+        "published_at": "2026-05-25T17:16:18+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "huawei_chipmaking_breakthrough_us_sanctions",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0114ab81d29ab33b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia's Biggest Bull Case Has A Catch: Uber And Microsoft Are Discovering AI's Hidden Cost",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52767032/nvidias-biggest-bull-case-has-a-catch-uber-and-microsoft-are-discovering-ais-hidden-cost",
+        "published_at": "2026-05-25T16:31:39+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "nvidia_bull_case_ai_cost_challenge",
+        "tickers_mentioned": [
+          "UBER",
+          "MSFT"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INFQ": [
+      {
+        "id": "5394a0f2b2e2f852",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INFQ",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-25T17:35:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_generic",
+        "tickers_mentioned": [
+          "INFQ",
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "5394a0f2b2e2f852",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
+        "url": "https://www.benzinga.com/insights/options/26/05/52767177/10-information-technology-stocks-whale-activity-in-todays-session",
+        "published_at": "2026-05-25T17:35:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_whale_activity_generic",
+        "tickers_mentioned": [
+          "INFQ",
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NXPI": [
+      {
+        "id": "efc7867e30678435",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXPI",
+        "scope": "ticker",
+        "title": "Here's How Much You Would Have Made Owning NXP Semiconductors Stock In The Last 15 Years",
+        "url": "https://www.benzinga.com/insights/news/26/05/52766845/heres-how-much-you-would-have-made-owning-nxp-semiconductors-stock-in-the-last-15-years",
+        "published_at": "2026-05-25T15:30:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxpi_historical_performance_recap",
+        "tickers_mentioned": [
+          "NXPI"
+        ],
         "route_to_synthesis": false
       }
     ]
