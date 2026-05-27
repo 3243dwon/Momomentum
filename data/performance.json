@@ -1,48 +1,8 @@
 {
-  "generated_at": "2026-05-27T00:18:36.780185-04:00",
+  "generated_at": "2026-05-27T06:06:09.613760-04:00",
   "window_days": 30,
   "total_alerts": 2011,
   "per_type": {
-    "watchlist": {
-      "count": 589,
-      "horizons": {
-        "1d": {
-          "evaluated": 572,
-          "hit_rate": 0.495,
-          "avg_return_pct": -0.85
-        },
-        "3d": {
-          "evaluated": 558,
-          "hit_rate": 0.602,
-          "avg_return_pct": 0.63
-        },
-        "5d": {
-          "evaluated": 536,
-          "hit_rate": 0.535,
-          "avg_return_pct": 0.51
-        }
-      }
-    },
-    "big_move": {
-      "count": 1153,
-      "horizons": {
-        "1d": {
-          "evaluated": 1128,
-          "hit_rate": 0.412,
-          "avg_return_pct": -0.03
-        },
-        "3d": {
-          "evaluated": 1093,
-          "hit_rate": 0.457,
-          "avg_return_pct": -0.28
-        },
-        "5d": {
-          "evaluated": 1030,
-          "hit_rate": 0.464,
-          "avg_return_pct": -0.49
-        }
-      }
-    },
     "catalyst": {
       "count": 104,
       "horizons": {
@@ -60,6 +20,46 @@
           "evaluated": 102,
           "hit_rate": 0.618,
           "avg_return_pct": 2.01
+        }
+      }
+    },
+    "watchlist": {
+      "count": 589,
+      "horizons": {
+        "1d": {
+          "evaluated": 571,
+          "hit_rate": 0.496,
+          "avg_return_pct": -0.85
+        },
+        "3d": {
+          "evaluated": 555,
+          "hit_rate": 0.6,
+          "avg_return_pct": 0.6
+        },
+        "5d": {
+          "evaluated": 535,
+          "hit_rate": 0.535,
+          "avg_return_pct": 0.46
+        }
+      }
+    },
+    "big_move": {
+      "count": 1153,
+      "horizons": {
+        "1d": {
+          "evaluated": 1128,
+          "hit_rate": 0.414,
+          "avg_return_pct": 0.03
+        },
+        "3d": {
+          "evaluated": 1088,
+          "hit_rate": 0.458,
+          "avg_return_pct": -0.24
+        },
+        "5d": {
+          "evaluated": 1030,
+          "hit_rate": 0.465,
+          "avg_return_pct": -0.45
         }
       }
     },
