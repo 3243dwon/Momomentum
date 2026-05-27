@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-05-27T17:05:49.662262-04:00",
+  "generated_at": "2026-05-27T19:22:06.496763-04:00",
   "window_days": 30,
-  "total_picks": 372,
+  "total_picks": 384,
   "high_score": 7,
   "per_bucket": {
     "long_hi": {
-      "count": 98,
+      "count": 101,
       "horizons": {
         "1d": {
-          "evaluated": 60,
-          "hit_rate": 0.3,
-          "avg_return_pct": -0.14
+          "evaluated": 66,
+          "hit_rate": 0.333,
+          "avg_return_pct": 0.04
         },
         "3d": {
           "evaluated": 23,
@@ -18,14 +18,14 @@
           "avg_return_pct": -0.74
         },
         "5d": {
-          "evaluated": 0,
-          "hit_rate": null,
-          "avg_return_pct": null
+          "evaluated": 3,
+          "hit_rate": 0.667,
+          "avg_return_pct": 3.21
         }
       }
     },
     "long_lo": {
-      "count": 88,
+      "count": 91,
       "horizons": {
         "1d": {
           "evaluated": 78,
@@ -38,14 +38,14 @@
           "avg_return_pct": 3.61
         },
         "5d": {
-          "evaluated": 0,
-          "hit_rate": null,
-          "avg_return_pct": null
+          "evaluated": 3,
+          "hit_rate": 0.667,
+          "avg_return_pct": 5.89
         }
       }
     },
     "short_hi": {
-      "count": 53,
+      "count": 55,
       "horizons": {
         "1d": {
           "evaluated": 44,
@@ -58,19 +58,19 @@
           "avg_return_pct": -0.21
         },
         "5d": {
-          "evaluated": 0,
-          "hit_rate": null,
-          "avg_return_pct": null
+          "evaluated": 3,
+          "hit_rate": 0.667,
+          "avg_return_pct": -0.59
         }
       }
     },
     "short_lo": {
-      "count": 133,
+      "count": 137,
       "horizons": {
         "1d": {
-          "evaluated": 94,
-          "hit_rate": 0.277,
-          "avg_return_pct": -0.14
+          "evaluated": 100,
+          "hit_rate": 0.3,
+          "avg_return_pct": -0.1
         },
         "3d": {
           "evaluated": 39,
@@ -78,9 +78,9 @@
           "avg_return_pct": -0.06
         },
         "5d": {
-          "evaluated": 0,
-          "hit_rate": null,
-          "avg_return_pct": null
+          "evaluated": 3,
+          "hit_rate": 0.667,
+          "avg_return_pct": 0.96
         }
       }
     }
