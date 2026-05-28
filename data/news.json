@@ -1,40 +1,103 @@
 {
-  "generated_at": "2026-05-27T19:20:12.317407-04:00",
-  "ticker_news": {
-    "HPQ": [
-      {
-        "id": "d56ca8add6e48132",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HPQ",
-        "scope": "ticker",
-        "title": "HP Q2 2026 Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52827963/hp-q2-2026-earnings-call-transcript",
-        "published_at": "2026-05-27T22:28:33+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "hp_q2_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NTNX": [
-      {
-        "id": "d5935a03ddb4d221",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NTNX",
-        "scope": "ticker",
-        "title": "Nutanix Q3 2026 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52827672/nutanix-q3-2026-earnings-call-complete-transcript",
-        "published_at": "2026-05-27T21:45:26+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "nutanix_q3_2026_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-05-28T00:04:15.230505-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "Oil prices spike 3% after Iran retaliates against a US airbase following fresh American strikes, reviving Strait of Hormuz disruption fears.",
+      "primary_drivers": [
+        "Crude price spike lifts upstream E&P realizations",
+        "Geopolitical risk premium on Middle East shipping/Strait of Hormuz transit",
+        "Defense procurement and missile-defense demand acceleration"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with large upstream exposure; ~40%+ of earnings leverage to Brent. Direct beneficiary of higher crude realizations and minimal Iranian asset exposure.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Highly oil-weighted Permian pure-play E&P with high operating leverage to WTI; every $5 WTI move materially shifts FCF. No Middle East operating risk.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "E&P with high beta to oil price swings and explicit geopolitical-risk correlation in its trading pattern; smaller-cap = larger % move per dollar of oil.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Maker of THAAD, PAC-3 Patriot missiles and F-35 \u2014 the exact systems being used/replenished in airbase defense. Direct procurement tailwind from Iran kinetic exchange.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Patriot interceptors and SM-series missiles deployed in CENTCOM; missile-defense reload demand is the textbook trade on Iranian missile strikes against US bases.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FTI",
+          "rationale": "TechnipFMC \u2014 offshore/subsea services provider benefits from sustained crude risk premium driving accelerated non-OPEC, non-Gulf project FIDs.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers \u2014 product tanker rates spike when Hormuz transit risk forces rerouting and ton-mile expansion; clean-product tanker pure-play.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has the highest jet fuel cost exposure as % of opex among US majors and limited hedging in recent quarters; 3% crude move flows directly to next-quarter unit costs.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United has substantial transpacific/transatlantic routing that may need to avoid Iranian airspace, plus fuel cost passthrough lag. Double hit.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is unhedged on fuel and runs thin margins; crude spike is direct EPS hit with no offset.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival \u2014 bunker fuel is a major opex line and Middle East/Red Sea itineraries face cancellation risk; already pressured by prior Houthi-related reroutes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FDX",
+          "rationale": "FedEx air freight is heavily jet-fuel exposed and surcharge passthrough lags by a quarter; also Middle East air corridor disruption affects Asia-Europe network.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow Chemical's ethylene cracker feedstock and energy costs rise with crude; commodity chemicals have weak passthrough in current demand environment.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_us_escalation_may_2026",
+      "source_news_ids": [
+        "70ba72426435ef7a"
+      ],
+      "headlines": [
+        "Oil jumps 3% after Iran says it targeted U.S. airbase following fresh American strikes"
+      ]
+    }
+  ]
 }
