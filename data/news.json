@@ -1,5 +1,794 @@
 {
-  "generated_at": "2026-05-28T07:41:59.381135-04:00",
-  "ticker_news": {},
+  "generated_at": "2026-05-28T12:08:46.519001-04:00",
+  "ticker_news": {
+    "CZR": [
+      {
+        "id": "e1002512488473d1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CZR",
+        "scope": "ticker",
+        "title": "Fertitta Strikes $17.6 Billion Deal To Take Caesars Private",
+        "url": "https://www.benzinga.com/m-a/26/05/52845925/fertitta-strikes-17-6-billion-deal-to-take-caesars-private",
+        "published_at": "2026-05-28T15:54:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_e1002512488473d1",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "FIG": [
+      {
+        "id": "91a3a357becbef51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "JPMorgan's AI Call Shifts ETF Focus Beyond Nvidia And Microsoft To Software Underdogs",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/05/52845583/chip-etf-beyond-nvidia-microsoft",
+        "published_at": "2026-05-28T15:46:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jpmorgan_ai_etf_call_software_focus",
+        "tickers_mentioned": [
+          "NVDA",
+          "MSFT"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0ced69206413b0cb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIG",
+        "scope": "ticker",
+        "title": "3 AI Software Stocks JPMorgan Loves \u2014 And One Could Jump 214%",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52834846/3-ai-software-stocks-jpmorgan-loves-and-one-could-jump-214",
+        "published_at": "2026-05-28T12:13:48+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jpm_ai_software_picks_may2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DLTR": [
+      {
+        "id": "fe199294f8a86db8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DLTR",
+        "scope": "ticker",
+        "title": "Dollar Tree Says Economic Anxiety Is Driving More Bargain Hunting",
+        "url": "https://www.benzinga.com/markets/earnings/26/05/52845358/dollar-tree-says-economic-anxiety-is-driving-more-bargain-hunting",
+        "published_at": "2026-05-28T15:41:52+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dltr_economic_anxiety_bargain_hunting",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "71d6ca8c8853ba63",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DLTR",
+        "scope": "ticker",
+        "title": "Dollar Tree Reports Q1 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52838108/dollar-tree-reports-q1-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-05-28T13:39:35+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "dltr_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "6a13bea910a4ab67",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DLTR",
+        "scope": "ticker",
+        "title": "Dollar Tree Is Now On DoorDash",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52833946/dollar-tree-is-now-on-doordash",
+        "published_at": "2026-05-28T11:48:25+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "dltr_doordash_partnership",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "e30201b0f3168198",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "What Is Going On With ARM Stock On Thursday?",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52844510/what-is-going-on-with-arm-stock-on-thursday",
+        "published_at": "2026-05-28T15:26:25+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "arm_thursday_movement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "F": [
+      {
+        "id": "fbb7c2f0c267380d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Ford Stock Tests Critical Resistance: Why Shares Are Climbing Thursday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52841249/ford-stock-tests-critical-resistance-why-shares-are-climbing-thursday",
+        "published_at": "2026-05-28T14:26:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ford_stock_technical_analysis_may2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "320a272062d2eaff",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "F",
+        "scope": "ticker",
+        "title": "Ford, Ventas, QXO And More On CNBC's 'Final Trades'",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/05/52834442/ford-ventas-qxo-and-more-on-cnbc-final-trades",
+        "published_at": "2026-05-28T12:03:21+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cnbc_final_trades_may28_2026",
+        "tickers_mentioned": [
+          "VTR",
+          "QXO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "DELL": [
+      {
+        "id": "906ed3a4b1745e97",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Dell Stock Gains After Pentagon Awards $9.7B Software Agreement",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52839701/dell-stock-gains-after-pentagon-awards-9-7b-software-agreement",
+        "published_at": "2026-05-28T14:03:28+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "dell_pentagon_9p7b_software_award",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "4950e943986a6233",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Trump Ally Laura Loomer Questions Nvidia CEO Jensen Huang's Chinese University Ties, Writes To Pentagon, Says It's A 'Massive Scandal'",
+        "url": "https://www.benzinga.com/news/politics/26/05/52837271/trump-ally-laura-loomer-questions-nvidia-ceo-jensen-huangs-chinese-university-ties-writes-to-pentagon-says-its-a-massive-scandal",
+        "published_at": "2026-05-28T13:18:39+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "laura_loomer_nvidia_jensen_huang_china_allegation",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "376e3925963c76b7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Trump Accounts App Hits Apple And Google Stores Thursday, Says Scott Bessent: 'Most Important Benefit Since...'",
+        "url": "https://www.benzinga.com/news/financing/26/05/52832073/trump-accounts-app-hits-apple-and-google-stores-thursday-says-scott-bessent-most-important-benefit-since",
+        "published_at": "2026-05-28T10:18:55+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "trump_accounts_app_stores_launch",
+        "tickers_mentioned": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "b542a13b7f92b61d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Bitcoin, Ethereum ETFs Lose $1.4B, But HYPE, SOL, XRP Attract Fresh Inflows: What's Driving The Surge?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52836023/bitcoin-ethereum-etfs-lose-1-4b-but-hype-sol-xrp-attract-fresh-inflows-whats-driving-the-surge",
+        "published_at": "2026-05-28T12:47:14+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_b542a13b7f92b61d",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DDOG": [
+      {
+        "id": "bcf9292f575c89ef",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DDOG",
+        "scope": "ticker",
+        "title": "This AI Stock Is Crushing Microsoft And Adobe In 2026 \u2014 JPMorgan Still Sees 43% Upside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52835300/ai-stock-is-crushing-microsoft-adobe-in-2026-jpmorgan-sees-43-upside",
+        "published_at": "2026-05-28T12:30:50+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jpm_ai_software_picks_may2026",
+        "tickers_mentioned": [
+          "MSFT",
+          "ADBE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NOW": [
+      {
+        "id": "bcf9292f575c89ef",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOW",
+        "scope": "ticker",
+        "title": "This AI Stock Is Crushing Microsoft And Adobe In 2026 \u2014 JPMorgan Still Sees 43% Upside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52835300/ai-stock-is-crushing-microsoft-adobe-in-2026-jpmorgan-sees-43-upside",
+        "published_at": "2026-05-28T12:30:50+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jpm_ai_software_picks_may2026",
+        "tickers_mentioned": [
+          "MSFT",
+          "ADBE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNOW": [
+      {
+        "id": "bcf9292f575c89ef",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "This AI Stock Is Crushing Microsoft And Adobe In 2026 \u2014 JPMorgan Still Sees 43% Upside",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52835300/ai-stock-is-crushing-microsoft-adobe-in-2026-jpmorgan-sees-43-upside",
+        "published_at": "2026-05-28T12:30:50+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jpm_ai_software_picks_may2026",
+        "tickers_mentioned": [
+          "MSFT",
+          "ADBE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "06a7cdf5e6e3d800",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Micron To Rally Around 24%? Here Are 10 Top Analyst Forecasts For Thursday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52834097/micron-to-rally-around-24-here-are-10-top-analyst-forecasts-for-thursday",
+        "published_at": "2026-05-28T11:56:33+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "micron_analyst_forecast_roundup",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c12eb125503e42ab",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Snowflake Says AI Is No Longer Just A Tailwind \u2014 It's Driving The Business",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52846142/snowflake-ai-no-longer-just-tailwind",
+        "published_at": "2026-05-28T15:58:59+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "snow_q1_ai_inflection",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d87501dd43444f39",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Snowflake Stock Soars After Q1 Double Beat, AWS AI Partnership Expansion",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52836294/snowflake-stock-soars-after-q1-double-beat-aws-ai-partnership-expansion",
+        "published_at": "2026-05-28T12:55:28+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "snow_q1_double_beat_aws_partnership",
+        "tickers_mentioned": [
+          "AWS"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "f8bd51ebd02767a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Snowflake's AI Moment Is Here: Analysts See 'Inflection' In Market Share Gains",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52842436/snowflake-stock-soars-ai-inflection-market-share-analysts",
+        "published_at": "2026-05-28T14:46:27+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "snow_q1_ai_inflection",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9fb97fd669a4f454",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Snowflake, Salesforce And Marvell All Pushed AI Hard \u2014 Only One Stock Exploded Higher",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52837560/snowflake-salesforce-and-marvell-all-pushed-ai-hard-only-one-stock-exploded-higher",
+        "published_at": "2026-05-28T13:28:22+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "snow_salesforce_marvell_ai_comparison",
+        "tickers_mentioned": [
+          "CRM",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8e816f8b14d03c6c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "These Analysts Boost Their Forecasts On Snowflake After Upbeat Q1 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52834597/these-analysts-boost-their-forecasts-on-snowflake-after-upbeat-q1-results-2",
+        "published_at": "2026-05-28T12:07:25+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "snow_q1_analyst_boost",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "866d535e38e8acd3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52834505/12-information-technology-stocks-moving-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:05:57+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "it_sector_premarket_movers",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ABSI": [
+      {
+        "id": "1bc0d32a232d6587",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ABSI",
+        "scope": "ticker",
+        "title": "This Suncrete Analyst Begins Coverage On A Bullish Note; Here Are Top 3 Initiations For Thursday",
+        "url": "https://www.benzinga.com/news/26/05/52834396/this-suncrete-analyst-begins-coverage-on-a-bullish-note-here-are-top-3-initiations-for-thursday",
+        "published_at": "2026-05-28T12:01:59+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "absi_analyst_initiation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AVTR": [
+      {
+        "id": "d0252e247bcaa47d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AVTR",
+        "scope": "ticker",
+        "title": "Braze Posts Mixed Q1 Results, Joins Sidus Space, Everpure And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52834393/braze-posts-mixed-q1-results-joins-sidus-space-everpure-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:01:49+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "braze_q1_2026_mixed_results",
+        "tickers_mentioned": [
+          "BRZE"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SIDU": [
+      {
+        "id": "d0252e247bcaa47d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SIDU",
+        "scope": "ticker",
+        "title": "Braze Posts Mixed Q1 Results, Joins Sidus Space, Everpure And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52834393/braze-posts-mixed-q1-results-joins-sidus-space-everpure-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:01:49+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "braze_q1_2026_mixed_results",
+        "tickers_mentioned": [
+          "BRZE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3e6c66c5cb8379b2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SIDU",
+        "scope": "ticker",
+        "title": "Sidus Space Shares Drop As Investors Weigh Dilution From Stock Offering",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52841660/sidus-space-shares-drop-as-investors-weigh-dilution-from-stock-offering",
+        "published_at": "2026-05-28T14:34:12+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "sidu_stock_offering_dilution",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "dc2b8b5f99f85ea1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SIDU",
+        "scope": "ticker",
+        "title": "12 Industrials Stocks Moving In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52834508/12-industrials-stocks-moving-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:06:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "industrials_premarket_wrap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "376e3925963c76b7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Trump Accounts App Hits Apple And Google Stores Thursday, Says Scott Bessent: 'Most Important Benefit Since...'",
+        "url": "https://www.benzinga.com/news/financing/26/05/52832073/trump-accounts-app-hits-apple-and-google-stores-thursday-says-scott-bessent-most-important-benefit-since",
+        "published_at": "2026-05-28T10:18:55+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "trump_accounts_app_stores_launch",
+        "tickers_mentioned": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SOFI": [
+      {
+        "id": "376e3925963c76b7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SOFI",
+        "scope": "ticker",
+        "title": "Trump Accounts App Hits Apple And Google Stores Thursday, Says Scott Bessent: 'Most Important Benefit Since...'",
+        "url": "https://www.benzinga.com/news/financing/26/05/52832073/trump-accounts-app-hits-apple-and-google-stores-thursday-says-scott-bessent-most-important-benefit-since",
+        "published_at": "2026-05-28T10:18:55+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "trump_accounts_app_stores_launch",
+        "tickers_mentioned": [
+          "AAPL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "KSS": [
+      {
+        "id": "ad625ef2a794c7e7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KSS",
+        "scope": "ticker",
+        "title": "Kohl's Q1 2026 Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52839809/kohls-q1-2026-earnings-call-transcript",
+        "published_at": "2026-05-28T14:05:16+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "kss_q1_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "cf74193ca58e31e9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KSS",
+        "scope": "ticker",
+        "title": "12 Consumer Discretionary Stocks Moving In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52834527/12-consumer-discretionary-stocks-moving-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:06:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_premarket_movers_may28",
+        "tickers_mentioned": [
+          "KSS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ONDS": [
+      {
+        "id": "9e1e2061c5facc9b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "Pentagon 'Drone Dominance' Push Sends Ondas Shares Surging",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52844383/pentagon-drone-dominance-push-sends-ondas-shares-surging",
+        "published_at": "2026-05-28T15:23:57+00:00",
+        "type": "rumor",
+        "impact": "high",
+        "dedup_group": "onds_pentagon_drone_dominance",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "3d4700007812f944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "Trump's Drone Dominance Play: US Government May Soon Own Stakes In These Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52843005/trump-drone-dominance-us-government-may-soon-own-stakes",
+        "published_at": "2026-05-28T14:57:45+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_drone_government_stake",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "KTOS": [
+      {
+        "id": "3d4700007812f944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KTOS",
+        "scope": "ticker",
+        "title": "Trump's Drone Dominance Play: US Government May Soon Own Stakes In These Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52843005/trump-drone-dominance-us-government-may-soon-own-stakes",
+        "published_at": "2026-05-28T14:57:45+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_drone_government_stake",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RCAT": [
+      {
+        "id": "3d4700007812f944",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCAT",
+        "scope": "ticker",
+        "title": "Trump's Drone Dominance Play: US Government May Soon Own Stakes In These Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52843005/trump-drone-dominance-us-government-may-soon-own-stakes",
+        "published_at": "2026-05-28T14:57:45+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_drone_government_stake",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "68bd689afa125a3f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCAT",
+        "scope": "ticker",
+        "title": "Red Cat, Drone Sector Surge On Reports of Trump Administration Funding Deals",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52839998/red-cat-drone-sector-surge-on-reports-of-trump-administration-funding-deals",
+        "published_at": "2026-05-28T14:08:30+00:00",
+        "type": "rumor",
+        "impact": "high",
+        "dedup_group": "rcat_trump_drone_funding",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "dc2b8b5f99f85ea1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCAT",
+        "scope": "ticker",
+        "title": "12 Industrials Stocks Moving In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/05/52834508/12-industrials-stocks-moving-in-thursdays-pre-market-session",
+        "published_at": "2026-05-28T12:06:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "industrials_premarket_wrap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HRL": [
+      {
+        "id": "30502db87702d149",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HRL",
+        "scope": "ticker",
+        "title": "Hormel Foods Reports Q2 2026 Results: Full Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/05/52839424/hormel-foods-reports-q2-2026-results-full-earnings-call-transcript",
+        "published_at": "2026-05-28T13:59:31+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "hrl_q2_2026_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NTNX": [
+      {
+        "id": "fe086fbe6d58df89",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NTNX",
+        "scope": "ticker",
+        "title": "Nutanix Analysts Boost Their Forecasts Following Upbeat Q3 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52835819/nutanix-analysts-boost-their-forecasts-following-upbeat-q3-results",
+        "published_at": "2026-05-28T12:40:42+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "ntnx_q3_results_analyst_boost",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "06a7cdf5e6e3d800",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NTNX",
+        "scope": "ticker",
+        "title": "Micron To Rally Around 24%? Here Are 10 Top Analyst Forecasts For Thursday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52834097/micron-to-rally-around-24-here-are-10-top-analyst-forecasts-for-thursday",
+        "published_at": "2026-05-28T11:56:33+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "micron_analyst_forecast_roundup",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "57620e9fd63c4f91",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Tesla Rival Figure Lands Deal With JCPenney Parent After Viral Package Sorting Marathon, White House Visit",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52835666/tesla-rival-figure-lands-deal-with-jcpenney-parent-after-viral-package-sorting-marathon-white-house-visit",
+        "published_at": "2026-05-28T12:39:04+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "figure_robotics_jcpenney_deal",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "ab10f0ddaabc8700",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Michael Saylor Says Bitcoin Has No Competition: 'There's No Second Best Crypto Asset'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52834740/michael-saylor-says-bitcoin-has-no-competition-theres-no-second-best-crypto-asset",
+        "published_at": "2026-05-28T12:10:53+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "michael_saylor_bitcoin_comments",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "29265118cdd818c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "As Nvidia, Oracle And Amazon Pour Billions Into AI, Wall Street Is Quietly Hedging For Trouble",
+        "url": "https://www.benzinga.com/markets/economic-data/26/05/52832109/as-nvidia-oracle-and-amazon-pour-billions-into-ai-wall-street-is-quietly-hedging-for-trouble",
+        "published_at": "2026-05-28T10:24:09+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "wall_street_hedging_ai_capex_risks",
+        "tickers_mentioned": [
+          "NVDA",
+          "AMZN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "GAP": [
+      {
+        "id": "d68a197d365c7009",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GAP",
+        "scope": "ticker",
+        "title": "Gap Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/05/52831922/gap-earnings-are-imminent-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
+        "published_at": "2026-05-28T10:11:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "unclassified_d68a197d365c7009",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TTD": [
+      {
+        "id": "6154779e58e161eb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TTD",
+        "scope": "ticker",
+        "title": "Trade Desk Stock's Momentum Plummets As Amazon And AI Squeeze Market Share\u2014 Rothschild Eyes 51% Downside",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52835149/trade-desk-stocks-momentum-plummets-as-amazon-and-ai-squeeze-market-share-rothschild-eyes-51-downside",
+        "published_at": "2026-05-28T12:27:52+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "trade_desk_margin_pressure_amazon_ai",
+        "tickers_mentioned": [
+          "AMZN"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
   "macro_events": []
 }
