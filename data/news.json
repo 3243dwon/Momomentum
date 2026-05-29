@@ -1,74 +1,176 @@
 {
-  "generated_at": "2026-05-28T19:26:19.529137-04:00",
+  "generated_at": "2026-05-29T00:06:17.168637-04:00",
   "ticker_news": {
-    "MDB": [
+    "KTOS": [
       {
-        "id": "9ee3fc69b055e9da",
+        "id": "b660dd430cb3e46b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MDB",
+        "ticker": "KTOS",
         "scope": "ticker",
-        "title": "MongoDB Q1 2027 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52861805/mongodb-q1-2027-earnings-call-complete-transcript",
-        "published_at": "2026-05-28T22:21:19+00:00",
-        "type": "earnings",
+        "title": "Kratos Defense (KTOS) Stock Is Trending As Trump Administration Eyes Equity Stakes In US Drone Makers",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52863250/kratos-defense-ktos-stock-trending-us-drone-makers",
+        "published_at": "2026-05-29T03:41:14+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "mdb_q1_2027_earnings",
+        "dedup_group": "trump_admin_drone_equity_stakes",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "GAP": [
+    "ONDS": [
       {
-        "id": "1646ea913c82bfa1",
+        "id": "b660dd430cb3e46b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GAP",
+        "ticker": "ONDS",
         "scope": "ticker",
-        "title": "Gap Q1 2026 Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52861765/gap-q1-2026-earnings-call-transcript",
-        "published_at": "2026-05-28T22:13:19+00:00",
-        "type": "earnings",
+        "title": "Kratos Defense (KTOS) Stock Is Trending As Trump Administration Eyes Equity Stakes In US Drone Makers",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52863250/kratos-defense-ktos-stock-trending-us-drone-makers",
+        "published_at": "2026-05-29T03:41:14+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "gap_q1_2026_earnings",
+        "dedup_group": "trump_admin_drone_equity_stakes",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ESTC": [
+    "RCAT": [
       {
-        "id": "defc087a064843ea",
+        "id": "b660dd430cb3e46b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ESTC",
+        "ticker": "RCAT",
         "scope": "ticker",
-        "title": "Elastic Reports Q4 2026 Results: Full Earnings Call Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/05/52861685/elastic-reports-q4-2026-results-full-earnings-call-transcript",
-        "published_at": "2026-05-28T22:08:04+00:00",
-        "type": "earnings",
+        "title": "Kratos Defense (KTOS) Stock Is Trending As Trump Administration Eyes Equity Stakes In US Drone Makers",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52863250/kratos-defense-ktos-stock-trending-us-drone-makers",
+        "published_at": "2026-05-29T03:41:14+00:00",
+        "type": "rumor",
         "impact": "medium",
-        "dedup_group": "estc_q4_2026_earnings",
+        "dedup_group": "trump_admin_drone_equity_stakes",
         "tickers_mentioned": [],
         "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "853195ffa9cef340",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Dell Earnings The 'Widest' In Its Public History, Says This Analyst,  But Jim Cramer Thinks Nvidia Is 'Still The King'",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52863211/dell-earnings-widest-public-history-jim-cramer-nvidia-king",
+        "published_at": "2026-05-29T03:24:25+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dell_q1_2026_earnings_beat",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
       }
     ],
     "DELL": [
       {
-        "id": "0ab261b2de024f50",
+        "id": "853195ffa9cef340",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "DELL",
         "scope": "ticker",
-        "title": "Hewlett Packard Enterprise Stock Jumps After Dell's Massive Q1 Beat On AI Demand",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/05/52861665/hewlett-packard-enterprise-stock-jumps-after-dells-massive-q1-beat-on-ai-demand",
-        "published_at": "2026-05-28T22:05:54+00:00",
+        "title": "Dell Earnings The 'Widest' In Its Public History, Says This Analyst,  But Jim Cramer Thinks Nvidia Is 'Still The King'",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52863211/dell-earnings-widest-public-history-jim-cramer-nvidia-king",
+        "published_at": "2026-05-29T03:24:25+00:00",
         "type": "earnings",
-        "impact": "high",
-        "dedup_group": "dell_q1_2027_earnings_ai_beat",
+        "impact": "medium",
+        "dedup_group": "dell_q1_2026_earnings_beat",
         "tickers_mentioned": [
-          "HPE"
+          "NVDA"
         ],
         "route_to_synthesis": true
+      },
+      {
+        "id": "2f89de46f6341bc2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Dell, Super Micro Computer, Unusual Machines, Virgin Galactic And Costco: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52862775/dell-super-micro-computer-unusual-machines-virgin-galactic-and-costco-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-29T01:26:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_on_radar_roundup_052926",
+        "tickers_mentioned": [
+          "SMCI",
+          "COST",
+          "VGLY",
+          "UM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNOW": [
+      {
+        "id": "853195ffa9cef340",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Dell Earnings The 'Widest' In Its Public History, Says This Analyst,  But Jim Cramer Thinks Nvidia Is 'Still The King'",
+        "url": "https://www.benzinga.com/markets/tech/26/05/52863211/dell-earnings-widest-public-history-jim-cramer-nvidia-king",
+        "published_at": "2026-05-29T03:24:25+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "dell_q1_2026_earnings_beat",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "2f89de46f6341bc2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Dell, Super Micro Computer, Unusual Machines, Virgin Galactic And Costco: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52862775/dell-super-micro-computer-unusual-machines-virgin-galactic-and-costco-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-29T01:26:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_on_radar_roundup_052926",
+        "tickers_mentioned": [
+          "SMCI",
+          "COST",
+          "VGLY",
+          "UM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SPCE": [
+      {
+        "id": "2f89de46f6341bc2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SPCE",
+        "scope": "ticker",
+        "title": "Dell, Super Micro Computer, Unusual Machines, Virgin Galactic And Costco: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/05/52862775/dell-super-micro-computer-unusual-machines-virgin-galactic-and-costco-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-05-29T01:26:18+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_on_radar_roundup_052926",
+        "tickers_mentioned": [
+          "SMCI",
+          "COST",
+          "VGLY",
+          "UM"
+        ],
+        "route_to_synthesis": false
       }
     ]
   },
