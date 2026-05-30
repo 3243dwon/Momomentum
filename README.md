@@ -67,11 +67,44 @@ Per-ticker/type throttling (2-hour cooldown) prevents alert spam.
 
 ## Web dashboard
 
-- `/` — scan table with filters (size, move %, volume, news, VWAP), top-20 movers, fresh-news tickers, watchlist
+- `/` — recommended picks (LLM-scored, with conviction), scan filters, top-20 movers, fresh-news tickers, watchlist, full sortable table — see *Dashboard design* below
 - `/t/[ticker]` — per-ticker drill-down (full technicals, all news, synthesis)
 - `/macro` — macro events with beneficiaries/losers
 - `/weekly` — Saturday roll-up (top movers, catalysts, rank jumps by day)
 - `/performance` — past alert outcomes (1d/3d/5d returns)
+
+## Dashboard design
+
+The scan page uses the **Conviction** visual direction — warm off-white canvas (`#fafaf7`) in light mode, dark slate in dark mode, with directional card tints (green wash for longs, red for shorts). Playfair Display is loaded for the hero `%` number and conviction score; everything else stays in the system sans / JetBrains Mono stack.
+
+**Sections, top to bottom:**
+
+- **Recommended** — hero `PickCard` grid (3 columns). Each card: rank · ticker (large bold) · long/short badge · price · Playfair display `%` · inset SVG sparkline · conviction score (1–10) · flag chips · synthesis "why" · top supporting headlines. Bucketed by long-term (catalyst-backed) vs short-term (pure technical), both sorted by score.
+- **Top 20 movers** — dense `TickerRow` grid (rank · ticker · block-char sparkline · price · `%` · chips). Sorted by `|%chg|` of the filtered universe. Each row optionally carries a one-line "why" pulled from synthesis summary or top headline.
+- **Fresh news** — tickers with new headlines that aren't already in Top 20.
+- **Watchlist** — same thin-row treatment, `★` next to the ticker.
+- **All scan** — collapsible `<details>` with the full sortable/searchable table.
+
+**Flag chips** (replaces the old pill-badge stack — single normalized vocabulary in `lib/flags.ts`, rendered by `IconCluster` with up to 3 visible and a `+N` overflow chip):
+
+| Chip   | Tone  | Means |
+|--------|-------|-------|
+| `LATE` | red   | Late entry risk — price stretched well above its trend |
+| `NEWS` | warn  | High-impact news headline today |
+| `VOL`  | warn  | Volume ≥ 2× 20-day average |
+| `NEW`  | info  | New entrant to Top 20 since the last scan |
+| `JUMP` | info  | Big rank jump or accelerating momentum |
+| `MACD↑`| up    | MACD bullish cross |
+| `MACD↓`| down  | MACD bearish cross |
+| `OB`   | warn  | Overbought (RSI > 70) |
+| `EXT`  | warn  | Extended above moving averages |
+| `★`    | mute  | On watchlist |
+
+Hover any chip for the full plain-English tooltip.
+
+**Sparkline strategy is hybrid** — hero PickCards get a readable SVG polyline at full opacity (top-right inset of the `%` number); thin TickerRows get unicode block chars (`▁▂▃▄▅▆▇`) in JetBrains Mono. One `Sparkline` component handles both via a `treatment: 'line' | 'block'` prop.
+
+**Components** (`web/src/routes/`): `PickCard.svelte`, `TickerRow.svelte`, `IconCluster.svelte`, `Sparkline.svelte`, `FilterBar.svelte`, `ScanTable.svelte`. Tokens live on `:root` / `[data-theme='dark']` in `app.css` so the same components render correctly in both themes without per-component branching.
 
 ## Running it
 
