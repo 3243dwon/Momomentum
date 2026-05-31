@@ -149,7 +149,23 @@ def build_alerts(
             continue
 
         if abs(pct) >= pct_threshold and rel_vol >= config.REL_VOLUME_THRESHOLD and vol >= ah_min_volume:
-            synth = syntheses.get(t, {}).get("summary")
+            # Gate: raw big movers without supporting signal are noise (perf
+            # data Apr-May 2026: 1106 fired, 47.7% 5d hit rate, +0.25% avg).
+            # Require ONE of:
+            #   - any synthesis (the news pipeline thought this was worth
+            #     explaining — already a quality filter)
+            #   - extreme volume (≥ 3× avg, not just the ≥ 2× threshold)
+            # AND not "stretched" (already late). A confirmed catalyst would
+            # have fired as type=catalyst above; this branch handles the
+            # second-tier confirmation.
+            synth_full = syntheses.get(t) or {}
+            has_synthesis = bool(synth_full)
+            extreme_volume = rel_vol >= 3.0
+            stretched = r.get("caution_level") == "stretched"
+            if stretched or not (has_synthesis or extreme_volume):
+                continue
+
+            synth = synth_full.get("summary")
             body = f"**{t}** {_fmt_pct(pct)}{suffix} on {rel_vol:.1f}x avg volume (RSI {r.get('rsi_14', '?')})"
             if synth:
                 body += f"\n\n*{synth}*"

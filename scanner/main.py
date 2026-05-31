@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, mom_digest, news, performance, recommend, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, mom_digest, news, performance, recommend, regime as regime_mod, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -224,9 +224,16 @@ def run(
         snapshots_by_ticker=snapshots,
         intraday_by_ticker=intraday,
     )
-    recommendations = recommend.compute(enriched_rows)
+    # Market regime snapshot — gates short picks in bull tape and tags every
+    # logged outcome so future analysis can stratify by regime. Empty on any
+    # Alpaca failure; downstream callers handle that gracefully.
+    regime = regime_mod.compute()
+    if regime:
+        regime["window"] = window.value  # passthrough so the log carries it
+
+    recommendations = recommend.compute(enriched_rows, regime=regime)
     render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations)
-    performance.log_recommendations(recommendations, rows, now)
+    performance.log_recommendations(recommendations, rows, now, regime=regime)
 
     # Log notable momentum events for the Saturday weekly summary.
     weekly_events.record(
@@ -244,7 +251,7 @@ def run(
         sent = feishu.send_consolidated(alerts)
         throttle.commit()
         log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)
-        performance.log_alerts(alerts, rows, now)
+        performance.log_alerts(alerts, rows, now, regime=regime)
 
     # Mom digest: purely additive Chinese-language macro+industry digest to a
     # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.

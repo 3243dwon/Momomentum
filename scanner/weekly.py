@@ -23,7 +23,7 @@ from datetime import datetime, timedelta, timezone
 
 import pandas as pd
 
-from scanner import config, technicals, weekly_events
+from scanner import config, regime as regime_mod, technicals, weekly_events, weekly_performance
 from scanner.alerts import feishu
 from scanner.llm.client import get_client, LLMClient
 
@@ -337,6 +337,16 @@ def run_weekly() -> int:
 
     _write_weekly(analyses, now)
     _send_digest(analyses, now)
+
+    # Performance tracking: log this week's classifications (with the regime
+    # they were made in), evaluate any past-week classifications whose 2w/4w/8w
+    # horizons have elapsed, and roll up the stats. Same pattern as the daily
+    # scanner's performance.* trio. No-op gracefully if Alpaca is unreachable.
+    weekly_regime = regime_mod.compute()
+    weekly_performance.log_weekly_classifications(analyses, now, regime=weekly_regime)
+    _alpaca = getattr(technicals, "_CLIENT", None)
+    weekly_performance.evaluate_pending(_alpaca, datetime.now(timezone.utc))
+    weekly_performance.compile_stats(now)
     return 0
 
 

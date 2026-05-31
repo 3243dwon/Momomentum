@@ -150,11 +150,23 @@ def _score_row(row: dict, direction: str) -> dict | None:
     }
 
 
-def compute(rows: list[dict]) -> dict:
+# Minimum score required for shorts to survive a bull regime. Set high so
+# only the most extreme technical setups make it through when SPY > 50d MA —
+# perf data showed short_hi averaging -3.57% over 5 days in this regime, so
+# the default behavior is to suppress shorts entirely.
+SHORT_BULL_REGIME_MIN_SCORE = 9
+
+
+def compute(rows: list[dict], regime: dict | None = None) -> dict:
     """Score every row for both directions; return the top picks per side.
 
     Each recommendation is {ticker, direction, score, reasons, cautions} —
     the web app joins it back to the full scan row by ticker for display.
+
+    `regime` (optional) is the output of scanner.regime.compute(). When SPY
+    is above its 50-day MA we suppress shorts (or filter to extreme scores
+    only) because shorting strength in a bull tape historically loses money
+    — verified against data/recommendation_performance.json.
     """
     rel_vol = {r["ticker"]: (r.get("rel_volume") or 0) for r in rows}
     longs: list[dict] = []
@@ -173,4 +185,19 @@ def compute(rows: list[dict]) -> dict:
 
     longs.sort(key=sort_key)
     shorts.sort(key=sort_key)
+
+    # --- Bull-regime short suppression --------------------------------------
+    # Empty regime = no data → skip the gate, behave as before (don't punish
+    # the user for an Alpaca outage). spy_above_50d explicitly False = bear/
+    # choppy regime → keep shorts. True = bull tape → suppress.
+    if regime and regime.get("spy_above_50d") is True:
+        before = len(shorts)
+        shorts = [s for s in shorts if s["score"] >= SHORT_BULL_REGIME_MIN_SCORE]
+        if before != len(shorts):
+            import logging
+            logging.getLogger(__name__).info(
+                "Bull regime (SPY > 50d): shorts %d → %d (kept score >= %d)",
+                before, len(shorts), SHORT_BULL_REGIME_MIN_SCORE,
+            )
+
     return {"longs": longs[:MAX_PER_SIDE], "shorts": shorts[:MAX_PER_SIDE]}

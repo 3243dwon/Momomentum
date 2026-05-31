@@ -52,8 +52,40 @@ def _write_entries(entries: list[dict], path: Path = ALERTS_LOG) -> None:
             f.write(json.dumps(e) + "\n")
 
 
-def log_alerts(alerts: list[dict], rows: list[dict], now: datetime) -> None:
-    """Append dispatched alerts to the log. Macro alerts (no ticker) are skipped."""
+def _extract_features(row: dict) -> dict:
+    """Snapshot the per-row signals we'll regress forward returns against
+    later. Kept compact so the .jsonl stays readable; nullables passed through
+    as-is so missing signals don't get confused with zero."""
+    synth = row.get("synthesis") or {}
+    intraday = row.get("intraday") or {}
+    snapshot = row.get("snapshot") or {}
+    return {
+        "pct_1d": row.get("pct_1d"),
+        "pct_5d": row.get("pct_5d"),
+        "rel_volume": row.get("rel_volume"),
+        "rsi_14": row.get("rsi_14"),
+        "macd_cross": row.get("macd_cross"),
+        "macd_hist": row.get("macd_hist"),
+        "above_vwap": intraday.get("above_vwap"),
+        "gap_pct": snapshot.get("gap_pct"),
+        "caution_level": row.get("caution_level"),
+        "has_synthesis": bool(synth),
+        "verdict": synth.get("verdict") if synth else None,
+        "confidence": synth.get("confidence") if synth else None,
+        "news_count": row.get("news_count"),
+        "tier": row.get("tier"),
+        "sector": row.get("sector"),
+        "flags": row.get("flags") or [],
+    }
+
+
+def log_alerts(alerts: list[dict], rows: list[dict], now: datetime,
+                regime: dict | None = None) -> None:
+    """Append dispatched alerts to the log. Macro alerts (no ticker) are skipped.
+
+    `regime` (optional) is the output of scanner.regime.compute() — stored on
+    each entry so future analysis can split hit rates by regime label.
+    """
     by_ticker = {r["ticker"]: r for r in rows}
     existing = _read_entries()
     new_entries = []
@@ -74,6 +106,8 @@ def log_alerts(alerts: list[dict], rows: list[dict], now: datetime) -> None:
             "direction": 1 if pct >= 0 else -1,
             "evaluations": {},
         }
+        if regime:
+            entry["regime"] = regime
         new_entries.append(entry)
     if new_entries:
         with open(ALERTS_LOG, "a") as f:
@@ -227,9 +261,15 @@ def compile_stats(now: datetime) -> dict:
     return out
 
 
-def log_recommendations(recommendations: dict, rows: list[dict], now: datetime) -> None:
+def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
+                         regime: dict | None = None) -> None:
     """Append this scan's recommendation picks to the log with their entry
-    price, so 1/3/5-day outcomes can be evaluated on later scans."""
+    price, so 1/3/5-day outcomes can be evaluated on later scans.
+
+    Also persists a feature vector (rsi/macd/vol/news/etc) and the regime
+    snapshot per pick — these let future analyses regress forward return
+    against feature×regime instead of just score band.
+    """
     by_ticker = {r["ticker"]: r for r in rows}
     new_entries = []
     for direction in ("longs", "shorts"):
@@ -238,14 +278,18 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime) 
             row = by_ticker.get(t)
             if not row or row.get("price") is None:
                 continue
-            new_entries.append({
+            entry = {
                 "ts": now.astimezone(timezone.utc).isoformat(),
                 "ticker": t,
                 "direction": rec.get("direction", "long"),
                 "score": rec.get("score", 0),
                 "price_at_pick": row["price"],
                 "evaluations": {},
-            })
+                "features": _extract_features(row),
+            }
+            if regime:
+                entry["regime"] = regime
+            new_entries.append(entry)
     if new_entries:
         with open(RECS_LOG, "a") as f:
             for e in new_entries:
