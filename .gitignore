@@ -29,6 +29,13 @@ Thumbs.db
 .idea/
 *.swp
 
+# Claude Code: local-only state. launch.json is tracked.
+.claude/settings.local.json
+.claude/worktrees/
+
+# Design-brief zip — redundant with the unpacked stocks/ folder.
+stocks.zip
+
 # Runtime artifacts (keep published data/*.json committed for the web app;
 # cache + audit are local-only)
 data/cache/
