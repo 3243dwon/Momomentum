@@ -23,6 +23,22 @@ import type { ScanRow, TradeLevels } from './types';
 
 export type { TradeLevels };
 
+// A deterministic plain-language trade plan built from the levels — the
+// fallback so there's ALWAYS written guidance on a pick, even before the
+// desk's PM writes the richer version. Plain talk, real numbers, no LLM.
+export function quickPlan(l: TradeLevels): string {
+  const f = (n: number) => n.toFixed(2);
+  const rr = l.rr != null ? `${l.rr.toFixed(1)}R` : '—';
+  if (l.side === 'long') {
+    const risk = (((l.entry - l.stop) / l.entry) * 100).toFixed(1);
+    const rew = (((l.target - l.entry) / l.entry) * 100).toFixed(1);
+    return `Enter near $${f(l.entry)}. Stop $${f(l.stop)} (−${risk}%); first target $${f(l.target)} (+${rew}%, ${rr}). Below support at $${f(l.pivot)} the setup's done.`;
+  }
+  const risk = (((l.stop - l.entry) / l.entry) * 100).toFixed(1);
+  const rew = (((l.entry - l.target) / l.entry) * 100).toFixed(1);
+  return `Short near $${f(l.entry)}. Stop $${f(l.stop)} (+${risk}%); first target $${f(l.target)} (−${rew}%, ${rr}). Above resistance at $${f(l.pivot)} the setup's done.`;
+}
+
 function meanAbsMove(closes: number[]): number {
   if (closes.length < 2) return 0;
   let sum = 0;
@@ -42,40 +58,47 @@ export function computeLevels(row: ScanRow, side: 'long' | 'short'): TradeLevels
   const spark = row.spark;
   if (price == null || price <= 0 || !spark || spark.length < 5) return null;
 
-  const recent = spark.slice(-10);
-  const swingLow = Math.min(...recent);
-  const swingHigh = Math.max(...recent);
+  // Nearer structure (last 5 bars) anchors the stop, so a far swing low on a
+  // name that's already run a long way doesn't create an absurd 15%+ stop.
+  // Wider window (last 10) is only used to reach for the target.
+  const nearLow = Math.min(...spark.slice(-5));
+  const nearHigh = Math.max(...spark.slice(-5));
+  const farLow = Math.min(...spark.slice(-10));
+  const farHigh = Math.max(...spark.slice(-10));
 
   // Volatility buffer for the stop — clamp so it's neither hair-trigger nor huge.
   const atrPct = Math.min(0.08, Math.max(0.015, meanAbsMove(spark))); // 1.5%–8%
   const buffer = price * atrPct * 0.5;
+  const MAX_RISK = 0.08; // never risk more than ~8% to entry — keeps stops practical
 
   const vwap = row.intraday?.vwap ?? null;
 
   if (side === 'long') {
-    // Support: recent swing low, lifted to VWAP if VWAP is below price but
-    // above the swing low (a nearer, more relevant floor).
-    let support = swingLow;
-    if (vwap != null && vwap < price && vwap > swingLow) support = vwap;
-    if (support >= price) support = price * (1 - atrPct); // degenerate: price at/below lows
+    // Support: nearer swing low, lifted to VWAP if VWAP is a closer floor.
+    let support = nearLow;
+    if (vwap != null && vwap < price && vwap > nearLow) support = vwap;
+    if (support >= price) support = price * (1 - atrPct);
 
-    const stop = support - buffer;
+    let stop = support - buffer;
+    const minStop = price * (1 - MAX_RISK);
+    if (stop < minStop) stop = minStop; // cap stop distance at MAX_RISK
     const risk = price - stop;
     if (risk <= 0) return null;
-    const target = Math.max(swingHigh, price + 2 * risk);
+    const target = Math.max(farHigh, price + 2 * risk);
     const rr = (target - price) / risk;
     return { side, entry: price, pivot: support, pivotLabel: 'support', stop, target, rr };
   } else {
-    // Resistance: recent swing high, pulled to VWAP if VWAP is above price but
-    // below the swing high.
-    let resistance = swingHigh;
-    if (vwap != null && vwap > price && vwap < swingHigh) resistance = vwap;
+    // Resistance: nearer swing high, pulled to VWAP if VWAP is a closer ceiling.
+    let resistance = nearHigh;
+    if (vwap != null && vwap > price && vwap < nearHigh) resistance = vwap;
     if (resistance <= price) resistance = price * (1 + atrPct);
 
-    const stop = resistance + buffer;
+    let stop = resistance + buffer;
+    const maxStop = price * (1 + MAX_RISK);
+    if (stop > maxStop) stop = maxStop;
     const risk = stop - price;
     if (risk <= 0) return null;
-    const target = Math.min(swingLow, price - 2 * risk);
+    const target = Math.min(farLow, price - 2 * risk);
     const rr = (price - target) / risk;
     return { side, entry: price, pivot: resistance, pivotLabel: 'resistance', stop, target, rr };
   }

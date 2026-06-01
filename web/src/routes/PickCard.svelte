@@ -2,7 +2,7 @@
   import type { NewsItem, Recommendation, ScanRow } from '$lib/types';
   import { fmtPct, fmtPrice, pctClass, fmtRelative } from '$lib/format';
   import { flagsFor } from '$lib/flags';
-  import { computeLevels } from '$lib/levels';
+  import { computeLevels, quickPlan } from '$lib/levels';
   import Sparkline from './Sparkline.svelte';
   import IconCluster from './IconCluster.svelte';
 
@@ -39,6 +39,12 @@
   const voteGlyph = (v?: string) => (v === 'agree' ? '✓' : v === 'against' ? '✕' : '~');
   const voteClass = (v?: string) =>
     v === 'agree' ? 'text-signal-up' : v === 'against' ? 'text-signal-down' : 'text-zinc-500';
+
+  // Written advice: prefer the desk PM's plan (only meaningful for a 'take'),
+  // otherwise fall back to a deterministic quick-plan built from the levels —
+  // so there's ALWAYS written guidance even before the desk has run.
+  const agentPlan = $derived(desk?.plan && desk.decision === 'take' ? desk.plan : null);
+  const planText = $derived(agentPlan ?? (levels ? quickPlan(levels) : null));
 
   // Top headline shown as a one-liner under the synthesis. Dedup by id then
   // pick highest impact / most recent.
@@ -176,13 +182,16 @@
     </div>
   {/if}
 
-  <!-- PM's written trade plan — the actionable advice -->
-  {#if desk?.plan && desk.decision === 'take'}
+  <!-- Written trade plan — desk PM's when available, else a quick plan from levels -->
+  {#if planText}
     <div class="mt-2.5 rounded-md border border-signal-up/20 bg-signal-up/5 p-2.5">
-      <div class="mb-0.5 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
-        plan
+      <div class="mb-0.5 flex items-baseline gap-1.5">
+        <span class="text-[10px] font-semibold uppercase tracking-wider text-signal-up">plan</span>
+        {#if !agentPlan}
+          <span class="text-[9px] uppercase tracking-wider text-zinc-500">· auto from levels</span>
+        {/if}
       </div>
-      <p class="text-xs leading-relaxed text-zinc-200">{desk.plan}</p>
+      <p class="text-xs leading-relaxed text-zinc-200">{planText}</p>
     </div>
   {/if}
 

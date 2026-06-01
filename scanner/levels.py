@@ -36,38 +36,48 @@ def compute_levels(row: dict, side: str) -> dict | None:
     if price is None or price <= 0 or not spark or len(spark) < 5:
         return None
 
-    recent = spark[-10:]
-    swing_low = min(recent)
-    swing_high = max(recent)
+    # Nearer structure (last 5) anchors the stop so a far swing low on a runner
+    # doesn't create an absurd 15%+ stop; wider window (last 10) reaches target.
+    near_low = min(spark[-5:])
+    near_high = max(spark[-5:])
+    far_low = min(spark[-10:])
+    far_high = max(spark[-10:])
 
     atr_pct = min(0.08, max(0.015, _mean_abs_move(spark)))  # 1.5%–8%
     buffer = price * atr_pct * 0.5
+    max_risk = 0.08  # never risk more than ~8% to entry — keeps stops practical
     vwap = (row.get("intraday") or {}).get("vwap")
 
     if side == "long":
-        support = swing_low
-        if vwap is not None and vwap < price and vwap > swing_low:
+        support = near_low
+        if vwap is not None and vwap < price and vwap > near_low:
             support = vwap
         if support >= price:
             support = price * (1 - atr_pct)
         stop = support - buffer
+        min_stop = price * (1 - max_risk)
+        if stop < min_stop:
+            stop = min_stop
         risk = price - stop
         if risk <= 0:
             return None
-        target = max(swing_high, price + 2 * risk)
+        target = max(far_high, price + 2 * risk)
         rr = (target - price) / risk
         pivot, label = support, "support"
     else:
-        resistance = swing_high
-        if vwap is not None and vwap > price and vwap < swing_high:
+        resistance = near_high
+        if vwap is not None and vwap > price and vwap < near_high:
             resistance = vwap
         if resistance <= price:
             resistance = price * (1 + atr_pct)
         stop = resistance + buffer
+        max_stop = price * (1 + max_risk)
+        if stop > max_stop:
+            stop = max_stop
         risk = stop - price
         if risk <= 0:
             return None
-        target = min(swing_low, price - 2 * risk)
+        target = min(far_low, price - 2 * risk)
         rr = (price - target) / risk
         pivot, label = resistance, "resistance"
 
