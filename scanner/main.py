@@ -267,11 +267,18 @@ def run(
 
     # Trump pulse: Truth Social posts + Federal Register presidential documents.
     # Both sources are free. Same throttle as political so the dashboard's two
-    # external feeds stay aligned.
+    # external feeds stay aligned. When alerts are on, ping Feishu for any FRESH
+    # stock mention (deduped, never re-sent).
     try:
-        trump_pulse.fetch_and_save()
+        from datetime import timezone as _tz2
+        pulse_payload = trump_pulse.fetch_and_save()
+        if use_alerts:
+            trump_pulse.notify_fresh_mentions(
+                pulse_payload, rows, set(router.load_watchlist()),
+                datetime.now(_tz2.utc),
+            )
     except Exception as e:
-        log.warning("Trump pulse fetch raised: %s", e)
+        log.warning("Trump pulse fetch/notify raised: %s", e)
 
     # Evaluate past alerts + recommendations whose 1d/3d/5d horizons elapsed.
     from datetime import timezone as _tz

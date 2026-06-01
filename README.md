@@ -119,6 +119,8 @@ FEISHU_WEBHOOK_URL=...        # optional; alerts log only without it
 FEISHU_MOM_WEBHOOK_URL=...    # optional; Chinese macro digest
 FMP_API_KEY=...               # optional; powers /political dashboard
                               # (250 req/day free at financialmodelingprep.com)
+SITE_URL=...                  # optional; base URL used in Feishu card links
+                              # (defaults to the Vercel deployment)
 ```
 
 ```bash

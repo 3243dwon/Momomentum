@@ -57,6 +57,7 @@ HEADER_TEMPLATES = {
     "macro": "red",
     "synthesis": "green",
     "weekly": "turquoise",
+    "trump_pulse": "violet",
 }
 
 

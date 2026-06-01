@@ -23,6 +23,7 @@ from __future__ import annotations
 import html
 import json
 import logging
+import os
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -438,3 +439,130 @@ def fetch_and_save(now: datetime | None = None) -> dict:
         len(mention_summary), len(docs),
     )
     return payload
+
+
+# --- Feishu notification for fresh Trump stock mentions ----------------------
+# When Trump names a stock on Truth Social, that's a catalyst worth a ping.
+# We notify only on NEW posts (deduped by URL) within a recency window, so the
+# channel never gets the 90-day backlog or a repeat of the same post.
+
+_TRUMP_NOTIFIED_FILE = config.CACHE_DIR / "trump_notified.json"
+_NOTIFY_RECENCY_HOURS = 48      # only ping mentions this fresh
+_NOTIFY_MAX_POSTS = 6           # cap posts per card so it can't balloon
+_SITE_URL = os.environ.get("SITE_URL", "https://momomentum.vercel.app")
+
+
+def _load_notified() -> list[str]:
+    try:
+        d = json.loads(_TRUMP_NOTIFIED_FILE.read_text())
+        urls = d.get("notified_urls", [])
+        return urls if isinstance(urls, list) else []
+    except Exception:
+        return []
+
+
+def _save_notified(urls: list[str]) -> None:
+    # Keep the most recent ~300 so the file can't grow unbounded.
+    try:
+        _TRUMP_NOTIFIED_FILE.write_text(json.dumps({"notified_urls": urls[-300:]}, indent=2))
+    except Exception as e:
+        log.warning("Trump notify: could not persist state: %s", e)
+
+
+def _rel_time(ts: str | None, now: datetime) -> str:
+    """Compact 'Xh ago' / 'Xd ago' for a post timestamp."""
+    if not ts:
+        return ""
+    try:
+        t = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+    except Exception:
+        return ""
+    secs = (now - t).total_seconds()
+    if secs < 3600:
+        return f"{int(secs // 60)}m ago"
+    if secs < 86400:
+        return f"{int(secs // 3600)}h ago"
+    return f"{int(secs // 86400)}d ago"
+
+
+def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
+                         watchlist: set[str], now: datetime) -> dict:
+    """Render fresh mention posts into a Feishu alert dict."""
+    # Title lists the named tickers (deduped, in first-seen order).
+    tickers: list[str] = []
+    for p in posts:
+        for t in p["ticker_mentions"]:
+            if t not in tickers:
+                tickers.append(t)
+    shown = ", ".join(tickers[:5]) + (f" +{len(tickers) - 5}" if len(tickers) > 5 else "")
+    title = f"🇺🇸 Trump named {shown} on Truth Social"
+
+    blocks: list[str] = []
+    for p in posts:
+        chips: list[str] = []
+        for t in p["ticker_mentions"]:
+            row = rows_by_ticker.get(t)
+            star = " ⭐" if t in watchlist else ""
+            pct = (row or {}).get("pct_1d")
+            if pct is not None:
+                chips.append(f"**{t}** {'+' if pct >= 0 else ''}{pct:.2f}%{star}")
+            else:
+                chips.append(f"**{t}**{star}")
+        excerpt = (p.get("text") or "").strip()[:220]
+        when = _rel_time(p.get("ts"), now)
+        line = " · ".join(chips)
+        block = f"{line}\n\n> {excerpt}"
+        if when:
+            block += f"\n\n_{when}_"
+        blocks.append(block)
+
+    body = "\n\n---\n\n".join(blocks)
+    return {
+        "type": "trump_pulse",
+        "title": title,
+        "body_md": body,
+        "link": f"{_SITE_URL}/political",
+    }
+
+
+def notify_fresh_mentions(payload: dict, rows: list[dict], watchlist: set[str],
+                          now: datetime | None = None) -> int:
+    """Ping Feishu for NEW Trump stock mentions. Dedupes by post URL and only
+    considers posts within the recency window. Returns cards sent (0 or 1)."""
+    now = now or datetime.now(timezone.utc)
+    mention_posts = [p for p in payload.get("truth_posts", []) if p.get("ticker_mentions") and p.get("url")]
+    if not mention_posts:
+        return 0
+
+    notified = _load_notified()
+    notified_set = set(notified)
+    cutoff = (now - timedelta(hours=_NOTIFY_RECENCY_HOURS)).isoformat()
+
+    fresh: list[dict] = []
+    for p in mention_posts:
+        url = p["url"]
+        if url in notified_set:
+            continue
+        notified.append(url)          # mark processed regardless of recency
+        notified_set.add(url)
+        ts = p.get("ts") or ""
+        # Compare on the YYYY-MM-DDTHH:MM prefix to dodge offset-format mismatch.
+        if ts and ts[:16] < cutoff[:16]:
+            continue                  # too old — seen, but don't ping
+        fresh.append(p)
+
+    _save_notified(notified)
+    if not fresh:
+        return 0
+
+    fresh = fresh[:_NOTIFY_MAX_POSTS]
+    rows_by_ticker = {r["ticker"]: r for r in rows}
+    alert = _build_mention_alert(fresh, rows_by_ticker, watchlist, now)
+
+    from scanner.alerts import feishu
+    sent = feishu.send(alert)
+    log.info("Trump notify: %d fresh mention post(s), Feishu %s",
+             len(fresh), "sent" if sent else "dry-run/failed")
+    return 1 if sent else 0
