@@ -48,9 +48,12 @@
     --text-100: 26 26 26;
     --text-200: 38 38 38;
     --text-300: 60 60 56;
-    --text-400: 90 90 82;
-    --text-500: 128 128 118;
-    --text-600: 168 165 155;
+    --text-400: 88 88 80;
+    /* 500/600 darkened: the old values (128 / 168) were ~3.6:1 and ~2:1 on the
+       pale cards — below readable for the small muted text (labels, meta,
+       reasons line). These land at ~5:1 / ~4:1. */
+    --text-500: 100 99 91;
+    --text-600: 126 124 115;
 
     --signal-up: 29 138 75; /* #1d8a4b */
     --signal-down: 201 56 56; /* #c93838 */
