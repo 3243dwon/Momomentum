@@ -23,6 +23,7 @@ ALERTS_LOG = config.CACHE_DIR / "alerts_log.jsonl"       # gitignored + cached a
 PERFORMANCE_FILE = config.DATA_DIR / "performance.json"  # aggregates only; web UI reads it
 RECS_LOG = config.CACHE_DIR / "recommendations_log.jsonl"
 RECOMMENDATION_PERFORMANCE_FILE = config.DATA_DIR / "recommendation_performance.json"
+DESK_PERFORMANCE_FILE = config.DATA_DIR / "desk_performance.json"
 
 RETENTION_DAYS = 45
 HORIZONS = [1, 3, 5]  # days
@@ -289,6 +290,18 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
             }
             if regime:
                 entry["regime"] = regime
+            # Capture the desk verdict (compact) so we can later measure whether
+            # the agents' take/pass calls actually separate winners from losers.
+            d = rec.get("desk")
+            if d:
+                entry["desk"] = {
+                    "decision": d.get("decision"),
+                    "size": d.get("size"),
+                    "agreement": d.get("agreement"),
+                    "signal_vote": (d.get("signal") or {}).get("vote"),
+                    "research_vote": (d.get("research") or {}).get("vote"),
+                    "risk_veto": (d.get("risk") or {}).get("veto"),
+                }
             new_entries.append(entry)
     if new_entries:
         with open(RECS_LOG, "a") as f:
@@ -347,4 +360,80 @@ def compile_recommendation_stats(now: datetime) -> dict:
         "Recommendation stats: %d picks in 30d, %d buckets",
         out["total_picks"], len(out["per_bucket"]),
     )
+    return out
+
+
+def compile_desk_stats(now: datetime) -> dict:
+    """Roll up the agent desk's calls vs forward returns, reusing the 1/3/5-day
+    evaluations already on the recommendations log (no extra Alpaca calls).
+
+    The headline question: of all the picks recommend.py generated, do the ones
+    the desk said 'take' actually outperform the ones it said 'pass'? If
+    take_avg > pass_avg, the four agents are adding value — separating winners
+    from losers. We also split by agreement level and the Risk veto to see which
+    signal is carrying the edge.
+    """
+    entries = _read_entries(RECS_LOG)
+    cutoff = (now - timedelta(days=30)).isoformat()
+    recent = [e for e in entries if e["ts"] >= cutoff and e.get("desk")]
+
+    def _new() -> dict:
+        return {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}}
+
+    def _add(bucketmap: dict, key: str, e: dict) -> None:
+        b = bucketmap.setdefault(key, _new())
+        b["count"] += 1
+        for h in HORIZONS:
+            ev = e.get("evaluations", {}).get(f"{h}d")
+            if not ev:
+                continue
+            b["horizons"][h]["n"] += 1
+            if ev["signed_return_pct"] > 0:
+                b["horizons"][h]["hits"] += 1
+            b["horizons"][h]["returns"].append(ev["signed_return_pct"])
+
+    by_decision: dict[str, dict] = {}
+    by_agreement: dict[str, dict] = {}
+    by_veto: dict[str, dict] = {}
+    for e in recent:
+        d = e["desk"]
+        _add(by_decision, d.get("decision") or "unknown", e)
+        _add(by_agreement, d.get("agreement") or "unknown", e)
+        _add(by_veto, "veto" if d.get("risk_veto") else "no_veto", e)
+
+    def _finalize(bucketmap: dict) -> dict:
+        out: dict = {}
+        for key, stats in bucketmap.items():
+            horizons = {}
+            for h, hs in stats["horizons"].items():
+                n = hs["n"]
+                horizons[f"{h}d"] = {
+                    "evaluated": n,
+                    "hit_rate": round(hs["hits"] / n, 3) if n else None,
+                    "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
+                }
+            out[key] = {"count": stats["count"], "horizons": horizons}
+        return out
+
+    decision_stats = _finalize(by_decision)
+
+    # The desk's edge: take avg − pass avg per horizon. Positive => the agents
+    # are correctly separating winners from losers (the whole point).
+    edge: dict[str, float | None] = {}
+    for h in HORIZONS:
+        take = decision_stats.get("take", {}).get("horizons", {}).get(f"{h}d", {}).get("avg_return_pct")
+        passed = decision_stats.get("pass", {}).get("horizons", {}).get(f"{h}d", {}).get("avg_return_pct")
+        edge[f"{h}d"] = round(take - passed, 2) if (take is not None and passed is not None) else None
+
+    out = {
+        "generated_at": now.isoformat(),
+        "window_days": 30,
+        "total_with_desk": len(recent),
+        "by_decision": decision_stats,
+        "by_agreement": _finalize(by_agreement),
+        "by_veto": _finalize(by_veto),
+        "take_minus_pass_edge": edge,
+    }
+    DESK_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
+    log.info("Desk stats: %d picks with verdicts in 30d; take−pass edge %s", len(recent), edge)
     return out

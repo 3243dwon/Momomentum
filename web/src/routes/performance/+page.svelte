@@ -5,6 +5,17 @@
   let { data } = $props();
   const perf = data.perf;
   const recPerf = data.recPerf;
+  const deskPerf = data.deskPerf;
+
+  // Readable labels for the desk buckets.
+  const DESK_DECISION_LABELS: Record<string, string> = {
+    take: '✓ Desk: take',
+    pass: '✕ Desk: pass'
+  };
+  const DESK_VETO_LABELS: Record<string, string> = {
+    no_veto: 'Risk: clear',
+    veto: '⚑ Risk: vetoed'
+  };
 
   const ALERT_TYPE_LABELS: Record<string, { label: string; emoji: string }> = {
     catalyst: { label: 'Catalyst', emoji: '🎯' },
@@ -192,5 +203,109 @@
     If the score is predictive, the "score {recPerf.high_score}+" rows beat the
     "score under {recPerf.high_score}" rows. Evaluated count in parentheses is how
     many picks have reached that horizon yet.
+  </p>
+{/if}
+
+<header class="mb-6 mt-12">
+  <h2 class="text-lg font-semibold tracking-tight">Agent desk performance</h2>
+  <p class="text-xs text-zinc-500">
+    Are the four agents actually useful? Of all the picks recommend.py generated,
+    do the ones the desk said <b class="text-signal-up">take</b> outperform the ones
+    it said <b class="text-signal-down">pass</b>? If take beats pass, the desk is
+    separating winners from losers.
+  </p>
+</header>
+
+{#if !deskPerf || deskPerf.total_with_desk === 0}
+  <div class="card p-8 text-center text-zinc-400">
+    <p class="text-sm">No desk verdicts evaluated yet.</p>
+    <p class="mt-2 text-xs">
+      The desk runs on the cron (needs <code>ANTHROPIC_API_KEY</code>). Stats appear
+      ~5 days after the first verdicts are logged and their horizons pass.
+    </p>
+  </div>
+{:else}
+  <!-- Headline: the take − pass edge, the whole point -->
+  <section class="card mb-4 p-4">
+    <div class="mb-2 text-[10px] uppercase tracking-wider text-zinc-500">
+      Desk edge — take avg minus pass avg (positive = the agents add value)
+    </div>
+    <div class="flex flex-wrap gap-6">
+      {#each ['1d', '3d', '5d'] as h}
+        {@const v = deskPerf.take_minus_pass_edge[h]}
+        <div>
+          <div class="text-[10px] uppercase tracking-wider text-zinc-500">{h}</div>
+          <div class="num text-2xl font-bold tabular-nums {returnClass(v ?? null)}">
+            {v != null ? `${v > 0 ? '+' : ''}${v.toFixed(2)}%` : '—'}
+          </div>
+        </div>
+      {/each}
+      <div class="ml-auto self-end text-[10px] text-zinc-500">
+        {deskPerf.total_with_desk} picks with verdicts · updated {fmtRelative(deskPerf.generated_at)}
+      </div>
+    </div>
+  </section>
+
+  <section class="card overflow-x-auto">
+    <table class="w-full text-xs">
+      <thead class="bg-ink-800/40 text-[10px] uppercase tracking-wider text-zinc-500">
+        <tr>
+          <th class="px-3 py-2 text-left">Bucket</th>
+          <th class="px-3 py-2 text-right">Picks</th>
+          <th class="px-3 py-2 text-right">1d hit</th>
+          <th class="px-3 py-2 text-right">1d avg</th>
+          <th class="px-3 py-2 text-right">3d hit</th>
+          <th class="px-3 py-2 text-right">3d avg</th>
+          <th class="px-3 py-2 text-right">5d hit</th>
+          <th class="px-3 py-2 text-right">5d avg</th>
+        </tr>
+      </thead>
+      <tbody>
+        {#each [['take', DESK_DECISION_LABELS], ['pass', DESK_DECISION_LABELS]] as [key, labels]}
+          {@const stats = deskPerf.by_decision[key as string]}
+          {#if stats}
+            <tr class="border-t border-ink-700/40">
+              <td class="px-3 py-2 font-medium">{labels[key as string] ?? key}</td>
+              <td class="num px-3 py-2 text-right text-zinc-400">{stats.count}</td>
+              {#each ['1d', '3d', '5d'] as h}
+                {@const hs = stats.horizons[h as '1d' | '3d' | '5d']}
+                <td class="num px-3 py-2 text-right {hitClass(hs?.hit_rate ?? null)}">
+                  {hs?.hit_rate != null ? `${(hs.hit_rate * 100).toFixed(0)}%` : '—'}
+                  {#if hs?.evaluated != null}<span class="text-[10px] text-zinc-600"> ({hs.evaluated})</span>{/if}
+                </td>
+                <td class="num px-3 py-2 text-right {returnClass(hs?.avg_return_pct ?? null)}">
+                  {hs?.avg_return_pct != null ? fmtPct(hs.avg_return_pct) : '—'}
+                </td>
+              {/each}
+            </tr>
+          {/if}
+        {/each}
+        {#each [['no_veto', DESK_VETO_LABELS], ['veto', DESK_VETO_LABELS]] as [key, labels]}
+          {@const stats = deskPerf.by_veto[key as string]}
+          {#if stats}
+            <tr class="border-t border-ink-700/40">
+              <td class="px-3 py-2 text-zinc-300">{labels[key as string] ?? key}</td>
+              <td class="num px-3 py-2 text-right text-zinc-400">{stats.count}</td>
+              {#each ['1d', '3d', '5d'] as h}
+                {@const hs = stats.horizons[h as '1d' | '3d' | '5d']}
+                <td class="num px-3 py-2 text-right {hitClass(hs?.hit_rate ?? null)}">
+                  {hs?.hit_rate != null ? `${(hs.hit_rate * 100).toFixed(0)}%` : '—'}
+                  {#if hs?.evaluated != null}<span class="text-[10px] text-zinc-600"> ({hs.evaluated})</span>{/if}
+                </td>
+                <td class="num px-3 py-2 text-right {returnClass(hs?.avg_return_pct ?? null)}">
+                  {hs?.avg_return_pct != null ? fmtPct(hs.avg_return_pct) : '—'}
+                </td>
+              {/each}
+            </tr>
+          {/if}
+        {/each}
+      </tbody>
+    </table>
+  </section>
+
+  <p class="mt-4 text-[10px] uppercase tracking-wider text-zinc-500">
+    Take should beat pass, and "Risk: vetoed" should be the worst row (the veto
+    correctly avoided losers). If take ≈ pass, the agents aren't adding signal —
+    that's the cue to cut the desk's per-scan cost.
   </p>
 {/if}

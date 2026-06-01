@@ -253,6 +253,18 @@ export interface RecommendationPerformance {
   per_bucket: Record<string, AlertTypeStats>;
 }
 
+// desk_performance.json — keep in sync with scanner/performance.compile_desk_stats().
+// Validates whether the agent desk's take/pass calls separate winners from losers.
+export interface DeskPerformance {
+  generated_at: string;
+  window_days: number;
+  total_with_desk: number;
+  by_decision: Record<string, AlertTypeStats>;
+  by_agreement: Record<string, AlertTypeStats>;
+  by_veto: Record<string, AlertTypeStats>;
+  take_minus_pass_edge: Record<string, number | null>;
+}
+
 // political.json — keep in sync with scanner/political._normalize().
 // Disclosed Congressional stock trades, fetched daily from FMP.
 export type PoliticalChamber = 'senate' | 'house';

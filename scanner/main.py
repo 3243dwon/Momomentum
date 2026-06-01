@@ -302,6 +302,7 @@ def run(
     performance.evaluate_pending_recommendations(_alpaca, _utc_now)
     performance.compile_stats(datetime.now(config.MARKET_TZ))
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
+    performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
 
     return 0
 

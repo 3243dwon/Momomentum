@@ -115,6 +115,14 @@ scanner/desk/
 This is the same discipline applied to the perf-roadmap fixes: measure before
 trusting.
 
+**Update (built live):** the desk was built live (not shadow) per user choice,
+BUT the measurement is still wired — `performance.compile_desk_stats()` logs
+each take/pass call with the same 1/3/5-day forward returns as the
+recommendations, and the `/performance` page shows the **take − pass edge** plus
+per-veto buckets. So even though it's live, we can still see whether the four
+agents actually separate winners from losers. If take ≈ pass after a few weeks,
+that's the signal to cut the per-scan cost.
+
 ## 6. Open questions
 
 - Do the three advisor agents need to be three separate calls, or can a single

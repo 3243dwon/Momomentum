@@ -8,6 +8,7 @@ import type {
   WeeklyData,
   PerformanceData,
   RecommendationPerformance,
+  DeskPerformance,
   PoliticalData,
   TrumpPulseData,
   TrumpBasket
@@ -61,6 +62,10 @@ export async function loadPerformance(fetch: Fetch) {
 
 export async function loadRecommendationPerformance(fetch: Fetch) {
   return getJson<RecommendationPerformance>(fetch, 'recommendation_performance.json');
+}
+
+export async function loadDeskPerformance(fetch: Fetch) {
+  return getJson<DeskPerformance>(fetch, 'desk_performance.json');
 }
 
 export async function loadPolitical(fetch: Fetch) {
