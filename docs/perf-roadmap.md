@@ -3,6 +3,27 @@
 Action list for improving signal quality, derived from `/performance` data as
 of 2026-05-29 (30-day window, 552 picks, 1,903 alerts).
 
+## Status (as of 2026-06-01)
+
+5 of 6 items shipped in commit `b157710`. Remaining item is gated on data.
+
+| Item | What | Status |
+|------|------|--------|
+| #1 | Suppress shorts when SPY > 50-day MA | ✅ shipped — `scanner/regime.py` + `recommend.py` |
+| #2 | Log full feature vector per pick | ✅ shipped — `performance.py` (collecting now) |
+| #3 | Regime-tag every pick + alert | ✅ shipped — `performance.py` + `main.py` |
+| #4 | Demote `big_move` to catalyst-confirmed | ✅ shipped — `alerts/rules.py` |
+| #6 | Backtest the Weekly classifications | ✅ shipped — `scanner/weekly_performance.py` |
+| #5 | Rebuild the score from regression | ⏳ **blocked on data** — needs 4–8 weeks of #2's feature logs before a fit is meaningful. Revisit ~late July 2026. |
+
+When #5 is ready: regress 5-day signed return against each logged feature
+(univariate Spearman first, then a regularized multivariate fit), compare
+against the current hand-weighted score as baseline, and only re-weight if it
+beats it. The feature + regime data is accumulating in
+`data/cache/recommendations_log.jsonl` now.
+
+---
+
 ## What the data says
 
 Verified against `data/recommendation_performance.json` and `data/performance.json`:
