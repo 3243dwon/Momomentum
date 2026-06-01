@@ -1,93 +1,460 @@
 {
-  "generated_at": "2026-06-01T00:46:32.258984-04:00",
+  "generated_at": "2026-06-01T07:45:10.933142-04:00",
   "ticker_news": {
-    "DELL": [
-      {
-        "id": "7cb7e524391c1cd0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DELL",
-        "scope": "ticker",
-        "title": "Dell Targets Students With Budget-Friendly XPS 13, Here's How The $599 Laptop Compares With Apple's MacBook Neo",
-        "url": "https://www.benzinga.com/markets/tech/26/06/52895447/dell-xps-13-student-laptop-vs-apple-macbook-neo",
-        "published_at": "2026-06-01T04:01:16+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "dell_xps_13_budget_launch",
-        "tickers_mentioned": [
-          "DELL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "7cb7e524391c1cd0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Dell Targets Students With Budget-Friendly XPS 13, Here's How The $599 Laptop Compares With Apple's MacBook Neo",
-        "url": "https://www.benzinga.com/markets/tech/26/06/52895447/dell-xps-13-student-laptop-vs-apple-macbook-neo",
-        "published_at": "2026-06-01T04:01:16+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "dell_xps_13_budget_launch",
-        "tickers_mentioned": [
-          "DELL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "efaf287956926c16",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Why Nvidia CEO Jensen Huang's Computex Speech Matters: AI Chips, Taiwan Investments And The Company's Next Big Moves",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52895368/why-jensen-huang-computex-speech-matters-ai-chips-taiwan",
-        "published_at": "2026-06-01T03:07:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "nvidia_jensen_huang_computex_speech",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
     "ARM": [
       {
-        "id": "efaf287956926c16",
+        "id": "78d8eef0fd0a1ab0",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "ARM",
         "scope": "ticker",
-        "title": "Why Nvidia CEO Jensen Huang's Computex Speech Matters: AI Chips, Taiwan Investments And The Company's Next Big Moves",
-        "url": "https://www.benzinga.com/markets/tech/26/05/52895368/why-jensen-huang-computex-speech-matters-ai-chips-taiwan",
-        "published_at": "2026-06-01T03:07:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "nvidia_jensen_huang_computex_speech",
+        "title": "Nvidia's Computex Reveal Is 'Amazing' For ARM Stock, Says Jim Cramer: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52900247/nvidias-computex-reveal-is-amazing-for-arm-stock-says-jim-cramer-heres-why",
+        "published_at": "2026-06-01T11:40:26+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
         "tickers_mentioned": [
           "NVDA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "ce39683eacd68b0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Nvidia Has Become An 'Infrastructure Company': Jensen Huang Shows Off RTX Spark Superchip, Vera CPU And AI Factory Vision At Computex 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52895858/nvidia-infrastructure-company-jensen-huang-computex-2026-ai-factory",
+        "published_at": "2026-06-01T06:12:58+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "DELL": [
+      {
+        "id": "78d8eef0fd0a1ab0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Nvidia's Computex Reveal Is 'Amazing' For ARM Stock, Says Jim Cramer: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52900247/nvidias-computex-reveal-is-amazing-for-arm-stock-says-jim-cramer-heres-why",
+        "published_at": "2026-06-01T11:40:26+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "824a6bc4fa912c56",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Why Is Palantir Technologies Stock Trending Higher On Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52899178/why-is-palantir-technologies-stock-trending-higher-on-monday",
+        "published_at": "2026-06-01T11:05:54+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_trending_june_2026",
+        "tickers_mentioned": [
+          "PLTR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ce39683eacd68b0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Nvidia Has Become An 'Infrastructure Company': Jensen Huang Shows Off RTX Spark Superchip, Vera CPU And AI Factory Vision At Computex 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52895858/nvidia-infrastructure-company-jensen-huang-computex-2026-ai-factory",
+        "published_at": "2026-06-01T06:12:58+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "HPQ": [
+      {
+        "id": "78d8eef0fd0a1ab0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPQ",
+        "scope": "ticker",
+        "title": "Nvidia's Computex Reveal Is 'Amazing' For ARM Stock, Says Jim Cramer: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52900247/nvidias-computex-reveal-is-amazing-for-arm-stock-says-jim-cramer-heres-why",
+        "published_at": "2026-06-01T11:40:26+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "ce39683eacd68b0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPQ",
+        "scope": "ticker",
+        "title": "Nvidia Has Become An 'Infrastructure Company': Jensen Huang Shows Off RTX Spark Superchip, Vera CPU And AI Factory Vision At Computex 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52895858/nvidia-infrastructure-company-jensen-huang-computex-2026-ai-factory",
+        "published_at": "2026-06-01T06:12:58+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "MSFT": [
+      {
+        "id": "78d8eef0fd0a1ab0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "Nvidia's Computex Reveal Is 'Amazing' For ARM Stock, Says Jim Cramer: Here's Why",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52900247/nvidias-computex-reveal-is-amazing-for-arm-stock-says-jim-cramer-heres-why",
+        "published_at": "2026-06-01T11:40:26+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "502e69447337f80b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52899346/whats-going-on-with-intel-stock-monday-4",
+        "published_at": "2026-06-01T11:09:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intel_stock_movement_june_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ce39683eacd68b0f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "Nvidia Has Become An 'Infrastructure Company': Jensen Huang Shows Off RTX Spark Superchip, Vera CPU And AI Factory Vision At Computex 2026",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52895858/nvidia-infrastructure-company-jensen-huang-computex-2026-ai-factory",
+        "published_at": "2026-06-01T06:12:58+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_computex_2026_rtx_vera_announcement",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "INTC": [
+      {
+        "id": "502e69447337f80b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52899346/whats-going-on-with-intel-stock-monday-4",
+        "published_at": "2026-06-01T11:09:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intel_stock_movement_june_2026",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1a4c746f3931dc1b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Super Micro Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52898869/whats-going-on-with-super-micro-stock-monday-3",
+        "published_at": "2026-06-01T10:55:24+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_monday_movement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IBM": [
+      {
+        "id": "824a6bc4fa912c56",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IBM",
+        "scope": "ticker",
+        "title": "Why Is Palantir Technologies Stock Trending Higher On Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52899178/why-is-palantir-technologies-stock-trending-higher-on-monday",
+        "published_at": "2026-06-01T11:05:54+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_trending_june_2026",
+        "tickers_mentioned": [
+          "PLTR"
         ],
         "route_to_synthesis": false
       }
     ],
-    "JPM": [
+    "PLTR": [
       {
-        "id": "ed360c5a934e7537",
+        "id": "824a6bc4fa912c56",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "JPM",
+        "ticker": "PLTR",
         "scope": "ticker",
-        "title": "Stablecoin Demand Likely To Wane, Says This Bank Of England Policymaker, ECB Executive Thinks They Could Deepen Dollar Dominance",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/05/52895427/stablecoin-demand-wane-bank-of-england-ecb-dollar-dominance",
-        "published_at": "2026-06-01T03:52:05+00:00",
-        "type": "macro_geopol",
+        "title": "Why Is Palantir Technologies Stock Trending Higher On Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52899178/why-is-palantir-technologies-stock-trending-higher-on-monday",
+        "published_at": "2026-06-01T11:05:54+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "stablecoin_regulation_boe_ecb_2026",
+        "dedup_group": "palantir_trending_june_2026",
+        "tickers_mentioned": [
+          "PLTR"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNOW": [
+      {
+        "id": "824a6bc4fa912c56",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Why Is Palantir Technologies Stock Trending Higher On Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52899178/why-is-palantir-technologies-stock-trending-higher-on-monday",
+        "published_at": "2026-06-01T11:05:54+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "palantir_trending_june_2026",
+        "tickers_mentioned": [
+          "PLTR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "b32cd6c08929dcba",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNOW",
+        "scope": "ticker",
+        "title": "Is SNOW Stock A Buy? Dan Ives Sees 10% Upside In Snowflake's Price Following AI Strategy Win",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52898307/is-snow-stock-a-buy-dan-ives-sees-10-upside-in-snowflakes-price-following-ai-strategy-win",
+        "published_at": "2026-06-01T10:22:31+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "snow_dan_ives_ai_strategy_upside",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "1a4c746f3931dc1b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "What's Going On With Super Micro Stock Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52898869/whats-going-on-with-super-micro-stock-monday-3",
+        "published_at": "2026-06-01T10:55:24+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_monday_movement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "540ad5e778607c97",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise As US Undertakes 'Self-Defense' Strikes Against Iran\u2014Hewlett-Packard, Nvidia, Uber In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52897698/stock-market-today-dow-jones-sp-500-futures-rise-as-us-undertakes-self-defense-strikes-against-iran-hewlett-packard-nvidia-uber-in-focus",
+        "published_at": "2026-06-01T10:00:40+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "us_iran_self_defense_strikes_june_2026",
+        "tickers_mentioned": [
+          "HPE",
+          "NVDA",
+          "UBER"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "HPE": [
+      {
+        "id": "ec39d8ea1625526e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Hewlett Packard Stock Hits 52-Week High - Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52897756/hewlett-packard-stock-hits-52-week-high-heres-why",
+        "published_at": "2026-06-01T10:04:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "hpe_52week_high",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "540ad5e778607c97",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise As US Undertakes 'Self-Defense' Strikes Against Iran\u2014Hewlett-Packard, Nvidia, Uber In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52897698/stock-market-today-dow-jones-sp-500-futures-rise-as-us-undertakes-self-defense-strikes-against-iran-hewlett-packard-nvidia-uber-in-focus",
+        "published_at": "2026-06-01T10:00:40+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "us_iran_self_defense_strikes_june_2026",
+        "tickers_mentioned": [
+          "HPE",
+          "NVDA",
+          "UBER"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "848efe172181a9cc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Top Wall Street Forecasters Rate Hewlett Packard A Buy Ahead Of Q2 Earnings",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/52896863/top-wall-street-forecasters-rate-hewlett-packard-a-buy-ahead-of-q2-earnings",
+        "published_at": "2026-06-01T08:26:45+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "hpe_q2_earnings_preview_bullish",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1ea2a45fff240e4f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Nasdaq Closes At Record High: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52895973/nasdaq-closes-at-record-high-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-06-01T06:44:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nasdaq_record_high_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CRWD": [
+      {
+        "id": "540ad5e778607c97",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWD",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise As US Undertakes 'Self-Defense' Strikes Against Iran\u2014Hewlett-Packard, Nvidia, Uber In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52897698/stock-market-today-dow-jones-sp-500-futures-rise-as-us-undertakes-self-defense-strikes-against-iran-hewlett-packard-nvidia-uber-in-focus",
+        "published_at": "2026-06-01T10:00:40+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "us_iran_self_defense_strikes_june_2026",
+        "tickers_mentioned": [
+          "HPE",
+          "NVDA",
+          "UBER"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c614b125c3f14ae8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRWD",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52895848/stock-market-will-sp-500-open-up-or-down-today",
+        "published_at": "2026-06-01T06:09:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_open_market_direction",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PANW": [
+      {
+        "id": "540ad5e778607c97",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Rise As US Undertakes 'Self-Defense' Strikes Against Iran\u2014Hewlett-Packard, Nvidia, Uber In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52897698/stock-market-today-dow-jones-sp-500-futures-rise-as-us-undertakes-self-defense-strikes-against-iran-hewlett-packard-nvidia-uber-in-focus",
+        "published_at": "2026-06-01T10:00:40+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "us_iran_self_defense_strikes_june_2026",
+        "tickers_mentioned": [
+          "HPE",
+          "NVDA",
+          "UBER"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c614b125c3f14ae8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52895848/stock-market-will-sp-500-open-up-or-down-today",
+        "published_at": "2026-06-01T06:09:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_open_market_direction",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
