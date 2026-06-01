@@ -26,8 +26,10 @@
 
   const flags = $derived(flagsFor({ row, newsHigh, trumpMention }));
 
-  // Heuristic trade levels derived from recent price action (see lib/levels.ts).
-  const levels = $derived(computeLevels(row, rec.direction));
+  // Trade levels: prefer the server-computed rec.levels (one source, and what
+  // the PM's plan references) and fall back to client compute before a scan
+  // has populated them.
+  const levels = $derived(rec.levels ?? computeLevels(row, rec.direction));
 
   // Tier-4 agent-desk verdict (Signal/Research/Risk/PM). Dim the card when the
   // desk passes or Risk vetoes — recommend.py still surfaced it, but the desk
@@ -171,6 +173,16 @@
           <div class="num text-xs font-semibold text-signal-up">${fmtPrice(levels.target)}</div>
         </div>
       </div>
+    </div>
+  {/if}
+
+  <!-- PM's written trade plan — the actionable advice -->
+  {#if desk?.plan && desk.decision === 'take'}
+    <div class="mt-2.5 rounded-md border border-signal-up/20 bg-signal-up/5 p-2.5">
+      <div class="mb-0.5 text-[10px] font-semibold uppercase tracking-wider text-signal-up">
+        plan
+      </div>
+      <p class="text-xs leading-relaxed text-zinc-200">{desk.plan}</p>
     </div>
   {/if}
 

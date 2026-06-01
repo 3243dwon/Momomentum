@@ -83,9 +83,24 @@ export interface DeskVerdict {
   size: 'full' | 'half' | 'quarter' | 'none' | null;
   agreement: 'unanimous' | 'majority' | 'split' | 'pm_override' | null;
   rationale: string | null;
+  /** PM's plain-language trade plan (2-4 sentences). */
+  plan?: string | null;
   signal?: DeskAdvisorVote | null;
   research?: DeskAdvisorVote | null;
   risk?: DeskRiskVote | null;
+}
+
+// Heuristic trade levels. Computed server-side (scanner/levels.py) and attached
+// as rec.levels; the frontend lib/levels.ts can also compute the same shape
+// client-side as a fallback before the scanner populates it.
+export interface TradeLevels {
+  side: 'long' | 'short';
+  entry: number;
+  pivot: number;
+  pivotLabel: 'support' | 'resistance';
+  stop: number;
+  target: number;
+  rr: number | null;
 }
 
 // A pick from the backend scanner.recommend module, joined to its ScanRow by
@@ -98,6 +113,7 @@ export interface Recommendation {
   reasons: string[];
   cautions: string[];
   desk?: DeskVerdict | null;
+  levels?: TradeLevels | null;
 }
 
 export interface Recommendations {

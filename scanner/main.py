@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, desk, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -232,6 +232,11 @@ def run(
         regime["window"] = window.value  # passthrough so the log carries it
 
     recommendations = recommend.compute(enriched_rows, regime=regime)
+
+    # Trade levels (entry/support/stop/target/R:R) — deterministic, attached to
+    # every pick so the PM agent can reference real numbers and the UI has one
+    # source of truth. Runs regardless of LLM availability.
+    levels_mod.attach_levels(recommendations, enriched_rows)
 
     # Tier-4 agent desk: review each pick through Signal/Research/Risk/PM and
     # attach rec["desk"]. Runs only when the LLM client is available; fails soft

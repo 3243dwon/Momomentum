@@ -19,19 +19,9 @@
 //   rr              = reward ÷ risk.
 // Shorts mirror this (resistance above, stop above, target below).
 
-import type { ScanRow } from './types';
+import type { ScanRow, TradeLevels } from './types';
 
-export interface TradeLevels {
-  side: 'long' | 'short';
-  entry: number;
-  /** structural pivot — support for longs, resistance for shorts */
-  pivot: number;
-  pivotLabel: 'support' | 'resistance';
-  stop: number;
-  target: number;
-  /** reward:risk multiple, or null if risk is degenerate */
-  rr: number | null;
-}
+export type { TradeLevels };
 
 function meanAbsMove(closes: number[]): number {
   if (closes.length < 2) return 0;

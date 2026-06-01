@@ -175,7 +175,7 @@ _RISK_TOOL = {
 
 _PM_TOOL = {
     "name": "pm_decision",
-    "description": "Reconcile the three advisor verdicts into a final call + size per candidate.",
+    "description": "Reconcile the three advisor verdicts into a final call + size + written plan per candidate.",
     "input_schema": {
         "type": "object",
         "properties": {
@@ -188,9 +188,19 @@ _PM_TOOL = {
                         "decision": {"type": "string", "enum": ["take", "pass"]},
                         "size": {"type": "string", "enum": ["full", "half", "quarter", "none"]},
                         "agreement": {"type": "string", "enum": ["unanimous", "majority", "split", "pm_override"]},
-                        "rationale": {"type": "string", "description": "≤16 words. Cite the disagreement if any."},
+                        "rationale": {"type": "string", "description": "≤16 words. The decision in a line; cite the disagreement if any."},
+                        "plan": {
+                            "type": "string",
+                            "description": (
+                                "2-4 sentences, plain language, like advice to a friend. For a "
+                                "'take': how to enter (the provided entry/support), where the stop "
+                                "and first target sit (use the provided levels + R:R), the one-line "
+                                "thesis, and the main risk to watch. For a 'pass': one sentence on "
+                                "why you'd skip it. No jargon dumps, no hedging."
+                            ),
+                        },
                     },
-                    "required": ["ticker", "decision", "size", "agreement", "rationale"],
+                    "required": ["ticker", "decision", "size", "agreement", "rationale", "plan"],
                 },
             }
         },
@@ -224,11 +234,18 @@ _RISK_SYS = (
 )
 _PM_SYS = (
     "You are the PORTFOLIO MANAGER on a momentum desk. You see three advisor "
-    "verdicts (signal/research/risk) per candidate, plus the regime and whether "
-    "it's on the book (watchlist). Reconcile them into a final decision and size. "
-    "Honor the Risk veto unless you have a strong reason to override (say so via "
-    "agreement='pm_override'). 'take' with size full/half/quarter; 'pass' = none. "
-    "Unanimous agreement + clean risk → larger size. Disagreement → smaller or pass."
+    "verdicts (signal/research/risk) per candidate, the regime, whether it's on "
+    "the book (watchlist), and pre-computed trade levels (entry, support/"
+    "resistance, stop, target, R:R). Reconcile the advisors into a final decision "
+    "and size. Honor the Risk veto unless you have a strong reason to override "
+    "(say so via agreement='pm_override'). 'take' with size full/half/quarter; "
+    "'pass' = none. Unanimous + clean risk → larger size; disagreement → smaller "
+    "or pass.\n\n"
+    "Then write `plan` — a short, plain-language trade plan a busy trader can act "
+    "on. Use the PROVIDED level numbers (don't invent your own). Sound like a "
+    "sharp colleague giving advice, not a textbook: where to get in, where the "
+    "stop and first target are, the one-line why, and the one thing that would "
+    "make you wrong. Concrete over hedged."
 )
 
 
@@ -302,6 +319,7 @@ def review(recommendations: dict, rows: list[dict], regime: dict | None,
             "score": r.get("score"),
             "on_watchlist": t in watchlist,
             "regime_label": regime.get("label"),
+            "levels": r.get("levels"),
             "signal": signal.get(t),
             "research": research.get(t),
             "risk": risk.get(t),
@@ -319,6 +337,7 @@ def review(recommendations: dict, rows: list[dict], regime: dict | None,
             "size": (p or {}).get("size"),
             "agreement": (p or {}).get("agreement"),
             "rationale": (p or {}).get("rationale"),
+            "plan": (p or {}).get("plan"),
             "signal": s,
             "research": rs,
             "risk": rk,
