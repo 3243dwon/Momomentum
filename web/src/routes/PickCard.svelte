@@ -2,6 +2,7 @@
   import type { NewsItem, Recommendation, ScanRow } from '$lib/types';
   import { fmtPct, fmtPrice, pctClass, fmtRelative } from '$lib/format';
   import { flagsFor } from '$lib/flags';
+  import { computeLevels } from '$lib/levels';
   import Sparkline from './Sparkline.svelte';
   import IconCluster from './IconCluster.svelte';
 
@@ -24,6 +25,9 @@
   const newsHigh = news.some((n) => n.impact === 'high');
 
   const flags = $derived(flagsFor({ row, newsHigh, trumpMention }));
+
+  // Heuristic trade levels derived from recent price action (see lib/levels.ts).
+  const levels = $derived(computeLevels(row, rec.direction));
 
   // Top headline shown as a one-liner under the synthesis. Dedup by id then
   // pick highest impact / most recent.
@@ -79,6 +83,37 @@
     </div>
     <IconCluster {flags} max={3} size="sm" />
   </div>
+
+  <!-- Trade levels (heuristic, derived from recent price action) -->
+  {#if levels}
+    <div class="mt-2.5 rounded border border-ink-700/60 bg-ink-800/30 p-2">
+      <div class="mb-1 flex items-center justify-between">
+        <span class="text-[9px] uppercase tracking-wider text-zinc-500">
+          levels · {levels.pivotLabel} ${fmtPrice(levels.pivot)}
+        </span>
+        {#if levels.rr != null}
+          <span
+            class="num text-[10px] font-semibold {levels.rr >= 2 ? 'text-signal-up' : 'text-zinc-400'}"
+            title="reward : risk"
+          >{levels.rr.toFixed(1)}R</span>
+        {/if}
+      </div>
+      <div class="grid grid-cols-3 gap-1 text-center">
+        <div>
+          <div class="text-[9px] uppercase tracking-wider text-zinc-500">entry</div>
+          <div class="num text-xs font-semibold text-zinc-100">${fmtPrice(levels.entry)}</div>
+        </div>
+        <div>
+          <div class="text-[9px] uppercase tracking-wider text-zinc-500">stop</div>
+          <div class="num text-xs font-semibold text-signal-down">${fmtPrice(levels.stop)}</div>
+        </div>
+        <div>
+          <div class="text-[9px] uppercase tracking-wider text-zinc-500">target</div>
+          <div class="num text-xs font-semibold text-signal-up">${fmtPrice(levels.target)}</div>
+        </div>
+      </div>
+    </div>
+  {/if}
 
   <!-- Why -->
   {#if synth?.summary}
