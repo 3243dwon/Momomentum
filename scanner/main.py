@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import config, desk, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -232,6 +232,15 @@ def run(
         regime["window"] = window.value  # passthrough so the log carries it
 
     recommendations = recommend.compute(enriched_rows, regime=regime)
+
+    # Tier-4 agent desk: review each pick through Signal/Research/Risk/PM and
+    # attach rec["desk"]. Runs only when the LLM client is available; fails soft
+    # so a desk error never blocks the scan. See docs/agent-desk.md.
+    try:
+        desk.review(recommendations, enriched_rows, regime, set(router.load_watchlist()), client)
+    except Exception as e:
+        log.warning("Desk review raised: %s", e)
+
     render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations)
     performance.log_recommendations(recommendations, rows, now, regime=regime)
 

@@ -65,6 +65,29 @@ export type RecDirection = 'long' | 'short';
 // to hold beyond the next tick. "short" = pure technical / price-action trade.
 export type RecHorizon = 'long' | 'short';
 
+// Tier-4 agent-desk verdict attached to a pick. Keep in sync with
+// scanner/desk/__init__.py review(). All fields nullable — the desk fails soft.
+export type DeskVote = 'agree' | 'neutral' | 'against';
+export interface DeskAdvisorVote {
+  vote: DeskVote;
+  conviction: number;
+  note: string;
+}
+export interface DeskRiskVote {
+  veto: boolean;
+  severity: 'low' | 'medium' | 'high';
+  concern: string;
+}
+export interface DeskVerdict {
+  decision: 'take' | 'pass' | null;
+  size: 'full' | 'half' | 'quarter' | 'none' | null;
+  agreement: 'unanimous' | 'majority' | 'split' | 'pm_override' | null;
+  rationale: string | null;
+  signal?: DeskAdvisorVote | null;
+  research?: DeskAdvisorVote | null;
+  risk?: DeskRiskVote | null;
+}
+
 // A pick from the backend scanner.recommend module, joined to its ScanRow by
 // ticker for display. Keep in sync with scanner/recommend.py compute().
 export interface Recommendation {
@@ -74,6 +97,7 @@ export interface Recommendation {
   score: number;
   reasons: string[];
   cautions: string[];
+  desk?: DeskVerdict | null;
 }
 
 export interface Recommendations {

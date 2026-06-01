@@ -29,6 +29,15 @@
   // Heuristic trade levels derived from recent price action (see lib/levels.ts).
   const levels = $derived(computeLevels(row, rec.direction));
 
+  // Tier-4 agent-desk verdict (Signal/Research/Risk/PM). Dim the card when the
+  // desk passes or Risk vetoes — recommend.py still surfaced it, but the desk
+  // disagrees, and that disagreement should be loud.
+  const desk = $derived(rec.desk ?? null);
+  const deskDemoted = $derived(!!desk && (desk.decision === 'pass' || desk.risk?.veto === true));
+  const voteGlyph = (v?: string) => (v === 'agree' ? '✓' : v === 'against' ? '✕' : '~');
+  const voteClass = (v?: string) =>
+    v === 'agree' ? 'text-signal-up' : v === 'against' ? 'text-signal-down' : 'text-zinc-500';
+
   // Top headline shown as a one-liner under the synthesis. Dedup by id then
   // pick highest impact / most recent.
   const headlines = [...new Map(news.map((n) => [n.id, n])).values()]
@@ -41,7 +50,7 @@
 
 <a
   href={`/t/${row.ticker}`}
-  class="pick-card row-link {isLong ? 'pick-card-long' : 'pick-card-short'}"
+  class="pick-card row-link {isLong ? 'pick-card-long' : 'pick-card-short'} {deskDemoted ? 'opacity-60' : ''}"
 >
   <!-- Row 1: rank / ticker / direction badge -->
   <div class="flex items-baseline justify-between gap-2">
@@ -83,6 +92,38 @@
     </div>
     <IconCluster {flags} max={3} size="sm" />
   </div>
+
+  <!-- Agent desk verdict -->
+  {#if desk}
+    <div
+      class="mt-2.5 rounded border p-2 {deskDemoted
+        ? 'border-signal-down/30 bg-signal-down/5'
+        : 'border-ink-700/60 bg-ink-800/30'}"
+    >
+      <div class="flex items-center justify-between">
+        <span
+          class="text-[10px] font-semibold uppercase tracking-wider {desk.decision === 'take'
+            ? 'text-signal-up'
+            : 'text-signal-down'}"
+        >
+          desk: {desk.decision ?? '—'}{desk.size && desk.size !== 'none' ? ` · ${desk.size}` : ''}
+        </span>
+        <span class="flex items-center gap-2 text-[11px] leading-none">
+          <span class={voteClass(desk.signal?.vote)} title={desk.signal?.note ?? 'signal — price action'}>S{voteGlyph(desk.signal?.vote)}</span>
+          <span class={voteClass(desk.research?.vote)} title={desk.research?.note ?? 'research — catalyst'}>R{voteGlyph(desk.research?.vote)}</span>
+          <span
+            class={desk.risk?.veto ? 'font-semibold text-signal-down' : 'text-zinc-500'}
+            title={desk.risk?.concern ?? 'risk'}
+          >Risk{desk.risk?.veto ? '⚑' : '✓'}</span>
+        </span>
+      </div>
+      {#if desk.rationale}
+        <p class="mt-1 text-[11px] leading-snug text-zinc-400">
+          {#if desk.agreement}<span class="text-zinc-600">[{desk.agreement}]</span> {/if}{desk.rationale}
+        </p>
+      {/if}
+    </div>
+  {/if}
 
   <!-- Trade levels (heuristic, derived from recent price action) -->
   {#if levels}
