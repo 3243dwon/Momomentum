@@ -300,3 +300,14 @@ export interface TrumpPulseData {
   truth_posts: TruthPost[];
   presidential_documents: PresidentialDocument[];
 }
+
+// trump_basket.json — hand-curated thematic basket. NOT advice; see _comment.
+export interface TrumpBasketTheme {
+  name: string;
+  note?: string;
+  tickers: string[];
+}
+export interface TrumpBasket {
+  _comment?: string;
+  themes: TrumpBasketTheme[];
+}

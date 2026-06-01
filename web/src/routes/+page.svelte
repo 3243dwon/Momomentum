@@ -15,6 +15,11 @@
   const deltas = data.deltas;
   const watchlist = data.watchlist?.tickers ?? [];
 
+  // Tickers Trump mentioned on Truth Social recently — used to light up the
+  // TRUMP chip on any pick/row/card whose ticker he named. Rare overlap, but
+  // when a mover is something he just posted about, that's worth flagging.
+  const trumpMentions = new Set(data.pulse?.tickers_mentioned ?? []);
+
   const rowsByTicker = new Map<string, ScanRow>(scan?.rows.map((r) => [r.ticker, r]) ?? []);
   const newsCountByTicker = new Map<string, number>(
     Object.entries(news?.ticker_news ?? {}).map(([t, items]) => [t, items.length])
@@ -141,7 +146,7 @@
           {#each recommended.longTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
-              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} trumpMention={trumpMentions.has(rec.ticker)} />
             {/if}
           {/each}
         </div>
@@ -155,7 +160,7 @@
           {#each recommended.shortTerm as rec, i (rec.ticker)}
             {@const row = rowsByTicker.get(rec.ticker)}
             {#if row}
-              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} />
+              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} trumpMention={trumpMentions.has(rec.ticker)} />
             {/if}
           {/each}
         </div>
@@ -180,6 +185,7 @@
             isAccel={accelSet.has(row.ticker)}
             jump={rankJumpMap.get(row.ticker)}
             news={news?.ticker_news[row.ticker] ?? []}
+            trumpMention={trumpMentions.has(row.ticker)}
           />
         {/each}
       </div>
@@ -200,6 +206,7 @@
               row={row}
               isAccel={accelSet.has(row.ticker)}
               news={item.items}
+              trumpMention={trumpMentions.has(row.ticker)}
             />
           {/if}
         {/each}
@@ -224,7 +231,7 @@
       <div class="card overflow-hidden">
         {#each watchlistRows as { row, ticker } (ticker)}
           {#if row}
-            <TickerRow row={row} pinned news={news?.ticker_news[ticker] ?? []} />
+            <TickerRow row={row} pinned news={news?.ticker_news[ticker] ?? []} trumpMention={trumpMentions.has(ticker)} />
           {:else}
             <a href={`/t/${ticker}`} class="ticker-row text-sm opacity-60">
               <span></span>

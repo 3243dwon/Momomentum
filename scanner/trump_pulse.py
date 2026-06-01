@@ -115,13 +115,41 @@ def _parse_rss_date(s: str | None) -> str | None:
         return None
 
 
+# Trump signs nearly every post with his initials — "President DJT",
+# "DONALD J. TRUMP", "President DONALD J. TRUMP". Those are signatures, NOT
+# stock mentions, but "DJT" is also the Trump Media ticker, so naive bare-word
+# extraction would tag the stock on every single post. Strip these before
+# extracting, and require DJT in explicit cashtag form ($DJT) to ever count.
+_SIGNATURE_RE = re.compile(
+    r"\s*[-–—]?\s*(?:President\s+)?(?:DONALD\s+J\.?\s+TRUMP|DJT)\.?\s*$",
+    re.IGNORECASE,
+)
+# Tickers whose symbol collides with Trump's initials / common signatures —
+# only counted when cashtag-prefixed, never as a bare uppercase token.
+_CASHTAG_ONLY = {"DJT"}
+
+
+def _strip_signature(text: str) -> str:
+    """Remove a trailing Trump signature so it doesn't read as a ticker. Runs
+    a couple of times in case of stacked sign-offs."""
+    prev = None
+    out = text
+    for _ in range(3):
+        out = _SIGNATURE_RE.sub("", out).rstrip()
+        if out == prev:
+            break
+        prev = out
+    return out
+
+
 def _extract_tickers(text: str, universe: set[str]) -> list[str]:
     """Pull plausible ticker mentions from one post. Two patterns:
       - $TSLA   (dollar-prefixed, 1-5 caps) — high-confidence
       - TSLA    (whitespace-bounded, 2-5 caps) — must be in universe AND not
                 a known stopword to count
 
-    Returns deduped uppercase tickers, preserving first-mention order.
+    DJT is special-cased: counted only as a $DJT cashtag, never bare, because
+    his initials sign every post. Returns deduped uppercase tickers in order.
     """
     if not text:
         return []
@@ -136,10 +164,13 @@ def _extract_tickers(text: str, universe: set[str]) -> list[str]:
     # universe (rare tickers, watchlist additions, etc.)
     for m in re.finditer(r"\$([A-Z]{1,5})\b", text):
         add(m.group(1))
-    # Bare uppercase: require universe membership to avoid "USA HAS" -> USA, HAS
-    for m in re.finditer(r"\b([A-Z]{2,5})\b", text):
+
+    # Bare uppercase: strip the signature first, then require universe
+    # membership. Skip cashtag-only collisions (DJT) entirely here.
+    body = _strip_signature(text)
+    for m in re.finditer(r"\b([A-Z]{2,5})\b", body):
         t = m.group(1)
-        if t in _TICKER_STOPWORDS:
+        if t in _TICKER_STOPWORDS or t in _CASHTAG_ONLY:
             continue
         if t in universe:
             add(t)

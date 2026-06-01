@@ -5,6 +5,7 @@
 import type { ScanRow, RankJump } from './types';
 
 export type TickerFlag =
+  | 'trump-mention'
   | 'extended'
   | 'overbought'
   | 'stretched'
@@ -23,12 +24,15 @@ export interface FlagInput {
   pinned?: boolean;
   jump?: RankJump;
   newsHigh?: boolean;
+  trumpMention?: boolean;
 }
 
 // Order here = display priority. IconCluster shows the first N, truncates rest.
-// Tuned so the most action-relevant signals (stretched, news-hot, volume) win
-// over cosmetic ones (watchlist star, sector tier).
+// Tuned so the most action-relevant signals (Trump mention, stretched,
+// news-hot, volume) win over cosmetic ones (watchlist star, sector tier).
+// trump-mention is first — it's rare and high-signal, never truncate it.
 const PRIORITY: TickerFlag[] = [
+  'trump-mention',
   'stretched',
   'news-hot',
   'volume-spike',
@@ -42,8 +46,10 @@ const PRIORITY: TickerFlag[] = [
 ];
 
 export function flagsFor(input: FlagInput): TickerFlag[] {
-  const { row, isNewEntrant, isAccel, pinned, jump, newsHigh } = input;
+  const { row, isNewEntrant, isAccel, pinned, jump, newsHigh, trumpMention } = input;
   const out = new Set<TickerFlag>();
+
+  if (trumpMention) out.add('trump-mention');
 
   if (row.caution_level === 'stretched') out.add('stretched');
   else if (row.caution_level === 'caution') out.add('extended');
@@ -67,6 +73,7 @@ export function flagsFor(input: FlagInput): TickerFlag[] {
 // `tip` is the long-form explanation shown on hover for anyone who wants to
 // know what "LATE" or "OB" actually means.
 export const FLAG_META: Record<TickerFlag, { label: string; tip: string; tone: Tone }> = {
+  'trump-mention':{ label: 'TRUMP', tip: 'Mentioned by Trump on Truth Social recently',                                        tone: 'trump' },
   stretched:     { label: 'LATE',  tip: 'Late entry risk — price is stretched well above its trend, chasing here is risky',  tone: 'down' },
   'news-hot':    { label: 'NEWS',  tip: 'High-impact news headline today',                                                    tone: 'warn' },
   'volume-spike':{ label: 'VOL',   tip: 'Volume is at least 2x its 20-day average — institutions are active',                tone: 'warn' },
@@ -79,12 +86,15 @@ export const FLAG_META: Record<TickerFlag, { label: string; tip: string; tone: T
   watchlist:     { label: '★',     tip: 'On your watchlist',                                                                  tone: 'mute' }
 };
 
-export type Tone = 'up' | 'down' | 'warn' | 'info' | 'mute';
+export type Tone = 'up' | 'down' | 'warn' | 'info' | 'mute' | 'trump';
 
 export const TONE_CLASS: Record<Tone, string> = {
-  up:   'text-signal-up',
-  down: 'text-signal-down',
-  warn: 'text-signal-warn',
-  info: 'text-signal-info',
-  mute: 'text-zinc-500'
+  up:    'text-signal-up',
+  down:  'text-signal-down',
+  warn:  'text-signal-warn',
+  info:  'text-signal-info',
+  mute:  'text-zinc-500',
+  // Purple is outside the green/red/amber/blue signal palette, so the TRUMP
+  // chip reads as "notable / special" rather than good/bad/caution.
+  trump: 'text-purple-300'
 };

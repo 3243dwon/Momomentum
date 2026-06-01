@@ -13,6 +13,42 @@
   // also in the scan universe become deep-link chips to /t/[ticker]; others
   // are subtle text accents so we don't pretend they're tradeable here.
   const scanUniverse = new Set((scan?.rows ?? []).map((r) => r.ticker));
+  const scanByTicker = new Map((scan?.rows ?? []).map((r) => [r.ticker, r]));
+  const mentionedSet = new Set(pulse?.tickers_mentioned ?? []);
+
+  // Resolve the curated Trump basket against live scan data. Each theme keeps
+  // its tickers; each ticker carries its scan row (or null if not in today's
+  // scan) and whether Trump mentioned it recently.
+  const basketThemes = (data.basket?.themes ?? []).map((theme) => ({
+    name: theme.name,
+    note: theme.note,
+    holdings: theme.tickers.map((t) => ({
+      ticker: t,
+      row: scanByTicker.get(t) ?? null,
+      mentioned: mentionedSet.has(t)
+    }))
+  }));
+  // Count how many basket names are live + how many Trump just mentioned, for
+  // the section header.
+  const basketLiveCount = basketThemes.reduce(
+    (n, th) => n + th.holdings.filter((h) => h.row).length,
+    0
+  );
+  const basketMentionedCount = basketThemes.reduce(
+    (n, th) => n + th.holdings.filter((h) => h.mentioned).length,
+    0
+  );
+
+  function pctClassLocal(n: number | null | undefined): string {
+    if (n == null) return 'text-zinc-500';
+    if (n > 0) return 'text-signal-up';
+    if (n < 0) return 'text-signal-down';
+    return 'text-zinc-500';
+  }
+  function pctStr(n: number | null | undefined): string {
+    if (n == null) return '–';
+    return `${n > 0 ? '+' : ''}${n.toFixed(2)}%`;
+  }
   function highlightTickers(text: string, mentions: string[]): { kind: 'text' | 'ticker' | 'mention'; value: string }[] {
     if (!mentions.length) return [{ kind: 'text', value: text }];
     // Sort longer tickers first so substrings don't shadow longer matches.
@@ -218,6 +254,55 @@
           </li>
         {/each}
       </ul>
+    </div>
+  </section>
+{/if}
+
+<!-- Trump-relevant stocks — curated thematic basket joined to live scan data. -->
+{#if basketThemes.length > 0}
+  <section class="card mb-6 overflow-hidden">
+    <header class="flex flex-wrap items-baseline justify-between gap-2 border-b border-ink-700 bg-ink-800/40 px-4 py-3">
+      <div>
+        <h2 class="text-base font-semibold tracking-tight">Trump-relevant stocks</h2>
+        <p class="text-[10px] uppercase tracking-wider text-zinc-500">
+          thematic basket · {basketLiveCount} live in scan
+          {#if basketMentionedCount > 0}· <span class="text-purple-300">{basketMentionedCount} mentioned</span>{/if}
+        </p>
+      </div>
+      <span class="text-[10px] text-zinc-600">editorial · not advice · edit data/trump_basket.json</span>
+    </header>
+
+    <div class="divide-y divide-ink-700/40">
+      {#each basketThemes as theme (theme.name)}
+        <div class="px-4 py-3">
+          <div class="mb-2 flex items-baseline gap-2">
+            <h3 class="text-xs font-semibold uppercase tracking-wider text-zinc-300">{theme.name}</h3>
+            {#if theme.note}<span class="text-[11px] text-zinc-500">{theme.note}</span>{/if}
+          </div>
+          <div class="grid grid-cols-2 gap-1.5 sm:grid-cols-3 lg:grid-cols-4">
+            {#each theme.holdings as h (h.ticker)}
+              <a
+                href={`/t/${h.ticker}`}
+                class="flex items-baseline justify-between gap-2 rounded border px-2 py-1.5 transition-colors {h.mentioned
+                  ? 'border-purple-400/40 bg-purple-500/10 hover:bg-purple-500/20'
+                  : 'border-ink-700 hover:bg-ink-800/60'} {h.row ? '' : 'opacity-50'}"
+              >
+                <span class="flex items-baseline gap-1.5">
+                  <span class="font-semibold tracking-tight text-zinc-100">{h.ticker}</span>
+                  {#if h.mentioned}
+                    <span class="rounded bg-purple-500/25 px-1 font-mono text-[8px] uppercase tracking-wider text-purple-200 ring-1 ring-purple-400/40" title="Trump mentioned this recently">★</span>
+                  {/if}
+                </span>
+                {#if h.row}
+                  <span class="num text-right text-xs tabular-nums {pctClassLocal(h.row.pct_1d)}">{pctStr(h.row.pct_1d)}</span>
+                {:else}
+                  <span class="text-[9px] uppercase tracking-wider text-zinc-600">no scan</span>
+                {/if}
+              </a>
+            {/each}
+          </div>
+        </div>
+      {/each}
     </div>
   </section>
 {/if}

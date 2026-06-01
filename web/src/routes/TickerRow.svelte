@@ -14,7 +14,8 @@
     isAccel = false,
     pinned = false,
     jump,
-    news = []
+    news = [],
+    trumpMention = false
   }: {
     row: ScanRow;
     rank?: number;
@@ -23,10 +24,11 @@
     pinned?: boolean;
     jump?: RankJump;
     news?: NewsItem[];
+    trumpMention?: boolean;
   } = $props();
 
   const newsHigh = news.some((n) => n.impact === 'high');
-  const flags = $derived(flagsFor({ row, isNewEntrant, isAccel, pinned, jump, newsHigh }));
+  const flags = $derived(flagsFor({ row, isNewEntrant, isAccel, pinned, jump, newsHigh, trumpMention }));
 
   // "Why" line: synthesis summary if the LLM produced one, otherwise the top
   // headline. Falsy when neither exists so the row stays single-line for the

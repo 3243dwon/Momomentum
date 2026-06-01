@@ -9,19 +9,21 @@
     rec,
     row,
     rank,
-    news = []
+    news = [],
+    trumpMention = false
   }: {
     rec: Recommendation;
     row: ScanRow;
     rank: number;
     news?: NewsItem[];
+    trumpMention?: boolean;
   } = $props();
 
   const isLong = rec.direction === 'long';
   const synth = row.synthesis;
   const newsHigh = news.some((n) => n.impact === 'high');
 
-  const flags = $derived(flagsFor({ row, newsHigh }));
+  const flags = $derived(flagsFor({ row, newsHigh, trumpMention }));
 
   // Top headline shown as a one-liner under the synthesis. Dedup by id then
   // pick highest impact / most recent.

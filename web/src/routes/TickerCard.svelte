@@ -10,7 +10,8 @@
     isAccel = false,
     pinned = false,
     jump,
-    news = []
+    news = [],
+    trumpMention = false
   }: {
     row: ScanRow;
     rank?: number;
@@ -19,6 +20,7 @@
     pinned?: boolean;
     jump?: RankJump;
     news?: NewsItem[];
+    trumpMention?: boolean;
   } = $props();
 
   const synth = row.synthesis;
@@ -32,6 +34,9 @@
         <span class="num text-[10px] tabular-nums text-zinc-500">#{rank}</span>
       {/if}
       <span class="text-base font-semibold tracking-tight">{row.ticker}</span>
+      {#if trumpMention}
+        <span class="rounded bg-purple-500/20 px-1 py-px font-mono text-[9px] uppercase tracking-wider text-purple-300 ring-1 ring-purple-400/30" title="Mentioned by Trump on Truth Social recently">TRUMP</span>
+      {/if}
       {#if pinned}
         <span class="text-zinc-500" title="watchlist">★</span>
       {/if}
