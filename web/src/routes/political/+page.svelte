@@ -16,6 +16,13 @@
   const scanByTicker = new Map((scan?.rows ?? []).map((r) => [r.ticker, r]));
   const mentionedSet = new Set(pulse?.tickers_mentioned ?? []);
 
+  // Stocks Trump actually named on Truth Social in the window, with recency +
+  // count, joined to live scan data. This is the dynamic answer to "what
+  // stocks does Trump talk about" — distinct from the curated basket below.
+  const namedByTrump = Object.entries(pulse?.mention_summary ?? {})
+    .map(([ticker, s]) => ({ ticker, ...s, row: scanByTicker.get(ticker) ?? null }))
+    .sort((a, b) => (b.last_ts ?? '').localeCompare(a.last_ts ?? ''));
+
   // Resolve the curated Trump basket against live scan data. Each theme keeps
   // its tickers; each ticker carries its scan row (or null if not in today's
   // scan) and whether Trump mentioned it recently.
@@ -265,12 +272,42 @@
       <div>
         <h2 class="text-base font-semibold tracking-tight">Trump-relevant stocks</h2>
         <p class="text-[10px] uppercase tracking-wider text-zinc-500">
-          thematic basket · {basketLiveCount} live in scan
-          {#if basketMentionedCount > 0}· <span class="text-purple-300">{basketMentionedCount} mentioned</span>{/if}
+          {namedByTrump.length} named on Truth Social · thematic basket · {basketLiveCount} live
         </p>
       </div>
       <span class="text-[10px] text-zinc-600">editorial · not advice · edit data/trump_basket.json</span>
     </header>
+
+    <!-- Dynamic: stocks Trump actually named on Truth Social in the window. -->
+    {#if namedByTrump.length > 0}
+      <div class="border-b border-ink-700 bg-purple-500/[0.06] px-4 py-3">
+        <h3 class="mb-2 flex items-baseline gap-2 text-xs font-semibold uppercase tracking-wider text-purple-300">
+          Named by Trump on Truth Social
+          <span class="font-normal normal-case tracking-normal text-zinc-500">last {pulse?.window_days ?? 90} days</span>
+        </h3>
+        <div class="grid grid-cols-1 gap-1.5 sm:grid-cols-2 lg:grid-cols-3">
+          {#each namedByTrump as m (m.ticker)}
+            <a
+              href={m.last_url || `/t/${m.ticker}`}
+              target={m.last_url ? '_blank' : undefined}
+              rel="noopener"
+              class="group flex items-baseline gap-2 rounded border border-purple-400/30 bg-purple-500/10 px-2 py-1.5 transition-colors hover:bg-purple-500/20"
+              title={m.last_excerpt ?? ''}
+            >
+              <span class="font-semibold tracking-tight text-zinc-100">{m.ticker}</span>
+              <span class="rounded bg-purple-500/25 px-1 font-mono text-[9px] tabular-nums text-purple-200">{m.count}×</span>
+              {#if m.row}
+                <span class="num text-[11px] tabular-nums {pctClassLocal(m.row.pct_1d)}">{pctStr(m.row.pct_1d)}</span>
+              {/if}
+              <span class="ml-auto text-[10px] text-zinc-500">{m.last_ts ? fmtRelative(m.last_ts) : ''}</span>
+            </a>
+          {/each}
+        </div>
+        <p class="mt-2 line-clamp-1 text-[11px] italic text-zinc-500">
+          latest: “{namedByTrump[0].last_excerpt ?? ''}”
+        </p>
+      </div>
+    {/if}
 
     <div class="divide-y divide-ink-700/40">
       {#each basketThemes as theme (theme.name)}

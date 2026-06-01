@@ -291,12 +291,20 @@ export interface PresidentialDocument {
   html_url: string | null;
   abstract: string | null;
 }
+export interface MentionDetail {
+  count: number;
+  last_ts: string | null;
+  last_excerpt: string | null;
+  last_url: string | null;
+}
 export interface TrumpPulseData {
   generated_at: string;
   sources: Record<string, string>;
+  window_days?: number;
   truth_post_count: number;
   document_count: number;
   tickers_mentioned: string[];
+  mention_summary?: Record<string, MentionDetail>;
   truth_posts: TruthPost[];
   presidential_documents: PresidentialDocument[];
 }

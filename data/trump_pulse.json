@@ -1,312 +1,551 @@
 {
-  "generated_at": "2026-06-01T14:53:19.697179+00:00",
+  "generated_at": "2026-06-01T15:04:37.257331+00:00",
   "sources": {
-    "truth_social": "trumpstruth.org RSS (mirrors @realDonaldTrump)",
+    "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
     "presidential_documents": "federalregister.gov API (president=donald-trump)"
   },
-  "truth_post_count": 50,
+  "window_days": 90,
+  "truth_post_count": 1213,
   "document_count": 40,
-  "tickers_mentioned": [],
+  "tickers_mentioned": [
+    "AAPL",
+    "AMZN",
+    "BA",
+    "DIS",
+    "GS",
+    "INTC",
+    "JPM",
+    "LMT",
+    "NOC",
+    "NVDA",
+    "PLTR",
+    "RTX",
+    "RUM"
+  ],
+  "mention_summary": {
+    "RUM": {
+      "count": 3,
+      "last_ts": "2026-05-19T15:26:50.469Z",
+      "last_excerpt": "RT @LauraLoomerEXCLUSIVE INTERVIEW: Thomas Massie's Ex-Girlfriend And Former Congressional Staffer Cynthia West Tells Allhttps://rumble.com/v7a1820-exclusive-interview-thomas-massies-ex-girlfriend-and-former-congressional-s.html",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116601940244807949"
+    },
+    "AAPL": {
+      "count": 6,
+      "last_ts": "2026-05-13T04:54:32.609Z",
+      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
+    },
+    "NVDA": {
+      "count": 3,
+      "last_ts": "2026-05-13T04:54:32.609Z",
+      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
+    },
+    "BA": {
+      "count": 8,
+      "last_ts": "2026-05-13T04:54:32.609Z",
+      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
+    },
+    "GS": {
+      "count": 3,
+      "last_ts": "2026-05-13T04:54:32.609Z",
+      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
+    },
+    "AMZN": {
+      "count": 3,
+      "last_ts": "2026-04-29T23:04:28.719Z",
+      "last_excerpt": "Robert Hardman has written an amazing book about the incredible life of the beloved and deeply respected Queen Elizabeth II. In his research, Robert discovers many interesting things about the Queen, King Charles, and other members of the R",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116490493540315586"
+    },
+    "INTC": {
+      "count": 4,
+      "last_ts": "2026-04-29T22:20:21.698Z",
+      "last_excerpt": "Intel Stock continues to rise. I'm very proud of that Company in that I am responsible for making the United States of America over 30 Billion Dollars in the last 90 days on that stock alone. There are others that, likewise, I have been ver",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116490320065457761"
+    },
+    "DIS": {
+      "count": 1,
+      "last_ts": "2026-04-27T17:26:09.205Z",
+      "last_excerpt": "Wow, Jimmy Kimmel, who is in no way funny as attested to by his terrible Television Ratings, made a statement on his Show that is really shocking. He showed a fake video of the First Lady, Melania, and our son, Barron, like they were actual",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116477838570626860"
+    },
+    "PLTR": {
+      "count": 1,
+      "last_ts": "2026-04-10T14:32:02.752Z",
+      "last_excerpt": "Palantir Technologies (PLTR) has proven to have great war fighting capabilities and equipment. Just ask our enemies!!! President DJT",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116380894672815869"
+    },
+    "JPM": {
+      "count": 1,
+      "last_ts": "2026-03-19T20:54:09.435Z",
+      "last_excerpt": "You Should Be Terrified by What JPMorgan Did to Trump: https://townhall.com/columnists/douglasmackinnon/2026/02/23/you-should-be-terrorized-by-what-jp-morgan-did-to-trump-n2671705",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116257826369374629"
+    },
+    "LMT": {
+      "count": 1,
+      "last_ts": "2026-03-06T20:46:22.574Z",
+      "last_excerpt": "We just concluded a very good meeting with the largest U.S. Defense Manufacturing Companies where we discussed Production and Production Schedules. They have agreed to quadruple Production of the \"Exquisite Class\" Weaponry in that we want t",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116184185735585906"
+    },
+    "RTX": {
+      "count": 1,
+      "last_ts": "2026-03-06T20:46:22.574Z",
+      "last_excerpt": "We just concluded a very good meeting with the largest U.S. Defense Manufacturing Companies where we discussed Production and Production Schedules. They have agreed to quadruple Production of the \"Exquisite Class\" Weaponry in that we want t",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116184185735585906"
+    },
+    "NOC": {
+      "count": 1,
+      "last_ts": "2026-03-06T20:46:22.574Z",
+      "last_excerpt": "We just concluded a very good meeting with the largest U.S. Defense Manufacturing Companies where we discussed Production and Production Schedules. They have agreed to quadruple Production of the \"Exquisite Class\" Weaponry in that we want t",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116184185735585906"
+    }
+  },
   "truth_posts": [
     {
-      "ts": "2026-06-01T05:03:51+00:00",
+      "ts": "2026-06-01T05:03:51.697Z",
       "text": "Has anyone ever seen a happy Dumocrat??? President DJT",
-      "url": "https://www.trumpstruth.org/statuses/38974",
+      "url": "https://truthsocial.com/@realDonaldTrump/116673100624536427",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-06-01T05:02:12+00:00",
-      "text": "Iran really wants to make a deal, and it will be a good one for the U.S.A. and those that are with us. But don\u2019t the Dumocrats, and various seemingly unpatriotic Republicans, understand that it is MUCH tougher for me to properly do my job and negotiate, when political hacks keep negatively \u201cchirping,\u201d at levels never seen before, over and over again, that I should move faster, or move slower, or go to war, or not go to war, or whatever. Just sit back and relax, it will all work out well in the end - It always does! President DJT",
-      "url": "https://www.trumpstruth.org/statuses/38975",
+      "ts": "2026-06-01T05:02:12.750Z",
+      "text": "Iran really wants to make a deal, and it will be a good one for the U.S.A. and those that are with us. But don't the Dumocrats, and various seemingly unpatriotic Republicans, understand that it is MUCH tougher for me to properly do my job and negotiate, when political hacks keep negatively \"chirping,\" at levels never seen before, over and over again, that I should move faster, or move slower, or go to war, or not go to war, or whatever. Just sit back and relax, it will all work out well in the end - It always does! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116673094140159291",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T23:32:55+00:00",
+      "ts": "2026-05-31T23:32:55.099Z",
       "text": "Welcome home to Justo Betancourt, whose Daughter, Arianne, fought very hard to free her father from Alligator Alcatraz. Enjoy your Freedom together!!! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38973",
+      "url": "https://truthsocial.com/@realDonaldTrump/116671799302513930",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T23:27:46+00:00",
-      "text": "Fake News CNN said today, routinely, that my Iran Nuclear Deal doesn\u2019t talk about Nuclear, when actually it states, very clearly, that Iran will not have a Nuclear Weapon. It then goes on, in very strong and lengthy detail, to discuss various other aspects of Nuclear. In fact, that\u2019s what most of the agreement is about. CNN, and so many others in the Fake News Media, is a Low Ratings disaster. Even with new ownership, it is unlikely to ever get better!!! President DJT",
-      "url": "https://www.trumpstruth.org/statuses/38972",
+      "ts": "2026-05-31T23:27:46.933Z",
+      "text": "Fake News CNN said today, routinely, that my Iran Nuclear Deal doesn't talk about Nuclear, when actually it states, very clearly, that Iran will not have a Nuclear Weapon. It then goes on, in very strong and lengthy detail, to discuss various other aspects of Nuclear. In fact, that's what most of the agreement is about. CNN, and so many others in the Fake News Media, is a Low Ratings disaster. Even with new ownership, it is unlikely to ever get better!!! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116671779106880540",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T20:18:28+00:00",
-      "text": "The New York Times wrote a story today entitled, \u201cTrump Administration Sees Striking Exodus of Legal Talent,\u201d as though that\u2019s a bad thing, when actually, it\u2019s very good. The people that are leaving are Radical Left Deep State Lunatics, who are destroying our Country, and Weaponizing Government. Many of them didn\u2019t leave, but were fired! The Failing New York Times writes this, but makes it sound like it\u2019s a terrible thing when actually, it\u2019s just the opposite. We want people that will, MAKE AMERICA GREAT AGAIN, not people that are trying to destroy our Country, that were put in by Obama and Biden and, in many cases, they shouldn\u2019t have been representing the U.S.A. in the first place. Let them go on to \u201cbigger, better, and brighter\u201d things in the future \u2014 I fully support that, and wish them all well! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38971",
+      "ts": "2026-05-31T20:18:28.331Z",
+      "text": "The New York Times wrote a story today entitled, \"Trump Administration Sees Striking Exodus of Legal Talent,\" as though that's a bad thing, when actually, it's very good. The people that are leaving are Radical Left Deep State Lunatics, who are destroying our Country, and Weaponizing Government. Many of them didn't leave, but were fired! The Failing New York Times writes this, but makes it sound like it's a terrible thing when actually, it's just the opposite. We want people that will, MAKE AMERICA GREAT AGAIN, not people that are trying to destroy our Country, that were put in by Obama and Biden and, in many cases, they shouldn't have been representing the U.S.A. in the first place. Let them go on to \"bigger, better, and brighter\" things in the future \u2014 I fully support that, and wish them all well! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116671034709432638",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T18:03:34+00:00",
-      "text": "Exclusive \u2014 Serbian President Aleksandar Vucic: Donald Trump \u2018Much More Popular\u2019 in Serbia than Any Other U.S. Leader Because He Is \u2018Pragmatic,\u2019 \u2018Rational\u2019: https://www. breitbart.com/politics/2026/05 /31/exclusive-serbian-president-aleksandar-vucic-donald-trump-much-more-popular-in-serbia-than-any-other-u-s-leader-because-he-is-pragmatic-ration/",
-      "url": "https://www.trumpstruth.org/statuses/38970",
+      "ts": "2026-05-31T18:03:34.972Z",
+      "text": "Exclusive \u2014 Serbian President Aleksandar Vucic: Donald Trump 'Much More Popular' in Serbia than Any Other U.S. Leader Because He Is 'Pragmatic,' 'Rational': https://www.breitbart.com/politics/2026/05/31/exclusive-serbian-president-aleksandar-vucic-donald-trump-much-more-popular-in-serbia-than-any-other-u-s-leader-because-he-is-pragmatic-ration/",
+      "url": "https://truthsocial.com/@realDonaldTrump/116670504302792097",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T17:56:09+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38967",
+      "ts": "2026-05-31T17:54:49.923Z",
+      "text": "Congratulations to Congressman Gus Bilirakis, a great guy. He's MAGA all the way. His first grandchild!",
+      "url": "https://truthsocial.com/@realDonaldTrump/116670469893129623",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T17:55:58+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38968",
+      "ts": "2026-05-31T15:34:34.430Z",
+      "text": "The DronePort at the White House Ballroom will be, perhaps, the most sophisticated anywhere in the World! It will safeguard our Nation's Capital, Washington, D.C., long into the future. Judge Richard Leon should stop playing games with America's Security! If anything happens, he will be held responsible for the Death and Destruction caused to our Country. He has already created enough problems by allowing \"Top Secret\" information to be released and exposed based on a ridiculous lawsuit started by a highly litigious woman (serial plaintiff!) whose \"strolling,\" in her opinion, will be disturbed by the new, desperately needed structure \u2013 In any event, a woman who has absolutely no STANDING! With the advent of highly sophisticated, and powerful, modern day weaponry, we can no longer defend Washington, D.C., with rifles and pistols, alone. This ridiculous lawsuit must be dismissed, IMMEDIATELY! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669918375459254",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T17:54:49+00:00",
-      "text": "Congratulations to Congressman Gus Bilirakis, a great guy. He\u2019s MAGA all the way. His first grandchild!",
-      "url": "https://www.trumpstruth.org/statuses/38969",
+      "ts": "2026-05-31T14:39:25.975Z",
+      "text": "RT @realDonaldTrumpI am pleased to announce that United States Ambassador to T\u00fcrkiye, Tom Barrack, who has done an outstanding job, will be named Special Presidential Envoy to Syria and, likewise, Special Presidential Envoy to Iraq, as we advance our strategic cooperation with the Governments of Syria and Iraq, our relationship with them continues to grow! Tom will remain Ambassador to T\u00fcrkiye, and operate with the full backing of the United States Department of State. We greatly appreciate the work that Tom Barrack has done, and his continued willingness to serve our Country. Thank you for your attention to this matter! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669701552575618",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T15:34:34+00:00",
-      "text": "The DronePort at the White House Ballroom will be, perhaps, the most sophisticated anywhere in the World! It will safeguard our Nation\u2019s Capital, Washington, D.C., long into the future. Judge Richard Leon should stop playing games with America\u2019s Security! If anything happens, he will be held responsible for the Death and Destruction caused to our Country. He has already created enough problems by allowing \u201cTop Secret\u201d information to be released and exposed based on a ridiculous lawsuit started by a highly litigious woman (serial plaintiff!) whose \u201cstrolling,\u201d in her opinion, will be disturbed by the new, desperately needed structure \u2013 In any event, a woman who has absolutely no STANDING! With the advent of highly sophisticated, and powerful, modern day weaponry, we can no longer defend Washington, D.C., with rifles and pistols, alone. This ridiculous lawsuit must be dismissed, IMMEDIATELY! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38965",
+      "ts": "2026-05-31T14:34:10.285Z",
+      "text": "RT @NewtGingrichAfter spending this week reviewing the Iranian war I am now convinced President Trump is on the edge of an historic victory. The real breakthrough for me came as I reviewed President Trump's decisions and maneuvers not from the standpoint of American unilateralism but from the standpoint of the leader of a remarkable historic coalition, the largest coalition ever put together in the modern Middle East. Everyone understands that Israel is an important ally. What is little discussed is the depth of support from the United Arab Emirates, Qatar, Bahrain, Saudi Arabia and other countries in the region. It has to be sobering for the Iranian dictatorship to realize that it does not have a single ally willing to challenge the American naval blockade. Slowly, gradually, timidly, our European allies are lining up to help with the Persian Gulf and the Strait of Hormuz. A great deal of President Trump's maneuvers against Iran make sense once he is seen as a coalition leader and not just as a unilateral American President. I spent a lot of the last couple weeks reviewing kinetic options including wining the battle of the Persian Gulf and the Strait of Hormuz and if necessary using the shocking and shattering level of force President Nixon and Secretary Kissinger used against Hanoi and Haiphong in Christmas 1972 (which both leaders believed convinced the North Vietnamese to agree to a truce and the freeing of American POWs). If this were a unilateral American campaign I could enthusiastically support a more aggressive kinetic campaign. However it is also clear it would shatter the coalition because our Arab allies are convinced Iran could still do enormous damage to their oil fields and infrastructure. Coalitions are inherently slower than unilateral campaigns. However coalitions ultimately bring vastly more power to the fight. I am as frustrated as everyone else by the pace of talking with the dictatorship but having reviewed the correlation of forces and the options available to the coalition on one side and the Iranian religiously motivated dictatorship on the other I am prepared to assert that President Trump's coalition leadership (something almost none of his critics want to acknowledge) is within reach of an enormous historic victory. And if the Iranian dictatorship ultimately proves it is hopelessly committed to a suicidal position there will be plenty of time for a kinetic campaign of enormous power and effectiveness. Either way we are on the edge of an astonishing victory for our values and for a safer Middle East.",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669680863671672",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T15:33:50+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38966",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T14:39:25+00:00",
-      "text": "RT @ realDonaldTrump I am pleased to announce that United States Ambassador to T\u00fcrkiye, Tom Barrack, who has done an outstanding job, will be named Special Presidential Envoy to Syria and, likewise, Special Presidential Envoy to Iraq, as we advance our strategic cooperation with the Governments of Syria and Iraq, our relationship with them continues to grow! Tom will remain Ambassador to T\u00fcrkiye, and operate with the full backing of the United States Department of State. We greatly appreciate the work that Tom Barrack has done, and his continued willingness to serve our Country. Thank you for your attention to this matter! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38964",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T14:34:10+00:00",
-      "text": "RT @ NewtGingrich After spending this week reviewing the Iranian war I am now convinced President Trump is on the edge of an historic victory. The real breakthrough for me came as I reviewed President Trump\u2019s decisions and maneuvers not from the standpoint of American unilateralism but from the standpoint of the leader of a remarkable historic coalition, the largest coalition ever put together in the modern Middle East. Everyone understands that Israel is an important ally. What is little discussed is the depth of support from the United Arab Emirates, Qatar, Bahrain, Saudi Arabia and other countries in the region. It has to be sobering for the Iranian dictatorship to realize that it does not have a single ally willing to challenge the American naval blockade. Slowly, gradually, timidly, our European allies are lining up to help with the Persian Gulf and the Strait of Hormuz. A great deal of President Trump\u2019s maneuvers against Iran make sense once he is seen as a coalition leader and not just as a unilateral American President. I spent a lot of the last couple weeks reviewing kinetic options including wining the battle of the Persian Gulf and the Strait of Hormuz and if necessary using the shocking and shattering level of force President Nixon and Secretary Kissinger used against Hanoi and Haiphong in Christmas 1972 (which both leaders believed convinced the North Vietnamese to agree to a truce and the freeing of American POWs). If this were a unilateral American campaign I could enthusiastically support a more aggressive kinetic campaign. However it is also clear it would shatter the coalition because our Arab allies are convinced Iran could still do enormous damage to their oil fields and infrastructure. Coalitions are inherently slower than unilateral campaigns. However coalitions ultimately bring vastly more power to the fight. I am as frustrated as everyone else by the pace of talking with the dictatorship but having reviewed the correlation of forces and the options available to the coalition on one side and the Iranian religiously motivated dictatorship on the other I am prepared to assert that President Trump\u2019s coalition leadership (something almost none of his critics want to acknowledge) is within reach of an enormous historic victory. And if the Iranian dictatorship ultimately proves it is hopelessly committed to a suicidal position there will be plenty of time for a kinetic campaign of enormous power and effectiveness. Either way we are on the edge of an astonishing victory for our values and for a safer Middle East.",
-      "url": "https://www.trumpstruth.org/statuses/38961",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T14:33:54+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38962",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T14:33:47+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38963",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T14:28:21+00:00",
+      "ts": "2026-05-31T14:28:21.975Z",
       "text": "Counter to The Failing New York Times on the Fake Reflecting Pool story, it will be MAGNIFICENT! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38960",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669658036895323",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T14:13:18+00:00",
-      "text": "RT @ NewtGingrich After spending this week reviewing the Iranian war I am now convinced President Trump is on the edge of an historic victory. The real breakthrough for me came as I reviewed President Trump\u2019s decisions and maneuvers not from the standpoint of American unilateralism but from the standpoint of the leader of a remarkable historic coalition, the largest coalition ever put together in the modern Middle East. Everyone understands that Israel is an important ally. What is little discussed is the depth of support from the United Arab Emirates, Qatar, Bahrain, Saudi Arabia and other countries in the region. It has to be sobering for the Iranian dictatorship to realize that it does not have a single ally willing to challenge the American naval blockade. Slowly, gradually, timidly, our European allies are lining up to help with the Persian Gulf and the Strait of Hormuz. A great deal of President Trump\u2019s maneuvers against Iran make sense once he is seen as a coalition leader and not just as a unilateral American President. I spent a lot of the last couple weeks reviewing kinetic options including wining the battle of the Persian Gulf and the Strait of Hormuz and if necessary using the shocking and shattering level of force President Nixon and Secretary Kissinger used against Hanoi and Haiphong in Christmas 1972 (which both leaders believed convinced the North Vietnamese to agree to a truce and the freeing of American POWs). If this were a unilateral American campaign I could enthusiastically support a more aggressive kinetic campaign. However it is also clear it would shatter the coalition because our Arab allies are convinced Iran could still do enormous damage to their oil fields and infrastructure. Coalitions are inherently slower than unilateral campaigns. However coalitions ultimately bring vastly more power to the fight. I am as frustrated as everyone else by the pace of talking with the dictatorship but having reviewed the correlation of forces and the options available to the coalition on one side and the Iranian religiously motivated dictatorship on the other I am prepared to assert that President Trump\u2019s coalition leadership (something almost none of his critics want to acknowledge) is within reach of an enormous historic victory. And if the Iranian dictatorship ultimately proves it is hopelessly committed to a suicidal position there will be plenty of time for a kinetic campaign of enormous power and effectiveness. Either way we are on the edge of an astonishing victory for our values and for a safer Middle East.",
-      "url": "https://www.trumpstruth.org/statuses/38959",
+      "ts": "2026-05-31T14:13:18.474Z",
+      "text": "RT @NewtGingrichAfter spending this week reviewing the Iranian war I am now convinced President Trump is on the edge of an historic victory. The real breakthrough for me came as I reviewed President Trump's decisions and maneuvers not from the standpoint of American unilateralism but from the standpoint of the leader of a remarkable historic coalition, the largest coalition ever put together in the modern Middle East. Everyone understands that Israel is an important ally. What is little discussed is the depth of support from the United Arab Emirates, Qatar, Bahrain, Saudi Arabia and other countries in the region. It has to be sobering for the Iranian dictatorship to realize that it does not have a single ally willing to challenge the American naval blockade. Slowly, gradually, timidly, our European allies are lining up to help with the Persian Gulf and the Strait of Hormuz. A great deal of President Trump's maneuvers against Iran make sense once he is seen as a coalition leader and not just as a unilateral American President. I spent a lot of the last couple weeks reviewing kinetic options including wining the battle of the Persian Gulf and the Strait of Hormuz and if necessary using the shocking and shattering level of force President Nixon and Secretary Kissinger used against Hanoi and Haiphong in Christmas 1972 (which both leaders believed convinced the North Vietnamese to agree to a truce and the freeing of American POWs). If this were a unilateral American campaign I could enthusiastically support a more aggressive kinetic campaign. However it is also clear it would shatter the coalition because our Arab allies are convinced Iran could still do enormous damage to their oil fields and infrastructure. Coalitions are inherently slower than unilateral campaigns. However coalitions ultimately bring vastly more power to the fight. I am as frustrated as everyone else by the pace of talking with the dictatorship but having reviewed the correlation of forces and the options available to the coalition on one side and the Iranian religiously motivated dictatorship on the other I am prepared to assert that President Trump's coalition leadership (something almost none of his critics want to acknowledge) is within reach of an enormous historic victory. And if the Iranian dictatorship ultimately proves it is hopelessly committed to a suicidal position there will be plenty of time for a kinetic campaign of enormous power and effectiveness. Either way we are on the edge of an astonishing victory for our values and for a safer Middle East.",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669598824791805",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T14:09:32+00:00",
+      "ts": "2026-05-31T14:09:32.323Z",
       "text": "I am pleased to announce that United States Ambassador to T\u00fcrkiye, Tom Barrack, who has done an outstanding job, will be named Special Presidential Envoy to Syria and, likewise, Special Presidential Envoy to Iraq, as we advance our strategic cooperation with the Governments of Syria and Iraq, our relationship with them continues to grow! Tom will remain Ambassador to T\u00fcrkiye, and operate with the full backing of the United States Department of State. We greatly appreciate the work that Tom Barrack has done, and his continued willingness to serve our Country. Thank you for your attention to this matter! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38958",
+      "url": "https://truthsocial.com/@realDonaldTrump/116669584003805199",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T05:08:48+00:00",
-      "text": "Dhillon wants judge who allegedly attended a Fani Willis event off Georgia election integrity case: https:// justthenews.com/government/cou rts-law/dhillon-moves-recuse-atlanta-judge-over-alleged-attendance-democratic-event",
-      "url": "https://www.trumpstruth.org/statuses/38956",
+      "ts": "2026-05-31T05:08:48.410Z",
+      "text": "Dhillon wants judge who allegedly attended a Fani Willis event off Georgia election integrity case: https://justthenews.com/government/courts-law/dhillon-moves-recuse-atlanta-judge-over-alleged-attendance-democratic-event",
+      "url": "https://truthsocial.com/@realDonaldTrump/116667457759700602",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T05:08:16+00:00",
-      "text": "Cotton over chemicals: How Trump\u2019s USDA is Making America\u2019s Fabric Great Again: https:// justthenews.com/government/whi te-house/cotton-over-chemicals-how-trumps-usda-making-americas-fabric-great-again",
-      "url": "https://www.trumpstruth.org/statuses/38957",
+      "ts": "2026-05-31T05:08:16.951Z",
+      "text": "Cotton over chemicals: How Trump's USDA is Making America's Fabric Great Again: https://justthenews.com/government/white-house/cotton-over-chemicals-how-trumps-usda-making-americas-fabric-great-again",
+      "url": "https://truthsocial.com/@realDonaldTrump/116667455698157827",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T04:35:28+00:00",
-      "text": "The results of my Physical Examination, taken at Walter Reed Military Medical Center, and just released, were extremely good. Unlike other U.S. Presidents, none of whom have ever taken an approved, high difficulty, Cognitive Test, I scored a perfect 30 out of 30, considered \u201cextreme intelligence.\u201d Are the Dumocrats really surprised? In fact, this is my fourth such test, all PERFECT or, 120 correct answers out of 120 questions asked! It is very rare that anyone gets a Perfect Score, especially when achieved four times in a row. All people running for President and Vice President should be forced to take high difficulty Cognitive Tests. Congress, and the Dumocrats, should demand it! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38955",
+      "ts": "2026-05-31T04:35:28.955Z",
+      "text": "The results of my Physical Examination, taken at Walter Reed Military Medical Center, and just released, were extremely good. Unlike other U.S. Presidents, none of whom have ever taken an approved, high difficulty, Cognitive Test, I scored a perfect 30 out of 30, considered \"extreme intelligence.\" Are the Dumocrats really surprised? In fact, this is my fourth such test, all PERFECT or, 120 correct answers out of 120 questions asked! It is very rare that anyone gets a Perfect Score, especially when achieved four times in a row. All people running for President and Vice President should be forced to take high difficulty Cognitive Tests. Congress, and the Dumocrats, should demand it! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116667326723211656",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T03:21:22+00:00",
+      "ts": "2026-05-31T03:21:22.619Z",
       "text": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116667034702707989",
-      "url": "https://www.trumpstruth.org/statuses/38952",
+      "url": "https://truthsocial.com/@realDonaldTrump/116667035328008255",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-31T03:21:13+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38953",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T03:20:38+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38954",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T02:57:51+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38950",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-31T02:56:59+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38951",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-30T23:59:44+00:00",
+      "ts": "2026-05-30T23:59:44.891Z",
       "text": "Watch my interview with my fantastic daughter-in-law, Lara Trump, tonight at 9:00 - FoxNews. President DJT",
-      "url": "https://www.trumpstruth.org/statuses/38948",
+      "url": "https://truthsocial.com/@realDonaldTrump/116666242491370108",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T23:56:20+00:00",
+      "ts": "2026-05-30T23:56:20.098Z",
       "text": "Watch Mark Levin tonight at 8:00. A BIG SHOW!",
-      "url": "https://www.trumpstruth.org/statuses/38949",
+      "url": "https://truthsocial.com/@realDonaldTrump/116666229070254122",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T23:03:32+00:00",
-      "text": "We should have a giant MAKE AMERICA GREAT AGAIN RALLY, for 250, instead of having overpriced singers, who nobody wants to hear, whose music is boring, and yet who do nothing but complain. Cancel it, just like I canceled my involvement with the failing and unsafe to be in Kennedy Center, because a Highly Conflicted, Crooked Federal Judge, said that I should not be allowed to spend my time and money in order to MAKE THE CENTER GREAT AGAIN, actually, far greater than it ever was before! It would have also been nice to see a Republican/Democrat union bring it back to life. The Kennedy Center is broken, unsafe, and $busted, and has been for many years! Judge Cooper also stated that the highly prestigious Board of the Center was not authorized to add on the name \u201cTRUMP\u201d despite the fact that hundreds of millions of dollars of my time and money will be necessary for its successful reincarnation. So now, the Kennedy Center will collapse, both structurally and financially. Judge Cooper and his wife, Amy Jeffress (obfuscation anyone?), should be ashamed of themselves. Judge Cooper, like numerous other Crooked Judges on my cases, should be IMPEACHED. MAKE AMERICA GREAT AGAIN! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38947",
+      "ts": "2026-05-30T23:03:32.000Z",
+      "text": "We should have a giant MAKE AMERICA GREAT AGAIN RALLY, for 250, instead of having overpriced singers, who nobody wants to hear, whose music is boring, and yet who do nothing but complain. Cancel it, just like I canceled my involvement with the failing and unsafe to be in Kennedy Center, because a Highly Conflicted, Crooked Federal Judge, said that I should not be allowed to spend my time and money in order to MAKE THE CENTER GREAT AGAIN, actually, far greater than it ever was before! It would have also been nice to see a Republican/Democrat union bring it back to life. The Kennedy Center is broken, unsafe, and $busted, and has been for many years! Judge Cooper also stated that the highly prestigious Board of the Center was not authorized to add on the name \"TRUMP\" despite the fact that hundreds of millions of dollars of my time and money will be necessary for its successful reincarnation. So now, the Kennedy Center will collapse, both structurally and financially. Judge Cooper and his wife, Amy Jeffress (obfuscation anyone?), should be ashamed of themselves. Judge Cooper, like numerous other Crooked Judges on my cases, should be IMPEACHED. MAKE AMERICA GREAT AGAIN! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116666021445682015",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:50:16+00:00",
-      "text": "RT @ realDonaldTrump See, they have a Ballroom \u2014 It\u2019s called The Great Hall of China! It\u2019s very large and beautiful. Why do people fight me for having something even better? The Dumocrats are CRAZY! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38946",
+      "ts": "2026-05-30T22:50:16.982Z",
+      "text": "RT @realDonaldTrumpSee, they have a Ballroom \u2014 It's called The Great Hall of China! It's very large and beautiful. Why do people fight me for having something even better? The Dumocrats are CRAZY! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665969343279897",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:49:48+00:00",
-      "text": "RT @ realDonaldTrump The DronePort on the roof of the White House Ballroom! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38940",
+      "ts": "2026-05-30T22:49:48.964Z",
+      "text": "RT @realDonaldTrumpThe DronePort on the roof of the White House Ballroom! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665967507122618",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:49:29+00:00",
-      "text": "RT @ realDonaldTrump Thank you Jaxson! It was great being with you. I know you\u2019re taking some heat from the Radical Left Lunatics who are jealous of you, me, and everyone who surrounds us but, I also know that your Jersey also went to Number One, and you\u2019re making Millions of Dollars so, YOU ARE A WINNER \u2014 THEY ARE ALL LOSERS. I\u2019ll see you in the White House! President DJT",
-      "url": "https://www.trumpstruth.org/statuses/38941",
+      "ts": "2026-05-30T22:49:29.775Z",
+      "text": "RT @realDonaldTrumpThank you Jaxson! It was great being with you. I know you're taking some heat from the Radical Left Lunatics who are jealous of you, me, and everyone who surrounds us but, I also know that your Jersey also went to Number One, and you're making Millions of Dollars so, YOU ARE A WINNER \u2014 THEY ARE ALL LOSERS. I'll see you in the White House! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665966249458240",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:49:21+00:00",
-      "text": "RT @ realDonaldTrump The Reflecting Pool, built between The Lincoln Memorial and The Washington Monument, which was destroyed by Barack Hussein Obama and Sleepy Joe Biden after spending Hundreds of Millions of Dollars trying to fix it (It only got worse!), is moving along nicely, and we should easily make the July 4th date. It will be SPECTACULAR, and good, without leaks, for 100 years, at a fraction of the cost! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38942",
+      "ts": "2026-05-30T22:49:21.543Z",
+      "text": "RT @realDonaldTrumpThe Reflecting Pool, built between The Lincoln Memorial and The Washington Monument, which was destroyed by Barack Hussein Obama and Sleepy Joe Biden after spending Hundreds of Millions of Dollars trying to fix it (It only got worse!), is moving along nicely, and we should easily make the July 4th date. It will be SPECTACULAR, and good, without leaks, for 100 years, at a fraction of the cost! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665965710026985",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:49:08+00:00",
-      "text": "RT @ realDonaldTrump I understand Artists are getting \u201cthe yips\u201d having to do with their performance on Wednesday, so I am thinking about bringing the Number One Attraction anywhere in the World, the man who gets much larger audiences than Elvis in his prime, and he does so without a guitar, the man who loves our Country more than anyone else, and the man who some say is the Greatest President in History (THE GOAT!), DONALD J. TRUMP, to take the place of these highly paid, Third Rate \u201cArtists,\u201d and give a major speech, rallying the Country forward like I have done ever since being President! Two years ago, the United States was DEAD. Now we have the \u201cHOTTEST\u201d Country anywhere in the World. I don\u2019t want so-called \u201cArtists\u201d that get paid far too much money, who aren\u2019t happy. I only want to be surrounded by Happy People, Smart People, Successful People, and People that know how to WIN. So, by copy of this TRUTH, I am ordering my Representatives to look at the feasibility of doing an AMERICA IS BACK Rally on Wednesday, Washington, D.C., same time, same location. Only Great Patriots invited \u2014 It will be a Wild and Beautiful Celebration of America! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38943",
+      "ts": "2026-05-30T22:49:08.266Z",
+      "text": "RT @realDonaldTrumpI understand Artists are getting \"the yips\" having to do with their performance on Wednesday, so I am thinking about bringing the Number One Attraction anywhere in the World, the man who gets much larger audiences than Elvis in his prime, and he does so without a guitar, the man who loves our Country more than anyone else, and the man who some say is the Greatest President in History (THE GOAT!), DONALD J. TRUMP, to take the place of these highly paid, Third Rate \"Artists,\" and give a major speech, rallying the Country forward like I have done ever since being President! Two years ago, the United States was DEAD. Now we have the \"HOTTEST\" Country anywhere in the World. I don't want so-called \"Artists\" that get paid far too much money, who aren't happy. I only want to be surrounded by Happy People, Smart People, Successful People, and People that know how to WIN. So, by copy of this TRUTH, I am ordering my Representatives to look at the feasibility of doing an AMERICA IS BACK Rally on Wednesday, Washington, D.C., same time, same location. Only Great Patriots invited \u2014 It will be a Wild and Beautiful Celebration of America! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665964839850005",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:48:58+00:00",
-      "text": "RT @ realDonaldTrump Can you imagine? A Barack Hussein Obama Judge named Christopher Cooper has stopped a magnificent structural and aesthetic rebuilding of The Trump Kennedy Center where Millions of Dollars of material, marble, furniture, steel, air conditioning, heating, and so much else was ordered, or soon to be ordered, with the end result being a structure that would no longer be in a potential state of collapse, rusted, rotted, and rat and bug infested, to one that would be the Finest anywhere in the World. It was necessary to close the Center in order to get this work done. It is not possible to have a major and very dangerous Construction job, including the replacement of structural beams, with audiences innocently going in to watch a Play. The marble is in terrible shape, the pipes are gone, the air conditioning and heating systems are 65 years old, and no longer functioning. It was all being torn out to be replaced by brand new Carrier Equipment, at the highest standard. Now that won\u2019t happen anymore because a Judge, whose wife is an anti Trump Hater, and he is too, decided, unprecedentedly, to not allow a desperately needed Building Renovation to go forward. On top of that, he said, \u201cRip his name off the Building, he\u2019s got 20 days to do so,\u201d even though a large Board of some of the most distinguished people in the Country voted unanimously to put the name up. I didn\u2019t do it, the Board did because they thought it would be good for this dying Institution, which was doing Record Low Business and, especially after COVID, only getting worse \u2014 True for other such Institutions throughout the Country, but The Trump Kennedy Center was going to be a special one. It would have fully recovered, when none others will. It would have been a New Standard of Excellence, one of my many Gifts to Washington, D.C. The new Building would have been incomparable, beautiful marble, magnificent chandeliers, the finest carpets, rugs, and furniture, designed at the highest level but, perhaps most importantly, replaced steel on many beams, columns, and girders, making the Building structurally sound again. People shouldn\u2019t be allowed to go into that Building until this is fixed, and yet the Trump Hating Judge wants to keep it open because his wife probably told him to do so! Cooper\u2019s wife, Amy Jeffress, who doesn\u2019t use the \u201cCooper\u201d name because they, as a couple, don\u2019t want people to know that she has a Conflict of Interest with an important Judge, is a Radical Left Democrat, who worked as a Federal Prosecutor and Counselor to Obama Attorney General, Eric Holder, worked behind the scenes for the January 6th Unselect Committee of Political Hacks and Thugs, Dirty Cop FBI attorney Lisa Page in the Hillary Clinton Email Scandal, RUSSIA RUSSIA RUSSIA Hoax, and her Millions of Dollars Settlement, even though she was \u201cguilty as hell,\u201d and is currently representing Sleepy Joe Biden on the release of his audio tapes, and more. She also works for the same Legal Firm that represented E. Jean Carroll who received a decision against me, now under appeal, that was shocking to the entire World. Amy is totally wired into the Left System, from her husband down, and it is impossible for me to be treated fairly. He has a total Conflict of Interest, and should be brought up on charges for not revealing these facts. That is why The Kennedy Center will soon be closed, probably never to open again. That is why, at a different level, and with different players, our Country lost the TARIFF Case, and is forced to pay back 149 Billion Dollars in money received from people who hate everything we stand for. They are laughing all the way to the Bank at how stupid we are (One half sentence clause from the Supreme Court would have saved us this incalculable amount of money!), and that is probably why our Country will lose the Birthright Citizenship Case (No other Country in the World has this \u2014 It is totally unaffordable!), because our Court System is RIGGED, no different than our Political System is RIGGED, and the people of our Country know it, and that is why I got overwhelmingly elected President, in Record Numbers, and will FIGHT, FIGHT, FIGHT! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38944",
+      "ts": "2026-05-30T22:48:58.804Z",
+      "text": "RT @realDonaldTrumpCan you imagine? A Barack Hussein Obama Judge named Christopher Cooper has stopped a magnificent structural and aesthetic rebuilding of The Trump Kennedy Center where Millions of Dollars of material, marble, furniture, steel, air conditioning, heating, and so much else was ordered, or soon to be ordered, with the end result being a structure that would no longer be in a potential state of collapse, rusted, rotted, and rat and bug infested, to one that would be the Finest anywhere in the World. It was necessary to close the Center in order to get this work done. It is not possible to have a major and very dangerous Construction job, including the replacement of structural beams, with audiences innocently going in to watch a Play. The marble is in terrible shape, the pipes are gone, the air conditioning and heating systems are 65 years old, and no longer functioning. It was all being torn out to be replaced by brand new Carrier Equipment, at the highest standard. Now that won't happen anymore because a Judge, whose wife is an anti Trump Hater, and he is too, decided, unprecedentedly, to not allow a desperately needed Building Renovation to go forward. On top of that, he said, \"Rip his name off the Building, he's got 20 days to do so,\" even though a large Board of some of the most distinguished people in the Country voted unanimously to put the name up. I didn't do it, the Board did because they thought it would be good for this dying Institution, which was doing Record Low Business and, especially after COVID, only getting worse \u2014 True for other such Institutions throughout the Country, but The Trump Kennedy Center was going to be a special one. It would have fully recovered, when none others will. It would have been a New Standard of Excellence, one of my many Gifts to Washington, D.C. The new Building would have been incomparable, beautiful marble, magnificent chandeliers, the finest carpets, rugs, and furniture, designed at the highest level but, perhaps most importantly, replaced steel on many beams, columns, and girders, making the Building structurally sound again. People shouldn't be allowed to go into that Building until this is fixed, and yet the Trump Hating Judge wants to keep it open because his wife probably told him to do so! Cooper's wife, Amy Jeffress, who doesn't use the \"Cooper\" name because they, as a couple, don't want people to know that she has a Conflict of Interest with an important Judge, is a Radical Left Democrat, who worked as a Federal Prosecutor and Counselor to Obama Attorney General, Eric Holder, worked behind the scenes for the January 6th Unselect Committee of Political Hacks and Thugs, Dirty Cop FBI attorney Lisa Page in the Hillary Clinton Email Scandal, RUSSIA RUSSIA RUSSIA Hoax, and her Millions of Dollars Settlement, even though she was \"guilty as hell,\" and is currently representing Sleepy Joe Biden on the release of his audio tapes, and more. She also works for the same Legal Firm that represented E. Jean Carroll who received a decision against me, now under appeal, that was shocking to the entire World. Amy is totally wired into the Left System, from her husband down, and it is impossible for me to be treated fairly. He has a total Conflict of Interest, and should be brought up on charges for not revealing these facts. That is why The Kennedy Center will soon be closed, probably never to open again. That is why, at a different level, and with different players, our Country lost the TARIFF Case, and is forced to pay back 149 Billion Dollars in money received from people who hate everything we stand for. They are laughing all the way to the Bank at how stupid we are (One half sentence clause from the Supreme Court would have saved us this incalculable amount of money!), and that is probably why our Country will lose the Birthright Citizenship Case (No other Country in the World has this \u2014 It is totally unaffordable!), because our Court System is RIGGED, no different than our Political System is RIGGED, and the people of our Country know it, and that is why I got overwhelmingly elected President, in Record Numbers, and will FIGHT, FIGHT, FIGHT! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665964219866619",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:48:14+00:00",
-      "text": "See, they have a Ballroom \u2014 It\u2019s called The Great Hall of China! It\u2019s very large and beautiful. Why do people fight me for having something even better? The Dumocrats are CRAZY! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38945",
+      "ts": "2026-05-30T22:48:14.672Z",
+      "text": "See, they have a Ballroom \u2014 It's called The Great Hall of China! It's very large and beautiful. Why do people fight me for having something even better? The Dumocrats are CRAZY! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665961327760060",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:22:54+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38939",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-30T22:12:28+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38937",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-30T22:12:01+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38938",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-05-30T22:09:58+00:00",
+      "ts": "2026-05-30T22:09:58.006Z",
       "text": "With King Charles at the White House! President DONALD J. TRUMP",
-      "url": "https://www.trumpstruth.org/statuses/38933",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665810813312667",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:09:36+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38934",
+      "ts": "2026-05-30T20:57:59.802Z",
+      "text": "The DronePort on the roof of the White House Ballroom! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665527815377503",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:09:30+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38935",
+      "ts": "2026-05-30T20:33:36.658Z",
+      "text": "Someone should explain to the Pope that the Mayor of Chicago is useless, and that Iran cannot have a Nuclear Weapon! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665431926784379",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T22:09:22+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38936",
+      "ts": "2026-05-30T19:17:36.251Z",
+      "text": "Watch Lara Trump tonight on FoxNews at 9 P.M. EST. She interviews me for the entire Show! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116665133051752156",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:51:48+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38929",
+      "ts": "2026-05-30T16:56:00.169Z",
+      "text": "Tom Brady is a great player, and great guy!President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664576257157897",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:51:02+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38930",
+      "ts": "2026-05-30T16:45:56.582Z",
+      "text": "PRESIDENT DONALD J. TRUMP vs. Kathy Hochul, New York's failed Governor who, if people are smart, will vote for Bruce Blakeman \u2014 He will, MAKE NEW YORK GREAT AGAIN! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664536700150219",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:50:51+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38931",
+      "ts": "2026-05-30T16:16:42.530Z",
+      "text": "RT @realDonaldTrumpThank you Jaxson! It was great being with you. I know you're taking some heat from the Radical Left Lunatics who are jealous of you, me, and everyone who surrounds us but, I also know that your Jersey also went to Number One, and you're making Millions of Dollars so, YOU ARE A WINNER \u2014 THEY ARE ALL LOSERS. I'll see you in the White House! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664421746768505",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:50:31+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38932",
+      "ts": "2026-05-30T16:16:35.544Z",
+      "text": "RT @realDonaldTrumpThe Reflecting Pool, built between The Lincoln Memorial and The Washington Monument, which was destroyed by Barack Hussein Obama and Sleepy Joe Biden after spending Hundreds of Millions of Dollars trying to fix it (It only got worse!), is moving along nicely, and we should easily make the July 4th date. It will be SPECTACULAR, and good, without leaks, for 100 years, at a fraction of the cost! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664421288947619",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:39:54+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38920",
+      "ts": "2026-05-30T16:16:20.824Z",
+      "text": "RT @realDonaldTrumpI understand Artists are getting \"the yips\" having to do with their performance on Wednesday, so I am thinking about bringing the Number One Attraction anywhere in the World, the man who gets much larger audiences than Elvis in his prime, and he does so without a guitar, the man who loves our Country more than anyone else, and the man who some say is the Greatest President in History (THE GOAT!), DONALD J. TRUMP, to take the place of these highly paid, Third Rate \"Artists,\" and give a major speech, rallying the Country forward like I have done ever since being President! Two years ago, the United States was DEAD. Now we have the \"HOTTEST\" Country anywhere in the World. I don't want so-called \"Artists\" that get paid far too much money, who aren't happy. I only want to be surrounded by Happy People, Smart People, Successful People, and People that know how to WIN. So, by copy of this TRUTH, I am ordering my Representatives to look at the feasibility of doing an AMERICA IS BACK Rally on Wednesday, Washington, D.C., same time, same location. Only Great Patriots invited \u2014 It will be a Wild and Beautiful Celebration of America! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664420324023523",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:39:20+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38921",
+      "ts": "2026-05-30T16:16:17.930Z",
+      "text": "RT @realDonaldTrumpCan you imagine? A Barack Hussein Obama Judge named Christopher Cooper has stopped a magnificent structural and aesthetic rebuilding of The Trump Kennedy Center where Millions of Dollars of material, marble, furniture, steel, air conditioning, heating, and so much else was ordered, or soon to be ordered, with the end result being a structure that would no longer be in a potential state of collapse, rusted, rotted, and rat and bug infested, to one that would be the Finest anywhere in the World. It was necessary to close the Center in order to get this work done. It is not possible to have a major and very dangerous Construction job, including the replacement of structural beams, with audiences innocently going in to watch a Play. The marble is in terrible shape, the pipes are gone, the air conditioning and heating systems are 65 years old, and no longer functioning. It was all being torn out to be replaced by brand new Carrier Equipment, at the highest standard. Now that won't happen anymore because a Judge, whose wife is an anti Trump Hater, and he is too, decided, unprecedentedly, to not allow a desperately needed Building Renovation to go forward. On top of that, he said, \"Rip his name off the Building, he's got 20 days to do so,\" even though a large Board of some of the most distinguished people in the Country voted unanimously to put the name up. I didn't do it, the Board did because they thought it would be good for this dying Institution, which was doing Record Low Business and, especially after COVID, only getting worse \u2014 True for other such Institutions throughout the Country, but The Trump Kennedy Center was going to be a special one. It would have fully recovered, when none others will. It would have been a New Standard of Excellence, one of my many Gifts to Washington, D.C. The new Building would have been incomparable, beautiful marble, magnificent chandeliers, the finest carpets, rugs, and furniture, designed at the highest level but, perhaps most importantly, replaced steel on many beams, columns, and girders, making the Building structurally sound again. People shouldn't be allowed to go into that Building until this is fixed, and yet the Trump Hating Judge wants to keep it open because his wife probably told him to do so! Cooper's wife, Amy Jeffress, who doesn't use the \"Cooper\" name because they, as a couple, don't want people to know that she has a Conflict of Interest with an important Judge, is a Radical Left Democrat, who worked as a Federal Prosecutor and Counselor to Obama Attorney General, Eric Holder, worked behind the scenes for the January 6th Unselect Committee of Political Hacks and Thugs, Dirty Cop FBI attorney Lisa Page in the Hillary Clinton Email Scandal, RUSSIA RUSSIA RUSSIA Hoax, and her Millions of Dollars Settlement, even though she was \"guilty as hell,\" and is currently representing Sleepy Joe Biden on the release of his audio tapes, and more. She also works for the same Legal Firm that represented E. Jean Carroll who received a decision against me, now under appeal, that was shocking to the entire World. Amy is totally wired into the Left System, from her husband down, and it is impossible for me to be treated fairly. He has a total Conflict of Interest, and should be brought up on charges for not revealing these facts. That is why The Kennedy Center will soon be closed, probably never to open again. That is why, at a different level, and with different players, our Country lost the TARIFF Case, and is forced to pay back 149 Billion Dollars in money received from people who hate everything we stand for. They are laughing all the way to the Bank at how stupid we are (One half sentence clause from the Supreme Court would have saved us this incalculable amount of money!), and that is probably why our Country will lose the Birthright Citizenship Case (No other Country in the World has this \u2014 It is totally unaffordable!), because our Court System is RIGGED, no different than our Political System is RIGGED, and the people of our Country know it, and that is why I got overwhelmingly elected President, in Record Numbers, and will FIGHT, FIGHT, FIGHT! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664420134580839",
       "ticker_mentions": []
     },
     {
-      "ts": "2026-05-30T21:38:39+00:00",
-      "text": "",
-      "url": "https://www.trumpstruth.org/statuses/38922",
+      "ts": "2026-05-30T16:15:59.969Z",
+      "text": "Thank you Jaxson! It was great being with you. I know you're taking some heat from the Radical Left Lunatics who are jealous of you, me, and everyone who surrounds us but, I also know that your Jersey also went to Number One, and you're making Millions of Dollars so, YOU ARE A WINNER \u2014 THEY ARE ALL LOSERS. I'll see you in the White House! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664418957601249",
       "ticker_mentions": []
+    },
+    {
+      "ts": "2026-05-30T16:12:21.484Z",
+      "text": "The Reflecting Pool, built between The Lincoln Memorial and The Washington Monument, which was destroyed by Barack Hussein Obama and Sleepy Joe Biden after spending Hundreds of Millions of Dollars trying to fix it (It only got worse!), is moving along nicely, and we should easily make the July 4th date. It will be SPECTACULAR, and good, without leaks, for 100 years, at a fraction of the cost! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664404638689204",
+      "ticker_mentions": []
+    },
+    {
+      "ts": "2026-05-30T16:03:01.863Z",
+      "text": "I understand Artists are getting \"the yips\" having to do with their performance on Wednesday, so I am thinking about bringing the Number One Attraction anywhere in the World, the man who gets much larger audiences than Elvis in his prime, and he does so without a guitar, the man who loves our Country more than anyone else, and the man who some say is the Greatest President in History (THE GOAT!), DONALD J. TRUMP, to take the place of these highly paid, Third Rate \"Artists,\" and give a major speech, rallying the Country forward like I have done ever since being President! Two years ago, the United States was DEAD. Now we have the \"HOTTEST\" Country anywhere in the World. I don't want so-called \"Artists\" that get paid far too much money, who aren't happy. I only want to be surrounded by Happy People, Smart People, Successful People, and People that know how to WIN. So, by copy of this TRUTH, I am ordering my Representatives to look at the feasibility of doing an AMERICA IS BACK Rally on Wednesday, Washington, D.C., same time, same location. Only Great Patriots invited \u2014 It will be a Wild and Beautiful Celebration of America! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116664367963376218",
+      "ticker_mentions": []
+    },
+    {
+      "ts": "2026-05-19T15:26:50.469Z",
+      "text": "RT @LauraLoomerEXCLUSIVE INTERVIEW: Thomas Massie's Ex-Girlfriend And Former Congressional Staffer Cynthia West Tells Allhttps://rumble.com/v7a1820-exclusive-interview-thomas-massies-ex-girlfriend-and-former-congressional-s.html",
+      "url": "https://truthsocial.com/@realDonaldTrump/116601940244807949",
+      "ticker_mentions": [
+        "RUM"
+      ]
+    },
+    {
+      "ts": "2026-05-18T20:02:55.209Z",
+      "text": "RT @LauraLoomerEXCLUSIVE INTERVIEW: Thomas Massie's Ex-Girlfriend And Former Congressional Staffer Cynthia West Tells Allhttps://rumble.com/v7a1820-exclusive-interview-thomas-massies-ex-girlfriend-and-former-congressional-s.html",
+      "url": "https://truthsocial.com/@realDonaldTrump/116597363520973268",
+      "ticker_mentions": [
+        "RUM"
+      ]
+    },
+    {
+      "ts": "2026-05-18T19:38:30.824Z",
+      "text": "RT @LauraLoomerEXCLUSIVE INTERVIEW: Thomas Massie's Ex-Girlfriend And Former Congressional Staffer Cynthia West Tells Allhttps://rumble.com/v7a1820-exclusive-interview-thomas-massies-ex-girlfriend-and-former-congressional-s.html",
+      "url": "https://truthsocial.com/@realDonaldTrump/116597267550913003",
+      "ticker_mentions": [
+        "RUM"
+      ]
+    },
+    {
+      "ts": "2026-05-13T04:54:32.609Z",
+      "text": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Force One and, unless I ask him to leave, which is highly unlikely, CNBC's reporting is incorrect or, as they say in politics, FAKE NEWS! It is an Honor to have Jensen, Elon, Tim Apple, Larry Fink, Stephen Schwarzmann, Kelly Ortberg (Boeing), Brian Sikes (Cargill), Jane Fraser (Citi), Larry Culp (GE Aerospace), David Solomon (Goldman Sachs), Sanjay Mehrotra (Micron), Cristiano Amon (Qualcomm), and many others journeying to the Great Country of China where I will be asking President Xi, a Leader of extraordinary distinction, to \"open up\" China so that these brilliant people can work their magic, and help bring the People's Republic to an even higher level! In fact, I promise, that when we are together, which will be in a matter of hours, I will make that my very first request. I have never seen or heard of any idea that would be more beneficial to our incredible Countries! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116565480086717671",
+      "ticker_mentions": [
+        "AAPL",
+        "NVDA",
+        "BA",
+        "GS"
+      ]
+    },
+    {
+      "ts": "2026-05-13T03:11:02.315Z",
+      "text": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Force One and, unless I ask him to leave, which is highly unlikely, CNBC's reporting is incorrect or, as they say in politics, FAKE NEWS! It is an Honor to have Jensen, Elon, Tim Apple, Larry Fink, Stephen Schwarzmann, Kelly Ortberg (Boeing), Brian Sikes (Cargill), Jane Fraser (Citi), Larry Culp (GE Aerospace), David Solomon (Goldman Sachs), Sanjay Mehrotra (Micron), Cristiano Amon (Qualcomm), and many others journeying to the Great Country of China where I will be asking President Xi, a Leader of extraordinary distinction, to \"open up\" China so that these brilliant people can work their magic, and help bring the People's Republic to an even higher level! In fact, I promise, that when we are together, which will be in a matter of hours, I will make that my very first request. I have never seen or heard of any idea that would be more beneficial to our incredible Countries! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116565073088871081",
+      "ticker_mentions": [
+        "AAPL",
+        "NVDA",
+        "BA",
+        "GS"
+      ]
+    },
+    {
+      "ts": "2026-05-13T03:09:25.703Z",
+      "text": "CNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Force One and, unless I ask him to leave, which is highly unlikely, CNBC's reporting is incorrect or, as they say in politics, FAKE NEWS! It is an Honor to have Jensen, Elon, Tim Apple, Larry Fink, Stephen Schwarzmann, Kelly Ortberg (Boeing), Brian Sikes (Cargill), Jane Fraser (Citi), Larry Culp (GE Aerospace), David Solomon (Goldman Sachs), Sanjay Mehrotra (Micron), Cristiano Amon (Qualcomm), and many others journeying to the Great Country of China where I will be asking President Xi, a Leader of extraordinary distinction, to \"open up\" China so that these brilliant people can work their magic, and help bring the People's Republic to an even higher level! In fact, I promise, that when we are together, which will be in a matter of hours, I will make that my very first request. I have never seen or heard of any idea that would be more beneficial to our incredible Countries! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116565066757116256",
+      "ticker_mentions": [
+        "AAPL",
+        "NVDA",
+        "BA",
+        "GS"
+      ]
+    },
+    {
+      "ts": "2026-05-07T11:15:41.540Z",
+      "text": "https://stocks.apple.com/symbol/%5EDJI",
+      "url": "https://truthsocial.com/@realDonaldTrump/116533004958135086",
+      "ticker_mentions": [
+        "AAPL"
+      ]
+    },
+    {
+      "ts": "2026-04-29T23:04:28.719Z",
+      "text": "Robert Hardman has written an amazing book about the incredible life of the beloved and deeply respected Queen Elizabeth II. In his research, Robert discovers many interesting things about the Queen, King Charles, and other members of the Royal Family. Robert's book, \"Elizabeth II: In Private. In Public. Her Story,\" promises to be a MUST READ, and can be purchased on Amazon, and at every major bookstore. Congratulations on what will soon be a Bestseller! President DONALD J. TRUMPhttps://www.amazon.com/Elizabeth-II-Private-Public-Story/dp/B0FXVC6PHH/ref=tmm_hrd_swatch_0",
+      "url": "https://truthsocial.com/@realDonaldTrump/116490493540315586",
+      "ticker_mentions": [
+        "AMZN"
+      ]
+    },
+    {
+      "ts": "2026-04-29T22:20:21.698Z",
+      "text": "Intel Stock continues to rise. I'm very proud of that Company in that I am responsible for making the United States of America over 30 Billion Dollars in the last 90 days on that stock alone. There are others that, likewise, I have been very successful with by taking pieces of the Equity for support. Congratulations to Intel on doing such a great job and, more importantly, congratulations to the People of the United States for making such a good investment! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116490320065457761",
+      "ticker_mentions": [
+        "INTC"
+      ]
+    },
+    {
+      "ts": "2026-04-27T17:26:09.205Z",
+      "text": "Wow, Jimmy Kimmel, who is in no way funny as attested to by his terrible Television Ratings, made a statement on his Show that is really shocking. He showed a fake video of the First Lady, Melania, and our son, Barron, like they were actually sitting in his studio, listening to him speak, which they weren't, and never would be. He then stated, \"Our First Lady, Melania, is here. Look at Melania, so beautiful. Mrs. Trump, you have a glow like an expectant widow.\" A day later a lunatic tried entering the ballroom of the White House Correspondents Dinner, loaded up with a shotgun, handgun, and many knives. He was there for a very obvious and sinister reason. I appreciate that so many people are incensed by Kimmel's despicable call to violence, and normally would not be responsive to anything that he said but, this is something far beyond the pale. Jimmy Kimmel should be immediately fired by Disney and ABC. Thank you for your attention to this matter! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116477838570626860",
+      "ticker_mentions": [
+        "DIS"
+      ]
+    },
+    {
+      "ts": "2026-04-22T03:17:59.955Z",
+      "text": "US intel secretly flagged major 2020 election vulnerabilities, including voter data, memo: https://justthenews.com/politics-policy/elections/us-intel-flagged-major-2020-election-vulnerabilities-including-voter",
+      "url": "https://truthsocial.com/@realDonaldTrump/116446191940811375",
+      "ticker_mentions": [
+        "INTC"
+      ]
+    },
+    {
+      "ts": "2026-04-21T23:35:34.680Z",
+      "text": "THE WALL STREET JOURNAL HAS LOST ITS WAY!An IDIOT on The Wall Street Journal's Editorial Board, named Elliot Kaufman, just wrote an Op Ed entitled, \"The Iranians Take Trump for a Sucker.\" Really? For 47 years, they have killed our people, and many others, and taken advantage of every President, except me \u2014 And what did I give to them, a Country in tatters! Their entire Navy is at the bottom of the Sea, their Air Force is gone, their Anti Aircraft and Radar is wiped out, their Nuclear Labs and Storage Areas were OBLITERATED late one dark June evening by our Great B-2 Bombers, their leaders are DEAD, including General Soleimani, their evil genius who destroyed the lives of so many with his favored roadside bombs, the Strait of Hormuz is BLOCKADED and totally controlled by the U.S., with no Ships allowed to go to Iranian Ports \u2014 It is said that they are losing 500 Million Dollars a day because of this \u2014 Their Country is an Economic Catastrophe, that is hanging by a thread. Barack Hussein Obama gave them 1.7 Billion Dollars in \"Green\" Cash, flown in by a Boeing 757 to their leaders, and Hundreds of Billions of Dollars in order to help them on their way to a Nuclear Bomb. Other Presidents did nothing to stop them, a BLIGHT on the Office of the Presidency! But despite all of this, I have a MORON on the Editorial Board of The Wall Street Journal writing about me being taken for a \"sucker.\" Iran certainly doesn't think so! Neither does anyone else. I guess Rupert Murdoch told him to write it this way, because The Wall Street Journal has lost its way, no longer required reading, just another failing political \"RAG!\" President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116445317344745621",
+      "ticker_mentions": [
+        "BA"
+      ]
+    },
+    {
+      "ts": "2026-04-21T16:21:36.176Z",
+      "text": "My friend, Congresswoman Elise Stefanik, of New York, has written a new book, \"POISONED IVIES: The Inside Account of the Academic and Moral Rot at America's Elite Universities.\" There is nobody more qualified to speak on this important subject than Elise, who totally exposed the Crooked Former Presidents of Harvard, UPenn, and MIT, in a Congressional Hearing that was seen and heard around the World. Elise is strong, smart, and tough. Order her book today: https://www.amazon.com/dp/1668087537/ref=cm_sw_r_as_gl_api_gl_i_F1HP3EQ4PA3662DXX9QF?linkCode=ml1&tag=elisestefanik-20&linkId=5c58a09e0bbc53374caf5377b4c777d3",
+      "url": "https://truthsocial.com/@realDonaldTrump/116443610885264454",
+      "ticker_mentions": [
+        "AMZN"
+      ]
+    },
+    {
+      "ts": "2026-04-21T10:42:16.256Z",
+      "text": "I have always been a big fan of Tim Cook, and likewise, Steve Jobs, but if Steve was not taken from the Planet Earth so young, and ran the company instead of Tim, the company would have done well, but nowhere near as well as it has under Tim. For me it began with a phone call from Tim at the beginning of my First Term. He had a fairly large problem that only I, as President, could fix. Most people would have paid millions of dollars to a consultant, who I probably would not have known, but who would say that he knew me well. The fees would be paid but the job would not have gotten done. When I got the call I said, wow, it's Tim Apple (Cook!) calling, how big is that? I was very impressed with myself to have the head of Apple calling to \"kiss my ass.\" Anyway, he explained his problem, a tough one it was, I felt he was right and got it taken care of, quickly and effectively. That was the beginning of a long and very nice relationship. During my five years as President, Tim would call me, but never too much, and I would help him where I could. Years latter, after 3 or 4 BIG HELPS, I started to say to people, anyone who would listen, that this guy is an amazing manager and leader. He makes these calls to me, I help him out (but not always, because he will, on occasion, be too aggressive in his ask!), and he gets the job done, QUICKLY, without a dime being given to those very expensive (millions of dollars!) consultants around town who sometimes get it done, and sometimes don't. Anyway, Tim Cook had an AMAZING career, almost incomparable, and will go on and continue to do great work for Apple, and whatever else he chooses to work on. Quite simply, Tim Cook is an incredible guy!!! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116442276577696798",
+      "ticker_mentions": [
+        "AAPL"
+      ]
+    },
+    {
+      "ts": "2026-04-20T19:01:30.675Z",
+      "text": "RT @realDonaldTrumpThe DEAL that we are making with Iran will be FAR BETTER than the JCPOA, commonly referred to as \"The Iran Nuclear Deal,\" penned by Barack Hussein Obama and Sleepy Joe Biden, one of the Worst Deals ever made having to do with the Security of our Country. It was a guaranteed Road to a Nuclear Weapon, which will not, and cannot, happen with the Deal we're working on. They actually gave $1.7 Billion Dollars in \"GREEN\" Cash, loaded into a Boeing 757, and flown to Iran for Iranian leadership to spend anyway they saw fit. He emptied out all of the Cash from Banks in D.C., Virginia, and Maryland. Those Bankers said they've never seen anything like it before. In addition, Hundreds of Billions of Dollars was paid to Iran. If I did not terminate that \"Deal,\" Nuclear Weapons would have been used on Israel, and all over the Middle East, including our cherished U.S. Military Bases. The Fake News, like Lightweight Washington Post \"Journalist\" David Ignatius, loves to talk about the JCPOA, knowing that it was DANGEROUS, and a Complete Embarrassment to our Country. If a Deal happens under \"TRUMP,\" it will guarantee Peace, Security, and Safety, not only for Israel and the Middle East, but for Europe, America, and everywhere else. It will be something that the entire World will be proud of, instead of the years of Embarrassment and Humiliation that we have been forced to suffer due to incompetent and cowardly leadership! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116438577360067480",
+      "ticker_mentions": [
+        "BA"
+      ]
+    },
+    {
+      "ts": "2026-04-20T17:35:37.313Z",
+      "text": "The DEAL that we are making with Iran will be FAR BETTER than the JCPOA, commonly referred to as \"The Iran Nuclear Deal,\" penned by Barack Hussein Obama and Sleepy Joe Biden, one of the Worst Deals ever made having to do with the Security of our Country. It was a guaranteed Road to a Nuclear Weapon, which will not, and cannot, happen with the Deal we're working on. They actually gave $1.7 Billion Dollars in \"GREEN\" Cash, loaded into a Boeing 757, and flown to Iran for Iranian leadership to spend anyway they saw fit. He emptied out all of the Cash from Banks in D.C., Virginia, and Maryland. Those Bankers said they've never seen anything like it before. In addition, Hundreds of Billions of Dollars was paid to Iran. If I did not terminate that \"Deal,\" Nuclear Weapons would have been used on Israel, and all over the Middle East, including our cherished U.S. Military Bases. The Fake News, like Lightweight Washington Post \"Journalist\" David Ignatius, loves to talk about the JCPOA, knowing that it was DANGEROUS, and a Complete Embarrassment to our Country. If a Deal happens under \"TRUMP,\" it will guarantee Peace, Security, and Safety, not only for Israel and the Middle East, but for Europe, America, and everywhere else. It will be something that the entire World will be proud of, instead of the years of Embarrassment and Humiliation that we have been forced to suffer due to incompetent and cowardly leadership! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116438239629407600",
+      "ticker_mentions": [
+        "BA"
+      ]
+    },
+    {
+      "ts": "2026-04-17T19:21:26.920Z",
+      "text": "Trump Effect: Apple Expands American Manufacturing Program with 4 Partners: https://www.breitbart.com/tech/2026/03/26/trump-effect-apple-expands-american-manufacturing-program-with-4-partners/",
+      "url": "https://truthsocial.com/@realDonaldTrump/116421668823698549",
+      "ticker_mentions": [
+        "AAPL"
+      ]
+    },
+    {
+      "ts": "2026-04-16T21:38:10.521Z",
+      "text": "https://www.cadillacchampionship.com/news/2026/03/18/cadillac-championship-and-boeing-join-forces-to-honor-military-and-veterans-at-2026-tournament",
+      "url": "https://truthsocial.com/@realDonaldTrump/116416544142618799",
+      "ticker_mentions": [
+        "BA"
+      ]
+    },
+    {
+      "ts": "2026-04-10T14:32:02.752Z",
+      "text": "Palantir Technologies (PLTR) has proven to have great war fighting capabilities and equipment. Just ask our enemies!!! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116380894672815869",
+      "ticker_mentions": [
+        "PLTR"
+      ]
+    },
+    {
+      "ts": "2026-04-09T23:34:40.767Z",
+      "text": "My friend, Congresswoman Elise Stefanik, of New York, has written a new book, \"POISONED IVIES: The Inside Account of the Academic and Moral Rot at America's Elite Universities.\" There is nobody more qualified to speak on this important subject than Elise, who totally exposed the Crooked Former Presidents of Harvard, UPenn, and MIT, in a Congressional Hearing that was seen and heard around the World. Elise is strong, smart, and tough. Order her book today: https://www.amazon.com/dp/1668087537/ref=cm_sw_r_as_gl_api_gl_i_F1HP3EQ4PA3662DXX9QF?linkCode=ml1&tag=elisestefanik-20&linkId=5c58a09e0bbc53374caf5377b4c777d3",
+      "url": "https://truthsocial.com/@realDonaldTrump/116377366086619888",
+      "ticker_mentions": [
+        "AMZN"
+      ]
+    },
+    {
+      "ts": "2026-03-19T20:54:09.435Z",
+      "text": "You Should Be Terrified by What JPMorgan Did to Trump: https://townhall.com/columnists/douglasmackinnon/2026/02/23/you-should-be-terrorized-by-what-jp-morgan-did-to-trump-n2671705",
+      "url": "https://truthsocial.com/@realDonaldTrump/116257826369374629",
+      "ticker_mentions": [
+        "JPM"
+      ]
+    },
+    {
+      "ts": "2026-03-19T14:06:02.789Z",
+      "text": "Britain had meltdown when China hacked voter files, but U.S. intel kept it secret in America: https://justthenews.com/government/security/us-intel-has-known-2020-china-gained-access-us-voter-files-memos-show",
+      "url": "https://truthsocial.com/@realDonaldTrump/116256221612685192",
+      "ticker_mentions": [
+        "INTC"
+      ]
+    },
+    {
+      "ts": "2026-03-18T09:23:25.126Z",
+      "text": "Britain had meltdown when China hacked voter files, but U.S. intel kept it secret in America: https://justthenews.com/government/security/us-intel-has-known-2020-china-gained-access-us-voter-files-memos-show",
+      "url": "https://truthsocial.com/@realDonaldTrump/116249447962443816",
+      "ticker_mentions": [
+        "INTC"
+      ]
+    },
+    {
+      "ts": "2026-03-06T20:46:22.574Z",
+      "text": "We just concluded a very good meeting with the largest U.S. Defense Manufacturing Companies where we discussed Production and Production Schedules. They have agreed to quadruple Production of the \"Exquisite Class\" Weaponry in that we want to reach, as rapidly as possible, the highest levels of quantity. Expansion began three months prior to the meeting, and Plants and Production of many of these Weapons are already under way. We have a virtually unlimited supply of Medium and Upper Medium Grade Munitions, which we are using, as an example, in Iran, and recently used in Venezuela. Regardless, however, we have also increased Orders at these levels. The Companies represented were the CEOs of BAE Systems, Boeing, Honeywell Aerospace, L3Harris Missile Solutions, Lockheed Martin, Northrop Grumman, and Raytheon. The meeting concluded with another meeting scheduled in two months. States all over the Country are bidding for these new Plants. Thank you for your attention to this matter! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116184185735585906",
+      "ticker_mentions": [
+        "BA",
+        "LMT",
+        "RTX",
+        "NOC"
+      ]
     }
   ],
   "presidential_documents": [

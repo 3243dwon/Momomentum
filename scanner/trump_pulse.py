@@ -35,12 +35,19 @@ log = logging.getLogger(__name__)
 
 PULSE_FILE = config.DATA_DIR / "trump_pulse.json"
 
+# Primary source: a full archive (33k+ posts back to 2022) refreshed every few
+# minutes. Gives real history so we can answer "when did Trump last name X" and
+# catch by-name mentions across a meaningful window — the 100-post RSS can't.
+_TRUTH_ARCHIVE_URL = "https://ix.cnn.io/data/truth-social/truth_archive.json"
+# Fallback if the archive is unreachable — recent ~100 posts only.
 _TRUTH_RSS_URL = "https://www.trumpstruth.org/feed"
 _FEDREG_BASE = "https://www.federalregister.gov/api/v1/documents.json"
-_TIMEOUT_SECONDS = 20
-_TRUTH_POST_LIMIT = 50
+_TIMEOUT_SECONDS = 45  # archive is ~18MB
+_TRUTH_LOOKBACK_DAYS = 90   # window we scan for ticker mentions
+_TRUTH_DISPLAY_LIMIT = 40   # most-recent posts kept for the feed view
 _FEDREG_DAYS_LOOKBACK = 60  # roughly 2 months of EOs / proclamations
 _USER_AGENT = "Momentum-Scanner makutanaka816@gmail.com"
+_COMPANY_ALIASES_FILE = config.DATA_DIR / "company_aliases.json"
 
 # Common 2-4 letter words that look like tickers but aren't. Filtering these
 # out cuts the false-positive rate on ticker extraction dramatically. Lower
@@ -57,6 +64,11 @@ _TICKER_STOPWORDS = {
     "SAY", "SEE", "TOP", "WIN", "YES", "GO", "DO", "BE", "IS", "WE", "US",
     "IT", "TO", "AT", "OF", "ON", "IN", "NO", "SO", "UP", "OR", "BY", "AN",
     "IF", "ME", "MY", "AS",
+    # Trump-ism / political acronyms that show up in parentheticals and collide
+    # with real tickers: "(TDS)" = Trump Derangement Syndrome (not the telecom
+    # TDS), "(MAGA)", "(RINO)", etc.
+    "TDS", "MAGA", "RINO", "NATO", "FISA", "RICO", "POTUS", "FLOTUS",
+    "SCOTUS", "GOP", "DNC", "RNC", "DHS", "DOD", "DOE", "NSA", "MSNBC",
 }
 
 
@@ -142,14 +154,36 @@ def _strip_signature(text: str) -> str:
     return out
 
 
-def _extract_tickers(text: str, universe: set[str]) -> list[str]:
-    """Pull plausible ticker mentions from one post. Two patterns:
-      - $TSLA   (dollar-prefixed, 1-5 caps) — high-confidence
-      - TSLA    (whitespace-bounded, 2-5 caps) — must be in universe AND not
-                a known stopword to count
+def _load_aliases() -> dict[str, list[str]]:
+    """Load the company-name → ticker alias map. Returns {ticker: [names...]}
+    with names lowercased for case-insensitive matching. Empty on failure."""
+    if not _COMPANY_ALIASES_FILE.exists():
+        return {}
+    try:
+        data = json.loads(_COMPANY_ALIASES_FILE.read_text())
+        aliases = data.get("aliases", {})
+        return {
+            t.upper(): [n.lower() for n in names]
+            for t, names in aliases.items()
+            if isinstance(names, list)
+        }
+    except Exception as e:
+        log.warning("Trump pulse: alias load failed: %s", e)
+        return {}
 
-    DJT is special-cased: counted only as a $DJT cashtag, never bare, because
-    his initials sign every post. Returns deduped uppercase tickers in order.
+
+def _extract_tickers(text: str, universe: set[str], aliases: dict[str, list[str]] | None = None) -> list[str]:
+    """Pull plausible ticker mentions from one post. Three patterns:
+      - $TSLA            cashtag, 1-5 caps — high-confidence, accepted as-is
+      - TSLA             bare uppercase, 2-5 caps — must be in universe
+      - "Tesla"/"Intel"  company NAME via the alias map — case-insensitive
+
+    The name pass is the important one: Trump writes 'Intel', 'Apple',
+    'Nvidia' — not 'INTC'/'AAPL'/'NVDA'. Without aliases we'd miss every
+    by-name mention, which is how he actually talks about stocks.
+
+    DJT is special-cased: counted only as a $DJT cashtag, never bare/by-name,
+    because his initials sign every post. Returns deduped tickers in order.
     """
     if not text:
         return []
@@ -160,43 +194,103 @@ def _extract_tickers(text: str, universe: set[str]) -> list[str]:
         if t and t not in seen:
             seen.append(t)
 
-    # Dollar-prefixed: anything $XXX is intent-marked, accept even if not in
-    # universe (rare tickers, watchlist additions, etc.)
+    # Strip the trailing signature once — used by all passes.
+    body = _strip_signature(text)
+
+    # 1) Dollar-prefixed cashtags — intent-marked, accept even if not in universe.
     for m in re.finditer(r"\$([A-Z]{1,5})\b", text):
         add(m.group(1))
 
-    # Bare uppercase: strip the signature first, then require universe
-    # membership. Skip cashtag-only collisions (DJT) entirely here.
-    body = _strip_signature(text)
-    for m in re.finditer(r"\b([A-Z]{2,5})\b", body):
+    # 2) Ticker-in-parentheses, e.g. "Palantir Technologies (PLTR)". A strong
+    #    intent signal. Require universe membership + not a stopword so we don't
+    #    catch "(CNN)" / "(USA)" / "(R-FL)" style parentheticals.
+    for m in re.finditer(r"\(([A-Z]{2,5})\)", body):
         t = m.group(1)
         if t in _TICKER_STOPWORDS or t in _CASHTAG_ONLY:
             continue
         if t in universe:
             add(t)
+
+    # 3) Company NAMES via the alias map — case-insensitive, word-boundary.
+    #    This is the high-value pass: Trump writes "Intel"/"Palantir"/"Nvidia",
+    #    not the ticker symbol.
+    if aliases:
+        low = body.lower()
+        for ticker, names in aliases.items():
+            for name in names:
+                if re.search(r"\b" + re.escape(name) + r"\b", low):
+                    add(ticker)
+                    break
+
+    # NOTE: deliberately NO bare-uppercase pass. Trump writes in ALL CAPS
+    # constantly ("TEN POINT PLAN", "LIVE", "FUND ICE", "AI"), which collides
+    # with tickers (TEN, LIVE, FUND, AI) in a 5k-name universe and floods the
+    # output with false positives. Cashtags + parens + names are high-precision.
     return seen
 
 
-def fetch_truth_social(universe: set[str]) -> list[dict]:
-    """Pull recent posts from trumpstruth.org RSS, normalize, tag tickers."""
+def _fetch_archive_posts(now: datetime) -> list[dict] | None:
+    """Pull the deep CNN archive, filter to the lookback window, normalize to
+    {ts, text, url}. Returns None on failure so the caller can fall back to RSS."""
+    resp = _fetch(_TRUTH_ARCHIVE_URL)
+    if resp is None or resp.status_code != 200:
+        log.warning("Truth archive fetch returned %s", resp.status_code if resp else "no-response")
+        return None
+    try:
+        data = resp.json()
+    except Exception as e:
+        log.warning("Truth archive parse failed: %s", e)
+        return None
+    raw = data if isinstance(data, list) else data.get("posts") or data.get("data") or []
+    if not raw:
+        return None
+
+    cutoff = (now - timedelta(days=_TRUTH_LOOKBACK_DAYS)).isoformat()
+    out: list[dict] = []
+    for p in raw:
+        ts = p.get("created_at") or p.get("date") or ""
+        if ts and ts < cutoff:
+            continue
+        text = _strip_html(p.get("content") or "")
+        if not text:
+            continue
+        out.append({"ts": ts or None, "text": text, "url": p.get("url")})
+    # Most-recent first.
+    out.sort(key=lambda x: x["ts"] or "", reverse=True)
+    return out
+
+
+def _fetch_rss_posts() -> list[dict]:
+    """Fallback: recent ~100 posts from trumpstruth.org RSS as {ts, text, url}."""
     resp = _fetch(_TRUTH_RSS_URL)
     if resp is None or resp.status_code != 200:
-        log.warning("Truth Social fetch returned %s", resp.status_code if resp else "no-response")
+        log.warning("Truth Social RSS returned %s", resp.status_code if resp else "no-response")
         return []
-
-    items = _parse_rss_items(resp.text)
-    posts: list[dict] = []
-    for it in items[:_TRUTH_POST_LIMIT]:
+    out: list[dict] = []
+    for it in _parse_rss_items(resp.text):
         text = _strip_html(it.get("description") or it.get("title") or "")
-        # The "title" in this feed is usually identical to the body, sometimes
-        # truncated. Prefer the description (full body) when both exist.
+        out.append({"ts": _parse_rss_date(it.get("pubDate")), "text": text, "url": it.get("link")})
+    return out
+
+
+def fetch_truth_social(universe: set[str], aliases: dict[str, list[str]], now: datetime) -> tuple[list[dict], str]:
+    """Get Trump's recent posts (archive preferred, RSS fallback), tag each
+    with ticker mentions. Returns (posts, source_label)."""
+    raw = _fetch_archive_posts(now)
+    source = "ix.cnn.io archive (33k posts, 90d window)"
+    if not raw:
+        raw = _fetch_rss_posts()
+        source = "trumpstruth.org RSS (fallback, recent only)"
+
+    posts: list[dict] = []
+    for p in raw:
         posts.append({
-            "ts": _parse_rss_date(it.get("pubDate")),
-            "text": text,
-            "url": it.get("link"),
-            "ticker_mentions": _extract_tickers(text, universe),
+            "ts": p["ts"],
+            "text": p["text"],
+            "url": p["url"],
+            "ticker_mentions": _extract_tickers(p["text"], universe, aliases),
         })
-    return posts
+    return posts, source
 
 
 def fetch_presidential_documents() -> list[dict]:
@@ -294,24 +388,53 @@ def fetch_and_save(now: datetime | None = None) -> dict:
             pass
 
     universe = _load_universe()
-    posts = fetch_truth_social(universe)
+    aliases = _load_aliases()
+    posts, truth_source = fetch_truth_social(universe, aliases, now)
     docs = fetch_presidential_documents()
+
+    # Build a per-ticker mention summary over the whole window: how many times
+    # Trump named it, when he last did, and a short excerpt of that post. This
+    # is what powers "Trump mentioned INTC 5x · last 3d ago" in the UI.
+    mention_summary: dict[str, dict] = {}
+    mention_posts: list[dict] = []
+    for p in posts:
+        if not p["ticker_mentions"]:
+            continue
+        mention_posts.append(p)
+        for t in p["ticker_mentions"]:
+            s = mention_summary.setdefault(t, {"count": 0, "last_ts": None, "last_excerpt": None, "last_url": None})
+            s["count"] += 1
+            # posts are newest-first, so the first time we see a ticker is its
+            # most recent mention.
+            if s["last_ts"] is None:
+                s["last_ts"] = p["ts"]
+                s["last_excerpt"] = p["text"][:240]
+                s["last_url"] = p["url"]
+
+    # Keep the JSON lean: the recent N posts for the feed view, plus every post
+    # in the window that named a ticker (the high-signal ones), deduped.
+    display_posts = posts[:_TRUTH_DISPLAY_LIMIT]
+    seen_urls = {p.get("url") for p in display_posts}
+    kept = display_posts + [p for p in mention_posts if p.get("url") not in seen_urls]
 
     payload = {
         "generated_at": now.isoformat(),
         "sources": {
-            "truth_social": "trumpstruth.org RSS (mirrors @realDonaldTrump)",
+            "truth_social": truth_source,
             "presidential_documents": "federalregister.gov API (president=donald-trump)",
         },
+        "window_days": _TRUTH_LOOKBACK_DAYS,
         "truth_post_count": len(posts),
         "document_count": len(docs),
-        "tickers_mentioned": sorted({t for p in posts for t in p["ticker_mentions"]}),
-        "truth_posts": posts,
+        "tickers_mentioned": sorted(mention_summary.keys()),
+        "mention_summary": mention_summary,
+        "truth_posts": kept,
         "presidential_documents": docs,
     }
     PULSE_FILE.write_text(json.dumps(payload, indent=2))
     log.info(
-        "Trump pulse: %d posts (%d unique ticker mentions), %d presidential documents",
-        len(posts), len(payload["tickers_mentioned"]), len(docs),
+        "Trump pulse: %d posts in %dd window via %s (%d tickers named), %d docs",
+        len(posts), _TRUTH_LOOKBACK_DAYS, truth_source.split()[0],
+        len(mention_summary), len(docs),
     )
     return payload
