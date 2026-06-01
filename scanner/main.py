@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -264,6 +264,14 @@ def run(
         political.fetch_and_save()
     except Exception as e:
         log.warning("Political fetch raised: %s", e)
+
+    # Trump pulse: Truth Social posts + Federal Register presidential documents.
+    # Both sources are free. Same throttle as political so the dashboard's two
+    # external feeds stay aligned.
+    try:
+        trump_pulse.fetch_and_save()
+    except Exception as e:
+        log.warning("Trump pulse fetch raised: %s", e)
 
     # Evaluate past alerts + recommendations whose 1d/3d/5d horizons elapsed.
     from datetime import timezone as _tz

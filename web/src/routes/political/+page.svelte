@@ -7,6 +7,40 @@
   const scan = data.scan;
   const watchlist = new Set(data.watchlist?.tickers ?? []);
   const djt = political?.djt;
+  const pulse = data.pulse;
+
+  // Highlight ticker mentions inside Truth Social post text. Tickers that are
+  // also in the scan universe become deep-link chips to /t/[ticker]; others
+  // are subtle text accents so we don't pretend they're tradeable here.
+  const scanUniverse = new Set((scan?.rows ?? []).map((r) => r.ticker));
+  function highlightTickers(text: string, mentions: string[]): { kind: 'text' | 'ticker' | 'mention'; value: string }[] {
+    if (!mentions.length) return [{ kind: 'text', value: text }];
+    // Sort longer tickers first so substrings don't shadow longer matches.
+    const sorted = [...new Set(mentions)].sort((a, b) => b.length - a.length);
+    const pattern = new RegExp(`\\$?\\b(${sorted.join('|')})\\b`, 'g');
+    const out: { kind: 'text' | 'ticker' | 'mention'; value: string }[] = [];
+    let last = 0;
+    text.replace(pattern, (m, t, idx: number) => {
+      if (idx > last) out.push({ kind: 'text', value: text.slice(last, idx) });
+      out.push({ kind: scanUniverse.has(t) ? 'ticker' : 'mention', value: m });
+      last = idx + m.length;
+      return m;
+    });
+    if (last < text.length) out.push({ kind: 'text', value: text.slice(last) });
+    return out;
+  }
+
+  // Classify presidential documents by title — Federal Register only tells us
+  // "Presidential Document" by default; the actual subtype is in the title.
+  function docKind(title: string): { label: string; tone: string } {
+    const t = title.toLowerCase();
+    if (t.includes('executive order')) return { label: 'EO', tone: 'text-signal-warn bg-signal-warn/10' };
+    if (t.includes('proclamation')) return { label: 'PROC', tone: 'text-signal-info bg-signal-info/10' };
+    if (t.includes('memorandum') || t.startsWith('memo')) return { label: 'MEMO', tone: 'text-zinc-300 bg-ink-700' };
+    if (t.includes('determination')) return { label: 'DET', tone: 'text-zinc-300 bg-ink-700' };
+    if (t.includes('national emergency') || t.includes('continuation of')) return { label: 'NTNL EMRG', tone: 'text-signal-down bg-signal-down/10' };
+    return { label: 'DOC', tone: 'text-zinc-400 bg-ink-700' };
+  }
 
   function fmtShares(n: number | null): string {
     if (n == null) return '–';
@@ -107,6 +141,86 @@
 <svelte:head>
   <title>Momentum — political</title>
 </svelte:head>
+
+<!-- Trump Pulse — what he's saying + what he's signing. -->
+{#if pulse && (pulse.truth_post_count > 0 || pulse.document_count > 0)}
+  <section class="mb-6 grid gap-3 lg:grid-cols-3">
+    <!-- Truth Social posts (2/3 of width) -->
+    <div class="card overflow-hidden lg:col-span-2">
+      <header class="flex items-baseline justify-between border-b border-ink-700 bg-ink-800/40 px-4 py-3">
+        <div>
+          <h2 class="text-base font-semibold tracking-tight">Truth Social</h2>
+          <p class="text-[10px] uppercase tracking-wider text-zinc-500">@realDonaldTrump · last {pulse.truth_post_count} posts</p>
+        </div>
+        {#if pulse.tickers_mentioned.length > 0}
+          <div class="flex flex-wrap items-baseline gap-1 text-[10px]">
+            <span class="text-zinc-500">tickers:</span>
+            {#each pulse.tickers_mentioned.slice(0, 8) as t}
+              <a href={`/t/${t}`} class="rounded bg-signal-info/15 px-1.5 py-0.5 font-mono uppercase tracking-wider text-signal-info hover:bg-signal-info/25">{t}</a>
+            {/each}
+            {#if pulse.tickers_mentioned.length > 8}
+              <span class="text-zinc-500">+{pulse.tickers_mentioned.length - 8}</span>
+            {/if}
+          </div>
+        {/if}
+      </header>
+      <ul class="divide-y divide-ink-700/40 max-h-[480px] overflow-y-auto">
+        {#each pulse.truth_posts.slice(0, 30) as p}
+          <li class="px-4 py-2.5 text-sm leading-relaxed">
+            <div class="flex items-start justify-between gap-3">
+              <p class="text-zinc-200">
+                {#each highlightTickers(p.text, p.ticker_mentions) as part}
+                  {#if part.kind === 'ticker'}
+                    <a href={`/t/${part.value.replace('$','')}`} class="rounded bg-signal-info/15 px-1 font-mono text-signal-info hover:bg-signal-info/25">{part.value}</a>
+                  {:else if part.kind === 'mention'}
+                    <span class="rounded bg-ink-700 px-1 font-mono text-zinc-300">{part.value}</span>
+                  {:else}
+                    {part.value}
+                  {/if}
+                {/each}
+              </p>
+              {#if p.url}
+                <a href={p.url} target="_blank" rel="noopener" class="shrink-0 text-[10px] text-zinc-500 hover:text-zinc-300">↗</a>
+              {/if}
+            </div>
+            {#if p.ts}
+              <p class="mt-1 text-[10px] uppercase tracking-wider text-zinc-500">{fmtRelative(p.ts)}</p>
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <!-- Presidential documents (1/3 of width) -->
+    <div class="card overflow-hidden">
+      <header class="border-b border-ink-700 bg-ink-800/40 px-4 py-3">
+        <h2 class="text-base font-semibold tracking-tight">Presidential documents</h2>
+        <p class="text-[10px] uppercase tracking-wider text-zinc-500">last {pulse.document_count} signed · Federal Register</p>
+      </header>
+      <ul class="divide-y divide-ink-700/40 max-h-[480px] overflow-y-auto">
+        {#each pulse.presidential_documents.slice(0, 20) as d}
+          {@const kind = docKind(d.title)}
+          <li class="px-4 py-2.5">
+            <div class="flex items-baseline gap-2">
+              <span class="rounded px-1.5 py-0.5 text-[9px] font-mono uppercase tracking-wider {kind.tone}">{kind.label}</span>
+              <span class="text-[10px] text-zinc-500">{d.signing_date}</span>
+            </div>
+            <p class="mt-1 text-xs leading-relaxed text-zinc-200">
+              {#if d.html_url}
+                <a href={d.html_url} target="_blank" rel="noopener" class="hover:underline">{d.title}</a>
+              {:else}
+                {d.title}
+              {/if}
+            </p>
+            {#if d.abstract}
+              <p class="mt-1 line-clamp-2 text-[11px] text-zinc-500">{d.abstract}</p>
+            {/if}
+          </li>
+        {/each}
+      </ul>
+    </div>
+  </section>
+{/if}
 
 <!-- Trump (DJT) hero — always shown when SEC data fetched, regardless of FMP status. -->
 {#if djt}

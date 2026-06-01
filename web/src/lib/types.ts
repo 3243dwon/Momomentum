@@ -274,3 +274,29 @@ export interface DjtInsiderData {
   };
   recent_transactions: DjtTransaction[];
 }
+
+// trump_pulse.json — keep in sync with scanner/trump_pulse.fetch_and_save().
+export interface TruthPost {
+  ts: string | null;
+  text: string;
+  url: string | null;
+  ticker_mentions: string[];
+}
+export interface PresidentialDocument {
+  title: string;
+  type: string;
+  signing_date: string | null;
+  publication_date: string | null;
+  document_number: string | null;
+  html_url: string | null;
+  abstract: string | null;
+}
+export interface TrumpPulseData {
+  generated_at: string;
+  sources: Record<string, string>;
+  truth_post_count: number;
+  document_count: number;
+  tickers_mentioned: string[];
+  truth_posts: TruthPost[];
+  presidential_documents: PresidentialDocument[];
+}
