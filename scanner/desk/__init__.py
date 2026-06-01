@@ -23,11 +23,52 @@ from __future__ import annotations
 
 import json
 import logging
+from datetime import datetime, timezone
 
 from scanner import config
 from scanner.llm.client import LLMClient
 
 log = logging.getLogger(__name__)
+
+# Cost control: the desk's LLM calls are the only non-free thing in the
+# pipeline. Re-running four agents on every hourly scan is wasteful when the
+# picks haven't changed. So we cache verdicts keyed by the pick set's
+# signature and only re-run the agents when the picks change or the cache goes
+# stale — typically a few times a day instead of ~hourly.
+_DESK_CACHE_FILE = config.CACHE_DIR / "desk_cache.json"
+_DESK_MAX_AGE_HOURS = 12  # refresh at least this often even if picks are unchanged
+
+
+def _picks_signature(picks: list[dict]) -> str:
+    return ",".join(sorted(f"{p['ticker']}:{p['direction']}" for p in picks))
+
+
+def _load_cache() -> dict:
+    try:
+        return json.loads(_DESK_CACHE_FILE.read_text())
+    except Exception:
+        return {}
+
+
+def _save_cache(signature: str, now: datetime, verdicts: dict[str, dict]) -> None:
+    try:
+        _DESK_CACHE_FILE.write_text(json.dumps(
+            {"signature": signature, "ts": now.isoformat(), "verdicts": verdicts}, indent=2
+        ))
+    except Exception as e:
+        log.warning("Desk: could not persist cache: %s", e)
+
+
+def _cache_fresh(ts: str | None, now: datetime) -> bool:
+    if not ts:
+        return False
+    try:
+        t = datetime.fromisoformat(ts)
+        if t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+    except Exception:
+        return False
+    return (now - t).total_seconds() < _DESK_MAX_AGE_HOURS * 3600
 
 
 # --- Per-agent data diets ----------------------------------------------------
@@ -205,11 +246,16 @@ def _call(client: LLMClient, model: str, system: str, payload: list[dict],
 
 
 def review(recommendations: dict, rows: list[dict], regime: dict | None,
-           watchlist: set[str], client: LLMClient | None) -> int:
+           watchlist: set[str], client: LLMClient | None,
+           now: datetime | None = None) -> int:
     """Run the desk over the recommend.py picks, attaching rec['desk'] in place.
-    Returns the number of picks reviewed. No-op (0) when no client or no picks."""
+    Returns the number of picks reviewed. No-op (0) when no client or no picks.
+
+    Cost guard: if the pick set is unchanged from the last run and the cache is
+    still fresh, reuse cached verdicts and make ZERO LLM calls."""
     if client is None:
         return 0
+    now = now or datetime.now(timezone.utc)
     regime = regime or {}
     by_ticker = {r["ticker"]: r for r in rows}
     picks = [
@@ -218,6 +264,20 @@ def review(recommendations: dict, rows: list[dict], regime: dict | None,
     ]
     if not picks:
         return 0
+
+    # --- Cache check: same picks + fresh → reuse, no LLM spend ---
+    signature = _picks_signature(picks)
+    cache = _load_cache()
+    if cache.get("signature") == signature and _cache_fresh(cache.get("ts"), now):
+        cached = cache.get("verdicts", {})
+        n = 0
+        for r in picks:
+            v = cached.get(r["ticker"])
+            if v:
+                r["desk"] = v
+                n += 1
+        log.info("Desk: pick set unchanged + cache fresh — reused %d verdicts, 0 LLM calls", n)
+        return n
 
     # Three advisor passes (Haiku), one batched call each.
     signal = _call(client, config.HAIKU_MODEL, _SIGNAL_SYS,
@@ -265,6 +325,10 @@ def review(recommendations: dict, rows: list[dict], regime: dict | None,
         }
         reviewed += 1
 
-    log.info("Desk: reviewed %d/%d picks (signal=%d research=%d risk=%d pm=%d)",
+    # Persist verdicts keyed by the pick signature so the next scans with the
+    # same picks reuse them instead of paying for the agents again.
+    _save_cache(signature, now, {r["ticker"]: r["desk"] for r in picks if r.get("desk")})
+
+    log.info("Desk: reviewed %d/%d picks via LLM (signal=%d research=%d risk=%d pm=%d)",
              reviewed, len(picks), len(signal), len(research), len(risk), len(pm))
     return reviewed

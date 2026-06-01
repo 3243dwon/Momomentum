@@ -93,14 +93,14 @@
     <IconCluster {flags} max={3} size="sm" />
   </div>
 
-  <!-- Agent desk verdict -->
+  <!-- Agent desk verdict — each agent's actual take, not just a glyph -->
   {#if desk}
     <div
       class="mt-2.5 rounded border p-2 {deskDemoted
         ? 'border-signal-down/30 bg-signal-down/5'
         : 'border-ink-700/60 bg-ink-800/30'}"
     >
-      <div class="flex items-center justify-between">
+      <div class="mb-1.5 flex items-center justify-between">
         <span
           class="text-[10px] font-semibold uppercase tracking-wider {desk.decision === 'take'
             ? 'text-signal-up'
@@ -108,18 +108,36 @@
         >
           desk: {desk.decision ?? '—'}{desk.size && desk.size !== 'none' ? ` · ${desk.size}` : ''}
         </span>
-        <span class="flex items-center gap-2 text-[11px] leading-none">
-          <span class={voteClass(desk.signal?.vote)} title={desk.signal?.note ?? 'signal — price action'}>S{voteGlyph(desk.signal?.vote)}</span>
-          <span class={voteClass(desk.research?.vote)} title={desk.research?.note ?? 'research — catalyst'}>R{voteGlyph(desk.research?.vote)}</span>
-          <span
-            class={desk.risk?.veto ? 'font-semibold text-signal-down' : 'text-zinc-500'}
-            title={desk.risk?.concern ?? 'risk'}
-          >Risk{desk.risk?.veto ? '⚑' : '✓'}</span>
-        </span>
+        {#if desk.agreement}
+          <span class="text-[9px] uppercase tracking-wider text-zinc-500">{desk.agreement}</span>
+        {/if}
       </div>
+      <ul class="space-y-0.5 text-[11px] leading-snug">
+        {#if desk.signal}
+          <li class="flex gap-1.5">
+            <span class="w-14 shrink-0 uppercase tracking-wider text-zinc-500">signal</span>
+            <span class="shrink-0 {voteClass(desk.signal.vote)}">{voteGlyph(desk.signal.vote)}</span>
+            <span class="text-zinc-300">{desk.signal.note}</span>
+          </li>
+        {/if}
+        {#if desk.research}
+          <li class="flex gap-1.5">
+            <span class="w-14 shrink-0 uppercase tracking-wider text-zinc-500">research</span>
+            <span class="shrink-0 {voteClass(desk.research.vote)}">{voteGlyph(desk.research.vote)}</span>
+            <span class="text-zinc-300">{desk.research.note}</span>
+          </li>
+        {/if}
+        {#if desk.risk}
+          <li class="flex gap-1.5">
+            <span class="w-14 shrink-0 uppercase tracking-wider text-zinc-500">risk</span>
+            <span class="shrink-0 {desk.risk.veto ? 'font-semibold text-signal-down' : 'text-zinc-500'}">{desk.risk.veto ? '⚑' : '✓'}</span>
+            <span class={desk.risk.veto ? 'text-signal-down' : 'text-zinc-300'}>{desk.risk.concern}</span>
+          </li>
+        {/if}
+      </ul>
       {#if desk.rationale}
-        <p class="mt-1 text-[11px] leading-snug text-zinc-400">
-          {#if desk.agreement}<span class="text-zinc-600">[{desk.agreement}]</span> {/if}{desk.rationale}
+        <p class="mt-1.5 border-t border-ink-700/40 pt-1 text-[11px] leading-snug text-zinc-400">
+          <span class="text-zinc-500">PM:</span> {desk.rationale}
         </p>
       {/if}
     </div>
