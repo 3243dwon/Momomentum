@@ -37,6 +37,11 @@
         >Weekly</a
       >
       <a
+        href="/political"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/political') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Political</a
+      >
+      <a
         href="/performance"
         class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/performance') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Perf</a

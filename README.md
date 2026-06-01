@@ -71,6 +71,7 @@ Per-ticker/type throttling (2-hour cooldown) prevents alert spam.
 - `/t/[ticker]` — per-ticker drill-down (full technicals, all news, synthesis)
 - `/macro` — macro events with beneficiaries/losers
 - `/weekly` — Saturday roll-up (top movers, catalysts, rank jumps by day)
+- `/political` — disclosed Congress trades (Senate + House STOCK-Act PTRs from FMP; requires `FMP_API_KEY`). Cross-references the day's scan: tickers also in the watchlist or moving ≥ 3% get highlighted.
 - `/performance` — past alert outcomes (1d/3d/5d returns)
 
 ## Dashboard design
@@ -116,6 +117,8 @@ ALPACA_API_KEY=...
 ALPACA_API_SECRET=...
 FEISHU_WEBHOOK_URL=...        # optional; alerts log only without it
 FEISHU_MOM_WEBHOOK_URL=...    # optional; Chinese macro digest
+FMP_API_KEY=...               # optional; powers /political dashboard
+                              # (250 req/day free at financialmodelingprep.com)
 ```
 
 ```bash

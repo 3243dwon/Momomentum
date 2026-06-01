@@ -59,3 +59,12 @@ FEISHU_MOM_WEBHOOK_URL = os.environ.get("FEISHU_MOM_WEBHOOK_URL")
 FEISHU_MOM_SIGNING_SECRET = os.environ.get("FEISHU_MOM_SIGNING_SECRET")
 
 USER_AGENT = "MomentumScanner/0.1 (github.com/yourhandle/momentum)"
+
+# Financial Modeling Prep — free tier (250 req/day, 500MB/30d) covers the
+# political-trades feed comfortably. Sign up at financialmodelingprep.com.
+# Without the key, scanner.political falls back to no-op (the dashboard still
+# renders the page but with an "API key required" note).
+FMP_API_KEY = os.environ.get("FMP_API_KEY")
+# Refresh interval — FMP's senate/house feeds update a few times a day at
+# most, so once every 6 hours is plenty and leaves headroom on the daily cap.
+POLITICAL_REFRESH_SECONDS = 6 * 60 * 60

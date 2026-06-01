@@ -212,3 +212,32 @@ export interface RecommendationPerformance {
   high_score: number;
   per_bucket: Record<string, AlertTypeStats>;
 }
+
+// political.json — keep in sync with scanner/political._normalize().
+// Disclosed Congressional stock trades, fetched daily from FMP.
+export type PoliticalChamber = 'senate' | 'house';
+export type PoliticalSide = 'buy' | 'sell' | 'exchange' | 'unknown' | string;
+
+export interface PoliticalTrade {
+  chamber: PoliticalChamber;
+  politician: string | null;
+  ticker: string | null;
+  side: PoliticalSide;
+  amount_band: string | null;
+  transaction_date: string | null;
+  filed_at: string | null;
+  owner: string | null;
+  asset_description: string | null;
+  link: string | null;
+}
+
+export interface PoliticalData {
+  generated_at: string;
+  status: 'ok' | 'empty' | 'no_key' | string;
+  source?: string;
+  window_days: number;
+  total_trades: number;
+  unique_tickers: number;
+  trades: PoliticalTrade[];
+  by_ticker: Record<string, PoliticalTrade[]>;
+}

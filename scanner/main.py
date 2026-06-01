@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, mom_digest, news, performance, recommend, regime as regime_mod, render, router, state, technicals, universe, weekly_events, windows
+from scanner import config, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -256,6 +256,14 @@ def run(
     # Mom digest: purely additive Chinese-language macro+industry digest to a
     # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
     mom_digest.run(macro_analyses, client, rows=rows)
+
+    # Political-trade feed: cheap external fetch, throttled to once every few
+    # hours via the file's generated_at so we stay under FMP's 250/day cap.
+    # Failure is silent — never blocks the scan.
+    try:
+        political.fetch_and_save()
+    except Exception as e:
+        log.warning("Political fetch raised: %s", e)
 
     # Evaluate past alerts + recommendations whose 1d/3d/5d horizons elapsed.
     from datetime import timezone as _tz

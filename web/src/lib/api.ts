@@ -7,7 +7,8 @@ import type {
   Watchlist,
   WeeklyData,
   PerformanceData,
-  RecommendationPerformance
+  RecommendationPerformance,
+  PoliticalData
 } from './types';
 
 type Fetch = typeof fetch;
@@ -58,6 +59,10 @@ export async function loadPerformance(fetch: Fetch) {
 
 export async function loadRecommendationPerformance(fetch: Fetch) {
   return getJson<RecommendationPerformance>(fetch, 'recommendation_performance.json');
+}
+
+export async function loadPolitical(fetch: Fetch) {
+  return getJson<PoliticalData>(fetch, 'political.json');
 }
 
 export async function loadAll(fetch: Fetch) {
