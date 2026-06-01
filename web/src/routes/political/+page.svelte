@@ -1,11 +1,36 @@
 <script lang="ts">
   import { fmtRelative } from '$lib/format';
-  import type { PoliticalTrade } from '$lib/types';
+  import type { PoliticalTrade, DjtTransaction } from '$lib/types';
 
   let { data } = $props();
   const political = data.political;
   const scan = data.scan;
   const watchlist = new Set(data.watchlist?.tickers ?? []);
+  const djt = political?.djt;
+
+  function fmtShares(n: number | null): string {
+    if (n == null) return '–';
+    return n.toLocaleString('en-US');
+  }
+  function fmtPrice(n: number | null): string {
+    if (n == null || n === 0) return '–';
+    return `$${n.toFixed(2)}`;
+  }
+  function txClass(code: string | null, ad: string | null): string {
+    if (code === 'P' || ad === 'A') return 'text-signal-up';
+    if (code === 'S' || ad === 'D') return 'text-signal-down';
+    return 'text-zinc-500';
+  }
+  function txValue(t: DjtTransaction): number | null {
+    if (t.shares == null || t.price == null || t.price === 0) return null;
+    return t.shares * t.price;
+  }
+  function fmtUsd(n: number | null): string {
+    if (n == null) return '';
+    if (n >= 1e6) return `~$${(n / 1e6).toFixed(2)}M`;
+    if (n >= 1e3) return `~$${(n / 1e3).toFixed(1)}K`;
+    return `~$${n.toFixed(0)}`;
+  }
 
   // Cross-reference: which disclosed-trade tickers are also in today's scan?
   // Boldfaced cross-references are the actionable signal — politicians' trades
@@ -83,11 +108,98 @@
   <title>Momentum — political</title>
 </svelte:head>
 
-{#if !political || political.status === 'no_key'}
+<!-- Trump (DJT) hero — always shown when SEC data fetched, regardless of FMP status. -->
+{#if djt}
+  {@const ts = djt.trust_status}
+  {@const trumpTxs = djt.recent_transactions.filter((t) => t.is_trump_family)}
+  <section class="card mb-6 overflow-hidden">
+    <div class="bg-ink-800/40 border-b border-ink-700 p-4">
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <div>
+          <h2 class="text-lg font-bold tracking-tight text-zinc-100">Trump — DJT activity</h2>
+          <p class="mt-0.5 text-[11px] uppercase tracking-wider text-zinc-500">
+            SEC Form 4 · {djt.issuer} ({djt.tickers.join(' / ')})
+          </p>
+        </div>
+        <div class="text-right">
+          <p class="num text-2xl font-bold tabular-nums text-zinc-100">{ts.holding_shares_known.toLocaleString('en-US')}</p>
+          <p class="text-[10px] uppercase tracking-wider text-zinc-500">
+            shares held by trust · as of {ts.holding_as_of}
+          </p>
+        </div>
+      </div>
+      <p class="mt-3 text-xs leading-relaxed text-zinc-400">
+        {ts.note}
+      </p>
+      <p class="mt-2 text-[11px] text-zinc-500">
+        Last scan checked {ts.form4s_scanned} DJT Form 4 filings ·
+        <span class={trumpTxs.length > 0 ? 'text-signal-warn font-semibold' : ''}>
+          {ts.trump_family_filings_in_last_scan} Trump-family
+        </span>
+      </p>
+    </div>
+
+    {#if trumpTxs.length > 0}
+      <div class="border-b border-signal-warn/30 bg-signal-warn/5 p-4">
+        <h3 class="text-sm font-semibold text-signal-warn">★ Trump-family transactions</h3>
+        <ul class="mt-2 divide-y divide-ink-700/40 text-sm">
+          {#each trumpTxs as t}
+            <li class="flex flex-wrap items-baseline gap-x-3 py-1.5">
+              <span class="font-mono text-[10px] uppercase tracking-wider {txClass(t.code, t.acquired_disposed)}">
+                {t.code} · {t.code_label}
+              </span>
+              <span class="text-zinc-100 font-medium">{t.owner}</span>
+              <span class="num text-xs text-zinc-300 tabular-nums">{fmtShares(t.shares)} sh</span>
+              <span class="num text-xs text-zinc-400 tabular-nums">@ {fmtPrice(t.price)}</span>
+              {#if txValue(t)}
+                <span class="num text-xs text-zinc-500">{fmtUsd(txValue(t))}</span>
+              {/if}
+              <span class="ml-auto text-[10px] text-zinc-500">
+                tx {t.transaction_date} · filed {fmtRelative(t.filed_at)}
+              </span>
+            </li>
+          {/each}
+        </ul>
+      </div>
+    {/if}
+
+    <div class="p-4">
+      <h3 class="mb-2 text-[11px] font-semibold uppercase tracking-wider text-zinc-400">
+        Recent DJT insider activity (all reporting owners)
+      </h3>
+      {#if djt.recent_transactions.length === 0}
+        <p class="text-xs text-zinc-500">No transactions parsed in the last scan.</p>
+      {:else}
+        <ul class="divide-y divide-ink-700/40 text-sm">
+          {#each djt.recent_transactions.slice(0, 12) as t}
+            <li class="grid grid-cols-[80px_1fr_auto_auto_auto] items-baseline gap-x-3 py-1.5 {t.is_trump_family ? 'font-semibold' : ''}">
+              <span class="num text-[10px] uppercase tracking-wider {txClass(t.code, t.acquired_disposed)}">
+                {t.code ?? '?'}
+                <span class="text-[9px] text-zinc-500"> {t.acquired_disposed}</span>
+              </span>
+              <span class="truncate {t.is_trump_family ? 'text-signal-warn' : 'text-zinc-300'}">
+                {#if t.is_trump_family}★ {/if}{t.owner ?? '–'}
+              </span>
+              <span class="num text-xs text-zinc-400 tabular-nums">{fmtShares(t.shares)}</span>
+              <span class="num text-xs text-zinc-500 tabular-nums">@ {fmtPrice(t.price)}</span>
+              <span class="text-[10px] text-zinc-500">{t.transaction_date}</span>
+            </li>
+          {/each}
+        </ul>
+      {/if}
+      <p class="mt-3 text-[10px] uppercase tracking-wider text-zinc-500">
+        F=tax withholding · A=award/grant · P=purchase · S=sale · M=option exercise ·
+        A/D column: A=acquired, D=disposed
+      </p>
+    </div>
+  </section>
+{/if}
+
+{#if !political || (political.status === 'no_key' && !djt)}
   <div class="card p-6 text-sm leading-relaxed">
-    <h2 class="text-base font-semibold tracking-tight">Political trades — not configured</h2>
+    <h2 class="text-base font-semibold tracking-tight">Congress feed — not configured</h2>
     <p class="mt-3 text-zinc-400">
-      This page shows recently-disclosed stock trades by US Senators and House members,
+      The Congress feed shows recently-disclosed stock trades by US Senators and House members,
       pulled from <a href="https://financialmodelingprep.com" class="underline">Financial Modeling Prep</a>'s
       free tier (250 requests/day, no payment).
     </p>
@@ -101,9 +213,17 @@
       and is out of scope for v1.
     </p>
   </div>
+{:else if political.status === 'djt_only'}
+  <div class="card p-4 text-sm">
+    <h2 class="text-base font-semibold tracking-tight">Congress feed — not configured</h2>
+    <p class="mt-2 text-xs text-zinc-400">
+      Showing Trump/DJT only. Add <code class="text-zinc-200">FMP_API_KEY</code> to your <code class="text-zinc-200">.env</code>
+      to also populate Senate + House STOCK-Act PTRs.
+    </p>
+  </div>
 {:else if political.status === 'empty' || political.total_trades === 0}
   <div class="card p-6 text-sm">
-    <h2 class="text-base font-semibold tracking-tight">No recent political trades</h2>
+    <h2 class="text-base font-semibold tracking-tight">No recent Congress trades</h2>
     <p class="mt-2 text-zinc-400">
       The {political.window_days}-day window had no disclosed Congress trades that survived normalization.
       Last refresh: {fmtRelative(political.generated_at)}.

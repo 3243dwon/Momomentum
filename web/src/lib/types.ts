@@ -233,11 +233,44 @@ export interface PoliticalTrade {
 
 export interface PoliticalData {
   generated_at: string;
-  status: 'ok' | 'empty' | 'no_key' | string;
+  status: 'ok' | 'empty' | 'no_key' | 'djt_only' | string;
   source?: string;
   window_days: number;
   total_trades: number;
   unique_tickers: number;
   trades: PoliticalTrade[];
   by_ticker: Record<string, PoliticalTrade[]>;
+  djt?: DjtInsiderData | null;
+}
+
+// SEC Form 4 transaction codes most relevant here:
+// P = open-market purchase, S = open-market sale, A = grant/award,
+// M = option exercise, F = tax withholding, G = gift.
+export interface DjtTransaction {
+  filed_at: string;
+  accession: string;
+  owner: string | null;
+  is_trump_family: boolean;
+  transaction_date: string | null;
+  code: string | null;
+  code_label: string | null;
+  acquired_disposed: 'A' | 'D' | string | null;
+  shares: number | null;
+  price: number | null;
+  link: string;
+}
+
+export interface DjtInsiderData {
+  issuer: string;
+  tickers: string[];
+  trust_status: {
+    trust_name: string;
+    trust_cik: string;
+    holding_shares_known: number;
+    holding_as_of: string;
+    trump_family_filings_in_last_scan: number;
+    form4s_scanned: number;
+    note: string;
+  };
+  recent_transactions: DjtTransaction[];
 }
