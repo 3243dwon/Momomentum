@@ -173,6 +173,24 @@ def _load_aliases() -> dict[str, list[str]]:
         return {}
 
 
+# Some company names double as common words in other contexts. Count them only
+# when a disambiguating word ISN'T sitting next to the match. The big one:
+# "intel" = Intel the chipmaker, but also "intelligence" (ex-intel official,
+# intel agency / community / report). Window-checked, so "Intel Stock" still
+# counts while "ex-intel official" does not.
+_ALIAS_CONTEXT_GUARDS: dict[str, list[str]] = {
+    "intel": [
+        "intelligence", "official", "agency", "agencies", "community",
+        "officer", "operation", "cia", "fbi", "dni", "nsa", "classified",
+        "sources", "deception", "spy", "surveillance", "informant",
+        "gathering", "report", "briefing", "leak",
+    ],
+    "amazon": ["rainforest", "jungle", "river", "brazil", "forest"],
+    "oracle": ["omaha", "buffett", "warren", "delphi"],
+}
+_GUARD_WINDOW = 30  # chars each side of a match to scan for a guard word
+
+
 def _extract_tickers(text: str, universe: set[str], aliases: dict[str, list[str]] | None = None) -> list[str]:
     """Pull plausible ticker mentions from one post. Three patterns:
       - $TSLA            cashtag, 1-5 caps — high-confidence, accepted as-is
@@ -214,14 +232,26 @@ def _extract_tickers(text: str, universe: set[str], aliases: dict[str, list[str]
 
     # 3) Company NAMES via the alias map — case-insensitive, word-boundary.
     #    This is the high-value pass: Trump writes "Intel"/"Palantir"/"Nvidia",
-    #    not the ticker symbol.
+    #    not the ticker symbol. Guarded aliases (e.g. "intel") are skipped when
+    #    a disambiguating word sits next to the match, so "ex-intel official"
+    #    doesn't tag INTC.
     if aliases:
         low = body.lower()
         for ticker, names in aliases.items():
+            hit = False
             for name in names:
-                if re.search(r"\b" + re.escape(name) + r"\b", low):
-                    add(ticker)
+                guards = _ALIAS_CONTEXT_GUARDS.get(name)
+                for m in re.finditer(r"\b" + re.escape(name) + r"\b", low):
+                    if guards:
+                        window = low[max(0, m.start() - _GUARD_WINDOW): m.end() + _GUARD_WINDOW]
+                        if any(g in window for g in guards):
+                            continue  # disambiguating context — not the company
+                    hit = True
                     break
+                if hit:
+                    break
+            if hit:
+                add(ticker)
 
     # NOTE: deliberately NO bare-uppercase pass. Trump writes in ALL CAPS
     # constantly ("TEN POINT PLAN", "LIVE", "FUND ICE", "AI"), which collides
