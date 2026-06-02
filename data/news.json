@@ -1,119 +1,673 @@
 {
-  "generated_at": "2026-06-02T00:25:45.924407-04:00",
+  "generated_at": "2026-06-02T06:44:51.451475-04:00",
   "ticker_news": {
-    "ARM": [
+    "DELL": [
       {
-        "id": "14667e9b30ccfb79",
+        "id": "9d6882d16fe210c7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ARM",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "Hewlett Packard Enterprise, Meta, Credo Technology, Alphabet And Arm: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/52928475/hewlett-packard-enterprise-meta-credo-technology-alphabet-and-arm-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-02T02:08:37+00:00",
-        "type": "analyst",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52930318/sp500-june-2-open-up-or-down-polymarket-ai-rally-oil-prices",
+        "published_at": "2026-06-02T08:46:12+00:00",
+        "type": "macro_econ",
         "impact": "low",
-        "dedup_group": "benzinga_5_stocks_on_radar_June2",
+        "dedup_group": "sp500_market_open_direction_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HPQ": [
+      {
+        "id": "9d6882d16fe210c7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPQ",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52930318/sp500-june-2-open-up-or-down-polymarket-ai-rally-oil-prices",
+        "published_at": "2026-06-02T08:46:12+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_direction_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IBM": [
+      {
+        "id": "9d6882d16fe210c7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IBM",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52930318/sp500-june-2-open-up-or-down-polymarket-ai-rally-oil-prices",
+        "published_at": "2026-06-02T08:46:12+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_direction_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "9d6882d16fe210c7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/52930318/sp500-june-2-open-up-or-down-polymarket-ai-rally-oil-prices",
+        "published_at": "2026-06-02T08:46:12+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_direction_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "832e25d0f19576bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Oracle Joins Arm's AGI CPU Ecosystem As Agentic AI Boom Draws Meta, OpenAI And ByteDance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930033/oracle-joins-arms-agi-cpu-ecosystem-as-agentic-ai-boom-draws-meta-openai-and-bytedance",
+        "published_at": "2026-06-02T08:24:35+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "oracle_arm_agi_cpu_ecosystem_june_2026",
         "tickers_mentioned": [
-          "ARM",
-          "HPE",
-          "CREDO"
+          "ORCL",
+          "ARM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "480fb8c2e92f2e2c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "EXCLUSIVE: Bear Cave Founder Backs Andrew Left, Hopes Citron Short Seller's Conviction Is 'Reversed On Appeal' As Disclosure Rules Remain 'Unclear'",
+        "url": "https://www.benzinga.com/news/legal/26/06/52931469/exclusive-bear-cave-founder-backs-andrew-left-hopes-citron-short-sellers-conviction-is-reversed-on-appeal-as-disclosure-rules-remain-unclear",
+        "published_at": "2026-06-02T10:27:18+00:00",
+        "type": "litigation",
+        "impact": "low",
+        "dedup_group": "andrew_left_citron_appeal_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c55540d82e043463",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930780/whats-going-on-with-intel-stock-tuesday-6",
+        "published_at": "2026-06-02T09:41:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_generic_price_move_recap",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f3b63459d7507369",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Jensen Huang Says Nvidia Has Enough Supply To Support 'Very, Very Robust Growth' \u2014 But There's Still One Problem",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930595/jensen-huang-says-nvidia-has-enough-supply-to-support-very-very-robust-growth-but-theres-still-one-problem",
+        "published_at": "2026-06-02T09:24:14+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvda_supply_robust_growth_huang",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4baa90c166cf50da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Fall As Trump Says He 'Couldn't Care Less' If Iran Negotiations Collapse\u2014Marvell, Alphabet In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52930490/stock-market-today-sp-500-dow-jones-future-fall-as-trump-says-he-couldnt-care-less-if-iran-negotiations-collapse-marvell-alphabet-hpe-in-focus",
+        "published_at": "2026-06-02T09:09:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_negotiations_geopolitical",
+        "tickers_mentioned": [
+          "MRVL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "90eb98efcc2b2fd2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Elon Musk's SpaceX Just Made An IPO Filing Change That Has Tesla Investors Buzzing",
+        "url": "https://www.benzinga.com/markets/private-markets/26/06/52929608/elon-musks-spacex-ipo-filing-change-tesla-investors-buzzing",
+        "published_at": "2026-06-02T07:07:17+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "spacex_ipo_filing_june_2026",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "10685a485c0f9639",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Jensen Huang Hosts Korean Tech Power Dinner In Taipei As Nvidia Deepens Ties With Samsung, SK Hynix For Next AI Wave: 'Really Smart Companies'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52928914/jensen-huang-korean-tech-power-dinner-taipei-samsung-sk-hynix-ai",
+        "published_at": "2026-06-02T05:03:29+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "jensen_huang_korean_chipmaker_ties_june_2026",
+        "tickers_mentioned": [
+          "SAMSUNG",
+          "SKHYX"
         ],
         "route_to_synthesis": false
       }
     ],
-    "HPE": [
+    "ARM": [
       {
-        "id": "14667e9b30ccfb79",
+        "id": "832e25d0f19576bd",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HPE",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Hewlett Packard Enterprise, Meta, Credo Technology, Alphabet And Arm: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/52928475/hewlett-packard-enterprise-meta-credo-technology-alphabet-and-arm-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-02T02:08:37+00:00",
-        "type": "analyst",
+        "title": "Oracle Joins Arm's AGI CPU Ecosystem As Agentic AI Boom Draws Meta, OpenAI And ByteDance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930033/oracle-joins-arms-agi-cpu-ecosystem-as-agentic-ai-boom-draws-meta-openai-and-bytedance",
+        "published_at": "2026-06-02T08:24:35+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "benzinga_5_stocks_on_radar_June2",
+        "dedup_group": "oracle_arm_agi_cpu_ecosystem_june_2026",
         "tickers_mentioned": [
-          "ARM",
-          "HPE",
-          "CREDO"
+          "ORCL",
+          "ARM"
         ],
         "route_to_synthesis": false
       }
     ],
     "META": [
       {
-        "id": "14667e9b30ccfb79",
+        "id": "832e25d0f19576bd",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "META",
         "scope": "ticker",
-        "title": "Hewlett Packard Enterprise, Meta, Credo Technology, Alphabet And Arm: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/52928475/hewlett-packard-enterprise-meta-credo-technology-alphabet-and-arm-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-02T02:08:37+00:00",
-        "type": "analyst",
+        "title": "Oracle Joins Arm's AGI CPU Ecosystem As Agentic AI Boom Draws Meta, OpenAI And ByteDance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930033/oracle-joins-arms-agi-cpu-ecosystem-as-agentic-ai-boom-draws-meta-openai-and-bytedance",
+        "published_at": "2026-06-02T08:24:35+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "benzinga_5_stocks_on_radar_June2",
+        "dedup_group": "oracle_arm_agi_cpu_ecosystem_june_2026",
         "tickers_mentioned": [
-          "ARM",
-          "HPE",
-          "CREDO"
+          "ORCL",
+          "ARM"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "6b10d6b541f28236",
+        "id": "480fb8c2e92f2e2c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "META",
         "scope": "ticker",
-        "title": "Jim Cramer Says It Seems OpenAI Wants To Go Public 'Real Soon' But Wonders If There's 'Enough Money Around' With SpaceX And Anthropic Vying For Funds",
-        "url": "https://www.benzinga.com/markets/tech/26/06/52928774/jim-cramer-says-it-seems-openai-wants-to-go-public-real-soon-but-wonders-if-theres-enough-money-around-with-spacex-and-anthropic-vying-for-funds",
-        "published_at": "2026-06-02T04:06:26+00:00",
-        "type": "rumor",
+        "title": "EXCLUSIVE: Bear Cave Founder Backs Andrew Left, Hopes Citron Short Seller's Conviction Is 'Reversed On Appeal' As Disclosure Rules Remain 'Unclear'",
+        "url": "https://www.benzinga.com/news/legal/26/06/52931469/exclusive-bear-cave-founder-backs-andrew-left-hopes-citron-short-sellers-conviction-is-reversed-on-appeal-as-disclosure-rules-remain-unclear",
+        "published_at": "2026-06-02T10:27:18+00:00",
+        "type": "litigation",
         "impact": "low",
-        "dedup_group": "cramer_openai_ipo_speculation",
+        "dedup_group": "andrew_left_citron_appeal_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "90bf89696a78e8b7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Former Meta CTO Says Industrial Robotics Will Scale Faster Than Home Robots",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52931182/former-meta-cto-says-industrial-robotics-will-scale-faster-than-home-robots",
+        "published_at": "2026-06-02T10:11:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "former_meta_cto_robotics_commentary_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fa2727978d1fea2b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "AMD Bets On The Next AI Bottleneck As DriveNets Raises $410 Million",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52931031/amd-bets-on-the-next-ai-bottleneck-as-drivenets-raises-410-million",
+        "published_at": "2026-06-02T10:06:48+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "amd_drivenets_funding_june_2026",
         "tickers_mentioned": [
-          "NVDA"
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "1733d48605a26509",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "EU Moves To Tighten Cloud Rules In State Tenders, Raising Pressure On Amazon, Microsoft And Google: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930851/eu-moves-to-tighten-cloud-rules-in-state-tenders-raising-pressure-on-amazon-microsoft-and-google-report",
+        "published_at": "2026-06-02T09:54:32+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "eu_cloud_rules_procurement_june_2026",
+        "tickers_mentioned": [
+          "AMZN",
+          "MSFT",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2af2f68e19554fa3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Softbank's Masayoshi Son Isn't Worried About An AI Bubble\u2014 He's Hunting For The Next Trillion-Dollar Industry: 'Just The Beginning'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930326/softbanks-masayoshi-son-isnt-worried-about-an-ai-bubble-hes-hunting-for-the-next-trillion-dollar-industry-just-the-beginning",
+        "published_at": "2026-06-02T08:46:39+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "masayoshi_son_ai_bubble_commentary_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "832e25d0f19576bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Oracle Joins Arm's AGI CPU Ecosystem As Agentic AI Boom Draws Meta, OpenAI And ByteDance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930033/oracle-joins-arms-agi-cpu-ecosystem-as-agentic-ai-boom-draws-meta-openai-and-bytedance",
+        "published_at": "2026-06-02T08:24:35+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "oracle_arm_agi_cpu_ecosystem_june_2026",
+        "tickers_mentioned": [
+          "ORCL",
+          "ARM"
         ],
         "route_to_synthesis": false
       }
     ],
-    "NVDA": [
+    "ASTS": [
       {
-        "id": "6b10d6b541f28236",
+        "id": "dda467b7d0798608",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "Jim Cramer Says It Seems OpenAI Wants To Go Public 'Real Soon' But Wonders If There's 'Enough Money Around' With SpaceX And Anthropic Vying For Funds",
-        "url": "https://www.benzinga.com/markets/tech/26/06/52928774/jim-cramer-says-it-seems-openai-wants-to-go-public-real-soon-but-wonders-if-theres-enough-money-around-with-spacex-and-anthropic-vying-for-funds",
-        "published_at": "2026-06-02T04:06:26+00:00",
+        "title": "Jeff Bezos's Blue Origin Pad Repairs Will Take 'Serious Time,' Says NASA Chief As Rocket Company CEO Vows To 'Fly Again' Before 2026 Ends",
+        "url": "https://www.benzinga.com/news/space/26/06/52929659/blue-origin-pad-repairs-serious-time-nasa-chief-fly-again-before-2026",
+        "published_at": "2026-06-02T07:23:52+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "blue_origin_pad_repairs_nasa",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CRM": [
+      {
+        "id": "10bfa240682520c5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CRM",
+        "scope": "ticker",
+        "title": "Daniel Newman, Jim Cramer Weigh On Anthropic Moving To Go Public: 'Third Of The Trillion Dollar IPOS For 2026 Has Officially Started The Process'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52929243/daniel-newman-jim-cramer-anthropic-ipo-process-trillion-dollar-ipos-2026",
+        "published_at": "2026-06-02T06:20:58+00:00",
         "type": "rumor",
         "impact": "low",
-        "dedup_group": "cramer_openai_ipo_speculation",
+        "dedup_group": "anthropic_ipo_speculation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HPE": [
+      {
+        "id": "35bebba9f62f746a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Why Hewlett Packard Enterprise Shares Are Trading Higher By Over 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/06/52930817/why-hewlett-packard-enterprise-shares-are-trading-higher-by-over-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-02T09:49:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_recap_hpe_mrvl_premarket",
         "tickers_mentioned": [
-          "NVDA"
+          "HPE"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "d553ec288ee8eb89",
+        "id": "4baa90c166cf50da",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NVDA",
+        "ticker": "HPE",
         "scope": "ticker",
-        "title": "Cathie Wood Sells $56.2 Million Worth Of AMD Shares Again, But Loads Up On $67.3 Million Worth Of Nvidia Stock Amid PC Chip Buzz",
-        "url": "https://www.benzinga.com/news/26/06/52928617/cathie-wood-sells-56-2-million-worth-of-amd-shares-again-but-loads-up-on-67-3-million-worth-of-nvidia-stock-amid-pc-chip-buzz",
-        "published_at": "2026-06-02T03:03:02+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "cathie_wood_amd_nvda_trade_June2",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Fall As Trump Says He 'Couldn't Care Less' If Iran Negotiations Collapse\u2014Marvell, Alphabet In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52930490/stock-market-today-sp-500-dow-jones-future-fall-as-trump-says-he-couldnt-care-less-if-iran-negotiations-collapse-marvell-alphabet-hpe-in-focus",
+        "published_at": "2026-06-02T09:09:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_negotiations_geopolitical",
         "tickers_mentioned": [
-          "AMD"
+          "MRVL",
+          "GOOGL"
         ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "99ca9a422632fc08",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Nasdaq Surges Over 110 Points: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52929254/nasdaq-surges-over-110-points-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-06-02T06:23:53+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "nasdaq_futures_sentiment_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c75e76529a051dfd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Dollar General, Palo Alto And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52928902/dollar-general-palo-alto-and-3-stocks-to-watch-heading-into-tuesday",
+        "published_at": "2026-06-02T05:00:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_to_watch_recap",
+        "tickers_mentioned": [
+          "DG"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "4e3985b6fdb591c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "What's Going On With Micron Stock Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52931338/whats-going-on-with-micron-stock-tuesday-3",
+        "published_at": "2026-06-02T10:18:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "micron_stock_recap_june_2_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "d56ccf33599de63b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Why Is Marvell Stock Soaring Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52930970/why-is-marvell-stock-soaring-tuesday",
+        "published_at": "2026-06-02T10:03:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mrvl_generic_price_move_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "35bebba9f62f746a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Why Hewlett Packard Enterprise Shares Are Trading Higher By Over 26%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/06/52930817/why-hewlett-packard-enterprise-shares-are-trading-higher-by-over-26-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-02T09:49:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_recap_hpe_mrvl_premarket",
+        "tickers_mentioned": [
+          "HPE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4baa90c166cf50da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Fall As Trump Says He 'Couldn't Care Less' If Iran Negotiations Collapse\u2014Marvell, Alphabet In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52930490/stock-market-today-sp-500-dow-jones-future-fall-as-trump-says-he-couldnt-care-less-if-iran-negotiations-collapse-marvell-alphabet-hpe-in-focus",
+        "published_at": "2026-06-02T09:09:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_negotiations_geopolitical",
+        "tickers_mentioned": [
+          "MRVL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "c55540d82e043463",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930780/whats-going-on-with-intel-stock-tuesday-6",
+        "published_at": "2026-06-02T09:41:34+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_generic_price_move_recap",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f3b63459d7507369",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Jensen Huang Says Nvidia Has Enough Supply To Support 'Very, Very Robust Growth' \u2014 But There's Still One Problem",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930595/jensen-huang-says-nvidia-has-enough-supply-to-support-very-very-robust-growth-but-theres-still-one-problem",
+        "published_at": "2026-06-02T09:24:14+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvda_supply_robust_growth_huang",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "f3b63459d7507369",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Jensen Huang Says Nvidia Has Enough Supply To Support 'Very, Very Robust Growth' \u2014 But There's Still One Problem",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52930595/jensen-huang-says-nvidia-has-enough-supply-to-support-very-very-robust-growth-but-theres-still-one-problem",
+        "published_at": "2026-06-02T09:24:14+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nvda_supply_robust_growth_huang",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PANW": [
+      {
+        "id": "4baa90c166cf50da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Jones Futures Fall As Trump Says He 'Couldn't Care Less' If Iran Negotiations Collapse\u2014Marvell, Alphabet In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52930490/stock-market-today-sp-500-dow-jones-future-fall-as-trump-says-he-couldnt-care-less-if-iran-negotiations-collapse-marvell-alphabet-hpe-in-focus",
+        "published_at": "2026-06-02T09:09:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_negotiations_geopolitical",
+        "tickers_mentioned": [
+          "MRVL",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "99ca9a422632fc08",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Nasdaq Surges Over 110 Points: Investor Sentiment Improves, Fear Index Remains In 'Greed' Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52929254/nasdaq-surges-over-110-points-investor-sentiment-improves-fear-index-remains-in-greed-zone",
+        "published_at": "2026-06-02T06:23:53+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "nasdaq_futures_sentiment_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c75e76529a051dfd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Dollar General, Palo Alto And 3 Stocks To Watch Heading Into Tuesday",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52928902/dollar-general-palo-alto-and-3-stocks-to-watch-heading-into-tuesday",
+        "published_at": "2026-06-02T05:00:32+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stocks_to_watch_recap",
+        "tickers_mentioned": [
+          "DG"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "6dbf2acf507a985a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PANW",
+        "scope": "ticker",
+        "title": "Palo Alto Networks to Report Fiscal Third Quarter Results; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
+        "url": "https://www.benzinga.com/news/26/06/52929771/palo-alto-networks-to-report-fiscal-third-quarter-results-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
+        "published_at": "2026-06-02T07:38:51+00:00",
+        "type": "earnings",
+        "impact": "high",
+        "dedup_group": "panw_fiscal_q3_earnings_call",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NBIS": [
+      {
+        "id": "e6dd08c35b0dd730",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "Emmanuel Macron Says Nebius, SoftBank Chose France As AI Commitments Reach $61.7 Billion; Son Says Infrastructure Will Shape The Future",
+        "url": "https://www.benzinga.com/markets/eurozone/26/06/52929957/emmanuel-macron-says-nebius-softbank-chose-france-as-ai-commitments-reach-61-7-billion-son-says-infrastructure-will-shape-the-future",
+        "published_at": "2026-06-02T08:17:24+00:00",
+        "type": "ma",
+        "impact": "high",
+        "dedup_group": "nebius_softbank_france_ai_investment_61b",
+        "tickers_mentioned": [
+          "SFTBY"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "3f2a8a49fe8c3822",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Anthony Pompliano Says Bitcoin Sellers Are 'Starting To Be Exhausted'  As BTC Plunges Below $70,000 After Late Monday Crash",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52929648/anthony-pompliano-bitcoin-sellers-exhausted-btc-below-70000",
+        "published_at": "2026-06-02T07:20:15+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_crash_below_70k_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ONDS": [
+      {
+        "id": "a5cda4c52c7c29aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "Trump Cuts Tariffs On Some Steel And Aluminum Products To Boost US Manufacturing\u2014 But AI Infrastructure May Be Doing More To Drive The Factory Boom",
+        "url": "https://www.benzinga.com/markets/macro-economic-events/26/06/52929482/trump-cuts-tariffs-on-some-steel-and-aluminum-products-to-boost-us-manufacturing-but-ai-infrastructure-may-be-doing-more-to-drive-the-factory-boom",
+        "published_at": "2026-06-02T06:59:17+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_tariffs_steel_aluminum_ai_infrastructure",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
