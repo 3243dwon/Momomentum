@@ -1,76 +1,241 @@
 {
-  "generated_at": "2026-06-02T19:04:43.928439-04:00",
+  "generated_at": "2026-06-03T00:45:07.582712-04:00",
   "ticker_news": {
-    "QCOM": [
+    "GOOGL": [
       {
-        "id": "3337b5ca11712439",
+        "id": "f030e095609dff89",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "QCOM",
+        "ticker": "GOOGL",
         "scope": "ticker",
-        "title": "Qualcomm Says 2026 Is 'Year Of The Agent' \u2014 And 'Dragonfly' Is Its Answer",
-        "url": "https://www.benzinga.com/markets/tech/26/06/52958593/qualcomm-says-2026-is-year-of-the-agent-and-dragonfly-is-its-answer",
-        "published_at": "2026-06-02T21:12:02+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "qualcomm_dragonfly_agent_2026",
+        "title": "Gary Black Says Broadcom, Marvell Are 'Big Winners' As Focus Shifts To Custom AI Chips As Nvidia CEO Jensen Huang Touts 'Next Trillion-Dollar Company'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52961274/gary-black-broadcom-marvell-big-winners-custom-ai-chips-nvidia",
+        "published_at": "2026-06-03T04:36:46+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "analyst_custom_ai_chip_thesis",
+        "tickers_mentioned": [
+          "NVDA",
+          "AVGO",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "f030e095609dff89",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Gary Black Says Broadcom, Marvell Are 'Big Winners' As Focus Shifts To Custom AI Chips As Nvidia CEO Jensen Huang Touts 'Next Trillion-Dollar Company'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52961274/gary-black-broadcom-marvell-big-winners-custom-ai-chips-nvidia",
+        "published_at": "2026-06-03T04:36:46+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "analyst_custom_ai_chip_thesis",
+        "tickers_mentioned": [
+          "NVDA",
+          "AVGO",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2548b8195e437f70",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Nancy Pelosi Tracker Zeroes In On Two Florida Lawmakers Up 150% On Their Marvell Bets As Stock Pops After Jensen Huang Comments: 'What A Trade'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52961134/nancy-pelosi-tracker-zeroes-in-on-two-florida-lawmakers-up-150-on-their-marvell-bets-as-stock-pops-after-jensen-huang-comments-what-a-trade",
+        "published_at": "2026-06-03T03:29:32+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mrvl_custom_ai_chips_shift",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "02f520ba03ea7fe7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Marvell Technology, Palo Alto Networks, Gamestop, Ulta Beauty And Gitlab: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52960763/marvell-technology-palo-alto-networks-gamestop-ulta-beauty-and-gitlab-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-03T01:41:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multi_stock_roundup_radars",
+        "tickers_mentioned": [
+          "MRVL",
+          "GME",
+          "ULTA",
+          "GTLB"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "7551f2b987f9f028",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Mark Cuban Is 'Right' About Bitcoin, But Dumping His Coins Is Like 'Rage-Quitting,' Says Tom Lee: 'Always Happens At The End Of Crypto Winter'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52961089/mark-cuban-right-about-bitcoin-tom-lee-rage-quitting-crypto-winter",
+        "published_at": "2026-06-03T03:08:07+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "bitcoin_crypto_winter_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4912ffe754fe0988",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin Bleeds After Strategy's Sell-Off, Ethereum, XRP, Dogecoin Also Sink: Analyst Points Out 'Meaningful' Stress, But BTC Bottom Still Not In",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52960865/bitcoin-bleeds-after-strategy-selloff-btc-bottom-not-in-yet",
+        "published_at": "2026-06-03T02:11:34+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_sell_off_crypto_stress",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "PANW": [
       {
-        "id": "658b6f7077d2ba28",
+        "id": "02f520ba03ea7fe7",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PANW",
         "scope": "ticker",
-        "title": "CrowdStrike Q1 Preview: Dan Ives Says AI Accelerates Companies' Need For Cybersecurity",
-        "url": "https://www.benzinga.com/trading-ideas/previews/26/06/52959820/crowdstrike-q1-preview-dan-ives-says-ai-accelerates-companies-need-for-cybersecurity",
-        "published_at": "2026-06-02T22:41:53+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "crowdstrike_q1_ives_cybersecurity_ai",
-        "tickers_mentioned": [
-          "CRWD"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "910c08989880ad97",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PANW",
-        "scope": "ticker",
-        "title": "CrowdStrike Stock Is Climbing After The Close: Here's Why",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/52959262/crowdstrike-stock-is-climbing-after-the-close-heres-why",
-        "published_at": "2026-06-02T21:40:24+00:00",
+        "title": "Marvell Technology, Palo Alto Networks, Gamestop, Ulta Beauty And Gitlab: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52960763/marvell-technology-palo-alto-networks-gamestop-ulta-beauty-and-gitlab-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-03T01:41:20+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "crowdstrike_post_market_move",
+        "dedup_group": "multi_stock_roundup_radars",
         "tickers_mentioned": [
-          "CRWD"
+          "MRVL",
+          "GME",
+          "ULTA",
+          "GTLB"
         ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SMCI": [
-      {
-        "id": "c32e85bd30b817a8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SMCI",
-        "scope": "ticker",
-        "title": "If You Invested $1000 In Super Micro Computer Stock 5 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/52959678/if-you-invested-1000-in-super-micro-computer-stock-5-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-06-02T22:15:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "smci_5year_retrospective",
-        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Secretary of State Rubio says Iran has mined large segments of the Strait of Hormuz, threatening ~20% of global seaborne oil flows.",
+      "primary_drivers": [
+        "Crude oil supply shock risk premium",
+        "Tanker rerouting / shipping rate spike",
+        "Defense/geopolitical escalation premium"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated with significant upstream leverage to Brent; minimal Strait of Hormuz transit exposure vs Middle East NOCs, so a Brent spike flows directly to upstream earnings.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same upstream Brent leverage as XOM; Permian and GoM production benefits from crude price spike without Hormuz transit risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Pure-play Permian E&P with high oil cut and US onshore production \u2014 direct beneficiary of WTI/Brent spike with no Middle East operational risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FRO",
+          "rationale": "Frontline VLCC tanker operator \u2014 Hormuz mining forces rerouting and surging war-risk insurance, driving spot tanker rates sharply higher. Classic Hormuz-disruption trade.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "INSW",
+          "rationale": "International Seaways crude tanker fleet benefits from ton-mile expansion as Gulf crude reroutes; spot rates historically spike on Hormuz incidents.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LNG",
+          "rationale": "Cheniere \u2014 ~20% of global LNG transits Hormuz (Qatar). Disruption diverts buyers to US Gulf Coast LNG; spot LNG prices and US export economics improve.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed makes PAC-3/THAAD missile defense systems and naval munitions; Gulf escalation drives FMS demand from GCC partners and US replenishment orders.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon makes Standard Missiles and Patriot interceptors used to defend Gulf assets; minesweeping/escort operations consume munitions inventory triggering reorders.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has highest jet fuel sensitivity among US legacies with limited hedging; Brent spike directly hits CASM and Q3 margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United heavy transpacific/international exposure means jet fuel + potential Gulf airspace rerouting both pressure unit costs.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest's all-domestic 737 fleet has zero geographic hedge and historically light fuel hedge book \u2014 pure margin compression from crude spike.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival bunker fuel costs spike with Brent; Middle East itineraries (Dubai/Abu Dhabi) at risk of cancellation. Consumer discretionary double-hit.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow's ethylene/petrochemical feedstock costs rise with crude; margin compression as price hikes lag input cost spike.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart's freight and last-mile diesel costs rise; low-income consumer (core demo) hit hardest by gasoline price spike, pressuring discretionary basket.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_mines_hormuz_strait",
+      "source_news_ids": [
+        "267100c01daa700c"
+      ],
+      "headlines": [
+        "Iran has mined 'large segments' of Hormuz Strait, Secretary of State Rubio says"
+      ]
+    }
+  ]
 }
