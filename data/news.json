@@ -1,96 +1,76 @@
 {
-  "generated_at": "2026-06-04T00:39:46.430406-04:00",
+  "generated_at": "2026-06-04T06:03:22.137154-04:00",
   "ticker_news": {
     "GOOG": [
       {
-        "id": "048321abb92ccfd7",
+        "id": "51cf152f6358138a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Google's $84 Million Capital Raise Uses Tools 'Popularized' By Michael Saylor's Strategy, Says Phong Le: Is It Just Old Wine In A New Bottle?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991646/google-capital-raise-michael-saylor-strategy-old-wine-new-bottle",
-        "published_at": "2026-06-04T03:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "google_capital_raise_saylor_strategy",
+        "title": "Broadcom Just Made Bold $100 Billion AI Revenue Forecast For Next Year, But Wall Street Doesn't Believe It: 'Is It Fair To Assume...?'",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/52993764/broadcom-just-made-bold-100-billion-ai-revenue-forecast-for-next-year-but-wall-street-doesnt-believe-it-is-it-fair-to-assume",
+        "published_at": "2026-06-04T10:01:30+00:00",
+        "type": "guidance",
+        "impact": "high",
+        "dedup_group": "broadcom_100b_ai_revenue_forecast_2027",
         "tickers_mentioned": [
-          "MSTR"
+          "BROADCOM"
         ],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       },
       {
-        "id": "bbeb2c96e061cff9",
+        "id": "a108ed6f10584454",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Cathie Wood Keeps On Selling AMD Stock, Ark Scoops Up $95.6 Million Worth Of Google Parent's Shares \u2014 Snaps Up Meta, Alibaba Too",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/52991570/cathie-wood-sells-amd-buys-google-meta-alibaba-shares",
-        "published_at": "2026-06-04T03:09:35+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "cathie_wood_ark_buying_goog_meta_jun4",
+        "title": "Meta, Google Could Be Among Winners As FCC Proposes New Undersea Cable Rules Targeting China Risk",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52992505/meta-google-could-be-winners-fcc-undersea-cable-rules-china-risk",
+        "published_at": "2026-06-04T07:29:29+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "fcc_undersea_cable_rules_china_risk",
         "tickers_mentioned": [
-          "AMD",
-          "META",
-          "BABA"
+          "META"
         ],
         "route_to_synthesis": false
       }
     ],
-    "MSTR": [
+    "DELL": [
       {
-        "id": "048321abb92ccfd7",
+        "id": "da70f5a07b502b01",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "Google's $84 Million Capital Raise Uses Tools 'Popularized' By Michael Saylor's Strategy, Says Phong Le: Is It Just Old Wine In A New Bottle?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991646/google-capital-raise-michael-saylor-strategy-old-wine-new-bottle",
-        "published_at": "2026-06-04T03:42:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "google_capital_raise_saylor_strategy",
+        "title": "After Dell, TSMC CEO Issues Stark Warning On AI Capacity Constraints For 'Very Long Time,' Hints At Potential Price Hike\u2014 'We Still Need To...'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52993502/after-dell-tsmc-ceo-issues-stark-warning-on-ai-capacity-constraints-for-very-long-time-hints-at-potential-price-hike-we-still-need-to",
+        "published_at": "2026-06-04T09:38:37+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tsmc_ceo_ai_capacity_constraints_price_warning",
         "tickers_mentioned": [
-          "MSTR"
+          "TSMC"
         ],
         "route_to_synthesis": false
       }
     ],
-    "COIN": [
+    "INTC": [
       {
-        "id": "ab51f1454f68799c",
+        "id": "da70f5a07b502b01",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COIN",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "Bitcoin Below $63,000, Ethereum, XRP, Dogecoin Also Plummet Amid 'Extreme Fear': Analyst Pinpoints Bearish Shift In BTC's Risk Profile",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991582/bitcoin-below-63000-ethereum-xrp-dogecoin-plummet-extreme-fear-bearish-shift",
-        "published_at": "2026-06-04T03:10:12+00:00",
-        "type": "macro_commodity",
-        "impact": "low",
-        "dedup_group": "bitcoin_crash_jun4_extreme_fear",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVTS": [
-      {
-        "id": "422e67cf50ed2661",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVTS",
-        "scope": "ticker",
-        "title": "Broadcom, CrowdStrike, Xos, Navitas Semiconductor And Five Below: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/52991286/broadcom-crowdstrike-xos-navitas-semiconductor-and-five-below-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-04T01:41:13+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "benzinga_radar_roundup_jun4",
+        "title": "After Dell, TSMC CEO Issues Stark Warning On AI Capacity Constraints For 'Very Long Time,' Hints At Potential Price Hike\u2014 'We Still Need To...'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/52993502/after-dell-tsmc-ceo-issues-stark-warning-on-ai-capacity-constraints-for-very-long-time-hints-at-potential-price-hike-we-still-need-to",
+        "published_at": "2026-06-04T09:38:37+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tsmc_ceo_ai_capacity_constraints_price_warning",
         "tickers_mentioned": [
-          "CRWD",
-          "XOS"
+          "TSMC"
         ],
         "route_to_synthesis": false
       }
