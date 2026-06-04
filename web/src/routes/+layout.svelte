@@ -46,6 +46,11 @@
         class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/performance') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Perf</a
       >
+      <a
+        href="/learn"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/learn') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Learn</a
+      >
       <span class="mx-1 h-4 w-px bg-ink-700"></span>
       <SearchBox />
       <ThemeToggle />
