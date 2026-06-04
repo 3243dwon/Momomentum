@@ -1,20 +1,97 @@
 {
-  "generated_at": "2026-06-03T19:47:41.276248-04:00",
+  "generated_at": "2026-06-04T00:39:46.430406-04:00",
   "ticker_news": {
-    "NTSK": [
+    "GOOG": [
       {
-        "id": "a8689950a0a67fac",
+        "id": "048321abb92ccfd7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NTSK",
+        "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Netskope Q1 2027 Earnings Call: Complete Transcript",
-        "url": "https://www.benzinga.com/insights/news/26/06/52990148/netskope-q1-2027-earnings-call-complete-transcript",
-        "published_at": "2026-06-03T22:31:52+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "ntsk_q1_2027_earnings",
+        "title": "Google's $84 Million Capital Raise Uses Tools 'Popularized' By Michael Saylor's Strategy, Says Phong Le: Is It Just Old Wine In A New Bottle?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991646/google-capital-raise-michael-saylor-strategy-old-wine-new-bottle",
+        "published_at": "2026-06-04T03:42:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "google_capital_raise_saylor_strategy",
+        "tickers_mentioned": [
+          "MSTR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bbeb2c96e061cff9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "Cathie Wood Keeps On Selling AMD Stock, Ark Scoops Up $95.6 Million Worth Of Google Parent's Shares \u2014 Snaps Up Meta, Alibaba Too",
+        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/52991570/cathie-wood-sells-amd-buys-google-meta-alibaba-shares",
+        "published_at": "2026-06-04T03:09:35+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cathie_wood_ark_buying_goog_meta_jun4",
+        "tickers_mentioned": [
+          "AMD",
+          "META",
+          "BABA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "048321abb92ccfd7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Google's $84 Million Capital Raise Uses Tools 'Popularized' By Michael Saylor's Strategy, Says Phong Le: Is It Just Old Wine In A New Bottle?",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991646/google-capital-raise-michael-saylor-strategy-old-wine-new-bottle",
+        "published_at": "2026-06-04T03:42:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "google_capital_raise_saylor_strategy",
+        "tickers_mentioned": [
+          "MSTR"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "ab51f1454f68799c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Bitcoin Below $63,000, Ethereum, XRP, Dogecoin Also Plummet Amid 'Extreme Fear': Analyst Pinpoints Bearish Shift In BTC's Risk Profile",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/52991582/bitcoin-below-63000-ethereum-xrp-dogecoin-plummet-extreme-fear-bearish-shift",
+        "published_at": "2026-06-04T03:10:12+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_crash_jun4_extreme_fear",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVTS": [
+      {
+        "id": "422e67cf50ed2661",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVTS",
+        "scope": "ticker",
+        "title": "Broadcom, CrowdStrike, Xos, Navitas Semiconductor And Five Below: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/52991286/broadcom-crowdstrike-xos-navitas-semiconductor-and-five-below-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-04T01:41:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_radar_roundup_jun4",
+        "tickers_mentioned": [
+          "CRWD",
+          "XOS"
+        ],
         "route_to_synthesis": false
       }
     ]
