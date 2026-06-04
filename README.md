@@ -68,11 +68,12 @@ Per-ticker/type throttling (2-hour cooldown) prevents alert spam.
 ## Web dashboard
 
 - `/` — recommended picks (LLM-scored, with conviction), scan filters, top-20 movers, fresh-news tickers, watchlist, full sortable table — see *Dashboard design* below
-- `/t/[ticker]` — per-ticker drill-down (full technicals, all news, synthesis)
+- `/t/[ticker]` — per-ticker drill-down (full technicals, all news, synthesis). The **指标解读 / What the signals say** block turns each live number into a plain-language bull/bear read (VWAP, day-range position, RVOL, RSI, MACD, gap, ATR volatility) so the page interprets, not just reports. Reads degrade gracefully: VWAP/range/gap only appear in a live session; RSI/MACD/RVOL/ATR always do. Logic in `web/src/lib/reads.ts`.
 - `/macro` — macro events with beneficiaries/losers
 - `/weekly` — Saturday roll-up (top movers, catalysts, rank jumps by day)
 - `/political` — disclosed Congress trades (Senate + House STOCK-Act PTRs from FMP; requires `FMP_API_KEY`). Cross-references the day's scan: tickers also in the watchlist or moving ≥ 3% get highlighted.
 - `/performance` — past alert outcomes (1d/3d/5d returns)
+- `/learn` — bilingual indicator guide (VWAP, EMA, key levels, RVOL, float, ATR, RSI, MACD, gap) with an honest "is this live on the site" tag per indicator. The companion to the ticker-page reads above.
 
 ## Dashboard design
 

@@ -1,8 +1,23 @@
 <script lang="ts">
   import { fmtPct, fmtPrice, fmtRelVol, fmtVolume, pctClass, fmtRelative, impactPill, confidencePill } from '$lib/format';
+  import { readsFor, type ReadTone } from '$lib/reads';
 
   let { data } = $props();
   const { ticker, row, news, macroMentions } = data;
+
+  const reads = row ? readsFor(row) : [];
+  const dotCls: Record<ReadTone, string> = {
+    up: 'bg-signal-up',
+    down: 'bg-signal-down',
+    warn: 'bg-signal-warn',
+    flat: 'bg-zinc-500'
+  };
+  const textCls: Record<ReadTone, string> = {
+    up: 'text-signal-up',
+    down: 'text-signal-down',
+    warn: 'text-signal-warn',
+    flat: 'text-zinc-400'
+  };
 </script>
 
 <svelte:head>
@@ -85,6 +100,29 @@
       </div>
     {/if}
   </section>
+
+  {#if reads.length}
+    <section class="card mb-6 p-4">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">指标解读 · What the signals say</h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">live read</span>
+      </header>
+      <ul class="divide-y divide-ink-700/50">
+        {#each reads as r (r.key)}
+          <li class="flex items-start gap-3 py-2">
+            <span class="mt-[6px] h-2 w-2 shrink-0 rounded-full {dotCls[r.tone]}"></span>
+            <span class="w-[4.5rem] shrink-0 text-xs font-medium leading-relaxed text-zinc-400">{r.name}</span>
+            <span class="num w-20 shrink-0 text-sm leading-relaxed text-zinc-200">{r.value}</span>
+            <span class="flex-1 text-xs leading-relaxed {textCls[r.tone]}">{r.verdict}</span>
+          </li>
+        {/each}
+      </ul>
+      <p class="mt-3 border-t border-ink-700/50 pt-2 text-[10px] leading-relaxed text-zinc-500">
+        🟢 偏多 · 🔴 偏空 · 🟡 当心 · ⚪ 中性。想知道每个指标怎么用?
+        <a href="/learn" class="text-signal-info hover:underline">看指标解读 →</a>
+      </p>
+    </section>
+  {/if}
 
   {#if row.snapshot || row.intraday}
     <section class="card mb-6 p-4">
