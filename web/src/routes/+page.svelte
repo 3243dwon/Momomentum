@@ -25,6 +25,20 @@
     Object.entries(news?.ticker_news ?? {}).map(([t, items]) => [t, items.length])
   );
 
+  // Serenity — latest posts surfaced on the dashboard (full feed at /serenity).
+  const serenityTop = (data.serenity?.tweets ?? []).slice(0, 3);
+  const SERENITY_HOT = 3.0;
+  function serenityLive(ticker: string) {
+    const r = rowsByTicker.get(ticker);
+    if (!r || r.pct_1d == null) return undefined;
+    return { pct: r.pct_1d, moving: Math.abs(r.pct_1d) >= SERENITY_HOT };
+  }
+  const SERENITY_STANCE: Record<string, string> = {
+    bull: 'text-signal-up',
+    bear: 'text-signal-down',
+    neutral: 'text-zinc-400'
+  };
+
   let filters = $state<Filters>({
     size: 'any',
     move: 'any',
@@ -167,6 +181,33 @@
       {/if}
     {/if}
   </section>
+
+  {#if serenityTop.length > 0}
+    <section class="mb-8">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">🧠 Serenity</h2>
+        <a href="/serenity" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">View all →</a>
+      </header>
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {#each serenityTop as t (t.id)}
+          <article class="card p-3">
+            <div class="mb-1.5 flex items-center justify-between gap-2">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <span class="text-[10px] font-semibold uppercase tracking-wider {SERENITY_STANCE[t.stance] ?? 'text-zinc-400'}">{t.stance}</span>
+                {#each t.tickers as tk}
+                  {@const lv = serenityLive(tk)}
+                  <a href={`/t/${tk}`} class="font-mono text-xs hover:underline {lv?.moving ? pctClass(lv.pct) : 'text-zinc-300'}">${tk}{#if lv?.moving}<span class="ml-0.5">{fmtPct(lv.pct)}</span>{/if}</a>
+                {/each}
+              </div>
+              <span class="whitespace-nowrap text-[10px] text-zinc-500">{fmtRelative(t.createdAt)}</span>
+            </div>
+            <p class="line-clamp-3 text-xs leading-relaxed text-zinc-300">{t.summaryEn || t.text}</p>
+            <a href={t.url} target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-[10px] font-medium text-signal-info hover:underline">View on X ↗</a>
+          </article>
+        {/each}
+      </div>
+    </section>
+  {/if}
 
   <section class="mb-8">
     <header class="mb-3 flex items-center justify-between">

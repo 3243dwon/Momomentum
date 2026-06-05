@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, synthesize
@@ -260,8 +260,25 @@ def run(
     )
     render.write_news(ticker_news_enriched, macro_analyses, now)
 
+    # Serenity (@aleabitoreddit) — the 24/7 poller (serenity-poll.yml) owns X
+    # polling, Claude extraction, the Feishu push and writing data/serenity.json.
+    # The scan only reads that feed and cross-references it against the live
+    # universe to add serenity_match alerts (price coincidence). Fail-soft.
+    serenity_matches: list[dict] = []
+    try:
+        serenity_tweets = serenity.load_feed()
+        if serenity_tweets:
+            serenity_matches = serenity.compute_matches(
+                serenity_tweets, rows, set(router.load_watchlist()),
+            )
+    except Exception as e:
+        log.warning("Serenity match raised: %s", e)
+
     if use_alerts:
-        alerts, throttle = alert_rules.build_alerts(rows, deltas, syntheses, macro_analyses, window)
+        alerts, throttle = alert_rules.build_alerts(
+            rows, deltas, syntheses, macro_analyses, window,
+            serenity_matches=serenity_matches,
+        )
         sent = feishu.send_consolidated(alerts)
         throttle.commit()
         log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)

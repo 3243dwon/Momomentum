@@ -1,0 +1,67 @@
+name: Serenity poll
+
+# momentum is a public repo, so GitHub Actions are free — we poll Serenity
+# (@aleabitoreddit) on the X API directly every 15 min, 24/7, independent of the
+# (private, windowed) lengjing pipeline. X bills per tweet *returned*, so empty
+# polls (since_id) cost $0; you only pay per actual new tweet. New tweets are
+# Claude-extracted, pushed to momentum's Feishu, and committed to
+# data/serenity.json (which the /serenity page and the scan both read).
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: serenity-poll
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        # The poll path only needs these three — not the scanner's full deps.
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests anthropic python-dotenv
+
+      - name: Poll Serenity
+        env:
+          X_BEARER_TOKEN: ${{ secrets.X_BEARER_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_SIGNING_SECRET: ${{ secrets.FEISHU_SIGNING_SECRET }}
+        run: python -m scanner.serenity_poll
+
+      - name: Commit feed
+        run: |
+          git config user.name "momentum-bot"
+          git config user.email "momentum-bot@users.noreply.github.com"
+          git add data/serenity.json data/serenity_state.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No new tweets — nothing to commit."
+            exit 0
+          fi
+          git commit -m "🧠 serenity $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          # The scan (or a prior poll) may have pushed while we ran.
+          for attempt in 1 2 3 4 5; do
+            if git push; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            git pull --rebase -X theirs origin main || true
+            sleep 2
+          done
+          echo "Push failed after retries"
+          exit 1

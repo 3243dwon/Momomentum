@@ -371,3 +371,26 @@ export interface TrumpBasket {
   _comment?: string;
   themes: TrumpBasketTheme[];
 }
+
+// serenity.json — keep in sync with scanner/serenity.py (the 24/7 X poller).
+// English-only on this side; the live-scan cross-reference (which named tickers
+// are moving) is computed client-side from scan.json on the /serenity page.
+export type SerenityStance = 'bull' | 'bear' | 'neutral';
+
+export interface SerenityTweet {
+  id: string;
+  url: string;
+  createdAt: string;
+  text: string;
+  isReply: boolean;
+  isQuote: boolean;
+  metrics?: { likes: number; reposts: number; replies: number; views?: number };
+  tickers: string[];
+  stance: SerenityStance;
+  summaryEn: string;
+}
+
+export interface SerenityData {
+  generated_at: string;
+  tweets: SerenityTweet[];
+}

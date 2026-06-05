@@ -68,3 +68,12 @@ FMP_API_KEY = os.environ.get("FMP_API_KEY")
 # Refresh interval — FMP's senate/house feeds update a few times a day at
 # most, so once every 6 hours is plenty and leaves headroom on the daily cap.
 POLITICAL_REFRESH_SECONDS = 6 * 60 * 60
+
+# Serenity (@aleabitoreddit) — momentum polls the X API directly, 24/7, in its
+# own workflow (serenity-poll.yml). Pay-per-use: ~$0.005 per tweet returned, and
+# empty polls (since_id) are free. Needs an X API OAuth2 app-only bearer token.
+# Set empty to disable the Serenity poller entirely.
+X_BEARER_TOKEN = os.environ.get("X_BEARER_TOKEN")
+# A Serenity-named ticker counts as a "hot match" (serenity_match alert) when
+# it's moving at least this much in the live scan, or it's on the watchlist.
+SERENITY_HOT_MOVE_PCT = 3.0

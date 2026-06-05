@@ -58,6 +58,7 @@ HEADER_TEMPLATES = {
     "synthesis": "green",
     "weekly": "turquoise",
     "trump_pulse": "violet",
+    "serenity_match": "indigo",
 }
 
 
@@ -151,6 +152,7 @@ def send_batch(alerts: list[dict]) -> int:
 
 _TICKER_SECTIONS = [
     ("catalyst",        "🎯 Catalysts"),
+    ("serenity_match",  "🧠 Serenity"),
     ("watchlist",       "⭐ Watchlist"),
     ("big_move",        "🚀 Big moves"),
     ("delta_new_top20", "📈 New top-20"),
@@ -165,6 +167,8 @@ def _pick_ticker_template(alerts: list[dict]) -> str:
     types = {a.get("type", "") for a in alerts}
     if "catalyst" in types:
         return "carmine"
+    if "serenity_match" in types:
+        return "indigo"
     if "watchlist" in types:
         return "blue"
     if "big_move" in types:
