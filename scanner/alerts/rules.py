@@ -24,6 +24,7 @@ log = logging.getLogger(__name__)
 ALERT_TYPE_PRIORITY = {
     "catalyst": 100,
     "macro": 90,
+    "serenity_match": 85,
     "watchlist": 80,
     "big_move": 60,
     "delta_new_top20": 45,
@@ -84,6 +85,7 @@ def build_alerts(
     syntheses: dict[str, dict],
     macro_analyses: list[dict],
     window: Window,
+    serenity_matches: list[dict] | None = None,
 ) -> tuple[list[dict], Throttle]:
     throttle = Throttle()
     alerts: list[dict] = []
@@ -243,12 +245,37 @@ def build_alerts(
             body_md=body,
         )
 
+    # === D. Serenity matches (high-signal, always fires) ===
+    # Serenity (@aleabitoreddit) named a ticker that is ALSO moving or on the
+    # watchlist this scan — rare and high-conviction. This is additive to
+    # lengjing's per-tweet Feishu ping (which fires for every tweet regardless of
+    # price); here we only ping when his call coincides with a live move.
+    for m in serenity_matches or []:
+        t = m["ticker"]
+        pct = m.get("pct_1d")
+        rel_vol = m.get("rel_volume") or 0
+        stance = m.get("stance", "neutral")
+        vol_str = f" on {rel_vol:.1f}x avg volume" if rel_vol else ""
+        body = (
+            f"**Serenity** flagged **{t}** (`{stance}`) — now {_fmt_pct(pct)}{suffix}{vol_str}\n\n"
+            f"*{m.get('summary', '')}*"
+        )
+        url = m.get("url")
+        if url:
+            body += f"\n\n[🔗 View Serenity's post]({url})"
+        _emit(
+            alerts, throttle,
+            ticker=t, alert_type="serenity_match",
+            title=f"🧠 Serenity flagged {t} — {_fmt_pct(pct)} today",
+            body_md=body, signal=pct, link=url or None,
+        )
+
     # Two-tier cap:
     #   - High-conviction (catalyst, macro:*, watchlist) always fires — if Sonnet
     #     or Opus surfaced it as a real signal, you should never miss it.
     #   - Standard (big_move, delta_*) is capped by signal magnitude so heavy
     #     broad-market move days don't flood the Feishu channel.
-    high_conviction_types = {"catalyst", "watchlist"}
+    high_conviction_types = {"catalyst", "watchlist", "serenity_match"}
     high, standard = [], []
     for a in alerts:
         t = a.get("type", "")
