@@ -1,65 +1,65 @@
 {
-  "generated_at": "2026-06-04T20:16:15.501729-04:00",
+  "generated_at": "2026-06-05T00:16:11.072140-04:00",
   "window_days": 30,
-  "total_alerts": 1674,
+  "total_alerts": 1666,
   "per_type": {
-    "big_move": {
-      "count": 881,
-      "horizons": {
-        "1d": {
-          "evaluated": 879,
-          "hit_rate": 0.444,
-          "avg_return_pct": 0.26
-        },
-        "3d": {
-          "evaluated": 849,
-          "hit_rate": 0.477,
-          "avg_return_pct": 0.67
-        },
-        "5d": {
-          "evaluated": 825,
-          "hit_rate": 0.479,
-          "avg_return_pct": 1.36
-        }
-      }
-    },
-    "delta_new_top20": {
-      "count": 182,
-      "horizons": {
-        "1d": {
-          "evaluated": 154,
-          "hit_rate": 0.513,
-          "avg_return_pct": 0.98
-        },
-        "3d": {
-          "evaluated": 139,
-          "hit_rate": 0.475,
-          "avg_return_pct": 0.82
-        },
-        "5d": {
-          "evaluated": 133,
-          "hit_rate": 0.444,
-          "avg_return_pct": -0.08
-        }
-      }
-    },
     "watchlist": {
-      "count": 525,
+      "count": 527,
       "horizons": {
         "1d": {
-          "evaluated": 497,
+          "evaluated": 495,
           "hit_rate": 0.523,
           "avg_return_pct": -0.41
         },
         "3d": {
-          "evaluated": 458,
+          "evaluated": 456,
           "hit_rate": 0.629,
-          "avg_return_pct": 0.87
+          "avg_return_pct": 0.91
         },
         "5d": {
-          "evaluated": 434,
+          "evaluated": 432,
           "hit_rate": 0.569,
-          "avg_return_pct": 0.6
+          "avg_return_pct": 0.64
+        }
+      }
+    },
+    "big_move": {
+      "count": 870,
+      "horizons": {
+        "1d": {
+          "evaluated": 868,
+          "hit_rate": 0.44,
+          "avg_return_pct": 0.23
+        },
+        "3d": {
+          "evaluated": 838,
+          "hit_rate": 0.476,
+          "avg_return_pct": 0.62
+        },
+        "5d": {
+          "evaluated": 814,
+          "hit_rate": 0.478,
+          "avg_return_pct": 1.32
+        }
+      }
+    },
+    "delta_new_top20": {
+      "count": 183,
+      "horizons": {
+        "1d": {
+          "evaluated": 150,
+          "hit_rate": 0.5,
+          "avg_return_pct": 0.64
+        },
+        "3d": {
+          "evaluated": 135,
+          "hit_rate": 0.459,
+          "avg_return_pct": 0.12
+        },
+        "5d": {
+          "evaluated": 129,
+          "hit_rate": 0.426,
+          "avg_return_pct": -0.85
         }
       }
     },
