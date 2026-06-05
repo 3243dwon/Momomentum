@@ -1,60 +1,60 @@
 {
-  "generated_at": "2026-06-05T11:17:59.761806-04:00",
+  "generated_at": "2026-06-05T14:04:13.306204-04:00",
   "window_days": 30,
-  "total_alerts": 1667,
+  "total_alerts": 1676,
   "per_type": {
     "watchlist": {
-      "count": 532,
+      "count": 537,
       "horizons": {
         "1d": {
-          "evaluated": 499,
+          "evaluated": 503,
           "hit_rate": 0.513,
           "avg_return_pct": -0.43
         },
         "3d": {
-          "evaluated": 462,
-          "hit_rate": 0.623,
-          "avg_return_pct": 0.92
+          "evaluated": 465,
+          "hit_rate": 0.624,
+          "avg_return_pct": 0.96
         },
         "5d": {
-          "evaluated": 426,
-          "hit_rate": 0.57,
-          "avg_return_pct": 0.77
+          "evaluated": 424,
+          "hit_rate": 0.571,
+          "avg_return_pct": 0.82
         }
       }
     },
     "big_move": {
-      "count": 855,
+      "count": 852,
       "horizons": {
         "1d": {
-          "evaluated": 855,
+          "evaluated": 850,
           "hit_rate": 0.442,
           "avg_return_pct": 0.23
         },
         "3d": {
-          "evaluated": 833,
+          "evaluated": 830,
           "hit_rate": 0.478,
-          "avg_return_pct": 0.52
+          "avg_return_pct": 0.5
         },
         "5d": {
-          "evaluated": 799,
-          "hit_rate": 0.483,
-          "avg_return_pct": 1.35
+          "evaluated": 794,
+          "hit_rate": 0.484,
+          "avg_return_pct": 1.32
         }
       }
     },
     "delta_new_top20": {
-      "count": 193,
+      "count": 196,
       "horizons": {
         "1d": {
-          "evaluated": 158,
-          "hit_rate": 0.487,
-          "avg_return_pct": 0.47
+          "evaluated": 163,
+          "hit_rate": 0.472,
+          "avg_return_pct": 0.1
         },
         "3d": {
-          "evaluated": 135,
-          "hit_rate": 0.459,
-          "avg_return_pct": 0.12
+          "evaluated": 138,
+          "hit_rate": 0.457,
+          "avg_return_pct": 0.07
         },
         "5d": {
           "evaluated": 129,
@@ -72,14 +72,34 @@
           "avg_return_pct": 2.92
         },
         "3d": {
-          "evaluated": 78,
-          "hit_rate": 0.59,
-          "avg_return_pct": 2.85
+          "evaluated": 81,
+          "hit_rate": 0.58,
+          "avg_return_pct": 2.71
         },
         "5d": {
           "evaluated": 72,
           "hit_rate": 0.611,
           "avg_return_pct": 2.36
+        }
+      }
+    },
+    "serenity_match": {
+      "count": 4,
+      "horizons": {
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null
+        },
+        "5d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null
         }
       }
     }
