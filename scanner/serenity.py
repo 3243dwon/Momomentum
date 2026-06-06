@@ -39,7 +39,6 @@ STATE_FILE = config.DATA_DIR / "serenity_state.json"  # committed; {userId, sinc
 FEED_CAP = 200
 SEED_COUNT = 10
 MAX_BATCH = 10
-MAX_FEISHU_PER_RUN = 8
 
 _TICKER_RE = re.compile(r"\$([A-Za-z]{1,6})\b")
 
@@ -223,23 +222,26 @@ def _stance_label(stance: str) -> str:
 
 
 def _notify(records: list[dict]) -> int:
-    if not config.FEISHU_WEBHOOK_URL:
+    """Push only the SINGLE latest tweet to Feishu per run, to keep the channel
+    quiet. Older tweets from the same poll still land in the feed / on the web —
+    they're just not pushed. records are oldest→newest, so [-1] is the latest."""
+    if not config.FEISHU_WEBHOOK_URL or not records:
         return 0
     from scanner.alerts import feishu
 
-    to_send = records[-MAX_FEISHU_PER_RUN:]
-    sent = 0
-    for t in to_send:
-        tickers = " ".join(f"`${x}`" for x in (t.get("tickers") or [])) or "—"
-        body = f"{_stance_label(t.get('stance', ''))}　🎯 {tickers}\n\n{t.get('text', '')}"
-        if t.get("summaryEn"):
-            body += f"\n\n*{t['summaryEn']}*"
-        if t.get("url"):
-            body += f"\n\n[🔗 View on X]({t['url']})"
-        if feishu.send({"type": "serenity_match", "ticker": None, "title": "🧠 Serenity — new post", "body_md": body, "link": None}):
-            sent += 1
-    log.info("Serenity: sent %d Feishu card(s).", sent)
-    return sent
+    t = records[-1]
+    skipped = len(records) - 1
+    tickers = " ".join(f"`${x}`" for x in (t.get("tickers") or [])) or "—"
+    body = f"{_stance_label(t.get('stance', ''))}　🎯 {tickers}\n\n{t.get('text', '')}"
+    if t.get("summaryEn"):
+        body += f"\n\n*{t['summaryEn']}*"
+    if skipped:
+        body += f"\n\n_+{skipped} earlier post(s) — see /serenity._"
+    if t.get("url"):
+        body += f"\n\n[🔗 View on X]({t['url']})"
+    ok = feishu.send({"type": "serenity_match", "ticker": None, "title": "🧠 Serenity — new post", "body_md": body, "link": None})
+    log.info("Serenity: sent %d Feishu card (latest); %d older skipped.", 1 if ok else 0, skipped)
+    return 1 if ok else 0
 
 
 # ── 24/7 poll entry point ───────────────────────────────────────────
