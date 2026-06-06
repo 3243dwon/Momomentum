@@ -1,23 +1,60 @@
 {
-  "generated_at": "2026-06-05T18:17:56.646612-04:00",
+  "generated_at": "2026-06-05T20:11:19.048819-04:00",
   "ticker_news": {
-    "CCJ": [
+    "MSTR": [
       {
-        "id": "cdd4eb6d80552071",
+        "id": "f5d05ded681fa154",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CCJ",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "$1000 Invested In Cameco 5 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53043331/1000-invested-in-cameco-5-years-ago-would-be-worth-this-much-today",
-        "published_at": "2026-06-05T20:15:40+00:00",
+        "title": "Here's How Much You Would Have Made Owning Strategy Stock In The Last 5 Years",
+        "url": "https://www.benzinga.com/insights/news/26/06/53045617/heres-how-much-you-would-have-made-owning-strategy-stock-in-the-last-5-years",
+        "published_at": "2026-06-05T23:45:25+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "cameco_historical_performance_retrospective",
+        "dedup_group": "mstr_5yr_retrospective",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "A massive Friday selloff wiped out $1.8 trillion from the S&P 500 and produced the Nasdaq's largest point drop on record.",
+      "primary_drivers": [
+        "Risk-off rotation out of equities into safe havens",
+        "Volatility spike driving demand for hedges and vol products",
+        "De-grossing/forced deleveraging pressure on the most crowded/highest-beta names"
+      ],
+      "beneficiaries": [],
+      "losers": [
+        {
+          "ticker": "NVDA",
+          "rationale": "Largest single contributor to Nasdaq point moves given mega-cap weight and highest beta among megacaps; record Nasdaq point drops are almost always NVDA-led and de-grossing in semis tends to persist for days.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MSTR",
+          "rationale": "Crypto-proxy equity with extreme beta to risk sentiment; record Nasdaq drops typically coincide with bitcoin liquidations, compounding MSTR's NAV-premium compression.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COIN",
+          "rationale": "Crypto exchange \u2014 revenue tied to crypto volumes and prices, which historically sell off in sympathy with record equity risk-off moves; high-beta de-grossing target.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "sp500_nasdaq_selloff_june_5_2026",
+      "source_news_ids": [
+        "7df07304593c1f12"
+      ],
+      "headlines": [
+        "S&P 500 sees $1.8 trillion wipeout, Nasdaq tallies biggest point drop on record: What investors need to know about Friday\u2019s selloff"
+      ]
+    }
+  ]
 }
