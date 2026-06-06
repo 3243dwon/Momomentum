@@ -73,7 +73,7 @@ POLITICAL_REFRESH_SECONDS = 6 * 60 * 60
 # own workflow (serenity-poll.yml). Pay-per-use: ~$0.005 per tweet returned, and
 # empty polls (since_id) are free. Needs an X API OAuth2 app-only bearer token.
 # Set empty to disable the Serenity poller entirely.
-X_BEARER_TOKEN = os.environ.get("X_BEARER_TOKEN")
+X_BEARER_TOKEN = (os.environ.get("X_BEARER_TOKEN") or "").strip() or None
 # A Serenity-named ticker counts as a "hot match" (serenity_match alert) when
 # it's moving at least this much in the live scan, or it's on the watchlist.
 SERENITY_HOT_MOVE_PCT = 3.0
