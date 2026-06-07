@@ -1,60 +1,265 @@
 {
-  "generated_at": "2026-06-05T20:11:19.048819-04:00",
+  "generated_at": "2026-06-07T15:40:30.395851-04:00",
   "ticker_news": {
-    "MSTR": [
+    "MU": [
       {
-        "id": "f5d05ded681fa154",
+        "id": "0017696b4d08ac62",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Here's How Much You Would Have Made Owning Strategy Stock In The Last 5 Years",
-        "url": "https://www.benzinga.com/insights/news/26/06/53045617/heres-how-much-you-would-have-made-owning-strategy-stock-in-the-last-5-years",
-        "published_at": "2026-06-05T23:45:25+00:00",
+        "title": "Nvidia Vera To Use SK Hynix Memory as Stock Surges 220% in 2026",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049224/nvidia-vera-to-use-sk-hynix-memory-as-stock-surges-220-in-2026",
+        "published_at": "2026-06-07T18:25:03+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_vera_sk_hynix_memory",
+        "tickers_mentioned": [
+          "SK_HYNIX",
+          "QCOM"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "d09612342ae304a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Bitcoin Price Rally May Be a Dead Cat Bounce as Death Cross Nears and ETF Outflows",
+        "url": "https://www.benzinga.com/crypto/26/06/53049167/bitcoin-price-rally-may-be-a-dead-cat-bounce-as-death-cross-nears-and-etf-outflows",
+        "published_at": "2026-06-07T17:46:53+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_death_cross_etf_outflows",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "0017696b4d08ac62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Nvidia Vera To Use SK Hynix Memory as Stock Surges 220% in 2026",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049224/nvidia-vera-to-use-sk-hynix-memory-as-stock-surges-220-in-2026",
+        "published_at": "2026-06-07T18:25:03+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_vera_sk_hynix_memory",
+        "tickers_mentioned": [
+          "SK_HYNIX",
+          "QCOM"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "26a572585f842548",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "What Jensen Huang Said About GPUs In 2009 Sounds Almost Unbelievable Today\u2014 And Why Nvidia Is Coming For The CPU Too",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53048969/nvidia-jensen-huang-2009-gpu-prediction-cpu-ai-boom",
+        "published_at": "2026-06-07T15:01:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_cpu_competitive_strategy_commentary",
+        "tickers_mentioned": [
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3705509abf22c095",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Top Four Catalysts For Dow Jones, Nasdaq 100 Indices This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049127/top-four-catalysts-for-dow-jones-nasdaq-100-indices-this-week",
+        "published_at": "2026-06-07T17:20:23+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "mstr_5yr_retrospective",
+        "dedup_group": "weekly_market_catalyst_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "35bef04479b71add",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Sam Altman Plots Major OpenAI Upgrade As Anthropic Battle Intensifies",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53049112/sam-altman-plots-major-openai-upgrade-as-anthropic-battle-intensifies",
+        "published_at": "2026-06-07T17:11:23+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "openai_sam_altman_upgrade_anthropic_competition",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "99a3adce196d4f22",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Anthropic Is Racing Toward An IPO. Its Co-Founder Wants A Way To Slow AI Down, Says The Industry 'Doesn't Have A Brake Pedal'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53049041/anthropic-is-racing-toward-an-ipo-its-co-founder-is-talking-about-hitting-the-brakes-the-ai-industry-doesnt-have-a-brake-pedal",
+        "published_at": "2026-06-07T16:01:09+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "anthropic_ipo_plans_ai_safety_governance",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "0017696b4d08ac62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nvidia Vera To Use SK Hynix Memory as Stock Surges 220% in 2026",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049224/nvidia-vera-to-use-sk-hynix-memory-as-stock-surges-220-in-2026",
+        "published_at": "2026-06-07T18:25:03+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_vera_sk_hynix_memory",
+        "tickers_mentioned": [
+          "SK_HYNIX",
+          "QCOM"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "d09612342ae304a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Bitcoin Price Rally May Be a Dead Cat Bounce as Death Cross Nears and ETF Outflows",
+        "url": "https://www.benzinga.com/crypto/26/06/53049167/bitcoin-price-rally-may-be-a-dead-cat-bounce-as-death-cross-nears-and-etf-outflows",
+        "published_at": "2026-06-07T17:46:53+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_death_cross_etf_outflows",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "26a572585f842548",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What Jensen Huang Said About GPUs In 2009 Sounds Almost Unbelievable Today\u2014 And Why Nvidia Is Coming For The CPU Too",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53048969/nvidia-jensen-huang-2009-gpu-prediction-cpu-ai-boom",
+        "published_at": "2026-06-07T15:01:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_cpu_competitive_strategy_commentary",
+        "tickers_mentioned": [
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "0017696b4d08ac62",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Nvidia Vera To Use SK Hynix Memory as Stock Surges 220% in 2026",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049224/nvidia-vera-to-use-sk-hynix-memory-as-stock-surges-220-in-2026",
+        "published_at": "2026-06-07T18:25:03+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "nvidia_vera_sk_hynix_memory",
+        "tickers_mentioned": [
+          "SK_HYNIX",
+          "QCOM"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "26a572585f842548",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "What Jensen Huang Said About GPUs In 2009 Sounds Almost Unbelievable Today\u2014 And Why Nvidia Is Coming For The CPU Too",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53048969/nvidia-jensen-huang-2009-gpu-prediction-cpu-ai-boom",
+        "published_at": "2026-06-07T15:01:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_cpu_competitive_strategy_commentary",
+        "tickers_mentioned": [
+          "QCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "d09612342ae304a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Bitcoin Price Rally May Be a Dead Cat Bounce as Death Cross Nears and ETF Outflows",
+        "url": "https://www.benzinga.com/crypto/26/06/53049167/bitcoin-price-rally-may-be-a-dead-cat-bounce-as-death-cross-nears-and-etf-outflows",
+        "published_at": "2026-06-07T17:46:53+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_death_cross_etf_outflows",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "1876ace5856154ec",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Top Four S&P 500 Stocks To Watch This Week: Oracle, Adobe, Broadcom, Google",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049155/top-four-sp-500-stocks-to-watch-this-week-oracle-adobe-broadcom-google",
+        "published_at": "2026-06-07T17:41:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_watch_list_week",
+        "tickers_mentioned": [
+          "ADBE",
+          "AVGO",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3705509abf22c095",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Top Four Catalysts For Dow Jones, Nasdaq 100 Indices This Week",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53049127/top-four-catalysts-for-dow-jones-nasdaq-100-indices-this-week",
+        "published_at": "2026-06-07T17:20:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "weekly_market_catalyst_roundup",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "A massive Friday selloff wiped out $1.8 trillion from the S&P 500 and produced the Nasdaq's largest point drop on record.",
-      "primary_drivers": [
-        "Risk-off rotation out of equities into safe havens",
-        "Volatility spike driving demand for hedges and vol products",
-        "De-grossing/forced deleveraging pressure on the most crowded/highest-beta names"
-      ],
-      "beneficiaries": [],
-      "losers": [
-        {
-          "ticker": "NVDA",
-          "rationale": "Largest single contributor to Nasdaq point moves given mega-cap weight and highest beta among megacaps; record Nasdaq point drops are almost always NVDA-led and de-grossing in semis tends to persist for days.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "MSTR",
-          "rationale": "Crypto-proxy equity with extreme beta to risk sentiment; record Nasdaq drops typically coincide with bitcoin liquidations, compounding MSTR's NAV-premium compression.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "COIN",
-          "rationale": "Crypto exchange \u2014 revenue tied to crypto volumes and prices, which historically sell off in sympathy with record equity risk-off moves; high-beta de-grossing target.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "sp500_nasdaq_selloff_june_5_2026",
-      "source_news_ids": [
-        "7df07304593c1f12"
-      ],
-      "headlines": [
-        "S&P 500 sees $1.8 trillion wipeout, Nasdaq tallies biggest point drop on record: What investors need to know about Friday\u2019s selloff"
-      ]
-    }
-  ]
+  "macro_events": []
 }
