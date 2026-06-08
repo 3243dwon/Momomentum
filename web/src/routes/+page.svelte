@@ -39,6 +39,12 @@
     neutral: 'text-zinc-400'
   };
 
+  // Ripple predictions — the freshest forward calls (names predicted to move on
+  // ANOTHER company's news, before they've priced it in). Full list at /predictions.
+  const freshPredictions = (data.predictions?.predictions ?? [])
+    .filter((p) => p.priced_in === 'no')
+    .slice(0, 4);
+
   let filters = $state<Filters>({
     size: 'any',
     move: 'any',
@@ -181,6 +187,31 @@
       {/if}
     {/if}
   </section>
+
+  {#if freshPredictions.length > 0}
+    <section class="mb-8">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">🔮 Ahead of the move</h2>
+        <a href="/predictions" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">View all →</a>
+      </header>
+      <div class="grid gap-3 sm:grid-cols-2">
+        {#each freshPredictions as p (p.ticker + p.trigger_ticker)}
+          {@const dir = p.direction === 'bullish' ? 'text-signal-up' : 'text-signal-down'}
+          <article class="card p-3">
+            <div class="mb-1.5 flex items-center justify-between gap-2">
+              <div class="flex flex-wrap items-center gap-1.5">
+                <a href={`/t/${p.ticker}`} class="font-mono text-xs font-semibold hover:underline {dir}">${p.ticker}</a>
+                <span class="text-[10px] font-medium {dir}">{p.direction === 'bullish' ? '📈 beneficiary' : '📉 at risk'}</span>
+              </div>
+              <span class="whitespace-nowrap rounded bg-signal-info/15 px-1.5 py-0.5 text-[9px] uppercase tracking-wider text-signal-info">not yet priced in</span>
+            </div>
+            <p class="line-clamp-2 text-xs leading-relaxed text-zinc-300">{p.rationale}</p>
+            <p class="mt-1.5 text-[10px] text-zinc-500">via <a href={`/t/${p.trigger_ticker}`} class="font-mono text-zinc-400 hover:underline">${p.trigger_ticker}</a> · conf {p.confidence} · {p.horizon}</p>
+          </article>
+        {/each}
+      </div>
+    </section>
+  {/if}
 
   {#if serenityTop.length > 0}
     <section class="mb-8">

@@ -23,6 +23,7 @@ log = logging.getLogger(__name__)
 
 ALERT_TYPE_PRIORITY = {
     "catalyst": 100,
+    "ripple": 95,
     "macro": 90,
     "serenity_match": 85,
     "watchlist": 80,
@@ -86,6 +87,7 @@ def build_alerts(
     macro_analyses: list[dict],
     window: Window,
     serenity_matches: list[dict] | None = None,
+    ripple_predictions: list[dict] | None = None,
 ) -> tuple[list[dict], Throttle]:
     throttle = Throttle()
     alerts: list[dict] = []
@@ -270,12 +272,49 @@ def build_alerts(
             body_md=body, signal=pct, link=url or None,
         )
 
+    # === E. Ripple predictions (forward second-order, high-signal) ===
+    # The ripple tier predicted these names will move on ANOTHER company's news.
+    # Push only the ones that HAVEN'T moved yet (priced_in == "no") with real
+    # confidence — those are the calls still actionable ("report before"). The
+    # already-moved ones still render on the web, but pushing them would just be
+    # late news. Always-fire (this tier is the differentiator).
+    ripple_pushed = 0
+    for p in ripple_predictions or []:
+        if p.get("priced_in") != "no":
+            continue
+        if p.get("confidence") not in ("high", "medium"):
+            continue
+        if ripple_pushed >= 6:
+            break
+        t = p["ticker"]
+        bullish = p.get("direction") == "bullish"
+        side = "📈 likely beneficiary" if bullish else "📉 likely at risk"
+        pct = p.get("pct_1d")
+        move = f"now {_fmt_pct(pct)}{suffix}" if pct is not None else "not yet moving"
+        trigger = p.get("trigger_ticker")
+        body = (
+            f"**{t}** — {side}, {move}\n\n"
+            f"*{p.get('rationale', '')}*\n\n"
+            f"Trigger: **{trigger}** — {p.get('event_summary', '')}\n\n"
+            f"`confidence: {p.get('confidence')}` `horizon: {p.get('horizon')}`"
+        )
+        url = p.get("news_url")
+        if url:
+            body += f"\n\n[🔗 Source]({url})"
+        _emit(
+            alerts, throttle,
+            ticker=t, alert_type="ripple",
+            title=f"🔮 {t} — {'bullish' if bullish else 'bearish'} read-through from {trigger}",
+            body_md=body, signal=pct if pct is not None else 0.0, link=url or None,
+        )
+        ripple_pushed += 1
+
     # Two-tier cap:
     #   - High-conviction (catalyst, macro:*, watchlist) always fires — if Sonnet
     #     or Opus surfaced it as a real signal, you should never miss it.
     #   - Standard (big_move, delta_*) is capped by signal magnitude so heavy
     #     broad-market move days don't flood the Feishu channel.
-    high_conviction_types = {"catalyst", "watchlist", "serenity_match"}
+    high_conviction_types = {"catalyst", "watchlist", "serenity_match", "ripple"}
     high, standard = [], []
     for a in alerts:
         t = a.get("type", "")

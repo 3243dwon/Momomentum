@@ -1,9 +1,17 @@
 <script lang="ts">
   import { fmtPct, fmtPrice, fmtRelVol, fmtVolume, pctClass, fmtRelative, impactPill, confidencePill } from '$lib/format';
   import { readsFor, type ReadTone } from '$lib/reads';
+  import type { PricedIn } from '$lib/types';
 
   let { data } = $props();
-  const { ticker, row, news, macroMentions } = data;
+  const { ticker, row, news, macroMentions, predictionsAbout, predictionsFrom } = data;
+
+  const PRICED: Record<PricedIn, string> = {
+    no: 'not yet priced in',
+    partial: 'started moving',
+    yes: 'already moved',
+    contradicted: 'tape disagrees'
+  };
 
   const reads = row ? readsFor(row) : [];
   const dotCls: Record<ReadTone, string> = {
@@ -186,6 +194,49 @@
         </div>
       </header>
       <p class="text-sm leading-relaxed text-zinc-200">{row.synthesis.summary}</p>
+    </section>
+  {/if}
+
+  {#if predictionsAbout.length > 0}
+    <section class="card mb-6 p-4">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">🔮 Predicted to move</h2>
+        <a href="/predictions" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">All →</a>
+      </header>
+      <div class="space-y-3">
+        {#each predictionsAbout as p (p.trigger_ticker + p.event_summary)}
+          {@const dir = p.direction === 'bullish' ? 'text-signal-up' : 'text-signal-down'}
+          <div class="border-l-2 pl-3 {p.direction === 'bullish' ? 'border-signal-up/40' : 'border-signal-down/40'}">
+            <div class="mb-1 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-wider">
+              <span class="text-xs font-medium normal-case {dir}">{p.direction === 'bullish' ? '📈 likely beneficiary' : '📉 likely at risk'}</span>
+              <span class="rounded px-1.5 py-0.5 {p.priced_in === 'no' ? 'bg-signal-info/15 text-signal-info' : 'text-zinc-500'}">{PRICED[p.priced_in]}</span>
+              <span class="pill-flat">conf {p.confidence}</span>
+              <span class="pill-flat">{p.horizon}</span>
+            </div>
+            <p class="text-sm leading-relaxed text-zinc-200">{p.rationale}</p>
+            <p class="mt-1 text-[11px] text-zinc-500">
+              via <a href={`/t/${p.trigger_ticker}`} class="font-mono text-zinc-300 hover:underline">${p.trigger_ticker}</a> — {p.event_summary}{#if p.news_url} · <a href={p.news_url} target="_blank" rel="noopener noreferrer" class="text-signal-info hover:underline">source ↗</a>{/if}
+            </p>
+          </div>
+        {/each}
+      </div>
+    </section>
+  {/if}
+
+  {#if predictionsFrom.length > 0}
+    <section class="card mb-6 p-4">
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">🔮 {ticker}'s news is rippling to</h2>
+        <a href="/predictions" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">All →</a>
+      </header>
+      <div class="flex flex-wrap gap-2">
+        {#each predictionsFrom as p (p.ticker + p.event_summary)}
+          {@const dir = p.direction === 'bullish' ? 'text-signal-up' : 'text-signal-down'}
+          <a href={`/t/${p.ticker}`} class="pill-flat hover:underline {dir}" title={p.rationale}>
+            {p.direction === 'bullish' ? '↑' : '↓'} ${p.ticker}<span class="ml-1 text-zinc-500">· {p.priced_in === 'no' ? 'fresh' : p.priced_in}</span>
+          </a>
+        {/each}
+      </div>
     </section>
   {/if}
 

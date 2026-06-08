@@ -12,7 +12,9 @@ import type {
   PoliticalData,
   TrumpPulseData,
   TrumpBasket,
-  SerenityData
+  SerenityData,
+  PredictionsData,
+  PredictionPerformance
 } from './types';
 
 type Fetch = typeof fetch;
@@ -83,6 +85,14 @@ export async function loadTrumpBasket(fetch: Fetch) {
 
 export async function loadSerenity(fetch: Fetch) {
   return getJson<SerenityData>(fetch, 'serenity.json');
+}
+
+export async function loadPredictions(fetch: Fetch) {
+  return getJson<PredictionsData>(fetch, 'predictions.json');
+}
+
+export async function loadPredictionPerformance(fetch: Fetch) {
+  return getJson<PredictionPerformance>(fetch, 'prediction_performance.json');
 }
 
 export async function loadAll(fetch: Fetch) {

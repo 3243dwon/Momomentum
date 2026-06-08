@@ -30,7 +30,7 @@ from datetime import datetime
 from scanner import config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
-from scanner.llm import classify, macro, synthesize
+from scanner.llm import classify, macro, ripple, synthesize
 from scanner.llm.client import get_client
 
 log = logging.getLogger("scanner")
@@ -161,6 +161,8 @@ def run(
     macro_news_enriched: list[dict] = []
     syntheses: dict[str, dict] = {}
     macro_analyses: list[dict] = []
+    ripple_events: list[dict] = []
+    ripple_predictions: list[dict] = []
 
     client = get_client() if (use_llm and use_news) else None
     if client and (ticker_news or macro_news):
@@ -212,6 +214,16 @@ def run(
             len(macro_for_opus), config.MAX_OPUS_MACRO_PER_SCAN,
         )
         macro_analyses = macro.analyze(macro_for_opus, client)
+
+        # --- Ripple (Opus): forward second-order predictions from popular-stock
+        # news. Who ELSE does this story help/hurt — before they move? Triggers
+        # are gated to popular names (S&P 500 / NDX / watchlist) and high-impact
+        # company news, deduped per story and hard-capped, so the spend is small.
+        popular = universe.popular() | router.load_watchlist()
+        trigger_groups = ripple.select_trigger_events(
+            ticker_news_enriched, popular, rows, config.MAX_RIPPLE_EVENTS_PER_SCAN,
+        )
+        ripple_events, ripple_predictions = ripple.analyze(trigger_groups, rows, client)
     else:
         ticker_news_enriched = ticker_news
         macro_news_enriched = macro_news
@@ -248,6 +260,7 @@ def run(
 
     render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations)
     performance.log_recommendations(recommendations, rows, now, regime=regime)
+    performance.log_predictions(ripple_predictions, rows, now, regime=regime)
 
     # Log notable momentum events for the Saturday weekly summary.
     weekly_events.record(
@@ -259,6 +272,7 @@ def run(
         watchlist=set(router.load_watchlist()),
     )
     render.write_news(ticker_news_enriched, macro_analyses, now)
+    render.write_predictions(ripple_events, ripple_predictions, now)
 
     # Serenity (@aleabitoreddit) — the 24/7 poller (serenity-poll.yml) owns X
     # polling, Claude extraction, the Feishu push and writing data/serenity.json.
@@ -278,6 +292,7 @@ def run(
         alerts, throttle = alert_rules.build_alerts(
             rows, deltas, syntheses, macro_analyses, window,
             serenity_matches=serenity_matches,
+            ripple_predictions=ripple_predictions,
         )
         sent = feishu.send_consolidated(alerts)
         throttle.commit()
@@ -317,9 +332,11 @@ def run(
     _utc_now = datetime.now(_tz.utc)
     performance.evaluate_pending(_alpaca, _utc_now)
     performance.evaluate_pending_recommendations(_alpaca, _utc_now)
+    performance.evaluate_pending_predictions(_alpaca, _utc_now)
     performance.compile_stats(datetime.now(config.MARKET_TZ))
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
     performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
+    performance.compile_prediction_stats(datetime.now(config.MARKET_TZ))
 
     return 0
 

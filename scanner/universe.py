@@ -170,6 +170,19 @@ def load_tags() -> dict[str, list[str]]:
     return tags
 
 
+def popular() -> set[str]:
+    """The 'popular' / widely-held set: S&P 500 ∪ NASDAQ-100. Used to gate the
+    ripple tier so its (Opus) spend only fires on names whose news has a real,
+    mappable second-order network. Empty set if the universe isn't built yet."""
+    if not UNIVERSE_FILE.exists():
+        return set()
+    try:
+        sources = json.loads(UNIVERSE_FILE.read_text()).get("sources", {})
+    except Exception:
+        return set()
+    return set(sources.get("sp500", [])) | set(sources.get("ndx", []))
+
+
 def prioritize(tickers: list[str], watchlist: set[str]) -> list[str]:
     """Reorder tickers so a partial scan still hits the most informative names.
 

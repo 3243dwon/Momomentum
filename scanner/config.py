@@ -77,3 +77,16 @@ X_BEARER_TOKEN = (os.environ.get("X_BEARER_TOKEN") or "").strip() or None
 # A Serenity-named ticker counts as a "hot match" (serenity_match alert) when
 # it's moving at least this much in the live scan, or it's on the watchlist.
 SERENITY_HOT_MOVE_PCT = 3.0
+
+# Ripple (forward second-order catalyst) — Opus reasons about which OTHER names
+# a popular stock's high-impact news helps or hurts, ideally BEFORE those names
+# move. Cost-bounded by design: only popular triggers (S&P 500 / NDX / watchlist),
+# only high-impact company news, deduped per story, hard-capped per scan, Opus.
+# Set to 0 to disable the ripple tier entirely.
+MAX_RIPPLE_EVENTS_PER_SCAN = 4
+# A predicted name is "not yet priced in" (the high-value, push-worthy case)
+# when it has moved less than this, in the predicted direction, in the live scan.
+RIPPLE_PRICED_IN_PCT = 2.0
+# News types whose stories plausibly ripple to OTHER tickers. Analyst notes and
+# litigation rarely move a different company, so they're excluded as triggers.
+RIPPLE_TRIGGER_TYPES = ("ma", "product", "guidance", "earnings")
