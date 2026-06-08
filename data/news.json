@@ -1,203 +1,305 @@
 {
-  "generated_at": "2026-06-08T00:27:08.774888-04:00",
+  "generated_at": "2026-06-08T07:06:31.610177-04:00",
   "ticker_news": {
-    "HOOD": [
+    "DELL": [
       {
-        "id": "d627c4e845dce6ee",
+        "id": "20cbcbc3535f9d0e",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HOOD",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "SpaceX IPO Now Accessible Via Crypto Exchange Bybit's Tokenized Offering, But Here's What You Should Know",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53049901/spacex-ipo-accessible-via-bybit-tokenized-offering-what-to-know",
-        "published_at": "2026-06-08T03:12:05+00:00",
-        "type": "rumor",
+        "title": "Why Is AMD Stock Gaining Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53052928/why-is-amd-stock-gaining-monday",
+        "published_at": "2026-06-08T10:46:48+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "spacex_ipo_bybit_tokenized_june_2026",
+        "dedup_group": "amd_ticker_mismatch_premarket",
+        "tickers_mentioned": [
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "20cbcbc3535f9d0e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Why Is AMD Stock Gaining Monday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53052928/why-is-amd-stock-gaining-monday",
+        "published_at": "2026-06-08T10:46:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "amd_ticker_mismatch_premarket",
+        "tickers_mentioned": [
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "870051100f8db71d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron's Drop Has Smart Money Circling Again",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53052478/microns-drop-has-smart-money-circling-again",
+        "published_at": "2026-06-08T10:28:00+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "mu_smart_money_accumulation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "COIN": [
+      {
+        "id": "2d7357f2a3e923dc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Brian Armstrong Says AI Costs Are Crashing\u2014But One Constraint Could Hold The Industry Back",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53051077/brian-armstrong-says-ai-costs-are-crashing-but-one-constraint-could-hold-the-industry-back",
+        "published_at": "2026-06-08T07:47:15+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvda_armstrong_ai_costs_crashing",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "NVDA": [
       {
-        "id": "77974ed94038cdcf",
+        "id": "2d7357f2a3e923dc",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nvidia Expands AI Empire In South Korea With SK Hynix, SK Telecom And Naver Deals As Jensen Huang Locks In Critical Memory Supply",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53049941/nvidia-expands-ai-empire-south-korea-sk-hynix-sk-telecom-naver-deals",
-        "published_at": "2026-06-08T03:43:46+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "nvidia_memory_chip_deal_sk_hynix_samsung_june_2026",
-        "tickers_mentioned": [
-          "SKM",
-          "SK Telecom",
-          "NAVER"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "SKM": [
+        "title": "Brian Armstrong Says AI Costs Are Crashing\u2014But One Constraint Could Hold The Industry Back",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53051077/brian-armstrong-says-ai-costs-are-crashing-but-one-constraint-could-hold-the-industry-back",
+        "published_at": "2026-06-08T07:47:15+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvda_armstrong_ai_costs_crashing",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
       {
-        "id": "77974ed94038cdcf",
+        "id": "4fb5a16a7e8d73e6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SKM",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Nvidia Expands AI Empire In South Korea With SK Hynix, SK Telecom And Naver Deals As Jensen Huang Locks In Critical Memory Supply",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53049941/nvidia-expands-ai-empire-south-korea-sk-hynix-sk-telecom-naver-deals",
-        "published_at": "2026-06-08T03:43:46+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "nvidia_memory_chip_deal_sk_hynix_samsung_june_2026",
+        "title": "Why Google May Have Handed SpaceX The Perfect IPO Catalyst",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53051827/why-google-may-have-handed-spacex-the-perfect-ipo-catalyst",
+        "published_at": "2026-06-08T09:42:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "google_spacex_ipo_catalyst_speculation",
         "tickers_mentioned": [
-          "SKM",
-          "SK Telecom",
-          "NAVER"
+          "GOOGL"
         ],
-        "route_to_synthesis": true
-      }
-    ],
-    "LULU": [
+        "route_to_synthesis": false
+      },
       {
-        "id": "04144318bebddf7a",
+        "id": "59e01e81488120ae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "LULU",
+        "ticker": "NVDA",
         "scope": "ticker",
-        "title": "Michael Burry Sees Echoes Of His 2019 GameStop Bet In Lululemon: 'The Last Time I Owned A Stock As Hated...'",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53049833/michael-burry-sees-echoes-of-gamestop-bet-in-lululemon",
-        "published_at": "2026-06-08T02:27:36+00:00",
+        "title": "Stock Market Today: Dow Jones Futures Fall, S&P 500 Gains As Israel, Iran Exchange Missile Strikes\u2014SK Telecom, Nebius, AMD In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53051690/stock-market-today-dow-jones-futures-fall-sp-500-gains-as-israel-iran-exchange-missile-strikes-sk-telecom-nebius-amd-in-focus",
+        "published_at": "2026-06-08T09:32:25+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "israel_iran_missile_exchange_jun2026",
+        "tickers_mentioned": [
+          "SKM",
+          "NEBIUS",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8a442c2726901819",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Eli Lilly Could Become The World's Top AI Firm? Jordi Visser Has Reasons To Believe Mounjaro Maker Could Become The Largest Company Globally",
+        "url": "https://www.benzinga.com/news/health-care/26/06/53051131/eli-lilly-could-become-the-worlds-top-ai-firm-jordi-visser-has-reasons-to-believe-mounjaro-maker-could-become-the-largest-company-globally",
+        "published_at": "2026-06-08T08:02:26+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "michael_burry_lululemon_analysis_june_2026",
+        "dedup_group": "lly_eli_lilly_jordi_visser_ai_thesis",
+        "tickers_mentioned": [
+          "LLY"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "870051100f8db71d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Micron's Drop Has Smart Money Circling Again",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53052478/microns-drop-has-smart-money-circling-again",
+        "published_at": "2026-06-08T10:28:00+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "mu_smart_money_accumulation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "FCEL": [
+      {
+        "id": "3702656dcb8d38ad",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "Top Wall Street Forecasters Revamp FuelCell Energy Expectations Ahead Of Q2 Earnings",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53051299/top-wall-street-forecasters-revamp-fuelcell-energy-expectations-ahead-of-q2-earnings",
+        "published_at": "2026-06-08T08:41:13+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "fcel_analyst_q2_preview",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SOC": [
+    "MRVL": [
       {
-        "id": "72bc282450855289",
+        "id": "a9eef8a7aa517124",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SOC",
+        "ticker": "MRVL",
         "scope": "ticker",
-        "title": "Gavin Newsom Says Trump 'Illegally' Revived Offshore Drilling\u2014Then Gas Prices Went Up",
-        "url": "https://www.benzinga.com/news/politics/26/06/53049995/gavin-newsom-says-trump-illegally-revived-offshore-drilling-then-gas-prices-went-up",
-        "published_at": "2026-06-08T04:20:30+00:00",
+        "title": "Why Marvell Technology Shares Are Trading Higher By 7%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53052146/why-marvell-technology-shares-are-trading-higher-by-7-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-08T10:05:30+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "mrvl_7pct_premarket_gain",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NBIS": [
+      {
+        "id": "59e01e81488120ae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones Futures Fall, S&P 500 Gains As Israel, Iran Exchange Missile Strikes\u2014SK Telecom, Nebius, AMD In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53051690/stock-market-today-dow-jones-futures-fall-sp-500-gains-as-israel-iran-exchange-missile-strikes-sk-telecom-nebius-amd-in-focus",
+        "published_at": "2026-06-08T09:32:25+00:00",
         "type": "macro_geopol",
         "impact": "medium",
-        "dedup_group": "trump_offshore_drilling_newsom_gas_prices_june_2026",
+        "dedup_group": "israel_iran_missile_exchange_jun2026",
+        "tickers_mentioned": [
+          "SKM",
+          "NEBIUS",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SKM": [
+      {
+        "id": "59e01e81488120ae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SKM",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones Futures Fall, S&P 500 Gains As Israel, Iran Exchange Missile Strikes\u2014SK Telecom, Nebius, AMD In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53051690/stock-market-today-dow-jones-futures-fall-sp-500-gains-as-israel-iran-exchange-missile-strikes-sk-telecom-nebius-amd-in-focus",
+        "published_at": "2026-06-08T09:32:25+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "israel_iran_missile_exchange_jun2026",
+        "tickers_mentioned": [
+          "SKM",
+          "NEBIUS",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "1748c9108374fe1d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Michael Saylor Hints At Potential Bitcoin Acquisition As Strategy CEO Reaffirms Commitment To Grow BTC Holdings",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53051188/michael-saylor-hints-at-potential-bitcoin-acquisition-as-strategy-ceo-reaffirms-commitment-to-grow-btc-holdings",
+        "published_at": "2026-06-08T08:21:07+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "mstr_saylor_bitcoin_acquisition_hint",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RIVN": [
+      {
+        "id": "f1ea9f7c1b12220d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RIVN",
+        "scope": "ticker",
+        "title": "Rivian's Momentum Score Surges As EV Maker Says AI Could Make CarPlay, Android Auto Obsolete",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53052851/rivians-momentum-score-surges-as-ev-maker-says-ai-could-make-carplay-android-auto-obsolete",
+        "published_at": "2026-06-08T10:39:33+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "rivn_ai_carplay_android_auto_obsolete",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "TSLA": [
+      {
+        "id": "5293c152925edde5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Elon Musk's Tesla Reports 22% China Sales Growth, 68% Export Surge In May",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53052687/elon-musks-tesla-reports-22-china-sales-growth-68-export-surge-in-may",
+        "published_at": "2026-06-08T10:33:48+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tsla_may_2026_china_sales_growth",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "1ed6fb9730ce1eb6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Elon Musk Reacts To $30 Trillion SpaceX Valuation Call: 'Ron Is Smart'",
+        "url": "https://www.benzinga.com/markets/private-markets/26/06/53050576/elon-musk-reacts-to-30-trillion-spacex-valuation-call-ron-is-smart",
+        "published_at": "2026-06-08T06:50:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "elon_spacex_30t_valuation_comment",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Oil spikes over 3% as Iran and Israel exchange direct missile strikes, raising Middle East war risk and potential supply disruption through the Strait of Hormuz.",
-      "primary_drivers": [
-        "Geopolitical risk premium added to crude prices",
-        "Threat to ~20% of global oil flows transiting Strait of Hormuz",
-        "Flight-to-safety into defense, gold, and US-domestic energy producers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with large upstream exposure; earnings leverage to Brent moves with limited Middle East asset risk relative to peers. Direct beneficiary of higher realized crude prices.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CVX",
-          "rationale": "Upstream-heavy integrated; every $5/bbl Brent move adds meaningful EPS. US/Kazakhstan/Permian production keeps cash flow geared to price spike with minimal Iran/Israel asset exposure.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Highest crude-price beta among US large-cap E&Ps due to Permian pure-play and leveraged balance sheet; classic spike trade vehicle (Buffett-owned, high retail/institutional flow magnet).",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Pure-play Permian producer with no international/Middle East exposure; high operating leverage to WTI. Trades almost as a call option on oil price spikes.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Maker of PAC-3, THAAD, and Javelin systems actively used by Israel and likely to see replenishment orders; direct revenue link to Middle East munitions consumption.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Produces Patriot interceptors and AMRAAM used in Israeli/regional air defense; missile defense expendables get drawn down in active exchanges, driving FMS replenishment orders.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Prime on Israel's Arrow-3 program partnership and supplier of long-range strike/ISR systems; direct beneficiary of elevated Middle East defense spending.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~20-25% of operating costs; a sustained crude spike compresses margins directly, and Delta lacks the fuel hedging cushion it once had.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Highest international/long-haul exposure among US carriers including Middle East routings (TLV, Dubai connections); double-hit from fuel costs and route disruption/diversions.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AAL",
-          "rationale": "Most leveraged balance sheet among legacy carriers makes earnings most sensitive to a fuel cost shock; unhedged exposure to spot jet fuel.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Domestic-focused but jet fuel is largest single cost; Southwest unwound most of its famous hedges, leaving margin fully exposed to crude spike.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Marine bunker fuel costs spike with crude; Carnival also faces itinerary disruption risk for Eastern Mediterranean/Red Sea cruises if conflict widens.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Jet fuel and diesel are major input costs for the express/ground network; oil spike directly compresses operating margin in a quarter already under pressure.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to crude; margin squeeze if oil sustains higher and downstream pricing lags.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "iran_israel_escalation_june_2026",
-      "source_news_ids": [
-        "c39008420b05e485"
-      ],
-      "headlines": [
-        "Oil prices spike over 3% as Iran and Israel trade strikes, escalating regional tensions"
-      ]
-    }
-  ]
+  "macro_events": []
 }
