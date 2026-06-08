@@ -1,443 +1,260 @@
 {
-  "generated_at": "2026-06-08T15:23:04.606843-04:00",
+  "generated_at": "2026-06-08T17:52:35.942542-04:00",
   "ticker_news": {
-    "DXCM": [
+    "MU": [
       {
-        "id": "a997c4d2ff596716",
+        "id": "a479648c75da737c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "DXCM",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Clinical Wins Boost Dexcom Growth Story In Type 2 Diabetes",
-        "url": "https://www.benzinga.com/news/health-care/26/06/53069798/clinical-wins-boost-dexcom-growth-story-in-type-2-diabetes",
-        "published_at": "2026-06-08T18:15:02+00:00",
-        "type": "product",
+        "title": "Nvidia: Why Jensen Huang's Buy The Sell-off Remark Is A Grounded Structural Argument",
+        "url": "https://www.benzinga.com/Opinion/26/06/53074015/nvidia-why-jensen-huangs-buy-the-sell-off-remark-is-a-grounded-structural-argument",
+        "published_at": "2026-06-08T20:25:58+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "nvidia_jensen_huang_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ebd719d4855f5248",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron And The Memory Trade Look Bulletproof: This Analyst Says A 5% Yield Cracks Them",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53072444/2-year-treasury-yield-5-percent-target-ai-chips-stocks-memory-micron-sandisk",
+        "published_at": "2026-06-08T19:47:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "memory_sector_yield_analyst_note",
+        "tickers_mentioned": [
+          "MRVL",
+          "MU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CLSK": [
+      {
+        "id": "8e3429b897ca9f4c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CLSK",
+        "scope": "ticker",
+        "title": "Cleanspark Stock Jumps After Chardan Raises Target",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53073274/cleanspark-stock-jumps-after-chardan-raises-target",
+        "published_at": "2026-06-08T20:08:08+00:00",
+        "type": "analyst",
         "impact": "medium",
-        "dedup_group": "dxcm_type2_diabetes_clinical_wins",
+        "dedup_group": "clsk_chardan_target_raise",
         "tickers_mentioned": [],
         "route_to_synthesis": true
       }
     ],
-    "CLF": [
+    "AAOI": [
       {
-        "id": "5049f87e9d7241af",
+        "id": "bccf9890e2561b8b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CLF",
+        "ticker": "AAOI",
         "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
+        "title": "Buy The Dip? Not So Fast. 6 Stocks Investors Ignored In Last Week's Chaos",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53072445/buy-the-dip-not-so-fast-6-stocks-investors-ignored-in-last-weeks-chaos",
+        "published_at": "2026-06-08T19:47:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "buy_dip_six_stocks_ignored",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "HSY": [
+    "DELL": [
       {
-        "id": "5049f87e9d7241af",
+        "id": "ebd719d4855f5248",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HSY",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "5049f87e9d7241af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "LRCX": [
-      {
-        "id": "5049f87e9d7241af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LRCX",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
+        "title": "Micron And The Memory Trade Look Bulletproof: This Analyst Says A 5% Yield Cracks Them",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53072444/2-year-treasury-yield-5-percent-target-ai-chips-stocks-memory-micron-sandisk",
+        "published_at": "2026-06-08T19:47:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "memory_sector_yield_analyst_note",
+        "tickers_mentioned": [
+          "MRVL",
+          "MU"
+        ],
         "route_to_synthesis": false
       }
     ],
     "MRVL": [
       {
-        "id": "5049f87e9d7241af",
+        "id": "ebd719d4855f5248",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MRVL",
         "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7aaf065ed3460f18",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRVL",
-        "scope": "ticker",
-        "title": "Nvidia CEO's Comments Trigger Buying In AI Stocks; High Hopes For Apple AI",
-        "url": "https://www.benzinga.com/Opinion/26/06/53068872/investors-listen-to-nvidia-ceo-and-buy-ai-stocks-after-the-selloff-high-hopes-for-apple-ai",
-        "published_at": "2026-06-08T17:52:16+00:00",
+        "title": "Micron And The Memory Trade Look Bulletproof: This Analyst Says A 5% Yield Cracks Them",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53072444/2-year-treasury-yield-5-percent-target-ai-chips-stocks-memory-micron-sandisk",
+        "published_at": "2026-06-08T19:47:30+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "nvidia_ceo_ai_stocks_sentiment",
+        "dedup_group": "memory_sector_yield_analyst_note",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL"
+          "MRVL",
+          "MU"
         ],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "SNDK": [
       {
-        "id": "5049f87e9d7241af",
+        "id": "ebd719d4855f5248",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7aaf065ed3460f18",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nvidia CEO's Comments Trigger Buying In AI Stocks; High Hopes For Apple AI",
-        "url": "https://www.benzinga.com/Opinion/26/06/53068872/investors-listen-to-nvidia-ceo-and-buy-ai-stocks-after-the-selloff-high-hopes-for-apple-ai",
-        "published_at": "2026-06-08T17:52:16+00:00",
+        "title": "Micron And The Memory Trade Look Bulletproof: This Analyst Says A 5% Yield Cracks Them",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53072444/2-year-treasury-yield-5-percent-target-ai-chips-stocks-memory-micron-sandisk",
+        "published_at": "2026-06-08T19:47:30+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "nvidia_ceo_ai_stocks_sentiment",
+        "dedup_group": "memory_sector_yield_analyst_note",
         "tickers_mentioned": [
-          "NVDA",
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "NWL": [
-      {
-        "id": "5049f87e9d7241af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NWL",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TEL": [
-      {
-        "id": "5049f87e9d7241af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TEL",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Rallies Over 2% On Iran-Israel Ceasefire: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53067229/nasdaq-100-rallies-intel-jumps-iran-ceasefire-stocks-markets-monday",
-        "published_at": "2026-06-08T17:13:10+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CIFR": [
-      {
-        "id": "561daa96b6879ce1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CIFR",
-        "scope": "ticker",
-        "title": "Why Is Cipher Digital Stock Surging On Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53067081/why-is-cipher-digital-stock-surging-on-monday",
-        "published_at": "2026-06-08T17:09:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cipher_digital_stock_move_inquiry",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SRAD": [
-      {
-        "id": "14fbabf452e88627",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SRAD",
-        "scope": "ticker",
-        "title": "Sportradar Stock Rises On Landmark Kalshi Prediction Market Deal",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53068534/sportradar-stock-rises-on-landmark-kalshi-prediction-market-deal",
-        "published_at": "2026-06-08T17:43:30+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "srad_kalshi_prediction_market_deal",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "TNGX": [
-      {
-        "id": "e0a6196f57f99e0e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TNGX",
-        "scope": "ticker",
-        "title": "12 Health Care Stocks Moving In Monday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/06/53066892/12-health-care-stocks-moving-in-mondays-intraday-session",
-        "published_at": "2026-06-08T17:06:11+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "healthcare_stocks_monday_session",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSLA": [
-      {
-        "id": "bd5c93a0d7a87233",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Elon Musk Net Worth Could Top $1 Trillion With SpaceX IPO: Make $100 Million A Day And It Would Take This Long To Catch Him",
-        "url": "https://www.benzinga.com/markets/ipos/26/06/53070716/elon-musk-net-worth-could-top-1-trillion-with-spacex-ipo-make-100-million-a-day-and-it-would-take-this-long-to-catch-him",
-        "published_at": "2026-06-08T18:43:59+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "elon_spacex_ipo_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NBIS": [
-      {
-        "id": "e5b782828208e7d2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NBIS",
-        "scope": "ticker",
-        "title": "Nebius Shares Rise Nearly 5% After Key Trading Signal",
-        "url": "https://www.benzinga.com/Opinion/26/06/53071464/nebius-shares-rise-nearly-5-percent-after-key-trading-signal",
-        "published_at": "2026-06-08T19:12:45+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nbis_trading_signal_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "GLW": [
-      {
-        "id": "3d9b566c5f1b252f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GLW",
-        "scope": "ticker",
-        "title": "Apple's AI Ambition Has A Picks-and-Shovels Trade \u2014  Here's Who Could Win",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53071109/apples-ai-ambition-has-a-picks-and-shovels-trade-heres-who-could-win",
-        "published_at": "2026-06-08T19:01:07+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "apple_ai_picks_shovels_analysis",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f3cae53a00821beb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GLW",
-        "scope": "ticker",
-        "title": "Corning Expands U.S. Manufacturing With Amazon Fiber Agreement",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53067279/corning-expands-u-s-manufacturing-with-amazon-fiber-agreement",
-        "published_at": "2026-06-08T17:14:20+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "glw_amazon_fiber_agreement_expansion",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "SWKS": [
-      {
-        "id": "3d9b566c5f1b252f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SWKS",
-        "scope": "ticker",
-        "title": "Apple's AI Ambition Has A Picks-and-Shovels Trade \u2014  Here's Who Could Win",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53071109/apples-ai-ambition-has-a-picks-and-shovels-trade-heres-who-could-win",
-        "published_at": "2026-06-08T19:01:07+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "apple_ai_picks_shovels_analysis",
-        "tickers_mentioned": [
-          "AAPL"
+          "MRVL",
+          "MU"
         ],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "fe8e4e4d94255095",
+        "id": "c1a7cedc59c203cb",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin's Slide Below $60,000 Delivers 80% Windfall For This ETF",
-        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53071070/bitcoin-slide-below-60000-delivers-80-percent-windfall-crcd-etf",
-        "published_at": "2026-06-08T19:00:22+00:00",
-        "type": "macro_commodity",
+        "title": "Michael Saylor Touts STRC Dividend Win\u2014Peter Schiff Calls It A Way To Prop Up Bitcoin",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53072137/michael-saylor-touts-strc-dividend-win-peter-schiff-calls-it-a-way-to-prop-up-bitcoin",
+        "published_at": "2026-06-08T19:35:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mstr_saylor_dividend_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CPB": [
+      {
+        "id": "095b28aa299e3037",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CPB",
+        "scope": "ticker",
+        "title": "Campbell's Warns First-Half Inflation Will Be 'Pretty High'",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/53067437/campbells-warns-first-half-inflation-will-be-pretty-high",
+        "published_at": "2026-06-08T17:17:50+00:00",
+        "type": "guidance",
         "impact": "medium",
-        "dedup_group": "bitcoin_price_slide_june_2026",
-        "tickers_mentioned": [
-          "MSTR"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "6b1861fde126606d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Strategy Acquires 1,550 Bitcoins, Senate Awaits Clarity Vote",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53066324/strategy-acquires-1550-bitcoins-senate-awaits-clarity-vote",
-        "published_at": "2026-06-08T16:51:00+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mstr_bitcoin_acquisition_june_2026",
+        "dedup_group": "cpb_h1_inflation_warning",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       }
     ],
-    "SNDK": [
+    "PL": [
       {
-        "id": "7aaf065ed3460f18",
+        "id": "49bf0f099787b296",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SNDK",
+        "ticker": "PL",
         "scope": "ticker",
-        "title": "Nvidia CEO's Comments Trigger Buying In AI Stocks; High Hopes For Apple AI",
-        "url": "https://www.benzinga.com/Opinion/26/06/53068872/investors-listen-to-nvidia-ceo-and-buy-ai-stocks-after-the-selloff-high-hopes-for-apple-ai",
-        "published_at": "2026-06-08T17:52:16+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvidia_ceo_ai_stocks_sentiment",
-        "tickers_mentioned": [
-          "NVDA",
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "KEEL": [
-      {
-        "id": "e9a2333715efef64",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KEEL",
-        "scope": "ticker",
-        "title": "Keel Infrastructure Stock Is Powering Higher Today: What's Driving The Move?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53067781/keel-infrastructure-stock-is-powering-higher-today-whats-driving-the-move",
-        "published_at": "2026-06-08T17:26:51+00:00",
+        "title": "Planet Labs Stock Pauses Monday While Space Stocks Remain Volatile: What's Going On?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53073561/planet-labs-stock-pauses-monday-while-space-stocks-remain-volatile-whats-going-on",
+        "published_at": "2026-06-08T20:13:25+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "keel_stock_move_inquiry",
+        "dedup_group": "pl_space_sector_volatility",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NVTS": [
-      {
-        "id": "9b5d0b5b675873bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NVTS",
-        "scope": "ticker",
-        "title": "If You Invested $1000 In Navitas Semiconductor Stock 5 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53063901/if-you-invested-1000-in-navitas-semiconductor-stock-5-years-ago-you-would-have-this-much-today",
-        "published_at": "2026-06-08T15:45:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvts_retrospective_price_article",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SAIL": [
-      {
-        "id": "e5d40796ab2670af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "Earnings Volatility Watch: Oracle, Adobe And 8 Stocks Set For Big Swings This Week",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53060856/earnings-volatility-watch-oracle-adobe-implied-moves-week-june-8-13-2026",
-        "published_at": "2026-06-08T14:37:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "earnings_volatility_watch_week_preview",
-        "tickers_mentioned": [
-          "ORCL",
-          "ADBE"
-        ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "CPI expected to print above 4% this week, putting pressure on new Fed Chair Warsh to demonstrate hawkish inflation-fighting credibility to the bond market.",
+      "primary_drivers": [
+        "Higher-for-longer rates / rising real yields",
+        "Hawkish Fed credibility premium (curve bear-flattening risk)",
+        "Inflation hedge demand from persistent >4% CPI"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Energy majors are a classic CPI-print hedge; oil-linked revenues and reserve values reprice with sustained inflation, and the sector outperforms when real yields rise alongside commodity prices.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same inflation-hedge channel as XOM; integrated oil names see earnings revisions higher when CPI surprises hot and the Fed is forced to acknowledge sticky energy/services inflation.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NEM",
+          "rationale": "Gold miner with high operating leverage to bullion; a hot CPI print combined with concerns about Fed credibility (Warsh unproven) historically drives gold bid as an inflation/policy-error hedge.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Largest US money-center bank with significant asset-sensitive NII; bear-flattening from a hawkish Warsh response lifts front-end yields where JPM's loan book reprices, boosting NIM guidance.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Direct beneficiary of higher short rates via client cash sweep economics; a Fed forced to stay restrictive removes the cash-sorting headwind and lifts net interest revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MOH",
+          "rationale": "Health insurers and other low-duration cash-generative defensives with pricing power hold up better than long-duration growth when discount rates spike on hot CPI.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DHI",
+          "rationale": "Largest US homebuilder, highly rate-sensitive; mortgage buydown costs balloon when the Fed signals higher-for-longer, compressing gross margins in a 4%+ CPI regime.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income \u2014 long-duration triple-net REIT with bond-proxy characteristics; rising real yields directly compress the cap-rate spread and the equity trades inversely to 10Y.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple growth name where valuation rests on out-year cash flows; a hawkish Warsh pivot crushes the long-duration equity premium that supports the multiple.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "inflation_cpi_4pct_fed_response",
+      "source_news_ids": [
+        "aa05bb9a197cadb1"
+      ],
+      "headlines": [
+        "Inflation could top 4% this week. The bond market wants Fed Chair Warsh to prove he\u2019ll fight it."
+      ]
+    }
+  ]
 }
