@@ -27,6 +27,11 @@
         >Scan</a
       >
       <a
+        href="/predictions"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/predictions') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >🔮 Predict</a
+      >
+      <a
         href="/macro"
         class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/macro') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Macro</a

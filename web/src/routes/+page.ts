@@ -1,14 +1,15 @@
-import { loadAll, loadTrumpPulse, loadSerenity } from '$lib/api';
+import { loadAll, loadTrumpPulse, loadSerenity, loadPredictions } from '$lib/api';
 import type { PageLoad } from './$types';
 
 export const ssr = false;
 export const prerender = false;
 
 export const load: PageLoad = async ({ fetch }) => {
-  const [all, pulse, serenity] = await Promise.all([
+  const [all, pulse, serenity, predictions] = await Promise.all([
     loadAll(fetch),
     loadTrumpPulse(fetch),
-    loadSerenity(fetch)
+    loadSerenity(fetch),
+    loadPredictions(fetch)
   ]);
-  return { ...all, pulse, serenity };
+  return { ...all, pulse, serenity, predictions };
 };

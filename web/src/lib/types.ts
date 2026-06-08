@@ -175,6 +175,59 @@ export interface NewsData {
   macro_events: MacroEvent[];
 }
 
+// predictions.json — the ripple tier's forward second-order calls. Keep in sync
+// with scanner/llm/ripple.py + scanner/render.write_predictions().
+export type PredictionDirection = 'bullish' | 'bearish';
+// Where the live tape sits vs. the prediction. 'no' = hasn't moved our way yet
+// (the actionable "before" call we push); 'contradicted' = moved hard against.
+export type PricedIn = 'no' | 'partial' | 'yes' | 'contradicted';
+
+export interface RipplePrediction {
+  ticker: string;
+  direction: PredictionDirection;
+  rationale: string;
+  confidence: Confidence;
+  horizon: Horizon;
+  priced_in: PricedIn;
+  pct_1d: number | null;
+  rel_volume: number | null;
+  trigger_ticker: string;
+  event_summary: string;
+  news_url: string | null;
+  source_news_ids: string[];
+}
+
+export interface RippleEvent {
+  event_summary: string;
+  primary_drivers: string[];
+  beneficiaries: BeneficiaryEntry[];
+  losers: BeneficiaryEntry[];
+  trigger_ticker: string;
+  source_news_ids: string[];
+  headlines: string[];
+  news_url: string | null;
+}
+
+export interface PredictionsData {
+  generated_at: string;
+  event_count: number;
+  prediction_count: number;
+  not_yet_priced_in: number;
+  events: RippleEvent[];
+  predictions: RipplePrediction[];
+}
+
+// prediction_performance.json — keep in sync with
+// scanner/performance.compile_prediction_stats(). Two groupings: does the
+// model's confidence mean anything, and do the not-yet-moved calls actually pay?
+export interface PredictionPerformance {
+  generated_at: string;
+  window_days: number;
+  total_predictions: number;
+  by_confidence: Record<string, AlertTypeStats>;
+  by_priced_in: Record<string, AlertTypeStats>;
+}
+
 export interface Watchlist {
   tickers: string[];
 }

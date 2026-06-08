@@ -7,7 +7,7 @@ This shows you *who benefits* — with the mechanism, the confidence, and the
 horizon — alongside the price action that triggered the alert.
 
 ```
-ticker scan → routing → news ingest → classify → synthesize → macro reasoning
+ticker scan → routing → news ingest → classify → synthesize → macro + ripple
                                                                       ↓
                                                            alerts + dashboard
 ```
@@ -28,8 +28,8 @@ Every scan, the pipeline:
 1. Pulls daily bars + intraday snapshots for ~2,500 tickers (S&P 500 + NASDAQ-100 + NYSE/NASDAQ commons) from Alpaca
 2. Computes technicals (RSI-14, MACD crossover, 1d/5d change, relative volume, sparkline)
 3. Routes ~50–200 tickers to news ingest based on price/volume signals
-4. Classifies news (Claude Haiku) → synthesizes per-ticker explanations (Claude Sonnet) → reasons about macro events (Claude Opus)
-5. Builds tiered alerts (catalyst > macro > watchlist > delta) with per-ticker throttling
+4. Classifies news (Claude Haiku) → synthesizes per-ticker explanations (Claude Sonnet) → reasons about macro events + forward "ripple" predictions (Claude Opus)
+5. Builds tiered alerts (catalyst > ripple > macro > watchlist > delta) with per-ticker throttling
 6. Delivers to Feishu webhook + commits scan/news/deltas JSON for the web dashboard
 
 ## Architecture
@@ -42,15 +42,19 @@ Every scan, the pipeline:
 | 1 | Haiku 4.5 | Classify news (type, impact, dedup, route flag) — batches of 15 | 100 items |
 | 2 | Sonnet 4.6 | Per-ticker synthesis (verdict, confidence, supporting news) — 8 concurrent | 20 syntheses |
 | 3 | Opus 4.7 | Macro reasoning (beneficiaries, losers, mechanisms) — 4 concurrent | 5 events |
+| 3b | Opus 4.7 | Ripple: forward second-order predictions from a popular stock's news — who *else* moves, before they do — 4 concurrent | 4 events |
 
 Tier-0 routing is the cost lever: rules filter 2,500 tickers down to ~100 before any LLM cost. Each tier uses tool-use for structured output, prompt caching to drop input cost ~90% on repeat system prompts, and full audit logs to `data/audit/YYYY-MM-DD/`.
 
 **Macro reasoning** is the differentiator. Opus is constrained to the universe (drops unknown tickers) and required to give explicit causal links — *"tariff on Chinese solar → First Solar margin expansion"* — not vibes. Confidence levels (high/medium/low) and horizons (intraday/days/weeks/months) are part of the schema.
 
+**Ripple prediction** runs that reasoning *forward*. The synthesis tier only reads a ticker's own news, so a deal about NVDA/GOOGL that names INTC as backup foundry never reaches INTC — you find out late. The ripple tier closes that: when a popular stock's high-impact news (deal, earnings, guidance) breaks, Opus maps which *other* names it helps or hurts, then cross-references the live tape to flag the ones that **haven't priced it in yet** — a bullish/bearish call surfaced *before* the move, not an explanation after. Predictions are accountable: each is logged and scored against its 1/3/5-day outcome (`/predictions`, `prediction_performance.json`). Cost-bounded by design — only popular triggers (S&P 500 / NDX / watchlist), deduped per story, hard-capped at 4 events/scan.
+
 **Delta tracking** persists prior top-20 movers, detects rank jumps (≥15 positions), new entrants, and momentum acceleration — surfacing early movers before they become headlines.
 
 **Alert tiers:**
 - **A0 catalyst**: synthesis verdict says news explains the move + ticker also has a big move/unusual volume — always fires
+- **A1 ripple**: a popular stock's news predicts a second-order move on *another* name that hasn't happened yet (the not-yet-priced-in calls only) — always fires
 - **A threshold**: watchlist (±1.5%+), big move (±3%+ RTH / ±5%+ AH with 2× volume) — capped at 5/scan
 - **B delta**: new top-20, rank jumps, momentum acceleration — capped at 5/scan
 - **C macro**: high/medium-impact macro events with beneficiary lists — always fires
@@ -69,6 +73,7 @@ Per-ticker/type throttling (2-hour cooldown) prevents alert spam.
 
 - `/` — recommended picks (LLM-scored, with conviction), scan filters, top-20 movers, fresh-news tickers, watchlist, full sortable table — see *Dashboard design* below
 - `/t/[ticker]` — per-ticker drill-down (full technicals, all news, synthesis). The **指标解读 / What the signals say** block turns each live number into a plain-language bull/bear read (VWAP, day-range position, RVOL, RSI, MACD, gap, ATR volatility) so the page interprets, not just reports. Reads degrade gracefully: VWAP/range/gap only appear in a live session; RSI/MACD/RVOL/ATR always do. Logic in `web/src/lib/reads.ts`.
+- `/predictions` — 🔮 **Ahead of the move**: the ripple tier's forward second-order calls (a popular stock's news → who *else* moves), grouped not-yet-priced-in / already-moving / tape-disagrees, with the not-yet-priced-in 5-day hit rate up top. A condensed version surfaces on `/` between Recommended and Top 20.
 - `/macro` — macro events with beneficiaries/losers
 - `/weekly` — Saturday roll-up (top movers, catalysts, rank jumps by day)
 - `/political` — disclosed Congress trades (Senate + House STOCK-Act PTRs from FMP; requires `FMP_API_KEY`). Cross-references the day's scan: tickers also in the watchlist or moving ≥ 3% get highlighted.

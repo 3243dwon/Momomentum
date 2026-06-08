@@ -24,6 +24,8 @@ PERFORMANCE_FILE = config.DATA_DIR / "performance.json"  # aggregates only; web 
 RECS_LOG = config.CACHE_DIR / "recommendations_log.jsonl"
 RECOMMENDATION_PERFORMANCE_FILE = config.DATA_DIR / "recommendation_performance.json"
 DESK_PERFORMANCE_FILE = config.DATA_DIR / "desk_performance.json"
+PREDICTIONS_LOG = config.CACHE_DIR / "predictions_log.jsonl"
+PREDICTION_PERFORMANCE_FILE = config.DATA_DIR / "prediction_performance.json"
 
 RETENTION_DAYS = 45
 HORIZONS = [1, 3, 5]  # days
@@ -213,6 +215,13 @@ def evaluate_pending_recommendations(alpaca_client, now: datetime) -> None:
     pick → −return is a hit)."""
     _evaluate_log(alpaca_client, now, RECS_LOG, "price_at_pick",
                   lambda e: 1 if e.get("direction") == "long" else -1)
+
+
+def evaluate_pending_predictions(alpaca_client, now: datetime) -> None:
+    """Evaluate ripple-prediction outcomes (bullish call → +return is a hit;
+    bearish call → −return is a hit), reusing the generic horizon evaluator."""
+    _evaluate_log(alpaca_client, now, PREDICTIONS_LOG, "price_at_prediction",
+                  lambda e: 1 if e.get("direction") == "bullish" else -1)
 
 
 def compile_stats(now: datetime) -> dict:
@@ -436,4 +445,98 @@ def compile_desk_stats(now: datetime) -> dict:
     }
     DESK_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
     log.info("Desk stats: %d picks with verdicts in 30d; take−pass edge %s", len(recent), edge)
+    return out
+
+
+def log_predictions(predictions: list[dict], rows: list[dict], now: datetime,
+                    regime: dict | None = None) -> None:
+    """Append this scan's ripple predictions to the log with their entry price,
+    so 1/3/5-day outcomes can be evaluated later. The predicted name must be in
+    the scan (so we have a real price anchor); ripple targets are universe-
+    constrained, so popular names are present even when they've barely moved.
+
+    `priced_in` and `confidence` are stored so compile_prediction_stats can
+    isolate the honest headline: how do the NOT-yet-priced-in calls actually do?
+    """
+    by_ticker = {r["ticker"]: r for r in rows}
+    new_entries = []
+    for p in predictions:
+        t = p.get("ticker")
+        row = by_ticker.get(t)
+        if not row or row.get("price") is None:
+            continue
+        entry = {
+            "ts": now.astimezone(timezone.utc).isoformat(),
+            "ticker": t,
+            "type": "ripple",
+            "direction": p.get("direction", "bullish"),
+            "confidence": p.get("confidence", "low"),
+            "priced_in": p.get("priced_in", "no"),
+            "horizon": p.get("horizon"),
+            "trigger_ticker": p.get("trigger_ticker"),
+            "price_at_prediction": row["price"],
+            "evaluations": {},
+        }
+        if regime:
+            entry["regime"] = regime
+        new_entries.append(entry)
+    if new_entries:
+        with open(PREDICTIONS_LOG, "a") as f:
+            for e in new_entries:
+                f.write(json.dumps(e) + "\n")
+        log.info("Logged %d predictions for performance tracking", len(new_entries))
+
+
+def compile_prediction_stats(now: datetime) -> dict:
+    """Roll up the last 30 days of ripple predictions into hit-rate + avg-return,
+    split two ways: by confidence (does the model's confidence mean anything?)
+    and by priced_in (do the not-yet-moved 'before' calls actually pay?)."""
+    entries = _read_entries(PREDICTIONS_LOG)
+    cutoff = (now - timedelta(days=30)).isoformat()
+    recent = [e for e in entries if e["ts"] >= cutoff]
+
+    def _new() -> dict:
+        return {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}}
+
+    def _add(bucketmap: dict, key: str, e: dict) -> None:
+        b = bucketmap.setdefault(key, _new())
+        b["count"] += 1
+        for h in HORIZONS:
+            ev = e.get("evaluations", {}).get(f"{h}d")
+            if not ev:
+                continue
+            b["horizons"][h]["n"] += 1
+            if ev["signed_return_pct"] > 0:
+                b["horizons"][h]["hits"] += 1
+            b["horizons"][h]["returns"].append(ev["signed_return_pct"])
+
+    by_confidence: dict[str, dict] = {}
+    by_priced_in: dict[str, dict] = {}
+    for e in recent:
+        _add(by_confidence, e.get("confidence", "low"), e)
+        _add(by_priced_in, e.get("priced_in", "no"), e)
+
+    def _finalize(bucketmap: dict) -> dict:
+        out: dict = {}
+        for key, stats in bucketmap.items():
+            horizons = {}
+            for h, hs in stats["horizons"].items():
+                n = hs["n"]
+                horizons[f"{h}d"] = {
+                    "evaluated": n,
+                    "hit_rate": round(hs["hits"] / n, 3) if n else None,
+                    "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
+                }
+            out[key] = {"count": stats["count"], "horizons": horizons}
+        return out
+
+    out = {
+        "generated_at": now.isoformat(),
+        "window_days": 30,
+        "total_predictions": len(recent),
+        "by_confidence": _finalize(by_confidence),
+        "by_priced_in": _finalize(by_priced_in),
+    }
+    PREDICTION_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
+    log.info("Prediction stats: %d predictions in 30d", len(recent))
     return out

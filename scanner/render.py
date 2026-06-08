@@ -12,6 +12,7 @@ log = logging.getLogger(__name__)
 
 SCAN_FILE = config.DATA_DIR / "scan.json"
 NEWS_FILE = config.DATA_DIR / "news.json"
+PREDICTIONS_FILE = config.DATA_DIR / "predictions.json"
 
 
 def _tier_for(memberships: list[str]) -> str:
@@ -107,4 +108,29 @@ def write_news(
     log.info(
         "Wrote news.json: %d tickers with news, %d macro analyses",
         len(ticker_news), len(macro_analyses),
+    )
+
+
+def write_predictions(
+    events: list[dict],
+    predictions: list[dict],
+    now: datetime,
+) -> None:
+    """Write data/predictions.json — the ripple tier's forward second-order calls
+    (read by the /predictions page + the dashboard's 'Ahead of the move' section).
+    `predictions` is the flattened per-ticker list (freshest first); `events`
+    keeps the per-story analysis for the event view + audit."""
+    fresh = sum(1 for p in predictions if p.get("priced_in") == "no")
+    payload = {
+        "generated_at": now.isoformat(),
+        "event_count": len(events),
+        "prediction_count": len(predictions),
+        "not_yet_priced_in": fresh,
+        "events": events,
+        "predictions": predictions,
+    }
+    PREDICTIONS_FILE.write_text(json.dumps(payload, indent=2))
+    log.info(
+        "Wrote predictions.json: %d events → %d predictions (%d not yet priced in)",
+        len(events), len(predictions), fresh,
     )
