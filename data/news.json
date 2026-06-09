@@ -1,44 +1,121 @@
 {
-  "generated_at": "2026-06-08T23:59:07.308809-04:00",
+  "generated_at": "2026-06-09T03:58:40.670677-04:00",
   "ticker_news": {
-    "MSTR": [
+    "MU": [
       {
-        "id": "a6b8d261819bb901",
+        "id": "6daa9463f737d80c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP, Dogecoin Slide Even As Michael Saylor's Strategy Inc Resumes Buying BTC: Analyst Says 'Buy' The ETH Dip",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53077143/bitcoin-ethereum-xrp-dogecoin-slide-strategy-resumes-buying-btc-buy-eth-dip",
-        "published_at": "2026-06-09T01:48:49+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mstr_bitcoin_buying_crypto_slide",
+        "title": "Nasdaq Surges Over 200 Points On Iran-Israel Ceasefire: Greed Index Remains In 'Fear' Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/53078735/nasdaq-surges-over-200-points-on-iran-israel-ceasefire-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-09T07:52:41+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_israel_ceasefire_nasdaq_reaction_2026",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TNGX": [
-      {
-        "id": "006ac7d90c4b1bb1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TNGX",
-        "scope": "ticker",
-        "title": "Apple, SUNation Energy, Tango Therapeutics, Applied Digital And Cerebras Systems: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/news/26/06/53077108/apple-sunation-energy-tango-therapeutics-applied-digital-and-cerebras-systems-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-09T01:41:41+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tngx_investors_radar_roundup",
-        "tickers_mentioned": [
-          "AAPL",
-          "CDBS",
-          "CSAI"
-        ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Trump signals an imminent Iran deal within days and a reopening of the Strait of Hormuz, implying de-escalation of Middle East conflict and restoration of ~20% of global seaborne oil flow.",
+      "primary_drivers": [
+        "Collapse of Middle East war risk premium in crude oil",
+        "Restoration of Strait of Hormuz shipping flows (~20mbpd transit)",
+        "Risk-on rotation away from defense/safe-haven trades"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LUV",
+          "rationale": "Southwest is the most jet-fuel-sensitive US airline (no international hedge complexity, domestic-only, fuel ~30% of opex). A sharp drop in crude from Hormuz reopening directly expands margins.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Delta has heavy jet fuel exposure and runs its own Trainer refinery; lower crude collapses input costs and the crack spread normalization is a direct EPS tailwind.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "United's long-haul international network was most exposed to Mideast airspace reroutes and fuel surcharges; de-escalation restores routes and cuts fuel cost simultaneously.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Carnival's bunker fuel costs are a major opex line and Mediterranean/Red Sea itineraries have been disrupted; deal + Hormuz reopening hits both cost and revenue headwinds at once.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Dow's ethylene/petrochemical feedstock costs fall directly with naphtha/crude; a war-premium unwind expands chemical margins on a high-operating-leverage business.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Lower diesel and gasoline prices act as a consumer stimulus and cut Walmart's own trucking/last-mile cost; classic beneficiary of falling oil at the low-end consumer.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "ExxonMobil is the most liquid proxy for crude price; war premium unwind plus return of Iranian barrels to market (deal implies sanctions relief) directly compresses realized prices and refining cracks.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Occidental is a high-beta US shale name (Buffett-owned, Permian-heavy) with the strongest correlation to spot WTI; falls hardest on a war-premium collapse.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "APA has direct Egyptian/Suez-adjacent production and was a Mideast-tension beneficiary; deal removes both the geopolitical bid and the crude tailwind.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed has been bid on Mideast munitions demand (PAC-3, THAAD, JASSM replenishment from Israel/Gulf orders); a diplomatic resolution caps that re-order cycle narrative.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon benefits from Patriot/SM-series interceptor demand tied to active Mideast conflict; de-escalation removes the urgency premium baked into shares.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Northrop carries a defense risk-premium bid; broad defense sector unwind on peace headline, though backlog protects fundamentals (hence medium not high).",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "STNG",
+          "rationale": "Scorpio Tankers and product tanker rates spiked on Hormuz reroute/longer ton-miles; reopening collapses the rate premium as voyages shorten back to normal.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "trump_iran_deal_hormuz_2026",
+      "source_news_ids": [
+        "8fdc2f76346e7875"
+      ],
+      "headlines": [
+        "Trump says Iran deal could be reached in 'two or three days' and Strait of Hormuz will reopen 'immediately'"
+      ]
+    }
+  ]
 }
