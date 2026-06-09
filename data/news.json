@@ -1,20 +1,41 @@
 {
-  "generated_at": "2026-06-08T19:14:14.406499-04:00",
+  "generated_at": "2026-06-08T23:59:07.308809-04:00",
   "ticker_news": {
-    "STUB": [
+    "MSTR": [
       {
-        "id": "8ac3ec246348c661",
+        "id": "a6b8d261819bb901",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "STUB",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "New York Knicks Could Win First NBA Title In 53 Years: What That Means For Live Nation Stock",
-        "url": "https://www.benzinga.com/news/sports/26/06/53076144/new-york-knicks-could-win-first-nba-title-in-53-years-what-that-means-for-live-nation-stock",
-        "published_at": "2026-06-08T22:29:42+00:00",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin Slide Even As Michael Saylor's Strategy Inc Resumes Buying BTC: Analyst Says 'Buy' The ETH Dip",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53077143/bitcoin-ethereum-xrp-dogecoin-slide-strategy-resumes-buying-btc-buy-eth-dip",
+        "published_at": "2026-06-09T01:48:49+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "knicks_ticket_price_decline",
+        "dedup_group": "mstr_bitcoin_buying_crypto_slide",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TNGX": [
+      {
+        "id": "006ac7d90c4b1bb1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TNGX",
+        "scope": "ticker",
+        "title": "Apple, SUNation Energy, Tango Therapeutics, Applied Digital And Cerebras Systems: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/news/26/06/53077108/apple-sunation-energy-tango-therapeutics-applied-digital-and-cerebras-systems-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-09T01:41:41+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tngx_investors_radar_roundup",
+        "tickers_mentioned": [
+          "AAPL",
+          "CDBS",
+          "CSAI"
+        ],
         "route_to_synthesis": false
       }
     ]
