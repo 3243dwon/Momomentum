@@ -1,948 +1,159 @@
 {
-  "generated_at": "2026-06-09T14:10:30.736435-04:00",
+  "generated_at": "2026-06-09T17:01:51.930133-04:00",
   "ticker_news": {
-    "ASTS": [
+    "CSCO": [
       {
-        "id": "f440c74555b4ec92",
+        "id": "ec1ef5ec9442040a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ASTS",
+        "ticker": "CSCO",
         "scope": "ticker",
-        "title": "AST SpaceMobile Sets June 17 Launch Date For BlueBird Satellites",
-        "url": "https://www.benzinga.com/markets/large-cap/26/06/53098851/ast-spacemobile-sets-june-17-launch-date-for-bluebird-satellites",
-        "published_at": "2026-06-09T18:06:56+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "asts_bluebird_june17_launch",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "AAL": [
-      {
-        "id": "557bd73c3750e875",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AAL",
-        "scope": "ticker",
-        "title": "American Airlines Signs Largest Sustainability Deal With Google",
-        "url": "https://www.benzinga.com/markets/large-cap/26/06/53097898/american-airlines-signs-largest-sustainability-deal-with-google",
-        "published_at": "2026-06-09T17:39:53+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "aal_google_sustainability_deal",
-        "tickers_mentioned": [
-          "GOOGL"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "COHR": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COHR",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "DKNG": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DKNG",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ENPH": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "LITE": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LITE",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MRVL": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRVL",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b154d9b11141990c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRVL",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091303/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-09T15:15:33+00:00",
+        "title": "If You Invested $1000 In Cisco Systems Stock 5 Years Ago, You Would Have This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53104436/if-you-invested-1000-in-cisco-systems-stock-5-years-ago-you-would-have-this-much-today",
+        "published_at": "2026-06-09T21:00:47+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "whale_alerts_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "23edffed0d9b245f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRVL",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53097686/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T17:35:24+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_june9",
+        "dedup_group": "csco_historical_performance_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "IREN": [
       {
-        "id": "eff480bcfec5a017",
+        "id": "065db564152bdee4",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "IREN",
         "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b154d9b11141990c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091303/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-09T15:15:33+00:00",
+        "title": "IREN Stock Is Slipping As Investors Pulled Back From High Growth Names",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53100764/iren-stock-is-slipping-as-investors-pulled-back-from-high-growth-names",
+        "published_at": "2026-06-09T19:10:21+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "whale_alerts_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "dd3ceb17d37ec804",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53095242/tech-stocks-relief-rally-crumbles-soxl-amd-fall",
-        "published_at": "2026-06-09T16:41:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_rally_reversal_recap",
-        "tickers_mentioned": [
-          "AMD",
-          "SOXL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "23edffed0d9b245f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53097686/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T17:35:24+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_june9",
+        "dedup_group": "iren_stock_high_growth_pullback",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ORCL": [
+    "DELL": [
       {
-        "id": "eff480bcfec5a017",
+        "id": "243ebf76aab59b3a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f2ecc919c85033e0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Apple To Rally More Than 19%? Here Are 10 Top Analyst Forecasts For Tuesday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53085575/apple-to-rally-more-than-19-here-are-10-top-analyst-forecasts-for-tuesday",
-        "published_at": "2026-06-09T13:39:37+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "apple_analyst_forecast_roundup",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "953b2908629af105",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle Q4 Preview: Stock Up 50% Since April Lows, Market Expert Sees All-Time Highs Ahead",
-        "url": "https://www.benzinga.com/trading-ideas/previews/26/06/53098780/oracle-q4-preview-stock-up-50-since-april-lows-market-expert-sees-all-time-highs-ahead",
-        "published_at": "2026-06-09T18:04:56+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "orcl_q4_preview_analyst_bullish",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "f6c4c83be6cb8d68",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle's Cloud Could Accelerate To 94% Growth In Q4 As Capacity Ramps",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53092310/oracles-cloud-could-accelerate-to-94-growth-in-q4-as-capacity-ramps",
-        "published_at": "2026-06-09T15:34:53+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "orcl_cloud_94pct_growth_q4",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "569fc12a9f2b75d3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle Stock In Focus Ahead of Q4 Earnings \u2014 Four Consecutive EPS Beats In The Rearview",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53084819/oracle-stock-in-focus-ahead-of-q4-earnings-four-consecutive-eps-beats-in-the-rearview",
-        "published_at": "2026-06-09T13:20:05+00:00",
+        "title": "Dell Technologies Stock Is Tumbling Today: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53099756/dell-technologies-stock-is-tumbling-today-whats-driving-the-move",
+        "published_at": "2026-06-09T18:37:10+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "orcl_q4_earnings_preview",
+        "dedup_group": "dell_stock_tumble_june_2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SAIL": [
+    "IONQ": [
       {
-        "id": "eff480bcfec5a017",
+        "id": "73183be0980bc007",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SAIL",
+        "ticker": "IONQ",
         "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ee0c7a8e6a7ba205",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "Transcript: SailPoint Q1 2027 Earnings Conference Call",
-        "url": "https://www.benzinga.com/insights/news/26/06/53091354/transcript-sailpoint-q1-2027-earnings-conference-call",
-        "published_at": "2026-06-09T15:16:28+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "sail_q1_2027_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "5fb6dccc18e92357",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SAIL",
-        "scope": "ticker",
-        "title": "Earnings Scheduled For June 9, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/06/53091301/earnings-scheduled-for-june-9-2026",
-        "published_at": "2026-06-09T15:15:26+00:00",
-        "type": "earnings",
-        "impact": "low",
-        "dedup_group": "sail_q1_2027_earnings",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SMCI": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SMCI",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SN": [
-      {
-        "id": "eff480bcfec5a017",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SN",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Tumbles Over 3%, Marvell Crashes 12%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53097400/nasdaq-100-craters-marvell-sinks-ai-rally-at-risk-markets-tuesday",
-        "published_at": "2026-06-09T17:26:33+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "tech_sector_decline_june9",
-        "tickers_mentioned": [
-          "MRVL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "AAOI": [
-      {
-        "id": "704130fa1e8333ea",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AAOI",
-        "scope": "ticker",
-        "title": "Applied Optoelectronics Shares Are Sliding Tuesday: What's Driving The Action?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53095747/applied-optoelectronics-shares-are-sliding-tuesday-whats-driving-the-action",
-        "published_at": "2026-06-09T16:52:24+00:00",
+        "title": "Why Is IonQ Stock Falling On Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53099162/why-is-ionq-stock-falling-on-tuesday",
+        "published_at": "2026-06-09T18:18:29+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "aaoi_share_price_movement",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b154d9b11141990c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AAOI",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091303/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-09T15:15:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CRM": [
-      {
-        "id": "a1120f86ec33d5a2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRM",
-        "scope": "ticker",
-        "title": "Bill Ackman Sees 2000\u2011Style Blind Spot \u2014 And Microsoft, Meta, Amazon Are Caught In It",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53092704/bill-ackman-sees-2000%e2%80%91style-blind-spot-and-microsoft-meta-amazon-are-caught-in-it",
-        "published_at": "2026-06-09T15:41:38+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ackman_valuation_commentary",
-        "tickers_mentioned": [
-          "MSFT",
-          "META",
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WDAY": [
-      {
-        "id": "b154d9b11141990c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDAY",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091303/10-information-technology-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-09T15:15:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_routine",
+        "dedup_group": "ionq_stock_falling_tuesday",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "INTC": [
       {
-        "id": "dd3ceb17d37ec804",
+        "id": "6e9fdb6d17a3663c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53095242/tech-stocks-relief-rally-crumbles-soxl-amd-fall",
-        "published_at": "2026-06-09T16:41:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_rally_reversal_recap",
-        "tickers_mentioned": [
-          "AMD",
-          "SOXL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSLA": [
-      {
-        "id": "dd3ceb17d37ec804",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53095242/tech-stocks-relief-rally-crumbles-soxl-amd-fall",
-        "published_at": "2026-06-09T16:41:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_rally_reversal_recap",
-        "tickers_mentioned": [
-          "AMD",
-          "SOXL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "356c791d204a9308",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Tesla Stock Is Under Pressure Today: What's Going On?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53096132/tesla-stock-is-under-pressure-today-whats-going-on",
-        "published_at": "2026-06-09T16:59:32+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_price_action_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "4c966224934a71d0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Tesla Stock Wobbles As Elon Musk Lines Up The SpaceX IPO",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53093057/tesla-stock-wobbles-as-elon-musk-lines-up-the-spacex-ipo",
-        "published_at": "2026-06-09T15:49:10+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_speculation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "0d9ee31a023c93c4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Yikes! Elon Musk's Robotaxi Fleet Is Smaller Than Pepsi's Doritos Truck Fleet",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53092439/yikes-elon-musks-robotaxi-fleet-is-smaller-than-pepsis-doritos-truck-fleet",
-        "published_at": "2026-06-09T15:36:42+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_robotaxi_fleet_size_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "9cfb4987d5120f34",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "MANGOS Is The New Magnificent Seven \u2014 And Half Of It Hasn't Gone Public Yet",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53084730/mangos-the-new-magnificent-seven-and-half-of-it-hasnt-gone-public-yet",
-        "published_at": "2026-06-09T13:14:06+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mangos_growth_seven_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "FCEL": [
-      {
-        "id": "7b9ead9bd8f323e9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FCEL",
-        "scope": "ticker",
-        "title": "Crude Oil Falls Over 5%; US Trade Gap Narrows In April",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53094838/crude-oil-falls-over-5-us-trade-gap-narrows-in-april",
-        "published_at": "2026-06-09T16:30:52+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "us_trade_gap_narrows_april_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NOW": [
-      {
-        "id": "dd3ceb17d37ec804",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOW",
-        "scope": "ticker",
-        "title": "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53095242/tech-stocks-relief-rally-crumbles-soxl-amd-fall",
-        "published_at": "2026-06-09T16:41:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_rally_reversal_recap",
-        "tickers_mentioned": [
-          "AMD",
-          "SOXL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "cb2b9f206126fbc4",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOW",
-        "scope": "ticker",
-        "title": "ServiceNow Shares Are Sliding Tuesday: What's Going On?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53093385/servicenow-shares-are-sliding-tuesday-whats-going-on",
-        "published_at": "2026-06-09T15:56:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "now_market_movement_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "dd3ceb17d37ec804",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Tech Stocks' Relief Rally Crumbles: SOXL Craters 15%, AMD Sheds 6% As Recovery Fizzles",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53095242/tech-stocks-relief-rally-crumbles-soxl-amd-fall",
-        "published_at": "2026-06-09T16:41:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_rally_reversal_recap",
-        "tickers_mentioned": [
-          "AMD",
-          "SOXL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "fb31fab91653d73a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "What's Going On With Qualcomm Stock Tuesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53092030/whats-going-on-with-qualcomm-stock-tuesday-2",
-        "published_at": "2026-06-09T15:30:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "qcom_market_movement_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "FSLR": [
-      {
-        "id": "e6a7da609a83f159",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FSLR",
-        "scope": "ticker",
-        "title": "Stock Of The Day: Is This The Bottom For First Solar?",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53092636/stock-of-the-day-is-this-the-bottom-for-first-solar",
-        "published_at": "2026-06-09T15:40:24+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "fslr_market_analysis_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "EOSE": [
-      {
-        "id": "03cfdf2599351ced",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EOSE",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091304/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T15:15:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RCAT": [
-      {
-        "id": "03cfdf2599351ced",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RCAT",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091304/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T15:15:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "03cfdf2599351ced",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091304/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T15:15:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e5a09df3ce1760f5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53097694/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T17:35:29+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RUN": [
-      {
-        "id": "03cfdf2599351ced",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RUN",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53091304/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T15:15:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "KEEL": [
-      {
-        "id": "f155a4e4e1d1ff4f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KEEL",
-        "scope": "ticker",
-        "title": "Keel Infrastructure Stock Is Climbing Tuesday: What's Driving The Action?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53089762/keel-infrastructure-stock-is-climbing-tuesday-whats-driving-the-action",
-        "published_at": "2026-06-09T14:45:59+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "keel_price_action_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "INSM": [
-      {
-        "id": "f2ecc919c85033e0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INSM",
-        "scope": "ticker",
-        "title": "Apple To Rally More Than 19%? Here Are 10 Top Analyst Forecasts For Tuesday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53085575/apple-to-rally-more-than-19-here-are-10-top-analyst-forecasts-for-tuesday",
-        "published_at": "2026-06-09T13:39:37+00:00",
+        "title": "Bad News For Bulls: BTIG Nailed Tuesday's Nasdaq Selloff",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53098970/bad-news-for-bulls-btig-nailed-tuesdays-nasdaq-selloff",
+        "published_at": "2026-06-09T18:11:25+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "apple_analyst_forecast_roundup",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "KTOS": [
-      {
-        "id": "c0883b3d89901866",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KTOS",
-        "scope": "ticker",
-        "title": "What's Going On With Kratos Defense Stock On Tuesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53098619/whats-going-on-with-kratos-defense-stock-on-tuesday",
-        "published_at": "2026-06-09T17:59:13+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "ktos_price_action_recap",
+        "dedup_group": "mrvl_btig_nasdaq_selloff_call",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ONDS": [
+    "MRVL": [
       {
-        "id": "23edffed0d9b245f",
+        "id": "6e9fdb6d17a3663c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ONDS",
+        "ticker": "MRVL",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53097686/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T17:35:24+00:00",
+        "title": "Bad News For Bulls: BTIG Nailed Tuesday's Nasdaq Selloff",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53098970/bad-news-for-bulls-btig-nailed-tuesdays-nasdaq-selloff",
+        "published_at": "2026-06-09T18:11:25+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mrvl_btig_nasdaq_selloff_call",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "dfeda700faa566e8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Super Micro Computer Stock Trades Lower Amid Market Weakness",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53100029/super-micro-computer-stock-trades-lower-amid-market-weakness",
+        "published_at": "2026-06-09T18:45:22+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_june9",
+        "dedup_group": "smci_stock_market_weakness",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "2e9e76f67bf6d80d",
+        "id": "6df1f621b9ae64ff",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Peter Schiff: Owning MSTR Is 'The Worst Way' To Play Bitcoin",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53097590/peter-schiff-owning-mstr-is-the-worst-way-to-play-bitcoin",
-        "published_at": "2026-06-09T17:32:25+00:00",
+        "title": "'Avoid Crypto For The Summer': This Analyst Says Bitcoin, Ethereum, XRP Are No Good For Now",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53103959/avoid-crypto-for-the-summer-this-analyst-says-bitcoin-ethereum-xrp-are-no-good-for-now",
+        "published_at": "2026-06-09T20:40:15+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "mstr_schiff_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NOK": [
-      {
-        "id": "46023711ce1a63e5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOK",
-        "scope": "ticker",
-        "title": "What's Going On With Nokia Stock Today?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53096690/whats-going-on-with-nokia-stock-today-6",
-        "published_at": "2026-06-09T17:10:55+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nok_daily_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RIVN": [
-      {
-        "id": "08852ebea3ec6f55",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RIVN",
-        "scope": "ticker",
-        "title": "What's Going On With Rivian Stock Today?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53098914/whats-going-on-with-rivian-stock-today-3",
-        "published_at": "2026-06-09T18:08:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rivn_market_movement_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "VRT": [
-      {
-        "id": "e5a09df3ce1760f5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VRT",
-        "scope": "ticker",
-        "title": "8 Industrials Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53097694/8-industrials-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-09T17:35:29+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_whale_activity_june9",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PLTR": [
-      {
-        "id": "b86a0f07ea58884e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PLTR",
-        "scope": "ticker",
-        "title": "What's Going On With Palantir On Tuesday?",
-        "url": "https://www.benzinga.com/markets/large-cap/26/06/53088810/whats-going-on-with-palantir-on-tuesday-2",
-        "published_at": "2026-06-09T14:28:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "pltr_price_action_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RDDT": [
-      {
-        "id": "e5be261908f82fd1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RDDT",
-        "scope": "ticker",
-        "title": "Reddit Shares Are Climbing Tuesday: What's Driving The Action?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53088425/reddit-shares-are-climbing-tuesday-whats-driving-the-action",
-        "published_at": "2026-06-09T14:22:08+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rddt_price_action_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SRAD": [
-      {
-        "id": "440cba51e71264d8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SRAD",
-        "scope": "ticker",
-        "title": "Why Is Sportradar Stock Surging Tuesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53095921/why-is-sportradar-stock-surging-tuesday",
-        "published_at": "2026-06-09T16:54:36+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "srad_market_movement_june9",
+        "dedup_group": "mstr_crypto_summer_avoidance_analyst",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "A preview article ahead of Wednesday's May CPI release \u2014 no actual data, just expectations setting.",
+      "primary_drivers": [
+        "Pre-event positioning ahead of CPI print",
+        "No new information \u2014 preview only"
+      ],
+      "beneficiaries": [],
+      "losers": [],
+      "dedup_group": "may_2026_inflation_cpi_release_wednesday",
+      "source_news_ids": [
+        "97d0ba49df3be9fa"
+      ],
+      "headlines": [
+        "The May inflation numbers are due out Wednesday morning. Here's what to expect"
+      ]
+    }
+  ]
 }
