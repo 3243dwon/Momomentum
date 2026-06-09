@@ -1,121 +1,140 @@
 {
-  "generated_at": "2026-06-09T03:58:40.670677-04:00",
+  "generated_at": "2026-06-09T07:20:28.196171-04:00",
   "ticker_news": {
     "MU": [
       {
-        "id": "6daa9463f737d80c",
+        "id": "2e3cf2fada857fd3",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Nasdaq Surges Over 200 Points On Iran-Israel Ceasefire: Greed Index Remains In 'Fear' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53078735/nasdaq-surges-over-200-points-on-iran-israel-ceasefire-greed-index-remains-in-fear-zone",
-        "published_at": "2026-06-09T07:52:41+00:00",
-        "type": "macro_geopol",
+        "title": "Why Is Micron Stock Gaining Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53081015/why-is-micron-stock-gaining-tuesday",
+        "published_at": "2026-06-09T11:01:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mu_stock_gain_explanation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "042ea48e0f848b96",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53079165/sp500-june-9-open-up-or-down-polymarket-chip-stocks-iran-ceasefire",
+        "published_at": "2026-06-09T08:53:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_direction",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CSCO": [
+      {
+        "id": "718a417c90d41e32",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CSCO",
+        "scope": "ticker",
+        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
+        "published_at": "2026-06-09T10:10:47+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IONQ": [
+      {
+        "id": "718a417c90d41e32",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IONQ",
+        "scope": "ticker",
+        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
+        "published_at": "2026-06-09T10:10:47+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "IREN": [
+      {
+        "id": "718a417c90d41e32",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IREN",
+        "scope": "ticker",
+        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
+        "published_at": "2026-06-09T10:10:47+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "FLNC": [
+      {
+        "id": "07217745f8909722",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FLNC",
+        "scope": "ticker",
+        "title": "Court Blocks IRS Effort To Make Renewable Energy Tax Credits Harder To Claim",
+        "url": "https://www.benzinga.com/news/legal/26/06/53079051/court-blocks-irs-effort-to-make-renewable-energy-tax-credits-harder-to-claim",
+        "published_at": "2026-06-09T08:34:10+00:00",
+        "type": "litigation",
         "impact": "medium",
-        "dedup_group": "iran_israel_ceasefire_nasdaq_reaction_2026",
+        "dedup_group": "court_blocks_irs_renewable_energy_credits",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NRGV": [
+      {
+        "id": "07217745f8909722",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NRGV",
+        "scope": "ticker",
+        "title": "Court Blocks IRS Effort To Make Renewable Energy Tax Credits Harder To Claim",
+        "url": "https://www.benzinga.com/news/legal/26/06/53079051/court-blocks-irs-effort-to-make-renewable-energy-tax-credits-harder-to-claim",
+        "published_at": "2026-06-09T08:34:10+00:00",
+        "type": "litigation",
+        "impact": "medium",
+        "dedup_group": "court_blocks_irs_renewable_energy_credits",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "eea54df85a54396e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Institutions Don't Mind Scooping Up Bitcoin At A Discount, Says Top Coinbase Exec",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53078974/institutions-dont-mind-scooping-up-bitcoin-at-a-discount-says-top-coinbase-exec",
+        "published_at": "2026-06-09T08:21:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "coinbase_exec_bitcoin_discount_comment",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Trump signals an imminent Iran deal within days and a reopening of the Strait of Hormuz, implying de-escalation of Middle East conflict and restoration of ~20% of global seaborne oil flow.",
-      "primary_drivers": [
-        "Collapse of Middle East war risk premium in crude oil",
-        "Restoration of Strait of Hormuz shipping flows (~20mbpd transit)",
-        "Risk-on rotation away from defense/safe-haven trades"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is the most jet-fuel-sensitive US airline (no international hedge complexity, domestic-only, fuel ~30% of opex). A sharp drop in crude from Hormuz reopening directly expands margins.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has heavy jet fuel exposure and runs its own Trainer refinery; lower crude collapses input costs and the crack spread normalization is a direct EPS tailwind.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United's long-haul international network was most exposed to Mideast airspace reroutes and fuel surcharges; de-escalation restores routes and cuts fuel cost simultaneously.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival's bunker fuel costs are a major opex line and Mediterranean/Red Sea itineraries have been disrupted; deal + Hormuz reopening hits both cost and revenue headwinds at once.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow's ethylene/petrochemical feedstock costs fall directly with naphtha/crude; a war-premium unwind expands chemical margins on a high-operating-leverage business.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Lower diesel and gasoline prices act as a consumer stimulus and cut Walmart's own trucking/last-mile cost; classic beneficiary of falling oil at the low-end consumer.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "ExxonMobil is the most liquid proxy for crude price; war premium unwind plus return of Iranian barrels to market (deal implies sanctions relief) directly compresses realized prices and refining cracks.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Occidental is a high-beta US shale name (Buffett-owned, Permian-heavy) with the strongest correlation to spot WTI; falls hardest on a war-premium collapse.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "APA has direct Egyptian/Suez-adjacent production and was a Mideast-tension beneficiary; deal removes both the geopolitical bid and the crude tailwind.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed has been bid on Mideast munitions demand (PAC-3, THAAD, JASSM replenishment from Israel/Gulf orders); a diplomatic resolution caps that re-order cycle narrative.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon benefits from Patriot/SM-series interceptor demand tied to active Mideast conflict; de-escalation removes the urgency premium baked into shares.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Northrop carries a defense risk-premium bid; broad defense sector unwind on peace headline, though backlog protects fundamentals (hence medium not high).",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Scorpio Tankers and product tanker rates spiked on Hormuz reroute/longer ton-miles; reopening collapses the rate premium as voyages shorten back to normal.",
-          "confidence": "high",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "trump_iran_deal_hormuz_2026",
-      "source_news_ids": [
-        "8fdc2f76346e7875"
-      ],
-      "headlines": [
-        "Trump says Iran deal could be reached in 'two or three days' and Strait of Hormuz will reopen 'immediately'"
-      ]
-    }
-  ]
+  "macro_events": []
 }
