@@ -1,140 +1,468 @@
 {
-  "generated_at": "2026-06-09T07:20:28.196171-04:00",
+  "generated_at": "2026-06-09T11:13:18.841655-04:00",
   "ticker_news": {
-    "MU": [
+    "DKNG": [
       {
-        "id": "2e3cf2fada857fd3",
+        "id": "cad5d50ec02966d5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "DKNG",
         "scope": "ticker",
-        "title": "Why Is Micron Stock Gaining Tuesday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53081015/why-is-micron-stock-gaining-tuesday",
-        "published_at": "2026-06-09T11:01:23+00:00",
-        "type": "other",
+        "title": "Why DraftKings Stock Is Surging On Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53090414/why-draftkings-stock-is-surging-on-tuesday",
+        "published_at": "2026-06-09T14:57:42+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "mu_stock_gain_explanation",
+        "dedup_group": "dkng_stock_surge_tuesday",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "042ea48e0f848b96",
+        "id": "179c4b9f99e2dac7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "DKNG",
         "scope": "ticker",
-        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53079165/sp500-june-9-open-up-or-down-polymarket-chip-stocks-iran-ceasefire",
-        "published_at": "2026-06-09T08:53:27+00:00",
+        "title": "JM Smucker, Nuvalent, FuelCell Energy And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53087455/jm-smucker-nuvalent-fuelcell-energy-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-09T14:08:13+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sp500_market_open_direction",
+        "dedup_group": "w_multi_ticker_move_june_9",
         "tickers_mentioned": [],
         "route_to_synthesis": false
+      }
+    ],
+    "AAOI": [
+      {
+        "id": "1e874335147a3822",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Micron's 750% Surge Just Got Upstaged By These Two Russell 2000 Stocks",
+        "url": "https://www.benzinga.com/news/26/06/53090106/micron-stock-rally-bloom-energy-applied-optoelectronics-russell-2000",
+        "published_at": "2026-06-09T14:52:35+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "russell_2000_small_cap_surge",
+        "tickers_mentioned": [
+          "AAOI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "9a3010f8179770a8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Micron, Marvell and Arm Stock Charts Flash The Same Warning \u2014 One Still Looks Cheap",
+        "url": "https://www.benzinga.com/news/26/06/53088864/micron-marvell-arm-most-stretched-semiconductor-stocks",
+        "published_at": "2026-06-09T14:29:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_micron_marvell_chart_comparison",
+        "tickers_mentioned": [
+          "MU",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "9a3010f8179770a8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Micron, Marvell and Arm Stock Charts Flash The Same Warning \u2014 One Still Looks Cheap",
+        "url": "https://www.benzinga.com/news/26/06/53088864/micron-marvell-arm-most-stretched-semiconductor-stocks",
+        "published_at": "2026-06-09T14:29:17+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "arm_micron_marvell_chart_comparison",
+        "tickers_mentioned": [
+          "MU",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "abb2da978f57d7ec",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "What's Going On With Marvell Stock Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53086509/whats-going-on-with-marvell-stock-tuesday-2",
+        "published_at": "2026-06-09T13:55:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mrvl_movement_june_9",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f2681a9566f6cf50",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Why Is Intel Stock Gaining Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53083824/why-is-intel-stock-gaining-tuesday",
+        "published_at": "2026-06-09T12:56:36+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sndk_intc_movement_june_9",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FCEL": [
+      {
+        "id": "95638a808110a495",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "These Analysts Boost Their Forecasts On FuelCell Energy Following Q2 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53088540/these-analysts-boost-their-forecasts-on-fuelcell-energy-following-q2-results",
+        "published_at": "2026-06-09T14:23:30+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "fcel_q2_2026_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "179c4b9f99e2dac7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "JM Smucker, Nuvalent, FuelCell Energy And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53087455/jm-smucker-nuvalent-fuelcell-energy-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-09T14:08:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "w_multi_ticker_move_june_9",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cf9a459916ca6f68",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "FuelCell Energy Stock Is Surging Tuesday: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53085465/fuelcell-energy-stock-is-surging-tuesday-whats-driving-the-move",
+        "published_at": "2026-06-09T13:37:57+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "fcel_q2_2026_earnings_beat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ],
     "CSCO": [
       {
-        "id": "718a417c90d41e32",
+        "id": "eccdba1bd9736494",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "CSCO",
         "scope": "ticker",
-        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
-        "published_at": "2026-06-09T10:10:47+00:00",
+        "title": "Scott Galloway Says Tesla, Nvidia, Broadcom Could Get Caught In The Crossfire Of The Space X IPO",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53087487/scott-galloway-says-tesla-nvidia-broadcom-could-get-caught-in-the-crossfire-of-the-space-x-ipo",
+        "published_at": "2026-06-09T14:08:38+00:00",
         "type": "rumor",
         "impact": "low",
-        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
-        "tickers_mentioned": [],
+        "dedup_group": "spacex_ipo_sector_rally",
+        "tickers_mentioned": [
+          "TSLA",
+          "NVDA",
+          "AVGO"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "IONQ": [
+    "W": [
       {
-        "id": "718a417c90d41e32",
+        "id": "179c4b9f99e2dac7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "IONQ",
+        "ticker": "W",
         "scope": "ticker",
-        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
-        "published_at": "2026-06-09T10:10:47+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "IREN": [
-      {
-        "id": "718a417c90d41e32",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IREN",
-        "scope": "ticker",
-        "title": "Martin Shkreli Accuses IONQ Of Making Wild Bitcoin Mining Claims: 'They Were Lying'",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53080042/martin-shkreli-accuses-ionq-of-making-wild-bitcoin-mining-claims-they-were-lying",
-        "published_at": "2026-06-09T10:10:47+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "ionq_shkreli_bitcoin_claims_accusation",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "FLNC": [
-      {
-        "id": "07217745f8909722",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLNC",
-        "scope": "ticker",
-        "title": "Court Blocks IRS Effort To Make Renewable Energy Tax Credits Harder To Claim",
-        "url": "https://www.benzinga.com/news/legal/26/06/53079051/court-blocks-irs-effort-to-make-renewable-energy-tax-credits-harder-to-claim",
-        "published_at": "2026-06-09T08:34:10+00:00",
-        "type": "litigation",
-        "impact": "medium",
-        "dedup_group": "court_blocks_irs_renewable_energy_credits",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NRGV": [
-      {
-        "id": "07217745f8909722",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NRGV",
-        "scope": "ticker",
-        "title": "Court Blocks IRS Effort To Make Renewable Energy Tax Credits Harder To Claim",
-        "url": "https://www.benzinga.com/news/legal/26/06/53079051/court-blocks-irs-effort-to-make-renewable-energy-tax-credits-harder-to-claim",
-        "published_at": "2026-06-09T08:34:10+00:00",
-        "type": "litigation",
-        "impact": "medium",
-        "dedup_group": "court_blocks_irs_renewable_energy_credits",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "COIN": [
-      {
-        "id": "eea54df85a54396e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Institutions Don't Mind Scooping Up Bitcoin At A Discount, Says Top Coinbase Exec",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53078974/institutions-dont-mind-scooping-up-bitcoin-at-a-discount-says-top-coinbase-exec",
-        "published_at": "2026-06-09T08:21:08+00:00",
+        "title": "JM Smucker, Nuvalent, FuelCell Energy And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53087455/jm-smucker-nuvalent-fuelcell-energy-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-09T14:08:13+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "coinbase_exec_bitcoin_discount_comment",
+        "dedup_group": "w_multi_ticker_move_june_9",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MGNI": [
+      {
+        "id": "4b2acc9b9aa69df3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MGNI",
+        "scope": "ticker",
+        "title": "This Brady Analyst Turns Bullish; Here Are Top 5 Upgrades For Tuesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/06/53085831/this-brady-analyst-turns-bullish-here-are-top-5-upgrades-for-tuesday",
+        "published_at": "2026-06-09T13:43:28+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mgni_analyst_upgrade_june_9",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "cfd8e466bd3d6097",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MGNI",
+        "scope": "ticker",
+        "title": "This Ingredion Analyst Is No Longer Bullish; Here Are Top 3 Downgrades For Tuesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/downgrades/26/06/53085692/this-ingredion-analyst-is-no-longer-bullish-here-are-top-3-downgrades-for-tuesday",
+        "published_at": "2026-06-09T13:41:37+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mgni_analyst_downgrade_june_9",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fddc954d0ad2d09c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MGNI",
+        "scope": "ticker",
+        "title": "This Grand Canyon Education Analyst Begins Coverage On A Bullish Note; Here Are Top 4 Initiations For Tuesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/53081274/this-grand-canyon-education-analyst-begins-coverage-on-a-bullish-note-here-are-top-4-initiations-for-tuesday",
+        "published_at": "2026-06-09T11:06:38+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mgni_analyst_initiation_june_9",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NBIS": [
+      {
+        "id": "15ef31adbfb6bbd4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "Nebius Launches AI Robotics Living Lab With NVIDIA Robotics Program",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53085008/nebius-launches-ai-robotics-living-lab-with-nvidia-robotics-program",
+        "published_at": "2026-06-09T13:30:40+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nbis_nvidia_robotics_partnership",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "a16c9d26905e44a6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Futures Gain As Trump Hints At 'Very Good' Iran Deal Within Days\u2014Amplitech Group, Vail Resorts In Focus (UPDATED)",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53079259/stock-market-today-sp-500-dow-jones-futures-gain-over-israel-iran-ceasefire-amplitech-group-vail-resorts-mission-produce-in-focus",
+        "published_at": "2026-06-09T13:01:55+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "trump_iran_deal_geopolitical_update",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "303256c4206b14ca",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin Consolidates At $62,000: Watch Q4 For The Bear Market Bottom, Top Exec Says",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53084043/bitcoin-consolidates-at-62000-watch-q4-for-the-bear-market-bottom-top-exec-says",
+        "published_at": "2026-06-09T13:00:40+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "btc_consolidation_q4_outlook",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "f2681a9566f6cf50",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Why Is Intel Stock Gaining Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53083824/why-is-intel-stock-gaining-tuesday",
+        "published_at": "2026-06-09T12:56:36+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sndk_intc_movement_june_9",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SAIL": [
+      {
+        "id": "040913bc91e7313d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SAIL",
+        "scope": "ticker",
+        "title": "Why Is SailPoint Stock Falling Tuesday?",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/53088253/why-is-sailpoint-stock-falling-tuesday",
+        "published_at": "2026-06-09T14:19:44+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "sail_stock_decline_tuesday",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ffacdefde160d262",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SAIL",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/06/53082569/12-information-technology-stocks-moving-in-tuesdays-pre-market-session",
+        "published_at": "2026-06-09T12:05:47+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "it_sector_premarket_movers_june9",
+        "tickers_mentioned": [
+          "SAIL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "c96da81f629559cf",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab Stock Climbs As SpaceX IPO Countdown Fuels Space Sector Rally",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53086105/rocket-lab-stock-climbs-as-spacex-ipo-countdown-fuels-space-sector-rally",
+        "published_at": "2026-06-09T13:48:23+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "spacex_ipo_sector_rally",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RDW": [
+      {
+        "id": "043b38a6fad670c3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RDW",
+        "scope": "ticker",
+        "title": "Redwire Stock Falls After Company Launches $500 Million ATM Equity Offering",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53084856/redwire-stock-falls-after-company-launches-500-million-atm-equity-offering",
+        "published_at": "2026-06-09T13:23:16+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "rdw_500m_atm_offering",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "PRGO": [
+      {
+        "id": "f4dc7ffd165b1a9e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PRGO",
+        "scope": "ticker",
+        "title": "Mission Produce Posts Downbeat Q2 Earnings, Joins Ideaya Biosciences, Perrigo And Other Big Stocks Moving Lower In Tuesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53082360/mission-produce-posts-downbeat-q2-earnings-joins-ideaya-biosciences-perrigo-and-other-big-stocks-moving-lower-in-tuesday-pre-market-session",
+        "published_at": "2026-06-09T12:02:08+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "prgo_misi\u00f3n_produce_q2_earnings_miss",
+        "tickers_mentioned": [
+          "MSSN"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "US inflation is projected to top 4% for the first time since 2023, putting renewed pressure on the Fed and likely delaying rate cuts.",
+      "primary_drivers": [
+        "Higher-for-longer rates \u2192 higher discount rate on long-duration assets",
+        "Reflation trade favors real assets and pricing-power names",
+        "Bank net interest margin expansion vs. duration losses on long bonds"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NEM",
+          "rationale": "Newmont is the largest pure-play gold miner; persistent 4%+ inflation with Fed credibility questioned drives gold demand as inflation hedge, and miner earnings have high operating leverage to spot gold prices.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Energy is a core CPI driver and oil majors have direct revenue pass-through to higher commodity prices; ExxonMobil also returns capital via buybacks/dividends that hold up in inflationary regimes.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Same mechanism as XOM \u2014 integrated oil major with direct topline exposure to energy inflation and a track record of dividend growth that attracts capital rotating out of long-duration bonds.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Higher-for-longer rates extend NIM tailwind for the largest US bank; JPM has been the clearest beneficiary of the higher rate regime via asset repricing on its loan book.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "WMT",
+          "rationale": "Walmart's low-income customer base is most squeezed by sticky food/energy inflation, pressuring discretionary basket size; also faces wage cost inflation on its large hourly workforce.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "inflation_4pct_june_2026_fed",
+      "source_news_ids": [
+        "3a701f18fc61a1f9"
+      ],
+      "headlines": [
+        "Inflation is set to top 4% for the first time since 2023 \u2014 and the Fed is back in the hot seat"
+      ]
+    }
+  ]
 }
