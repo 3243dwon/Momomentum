@@ -6,13 +6,10 @@
 
   let {
     item,
-    rowsByTicker,
-    trust
+    rowsByTicker
   }: {
     item: FeedItem;
     rowsByTicker?: Map<string, ScanRow>;
-    /** Optional one-line track-record warning (e.g. for serenity items). */
-    trust?: string | null;
   } = $props();
 
   const stanceClass: Record<string, string> = {
@@ -60,9 +57,6 @@
       {#if item.horizon}<span>{item.horizon}</span>{/if}
       {#if item.url}
         <a href={item.url} target="_blank" rel="noopener noreferrer" class="text-signal-info hover:underline">source ↗</a>
-      {/if}
-      {#if trust}
-        <span class="text-signal-down">{trust}</span>
       {/if}
     </div>
   </div>

@@ -50,7 +50,10 @@ export function startScanWatch() {
   const check = async () => {
     if (document.hidden) return;
     try {
-      const r = await fetch(`/data/scan.json`, { cache: 'no-store' });
+      // 'no-cache' (not 'no-store'): revalidate with conditional headers so an
+      // unchanged scan.json answers 304 instead of re-downloading ~1MB every
+      // 5 minutes on a phone.
+      const r = await fetch(`/data/scan.json`, { cache: 'no-cache' });
       if (!r.ok) return;
       const j = (await r.json()) as { generated_at?: string };
       const g = j.generated_at ?? null;
