@@ -1,55 +1,71 @@
 {
-  "generated_at": "2026-06-10T11:45:36.461703-04:00",
+  "generated_at": "2026-06-10T14:33:16.167071-04:00",
   "window": "RTH",
-  "headline": "SMCI -17% on $7B dilutive raise poisons AI complex; desk takes lone half-size SGHC long",
+  "headline": "DVN catalyst drives E&P ripple; desk adds KR/O/DVN/KO longs as SPY/QQQ fade 1-1.5% on Iran escalation",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.85% / QQQ -1.15%, both above 50d. VXX stress 1.03 \u2014 low fear but tape fading; regime reads risk_on yet price action is sloppy. Chop b"
+    "line": "SPY -1.12% / QQQ -1.48% \u2014 label stays risk_on but tape is selling; VXX stress 1.02x, Iran/CPI macro overhang. Entries into pullback, not mom"
   },
   "actions": [
     {
-      "ticker": "SGHC",
+      "ticker": "KR",
       "direction": "long",
-      "entry": 13.96,
-      "stop": 13.78,
-      "target": 14.32,
-      "line": "Half-size long \u2014 clean R/R off bullish signal; research caps size post-10% run. 18\u00a2 risk, 36\u00a2 reward, ~2:1."
+      "entry": 63.99,
+      "stop": 63.3,
+      "target": 65.37,
+      "line": "Full-size: RSI 45.7 neutral, low-risk setup, signal + desk agree \u2014 cleanest in the batch."
+    },
+    {
+      "ticker": "O",
+      "direction": "long",
+      "entry": 62.16,
+      "stop": 59.27,
+      "target": 67.93,
+      "line": "Half-size: RSI 55 mid-range, signal agrees, low severity \u2014 best overbought profile in book."
+    },
+    {
+      "ticker": "DVN",
+      "direction": "long",
+      "entry": 46.67,
+      "stop": 46.1,
+      "target": 47.81,
+      "line": "Half-size: +5.9% catalyst on concrete news, research agrees, tight stop, Iran supply-risk tailwind."
     }
   ],
   "watch": [
     {
+      "ticker": "MTDR",
+      "type": "ripple",
+      "line": "DVN ripple \u2014 Delaware Basin overlap; positive DVN well-cost commentary supports MTDR 2026 guide. Medium confidence."
+    },
+    {
+      "ticker": "OVV",
+      "type": "ripple",
+      "line": "DVN ripple \u2014 Permian/Anadarko shale peer, direct read-through on DVN productivity/capital framework. Medium confidence."
+    },
+    {
+      "ticker": "LBRT",
+      "type": "ripple",
+      "line": "DVN ripple \u2014 primary frac/completions provider; raised DVN 2026 activity supports completions pricing. Medium confidence."
+    },
+    {
+      "ticker": "FRMI",
+      "type": "mover",
+      "line": "+21.5% on 2.17x rel volume \u2014 unusual_volume + big_move flags. No desk take; watch for confirmation."
+    },
+    {
       "ticker": "SMCI",
-      "type": "catalyst",
-      "line": "-17.2% on massive $7B dilutive raise \u2014 balance-sheet strain; do not chase short into extended move."
-    },
-    {
-      "ticker": "DELL",
-      "type": "ripple",
-      "line": "Med-conf bullish ripple off SMCI: hyperscalers may rotate to better-capitalized PowerEdge franchise. Counter-read (low conf): ISG margin narrative also questioned."
-    },
-    {
-      "ticker": "RXT",
       "type": "mover",
-      "line": "+21.7% big move, rel-vol only 1.07 \u2014 thin conviction on the squeeze; watch for fade."
-    },
-    {
-      "ticker": "CLOV",
-      "type": "mover",
-      "line": "+16.3%, MACD bullish but flagged overbought \u2014 momentum intact, no clean entry yet."
-    },
-    {
-      "ticker": "ANET",
-      "type": "ripple",
-      "line": "Low-conf bearish sympathy to SMCI \u2014 AI-levered stretched valuation, dilution risk premium re-pricing."
+      "line": "-20.7% continuation, 2.16x rel volume \u2014 AI hardware complex still under pressure post dilutive raise."
     }
   ],
   "changed": [
-    "Selling wave eased \u2014 movers now mixed with big upside names (RXT +22%, CLOV +16%) vs prior wall-to-wall red",
-    "Desk rotated: IRT long gone, replaced by SGHC half-size long",
-    "SMCI -17% dilutive raise is the dominant event this scan"
+    "Previous lone take was SGHC; desk now has 4 takes \u2014 KR/O/DVN/KO all long",
+    "SMCI -20.7% today extends yesterday's -17% dilutive-raise collapse",
+    "Iran escalation + 3-year CPI high add macro risk-off overlay to risk_on regime label"
   ],
   "caveats": [
-    "RTH scan as of 11:45 ET Jun 10 \u2014 prices stale from scan time, fast movers (SMCI, RXT) may have extended materially intraday.",
-    "DELL has conflicting ripple reads (bullish AND bearish, both from SMCI) \u2014 no net edge; treat as watch-only until one narrative dominates."
+    "RTH scan as of 14:33 ET 2026-06-10; prices and levels are scan-time snapshots \u2014 KR/O/DVN entries may have moved intraday.",
+    "Regime label is risk_on but SPY/QQQ are both red 1%+; Iran escalation and hot CPI print create cross-current \u2014 confirm market-on-close direction before sizing into late-day entries."
   ]
 }

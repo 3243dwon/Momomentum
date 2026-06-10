@@ -1,237 +1,191 @@
 {
-  "generated_at": "2026-06-10T11:45:36.461703-04:00",
+  "generated_at": "2026-06-10T14:33:16.167071-04:00",
   "event_count": 1,
-  "prediction_count": 9,
-  "not_yet_priced_in": 4,
+  "prediction_count": 7,
+  "not_yet_priced_in": 5,
   "events": [
     {
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
       "primary_drivers": [
-        "AI server backlog confirmed at scale \u2014 read-through to component suppliers and ODM peers",
-        "Equity dilution as a capital-raise template \u2014 sentiment overhang on other AI-levered names with stretched balance sheets",
-        "Working capital strain signals component pricing power for upstream HBM/GPU vendors"
+        "Permian/US shale pure-play re-rating on improved capital efficiency read-through",
+        "Higher implied activity supports oilfield services demand",
+        "Peer guidance benchmark lifts sentiment for similarly-levered E&Ps"
       ],
       "beneficiaries": [
         {
-          "ticker": "DELL",
-          "rationale": "Direct AI server competitor \u2014 SMCI's dilutive raise and balance-sheet strain makes Dell's better-capitalized AI server franchise (PowerEdge XE9680) relatively more attractive to hyperscale buyers worried about SMCI execution risk.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "HPE",
-          "rationale": "Third major AI server OEM; benefits from any SMCI share loss as enterprises diversify away from a vendor that just signaled capital constraints funding its backlog.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "NVDA",
-          "rationale": "$7B raise is explicitly to buy GPUs/components to fulfill AI server backlog \u2014 direct confirmation of sustained Blackwell/Hopper demand pull-through from a top-5 NVIDIA customer.",
+          "ticker": "PR",
+          "rationale": "Permian Resources is the closest Delaware Basin pure-play peer to Devon; DVN's improved 2026 capital efficiency and production outlook reads directly across to PR's own well productivity narrative.",
           "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "MU",
-          "rationale": "HBM and DRAM content per AI server is a major part of SMCI's working capital need; raise confirms component pricing power and volume demand for HBM3e suppliers.",
+          "ticker": "MTDR",
+          "rationale": "Matador Resources is a Delaware Basin operator with overlapping acreage geology; positive DVN well-cost/productivity commentary supports MTDR's 2026 guide trajectory.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OVV",
+          "rationale": "Ovintiv is a multi-basin US shale peer (Permian/Anadarko) with direct read-through on Devon's productivity and capital framework commentary.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LBRT",
+          "rationale": "Liberty Energy is a primary frac/completions provider in the Permian; raised DVN activity outlook for 2026 supports completions pricing and utilization assumptions.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "VRT",
-          "rationale": "Vertiv's liquid cooling and power infrastructure ships alongside SMCI AI racks; backlog confirmation = sustained pull for cooling/power per rack.",
+          "ticker": "PUMP",
+          "rationale": "ProPetro has heavy Permian completions exposure with Devon historically among its top customers; an upgraded DVN 2026 program would lift PUMP's backlog visibility.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WDC",
-          "rationale": "AI server storage attach (enterprise SSD/HDD); SMCI backlog conversion drives incremental enterprise storage demand.",
-          "confidence": "low",
           "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "ANET",
-          "rationale": "Not a direct loser, but AI-levered names with stretched valuations face sympathy pressure as the market reprices the cost of funding AI growth (dilution risk premium) \u2014 Arista's hyperscale exposure makes it a sentiment proxy.",
+          "ticker": "APA",
+          "rationale": "APA is a US E&P peer that has been guiding more conservatively; a stronger DVN 2026 outlook widens the perceived execution/quality gap and can pressure relative multiple.",
           "confidence": "low",
-          "horizon": "intraday"
+          "horizon": "days"
         },
         {
-          "ticker": "AI",
-          "rationale": "Smaller cash-burning AI names get tarred when the market sees a marquee AI beneficiary forced into a massive dilutive raise \u2014 raises cost-of-capital fears across the AI complex.",
-          "confidence": "low",
-          "horizon": "intraday"
-        },
-        {
-          "ticker": "DELL",
-          "rationale": "Counter-read: if SMCI's $7B raise signals AI server margins are structurally thinner than believed (working capital eats all the cash), Dell's ISG margin narrative gets questioned too.",
+          "ticker": "CRGY",
+          "rationale": "Smaller, higher-decline shale names risk capital rotation into higher-quality Permian operators like DVN when guidance differentiates the group.",
           "confidence": "low",
           "horizon": "days"
         }
       ],
-      "trigger_ticker": "SMCI",
+      "trigger_ticker": "DVN",
       "source_news_ids": [
-        "41cbf3d52ac1b337"
+        "026d4a56b85c8839"
       ],
       "headlines": [
-        "Super Micro Stock Sinks After Announcing $7 Billion Equity Raise To Fund AI Backlog"
+        "Devon Energy Stock Jumps After Updated 2026 Outlook"
       ],
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog"
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook"
     }
   ],
   "predictions": [
     {
-      "ticker": "DELL",
+      "ticker": "MTDR",
       "direction": "bullish",
-      "rationale": "Direct AI server competitor \u2014 SMCI's dilutive raise and balance-sheet strain makes Dell's better-capitalized AI server franchise (PowerEdge XE9680) relatively more attractive to hyperscale buyers worried about SMCI execution risk.",
+      "rationale": "Matador Resources is a Delaware Basin operator with overlapping acreage geology; positive DVN well-cost/productivity commentary supports MTDR's 2026 guide trajectory.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "source_news_ids": [
+        "026d4a56b85c8839"
+      ],
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
+    },
+    {
+      "ticker": "OVV",
+      "direction": "bullish",
+      "rationale": "Ovintiv is a multi-basin US shale peer (Permian/Anadarko) with direct read-through on Devon's productivity and capital framework commentary.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "source_news_ids": [
+        "026d4a56b85c8839"
+      ],
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
+    },
+    {
+      "ticker": "LBRT",
+      "direction": "bullish",
+      "rationale": "Liberty Energy is a primary frac/completions provider in the Permian; raised DVN activity outlook for 2026 supports completions pricing and utilization assumptions.",
       "confidence": "medium",
       "horizon": "weeks",
       "priced_in": "no",
-      "pct_1d": 1.46,
-      "rel_volume": 0.43,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
-      "source_news_ids": [
-        "41cbf3d52ac1b337"
-      ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
-    },
-    {
-      "ticker": "ANET",
-      "direction": "bearish",
-      "rationale": "Not a direct loser, but AI-levered names with stretched valuations face sympathy pressure as the market reprices the cost of funding AI growth (dilution risk premium) \u2014 Arista's hyperscale exposure makes it a sentiment proxy.",
-      "confidence": "low",
-      "horizon": "intraday",
-      "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
       "source_news_ids": [
-        "41cbf3d52ac1b337"
+        "026d4a56b85c8839"
       ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
     },
     {
-      "ticker": "AI",
+      "ticker": "APA",
       "direction": "bearish",
-      "rationale": "Smaller cash-burning AI names get tarred when the market sees a marquee AI beneficiary forced into a massive dilutive raise \u2014 raises cost-of-capital fears across the AI complex.",
-      "confidence": "low",
-      "horizon": "intraday",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
-      "source_news_ids": [
-        "41cbf3d52ac1b337"
-      ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
-    },
-    {
-      "ticker": "DELL",
-      "direction": "bearish",
-      "rationale": "Counter-read: if SMCI's $7B raise signals AI server margins are structurally thinner than believed (working capital eats all the cash), Dell's ISG margin narrative gets questioned too.",
+      "rationale": "APA is a US E&P peer that has been guiding more conservatively; a stronger DVN 2026 outlook widens the perceived execution/quality gap and can pressure relative multiple.",
       "confidence": "low",
       "horizon": "days",
       "priced_in": "no",
-      "pct_1d": 1.46,
-      "rel_volume": 0.43,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
       "source_news_ids": [
-        "41cbf3d52ac1b337"
+        "026d4a56b85c8839"
       ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "CRGY",
+      "direction": "bearish",
+      "rationale": "Smaller, higher-decline shale names risk capital rotation into higher-quality Permian operators like DVN when guidance differentiates the group.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "source_news_ids": [
+        "026d4a56b85c8839"
+      ],
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
+    },
+    {
+      "ticker": "PR",
       "direction": "bullish",
-      "rationale": "$7B raise is explicitly to buy GPUs/components to fulfill AI server backlog \u2014 direct confirmation of sustained Blackwell/Hopper demand pull-through from a top-5 NVIDIA customer.",
+      "rationale": "Permian Resources is the closest Delaware Basin pure-play peer to Devon; DVN's improved 2026 capital efficiency and production outlook reads directly across to PR's own well productivity narrative.",
       "confidence": "high",
       "horizon": "days",
-      "priced_in": "contradicted",
-      "pct_1d": -2.25,
-      "rel_volume": 0.49,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+      "priced_in": "partial",
+      "pct_1d": 2.99,
+      "rel_volume": 0.61,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
       "source_news_ids": [
-        "41cbf3d52ac1b337"
+        "026d4a56b85c8839"
       ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
     },
     {
-      "ticker": "HPE",
+      "ticker": "PUMP",
       "direction": "bullish",
-      "rationale": "Third major AI server OEM; benefits from any SMCI share loss as enterprises diversify away from a vendor that just signaled capital constraints funding its backlog.",
+      "rationale": "ProPetro has heavy Permian completions exposure with Devon historically among its top customers; an upgraded DVN 2026 program would lift PUMP's backlog visibility.",
       "confidence": "medium",
       "horizon": "weeks",
-      "priced_in": "contradicted",
-      "pct_1d": -4.31,
-      "rel_volume": 0.38,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+      "priced_in": "partial",
+      "pct_1d": 3.24,
+      "rel_volume": 0.56,
+      "trigger_ticker": "DVN",
+      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
       "source_news_ids": [
-        "41cbf3d52ac1b337"
+        "026d4a56b85c8839"
       ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
-    },
-    {
-      "ticker": "MU",
-      "direction": "bullish",
-      "rationale": "HBM and DRAM content per AI server is a major part of SMCI's working capital need; raise confirms component pricing power and volume demand for HBM3e suppliers.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "contradicted",
-      "pct_1d": -2.87,
-      "rel_volume": 0.34,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
-      "source_news_ids": [
-        "41cbf3d52ac1b337"
-      ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
-    },
-    {
-      "ticker": "VRT",
-      "direction": "bullish",
-      "rationale": "Vertiv's liquid cooling and power infrastructure ships alongside SMCI AI racks; backlog confirmation = sustained pull for cooling/power per rack.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "contradicted",
-      "pct_1d": -3.1,
-      "rel_volume": 0.54,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
-      "source_news_ids": [
-        "41cbf3d52ac1b337"
-      ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
-    },
-    {
-      "ticker": "WDC",
-      "direction": "bullish",
-      "rationale": "AI server storage attach (enterprise SSD/HDD); SMCI backlog conversion drives incremental enterprise storage demand.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "contradicted",
-      "pct_1d": -5.11,
-      "rel_volume": 0.46,
-      "trigger_ticker": "SMCI",
-      "event_summary": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
-      "source_news_ids": [
-        "41cbf3d52ac1b337"
-      ],
-      "created_at": "2026-06-10T11:45:36.461703-04:00"
+      "created_at": "2026-06-10T14:33:16.167071-04:00"
     }
   ]
 }
