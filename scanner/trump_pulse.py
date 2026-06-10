@@ -478,7 +478,7 @@ def fetch_and_save(now: datetime | None = None) -> dict:
 
 _TRUMP_NOTIFIED_FILE = config.CACHE_DIR / "trump_notified.json"
 _NOTIFY_RECENCY_HOURS = 48      # only ping mentions this fresh
-_NOTIFY_MAX_POSTS = 6           # cap posts per card so it can't balloon
+_NOTIFY_MAX_POSTS = 3           # cap posts per card so it can't balloon
 _SITE_URL = os.environ.get("SITE_URL", "https://momomentum.vercel.app")
 
 
@@ -519,7 +519,9 @@ def _rel_time(ts: str | None, now: datetime) -> str:
 
 def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
                          watchlist: set[str], now: datetime) -> dict:
-    """Render fresh mention posts into a Feishu alert dict."""
+    """Render fresh mention posts into a Feishu alert dict — one line per post."""
+    from scanner.alerts.rules import _clip
+
     # Title lists the named tickers (deduped, in first-seen order).
     tickers: list[str] = []
     for p in posts:
@@ -529,31 +531,32 @@ def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
     shown = ", ".join(tickers[:5]) + (f" +{len(tickers) - 5}" if len(tickers) > 5 else "")
     title = f"🇺🇸 Trump named {shown} on Truth Social"
 
-    blocks: list[str] = []
+    lines: list[str] = []
     for p in posts:
         chips: list[str] = []
         for t in p["ticker_mentions"]:
             row = rows_by_ticker.get(t)
-            star = " ⭐" if t in watchlist else ""
+            star = "⭐" if t in watchlist else ""
             pct = (row or {}).get("pct_1d")
             if pct is not None:
-                chips.append(f"**{t}** {'+' if pct >= 0 else ''}{pct:.2f}%{star}")
+                chips.append(f"**{t}** {pct:+.1f}%{star}")
             else:
                 chips.append(f"**{t}**{star}")
-        excerpt = (p.get("text") or "").strip()[:220]
+        excerpt = _clip((p.get("text") or "").replace("\n", " ").strip(), 60)
+        line = " ".join(chips) + f' · "{excerpt}"'
         when = _rel_time(p.get("ts"), now)
-        line = " · ".join(chips)
-        block = f"{line}\n\n> {excerpt}"
         if when:
-            block += f"\n\n_{when}_"
-        blocks.append(block)
+            line += f" · {when}"
+        lines.append(line)
 
-    body = "\n\n---\n\n".join(blocks)
+    # The /political route was killed (redirects to /); deep-link to the
+    # ticker page when exactly one name was mentioned, else the site root.
+    link = f"{_SITE_URL}/t/{tickers[0]}" if len(tickers) == 1 else _SITE_URL
     return {
         "type": "trump_pulse",
         "title": title,
-        "body_md": body,
-        "link": f"{_SITE_URL}/political",
+        "body_md": "\n".join(lines),
+        "link": link,
     }
 
 

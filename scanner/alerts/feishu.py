@@ -23,6 +23,7 @@ from typing import Literal
 import requests
 
 from scanner import config
+from scanner.alerts.rules import _clip
 
 log = logging.getLogger(__name__)
 
@@ -151,14 +152,38 @@ def send_batch(alerts: list[dict]) -> int:
 # ≤2 cards per scan regardless of signal count.
 
 _TICKER_SECTIONS = [
-    ("catalyst",        "🎯 Catalysts"),
-    ("serenity_match",  "🧠 Serenity"),
-    ("watchlist",       "⭐ Watchlist"),
-    ("big_move",        "🚀 Big moves"),
-    ("delta_new_top20", "📈 New top-20"),
-    ("delta_rank_jump", "⚡ Rank jumps"),
-    ("delta_accel",     "🌡️ Accelerating"),
+    ("catalyst",        "🎯", "Catalysts"),
+    ("ripple",          "🔮", "Ripple"),
+    ("serenity_match",  "🧠", "Serenity"),
+    ("watchlist",       "⭐", "Watchlist"),
+    ("big_move",        "🚀", "Big moves"),
+    ("delta_new_top20", "📈", "New top-20"),
+    ("delta_rank_jump", "⚡", "Rank jumps"),
+    ("delta_accel",     "🌡️", "Accelerating"),
 ]
+
+
+def _best_alert(alerts: list[dict]) -> dict:
+    """The single alert whose title leads the card: first catalyst, else first
+    ripple, else first macro, else the first alert (list is priority-ordered)."""
+    for typ in ("catalyst", "ripple"):
+        for a in alerts:
+            if a.get("type") == typ:
+                return a
+    for a in alerts:
+        if (a.get("type") or "").startswith("macro"):
+            return a
+    return alerts[0]
+
+
+def _consolidated_title(alerts: list[dict]) -> str:
+    """`{best alert's title} · +{N-1} more` — the title is all the phone
+    notification preview shows, so it carries the highest-value line."""
+    lead = _best_alert(alerts).get("title") or "Scanner alerts"
+    if len(alerts) == 1:
+        return _clip(lead, 60)
+    more = f" · +{len(alerts) - 1} more"
+    return _clip(lead, max(20, 60 - len(more))) + more
 
 
 def _pick_ticker_template(alerts: list[dict]) -> str:
@@ -177,23 +202,26 @@ def _pick_ticker_template(alerts: list[dict]) -> str:
 
 
 def _build_ticker_card(alerts: list[dict]) -> dict:
+    # One-line alerts under single-line bold section headers; each alert's
+    # body_md already ends in its own [→](/t/{ticker}) deep link.
     sections: list[str] = []
-    for type_key, label in _TICKER_SECTIONS:
+    for type_key, emoji, name in _TICKER_SECTIONS:
         group = [a for a in alerts if a.get("type") == type_key]
         if not group:
             continue
-        lines = [f"**{label}** ({len(group)})"]
-        for a in group:
-            body = a.get("body_md", "").strip()
-            # The consolidated card has no per-alert button, so surface each
-            # alert's deep link (the scanner's ticker page) as a lark_md link.
-            if a.get("link") and a.get("ticker"):
-                body += f"\n[→ {a['ticker']} in scanner]({a['link']})"
-            lines.append(body)
-        sections.append("\n\n".join(lines))
+        lines = [f"{emoji} **{name} ({len(group)})**"]
+        lines.extend(a.get("body_md", "").strip() for a in group)
+        sections.append("\n".join(lines))
 
-    body = "\n\n---\n\n".join(sections) if sections else "_(no alerts)_"
-    title = f"🚨 Scanner: {len(alerts)} alert{'s' if len(alerts) != 1 else ''}"
+    known = {key for key, _, _ in _TICKER_SECTIONS}
+    other = [a for a in alerts if a.get("type") not in known]
+    if other:  # never silently drop an unknown alert type from the card
+        lines = [f"📌 **Other ({len(other)})**"]
+        lines.extend(a.get("body_md", "").strip() for a in other)
+        sections.append("\n".join(lines))
+
+    body = "\n\n".join(sections) if sections else "_(no alerts)_"
+    title = _consolidated_title(alerts)
     return {
         "msg_type": "interactive",
         "card": {
@@ -208,12 +236,10 @@ def _build_ticker_card(alerts: list[dict]) -> dict:
 
 
 def _build_macro_card(alerts: list[dict]) -> dict:
-    parts: list[str] = []
-    for a in alerts:
-        # Each macro alert already has full event + beneficiaries/losers in body_md.
-        parts.append(a.get("body_md", "").strip())
-    body = "\n\n---\n\n".join(parts) if parts else "_(no macro events)_"
-    title = f"🌍 Macro: {len(alerts)} event{'s' if len(alerts) != 1 else ''}"
+    # Each macro alert's body_md is already a compact event + Wins/Risks block.
+    parts = [a.get("body_md", "").strip() for a in alerts]
+    body = "\n\n".join(p for p in parts if p) or "_(no macro events)_"
+    title = _consolidated_title(alerts)
     return {
         "msg_type": "interactive",
         "card": {

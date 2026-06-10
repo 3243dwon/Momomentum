@@ -216,30 +216,30 @@ def _to_record(raw: dict, d: dict) -> dict:
 
 
 # ── Feishu (momentum's own webhook, English) ────────────────────────
-def _stance_label(stance: str) -> str:
-    # US convention: green = bullish.
-    return {"bull": "🟢 bull", "bear": "🔴 bear"}.get(stance, "⚪ neutral")
-
-
 def _notify(records: list[dict]) -> int:
     """Push only the SINGLE latest tweet to Feishu per run, to keep the channel
     quiet. Older tweets from the same poll still land in the feed / on the web —
-    they're just not pushed. records are oldest→newest, so [-1] is the latest."""
+    they're just not pushed. records are oldest→newest, so [-1] is the latest.
+
+    Title carries the signal (stance emoji + tickers, or the summary) because
+    it's all the phone notification preview shows; body is one clipped line."""
     if not config.FEISHU_WEBHOOK_URL or not records:
         return 0
     from scanner.alerts import feishu
+    from scanner.alerts.rules import _clip
 
     t = records[-1]
     skipped = len(records) - 1
-    tickers = " ".join(f"`${x}`" for x in (t.get("tickers") or [])) or "—"
-    body = f"{_stance_label(t.get('stance', ''))}　🎯 {tickers}\n\n{t.get('text', '')}"
-    if t.get("summaryEn"):
-        body += f"\n\n*{t['summaryEn']}*"
-    if skipped:
-        body += f"\n\n_+{skipped} earlier post(s) — see /serenity._"
+    emoji = {"bull": "🟢", "bear": "🔴"}.get(t.get("stance", ""), "⚪")  # green = bullish (US)
+    summary = t.get("summaryEn") or t.get("text", "")
+    tickers = " ".join(f"${x}" for x in (t.get("tickers") or [])[:4])
+    title = _clip(f"{emoji} Serenity · {tickers or _clip(summary, 40)}", 60)
+    body = _clip(summary, 140)
     if t.get("url"):
-        body += f"\n\n[🔗 View on X]({t['url']})"
-    ok = feishu.send({"type": "serenity_match", "ticker": None, "title": "🧠 Serenity — new post", "body_md": body, "link": None})
+        body += f"\n[View on X]({t['url']})"
+    if skipped:
+        body += f"\n_+{skipped} earlier — see /serenity_"
+    ok = feishu.send({"type": "serenity_match", "ticker": None, "title": title, "body_md": body, "link": None})
     log.info("Serenity: sent %d Feishu card (latest); %d older skipped.", 1 if ok else 0, skipped)
     return 1 if ok else 0
 
