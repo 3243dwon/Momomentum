@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-06-10T00:10:53.635891-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on label but tape is selling growth hard \u2014 desk takes 3 longs in small/mid financials/REIT",
+  "market_state": {
+    "regime": "risk_on",
+    "line": "SPY -0.29%, QQQ -1.14%; tech/growth under pressure, VXX stress ratio 0.97 (calm). Regime says risk-on but breadth skews sellers overnight."
+  },
+  "actions": [
+    {
+      "ticker": "IRT",
+      "direction": "long",
+      "entry": 16.91,
+      "stop": 16.09,
+      "target": 18.54,
+      "line": "Half size. Clean bull setup; research doubts catalyst but signal+risk aligned. R/R ~2.0."
+    },
+    {
+      "ticker": "ASB",
+      "direction": "long",
+      "entry": 28.38,
+      "stop": 26.68,
+      "target": 31.79,
+      "line": "Quarter size. Signal+risk green, low research conviction keeps it small. R/R ~2.0."
+    },
+    {
+      "ticker": "SGHC",
+      "direction": "long",
+      "entry": 13.37,
+      "stop": 12.61,
+      "target": 14.9,
+      "line": "Quarter size. Signal bullish, risk medium concern, research neutral \u2014 small size warranted. R/R ~2.0."
+    }
+  ],
+  "watch": [
+    {
+      "ticker": "AAOI",
+      "type": "mover",
+      "line": "-17.3%, rel vol 2.85x \u2014 largest overnight loser, unusual volume flags seller conviction."
+    },
+    {
+      "ticker": "PRIM",
+      "type": "mover",
+      "line": "-15.3%, rel vol 3.58x \u2014 highest relative volume in scan, big flush worth monitoring for reversal or continuation."
+    },
+    {
+      "ticker": "SAIL",
+      "type": "mover",
+      "line": "-11.5%, rel vol 3.52x, MACD bearish \u2014 unusual volume + bearish momentum signal, stay short-side alert."
+    },
+    {
+      "ticker": "ABAT",
+      "type": "mover",
+      "line": "-14.6%, rel vol 2.32x, MACD bearish \u2014 confirmed downside momentum with elevated volume."
+    },
+    {
+      "ticker": "FCEL",
+      "type": "mover",
+      "line": "+12.8%, rel vol 1.77x \u2014 lone green big-mover overnight; watch for follow-through or fade at open."
+    }
+  ],
+  "changed": [],
+  "caveats": [
+    "OVERNIGHT scan as of 2026-06-10 00:10 ET \u2014 prices are pre-RTH and may gap significantly at open; all levels should be re-evaluated at market open.",
+    "Mover list dominated by sellers (9 of 10 names down double-digits); risk-on regime label may lag intraday reality \u2014 confirm tape at open before entry."
+  ]
+}

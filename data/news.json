@@ -1,58 +1,102 @@
 {
-  "generated_at": "2026-06-09T19:19:09.099657-04:00",
+  "generated_at": "2026-06-10T00:10:53.635891-04:00",
   "ticker_news": {
-    "LITE": [
-      {
-        "id": "c59af0de1229d349",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LITE",
-        "scope": "ticker",
-        "title": "Here's How Much You Would Have Made Owning Lumentum Holdings Stock In The Last 10 Years",
-        "url": "https://www.benzinga.com/insights/news/26/06/53105742/heres-how-much-you-would-have-made-owning-lumentum-holdings-stock-in-the-last-10-years",
-        "published_at": "2026-06-09T22:45:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "lite_10year_performance_retrospective",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "DKNG": [
       {
-        "id": "68c430b2e5c84e19",
+        "id": "822c71b85f48bf51",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "DKNG",
         "scope": "ticker",
-        "title": "World Cup 2026 Stock Winners: Water Breaks To Boost Fox, US Soccer Could Lift Apple",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53105614/world-cup-2026-stock-winners-water-breaks-to-boost-fox-us-soccer-could-lift-apple",
-        "published_at": "2026-06-09T22:29:00+00:00",
+        "title": "Super Micro Computer, Draftkings, Cracker Barrel, Nuvalent And Oracle: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53106563/super-micro-computer-draftkings-cracker-barrel-nuvalent-and-oracle-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-10T01:33:07+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "world_cup_2026_media_stocks",
+        "dedup_group": "multi_stock_roundup_benzinga_june10",
         "tickers_mentioned": [
-          "FOXA",
-          "AAPL"
+          "ORCL",
+          "DKNG",
+          "CBRL",
+          "NUVL"
         ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "822c71b85f48bf51",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Super Micro Computer, Draftkings, Cracker Barrel, Nuvalent And Oracle: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53106563/super-micro-computer-draftkings-cracker-barrel-nuvalent-and-oracle-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-10T01:33:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multi_stock_roundup_benzinga_june10",
+        "tickers_mentioned": [
+          "ORCL",
+          "DKNG",
+          "CBRL",
+          "NUVL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "c2018fb9a8b6faad",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Elon Musk's xAI And SpaceX Sued Over 'Omnipresent And Inescapable' Noise As AI Data Centers Face Growing Revolt Across America",
+        "url": "https://www.benzinga.com/news/legal/26/06/53106886/elon-musk-xai-spacex-sued-over-noise-ai-data-centers-revolt",
+        "published_at": "2026-06-10T03:20:43+00:00",
+        "type": "litigation",
+        "impact": "low",
+        "dedup_group": "xai_spacex_noise_litigation_june10",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "SMCI": [
       {
-        "id": "7b1b49955c50d62a",
+        "id": "822c71b85f48bf51",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SMCI",
         "scope": "ticker",
-        "title": "Super Micro Stock Slides As Company Moves To Raise $7 Billion To Fulfill AI Orders",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53105370/super-micro-stock-slides-as-company-moves-to-raise-7-billion-to-fulfill-ai-orders",
-        "published_at": "2026-06-09T22:02:46+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "smci_7b_equity_raise_june2026",
+        "title": "Super Micro Computer, Draftkings, Cracker Barrel, Nuvalent And Oracle: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53106563/super-micro-computer-draftkings-cracker-barrel-nuvalent-and-oracle-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-10T01:33:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multi_stock_roundup_benzinga_june10",
+        "tickers_mentioned": [
+          "ORCL",
+          "DKNG",
+          "CBRL",
+          "NUVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "836bc3ab3ae19809",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin, Ethereum, XRP Slide, Dogecoin Flat As US Launches 'Proportional' Strikes Against Iran: Analyst Sees BTC's Strong Rebound To $74,000 Soon",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53106642/bitcoin-ethereum-xrp-slide-dogecoin-flat-us-strikes-iran-btc-rebound-74000",
+        "published_at": "2026-06-10T02:01:52+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "us_iran_strikes_crypto_reaction_june10",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ]
   },
