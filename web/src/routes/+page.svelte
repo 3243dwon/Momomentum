@@ -1,49 +1,109 @@
 <script lang="ts">
-  import type { ScanRow, NewsItem } from '$lib/types';
-  import { fmtPct, fmtPrice, fmtRelVol, fmtClock, fmtRelative, pctClass } from '$lib/format';
-  import TickerCard from './TickerCard.svelte';
+  import type { ScanRow } from '$lib/types';
+  import { fmtPct, fmtPrice, fmtClock, pctClass } from '$lib/format';
+  import { buildFeed, KIND_META, type FeedKind } from '$lib/feed';
+  import { signalTrust, scoreInverted } from '$lib/trust';
+  import { now, staleness, STALE_CLASS, fmtAge } from '$lib/freshness';
+  import { invalidateAll } from '$app/navigation';
   import TickerRow from './TickerRow.svelte';
-  import PickCard from './PickCard.svelte';
+  import TakeCard from './TakeCard.svelte';
   import ScanTable from './ScanTable.svelte';
   import StatPill from './StatPill.svelte';
   import FilterBar, { type Filters } from './FilterBar.svelte';
+  import FeedItem from './FeedItem.svelte';
 
   let { data } = $props();
 
-  const scan = data.scan;
-  const news = data.news;
-  const deltas = data.deltas;
-  const watchlist = data.watchlist?.tickers ?? [];
+  const scan = $derived(data.scan);
+  const news = $derived(data.news);
+  const deltas = $derived(data.deltas);
+  const watchlist = $derived(data.watchlist?.tickers ?? []);
+  const briefing = $derived(data.briefing);
 
   // Tickers Trump mentioned on Truth Social recently — used to light up the
-  // TRUMP chip on any pick/row/card whose ticker he named. Rare overlap, but
-  // when a mover is something he just posted about, that's worth flagging.
-  const trumpMentions = new Set(data.pulse?.tickers_mentioned ?? []);
+  // TRUMP chip on any pick/row/card whose ticker he named.
+  const trumpMentions = $derived(new Set(data.pulse?.tickers_mentioned ?? []));
 
-  const rowsByTicker = new Map<string, ScanRow>(scan?.rows.map((r) => [r.ticker, r]) ?? []);
-  const newsCountByTicker = new Map<string, number>(
-    Object.entries(news?.ticker_news ?? {}).map(([t, items]) => [t, items.length])
+  const rowsByTicker = $derived(
+    new Map<string, ScanRow>(scan?.rows.map((r) => [r.ticker, r]) ?? [])
   );
 
-  // Serenity — latest posts surfaced on the dashboard (full feed at /serenity).
-  const serenityTop = (data.serenity?.tweets ?? []).slice(0, 3);
-  const SERENITY_HOT = 3.0;
-  function serenityLive(ticker: string) {
-    const r = rowsByTicker.get(ticker);
-    if (!r || r.pct_1d == null) return undefined;
-    return { pct: r.pct_1d, moving: Math.abs(r.pct_1d) >= SERENITY_HOT };
+  // --- Freshness: the label ticks, colors by age, and the pill is a refresh
+  // button. The layout's scan-watch auto-invalidates when a new scan lands.
+  const scanAge = $derived(staleness(scan?.generated_at, $now));
+  let refreshing = $state(false);
+  async function refresh() {
+    refreshing = true;
+    await invalidateAll();
+    refreshing = false;
   }
-  const SERENITY_STANCE: Record<string, string> = {
-    bull: 'text-signal-up',
-    bear: 'text-signal-down',
-    neutral: 'text-zinc-400'
-  };
 
-  // Ripple predictions — the freshest forward calls (names predicted to move on
-  // ANOTHER company's news, before they've priced it in). Full list at /predictions.
-  const freshPredictions = (data.predictions?.predictions ?? [])
-    .filter((p) => p.priced_in === 'no')
-    .slice(0, 4);
+  // --- Briefing: render only while it plausibly describes the current scan.
+  // A briefing much older than the scan means the writer failed — hide it
+  // rather than narrate yesterday as today.
+  const briefingFresh = $derived.by(() => {
+    if (!briefing?.generated_at || !scan?.generated_at) return false;
+    const b = new Date(briefing.generated_at).getTime();
+    const s = new Date(scan.generated_at).getTime();
+    return s - b < 6 * 3600_000 && $now - b < 36 * 3600_000;
+  });
+
+  // --- Desk takes: only decision=take renders as a card. Passes collapse to
+  // one line — four 500px "don't trade this" cards was the old layout's
+  // biggest lie. Desk-less picks (desk failed soft) still show as takes.
+  const allRecs = $derived.by(() => {
+    const recs = scan?.recommendations;
+    if (!recs) return [];
+    return [...recs.longs, ...recs.shorts].sort((a, b) => b.score - a.score);
+  });
+  const takes = $derived(allRecs.filter((r) => !r.desk || r.desk.decision === 'take'));
+  const passes = $derived(allRecs.filter((r) => r.desk && r.desk.decision !== 'take'));
+  const invertedScore = $derived(scoreInverted(data.recPerf, 'long'));
+
+  // --- Top movers: ALWAYS unfiltered. Curated sections are not query results;
+  // the filter bar lives with the all-scan table it actually describes.
+  const top20 = $derived.by(() =>
+    [...(scan?.rows ?? [])]
+      .filter((r) => r.pct_1d != null)
+      .sort((a, b) => Math.abs(b.pct_1d!) - Math.abs(a.pct_1d!))
+      .slice(0, 20)
+  );
+
+  // --- Unified feed: news, Serenity, predictions, macro, Trump — one stream.
+  const feedAll = $derived(
+    buildFeed({
+      news,
+      serenity: data.serenity,
+      predictions: data.predictions,
+      pulse: data.pulse,
+      limit: 60
+    })
+  );
+  let activeKinds = $state<Set<FeedKind>>(new Set());
+  function toggleKind(k: FeedKind) {
+    const next = new Set(activeKinds);
+    if (next.has(k)) next.delete(k);
+    else next.add(k);
+    activeKinds = next;
+  }
+  const feed = $derived(
+    (activeKinds.size === 0 ? feedAll : feedAll.filter((i) => activeKinds.has(i.kind))).slice(0, 20)
+  );
+  const presentKinds = $derived.by(() => {
+    const ks = new Set(feedAll.map((i) => i.kind));
+    return (Object.keys(KIND_META) as FeedKind[]).filter((k) => ks.has(k));
+  });
+
+  // Serenity's track record rides along on its feed items — the signal class
+  // is graded where the calls appear, not on a stats page nobody visits.
+  const serenityTrust = $derived(signalTrust(data.performance, 'serenity_match'));
+  const serenityWarning = $derived(
+    serenityTrust?.grade === 'noise' ? `signal class: ${serenityTrust.label}` : null
+  );
+
+  const watchlistRows = $derived(
+    watchlist.map((t) => ({ ticker: t, row: rowsByTicker.get(t) }))
+  );
 
   let filters = $state<Filters>({
     size: 'any',
@@ -53,6 +113,13 @@
     vwap: 'any'
   });
 
+  const newsCountByTicker = $derived(
+    new Map<string, number>(
+      Object.entries(news?.ticker_news ?? {}).map(([t, items]) => [t, items.length])
+    )
+  );
+
+  // Filters scope ONLY the all-scan table below.
   const filteredRows = $derived.by(() => {
     if (!scan) return [];
     return scan.rows.filter((r) => {
@@ -67,63 +134,16 @@
     });
   });
 
-  // Picks are computed by the backend (scanner/recommend.py) and shipped in
-  // scan.json. Bucket them by horizon — catalyst-backed = a thesis to hold
-  // beyond the next tick; technical = a price-action trade. Direction (long
-  // vs short bet) is shown per-card via the badge. Picks for tickers the
-  // filter excludes are dropped; within each bucket we sort by score.
-  const recommended = $derived.by(() => {
-    const recs = scan?.recommendations;
-    if (!recs) return { longTerm: [], shortTerm: [] };
-    const visible = new Set(filteredRows.map((r) => r.ticker));
-    const all = [...recs.longs, ...recs.shorts]
-      .filter((r) => visible.has(r.ticker))
-      .sort((a, b) => b.score - a.score);
-    return {
-      longTerm: all.filter((r) => (r.horizon ?? 'short') === 'long'),
-      shortTerm: all.filter((r) => (r.horizon ?? 'short') === 'short')
-    };
-  });
+  const newEntrants = $derived(new Set(deltas?.new_top20_entrants ?? []));
+  const accelSet = $derived(new Set(deltas?.momentum_accel ?? []));
+  const rankJumpMap = $derived(new Map(deltas?.rank_jumps?.map((j) => [j.ticker, j]) ?? []));
 
-  const top20 = $derived.by(() =>
-    [...filteredRows]
-      .filter((r) => r.pct_1d != null)
-      .sort((a, b) => Math.abs(b.pct_1d!) - Math.abs(a.pct_1d!))
-      .slice(0, 20)
-  );
-
-  const freshNewsTickers = $derived.by(() => {
-    const top20Set = new Set(top20.map((r) => r.ticker));
-    const filteredSet = new Set(filteredRows.map((r) => r.ticker));
-    const tickers = Object.entries(news?.ticker_news ?? {})
-      .map(([ticker, items]) => ({
-        ticker,
-        items,
-        highImpact: items.some((i) => i.impact === 'high'),
-        latest: items.reduce(
-          (acc, i) => (i.published_at > acc ? i.published_at : acc),
-          items[0]?.published_at ?? ''
-        )
-      }))
-      .filter((x) => !top20Set.has(x.ticker) && filteredSet.has(x.ticker))
-      .sort((a, b) => {
-        if (a.highImpact !== b.highImpact) return a.highImpact ? -1 : 1;
-        return b.latest.localeCompare(a.latest);
-      });
-    return tickers;
-  });
-
-  const watchlistRows = $derived.by(() => {
-    const top20Set = new Set(top20.map((r) => r.ticker));
-    const newsSet = new Set(freshNewsTickers.map((x) => x.ticker));
-    return watchlist
-      .filter((t) => !top20Set.has(t) && !newsSet.has(t))
-      .map((t) => ({ ticker: t, row: rowsByTicker.get(t) }));
-  });
-
-  const newEntrants = new Set(deltas?.new_top20_entrants ?? []);
-  const accelSet = new Set(deltas?.momentum_accel ?? []);
-  const rankJumpMap = new Map(deltas?.rank_jumps?.map((j) => [j.ticker, j]) ?? []);
+  const REGIME_META: Record<string, { label: string; cls: 'up' | 'down' | 'warn' }> = {
+    risk_on: { label: 'risk on', cls: 'up' },
+    risk_off: { label: 'risk off', cls: 'down' },
+    mixed: { label: 'mixed', cls: 'warn' }
+  };
+  const regime = $derived(scan?.regime?.label ? REGIME_META[scan.regime.label] : null);
 </script>
 
 <svelte:head>
@@ -136,114 +156,77 @@
     <p class="mt-2 text-xs">Trigger the GitHub Actions workflow to populate <code>data/scan.json</code>.</p>
   </div>
 {:else}
-  <section class="mb-3 flex flex-wrap items-center gap-2 text-xs">
+  <!-- Status strip: window · regime · freshness. The freshness label ticks and
+       is tappable to refetch — no more frozen "23m ago" lying all afternoon. -->
+  <section class="mb-4 flex flex-wrap items-center gap-2 text-xs">
     <StatPill label="Window" value={scan.window} accent={scan.window === 'RTH' ? 'up' : 'flat'} />
-    <StatPill label="Tickers" value={`${filteredRows.length}/${scan.row_count}`} accent="info" />
-    <StatPill label="Synthesized" value={String(scan.synthesized_count)} accent={scan.synthesized_count > 0 ? 'info' : 'flat'} />
-    <StatPill label="Macro events" value={String(news?.macro_events.length ?? 0)} accent={news?.macro_events.length ? 'warn' : 'flat'} />
-    <span class="ml-auto text-zinc-500">last scan {fmtRelative(scan.generated_at)} · {fmtClock(scan.generated_at)}</span>
-  </section>
-
-  <FilterBar bind:filters />
-
-  <section class="mb-8">
-    <header class="mb-3 flex items-center justify-between">
-      <h2 class="text-sm font-semibold tracking-tight">Recommended</h2>
-      <span class="text-[10px] uppercase tracking-wider text-zinc-500">momentum setups with confirmation</span>
-    </header>
-    {#if recommended.longTerm.length === 0 && recommended.shortTerm.length === 0}
-      <div class="card p-6 text-center text-xs text-zinc-500">
-        <p>No high-conviction setups this scan.</p>
-        <p class="mt-1">Fresh picks land here after the next refresh — usually within an hour.</p>
-      </div>
-    {:else}
-      {#if recommended.longTerm.length > 0}
-        <h3 class="mb-2 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-signal-info">
-          Long-term picks
-          <span class="font-normal normal-case tracking-normal text-zinc-500">catalyst-backed · news explains the move</span>
-        </h3>
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {#each recommended.longTerm as rec, i (rec.ticker)}
-            {@const row = rowsByTicker.get(rec.ticker)}
-            {#if row}
-              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} trumpMention={trumpMentions.has(rec.ticker)} />
-            {/if}
-          {/each}
-        </div>
-      {/if}
-      {#if recommended.shortTerm.length > 0}
-        <h3 class="mb-2 mt-4 flex flex-wrap items-baseline gap-x-2 text-[10px] font-semibold uppercase tracking-wider text-zinc-300">
-          Short-term picks
-          <span class="font-normal normal-case tracking-normal text-zinc-500">pure technical · price-action trade</span>
-        </h3>
-        <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {#each recommended.shortTerm as rec, i (rec.ticker)}
-            {@const row = rowsByTicker.get(rec.ticker)}
-            {#if row}
-              <PickCard {rec} {row} rank={i + 1} news={news?.ticker_news[rec.ticker] ?? []} trumpMention={trumpMentions.has(rec.ticker)} />
-            {/if}
-          {/each}
-        </div>
-      {/if}
+    {#if regime}
+      <StatPill label="Regime" value={regime.label} accent={regime.cls} />
     {/if}
+    <StatPill label="Tickers" value={String(scan.row_count)} accent="info" />
+    {#if news?.macro_events.length}
+      <StatPill label="Macro events" value={String(news.macro_events.length)} accent="warn" />
+    {/if}
+    <button
+      type="button"
+      onclick={refresh}
+      title={`scan at ${fmtClock(scan.generated_at)} — tap to refresh`}
+      class="ml-auto flex items-center gap-1.5 rounded px-2 py-1 transition-colors hover:bg-ink-800 {STALE_CLASS[scanAge.level]}"
+    >
+      <span class="relative flex h-1.5 w-1.5">
+        {#if scanAge.level === 'fresh'}
+          <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-current opacity-60"></span>
+        {/if}
+        <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-current"></span>
+      </span>
+      <span class="{refreshing ? 'animate-pulse' : ''}">scan {fmtAge(scanAge.ageMin)}</span>
+    </button>
   </section>
 
-  {#if freshPredictions.length > 0}
-    <section class="mb-8">
-      <header class="mb-3 flex items-center justify-between">
-        <h2 class="text-sm font-semibold tracking-tight">🔮 Ahead of the move</h2>
-        <a href="/predictions" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">View all →</a>
+  {#if briefing && briefingFresh}
+    <section class="card mb-8 border-signal-info/30 p-4">
+      <header class="mb-2 flex flex-wrap items-baseline justify-between gap-2">
+        <h2 class="text-sm font-semibold tracking-tight">Briefing</h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">{briefing.window} · one read per scan</span>
       </header>
-      <div class="grid gap-3 sm:grid-cols-2">
-        {#each freshPredictions as p (p.ticker + p.trigger_ticker)}
-          {@const dir = p.direction === 'bullish' ? 'text-signal-up' : 'text-signal-down'}
-          <article class="card p-3">
-            <div class="mb-1.5 flex items-center justify-between gap-2">
-              <div class="flex flex-wrap items-center gap-1.5">
-                <a href={`/t/${p.ticker}`} class="font-mono text-xs font-semibold hover:underline {dir}">${p.ticker}</a>
-                <span class="text-[10px] font-medium {dir}">{p.direction === 'bullish' ? '📈 beneficiary' : '📉 at risk'}</span>
-              </div>
-              <span class="whitespace-nowrap rounded bg-signal-info/15 px-1.5 py-0.5 text-[9px] uppercase tracking-wider text-signal-info">not yet priced in</span>
-            </div>
-            <p class="line-clamp-2 text-xs leading-relaxed text-zinc-300">{p.rationale}</p>
-            <p class="mt-1.5 text-[10px] text-zinc-500">via <a href={`/t/${p.trigger_ticker}`} class="font-mono text-zinc-400 hover:underline">${p.trigger_ticker}</a> · conf {p.confidence} · {p.horizon}</p>
-          </article>
-        {/each}
-      </div>
-    </section>
-  {/if}
-
-  {#if serenityTop.length > 0}
-    <section class="mb-8">
-      <header class="mb-3 flex items-center justify-between">
-        <h2 class="text-sm font-semibold tracking-tight">🧠 Serenity</h2>
-        <a href="/serenity" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">View all →</a>
-      </header>
-      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {#each serenityTop as t (t.id)}
-          <article class="card p-3">
-            <div class="mb-1.5 flex items-center justify-between gap-2">
-              <div class="flex flex-wrap items-center gap-1.5">
-                <span class="text-[10px] font-semibold uppercase tracking-wider {SERENITY_STANCE[t.stance] ?? 'text-zinc-400'}">{t.stance}</span>
-                {#each t.tickers as tk}
-                  {@const lv = serenityLive(tk)}
-                  <a href={`/t/${tk}`} class="font-mono text-xs hover:underline {lv?.moving ? pctClass(lv.pct) : 'text-zinc-300'}">${tk}{#if lv?.moving}<span class="ml-0.5">{fmtPct(lv.pct)}</span>{/if}</a>
-                {/each}
-              </div>
-              <span class="whitespace-nowrap text-[10px] text-zinc-500">{fmtRelative(t.createdAt)}</span>
-            </div>
-            <p class="line-clamp-3 text-xs leading-relaxed text-zinc-300">{t.summaryEn || t.text}</p>
-            <a href={t.url} target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-[10px] font-medium text-signal-info hover:underline">View on X ↗</a>
-          </article>
-        {/each}
-      </div>
+      <p class="text-base font-medium leading-snug text-zinc-100">{briefing.headline}</p>
+      {#if briefing.market_state?.line}
+        <p class="mt-1.5 text-xs leading-relaxed text-zinc-400">{briefing.market_state.line}</p>
+      {/if}
+      {#if briefing.actions?.length}
+        <div class="mt-3 space-y-1.5">
+          {#each briefing.actions as a (a.ticker)}
+            <a href={`/t/${a.ticker}`} class="flex flex-wrap items-baseline gap-x-2 text-xs hover:bg-ink-800/40 rounded px-1 -mx-1 py-0.5">
+              <span class="num font-semibold {a.direction === 'long' ? 'text-signal-up' : 'text-signal-down'}">{a.direction === 'long' ? '▲' : '▼'} {a.ticker}</span>
+              {#if a.entry != null}
+                <span class="num text-zinc-400">{fmtPrice(a.entry)} → <span class="text-signal-up">{fmtPrice(a.target)}</span> / stop <span class="text-signal-down">{fmtPrice(a.stop)}</span></span>
+              {/if}
+              <span class="text-zinc-300">{a.line}</span>
+            </a>
+          {/each}
+        </div>
+      {/if}
+      {#if briefing.watch?.length}
+        <p class="mt-2.5 text-xs leading-relaxed text-zinc-400">
+          <span class="text-[10px] uppercase tracking-wider text-zinc-500">watch · </span>
+          {#each briefing.watch as w, i (w.ticker + w.type)}
+            <a href={`/t/${w.ticker}`} class="num text-zinc-300 hover:underline">${w.ticker}</a><span class="text-zinc-500"> {w.line}{i < briefing.watch.length - 1 ? ' · ' : ''}</span>
+          {/each}
+        </p>
+      {/if}
+      {#if briefing.changed?.length}
+        <p class="mt-1.5 text-[11px] text-zinc-500">since last scan: {briefing.changed.join(' · ')}</p>
+      {/if}
+      {#if briefing.caveats?.length}
+        <p class="mt-1.5 text-[10px] text-zinc-600">{briefing.caveats.join(' · ')}</p>
+      {/if}
     </section>
   {/if}
 
   <section class="mb-8">
     <header class="mb-3 flex items-center justify-between">
-      <h2 class="text-sm font-semibold tracking-tight">Top 20 movers</h2>
-      <span class="text-[10px] uppercase tracking-wider text-zinc-500">by |%chg|</span>
+      <h2 class="text-sm font-semibold tracking-tight">Top movers</h2>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">by |%chg| · unfiltered</span>
     </header>
     {#if top20.length === 0}
       <p class="text-xs text-zinc-500">No movers in this scan.</p>
@@ -264,23 +247,77 @@
     {/if}
   </section>
 
-  {#if freshNewsTickers.length > 0}
-    <section class="mb-8">
-      <header class="mb-3 flex items-center justify-between">
-        <h2 class="text-sm font-semibold tracking-tight">Fresh news</h2>
-        <span class="text-[10px] uppercase tracking-wider text-zinc-500">tickers with new headlines</span>
-      </header>
-      <div class="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {#each freshNewsTickers.slice(0, 12) as item (item.ticker)}
-          {@const row = rowsByTicker.get(item.ticker)}
+  <section class="mb-8">
+    <header class="mb-3 flex flex-wrap items-center justify-between gap-2">
+      <h2 class="text-sm font-semibold tracking-tight">Desk takes</h2>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">
+        {takes.length} take{takes.length === 1 ? '' : 's'} · {passes.length} passed
+      </span>
+    </header>
+    {#if invertedScore}
+      <p class="mb-2 rounded border border-signal-warn/30 bg-signal-warn/10 px-3 py-1.5 text-[11px] text-signal-warn">
+        Calibration warning: low-score longs are currently outperforming high-score longs over 5d — treat the conviction number as decoration until this flips. Details on <a href="/review" class="underline">Review</a>.
+      </p>
+    {/if}
+    {#if takes.length === 0}
+      <div class="card p-5 text-center text-xs text-zinc-500">
+        <p>The desk took nothing this scan{passes.length ? ` — it passed on ${passes.map((p) => p.ticker).join(', ')}` : ''}.</p>
+      </div>
+    {:else}
+      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {#each takes as rec (rec.ticker + rec.direction)}
+          {@const row = rowsByTicker.get(rec.ticker)}
           {#if row}
-            <TickerCard
-              row={row}
-              isAccel={accelSet.has(row.ticker)}
-              news={item.items}
-              trumpMention={trumpMentions.has(row.ticker)}
-            />
+            <TakeCard {rec} {row} recPerf={data.recPerf} />
           {/if}
+        {/each}
+      </div>
+    {/if}
+    {#if passes.length > 0 && takes.length > 0}
+      <details class="group mt-2">
+        <summary class="cursor-pointer list-none text-[11px] text-zinc-500 hover:text-zinc-300">
+          <span class="inline-block w-3 transition-transform group-open:rotate-90">▸</span>
+          Desk passed on {passes.map((p) => p.ticker).join(', ')} — why
+        </summary>
+        <div class="card mt-2 divide-y divide-ink-700/60">
+          {#each passes as p (p.ticker + p.direction)}
+            <div class="px-3 py-2 text-xs">
+              <a href={`/t/${p.ticker}`} class="num font-semibold text-zinc-200 hover:underline">{p.ticker}</a>
+              <span class="ml-1.5 text-[10px] uppercase tracking-wider text-zinc-500">{p.direction} · score {p.score}</span>
+              <p class="mt-0.5 leading-relaxed text-zinc-400">{p.desk?.rationale ?? p.desk?.risk?.concern ?? 'no rationale recorded'}</p>
+            </div>
+          {/each}
+        </div>
+      </details>
+    {/if}
+  </section>
+
+  {#if feedAll.length > 0}
+    <section class="mb-8">
+      <header class="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <h2 class="text-sm font-semibold tracking-tight">Feed</h2>
+        <div class="flex flex-wrap items-center gap-1">
+          {#each presentKinds as k (k)}
+            <button
+              type="button"
+              onclick={() => toggleKind(k)}
+              class="rounded px-2 py-0.5 text-[10px] uppercase tracking-wider transition-colors {activeKinds.size === 0 || activeKinds.has(k)
+                ? KIND_META[k].chip
+                : 'text-zinc-600 hover:text-zinc-400'}"
+            >
+              {KIND_META[k].label}
+            </button>
+          {/each}
+        </div>
+      </header>
+      {#if serenityWarning && feed.some((i) => i.kind === 'serenity')}
+        <p class="mb-2 text-[10px] text-signal-down">
+          🧠 Serenity {serenityWarning} — read for context, not for trades. <a href="/review" class="underline">track record</a>
+        </p>
+      {/if}
+      <div class="card overflow-hidden">
+        {#each feed as item (item.id)}
+          <FeedItem {item} {rowsByTicker} />
         {/each}
       </div>
     </section>
@@ -296,7 +333,7 @@
             ({watchlistRows.length})
           </span>
         </h2>
-        <span class="text-[10px] uppercase tracking-wider text-zinc-500">
+        <span class="hidden text-[10px] uppercase tracking-wider text-zinc-500 sm:block">
           {watchlistRows.map(({ ticker }) => ticker).join(' · ')}
         </span>
       </summary>
@@ -308,7 +345,7 @@
             <a href={`/t/${ticker}`} class="ticker-row text-sm opacity-60">
               <span></span>
               <span class="font-semibold tracking-tight">{ticker} <span class="text-zinc-500">★</span></span>
-              <span class="text-[10px] uppercase tracking-wider text-zinc-500 col-span-4">
+              <span class="col-span-2 text-[10px] uppercase tracking-wider text-zinc-500">
                 awaiting next scan
               </span>
             </a>
@@ -324,11 +361,12 @@
         <span class="inline-block w-3 text-zinc-500 transition-transform group-open:rotate-90">▸</span>
         All scan
         <span class="ml-1 text-[10px] font-normal text-zinc-500">
-          ({filteredRows.length})
+          ({filteredRows.length}/{scan.row_count})
         </span>
       </h2>
-      <span class="text-[10px] uppercase tracking-wider text-zinc-500">sortable, searchable</span>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">sortable · filterable</span>
     </summary>
+    <FilterBar bind:filters />
     <ScanTable rows={filteredRows} {watchlist} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
   </details>
 {/if}

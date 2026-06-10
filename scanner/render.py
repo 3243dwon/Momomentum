@@ -1,9 +1,10 @@
 """Write scan + delta + news output to data/*.json for the web app to consume."""
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 from scanner import config, staleness, universe
 from scanner.windows import Window
@@ -13,6 +14,10 @@ log = logging.getLogger(__name__)
 SCAN_FILE = config.DATA_DIR / "scan.json"
 NEWS_FILE = config.DATA_DIR / "news.json"
 PREDICTIONS_FILE = config.DATA_DIR / "predictions.json"
+# id → created_at map so a story re-emitted across scans keeps its ORIGINAL
+# created_at (predictions are regenerated fresh each scan). Cache-only.
+PREDICTION_CREATED_AT_FILE = config.CACHE_DIR / "prediction_created_at.json"
+_PREDICTION_CREATED_AT_RETENTION_DAYS = 45
 
 
 def _tier_for(memberships: list[str]) -> str:
@@ -71,8 +76,13 @@ def write_scan(
     now: datetime,
     universe_size: int,
     recommendations: dict | None = None,
+    regime: dict | None = None,
 ) -> None:
-    """Write data/scan.json from rows already enriched by enrich_rows()."""
+    """Write data/scan.json from rows already enriched by enrich_rows().
+
+    `regime` is the dict main.py already computed via regime.compute() —
+    passed through (never recomputed here). May be {} on Alpaca failure;
+    the web handles absence."""
     recommendations = recommendations or {"longs": [], "shorts": []}
     payload = {
         "generated_at": now.isoformat(),
@@ -80,6 +90,7 @@ def write_scan(
         "universe_size": universe_size,
         "row_count": len(enriched_rows),
         "synthesized_count": sum(1 for r in enriched_rows if r.get("synthesis")),
+        "regime": regime or {},
         "recommendations": recommendations,
         "rows": enriched_rows,
     }
@@ -111,6 +122,51 @@ def write_news(
     )
 
 
+def _prediction_id(p: dict) -> str:
+    """Stable per-story-per-call identity: same story re-emitted across scans
+    (same source news + ticker + direction) maps to the same id."""
+    src = next(iter(p.get("source_news_ids") or []), None) or p.get("event_summary", "")
+    raw = f"{p.get('trigger_ticker')}|{src}|{p.get('ticker')}|{p.get('direction')}"
+    return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def _stamp_created_at(predictions: list[dict], now: datetime) -> None:
+    """Attach created_at (ISO, first-generation time) to each prediction.
+    Re-emissions keep the original timestamp via a small cache-side map.
+    Fail-soft: on any cache error every prediction is stamped with `now`."""
+    created_map: dict[str, str] = {}
+    try:
+        if PREDICTION_CREATED_AT_FILE.exists():
+            loaded = json.loads(PREDICTION_CREATED_AT_FILE.read_text())
+            if isinstance(loaded, dict):
+                created_map = {str(k): str(v) for k, v in loaded.items()}
+    except Exception as e:
+        log.warning("Prediction created_at map unreadable (%s); restamping", e)
+
+    now_iso = now.isoformat()
+    for p in predictions:
+        pid = _prediction_id(p)
+        p["created_at"] = created_map.get(pid) or now_iso
+        created_map[pid] = p["created_at"]
+
+    # Prune entries past retention so the map can't grow unbounded.
+    cutoff = datetime.now(timezone.utc) - timedelta(days=_PREDICTION_CREATED_AT_RETENTION_DAYS)
+    pruned: dict[str, str] = {}
+    for k, v in created_map.items():
+        try:
+            ts = datetime.fromisoformat(v)
+            if ts.tzinfo is None:
+                ts = ts.replace(tzinfo=timezone.utc)
+            if ts >= cutoff:
+                pruned[k] = v
+        except Exception:
+            continue
+    try:
+        PREDICTION_CREATED_AT_FILE.write_text(json.dumps(pruned, indent=2))
+    except Exception as e:
+        log.warning("Prediction created_at map not persisted: %s", e)
+
+
 def write_predictions(
     events: list[dict],
     predictions: list[dict],
@@ -120,6 +176,7 @@ def write_predictions(
     (read by the /predictions page + the dashboard's 'Ahead of the move' section).
     `predictions` is the flattened per-ticker list (freshest first); `events`
     keeps the per-story analysis for the event view + audit."""
+    _stamp_created_at(predictions, now)
     fresh = sum(1 for p in predictions if p.get("priced_in") == "no")
     payload = {
         "generated_at": now.isoformat(),

@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
@@ -258,7 +258,7 @@ def run(
     except Exception as e:
         log.warning("Desk review raised: %s", e)
 
-    render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations)
+    render.write_scan(enriched_rows, window, now, uni_size, recommendations=recommendations, regime=regime)
     performance.log_recommendations(recommendations, rows, now, regime=regime)
     performance.log_predictions(ripple_predictions, rows, now, regime=regime)
 
@@ -288,16 +288,41 @@ def run(
     except Exception as e:
         log.warning("Serenity match raised: %s", e)
 
+    alerts: list[dict] = []
     if use_alerts:
         alerts, throttle = alert_rules.build_alerts(
             rows, deltas, syntheses, macro_analyses, window,
             serenity_matches=serenity_matches,
             ripple_predictions=ripple_predictions,
         )
-        sent = feishu.send_consolidated(alerts)
-        throttle.commit()
-        log.info("Alerts: built %d, sent %d card(s)", len(alerts), sent)
-        performance.log_alerts(alerts, rows, now, regime=regime)
+        # Dispatch honesty: only alerts that made it into a successfully-sent
+        # card enter the 2h throttle cooldown and the performance log —
+        # capped-out or failed-send alerts no longer count as "dispatched".
+        sent_cards, dispatched = feishu.send_consolidated(alerts)
+        alert_rules.record_dispatched(dispatched, throttle)
+        log.info(
+            "Alerts: built %d, dispatched %d in %d card(s)",
+            len(alerts), len(dispatched), sent_cards,
+        )
+        performance.log_alerts(dispatched, rows, now, regime=regime)
+
+    # Scan briefing: one Sonnet call condensing this scan into data/briefing.json
+    # for the web front page. Fail-soft — never blocks the scan; on any error
+    # the previous briefing.json stays in place.
+    try:
+        briefing.run(
+            client=client,
+            regime=regime,
+            rows=enriched_rows,
+            recommendations=recommendations,
+            alerts=alerts,
+            ripple_predictions=ripple_predictions,
+            macro_analyses=macro_analyses,
+            window=window,
+            now=now,
+        )
+    except Exception as e:
+        log.warning("Briefing raised: %s", e)
 
     # Mom digest: purely additive Chinese-language macro+industry digest to a
     # second Feishu webhook. No-op if FEISHU_MOM_WEBHOOK_URL isn't set.
@@ -337,6 +362,10 @@ def run(
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
     performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
     performance.compile_prediction_stats(datetime.now(config.MARKET_TZ))
+    # Public accountability ledger — the committed, permanent record of every
+    # alert/pick/prediction (the .jsonl logs above live only in evictable
+    # Actions caches). Written after evaluation so outcomes are fresh.
+    performance.write_ledger(datetime.now(_tz.utc))
 
     return 0
 

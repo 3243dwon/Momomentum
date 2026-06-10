@@ -14,12 +14,17 @@ Alert types fired (matched to design):
 from __future__ import annotations
 
 import logging
+import os
 
 from scanner import config, router
 from scanner.alerts.throttle import Throttle
 from scanner.windows import Window
 
 log = logging.getLogger(__name__)
+
+# Ticker-bearing alerts deep-link to the scanner's own ticker page; the
+# original article/post URL stays inside body_md so no information is lost.
+_SITE_URL = os.environ.get("SITE_URL", "https://momomentum.vercel.app")
 
 ALERT_TYPE_PRIORITY = {
     "catalyst": 100,
@@ -63,21 +68,28 @@ def _emit(
     body_md: str,
     signal: float | None = None,
     link: str | None = None,
+    extra: dict | None = None,
 ) -> None:
     key_id = ticker or alert_type
     if not throttle.allowed(key_id, alert_type, signal_pct=signal):
         return
-    out.append(
-        {
-            "ticker": ticker,
-            "type": alert_type,
-            "title": title,
-            "body_md": body_md,
-            "link": link,
-            "_signal_abs": abs(signal) if signal is not None else None,
-        }
-    )
-    throttle.record(key_id, alert_type, signal_pct=signal)
+    # In-run dedup: the throttle used to be recorded at build time, which also
+    # blocked same-scan duplicates. Recording now happens only after a
+    # successful dispatch (see record_dispatched), so guard here instead.
+    if any(a.get("ticker") == ticker and a.get("type") == alert_type for a in out):
+        return
+    alert = {
+        "ticker": ticker,
+        "type": alert_type,
+        "title": title,
+        # Ticker alerts always deep-link to the scanner's ticker page.
+        "link": f"{_SITE_URL}/t/{ticker}" if ticker else link,
+        "body_md": body_md,
+        "_signal_abs": abs(signal) if signal is not None else None,
+    }
+    if extra:
+        alert.update(extra)
+    out.append(alert)
 
 
 def build_alerts(
@@ -269,7 +281,8 @@ def build_alerts(
             alerts, throttle,
             ticker=t, alert_type="serenity_match",
             title=f"🧠 Serenity flagged {t} — {_fmt_pct(pct)} today",
-            body_md=body, signal=pct, link=url or None,
+            body_md=body, signal=pct,
+            extra={"stance": stance},  # thesis direction for performance logging
         )
 
     # === E. Ripple predictions (forward second-order, high-signal) ===
@@ -305,7 +318,8 @@ def build_alerts(
             alerts, throttle,
             ticker=t, alert_type="ripple",
             title=f"🔮 {t} — {'bullish' if bullish else 'bearish'} read-through from {trigger}",
-            body_md=body, signal=pct if pct is not None else 0.0, link=url or None,
+            body_md=body, signal=pct if pct is not None else 0.0,
+            extra={"direction": p.get("direction")},  # thesis direction for perf logging
         )
         ripple_pushed += 1
 
@@ -328,13 +342,26 @@ def build_alerts(
     standard = standard[: config.MAX_STANDARD_ALERTS_PER_SCAN]
 
     # High-conviction first so they render at top of any notification stack.
+    # NOTE: `_signal_abs` stays on the dicts — record_dispatched() needs it to
+    # write the throttle entry after a successful Feishu send, and pops it then.
     final = high + standard
-
-    for a in final:
-        a.pop("_signal_abs", None)
 
     log.info(
         "Alerts: %d total (%d high-conviction always-fire, %d standard kept, %d standard dropped by cap %d)",
         len(final), len(high), len(standard), dropped, config.MAX_STANDARD_ALERTS_PER_SCAN,
     )
     return final, throttle
+
+
+def record_dispatched(alerts: list[dict], throttle: Throttle) -> None:
+    """Record cooldowns for the alerts that actually made it into a
+    successfully-sent dispatch, then persist the throttle state.
+
+    Throttle entries used to be written at BUILD time, so alerts that were
+    capped out of the standard list or whose Feishu send failed still entered
+    the 2h cooldown (and the performance log). Call this with only the alerts
+    feishu.send_consolidated() reported as delivered."""
+    for a in alerts:
+        key_id = a.get("ticker") or a.get("type", "")
+        throttle.record(key_id, a.get("type", ""), signal_pct=a.pop("_signal_abs", None))
+    throttle.commit()

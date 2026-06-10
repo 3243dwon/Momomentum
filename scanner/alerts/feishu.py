@@ -184,7 +184,12 @@ def _build_ticker_card(alerts: list[dict]) -> dict:
             continue
         lines = [f"**{label}** ({len(group)})"]
         for a in group:
-            lines.append(a.get("body_md", "").strip())
+            body = a.get("body_md", "").strip()
+            # The consolidated card has no per-alert button, so surface each
+            # alert's deep link (the scanner's ticker page) as a lark_md link.
+            if a.get("link") and a.get("ticker"):
+                body += f"\n[→ {a['ticker']} in scanner]({a['link']})"
+            lines.append(body)
         sections.append("\n\n".join(lines))
 
     body = "\n\n---\n\n".join(sections) if sections else "_(no alerts)_"
@@ -247,16 +252,20 @@ def _post_card(card: dict, stub_alert: dict) -> bool:
         return False
 
 
-def send_consolidated(alerts: list[dict]) -> int:
+def send_consolidated(alerts: list[dict]) -> tuple[int, list[dict]]:
     """Send at most 2 cards per scan: one for ticker alerts (grouped by type)
-    and one for macro events. Returns count of cards sent."""
+    and one for macro events. Returns (cards_sent, alerts_delivered) where
+    alerts_delivered contains exactly the alerts included in cards that were
+    successfully posted — callers use it to throttle-record / performance-log
+    only what actually went out."""
     if not alerts:
-        return 0
+        return 0, []
 
     ticker_alerts = [a for a in alerts if not (a.get("type") or "").startswith("macro")]
     macro_alerts = [a for a in alerts if (a.get("type") or "").startswith("macro")]
 
     sent = 0
+    delivered: list[dict] = []
     if ticker_alerts:
         card = _build_ticker_card(ticker_alerts)
         stub = {
@@ -268,6 +277,7 @@ def send_consolidated(alerts: list[dict]) -> int:
         }
         if _post_card(card, stub):
             sent += 1
+            delivered.extend(ticker_alerts)
     if macro_alerts:
         card = _build_macro_card(macro_alerts)
         stub = {
@@ -278,4 +288,5 @@ def send_consolidated(alerts: list[dict]) -> int:
         }
         if _post_card(card, stub):
             sent += 1
-    return sent
+            delivered.extend(macro_alerts)
+    return sent, delivered

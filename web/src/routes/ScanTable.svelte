@@ -16,6 +16,9 @@
   type SortKey = 'ticker' | 'price' | 'pct_1d' | 'pct_5d' | 'rel_volume' | 'rsi_14' | 'volume';
   let sortKey = $state<SortKey>('pct_1d');
   let sortDir = $state<'asc' | 'desc'>('desc');
+  // Both % columns sort by magnitude — "biggest movers first" regardless of
+  // sign, consistently. (pct_1d used to be abs while pct_5d was signed.)
+  const ABS_KEYS: SortKey[] = ['pct_1d', 'pct_5d'];
   let query = $state('');
 
   const watchSet = new Set(watchlist);
@@ -44,7 +47,11 @@
           ? a.ticker.localeCompare(b.ticker)
           : b.ticker.localeCompare(a.ticker);
       }
-      if (sortKey === 'pct_1d') return compareNum(a.pct_1d != null ? Math.abs(a.pct_1d) : null, b.pct_1d != null ? Math.abs(b.pct_1d) : null, sortDir);
+      if (ABS_KEYS.includes(sortKey)) {
+        const av = (a as any)[sortKey] as number | null;
+        const bv = (b as any)[sortKey] as number | null;
+        return compareNum(av != null ? Math.abs(av) : null, bv != null ? Math.abs(bv) : null, sortDir);
+      }
       return compareNum(
         (a as any)[sortKey] ?? null,
         (b as any)[sortKey] ?? null,
@@ -74,13 +81,13 @@
     <table class="w-full text-xs">
       <thead class="sticky top-0 bg-ink-900 text-[10px] uppercase tracking-wider text-zinc-500">
         <tr class="border-b border-ink-700">
-          <th class="cursor-pointer px-3 py-2 text-left" onclick={() => setSort('ticker')}>Ticker {sortIndicator('ticker')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('price')}>Price {sortIndicator('price')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('pct_1d')}>%chg 1d {sortIndicator('pct_1d')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('pct_5d')}>%chg 5d {sortIndicator('pct_5d')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('rel_volume')}>RelVol {sortIndicator('rel_volume')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('volume')}>Volume {sortIndicator('volume')}</th>
-          <th class="cursor-pointer px-3 py-2 text-right" onclick={() => setSort('rsi_14')}>RSI {sortIndicator('rsi_14')}</th>
+          <th aria-sort={sortKey === 'ticker' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-left"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" onclick={() => setSort('ticker')}>Ticker {sortIndicator('ticker')}</button></th>
+          <th aria-sort={sortKey === 'price' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" onclick={() => setSort('price')}>Price {sortIndicator('price')}</button></th>
+          <th aria-sort={sortKey === 'pct_1d' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" title="sorts by magnitude" onclick={() => setSort('pct_1d')}>|%chg| 1d {sortIndicator('pct_1d')}</button></th>
+          <th aria-sort={sortKey === 'pct_5d' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" title="sorts by magnitude" onclick={() => setSort('pct_5d')}>|%chg| 5d {sortIndicator('pct_5d')}</button></th>
+          <th aria-sort={sortKey === 'rel_volume' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" onclick={() => setSort('rel_volume')}>RelVol {sortIndicator('rel_volume')}</button></th>
+          <th aria-sort={sortKey === 'volume' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" onclick={() => setSort('volume')}>Volume {sortIndicator('volume')}</button></th>
+          <th aria-sort={sortKey === 'rsi_14' ? (sortDir === 'asc' ? 'ascending' : 'descending') : undefined} class="px-3 py-2 text-right"><button type="button" class="uppercase tracking-wider hover:text-zinc-300" onclick={() => setSort('rsi_14')}>RSI {sortIndicator('rsi_14')}</button></th>
           <th class="px-3 py-2 text-left">Flags</th>
         </tr>
       </thead>

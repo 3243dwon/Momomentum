@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+  import { replaceState } from '$app/navigation';
 
   export type Filters = {
     size: 'any' | 'large' | 'midsmall';
@@ -58,33 +59,46 @@
     }
   ];
 
-  const STORAGE_KEY = 'momentum:filters';
-
-  function load(): Filters {
-    if (!browser) return DEFAULTS;
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (!raw) return DEFAULTS;
-      return { ...DEFAULTS, ...JSON.parse(raw) };
-    } catch {
-      return DEFAULTS;
-    }
+  // Filter state lives in the URL — visible, shareable, back-button-friendly,
+  // and gone on a fresh visit. (It used to persist in localStorage and
+  // silently truncate the whole dashboard on every return visit.)
+  function fromURL(): Filters {
+    if (!browser) return { ...DEFAULTS };
+    const sp = new URL(location.href).searchParams;
+    const pick = <K extends keyof Filters>(key: K, allowed: Filters[K][]): Filters[K] => {
+      const v = sp.get(key) as Filters[K] | null;
+      return v && allowed.includes(v) ? v : DEFAULTS[key];
+    };
+    return {
+      size: pick('size', ['any', 'large', 'midsmall']),
+      move: pick('move', ['any', 'p3', 'p5']),
+      volume: pick('volume', ['any', 'unusual']),
+      news: pick('news', ['any', 'with']),
+      vwap: pick('vwap', ['any', 'above'])
+    };
   }
 
   let { filters = $bindable() }: { filters: Filters } = $props();
 
-  if (browser) filters = load();
+  if (browser) filters = fromURL();
 
-  function persist() {
+  function sync(next: Filters) {
+    filters = next;
     if (!browser) return;
+    const url = new URL(location.href);
+    for (const key of Object.keys(DEFAULTS) as (keyof Filters)[]) {
+      if (next[key] === DEFAULTS[key]) url.searchParams.delete(key);
+      else url.searchParams.set(key, next[key]);
+    }
     try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(filters));
-    } catch {}
+      replaceState(url, {});
+    } catch {
+      history.replaceState(history.state, '', url);
+    }
   }
 
   function reset() {
-    filters = { ...DEFAULTS };
-    persist();
+    sync({ ...DEFAULTS });
   }
 
   const isActive = $derived(
@@ -153,13 +167,11 @@
   ];
 
   function set<K extends keyof Filters>(key: K, value: Filters[K]) {
-    filters = { ...filters, [key]: value };
-    persist();
+    sync({ ...filters, [key]: value });
   }
 
   function applyPreset(preset: Filters) {
-    filters = { ...preset };
-    persist();
+    sync({ ...preset });
   }
 
   function matches(preset: Filters): boolean {
@@ -187,6 +199,15 @@
       {p.label}
     </button>
   {/each}
+  {#if isActive}
+    <button
+      type="button"
+      onclick={reset}
+      class="ml-auto rounded px-2 py-1 text-zinc-500 hover:bg-ink-800 hover:text-zinc-200"
+    >
+      Reset
+    </button>
+  {/if}
 </section>
 
 <details class="mb-2 text-xs">
@@ -244,13 +265,4 @@
       </div>
     </div>
   {/each}
-  {#if isActive}
-    <button
-      type="button"
-      onclick={reset}
-      class="ml-auto rounded px-2 py-1 text-zinc-500 hover:bg-ink-800 hover:text-zinc-200"
-    >
-      Reset
-    </button>
-  {/if}
 </section>

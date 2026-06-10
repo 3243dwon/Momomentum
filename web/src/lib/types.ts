@@ -49,6 +49,13 @@ export interface ScanRow {
   synthesis?: Synthesis;
 }
 
+// Market regime snapshot from scanner/regime.py compute(). Fails soft to {}
+// upstream, so every field is optional; `label` is the one to render.
+export interface Regime {
+  label?: 'risk_on' | 'risk_off' | 'mixed';
+  [key: string]: unknown;
+}
+
 export interface ScanData {
   generated_at: string;
   window: Window;
@@ -56,6 +63,7 @@ export interface ScanData {
   row_count: number;
   synthesized_count: number;
   recommendations?: Recommendations;
+  regime?: Regime;
   rows: ScanRow[];
 }
 
@@ -195,6 +203,8 @@ export interface RipplePrediction {
   event_summary: string;
   news_url: string | null;
   source_news_ids: string[];
+  /** When the call was first made — survives re-emission across scans. */
+  created_at?: string;
 }
 
 export interface RippleEvent {
@@ -226,6 +236,9 @@ export interface PredictionPerformance {
   total_predictions: number;
   by_confidence: Record<string, AlertTypeStats>;
   by_priced_in: Record<string, AlertTypeStats>;
+  /** Calls pushed without a scan-row entry price — visible, not hidden. */
+  untracked_count?: number;
+  horizon_note?: string;
 }
 
 export interface Watchlist {
@@ -277,6 +290,9 @@ export interface HorizonStats {
   evaluated: number;
   hit_rate: number | null;
   avg_return_pct: number | null;
+  /** Net of the 0.5% round-trip slippage drag (perf-roadmap). */
+  hit_rate_net?: number | null;
+  avg_return_net_pct?: number | null;
 }
 
 export interface AlertTypeStats {
@@ -446,4 +462,57 @@ export interface SerenityTweet {
 export interface SerenityData {
   generated_at: string;
   tweets: SerenityTweet[];
+}
+
+// ledger.json — the committed accountability ledger: every dispatched alert,
+// pick, and prediction with its outcome. Keep in sync with the ledger writer
+// in scanner/performance.py.
+export type LedgerStatus = 'pending' | 'hit' | 'miss' | 'untracked';
+
+export interface LedgerEntry {
+  id: string;
+  ts: string;
+  kind: 'alert' | 'pick' | 'prediction';
+  type: string;
+  ticker: string;
+  direction: 'long' | 'short' | null;
+  confidence: string | null;
+  price: number | null;
+  thesis: string;
+  outcomes: { '1d': number | null; '3d': number | null; '5d': number | null };
+  status: LedgerStatus;
+}
+
+export interface LedgerData {
+  generated_at: string;
+  window_days: number;
+  entries: LedgerEntry[];
+}
+
+// briefing.json — one structured LLM call per scan; the answer-first top of
+// the home page. Keep in sync with scanner/briefing.py.
+export interface BriefingAction {
+  ticker: string;
+  direction: 'long' | 'short';
+  entry: number | null;
+  stop: number | null;
+  target: number | null;
+  line: string;
+}
+
+export interface BriefingWatch {
+  ticker: string;
+  type: string;
+  line: string;
+}
+
+export interface BriefingData {
+  generated_at: string;
+  window: string;
+  headline: string;
+  market_state: { regime: string; line: string };
+  actions: BriefingAction[];
+  watch: BriefingWatch[];
+  changed: string[];
+  caveats: string[];
 }

@@ -47,7 +47,7 @@
   <span class="whitespace-nowrap font-semibold tracking-tight text-zinc-100">
     {row.ticker}{#if pinned}<span class="ml-1 text-zinc-500">★</span>{/if}
   </span>
-  <span class="min-w-0 truncate">
+  <span class="spark-cell min-w-0 truncate">
     {#if row.spark && row.spark.length >= 2}
       <Sparkline values={row.spark} up={(row.pct_1d ?? 0) >= 0} treatment="block" />
     {/if}
@@ -60,7 +60,7 @@
   </span>
   <IconCluster {flags} max={3} size="sm" />
   {#if why}
-    <p class="col-span-6 -mt-1 pl-[94px] line-clamp-1 text-[11px] leading-relaxed text-zinc-500">
+    <p class="-mt-1 pl-[84px] sm:pl-[94px] line-clamp-1 text-[11px] leading-relaxed text-zinc-500">
       <span class="text-zinc-600">{whyMeta} ·</span>
       {why}
     </p>

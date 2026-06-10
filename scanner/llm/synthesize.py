@@ -141,8 +141,22 @@ def synthesize(
         if ticker in technicals_by_ticker and enriched_news_by_ticker.get(ticker):
             target_tickers.add(ticker)
 
+    # Enforce the per-scan Sonnet budget on the MERGED list. main.py caps
+    # must_synthesize to MAX_SONNET_SYNTHESES_PER_SCAN, but the union with
+    # route_to_synthesis tickers was unbounded — must_synthesize entries win
+    # the budget first, then route_to_synthesis fills the remainder.
+    cap = config.MAX_SONNET_SYNTHESES_PER_SCAN
+    ordered = sorted(t for t in target_tickers if t in must_synthesize)
+    ordered += sorted(t for t in target_tickers if t not in must_synthesize)
+    if len(ordered) > cap:
+        log.info(
+            "Sonnet cap: %d merged targets → capping to %d (must_synthesize first)",
+            len(ordered), cap,
+        )
+        ordered = ordered[:cap]
+
     targets: list[tuple[str, dict, list[dict]]] = []
-    for ticker in target_tickers:
+    for ticker in ordered:
         tech = technicals_by_ticker.get(ticker)
         if not tech:
             continue

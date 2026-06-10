@@ -79,6 +79,11 @@ jobs:
           git config user.name "momentum-bot"
           git config user.email "momentum-bot@users.noreply.github.com"
           git add data/scan.json data/deltas.json data/universe.json data/news.json data/performance.json data/recommendation_performance.json 2>/dev/null || true
+          # Added one-by-one: a single missing pathspec aborts a multi-file
+          # `git add`, and some of these (e.g. briefing.json) are conditional.
+          for f in data/predictions.json data/prediction_performance.json data/political.json data/trump_pulse.json data/desk_performance.json data/ledger.json data/briefing.json; do
+            git add "$f" 2>/dev/null || true
+          done
           if git diff --cached --quiet; then
             echo "No data changes to commit"
             exit 0

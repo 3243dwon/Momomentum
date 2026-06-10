@@ -1,13 +1,11 @@
-import { loadPredictions, loadPredictionPerformance } from '$lib/api';
-import type { PageLoad } from './$types';
+import { redirect } from "@sveltejs/kit";
+import type { PageLoad } from "./$types";
 
 export const ssr = false;
 export const prerender = false;
 
-export const load: PageLoad = async ({ fetch }) => {
-  const [predictions, perf] = await Promise.all([
-    loadPredictions(fetch),
-    loadPredictionPerformance(fetch)
-  ]);
-  return { predictions, perf };
+// Route folded into the home feed (see lib/feed.ts); per-ticker slices live
+// on /t/[ticker].
+export const load: PageLoad = () => {
+  redirect(307, "/");
 };
