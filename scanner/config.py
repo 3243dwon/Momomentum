@@ -90,3 +90,9 @@ RIPPLE_PRICED_IN_PCT = 2.0
 # News types whose stories plausibly ripple to OTHER tickers. Analyst notes and
 # litigation rarely move a different company, so they're excluded as triggers.
 RIPPLE_TRIGGER_TYPES = ("ma", "product", "guidance", "earnings")
+
+# Scan briefing — one Sonnet call per scan that condenses everything the scan
+# already computed into data/briefing.json (headline / actions / watch /
+# changed / caveats) for the web front page. Set BRIEFING_ENABLED=0 to disable.
+BRIEFING_ENABLED = (os.environ.get("BRIEFING_ENABLED", "true").strip().lower()
+                    not in ("0", "false", "no", "off"))

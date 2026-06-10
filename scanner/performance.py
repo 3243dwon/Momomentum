@@ -10,6 +10,7 @@ data/performance.json for the web app.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 from datetime import datetime, timedelta, timezone
@@ -26,10 +27,28 @@ RECOMMENDATION_PERFORMANCE_FILE = config.DATA_DIR / "recommendation_performance.
 DESK_PERFORMANCE_FILE = config.DATA_DIR / "desk_performance.json"
 PREDICTIONS_LOG = config.CACHE_DIR / "predictions_log.jsonl"
 PREDICTION_PERFORMANCE_FILE = config.DATA_DIR / "prediction_performance.json"
+LEDGER_FILE = config.DATA_DIR / "ledger.json"            # committed; permanent public record
 
 RETENTION_DAYS = 45
 HORIZONS = [1, 3, 5]  # days
 HIGH_SCORE = 7  # recommendation score >= this is bucketed as a high-conviction pick
+# Flat round-trip slippage drag applied to net stats (docs/perf-roadmap.md:
+# 0.3-0.8% is realistic for the mid/small caps the scanner surfaces).
+SLIPPAGE_PCT = 0.5
+# A persistent pick re-surfacing within this window is the SAME call, not a
+# new one — re-logging it every 2-3h scan inflated n ~5x.
+REC_DEDUP_HOURS = 20
+
+
+def _parse_ts(ts: str) -> datetime | None:
+    """ISO string → aware UTC datetime. None when unparseable."""
+    try:
+        dt = datetime.fromisoformat(ts)
+    except Exception:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt.astimezone(timezone.utc)
 
 
 def _read_entries(path: Path = ALERTS_LOG) -> list[dict]:
@@ -82,6 +101,29 @@ def _extract_features(row: dict) -> dict:
     }
 
 
+def _alert_direction(alert: dict, pct: float) -> tuple[int, str]:
+    """(direction, basis) for one alert.
+
+    Alert types that carry an actual stance — ripple (bullish/bearish) and
+    serenity_match (tweet stance) — are graded on the THESIS direction.
+    Pure momentum types (big_move, watchlist, delta_*, catalyst) have no
+    stance; their sign-of-move "direction" measures continuation, and the
+    basis tag lets the UI label those stats honestly.
+    """
+    atype = alert.get("type", "")
+    if atype == "ripple":
+        d = alert.get("direction")
+        if d in ("bullish", "bearish"):
+            return (1 if d == "bullish" else -1), "thesis"
+    elif atype == "serenity_match":
+        s = alert.get("stance")
+        if s in ("bull", "bullish"):
+            return 1, "thesis"
+        if s in ("bear", "bearish"):
+            return -1, "thesis"
+    return (1 if pct >= 0 else -1), "move"
+
+
 def log_alerts(alerts: list[dict], rows: list[dict], now: datetime,
                 regime: dict | None = None) -> None:
     """Append dispatched alerts to the log. Macro alerts (no ticker) are skipped.
@@ -90,7 +132,6 @@ def log_alerts(alerts: list[dict], rows: list[dict], now: datetime,
     each entry so future analysis can split hit rates by regime label.
     """
     by_ticker = {r["ticker"]: r for r in rows}
-    existing = _read_entries()
     new_entries = []
     for alert in alerts:
         t = alert.get("ticker")
@@ -100,13 +141,16 @@ def log_alerts(alerts: list[dict], rows: list[dict], now: datetime,
         if not row or row.get("price") is None:
             continue
         pct = row.get("pct_1d") or 0
+        direction, basis = _alert_direction(alert, pct)
         entry = {
             "ts": now.astimezone(timezone.utc).isoformat(),
             "ticker": t,
             "type": alert.get("type", "unknown"),
+            "title": alert.get("title", ""),
             "price_at_alert": row["price"],
             "pct_1d_at_alert": pct,
-            "direction": 1 if pct >= 0 else -1,
+            "direction": direction,
+            "direction_basis": basis,
             "evaluations": {},
         }
         if regime:
@@ -160,6 +204,8 @@ def _evaluate_log(alpaca_client, now: datetime, log_path: Path,
     entries = _read_entries(log_path)
     pending: list[tuple[int, str, int]] = []
     for i, entry in enumerate(entries):
+        if entry.get(price_key) is None:
+            continue  # untracked (no entry price) — excluded from evaluation
         try:
             entry_time = datetime.fromisoformat(entry["ts"])
         except Exception:
@@ -224,8 +270,31 @@ def evaluate_pending_predictions(alpaca_client, now: datetime) -> None:
                   lambda e: 1 if e.get("direction") == "bullish" else -1)
 
 
+def _horizon_stats(returns: list[float]) -> dict:
+    """Gross AND net-of-slippage stats for one horizon bucket. Net applies the
+    flat SLIPPAGE_PCT round-trip drag to every signed return."""
+    n = len(returns)
+    if not n:
+        return {
+            "evaluated": 0,
+            "hit_rate": None, "avg_return_pct": None,
+            "hit_rate_net": None, "avg_return_net_pct": None,
+        }
+    net = [r - SLIPPAGE_PCT for r in returns]
+    return {
+        "evaluated": n,
+        "hit_rate": round(sum(1 for r in returns if r > 0) / n, 3),
+        "avg_return_pct": round(sum(returns) / n, 2),
+        "hit_rate_net": round(sum(1 for r in net if r > 0) / n, 3),
+        "avg_return_net_pct": round(sum(net) / n, 2),
+    }
+
+
 def compile_stats(now: datetime) -> dict:
-    """Roll up the last 30 days into per-type hit-rate + avg-return stats."""
+    """Roll up the last 30 days into per-type hit-rate + avg-return stats
+    (gross and net of slippage), tagged with each type's dominant
+    direction_basis so the UI can label move-based stats as continuation
+    rather than thesis accuracy."""
     entries = _read_entries()
     cutoff = (now - timedelta(days=30)).isoformat()
     recent = [e for e in entries if e["ts"] >= cutoff]
@@ -235,33 +304,31 @@ def compile_stats(now: datetime) -> dict:
         t = e["type"]
         # Normalize macro:* → macro for aggregation
         key = t.split(":")[0] if ":" in t else t
-        per_type.setdefault(key, {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}})
+        per_type.setdefault(key, {"count": 0, "basis": {}, "horizons": {h: [] for h in HORIZONS}})
         per_type[key]["count"] += 1
+        basis = e.get("direction_basis") or "move"  # legacy entries were sign-of-move
+        per_type[key]["basis"][basis] = per_type[key]["basis"].get(basis, 0) + 1
         for h in HORIZONS:
             ev = e.get("evaluations", {}).get(f"{h}d")
             if not ev:
                 continue
-            per_type[key]["horizons"][h]["n"] += 1
-            if ev["signed_return_pct"] > 0:
-                per_type[key]["horizons"][h]["hits"] += 1
-            per_type[key]["horizons"][h]["returns"].append(ev["signed_return_pct"])
+            per_type[key]["horizons"][h].append(ev["signed_return_pct"])
 
     out: dict = {
         "generated_at": now.isoformat(),
         "window_days": 30,
+        "slippage_round_trip_pct": SLIPPAGE_PCT,
         "total_alerts": len(recent),
         "per_type": {},
     }
     for atype, stats in per_type.items():
-        horizons = {}
-        for h, hs in stats["horizons"].items():
-            n = hs["n"]
-            horizons[f"{h}d"] = {
-                "evaluated": n,
-                "hit_rate": round(hs["hits"] / n, 3) if n else None,
-                "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
-            }
-        out["per_type"][atype] = {"count": stats["count"], "horizons": horizons}
+        horizons = {f"{h}d": _horizon_stats(rets) for h, rets in stats["horizons"].items()}
+        dominant_basis = max(stats["basis"], key=stats["basis"].get) if stats["basis"] else "move"
+        out["per_type"][atype] = {
+            "count": stats["count"],
+            "direction_basis": dominant_basis,
+            "horizons": horizons,
+        }
 
     PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
     log.info(
@@ -279,20 +346,37 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
     Also persists a feature vector (rsi/macd/vol/news/etc) and the regime
     snapshot per pick — these let future analyses regress forward return
     against feature×regime instead of just score band.
+
+    Cross-scan dedup: a (ticker, direction) already logged within the last
+    REC_DEDUP_HOURS is the same persistent pick re-surfacing on the next
+    2-3h scan, not a new call — re-logging it inflated n ~5x.
     """
     by_ticker = {r["ticker"]: r for r in rows}
+
+    dedup_cutoff = now.astimezone(timezone.utc) - timedelta(hours=REC_DEDUP_HOURS)
+    recently_logged: set[tuple[str, str]] = set()
+    for e in _read_entries(RECS_LOG):
+        ts = _parse_ts(e.get("ts", ""))
+        if ts is not None and ts >= dedup_cutoff:
+            recently_logged.add((e.get("ticker"), e.get("direction", "long")))
+
     new_entries = []
+    skipped_dupes = 0
     for direction in ("longs", "shorts"):
         for rec in recommendations.get(direction, []):
             t = rec.get("ticker")
             row = by_ticker.get(t)
             if not row or row.get("price") is None:
                 continue
+            if (t, rec.get("direction", "long")) in recently_logged:
+                skipped_dupes += 1
+                continue
             entry = {
                 "ts": now.astimezone(timezone.utc).isoformat(),
                 "ticker": t,
                 "direction": rec.get("direction", "long"),
                 "score": rec.get("score", 0),
+                "thesis": "; ".join((rec.get("reasons") or [])[:3]),
                 "price_at_pick": row["price"],
                 "evaluations": {},
                 "features": _extract_features(row),
@@ -312,11 +396,15 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
                     "risk_veto": (d.get("risk") or {}).get("veto"),
                 }
             new_entries.append(entry)
-    if new_entries:
+    if new_entries or skipped_dupes:
         with open(RECS_LOG, "a") as f:
             for e in new_entries:
                 f.write(json.dumps(e) + "\n")
-        log.info("Logged %d recommendations for performance tracking", len(new_entries))
+        log.info(
+            "Logged %d unique recommendations for performance tracking "
+            "(%d suppressed as repeats within %dh)",
+            len(new_entries), skipped_dupes, REC_DEDUP_HOURS,
+        )
 
 
 def compile_recommendation_stats(now: datetime) -> dict:
@@ -451,20 +539,44 @@ def compile_desk_stats(now: datetime) -> dict:
 def log_predictions(predictions: list[dict], rows: list[dict], now: datetime,
                     regime: dict | None = None) -> None:
     """Append this scan's ripple predictions to the log with their entry price,
-    so 1/3/5-day outcomes can be evaluated later. The predicted name must be in
-    the scan (so we have a real price anchor); ripple targets are universe-
-    constrained, so popular names are present even when they've barely moved.
+    so 1/3/5-day outcomes can be evaluated later.
+
+    Predicted names with no scan-row price — exactly the not-in-scan names the
+    ripple tier pushes hardest — are NOT dropped: we best-effort fetch an entry
+    price via the same Alpaca snapshot util the evaluator uses; if that fails
+    they're logged with price_at_prediction=null and status "untracked"
+    (excluded from evaluation, surfaced as untracked_count in the stats).
 
     `priced_in` and `confidence` are stored so compile_prediction_stats can
     isolate the honest headline: how do the NOT-yet-priced-in calls actually do?
     """
     by_ticker = {r["ticker"]: r for r in rows}
+
+    # Best-effort entry prices for names without a scan-row price.
+    missing = sorted({
+        p["ticker"] for p in predictions
+        if p.get("ticker") and (by_ticker.get(p["ticker"]) or {}).get("price") is None
+    })
+    fetched: dict[str, float] = {}
+    if missing:
+        try:
+            from scanner import technicals as _technicals
+            alpaca = getattr(_technicals, "_CLIENT", None)
+            if alpaca is not None:
+                fetched = _fetch_current_prices(alpaca, missing)
+        except Exception as e:
+            log.warning("Prediction entry-price fetch failed: %s", e)
+
     new_entries = []
+    untracked = 0
     for p in predictions:
         t = p.get("ticker")
-        row = by_ticker.get(t)
-        if not row or row.get("price") is None:
+        if not t:
             continue
+        row = by_ticker.get(t)
+        price = row.get("price") if row else None
+        if price is None:
+            price = fetched.get(t)
         entry = {
             "ts": now.astimezone(timezone.utc).isoformat(),
             "ticker": t,
@@ -474,9 +586,13 @@ def log_predictions(predictions: list[dict], rows: list[dict], now: datetime,
             "priced_in": p.get("priced_in", "no"),
             "horizon": p.get("horizon"),
             "trigger_ticker": p.get("trigger_ticker"),
-            "price_at_prediction": row["price"],
+            "thesis": (p.get("rationale") or "")[:200],
+            "price_at_prediction": price,
             "evaluations": {},
         }
+        if price is None:
+            entry["status"] = "untracked"
+            untracked += 1
         if regime:
             entry["regime"] = regime
         new_entries.append(entry)
@@ -484,19 +600,25 @@ def log_predictions(predictions: list[dict], rows: list[dict], now: datetime,
         with open(PREDICTIONS_LOG, "a") as f:
             for e in new_entries:
                 f.write(json.dumps(e) + "\n")
-        log.info("Logged %d predictions for performance tracking", len(new_entries))
+        log.info(
+            "Logged %d predictions for performance tracking (%d untracked, no price)",
+            len(new_entries), untracked,
+        )
 
 
 def compile_prediction_stats(now: datetime) -> dict:
-    """Roll up the last 30 days of ripple predictions into hit-rate + avg-return,
-    split two ways: by confidence (does the model's confidence mean anything?)
-    and by priced_in (do the not-yet-moved 'before' calls actually pay?)."""
+    """Roll up the last 30 days of ripple predictions into hit-rate + avg-return
+    (gross and net of slippage), split three ways: by confidence (does the
+    model's confidence mean anything?), by priced_in (do the not-yet-moved
+    'before' calls actually pay?) and by stated horizon — predictions claim up
+    to weeks/months but everything is graded at the 1/3/5d HORIZONS, so the
+    horizon split + horizon_note keep that honest."""
     entries = _read_entries(PREDICTIONS_LOG)
     cutoff = (now - timedelta(days=30)).isoformat()
     recent = [e for e in entries if e["ts"] >= cutoff]
 
     def _new() -> dict:
-        return {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}}
+        return {"count": 0, "horizons": {h: [] for h in HORIZONS}}
 
     def _add(bucketmap: dict, key: str, e: dict) -> None:
         b = bucketmap.setdefault(key, _new())
@@ -505,38 +627,138 @@ def compile_prediction_stats(now: datetime) -> dict:
             ev = e.get("evaluations", {}).get(f"{h}d")
             if not ev:
                 continue
-            b["horizons"][h]["n"] += 1
-            if ev["signed_return_pct"] > 0:
-                b["horizons"][h]["hits"] += 1
-            b["horizons"][h]["returns"].append(ev["signed_return_pct"])
+            b["horizons"][h].append(ev["signed_return_pct"])
 
     by_confidence: dict[str, dict] = {}
     by_priced_in: dict[str, dict] = {}
+    by_horizon: dict[str, dict] = {}
+    untracked_count = 0
     for e in recent:
+        if e.get("status") == "untracked" or e.get("price_at_prediction") is None:
+            untracked_count += 1
         _add(by_confidence, e.get("confidence", "low"), e)
         _add(by_priced_in, e.get("priced_in", "no"), e)
+        _add(by_horizon, e.get("horizon") or "unspecified", e)
 
     def _finalize(bucketmap: dict) -> dict:
-        out: dict = {}
-        for key, stats in bucketmap.items():
-            horizons = {}
-            for h, hs in stats["horizons"].items():
-                n = hs["n"]
-                horizons[f"{h}d"] = {
-                    "evaluated": n,
-                    "hit_rate": round(hs["hits"] / n, 3) if n else None,
-                    "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
-                }
-            out[key] = {"count": stats["count"], "horizons": horizons}
-        return out
+        return {
+            key: {
+                "count": stats["count"],
+                "horizons": {f"{h}d": _horizon_stats(rets) for h, rets in stats["horizons"].items()},
+            }
+            for key, stats in bucketmap.items()
+        }
 
     out = {
         "generated_at": now.isoformat(),
         "window_days": 30,
+        "slippage_round_trip_pct": SLIPPAGE_PCT,
+        "horizon_note": "calls graded at 1/3/5d regardless of stated horizon",
         "total_predictions": len(recent),
+        "untracked_count": untracked_count,
         "by_confidence": _finalize(by_confidence),
         "by_priced_in": _finalize(by_priced_in),
+        "by_horizon": _finalize(by_horizon),
     }
     PREDICTION_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
-    log.info("Prediction stats: %d predictions in 30d", len(recent))
+    log.info(
+        "Prediction stats: %d predictions in 30d (%d untracked)",
+        len(recent), untracked_count,
+    )
     return out
+
+
+# --- Public accountability ledger --------------------------------------------
+# The .jsonl logs live only in evictable Actions caches; data/ledger.json is
+# the committed, permanent record of every call (alert / pick / prediction)
+# with its entry price and graded outcomes.
+
+LEDGER_WINDOW_DAYS = 30
+LEDGER_MAX_ENTRIES = 500
+
+
+def _ledger_id(kind: str, etype: str, ticker: str, ts: str) -> str:
+    return hashlib.sha1(f"{kind}|{etype}|{ticker}|{ts}".encode("utf-8")).hexdigest()[:12]
+
+
+def _ledger_entry(e: dict, kind: str, etype: str, direction: str | None,
+                  confidence: str | None, price: float | None) -> dict:
+    outcomes = {
+        f"{h}d": (e.get("evaluations", {}).get(f"{h}d") or {}).get("signed_return_pct")
+        for h in HORIZONS
+    }
+    if price is None:
+        status = "untracked"
+    elif outcomes["1d"] is not None:
+        status = "hit" if outcomes["1d"] > 0 else "miss"
+    else:
+        status = "pending"
+    ticker = e.get("ticker", "")
+    ts = e.get("ts", "")
+    return {
+        "id": _ledger_id(kind, etype, ticker, ts),
+        "ts": ts,
+        "kind": kind,
+        "type": etype,
+        "ticker": ticker,
+        "direction": direction,
+        "confidence": confidence,
+        "price": price,
+        "thesis": e.get("thesis") or e.get("title") or "",
+        "outcomes": outcomes,
+        "status": status,
+    }
+
+
+def write_ledger(now: datetime) -> dict:
+    """Write data/ledger.json — last LEDGER_WINDOW_DAYS of alerts, picks and
+    predictions, newest first, capped at LEDGER_MAX_ENTRIES. Fail-soft: any
+    error logs a warning and leaves the previous file in place."""
+    try:
+        cutoff = now.astimezone(timezone.utc) - timedelta(days=LEDGER_WINDOW_DAYS)
+        entries: list[dict] = []
+
+        for e in _read_entries(ALERTS_LOG):
+            ts = _parse_ts(e.get("ts", ""))
+            if ts is None or ts < cutoff or not e.get("ticker"):
+                continue
+            entries.append(_ledger_entry(
+                e, "alert", e.get("type", "unknown"),
+                "long" if e.get("direction", 1) >= 0 else "short",
+                None, e.get("price_at_alert"),
+            ))
+
+        for e in _read_entries(RECS_LOG):
+            ts = _parse_ts(e.get("ts", ""))
+            if ts is None or ts < cutoff or not e.get("ticker"):
+                continue
+            direction = e.get("direction", "long")
+            entries.append(_ledger_entry(
+                e, "pick", f"rec_{direction}", direction,
+                None, e.get("price_at_pick"),
+            ))
+
+        for e in _read_entries(PREDICTIONS_LOG):
+            ts = _parse_ts(e.get("ts", ""))
+            if ts is None or ts < cutoff or not e.get("ticker"):
+                continue
+            entries.append(_ledger_entry(
+                e, "prediction", e.get("type", "ripple"),
+                "long" if e.get("direction", "bullish") == "bullish" else "short",
+                e.get("confidence"), e.get("price_at_prediction"),
+            ))
+
+        entries.sort(key=lambda x: x["ts"], reverse=True)
+        entries = entries[:LEDGER_MAX_ENTRIES]
+
+        payload = {
+            "generated_at": now.isoformat(),
+            "window_days": LEDGER_WINDOW_DAYS,
+            "entries": entries,
+        }
+        LEDGER_FILE.write_text(json.dumps(payload, indent=2))
+        log.info("Wrote ledger.json: %d entries (%dd window)", len(entries), LEDGER_WINDOW_DAYS)
+        return payload
+    except Exception as e:
+        log.warning("Ledger write failed: %s", e)
+        return {}
