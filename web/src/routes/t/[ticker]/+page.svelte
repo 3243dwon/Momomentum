@@ -7,6 +7,7 @@
   import { now, staleness, fmtAge, STALE_CLASS } from '$lib/freshness';
   import type { PricedIn, LedgerStatus, WeeklyClassification, WeeklyPrediction } from '$lib/types';
   import Sparkline from '../../Sparkline.svelte';
+  import PriceChart from '../../PriceChart.svelte';
   import IconCluster from '../../IconCluster.svelte';
 
   let { data } = $props();
@@ -236,6 +237,12 @@
           >{levels.rr.toFixed(1)}R</span>
         {/if}
       </div>
+      {#if row.spark && row.spark.length >= 2}
+        <div class="mb-3">
+          <PriceChart values={row.spark} {levels} intraday={row.intraday ?? null} up={(row.pct_1d ?? 0) >= 0} />
+          <p class="mt-1 text-right text-[9px] uppercase tracking-wider text-zinc-600">20-day closes · levels overlaid</p>
+        </div>
+      {/if}
       <div class="grid grid-cols-3 gap-1 text-center">
         <div>
           <div class="text-[9px] uppercase tracking-wider text-zinc-500">entry</div>

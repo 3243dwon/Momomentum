@@ -45,9 +45,18 @@
   function submit(e: Event) {
     e.preventDefault();
     if (highlighted >= 0 && suggestions[highlighted]) return go(suggestions[highlighted].ticker);
-    const t = query.trim().toUpperCase();
-    if (!t) return;
-    go(t);
+    const raw = query.trim();
+    if (!raw) return;
+    // Ticker-shaped input navigates; anything else (spaces, long words,
+    // punctuation) is a question for /ask.
+    if (/^\$?[A-Za-z]{1,5}$/.test(raw)) {
+      go(raw.replace(/^\$/, ''));
+    } else {
+      goto(`/ask?q=${encodeURIComponent(raw)}`);
+      query = '';
+      active = false;
+      highlighted = -1;
+    }
   }
 
   function onKeydown(e: KeyboardEvent) {
@@ -76,7 +85,7 @@
     onkeydown={onKeydown}
     oninput={() => (highlighted = -1)}
     type="search"
-    placeholder="Ticker..."
+    placeholder="Ticker or ask..."
     autocomplete="off"
     class="num w-20 rounded bg-ink-800 px-2 py-1 text-xs uppercase placeholder:text-zinc-500 placeholder:normal-case focus:w-32 focus:outline-none focus:ring-1 focus:ring-signal-info focus:placeholder:text-zinc-600"
   />
