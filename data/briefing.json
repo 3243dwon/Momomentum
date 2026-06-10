@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-10T17:26:33.182571-04:00",
+  "generated_at": "2026-06-10T19:38:35.447321-04:00",
   "window": "AH_POST",
-  "headline": "SMCI -28% dominates tape; desk holds 4 takes (RSI/KO/FULT long, ACI short) as SPY/QQQ fade 1.6-2%",
+  "headline": "SMCI -28% still dominates; desk unchanged at 4 takes as SPY/QQQ hold AH losses",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.56% / QQQ -2.0%, both above 50d. VXX stress ratio 1.03 \u2014 vol elevated but not spiking. Dip not yet a regime break."
+    "line": "SPY -1.6% / QQQ -2.0% RTH; above 50d but VXX stress 1.03 \u2014 label says risk_on, tape says caution. AH drift steady."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 28.82,
       "stop": 26.51,
       "target": 33.43,
-      "line": "Half size. Solid momentum, manageable risk; research low-conviction but not blocking."
+      "line": "Half size. Solid momentum, signal+risk green; research skeptical but low conviction. R/R ~2.0."
     },
     {
       "ticker": "KO",
@@ -21,7 +21,7 @@
       "entry": 83.59,
       "stop": 76.9,
       "target": 96.96,
-      "line": "Quarter size. Signal+risk align; research pushes back hard at conviction 4 \u2014 stepped down."
+      "line": "Quarter size. Signal+risk align; research pushes back hard (conviction 4) \u2014 stepped down accordingly."
     },
     {
       "ticker": "FULT",
@@ -29,43 +29,39 @@
       "entry": 22.72,
       "stop": 21.76,
       "target": 24.64,
-      "line": "Quarter size. Cleanest risk in batch; signal+research neutral \u2014 small size correct."
+      "line": "Quarter size. Cleanest risk profile in batch; signal+research both neutral \u2014 small size right."
     }
   ],
   "watch": [
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "-27.97% on 4.8x vol \u2014 catastrophic single-day move, watch for follow-through or dead-cat AH."
-    },
-    {
-      "ticker": "ANET",
-      "type": "ripple",
-      "line": "ORCL datacenter expansion drives 400G/800G switch orders \u2014 bullish ripple, medium confidence."
-    },
-    {
-      "ticker": "DLR",
-      "type": "ripple",
-      "line": "ORCL $40B capex implies near-term colocation demand surge \u2014 bullish ripple, medium confidence."
-    },
-    {
-      "ticker": "PWR",
-      "type": "ripple",
-      "line": "ORCL campus buildouts add electrical infrastructure backlog at Quanta \u2014 bullish, medium confidence."
+      "line": "-27.97% on 4.8\u00d7 vol; remains the dominant tape event \u2014 watch for AH stabilization or continuation."
     },
     {
       "ticker": "FRMI",
       "type": "mover",
-      "line": "+23% on 3.16x vol \u2014 no catalyst flagged; gap sustainability unconfirmed."
+      "line": "+23% on 3.2\u00d7 vol; no desk take yet \u2014 watch for follow-through catalyst confirmation."
+    },
+    {
+      "ticker": "CLOV",
+      "type": "mover",
+      "line": "+14.15% on 2.77\u00d7 vol; MACD bullish but overbought flag \u2014 fading momentum risk."
+    },
+    {
+      "ticker": "AA",
+      "type": "mover",
+      "line": "-9.4% big move; metals/macro pressure implied \u2014 watch sector read-through."
+    },
+    {
+      "ticker": "PRIM",
+      "type": "mover",
+      "line": "-9.7% on 1.7\u00d7 vol with MACD bearish cross \u2014 setup building on short side."
     }
   ],
-  "changed": [
-    "SMCI -28% replaces DVN as headline mover \u2014 no E&P catalyst carry-forward this scan",
-    "KR, O, DVN longs from prior scan absent from current desk_takes",
-    "ACI short added as new contrarian position"
-  ],
+  "changed": [],
   "caveats": [
-    "AH_POST scan as of 17:26 ET 2026-06-10 \u2014 prices stale post-close; SMCI move and all levels reflect last AH print, gaps at open are likely.",
-    "Risk_on regime label persists despite SPY/QQQ -1.6/-2.0% \u2014 VXX stress ratio only 1.03, but intraday breadth not visible in this window; regime could flip overnight."
+    "AH_POST scan window \u2014 prices as of 19:38 ET Jun 10; AH liquidity thin, levels may gap at next open.",
+    "Regime labeled risk_on despite SPY/QQQ both down >1.5% \u2014 VXX stress ratio only 1.03, but watch for regime flip if selling extends overnight."
   ]
 }
