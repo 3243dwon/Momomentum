@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-10T14:33:16.167071-04:00",
-  "window": "RTH",
-  "headline": "DVN catalyst drives E&P ripple; desk adds KR/O/DVN/KO longs as SPY/QQQ fade 1-1.5% on Iran escalation",
+  "generated_at": "2026-06-10T17:26:33.182571-04:00",
+  "window": "AH_POST",
+  "headline": "SMCI -28% dominates tape; desk holds 4 takes (RSI/KO/FULT long, ACI short) as SPY/QQQ fade 1.6-2%",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.12% / QQQ -1.48% \u2014 label stays risk_on but tape is selling; VXX stress 1.02x, Iran/CPI macro overhang. Entries into pullback, not mom"
+    "line": "SPY -1.56% / QQQ -2.0%, both above 50d. VXX stress ratio 1.03 \u2014 vol elevated but not spiking. Dip not yet a regime break."
   },
   "actions": [
     {
-      "ticker": "KR",
+      "ticker": "RSI",
       "direction": "long",
-      "entry": 63.99,
-      "stop": 63.3,
-      "target": 65.37,
-      "line": "Full-size: RSI 45.7 neutral, low-risk setup, signal + desk agree \u2014 cleanest in the batch."
+      "entry": 28.82,
+      "stop": 26.51,
+      "target": 33.43,
+      "line": "Half size. Solid momentum, manageable risk; research low-conviction but not blocking."
     },
     {
-      "ticker": "O",
+      "ticker": "KO",
       "direction": "long",
-      "entry": 62.16,
-      "stop": 59.27,
-      "target": 67.93,
-      "line": "Half-size: RSI 55 mid-range, signal agrees, low severity \u2014 best overbought profile in book."
+      "entry": 83.59,
+      "stop": 76.9,
+      "target": 96.96,
+      "line": "Quarter size. Signal+risk align; research pushes back hard at conviction 4 \u2014 stepped down."
     },
     {
-      "ticker": "DVN",
+      "ticker": "FULT",
       "direction": "long",
-      "entry": 46.67,
-      "stop": 46.1,
-      "target": 47.81,
-      "line": "Half-size: +5.9% catalyst on concrete news, research agrees, tight stop, Iran supply-risk tailwind."
+      "entry": 22.72,
+      "stop": 21.76,
+      "target": 24.64,
+      "line": "Quarter size. Cleanest risk in batch; signal+research neutral \u2014 small size correct."
     }
   ],
   "watch": [
     {
-      "ticker": "MTDR",
-      "type": "ripple",
-      "line": "DVN ripple \u2014 Delaware Basin overlap; positive DVN well-cost commentary supports MTDR 2026 guide. Medium confidence."
+      "ticker": "SMCI",
+      "type": "mover",
+      "line": "-27.97% on 4.8x vol \u2014 catastrophic single-day move, watch for follow-through or dead-cat AH."
     },
     {
-      "ticker": "OVV",
+      "ticker": "ANET",
       "type": "ripple",
-      "line": "DVN ripple \u2014 Permian/Anadarko shale peer, direct read-through on DVN productivity/capital framework. Medium confidence."
+      "line": "ORCL datacenter expansion drives 400G/800G switch orders \u2014 bullish ripple, medium confidence."
     },
     {
-      "ticker": "LBRT",
+      "ticker": "DLR",
       "type": "ripple",
-      "line": "DVN ripple \u2014 primary frac/completions provider; raised DVN 2026 activity supports completions pricing. Medium confidence."
+      "line": "ORCL $40B capex implies near-term colocation demand surge \u2014 bullish ripple, medium confidence."
+    },
+    {
+      "ticker": "PWR",
+      "type": "ripple",
+      "line": "ORCL campus buildouts add electrical infrastructure backlog at Quanta \u2014 bullish, medium confidence."
     },
     {
       "ticker": "FRMI",
       "type": "mover",
-      "line": "+21.5% on 2.17x rel volume \u2014 unusual_volume + big_move flags. No desk take; watch for confirmation."
-    },
-    {
-      "ticker": "SMCI",
-      "type": "mover",
-      "line": "-20.7% continuation, 2.16x rel volume \u2014 AI hardware complex still under pressure post dilutive raise."
+      "line": "+23% on 3.16x vol \u2014 no catalyst flagged; gap sustainability unconfirmed."
     }
   ],
   "changed": [
-    "Previous lone take was SGHC; desk now has 4 takes \u2014 KR/O/DVN/KO all long",
-    "SMCI -20.7% today extends yesterday's -17% dilutive-raise collapse",
-    "Iran escalation + 3-year CPI high add macro risk-off overlay to risk_on regime label"
+    "SMCI -28% replaces DVN as headline mover \u2014 no E&P catalyst carry-forward this scan",
+    "KR, O, DVN longs from prior scan absent from current desk_takes",
+    "ACI short added as new contrarian position"
   ],
   "caveats": [
-    "RTH scan as of 14:33 ET 2026-06-10; prices and levels are scan-time snapshots \u2014 KR/O/DVN entries may have moved intraday.",
-    "Regime label is risk_on but SPY/QQQ are both red 1%+; Iran escalation and hot CPI print create cross-current \u2014 confirm market-on-close direction before sizing into late-day entries."
+    "AH_POST scan as of 17:26 ET 2026-06-10 \u2014 prices stale post-close; SMCI move and all levels reflect last AH print, gaps at open are likely.",
+    "Risk_on regime label persists despite SPY/QQQ -1.6/-2.0% \u2014 VXX stress ratio only 1.03, but intraday breadth not visible in this window; regime could flip overnight."
   ]
 }

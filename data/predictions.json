@@ -1,191 +1,237 @@
 {
-  "generated_at": "2026-06-10T14:33:16.167071-04:00",
+  "generated_at": "2026-06-10T17:26:33.182571-04:00",
   "event_count": 1,
-  "prediction_count": 7,
-  "not_yet_priced_in": 5,
+  "prediction_count": 9,
+  "not_yet_priced_in": 6,
   "events": [
     {
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
       "primary_drivers": [
-        "Permian/US shale pure-play re-rating on improved capital efficiency read-through",
-        "Higher implied activity supports oilfield services demand",
-        "Peer guidance benchmark lifts sentiment for similarly-levered E&Ps"
+        "AI datacenter capex pull-forward funded by $40B debt raise",
+        "OCI hyperscaler buildout = order book read-through for GPU, networking, power, and datacenter supply chain",
+        "Competitive pressure on rival hyperscalers and enterprise software peers"
       ],
       "beneficiaries": [
         {
-          "ticker": "PR",
-          "rationale": "Permian Resources is the closest Delaware Basin pure-play peer to Devon; DVN's improved 2026 capital efficiency and production outlook reads directly across to PR's own well productivity narrative.",
+          "ticker": "NVDA",
+          "rationale": "Oracle's OCI buildout is GPU-heavy; $40B raise largely funds H100/B200/GB200 procurement. ORCL has publicly named NVDA as primary GPU supplier for its AI clusters.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "months"
         },
         {
-          "ticker": "MTDR",
-          "rationale": "Matador Resources is a Delaware Basin operator with overlapping acreage geology; positive DVN well-cost/productivity commentary supports MTDR's 2026 guide trajectory.",
+          "ticker": "VRT",
+          "rationale": "Vertiv supplies liquid cooling and power distribution into hyperscale AI datacenters; ORCL capex acceleration directly expands their backlog.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ANET",
+          "rationale": "Arista is a key networking switch supplier for hyperscale AI fabrics; Oracle datacenter expansion drives incremental 400G/800G switch orders.",
           "confidence": "medium",
-          "horizon": "days"
+          "horizon": "months"
         },
         {
-          "ticker": "OVV",
-          "rationale": "Ovintiv is a multi-basin US shale peer (Permian/Anadarko) with direct read-through on Devon's productivity and capital framework commentary.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LBRT",
-          "rationale": "Liberty Energy is a primary frac/completions provider in the Permian; raised DVN activity outlook for 2026 supports completions pricing and utilization assumptions.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PUMP",
-          "rationale": "ProPetro has heavy Permian completions exposure with Devon historically among its top customers; an upgraded DVN 2026 program would lift PUMP's backlog visibility.",
+          "ticker": "DLR",
+          "rationale": "Digital Realty leases datacenter capacity to Oracle; $40B capex implies more colocation/wholesale leasing demand near-term while ORCL builds owned capacity.",
           "confidence": "medium",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "PWR",
+          "rationale": "Quanta Services builds the electrical infrastructure and substations feeding hyperscale datacenter campuses \u2014 ORCL site buildouts add backlog.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "CRDO",
+          "rationale": "Credo's active electrical cables and SerDes are designed into AI cluster interconnects; incremental hyperscaler capex flows through to AEC orders.",
+          "confidence": "low",
+          "horizon": "months"
         }
       ],
       "losers": [
         {
-          "ticker": "APA",
-          "rationale": "APA is a US E&P peer that has been guiding more conservatively; a stronger DVN 2026 outlook widens the perceived execution/quality gap and can pressure relative multiple.",
+          "ticker": "IBM",
+          "rationale": "Oracle's accelerating enterprise AI/database cloud wins pressure IBM's hybrid cloud and Red Hat positioning in the same large-enterprise accounts.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "months"
         },
         {
-          "ticker": "CRGY",
-          "rationale": "Smaller, higher-decline shale names risk capital rotation into higher-quality Permian operators like DVN when guidance differentiates the group.",
+          "ticker": "SNOW",
+          "rationale": "Oracle's aggressive AI data platform pricing and OCI growth narrows Snowflake's enterprise data warehouse moat; read-through compresses SNOW multiple.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HPE",
+          "rationale": "ORCL building its own AI cloud capacity at scale reduces enterprise demand for on-prem AI server stacks where HPE competes.",
+          "confidence": "low",
+          "horizon": "months"
         }
       ],
-      "trigger_ticker": "DVN",
+      "trigger_ticker": "ORCL",
       "source_news_ids": [
-        "026d4a56b85c8839"
+        "d4c8c8285b2338e6"
       ],
       "headlines": [
-        "Devon Energy Stock Jumps After Updated 2026 Outlook"
+        "Oracle Posts Double Beat In Q4, Expects To Raise $40 Billion In FY27"
       ],
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook"
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27"
     }
   ],
   "predictions": [
     {
-      "ticker": "MTDR",
+      "ticker": "ANET",
       "direction": "bullish",
-      "rationale": "Matador Resources is a Delaware Basin operator with overlapping acreage geology; positive DVN well-cost/productivity commentary supports MTDR's 2026 guide trajectory.",
+      "rationale": "Arista is a key networking switch supplier for hyperscale AI fabrics; Oracle datacenter expansion drives incremental 400G/800G switch orders.",
       "confidence": "medium",
-      "horizon": "days",
+      "horizon": "months",
       "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
       "source_news_ids": [
-        "026d4a56b85c8839"
+        "d4c8c8285b2338e6"
       ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
     },
     {
-      "ticker": "OVV",
+      "ticker": "DLR",
       "direction": "bullish",
-      "rationale": "Ovintiv is a multi-basin US shale peer (Permian/Anadarko) with direct read-through on Devon's productivity and capital framework commentary.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
-      "source_news_ids": [
-        "026d4a56b85c8839"
-      ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
-    },
-    {
-      "ticker": "LBRT",
-      "direction": "bullish",
-      "rationale": "Liberty Energy is a primary frac/completions provider in the Permian; raised DVN activity outlook for 2026 supports completions pricing and utilization assumptions.",
+      "rationale": "Digital Realty leases datacenter capacity to Oracle; $40B capex implies more colocation/wholesale leasing demand near-term while ORCL builds owned capacity.",
       "confidence": "medium",
       "horizon": "weeks",
       "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
       "source_news_ids": [
-        "026d4a56b85c8839"
+        "d4c8c8285b2338e6"
       ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
     },
     {
-      "ticker": "APA",
-      "direction": "bearish",
-      "rationale": "APA is a US E&P peer that has been guiding more conservatively; a stronger DVN 2026 outlook widens the perceived execution/quality gap and can pressure relative multiple.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
-      "source_news_ids": [
-        "026d4a56b85c8839"
-      ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
-    },
-    {
-      "ticker": "CRGY",
-      "direction": "bearish",
-      "rationale": "Smaller, higher-decline shale names risk capital rotation into higher-quality Permian operators like DVN when guidance differentiates the group.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
-      "source_news_ids": [
-        "026d4a56b85c8839"
-      ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
-    },
-    {
-      "ticker": "PR",
+      "ticker": "PWR",
       "direction": "bullish",
-      "rationale": "Permian Resources is the closest Delaware Basin pure-play peer to Devon; DVN's improved 2026 capital efficiency and production outlook reads directly across to PR's own well productivity narrative.",
+      "rationale": "Quanta Services builds the electrical infrastructure and substations feeding hyperscale datacenter campuses \u2014 ORCL site buildouts add backlog.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+      "source_news_ids": [
+        "d4c8c8285b2338e6"
+      ],
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
+    },
+    {
+      "ticker": "CRDO",
+      "direction": "bullish",
+      "rationale": "Credo's active electrical cables and SerDes are designed into AI cluster interconnects; incremental hyperscaler capex flows through to AEC orders.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+      "source_news_ids": [
+        "d4c8c8285b2338e6"
+      ],
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
+    },
+    {
+      "ticker": "IBM",
+      "direction": "bearish",
+      "rationale": "Oracle's accelerating enterprise AI/database cloud wins pressure IBM's hybrid cloud and Red Hat positioning in the same large-enterprise accounts.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": -1.73,
+      "rel_volume": 0.37,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+      "source_news_ids": [
+        "d4c8c8285b2338e6"
+      ],
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
+    },
+    {
+      "ticker": "SNOW",
+      "direction": "bearish",
+      "rationale": "Oracle's aggressive AI data platform pricing and OCI growth narrows Snowflake's enterprise data warehouse moat; read-through compresses SNOW multiple.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 0.03,
+      "rel_volume": 0.48,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+      "source_news_ids": [
+        "d4c8c8285b2338e6"
+      ],
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
+    },
+    {
+      "ticker": "NVDA",
+      "direction": "bullish",
+      "rationale": "Oracle's OCI buildout is GPU-heavy; $40B raise largely funds H100/B200/GB200 procurement. ORCL has publicly named NVDA as primary GPU supplier for its AI clusters.",
       "confidence": "high",
-      "horizon": "days",
-      "priced_in": "partial",
-      "pct_1d": 2.99,
-      "rel_volume": 0.61,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "horizon": "months",
+      "priced_in": "contradicted",
+      "pct_1d": -3.74,
+      "rel_volume": 0.98,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
       "source_news_ids": [
-        "026d4a56b85c8839"
+        "d4c8c8285b2338e6"
       ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
     },
     {
-      "ticker": "PUMP",
+      "ticker": "VRT",
       "direction": "bullish",
-      "rationale": "ProPetro has heavy Permian completions exposure with Devon historically among its top customers; an upgraded DVN 2026 program would lift PUMP's backlog visibility.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "partial",
-      "pct_1d": 3.24,
-      "rel_volume": 0.56,
-      "trigger_ticker": "DVN",
-      "event_summary": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+      "rationale": "Vertiv supplies liquid cooling and power distribution into hyperscale AI datacenters; ORCL capex acceleration directly expands their backlog.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "contradicted",
+      "pct_1d": -2.94,
+      "rel_volume": 1.07,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
       "source_news_ids": [
-        "026d4a56b85c8839"
+        "d4c8c8285b2338e6"
       ],
-      "created_at": "2026-06-10T14:33:16.167071-04:00"
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
+    },
+    {
+      "ticker": "HPE",
+      "direction": "bearish",
+      "rationale": "ORCL building its own AI cloud capacity at scale reduces enterprise demand for on-prem AI server stacks where HPE competes.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": -5.71,
+      "rel_volume": 0.8,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+      "source_news_ids": [
+        "d4c8c8285b2338e6"
+      ],
+      "created_at": "2026-06-10T17:26:33.182571-04:00"
     }
   ]
 }

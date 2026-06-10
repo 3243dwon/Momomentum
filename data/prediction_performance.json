@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-10T14:39:00.280210-04:00",
+  "generated_at": "2026-06-10T17:29:54.994688-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizon_note": "calls graded at 1/3/5d regardless of stated horizon",
-  "total_predictions": 27,
+  "total_predictions": 36,
   "untracked_count": 0,
   "by_confidence": {
     "high": {
-      "count": 6,
+      "count": 8,
       "horizons": {
         "1d": {
           "evaluated": 2,
@@ -33,7 +33,7 @@
       }
     },
     "medium": {
-      "count": 12,
+      "count": 15,
       "horizons": {
         "1d": {
           "evaluated": 1,
@@ -59,7 +59,7 @@
       }
     },
     "low": {
-      "count": 9,
+      "count": 13,
       "horizons": {
         "1d": {
           "evaluated": 2,
@@ -87,7 +87,7 @@
   },
   "by_priced_in": {
     "no": {
-      "count": 15,
+      "count": 21,
       "horizons": {
         "1d": {
           "evaluated": 3,
@@ -113,7 +113,7 @@
       }
     },
     "contradicted": {
-      "count": 9,
+      "count": 11,
       "horizons": {
         "1d": {
           "evaluated": 1,
@@ -139,7 +139,7 @@
       }
     },
     "yes": {
-      "count": 1,
+      "count": 2,
       "horizons": {
         "1d": {
           "evaluated": 1,
@@ -193,7 +193,7 @@
   },
   "by_horizon": {
     "weeks": {
-      "count": 16,
+      "count": 18,
       "horizons": {
         "1d": {
           "evaluated": 4,
@@ -246,6 +246,32 @@
     },
     "intraday": {
       "count": 2,
+      "horizons": {
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "5d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    },
+    "months": {
+      "count": 7,
       "horizons": {
         "1d": {
           "evaluated": 0,
