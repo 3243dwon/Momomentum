@@ -64,6 +64,9 @@ jobs:
           FEISHU_MOM_SIGNING_SECRET: ${{ secrets.FEISHU_MOM_SIGNING_SECRET }}
           ALPACA_API_KEY: ${{ secrets.ALPACA_API_KEY }}
           ALPACA_API_SECRET: ${{ secrets.ALPACA_API_SECRET }}
+          # Congress STOCK-Act trades (scanner/political.py). Without this the
+          # political feed runs djt_only and /t pages never show Congress activity.
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
         run: |
           args=()
           if [ "${{ github.event.inputs.rebuild_universe }}" = "true" ]; then
