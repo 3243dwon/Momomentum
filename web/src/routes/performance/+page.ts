@@ -1,14 +1,10 @@
-import { loadPerformance, loadRecommendationPerformance, loadDeskPerformance } from '$lib/api';
-import type { PageLoad } from './$types';
+import { redirect } from "@sveltejs/kit";
+import type { PageLoad } from "./$types";
 
 export const ssr = false;
 export const prerender = false;
 
-export const load: PageLoad = async ({ fetch }) => {
-  const [perf, recPerf, deskPerf] = await Promise.all([
-    loadPerformance(fetch),
-    loadRecommendationPerformance(fetch),
-    loadDeskPerformance(fetch)
-  ]);
-  return { perf, recPerf, deskPerf };
+// Merged into /review — weekly verdicts + signal scoreboard + ledger.
+export const load: PageLoad = () => {
+  redirect(307, "/review");
 };

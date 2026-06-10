@@ -14,7 +14,9 @@ import type {
   TrumpBasket,
   SerenityData,
   PredictionsData,
-  PredictionPerformance
+  PredictionPerformance,
+  LedgerData,
+  BriefingData
 } from './types';
 
 type Fetch = typeof fetch;
@@ -93,6 +95,14 @@ export async function loadPredictions(fetch: Fetch) {
 
 export async function loadPredictionPerformance(fetch: Fetch) {
   return getJson<PredictionPerformance>(fetch, 'prediction_performance.json');
+}
+
+export async function loadLedger(fetch: Fetch) {
+  return getJson<LedgerData>(fetch, 'ledger.json');
+}
+
+export async function loadBriefing(fetch: Fetch) {
+  return getJson<BriefingData>(fetch, 'briefing.json');
 }
 
 export async function loadAll(fetch: Fetch) {

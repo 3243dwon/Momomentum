@@ -1,13 +1,19 @@
 <script lang="ts">
   import '../app.css';
   import { page } from '$app/stores';
+  import { browser } from '$app/environment';
+  import { startScanWatch } from '$lib/freshness';
   import ThemeToggle from './ThemeToggle.svelte';
   import SearchBox from './SearchBox.svelte';
   let { children } = $props();
+
+  // The dashboard's pulse: refetch scan.json's generated_at on tab-resume and
+  // every 5 minutes; invalidate all loads when a new scan lands.
+  if (browser) startScanWatch();
 </script>
 
 <div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 sm:px-6 lg:px-8 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))]">
-  <header class="mb-4 flex items-center justify-between">
+  <header class="mb-4 flex items-center justify-between gap-2">
     <a href="/" class="group flex items-center gap-2">
       <span class="grid h-8 w-8 place-items-center rounded-md bg-signal-info/10 text-signal-info">
         <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2">
@@ -17,7 +23,7 @@
       </span>
       <div class="leading-tight">
         <div class="font-semibold tracking-tight">Momentum</div>
-        <div class="text-[10px] uppercase tracking-wider text-zinc-500">scanner · news · macro</div>
+        <div class="hidden text-[10px] uppercase tracking-wider text-zinc-500 sm:block">scanner · news · macro</div>
       </div>
     </a>
     <nav class="flex items-center gap-1 text-xs">
@@ -27,39 +33,9 @@
         >Scan</a
       >
       <a
-        href="/predictions"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/predictions') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >🔮 Predict</a
-      >
-      <a
-        href="/macro"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/macro') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Macro</a
-      >
-      <a
-        href="/weekly"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/weekly') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Weekly</a
-      >
-      <a
-        href="/political"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/political') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Political</a
-      >
-      <a
-        href="/performance"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/performance') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Perf</a
-      >
-      <a
-        href="/learn"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/learn') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Learn</a
-      >
-      <a
-        href="/serenity"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/serenity') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Serenity</a
+        href="/review"
+        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/review') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Review</a
       >
       <span class="mx-1 h-4 w-px bg-ink-700"></span>
       <SearchBox />
@@ -71,6 +47,9 @@
   </main>
   <footer class="mt-8 flex items-center justify-between border-t border-ink-700 pt-4 text-[10px] uppercase tracking-wider text-zinc-500">
     <span>Personal scanner. Not investment advice.</span>
-    <a href="https://github.com" class="hover:text-zinc-300">source</a>
+    <span class="flex items-center gap-3">
+      <a href="/learn" class="hover:text-zinc-300">Learn</a>
+      <a href="https://github.com/3243dwon/Momomentum" class="hover:text-zinc-300">source</a>
+    </span>
   </footer>
 </div>
