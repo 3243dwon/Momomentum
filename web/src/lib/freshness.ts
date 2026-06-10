@@ -2,13 +2,17 @@
 // `now` ticks every 30s so relative-time labels don't freeze; startScanWatch
 // polls scan.json's generated_at on tab-resume and on an interval and
 // invalidates all loads when a new scan lands.
-import { readable } from 'svelte/store';
+import { readable, writable } from 'svelte/store';
 import { invalidateAll } from '$app/navigation';
 
 export const now = readable(Date.now(), (set) => {
   const id = setInterval(() => set(Date.now()), 30_000);
   return () => clearInterval(id);
 });
+
+/** Market regime from the latest scan — rides along on the scan-watch fetch
+ * so the layout can tint without its own data load. */
+export const regimeLabel = writable<'risk_on' | 'risk_off' | 'mixed' | null>(null);
 
 export type StaleLevel = 'fresh' | 'aging' | 'stale';
 
@@ -55,7 +59,11 @@ export function startScanWatch() {
       // 5 minutes on a phone.
       const r = await fetch(`/data/scan.json`, { cache: 'no-cache' });
       if (!r.ok) return;
-      const j = (await r.json()) as { generated_at?: string };
+      const j = (await r.json()) as {
+        generated_at?: string;
+        regime?: { label?: 'risk_on' | 'risk_off' | 'mixed' };
+      };
+      regimeLabel.set(j.regime?.label ?? null);
       const g = j.generated_at ?? null;
       if (g && lastGeneratedAt && g !== lastGeneratedAt) {
         lastGeneratedAt = g;

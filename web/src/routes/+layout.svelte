@@ -2,7 +2,7 @@
   import '../app.css';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
-  import { startScanWatch } from '$lib/freshness';
+  import { startScanWatch, regimeLabel } from '$lib/freshness';
   import ThemeToggle from './ThemeToggle.svelte';
   import SearchBox from './SearchBox.svelte';
   let { children } = $props();
@@ -10,7 +10,18 @@
   // The dashboard's pulse: refetch scan.json's generated_at on tab-resume and
   // every 5 minutes; invalidate all loads when a new scan lands.
   if (browser) startScanWatch();
+
+  const REGIME_TINT: Record<string, string> = {
+    risk_on: 'bg-signal-up',
+    risk_off: 'bg-signal-down',
+    mixed: 'bg-signal-warn'
+  };
 </script>
+
+<!-- Regime tint: the market state registers before anything is read. -->
+{#if $regimeLabel && REGIME_TINT[$regimeLabel]}
+  <div class="fixed inset-x-0 top-0 z-50 h-[2px] {REGIME_TINT[$regimeLabel]} opacity-80" title="regime: {$regimeLabel}"></div>
+{/if}
 
 <div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 sm:px-6 lg:px-8 pt-[max(1rem,env(safe-area-inset-top))] pb-[calc(4.5rem+env(safe-area-inset-bottom))] sm:pb-[max(1rem,env(safe-area-inset-bottom))]">
   <header class="mb-4 flex items-center justify-between gap-2">
