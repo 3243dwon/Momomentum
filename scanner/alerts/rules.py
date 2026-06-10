@@ -22,8 +22,8 @@ from scanner.windows import Window
 
 log = logging.getLogger(__name__)
 
-# Ticker-bearing alerts deep-link to the scanner's own ticker page; the
-# original article/post URL stays inside body_md so no information is lost.
+# Ticker-bearing alerts deep-link to the scanner's own ticker page, which
+# carries the full rationale/sources; the push body stays one line.
 _SITE_URL = os.environ.get("SITE_URL", "https://momomentum.vercel.app")
 
 ALERT_TYPE_PRIORITY = {
@@ -51,7 +51,54 @@ def _fmt_pct(x: float | None) -> str:
     if x is None:
         return "?"
     sign = "+" if x >= 0 else ""
-    return f"{sign}{x:.2f}%"
+    return f"{sign}{x:.1f}%"
+
+
+def _clip(s: str, n: int) -> str:
+    """Word-boundary truncate with an ellipsis. Shared by every Feishu string
+    builder (alerts, serenity, trump_pulse, weekly) — pushes are headlines,
+    full rationales live on the website."""
+    s = (s or "").strip()
+    if len(s) <= n:
+        return s
+    cut = s[: max(1, n - 1)]
+    sp = cut.rfind(" ")
+    if sp > n // 2:
+        cut = cut[:sp]
+    return cut.rstrip(" ,;:·-—") + "…"
+
+
+def _line(
+    ticker: str,
+    pct: float | None,
+    suffix: str,
+    rel_vol: float | None,
+    thesis: str | None,
+    qualifier: str | None = None,
+) -> str:
+    """One-line alert body: `**TICK +5.5%** 2.8x · *thesis* [→](deep link)`.
+    Rel volume only when notable (>=1.5x). Thesis (italic, clipped ~110) when a
+    synthesis exists; else an optional 2-3 word qualifier; else just the move."""
+    head = f"**{ticker} {_fmt_pct(pct)}{suffix}**"
+    if rel_vol and rel_vol >= 1.5:
+        head += f" {rel_vol:.1f}x"
+    if thesis:
+        head += f" · *{_clip(thesis, 110)}*"
+    elif qualifier:
+        head += f" · {qualifier}"
+    return head + f" [→]({_SITE_URL}/t/{ticker})"
+
+
+def _macro_side(items: list[dict]) -> str:
+    """`**T1** (short reason) · **T2** (short reason) · **T3** · ...` — top 2
+    get a clipped parenthetical reason, the rest bare tickers, cap 5."""
+    parts: list[str] = []
+    for i, x in enumerate(items[:5]):
+        if i < 2 and x.get("rationale"):
+            parts.append(f"**{x['ticker']}** ({_clip(x['rationale'], 25)})")
+        else:
+            parts.append(f"**{x['ticker']}**")
+    return " · ".join(parts)
 
 
 def _ah_suffix(window: Window) -> str:
@@ -132,16 +179,17 @@ def build_alerts(
             continue
         pct = r.get("pct_1d") or 0
         rel_vol = r.get("rel_volume") or 0
-        body = (
-            f"**{t}** {_fmt_pct(pct)}{suffix} on {rel_vol:.1f}x avg volume\n\n"
-            f"*{synth.get('summary', '')}*\n\n"
-            f"`confidence: {synth.get('confidence')}` `verdict: {synth.get('verdict').replace('_', ' ')}`"
+        thesis = synth.get("summary", "")
+        title = (
+            f"🎯 {t} {_fmt_pct(pct)} · {_clip(thesis, 40)}"
+            if thesis else f"🎯 {t} {_fmt_pct(pct)} catalyst"
         )
         _emit(
             alerts, throttle,
             ticker=t, alert_type="catalyst",
-            title=f"🎯 {t} {_fmt_pct(pct)} — catalyst-driven",
-            body_md=body, signal=pct,
+            title=_clip(title, 60),
+            body_md=_line(t, pct, suffix, rel_vol, thesis),
+            signal=pct,
         )
 
     # === A. Threshold alerts ===
@@ -153,14 +201,13 @@ def build_alerts(
 
         if t in watchlist and abs(pct) >= 1.5:
             synth = syntheses.get(t, {}).get("summary")
-            body = f"**{t}** {_fmt_pct(pct)}{suffix} on {rel_vol:.1f}x avg volume"
-            if synth:
-                body += f"\n\n*{synth}*"
+            title = f"⭐ {t} {_fmt_pct(pct)}" + (f" · {_clip(synth, 40)}" if synth else " watchlist")
             _emit(
                 alerts, throttle,
                 ticker=t, alert_type="watchlist",
-                title=f"⭐ Watchlist: {t} {_fmt_pct(pct)}",
-                body_md=body, signal=pct,
+                title=_clip(title, 60),
+                body_md=_line(t, pct, suffix, rel_vol, synth),
+                signal=pct,
             )
             continue
 
@@ -182,55 +229,57 @@ def build_alerts(
                 continue
 
             synth = synth_full.get("summary")
-            body = f"**{t}** {_fmt_pct(pct)}{suffix} on {rel_vol:.1f}x avg volume (RSI {r.get('rsi_14', '?')})"
-            if synth:
-                body += f"\n\n*{synth}*"
+            title = f"🚀 {t} {_fmt_pct(pct)}" + (
+                f" · {_clip(synth, 40)}" if synth else f" on {rel_vol:.1f}x vol"
+            )
             _emit(
                 alerts, throttle,
                 ticker=t, alert_type="big_move",
-                title=f"🚀 {t} {_fmt_pct(pct)} on heavy volume",
-                body_md=body, signal=pct,
+                title=_clip(title, 60),
+                body_md=_line(t, pct, suffix, rel_vol, synth),
+                signal=pct,
             )
 
     # === B. Delta alerts ===
     for t in deltas.get("new_top20_entrants", []):
         r = by_ticker.get(t, {})
         synth = syntheses.get(t, {}).get("summary")
-        body = f"**{t}** entered top-20 movers at {_fmt_pct(r.get('pct_1d'))}{suffix}"
-        if synth:
-            body += f"\n\n*{synth}*"
         _emit(
             alerts, throttle,
             ticker=t, alert_type="delta_new_top20",
-            title=f"📈 {t} broke into top-20 movers",
-            body_md=body, signal=r.get("pct_1d"),
+            title=f"📈 {t} {_fmt_pct(r.get('pct_1d'))} new top-20",
+            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), synth,
+                          qualifier="new top-20"),
+            signal=r.get("pct_1d"),
         )
 
     for jump in deltas.get("rank_jumps", []):
         t = jump["ticker"]
         r = by_ticker.get(t, {})
-        body = (
-            f"**{t}** jumped from #{jump['from']} to #{jump['to']} in top-20 "
-            f"({_fmt_pct(r.get('pct_1d'))}{suffix})"
-        )
         synth = syntheses.get(t, {}).get("summary")
-        if synth:
-            body += f"\n\n*{synth}*"
+        qual = (
+            f"rank ↑{jump['from'] - jump['to']}"
+            if jump["from"] > jump["to"]
+            else f"rank #{jump['from']}→#{jump['to']}"
+        )
         _emit(
             alerts, throttle,
             ticker=t, alert_type="delta_rank_jump",
-            title=f"⚡ {t} rank jump #{jump['from']} → #{jump['to']}",
-            body_md=body, signal=r.get("pct_1d"),
+            title=f"⚡ {t} rank #{jump['from']}→#{jump['to']}",
+            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), synth,
+                          qualifier=qual),
+            signal=r.get("pct_1d"),
         )
 
     for t in deltas.get("momentum_accel", []):
         r = by_ticker.get(t, {})
-        body = f"**{t}** momentum accelerating across last 3 scans, now {_fmt_pct(r.get('pct_1d'))}{suffix}"
         _emit(
             alerts, throttle,
             ticker=t, alert_type="delta_accel",
-            title=f"🌡️ {t} accelerating",
-            body_md=body, signal=r.get("pct_1d"),
+            title=f"🌡️ {t} {_fmt_pct(r.get('pct_1d'))} accelerating",
+            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), None,
+                          qualifier="3-scan accel"),
+            signal=r.get("pct_1d"),
         )
 
     # === C. Macro alerts ===
@@ -239,24 +288,18 @@ def build_alerts(
         losers = analysis.get("losers", [])[:5]
         if not beneficiaries and not losers:
             continue
-        b_lines = "\n".join(
-            f"  • **{b['ticker']}** ({b['confidence']}): {b['rationale']}" for b in beneficiaries
-        )
-        l_lines = "\n".join(
-            f"  • **{l['ticker']}** ({l['confidence']}): {l['rationale']}" for l in losers
-        )
-        body = f"**Event:** {analysis.get('event_summary', '')}\n\n"
+        lines = [f"🌍 **{_clip(analysis.get('event_summary', ''), 90)}**"]
         if beneficiaries:
-            body += f"**Beneficiaries:**\n{b_lines}\n\n"
+            lines.append(f"Wins: {_macro_side(beneficiaries)}")
         if losers:
-            body += f"**Losers:**\n{l_lines}"
+            lines.append(f"Risks: {_macro_side(losers)}")
 
         group_id = analysis.get("dedup_group", "macro")
         _emit(
             alerts, throttle,
             ticker=None, alert_type=f"macro:{group_id}"[:60],
-            title=f"🌍 Macro: {analysis.get('event_summary', '')[:60]}",
-            body_md=body,
+            title=_clip(f"🌍 {analysis.get('event_summary', '')}", 60),
+            body_md="\n".join(lines),
         )
 
     # === D. Serenity matches (high-signal, always fires) ===
@@ -267,20 +310,20 @@ def build_alerts(
     for m in serenity_matches or []:
         t = m["ticker"]
         pct = m.get("pct_1d")
-        rel_vol = m.get("rel_volume") or 0
         stance = m.get("stance", "neutral")
-        vol_str = f" on {rel_vol:.1f}x avg volume" if rel_vol else ""
-        body = (
-            f"**Serenity** flagged **{t}** (`{stance}`) — now {_fmt_pct(pct)}{suffix}{vol_str}\n\n"
-            f"*{m.get('summary', '')}*"
-        )
+        stance_str = {"bull": "🟢bull", "bear": "🔴bear"}.get(stance, "⚪")
+        body = f"🧠 **{t} {_fmt_pct(pct)}{suffix}** {stance_str}"
+        summary = m.get("summary", "")
+        if summary:
+            body += f" · *{_clip(summary, 110)}*"
         url = m.get("url")
         if url:
-            body += f"\n\n[🔗 View Serenity's post]({url})"
+            body += f" [post]({url})"
+        body += f" [→]({_SITE_URL}/t/{t})"
         _emit(
             alerts, throttle,
             ticker=t, alert_type="serenity_match",
-            title=f"🧠 Serenity flagged {t} — {_fmt_pct(pct)} today",
+            title=_clip(f"🧠 Serenity {t} {_fmt_pct(pct)} {stance_str}", 60),
             body_md=body, signal=pct,
             extra={"stance": stance},  # thesis direction for performance logging
         )
@@ -301,23 +344,20 @@ def build_alerts(
             break
         t = p["ticker"]
         bullish = p.get("direction") == "bullish"
-        side = "📈 likely beneficiary" if bullish else "📉 likely at risk"
+        arrow = "📈" if bullish else "📉"
         pct = p.get("pct_1d")
-        move = f"now {_fmt_pct(pct)}{suffix}" if pct is not None else "not yet moving"
         trigger = p.get("trigger_ticker")
-        body = (
-            f"**{t}** — {side}, {move}\n\n"
-            f"*{p.get('rationale', '')}*\n\n"
-            f"Trigger: **{trigger}** — {p.get('event_summary', '')}\n\n"
-            f"`confidence: {p.get('confidence')}` `horizon: {p.get('horizon')}`"
-        )
-        url = p.get("news_url")
-        if url:
-            body += f"\n\n[🔗 Source]({url})"
+        body = f"🔮 **{t}** {arrow} via {trigger}"
+        rationale = p.get("rationale", "")
+        if rationale:
+            body += f" · *{_clip(rationale, 100)}*"
+        # Directional call + confidence/horizon stay inline (accountability),
+        # full rationale + trigger event + source live on /t/{ticker}.
+        body += f" · {p.get('confidence')} {p.get('horizon')} [→]({_SITE_URL}/t/{t})"
         _emit(
             alerts, throttle,
             ticker=t, alert_type="ripple",
-            title=f"🔮 {t} — {'bullish' if bullish else 'bearish'} read-through from {trigger}",
+            title=_clip(f"🔮 {t} {arrow} via {trigger}", 60),
             body_md=body, signal=pct if pct is not None else 0.0,
             extra={"direction": p.get("direction")},  # thesis direction for perf logging
         )

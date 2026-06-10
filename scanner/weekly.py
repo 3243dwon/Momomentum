@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -30,6 +31,7 @@ from scanner.llm.client import get_client, LLMClient
 log = logging.getLogger("weekly")
 
 WEEKLY_FILE = config.DATA_DIR / "weekly.json"
+_SITE_URL = os.environ.get("SITE_URL", "https://momomentum.vercel.app")
 MAX_TICKERS_ANALYZED = 15
 
 
@@ -362,23 +364,30 @@ def _write_weekly(analyses: list[dict], now: datetime) -> None:
 
 
 def _send_digest(analyses: list[dict], now: datetime) -> None:
-    real = [a for a in analyses if (a.get("analysis") or {}).get("classification") == "real_momentum"][:3]
-    fake = [a for a in analyses if (a.get("analysis") or {}).get("classification") == "fakeout"][:3]
+    # Grouped one-liners, no rationales — those live at /review.
+    def _cls(a):
+        return (a.get("analysis") or {}).get("classification")
+
+    real = [a for a in analyses if _cls(a) == "real_momentum"][:6]
+    fake = [a for a in analyses if _cls(a) == "fakeout"][:6]
+    unclear = [a for a in analyses if _cls(a) == "unclear"][:3]
 
     def line(a):
         t = a["ticker"]
         wret = a["metrics"].get("week_return_pct")
-        sign = "+" if (wret or 0) >= 0 else ""
+        ret = f" {wret:+.1f}%" if isinstance(wret, (int, float)) else ""
         pred = (a.get("analysis") or {}).get("prediction", "—")
-        rationale = (a.get("analysis") or {}).get("prediction_rationale", "")[:200]
-        return f"  • **{t}** ({sign}{wret}%) → *{pred}*: {rationale}"
+        return f"• **{t}**{ret} → {pred}"
 
-    body = f"**Week ending {now.strftime('%a %b %d')}** — {len(analyses)} tickers analyzed\n\n"
+    groups: list[str] = []
     if real:
-        body += "**Real momentum (worth watching next week):**\n" + "\n".join(line(a) for a in real) + "\n\n"
+        groups.append("**Real momentum:**\n" + "\n".join(line(a) for a in real))
     if fake:
-        body += "**Fakeouts (don't chase these):**\n" + "\n".join(line(a) for a in fake) + "\n\n"
-    body += f"_Full analysis at `/weekly`_"
+        groups.append("**Fakeouts:**\n" + "\n".join(line(a) for a in fake))
+    if unclear:
+        groups.append("**Unclear:**\n" + "\n".join(line(a) for a in unclear))
+    body = "\n\n".join(groups) if groups else f"{len(analyses)} tickers analyzed — no clear classifications."
+    body += f"\n\n[Full analysis]({_SITE_URL}/review)"
 
     alert = {
         "ticker": None,
