@@ -134,6 +134,21 @@
   .ticker-row:last-child {
     border-bottom: 0;
   }
+  /* The "why" line always spans the full row regardless of column count. */
+  .ticker-row > p {
+    grid-column: 1 / -1;
+  }
+  /* Phones: the fixed 180px spark column pushed price/% off a 375px screen.
+     Drop the spark, tighten gaps — price and % stay visible. */
+  @media (max-width: 480px) {
+    .ticker-row {
+      grid-template-columns: 18px 64px minmax(0, 1fr) 72px auto;
+      @apply gap-2 px-2;
+    }
+    .ticker-row .spark-cell {
+      display: none;
+    }
+  }
   /* Unicode block-char sparkline. Mono so glyphs align to a fixed cell. */
   .spark-block {
     @apply font-mono text-sm leading-none tabular-nums;

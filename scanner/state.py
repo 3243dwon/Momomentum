@@ -16,20 +16,30 @@ from scanner import config
 
 log = logging.getLogger(__name__)
 
-STATE_FILE = config.DATA_DIR / ".last_scan_state.json"
+# State lives under data/cache so the GitHub Actions cache (scan.yml restores
+# `data/cache`) persists it across ephemeral runners — the legacy location
+# (data/.last_scan_state.json) was gitignored AND outside the cache path, so
+# every CI scan thought it was the first ever (prior_scan_at always null).
+STATE_FILE = config.CACHE_DIR / "last_scan_state.json"
+LEGACY_STATE_FILE = config.DATA_DIR / ".last_scan_state.json"
 DELTAS_FILE = config.DATA_DIR / "deltas.json"
 
 RECENT_MOVES_HISTORY = 5
 
+_EMPTY_STATE = {"last_scan_at": None, "top_20": [], "recent_moves": {}}
+
 
 def _load_state() -> dict:
-    if not STATE_FILE.exists():
-        return {"last_scan_at": None, "top_20": [], "recent_moves": {}}
+    # One-time migration: fall back to the legacy path if the new one doesn't
+    # exist yet. The next compute_and_persist() writes to the new path.
+    path = STATE_FILE if STATE_FILE.exists() else LEGACY_STATE_FILE
+    if not path.exists():
+        return dict(_EMPTY_STATE)
     try:
-        return json.loads(STATE_FILE.read_text())
+        return json.loads(path.read_text())
     except Exception as e:
         log.warning("State file unreadable (%s); starting fresh", e)
-        return {"last_scan_at": None, "top_20": [], "recent_moves": {}}
+        return dict(_EMPTY_STATE)
 
 
 def _top_n_by_abs_pct(rows: list[dict], n: int) -> list[dict]:
