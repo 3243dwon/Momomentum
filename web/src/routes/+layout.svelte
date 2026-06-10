@@ -12,7 +12,7 @@
   if (browser) startScanWatch();
 </script>
 
-<div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 sm:px-6 lg:px-8 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))]">
+<div class="mx-auto flex min-h-screen max-w-screen-xl flex-col px-4 sm:px-6 lg:px-8 pt-[max(1rem,env(safe-area-inset-top))] pb-[calc(4.5rem+env(safe-area-inset-bottom))] sm:pb-[max(1rem,env(safe-area-inset-bottom))]">
   <header class="mb-4 flex items-center justify-between gap-2">
     <a href="/" class="group flex items-center gap-2">
       <span class="grid h-8 w-8 place-items-center rounded-md bg-signal-info/10 text-signal-info">
@@ -27,22 +27,24 @@
       </div>
     </a>
     <nav class="flex items-center gap-1 text-xs">
+      <!-- Text links live in the header on desktop; on phones they move to
+           the thumb-reach bottom tab bar below. -->
       <a
         href="/"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname === '/' ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        class="hidden rounded px-2.5 py-1.5 transition-colors sm:block {$page.url.pathname === '/' ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Scan</a
       >
       <a
-        href="/review"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/review') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
-        >Review</a
-      >
-      <a
         href="/ask"
-        class="rounded px-2.5 py-1.5 transition-colors {$page.url.pathname.startsWith('/ask') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        class="hidden rounded px-2.5 py-1.5 transition-colors sm:block {$page.url.pathname.startsWith('/ask') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Ask</a
       >
-      <span class="mx-1 h-4 w-px bg-ink-700"></span>
+      <a
+        href="/review"
+        class="hidden rounded px-2.5 py-1.5 transition-colors sm:block {$page.url.pathname.startsWith('/review') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Review</a
+      >
+      <span class="mx-1 hidden h-4 w-px bg-ink-700 sm:block"></span>
       <SearchBox />
       <ThemeToggle />
     </nav>
@@ -58,3 +60,24 @@
     </span>
   </footer>
 </div>
+
+<!-- Phone tab bar: thumb-reach nav for the PWA. Hidden from sm: up. -->
+<nav class="fixed inset-x-0 bottom-0 z-30 border-t border-ink-700 bg-ink-900/95 backdrop-blur pb-[env(safe-area-inset-bottom)] sm:hidden">
+  <div class="mx-auto flex max-w-screen-xl">
+    {#each [
+      { href: '/', label: 'Scan', active: $page.url.pathname === '/', icon: 'M3 17l5-5 4 4 8-8M14 8h6v6' },
+      { href: '/ask', label: 'Ask', active: $page.url.pathname.startsWith('/ask'), icon: 'M8 10h8M8 14h5M21 12a8.96 8.96 0 01-9 9 8.96 8.96 0 01-4.2-1L3 21l1-4.8A8.96 8.96 0 013 12a9 9 0 1118 0z' },
+      { href: '/review', label: 'Review', active: $page.url.pathname.startsWith('/review'), icon: 'M9 5h6m-7 4h8m-8 4h8m-8 4h5M6 3h12a1 1 0 011 1v16a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z' }
+    ] as item (item.href)}
+      <a
+        href={item.href}
+        class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[10px] uppercase tracking-wider transition-colors {item.active ? 'text-signal-info' : 'text-zinc-500 active:text-zinc-300'}"
+      >
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d={item.icon} />
+        </svg>
+        {item.label}
+      </a>
+    {/each}
+  </div>
+</nav>
