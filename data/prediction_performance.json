@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-10T07:44:12.828040-04:00",
+  "generated_at": "2026-06-10T11:50:21.937053-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizon_note": "calls graded at 1/3/5d regardless of stated horizon",
-  "total_predictions": 11,
+  "total_predictions": 20,
   "untracked_count": 0,
   "by_confidence": {
     "high": {
-      "count": 4,
+      "count": 5,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -33,7 +33,7 @@
       }
     },
     "medium": {
-      "count": 4,
+      "count": 8,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -59,7 +59,7 @@
       }
     },
     "low": {
-      "count": 3,
+      "count": 7,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -87,7 +87,7 @@
   },
   "by_priced_in": {
     "no": {
-      "count": 6,
+      "count": 10,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -113,7 +113,7 @@
       }
     },
     "contradicted": {
-      "count": 4,
+      "count": 9,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -167,7 +167,7 @@
   },
   "by_horizon": {
     "weeks": {
-      "count": 9,
+      "count": 14,
       "horizons": {
         "1d": {
           "evaluated": 0,
@@ -193,6 +193,32 @@
       }
     },
     "days": {
+      "count": 4,
+      "horizons": {
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "5d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    },
+    "intraday": {
       "count": 2,
       "horizons": {
         "1d": {

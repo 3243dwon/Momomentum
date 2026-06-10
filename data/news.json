@@ -1,36 +1,501 @@
 {
-  "generated_at": "2026-06-10T07:41:30.445640-04:00",
+  "generated_at": "2026-06-10T11:45:36.461703-04:00",
   "ticker_news": {
-    "ORCL": [
+    "AAL": [
       {
-        "id": "6fc3891ac94525ec",
+        "id": "6a9a3be6e6224349",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "AAL",
         "scope": "ticker",
-        "title": "Earnings Scheduled For June 10, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/06/53110387/earnings-scheduled-for-june-10-2026",
-        "published_at": "2026-06-10T11:11:32+00:00",
-        "type": "earnings",
+        "title": "Airlines Brace For Worst Profit Squeeze Since COVID",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53116455/airlines-brace-for-worst-profit-squeeze-since-covid",
+        "published_at": "2026-06-10T14:17:53+00:00",
+        "type": "macro_econ",
         "impact": "medium",
-        "dedup_group": "orcl_q4_2026_earnings",
+        "dedup_group": "airlines_profit_squeeze_2026",
+        "tickers_mentioned": [
+          "UAL",
+          "DAL",
+          "JBLU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "DAL": [
+      {
+        "id": "6a9a3be6e6224349",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DAL",
+        "scope": "ticker",
+        "title": "Airlines Brace For Worst Profit Squeeze Since COVID",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53116455/airlines-brace-for-worst-profit-squeeze-since-covid",
+        "published_at": "2026-06-10T14:17:53+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "airlines_profit_squeeze_2026",
+        "tickers_mentioned": [
+          "UAL",
+          "DAL",
+          "JBLU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "JBLU": [
+      {
+        "id": "6a9a3be6e6224349",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "JBLU",
+        "scope": "ticker",
+        "title": "Airlines Brace For Worst Profit Squeeze Since COVID",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53116455/airlines-brace-for-worst-profit-squeeze-since-covid",
+        "published_at": "2026-06-10T14:17:53+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "airlines_profit_squeeze_2026",
+        "tickers_mentioned": [
+          "UAL",
+          "DAL",
+          "JBLU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "UAL": [
+      {
+        "id": "6a9a3be6e6224349",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UAL",
+        "scope": "ticker",
+        "title": "Airlines Brace For Worst Profit Squeeze Since COVID",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53116455/airlines-brace-for-worst-profit-squeeze-since-covid",
+        "published_at": "2026-06-10T14:17:53+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "airlines_profit_squeeze_2026",
+        "tickers_mentioned": [
+          "UAL",
+          "DAL",
+          "JBLU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CNM": [
+      {
+        "id": "2b850bd4cf898bcc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CNM",
+        "scope": "ticker",
+        "title": "Core & Main Q1 2026 Earnings Call Transcript",
+        "url": "https://www.benzinga.com/insights/news/26/06/53115728/core-main-q1-2026-earnings-call-transcript",
+        "published_at": "2026-06-10T14:03:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "cnm_q1_2026_earnings",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
+      }
+    ],
+    "AAOI": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
       },
       {
-        "id": "f51ff6a7165d1a6a",
+        "id": "4448c2085a4d54c5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "AAOI",
         "scope": "ticker",
-        "title": "Oracle Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53110327/oracle-earnings-are-imminent-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call-3",
-        "published_at": "2026-06-10T11:08:37+00:00",
+        "title": "Applied Optoelectronics Shares Are Climbing Wednesday: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53114465/applied-optoelectronics-shares-are-climbing-wednesday-whats-driving-the-move",
+        "published_at": "2026-06-10T13:41:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "aaoi_climbing_june10",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AXTI": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AXTI",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CLOV": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CLOV",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FLNC": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FLNC",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2fe52e88a75897d3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Can UP Fintech Thrive Without China? Latest Earnings Offer Clues",
+        "url": "https://www.benzinga.com/Opinion/26/06/53117654/can-up-fintech-thrive-without-china-latest-earnings-offer-clues",
+        "published_at": "2026-06-10T14:39:06+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "orcl_q4_2026_earnings",
+        "dedup_group": "hood_fintech_earnings_china",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0df60783e23797a4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Kalshi Tightens Compliance Screws After Military Spouses Reportedly Bet On Maduro's Capture",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53116161/kalshi-tightens-compliance-screws-after-military-spouses-reportedly-bet-on-maduros-capture",
+        "published_at": "2026-06-10T14:11:14+00:00",
+        "type": "litigation",
+        "impact": "low",
+        "dedup_group": "kalshi_compliance_military_betting",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RXT": [
+      {
+        "id": "c980333ef98572ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RXT",
+        "scope": "ticker",
+        "title": "Caseys General Stores Upbeat Q4 Earnings, Joins Applied Optoelectronics, Clover Health Investments And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53115386/caseys-general-stores-upbeat-q4-earnings-joins-applied-optoelectronics-clover-health-investments-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-10T13:58:00+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "casey_q4_earnings_movers",
+        "tickers_mentioned": [
+          "AOPT",
+          "CLVH"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "DKNG": [
+      {
+        "id": "a35f723eaefe63ef",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DKNG",
+        "scope": "ticker",
+        "title": "DraftKings Stock In Focus After 11% Surge on Predictions Metrics \u2014 FIFA World Cup Adds To The Bull Case",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53113678/draftkings-stock-in-focus-after-11-surge-on-predictions-metrics-fifa-world-cup-adds-to-the-bull-case",
+        "published_at": "2026-06-10T13:22:44+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "dkng_surge_predictions_fifa",
         "tickers_mentioned": [],
         "route_to_synthesis": true
+      }
+    ],
+    "DVN": [
+      {
+        "id": "a72a698779f614a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DVN",
+        "scope": "ticker",
+        "title": "This Devon Energy Analyst Turns Bullish; Here Are Top 3 Upgrades For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/06/53112582/this-devon-energy-analyst-turns-bullish-here-are-top-3-upgrades-for-wednesday",
+        "published_at": "2026-06-10T12:51:09+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dvn_analyst_upgrade_june10",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "GEV": [
+      {
+        "id": "0772ed6d71a69e88",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GEV",
+        "scope": "ticker",
+        "title": "The DOE Just Put A Timeline On Fusion Energy \u2014 Why Nvidia, GE Vernova And Other Stocks Could Benefit",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53112454/the-doe-just-put-a-timeline-on-fusion-energy-why-nvidia-ge-vernova-and-other-stocks-could-benefit",
+        "published_at": "2026-06-10T12:40:01+00:00",
+        "type": "macro_fed",
+        "impact": "low",
+        "dedup_group": "doe_fusion_timeline_energy",
+        "tickers_mentioned": [
+          "NVDA",
+          "GEV"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "VRT": [
+      {
+        "id": "0772ed6d71a69e88",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "The DOE Just Put A Timeline On Fusion Energy \u2014 Why Nvidia, GE Vernova And Other Stocks Could Benefit",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53112454/the-doe-just-put-a-timeline-on-fusion-energy-why-nvidia-ge-vernova-and-other-stocks-could-benefit",
+        "published_at": "2026-06-10T12:40:01+00:00",
+        "type": "macro_fed",
+        "impact": "low",
+        "dedup_group": "doe_fusion_timeline_energy",
+        "tickers_mentioned": [
+          "NVDA",
+          "GEV"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "ba80a9d7d6d5373c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Why Is Intel Stock Sliding On Wednesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111785/why-is-intel-stock-sliding-on-wednesday",
+        "published_at": "2026-06-10T12:10:19+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intel_stock_decline_june_10",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7d0849b8343952a8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/06/53111512/12-information-technology-stocks-moving-in-wednesdays-pre-market-session",
+        "published_at": "2026-06-10T12:05:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_premarket_moves_june10",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0aa587f8ffa800e2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Super Micro Computer, Summit Therapeutics And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111409/super-micro-computer-summit-therapeutics-and-other-big-stocks-moving-lower-in-wednesdays-pre-market-session",
+        "published_at": "2026-06-10T12:03:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_equity_raise_june10",
+        "tickers_mentioned": [
+          "SMCI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "41cbf3d52ac1b337",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Super Micro Stock Sinks After Announcing $7 Billion Equity Raise To Fund AI Backlog",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+        "published_at": "2026-06-10T12:02:21+00:00",
+        "type": "guidance",
+        "impact": "high",
+        "dedup_group": "smci_7b_equity_raise",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "MDB": [
+      {
+        "id": "ac413cdce5de9c2e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MDB",
+        "scope": "ticker",
+        "title": "Software Stocks Are Sinking In 2026, But These 'Fab Five' Are Up 30% \u2014 And BofA Says They're Just Getting Started",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53120036/bofa-fab-five-software-stocks-2026",
+        "published_at": "2026-06-10T15:28:55+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "software_stocks_fab_five_bofa_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "OPEN": [
+      {
+        "id": "c9585fc96bc94d6c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OPEN",
+        "scope": "ticker",
+        "title": "From $4 To $500? Eric Jackson's Bold Thesis Pitches Opendoor As Real Estate's Tesla Moment",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53111178/from-4-to-500-eric-jacksons-bold-thesis-pitches-opendoor-as-real-estates-tesla-moment",
+        "published_at": "2026-06-10T12:00:02+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "eric_jackson_opendoor_tesla_thesis",
+        "tickers_mentioned": [
+          "OPEN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKT": [
+      {
+        "id": "c9585fc96bc94d6c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKT",
+        "scope": "ticker",
+        "title": "From $4 To $500? Eric Jackson's Bold Thesis Pitches Opendoor As Real Estate's Tesla Moment",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53111178/from-4-to-500-eric-jacksons-bold-thesis-pitches-opendoor-as-real-estates-tesla-moment",
+        "published_at": "2026-06-10T12:00:02+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "eric_jackson_opendoor_tesla_thesis",
+        "tickers_mentioned": [
+          "OPEN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SAIL": [
+      {
+        "id": "f77b847ae5440575",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SAIL",
+        "scope": "ticker",
+        "title": "SailPoint Analysts Boost Their Forecasts After Upbeat Q1 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53116379/sailpoint-analysts-boost-their-forecasts-after-upbeat-q1-results",
+        "published_at": "2026-06-10T14:16:13+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sail_q1_results_analyst_boost",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "SMMT": [
+      {
+        "id": "0aa587f8ffa800e2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMMT",
+        "scope": "ticker",
+        "title": "Super Micro Computer, Summit Therapeutics And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111409/super-micro-computer-summit-therapeutics-and-other-big-stocks-moving-lower-in-wednesdays-pre-market-session",
+        "published_at": "2026-06-10T12:03:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "smci_equity_raise_june10",
+        "tickers_mentioned": [
+          "SMCI"
+        ],
+        "route_to_synthesis": false
       }
     ]
   },
