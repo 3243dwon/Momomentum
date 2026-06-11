@@ -1,71 +1,54 @@
 {
-  "generated_at": "2026-06-11T00:23:48.929050-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Desk rotates to 3 low-conviction longs (KO, FULT, VLY); SMCI -28% remains overnight's dominant print",
+  "generated_at": "2026-06-11T06:45:43.587696-04:00",
+  "window": "AH_PRE",
+  "headline": "SMCI -28% still dominates tape; desk trims to 1 take (FULT long) as risk_on label fights broad index weakness",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.56% / QQQ -2.0% on the day but both labeled risk_on; VXX stress ratio benign at 1.03 \u2014 dip, not panic. Entries favor patient fills."
+    "line": "SPY -1.56% / QQQ -2.0% on the day, both still above 50d. VXX stress ratio 1.03 \u2014 vol ticking up but not spiking. Regime label vs. price acti"
   },
   "actions": [
-    {
-      "ticker": "KO",
-      "direction": "long",
-      "entry": 83.59,
-      "stop": 76.9,
-      "target": 96.96,
-      "line": "Quarter size \u2014 neutral signal + neutral research, low conviction; clean R structure carries it."
-    },
     {
       "ticker": "FULT",
       "direction": "long",
       "entry": 22.72,
       "stop": 21.76,
       "target": 24.64,
-      "line": "Half size \u2014 technically sound, regime-aligned, low risk; best conviction of the three."
-    },
-    {
-      "ticker": "VLY",
-      "direction": "long",
-      "entry": 14.16,
-      "stop": 13.66,
-      "target": 15.15,
-      "line": "Quarter size \u2014 signal agrees, research against; tight stop makes it takeable despite split verdict."
+      "line": "Clean risk/reward (~2:1); regime aligned but all-neutral advisors keep desk at quarter size. Entry 22.72, stop 21.76, target 24.64."
     }
   ],
   "watch": [
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "-27.97% on 4.8\u00d7 volume \u2014 still the dominant overnight print; no desk take, but watch for dead-cat or continued flush at open."
+      "line": "-27.97% on 4.8\u00d7 volume \u2014 still the dominant print. Needs a base before any fade/long thesis is viable."
     },
     {
       "ticker": "FRMI",
       "type": "mover",
-      "line": "+23% on 3.16\u00d7 volume \u2014 strong gap, no catalyst tagged; fade risk high if no fundamental driver surfaces."
+      "line": "+23% on 3.16\u00d7 vol \u2014 watch for continuation or reversal into open; no desk take yet."
     },
     {
       "ticker": "CLOV",
       "type": "mover",
-      "line": "+14.15% on 2.77\u00d7 volume, MACD bullish but flagged overbought \u2014 momentum trade only, no chase."
-    },
-    {
-      "ticker": "PRIM",
-      "type": "mover",
-      "line": "-9.73% on 1.7\u00d7 vol with MACD bearish cross \u2014 potential continuation short if broader tape stays heavy."
+      "line": "+14.15%, MACD bullish but flagged overbought on unusual volume \u2014 momentum name, fade risk elevated."
     },
     {
       "ticker": "AA",
       "type": "mover",
-      "line": "-9.38% on 1.73\u00d7 vol \u2014 macro/commodity pressure; watch for sector follow-through at RTH open."
+      "line": "-9.38% \u2014 materials weakness; potential macro read-through on tariff/demand concerns."
+    },
+    {
+      "ticker": "PRIM",
+      "type": "mover",
+      "line": "-9.73% on 1.7\u00d7 vol with MACD bearish cross \u2014 continuation short candidate if market stays weak."
     }
   ],
   "changed": [
-    "Desk count dropped from 4 takes to 3 \u2014 one take removed vs previous briefing",
-    "New names: KO, FULT, VLY replace prior desk picks",
-    "No catalysts, ripple calls, or macro events registered this scan"
+    "KO and VLY drops off actions \u2014 desk is down to 1 take (FULT only)",
+    "Regime conflict sharpened: risk_on label but SPY/QQQ both sold off hard on the day"
   ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-11 00:23 ET \u2014 prices stale until pre-market opens; levels may gap significantly by RTH.",
-    "All three desk takes are explicitly low-conviction (neutral signal/research); size accordingly and confirm at open before pulling trigger."
+    "AH/Pre-market scan as of 06:45 ET Jun 11 2026 \u2014 prices stale, spreads wide, moves may gap significantly at RTH open.",
+    "Risk_on regime label based on SPY still above 50d, but intraday -1.56%/-2.0% prints and rising VXX suggest deteriorating tape \u2014 label may lag."
   ]
 }
