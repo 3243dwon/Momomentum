@@ -1,7 +1,126 @@
 {
-  "generated_at": "2026-06-11T10:49:35.354632+00:00",
+  "generated_at": "2026-06-11T12:16:27.756015+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "34e2c162d363",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "alert",
+      "type": "catalyst",
+      "ticker": "CLOV",
+      "direction": "long",
+      "confidence": null,
+      "price": 4.88,
+      "thesis": "\ud83c\udfaf CLOV +14.2% \u00b7 A court order forcing CMS to upgrade\u2026",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "fdc2c529036b",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "alert",
+      "type": "catalyst",
+      "ticker": "PCT",
+      "direction": "short",
+      "confidence": null,
+      "price": 9.88,
+      "thesis": "\ud83c\udfaf PCT -8.5% \u00b7 PureCycle Technologies priced a $250M\u2026",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "876e912a44bc",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "alert",
+      "type": "catalyst",
+      "ticker": "ORCL",
+      "direction": "short",
+      "confidence": null,
+      "price": 201.99,
+      "thesis": "\ud83c\udfaf ORCL -1.9% \u00b7 Oracle signaled plans for\u2026",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "7ca3bd2fe4f5",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "CLOV",
+      "direction": "long",
+      "confidence": null,
+      "price": 4.88,
+      "thesis": "\ud83d\ude80 CLOV +14.2% \u00b7 A court order forcing CMS to upgrade\u2026",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "844985240307",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "KO",
+      "direction": "long",
+      "confidence": null,
+      "price": 83.59,
+      "thesis": "+2.8% today; 5d uptrend +6%; 1.8x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "34fbb4907589",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "PENN",
+      "direction": "long",
+      "confidence": null,
+      "price": 21.46,
+      "thesis": "+5.6% today; 5d uptrend +9%; 2.0x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "009240e4c6c1",
+      "ts": "2026-06-11T12:13:08.860918+00:00",
+      "kind": "pick",
+      "type": "rec_short",
+      "ticker": "ORCL",
+      "direction": "short",
+      "confidence": null,
+      "price": 201.99,
+      "thesis": "-1.9% today; 5d downtrend -12%; 2.0x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "87f1bf152c2a",
       "ts": "2026-06-11T10:45:43.587696+00:00",
@@ -8378,125 +8497,6 @@
       "thesis": "",
       "outcomes": {
         "1d": -1.81,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "5b32d64fbb27",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "CSCO",
-      "direction": "long",
-      "confidence": null,
-      "price": 124.56,
-      "thesis": "",
-      "outcomes": {
-        "1d": -3.45,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "0a3c411cc2fd",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "MRVL",
-      "direction": "long",
-      "confidence": null,
-      "price": 291.37,
-      "thesis": "",
-      "outcomes": {
-        "1d": -7.13,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "01330b1b9a6d",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "AAOI",
-      "direction": "long",
-      "confidence": null,
-      "price": 195.19,
-      "thesis": "",
-      "outcomes": {
-        "1d": -13.46,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "e1ab1cea0c91",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "NBIS",
-      "direction": "short",
-      "confidence": null,
-      "price": 218.07,
-      "thesis": "",
-      "outcomes": {
-        "1d": -1.87,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "49a77b2b64a5",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "INTC",
-      "direction": "long",
-      "confidence": null,
-      "price": 110.05,
-      "thesis": "",
-      "outcomes": {
-        "1d": -1.81,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "e582d1f0aac6",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "ON",
-      "direction": "long",
-      "confidence": null,
-      "price": 121.94,
-      "thesis": "",
-      "outcomes": {
-        "1d": -4.87,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "35d94f4ba521",
-      "ts": "2026-06-08T19:23:04.606843+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "TSLA",
-      "direction": "long",
-      "confidence": null,
-      "price": 409.38,
-      "thesis": "",
-      "outcomes": {
-        "1d": -2.97,
         "3d": null,
         "5d": null
       },

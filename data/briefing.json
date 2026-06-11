@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-11T06:45:43.587696-04:00",
+  "generated_at": "2026-06-11T08:13:08.860918-04:00",
   "window": "AH_PRE",
-  "headline": "SMCI -28% still dominates tape; desk trims to 1 take (FULT long) as risk_on label fights broad index weakness",
+  "headline": "SMCI -28% hangover persists; desk adds ORCL short as AI capex bet, FULT long held \u2014 both quarter-size",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.56% / QQQ -2.0% on the day, both still above 50d. VXX stress ratio 1.03 \u2014 vol ticking up but not spiking. Regime label vs. price acti"
+    "line": "SPY -1.56% / QQQ -2.0% \u2014 index drop contradicts risk_on label; VXX stress 1.03 (mild). Entries face headwind."
   },
   "actions": [
     {
@@ -13,42 +13,49 @@
       "entry": 22.72,
       "stop": 21.76,
       "target": 24.64,
-      "line": "Clean risk/reward (~2:1); regime aligned but all-neutral advisors keep desk at quarter size. Entry 22.72, stop 21.76, target 24.64."
+      "line": "Small probe, regime-aligned, risk clean \u2014 quarter size only."
+    },
+    {
+      "ticker": "ORCL",
+      "direction": "short",
+      "entry": 201.99,
+      "stop": 209.01,
+      "target": 187.94,
+      "line": "PM overrides risk veto \u2014 durable AI capex catalyst not a pure momentum short; quarter size."
     }
   ],
   "watch": [
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "-27.97% on 4.8\u00d7 volume \u2014 still the dominant print. Needs a base before any fade/long thesis is viable."
+      "line": "-28% on 4.8\u00d7 volume \u2014 still dominating tape, no catalyst resolution yet. Do not catch knife."
+    },
+    {
+      "ticker": "CLOV",
+      "type": "catalyst",
+      "line": "+14.2% on court order forcing CMS upgrade; overbought flag + 2.77\u00d7 vol \u2014 watch for fade."
+    },
+    {
+      "ticker": "PCT",
+      "type": "catalyst",
+      "line": "-8.5% on $250M dilutive offering \u2014 secondary overhang, follow for washout entry."
     },
     {
       "ticker": "FRMI",
       "type": "mover",
-      "line": "+23% on 3.16\u00d7 vol \u2014 watch for continuation or reversal into open; no desk take yet."
-    },
-    {
-      "ticker": "CLOV",
-      "type": "mover",
-      "line": "+14.15%, MACD bullish but flagged overbought on unusual volume \u2014 momentum name, fade risk elevated."
+      "line": "+23% on 3.16\u00d7 volume \u2014 no catalyst in data; pure tape read, verify driver before touching."
     },
     {
       "ticker": "AA",
       "type": "mover",
-      "line": "-9.38% \u2014 materials weakness; potential macro read-through on tariff/demand concerns."
-    },
-    {
-      "ticker": "PRIM",
-      "type": "mover",
-      "line": "-9.73% on 1.7\u00d7 vol with MACD bearish cross \u2014 continuation short candidate if market stays weak."
+      "line": "-9.4% on 1.73\u00d7 vol \u2014 macro/tariff sensitivity; watch for sector read-through."
     }
   ],
   "changed": [
-    "KO and VLY drops off actions \u2014 desk is down to 1 take (FULT only)",
-    "Regime conflict sharpened: risk_on label but SPY/QQQ both sold off hard on the day"
+    "Desk adds ORCL short (PM override, AI capex theme) \u2014 new action vs prior briefing's single FULT long."
   ],
   "caveats": [
-    "AH/Pre-market scan as of 06:45 ET Jun 11 2026 \u2014 prices stale, spreads wide, moves may gap significantly at RTH open.",
-    "Risk_on regime label based on SPY still above 50d, but intraday -1.56%/-2.0% prints and rising VXX suggest deteriorating tape \u2014 label may lag."
+    "AH/Pre-market scan as of 08:13 ET 2026-06-11 \u2014 prices stale vs live tape; gaps at RTH open will shift all levels.",
+    "Risk_on regime label conflicts with SPY -1.56% / QQQ -2.0% intraday \u2014 label may lag; size down accordingly."
   ]
 }

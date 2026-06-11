@@ -1,141 +1,194 @@
 {
-  "generated_at": "2026-06-11T06:45:43.587696-04:00",
+  "generated_at": "2026-06-11T08:13:08.860918-04:00",
   "ticker_news": {
-    "FRMI": [
+    "DVN": [
       {
-        "id": "d7b988b68300715a",
+        "id": "ef807e583953ed50",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "FRMI",
+        "ticker": "DVN",
         "scope": "ticker",
-        "title": "Why Is Fermi (FRMI) Stock Moving Today?",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53133698/why-is-fermi-frmi-stock-moving-today",
-        "published_at": "2026-06-11T06:54:45+00:00",
-        "type": "other",
+        "title": "AbbVie, Devon Energy And More On CNBC's 'Final Trades'",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53137152/abbvie-devon-energy-and-more-on-cnbcs-final-trades",
+        "published_at": "2026-06-11T11:51:44+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "frmi_stock_movement",
+        "dedup_group": "cnbc_final_trades_june_11_2026",
+        "tickers_mentioned": [
+          "ABBV"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "9864b6554c596d6a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DVN",
+        "scope": "ticker",
+        "title": "Cramer Backs BlackBerry, Waves Off Transocean And Sends AI Investors To Corning",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53136912/cramer-backs-blackberry-waves-off-transocean-and-sends-ai-investors-to-corning",
+        "published_at": "2026-06-11T11:40:08+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_commentary_june_11_2026",
+        "tickers_mentioned": [
+          "PRIM",
+          "AAOI"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "AAOI": [
+      {
+        "id": "9864b6554c596d6a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Cramer Backs BlackBerry, Waves Off Transocean And Sends AI Investors To Corning",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53136912/cramer-backs-blackberry-waves-off-transocean-and-sends-ai-investors-to-corning",
+        "published_at": "2026-06-11T11:40:08+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_commentary_june_11_2026",
+        "tickers_mentioned": [
+          "PRIM",
+          "AAOI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "87237a742e2cada4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "Forget Micron: These Two Russell 2000 Stocks Are Quietly Delivering Triple-Digit Gains",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53136888/forget-micron-these-two-russell-2000-stocks-are-quietly-delivering-triple-digit-gains",
+        "published_at": "2026-06-11T11:36:58+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "russell_2000_triple_digit_gains_think_piece",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "CNM": [
+    "PRIM": [
       {
-        "id": "70a9345a0ee73ac8",
+        "id": "9864b6554c596d6a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CNM",
+        "ticker": "PRIM",
         "scope": "ticker",
-        "title": "Dow Tumbles Over 900 Points On Iran Strikes: Investor Sentiment Weakens Further, Greed Index Remains In 'Fear' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53133688/dow-tumbles-over-900-points-on-iran-strikes-investor-sentiment-weakens-further-greed-index-remains-in-fear-zone",
-        "published_at": "2026-06-11T06:54:19+00:00",
-        "type": "macro_geopol",
-        "impact": "high",
-        "dedup_group": "iran_strikes_market_selloff_june_2026",
-        "tickers_mentioned": [],
+        "title": "Cramer Backs BlackBerry, Waves Off Transocean And Sends AI Investors To Corning",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53136912/cramer-backs-blackberry-waves-off-transocean-and-sends-ai-investors-to-corning",
+        "published_at": "2026-06-11T11:40:08+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_commentary_june_11_2026",
+        "tickers_mentioned": [
+          "PRIM",
+          "AAOI"
+        ],
         "route_to_synthesis": false
+      }
+    ],
+    "CLOV": [
+      {
+        "id": "1328b82a8312e4a6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CLOV",
+        "scope": "ticker",
+        "title": "Clover Health Stock Extends Gains After Court Forces CMS to Upgrade Medicare Star Rating",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53136832/clover-health-stock-extends-gains-after-court-forces-cms-to-upgrade-medicare-star-rating",
+        "published_at": "2026-06-11T11:32:42+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "clov_cms_medicare_star_rating_court_win",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ],
     "ORCL": [
       {
-        "id": "0eaaec6a5cc7b1b8",
+        "id": "54abfbf32d19426e",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "ORCL",
         "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain Despite Trump's Threats To Iran Amid Stalled Peace Talks\u2014Oracle, CoreWeave, Visa In Focus",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53134639/stock-market-today-dow-jones-sp-500-futures-gain-despite-trumps-threats-to-iran-amid-stalled-peace-talks-oracle-coreweave-visa-in-focus",
-        "published_at": "2026-06-11T09:39:53+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_iran_tensions",
-        "tickers_mentioned": [
-          "CWEAVE",
-          "V"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "542559888b114951",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Why Navan Shares Are Trading Higher By Around 20%; Here Are 20 Stocks Moving Premarket",
-        "url": "https://www.benzinga.com/news/26/06/53134543/why-navan-shares-are-trading-higher-by-around-20-here-are-20-stocks-moving-premarket",
-        "published_at": "2026-06-11T09:17:15+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "navan_premarket_move_equity_rally",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "977beda6e8a69411",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle, Adobe And 3 Stocks To Watch Heading Into Thursday",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53133678/oracle-adobe-and-3-stocks-to-watch-heading-into-thursday-2",
-        "published_at": "2026-06-11T06:52:02+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "stock_watch_list",
-        "tickers_mentioned": [
-          "ADBE"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "e613dfb7ba4de9a5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Jensen Huang's 'Saaspocalypse' Prediction Coming True? Oracle Says Customers Have 'Quickly Moved On' From SaaS Apocalypse Narrative",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53133233/jensen-huang-saaspocalypse-prediction-oracle-says-customers-moved-on",
-        "published_at": "2026-06-11T05:12:45+00:00",
-        "type": "other",
+        "title": "Oxford Industries Posts Mixed Q1 Results, Joins Oracle, Swarmer And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53137546/oxford-industries-posts-mixed-q1-results-joins-oracle-swarmer-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session",
+        "published_at": "2026-06-11T12:03:55+00:00",
+        "type": "earnings",
         "impact": "medium",
-        "dedup_group": "oracle_saaspocalypse_huang",
+        "dedup_group": "pct_q1_mixed_results",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "e94fdb5bcb295ab0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Intel To Rally Around 26%? Here Are 10 Top Analyst Forecasts For Thursday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53137117/intel-to-rally-around-26-here-are-10-top-analyst-forecasts-for-thursday",
+        "published_at": "2026-06-11T11:49:27+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intel_analyst_forecasts_thursday",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3a80bf786d94c260",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Oracle Wants To Spend Big For AI, Stock Drops",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53136698/oracle-wants-to-spend-big-for-ai-stock-drops",
+        "published_at": "2026-06-11T11:24:04+00:00",
+        "type": "guidance",
+        "impact": "medium",
+        "dedup_group": "orcl_ai_capex_guidance",
         "tickers_mentioned": [],
         "route_to_synthesis": true
       }
     ],
     "PCT": [
       {
-        "id": "542559888b114951",
+        "id": "54abfbf32d19426e",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PCT",
         "scope": "ticker",
-        "title": "Why Navan Shares Are Trading Higher By Around 20%; Here Are 20 Stocks Moving Premarket",
-        "url": "https://www.benzinga.com/news/26/06/53134543/why-navan-shares-are-trading-higher-by-around-20-here-are-20-stocks-moving-premarket",
-        "published_at": "2026-06-11T09:17:15+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "navan_premarket_move_equity_rally",
+        "title": "Oxford Industries Posts Mixed Q1 Results, Joins Oracle, Swarmer And Other Big Stocks Moving Lower In Thursday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53137546/oxford-industries-posts-mixed-q1-results-joins-oracle-swarmer-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session",
+        "published_at": "2026-06-11T12:03:55+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "pct_q1_mixed_results",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SMCI": [
+        "route_to_synthesis": true
+      },
       {
-        "id": "f5886d117e312fba",
+        "id": "5e62d56b5cd3a467",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SMCI",
+        "ticker": "PCT",
         "scope": "ticker",
-        "title": "Analyst Calls NVIDIA Undervalued, Sees Major Upside Ahead",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53134862/analyst-calls-nvidia-undervalued-sees-major-upside-ahead",
-        "published_at": "2026-06-11T09:58:13+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvda_analyst_undervalued",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
+        "title": "PureCycle Shares Slide After Company Prices $250M Notes, $145M Stock Offering",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53137243/purecycle-shares-slide-after-company-prices-250m-notes-145m-stock-offering",
+        "published_at": "2026-06-11T11:57:13+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "purecycle_250m_notes_145m_offering",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
       }
     ]
   },
