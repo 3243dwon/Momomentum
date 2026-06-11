@@ -1,61 +1,71 @@
 {
-  "generated_at": "2026-06-11T08:13:08.860918-04:00",
-  "window": "AH_PRE",
-  "headline": "SMCI -28% hangover persists; desk adds ORCL short as AI capex bet, FULT long held \u2014 both quarter-size",
+  "generated_at": "2026-06-11T12:57:15.525257-04:00",
+  "window": "RTH",
+  "headline": "ORCL -12.8% cloud miss ripples to AMZN/SNOW bull, NVDA bear; desk longs SGHC, FRO, MRVL",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.56% / QQQ -2.0% \u2014 index drop contradicts risk_on label; VXX stress 1.03 (mild). Entries face headwind."
+    "line": "SPY +0.17% above 50d, QQQ +0.86% leading \u2014 risk-on tape, low VXX stress (1.04). Green light for momentum entries but Iran geopolitical premi"
   },
   "actions": [
     {
-      "ticker": "FULT",
+      "ticker": "SGHC",
       "direction": "long",
-      "entry": 22.72,
-      "stop": 21.76,
-      "target": 24.64,
-      "line": "Small probe, regime-aligned, risk clean \u2014 quarter size only."
+      "entry": 13.92,
+      "stop": 12.81,
+      "target": 16.15,
+      "line": "Momentum setup, no catalyst \u2014 half size; signal/risk aligned."
     },
     {
-      "ticker": "ORCL",
-      "direction": "short",
-      "entry": 201.99,
-      "stop": 209.01,
-      "target": 187.94,
-      "line": "PM overrides risk veto \u2014 durable AI capex catalyst not a pure momentum short; quarter size."
+      "ticker": "FRO",
+      "direction": "long",
+      "entry": 37.91,
+      "stop": 34.88,
+      "target": 43.98,
+      "line": "Clean tanker setup \u2014 half size; Iran/Hormuz oil disruption macro adds tailwind."
+    },
+    {
+      "ticker": "MRVL",
+      "direction": "long",
+      "entry": 263.92,
+      "stop": 243.97,
+      "target": 316.48,
+      "line": "Reversal attempt off -16.6% 5d \u2014 quarter size; split signal vs research."
     }
   ],
   "watch": [
     {
-      "ticker": "SMCI",
-      "type": "mover",
-      "line": "-28% on 4.8\u00d7 volume \u2014 still dominating tape, no catalyst resolution yet. Do not catch knife."
+      "ticker": "ORCL",
+      "type": "catalyst",
+      "line": "-12.8% on cloud revenue miss; elevated vol (1.5x), dead-cat risk \u2014 watch for flush continuation."
     },
     {
-      "ticker": "CLOV",
-      "type": "catalyst",
-      "line": "+14.2% on court order forcing CMS upgrade; overbought flag + 2.77\u00d7 vol \u2014 watch for fade."
+      "ticker": "AMZN",
+      "type": "ripple",
+      "line": "Bullish ripple from ORCL OCI miss \u2014 AWS enterprise AI workload share-gain thesis, not yet priced."
+    },
+    {
+      "ticker": "SNOW",
+      "type": "ripple",
+      "line": "Bullish ripple \u2014 ORCL cloud weakness reinforces Snowflake database displacement narrative."
+    },
+    {
+      "ticker": "NVDA",
+      "type": "ripple",
+      "line": "Bearish ripple \u2014 ORCL OCI miss raises questions on GPU capex monetization; watch AI capex sentiment."
     },
     {
       "ticker": "PCT",
-      "type": "catalyst",
-      "line": "-8.5% on $250M dilutive offering \u2014 secondary overhang, follow for washout entry."
-    },
-    {
-      "ticker": "FRMI",
       "type": "mover",
-      "line": "+23% on 3.16\u00d7 volume \u2014 no catalyst in data; pure tape read, verify driver before touching."
-    },
-    {
-      "ticker": "AA",
-      "type": "mover",
-      "line": "-9.4% on 1.73\u00d7 vol \u2014 macro/tariff sensitivity; watch for sector read-through."
+      "line": "-14.3% on 2.18x vol \u2014 unusual sell-side pressure; catalyst unclear, flag for follow-through short."
     }
   ],
   "changed": [
-    "Desk adds ORCL short (PM override, AI capex theme) \u2014 new action vs prior briefing's single FULT long."
+    "Desk flipped: prior ORCL short removed, now long SGHC/FRO/MRVL",
+    "ORCL -12.8% cloud miss is new dominant macro ripple driver this scan",
+    "Iran/Kharg Island threat adds geopolitical oil-risk bid \u2014 benefits FRO directly"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 08:13 ET 2026-06-11 \u2014 prices stale vs live tape; gaps at RTH open will shift all levels.",
-    "Risk_on regime label conflicts with SPY -1.56% / QQQ -2.0% intraday \u2014 label may lag; size down accordingly."
+    "RTH scan as of 12:57 ET 2026-06-11 \u2014 prices and levels may be stale intraday; confirm before entry.",
+    "Iran escalation and ECB rate hike are fast-moving macro events \u2014 FRO thesis could gap; NVDA/ANET AI-capex-fear ripples are medium/low confidence only."
   ]
 }

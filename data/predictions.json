@@ -1,8 +1,260 @@
 {
-  "generated_at": "2026-06-11T08:13:08.860918-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-11T12:57:15.525257-04:00",
+  "event_count": 1,
+  "prediction_count": 10,
+  "not_yet_priced_in": 6,
+  "events": [
+    {
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "primary_drivers": [
+        "AI cloud capex digestion concerns \u2014 Oracle's OCI shortfall signals possible slowdown in AI infrastructure monetization",
+        "Hyperscaler competitive read-through \u2014 share may be flowing to AWS/Azure/GCP rather than disappearing",
+        "Database workload migration risk \u2014 weak Oracle cloud could accelerate share loss to cloud-native databases"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AMZN",
+          "rationale": "AWS is the primary share-taker if Oracle's OCI growth disappoints; enterprise AI workloads Oracle hoped to capture more likely landed at AWS Bedrock/EC2.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MSFT",
+          "rationale": "Azure is Oracle's stated multi-cloud partner but also its biggest competitor for AI training workloads; an OCI miss implies Azure captured the marginal enterprise AI dollar.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SNOW",
+          "rationale": "Pure-play cloud data competitor to Oracle Database/Autonomous DB; weakness at Oracle cloud reinforces Snowflake's displacement thesis with enterprise customers.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MDB",
+          "rationale": "MongoDB directly competes with Oracle's database franchise for new cloud-native workloads; Oracle stumble supports the modern-database migration narrative.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NVDA",
+          "rationale": "Oracle has been one of the largest publicly-disclosed GPU buyers for OCI buildout; an OCI revenue miss raises questions about Oracle's ability to monetize already-ordered Nvidia capacity and could slow incremental orders.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VRT",
+          "rationale": "Vertiv supplies power/thermal gear into Oracle's AI datacenter buildout; any pause or pacing of OCI capex flows directly into Vertiv's order book.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CRDO",
+          "rationale": "Active electrical cables/optical DSPs sold into hyperscale AI clusters including Oracle; OCI capex digestion concerns hit Credo's growth narrative.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ANET",
+          "rationale": "Arista networks the AI back-end fabric for hyperscalers including Oracle; cloud revenue miss feeds the broader 'AI capex peaking' fear across the networking complex.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CRM",
+          "rationale": "Read-through to enterprise software demand \u2014 if Oracle's cloud applications and OCI are decelerating, it signals broader enterprise IT budget tightening that pressures Salesforce.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SMCI",
+          "rationale": "Supermicro builds AI servers shipped into hyperscale customers including Oracle; OCI buildout pause would directly compress its backlog growth.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "ORCL",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "headlines": [
+        "Oracle Missed On Cloud Revenue: Why AI ETFs Are Unfazed"
+      ],
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "AMZN",
+      "direction": "bullish",
+      "rationale": "AWS is the primary share-taker if Oracle's OCI growth disappoints; enterprise AI workloads Oracle hoped to capture more likely landed at AWS Bedrock/EC2.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "SNOW",
+      "direction": "bullish",
+      "rationale": "Pure-play cloud data competitor to Oracle Database/Autonomous DB; weakness at Oracle cloud reinforces Snowflake's displacement thesis with enterprise customers.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 0.13,
+      "rel_volume": 0.22,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "NVDA",
+      "direction": "bearish",
+      "rationale": "Oracle has been one of the largest publicly-disclosed GPU buyers for OCI buildout; an OCI revenue miss raises questions about Oracle's ability to monetize already-ordered Nvidia capacity and could slow incremental orders.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 0.17,
+      "rel_volume": 0.49,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "MDB",
+      "direction": "bullish",
+      "rationale": "MongoDB directly competes with Oracle's database franchise for new cloud-native workloads; Oracle stumble supports the modern-database migration narrative.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 1.51,
+      "rel_volume": 0.26,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "CRDO",
+      "direction": "bearish",
+      "rationale": "Active electrical cables/optical DSPs sold into hyperscale AI clusters including Oracle; OCI capex digestion concerns hit Credo's growth narrative.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "ANET",
+      "direction": "bearish",
+      "rationale": "Arista networks the AI back-end fabric for hyperscalers including Oracle; cloud revenue miss feeds the broader 'AI capex peaking' fear across the networking complex.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "CRM",
+      "direction": "bearish",
+      "rationale": "Read-through to enterprise software demand \u2014 if Oracle's cloud applications and OCI are decelerating, it signals broader enterprise IT budget tightening that pressures Salesforce.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "partial",
+      "pct_1d": -2.85,
+      "rel_volume": 0.54,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "MSFT",
+      "direction": "bullish",
+      "rationale": "Azure is Oracle's stated multi-cloud partner but also its biggest competitor for AI training workloads; an OCI miss implies Azure captured the marginal enterprise AI dollar.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": -2.82,
+      "rel_volume": 0.59,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "VRT",
+      "direction": "bearish",
+      "rationale": "Vertiv supplies power/thermal gear into Oracle's AI datacenter buildout; any pause or pacing of OCI capex flows directly into Vertiv's order book.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 3.06,
+      "rel_volume": 0.32,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    },
+    {
+      "ticker": "SMCI",
+      "direction": "bearish",
+      "rationale": "Supermicro builds AI servers shipped into hyperscale customers including Oracle; OCI buildout pause would directly compress its backlog growth.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 2.49,
+      "rel_volume": 2.19,
+      "trigger_ticker": "ORCL",
+      "event_summary": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+      "source_news_ids": [
+        "338611c1295b267d"
+      ],
+      "created_at": "2026-06-11T12:57:15.525257-04:00"
+    }
+  ]
 }
