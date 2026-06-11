@@ -1,986 +1,169 @@
 {
-  "generated_at": "2026-06-11T15:39:10.573868-04:00",
+  "generated_at": "2026-06-11T18:04:31.463114-04:00",
   "ticker_news": {
-    "CRWD": [
-      {
-        "id": "1b1268ce2cbd8f85",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CRWD",
-        "scope": "ticker",
-        "title": "What's Behind The Boost In CrowdStrike Stock Today?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53153533/whats-behind-the-boost-in-crowdstrike-stock-today",
-        "published_at": "2026-06-11T19:16:19+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "crwd_intraday_movement_inquiry",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "COIN": [
-      {
-        "id": "ea0ac81f2d63b7f6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "COIN",
-        "scope": "ticker",
-        "title": "Crypto Perps Say SpaceX Pops 22% On Launch, But Prediction Markets Disagree",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53152727/crypto-perps-say-spacex-pops-22-on-launch-but-prediction-markets-disagree",
-        "published_at": "2026-06-11T18:43:11+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_pop_prediction_market_mismatch",
-        "tickers_mentioned": [
-          "COIN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "HOOD": [
-      {
-        "id": "ea0ac81f2d63b7f6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Crypto Perps Say SpaceX Pops 22% On Launch, But Prediction Markets Disagree",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53152727/crypto-perps-say-spacex-pops-22-on-launch-but-prediction-markets-disagree",
-        "published_at": "2026-06-11T18:43:11+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_pop_prediction_market_mismatch",
-        "tickers_mentioned": [
-          "COIN"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "22a15fe443ca3e02",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Robinhood Stock Is Trending Higher: What's Going On?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53150941/robinhood-stock-is-trending-higher-whats-going-on",
-        "published_at": "2026-06-11T17:47:01+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "hood_intraday_price_movement_coverage",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "1f3ff15a6c8458bc",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Robinhood Expands IPO Ambitions Fueling Bullishness On HOOD",
-        "url": "https://www.benzinga.com/Opinion/26/06/53145971/robinhood-expands-ipo-ambitions-fueling-bullishness-on-hood",
-        "published_at": "2026-06-11T15:26:00+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "hood_ipo_expansion_initiative",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "ASTS": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ASTS",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "FLY": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLY",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "PL": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PL",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f768bdccbf1914e2",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PL",
-        "scope": "ticker",
-        "title": "Planet Labs Stock Skyrockets Ahead Of SpaceX's Friday IPO",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152877/planet-labs-stock-skyrockets-ahead-of-spacexs-friday-ipo",
-        "published_at": "2026-06-11T18:47:22+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "edcb6e0def8c240f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150381/10-industrials-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-11T17:35:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "eose_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SATS": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SATS",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "406ce35b7644e93b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SATS",
-        "scope": "ticker",
-        "title": "EchoStar Stock Soars Ahead Of SpaceX IPO",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152182/echostar-stock-soars-ahead-of-spacex-ipo",
-        "published_at": "2026-06-11T18:22:29+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "SPCE": [
       {
-        "id": "05c95fbf2d65b526",
+        "id": "49b842768e208b8e",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SPCE",
         "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "09e4020c48d814c8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SPCE",
-        "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Thursday's Intraday Session",
-        "url": "https://www.benzinga.com/insights/movers/26/06/53149369/12-industrials-stocks-moving-in-thursdays-intraday-session",
-        "published_at": "2026-06-11T17:05:53+00:00",
+        "title": "12 Industrials Stocks Moving In Thursday's After-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/06/53157185/12-industrials-stocks-moving-in-thursdays-after-market-session",
+        "published_at": "2026-06-11T21:05:49+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "spce_intraday_moves_jun11",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "VOYG": [
-      {
-        "id": "05c95fbf2d65b526",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VOYG",
-        "scope": "ticker",
-        "title": "Houston, We Have A Rally: Space Stocks Pop Ahead Of SpaceX Debut",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152039/houston-we-have-a-rally-space-stocks-pop-ahead-of-spacex-debut",
-        "published_at": "2026-06-11T18:17:00+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "spacex_ipo_space_sector_rally",
-        "tickers_mentioned": [
-          "ASTS",
-          "SATS",
-          "PL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "CHWY": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CHWY",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "CPNG": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CPNG",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "GDDY": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GDDY",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d48dae1a680dd2b9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150365/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_monitoring",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "LRCX": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LRCX",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ORCL": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "4c9bb9b0db45587c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle Stock Tanks 12% After AI Capex Shock: Here's What Prediction Markets Say",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53152038/oracle-stock-tanks-12-after-ai-capex-shock-heres-what-prediction-markets-say",
-        "published_at": "2026-06-11T18:16:48+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "orcl_capex_shock_jun11",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      },
-      {
-        "id": "07c2c0bac17b23ca",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Oracle AI Windfall Comes With Sticker Shock, Stock Tanks On High FY27 Capex",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53149093/oracle-analysts-remain-high-fy27-capex",
-        "published_at": "2026-06-11T16:58:19+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "orcl_capex_shock_jun11",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "af6cd42fe469dd00",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "2e5f30bcbb76a5b8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "SanDisk Stock's 5,000% Rally Hasn't Stopped This Analyst: Is $2,100 Next?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53154173/sandisk-sndk-stock-rally-bofa-raises-target-2100",
-        "published_at": "2026-06-11T19:35:45+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "sndk_analyst_target_2100",
+        "dedup_group": "spce_after_hours_routine",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "Z": [
       {
-        "id": "af6cd42fe469dd00",
+        "id": "6e6beffe03780bd8",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "Z",
         "scope": "ticker",
-        "title": "Chips Lead Nasdaq 100 Rebound, Oracle Sinks 11%: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53149689/semiconductors-memory-nasdaq-100-rebound-oracle-sinks-markets-thursday",
-        "published_at": "2026-06-11T17:14:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "market_recap_chips_oracle_decline",
-        "tickers_mentioned": [
-          "GDDY"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "DKNG": [
-      {
-        "id": "7bd2dc00673cbaec",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DKNG",
-        "scope": "ticker",
-        "title": "World Cup Economics: How Much Boost Could The US Get?",
-        "url": "https://www.benzinga.com/news/sports/26/06/53142578/world-cup-economics-us-gdp-boost-2026",
-        "published_at": "2026-06-11T14:12:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "world_cup_economics_dkng_angle",
-        "tickers_mentioned": [
-          "DKNG"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSLA": [
-      {
-        "id": "703a18ec5dd09693",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150390/7-consumer-discretionary-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "60903af8549c6714",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nvidia Millionaires Can't Afford To Sell, ETFs May Be Their Escape Route",
-        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53153136/nvidia-millionaires-cant-afford-to-sell-etfs-may-be-their-escape-route",
-        "published_at": "2026-06-11T19:01:23+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_millionaires_etf_angle",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "21419ca26778379d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Stock Market Whipsawed on Trump Statements, SpaceX Euphoria, ECB Rate Hike, Hotter PPI but Prior Revised",
-        "url": "https://www.benzinga.com/Opinion/26/06/53152453/stock-market-whipsawed-on-trump-statements-spacex-euphoria-ecb-rate-hike-hotter-ppi-but-prior-revised",
-        "published_at": "2026-06-11T18:30:46+00:00",
-        "type": "macro_econ",
+        "title": "Google's Nationwide Expansion Into Home Listings Shakes Real Estate Incumbents",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53155162/googles-nationwide-expansion-into-home-listings-shakes-real-estate-incumbents",
+        "published_at": "2026-06-11T20:00:55+00:00",
+        "type": "product",
         "impact": "medium",
-        "dedup_group": "market_whipsaw_trump_spacex_ecb_ppi",
+        "dedup_group": "google_home_listings_expansion",
         "tickers_mentioned": [
-          "TSLA"
+          "GOOGL"
         ],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       }
     ],
-    "AAL": [
+    "LEN": [
       {
-        "id": "7bd2dc00673cbaec",
+        "id": "5837b4bb92db0c37",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "AAL",
+        "ticker": "LEN",
         "scope": "ticker",
-        "title": "World Cup Economics: How Much Boost Could The US Get?",
-        "url": "https://www.benzinga.com/news/sports/26/06/53142578/world-cup-economics-us-gdp-boost-2026",
-        "published_at": "2026-06-11T14:12:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "world_cup_economics_dkng_angle",
-        "tickers_mentioned": [
-          "DKNG"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "DAL": [
-      {
-        "id": "7bd2dc00673cbaec",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DAL",
-        "scope": "ticker",
-        "title": "World Cup Economics: How Much Boost Could The US Get?",
-        "url": "https://www.benzinga.com/news/sports/26/06/53142578/world-cup-economics-us-gdp-boost-2026",
-        "published_at": "2026-06-11T14:12:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "world_cup_economics_dkng_angle",
-        "tickers_mentioned": [
-          "DKNG"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "UAL": [
-      {
-        "id": "7bd2dc00673cbaec",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "UAL",
-        "scope": "ticker",
-        "title": "World Cup Economics: How Much Boost Could The US Get?",
-        "url": "https://www.benzinga.com/news/sports/26/06/53142578/world-cup-economics-us-gdp-boost-2026",
-        "published_at": "2026-06-11T14:12:51+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "world_cup_economics_dkng_angle",
-        "tickers_mentioned": [
-          "DKNG"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "EOSE": [
-      {
-        "id": "edcb6e0def8c240f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "EOSE",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150381/10-industrials-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-11T17:35:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "eose_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "UPS": [
-      {
-        "id": "edcb6e0def8c240f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "UPS",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150381/10-industrials-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-11T17:35:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "eose_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "VRT": [
-      {
-        "id": "edcb6e0def8c240f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VRT",
-        "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150381/10-industrials-stocks-with-whale-alerts-in-todays-session",
-        "published_at": "2026-06-11T17:35:28+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "eose_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ETN": [
-      {
-        "id": "65d185b2f8d78ca8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ETN",
-        "scope": "ticker",
-        "title": "Why Dana And Eaton Investors Are Watching This $10B Mobility Deal",
-        "url": "https://www.benzinga.com/m-a/26/06/53142265/why-dana-and-eaton-investors-are-watching-this-10b-mobility-deal",
-        "published_at": "2026-06-11T14:08:09+00:00",
-        "type": "ma",
+        "title": "Homebuilder Lennar Reports Mixed Q2: CEO Pegs 'Same Stubborn Headwinds'",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/53157505/homebuilder-lennar-reports-mixed-q2-ceo-pegs-same-stubborn-headwinds",
+        "published_at": "2026-06-11T21:20:27+00:00",
+        "type": "earnings",
         "impact": "medium",
-        "dedup_group": "eaton_dana_mobility_deal",
-        "tickers_mentioned": [
-          "ETN"
-        ],
+        "dedup_group": "len_q2_2026_mixed_results",
+        "tickers_mentioned": [],
         "route_to_synthesis": true
       }
     ],
     "MU": [
       {
-        "id": "d48dae1a680dd2b9",
+        "id": "20dac701373bc161",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150365/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:22+00:00",
-        "type": "other",
+        "title": "A Good Idea? Retail Traders Are Selling Micron, Qualcomm, Broadcom To Rotate Into The Space X IPO",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53156292/a-good-idea-retail-traders-are-selling-micron-qualcomm-broadcom-to-rotate-into-the-space-x-ipo",
+        "published_at": "2026-06-11T20:29:45+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_monitoring",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "17904d984ad2ebbb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Micron Shares Climb Over 3% After Key Trading Signal",
-        "url": "https://www.benzinga.com/Opinion/26/06/53152274/micron-shares-climb-over-3-percent-after-key-trading-signal",
-        "published_at": "2026-06-11T18:25:20+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_trading_signal",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "aec40ad3c805167a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Retail Is Cashing Out Of Micron, AMD, AI Stocks Ahead Of SpaceX IPO",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53148534/retail-is-cashing-out-of-micron-amd-ai-stocks-ahead-of-spacex-ipo",
-        "published_at": "2026-06-11T16:40:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "retail_rotation_spacex_ipo_flow",
+        "dedup_group": "retail_traders_tech_rotation_spacex",
         "tickers_mentioned": [
-          "AMD"
+          "MU",
+          "BROADCOM"
         ],
         "route_to_synthesis": false
       }
     ],
-    "NBIS": [
+    "QCOM": [
       {
-        "id": "d48dae1a680dd2b9",
+        "id": "20dac701373bc161",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NBIS",
+        "ticker": "QCOM",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150365/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:22+00:00",
+        "title": "A Good Idea? Retail Traders Are Selling Micron, Qualcomm, Broadcom To Rotate Into The Space X IPO",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53156292/a-good-idea-retail-traders-are-selling-micron-qualcomm-broadcom-to-rotate-into-the-space-x-ipo",
+        "published_at": "2026-06-11T20:29:45+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "retail_traders_tech_rotation_spacex",
+        "tickers_mentioned": [
+          "MU",
+          "BROADCOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "IVZ": [
+      {
+        "id": "8f52bdd81bce4e08",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IVZ",
+        "scope": "ticker",
+        "title": "Invesco Adds New Treasury Exposure To Its $27.6 Billion BulletShares Franchise",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/06/53154122/invesco-adds-new-treasury-exposure-to-its-27-6-billion-bulletshares-franchise",
+        "published_at": "2026-06-11T19:35:18+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "invesco_bulletshares_treasury_expansion",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RCL": [
+      {
+        "id": "a6cfe98fe15b483b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCL",
+        "scope": "ticker",
+        "title": "Here's How Much $100 Invested In Royal Caribbean Group 5 Years Ago Would Be Worth Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53157706/heres-how-much-100-invested-in-royal-caribbean-group-5-years-ago-would-be-worth-today",
+        "published_at": "2026-06-11T21:30:25+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_monitoring",
+        "dedup_group": "rcl_historical_performance_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "PANW": [
+    "ODFL": [
       {
-        "id": "d48dae1a680dd2b9",
+        "id": "82b626c245551b4d",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PANW",
+        "ticker": "ODFL",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150365/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:22+00:00",
+        "title": "Here's How Much You Would Have Made Owning Old Dominion Freight Line Stock In The Last 15 Years",
+        "url": "https://www.benzinga.com/insights/news/26/06/53156821/heres-how-much-you-would-have-made-owning-old-dominion-freight-line-stock-in-the-last-15-years",
+        "published_at": "2026-06-11T20:45:21+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tech_whale_activity_monitoring",
+        "dedup_group": "odfl_historical_performance_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "STM": [
+    "RKT": [
       {
-        "id": "d48dae1a680dd2b9",
+        "id": "6e6beffe03780bd8",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "STM",
+        "ticker": "RKT",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150365/10-information-technology-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tech_whale_activity_monitoring",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NCLH": [
-      {
-        "id": "703a18ec5dd09693",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NCLH",
-        "scope": "ticker",
-        "title": "7 Consumer Discretionary Stocks Whale Activity In Today's Session",
-        "url": "https://www.benzinga.com/insights/options/26/06/53150390/7-consumer-discretionary-stocks-whale-activity-in-todays-session",
-        "published_at": "2026-06-11T17:35:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_whale_alerts_general",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NEM": [
-      {
-        "id": "5a6b76b1d663bfde",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NEM",
-        "scope": "ticker",
-        "title": "Why's Gold Going Down? This Strategist Called The Drop Before It Happened",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53148858/whys-gold-going-down-this-strategist-called-the-drop-before-it-happened",
-        "published_at": "2026-06-11T16:49:21+00:00",
-        "type": "macro_commodity",
-        "impact": "low",
-        "dedup_group": "gold_price_decline_analysis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "NXPI": [
-      {
-        "id": "4c70486bf95e43ab",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NXPI",
-        "scope": "ticker",
-        "title": "Here's How Much $1000 Invested In NXP Semiconductors 15 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53143468/heres-how-much-1000-invested-in-nxp-semiconductors-15-years-ago-would-be-worth-today",
-        "published_at": "2026-06-11T14:30:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nxpi_historical_return_retrospective",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "RCAT": [
-      {
-        "id": "e92e5ca6ef69405e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RCAT",
-        "scope": "ticker",
-        "title": "Red Cat Stock Is Climbing Thursday: What's Driving The Action?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53152945/red-cat-stock-is-climbing-thursday-whats-driving-the-action",
-        "published_at": "2026-06-11T18:54:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rcat_price_action_unknown_driver",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "STLA": [
-      {
-        "id": "9f88d93adb2a0ad8",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STLA",
-        "scope": "ticker",
-        "title": "Why Factorial Energy Stock Is Falling After Stellantis Battery Milestone",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53148191/why-factorial-energy-stock-is-falling-after-stellantis-battery-milestone",
-        "published_at": "2026-06-11T16:29:14+00:00",
+        "title": "Google's Nationwide Expansion Into Home Listings Shakes Real Estate Incumbents",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53155162/googles-nationwide-expansion-into-home-listings-shakes-real-estate-incumbents",
+        "published_at": "2026-06-11T20:00:55+00:00",
         "type": "product",
         "impact": "medium",
-        "dedup_group": "stellantis_factorial_battery_milestone",
+        "dedup_group": "google_home_listings_expansion",
         "tickers_mentioned": [
-          "STLA"
+          "GOOGL"
         ],
         "route_to_synthesis": true
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Trump says an Iran war settlement is \"subject to finalization\" with signing expected within days, signaling de-escalation of Middle East conflict.",
-      "primary_drivers": [
-        "Geopolitical risk premium unwind in crude oil",
-        "Reduced shipping/insurance risk in Strait of Hormuz",
-        "Risk-on rotation out of defensive havens into cyclicals/travel"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; a crude price drop on Iran de-escalation directly expands margins. Also benefits from restored international route confidence.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel sensitivity as DAL plus heavier international/long-haul exposure including Middle East-adjacent routing, which becomes cheaper to operate and insure.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with high bunker fuel exposure and discretionary travel demand; lower oil + reduced geopolitical anxiety drives bookings and margin both.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Domestic carrier with the highest fuel-cost-as-percent-of-opex among US majors and limited hedging in recent quarters; pure beta to crude decline.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Naphtha/ethane feedstock costs fall with crude; commodity chemicals margin expands on lower input costs without immediate demand offset.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with significant upstream exposure; Brent risk premium unwind compresses realized prices per barrel. Direct negative correlation to a peace-driven oil selloff.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high operating leverage to crude price; every $5 drop in WTI materially hits cash flow guidance. Berkshire-backed but unhedged at margin.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense prime with heavy Middle East FMS exposure (PAC-3, THAAD, F-35 to Israel/Gulf); de-escalation reduces urgency of replenishment orders and weakens the wartime-spending narrative.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon missile/air-defense backlog has been bid up on Iran/Israel conflict; signed deal removes the near-term catalyst for emergency supplemental defense appropriations.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Defense peer rotation lower as the geopolitical bid in the sector unwinds; less direct Iran exposure than LMT/RTX but caught in sympathy selling.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FANG",
-          "rationale": "Permian pure-play E&P with no hedging cushion vs majors; direct WTI price taker, earnings revisions follow crude lower.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "STNG",
-          "rationale": "Product tanker rates spiked on Hormuz rerouting and war-risk insurance; normalization of shipping lanes compresses spot rates that drove recent earnings beats.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "trump_iran_war_settlement_jun11",
-      "source_news_ids": [
-        "5a21e1cce738d94e"
-      ],
-      "headlines": [
-        "Trump claims Iran war settled 'subject to finalization,' expects signing in 'next few days'"
-      ]
-    }
-  ]
+  "macro_events": []
 }

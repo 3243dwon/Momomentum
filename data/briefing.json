@@ -1,63 +1,55 @@
 {
-  "generated_at": "2026-06-11T15:39:10.573868-04:00",
-  "window": "RTH",
-  "headline": "Risk-on rip: SPY +1.9%, QQQ +3.4%; Iran deal removes geopolitical premium; ORCL ripples to AVGO/ANET",
+  "generated_at": "2026-06-11T18:04:31.463114-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on holds AH: space/satellite names dominate movers; EQH long is the lone desk take.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.92% above 50d, QQQ +3.44%, VXX stress 0.98 \u2014 tape is clean, low vol suppression; entries favorable but extended intraday."
+    "line": "SPY +1.67%, QQQ +3.31% on the day; VXX stress ratio 0.99 \u2014 vol crushed, tape supportive but AH liquidity thin."
   },
   "actions": [
     {
-      "ticker": "SGHC",
+      "ticker": "EQH",
       "direction": "long",
-      "entry": 13.76,
-      "stop": 12.74,
-      "target": 15.8,
-      "line": "Half size \u2014 clean risk/reward, signal agrees; research neutral caps position."
-    },
-    {
-      "ticker": "HBAN",
-      "direction": "long",
-      "entry": 17.21,
-      "stop": 16.88,
-      "target": 17.87,
-      "line": "Quarter size \u2014 textbook setup, tight stop, but all three advisors low conviction."
+      "entry": 43.59,
+      "stop": 42.11,
+      "target": 46.55,
+      "line": "Clean momentum setup, half-size per desk \u2014 research neutral caps conviction; 2:1 R/R to target."
     }
   ],
   "watch": [
     {
-      "ticker": "AVGO",
-      "type": "ripple",
-      "line": "ORCL capex buildout expands hyperscale networking spend \u2014 Tomahawk/custom ASIC tailwind, medium confidence."
-    },
-    {
-      "ticker": "ANET",
-      "type": "ripple",
-      "line": "Oracle OCI capacity ramp raises 800G switch port demand; Arista is direct beneficiary, medium confidence."
+      "ticker": "SPCE",
+      "type": "mover",
+      "line": "+24.4% | rel vol 1.88 | MACD bullish \u2014 leading space/satellite cluster move, watch for RTH follow-through."
     },
     {
       "ticker": "SFIX",
       "type": "mover",
-      "line": "+15.6% on 2.46x rel vol \u2014 highest volume confirmation of the day's movers; watch for continuation or fade."
+      "line": "+16.7% | rel vol 2.86 \u2014 highest volume confirmation of the day's movers; unusual volume flag warrants open-of-day watch."
     },
     {
-      "ticker": "SPCE",
+      "ticker": "YSS",
       "type": "mover",
-      "line": "+28.6% top mover on 1.7x vol with MACD bullish cross \u2014 no desk take, but leading the tape."
+      "line": "+22.5% | MACD bullish | rel vol 1.39 \u2014 second-strongest confirmed signal in today's mover set."
     },
     {
-      "ticker": "DLR",
-      "type": "ripple",
-      "line": "Oracle capex tightens DC supply; DLR leases capacity to ORCL and benefits from hyperscaler spillover demand."
+      "ticker": "NUAI",
+      "type": "mover",
+      "line": "+22.3% | rel vol 1.79 \u2014 big move without MACD confirm; watch for continuation or fade setup RTH."
+    },
+    {
+      "ticker": "VSAT",
+      "type": "mover",
+      "line": "+18.4% \u2014 satellite name moving with SPCE cluster; broader space-sector bid worth monitoring."
     }
   ],
   "changed": [
-    "FRO and MRVL desk takes dropped; HBAN added as new quarter-size long",
-    "ORCL catalyst persists but ripple set shifted \u2014 AMZN/SNOW/NVDA out, AVGO/ANET/DLR in",
-    "Iran deal headline adds macro risk-on tailwind not present last scan"
+    "SPY/QQQ intraday gains moderated slightly AH (SPY 1.67% vs 1.9%, QQQ 3.31% vs 3.4%)",
+    "Iran deal / ORCL ripple narrative absent from current scan \u2014 no active catalysts or ripple flags",
+    "New desk take: EQH long added"
   ],
   "caveats": [
-    "RTH scan as of 15:39 ET \u2014 prices are ~21 min from close; fills near entry levels may not be available into the bell.",
-    "ORCL ripple calls (AVGO, ANET, DLR) are medium confidence only \u2014 no desk take issued; do not promote to action."
+    "AH_POST scan as of 18:04 ET \u2014 prices stale, spreads wide; AH prints can gap significantly from next RTH open.",
+    "No catalysts or macro events in this scan; space/satellite cluster move lacks a confirmed news driver \u2014 momentum-only, fade risk elevated."
   ]
 }
