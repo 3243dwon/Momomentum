@@ -215,7 +215,9 @@
         <h2 class="text-sm font-semibold tracking-tight">Briefing</h2>
         <span class="text-[10px] uppercase tracking-wider text-zinc-500">{briefing.window} · one read per scan</span>
       </header>
-      <p class="text-base font-medium leading-snug text-zinc-100">{briefing.headline}</p>
+      <!-- The machine's voice: same serif the cold open climaxes in, so the
+           intro hands off into the page instead of switching worlds. -->
+      <p class="font-display text-xl font-black leading-snug text-zinc-100 sm:text-2xl">{briefing.headline}</p>
       {#if briefing.market_state?.line}
         <p class="mt-1.5 text-xs leading-relaxed text-zinc-400">{briefing.market_state.line}</p>
       {/if}

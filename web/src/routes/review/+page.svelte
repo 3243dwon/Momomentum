@@ -282,7 +282,7 @@
 </svelte:head>
 
 <header class="mb-6">
-  <h1 class="text-lg font-semibold tracking-tight">Review</h1>
+  <h1 class="font-display text-2xl font-black tracking-tight">Review</h1>
   <p class="text-xs text-zinc-500">
     What we said vs what happened — the weekly read-through on top, the signal track record and
     the call ledger underneath.
