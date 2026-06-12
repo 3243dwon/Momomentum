@@ -38,7 +38,7 @@
 </svelte:head>
 
 <header class="mb-6">
-  <h1 class="text-lg font-semibold tracking-tight">Deal flow</h1>
+  <h1 class="font-display text-2xl font-black tracking-tight">Deal flow</h1>
   <p class="text-xs text-zinc-500">
     The deals and catalysts moving popular names — and the second-order calls each one sets up.
     Reported forward: who else moves, by what mechanism, and whether it's still actionable.
