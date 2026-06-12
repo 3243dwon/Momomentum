@@ -1,63 +1,71 @@
 {
-  "generated_at": "2026-06-12T07:46:29.237693-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on holds: space/satellite cluster leads again; SGHC joins KT on desk at quarter-size.",
+  "generated_at": "2026-06-12T11:23:48.280228-04:00",
+  "window": "RTH",
+  "headline": "Risk-on intact; ARM +11% leads tech bid; desk rotates to NUAI, COMP, TER \u2014 SGHC/KT gone.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.67%, QQQ +3.31% yesterday; SPY above 50d; VXX stress ratio 0.99 \u2014 vol flat, tape green, momentum setups have tailwind."
+    "line": "SPY +0.9%, QQQ +1.0%, both above 50d. VXX stress 0.97 \u2014 vol suppressed. Tape supports momentum longs; pullback entries clean."
   },
   "actions": [
     {
-      "ticker": "SGHC",
+      "ticker": "NUAI",
       "direction": "long",
-      "entry": 13.81,
-      "stop": 12.74,
-      "target": 15.95,
-      "line": "Quarter-size long; signal + risk agree, no catalyst \u2014 pure setup play with 2:1 R/R. Research dissents."
+      "entry": 5.7,
+      "stop": 5.44,
+      "target": 6.21,
+      "line": "Half-size long; signal+risk agree, research neutral \u2014 defined risk 26\u00a2, target 51\u00a2."
     },
     {
-      "ticker": "KT",
+      "ticker": "TER",
       "direction": "long",
-      "entry": 18.75,
-      "stop": 18.56,
-      "target": 19.13,
-      "line": "Quarter-size long; tight 19\u00a2 stop, early-stage setup; research dissents but desk sees room to run."
+      "entry": 404.39,
+      "stop": 386.78,
+      "target": 439.61,
+      "line": "Half-size long; signal+risk agree, headline quality caps size \u2014 17.6pt risk, 35.2pt target."
+    },
+    {
+      "ticker": "COMP",
+      "direction": "long",
+      "entry": 8.86,
+      "stop": 8.52,
+      "target": 9.53,
+      "line": "Quarter-size long; all three advisors lukewarm, weak volume \u2014 thin conviction, tight leash."
     }
   ],
   "watch": [
     {
+      "ticker": "ARM",
+      "type": "mover",
+      "line": "ARM +11% on big_move flag \u2014 semi/AI proxy leading; watch for continuation or fade."
+    },
+    {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "+24.4%, rel-vol 1.88, MACD bullish \u2014 space cluster still leading; watch for continuation or fade."
+      "line": "SPCE -26.9%, MACD bearish, rel vol only 0.84 \u2014 space cluster that led last scan is unraveling."
     },
     {
-      "ticker": "SFIX",
-      "type": "mover",
-      "line": "+16.7%, rel-vol 2.86 \u2014 highest volume flag in scan; needs catalyst confirm before entry."
+      "ticker": "LEN",
+      "type": "catalyst",
+      "line": "LEN -3.5% post-earnings; homebuilder read-through risk for sector peers."
     },
     {
-      "ticker": "YSS",
+      "ticker": "ASTS",
       "type": "mover",
-      "line": "+22.5%, rel-vol 1.39, MACD bullish \u2014 second-leg candidate if space theme holds."
+      "line": "ASTS -11% near 1.0x rel vol \u2014 satellite/space selloff broadening, monitor for washout."
     },
     {
-      "ticker": "VSAT",
+      "ticker": "AXTI",
       "type": "mover",
-      "line": "+18.4% \u2014 satellite cluster ripple play; low rel-vol (1.0), wait for volume confirmation."
-    },
-    {
-      "ticker": "NUAI",
-      "type": "mover",
-      "line": "+22.3%, rel-vol 1.79 \u2014 big move, no MACD confirm yet; monitor for setup formation."
+      "line": "AXTI +12.1% big_move \u2014 compound semi name moving with ARM; unvetted, watch for desk follow-up."
     }
   ],
   "changed": [
-    "SGHC added to desk (new take this scan)",
-    "No catalysts, ripple, or macro events flagged \u2014 cleaner tape than prior briefing",
-    "Iran deal macro wildcard no longer present"
+    "Desk slate fully replaced: SGHC and KT out, NUAI/COMP/TER in.",
+    "Space/satellite cluster that led last scan now leading to the downside \u2014 SPCE -27%, ASTS -11%.",
+    "ARM +11% emerges as new leadership name in semi/AI."
   ],
   "caveats": [
-    "AH/Pre-market window (scan time 07:46 ET 2026-06-12); prices are as of scan time and may gap significantly at RTH open.",
-    "Both desk takes carry research dissent and quarter-size only \u2014 neither has a confirmed catalyst; momentum setups in no-catalyst conditions fail at higher rates on low-liquidity opens."
+    "RTH scan as of 11:23 ET 2026-06-12; prices reflect that moment and may be stale by the time you act.",
+    "All three top_movers gains (ARM, AXTI, CIFR) carry rel_volume below 0.7 \u2014 moves lack full confirmation; fade risk elevated on thin participation."
   ]
 }

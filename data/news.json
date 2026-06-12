@@ -1,170 +1,448 @@
 {
-  "generated_at": "2026-06-12T07:46:29.237693-04:00",
+  "generated_at": "2026-06-12T11:23:48.280228-04:00",
   "ticker_news": {
+    "COHR": [
+      {
+        "id": "fcfd29705e48af14",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COHR",
+        "scope": "ticker",
+        "title": "If You Invested $1000 In Coherent Stock 15 Years Ago, You Would Have This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53169712/if-you-invested-1000-in-coherent-stock-15-years-ago-you-would-have-this-much-today",
+        "published_at": "2026-06-12T15:15:52+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "coherent_stock_historical_retrospective",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DKNG": [
+      {
+        "id": "216a88ad8d850fd9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DKNG",
+        "scope": "ticker",
+        "title": "Gary Gensler Admits He Checked Polymarket Odds During The Knicks Comeback, But Wants States To Regulate Sports Betting",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53169537/gary-gensler-admits-he-checked-polymarket-odds-during-the-knicks-comeback-but-wants-states-to-regulate-sports-betting",
+        "published_at": "2026-06-12T15:11:03+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "gensler_polymarket_sports_betting_regulation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ARM": [
+      {
+        "id": "be2544fb8935c614",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "Rezolve AI, Bakkt, Seagate And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/news/26/06/53166594/rezolve-ai-bakkt-seagate-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-12T14:09:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multiple_stocks_moving_friday",
+        "tickers_mentioned": [
+          "ARM",
+          "CIFR",
+          "STX"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bf80082b6d0b0f60",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ARM",
+        "scope": "ticker",
+        "title": "NVIDIA Obliterates The Boring PC Era",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53163096/nvidia-obliterates-the-boring-pc-era",
+        "published_at": "2026-06-12T12:13:39+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvidia_pc_era_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CIFR": [
+      {
+        "id": "be2544fb8935c614",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CIFR",
+        "scope": "ticker",
+        "title": "Rezolve AI, Bakkt, Seagate And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/news/26/06/53166594/rezolve-ai-bakkt-seagate-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-12T14:09:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multiple_stocks_moving_friday",
+        "tickers_mentioned": [
+          "ARM",
+          "CIFR",
+          "STX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "STX": [
+      {
+        "id": "be2544fb8935c614",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "Rezolve AI, Bakkt, Seagate And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/news/26/06/53166594/rezolve-ai-bakkt-seagate-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-12T14:09:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multiple_stocks_moving_friday",
+        "tickers_mentioned": [
+          "ARM",
+          "CIFR",
+          "STX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "be2544fb8935c614",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "Rezolve AI, Bakkt, Seagate And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/news/26/06/53166594/rezolve-ai-bakkt-seagate-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-12T14:09:11+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "multiple_stocks_moving_friday",
+        "tickers_mentioned": [
+          "ARM",
+          "CIFR",
+          "STX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ASST": [
+      {
+        "id": "159d2456cd18627a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ASST",
+        "scope": "ticker",
+        "title": "Bitcoin's Decline Fits A 'Mild Bear Market,' Says Strive CEO",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53163323/bitcoins-decline-fits-a-mild-bear-market-says-strive-ceo",
+        "published_at": "2026-06-12T12:24:44+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "bitcoin_mild_bear_market_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "bf80082b6d0b0f60",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "NVIDIA Obliterates The Boring PC Era",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53163096/nvidia-obliterates-the-boring-pc-era",
+        "published_at": "2026-06-12T12:13:39+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvidia_pc_era_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "01d07e617ba63cb4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53163195/whats-going-on-with-intel-stock-friday-3",
+        "published_at": "2026-06-12T12:23:14+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_price_action_june_12",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "bf80082b6d0b0f60",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "NVIDIA Obliterates The Boring PC Era",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53163096/nvidia-obliterates-the-boring-pc-era",
+        "published_at": "2026-06-12T12:13:39+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nvidia_pc_era_commentary",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
     "RKLB": [
       {
-        "id": "88a16bb9fb7cb9de",
+        "id": "7789fe20650a33ac",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "RKLB",
         "scope": "ticker",
-        "title": "Why Is CoreWeave Stock Soaring Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53161677/why-is-coreweave-stock-soaring-friday",
-        "published_at": "2026-06-12T10:41:06+00:00",
-        "type": "rumor",
+        "title": "CoreWeave, Astera Labs, Nebius Group, And Others Added To Nasdaq-100: A 'Big Deal,' Says Jim Cramer",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53163628/coreweave-astera-labs-nebius-group-and-others-added-to-nasdaq-100-a-big-deal-says-jim-cramer",
+        "published_at": "2026-06-12T12:46:48+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nasdaq100_additions_coreweave_astera_nebius",
+        "tickers_mentioned": [
+          "CWEQ",
+          "NBIS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SPCE": [
+      {
+        "id": "0f944e1ebe25b1a9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SPCE",
+        "scope": "ticker",
+        "title": "Why Virgin Galactic Stock Is Falling On Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53168866/why-virgin-galactic-stock-is-falling-on-friday",
+        "published_at": "2026-06-12T14:56:37+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "nbis_stock_soaring_june_2026",
+        "dedup_group": "spce_price_action_june_12",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NOK": [
+      {
+        "id": "7083988f3f969761",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOK",
+        "scope": "ticker",
+        "title": "Nokia Stock Is Climbing Friday: What's Driving The Action?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53167853/nokia-stock-is-climbing-friday-whats-driving-the-action",
+        "published_at": "2026-06-12T14:31:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nok_price_action_june_12",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "96921b1a9b24fe00",
+        "id": "26ddfbbe15ad55d5",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RKLB",
+        "ticker": "NOK",
         "scope": "ticker",
-        "title": "Why Is Rocket Lab Stock Trading Higher On Friday?",
-        "url": "https://www.benzinga.com/markets/large-cap/26/06/53162361/why-is-rocket-lab-stock-trading-higher-on-friday",
-        "published_at": "2026-06-12T11:27:38+00:00",
+        "title": "Here's How Much $100 Invested In Nokia 5 Years Ago Would Be Worth Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53166079/heres-how-much-100-invested-in-nokia-5-years-ago-would-be-worth-today",
+        "published_at": "2026-06-12T14:00:47+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "rklb_stock_movement_jun12",
+        "dedup_group": "nok_5yr_retrospective",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "FLNC": [
+    "HOOD": [
       {
-        "id": "db66b2e4ff3f1211",
+        "id": "63f963677fce7de6",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "FLNC",
+        "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Jim Cramer: This Tech Stock Is 'Terrific,' Fluence Faces Profit Test",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53162280/microchip-jim-cramer-this-tech-stock-is-terrific",
-        "published_at": "2026-06-12T11:21:28+00:00",
+        "title": "The Knicks' 29-Point Miracle Comeback Let Retail Kalshi Traders Take $22M Off Market Makers",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53167692/the-knicks-29-point-miracle-comeback-let-retail-kalshi-traders-take-22m-off-market-makers",
+        "published_at": "2026-06-12T14:28:49+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "knicks_comeback_kalshi_polymarket_trading",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "LEN": [
+      {
+        "id": "ddd35ff13289c5d5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "LEN",
+        "scope": "ticker",
+        "title": "Don't Be Fooled By The S&P 500's Record Run\u2014 One Wall Street Veteran Says The Real American Growth Story Is Elsewhere",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53166039/dont-be-fooled-by-the-sp-500s-record-run-one-wall-street-veteran-says-the-real-american-growth-story-is-elsewhere",
+        "published_at": "2026-06-12T14:00:23+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "jim_cramer_tech_stock_commentary_jun12",
+        "dedup_group": "wall_street_s_and_p_500_growth_commentary",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      }
-    ],
-    "MCHP": [
+      },
       {
-        "id": "db66b2e4ff3f1211",
+        "id": "96df15d9f437b58d",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MCHP",
+        "ticker": "LEN",
         "scope": "ticker",
-        "title": "Jim Cramer: This Tech Stock Is 'Terrific,' Fluence Faces Profit Test",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53162280/microchip-jim-cramer-this-tech-stock-is-terrific",
-        "published_at": "2026-06-12T11:21:28+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "jim_cramer_tech_stock_commentary_jun12",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "title": "Lennar Reports Mixed Q2 Results, Joins Adobe And Other Big Stocks Moving Lower In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53162801/lennar-reports-mixed-q2-results-joins-adobe-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-06-12T12:02:06+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "lennar_q2_2026_earnings_mixed",
+        "tickers_mentioned": [
+          "ADBE"
+        ],
+        "route_to_synthesis": true
       }
     ],
-    "KDP": [
+    "MSTR": [
       {
-        "id": "a103d1682e4a1361",
+        "id": "be98fd94eefc9599",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "KDP",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "This Keurig Dr Pepper Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Friday",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/53162044/this-keurig-dr-pepper-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-friday",
-        "published_at": "2026-06-12T11:10:14+00:00",
-        "type": "analyst",
+        "title": "Michael Saylor Fires Back: 'I Never Said The Company Wouldn't Sell Its Bitcoin'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53164111/michael-saylor-fires-back-i-never-said-the-company-wouldnt-sell-its-bitcoin",
+        "published_at": "2026-06-12T13:06:56+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "kdp_analyst_initiation_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "INSM": [
-      {
-        "id": "88a16bb9fb7cb9de",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INSM",
-        "scope": "ticker",
-        "title": "Why Is CoreWeave Stock Soaring Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53161677/why-is-coreweave-stock-soaring-friday",
-        "published_at": "2026-06-12T10:41:06+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "nbis_stock_soaring_june_2026",
+        "dedup_group": "mstr_saylor_bitcoin_sale_denial",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "NBIS": [
       {
-        "id": "88a16bb9fb7cb9de",
+        "id": "a20a72049b5267a5",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "NBIS",
         "scope": "ticker",
-        "title": "Why Is CoreWeave Stock Soaring Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53161677/why-is-coreweave-stock-soaring-friday",
-        "published_at": "2026-06-12T10:41:06+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "nbis_stock_soaring_june_2026",
+        "title": "Nebius Stock Trending After Being Named To Nasdaq-100 Index",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53163854/nebius-stock-trending-after-being-named-to-nasdaq-100-index",
+        "published_at": "2026-06-12T12:56:42+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nebius_nasdaq100_index_addition",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "7789fe20650a33ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "CoreWeave, Astera Labs, Nebius Group, And Others Added To Nasdaq-100: A 'Big Deal,' Says Jim Cramer",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53163628/coreweave-astera-labs-nebius-group-and-others-added-to-nasdaq-100-a-big-deal-says-jim-cramer",
+        "published_at": "2026-06-12T12:46:48+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nasdaq100_additions_coreweave_astera_nebius",
+        "tickers_mentioned": [
+          "CWEQ",
+          "NBIS"
+        ],
         "route_to_synthesis": false
       }
     ],
     "TER": [
       {
-        "id": "88a16bb9fb7cb9de",
+        "id": "7789fe20650a33ac",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TER",
         "scope": "ticker",
-        "title": "Why Is CoreWeave Stock Soaring Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53161677/why-is-coreweave-stock-soaring-friday",
-        "published_at": "2026-06-12T10:41:06+00:00",
-        "type": "rumor",
+        "title": "CoreWeave, Astera Labs, Nebius Group, And Others Added To Nasdaq-100: A 'Big Deal,' Says Jim Cramer",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53163628/coreweave-astera-labs-nebius-group-and-others-added-to-nasdaq-100-a-big-deal-says-jim-cramer",
+        "published_at": "2026-06-12T12:46:48+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "nasdaq100_additions_coreweave_astera_nebius",
+        "tickers_mentioned": [
+          "CWEQ",
+          "NBIS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMR": [
+      {
+        "id": "cb8d3edb7244ac5b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMR",
+        "scope": "ticker",
+        "title": "NuScale Stock Gains As It Opens Latest Nuclear Training Center In Virginia",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53167766/nuscale-stock-gains-as-it-opens-latest-nuclear-training-center-in-virginia",
+        "published_at": "2026-06-12T14:30:40+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "nbis_stock_soaring_june_2026",
+        "dedup_group": "nuscale_training_center_virginia",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "ORCL": [
+    "SATS": [
       {
-        "id": "65c213a2da18f451",
+        "id": "e435ec257120aafe",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ORCL",
+        "ticker": "SATS",
         "scope": "ticker",
-        "title": "What's Going On With Autodesk Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53162203/whats-going-on-with-autodesk-stock-friday",
-        "published_at": "2026-06-12T11:15:07+00:00",
+        "title": "EchoStar Stock Drops After Yesterday's Surge: What's Happening?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53167641/echostar-stock-drops-after-yesterdays-surge-whats-happening",
+        "published_at": "2026-06-12T14:28:10+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "autodesk_stock_movement_jun12",
+        "dedup_group": "echostar_stock_volatility",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      }
-    ],
-    "SMCI": [
+      },
       {
-        "id": "8f6312c97c8d171c",
+        "id": "747e2cca4dc74b62",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SMCI",
+        "ticker": "SATS",
         "scope": "ticker",
-        "title": "What's Going On With Super Micro Stock Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53162372/whats-going-on-with-super-micro-stock-friday",
-        "published_at": "2026-06-12T11:29:00+00:00",
+        "title": "12 Communication Services Stocks Moving In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/insights/movers/26/06/53162927/12-communication-services-stocks-moving-in-fridays-pre-market-session",
+        "published_at": "2026-06-12T12:05:57+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "smci_stock_movement_jun12",
+        "dedup_group": "comms_services_premarket_movers",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
