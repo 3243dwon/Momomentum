@@ -1,292 +1,237 @@
 {
-  "generated_at": "2026-06-12T14:10:23.941046-04:00",
+  "generated_at": "2026-06-12T17:03:24.215869-04:00",
   "event_count": 1,
   "prediction_count": 9,
-  "not_yet_priced_in": 5,
+  "not_yet_priced_in": 4,
   "events": [
     {
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
       "primary_drivers": [
-        "SpaceX IPO re-rates the entire listed space complex \u2014 pure-play peers compress while supply-chain beneficiaries get pulled up",
-        "Starlink/Starshield validation drives optical inter-satellite link (laser comms) read-through to photonics suppliers",
-        "Capital rotation out of small-cap space pure-plays now that investors have a liquid mega-cap vehicle"
+        "Pure-play space comps re-rate on SpaceX's public-market multiple",
+        "Capital rotation into space supply chain and competing launch/satellite names",
+        "Pricing umbrella lifted for launch services and satellite broadband peers"
       ],
       "beneficiaries": [
         {
-          "ticker": "LITE",
-          "rationale": "Lumentum is a direct photonics peer to COHR with exposure to optical communications/laser components used in satellite inter-satellite links; re-rates on the same Starlink laser-comm read-through driving COHR.",
+          "ticker": "RKLB",
+          "rationale": "Closest pure-play public launch comp to SpaceX (Neutron vs Falcon 9); SpaceX's premium IPO multiple forces re-rating of Rocket Lab's launch + space systems business.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "MRCY",
-          "rationale": "Mercury Systems supplies rad-hard processing and RF subsystems used in space/defense satellite platforms; benefits from validated space-economy capex narrative post-SpaceX IPO.",
+          "ticker": "ASTS",
+          "rationale": "Direct-to-cell satellite broadband peer/competitor to Starlink; SpaceX's public valuation gives investors a yardstick that lifts ASTS's constellation NPV math.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "AVAV",
-          "rationale": "AeroVironment (post-BlueHalo) has space/space-domain awareness exposure and rides the broader defense-space capex wave amplified by SpaceX's public-market validation.",
-          "confidence": "low",
+          "ticker": "PL",
+          "rationale": "Planet Labs is a pure-play satellite data name that re-rates with the space sector basket as SpaceX IPO draws generalist capital into listed space comps.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUNR",
+          "rationale": "Intuitive Machines benefits from space-sector flow and is a SpaceX launch customer; sector multiple expansion plus customer-validation read-through.",
+          "confidence": "medium",
           "horizon": "days"
         },
         {
           "ticker": "IRDM",
-          "rationale": "Iridium is a satellite operator with optical/RF supply ties; rides the satellite-economy halo and laser-comm narrative without being a direct Starlink competitor.",
+          "rationale": "Iridium is the established satellite-comms incumbent; gets pulled along on space-basket flows even though Starlink is a competitor \u2014 net positive on sector re-rating short term.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RDW",
+          "rationale": "Redwire is a small-cap space infrastructure supplier that sells hardware into SpaceX/NASA ecosystem; benefits from SpaceX-driven capex narrative and basket bid.",
           "confidence": "medium",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "RKLB",
-          "rationale": "Rocket Lab is the most direct listed competitor to SpaceX in small-launch and now medium-launch (Neutron); capital and investor mindshare rotate to the SpaceX vehicle.",
-          "confidence": "high",
-          "horizon": "days"
+          "ticker": "BA",
+          "rationale": "Boeing's ULA JV and Starliner program lose further mindshare and pricing power as a publicly-valued SpaceX cements launch dominance and crew/cargo wins.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
-          "ticker": "ASTS",
-          "rationale": "AST SpaceMobile competes directly with Starlink Direct-to-Cell; SpaceX's public valuation puts a competitive ceiling/funding overhang on ASTS narrative.",
-          "confidence": "high",
-          "horizon": "days"
+          "ticker": "LMT",
+          "rationale": "Lockheed (other half of ULA) faces ongoing share loss in national security launch to a now-public, well-capitalized SpaceX able to fund Starship ramp.",
+          "confidence": "low",
+          "horizon": "months"
         },
         {
           "ticker": "VSAT",
-          "rationale": "Viasat's GEO broadband business is structurally disadvantaged vs. a now-public, well-capitalized Starlink; re-rates lower on competitive read-through.",
+          "rationale": "Viasat's consumer/aviation broadband business is structurally pressured by a Starlink that now has fresh equity-market currency to accelerate consumer rollout.",
           "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "IRDM",
-          "rationale": "Note: also faces some Starlink competitive pressure in IoT/L-band \u2014 net direction uncertain, listed as beneficiary above but worth flagging two-sided risk.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LUNR",
-          "rationale": "Intuitive Machines competes for NASA lunar/transport dollars where SpaceX's Starship is the dominant alternative; SpaceX IPO strengthens that competitive overhang.",
-          "confidence": "low",
-          "horizon": "days"
+          "horizon": "months"
         }
       ],
-      "trigger_ticker": "COHR",
+      "trigger_ticker": "TSLA",
       "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
+        "5bae51d2ad4ef76e"
       ],
       "headlines": [
-        "Stock Market Today: SpaceX Jumps To $175, Rocks Space Rivals",
-        "Stock Market Today: SpaceX Jumps To $175, Rocks Space Rivals",
-        "Stock Market Today: SpaceX Jumps To $175, Rocks Space Rivals",
-        "Stock Market Today: SpaceX Jumps To $175, Rocks Space Rivals",
-        "Stock Market Today: SpaceX Jumps To $175, Rocks Space Rivals",
-        "SpaceX Starts Trading At $150, Before Rising To $165: 'Liftoff', Says Elon Musk-Led Company"
+        "SpaceX Stock Closes Up 19% In Record-Shattering IPO Debut"
       ],
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks"
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut"
     }
   ],
   "predictions": [
     {
-      "ticker": "MRCY",
-      "direction": "bullish",
-      "rationale": "Mercury Systems supplies rad-hard processing and RF subsystems used in space/defense satellite platforms; benefits from validated space-economy capex narrative post-SpaceX IPO.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
-      "ticker": "IRDM",
-      "direction": "bullish",
-      "rationale": "Iridium is a satellite operator with optical/RF supply ties; rides the satellite-economy halo and laser-comm narrative without being a direct Starlink competitor.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
-      "ticker": "AVAV",
-      "direction": "bullish",
-      "rationale": "AeroVironment (post-BlueHalo) has space/space-domain awareness exposure and rides the broader defense-space capex wave amplified by SpaceX's public-market validation.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
-      "ticker": "IRDM",
-      "direction": "bearish",
-      "rationale": "Note: also faces some Starlink competitive pressure in IoT/L-band \u2014 net direction uncertain, listed as beneficiary above but worth flagging two-sided risk.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
       "ticker": "LUNR",
+      "direction": "bullish",
+      "rationale": "Intuitive Machines benefits from space-sector flow and is a SpaceX launch customer; sector multiple expansion plus customer-validation read-through.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "BA",
       "direction": "bearish",
-      "rationale": "Intuitive Machines competes for NASA lunar/transport dollars where SpaceX's Starship is the dominant alternative; SpaceX IPO strengthens that competitive overhang.",
+      "rationale": "Boeing's ULA JV and Starliner program lose further mindshare and pricing power as a publicly-valued SpaceX cements launch dominance and crew/cargo wins.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "IRDM",
+      "direction": "bullish",
+      "rationale": "Iridium is the established satellite-comms incumbent; gets pulled along on space-basket flows even though Starlink is a competitor \u2014 net positive on sector re-rating short term.",
       "confidence": "low",
       "horizon": "days",
       "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
       "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
+        "5bae51d2ad4ef76e"
       ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
     },
     {
-      "ticker": "LITE",
-      "direction": "bullish",
-      "rationale": "Lumentum is a direct photonics peer to COHR with exposure to optical communications/laser components used in satellite inter-satellite links; re-rates on the same Starlink laser-comm read-through driving COHR.",
-      "confidence": "high",
-      "horizon": "days",
-      "priced_in": "partial",
-      "pct_1d": 3.58,
-      "rel_volume": 0.56,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
-      "ticker": "RKLB",
+      "ticker": "LMT",
       "direction": "bearish",
-      "rationale": "Rocket Lab is the most direct listed competitor to SpaceX in small-launch and now medium-launch (Neutron); capital and investor mindshare rotate to the SpaceX vehicle.",
-      "confidence": "high",
-      "horizon": "days",
-      "priced_in": "yes",
-      "pct_1d": -7.57,
-      "rel_volume": 2.18,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
+      "rationale": "Lockheed (other half of ULA) faces ongoing share loss in national security launch to a now-public, well-capitalized SpaceX able to fund Starship ramp.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
       "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
+        "5bae51d2ad4ef76e"
       ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
-    },
-    {
-      "ticker": "ASTS",
-      "direction": "bearish",
-      "rationale": "AST SpaceMobile competes directly with Starlink Direct-to-Cell; SpaceX's public valuation puts a competitive ceiling/funding overhang on ASTS narrative.",
-      "confidence": "high",
-      "horizon": "days",
-      "priced_in": "yes",
-      "pct_1d": -14.15,
-      "rel_volume": 1.93,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
-      "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
-      ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
     },
     {
       "ticker": "VSAT",
       "direction": "bearish",
-      "rationale": "Viasat's GEO broadband business is structurally disadvantaged vs. a now-public, well-capitalized Starlink; re-rates lower on competitive read-through.",
+      "rationale": "Viasat's consumer/aviation broadband business is structurally pressured by a Starlink that now has fresh equity-market currency to accelerate consumer rollout.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "partial",
+      "pct_1d": -3.63,
+      "rel_volume": 1.61,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "RKLB",
+      "direction": "bullish",
+      "rationale": "Closest pure-play public launch comp to SpaceX (Neutron vs Falcon 9); SpaceX's premium IPO multiple forces re-rating of Rocket Lab's launch + space systems business.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": -10.68,
+      "rel_volume": 2.63,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "ASTS",
+      "direction": "bullish",
+      "rationale": "Direct-to-cell satellite broadband peer/competitor to Starlink; SpaceX's public valuation gives investors a yardstick that lifts ASTS's constellation NPV math.",
       "confidence": "medium",
       "horizon": "weeks",
-      "priced_in": "yes",
-      "pct_1d": -4.3,
-      "rel_volume": 1.15,
-      "trigger_ticker": "COHR",
-      "event_summary": "SpaceX began public trading and surged to $175, hammering legacy/competing space stocks while lifting space-supply-chain names; COHR (photonics/laser comms) is rallying on read-through.",
-      "news_url": "https://www.benzinga.com/markets/equities/26/06/53174107/stock-market-today-spacex-jumps-175-debut-rocks-space-stocks",
+      "priced_in": "contradicted",
+      "pct_1d": -15.54,
+      "rel_volume": 2.63,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
       "source_news_ids": [
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "62c1d5c699237ab1",
-        "4bb6477cce366509"
+        "5bae51d2ad4ef76e"
       ],
-      "created_at": "2026-06-12T14:10:23.941046-04:00"
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "PL",
+      "direction": "bullish",
+      "rationale": "Planet Labs is a pure-play satellite data name that re-rates with the space sector basket as SpaceX IPO draws generalist capital into listed space comps.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "contradicted",
+      "pct_1d": -8.85,
+      "rel_volume": 1.63,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
+    },
+    {
+      "ticker": "RDW",
+      "direction": "bullish",
+      "rationale": "Redwire is a small-cap space infrastructure supplier that sells hardware into SpaceX/NASA ecosystem; benefits from SpaceX-driven capex narrative and basket bid.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "contradicted",
+      "pct_1d": -11.53,
+      "rel_volume": 0.97,
+      "trigger_ticker": "TSLA",
+      "event_summary": "SpaceX completed a record-shattering IPO, closing up 19% on debut, validating space/launch economics at premium valuations.",
+      "news_url": "https://www.benzinga.com/markets/ipos/26/06/53180108/spacex-stock-closes-up-19-in-record-shattering-ipo-debut",
+      "source_news_ids": [
+        "5bae51d2ad4ef76e"
+      ],
+      "created_at": "2026-06-12T17:03:24.215869-04:00"
     }
   ]
 }

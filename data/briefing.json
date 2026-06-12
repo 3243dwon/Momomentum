@@ -1,70 +1,62 @@
 {
-  "generated_at": "2026-06-12T14:10:23.941046-04:00",
-  "window": "RTH",
-  "headline": "Risk-on holds; desk pivots to tanker/bank/biotech \u2014 space names (SPCE -32%, ASTS -14%, SATS -12%) getting crushed",
+  "generated_at": "2026-06-12T17:03:24.215869-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on holds; desk adds RIVN + TSLA longs \u2014 space sector still bleeding (SPCE -33%, ASTS -16%)",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.55%, QQQ +0.8%, both above 50d, VXX stress 0.96 \u2014 vol suppressed, tape supportive for entries; no macro events on deck."
+    "line": "SPY +0.54%, QQQ +0.65%, both above 50d MA. VXX stress ratio 0.95 \u2014 vol suppressed. Tape supports momentum longs."
   },
   "actions": [
     {
-      "ticker": "DHT",
+      "ticker": "RIVN",
       "direction": "long",
-      "entry": 17.47,
-      "stop": 17.08,
-      "target": 18.24,
-      "line": "Full size \u2014 all three advisors aligned, clean technicals, risk-on tail; 2.0R setup."
+      "entry": 16.77,
+      "stop": 15.88,
+      "target": 18.55,
+      "line": "Fresh MACD cross + catalyst (~8% news-driven move); mid-range RSI, real upside. Half size."
     },
     {
-      "ticker": "DB",
+      "ticker": "TSLA",
       "direction": "long",
-      "entry": 33.2,
-      "stop": 32.79,
-      "target": 34.02,
-      "line": "Half size \u2014 signal + risk agree; research neutral, no catalyst; 2.0R but capped conviction."
-    },
-    {
-      "ticker": "RLAY",
-      "direction": "long",
-      "entry": 14.85,
-      "stop": 14.54,
-      "target": 15.69,
-      "line": "Quarter size only \u2014 thin volume limits conviction; signal/research neutral; 2.7R if it works."
+      "entry": 406.54,
+      "stop": 393.33,
+      "target": 432.96,
+      "line": "Clean technical setup, MACD signal confirms \u2014 research against on fundamentals. Quarter size only."
     }
   ],
   "watch": [
     {
-      "ticker": "SATS",
-      "type": "mover",
-      "line": "SATS -12%, rel vol 5.7x \u2014 unusual volume flags a real catalyst; watch for bounce or continuation setup."
-    },
-    {
-      "ticker": "LEN",
-      "type": "catalyst",
-      "line": "LEN -4.9% on Q2 earnings miss \u2014 homebuilder weakness; watch sector read-through."
-    },
-    {
-      "ticker": "MRCY",
-      "type": "ripple",
-      "line": "Medium-confidence bullish ripple from COHR/SpaceX IPO narrative \u2014 rad-hard/RF defense supply play not yet priced."
-    },
-    {
-      "ticker": "IRDM",
-      "type": "ripple",
-      "line": "Two-sided risk: bullish satellite-economy halo vs. Starlink IoT competitive pressure \u2014 net direction uncertain."
-    },
-    {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "SPCE -31.5%, MACD bearish, rel vol 1.8x \u2014 possible dead-cat watch if volume spikes further."
+      "line": "-32.8% on 2.15\u00d7 volume, MACD bearish \u2014 space-sector destruction continues, no floor yet."
+    },
+    {
+      "ticker": "ASTS",
+      "type": "mover",
+      "line": "-15.5% on 2.63\u00d7 vol (highest rel-vol in scan) \u2014 unusual selling pressure, watch for bounce or capitulation."
+    },
+    {
+      "ticker": "LUNR",
+      "type": "ripple",
+      "line": "Bullish ripple off TSLA/SpaceX theme \u2014 space-sector flow + customer-validation read-through not yet priced."
+    },
+    {
+      "ticker": "BA",
+      "type": "ripple",
+      "line": "Bearish ripple \u2014 ULA/Starliner mindshare loss as SpaceX cements dominance; medium confidence."
+    },
+    {
+      "ticker": "NAVN",
+      "type": "mover",
+      "line": "-12% on 2.31\u00d7 vol \u2014 unusual volume warrants watching for catalyst clarity."
     }
   ],
   "changed": [
-    "Desk takes fully rotated \u2014 NUAI, COMP, TER gone; DHT, DB, RLAY are new picks.",
-    "ARM tech leadership gone; space sector now the dominant theme via mass selling (SPCE, ASTS, SATS, ASTS)."
+    "Desk pivots from tanker/bank/biotech into RIVN and TSLA longs \u2014 new actionable takes this scan.",
+    "RIVN catalyst (~+8%) added as primary driver; prior scan had no EV names in actions."
   ],
   "caveats": [
-    "RTH scan as of 14:10 ET 2026-06-12; prices and levels are scan-time snapshots \u2014 spreads and fills may differ at execution.",
-    "RLAY flagged as very thin volume \u2014 quarter-size for a reason; wide bid/ask can blow through the 14.54 stop faster than expected."
+    "AH post-market scan (as of 17:03 ET 2026-06-12) \u2014 prices and levels are AH prints; liquidity thin, spreads wide, entries may gap materially at next RTH open.",
+    "TSLA desk take is quarter-size only \u2014 PM flags research bearish on fundamentals; setup-driven trade with limited conviction above technicals."
   ]
 }
