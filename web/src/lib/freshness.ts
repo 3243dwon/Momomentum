@@ -14,6 +14,10 @@ export const now = readable(Date.now(), (set) => {
  * so the layout can tint without its own data load. */
 export const regimeLabel = writable<'risk_on' | 'risk_off' | 'mixed' | null>(null);
 
+/** Latest scan's generated_at — same ride-along; the layout dims the weather
+ * layer as the scan ages. null until the first fetch resolves. */
+export const scanGeneratedAt = writable<string | null>(null);
+
 export type StaleLevel = 'fresh' | 'aging' | 'stale';
 
 // Thresholds follow the real pipeline cadence: scans land every ~2-3h during
@@ -65,6 +69,7 @@ export function startScanWatch() {
       };
       regimeLabel.set(j.regime?.label ?? null);
       const g = j.generated_at ?? null;
+      scanGeneratedAt.set(g);
       if (g && lastGeneratedAt && g !== lastGeneratedAt) {
         lastGeneratedAt = g;
         await invalidateAll();

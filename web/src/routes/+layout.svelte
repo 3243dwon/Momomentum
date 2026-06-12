@@ -2,7 +2,7 @@
   import '../app.css';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
-  import { startScanWatch, regimeLabel } from '$lib/freshness';
+  import { startScanWatch, regimeLabel, scanGeneratedAt, now, staleness, type StaleLevel } from '$lib/freshness';
   import ThemeToggle from './ThemeToggle.svelte';
   import SearchBox from './SearchBox.svelte';
   let { children } = $props();
@@ -16,7 +16,31 @@
     risk_off: 'bg-signal-down',
     mixed: 'bg-signal-warn'
   };
+
+  // Weather layer: regime colors the sky, scan age sets its brightness.
+  // Written as custom properties on <html> so the CSS scroll scrub never
+  // touches JS; var(--signal-*) references stay theme-correct on toggle.
+  const WEATHER_RGB: Record<string, string> = {
+    risk_on: 'var(--signal-up)',
+    risk_off: 'var(--signal-down)',
+    mixed: 'var(--signal-warn)'
+  };
+  const WEATHER_DIM: Record<StaleLevel, number> = { fresh: 1, aging: 0.55, stale: 0.15 };
+
+  $effect(() => {
+    const rgb = $regimeLabel ? WEATHER_RGB[$regimeLabel] : undefined;
+    const base = rgb ? ($regimeLabel === 'mixed' ? 0.045 : 0.05) : 0.06;
+    // null generated_at means "not fetched yet", not "stale" — keep full light.
+    const dim = $scanGeneratedAt ? WEATHER_DIM[staleness($scanGeneratedAt, $now).level] : 1;
+    const root = document.documentElement.style;
+    root.setProperty('--weather-rgb', rgb ?? '59 130 246');
+    root.setProperty('--weather-alpha', String(base * dim));
+  });
 </script>
+
+<!-- Regime weather: the sky is the tape — a fixed glow behind everything,
+     colored by the $effect above, receding via the CSS scroll timeline. -->
+<div class="weather" aria-hidden="true"></div>
 
 <!-- Regime tint: the market state registers before anything is read. -->
 {#if $regimeLabel && REGIME_TINT[$regimeLabel]}
@@ -66,6 +90,7 @@
   <footer class="mt-8 flex items-center justify-between border-t border-ink-700 pt-4 text-[10px] uppercase tracking-wider text-zinc-500">
     <span>Personal scanner. Not investment advice.</span>
     <span class="flex items-center gap-3">
+      <a href="/anatomy" class="hover:text-zinc-300">How an alert is made</a>
       <a href="/learn" class="hover:text-zinc-300">Learn</a>
       <a href="https://github.com/3243dwon/Momomentum" class="hover:text-zinc-300">source</a>
     </span>
