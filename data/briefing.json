@@ -1,71 +1,70 @@
 {
-  "generated_at": "2026-06-12T11:23:48.280228-04:00",
+  "generated_at": "2026-06-12T14:10:23.941046-04:00",
   "window": "RTH",
-  "headline": "Risk-on intact; ARM +11% leads tech bid; desk rotates to NUAI, COMP, TER \u2014 SGHC/KT gone.",
+  "headline": "Risk-on holds; desk pivots to tanker/bank/biotech \u2014 space names (SPCE -32%, ASTS -14%, SATS -12%) getting crushed",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.9%, QQQ +1.0%, both above 50d. VXX stress 0.97 \u2014 vol suppressed. Tape supports momentum longs; pullback entries clean."
+    "line": "SPY +0.55%, QQQ +0.8%, both above 50d, VXX stress 0.96 \u2014 vol suppressed, tape supportive for entries; no macro events on deck."
   },
   "actions": [
     {
-      "ticker": "NUAI",
+      "ticker": "DHT",
       "direction": "long",
-      "entry": 5.7,
-      "stop": 5.44,
-      "target": 6.21,
-      "line": "Half-size long; signal+risk agree, research neutral \u2014 defined risk 26\u00a2, target 51\u00a2."
+      "entry": 17.47,
+      "stop": 17.08,
+      "target": 18.24,
+      "line": "Full size \u2014 all three advisors aligned, clean technicals, risk-on tail; 2.0R setup."
     },
     {
-      "ticker": "TER",
+      "ticker": "DB",
       "direction": "long",
-      "entry": 404.39,
-      "stop": 386.78,
-      "target": 439.61,
-      "line": "Half-size long; signal+risk agree, headline quality caps size \u2014 17.6pt risk, 35.2pt target."
+      "entry": 33.2,
+      "stop": 32.79,
+      "target": 34.02,
+      "line": "Half size \u2014 signal + risk agree; research neutral, no catalyst; 2.0R but capped conviction."
     },
     {
-      "ticker": "COMP",
+      "ticker": "RLAY",
       "direction": "long",
-      "entry": 8.86,
-      "stop": 8.52,
-      "target": 9.53,
-      "line": "Quarter-size long; all three advisors lukewarm, weak volume \u2014 thin conviction, tight leash."
+      "entry": 14.85,
+      "stop": 14.54,
+      "target": 15.69,
+      "line": "Quarter size only \u2014 thin volume limits conviction; signal/research neutral; 2.7R if it works."
     }
   ],
   "watch": [
     {
-      "ticker": "ARM",
+      "ticker": "SATS",
       "type": "mover",
-      "line": "ARM +11% on big_move flag \u2014 semi/AI proxy leading; watch for continuation or fade."
-    },
-    {
-      "ticker": "SPCE",
-      "type": "mover",
-      "line": "SPCE -26.9%, MACD bearish, rel vol only 0.84 \u2014 space cluster that led last scan is unraveling."
+      "line": "SATS -12%, rel vol 5.7x \u2014 unusual volume flags a real catalyst; watch for bounce or continuation setup."
     },
     {
       "ticker": "LEN",
       "type": "catalyst",
-      "line": "LEN -3.5% post-earnings; homebuilder read-through risk for sector peers."
+      "line": "LEN -4.9% on Q2 earnings miss \u2014 homebuilder weakness; watch sector read-through."
     },
     {
-      "ticker": "ASTS",
-      "type": "mover",
-      "line": "ASTS -11% near 1.0x rel vol \u2014 satellite/space selloff broadening, monitor for washout."
+      "ticker": "MRCY",
+      "type": "ripple",
+      "line": "Medium-confidence bullish ripple from COHR/SpaceX IPO narrative \u2014 rad-hard/RF defense supply play not yet priced."
     },
     {
-      "ticker": "AXTI",
+      "ticker": "IRDM",
+      "type": "ripple",
+      "line": "Two-sided risk: bullish satellite-economy halo vs. Starlink IoT competitive pressure \u2014 net direction uncertain."
+    },
+    {
+      "ticker": "SPCE",
       "type": "mover",
-      "line": "AXTI +12.1% big_move \u2014 compound semi name moving with ARM; unvetted, watch for desk follow-up."
+      "line": "SPCE -31.5%, MACD bearish, rel vol 1.8x \u2014 possible dead-cat watch if volume spikes further."
     }
   ],
   "changed": [
-    "Desk slate fully replaced: SGHC and KT out, NUAI/COMP/TER in.",
-    "Space/satellite cluster that led last scan now leading to the downside \u2014 SPCE -27%, ASTS -11%.",
-    "ARM +11% emerges as new leadership name in semi/AI."
+    "Desk takes fully rotated \u2014 NUAI, COMP, TER gone; DHT, DB, RLAY are new picks.",
+    "ARM tech leadership gone; space sector now the dominant theme via mass selling (SPCE, ASTS, SATS, ASTS)."
   ],
   "caveats": [
-    "RTH scan as of 11:23 ET 2026-06-12; prices reflect that moment and may be stale by the time you act.",
-    "All three top_movers gains (ARM, AXTI, CIFR) carry rel_volume below 0.7 \u2014 moves lack full confirmation; fade risk elevated on thin participation."
+    "RTH scan as of 14:10 ET 2026-06-12; prices and levels are scan-time snapshots \u2014 spreads and fills may differ at execution.",
+    "RLAY flagged as very thin volume \u2014 quarter-size for a reason; wide bid/ask can blow through the 14.54 stop faster than expected."
   ]
 }
