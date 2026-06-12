@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-12T17:03:24.215869-04:00",
+  "generated_at": "2026-06-12T19:21:50.575606-04:00",
   "window": "AH_POST",
-  "headline": "Risk-on holds; desk adds RIVN + TSLA longs \u2014 space sector still bleeding (SPCE -33%, ASTS -16%)",
+  "headline": "Risk-on intact; desk rotates to ING + TSLA longs \u2014 space sector carnage deepens (SPCE -33%, ASTS -16%)",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.54%, QQQ +0.65%, both above 50d MA. VXX stress ratio 0.95 \u2014 vol suppressed. Tape supports momentum longs."
+    "line": "SPY +0.54% above 50d, QQQ +0.65%, VXX stress 0.95 \u2014 low vol backdrop, trend intact, entries remain viable."
   },
   "actions": [
     {
-      "ticker": "RIVN",
+      "ticker": "ING",
       "direction": "long",
-      "entry": 16.77,
-      "stop": 15.88,
-      "target": 18.55,
-      "line": "Fresh MACD cross + catalyst (~8% news-driven move); mid-range RSI, real upside. Half size."
+      "entry": 30.21,
+      "stop": 29.75,
+      "target": 31.12,
+      "line": "Low RSI, clean trend; signal + risk constructive, research lukewarm \u2014 quarter size."
     },
     {
       "ticker": "TSLA",
@@ -21,42 +21,42 @@
       "entry": 406.54,
       "stop": 393.33,
       "target": 432.96,
-      "line": "Clean technical setup, MACD signal confirms \u2014 research against on fundamentals. Quarter size only."
+      "line": "Signal + risk supportive, no fresh catalyst flagged \u2014 split verdict, quarter size."
     }
   ],
   "watch": [
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "-32.8% on 2.15\u00d7 volume, MACD bearish \u2014 space-sector destruction continues, no floor yet."
+      "line": "-32.8%, rel vol 2.15x, MACD bearish \u2014 sector bleed continues, no floor yet."
     },
     {
       "ticker": "ASTS",
       "type": "mover",
-      "line": "-15.5% on 2.63\u00d7 vol (highest rel-vol in scan) \u2014 unusual selling pressure, watch for bounce or capitulation."
-    },
-    {
-      "ticker": "LUNR",
-      "type": "ripple",
-      "line": "Bullish ripple off TSLA/SpaceX theme \u2014 space-sector flow + customer-validation read-through not yet priced."
-    },
-    {
-      "ticker": "BA",
-      "type": "ripple",
-      "line": "Bearish ripple \u2014 ULA/Starliner mindshare loss as SpaceX cements dominance; medium confidence."
+      "line": "-15.5%, rel vol 2.63x \u2014 unusual volume confirms distribution, watch for sympathy washout."
     },
     {
       "ticker": "NAVN",
       "type": "mover",
-      "line": "-12% on 2.31\u00d7 vol \u2014 unusual volume warrants watching for catalyst clarity."
+      "line": "-12.0%, rel vol 2.31x \u2014 unusual volume, space/satellite group contagion."
+    },
+    {
+      "ticker": "FLY",
+      "type": "mover",
+      "line": "-19.3%, rel vol 1.6x \u2014 large single-day drop, monitor for oversold bounce setup."
+    },
+    {
+      "ticker": "POET",
+      "type": "mover",
+      "line": "+11.4% lone upside mover in a sea of red \u2014 watch for follow-through catalyst."
     }
   ],
   "changed": [
-    "Desk pivots from tanker/bank/biotech into RIVN and TSLA longs \u2014 new actionable takes this scan.",
-    "RIVN catalyst (~+8%) added as primary driver; prior scan had no EV names in actions."
+    "RIVN long dropped from actions; ING long added in its place.",
+    "Space sector losses holding: SPCE -33%, ASTS -16% unchanged from prior scan."
   ],
   "caveats": [
-    "AH post-market scan (as of 17:03 ET 2026-06-12) \u2014 prices and levels are AH prints; liquidity thin, spreads wide, entries may gap materially at next RTH open.",
-    "TSLA desk take is quarter-size only \u2014 PM flags research bearish on fundamentals; setup-driven trade with limited conviction above technicals."
+    "AH_POST window scan as of 2026-06-12 19:21 ET \u2014 prices stale post-close, spreads wide, overnight gaps possible before RTH entry.",
+    "No catalysts or macro events flagged this scan; TSLA and ING entries carry split/lukewarm research conviction \u2014 size accordingly."
   ]
 }
