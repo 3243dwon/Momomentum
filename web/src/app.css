@@ -25,7 +25,7 @@
     --signal-info: 59 130 246;
     --signal-flat: 107 114 128;
 
-    --body-grad: rgba(59, 130, 246, 0.06);
+    --weather-theme: 1;
     --selection: rgba(59, 130, 246, 0.35);
 
     /* Conviction tints — long/short directional card backgrounds */
@@ -61,7 +61,8 @@
     --signal-info: 37 99 235;
     --signal-flat: 138 134 120;
 
-    --body-grad: rgba(0, 0, 0, 0);
+    /* 0 zeroes the weather glow — light keeps its clean paper canvas. */
+    --weather-theme: 0;
     --selection: rgba(29, 138, 75, 0.18);
 
     --card-long: 240 250 243; /* #f0faf3 */
@@ -77,10 +78,10 @@
     transition: background-color 0.2s ease;
   }
   body {
-    background:
-      radial-gradient(80% 60% at 50% -10%, var(--body-grad), transparent 70%),
-      rgb(var(--ink-950));
-    transition: background-color 0.2s ease;
+    /* No background here: html (bg-ink-950 in app.html) paints the canvas.
+       An opaque body coat would bury the fixed .weather layer — CSS paint
+       order puts in-flow backgrounds above negative-z stacking contexts. */
+    background: transparent;
   }
   ::selection {
     background: var(--selection);
@@ -153,5 +154,40 @@
   .spark-block {
     @apply font-mono text-sm leading-none tabular-nums;
     letter-spacing: -0.05em;
+  }
+  /* Regime weather: the page's sky. Fixed glow painted above the body coat
+     but under all content (z -10). The layout writes --weather-rgb and
+     --weather-alpha from regime + scan age; --weather-theme gates it off in
+     light mode. Defaults reproduce the old static blue glow before JS lands. */
+  .weather {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+    background: radial-gradient(
+      80% 60% at 50% -10%,
+      rgb(var(--weather-rgb, 59 130 246) / calc(var(--weather-alpha, 0.06) * var(--weather-theme, 1))),
+      transparent 70%
+    );
+  }
+}
+
+/* Weather scroll scrub — zero JS, compositor-only. The sky recedes and dims
+   on the way down and returns on the way up (a scroll(root) timeline is a pure
+   function of scroll position, so it's reversible by construction). Firefox
+   lacks animation-timeline and keeps the static glow; reduced-motion gets the
+   same static, fully-informative tint. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .weather {
+      animation: weather-recede linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+@keyframes weather-recede {
+  to {
+    transform: translateY(-12vh);
+    opacity: 0.35;
   }
 }

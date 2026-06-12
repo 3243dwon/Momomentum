@@ -1,6 +1,7 @@
 <script lang="ts">
   import { fmtPct, fmtPrice, fmtRelative, pctClass, confidencePill } from '$lib/format';
   import { signalTrust, bandTrust, scoreInverted, GRADE_CLASS, type SignalTrust } from '$lib/trust';
+  import TrustTrial from './TrustTrial.svelte';
   import type {
     AlertTypeStats,
     LedgerEntry,
@@ -407,8 +408,10 @@
   {/if}
 </section>
 
+<TrustTrial {perf} />
+
 <!-- 2 · Signal scoreboard -->
-<section class="mb-8">
+<section id="scoreboard" class="mb-8 scroll-mt-4">
   <header class="mb-3 flex items-center justify-between">
     <h2 class="text-sm font-semibold tracking-tight">Signal scoreboard</h2>
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">
