@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import briefing, config, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
@@ -365,7 +365,21 @@ def run(
     # Public accountability ledger — the committed, permanent record of every
     # alert/pick/prediction (the .jsonl logs above live only in evictable
     # Actions caches). Written after evaluation so outcomes are fresh.
-    performance.write_ledger(datetime.now(_tz.utc))
+    ledger_payload = performance.write_ledger(datetime.now(_tz.utc))
+
+    # Deal flow — surface this scan's ripple events as deals, paired with their
+    # second-order prediction chain and the grades just written to the ledger.
+    # Rolling window merged into data/deals.json; fail-soft so it never blocks
+    # the scan. (ripple_events/ripple_predictions carry created_at from the
+    # render.write_predictions call above.)
+    try:
+        deals.write_deals(
+            datetime.now(_tz.utc),
+            {"events": ripple_events, "predictions": ripple_predictions},
+            ledger_payload,
+        )
+    except Exception as e:
+        log.warning("Deal flow write raised: %s", e)
 
     return 0
 

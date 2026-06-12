@@ -1,0 +1,723 @@
+{
+ "generated_at": "2026-06-12T05:51:09.003133+00:00",
+ "window_days": 30,
+ "deal_count": 5,
+ "deals": [
+  {
+   "id": "43f6d42c792c",
+   "ts": "2026-06-11T15:39:10.573868-04:00",
+   "primary_ticker": "ORCL",
+   "counterparty": null,
+   "headline": "Oracle shares are tanking after the company guided to massive FY27 AI capex, signaling huge data center buildout spend that pressures margins but supercharges the AI infrastructure supply chain.",
+   "drivers": [
+    "AI data center capex pull-forward \u2014 Oracle confirming higher-than-expected spend lifts order books for GPU, networking, power and cooling suppliers",
+    "Margin compression read-through to other hyperscalers facing the same capex-vs-monetization gap",
+    "Validation of AI compute demand backlog (OCI growth driving the spend)"
+   ],
+   "news_url": "https://www.benzinga.com/markets/prediction-markets/26/06/53152038/oracle-stock-tanks-12-after-ai-capex-shock-heres-what-prediction-markets-say",
+   "predictions": [
+    {
+     "ticker": "AVGO",
+     "direction": "long",
+     "mechanism": "Broadcom supplies networking silicon (Tomahawk/Jericho) and custom ASIC capability used in hyperscale AI fabrics; Oracle's buildout expands the addressable networking spend.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ANET",
+     "direction": "long",
+     "mechanism": "Arista's 800G Ethernet switches are the backbone of AI training clusters; Oracle scaling OCI capacity raises switch port demand across the hyperscale tier.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "DLR",
+     "direction": "long",
+     "mechanism": "Digital Realty leases data center capacity to Oracle and benefits from spillover demand when hyperscalers can't self-build fast enough; Oracle's capex magnitude tightens overall DC supply.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "GOOGL",
+     "direction": "short",
+     "mechanism": "Similar capex-margin compression read-through; if Oracle is spending this aggressively to keep up, GCP faces the same arms-race pressure on AI infra spend vs. revenue conversion.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "IBM",
+     "direction": "short",
+     "mechanism": "Enterprise hybrid cloud competitor \u2014 Oracle's willingness to spend at hyperscale levels widens the capability gap for IBM's smaller cloud/AI infrastructure footprint.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "long",
+     "mechanism": "Oracle's elevated FY27 capex is overwhelmingly GPU-bound; NVDA is the primary recipient of OCI's H100/H200/Blackwell orders. Higher Oracle capex = higher NVDA backlog visibility.",
+     "confidence": "high",
+     "horizon": "months",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "MSFT",
+     "direction": "short",
+     "mechanism": "Oracle's aggressive OCI capex signals intensifying hyperscale competition for AI workloads and raises the bar on Azure capex too \u2014 same margin-pressure narrative applies, plus competitive read-through on AI cloud pricing.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "VRT",
+     "direction": "long",
+     "mechanism": "Vertiv is a key supplier of power and liquid cooling infrastructure for OCI data center buildouts; capex shock directly translates to order flow for thermal/power management gear.",
+     "confidence": "high",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "GEV",
+     "direction": "long",
+     "mechanism": "GE Vernova's gas turbines and grid equipment are bottleneck items for new AI data centers; Oracle's capex scale reinforces the power generation buildout thesis.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 9,
+    "graded": 0,
+    "hit": 0
+   }
+  },
+  {
+   "id": "18d7a9c9a26d",
+   "ts": "2026-06-11T12:57:15.525257-04:00",
+   "primary_ticker": "ORCL",
+   "counterparty": null,
+   "headline": "Oracle missed on cloud revenue, raising concerns about its OCI/AI infrastructure ramp and triggering a sharp selloff (-12.8% on day, -25% over 5 days).",
+   "drivers": [
+    "AI cloud capex digestion concerns \u2014 Oracle's OCI shortfall signals possible slowdown in AI infrastructure monetization",
+    "Hyperscaler competitive read-through \u2014 share may be flowing to AWS/Azure/GCP rather than disappearing",
+    "Database workload migration risk \u2014 weak Oracle cloud could accelerate share loss to cloud-native databases"
+   ],
+   "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/53147780/oracle-missed-on-cloud-revenue-why-ai-etfs-are-unfazed",
+   "predictions": [
+    {
+     "ticker": "AMZN",
+     "direction": "long",
+     "mechanism": "AWS is the primary share-taker if Oracle's OCI growth disappoints; enterprise AI workloads Oracle hoped to capture more likely landed at AWS Bedrock/EC2.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "SNOW",
+     "direction": "long",
+     "mechanism": "Pure-play cloud data competitor to Oracle Database/Autonomous DB; weakness at Oracle cloud reinforces Snowflake's displacement thesis with enterprise customers.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "short",
+     "mechanism": "Oracle has been one of the largest publicly-disclosed GPU buyers for OCI buildout; an OCI revenue miss raises questions about Oracle's ability to monetize already-ordered Nvidia capacity and could slow incremental orders.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "MDB",
+     "direction": "long",
+     "mechanism": "MongoDB directly competes with Oracle's database franchise for new cloud-native workloads; Oracle stumble supports the modern-database migration narrative.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "CRDO",
+     "direction": "short",
+     "mechanism": "Active electrical cables/optical DSPs sold into hyperscale AI clusters including Oracle; OCI capex digestion concerns hit Credo's growth narrative.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ANET",
+     "direction": "short",
+     "mechanism": "Arista networks the AI back-end fabric for hyperscalers including Oracle; cloud revenue miss feeds the broader 'AI capex peaking' fear across the networking complex.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "CRM",
+     "direction": "short",
+     "mechanism": "Read-through to enterprise software demand \u2014 if Oracle's cloud applications and OCI are decelerating, it signals broader enterprise IT budget tightening that pressures Salesforce.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "MSFT",
+     "direction": "long",
+     "mechanism": "Azure is Oracle's stated multi-cloud partner but also its biggest competitor for AI training workloads; an OCI miss implies Azure captured the marginal enterprise AI dollar.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "VRT",
+     "direction": "short",
+     "mechanism": "Vertiv supplies power/thermal gear into Oracle's AI datacenter buildout; any pause or pacing of OCI capex flows directly into Vertiv's order book.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "SMCI",
+     "direction": "short",
+     "mechanism": "Supermicro builds AI servers shipped into hyperscale customers including Oracle; OCI buildout pause would directly compress its backlog growth.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 10,
+    "graded": 0,
+    "hit": 0
+   }
+  },
+  {
+   "id": "d76593fcf5af",
+   "ts": "2026-06-10T17:26:33.182571-04:00",
+   "primary_ticker": "ORCL",
+   "counterparty": null,
+   "headline": "Oracle beat Q4 earnings and signaled plans to raise $40B in FY27 \u2014 a massive capex/financing pull-forward tied to its AI cloud (OCI) buildout.",
+   "drivers": [
+    "AI datacenter capex pull-forward funded by $40B debt raise",
+    "OCI hyperscaler buildout = order book read-through for GPU, networking, power, and datacenter supply chain",
+    "Competitive pressure on rival hyperscalers and enterprise software peers"
+   ],
+   "news_url": "https://www.benzinga.com/markets/earnings/26/06/53130270/oracle-posts-double-beat-in-q4-expects-to-raise-40-billion-in-fy27",
+   "predictions": [
+    {
+     "ticker": "ANET",
+     "direction": "long",
+     "mechanism": "Arista is a key networking switch supplier for hyperscale AI fabrics; Oracle datacenter expansion drives incremental 400G/800G switch orders.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 3.02,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "DLR",
+     "direction": "long",
+     "mechanism": "Digital Realty leases datacenter capacity to Oracle; $40B capex implies more colocation/wholesale leasing demand near-term while ORCL builds owned capacity.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 1.1,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "PWR",
+     "direction": "long",
+     "mechanism": "Quanta Services builds the electrical infrastructure and substations feeding hyperscale datacenter campuses \u2014 ORCL site buildouts add backlog.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 4.9,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "CRDO",
+     "direction": "long",
+     "mechanism": "Credo's active electrical cables and SerDes are designed into AI cluster interconnects; incremental hyperscaler capex flows through to AEC orders.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 11.41,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "IBM",
+     "direction": "short",
+     "mechanism": "Oracle's accelerating enterprise AI/database cloud wins pressure IBM's hybrid cloud and Red Hat positioning in the same large-enterprise accounts.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": -0.78,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "SNOW",
+     "direction": "short",
+     "mechanism": "Oracle's aggressive AI data platform pricing and OCI growth narrows Snowflake's enterprise data warehouse moat; read-through compresses SNOW multiple.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": -0.25,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "long",
+     "mechanism": "Oracle's OCI buildout is GPU-heavy; $40B raise largely funds H100/B200/GB200 procurement. ORCL has publicly named NVDA as primary GPU supplier for its AI clusters.",
+     "confidence": "high",
+     "horizon": "months",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": 2.22,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "VRT",
+     "direction": "long",
+     "mechanism": "Vertiv supplies liquid cooling and power distribution into hyperscale AI datacenters; ORCL capex acceleration directly expands their backlog.",
+     "confidence": "high",
+     "horizon": "months",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": 6.05,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "HPE",
+     "direction": "short",
+     "mechanism": "ORCL building its own AI cloud capacity at scale reduces enterprise demand for on-prem AI server stacks where HPE competes.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": -2.82,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    }
+   ],
+   "stats": {
+    "calls": 9,
+    "graded": 9,
+    "hit": 6
+   }
+  },
+  {
+   "id": "3185eb585be3",
+   "ts": "2026-06-10T14:33:16.167071-04:00",
+   "primary_ticker": "DVN",
+   "counterparty": null,
+   "headline": "Devon Energy raised its 2026 outlook, sending shares up ~6% on improved production/capital efficiency guidance.",
+   "drivers": [
+    "Permian/US shale pure-play re-rating on improved capital efficiency read-through",
+    "Higher implied activity supports oilfield services demand",
+    "Peer guidance benchmark lifts sentiment for similarly-levered E&Ps"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53126406/devon-energy-stock-jumps-after-updated-2026-outlook",
+   "predictions": [
+    {
+     "ticker": "MTDR",
+     "direction": "long",
+     "mechanism": "Matador Resources is a Delaware Basin operator with overlapping acreage geology; positive DVN well-cost/productivity commentary supports MTDR's 2026 guide trajectory.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": -3.08,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "OVV",
+     "direction": "long",
+     "mechanism": "Ovintiv is a multi-basin US shale peer (Permian/Anadarko) with direct read-through on Devon's productivity and capital framework commentary.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": -3.08,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "LBRT",
+     "direction": "long",
+     "mechanism": "Liberty Energy is a primary frac/completions provider in the Permian; raised DVN activity outlook for 2026 supports completions pricing and utilization assumptions.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 1.18,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "APA",
+     "direction": "short",
+     "mechanism": "APA is a US E&P peer that has been guiding more conservatively; a stronger DVN 2026 outlook widens the perceived execution/quality gap and can pressure relative multiple.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 3.44,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "CRGY",
+     "direction": "short",
+     "mechanism": "Smaller, higher-decline shale names risk capital rotation into higher-quality Permian operators like DVN when guidance differentiates the group.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 2.22,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "PR",
+     "direction": "long",
+     "mechanism": "Permian Resources is the closest Delaware Basin pure-play peer to Devon; DVN's improved 2026 capital efficiency and production outlook reads directly across to PR's own well productivity narrative.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": -2.48,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "PUMP",
+     "direction": "long",
+     "mechanism": "ProPetro has heavy Permian completions exposure with Devon historically among its top customers; an upgraded DVN 2026 program would lift PUMP's backlog visibility.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": -1.85,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    }
+   ],
+   "stats": {
+    "calls": 7,
+    "graded": 7,
+    "hit": 3
+   }
+  },
+  {
+   "id": "d53a018141b1",
+   "ts": "2026-06-10T11:45:36.461703-04:00",
+   "primary_ticker": "SMCI",
+   "counterparty": null,
+   "headline": "Super Micro announced a $7B equity raise to fund its AI server backlog, signaling massive demand but diluting shareholders and shocking the stock down 17%.",
+   "drivers": [
+    "AI server backlog confirmed at scale \u2014 read-through to component suppliers and ODM peers",
+    "Equity dilution as a capital-raise template \u2014 sentiment overhang on other AI-levered names with stretched balance sheets",
+    "Working capital strain signals component pricing power for upstream HBM/GPU vendors"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53111392/super-micro-stock-sinks-after-announcing-7-billion-equity-raise-to-fund-ai-backlog",
+   "predictions": [
+    {
+     "ticker": "DELL",
+     "direction": "long",
+     "mechanism": "Direct AI server competitor \u2014 SMCI's dilutive raise and balance-sheet strain makes Dell's better-capitalized AI server franchise (PowerEdge XE9680) relatively more attractive to hyperscale buyers worried about SMCI execution risk.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ANET",
+     "direction": "short",
+     "mechanism": "Not a direct loser, but AI-levered names with stretched valuations face sympathy pressure as the market reprices the cost of funding AI growth (dilution risk premium) \u2014 Arista's hyperscale exposure makes it a sentiment proxy.",
+     "confidence": "low",
+     "horizon": "intraday",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "AI",
+     "direction": "short",
+     "mechanism": "Smaller cash-burning AI names get tarred when the market sees a marquee AI beneficiary forced into a massive dilutive raise \u2014 raises cost-of-capital fears across the AI complex.",
+     "confidence": "low",
+     "horizon": "intraday",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 0.27,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "DELL",
+     "direction": "short",
+     "mechanism": "Counter-read: if SMCI's $7B raise signals AI server margins are structurally thinner than believed (working capital eats all the cash), Dell's ISG margin narrative gets questioned too.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": 2.22,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "long",
+     "mechanism": "$7B raise is explicitly to buy GPUs/components to fulfill AI server backlog \u2014 direct confirmation of sustained Blackwell/Hopper demand pull-through from a top-5 NVIDIA customer.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": -1.53,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "HPE",
+     "direction": "long",
+     "mechanism": "Third major AI server OEM; benefits from any SMCI share loss as enterprises diversify away from a vendor that just signaled capital constraints funding its backlog.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": -2.63,
+      "3d": null,
+      "5d": null
+     },
+     "status": "miss"
+    },
+    {
+     "ticker": "MU",
+     "direction": "long",
+     "mechanism": "HBM and DRAM content per AI server is a major part of SMCI's working capital need; raise confirms component pricing power and volume demand for HBM3e suppliers.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": 1.16,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "VRT",
+     "direction": "long",
+     "mechanism": "Vertiv's liquid cooling and power infrastructure ships alongside SMCI AI racks; backlog confirmation = sustained pull for cooling/power per rack.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": 2.91,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    },
+    {
+     "ticker": "WDC",
+     "direction": "long",
+     "mechanism": "AI server storage attach (enterprise SSD/HDD); SMCI backlog conversion drives incremental enterprise storage demand.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": 2.32,
+      "3d": null,
+      "5d": null
+     },
+     "status": "hit"
+    }
+   ],
+   "stats": {
+    "calls": 9,
+    "graded": 7,
+    "hit": 5
+   }
+  }
+ ]
+}
