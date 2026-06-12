@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-12T00:25:57.198047-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on holds overnight: SPCE +24%, space/satellite cluster dominates movers; SGHC & EQH desk takes unchanged.",
+  "generated_at": "2026-06-12T06:21:14.653956-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on intact pre-mkt: space/satellite cluster holds gains; KT replaces EQH on desk; Iran deal macro wildcard.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.67%, QQQ +3.31%, both above 50d; VXX stress ratio ~1.0 \u2014 vol suppressed, momentum tape favors continuation."
+    "line": "SPY +1.67%, QQQ +3.31%, SPY above 50d. VXX stress ratio 0.99 \u2014 vol crushed. Tape green, entries viable but extended."
   },
   "actions": [
     {
@@ -13,47 +13,51 @@
       "entry": 13.81,
       "stop": 12.74,
       "target": 15.95,
-      "line": "Signal+Risk aligned bullish; research skeptical but low conviction \u2014 half size, clean setup."
+      "line": "Quarter size. Signal + risk aligned; research lacks catalyst but setup holds. R/R ~2:1."
     },
     {
-      "ticker": "EQH",
+      "ticker": "KT",
       "direction": "long",
-      "entry": 43.59,
-      "stop": 40.48,
-      "target": 49.81,
-      "line": "Signal bullish; crowded momentum flagged by research & risk \u2014 quarter size only."
+      "entry": 18.75,
+      "stop": 18.56,
+      "target": 19.13,
+      "line": "Quarter size. Clean low-severity risk; tight stop 19\u00a2, early-stage with room. Research dissents."
     }
   ],
   "watch": [
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "+24.4%, rel-vol 1.88, MACD bullish \u2014 leading space cluster overnight; watch for RTH follow-through."
+      "line": "+24.4%, rel vol 1.88, MACD bullish \u2014 space theme leading for second session."
     },
     {
       "ticker": "SFIX",
       "type": "mover",
-      "line": "+16.7%, rel-vol 2.86 \u2014 unusual volume flag; highest vol conviction in the top-10 mover list."
+      "line": "+16.7%, rel vol 2.86 \u2014 highest volume flag in scan; unusual vol warrants monitoring for follow-through."
     },
     {
-      "ticker": "VOYG",
+      "ticker": "SATL",
       "type": "mover",
-      "line": "+16.0%, rel-vol 1.91 \u2014 notable overnight move, no catalyst confirmed yet."
-    },
-    {
-      "ticker": "YSS",
-      "type": "mover",
-      "line": "+22.5%, MACD bullish \u2014 second strongest overnight gapper with momentum confirmation."
+      "line": "+19.9% \u2014 satellite cluster member, no MACD confirm yet; watch for entry if theme sustains."
     },
     {
       "ticker": "VSAT",
       "type": "mover",
-      "line": "+18.4% \u2014 part of space/satellite cluster move alongside SPCE, SATL, RDW."
+      "line": "+18.4% \u2014 satellite/space ripple candidate alongside SPCE/SATL; low rel vol, needs pickup."
+    },
+    {
+      "ticker": "YSS",
+      "type": "mover",
+      "line": "+22.5%, MACD bullish, rel vol 1.39 \u2014 second-strongest signal in space cluster."
     }
   ],
-  "changed": [],
+  "changed": [
+    "KT added to desk takes; EQH no longer on desk.",
+    "Iran/Hormuz deal macro event new \u2014 potential crude supply shock, shipping cost tailwind.",
+    "Space/satellite cluster (SPCE, SATL, VSAT, YSS) holds gains into pre-market \u2014 theme persistent."
+  ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-12 00:25 ET \u2014 prices are pre-RTH and may gap significantly at open; levels unconfirmed until regular session.",
-    "Space/satellite cluster (SPCE, SATL, VSAT, RDW) is moving together with no confirmed catalyst in data \u2014 sector correlation risk if catalyst is false or fades at open."
+    "AH/Pre-market scan as of 06:21 ET 2026-06-12. Prices and levels are scan-time only \u2014 spreads wide pre-open, fills may differ materially.",
+    "Iran deal is unconfirmed state media report. Oil/transport/energy margin read-throughs are conditional on deal closing; treat as watch-only until confirmed."
   ]
 }
