@@ -516,3 +516,35 @@ export interface BriefingData {
   changed: string[];
   caveats: string[];
 }
+
+// --- Deal flow (/deals): ripple events surfaced as deals, each with its
+// second-order prediction chain and the grades those calls earned. ---
+export interface DealPrediction {
+  ticker: string;
+  direction: 'long' | 'short';
+  mechanism: string;
+  confidence: Confidence;
+  horizon: Horizon;
+  priced_in: PricedIn;
+  outcomes: { '1d': number | null; '3d': number | null; '5d': number | null };
+  status: 'pending' | 'hit' | 'miss';
+}
+
+export interface Deal {
+  id: string;
+  ts: string;
+  primary_ticker: string;
+  counterparty: string | null;
+  headline: string;
+  drivers: string[];
+  news_url: string | null;
+  predictions: DealPrediction[];
+  stats: { calls: number; graded: number; hit: number };
+}
+
+export interface DealsData {
+  generated_at: string;
+  window_days: number;
+  deal_count: number;
+  deals: Deal[];
+}
