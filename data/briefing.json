@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-11T20:21:20.927391-04:00",
+  "generated_at": "2026-06-12T00:25:57.198047-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on extends overnight: SGHC joins EQH as desk takes; space/satellite cluster still leading movers.",
+  "headline": "Risk-on holds overnight: SPCE +24%, space/satellite cluster dominates movers; SGHC & EQH desk takes unchanged.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.67% above 50d, QQQ +3.31%; VXX stress ratio 0.99 \u2014 vol suppressed, tape is green-light for momentum entries."
+    "line": "SPY +1.67%, QQQ +3.31%, both above 50d; VXX stress ratio ~1.0 \u2014 vol suppressed, momentum tape favors continuation."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 13.81,
       "stop": 12.74,
       "target": 15.95,
-      "line": "Half size. Signal+Risk aligned bullish; research skeptical but low conviction \u2014 healthy setup, R/R ~2:1."
+      "line": "Signal+Risk aligned bullish; research skeptical but low conviction \u2014 half size, clean setup."
     },
     {
       "ticker": "EQH",
@@ -21,42 +21,39 @@
       "entry": 43.59,
       "stop": 40.48,
       "target": 49.81,
-      "line": "Quarter size. Signal bullish; research and risk flag crowded momentum \u2014 small size reflects the split."
+      "line": "Signal bullish; crowded momentum flagged by research & risk \u2014 quarter size only."
     }
   ],
   "watch": [
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "Top mover +24.4%, rel-vol 1.88, MACD bullish \u2014 space theme running hard overnight."
-    },
-    {
-      "ticker": "YSS",
-      "type": "mover",
-      "line": "+22.5%, MACD bullish \u2014 second space/satellite name with momentum confirmation."
+      "line": "+24.4%, rel-vol 1.88, MACD bullish \u2014 leading space cluster overnight; watch for RTH follow-through."
     },
     {
       "ticker": "SFIX",
       "type": "mover",
-      "line": "+16.7% on 2.86x unusual volume \u2014 highest rel-vol in the scan; watch for continuation open."
+      "line": "+16.7%, rel-vol 2.86 \u2014 unusual volume flag; highest vol conviction in the top-10 mover list."
     },
     {
-      "ticker": "NUAI",
+      "ticker": "VOYG",
       "type": "mover",
-      "line": "+22.3%, rel-vol 1.79 \u2014 big move without MACD flag; needs confirmation before chasing."
+      "line": "+16.0%, rel-vol 1.91 \u2014 notable overnight move, no catalyst confirmed yet."
     },
     {
-      "ticker": "SATL",
+      "ticker": "YSS",
       "type": "mover",
-      "line": "+19.9% \u2014 satellite cluster broadening; track for sympathy follow-through with SPCE/YSS."
+      "line": "+22.5%, MACD bullish \u2014 second strongest overnight gapper with momentum confirmation."
+    },
+    {
+      "ticker": "VSAT",
+      "type": "mover",
+      "line": "+18.4% \u2014 part of space/satellite cluster move alongside SPCE, SATL, RDW."
     }
   ],
-  "changed": [
-    "SGHC added as new desk take (was absent in prior briefing)",
-    "Desk now carries two active takes vs one previously"
-  ],
+  "changed": [],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-06-11 20:21 ET; spreads wide, liquidity thin until RTH open.",
-    "Both desk takes are size-reduced (half/quarter) reflecting mixed conviction signals \u2014 size accordingly."
+    "OVERNIGHT scan as of 2026-06-12 00:25 ET \u2014 prices are pre-RTH and may gap significantly at open; levels unconfirmed until regular session.",
+    "Space/satellite cluster (SPCE, SATL, VSAT, RDW) is moving together with no confirmed catalyst in data \u2014 sector correlation risk if catalyst is false or fades at open."
   ]
 }

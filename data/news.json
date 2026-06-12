@@ -1,54 +1,107 @@
 {
-  "generated_at": "2026-06-11T20:21:20.927391-04:00",
+  "generated_at": "2026-06-12T00:25:57.198047-04:00",
   "ticker_news": {
-    "CLSK": [
+    "ACHR": [
       {
-        "id": "37e0dc4975c78770",
+        "id": "3493cddc130d65d7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "CLSK",
+        "ticker": "ACHR",
         "scope": "ticker",
-        "title": "These 10 Stocks Are Getting Crushed By Short Sellers Right Now",
-        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/06/53158089/these-10-stocks-are-getting-crushed-by-short-sellers-right-now",
-        "published_at": "2026-06-11T22:17:34+00:00",
-        "type": "analyst",
+        "title": "Cathie Wood Sells $23 Million Worth Robinhood Stock Over Two Days Despite Bullish Analyst Outlook",
+        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/53159131/cathie-wood-sells-23-million-worth-robinhood-stock-over-two-days-despite-bullish-analyst-outlook",
+        "published_at": "2026-06-12T03:42:25+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "short_seller_pressure_broad_basket",
-        "tickers_mentioned": [],
+        "dedup_group": "cathie_wood_robinhood_stock_sale",
+        "tickers_mentioned": [
+          "HOOD"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "HOOD": [
       {
-        "id": "a6301bd04ddf40a4",
+        "id": "3493cddc130d65d7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "HOOD",
         "scope": "ticker",
-        "title": "Trump Phone Promised 'Made In America' \u2014 Teardown Shows It Was Designed In China",
-        "url": "https://www.benzinga.com/news/politics/26/06/53158074/trump-phone-promised-made-in-america-teardown-shows-it-was-designed-in-china",
-        "published_at": "2026-06-11T22:15:42+00:00",
+        "title": "Cathie Wood Sells $23 Million Worth Robinhood Stock Over Two Days Despite Bullish Analyst Outlook",
+        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/53159131/cathie-wood-sells-23-million-worth-robinhood-stock-over-two-days-despite-bullish-analyst-outlook",
+        "published_at": "2026-06-12T03:42:25+00:00",
         "type": "rumor",
         "impact": "low",
-        "dedup_group": "trump_phone_made_in_china_teardown",
-        "tickers_mentioned": [],
+        "dedup_group": "cathie_wood_robinhood_stock_sale",
+        "tickers_mentioned": [
+          "HOOD"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "QCOM": [
+    "ASTS": [
       {
-        "id": "a6301bd04ddf40a4",
+        "id": "51b06be9b8763ca7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "QCOM",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "Trump Phone Promised 'Made In America' \u2014 Teardown Shows It Was Designed In China",
-        "url": "https://www.benzinga.com/news/politics/26/06/53158074/trump-phone-promised-made-in-america-teardown-shows-it-was-designed-in-china",
-        "published_at": "2026-06-11T22:15:42+00:00",
-        "type": "rumor",
+        "title": "SpaceX, Adobe, Virgin Galactic, AST SpaceMobile And SanDisk: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53158825/spacex-adobe-virgin-galactic-ast-spacemobile-sandisk-stocks-on-investors-radars-today",
+        "published_at": "2026-06-12T01:53:03+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "trump_phone_made_in_china_teardown",
-        "tickers_mentioned": [],
+        "dedup_group": "spce_stocks_on_radars_roundup",
+        "tickers_mentioned": [
+          "SPACEX",
+          "ADBE",
+          "SPCE",
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "51b06be9b8763ca7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "SpaceX, Adobe, Virgin Galactic, AST SpaceMobile And SanDisk: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53158825/spacex-adobe-virgin-galactic-ast-spacemobile-sandisk-stocks-on-investors-radars-today",
+        "published_at": "2026-06-12T01:53:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "spce_stocks_on_radars_roundup",
+        "tickers_mentioned": [
+          "SPACEX",
+          "ADBE",
+          "SPCE",
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SPCE": [
+      {
+        "id": "51b06be9b8763ca7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SPCE",
+        "scope": "ticker",
+        "title": "SpaceX, Adobe, Virgin Galactic, AST SpaceMobile And SanDisk: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53158825/spacex-adobe-virgin-galactic-ast-spacemobile-sandisk-stocks-on-investors-radars-today",
+        "published_at": "2026-06-12T01:53:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "spce_stocks_on_radars_roundup",
+        "tickers_mentioned": [
+          "SPACEX",
+          "ADBE",
+          "SPCE",
+          "SNDK"
+        ],
         "route_to_synthesis": false
       }
     ]
