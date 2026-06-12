@@ -8,6 +8,7 @@
   import { browser } from '$app/environment';
   import { prefersReducedMotion } from '$lib/scrub.svelte';
   import ColdOpen from './ColdOpen.svelte';
+  import MoverCard from './MoverCard.svelte';
   import TickerRow from './TickerRow.svelte';
   import TakeCard from './TakeCard.svelte';
   import ScanTable from './ScanTable.svelte';
@@ -84,6 +85,20 @@
       .filter((r) => r.pct_1d != null)
       .sort((a, b) => Math.abs(b.pct_1d!) - Math.abs(a.pct_1d!))
       .slice(0, 20)
+  );
+
+  // --- Heat tape: every scanned name as one cell, biggest gainer on the left
+  // to biggest loser on the right — the cold open's field compressed into the
+  // standing page's signature strip. Intensity = |1d move|, capped at 5%.
+  const heatTape = $derived.by(() =>
+    [...(scan?.rows ?? [])]
+      .filter((r) => r.pct_1d != null)
+      .sort((a, b) => b.pct_1d! - a.pct_1d!)
+      .map((r) => ({
+        t: r.ticker,
+        pct: r.pct_1d!,
+        alpha: Math.min(1, 0.1 + (Math.abs(r.pct_1d!) / 5) * 0.9)
+      }))
   );
 
   // --- Unified feed: news, Serenity, predictions, macro, Trump — one stream.
@@ -209,6 +224,27 @@
     </button>
   </section>
 
+  {#if heatTape.length}
+    <!-- The tape: all scanned names in one strip, gainers -> losers. -->
+    <section class="mb-5">
+      <div class="flex h-8 w-full overflow-hidden rounded">
+        {#each heatTape as c (c.t)}
+          <a
+            href={`/t/${c.t}`}
+            title="{c.t} {c.pct > 0 ? '+' : ''}{c.pct.toFixed(2)}%"
+            class="h-full min-w-0 flex-1"
+            style="background: rgb(var(--signal-{c.pct >= 0 ? 'up' : 'down'}) / {c.alpha});"
+          ></a>
+        {/each}
+      </div>
+      <div class="mt-1.5 flex items-baseline justify-between text-[10px] uppercase tracking-wider text-zinc-500">
+        <span class="num text-signal-up">{heatTape[0].t} +{heatTape[0].pct.toFixed(1)}%</span>
+        <span>today's tape · {heatTape.length} names</span>
+        <span class="num text-signal-down">{heatTape[heatTape.length - 1].t} {heatTape[heatTape.length - 1].pct.toFixed(1)}%</span>
+      </div>
+    </section>
+  {/if}
+
   {#if briefing && briefingFresh}
     <section class="card mb-8 border-signal-info/30 p-4">
       <header class="mb-2 flex flex-wrap items-baseline justify-between gap-2">
@@ -217,7 +253,7 @@
       </header>
       <!-- The machine's voice: same serif the cold open climaxes in, so the
            intro hands off into the page instead of switching worlds. -->
-      <p class="font-display text-xl font-black leading-snug text-zinc-100 sm:text-2xl">{briefing.headline}</p>
+      <p class="font-display text-2xl font-black leading-snug text-zinc-100 sm:text-3xl">{briefing.headline}</p>
       {#if briefing.market_state?.line}
         <p class="mt-1.5 text-xs leading-relaxed text-zinc-400">{briefing.market_state.line}</p>
       {/if}
@@ -259,11 +295,16 @@
     {#if top20.length === 0}
       <p class="text-xs text-zinc-500">No movers in this scan.</p>
     {:else}
+      <div class="mb-3 grid grid-cols-2 gap-3 lg:grid-cols-4">
+        {#each top20.slice(0, 4) as row, i (row.ticker)}
+          <MoverCard {row} rank={i + 1} />
+        {/each}
+      </div>
       <div class="card overflow-hidden">
-        {#each top20 as row, i (row.ticker)}
+        {#each top20.slice(4) as row, i (row.ticker)}
           <TickerRow
             row={row}
-            rank={i + 1}
+            rank={i + 5}
             isNewEntrant={newEntrants.has(row.ticker)}
             isAccel={accelSet.has(row.ticker)}
             jump={rankJumpMap.get(row.ticker)}
