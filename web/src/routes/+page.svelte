@@ -5,6 +5,9 @@
   import { signalTrust, scoreInverted } from '$lib/trust';
   import { now, staleness, STALE_CLASS, fmtAge } from '$lib/freshness';
   import { invalidateAll } from '$app/navigation';
+  import { browser } from '$app/environment';
+  import { prefersReducedMotion } from '$lib/scrub.svelte';
+  import ColdOpen from './ColdOpen.svelte';
   import TickerRow from './TickerRow.svelte';
   import TakeCard from './TakeCard.svelte';
   import ScanTable from './ScanTable.svelte';
@@ -13,6 +16,20 @@
   import FeedItem from './FeedItem.svelte';
 
   let { data } = $props();
+
+  // Cold open: the funnel intro plays once per browser session, is always
+  // skippable, and never renders for reduced-motion users.
+  let showIntro = $state(
+    browser &&
+      !prefersReducedMotion() &&
+      (() => {
+        try {
+          return !sessionStorage.getItem('momentum:seen-intro');
+        } catch {
+          return false;
+        }
+      })()
+  );
 
   const scan = $derived(data.scan);
   const news = $derived(data.news);
@@ -156,6 +173,15 @@
     <p class="mt-2 text-xs">Trigger the GitHub Actions workflow to populate <code>data/scan.json</code>.</p>
   </div>
 {:else}
+  {#if showIntro}
+    <!-- Cold open: 5,370 -> today's scan, played as the front door. -->
+    <ColdOpen
+      {scan}
+      headline={briefingFresh ? (briefing?.headline ?? null) : null}
+      dismiss={() => (showIntro = false)}
+    />
+  {/if}
+
   <!-- Status strip: window · regime · freshness. The freshness label ticks and
        is tappable to refetch — no more frozen "23m ago" lying all afternoon. -->
   <section class="mb-4 flex flex-wrap items-center gap-2 text-xs">
