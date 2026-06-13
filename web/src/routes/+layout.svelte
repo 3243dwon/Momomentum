@@ -113,6 +113,7 @@
     ] as item (item.href)}
       <a
         href={item.href}
+        data-sveltekit-preload-data="tap"
         class="flex flex-1 flex-col items-center gap-0.5 py-2 text-[10px] uppercase tracking-wider transition-colors {item.active ? 'text-signal-info' : 'text-zinc-500 active:text-zinc-300'}"
       >
         <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
