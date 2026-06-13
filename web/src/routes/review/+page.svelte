@@ -12,12 +12,23 @@
   } from '$lib/types';
 
   let { data } = $props();
-  const weekly = $derived(data.weekly);
-  const perf = $derived(data.perf);
-  const recPerf = $derived(data.recPerf);
-  const deskPerf = $derived(data.deskPerf);
-  const predPerf = $derived(data.predPerf);
-  const ledger = $derived(data.ledger);
+
+  // data.review is a streamed promise (see +page.ts) so the page shell renders
+  // instantly. Start empty — every section below already has a graceful "no
+  // data yet" state — then fill in once the JSON lands.
+  let resolved = $state<Awaited<typeof data.review> | null>(null);
+  $effect(() => {
+    data.review.then((r) => {
+      resolved = r;
+    });
+  });
+
+  const weekly = $derived(resolved?.weekly ?? null);
+  const perf = $derived(resolved?.perf ?? null);
+  const recPerf = $derived(resolved?.recPerf ?? null);
+  const deskPerf = $derived(resolved?.deskPerf ?? null);
+  const predPerf = $derived(resolved?.predPerf ?? null);
+  const ledger = $derived(resolved?.ledger ?? null);
 
   // ---------- This week ----------
 
