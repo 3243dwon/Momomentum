@@ -17,10 +17,24 @@
   // instantly. Start empty — every section below already has a graceful "no
   // data yet" state — then fill in once the JSON lands.
   let resolved = $state<Awaited<typeof data.review> | null>(null);
+  let loadError = $state<string | null>(null);
   $effect(() => {
-    data.review.then((r) => {
-      resolved = r;
-    });
+    // Re-runs when data.review changes (e.g. invalidateAll after a new scan).
+    // The cancelled flag stops a stale promise from clobbering fresh state and
+    // turns a worst-case "promise never settles" into a visible error rather
+    // than a permanently blank page.
+    let cancelled = false;
+    loadError = null;
+    data.review
+      .then((r) => {
+        if (!cancelled) resolved = r;
+      })
+      .catch((e) => {
+        if (!cancelled) loadError = e instanceof Error ? e.message : String(e);
+      });
+    return () => {
+      cancelled = true;
+    };
   });
 
   const weekly = $derived(resolved?.weekly ?? null);
@@ -299,6 +313,13 @@
     the call ledger underneath.
   </p>
 </header>
+
+{#if loadError}
+  <div class="card mb-6 border border-signal-down/40 p-4 text-xs text-signal-down">
+    Couldn't load the review data ({loadError}). Check your connection and refresh — the page
+    isn't broken, the data just didn't arrive.
+  </div>
+{/if}
 
 <!-- 1 · This week -->
 <section class="mb-8">
