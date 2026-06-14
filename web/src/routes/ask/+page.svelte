@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+  import { reveal } from '$lib/reveal.svelte';
 
   let { data } = $props();
 
@@ -142,7 +143,7 @@
 </svelte:head>
 
 <header class="mb-6">
-  <h1 class="text-lg font-semibold tracking-tight">Ask the tape</h1>
+  <h1 class="font-display text-2xl font-black tracking-tight">Ask the tape</h1>
   <p class="text-xs text-zinc-500">
     Answers come from the latest committed scan/news/ledger JSON — batch data, not live, not advice.
   </p>
@@ -256,8 +257,8 @@
 
 {#if history.length > 0}
   <section class="mb-8 space-y-5">
-    {#each history as item (item.id)}
-      <article>
+    {#each history as item, i (item.id)}
+      <article use:reveal={{ delay: Math.min(i, 5) * 50 }}>
         <p class="mb-1.5 whitespace-pre-wrap text-xs text-zinc-500">{item.question}</p>
         {#if item.status === 'loading'}
           <div class="card animate-pulse space-y-2 p-4">

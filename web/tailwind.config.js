@@ -25,7 +25,8 @@ export default {
           down: 'rgb(var(--signal-down) / <alpha-value>)',
           warn: 'rgb(var(--signal-warn) / <alpha-value>)',
           info: 'rgb(var(--signal-info) / <alpha-value>)',
-          flat: 'rgb(var(--signal-flat) / <alpha-value>)'
+          flat: 'rgb(var(--signal-flat) / <alpha-value>)',
+          pred: 'rgb(var(--signal-pred) / <alpha-value>)'
         }
       },
       fontFamily: {

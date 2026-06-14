@@ -3,6 +3,7 @@
   // skinny row — large mono percentage, 20-day area spark, directional wash.
   import type { ScanRow } from '$lib/types';
   import { fmtPrice } from '$lib/format';
+  import { tilt } from '$lib/tilt.svelte';
 
   let { row, rank }: { row: ScanRow; rank: number } = $props();
 
@@ -23,7 +24,8 @@
 
 <a
   href={`/t/${row.ticker}`}
-  class="pick-card block {up ? 'pick-card-long' : 'pick-card-short'} transition-colors hover:border-ink-500"
+  use:tilt
+  class="pick-card tilt block {up ? 'pick-card-long' : 'pick-card-short'}"
 >
   <div class="flex items-baseline justify-between gap-2">
     <span class="flex items-baseline gap-2">

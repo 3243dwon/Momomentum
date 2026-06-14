@@ -7,6 +7,7 @@
   import { invalidateAll } from '$app/navigation';
   import { browser } from '$app/environment';
   import { prefersReducedMotion } from '$lib/scrub.svelte';
+  import { reveal } from '$lib/reveal.svelte';
   import ColdOpen from './ColdOpen.svelte';
   import MoverCard from './MoverCard.svelte';
   import TickerRow from './TickerRow.svelte';
@@ -97,7 +98,7 @@
       .map((r) => ({
         t: r.ticker,
         pct: r.pct_1d!,
-        alpha: Math.min(1, 0.1 + (Math.abs(r.pct_1d!) / 5) * 0.9)
+        alpha: Math.min(1, 0.14 + (Math.abs(r.pct_1d!) / 5) * 0.86)
       }))
   );
 
@@ -226,13 +227,13 @@
 
   {#if heatTape.length}
     <!-- The tape: all scanned names in one strip, gainers -> losers. -->
-    <section class="mb-5">
+    <section class="mb-5" use:reveal>
       <div class="flex h-8 w-full overflow-hidden rounded">
         {#each heatTape as c (c.t)}
           <a
             href={`/t/${c.t}`}
             title="{c.t} {c.pct > 0 ? '+' : ''}{c.pct.toFixed(2)}%"
-            class="h-full min-w-0 flex-1"
+            class="heat-cell h-full min-w-0 flex-1"
             style="background: rgb(var(--signal-{c.pct >= 0 ? 'up' : 'down'}) / {c.alpha});"
           ></a>
         {/each}
@@ -246,7 +247,7 @@
   {/if}
 
   {#if briefing && briefingFresh}
-    <section class="card mb-8 border-signal-info/30 p-4">
+    <section class="card mb-8 border-signal-info/30 p-4" use:reveal>
       <header class="mb-2 flex flex-wrap items-baseline justify-between gap-2">
         <h2 class="text-sm font-semibold tracking-tight">Briefing</h2>
         <span class="text-[10px] uppercase tracking-wider text-zinc-500">{briefing.window} · one read per scan</span>
@@ -287,7 +288,7 @@
     </section>
   {/if}
 
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Top movers</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">by |%chg| · unfiltered</span>
@@ -316,7 +317,7 @@
     {/if}
   </section>
 
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex flex-wrap items-center justify-between gap-2">
       <h2 class="text-sm font-semibold tracking-tight">Desk takes</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">
@@ -362,7 +363,7 @@
   </section>
 
   {#if feedAll.length > 0}
-    <section class="mb-8">
+    <section class="mb-8" use:reveal>
       <header class="mb-3 flex flex-wrap items-center justify-between gap-2">
         <h2 class="text-sm font-semibold tracking-tight">Feed</h2>
         <div class="flex flex-wrap items-center gap-1">

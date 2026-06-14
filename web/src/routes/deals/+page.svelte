@@ -1,5 +1,6 @@
 <script lang="ts">
-  import { fmtPct, fmtRelative, pctClass, confidencePill } from '$lib/format';
+  import { fmtPct, fmtRelative, pctClass, confidencePill, pricedPill } from '$lib/format';
+  import { reveal } from '$lib/reveal.svelte';
   import type { Deal, DealPrediction } from '$lib/types';
 
   let { data } = $props();
@@ -20,13 +21,6 @@
     miss: 'pill-down'
   };
 
-  // priced_in is the headline signal of the section: a call that hasn't been
-  // priced in yet is the one you can still act on.
-  function pricedPill(p: DealPrediction): { text: string; cls: string } {
-    if (p.priced_in === 'no') return { text: 'not priced in', cls: 'pill-info' };
-    if (p.priced_in === 'partial') return { text: 'partly priced', cls: 'pill-warn' };
-    return { text: 'priced in', cls: 'pill-flat' };
-  }
 
   function firstOutcome(p: DealPrediction): number | null {
     return p.outcomes['1d'] ?? p.outcomes['3d'] ?? p.outcomes['5d'] ?? null;
@@ -62,9 +56,9 @@
   </div>
 
   <div class="space-y-4">
-    {#each deals as deal (deal.id)}
+    {#each deals as deal, i (deal.id)}
       {@const live = deal.predictions.filter((p) => p.priced_in === 'no').length}
-      <article class="card overflow-hidden">
+      <article class="card overflow-hidden" use:reveal={{ delay: Math.min(i, 6) * 50 }}>
         <!-- Deal header: the principals + what happened -->
         <header class="border-b border-ink-700/60 bg-ink-800/30 p-4">
           <div class="mb-2 flex flex-wrap items-center gap-2">
@@ -114,7 +108,7 @@
         <div class="divide-y divide-ink-700/40">
           {#each deal.predictions as p (p.ticker + p.mechanism.slice(0, 20))}
             {@const out = firstOutcome(p)}
-            {@const priced = pricedPill(p)}
+            {@const priced = pricedPill(p.priced_in)}
             <div class="flex flex-col gap-1.5 p-3 sm:flex-row sm:items-start sm:gap-3">
               <div class="flex shrink-0 items-center gap-2 sm:w-28">
                 {#if p.direction === 'long'}

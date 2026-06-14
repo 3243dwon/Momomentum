@@ -29,7 +29,7 @@
   const trust = $derived(bandTrust(recPerf, rec.direction, rec.score));
 </script>
 
-<a href={`/t/${row.ticker}`} class="pick-card row-link {isLong ? 'pick-card-long' : 'pick-card-short'}">
+<a href={`/t/${row.ticker}`} class="pick-card row-link lift {isLong ? 'pick-card-long' : 'pick-card-short'}">
   <div class="flex items-baseline justify-between gap-2">
     <div class="flex items-baseline gap-2">
       <h3 class="text-2xl font-bold tracking-tight text-zinc-100">{row.ticker}</h3>
