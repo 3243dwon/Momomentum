@@ -1,6 +1,7 @@
 <script lang="ts">
   import { fmtPct, fmtPrice, fmtRelative, pctClass, confidencePill } from '$lib/format';
   import { signalTrust, bandTrust, scoreInverted, GRADE_CLASS, type SignalTrust } from '$lib/trust';
+  import { reveal } from '$lib/reveal.svelte';
   import TrustTrial from './TrustTrial.svelte';
   import type {
     AlertTypeStats,
@@ -322,7 +323,7 @@
 {/if}
 
 <!-- 1 · This week -->
-<section class="mb-8">
+<section class="mb-8" use:reveal>
   <header class="mb-3 flex items-center justify-between">
     <h2 class="text-sm font-semibold tracking-tight">This week</h2>
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">
@@ -348,7 +349,7 @@
     {#snippet entry(a: WeeklyTickerEntry)}
       {@const analysis = a.analysis}
       {@const cls = analysis?.classification ?? a.heuristic_classification}
-      <article class="card mb-3 p-4">
+      <article class="card mb-3 p-4 lift">
         <header class="mb-3 flex flex-wrap items-baseline justify-between gap-2">
           <div class="flex flex-wrap items-baseline gap-2">
             <a href={`/t/${a.ticker}`} class="text-xl font-semibold hover:text-signal-info">{a.ticker}</a>
@@ -443,7 +444,7 @@
 <TrustTrial {perf} />
 
 <!-- 2 · Signal scoreboard -->
-<section id="scoreboard" class="mb-8 scroll-mt-4">
+<section id="scoreboard" class="mb-8 scroll-mt-4" use:reveal>
   <header class="mb-3 flex items-center justify-between">
     <h2 class="text-sm font-semibold tracking-tight">Signal scoreboard</h2>
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">
@@ -512,7 +513,7 @@
 </section>
 
 <!-- 3 · Calibration -->
-<section class="mb-8">
+<section class="mb-8" use:reveal>
   <header class="mb-3 flex items-center justify-between">
     <h2 class="text-sm font-semibold tracking-tight">Calibration</h2>
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">
@@ -537,7 +538,7 @@
 </section>
 
 <!-- 4 · Ledger -->
-<section class="mb-8">
+<section class="mb-8" use:reveal>
   <header class="mb-3 flex items-center justify-between">
     <h2 class="text-sm font-semibold tracking-tight">Ledger</h2>
     <span class="text-[10px] uppercase tracking-wider text-zinc-500">

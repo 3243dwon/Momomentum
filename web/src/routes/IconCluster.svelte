@@ -25,7 +25,7 @@
     'text-signal-info': 'bg-signal-info/10',
     'text-zinc-500':    'bg-ink-700/60',
     // TRUMP chip — stronger fill + ring so it pops above the other flags.
-    'text-purple-300':  'bg-purple-500/20 ring-1 ring-purple-400/30'
+    'text-signal-pred': 'bg-signal-pred/20 ring-1 ring-signal-pred/30'
   };
 
   const sizeClass = $derived(

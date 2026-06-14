@@ -2,6 +2,7 @@
   // Indicator guide — a bilingual cheat-sheet so a learner can decode any
   // signal they see on a ticker. Faithful to the reference card, with an
   // honest "is this live on our site" tag per indicator.
+  import { reveal } from '$lib/reveal.svelte';
 
   type Side = { head: string; body: string };
   type Note = { tone: 'up' | 'down' | 'warn' | 'flat'; text: string };
@@ -131,9 +132,9 @@
   ];
 
   const STATUS: Record<Status, { label: string; cls: string }> = {
-    live: { label: '✓ 已接入', cls: 'text-signal-up bg-signal-up/10' },
-    partial: { label: '⚠ 部分', cls: 'text-signal-warn bg-signal-warn/10' },
-    soon: { label: '○ 待接入', cls: 'text-zinc-500 bg-ink-700/60' }
+    live: { label: '✓ 已接入', cls: 'pill-up' },
+    partial: { label: '⚠ 部分', cls: 'pill-warn' },
+    soon: { label: '○ 待接入', cls: 'pill-flat' }
   };
   const noteCls: Record<Note['tone'], string> = {
     up: 'text-signal-up',
@@ -146,7 +147,7 @@
 <svelte:head><title>Momentum — 指标解读 / Learn</title></svelte:head>
 
 <header class="mb-6">
-  <h1 class="text-lg font-semibold tracking-tight">指标解读 · Indicator Guide</h1>
+  <h1 class="font-display text-2xl font-black tracking-tight">指标解读 · Indicator Guide</h1>
   <p class="mt-1 text-xs leading-relaxed text-zinc-500">
     看到推荐卡上的指标不懂?这里查。绿色 = 偏多,红色 = 偏空。每个指标都标了本站是否已接入。
     <span class="text-zinc-600">— Not sure what a signal means? Look it up. Green = bullish read, red = bearish.</span>
@@ -156,21 +157,20 @@
 <div class="space-y-8">
   {#each groups as g (g.en)}
     <section>
-      <div class="mb-3 flex flex-wrap items-baseline gap-x-2 border-b border-ink-700 pb-2">
-        <h2 class="text-base font-bold tracking-tight">{g.zh}</h2>
-        <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400">{g.en}</span>
-        <span class="text-[11px] text-zinc-500">— {g.tagline}</span>
-      </div>
+      <header class="mb-3 flex items-center justify-between">
+        <h2 class="text-sm font-semibold tracking-tight">{g.zh}</h2>
+        <span class="text-[10px] uppercase tracking-wider text-zinc-500">{g.en} — {g.tagline}</span>
+      </header>
 
       <div class="space-y-3">
-        {#each g.items as ind (ind.name)}
-          <div class="card p-4">
+        {#each g.items as ind, i (ind.name)}
+          <div class="card p-4" use:reveal={{ delay: Math.min(i, 6) * 50 }}>
             <header class="mb-2.5 flex flex-wrap items-baseline justify-between gap-2">
               <div class="flex flex-wrap items-baseline gap-x-2">
                 <h3 class="text-sm font-semibold tracking-tight">{ind.name}</h3>
                 <span class="text-[11px] text-zinc-500">{ind.sub}</span>
               </div>
-              <span class="rounded px-1.5 py-0.5 text-[10px] font-medium tracking-wide {STATUS[ind.status].cls}">
+              <span class={STATUS[ind.status].cls}>
                 {STATUS[ind.status].label}
               </span>
             </header>

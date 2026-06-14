@@ -79,3 +79,19 @@ export function confidencePill(c?: string): string {
       return 'pill-flat';
   }
 }
+
+/** Priced-in status — one dialect site-wide (/deals chains, /t catalyst calls).
+ * "Not priced in" is the headline state: the call you can still act on. */
+import type { PricedIn } from './types';
+export function pricedPill(p: PricedIn): { text: string; cls: string } {
+  switch (p) {
+    case 'no':
+      return { text: 'not priced in', cls: 'pill-info' };
+    case 'partial':
+      return { text: 'partly priced', cls: 'pill-warn' };
+    case 'contradicted':
+      return { text: 'tape disagrees', cls: 'pill-down' };
+    default:
+      return { text: 'priced in', cls: 'pill-flat' };
+  }
+}

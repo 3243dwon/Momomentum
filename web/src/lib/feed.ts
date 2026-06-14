@@ -30,7 +30,7 @@ export interface FeedItem {
 export const KIND_META: Record<FeedKind, { label: string; chip: string }> = {
   news: { label: 'News', chip: 'bg-ink-700 text-zinc-300' },
   serenity: { label: '🧠 Serenity', chip: 'bg-signal-info/15 text-signal-info' },
-  prediction: { label: '🔮 Predict', chip: 'bg-purple-500/15 text-purple-400' },
+  prediction: { label: '🔮 Predict', chip: 'bg-signal-pred/15 text-signal-pred' },
   macro: { label: 'Macro', chip: 'bg-signal-warn/15 text-signal-warn' },
   trump: { label: 'Trump', chip: 'bg-signal-down/15 text-signal-down' }
 };

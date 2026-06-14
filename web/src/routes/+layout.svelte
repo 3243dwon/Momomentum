@@ -2,6 +2,7 @@
   import '../app.css';
   import { page } from '$app/stores';
   import { browser } from '$app/environment';
+  import { onNavigate } from '$app/navigation';
   import { startScanWatch, regimeLabel, scanGeneratedAt, now, staleness, type StaleLevel } from '$lib/freshness';
   import ThemeToggle from './ThemeToggle.svelte';
   import SearchBox from './SearchBox.svelte';
@@ -10,6 +11,45 @@
   // The dashboard's pulse: refetch scan.json's generated_at on tab-resume and
   // every 5 minutes; invalidate all loads when a new scan lands.
   if (browser) startScanWatch();
+
+  // Cross-route cross-fade. Progressive enhancement: browsers without the View
+  // Transitions API (Firefox) and users who prefer reduced motion get an
+  // instant cut. Returning a promise lets SvelteKit hold the old frame until
+  // the snapshot is taken; the cross-fade itself is styled in app.css.
+  onNavigate((navigation) => {
+    // A same-page hash jump (#scoreboard, #congress) should glide via the
+    // global smooth-scroll and NOT cross-fade the whole page.
+    const sameDocHash =
+      !!navigation.to?.url.hash &&
+      navigation.to?.url.pathname === navigation.from?.url.pathname;
+
+    // For real route changes, force the scroll-to-top instant — otherwise the
+    // global `scroll-behavior: smooth` animates every navigation's reset.
+    if (typeof document !== 'undefined' && !sameDocHash) {
+      const html = document.documentElement;
+      const prev = html.style.scrollBehavior;
+      html.style.scrollBehavior = 'auto';
+      Promise.resolve(navigation.complete).finally(() => {
+        html.style.scrollBehavior = prev;
+      });
+    }
+
+    if (
+      typeof document === 'undefined' ||
+      !document.startViewTransition ||
+      document.hidden || // backgrounded tab defers the transition — skip so nav never stalls
+      sameDocHash ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    ) {
+      return;
+    }
+    return new Promise((resolve) => {
+      document.startViewTransition(async () => {
+        resolve();
+        await navigation.complete;
+      });
+    });
+  });
 
   const REGIME_TINT: Record<string, string> = {
     risk_on: 'bg-signal-up',
@@ -41,6 +81,10 @@
 <!-- Regime weather: the sky is the tape — a fixed glow behind everything,
      colored by the $effect above, receding via the CSS scroll timeline. -->
 <div class="weather" aria-hidden="true"></div>
+
+<!-- Scroll-progress rail: fills left→right with page scroll. Pure CSS scroll
+     timeline (app.css); Firefox / reduced-motion simply leave it empty. -->
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <!-- Regime tint: the market state registers before anything is read. -->
 {#if $regimeLabel && REGIME_TINT[$regimeLabel]}

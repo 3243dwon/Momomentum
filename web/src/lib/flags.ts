@@ -94,7 +94,8 @@ export const TONE_CLASS: Record<Tone, string> = {
   warn:  'text-signal-warn',
   info:  'text-signal-info',
   mute:  'text-zinc-500',
-  // Purple is outside the green/red/amber/blue signal palette, so the TRUMP
-  // chip reads as "notable / special" rather than good/bad/caution.
-  trump: 'text-purple-300'
+  // Purple (signal-pred) is outside the green/red/amber/blue signal palette,
+  // so the TRUMP chip reads as "notable / special" rather than good/bad/caution.
+  // NB: IconCluster's TONE_BG is keyed by this exact class string.
+  trump: 'text-signal-pred'
 };

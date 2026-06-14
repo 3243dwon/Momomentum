@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fmtPct, fmtPrice, fmtRelVol, fmtVolume, pctClass, fmtRelative, impactPill, confidencePill } from '$lib/format';
+  import { fmtPct, fmtPrice, fmtRelVol, fmtVolume, pctClass, fmtRelative, impactPill, confidencePill, pricedPill } from '$lib/format';
   import { readsFor, type ReadTone } from '$lib/reads';
   import { flagsFor } from '$lib/flags';
   import { computeLevels, quickPlan } from '$lib/levels';
@@ -9,6 +9,7 @@
   import Sparkline from '../../Sparkline.svelte';
   import PriceChart from '../../PriceChart.svelte';
   import IconCluster from '../../IconCluster.svelte';
+  import { reveal } from '$lib/reveal.svelte';
 
   let { data } = $props();
 
@@ -27,12 +28,7 @@
   const congressTrades = $derived(data.congressTrades);
   const ledgerEntries = $derived(data.ledgerEntries);
 
-  const PRICED: Record<PricedIn, string> = {
-    no: 'not yet priced in',
-    partial: 'started moving',
-    yes: 'already moved',
-    contradicted: 'tape disagrees'
-  };
+
 
   const reads = $derived(row ? readsFor(row) : []);
   const dotCls: Record<ReadTone, string> = {
@@ -119,10 +115,10 @@
 
 <!-- Header: always renders — every alert links here, including tickers the
      scan doesn't cover. Each section below is independent of the scan row. -->
-<section class="card mb-8 p-4">
+<section class="card mb-8 p-4" use:reveal>
   <div class="flex flex-wrap items-center justify-between gap-3">
     <div class="min-w-0">
-      <h1 class="text-2xl font-semibold tracking-tight">{ticker}</h1>
+      <h1 class="font-mono text-2xl font-semibold tracking-tight">{ticker}</h1>
       {#if row}
         <p class="text-xs text-zinc-500">last price ${fmtPrice(row.price)}</p>
       {/if}
@@ -185,8 +181,9 @@
       <div class="mt-4 rounded border {row.caution_level === 'stretched' ? 'border-signal-down/30 bg-signal-down/5' : 'border-signal-warn/30 bg-signal-warn/5'} p-3">
         <div class="mb-1 flex items-center gap-2">
           <span class="text-sm font-semibold {row.caution_level === 'stretched' ? 'text-signal-down' : 'text-signal-warn'}">
-            {row.caution_level === 'stretched' ? '⛔ Late-entry risk high' : '⚠️ Move extended'}
+            {row.caution_level === 'stretched' ? 'Late-entry risk high' : 'Move extended'}
           </span>
+          <span class={row.caution_level === 'stretched' ? 'pill-down' : 'pill-warn'}>{row.caution_level}</span>
         </div>
         <p class="text-xs text-zinc-400">
           Momentum scanners lag by 15–30 minutes. By the time you see a move, it may already be topping.
@@ -204,7 +201,7 @@
 
 <!-- Synthesis: the "why" sits right under the header so the answer comes first -->
 {#if row?.synthesis}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Why it moved</h2>
       <div class="flex items-center gap-2 text-[10px] uppercase tracking-wider">
@@ -220,7 +217,7 @@
 
 <!-- Trade levels: same heuristic + visual language as the home PickCards -->
 {#if row && levels}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Trade levels</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">heuristic · not advice</span>
@@ -266,7 +263,7 @@
 
 <!-- 指标解读 — live indicator reads (degrades gracefully outside a session) -->
 {#if reads.length}
-  <section class="card mb-8 p-4">
+  <section class="card mb-8 p-4" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">指标解读 · What the signals say</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">live read</span>
@@ -282,14 +279,17 @@
       {/each}
     </ul>
     <p class="mt-3 border-t border-ink-700/50 pt-2 text-[10px] leading-relaxed text-zinc-500">
-      🟢 偏多 · 🔴 偏空 · 🟡 当心 · ⚪ 中性。想知道每个指标怎么用?
+      <span class="inline-block h-2 w-2 rounded-full bg-signal-up align-baseline"></span> 偏多 ·
+      <span class="inline-block h-2 w-2 rounded-full bg-signal-down align-baseline"></span> 偏空 ·
+      <span class="inline-block h-2 w-2 rounded-full bg-signal-warn align-baseline"></span> 当心 ·
+      <span class="inline-block h-2 w-2 rounded-full bg-zinc-500 align-baseline"></span> 中性。想知道每个指标怎么用?
       <a href="/learn" class="text-signal-info hover:underline">看指标解读 →</a>
     </p>
   </section>
 {/if}
 
 {#if row && (row.snapshot || row.intraday)}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Intraday signals</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">pro-grade indicators</span>
@@ -344,10 +344,10 @@
 
 <!-- Ripple tier: calls about this name + calls this name triggered -->
 {#if predictionsAbout.length > 0 || predictionsFrom.length > 0}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
-      <h2 class="text-sm font-semibold tracking-tight">🔮 Catalyst calls on {ticker}</h2>
-      <a href="/predictions" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">All →</a>
+      <h2 class="text-sm font-semibold tracking-tight">Catalyst calls on <span class="font-mono">{ticker}</span></h2>
+      <a href="/deals" class="text-[10px] uppercase tracking-wider text-zinc-500 transition-colors hover:text-zinc-300">All →</a>
     </header>
     <div class="card p-4">
       {#if predictionsAbout.length > 0}
@@ -356,8 +356,8 @@
             {@const dir = p.direction === 'bullish' ? 'text-signal-up' : 'text-signal-down'}
             <div class="border-l-2 pl-3 {p.direction === 'bullish' ? 'border-signal-up/40' : 'border-signal-down/40'}">
               <div class="mb-1 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-wider">
-                <span class="text-xs font-medium normal-case {dir}">{p.direction === 'bullish' ? '📈 likely beneficiary' : '📉 likely at risk'}</span>
-                <span class="rounded px-1.5 py-0.5 {p.priced_in === 'no' ? 'bg-signal-info/15 text-signal-info' : 'text-zinc-500'}">{PRICED[p.priced_in]}</span>
+                <span class="text-xs font-medium normal-case {dir}">{p.direction === 'bullish' ? '↑ likely beneficiary' : '↓ likely at risk'}</span>
+                <span class={pricedPill(p.priced_in).cls}>{pricedPill(p.priced_in).text}</span>
                 <span class="pill-flat">conf {p.confidence}</span>
                 <span class="pill-flat">{p.horizon}</span>
                 {#if p.created_at}<span class="normal-case text-zinc-500">called {fmtRelative(p.created_at)}</span>{/if}
@@ -382,8 +382,8 @@
               <div class="border-l-2 pl-3 {p.direction === 'bullish' ? 'border-signal-up/40' : 'border-signal-down/40'}">
                 <div class="mb-1 flex flex-wrap items-center gap-2 text-[10px] uppercase tracking-wider">
                   <a href={`/t/${p.ticker}`} class="font-mono text-xs font-semibold normal-case hover:underline {dir}">${p.ticker}</a>
-                  <span class="text-xs font-medium normal-case {dir}">{p.direction === 'bullish' ? '📈 beneficiary' : '📉 at risk'}</span>
-                  <span class="rounded px-1.5 py-0.5 {p.priced_in === 'no' ? 'bg-signal-info/15 text-signal-info' : 'text-zinc-500'}">{PRICED[p.priced_in]}</span>
+                  <span class="text-xs font-medium normal-case {dir}">{p.direction === 'bullish' ? '↑ beneficiary' : '↓ at risk'}</span>
+                  <span class={pricedPill(p.priced_in).cls}>{pricedPill(p.priced_in).text}</span>
                   <span class="pill-flat">conf {p.confidence}</span>
                   <span class="pill-flat">{p.horizon}</span>
                   {#if p.created_at}<span class="normal-case text-zinc-500">called {fmtRelative(p.created_at)}</span>{/if}
@@ -400,7 +400,7 @@
 
 <!-- Unified feed: news + Serenity + Trump mentions, newest first -->
 {#if feed.length > 0}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">In the feed</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">news · serenity · trump</span>
@@ -433,10 +433,10 @@
 {/if}
 
 {#if macroMentions.length > 0}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Macro context</h2>
-      <span class="text-[10px] uppercase tracking-wider text-zinc-500">events naming {ticker}</span>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">events naming <span class="num normal-case">{ticker}</span></span>
     </header>
     <ul class="card divide-y divide-ink-700/60">
       {#each macroMentions as event}
@@ -466,10 +466,10 @@
 {#if weeklyEntry}
   {@const analysis = weeklyEntry.analysis}
   {@const cls = analysis?.classification ?? weeklyEntry.heuristic_classification}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Last weekly verdict</h2>
-      <a href="/weekly" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">
+      <a href="/review" class="text-[10px] uppercase tracking-wider text-zinc-500 transition-colors hover:text-zinc-300">
         {data.weekEnding ? `week ending ${data.weekEnding} →` : 'All →'}
       </a>
     </header>
@@ -501,12 +501,14 @@
   </section>
 {/if}
 
-<!-- Congressional trading disclosures on this name -->
+<!-- Congressional trading disclosures on this name. The header link anchors
+     to this list itself: no aggregate /political view exists, and the old
+     href 307-redirected to the homepage — a silent dead end. -->
 {#if congressTrades.length > 0}
-  <section class="mb-8">
+  <section id="congress" class="mb-8 scroll-mt-4" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Congress activity</h2>
-      <a href="/political" class="text-[10px] uppercase tracking-wider text-signal-info hover:underline">All →</a>
+      <a href="#congress" class="text-[10px] uppercase tracking-wider text-zinc-500 transition-colors hover:text-zinc-300">All →</a>
     </header>
     <ul class="card divide-y divide-ink-700/60">
       {#each congressTrades as t}
@@ -532,7 +534,7 @@
 
 <!-- Accountability ledger: every call we've made on this name + how it went -->
 {#if ledgerEntries && ledgerEntries.length > 0}
-  <section class="mb-8">
+  <section class="mb-8" use:reveal>
     <header class="mb-3 flex items-center justify-between">
       <h2 class="text-sm font-semibold tracking-tight">Past calls on this name</h2>
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">accountability ledger</span>

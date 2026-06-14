@@ -24,6 +24,8 @@
     --signal-warn: 245 158 11;
     --signal-info: 59 130 246;
     --signal-flat: 107 114 128;
+    /* "Notable / special" — predictions, Trump mentions: outside good/bad/caution. */
+    --signal-pred: 168 85 247; /* #a855f7, ~5.8:1 on ink-950 */
 
     --weather-theme: 1;
     --selection: rgba(59, 130, 246, 0.35);
@@ -60,6 +62,7 @@
     --signal-warn: 196 122 28;
     --signal-info: 37 99 235;
     --signal-flat: 138 134 120;
+    --signal-pred: 124 58 237; /* #7c3aed, ~5.5:1 on the paper canvas */
 
     /* 0 zeroes the weather glow — light keeps its clean paper canvas. */
     --weather-theme: 0;
@@ -107,6 +110,9 @@
   .pill-info {
     @apply pill bg-signal-info/10 text-signal-info;
   }
+  .pill-pred {
+    @apply pill bg-signal-pred/10 text-signal-pred;
+  }
   .pill-flat {
     @apply pill bg-ink-700 text-zinc-400;
   }
@@ -129,7 +135,7 @@
   /* TickerRow: thin sortable rows. Tightly aligned grid.
      Cols: rank | ticker | spark (fixed) | price (flex right) | pct | icons */
   .ticker-row {
-    @apply grid items-center gap-3 border-b border-ink-700/60 py-2 px-3 transition-colors hover:bg-ink-800/40;
+    @apply grid items-center gap-3 border-b border-ink-700/60 py-2 px-3 transition-colors hover:bg-ink-800/40 active:bg-ink-800/70;
     grid-template-columns: 22px 72px 180px minmax(0, 1fr) 72px auto;
   }
   .ticker-row:last-child {
@@ -190,4 +196,192 @@
     transform: translateY(-12vh);
     opacity: 0.35;
   }
+}
+
+/* ── Shared motion + interaction system ──────────────────────────────────────
+   One vocabulary for every route's connective tissue. The bespoke hero scenes
+   (cold open, anatomy) keep their own choreography; this is for everything in
+   between, so the site reads as one designed surface rather than a rich front
+   page bolted to plain inner pages. All of it is reduced-motion-safe. */
+
+/* Scroll-reveal — driven by the `reveal` action (src/lib/reveal.svelte.ts),
+   which sets [data-reveal] up front and [data-revealed] once the element
+   scrolls in. A short fade + 8px lift; stagger comes from a per-element
+   transition-delay the action writes. Reduced motion skips it entirely
+   (the action marks elements revealed immediately and never sets [data-reveal]). */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+    transition:
+      opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+      transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  [data-reveal][data-revealed] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Consistent keyboard focus ring across every interactive element. :where()
+   keeps specificity at zero so components can still override. Only :focus-visible
+   so it shows for keyboard/AT users, never on mouse click. This was essentially
+   absent before — an accessibility gap as much as a polish one. */
+@layer base {
+  :where(a, button, summary, [role='button'], [tabindex]):focus-visible,
+  :where(input, textarea, select):focus-visible {
+    outline: 2px solid rgb(var(--signal-info));
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+}
+
+/* Cross-route page transition — a slide + fade via the View Transitions API
+   (wired in +layout.svelte). Chromium + Safari 18 animate; Firefox and
+   reduced-motion fall back to an instant cut (the layout guards on both). */
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root) {
+    animation: vt-out 190ms cubic-bezier(0.4, 0, 1, 1) both;
+  }
+  ::view-transition-new(root) {
+    animation: vt-in 280ms cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+@keyframes vt-out {
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@keyframes vt-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+/* Smooth in-page anchor jumps (#scoreboard, #congress). Reduced-motion keeps
+   instant jumps. Route-to-route scroll resets are forced back to instant in
+   +layout.svelte's onNavigate so only same-page anchor jumps glide. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* ── Pointer-reactive interaction ────────────────────────────────────────────
+   The connective tissue that makes content respond to the cursor. All gated on
+   (hover: hover) so touch devices — where :hover sticks after a tap — are left
+   to their :active feedback instead. */
+@media (hover: hover) {
+  /* Lift: cards rise toward the cursor with a brightened edge and soft shadow. */
+  .lift {
+    transition:
+      transform 0.18s ease,
+      border-color 0.18s ease,
+      box-shadow 0.18s ease;
+  }
+  .lift:hover {
+    transform: translateY(-3px);
+    border-color: rgb(var(--ink-500));
+    box-shadow: 0 12px 32px -14px rgb(0 0 0 / 0.55);
+  }
+
+  /* Heat-tape cells light up under the cursor with an inset ring (the strip
+     clips overflow, so brightness + ring beats a scale that would get cut).
+     Native title shows the ticker + move. */
+  .heat-cell {
+    position: relative;
+    transition:
+      filter 0.12s ease,
+      box-shadow 0.12s ease;
+  }
+  .heat-cell:hover {
+    filter: brightness(1.6) saturate(1.3);
+    box-shadow: inset 0 0 0 1.5px rgb(255 255 255 / 0.7);
+    z-index: 2;
+  }
+}
+
+/* Tilt: the action (src/lib/tilt.svelte) writes --tilt-x/--tilt-y from the
+   pointer; the element follows in real time and eases back on leave. Composes
+   with a hover lift via --tilt-lift. Touch/reduced-motion never get the action,
+   so this stays flat for them. */
+.tilt {
+  transform: perspective(800px) rotateX(var(--tilt-y, 0deg)) rotateY(var(--tilt-x, 0deg))
+    translateZ(0);
+  transition:
+    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.2s ease,
+    box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+/* While the pointer is over the card, follow it instantly (no transform lag),
+   but keep border/shadow easing smooth. */
+.tilt[data-tilting] {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.3s ease;
+}
+@media (hover: hover) {
+  .tilt:hover {
+    border-color: rgb(var(--ink-500));
+    box-shadow: 0 16px 40px -18px rgb(0 0 0 / 0.6);
+  }
+}
+
+/* Pick-card spark wakes up under the cursor: the line thickens and the area
+   fill deepens. (Presentation attributes on the SVG lose to these CSS rules.) */
+.pick-card svg polyline,
+.pick-card svg polygon {
+  transition:
+    stroke-width 0.2s ease,
+    opacity 0.2s ease;
+}
+@media (hover: hover) {
+  .pick-card:hover svg polyline {
+    stroke-width: 2.4;
+  }
+  .pick-card:hover svg polygon {
+    opacity: 0.26;
+  }
+}
+
+/* Scroll-progress: a thin top rail that fills as the page scrolls. Pure CSS
+   scroll timeline — zero JS, compositor-only. Firefox (no animation-timeline)
+   and reduced-motion simply never fill it (it sits at scaleX(0), invisible). */
+.scroll-progress {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: 2px;
+  z-index: 55;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, rgb(var(--signal-info)), rgb(var(--signal-pred)));
+  pointer-events: none;
+}
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .scroll-progress {
+      animation: scroll-progress linear both;
+      animation-timeline: scroll(root);
+    }
+  }
+}
+@keyframes scroll-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Sticky section headers: a section's label rides the top of the viewport while
+   its body scrolls under, then hands off to the next. Used on the long pages. */
+.sticky-head {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin-inline: -0.5rem;
+  padding-inline: 0.5rem;
+  background: rgb(var(--ink-950) / 0.8);
+  backdrop-filter: blur(8px);
 }
