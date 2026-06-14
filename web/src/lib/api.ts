@@ -24,7 +24,14 @@ type Fetch = typeof fetch;
 
 async function getJson<T>(fetch: Fetch, path: string): Promise<T | null> {
   try {
-    const r = await fetch(`/data/${path}`, { cache: 'no-store' });
+    // 'no-cache' (not 'no-store'): revalidate with conditional headers so an
+    // unchanged file answers 304 instead of re-downloading the whole body on
+    // every navigation — matters most for ledger.json (~210KB). This also lets
+    // the CDN Cache-Control (max-age/s-maxage in vercel.json) actually take
+    // effect, which 'no-store' silently defeated. Freshness is unaffected:
+    // startScanWatch() still invalidateAll()s when a new scan lands, and the
+    // revalidation then returns the new body. Mirrors freshness.ts's scan poll.
+    const r = await fetch(`/data/${path}`, { cache: 'no-cache' });
     if (!r.ok) return null;
     return (await r.json()) as T;
   } catch {

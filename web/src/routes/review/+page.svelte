@@ -12,12 +12,37 @@
   } from '$lib/types';
 
   let { data } = $props();
-  const weekly = $derived(data.weekly);
-  const perf = $derived(data.perf);
-  const recPerf = $derived(data.recPerf);
-  const deskPerf = $derived(data.deskPerf);
-  const predPerf = $derived(data.predPerf);
-  const ledger = $derived(data.ledger);
+
+  // data.review is a streamed promise (see +page.ts) so the page shell renders
+  // instantly. Start empty — every section below already has a graceful "no
+  // data yet" state — then fill in once the JSON lands.
+  let resolved = $state<Awaited<typeof data.review> | null>(null);
+  let loadError = $state<string | null>(null);
+  $effect(() => {
+    // Re-runs when data.review changes (e.g. invalidateAll after a new scan).
+    // The cancelled flag stops a stale promise from clobbering fresh state and
+    // turns a worst-case "promise never settles" into a visible error rather
+    // than a permanently blank page.
+    let cancelled = false;
+    loadError = null;
+    data.review
+      .then((r) => {
+        if (!cancelled) resolved = r;
+      })
+      .catch((e) => {
+        if (!cancelled) loadError = e instanceof Error ? e.message : String(e);
+      });
+    return () => {
+      cancelled = true;
+    };
+  });
+
+  const weekly = $derived(resolved?.weekly ?? null);
+  const perf = $derived(resolved?.perf ?? null);
+  const recPerf = $derived(resolved?.recPerf ?? null);
+  const deskPerf = $derived(resolved?.deskPerf ?? null);
+  const predPerf = $derived(resolved?.predPerf ?? null);
+  const ledger = $derived(resolved?.ledger ?? null);
 
   // ---------- This week ----------
 
@@ -288,6 +313,13 @@
     the call ledger underneath.
   </p>
 </header>
+
+{#if loadError}
+  <div class="card mb-6 border border-signal-down/40 p-4 text-xs text-signal-down">
+    Couldn't load the review data ({loadError}). Check your connection and refresh — the page
+    isn't broken, the data just didn't arrive.
+  </div>
+{/if}
 
 <!-- 1 · This week -->
 <section class="mb-8">
