@@ -71,14 +71,25 @@ across all three. That's the fusion at full strength.
 | Momentum data live in *every* Claude conversation                | **MCP server** (§4)      |
 | claude.ai chat to read the live site                             | **Don't** — SSO + `ssr=false` |
 
-## 4. The permanent integration: an MCP server
+## 4. The permanent integration: an MCP server — **built**
 
-If reaching for `Read data/*.json` becomes routine, wrap it once. A small MCP
-server that exposes the data as tools — `get_scan`, `get_signals_for(ticker)`,
-`query_ledger`, `serenity_for(ticker)` — lets any Claude client (Code, Desktop)
-pull live Momentum data mid-conversation with no copy-paste and no SSO problem
-(it reads the local data or an authed endpoint). That turns "Momentum brain"
-from a per-session `Read` into a permanent capability. ~100 lines to start.
+This is built: [`mcp/`](../mcp/) is a small MCP server that exposes the data as
+tools (`momentum_status`, `get_ticker`, `top_movers`, `desk_recommendations`,
+`query_ledger`, `get_serenity`, `get_predictions`, `get_briefing`,
+`signal_performance`, `get_deals`). Any Claude client (Code, Desktop) can pull
+live Momentum data mid-conversation — no copy-paste, no SSO problem (it reads
+the local git-tracked `data/`). That turns "Momentum brain" from a per-session
+`Read` into a permanent capability.
+
+Setup is in [`mcp/README.md`](../mcp/README.md). Short version:
+
+```sh
+python3 -m pip install -r mcp/requirements.txt
+claude mcp add momentum -- python3 "$(pwd)/mcp/server.py"
+```
+
+Keep the data fresh with `git pull` before a session that needs today's tape —
+every tool reports the data's `age_minutes` so the model knows.
 
 ## 5. The one rule
 
