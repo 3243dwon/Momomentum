@@ -1,62 +1,61 @@
 {
-  "generated_at": "2026-06-12T19:21:50.575606-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on intact; desk rotates to ING + TSLA longs \u2014 space sector carnage deepens (SPCE -33%, ASTS -16%)",
+  "generated_at": "2026-06-14T15:44:03.344881-04:00",
+  "window": "WEEKEND",
+  "headline": "Risk-on holds; desk adds IP (full) alongside TSLA (half) \u2014 space sector rout continues (SPCE -33%, ASTS -16%)",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.54% above 50d, QQQ +0.65%, VXX stress 0.95 \u2014 low vol backdrop, trend intact, entries remain viable."
+    "line": "SPY +0.54% above 50d, QQQ +0.65%, VXX stress ratio 0.95 \u2014 low fear, trend constructive; entries favored on pullbacks."
   },
   "actions": [
-    {
-      "ticker": "ING",
-      "direction": "long",
-      "entry": 30.21,
-      "stop": 29.75,
-      "target": 31.12,
-      "line": "Low RSI, clean trend; signal + risk constructive, research lukewarm \u2014 quarter size."
-    },
     {
       "ticker": "TSLA",
       "direction": "long",
       "entry": 406.54,
-      "stop": 393.33,
-      "target": 432.96,
-      "line": "Signal + risk supportive, no fresh catalyst flagged \u2014 split verdict, quarter size."
+      "stop": 376.53,
+      "target": 466.56,
+      "line": "Half-size long; signal neutral caps size but risk/reward clean \u2014 $30 risk, $60 reward."
+    },
+    {
+      "ticker": "IP",
+      "direction": "long",
+      "entry": 36.17,
+      "stop": 33.28,
+      "target": 41.96,
+      "line": "Full-size long; unanimous desk take \u2014 RSI 61, vol 1.89x, materials sector tailwind. $2.89 risk, $5.79 reward."
     }
   ],
   "watch": [
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "-32.8%, rel vol 2.15x, MACD bearish \u2014 sector bleed continues, no floor yet."
+      "line": "-32.8%, vol 2.15x, MACD bearish \u2014 space sector leadership collapses, watch for dead-cat vs. continuation."
     },
     {
       "ticker": "ASTS",
       "type": "mover",
-      "line": "-15.5%, rel vol 2.63x \u2014 unusual volume confirms distribution, watch for sympathy washout."
+      "line": "-15.5%, vol 2.63x \u2014 unusual volume confirms distribution; space contagion risk."
     },
     {
       "ticker": "NAVN",
       "type": "mover",
-      "line": "-12.0%, rel vol 2.31x \u2014 unusual volume, space/satellite group contagion."
+      "line": "-12.0%, vol 2.31x \u2014 unusual volume on big move; monitor for sector sympathy wash."
     },
     {
       "ticker": "FLY",
       "type": "mover",
-      "line": "-19.3%, rel vol 1.6x \u2014 large single-day drop, monitor for oversold bounce setup."
+      "line": "-19.3%, vol 1.6x \u2014 steep single-day drop, no catalyst flagged; needs news check before fade."
     },
     {
       "ticker": "POET",
       "type": "mover",
-      "line": "+11.4% lone upside mover in a sea of red \u2014 watch for follow-through catalyst."
+      "line": "+11.4% lone upside mover; low rel-vol (0.99x) so move not yet confirmed by conviction buying \u2014 watch for follow-through."
     }
   ],
   "changed": [
-    "RIVN long dropped from actions; ING long added in its place.",
-    "Space sector losses holding: SPCE -33%, ASTS -16% unchanged from prior scan."
+    "ING replaced by IP as the full-size desk take alongside TSLA"
   ],
   "caveats": [
-    "AH_POST window scan as of 2026-06-12 19:21 ET \u2014 prices stale post-close, spreads wide, overnight gaps possible before RTH entry.",
-    "No catalysts or macro events flagged this scan; TSLA and ING entries carry split/lukewarm research conviction \u2014 size accordingly."
+    "WEEKEND scan \u2014 markets closed; prices are as of last Friday's close and may gap significantly at Monday open.",
+    "Space-sector movers (SPCE, ASTS, FLY, NAVN) show no catalyst tags in this scan; move drivers are unverified \u2014 confirm news before sizing any fade."
   ]
 }
