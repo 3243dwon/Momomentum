@@ -1,63 +1,71 @@
 {
-  "generated_at": "2026-06-15T10:28:01.477447-04:00",
+  "generated_at": "2026-06-15T15:05:33.074077-04:00",
   "window": "RTH",
-  "headline": "Risk-on rips (SPY +1.6%, QQQ +2.7%); Fox's $22B Roku buy dominates tape \u2014 CTV ad-tech ripples unpriced",
+  "headline": "Risk-on holds (SPY +1.8%, QQQ +3.0%); FOXA -16% on Roku deal reverberates; FISV -11.5% on CEO exit",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.6% above 50d, QQQ +2.7%, VXX stress 0.91 \u2014 vol crushed, trend clear; momentum entries have tailwind but overbought risk on extended n"
+    "line": "SPY +1.8%, QQQ +3.0%, VXX stress 0.9 \u2014 vol suppressed, breadth green; late-session entries carry gap-up overnight risk."
   },
   "actions": [
     {
-      "ticker": "DASH",
+      "ticker": "DHT",
       "direction": "long",
-      "entry": 163.6,
-      "stop": 157.68,
-      "target": 175.44,
-      "line": "Full size. Fresh catalyst + RSI 53 + MACD cross; unanimous desk agree. R/R ~2:1."
+      "entry": 18.23,
+      "stop": 17.71,
+      "target": 19.26,
+      "line": "Half size. Signal agrees, risk clean; R/R ~2:1, no catalyst needed \u2014 momentum carry."
     },
     {
-      "ticker": "PYPL",
+      "ticker": "ESI",
       "direction": "long",
-      "entry": 42.95,
-      "stop": 42.33,
-      "target": 44.37,
-      "line": "Quarter size only. Early setup, low volume, no catalyst \u2014 signal agrees but research skeptical."
+      "entry": 45.47,
+      "stop": 44.71,
+      "target": 46.98,
+      "line": "Quarter size. Signal agrees, no veto; medium risk severity and no catalyst \u2014 tight leash."
+    },
+    {
+      "ticker": "TEL",
+      "direction": "long",
+      "entry": 217.22,
+      "stop": 214.9,
+      "target": 221.86,
+      "line": "Quarter size. Weak conviction across desk \u2014 small starter only, watch for follow-through."
     }
   ],
   "watch": [
     {
-      "ticker": "TTD",
-      "type": "ripple",
-      "line": "High-confidence bullish ripple off FOXA/Roku deal \u2014 independent DSP becomes more strategic as Fox consolidates CTV. Not yet priced."
-    },
-    {
-      "ticker": "MGNI",
-      "type": "ripple",
-      "line": "High-confidence bullish \u2014 pure-play CTV SSP re-rates on deal; Roku's SSP partner, possible next takeout target."
-    },
-    {
       "ticker": "FOXA",
-      "type": "catalyst",
-      "line": "-18.9% on $22B Roku acquisition announcement; unusual volume 3.5x, MACD bearish, oversold \u2014 watch for dead-cat or continued flush."
+      "type": "mover",
+      "line": "-16.4%, rel-vol 8.7x \u2014 Roku deal overhang; MACD bearish + oversold, watch for dead-cat vs. flush continuation."
     },
     {
-      "ticker": "DIS",
-      "type": "ripple",
-      "line": "Medium-confidence bearish \u2014 Hulu/Disney+ now distributed on rival-owned platform, weakens carriage/ad leverage."
+      "ticker": "FISV",
+      "type": "catalyst",
+      "line": "-11.5% on abrupt CEO departure \u2014 leadership vacuum trade; gap may extend on sentiment drain."
     },
     {
-      "ticker": "NTLA",
+      "ticker": "TFC",
       "type": "catalyst",
-      "line": "+11% on one-time gene-editing catalyst; watching for follow-through or fade into close."
+      "line": "-4.9% \u2014 poached FISV's departing CEO; mgmt shuffle creates near-term uncertainty overhang."
+    },
+    {
+      "ticker": "DASH",
+      "type": "mover",
+      "line": "+12.0%, MACD bullish \u2014 no desk take yet; momentum building, watch for pullback entry setup."
+    },
+    {
+      "ticker": "WDC",
+      "type": "mover",
+      "line": "+14.8%, MACD bullish but overbought \u2014 extended; wait for consolidation before chasing."
     }
   ],
   "changed": [
-    "Previous takes were TSLA, IP, WY \u2014 all replaced by DASH and PYPL this scan",
-    "FOXA -18.9% Roku deal now dominates catalyst slate; prior oil/Iran theme absent",
-    "Space sector rout no longer flagged; CTV/ad-tech ripple set is new"
+    "FOXA framing shifts from deal-catalyst ripple (CTV unpriced) to post-deal damage control (-16.4%, oversold)",
+    "FISV/TFC CEO swap emerges as new headline catalyst \u2014 not present last scan",
+    "QQQ momentum accelerated: +3.0% vs +2.7% prior"
   ],
   "caveats": [
-    "RTH scan as of 10:28 ET 2026-06-15; prices and levels are point-in-time \u2014 FOXA ripple names (TTD, MGNI, DIS) may be moving fast intraday.",
-    "SPY 200d MA status unknown \u2014 regime read relies on 50d and VXX only; treat risk_on label with slight caution until 200d confirmed."
+    "RTH scan as of 15:05 ET \u2014 prices are ~55 min stale ahead of close; desk levels may have traded through.",
+    "No ripple calls flagged this scan; FOXA/Roku overhang from prior briefing appears to be pricing in rapidly."
   ]
 }
