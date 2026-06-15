@@ -1,71 +1,63 @@
 {
-  "generated_at": "2026-06-15T15:05:33.074077-04:00",
-  "window": "RTH",
-  "headline": "Risk-on holds (SPY +1.8%, QQQ +3.0%); FOXA -16% on Roku deal reverberates; FISV -11.5% on CEO exit",
+  "generated_at": "2026-06-15T18:22:12.133002-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on intact (SPY +1.76%, QQQ +3.12%); NTLA +23% leads biotech surge; desk takes MRNA long cleanest setup",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.8%, QQQ +3.0%, VXX stress 0.9 \u2014 vol suppressed, breadth green; late-session entries carry gap-up overnight risk."
+    "line": "SPY +1.76%, QQQ +3.12%, VXX stress 0.89 \u2014 low fear, broad momentum; AH tape supports continuation; entries have tailwind."
   },
   "actions": [
     {
+      "ticker": "MRNA",
+      "direction": "long",
+      "entry": 52.13,
+      "stop": 50.69,
+      "target": 55.01,
+      "line": "RSI 59, above VWAP, solid 5d move \u2014 cleanest setup on the board. Full size."
+    },
+    {
       "ticker": "DHT",
       "direction": "long",
-      "entry": 18.23,
-      "stop": 17.71,
-      "target": 19.26,
-      "line": "Half size. Signal agrees, risk clean; R/R ~2:1, no catalyst needed \u2014 momentum carry."
-    },
-    {
-      "ticker": "ESI",
-      "direction": "long",
-      "entry": 45.47,
-      "stop": 44.71,
-      "target": 46.98,
-      "line": "Quarter size. Signal agrees, no veto; medium risk severity and no catalyst \u2014 tight leash."
-    },
-    {
-      "ticker": "TEL",
-      "direction": "long",
-      "entry": 217.22,
-      "stop": 214.9,
-      "target": 221.86,
-      "line": "Quarter size. Weak conviction across desk \u2014 small starter only, watch for follow-through."
+      "entry": 18.48,
+      "stop": 17.86,
+      "target": 19.71,
+      "line": "Strong technicals, MACD aligned; sector-rotation risk keeps desk at half size."
     }
   ],
   "watch": [
     {
+      "ticker": "NTLA",
+      "type": "mover",
+      "line": "+23.34%, rel vol 2.1x, MACD bullish \u2014 biotech catalyst watch; needs confirmation before entry."
+    },
+    {
       "ticker": "FOXA",
       "type": "mover",
-      "line": "-16.4%, rel-vol 8.7x \u2014 Roku deal overhang; MACD bearish + oversold, watch for dead-cat vs. flush continuation."
-    },
-    {
-      "ticker": "FISV",
-      "type": "catalyst",
-      "line": "-11.5% on abrupt CEO departure \u2014 leadership vacuum trade; gap may extend on sentiment drain."
-    },
-    {
-      "ticker": "TFC",
-      "type": "catalyst",
-      "line": "-4.9% \u2014 poached FISV's departing CEO; mgmt shuffle creates near-term uncertainty overhang."
-    },
-    {
-      "ticker": "DASH",
-      "type": "mover",
-      "line": "+12.0%, MACD bullish \u2014 no desk take yet; momentum building, watch for pullback entry setup."
+      "line": "-16.84% on 11.8x vol, MACD bearish, oversold \u2014 Roku deal fallout; dead-cat bounce or further flush TBD."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "+14.8%, MACD bullish but overbought \u2014 extended; wait for consolidation before chasing."
+      "line": "+16.09%, MACD bullish but overbought \u2014 semi strength; fade risk elevated at current extension."
+    },
+    {
+      "ticker": "RDDT",
+      "type": "mover",
+      "line": "+12.23%, MACD bullish \u2014 social/ad cycle momentum; watch for follow-through open."
+    },
+    {
+      "ticker": "QBTS",
+      "type": "mover",
+      "line": "+12.62% \u2014 quantum basket running with QUBT +11.93%; thematic, no desk conviction yet."
     }
   ],
   "changed": [
-    "FOXA framing shifts from deal-catalyst ripple (CTV unpriced) to post-deal damage control (-16.4%, oversold)",
-    "FISV/TFC CEO swap emerges as new headline catalyst \u2014 not present last scan",
-    "QQQ momentum accelerated: +3.0% vs +2.7% prior"
+    "FISV no longer in focus \u2014 dropped from leadership; NTLA +23% now top mover replacing it",
+    "Desk adds MRNA long (full) and DHT long (half) \u2014 no active desk takes in prior scan",
+    "FOXA -16% persists as headline drag; Roku deal impact continues"
   ],
   "caveats": [
-    "RTH scan as of 15:05 ET \u2014 prices are ~55 min stale ahead of close; desk levels may have traded through.",
-    "No ripple calls flagged this scan; FOXA/Roku overhang from prior briefing appears to be pricing in rapidly."
+    "AH_POST scan as of 18:22 ET 2026-06-15 \u2014 prices are after-hours and may gap significantly at next RTH open; liquidity is thin.",
+    "No fresh catalysts or macro events flagged this scan; mover moves lack confirmed news hooks \u2014 verify before acting."
   ]
 }
