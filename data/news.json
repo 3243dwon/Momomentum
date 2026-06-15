@@ -1,93 +1,91 @@
 {
-  "generated_at": "2026-06-14T15:44:03.344881-04:00",
-  "ticker_news": {
-    "NOK": [
-      {
-        "id": "40690b3c8c1bca2f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "NOK",
-        "scope": "ticker",
-        "title": "Benzinga's 'Stock Whisper' Index: 5 Stocks Investors Secretly Monitor But Don't Talk About Yet",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53185544/benzingas-stock-whisper-index-5-stocks-investors-secretly-monitor-but-dont-talk-about-yet-115",
-        "published_at": "2026-06-14T14:35:48+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nok_stock_whisper_index",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSLA": [
-      {
-        "id": "7f678c90e5824de3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "GM Outlines Energy Storage Push With New Battery Chemistry, Data Center Applications And Vehicle-To-Grid Tech",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53185601/gm-outlines-energy-storage-push-with-new-battery-chemistry-data-center-applications-and-vehicle-to-grid-tech",
-        "published_at": "2026-06-14T15:31:17+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "gm_energy_storage_battery_chemistry",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "001f639ceb54cc2a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "This Week In Tesla: US EV Sales Hit Record, Top Analyst Predicts TSLA Sell-Off And More",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53185492/this-week-in-tesla-us-ev-sales-hit-record-top-analyst-predicts-tsla-sell-off-and-more",
-        "published_at": "2026-06-14T13:50:59+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "tsla_analyst_selloff_prediction",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "b203665843b0669e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "Sandisk Stock Leading Nasdaq 100 and S&P 500 Gains This Year: More Upside?",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53185823/sandisk-stock-leading-nasdaq-100-and-sp-500-gains-this-year-more-upside",
-        "published_at": "2026-06-14T18:40:43+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "sandisk_performance_leadership",
-        "tickers_mentioned": [
-          "WDC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WDC": [
-      {
-        "id": "b203665843b0669e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDC",
-        "scope": "ticker",
-        "title": "Sandisk Stock Leading Nasdaq 100 and S&P 500 Gains This Year: More Upside?",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53185823/sandisk-stock-leading-nasdaq-100-and-sp-500-gains-this-year-more-upside",
-        "published_at": "2026-06-14T18:40:43+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "sandisk_performance_leadership",
-        "tickers_mentioned": [
-          "WDC"
-        ],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-06-14T22:41:41.666956-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "Markets are rallying on news of a tentative U.S.-Iran agreement (likely involving sanctions relief / nuclear de-escalation), though the deal has not yet been signed.",
+      "primary_drivers": [
+        "Removal of Middle East geopolitical risk premium in oil",
+        "Potential return of Iranian crude (~1-1.5 mbpd) to global supply, pressuring prices lower",
+        "Lower energy costs flowing through to consumer/industrial margins and easing inflation expectations"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LUV",
+          "rationale": "Jet fuel is ~25-30% of operating costs at Southwest; a sustained drop in crude from Iranian supply return directly expands airline margins. LUV is the most fuel-cost-sensitive major US carrier given unhedged exposure in recent years.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Same jet fuel margin tailwind as LUV; Delta has large international route exposure where lower fuel + reduced Middle East airspace risk premium compounds the benefit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Bunker fuel is the single largest variable cost for cruise lines; lower crude directly drops to EBITDA. Cruise stocks also rally on de-escalation as it removes a tail risk to discretionary travel demand.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha feedstock costs track crude; lower oil compresses input costs for commodity chemicals producers. Dow is a high-beta play on this spread.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Lower diesel/gasoline prices reduce trucking and last-mile distribution costs across Walmart's domestic supply chain, and lower pump prices free up low-income consumer wallet share \u2014 Walmart's core demographic.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with high leverage to Brent crude; return of ~1+ mbpd Iranian barrels would pressure global oil prices and 2026 upstream earnings. Refining margins partially offset but net negative.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale producer with no integrated downstream hedge; among the most oil-price-sensitive large caps. Every $5 drop in WTI materially hits FCF and debt paydown pace.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with high oil cut and breakevens that get squeezed as crude falls; dividend variable component shrinks with lower realizations.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Middle East de-escalation reduces near-term urgency for missile defense (THAAD, PAC-3) restocking and foreign military sales to Gulf states \u2014 Lockheed is the most exposed prime to this thesis.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon missiles & defense segment benefits from Middle East tension (Patriot, SM-series, Tomahawk reorders); peace deal moderates the FMS pipeline narrative.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services revenue is a derivative of E&P capex, which falls with lower oil prices; Halliburton is North America levered where shale cuts hit fastest.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "us_iran_peace_deal_mideast_war",
+      "source_news_ids": [
+        "1d39b4adc6ad04b5"
+      ],
+      "headlines": [
+        "Markets cheer U.S.-Iran agreement, but some investors caution deal is yet to be signed"
+      ]
+    }
+  ]
 }
