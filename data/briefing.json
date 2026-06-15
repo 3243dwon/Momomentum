@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T00:56:37.725588-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on holds; TSLA joins IP + WY as takes \u2014 space sector bloodbath continues overnight",
+  "generated_at": "2026-06-15T08:26:29.083067-04:00",
+  "window": "AH_PRE",
+  "headline": "US-Iran deal crushes oil risk premium, fuels risk-on rally; space sector rout deepens \u2014 TSLA, IP, WY all takes",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.54%, QQQ +0.65%, both above 50d. VXX stress 0.95 \u2014 vol suppressed. Iran-U.S. deal bid extends into overnight."
+    "line": "SPY +0.54% / QQQ +0.65%, both above 50d; VXX stress 0.95 \u2014 low fear. Iran deal-driven crude drop supports dip entries but watch oil vol."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 406.54,
       "stop": 376.53,
       "target": 466.56,
-      "line": "Half size; score 6, no watchlist \u2014 signal/research aligned, clean risk. Half size offsets low conviction."
+      "line": "Half size long \u2014 signal + research agree, clean risk; score 6, no watchlist keeps conviction low."
     },
     {
       "ticker": "IP",
@@ -21,7 +21,7 @@
       "entry": 36.17,
       "stop": 33.28,
       "target": 41.96,
-      "line": "Half size; materials momentum intact, mid-range RSI, research and risk both aligned."
+      "line": "Half size long \u2014 materials momentum intact, mid-range RSI; research + risk aligned, signal neutral."
     },
     {
       "ticker": "WY",
@@ -29,43 +29,42 @@
       "entry": 24.85,
       "stop": 23.89,
       "target": 26.76,
-      "line": "Quarter size; split verdict \u2014 signal agrees, research against. Weak 5d momentum (+1.47%) caps size."
+      "line": "Quarter size long \u2014 signal agrees, research against; +1.47% 5d limits conviction, tight leash."
     }
   ],
   "watch": [
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "-32.8%, 2.15x vol, MACD bearish \u2014 space sector collapse accelerating overnight; no support visible."
+      "line": "-32.8% on 2.15x vol, MACD bearish \u2014 space sector lead to downside; no bounce setup yet."
     },
     {
       "ticker": "ASTS",
       "type": "mover",
-      "line": "-15.5%, 2.63x vol \u2014 highest relative volume in the losers; watch for capitulation or dead-cat."
+      "line": "-15.5% on 2.63x vol \u2014 heaviest relative volume in the space rout; watch for capitulation/flush."
     },
     {
       "ticker": "NAVN",
       "type": "mover",
-      "line": "-12.0%, 2.31x vol \u2014 unusual volume confirms distribution, not just thin overnight drift."
+      "line": "-12.0% on 2.31x vol \u2014 unusual volume confirms distribution, not just sympathy sell."
     },
     {
       "ticker": "POET",
       "type": "mover",
-      "line": "+11.4% only green big-mover in the scan; low rel-vol (0.99) \u2014 confirm volume before chasing."
+      "line": "+11.4% lone green outlier in a sea of red \u2014 no catalyst flagged, monitor for follow-through or fade."
     },
     {
       "ticker": "FLY",
-      "type": "mover",
-      "line": "-19.3%, no unusual vol flag \u2014 idiosyncratic move; check catalyst before fading or following."
+      "type": "macro",
+      "line": "-19.3% \u2014 airline/leasing names exposed to oil vol; Iran deal crude drop a double-edged read here."
     }
   ],
   "changed": [
-    "TSLA added as a new long take (was absent last briefing)",
-    "ASB dropped from actions \u2014 WY replaces as third take",
-    "Space sector losses deepened further overnight across SPCE, ASTS, NAVN, RDW, SATL"
+    "US-Iran diplomatic deal now dominant macro driver \u2014 crude risk premium unwinding, broad equity tailwind added since last briefing",
+    "Space sector rout intensifying: SPCE -32.8%, ASTS -15.5%, NAVN -12% all printing unusual volume overnight"
   ],
   "caveats": [
-    "OVERNIGHT window scan as of 2026-06-15 ~00:56 ET \u2014 prices are pre-RTH and may gap significantly at 9:30 open; entries/stops reflect last trade, not opening price.",
-    "All three takes are half/quarter size per desk \u2014 thin overnight liquidity means slippage risk is elevated; confirm fills at RTH open before sizing up."
+    "AH/Pre-market scan as of 08:26 ET Jun 15 2026 \u2014 prices stale vs RTH open; gap risk elevated given Iran deal headline still developing.",
+    "Crude oil narrative is contradictory: one analyst camp calls risk premium over, another says shock 'far from over' \u2014 oil-linked entries face binary headline risk at open."
   ]
 }
