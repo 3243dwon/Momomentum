@@ -1,63 +1,55 @@
 {
-  "generated_at": "2026-06-16T07:20:51.388599-04:00",
+  "generated_at": "2026-06-16T08:57:47.267831-04:00",
   "window": "AH_PRE",
-  "headline": "Risk-on extends; NTLA +23% leads biotech surge, FOXA -17% on volume \u2014 DELL AI ripple unpriced in SMCI/ANET",
+  "headline": "Risk-on holds; UBER long actionable \u2014 quantum/AI names extend, FOXA -17% still bleeding on 11.8x volume",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.76%, QQQ +3.12%, VXX stress 0.89 \u2014 tape firmly bid, low vol, green light for momentum longs but overbought names need clean entries."
+    "line": "SPY +1.76%, QQQ +3.12%, SPY above 50d, VXX stress 0.89 \u2014 tape firm, vol suppressed; entries favored on pullbacks."
   },
   "actions": [
     {
-      "ticker": "AAL",
+      "ticker": "UBER",
       "direction": "long",
-      "entry": 15.46,
-      "stop": 14.22,
-      "target": 17.93,
-      "line": "Quarter size only \u2014 fresh catalyst, but signal flags late chase; crude oil 3-month low cuts jet fuel costs, adds macro tailwind."
-    },
-    {
-      "ticker": "DHT",
-      "direction": "long",
-      "entry": 18.48,
-      "stop": 17.86,
-      "target": 19.71,
-      "line": "Half size \u2014 cleanest technical setup in the book; signal + low risk severity; no news but tape is supportive."
+      "entry": 72.86,
+      "stop": 71.91,
+      "target": 74.77,
+      "line": "Fresh catalyst + MACD cross; RSI 51.9 healthy, R/R ~2:1, full size \u2014 unanimous desk take."
     }
   ],
   "watch": [
     {
-      "ticker": "SMCI",
-      "type": "ripple",
-      "line": "High-confidence DELL AI server blowout ripple \u2014 share-loss fears easing; most direct pure-play beneficiary not yet priced."
-    },
-    {
       "ticker": "FOXA",
       "type": "mover",
-      "line": "-16.84% on 11.85x relative volume, oversold + MACD bearish \u2014 watch for either dead-cat bounce or continuation flush."
+      "line": "-16.84% on 11.85x rel vol, MACD bearish, oversold \u2014 watching for dead-cat or continued flush."
     },
     {
       "ticker": "NTLA",
       "type": "mover",
-      "line": "+23.34% on 2x volume, MACD bullish \u2014 biotech momentum leader; needs a base before entry."
+      "line": "+23.34% on unusual vol, MACD bullish \u2014 biotech momentum holding from prior session."
     },
     {
-      "ticker": "ANET",
-      "type": "ripple",
-      "line": "Medium-confidence DELL ripple \u2014 AI cluster buildouts drive Ethernet switching demand; Arista winning vs InfiniBand."
+      "ticker": "WDC",
+      "type": "mover",
+      "line": "+16.09%, MACD bullish but overbought \u2014 extension risk; wait for base."
     },
     {
-      "ticker": "HPE",
-      "type": "ripple",
-      "line": "Medium-confidence bearish DELL ripple \u2014 AI server share loss implied by Dell's 750% AI server growth + Juniper distraction."
+      "ticker": "RDDT",
+      "type": "mover",
+      "line": "+12.23%, MACD bullish \u2014 clean trend, below vol threshold; needs confirmation."
+    },
+    {
+      "ticker": "QBTS",
+      "type": "mover",
+      "line": "+12.62% in quantum cluster alongside QUBT \u2014 sector momentum, no catalyst confirmed."
     }
   ],
   "changed": [
-    "BoJ hike macro wildcard removed \u2014 crude oil/Iran deal is new macro theme",
-    "SBET no longer referenced; AAL added as new take",
-    "DELL AI server ripple cluster (SMCI, ANET, HPE) is new unpriced catalyst this scan"
+    "DELL AI ripple (SMCI/ANET) no longer flagged \u2014 priced in or dropped from scan.",
+    "UBER long added as new actionable desk take.",
+    "No new catalysts or macro events this scan."
   ],
   "caveats": [
-    "AH/Pre-market scan (2026-06-16 ~07:20 ET) \u2014 prices as of scan time, RTH opens may gap significantly from these levels.",
-    "FOXA -17% extreme move warrants confirmation of catalyst before sizing \u2014 high vol oversold names can flush further at open."
+    "AH/Pre-market scan as of 08:57 ET 2026-06-16 \u2014 prices may be stale vs. RTH open; levels shift fast at the bell.",
+    "SPY 200d status unknown this scan \u2014 full trend confirmation incomplete."
   ]
 }
