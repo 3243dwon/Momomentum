@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-16T14:07:53.305263-04:00",
-  "window": "RTH",
-  "headline": "Risk-on label intact but QQQ -1.3% drags; VST full-size long leads three desk takes today",
+  "generated_at": "2026-06-16T17:43:05.541694-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on label holds but QQQ -1.87% bites; DLR leads three desk longs, no catalysts in queue",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.37% above 50d, QQQ -1.3% \u2014 tech selling into regime; VXX stress ratio 0.9 benign. Pullback, not reversal."
+    "line": "SPY -0.55% above 50d, QQQ -1.87% \u2014 tech pressure persisting; VXX stress ratio 0.9 keeps regime risk-on but breadth thin."
   },
   "actions": [
     {
-      "ticker": "VST",
+      "ticker": "DLR",
       "direction": "long",
-      "entry": 160.51,
-      "stop": 156.43,
-      "target": 168.68,
-      "line": "Full size \u2014 high-conviction signal, low-severity risk, no research red flags. R/R ~2:1."
+      "entry": 190.43,
+      "stop": 188.07,
+      "target": 195.15,
+      "line": "Full size. Clean risk-on setup, neutral RSI + bullish momentum, unanimous desk \u2014 2.36 risk / 4.72 reward."
     },
     {
-      "ticker": "NAT",
+      "ticker": "V",
       "direction": "long",
-      "entry": 5.62,
-      "stop": 5.45,
-      "target": 5.95,
-      "line": "Half size \u2014 signal + risk aligned but no catalyst; keeps exposure lean."
+      "entry": 333.21,
+      "stop": 328.47,
+      "target": 342.69,
+      "line": "Half size. Signal agrees, risk clean, but no catalyst \u2014 low conviction; 4.74 risk / 9.48 reward."
     },
     {
-      "ticker": "HWM",
+      "ticker": "SOFI",
       "direction": "long",
-      "entry": 279.85,
-      "stop": 275.63,
-      "target": 288.29,
-      "line": "Quarter size only \u2014 research agrees but signal flags late entry; medium risk severity."
+      "entry": 17.71,
+      "stop": 16.29,
+      "target": 20.54,
+      "line": "Quarter size only. Early setup, research neutral, medium risk severity \u2014 1.42 risk / 2.83 reward."
     }
   ],
   "watch": [
     {
+      "ticker": "SNAP",
+      "type": "mover",
+      "line": "SNAP -9.88%, rel vol 3.03x \u2014 highest volume on the losers board, watch for AH continuation or bounce setup."
+    },
+    {
       "ticker": "CERT",
       "type": "mover",
-      "line": "+17.6% on 1.71x volume, MACD bullish \u2014 strongest mover on confirmed volume."
-    },
-    {
-      "ticker": "RXT",
-      "type": "mover",
-      "line": "+15.5% on 1.22x volume, MACD bullish \u2014 second-best confirmed move today."
-    },
-    {
-      "ticker": "MRNA",
-      "type": "mover",
-      "line": "+10.5% on 1.6x volume \u2014 biotech surge worth monitoring for follow-through."
+      "line": "CERT +16.35%, rel vol 2.32x, MACD bullish \u2014 no catalyst tagged, but unusual volume demands monitoring."
     },
     {
       "ticker": "SSRM",
       "type": "mover",
-      "line": "+10.4% on 1.36x volume, MACD bullish \u2014 gold miner momentum in risk-on tape."
+      "line": "SSRM +9.97%, rel vol 2.0x, MACD bullish \u2014 gold/silver miner catching a bid, watch for trend follow-through."
     },
     {
-      "ticker": "MRLN",
+      "ticker": "MRVL",
       "type": "mover",
-      "line": "-9.0% on 1.02x volume, MACD bearish \u2014 downside momentum; watch for short setup."
+      "line": "MRVL -9.83% on tech selloff \u2014 AI chip name; watch for oversold bounce if QQQ stabilizes."
+    },
+    {
+      "ticker": "AXTI",
+      "type": "mover",
+      "line": "AXTI -15.99%, rel vol 1.82x \u2014 biggest % loser, no catalyst flagged; watch for dead-cat or further breakdown."
     }
   ],
   "changed": [
-    "UBER long gone; replaced by VST (full), NAT (half), HWM (quarter)",
-    "No quantum/AI or FOXA mentions \u2014 leadership rotation",
-    "QQQ -1.3% intraday pressure new vs prior scan"
+    "VST full-size long from previous scan is gone; DLR now leads as top take",
+    "QQQ weakness deepened: -1.87% vs -1.3% prior scan",
+    "No catalysts or macro events in queue this scan vs prior"
   ],
   "caveats": [
-    "RTH scan as of 14:07 ET 2026-06-16 \u2014 prices may be stale by minutes; verify levels before entry.",
-    "Three longs in a QQQ -1.3% tape raises correlated drawdown risk if selling accelerates into close."
+    "AH_POST window scan as of 17:43 ET Jun 16 \u2014 prices are post-close and may gap significantly at next open; levels are stale by morning.",
+    "Risk-on regime label conflicts with QQQ -1.87% and broad tech selling (MRVL, AAOI, SNAP) \u2014 sector divergence may undercut long setups if tech leads overnight."
   ]
 }
