@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-15T18:25:08.686324-04:00",
+  "generated_at": "2026-06-15T21:46:29.703903-04:00",
   "window_days": 30,
-  "total_with_desk": 361,
+  "total_with_desk": 363,
   "by_decision": {
     "take": {
-      "count": 157,
+      "count": 158,
       "horizons": {
         "1d": {
           "evaluated": 150,
@@ -12,9 +12,9 @@
           "avg_return_pct": -1.16
         },
         "3d": {
-          "evaluated": 147,
-          "hit_rate": 0.442,
-          "avg_return_pct": -1.78
+          "evaluated": 148,
+          "hit_rate": 0.446,
+          "avg_return_pct": -1.76
         },
         "5d": {
           "evaluated": 132,
@@ -24,7 +24,7 @@
       }
     },
     "pass": {
-      "count": 201,
+      "count": 202,
       "horizons": {
         "1d": {
           "evaluated": 190,
@@ -86,7 +86,7 @@
   },
   "by_agreement": {
     "majority": {
-      "count": 200,
+      "count": 202,
       "horizons": {
         "1d": {
           "evaluated": 192,
@@ -94,9 +94,9 @@
           "avg_return_pct": -1.05
         },
         "3d": {
-          "evaluated": 189,
-          "hit_rate": 0.476,
-          "avg_return_pct": -1.4
+          "evaluated": 190,
+          "hit_rate": 0.479,
+          "avg_return_pct": -1.39
         },
         "5d": {
           "evaluated": 171,
@@ -168,7 +168,7 @@
   },
   "by_veto": {
     "no_veto": {
-      "count": 271,
+      "count": 272,
       "horizons": {
         "1d": {
           "evaluated": 258,
@@ -176,9 +176,9 @@
           "avg_return_pct": -1.24
         },
         "3d": {
-          "evaluated": 254,
-          "hit_rate": 0.504,
-          "avg_return_pct": -1.63
+          "evaluated": 255,
+          "hit_rate": 0.506,
+          "avg_return_pct": -1.62
         },
         "5d": {
           "evaluated": 229,
@@ -188,7 +188,7 @@
       }
     },
     "veto": {
-      "count": 90,
+      "count": 91,
       "horizons": {
         "1d": {
           "evaluated": 85,
@@ -210,7 +210,7 @@
   },
   "take_minus_pass_edge": {
     "1d": -0.17,
-    "3d": 0.34,
+    "3d": 0.36,
     "5d": 0.74
   }
 }
