@@ -1,62 +1,63 @@
 {
-  "generated_at": "2026-06-16T00:54:59.270305-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on intact overnight; BoJ hike to 1% is the macro wildcard \u2014 DHT added, SBET holds",
+  "generated_at": "2026-06-16T07:20:51.388599-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on extends; NTLA +23% leads biotech surge, FOXA -17% on volume \u2014 DELL AI ripple unpriced in SMCI/ANET",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.76% QQQ +3.12% both above 50d; VXX stress 0.89 \u2014 tape is clean but BoJ carry-trade unwind risk lurks at the open."
+    "line": "SPY +1.76%, QQQ +3.12%, VXX stress 0.89 \u2014 tape firmly bid, low vol, green light for momentum longs but overbought names need clean entries."
   },
   "actions": [
+    {
+      "ticker": "AAL",
+      "direction": "long",
+      "entry": 15.46,
+      "stop": 14.22,
+      "target": 17.93,
+      "line": "Quarter size only \u2014 fresh catalyst, but signal flags late chase; crude oil 3-month low cuts jet fuel costs, adds macro tailwind."
+    },
     {
       "ticker": "DHT",
       "direction": "long",
       "entry": 18.48,
-      "stop": 17.0,
-      "target": 21.44,
-      "line": "Half size \u2014 signal/risk agree, no catalyst; defined risk with 8% stop, 16% target."
-    },
-    {
-      "ticker": "SBET",
-      "direction": "long",
-      "entry": 5.81,
-      "stop": 5.35,
-      "target": 6.74,
-      "line": "Quarter size \u2014 bull signal & risk aligned, research dissents on no catalyst; tight 8\u00a2 stop buffer."
+      "stop": 17.86,
+      "target": 19.71,
+      "line": "Half size \u2014 cleanest technical setup in the book; signal + low risk severity; no news but tape is supportive."
     }
   ],
   "watch": [
     {
-      "ticker": "NTLA",
-      "type": "mover",
-      "line": "+23% with 2.1x rel vol & MACD bullish \u2014 watch for continuation or fade at open."
+      "ticker": "SMCI",
+      "type": "ripple",
+      "line": "High-confidence DELL AI server blowout ripple \u2014 share-loss fears easing; most direct pure-play beneficiary not yet priced."
     },
     {
       "ticker": "FOXA",
       "type": "mover",
-      "line": "-16.8% on 11.85x rel vol, oversold & MACD bearish \u2014 high-volume breakdown, watch for dead-cat or follow-through."
+      "line": "-16.84% on 11.85x relative volume, oversold + MACD bearish \u2014 watch for either dead-cat bounce or continuation flush."
     },
     {
-      "ticker": "WDC",
+      "ticker": "NTLA",
       "type": "mover",
-      "line": "+16% MACD bullish but already overbought \u2014 extended; wait for a pullback setup."
+      "line": "+23.34% on 2x volume, MACD bullish \u2014 biotech momentum leader; needs a base before entry."
     },
     {
-      "ticker": "RDDT",
-      "type": "mover",
-      "line": "+12.2% with MACD bullish; below-avg vol so move may lack conviction \u2014 watch for volume confirmation."
+      "ticker": "ANET",
+      "type": "ripple",
+      "line": "Medium-confidence DELL ripple \u2014 AI cluster buildouts drive Ethernet switching demand; Arista winning vs InfiniBand."
     },
     {
-      "ticker": "QBTS",
-      "type": "macro",
-      "line": "Quantum basket (QBTS +12.6%, QUBT +11.9%) ripping \u2014 BoJ yen move could hit risk/spec names hard at open."
+      "ticker": "HPE",
+      "type": "ripple",
+      "line": "Medium-confidence bearish DELL ripple \u2014 AI server share loss implied by Dell's 750% AI server growth + Juniper distraction."
     }
   ],
   "changed": [
-    "DHT long added to desk takes \u2014 new position this scan.",
-    "Previous NTLA/WDC leadership unchanged; FOXA -16.8% new breakdown entrant overnight."
+    "BoJ hike macro wildcard removed \u2014 crude oil/Iran deal is new macro theme",
+    "SBET no longer referenced; AAL added as new take",
+    "DELL AI server ripple cluster (SMCI, ANET, HPE) is new unpriced catalyst this scan"
   ],
   "caveats": [
-    "OVERNIGHT scan: prices as of 2026-06-16 ~00:54 ET \u2014 pre-market open; levels may gap significantly by RTH open, especially given BoJ news.",
-    "BoJ 1% hike introduces carry-trade unwind risk: yen strength could pressure risk assets and US Treasuries at the open \u2014 all long entries should be re-evaluated after first 15 min of RTH."
+    "AH/Pre-market scan (2026-06-16 ~07:20 ET) \u2014 prices as of scan time, RTH opens may gap significantly from these levels.",
+    "FOXA -17% extreme move warrants confirmation of catalyst before sizing \u2014 high vol oversold names can flush further at open."
   ]
 }
