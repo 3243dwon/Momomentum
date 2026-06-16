@@ -1,55 +1,71 @@
 {
-  "generated_at": "2026-06-16T08:57:47.267831-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on holds; UBER long actionable \u2014 quantum/AI names extend, FOXA -17% still bleeding on 11.8x volume",
+  "generated_at": "2026-06-16T14:07:53.305263-04:00",
+  "window": "RTH",
+  "headline": "Risk-on label intact but QQQ -1.3% drags; VST full-size long leads three desk takes today",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.76%, QQQ +3.12%, SPY above 50d, VXX stress 0.89 \u2014 tape firm, vol suppressed; entries favored on pullbacks."
+    "line": "SPY -0.37% above 50d, QQQ -1.3% \u2014 tech selling into regime; VXX stress ratio 0.9 benign. Pullback, not reversal."
   },
   "actions": [
     {
-      "ticker": "UBER",
+      "ticker": "VST",
       "direction": "long",
-      "entry": 72.86,
-      "stop": 71.91,
-      "target": 74.77,
-      "line": "Fresh catalyst + MACD cross; RSI 51.9 healthy, R/R ~2:1, full size \u2014 unanimous desk take."
+      "entry": 160.51,
+      "stop": 156.43,
+      "target": 168.68,
+      "line": "Full size \u2014 high-conviction signal, low-severity risk, no research red flags. R/R ~2:1."
+    },
+    {
+      "ticker": "NAT",
+      "direction": "long",
+      "entry": 5.62,
+      "stop": 5.45,
+      "target": 5.95,
+      "line": "Half size \u2014 signal + risk aligned but no catalyst; keeps exposure lean."
+    },
+    {
+      "ticker": "HWM",
+      "direction": "long",
+      "entry": 279.85,
+      "stop": 275.63,
+      "target": 288.29,
+      "line": "Quarter size only \u2014 research agrees but signal flags late entry; medium risk severity."
     }
   ],
   "watch": [
     {
-      "ticker": "FOXA",
+      "ticker": "CERT",
       "type": "mover",
-      "line": "-16.84% on 11.85x rel vol, MACD bearish, oversold \u2014 watching for dead-cat or continued flush."
+      "line": "+17.6% on 1.71x volume, MACD bullish \u2014 strongest mover on confirmed volume."
     },
     {
-      "ticker": "NTLA",
+      "ticker": "RXT",
       "type": "mover",
-      "line": "+23.34% on unusual vol, MACD bullish \u2014 biotech momentum holding from prior session."
+      "line": "+15.5% on 1.22x volume, MACD bullish \u2014 second-best confirmed move today."
     },
     {
-      "ticker": "WDC",
+      "ticker": "MRNA",
       "type": "mover",
-      "line": "+16.09%, MACD bullish but overbought \u2014 extension risk; wait for base."
+      "line": "+10.5% on 1.6x volume \u2014 biotech surge worth monitoring for follow-through."
     },
     {
-      "ticker": "RDDT",
+      "ticker": "SSRM",
       "type": "mover",
-      "line": "+12.23%, MACD bullish \u2014 clean trend, below vol threshold; needs confirmation."
+      "line": "+10.4% on 1.36x volume, MACD bullish \u2014 gold miner momentum in risk-on tape."
     },
     {
-      "ticker": "QBTS",
+      "ticker": "MRLN",
       "type": "mover",
-      "line": "+12.62% in quantum cluster alongside QUBT \u2014 sector momentum, no catalyst confirmed."
+      "line": "-9.0% on 1.02x volume, MACD bearish \u2014 downside momentum; watch for short setup."
     }
   ],
   "changed": [
-    "DELL AI ripple (SMCI/ANET) no longer flagged \u2014 priced in or dropped from scan.",
-    "UBER long added as new actionable desk take.",
-    "No new catalysts or macro events this scan."
+    "UBER long gone; replaced by VST (full), NAT (half), HWM (quarter)",
+    "No quantum/AI or FOXA mentions \u2014 leadership rotation",
+    "QQQ -1.3% intraday pressure new vs prior scan"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 08:57 ET 2026-06-16 \u2014 prices may be stale vs. RTH open; levels shift fast at the bell.",
-    "SPY 200d status unknown this scan \u2014 full trend confirmation incomplete."
+    "RTH scan as of 14:07 ET 2026-06-16 \u2014 prices may be stale by minutes; verify levels before entry.",
+    "Three longs in a QQQ -1.3% tape raises correlated drawdown risk if selling accelerates into close."
   ]
 }
