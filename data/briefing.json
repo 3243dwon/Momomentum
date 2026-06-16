@@ -1,54 +1,62 @@
 {
-  "generated_at": "2026-06-15T21:42:53.370511-04:00",
+  "generated_at": "2026-06-16T00:54:59.270305-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on holds overnight; NTLA +23% & WDC +16% lead; desk rotates to SBET long \u2014 MRNA take gone",
+  "headline": "Risk-on intact overnight; BoJ hike to 1% is the macro wildcard \u2014 DHT added, SBET holds",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.76%, QQQ +3.12%, VXX stress ratio 0.89 \u2014 broad strength, low vol pressure; overnight tape supportive for momentum entries."
+    "line": "SPY +1.76% QQQ +3.12% both above 50d; VXX stress 0.89 \u2014 tape is clean but BoJ carry-trade unwind risk lurks at the open."
   },
   "actions": [
+    {
+      "ticker": "DHT",
+      "direction": "long",
+      "entry": 18.48,
+      "stop": 17.0,
+      "target": 21.44,
+      "line": "Half size \u2014 signal/risk agree, no catalyst; defined risk with 8% stop, 16% target."
+    },
     {
       "ticker": "SBET",
       "direction": "long",
       "entry": 5.81,
       "stop": 5.35,
       "target": 6.74,
-      "line": "Quarter size only \u2014 thin name, signal agrees; R/R ~2:1; research neutral caps exposure."
+      "line": "Quarter size \u2014 bull signal & risk aligned, research dissents on no catalyst; tight 8\u00a2 stop buffer."
     }
   ],
   "watch": [
     {
       "ticker": "NTLA",
       "type": "mover",
-      "line": "+23.3%, rel vol 2.1x, MACD bullish \u2014 biotech leadership; watch for continuation or fade at open."
+      "line": "+23% with 2.1x rel vol & MACD bullish \u2014 watch for continuation or fade at open."
     },
     {
       "ticker": "FOXA",
       "type": "mover",
-      "line": "-16.8%, rel vol 11.9x, MACD bearish, oversold \u2014 massive volume dislocation; possible dead-cat setup or continued flush."
+      "line": "-16.8% on 11.85x rel vol, oversold & MACD bearish \u2014 high-volume breakdown, watch for dead-cat or follow-through."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "+16.1%, MACD bullish but overbought \u2014 storage move extended; wait for pullback before entry."
+      "line": "+16% MACD bullish but already overbought \u2014 extended; wait for a pullback setup."
     },
     {
       "ticker": "RDDT",
       "type": "mover",
-      "line": "+12.2%, MACD bullish \u2014 clean trend, below-avg volume so move not exhausted; watch for volume confirmation."
+      "line": "+12.2% with MACD bullish; below-avg vol so move may lack conviction \u2014 watch for volume confirmation."
     },
     {
       "ticker": "QBTS",
-      "type": "mover",
-      "line": "+12.6% in quantum cluster (QUBT +11.9%) \u2014 sector rotation into quantum names; no catalyst confirmed yet."
+      "type": "macro",
+      "line": "Quantum basket (QBTS +12.6%, QUBT +11.9%) ripping \u2014 BoJ yen move could hit risk/spec names hard at open."
     }
   ],
   "changed": [
-    "MRNA long take dropped \u2014 desk now takes SBET long instead",
-    "FOXA -16.8% on extreme volume (11.9x) is new notable downside mover not in prior scan"
+    "DHT long added to desk takes \u2014 new position this scan.",
+    "Previous NTLA/WDC leadership unchanged; FOXA -16.8% new breakdown entrant overnight."
   ],
   "caveats": [
-    "OVERNIGHT scan (2026-06-15 21:42 ET) \u2014 prices as of scan time, pre-RTH gaps possible at open.",
-    "SBET is a thin, low-float name; quarter-size reflects liquidity risk \u2014 slippage on stop could be material."
+    "OVERNIGHT scan: prices as of 2026-06-16 ~00:54 ET \u2014 pre-market open; levels may gap significantly by RTH open, especially given BoJ news.",
+    "BoJ 1% hike introduces carry-trade unwind risk: yen strength could pressure risk assets and US Treasuries at the open \u2014 all long entries should be re-evaluated after first 15 min of RTH."
   ]
 }

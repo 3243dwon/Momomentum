@@ -1,57 +1,278 @@
 {
-  "generated_at": "2026-06-15T21:42:53.370511-04:00",
+  "generated_at": "2026-06-16T00:54:59.270305-04:00",
   "ticker_news": {
-    "AXTI": [
+    "DELL": [
       {
-        "id": "3933e13dd7727b8a",
+        "id": "fd043e0f8e2ecbc7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "AXTI",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "Here's How Much $100 Invested In AXT 15 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53213823/heres-how-much-100-invested-in-axt-15-years-ago-would-be-worth-today",
-        "published_at": "2026-06-15T23:30:49+00:00",
+        "title": "Elizabeth Warren Says Your Wages Are Stalled, But Trump's Net Worth Is Up $1.4 Billion: President 'Doesn't Care' About Your Financial Situation",
+        "url": "https://www.benzinga.com/news/politics/26/06/53214685/elizabeth-warren-says-trumps-net-worth-is-up-1-4-billion-while-workers-wages-remain-stalled",
+        "published_at": "2026-06-16T03:50:04+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "axt_historical_return_retrospective",
-        "tickers_mentioned": [],
+        "dedup_group": "warren_trump_wealth_commentary",
+        "tickers_mentioned": [
+          "DELL"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "PYPL": [
+    "MU": [
       {
-        "id": "0f5149ffe1cc239e",
+        "id": "fd043e0f8e2ecbc7",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PYPL",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "Travala Wants To Be The Travel Infrastructure Layer For AI Agents",
-        "url": "https://www.benzinga.com/Opinion/26/06/53213905/travala-wants-to-be-the-travel-infrastructure-layer-for-ai-agents",
-        "published_at": "2026-06-15T23:49:51+00:00",
-        "type": "product",
+        "title": "Elizabeth Warren Says Your Wages Are Stalled, But Trump's Net Worth Is Up $1.4 Billion: President 'Doesn't Care' About Your Financial Situation",
+        "url": "https://www.benzinga.com/news/politics/26/06/53214685/elizabeth-warren-says-trumps-net-worth-is-up-1-4-billion-while-workers-wages-remain-stalled",
+        "published_at": "2026-06-16T03:50:04+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "travala_ai_agents_travel_infrastructure",
-        "tickers_mentioned": [],
+        "dedup_group": "warren_trump_wealth_commentary",
+        "tickers_mentioned": [
+          "DELL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "560842d4064e511f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron, Marvell, Fox, Fiserv And Western Digital: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53214373/micron-marvell-fox-fiserv-and-western-digital-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-16T01:48:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_5_stocks_radar",
+        "tickers_mentioned": [
+          "MU",
+          "FOXA",
+          "FISV",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FISV": [
+      {
+        "id": "560842d4064e511f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FISV",
+        "scope": "ticker",
+        "title": "Micron, Marvell, Fox, Fiserv And Western Digital: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53214373/micron-marvell-fox-fiserv-and-western-digital-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-16T01:48:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_5_stocks_radar",
+        "tickers_mentioned": [
+          "MU",
+          "FOXA",
+          "FISV",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FOXA": [
+      {
+        "id": "560842d4064e511f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FOXA",
+        "scope": "ticker",
+        "title": "Micron, Marvell, Fox, Fiserv And Western Digital: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53214373/micron-marvell-fox-fiserv-and-western-digital-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-16T01:48:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_5_stocks_radar",
+        "tickers_mentioned": [
+          "MU",
+          "FOXA",
+          "FISV",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "560842d4064e511f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Micron, Marvell, Fox, Fiserv And Western Digital: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53214373/micron-marvell-fox-fiserv-and-western-digital-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-16T01:48:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_5_stocks_radar",
+        "tickers_mentioned": [
+          "MU",
+          "FOXA",
+          "FISV",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "560842d4064e511f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "Micron, Marvell, Fox, Fiserv And Western Digital: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53214373/micron-marvell-fox-fiserv-and-western-digital-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-16T01:48:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "benzinga_5_stocks_radar",
+        "tickers_mentioned": [
+          "MU",
+          "FOXA",
+          "FISV",
+          "WDC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ROKU": [
+      {
+        "id": "12d1c8fa671ac9fe",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ROKU",
+        "scope": "ticker",
+        "title": "Cathie Wood Dumps Millions Worth Of Tesla, Palantir, Roku, AMD And More Even As TSLA Stock Pops On SpaceX Merger Buzz",
+        "url": "https://www.benzinga.com/news/26/06/53214653/cathie-wood-dumps-millions-worth-of-tesla-palantir-roku-amd-and-more-even-as-tsla-stock-pops-on-spacex-merger-buzz",
+        "published_at": "2026-06-16T03:28:43+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cathie_wood_portfolio_rebalance",
+        "tickers_mentioned": [
+          "TSLA",
+          "ROKU",
+          "AMD"
+        ],
         "route_to_synthesis": false
       }
     ],
     "PLTR": [
       {
-        "id": "0c272edc028281b2",
+        "id": "12d1c8fa671ac9fe",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PLTR",
         "scope": "ticker",
-        "title": "$1000 Invested In Palantir Technologies 5 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53213740/1000-invested-in-palantir-technologies-5-years-ago-would-be-worth-this-much-today",
-        "published_at": "2026-06-15T23:15:34+00:00",
+        "title": "Cathie Wood Dumps Millions Worth Of Tesla, Palantir, Roku, AMD And More Even As TSLA Stock Pops On SpaceX Merger Buzz",
+        "url": "https://www.benzinga.com/news/26/06/53214653/cathie-wood-dumps-millions-worth-of-tesla-palantir-roku-amd-and-more-even-as-tsla-stock-pops-on-spacex-merger-buzz",
+        "published_at": "2026-06-16T03:28:43+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cathie_wood_portfolio_rebalance",
+        "tickers_mentioned": [
+          "TSLA",
+          "ROKU",
+          "AMD"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "50919989f19ebb9b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin Extend Rally On Iran Deal Optimism: Analyst Says BTC 'At Least Close' To Forming A Bottom",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53214425/bitcoin-ethereum-xrp-dogecoin-extend-rally-on-iran-deal-optimism-as-analyst-sees-btc-nearing-a-bottom",
+        "published_at": "2026-06-16T02:11:11+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "crypto_rally_iran_deal_optimism",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNAP": [
+      {
+        "id": "52bf96f806457bdb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "Elon Musk Slams UK Under-16 Social Media Ban, Says Real Goal Is To 'Track Everyone': Censorship Law Is A 'Wolf In Sheep's Clothing'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53214699/elon-musk-slams-uk-under-16-social-media-ban-calls-it-a-wolf-in-sheeps-clothing",
+        "published_at": "2026-06-16T03:56:00+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "pltr_historical_return_retrospective",
+        "dedup_group": "musk_uk_social_media_ban_commentary",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Bank of Japan hiked policy rate to 1%, the highest since 1995, citing yen weakness and persistent inflation \u2014 a major step in policy normalization.",
+      "primary_drivers": [
+        "Higher JGB yields narrow US-Japan rate differential, supporting yen and pressuring carry trades",
+        "Japanese banks earn wider NIM on domestic lending and bond reinvestment",
+        "Repatriation risk: Japanese investors may sell US Treasuries/credit and rotate home, tightening global financial conditions"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MFG",
+          "rationale": "Mizuho Financial \u2014 direct NIM expansion on domestic Japanese loan book as BoJ raises rates; Japanese megabanks are the cleanest pure-play on JGB curve steepening and deposit franchise repricing.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MUFG",
+          "rationale": "Mitsubishi UFJ \u2014 largest Japanese bank, massive deposit base earns more on reserves at BoJ, and JGB portfolio reinvests at higher yields. Also owns ~20% of Morgan Stanley, hedged USD exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "TM",
+          "rationale": "Toyota \u2014 every 1 yen of JPY appreciation vs USD cuts operating profit by ~40-50bn yen; a hawkish BoJ that strengthens yen directly compresses translated earnings and price competitiveness of Japanese-built exports to US.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HMC",
+          "rationale": "Honda \u2014 same FX translation hit as Toyota; large share of US sales sourced from Japan-built vehicles, margins squeezed when yen strengthens.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CARR",
+          "rationale": "Carry-trade proxy risk \u2014 broader risk assets funded by JPY shorts face unwind pressure; not a direct ticker exposure but high-beta US growth names (ARKK, semis) can see flow-driven selling on yen squeeze days like Aug 2024.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "dedup_group": "boj_june_2026_rate_hike_100bps",
+      "source_news_ids": [
+        "529eac47034dd069"
+      ],
+      "headlines": [
+        "Bank of Japan hikes rates to 1%, highest since 1995, as yen and inflation worries take hold"
+      ]
+    }
+  ]
 }
