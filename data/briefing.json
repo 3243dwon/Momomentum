@@ -1,71 +1,70 @@
 {
-  "generated_at": "2026-06-17T12:40:20.602416-04:00",
+  "generated_at": "2026-06-17T15:26:30.128246-04:00",
   "window": "RTH",
-  "headline": "Risk-on intact; RIVN/OCUL/NU replace prior longs \u2014 biotech movers leading tape, KMX -7.7% post-earnings",
+  "headline": "Risk-on label holds but SPY -1.1%; OCUL/RIVN/NU desk longs active \u2014 RXT +32% leads chaotic tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.07% but above 50d, QQQ +0.42%, VXX stress 0.92 \u2014 low vol, dip-buyers in control; clean entry conditions."
+    "line": "SPY -1.09% / QQQ -0.51%, both above 50d; VXX stress 0.95 (calm). Regime says risk-on but intraday selling \u2014 entries need discipline."
   },
   "actions": [
     {
-      "ticker": "RIVN",
-      "direction": "long",
-      "entry": 16.68,
-      "stop": 16.01,
-      "target": 18.12,
-      "line": "Clean chart setup, half size \u2014 catalyst clarity TBD but signal/risk bullish. R/R ~2.1."
-    },
-    {
       "ticker": "OCUL",
       "direction": "long",
-      "entry": 9.54,
-      "stop": 9.16,
-      "target": 10.3,
-      "line": "Mixed setup, quarter size \u2014 signal & risk neutral, small-size warranted. R/R ~2.0."
+      "entry": 9.37,
+      "stop": 8.62,
+      "target": 10.87,
+      "line": "Half size \u2014 signal + clean risk; no catalyst, research neutral caps size."
+    },
+    {
+      "ticker": "RIVN",
+      "direction": "long",
+      "entry": 16.57,
+      "stop": 16.18,
+      "target": 18.12,
+      "line": "Quarter size \u2014 best R:R in batch (3.99); all advisors neutral + low volume flags."
     },
     {
       "ticker": "NU",
       "direction": "long",
-      "entry": 13.36,
-      "stop": 13.08,
-      "target": 13.92,
-      "line": "Quarter size \u2014 signal bullish but research against; steady tape, no catalyst. R/R ~2.0."
+      "entry": 13.01,
+      "stop": 11.97,
+      "target": 15.09,
+      "line": "Half size \u2014 signal agrees, risk medium; crowded 5d run limits size."
     }
   ],
   "watch": [
     {
-      "ticker": "KMX",
-      "type": "catalyst",
-      "line": "KMX -7.7% \u2014 beat estimates but market sold the news; watch used-auto / consumer credit ripple."
-    },
-    {
       "ticker": "RXT",
       "type": "mover",
-      "line": "RXT +21.5%, MACD bullish \u2014 low rel-vol (0.81) limits conviction but watching for follow-through."
+      "line": "+32.4%, rel-vol 1.7x, MACD bullish but overbought \u2014 extended, watch for pullback entry."
     },
     {
-      "ticker": "EOSE",
+      "ticker": "HOOD",
       "type": "mover",
-      "line": "EOSE +16.3%, rel-vol 1.17 \u2014 above-average volume on the move; energy storage name worth tracking."
+      "line": "+11.3%, rel-vol 1.83x, overbought flag \u2014 fintech momentum if market stabilizes."
     },
     {
-      "ticker": "FRMI",
+      "ticker": "MRNA",
       "type": "mover",
-      "line": "FRMI +12.6%, overbought flag \u2014 real move but extended; wait for pullback before considering entry."
+      "line": "+10.9%, rel-vol 1.49x, overbought \u2014 biotech tape leader, watch for continuation."
     },
     {
-      "ticker": "RCKT",
+      "ticker": "KMX",
+      "type": "catalyst",
+      "line": "-9% on profit warning; extended from -7.7% last scan \u2014 auto retail pressure not done."
+    },
+    {
+      "ticker": "ARM",
       "type": "mover",
-      "line": "RCKT +15.8% \u2014 big move but low rel-vol (0.77); watch if volume confirms into close."
+      "line": "+9.7%, MACD bullish, rel-vol 0.91x \u2014 semi/AI names still bid despite SPY weakness."
     }
   ],
   "changed": [
-    "Full desk rotation: DLR/DDD/SOFI longs gone, replaced by RIVN/OCUL/NU.",
-    "Prior drag from SNAP/MRVL -10% no longer headlining; tape stabilized.",
-    "Biotech/small-cap movers now dominating the top mover list vs prior session."
+    "KMX gap-down extended: -7.7% \u2192 -9.0% on profit warning",
+    "SPY intraday selling adds pressure vs prior scan \u2014 regime label intact but tape softer"
   ],
   "caveats": [
-    "RTH scan as of 12:40 ET 2026-06-17 \u2014 prices and levels are snapshot at scan time, may be stale intraday.",
-    "Several top movers (RXT, RCKT, INV, REPL) showing low rel-volume (<0.85); big % moves without volume confirmation reduce follow-through probability."
+    "RTH scan as of 15:26 ET Jun 17 \u2014 prices stale by up to several minutes; last 34 minutes of session remain.",
+    "FOMC statement released but no rate/dot-plot detail in feed \u2014 directional macro read unavailable; vol could spike into close."
   ]
 }
