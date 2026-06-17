@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-06-17T15:30:35.017873-04:00",
+  "generated_at": "2026-06-17T18:08:03.202229-04:00",
   "window_days": 30,
-  "total_with_desk": 386,
+  "total_with_desk": 390,
   "by_decision": {
     "take": {
-      "count": 170,
+      "count": 172,
       "horizons": {
         "1d": {
-          "evaluated": 162,
-          "hit_rate": 0.395,
-          "avg_return_pct": -1.04
+          "evaluated": 165,
+          "hit_rate": 0.388,
+          "avg_return_pct": -1.05
         },
         "3d": {
-          "evaluated": 148,
-          "hit_rate": 0.446,
-          "avg_return_pct": -1.76
+          "evaluated": 150,
+          "hit_rate": 0.447,
+          "avg_return_pct": -1.75
         },
         "5d": {
-          "evaluated": 145,
-          "hit_rate": 0.579,
-          "avg_return_pct": -1.6
+          "evaluated": 147,
+          "hit_rate": 0.571,
+          "avg_return_pct": -1.61
         }
       }
     },
     "pass": {
-      "count": 213,
+      "count": 215,
       "horizons": {
         "1d": {
-          "evaluated": 206,
-          "hit_rate": 0.442,
-          "avg_return_pct": -0.95
+          "evaluated": 208,
+          "hit_rate": 0.438,
+          "avg_return_pct": -0.97
         },
         "3d": {
-          "evaluated": 186,
-          "hit_rate": 0.478,
-          "avg_return_pct": -2.12
+          "evaluated": 190,
+          "hit_rate": 0.468,
+          "avg_return_pct": -2.15
         },
         "5d": {
-          "evaluated": 184,
+          "evaluated": 186,
           "hit_rate": 0.484,
-          "avg_return_pct": -2.4
+          "avg_return_pct": -2.33
         }
       }
     },
@@ -86,42 +86,42 @@
   },
   "by_agreement": {
     "majority": {
-      "count": 212,
+      "count": 215,
       "horizons": {
         "1d": {
-          "evaluated": 206,
-          "hit_rate": 0.369,
+          "evaluated": 208,
+          "hit_rate": 0.365,
           "avg_return_pct": -1.05
         },
         "3d": {
-          "evaluated": 190,
-          "hit_rate": 0.479,
-          "avg_return_pct": -1.39
+          "evaluated": 192,
+          "hit_rate": 0.474,
+          "avg_return_pct": -1.4
         },
         "5d": {
-          "evaluated": 188,
-          "hit_rate": 0.585,
+          "evaluated": 189,
+          "hit_rate": 0.582,
           "avg_return_pct": -1.32
         }
       }
     },
     "unanimous": {
-      "count": 131,
+      "count": 132,
       "horizons": {
         "1d": {
-          "evaluated": 124,
-          "hit_rate": 0.484,
-          "avg_return_pct": -0.52
+          "evaluated": 126,
+          "hit_rate": 0.476,
+          "avg_return_pct": -0.53
         },
         "3d": {
-          "evaluated": 108,
-          "hit_rate": 0.389,
-          "avg_return_pct": -2.54
+          "evaluated": 112,
+          "hit_rate": 0.384,
+          "avg_return_pct": -2.55
         },
         "5d": {
-          "evaluated": 107,
-          "hit_rate": 0.393,
-          "avg_return_pct": -3.18
+          "evaluated": 108,
+          "hit_rate": 0.389,
+          "avg_return_pct": -3.17
         }
       }
     },
@@ -129,9 +129,9 @@
       "count": 41,
       "horizons": {
         "1d": {
-          "evaluated": 39,
-          "hit_rate": 0.487,
-          "avg_return_pct": -2.34
+          "evaluated": 40,
+          "hit_rate": 0.475,
+          "avg_return_pct": -2.47
         },
         "3d": {
           "evaluated": 37,
@@ -139,9 +139,9 @@
           "avg_return_pct": -3.32
         },
         "5d": {
-          "evaluated": 35,
-          "hit_rate": 0.6,
-          "avg_return_pct": -2.72
+          "evaluated": 37,
+          "hit_rate": 0.595,
+          "avg_return_pct": -2.32
         }
       }
     },
@@ -168,37 +168,37 @@
   },
   "by_veto": {
     "no_veto": {
-      "count": 286,
+      "count": 288,
       "horizons": {
         "1d": {
-          "evaluated": 277,
-          "hit_rate": 0.412,
-          "avg_return_pct": -1.11
+          "evaluated": 281,
+          "hit_rate": 0.406,
+          "avg_return_pct": -1.13
         },
         "3d": {
-          "evaluated": 255,
-          "hit_rate": 0.506,
+          "evaluated": 258,
+          "hit_rate": 0.504,
           "avg_return_pct": -1.62
         },
         "5d": {
-          "evaluated": 250,
-          "hit_rate": 0.592,
-          "avg_return_pct": -1.45
+          "evaluated": 254,
+          "hit_rate": 0.587,
+          "avg_return_pct": -1.41
         }
       }
     },
     "veto": {
-      "count": 100,
+      "count": 102,
       "horizons": {
         "1d": {
-          "evaluated": 94,
-          "hit_rate": 0.457,
-          "avg_return_pct": -0.56
+          "evaluated": 95,
+          "hit_rate": 0.453,
+          "avg_return_pct": -0.55
         },
         "3d": {
-          "evaluated": 82,
-          "hit_rate": 0.341,
-          "avg_return_pct": -2.88
+          "evaluated": 85,
+          "hit_rate": 0.329,
+          "avg_return_pct": -2.91
         },
         "5d": {
           "evaluated": 82,
@@ -209,8 +209,8 @@
     }
   },
   "take_minus_pass_edge": {
-    "1d": -0.09,
-    "3d": 0.36,
-    "5d": 0.8
+    "1d": -0.08,
+    "3d": 0.4,
+    "5d": 0.72
   }
 }
