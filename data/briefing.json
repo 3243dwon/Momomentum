@@ -1,27 +1,19 @@
 {
-  "generated_at": "2026-06-16T19:25:59.700051-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on label holds; SOFI best setup of three desk longs \u2014 SNAP, MRVL, CERT dominate AH tape",
+  "generated_at": "2026-06-17T00:42:43.021571-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on intact; DLR + SOFI cleanest desk longs \u2014 SNAP, MRVL, CERT overnight tape leaders",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.55%, QQQ -1.87%; SPY above 50d, VXX stress 0.9 (calm). Tech selling pressure persists \u2014 favor non-QQQ names on entries."
+    "line": "SPY -0.55% / QQQ -1.87% on day but regime holds; VXX stress ratio 0.9 \u2014 soft pullback, not distribution. Entries viable."
   },
   "actions": [
-    {
-      "ticker": "SATS",
-      "direction": "long",
-      "entry": 120.95,
-      "stop": 117.9,
-      "target": 128.2,
-      "line": "Quarter size; signal agrees, risk clean \u2014 research flags no catalyst. R:R ~2.4:1."
-    },
     {
       "ticker": "DLR",
       "direction": "long",
       "entry": 190.43,
       "stop": 178.16,
       "target": 214.97,
-      "line": "Quarter size; signal + risk agree, research skeptical on catalyst. R:R ~2.0:1. Data center play."
+      "line": "Half-size long; signal + low-severity risk align, research neutral/no veto \u2014 best R/R of the four."
     },
     {
       "ticker": "SOFI",
@@ -29,42 +21,50 @@
       "entry": 17.71,
       "stop": 16.29,
       "target": 20.54,
-      "line": "Half size; cleanest technical setup in batch, signal + risk aligned. R:R ~2.0:1. Research lone dissent."
+      "line": "Half-size long; signal agrees, low risk, constructive research \u2014 clean setup."
+    },
+    {
+      "ticker": "MRNA",
+      "direction": "long",
+      "entry": 55.39,
+      "stop": 50.96,
+      "target": 64.25,
+      "line": "Quarter-size long; research for but signal flags extension \u2014 stretch concern, small size."
     }
   ],
   "watch": [
     {
       "ticker": "SNAP",
       "type": "mover",
-      "line": "\u22129.88%, rel vol 3.03 \u2014 highest volume mover AH; watch for oversold bounce setup RTH open."
+      "line": "\u22129.88% on 3\u00d7 rel vol overnight \u2014 highest volume dislocation on tape, watch for RTH continuation or fade."
     },
     {
       "ticker": "MRVL",
       "type": "mover",
-      "line": "\u22129.83%, rel vol 1.28 \u2014 semis under pressure; sympathy risk to any AI/data center longs."
+      "line": "\u22129.83% big move, 1.28\u00d7 vol \u2014 semis pressure, watch for sector read-through at open."
     },
     {
       "ticker": "CERT",
       "type": "mover",
-      "line": "+16.35%, rel vol 2.32, MACD bullish \u2014 big move + unusual vol; needs catalyst confirmation before touching."
+      "line": "+16.35% on 2.32\u00d7 vol, MACD bullish \u2014 unusual volume + momentum, needs catalyst confirmation."
     },
     {
       "ticker": "SSRM",
       "type": "mover",
-      "line": "+9.97%, rel vol 2.0, MACD bullish \u2014 gold miner breakout with volume; watch for continuation."
+      "line": "+9.97% on 2\u00d7 vol, MACD bullish \u2014 gold/silver miner momentum, watch if metals bid continues."
     },
     {
       "ticker": "AXTI",
       "type": "mover",
-      "line": "\u221215.99%, rel vol 1.82 \u2014 largest AH loser; watch for dead-cat or short setup RTH."
+      "line": "\u221215.99% big move \u2014 largest overnight loser, 1.82\u00d7 vol, watch for bounce or further unwind."
     }
   ],
   "changed": [
-    "Headline now flags SOFI as best setup (was DLR-led in prior scan)",
-    "SNAP emerges as top-volume mover AH \u2014 not present in prior scan"
+    "DLR added as desk take (half-size, cleanest setup) \u2014 now four active longs vs three prior",
+    "MRNA and NAT new additions to actions this scan"
   ],
   "caveats": [
-    "AH_POST scan as of 19:25 ET 2026-06-16 \u2014 prices stale, AH spreads wide; all levels based on last scan print, not RTH open.",
-    "QQQ -1.87% intraday is a meaningful drag on risk appetite despite risk_on label \u2014 tech-heavy positions warrant tighter entries."
+    "OVERNIGHT scan as of 2026-06-17 00:42 ET \u2014 prices stale, pre-RTH gaps likely; re-check levels at open before entry.",
+    "No catalysts or macro events flagged this scan; MRVL/SNAP moves lack confirmed drivers \u2014 size accordingly."
   ]
 }
