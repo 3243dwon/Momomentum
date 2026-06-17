@@ -1,70 +1,71 @@
 {
-  "generated_at": "2026-06-17T08:20:10.572805-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on holds; DLR/DDD/SOFI desk longs carry over \u2014 SNAP -10% & MRVL -10% drag tape on vol",
+  "generated_at": "2026-06-17T12:40:20.602416-04:00",
+  "window": "RTH",
+  "headline": "Risk-on intact; RIVN/OCUL/NU replace prior longs \u2014 biotech movers leading tape, KMX -7.7% post-earnings",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.55% / QQQ -1.87%; SPY above 50d, VXX stress ratio 0.9 (contained) \u2014 regime risk_on but tech selling adds entry friction."
+    "line": "SPY -0.07% but above 50d, QQQ +0.42%, VXX stress 0.92 \u2014 low vol, dip-buyers in control; clean entry conditions."
   },
   "actions": [
     {
-      "ticker": "DLR",
+      "ticker": "RIVN",
       "direction": "long",
-      "entry": 190.43,
-      "stop": 178.16,
-      "target": 214.97,
-      "line": "REIT momentum play; quarter size \u2014 research flags no-news, PM sees constructive structure."
+      "entry": 16.68,
+      "stop": 16.01,
+      "target": 18.12,
+      "line": "Clean chart setup, half size \u2014 catalyst clarity TBD but signal/risk bullish. R/R ~2.1."
     },
     {
-      "ticker": "DDD",
+      "ticker": "OCUL",
       "direction": "long",
-      "entry": 3.19,
-      "stop": 3.11,
-      "target": 3.59,
-      "line": "No-news spike but R:R exceptional (~5:1); quarter size, tight stop at 3.11."
+      "entry": 9.54,
+      "stop": 9.16,
+      "target": 10.3,
+      "line": "Mixed setup, quarter size \u2014 signal & risk neutral, small-size warranted. R/R ~2.0."
     },
     {
-      "ticker": "SOFI",
+      "ticker": "NU",
       "direction": "long",
-      "entry": 17.71,
-      "stop": 16.29,
-      "target": 20.54,
-      "line": "Clean setup, half size; signal + risk both constructive, research lone dissent on no-news."
+      "entry": 13.36,
+      "stop": 13.08,
+      "target": 13.92,
+      "line": "Quarter size \u2014 signal bullish but research against; steady tape, no catalyst. R/R ~2.0."
     }
   ],
   "watch": [
     {
-      "ticker": "SNAP",
-      "type": "mover",
-      "line": "SNAP -9.88%, rel vol 3.03x \u2014 highest volume mover on the board; watch for RTH continuation or dead-cat."
+      "ticker": "KMX",
+      "type": "catalyst",
+      "line": "KMX -7.7% \u2014 beat estimates but market sold the news; watch used-auto / consumer credit ripple."
     },
     {
-      "ticker": "MRVL",
+      "ticker": "RXT",
       "type": "mover",
-      "line": "MRVL -9.83% \u2014 AI/chip name selling off hard; may ripple into semis at open."
+      "line": "RXT +21.5%, MACD bullish \u2014 low rel-vol (0.81) limits conviction but watching for follow-through."
     },
     {
-      "ticker": "CERT",
+      "ticker": "EOSE",
       "type": "mover",
-      "line": "CERT +16.35%, rel vol 2.32x, MACD bullish \u2014 pre-market leader, no catalyst flagged."
+      "line": "EOSE +16.3%, rel-vol 1.17 \u2014 above-average volume on the move; energy storage name worth tracking."
     },
     {
-      "ticker": "SSRM",
+      "ticker": "FRMI",
       "type": "mover",
-      "line": "SSRM +9.97%, rel vol 2.0x, MACD bullish \u2014 metals mover, watch for gold/silver macro follow-through."
+      "line": "FRMI +12.6%, overbought flag \u2014 real move but extended; wait for pullback before considering entry."
     },
     {
-      "ticker": "AXTI",
+      "ticker": "RCKT",
       "type": "mover",
-      "line": "AXTI -15.99%, rel vol 1.82x \u2014 steepest loser; no catalyst, monitor for gap-fade setup at open."
+      "line": "RCKT +15.8% \u2014 big move but low rel-vol (0.77); watch if volume confirms into close."
     }
   ],
   "changed": [
-    "SNAP -10% & MRVL -10% emerge as new notable losers with elevated volume",
-    "QQQ -1.87% adds tech-sector friction not present in prior scan"
+    "Full desk rotation: DLR/DDD/SOFI longs gone, replaced by RIVN/OCUL/NU.",
+    "Prior drag from SNAP/MRVL -10% no longer headlining; tape stabilized.",
+    "Biotech/small-cap movers now dominating the top mover list vs prior session."
   ],
   "caveats": [
-    "AH/Pre-market scan window (as of 08:20 ET 2026-06-17); prices stale until RTH open \u2014 gaps likely.",
-    "No catalysts or macro events flagged this scan; movers are volume/price driven only \u2014 news risk unquantified."
+    "RTH scan as of 12:40 ET 2026-06-17 \u2014 prices and levels are snapshot at scan time, may be stale intraday.",
+    "Several top movers (RXT, RCKT, INV, REPL) showing low rel-volume (<0.85); big % moves without volume confirmation reduce follow-through probability."
   ]
 }

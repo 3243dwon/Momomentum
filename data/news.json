@@ -1,178 +1,678 @@
 {
-  "generated_at": "2026-06-17T08:20:10.572805-04:00",
+  "generated_at": "2026-06-17T12:40:20.602416-04:00",
   "ticker_news": {
-    "MSTR": [
+    "ARM": [
       {
-        "id": "4f8dcd37a2667bcc",
+        "id": "355949db1cef00c0",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Federal Reserve Meeting Crypto Preview: What Does Chair Kevin Warsh Mean For Bitcoin?",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53246042/federal-reserve-meeting-crypto-preview-what-does-chair-kevin-warsh-mean-for-bitcoin",
-        "published_at": "2026-06-17T12:05:59+00:00",
-        "type": "macro_fed",
+        "title": "Broadcom's Massive AI Pipeline Secures Multi-Year Growth, Analyst Says",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/06/53255839/broadcoms-massive-ai-pipeline-secures-multi-year-growth-analyst-says",
+        "published_at": "2026-06-17T16:17:20+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "fed_meeting_bitcoin_preview",
+        "dedup_group": "broadcom_ai_pipeline_analyst_note",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "META": [
+      {
+        "id": "355949db1cef00c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Broadcom's Massive AI Pipeline Secures Multi-Year Growth, Analyst Says",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/06/53255839/broadcoms-massive-ai-pipeline-secures-multi-year-growth-analyst-says",
+        "published_at": "2026-06-17T16:17:20+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "broadcom_ai_pipeline_analyst_note",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "77deb949c80624b1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "SpaceX Options Just Broke A Record Meta Set In 2012",
+        "url": "https://www.benzinga.com/markets/options/26/06/53256299/spacex-options-just-broke-a-record-meta-set-in-2012",
+        "published_at": "2026-06-17T16:30:24+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "spacex_options_record_historical",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "357a48e1b51e213b",
+        "id": "a7e9c77cf99de0cf",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "META",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP Drop Up To 3%, But Data Says Sentiment Is 'Healthy'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53245023/bitcoin-ethereum-xrp-drop-up-to-3-but-data-says-sentiment-is-healthy",
-        "published_at": "2026-06-17T11:21:36+00:00",
-        "type": "macro_commodity",
+        "title": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was",
+        "published_at": "2026-06-17T15:05:13+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "crypto_market_sentiment_btc_eth_xrp",
+        "dedup_group": "mangos_etf_analysis_faang",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "539992f50708c408",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai",
+        "published_at": "2026-06-17T14:47:06+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "google_meta_ai_agent_competitive_risk",
+        "tickers_mentioned": [
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fb34396af108e1b3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "Perplexity's CEO Predicts Micron Could Overtake Meta In Stunning AI Power Shift: 'Whatever Is The Bottleneck Will...'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53247200/perplexitys-ceo-predicts-micron-could-overtake-meta-in-stunning-ai-power-shift-whatever-is-the-bottleneck-will",
+        "published_at": "2026-06-17T12:46:19+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "perplexity_ceo_micron_meta_speculation",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CELH": [
+      {
+        "id": "d499f25d93160ee5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CELH",
+        "scope": "ticker",
+        "title": "Here's How Much You Would Have Made Owning Celsius Holdings Stock In The Last 10 Years",
+        "url": "https://www.benzinga.com/insights/news/26/06/53254127/heres-how-much-you-would-have-made-owning-celsius-holdings-stock-in-the-last-10-years",
+        "published_at": "2026-06-17T15:30:36+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "celh_10_year_historical_performance",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "MU": [
+    "ASTS": [
       {
-        "id": "b2b4d7a98b66b3f4",
+        "id": "70771f07a66a50a8",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "Micron Likely To Report Higher Q3 Earnings; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53245447/micron-likely-to-report-higher-q3-earnings-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call",
-        "published_at": "2026-06-17T11:43:10+00:00",
-        "type": "analyst",
+        "title": "$100 Invested In AST SpaceMobile 5 Years Ago Would Be Worth This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53251668/100-invested-in-ast-spacemobile-5-years-ago-would-be-worth-this-much-today",
+        "published_at": "2026-06-17T14:30:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ast_spacemobile_historical_return",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bf84b52f4f54ed98",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ASTS",
+        "scope": "ticker",
+        "title": "Momentus, AST SpaceMobile Lead The Thaw In Space Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251369/momentus-ast-spacemobile-lead-the-thaw-in-space-stocks",
+        "published_at": "2026-06-17T14:24:59+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "space_stocks_thaw_sector",
+        "tickers_mentioned": [
+          "MOMENTUS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CME": [
+      {
+        "id": "b10deb55c4fbfb9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CME",
+        "scope": "ticker",
+        "title": "Perpetual Crypto Futures Are Kalshi's Fastest-Growing Launch Ever, But It Doesn't Stop There",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53251498/perpetual-crypto-futures-are-kalshis-fastest-growing-launch-ever-but-it-doesnt-stop-there",
+        "published_at": "2026-06-17T14:27:35+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "kalshi_crypto_futures_launch",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DKNG": [
+      {
+        "id": "b10deb55c4fbfb9f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DKNG",
+        "scope": "ticker",
+        "title": "Perpetual Crypto Futures Are Kalshi's Fastest-Growing Launch Ever, But It Doesn't Stop There",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53251498/perpetual-crypto-futures-are-kalshis-fastest-growing-launch-ever-but-it-doesnt-stop-there",
+        "published_at": "2026-06-17T14:27:35+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "kalshi_crypto_futures_launch",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RDW": [
+      {
+        "id": "bf84b52f4f54ed98",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RDW",
+        "scope": "ticker",
+        "title": "Momentus, AST SpaceMobile Lead The Thaw In Space Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251369/momentus-ast-spacemobile-lead-the-thaw-in-space-stocks",
+        "published_at": "2026-06-17T14:24:59+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "space_stocks_thaw_sector",
+        "tickers_mentioned": [
+          "MOMENTUS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "bf84b52f4f54ed98",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Momentus, AST SpaceMobile Lead The Thaw In Space Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251369/momentus-ast-spacemobile-lead-the-thaw-in-space-stocks",
+        "published_at": "2026-06-17T14:24:59+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "space_stocks_thaw_sector",
+        "tickers_mentioned": [
+          "MOMENTUS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "VOYG": [
+      {
+        "id": "bf84b52f4f54ed98",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VOYG",
+        "scope": "ticker",
+        "title": "Momentus, AST SpaceMobile Lead The Thaw In Space Stocks",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251369/momentus-ast-spacemobile-lead-the-thaw-in-space-stocks",
+        "published_at": "2026-06-17T14:24:59+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "space_stocks_thaw_sector",
+        "tickers_mentioned": [
+          "MOMENTUS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "EOSE": [
+      {
+        "id": "84a2c25a5b17dfe6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EOSE",
+        "scope": "ticker",
+        "title": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-17T14:11:37+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "jabil_q3_2026_upbeat",
+        "tickers_mentioned": [
+          "UNIQURE",
+          "BRAIIN"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a0aa9f1332be6d7f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "EOSE",
+        "scope": "ticker",
+        "title": "Eos Shares Climb On 750 MWh Supply Agreement With CAPAC Energy",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53249663/eos-shares-climb-on-750-mwh-supply-agreement-with-capac-energy",
+        "published_at": "2026-06-17T13:51:19+00:00",
+        "type": "product",
         "impact": "medium",
-        "dedup_group": "mu_q3_earnings_forecast_revisions",
+        "dedup_group": "eose_750mwh_capac_supply_deal",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "FRMI": [
+      {
+        "id": "84a2c25a5b17dfe6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FRMI",
+        "scope": "ticker",
+        "title": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-17T14:11:37+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "jabil_q3_2026_upbeat",
+        "tickers_mentioned": [
+          "UNIQURE",
+          "BRAIIN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NTLA": [
+      {
+        "id": "84a2c25a5b17dfe6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NTLA",
+        "scope": "ticker",
+        "title": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-17T14:11:37+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "jabil_q3_2026_upbeat",
+        "tickers_mentioned": [
+          "UNIQURE",
+          "BRAIIN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RXT": [
+      {
+        "id": "84a2c25a5b17dfe6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RXT",
+        "scope": "ticker",
+        "title": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday",
+        "published_at": "2026-06-17T14:11:37+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "jabil_q3_2026_upbeat",
+        "tickers_mentioned": [
+          "UNIQURE",
+          "BRAIIN"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "HPE": [
+      {
+        "id": "1ef030b3735ee26a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HPE",
+        "scope": "ticker",
+        "title": "Here's How Much You Would Have Made Owning Hewlett Packard Stock In The Last 10 Years",
+        "url": "https://www.benzinga.com/insights/news/26/06/53254620/heres-how-much-you-would-have-made-owning-hewlett-packard-stock-in-the-last-10-years",
+        "published_at": "2026-06-17T15:45:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "hpe_historical_return_analysis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "OCUL": [
+      {
+        "id": "2ba6c02561a22118",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "OCUL",
+        "scope": "ticker",
+        "title": "Ocular Therapeutix Maps Regulatory Strategy For Lead Drug Program",
+        "url": "https://www.benzinga.com/news/health-care/26/06/53252720/ocular-therapeutix-maps-regulatory-strategy-for-lead-drug-program",
+        "published_at": "2026-06-17T14:55:03+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "ocul_regulatory_strategy_lead_drug",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "KMX": [
       {
-        "id": "ecf0b4eb1f98c1ab",
+        "id": "b065fc580a078bb9",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "KMX",
         "scope": "ticker",
-        "title": "Earnings Scheduled For June 17, 2026",
-        "url": "https://www.benzinga.com/insights/earnings/26/06/53244863/earnings-scheduled-for-june-17-2026",
-        "published_at": "2026-06-17T11:11:13+00:00",
+        "title": "US Stocks Edge Higher; CarMax Posts Upbeat Earnings",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/53249279/us-stocks-edge-higher-carmax-posts-upbeat-earnings",
+        "published_at": "2026-06-17T13:45:39+00:00",
         "type": "earnings",
         "impact": "medium",
-        "dedup_group": "kmx_q2_2026_earnings",
+        "dedup_group": "kmx_q1_2027_upbeat_earnings",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "906e9edf409761fa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KMX",
+        "scope": "ticker",
+        "title": "CarMax Warns Lower Vehicle Margins Will Persist",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/53248632/carmax-warns-lower-vehicle-margins-will-persist",
+        "published_at": "2026-06-17T13:37:03+00:00",
+        "type": "guidance",
+        "impact": "medium",
+        "dedup_group": "kmx_q1_2027_margin_warning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "cb5d646a13e8b9fa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "KMX",
+        "scope": "ticker",
+        "title": "Full Transcript: CarMax Q1 2027 Earnings Call",
+        "url": "https://www.benzinga.com/insights/news/26/06/53247738/full-transcript-carmax-q1-2027-earnings-call",
+        "published_at": "2026-06-17T13:03:38+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "kmx_q1_2027_earnings_transcript",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SMCI": [
+    "IQV": [
       {
-        "id": "9202227f361c05a3",
+        "id": "6853a2da59d3d79d",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SMCI",
+        "ticker": "IQV",
         "scope": "ticker",
-        "title": "What's Going On With AMD Stock Wednesday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53246451/whats-going-on-with-amd-stock-wednesday-5",
-        "published_at": "2026-06-17T12:20:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_stock_move_commentary",
-        "tickers_mentioned": [
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ORCL": [
-      {
-        "id": "9202227f361c05a3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "What's Going On With AMD Stock Wednesday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53246451/whats-going-on-with-amd-stock-wednesday-5",
-        "published_at": "2026-06-17T12:20:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "amd_stock_move_commentary",
-        "tickers_mentioned": [
-          "AMD"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SOC": [
-      {
-        "id": "cb7d97cb65557b62",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SOC",
-        "scope": "ticker",
-        "title": "Sophia Genetics, Ormat Technologies And Other Big Stocks Moving Lower In Wednesday's Pre-Market Session",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53245908/sophia-genetics-ormat-technologies-and-other-big-stocks-moving-lower-in-wednesdays-pre-market-session",
-        "published_at": "2026-06-17T12:03:08+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "premarket_movers_routine",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "VSAT": [
-      {
-        "id": "f18a4cbbbd26bb22",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VSAT",
-        "scope": "ticker",
-        "title": "Magnite Teams With Viasat To Bring Programmatic Ads To Air Travelers",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53245648/magnite-teams-with-viasat-to-bring-programmatic-ads-to-air-travelers",
-        "published_at": "2026-06-17T12:00:01+00:00",
-        "type": "product",
-        "impact": "low",
-        "dedup_group": "magnite_viasat_programmatic_ads_partnership",
-        "tickers_mentioned": [
-          "MGNI"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ROKU": [
-      {
-        "id": "8546c7a11ef76a07",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ROKU",
-        "scope": "ticker",
-        "title": "Lionsgate Stock Pulls Back After Netflix Denies Acquisition Interest, Erasing Some of Tuesday's 14% Surge",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53245481/lionsgate-stock-pulls-back-after-netflix-denies-acquisition-interest-erasing-some-of-tuesdays-14-surge",
-        "published_at": "2026-06-17T11:47:56+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "lionsgate_netflix_acquisition_denied",
-        "tickers_mentioned": [
-          "LGF"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "OLN": [
-      {
-        "id": "8221c134e77a7fb6",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "OLN",
-        "scope": "ticker",
-        "title": "Wall Street's Most Accurate Analysts Give Their Take On 3 Materials Stocks Delivering High-Dividend Yields",
-        "url": "https://www.benzinga.com/trading-ideas/dividends/26/06/53245434/wall-streets-most-accurate-analysts-give-their-take-on-3-materials-stocks-delivering-high-dividend-yields-11",
-        "published_at": "2026-06-17T11:42:06+00:00",
+        "title": "Delta Air Lines To Rally Around 12%? Here Are 10 Top Analyst Forecasts For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53247834/delta-air-lines-to-rally-around-12-here-are-10-top-analyst-forecasts-for-wednesday",
+        "published_at": "2026-06-17T13:05:48+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "materials_dividend_analyst_roundup",
+        "dedup_group": "delta_analyst_forecasts_wednesday",
+        "tickers_mentioned": [
+          "DAL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "b8ef52618e0520a4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "What Is Going On With Marvell Stock On Wednesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53247336/what-is-going-on-with-marvell-stock-on-wednesday-2",
+        "published_at": "2026-06-17T12:52:59+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "marvell_wednesday_movement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "ca64c414433617a5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026",
+        "published_at": "2026-06-17T12:52:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "asian_market_performance_macro",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fb34396af108e1b3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Perplexity's CEO Predicts Micron Could Overtake Meta In Stunning AI Power Shift: 'Whatever Is The Bottleneck Will...'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53247200/perplexitys-ceo-predicts-micron-could-overtake-meta-in-stunning-ai-power-shift-whatever-is-the-bottleneck-will",
+        "published_at": "2026-06-17T12:46:19+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "perplexity_ceo_micron_meta_speculation",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "57a5a1cde91faf23",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Paychex Earnings Are Imminent; These Most Accurate Analysts Revise Forecasts Ahead Of Earnings Call",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/53247191/paychex-earnings-are-imminent-these-most-accurate-analysts-revise-forecasts-ahead-of-earnings-call-4",
+        "published_at": "2026-06-17T12:46:00+00:00",
+        "type": "guidance",
+        "impact": "low",
+        "dedup_group": "paychex_earnings_analyst_revisions",
+        "tickers_mentioned": [
+          "PAYX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "ca64c414433617a5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026",
+        "published_at": "2026-06-17T12:52:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "asian_market_performance_macro",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "33eaa624ef4ea5da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "Top 3 Tech Stocks That May Collapse This Quarter",
+        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/06/53247250/top-3-tech-stocks-that-may-collapse-this-quarter-2",
+        "published_at": "2026-06-17T12:48:08+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "clickbait_tech_collapse_warn",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "29a293990601181d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Intel Stock Gains As 18A-P Semiconductor Node Enters Risk Production",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53246855/intel-stock-gains-as-18a-p-semiconductor-node-enters-risk-production",
+        "published_at": "2026-06-17T12:35:39+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "intc_18a_p_risk_production",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "MRNA": [
+      {
+        "id": "ffed2f6dc9056482",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRNA",
+        "scope": "ticker",
+        "title": "FDA Panel Set To Debate Moderna Flu Shot",
+        "url": "https://www.benzinga.com/news/fda/26/06/53246482/fda-panel-set-to-debate-moderna-flu-shot",
+        "published_at": "2026-06-17T12:23:52+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "moderna_flu_shot_fda_panel",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "3db7123a0208610b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "24/7 Stock Trading Coming? SEC Reportedly Nears Landmark Crypto Rule Shift\u2014 Here's What To Know",
+        "url": "https://www.benzinga.com/crypto/26/06/53245949/24-7-stock-trading-coming-sec-reportedly-nears-landmark-crypto-rule-shift-heres-what-to-know",
+        "published_at": "2026-06-17T12:04:06+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "sec_24_7_trading_crypto_rule_shift",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2a33522d2da13100",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Robinhood, Charles Schwab, State Street And More On CNBC's 'Final Trades'",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/53245610/robinhood-charles-schwab-state-street-and-more-on-cnbcs-final-trades",
+        "published_at": "2026-06-17T11:58:33+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cnbc_final_trades_general_recap",
+        "tickers_mentioned": [
+          "CS",
+          "STT"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "GEV": [
+      {
+        "id": "1757f62b6e855f17",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GEV",
+        "scope": "ticker",
+        "title": "This GE Vernova Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Wednesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/53244941/this-ge-vernova-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-wednesday-3",
+        "published_at": "2026-06-17T11:17:11+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ge_vernova_analyst_initiation",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNAP": [
+      {
+        "id": "6b7747b10129e48d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "Why Is Snap Stock Falling On Wednesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251896/why-is-snap-stock-falling-on-wednesday",
+        "published_at": "2026-06-17T14:35:30+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "snap_wednesday_decline",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RIVN": [
+      {
+        "id": "01bc13267832f962",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RIVN",
+        "scope": "ticker",
+        "title": "What's Driving Rivian Shares Higher Wednesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53252035/whats-driving-rivian-shares-higher-wednesday",
+        "published_at": "2026-06-17T14:38:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "rivian_wednesday_movement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SOFI": [
+      {
+        "id": "cde5e44071b8268c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SOFI",
+        "scope": "ticker",
+        "title": "SoFi CEO Won't Stop Buying His Own Stock",
+        "url": "https://www.benzinga.com/trading-ideas/insider-trades/26/06/53248011/sofi-ceo-wont-stop-buying-his-own-stock",
+        "published_at": "2026-06-17T13:09:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sofi_ceo_stock_buyback",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
