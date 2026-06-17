@@ -21,7 +21,7 @@ from pathlib import Path
 
 import requests
 
-from scanner import config
+from scanner import config, mom_watchlist
 from scanner.alerts.feishu import sign_payload
 from scanner.llm.client import LLMClient
 
@@ -222,8 +222,17 @@ MOM_DIGEST_TOOL = {
             },
             "watchlist_zh": {
                 "type": "array",
-                "items": {"type": "string"},
-                "description": "3-5 specific A-share/HK/ETF names to watch, formatted '中文名 (代码)'. Mix .SH/.SZ and .HK. Examples: '比亚迪 (002594.SZ)', '腾讯控股 (0700.HK)', '恒生科技ETF (513180.SH)'.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name_zh": {"type": "string", "description": "中文名，如 紫金矿业 / 比亚迪 / 恒生科技ETF。"},
+                        "code": {"type": "string", "description": "代码，如 601899.SH（上交所）/ 002594.SZ（深交所）/ 0700.HK（港股）/ 513180.SH（ETF）。务必与名称匹配、真实可交易。"},
+                        "direction": {"type": "string", "enum": ["long", "short"], "description": "看多=long，看空=short。"},
+                        "reason_zh": {"type": "string", "description": "一句话理由，必须绑定今天输入里的某个具体事件或板块（不要泛泛而谈）。"},
+                    },
+                    "required": ["name_zh", "code", "direction", "reason_zh"],
+                },
+                "description": "3-5只A股/港股/ETF。每只都必须由今天的某个事件或板块催化、并给出多/空方向。优先板块龙头或行业ETF（最干净的表达），不要每次都堆同样的大众名。重要：previously_recommended 里仍在跟踪、催化逻辑未失效的标的应当**保留**（沿用其方向），不要无故换名；只在出现新催化或旧逻辑失效时才增删或调向。",
             },
             "industry_commentary_zh": {
                 "type": "array",
@@ -297,7 +306,17 @@ MOM_SYSTEM = """你是一位财经分析师，为一位非专业的中国投资�
   * 港股（恒生、恒生科技）有大量外资，对美联储、汇率、全球流动性更敏感
   * 两个市场经常分化——分别独立判断
 - markets_reason_zh: 综合解释两个市场的反应，分化时说明原因
-- watchlist_zh: 3-5只综合标的（结合宏观和板块），混合A股和港股
+- watchlist_zh: 3-5只综合标的（见下方「建议关注」专门要求）
+
+## 建议关注（持续跟踪，重要）
+
+这个列表会被**真实记录并按 3/5/10 个交易日盯市打分**，所以要当成会被复盘的判断来写，不是随口一提：
+
+- 每只都要有 name_zh、code（真实可交易的代码，A股 .SH/.SZ、港股 .HK，ETF 也可）、direction（看多 long / 看空 short）、reason_zh（绑定今天某个具体事件或板块的一句话理由）。
+- **稳定优先**：输入里的 previously_recommended 是你之前推荐、目前仍在跟踪的标的（含首次纳入日期和至今表现）。只要其催化逻辑没有失效，就**继续保留**（沿用方向），不要因为想换个名字就换。只有出现新催化、或原逻辑被证伪时，才新增、删除或调整方向。
+- **别老堆大众名**：同一个主题优先选最干净的表达（板块龙头或行业ETF），不要每个板块都默认甩出最有名的那只票。
+- 看到 track_record（你过去的命中率）时，把它当作现实校准：如果某方向历史命中率低，就更克制、宁可减少个股、把判断让位给「大方向/行业」。
+- 拿不准具体个股时，可以只给 1-2 只高确信的，把剩下的判断交给 industry_commentary_zh 的板块方向——板块判断比脆弱的个股短线更可靠。
 
 ## 风格要求
 
@@ -323,6 +342,7 @@ def _format_user(
     qualifying_events: list[dict],
     sector_momentum: list[dict],
     previously_covered: list[dict] | None = None,
+    watchlist_ctx: dict | None = None,
 ) -> str:
     payload = {
         "events": [
@@ -339,6 +359,13 @@ def _format_user(
     }
     if previously_covered:
         payload["previously_covered"] = previously_covered
+    if watchlist_ctx:
+        # Carry-forward anchor: prior picks (+ running return) and the rolling
+        # track record, so Opus keeps names stable instead of churning them.
+        if watchlist_ctx.get("previously_recommended"):
+            payload["previously_recommended"] = watchlist_ctx["previously_recommended"]
+        if watchlist_ctx.get("track_record"):
+            payload["track_record"] = watchlist_ctx["track_record"]
     return json.dumps(payload, indent=2, ensure_ascii=False)
 
 
@@ -383,9 +410,52 @@ def _audit(payload: dict, response: dict | None, error: str | None) -> None:
     )
 
 
-def _build_card(digest: dict) -> dict:
+def _format_watchlist(preview: list[dict] | None, track_record: dict | None) -> str:
+    """Render the 建议关注 block from enriched picks + the rolling track record.
+
+    Each pick shows its direction + a one-line catalyst, plus a carry-forward tag:
+    [新增] for fresh picks, [首次纳入 DATE · 至今 +X%] for names carried from prior
+    scans (so a re-recommended name reads as one tracked call, not anonymous hype),
+    or [未跟踪] when the code can't be priced. The header shows the rolling hit-rate.
+    """
+    if not preview:
+        return ""
+    dir_label = {"long": "多", "short": "空"}
+    lines: list[str] = []
+    for p in preview:
+        name, code = p.get("name_zh", ""), p.get("code", "")
+        dl = dir_label.get(p.get("direction", "long"), "")
+        head = f"  • {name} ({code}) {dl}".rstrip()
+        if p.get("thesis_zh"):
+            head += f" — {p['thesis_zh']}"
+        lines.append(head)
+        if not p.get("trackable", True):
+            lines.append("    [未跟踪 · 代码无法定价]")
+        elif p.get("carried") and p.get("first_seen"):
+            tag = f"    [首次纳入 {p['first_seen']}"
+            rr = p.get("running_return_pct")
+            if rr is not None:
+                tag += f" · 至今 {rr:+.1f}%"
+            lines.append(tag + "]")
+        else:
+            lines.append("    [新增]")
+
+    tr = track_record or {}
+    hr, n = tr.get("hit_rate"), tr.get("n_evaluated", 0)
+    if hr is not None and n:
+        ph, win = tr.get("primary_horizon", 5), tr.get("window_days", 30)
+        header = f"🎯 **建议关注**（近{win}日命中率 {hr * 100:.0f}% · 按{ph}日 · 已评{n}只）"
+    else:
+        header = "🎯 **建议关注**"
+    return f"\n\n{header}\n" + "\n".join(lines)
+
+
+def _build_card(
+    digest: dict,
+    watchlist_preview: list[dict] | None = None,
+    track_record: dict | None = None,
+) -> dict:
     industries = "、".join(digest.get("affected_industries_zh", []))
-    watchlist = "\n".join(f"  • {w}" for w in digest.get("watchlist_zh", []))
     impact_map = {"bullish": "偏多 📈", "bearish": "偏空 📉", "mixed": "混合 ⚖️", "neutral": "中性 ➖"}
     a_label = impact_map.get(digest.get("a_share_impact", ""), "未知")
     hk_label = impact_map.get(digest.get("hk_impact", ""), "未知")
@@ -438,9 +508,11 @@ def _build_card(digest: dict) -> dict:
         f"**港股方向：** {hk_label}\n\n"
         f"**市场逻辑：** {digest.get('markets_reason_zh', '')}"
     )
-    if watchlist:
-        body += f"\n\n**建议关注：**\n{watchlist}"
-    body += f"\n\n_置信度：{digest.get('confidence', '—')} · 预计持续：{digest.get('horizon_days', '—')} 天_"
+    body += _format_watchlist(watchlist_preview, track_record)
+    footer = f"\n\n_置信度：{digest.get('confidence', '—')} · 预计持续：{digest.get('horizon_days', '—')} 天"
+    if watchlist_preview:
+        footer += " · 个股复盘 3/5/10 日"
+    body += footer + "_"
 
     # Card header color: worst-case directional signal across both markets.
     a, h = digest.get("a_share_impact", ""), digest.get("hk_impact", "")
@@ -545,12 +617,15 @@ def run(
         except Exception:
             pass
 
-    # Call Opus for Chinese digest
+    # Call Opus for Chinese digest. Feed prior watchlist picks (+ their running
+    # return and rolling hit-rate) so Opus carries names forward instead of
+    # re-inventing the same liquid defaults every scan.
     previously_covered = state.get("recent_digests", [])[-MAX_RECENT_DIGESTS:]
+    watchlist_ctx = mom_watchlist.recent_context()
     result = client.call_structured(
         model=config.OPUS_MODEL,
         system=MOM_SYSTEM,
-        user=_format_user(qualifying, sector_momentum, previously_covered),
+        user=_format_user(qualifying, sector_momentum, previously_covered, watchlist_ctx),
         output_tool=MOM_DIGEST_TOOL,
         audit_tier="opus_mom",
         audit_key=hashlib.sha1(str(sorted(current_groups)).encode()).hexdigest()[:12],
@@ -574,7 +649,9 @@ def run(
         log.info("Mom digest: Opus judged no events worth sending — skipping")
         return
 
-    card = _build_card(result)
+    raw_watchlist = result.get("watchlist_zh", []) or []
+    preview = mom_watchlist.preview(raw_watchlist)
+    card = _build_card(result, preview, watchlist_ctx.get("track_record"))
     ok, response, err = _send(webhook, card)
     _audit({"digest": result, "events": qualifying}, response, err)
 
@@ -585,6 +662,9 @@ def run(
         recent.append(_build_recent_digest_entry(qualifying, sector_momentum, result))
         state["recent_digests"] = recent[-MAX_RECENT_DIGESTS:]
         _save_throttle(state)
+        # Persist the picks we just showed so they can be carried forward next
+        # scan and marked-to-market over the coming days. Fail-soft inside.
+        mom_watchlist.commit(raw_watchlist, result.get("confidence"), datetime.now(timezone.utc))
         log.info("Mom digest sent: %s", result.get("title_zh"))
     else:
         log.warning("Mom digest send failed: %s", err)

@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
@@ -362,6 +362,13 @@ def run(
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
     performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
     performance.compile_prediction_stats(datetime.now(config.MARKET_TZ))
+    # Mom 建议关注 (CN/HK) tracker — mark prior picks to market at 3/5/10 trading
+    # days via Yahoo and roll up a hit-rate. Separate from the US Alpaca pipeline
+    # above; fail-soft so it never blocks the scan.
+    try:
+        mom_watchlist.evaluate_and_compile(_utc_now)
+    except Exception as e:
+        log.warning("Mom watchlist eval raised: %s", e)
     # Public accountability ledger — the committed, permanent record of every
     # alert/pick/prediction (the .jsonl logs above live only in evictable
     # Actions caches). Written after evaluation so outcomes are fresh.
