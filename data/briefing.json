@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-17T00:42:43.021571-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on intact; DLR + SOFI cleanest desk longs \u2014 SNAP, MRVL, CERT overnight tape leaders",
+  "generated_at": "2026-06-17T07:06:05.726022-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on intact; DLR, DDD, SOFI all desk longs \u2014 CERT +16% & SSRM +10% lead overnight movers",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.55% / QQQ -1.87% on day but regime holds; VXX stress ratio 0.9 \u2014 soft pullback, not distribution. Entries viable."
+    "line": "SPY -0.55% / QQQ -1.87% on the day but both above key MAs; VXX stress 0.9 subdued \u2014 dip, not break."
   },
   "actions": [
     {
@@ -13,7 +13,15 @@
       "entry": 190.43,
       "stop": 178.16,
       "target": 214.97,
-      "line": "Half-size long; signal + low-severity risk align, research neutral/no veto \u2014 best R/R of the four."
+      "line": "REIT data-center setup; signal + risk constructive, no fresh catalyst \u2014 quarter size."
+    },
+    {
+      "ticker": "DDD",
+      "direction": "long",
+      "entry": 3.19,
+      "stop": 3.11,
+      "target": 3.59,
+      "line": "No-news spike but R:R exceptional (~5:1); signal constructive \u2014 quarter size."
     },
     {
       "ticker": "SOFI",
@@ -21,50 +29,42 @@
       "entry": 17.71,
       "stop": 16.29,
       "target": 20.54,
-      "line": "Half-size long; signal agrees, low risk, constructive research \u2014 clean setup."
-    },
-    {
-      "ticker": "MRNA",
-      "direction": "long",
-      "entry": 55.39,
-      "stop": 50.96,
-      "target": 64.25,
-      "line": "Quarter-size long; research for but signal flags extension \u2014 stretch concern, small size."
+      "line": "Clean setup, signal + risk both constructive; research lone dissent on no-news \u2014 half size."
     }
   ],
   "watch": [
     {
-      "ticker": "SNAP",
-      "type": "mover",
-      "line": "\u22129.88% on 3\u00d7 rel vol overnight \u2014 highest volume dislocation on tape, watch for RTH continuation or fade."
-    },
-    {
-      "ticker": "MRVL",
-      "type": "mover",
-      "line": "\u22129.83% big move, 1.28\u00d7 vol \u2014 semis pressure, watch for sector read-through at open."
-    },
-    {
       "ticker": "CERT",
       "type": "mover",
-      "line": "+16.35% on 2.32\u00d7 vol, MACD bullish \u2014 unusual volume + momentum, needs catalyst confirmation."
+      "line": "+16.4%, rel vol 2.3x, MACD bullish \u2014 watch for RTH continuation or fade setup."
     },
     {
       "ticker": "SSRM",
       "type": "mover",
-      "line": "+9.97% on 2\u00d7 vol, MACD bullish \u2014 gold/silver miner momentum, watch if metals bid continues."
+      "line": "+10.0%, rel vol 2.0x, MACD bullish \u2014 gold/silver miner momentum, check for sector follow-through."
+    },
+    {
+      "ticker": "SNAP",
+      "type": "mover",
+      "line": "-9.9%, rel vol 3.0x \u2014 highest overnight volume in the scan; watch for dead-cat or further breakdown at open."
+    },
+    {
+      "ticker": "MRVL",
+      "type": "mover",
+      "line": "-9.8% \u2014 semis under pressure after QQQ -1.87%; watch for sector stabilization signal."
     },
     {
       "ticker": "AXTI",
       "type": "mover",
-      "line": "\u221215.99% big move \u2014 largest overnight loser, 1.82\u00d7 vol, watch for bounce or further unwind."
+      "line": "-16.0% \u2014 largest downside mover; low rel vol (1.8x) suggests thin selling, gap may fill."
     }
   ],
   "changed": [
-    "DLR added as desk take (half-size, cleanest setup) \u2014 now four active longs vs three prior",
-    "MRNA and NAT new additions to actions this scan"
+    "DDD added as new desk long (was not in prior briefing)",
+    "Previous headline noted CERT as tape leader \u2014 still leading at +16.4%"
   ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-17 00:42 ET \u2014 prices stale, pre-RTH gaps likely; re-check levels at open before entry.",
-    "No catalysts or macro events flagged this scan; MRVL/SNAP moves lack confirmed drivers \u2014 size accordingly."
+    "AH/Pre-market scan as of 07:06 ET 2026-06-17; prices stale \u2014 levels shift materially at RTH open, re-check entries before executing.",
+    "No catalyst or macro events flagged this scan; all three desk longs are no-news setups \u2014 elevated fade risk if broader tape softens at open."
   ]
 }
