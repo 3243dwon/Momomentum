@@ -1,8 +1,599 @@
 {
-  "generated_at": "2026-06-18T07:53:07.395163-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-18T11:34:01.917562-04:00",
+  "event_count": 3,
+  "prediction_count": 23,
+  "not_yet_priced_in": 17,
+  "events": [
+    {
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "primary_drivers": [
+        "Apple shifting silicon volume toward Intel foundry/fabs displaces incumbent foundry partner",
+        "US-domestic fab buildout accelerates, pulling in semicap and packaging spend",
+        "Read-through to other potential Intel Foundry anchor customers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AMAT",
+          "rationale": "Intel ramping advanced-node capacity to serve Apple volume drives incremental WFE orders; Applied is Intel's largest equipment supplier across deposition/etch.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Etch/deposition tools tied directly to Intel 18A/14A node ramps needed to fulfill Apple wafer demand.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "Process control intensity rises as Intel qualifies leading-edge nodes for an external customer like Apple \u2014 yield ramp drives KLA tool pull-ins.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "EUV layers per wafer increase as Intel scales 18A for Apple; reinforces Intel's standing EUV order pipeline.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GFS",
+          "rationale": "Validates US-based foundry thesis broadly; GlobalFoundries is the other US-listed pure-play foundry and re-rates on 'reshoring works' narrative.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "TSM",
+          "rationale": "Apple is TSMC's largest customer (~25% of revenue) on N3/N2; any volume shift to Intel foundry directly cannibalizes TSMC's most profitable wafer mix.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "QCOM",
+          "rationale": "Closer Apple-Intel partnership raises risk of expanded scope (modems, connectivity) that could accelerate Apple's in-house/Intel-fabbed displacement of Qualcomm modem socket.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMD",
+          "rationale": "Resurgent Intel with anchor customer + political tailwind strengthens its client/server roadmap funding, pressuring AMD's share-gain narrative.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "INTC",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "headlines": [
+        "Intel Stock Soars After Trump Reveals Apple Partnership \u2014 The Chart Points To More Upside"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside"
+    },
+    {
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "primary_drivers": [
+        "Used-vehicle retail demand read-through",
+        "Subprime auto credit performance signal",
+        "Wholesale auction/used-car pricing umbrella"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "ALLY",
+          "rationale": "Largest prime/near-prime auto lender; KMX commentary on credit and originations is a direct read-through to Ally's auto loan book and used-car residuals.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COF",
+          "rationale": "Major subprime auto lender; KMX Auto Finance loss/delinquency trends are a leading indicator for COF's auto credit performance.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ACVA",
+          "rationale": "ACV Auctions is a pure-play wholesale used-vehicle marketplace; KMX wholesale unit and pricing commentary directly affects ACVA volume/GMV outlook.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SAH",
+          "rationale": "Sonic Automotive's EchoPark used-only stores compete in the same standalone used segment; rerates on KMX comp trends.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "AN",
+          "rationale": "AutoNation's used-vehicle GPU and share could compress if KMX is reaccelerating share gains in standalone used retail.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LAD",
+          "rationale": "Lithia/Driveway's used-only growth strategy faces tougher competition if KMX turnaround sticks.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "CVNA",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "headlines": [
+        "CarMax Rides Q1 Pop, But Analyst Wants More Proof For Turnaround"
+      ],
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof"
+    },
+    {
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "primary_drivers": [
+        "Grocery margin compression read-through to peers",
+        "Soft consumer staples demand signal",
+        "CPG pricing power weakening as grocers push back"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "WMT",
+          "rationale": "Largest grocery share-gainer; Kroger margin weakness and soft traffic typically reflects share loss to Walmart's low-price/grocery pickup model.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COST",
+          "rationale": "Membership warehouse model insulated from conventional grocery margin squeeze; trade-down/value seekers shift volume to Costco.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DG",
+          "rationale": "Deep-discount grocery/consumables benefits when conventional supermarkets show soft consumer spend and trade-down accelerates.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "ACI",
+          "rationale": "Albertsons is the closest pure-play conventional grocery peer; identical end-market, same margin compression and competitive pressure from Walmart/Costco read directly across.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SFM",
+          "rationale": "Sprouts is a grocery pure-play; sells off on group de-rating even though specialty/fresh model differs, on sympathy and sector multiple compression.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KHC",
+          "rationale": "Large CPG supplier to Kroger; soft grocery volumes and grocers pushing back on price implies weaker shipment/promo dynamics for packaged food vendors.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GIS",
+          "rationale": "General Mills heavy grocery channel exposure; Kroger's soft outlook implies weaker center-store volumes and continued private-label share gains.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CAG",
+          "rationale": "Conagra packaged food sells primarily through supermarkets; Kroger's weak guide signals continued volume/price pressure on branded shelf-stable food.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GO",
+          "rationale": "Grocery Outlet is small-cap grocery peer; gets dragged on sector sentiment despite different model.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "trigger_ticker": "KR",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "headlines": [
+        "Kroger Stock Crashes 10% On Triple Whammy: Missed Earnings, Squeezed Margins And Soft Outlook"
+      ],
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "TSM",
+      "direction": "bearish",
+      "rationale": "Apple is TSMC's largest customer (~25% of revenue) on N3/N2; any volume shift to Intel foundry directly cannibalizes TSMC's most profitable wafer mix.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Intel ramping advanced-node capacity to serve Apple volume drives incremental WFE orders; Applied is Intel's largest equipment supplier across deposition/etch.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "ALLY",
+      "direction": "bullish",
+      "rationale": "Largest prime/near-prime auto lender; KMX commentary on credit and originations is a direct read-through to Ally's auto loan book and used-car residuals.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "COF",
+      "direction": "bullish",
+      "rationale": "Major subprime auto lender; KMX Auto Finance loss/delinquency trends are a leading indicator for COF's auto credit performance.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 1.19,
+      "rel_volume": 0.4,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "SAH",
+      "direction": "bullish",
+      "rationale": "Sonic Automotive's EchoPark used-only stores compete in the same standalone used segment; rerates on KMX comp trends.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "WMT",
+      "direction": "bullish",
+      "rationale": "Largest grocery share-gainer; Kroger margin weakness and soft traffic typically reflects share loss to Walmart's low-price/grocery pickup model.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -0.78,
+      "rel_volume": 0.4,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "COST",
+      "direction": "bullish",
+      "rationale": "Membership warehouse model insulated from conventional grocery margin squeeze; trade-down/value seekers shift volume to Costco.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "SFM",
+      "direction": "bearish",
+      "rationale": "Sprouts is a grocery pure-play; sells off on group de-rating even though specialty/fresh model differs, on sympathy and sector multiple compression.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": -1.84,
+      "rel_volume": 0.34,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "KHC",
+      "direction": "bearish",
+      "rationale": "Large CPG supplier to Kroger; soft grocery volumes and grocers pushing back on price implies weaker shipment/promo dynamics for packaged food vendors.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -1.01,
+      "rel_volume": 0.26,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "GIS",
+      "direction": "bearish",
+      "rationale": "General Mills heavy grocery channel exposure; Kroger's soft outlook implies weaker center-store volumes and continued private-label share gains.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 0.78,
+      "rel_volume": 0.27,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "ASML",
+      "direction": "bullish",
+      "rationale": "EUV layers per wafer increase as Intel scales 18A for Apple; reinforces Intel's standing EUV order pipeline.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "GFS",
+      "direction": "bullish",
+      "rationale": "Validates US-based foundry thesis broadly; GlobalFoundries is the other US-listed pure-play foundry and re-rates on 'reshoring works' narrative.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "AMD",
+      "direction": "bearish",
+      "rationale": "Resurgent Intel with anchor customer + political tailwind strengthens its client/server roadmap funding, pressuring AMD's share-gain narrative.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "AN",
+      "direction": "bearish",
+      "rationale": "AutoNation's used-vehicle GPU and share could compress if KMX is reaccelerating share gains in standalone used retail.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "LAD",
+      "direction": "bearish",
+      "rationale": "Lithia/Driveway's used-only growth strategy faces tougher competition if KMX turnaround sticks.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "CAG",
+      "direction": "bearish",
+      "rationale": "Conagra packaged food sells primarily through supermarkets; Kroger's weak guide signals continued volume/price pressure on branded shelf-stable food.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "GO",
+      "direction": "bearish",
+      "rationale": "Grocery Outlet is small-cap grocery peer; gets dragged on sector sentiment despite different model.",
+      "confidence": "low",
+      "horizon": "intraday",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "ACVA",
+      "direction": "bullish",
+      "rationale": "ACV Auctions is a pure-play wholesale used-vehicle marketplace; KMX wholesale unit and pricing commentary directly affects ACVA volume/GMV outlook.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "partial",
+      "pct_1d": 3.98,
+      "rel_volume": 0.42,
+      "trigger_ticker": "CVNA",
+      "event_summary": "CarMax posted a Q1 beat but analysts want more proof of a sustained turnaround, lifting used-auto retail sentiment (CVNA up ~6%).",
+      "news_url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/53280992/carmax-q1-earnings-analyst-more-turnaround-proof",
+      "source_news_ids": [
+        "07d9c8842c198d05"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "DG",
+      "direction": "bullish",
+      "rationale": "Deep-discount grocery/consumables benefits when conventional supermarkets show soft consumer spend and trade-down accelerates.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "partial",
+      "pct_1d": 3.38,
+      "rel_volume": 0.32,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "QCOM",
+      "direction": "bearish",
+      "rationale": "Closer Apple-Intel partnership raises risk of expanded scope (modems, connectivity) that could accelerate Apple's in-house/Intel-fabbed displacement of Qualcomm modem socket.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 4.7,
+      "rel_volume": 0.42,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "ACI",
+      "direction": "bearish",
+      "rationale": "Albertsons is the closest pure-play conventional grocery peer; identical end-market, same margin compression and competitive pressure from Walmart/Costco read directly across.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": -4.78,
+      "rel_volume": 0.91,
+      "trigger_ticker": "KR",
+      "event_summary": "Kroger missed earnings with squeezed margins and soft outlook, signaling pressure across the grocery/food retail channel.",
+      "news_url": "https://www.benzinga.com/markets/earnings/26/06/53273633/kroger-stock-crashes-10-on-triple-whammy-missed-earnings-squeezed-margins-and-soft-outlook",
+      "source_news_ids": [
+        "07cf0b5d2ec9e7dc"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Etch/deposition tools tied directly to Intel 18A/14A node ramps needed to fulfill Apple wafer demand.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 5.68,
+      "rel_volume": 0.34,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    },
+    {
+      "ticker": "KLAC",
+      "direction": "bullish",
+      "rationale": "Process control intensity rises as Intel qualifies leading-edge nodes for an external customer like Apple \u2014 yield ramp drives KLA tool pull-ins.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 7.3,
+      "rel_volume": 0.28,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump revealed an Apple-Intel partnership, sending INTC sharply higher on expectations Apple will source chips/foundry services from Intel.",
+      "news_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53274303/intel-stock-soars-after-trump-reveals-apple-partnership-the-chart-points-to-more-upside",
+      "source_news_ids": [
+        "c116376ed6071259"
+      ],
+      "created_at": "2026-06-18T11:34:01.917562-04:00"
+    }
+  ]
 }

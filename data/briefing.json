@@ -1,70 +1,63 @@
 {
-  "generated_at": "2026-06-18T07:53:07.395163-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on regime masks SPY/QQQ pullback; RXT +21% leads broad mover list, desk fades noise with 4 technical longs",
+  "generated_at": "2026-06-18T11:34:01.917562-04:00",
+  "window": "RTH",
+  "headline": "Iran peace deal ignites semi rip \u2014 INTC +8.6%, MRVL +11.7%; desk takes INTC & VRT long at half size",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.27% / QQQ -1.01% on the day but both above 50d; VXX stress 0.95 \u2014 subdued vol, regime holds risk-on despite intraday dip."
+    "line": "SPY +0.79%, QQQ +1.87%; VXX stress ratio 0.94 \u2014 vol crushed, risk-on rotation into semis/cyclicals on geopolitical unwind. Green light for e"
   },
   "actions": [
     {
-      "ticker": "CYTK",
+      "ticker": "INTC",
       "direction": "long",
-      "entry": 78.14,
-      "stop": 77.01,
-      "target": 80.4,
-      "line": "Half size. Momentum setup intact; research skeptical but low conviction \u2014 signal+risk green."
+      "entry": 131.46,
+      "stop": 120.94,
+      "target": 152.49,
+      "line": "Trump/Iran catalyst drove +8.6%; desk buys half size \u2014 signal neutral on low vol but risk green, R/R ~2:1."
     },
     {
-      "ticker": "OCUL",
+      "ticker": "VRT",
       "direction": "long",
-      "entry": 9.63,
-      "stop": 9.31,
-      "target": 10.27,
-      "line": "Quarter size. No catalyst, clean technicals only \u2014 small bet on the setup."
-    },
-    {
-      "ticker": "HWM",
-      "direction": "long",
-      "entry": 283.24,
-      "stop": 262.02,
-      "target": 325.68,
-      "line": "Quarter size. Signal+risk constructive vs research against; wide stop reflects medium severity risk."
+      "entry": 333.0,
+      "stop": 306.36,
+      "target": 386.28,
+      "line": "No fresh catalyst but signal agrees and risk is green; half size, ~2:1 R/R on data-center infrastructure momentum."
     }
   ],
   "watch": [
     {
-      "ticker": "RXT",
-      "type": "mover",
-      "line": "+21.5% on 2x rel vol, MACD bullish \u2014 biggest move on the tape, watch for continuation or fade setup at open."
+      "ticker": "TSM",
+      "type": "ripple",
+      "line": "High-confidence bear ripple from INTC: Apple volume shift to Intel foundry directly cannibalizes TSMC's N3/N2 mix."
     },
     {
-      "ticker": "EOSE",
-      "type": "mover",
-      "line": "+11.75% with unusual volume (2.08x) \u2014 energy storage name, worth monitoring for follow-through."
+      "ticker": "QS",
+      "type": "catalyst",
+      "line": "QuantumScape +14.9% on news, rel-vol 1.12 \u2014 only mover with above-avg volume confirmation. Watch for follow-through."
     },
     {
-      "ticker": "MRNA",
-      "type": "mover",
-      "line": "+11.55% overbought flag \u2014 biotech squeeze, no catalyst listed; fade risk elevated."
+      "ticker": "KMX",
+      "type": "catalyst",
+      "line": "KMX +6.5% on strong print; bullish ripple to ALLY, COF (auto lending), SAH (used-car comps) \u2014 none priced in yet."
     },
     {
-      "ticker": "CVNA",
-      "type": "mover",
-      "line": "-10.19% on 2.07x vol, MACD bearish + unusual volume \u2014 only big red on the board, short interest worth watching."
+      "ticker": "WMT",
+      "type": "ripple",
+      "line": "KR -5.8% on margin/traffic miss \u2014 standard share-gain read-through to WMT and COST; SFM faces sympathy de-rate."
     },
     {
-      "ticker": "FRMI",
-      "type": "mover",
-      "line": "+9.63% unusual volume (2.22x) but overbought \u2014 highest rel vol on the board, momentum vs mean-reversion tension."
+      "ticker": "AMAT",
+      "type": "ripple",
+      "line": "Medium-confidence bull ripple: INTC advanced-node ramp drives incremental WFE orders; AMAT is INTC's largest equipment supplier."
     }
   ],
   "changed": [
-    "Previous headline driven by INTC/Apple chip deal and WFE ripple; this scan shows no catalysts or ripple events \u2014 broad mover list with no macro narrative",
-    "Desk adds 4 new technical longs (CYTK, OCUL, HWM, ING); no carries from prior INTC/AMAT/LRCX theme"
+    "Regime same (risk_on) but now driven by Iran peace deal catalyst \u2014 prior scan flagged SPY/QQQ pullback, today both are firmly bid",
+    "Desk trimmed from 4 technical longs to 2 (INTC + VRT); INTC now has a hard fundamental catalyst vs. prior scan's technical-only picks",
+    "RXT +21% leadership gone; semi complex (INTC, MRVL, SNDK) now dominates mover list"
   ],
   "caveats": [
-    "AH/Pre-market scan (2026-06-18 ~07:53 ET) \u2014 prices as of scan time, pre-RTH; levels may gap significantly at 09:30 open.",
-    "All 4 desk takes are against or without research support \u2014 pure momentum/technical bets; position sizing reflects that (half/quarter only)."
+    "RTH scan as of 11:34 ET 2026-06-18 \u2014 prices and levels stale by time of read; INTC entry at 131.46 may already be through given intraday momentum.",
+    "INTC ripple logic (TSM bear, AMAT bull) assumes Apple-to-Intel foundry shift is real and sustained \u2014 still speculative; size accordingly."
   ]
 }

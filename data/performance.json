@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-18T07:56:05.771938-04:00",
+  "generated_at": "2026-06-18T11:40:01.418091-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
-  "total_alerts": 2150,
+  "total_alerts": 2178,
   "per_type": {
     "watchlist": {
-      "count": 513,
+      "count": 515,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 485,
-          "hit_rate": 0.419,
+          "evaluated": 483,
+          "hit_rate": 0.418,
           "avg_return_pct": -0.98,
-          "hit_rate_net": 0.357,
+          "hit_rate_net": 0.356,
           "avg_return_net_pct": -1.48
         },
         "3d": {
-          "evaluated": 432,
-          "hit_rate": 0.5,
-          "avg_return_pct": -0.52,
-          "hit_rate_net": 0.463,
-          "avg_return_net_pct": -1.02
+          "evaluated": 439,
+          "hit_rate": 0.503,
+          "avg_return_pct": -0.49,
+          "hit_rate_net": 0.467,
+          "avg_return_net_pct": -0.99
         },
         "5d": {
-          "evaluated": 420,
+          "evaluated": 418,
           "hit_rate": 0.49,
           "avg_return_pct": -0.7,
           "hit_rate_net": 0.464,
@@ -31,35 +31,8 @@
         }
       }
     },
-    "big_move": {
-      "count": 460,
-      "direction_basis": "move",
-      "horizons": {
-        "1d": {
-          "evaluated": 444,
-          "hit_rate": 0.489,
-          "avg_return_pct": 0.62,
-          "hit_rate_net": 0.441,
-          "avg_return_net_pct": 0.12
-        },
-        "3d": {
-          "evaluated": 408,
-          "hit_rate": 0.483,
-          "avg_return_pct": 1.12,
-          "hit_rate_net": 0.463,
-          "avg_return_net_pct": 0.62
-        },
-        "5d": {
-          "evaluated": 405,
-          "hit_rate": 0.58,
-          "avg_return_pct": 3.11,
-          "hit_rate_net": 0.565,
-          "avg_return_net_pct": 2.61
-        }
-      }
-    },
     "delta_new_top20": {
-      "count": 212,
+      "count": 217,
       "direction_basis": "move",
       "horizons": {
         "1d": {
@@ -70,11 +43,11 @@
           "avg_return_net_pct": -0.77
         },
         "3d": {
-          "evaluated": 193,
-          "hit_rate": 0.43,
-          "avg_return_pct": -1.42,
-          "hit_rate_net": 0.425,
-          "avg_return_net_pct": -1.92
+          "evaluated": 197,
+          "hit_rate": 0.431,
+          "avg_return_pct": -1.39,
+          "hit_rate_net": 0.426,
+          "avg_return_net_pct": -1.89
         },
         "5d": {
           "evaluated": 193,
@@ -86,7 +59,7 @@
       }
     },
     "catalyst": {
-      "count": 72,
+      "count": 76,
       "direction_basis": "move",
       "horizons": {
         "1d": {
@@ -97,11 +70,11 @@
           "avg_return_net_pct": 3.28
         },
         "3d": {
-          "evaluated": 65,
-          "hit_rate": 0.6,
-          "avg_return_pct": 3.42,
-          "hit_rate_net": 0.569,
-          "avg_return_net_pct": 2.92
+          "evaluated": 67,
+          "hit_rate": 0.612,
+          "avg_return_pct": 3.56,
+          "hit_rate_net": 0.582,
+          "avg_return_net_pct": 3.06
         },
         "5d": {
           "evaluated": 65,
@@ -112,8 +85,35 @@
         }
       }
     },
+    "big_move": {
+      "count": 455,
+      "direction_basis": "move",
+      "horizons": {
+        "1d": {
+          "evaluated": 439,
+          "hit_rate": 0.487,
+          "avg_return_pct": 0.64,
+          "hit_rate_net": 0.442,
+          "avg_return_net_pct": 0.14
+        },
+        "3d": {
+          "evaluated": 405,
+          "hit_rate": 0.484,
+          "avg_return_pct": 1.21,
+          "hit_rate_net": 0.464,
+          "avg_return_net_pct": 0.71
+        },
+        "5d": {
+          "evaluated": 400,
+          "hit_rate": 0.578,
+          "avg_return_pct": 3.23,
+          "hit_rate_net": 0.565,
+          "avg_return_net_pct": 2.73
+        }
+      }
+    },
     "serenity_match": {
-      "count": 871,
+      "count": 891,
       "direction_basis": "thesis",
       "horizons": {
         "1d": {
@@ -124,11 +124,11 @@
           "avg_return_net_pct": -0.7
         },
         "3d": {
-          "evaluated": 511,
-          "hit_rate": 0.605,
-          "avg_return_pct": 1.17,
+          "evaluated": 550,
+          "hit_rate": 0.602,
+          "avg_return_pct": 1.23,
           "hit_rate_net": 0.56,
-          "avg_return_net_pct": 0.67
+          "avg_return_net_pct": 0.73
         },
         "5d": {
           "evaluated": 463,
@@ -140,7 +140,7 @@
       }
     },
     "ripple": {
-      "count": 17,
+      "count": 19,
       "direction_basis": "thesis",
       "horizons": {
         "1d": {
@@ -151,11 +151,11 @@
           "avg_return_net_pct": -0.29
         },
         "3d": {
-          "evaluated": 7,
-          "hit_rate": 0.429,
-          "avg_return_pct": -2.52,
-          "hit_rate_net": 0.286,
-          "avg_return_net_pct": -3.02
+          "evaluated": 10,
+          "hit_rate": 0.4,
+          "avg_return_pct": -2.05,
+          "hit_rate_net": 0.3,
+          "avg_return_net_pct": -2.55
         },
         "5d": {
           "evaluated": 7,

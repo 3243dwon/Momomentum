@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T07:56:05.833062-04:00",
+  "generated_at": "2026-06-18T11:40:01.482322-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizons": [
@@ -8,14 +8,147 @@
     "3d"
   ],
   "horizon_note": "0d = entry-day close; graded against the settled daily close",
-  "total_calls": 0,
+  "total_calls": 29,
   "untracked_count": 0,
   "fired_vs_control_edge_net": {
     "0d": null,
     "1d": null,
     "3d": null
   },
-  "by_fired": {},
-  "by_direction": {},
-  "by_gap_band": {}
+  "by_fired": {
+    "fired": {
+      "count": 5,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    },
+    "control": {
+      "count": 24,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    }
+  },
+  "by_direction": {
+    "long": {
+      "count": 5,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    }
+  },
+  "by_gap_band": {
+    "8+": {
+      "count": 3,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    },
+    "5-8": {
+      "count": 2,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    }
+  }
 }
