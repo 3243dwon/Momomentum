@@ -1,63 +1,70 @@
 {
-  "generated_at": "2026-06-18T14:28:04.844214-04:00",
-  "window": "RTH",
-  "headline": "GTA 6 window confirmed: TTWO +5.6% leads; semis extend \u2014 MRVL +12.4%, INTC +11.7%; QQQ +2.35%",
+  "generated_at": "2026-06-18T17:23:11.284713-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on holds: QQQ +2.4%, broad tape green; FCEL +19.7%, QS +16.6% lead movers; 3 desk takes active",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.99%, QQQ +2.35%, VXX stress 0.93 \u2014 semis ripping, tape strong; hawkish Warsh repricing is the lurking headwind for high-multiple name"
+    "line": "SPY +1.03%, QQQ +2.4%, VXX stress 0.93 \u2014 vol suppressed, trend intact above 50d; AH tape still constructive for entries."
   },
   "actions": [
     {
-      "ticker": "TTWO",
+      "ticker": "FULC",
       "direction": "long",
-      "entry": 240.93,
-      "stop": 236.07,
-      "target": 250.64,
-      "line": "GTA 6 window catalyst +5.6%; stretched 5d but real news justifies quarter-size long."
+      "entry": 3.69,
+      "stop": 3.52,
+      "target": 4.03,
+      "line": "Fresh MACD cross, RSI 32 early entry \u2014 half size, tight $0.17 stop."
+    },
+    {
+      "ticker": "WMB",
+      "direction": "long",
+      "entry": 73.14,
+      "stop": 72.18,
+      "target": 75.06,
+      "line": "Regime-aligned energy infra, no red flags \u2014 half size, $0.96 risk to $1.92 reward."
     },
     {
       "ticker": "RVMD",
       "direction": "long",
-      "entry": 161.87,
-      "stop": 158.23,
-      "target": 169.15,
-      "line": "Signal + risk green, research neutral no veto; clean technical setup at half size."
+      "entry": 162.84,
+      "stop": 159.28,
+      "target": 169.96,
+      "line": "Signal + regime agree, research neutral no veto \u2014 half size, 2:1 R/R."
     }
   ],
   "watch": [
     {
-      "ticker": "MRVL",
+      "ticker": "QS",
       "type": "mover",
-      "line": "MRVL +12.4% relv 1.17 \u2014 semi momentum extending from yesterday's Iran-deal rip; watch for continuation or exhaustion."
-    },
-    {
-      "ticker": "MSFT",
-      "type": "ripple",
-      "line": "GTA 6 window boosts Xbox/Game Pass attach and Microsoft Store cut \u2014 bullish ripple, medium confidence, not priced."
-    },
-    {
-      "ticker": "EA",
-      "type": "ripple",
-      "line": "GTA 6 calendar crowding risk \u2014 bearish ripple for AAA competitor; Battlefield/sports titles may need to move, pressuring FY timing."
-    },
-    {
-      "ticker": "GME",
-      "type": "ripple",
-      "line": "Physical preorder + collector-edition traffic rare positive for brick-and-mortar retail; medium confidence."
+      "line": "+16.6%, 2.31\u00d7 volume \u2014 unusual vol confirms conviction; watch for follow-through open."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "TNGX -12.6% relv 1.64 \u2014 notable flush on elevated volume; monitor for stabilization catalyst."
+      "line": "-13.7%, 2.4\u00d7 volume \u2014 high-vol flush; watch for stabilization before any fade/bounce play."
+    },
+    {
+      "ticker": "ARCT",
+      "type": "ripple",
+      "line": "mRNA platform re-rating via MRNA; CSL partnership adds legitimacy \u2014 medium confidence bullish read-through."
+    },
+    {
+      "ticker": "RCAT",
+      "type": "ripple",
+      "line": "Drone sector consolidation premium off ONDS M&A \u2014 medium confidence, small-cap volatility risk."
+    },
+    {
+      "ticker": "DPRO",
+      "type": "ripple",
+      "line": "Draganfly direct peer to ONDS Cyberhawk deal (utilities/energy drone inspection) \u2014 medium confidence."
     }
   ],
   "changed": [
-    "Desk drops INTC & VRT; new takes are TTWO (quarter, GTA 6 catalyst) and RVMD (half, technical)",
-    "Semi leadership shifts from INTC/VRT to MRVL (+12.4%) and SNDK (+11.7%) as Iran-deal momentum extends",
-    "GTA 6 confirmation replaces geopolitics as the dominant single-stock catalyst"
+    "Previous leadership was TTWO/MRVL/INTC (gaming + semis); this scan: FCEL/QS/TNGX (clean energy + biotech flush) lead movers \u2014 sector rotation",
+    "Three new desk takes (FULC, WMB, RVMD) now active; no carries from prior briefing"
   ],
   "caveats": [
-    "RTH scan as of 14:28 ET 2026-06-18; prices stale by seconds to minutes \u2014 verify quotes before entry.",
-    "Hawkish Warsh repricing is a live macro risk: higher-for-longer rates compress long-duration multiples and could cap upside on TTWO and RVMD if sentiment shifts intraday."
+    "AH_POST scan as of 17:23 ET 2026-06-18 \u2014 prices are post-close and may gap significantly at next RTH open; desk take entries may not be achievable.",
+    "SPY 200d data unavailable this scan \u2014 full trend confirmation incomplete; regime reads risk_on on 50d + QQQ/VXX alone."
   ]
 }

@@ -1,191 +1,257 @@
 {
-  "generated_at": "2026-06-18T14:28:04.844214-04:00",
-  "event_count": 1,
-  "prediction_count": 7,
+  "generated_at": "2026-06-18T17:23:11.284713-04:00",
+  "event_count": 2,
+  "prediction_count": 9,
   "not_yet_priced_in": 6,
   "events": [
     {
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
+      "event_summary": "Moderna surging into an imminent FDA decision, dragging leveraged single-stock ETFs up ~60% and reigniting mRNA/vaccine sentiment.",
       "primary_drivers": [
-        "GTA 6 launch timing de-risked drives console/peripheral attach-rate expectations",
-        "Crowding-out risk for competing AAA releases in the launch window",
-        "Retailer and streaming/creator economy benefit from blockbuster demand cycle"
+        "mRNA platform re-rating on FDA approval read-through",
+        "Sentiment flow into vaccine/biotech peers and leveraged ETFs",
+        "Competitive positioning shift in respiratory/vaccine franchise"
       ],
       "beneficiaries": [
         {
-          "ticker": "MSFT",
-          "rationale": "Xbox Series X/S attach and Game Pass engagement get a tailwind from a confirmed GTA 6 window; Microsoft Store takes a cut of digital sales on Xbox.",
+          "ticker": "ARCT",
+          "rationale": "Arcturus has an mRNA/sa-mRNA platform with CSL partnership; benefits from mRNA platform re-rating and read-through to regulatory acceptance of next-gen mRNA products.",
           "confidence": "medium",
-          "horizon": "months"
+          "horizon": "days"
         },
         {
-          "ticker": "LOGI",
-          "rationale": "Blockbuster launches drive peripheral refresh cycles \u2014 controllers, headsets, streaming gear \u2014 where Logitech has direct exposure.",
+          "ticker": "IONS",
+          "rationale": "RNA-therapeutics adjacent peer; positive FDA read-through on novel RNA modalities supports the broader RNA platform sentiment basket.",
           "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "CRSR",
-          "rationale": "Pure-play gaming peripherals/PC gear vendor levered to AAA launch hype cycle and streamer/content-creator gear purchases.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "GME",
-          "rationale": "Physical preorder traffic and collector-edition sales are a rare positive catalyst for brick-and-mortar game retail; GTA franchise historically drives store visits.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AMZN",
-          "rationale": "Twitch viewership and Amazon retail preorders on collector editions both benefit materially from a confirmed GTA 6 launch window.",
-          "confidence": "low",
-          "horizon": "months"
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "EA",
-          "rationale": "Direct AAA competitor \u2014 any title shipping near the GTA 6 window faces calendar crowding; EA may need to move Battlefield/sports releases out of the window, pressuring FY revenue timing.",
+          "ticker": "PFE",
+          "rationale": "If FDA decision relates to Moderna's next-gen COVID/flu/RSV franchise, Pfizer/BioNTech's competing Comirnaty and standalone flu/RSV programs face share-loss risk in the upcoming respiratory season.",
           "confidence": "medium",
           "horizon": "months"
         },
         {
-          "ticker": "RBLX",
-          "rationale": "Teen/young-adult engagement hours shift toward GTA 6 at launch; risk of DAU/hours-per-user softness in the launch quarter.",
+          "ticker": "NVAX",
+          "rationale": "Protein-subunit COVID vaccine competitor; an expanded/approved Moderna product (e.g., combo or next-gen) further marginalizes Novavax's already-shrinking share of the respiratory vaccine market.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "MRNA",
+      "source_news_ids": [
+        "0bd446e458c4edb1"
+      ],
+      "headlines": [
+        "Bulls Pile Into Moderna As FDA Decision Nears, Ignites 60% Surge In This ETF"
+      ],
+      "news_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf"
+    },
+    {
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "primary_drivers": [
+        "Consolidation in commercial drone services raises valuations for pure-play peers",
+        "Validation of drone-based infrastructure inspection TAM (energy, utilities, oil & gas)",
+        "Increased competitive pressure on incumbent inspection-services providers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AVAV",
+          "rationale": "AeroVironment is a comparable listed drone pure-play; a $125M strategic acquisition in commercial drone analytics sets a comp valuation marker for unmanned systems peers.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RCAT",
+          "rationale": "Red Cat Holdings (drone manufacturer) re-rates on commercial drone M&A as it signals consolidation premium across the sector.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KTOS",
+          "rationale": "Kratos has unmanned systems exposure; sector M&A reinforces strategic value of drone/UAS franchises.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DPRO",
+          "rationale": "Draganfly is a small-cap drone services/inspection peer \u2014 directly comparable end markets to Cyberhawk (utilities, energy inspection).",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "GEOS",
+          "rationale": "Geospace and other traditional ground/manual inspection-services providers in energy face accelerated displacement as drone-based analytics scales via better-capitalized acquirers.",
           "confidence": "low",
           "horizon": "months"
         }
       ],
-      "trigger_ticker": "TTWO",
+      "trigger_ticker": "ONDS",
       "source_news_ids": [
-        "32f64a8ec5fb38eb"
+        "730cfa8e204aedbd"
       ],
       "headlines": [
-        "GTA 6 Preorder Announcement Crushes Delay Fears\u2014And Sends Take-Two Stock Flying"
+        "Why Ondas Is Spending $125 Million To Buy Cyberhawk"
       ],
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying"
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk"
     }
   ],
   "predictions": [
     {
-      "ticker": "MSFT",
+      "ticker": "ARCT",
       "direction": "bullish",
-      "rationale": "Xbox Series X/S attach and Game Pass engagement get a tailwind from a confirmed GTA 6 window; Microsoft Store takes a cut of digital sales on Xbox.",
+      "rationale": "Arcturus has an mRNA/sa-mRNA platform with CSL partnership; benefits from mRNA platform re-rating and read-through to regulatory acceptance of next-gen mRNA products.",
       "confidence": "medium",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": -0.23,
-      "rel_volume": 0.79,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
-      "source_news_ids": [
-        "32f64a8ec5fb38eb"
-      ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
-    },
-    {
-      "ticker": "GME",
-      "direction": "bullish",
-      "rationale": "Physical preorder traffic and collector-edition sales are a rare positive catalyst for brick-and-mortar game retail; GTA franchise historically drives store visits.",
-      "confidence": "medium",
-      "horizon": "weeks",
+      "horizon": "days",
       "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
+      "trigger_ticker": "MRNA",
+      "event_summary": "Moderna surging into an imminent FDA decision, dragging leveraged single-stock ETFs up ~60% and reigniting mRNA/vaccine sentiment.",
+      "news_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf",
       "source_news_ids": [
-        "32f64a8ec5fb38eb"
+        "0bd446e458c4edb1"
       ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
     },
     {
-      "ticker": "EA",
+      "ticker": "RCAT",
+      "direction": "bullish",
+      "rationale": "Red Cat Holdings (drone manufacturer) re-rates on commercial drone M&A as it signals consolidation premium across the sector.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 1.96,
+      "rel_volume": 0.77,
+      "trigger_ticker": "ONDS",
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
+      "source_news_ids": [
+        "730cfa8e204aedbd"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "DPRO",
+      "direction": "bullish",
+      "rationale": "Draganfly is a small-cap drone services/inspection peer \u2014 directly comparable end markets to Cyberhawk (utilities, energy inspection).",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
+      "source_news_ids": [
+        "730cfa8e204aedbd"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "IONS",
+      "direction": "bullish",
+      "rationale": "RNA-therapeutics adjacent peer; positive FDA read-through on novel RNA modalities supports the broader RNA platform sentiment basket.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MRNA",
+      "event_summary": "Moderna surging into an imminent FDA decision, dragging leveraged single-stock ETFs up ~60% and reigniting mRNA/vaccine sentiment.",
+      "news_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf",
+      "source_news_ids": [
+        "0bd446e458c4edb1"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "AVAV",
+      "direction": "bullish",
+      "rationale": "AeroVironment is a comparable listed drone pure-play; a $125M strategic acquisition in commercial drone analytics sets a comp valuation marker for unmanned systems peers.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
+      "source_news_ids": [
+        "730cfa8e204aedbd"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "GEOS",
       "direction": "bearish",
-      "rationale": "Direct AAA competitor \u2014 any title shipping near the GTA 6 window faces calendar crowding; EA may need to move Battlefield/sports releases out of the window, pressuring FY revenue timing.",
+      "rationale": "Geospace and other traditional ground/manual inspection-services providers in energy face accelerated displacement as drone-based analytics scales via better-capitalized acquirers.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
+      "source_news_ids": [
+        "730cfa8e204aedbd"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "PFE",
+      "direction": "bearish",
+      "rationale": "If FDA decision relates to Moderna's next-gen COVID/flu/RSV franchise, Pfizer/BioNTech's competing Comirnaty and standalone flu/RSV programs face share-loss risk in the upcoming respiratory season.",
       "confidence": "medium",
       "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
+      "priced_in": "partial",
+      "pct_1d": -2.74,
+      "rel_volume": 2.63,
+      "trigger_ticker": "MRNA",
+      "event_summary": "Moderna surging into an imminent FDA decision, dragging leveraged single-stock ETFs up ~60% and reigniting mRNA/vaccine sentiment.",
+      "news_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf",
       "source_news_ids": [
-        "32f64a8ec5fb38eb"
+        "0bd446e458c4edb1"
       ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
     },
     {
-      "ticker": "LOGI",
-      "direction": "bullish",
-      "rationale": "Blockbuster launches drive peripheral refresh cycles \u2014 controllers, headsets, streaming gear \u2014 where Logitech has direct exposure.",
-      "confidence": "low",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
-      "source_news_ids": [
-        "32f64a8ec5fb38eb"
-      ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
-    },
-    {
-      "ticker": "CRSR",
-      "direction": "bullish",
-      "rationale": "Pure-play gaming peripherals/PC gear vendor levered to AAA launch hype cycle and streamer/content-creator gear purchases.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
-      "source_news_ids": [
-        "32f64a8ec5fb38eb"
-      ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
-    },
-    {
-      "ticker": "AMZN",
-      "direction": "bullish",
-      "rationale": "Twitch viewership and Amazon retail preorders on collector editions both benefit materially from a confirmed GTA 6 launch window.",
-      "confidence": "low",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
-      "source_news_ids": [
-        "32f64a8ec5fb38eb"
-      ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
-    },
-    {
-      "ticker": "RBLX",
+      "ticker": "NVAX",
       "direction": "bearish",
-      "rationale": "Teen/young-adult engagement hours shift toward GTA 6 at launch; risk of DAU/hours-per-user softness in the launch quarter.",
-      "confidence": "low",
+      "rationale": "Protein-subunit COVID vaccine competitor; an expanded/approved Moderna product (e.g., combo or next-gen) further marginalizes Novavax's already-shrinking share of the respiratory vaccine market.",
+      "confidence": "medium",
       "horizon": "months",
+      "priced_in": "partial",
+      "pct_1d": -3.79,
+      "rel_volume": 1.17,
+      "trigger_ticker": "MRNA",
+      "event_summary": "Moderna surging into an imminent FDA decision, dragging leveraged single-stock ETFs up ~60% and reigniting mRNA/vaccine sentiment.",
+      "news_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf",
+      "source_news_ids": [
+        "0bd446e458c4edb1"
+      ],
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
+    },
+    {
+      "ticker": "KTOS",
+      "direction": "bullish",
+      "rationale": "Kratos has unmanned systems exposure; sector M&A reinforces strategic value of drone/UAS franchises.",
+      "confidence": "low",
+      "horizon": "days",
       "priced_in": "contradicted",
-      "pct_1d": 7.71,
-      "rel_volume": 1.18,
-      "trigger_ticker": "TTWO",
-      "event_summary": "Take-Two opened GTA 6 preorders, signaling the launch is on track and dispelling delay concerns.",
-      "news_url": "https://www.benzinga.com/news/gaming/26/06/53282378/gta-6-preorder-announcement-crushes-delay-fears-and-sends-take-two-stock-flying",
+      "pct_1d": -3.47,
+      "rel_volume": 1.04,
+      "trigger_ticker": "ONDS",
+      "event_summary": "Ondas (ONDS) is acquiring drone inspection/data analytics firm Cyberhawk for $125M, expanding its commercial drone services footprint into energy/infrastructure inspection.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
       "source_news_ids": [
-        "32f64a8ec5fb38eb"
+        "730cfa8e204aedbd"
       ],
-      "created_at": "2026-06-18T14:28:04.844214-04:00"
+      "created_at": "2026-06-18T17:23:11.284713-04:00"
     }
   ]
 }
