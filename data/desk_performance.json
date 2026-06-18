@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-18T00:28:49.543258-04:00",
+  "generated_at": "2026-06-18T06:42:41.003790-04:00",
   "window_days": 30,
-  "total_with_desk": 390,
+  "total_with_desk": 393,
   "by_decision": {
     "take": {
-      "count": 172,
+      "count": 173,
       "horizons": {
         "1d": {
-          "evaluated": 165,
-          "hit_rate": 0.388,
-          "avg_return_pct": -1.05
+          "evaluated": 166,
+          "hit_rate": 0.392,
+          "avg_return_pct": -0.98
         },
         "3d": {
           "evaluated": 151,
@@ -24,7 +24,7 @@
       }
     },
     "pass": {
-      "count": 215,
+      "count": 217,
       "horizons": {
         "1d": {
           "evaluated": 209,
@@ -86,7 +86,7 @@
   },
   "by_agreement": {
     "majority": {
-      "count": 215,
+      "count": 216,
       "horizons": {
         "1d": {
           "evaluated": 208,
@@ -106,7 +106,7 @@
       }
     },
     "unanimous": {
-      "count": 132,
+      "count": 134,
       "horizons": {
         "1d": {
           "evaluated": 127,
@@ -129,9 +129,9 @@
       "count": 41,
       "horizons": {
         "1d": {
-          "evaluated": 40,
-          "hit_rate": 0.475,
-          "avg_return_pct": -2.47
+          "evaluated": 41,
+          "hit_rate": 0.488,
+          "avg_return_pct": -2.13
         },
         "3d": {
           "evaluated": 37,
@@ -168,12 +168,12 @@
   },
   "by_veto": {
     "no_veto": {
-      "count": 288,
+      "count": 289,
       "horizons": {
         "1d": {
-          "evaluated": 281,
-          "hit_rate": 0.406,
-          "avg_return_pct": -1.13
+          "evaluated": 282,
+          "hit_rate": 0.408,
+          "avg_return_pct": -1.09
         },
         "3d": {
           "evaluated": 259,
@@ -188,7 +188,7 @@
       }
     },
     "veto": {
-      "count": 102,
+      "count": 104,
       "horizons": {
         "1d": {
           "evaluated": 96,
@@ -209,7 +209,7 @@
     }
   },
   "take_minus_pass_edge": {
-    "1d": -0.07,
+    "1d": 0.0,
     "3d": 0.4,
     "5d": 0.75
   }

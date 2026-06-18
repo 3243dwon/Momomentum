@@ -1,11 +1,13 @@
 {
-  "generated_at": "2026-06-18T04:28:46.980084+00:00",
+  "generated_at": "2026-06-18T10:42:20.018170+00:00",
   "sources": {
     "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
+    "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
     "presidential_documents": "federalregister.gov API (president=donald-trump)"
   },
   "window_days": 90,
-  "truth_post_count": 1242,
+  "truth_post_count": 1251,
+  "news_post_count": 3,
   "document_count": 40,
   "tickers_mentioned": [
     "AAPL",
@@ -19,6 +21,24 @@
     "RUM"
   ],
   "mention_summary": {
+    "AAPL": {
+      "count": 7,
+      "last_ts": "2026-06-18T04:29:38.755Z",
+      "last_excerpt": "The Technology the World relies on was invented in America. We all remember \"Intel Inside.\" Stupid Presidents took our Economy for granted, and let Taiwan and others steal our Semiconductor Factories. They forgot to protect our Industries w",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116769225357410422"
+    },
+    "INTC": {
+      "count": 3,
+      "last_ts": "2026-06-18T04:29:38.755Z",
+      "last_excerpt": "The Technology the World relies on was invented in America. We all remember \"Intel Inside.\" Stupid Presidents took our Economy for granted, and let Taiwan and others steal our Semiconductor Factories. They forgot to protect our Industries w",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116769225357410422"
+    },
+    "NVDA": {
+      "count": 4,
+      "last_ts": "2026-06-18T04:29:38.755Z",
+      "last_excerpt": "The Technology the World relies on was invented in America. We all remember \"Intel Inside.\" Stupid Presidents took our Economy for granted, and let Taiwan and others steal our Semiconductor Factories. They forgot to protect our Industries w",
+      "last_url": "https://truthsocial.com/@realDonaldTrump/116769225357410422"
+    },
     "AMZN": {
       "count": 7,
       "last_ts": "2026-06-18T04:05:19.448Z",
@@ -31,18 +51,6 @@
       "last_excerpt": "RT @LauraLoomerEXCLUSIVE INTERVIEW: Thomas Massie's Ex-Girlfriend And Former Congressional Staffer Cynthia West Tells Allhttps://rumble.com/v7a1820-exclusive-interview-thomas-massies-ex-girlfriend-and-former-congressional-s.html",
       "last_url": "https://truthsocial.com/@realDonaldTrump/116601940244807949"
     },
-    "AAPL": {
-      "count": 6,
-      "last_ts": "2026-05-13T04:54:32.609Z",
-      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
-      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
-    },
-    "NVDA": {
-      "count": 3,
-      "last_ts": "2026-05-13T04:54:32.609Z",
-      "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
-      "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
-    },
     "BA": {
       "count": 7,
       "last_ts": "2026-05-13T04:54:32.609Z",
@@ -54,12 +62,6 @@
       "last_ts": "2026-05-13T04:54:32.609Z",
       "last_excerpt": "RT @realDonaldTrumpCNBC incorrectly reported that the Great Jensen Huang, of Nvidia, was not invited to the incredible gathering of the World's Greatest Businessmen/women proudly going to China. In actuality, Jensen is currently on Air Forc",
       "last_url": "https://truthsocial.com/@realDonaldTrump/116565480086717671"
-    },
-    "INTC": {
-      "count": 2,
-      "last_ts": "2026-04-29T22:20:21.698Z",
-      "last_excerpt": "Intel Stock continues to rise. I'm very proud of that Company in that I am responsible for making the United States of America over 30 Billion Dollars in the last 90 days on that stock alone. There are others that, likewise, I have been ver",
-      "last_url": "https://truthsocial.com/@realDonaldTrump/116490320065457761"
     },
     "DIS": {
       "count": 1,
@@ -76,10 +78,78 @@
   },
   "truth_posts": [
     {
+      "ts": "2026-06-18T08:32:31.915Z",
+      "text": "These fools, who think I haven't been tough enough on Iran, when the Stock Market Just Hit A RECORD HIGH, and Oil prices are \"tumbling\" down, are either jealous, bad people, or stupid. MAKE AMERICA GREAT AGAIN!!! President DJT",
+      "url": "https://truthsocial.com/@realDonaldTrump/116770180426363226",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T08:28:42.562Z",
+      "text": "RT @realDonaldTrumpTHE SAVE AMERICA ACT!1. ALL VOTERS MUST SHOW PHOTO I.D. (IDENTIFICATION!).2. ALL VOTERS MUST SHOW PROOF OF CITIZENSHIP.3. NO MAIL-IN BALLOTS (EXCEPT FOR ILLNESS, DISABILITY, MILITARY, OR TRAVEL!).4. NO MEN IN WOMEN'S SPORTS.5. NO TRANSGENDER MUTILIZATION SURGERY ON OUR CHILDREN.",
+      "url": "https://truthsocial.com/@realDonaldTrump/116770165395319673",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T08:28:21.257Z",
+      "text": "Trump Says He Welcomes China, India Investment in Venezuela Oil: https://www.bloomberg.com/news/articles/2026-02-01/trump-says-he-welcomes-china-india-investment-in-venezuela-oil",
+      "url": "https://truthsocial.com/@realDonaldTrump/116770163996850294",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T08:27:49.858Z",
+      "text": "RT: https://truthsocial.com/users/realDonaldTrump/statuses/116770160614131644",
+      "url": "https://truthsocial.com/@realDonaldTrump/116770161935260082",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T07:17:41.566Z",
+      "text": "The statue \"Valor,\" one of the Arts of War statues, is almost completely regilded by our Great Department of the Interior.",
+      "url": "https://truthsocial.com/@realDonaldTrump/116769886136736615",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T06:51:03.696Z",
+      "text": "The Ballroom is coming along fantastically well. It's on time, and under budget (Unlike the Federal Reserve Building, where \"Too Late\" has done a terrible job of Cost and Time Control!), and at a much higher quality than I ever promised, including the DronePort, and ALL of the other many Military elements, which are all vital for National Security, that are being built throughout the whole integrated, cohesive Project. It is desperately needed, and will be very special! The woman that sued me has absolutely no STANDING to do so. This should not even be a case, and it is highly damaging to our Country. She is highly litigious, a serial plaintiff, and said she was bothered in her walking by the White House, but didn't state her involvement in numerous places around D.C. Why then is she involved in litigation on other Developments in far distant parts of D.C. Is she walking there, too? How is she walking on a totally closed street at the Treasury Building \u2014 Nobody is allowed to walk there? She never saw a Building, because there is no Building there. PresidentDONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116769781426549874",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T06:44:48.197Z",
+      "text": "State Representative Don Chapman is doing a terrific job representing the wonderful people of South Carolina's8th State House District! A Successful Architect and Businessman, before his service in the State House, Don is a Proven Leader who has dedicated his life to serving his Community. In the State House, he is working hard to Protect \"Palmetto State\" Values, Grow the Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Unleash American Energy DOMINANCE, Stop Migrant Crime, Ensure LAW AND ORDER, Strengthen our Military/Veterans, Advance Election Integrity, and Defend our always under siege Second Amendment. Don Chapman has my Complete and Total Endorsement for Re-Election \u2014 HE WILL NEVER LET YOU DOWN!",
+      "url": "https://truthsocial.com/@realDonaldTrump/116769756817692963",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T04:31:19.072Z",
+      "text": "Freed U.S. Hostage: \"President Trump is the greatest Commander-in-Chief ever.\"",
+      "url": "https://truthsocial.com/@realDonaldTrump/116769231931716794",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
+    {
+      "ts": "2026-06-18T04:29:38.755Z",
+      "text": "The Technology the World relies on was invented in America. We all remember \"Intel Inside.\" Stupid Presidents took our Economy for granted, and let Taiwan and others steal our Semiconductor Factories. They forgot to protect our Industries with TARIFFS. When I won my Second Term (Third, actually!), it was clear America needed its Semiconductor Industry to come back to the U.S.A. We design everything, but we need to BUILD it here, NOW! So I decided to help Intel because we need to design and build our Chips right here in America. First, we helped bring in Nvidia, and they agreed to build their first level Chips with Intel. Next, Elon agreed to build his TerraFab, the largest Chip Factory in the World, designed together with Intel's Technology team. And, finally, Apple has agreed to work with Intel to design and build its Chips in America. We decided to help Intel in exchange for 10% of their shares. Is that too much or, too little? They were worth around 100 Billion Dollars when we made our offer. Now they are worth over 600 BILLION DOLLARS! Nine months, and they've increased in value over HALF A TRILLION DOLLARS. America's stake is now over 60 Billion Dollars. When was the last time a President made America money?? Thank you for your attention to this matter! President DONALD J. TRUMP",
+      "url": "https://truthsocial.com/@realDonaldTrump/116769225357410422",
+      "ticker_mentions": [
+        "AAPL",
+        "INTC",
+        "NVDA"
+      ],
+      "source": "truth_social"
+    },
+    {
       "ts": "2026-06-18T04:08:36.772Z",
       "text": "Presidential Historian Dave King \u2014 Sounds good to me!",
       "url": "https://truthsocial.com/@realDonaldTrump/116769142648175922",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T04:05:19.448Z",
@@ -87,205 +157,211 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116769129718272146",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T04:03:43.920Z",
       "text": "Ed Gallrein shows Northern Kentucky what he is made of: https://www.washingtonexaminer.com/opinion/columnists/4551998/ed-gallrein-shows-northern-kentucky-what-he-is-made-of/",
       "url": "https://truthsocial.com/@realDonaldTrump/116769123459644540",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T02:15:02.828Z",
       "text": "THE SAVE AMERICA ACT!1. ALL VOTERS MUST SHOW PHOTO I.D. (IDENTIFICATION!).2. ALL VOTERS MUST SHOW PROOF OF CITIZENSHIP.3. NO MAIL-IN BALLOTS (EXCEPT FOR ILLNESS, DISABILITY, MILITARY, OR TRAVEL!).4. NO MEN IN WOMEN'S SPORTS.5. NO TRANSGENDER MUTILIZATION SURGERY ON OUR CHILDREN.",
       "url": "https://truthsocial.com/@realDonaldTrump/116768696093434401",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T02:13:26.519Z",
       "text": "Colombian Presidential Candidate, \"El Tigre (THE TIGER),\" Abelardo de la Espriella, is a Smart, Strong, and Tough Leader, who fights tirelessly for, and loves, his Great Country and People, just like I do for the United States of America. As President, Abelardo will be tremendously successful in leading Colombia to Grow the Economy, Create Jobs, Promote Trade, Stop Illegal Immigration, Crack Down on Crime and Drugs, and Restore LAW AND ORDER! Abelardo is running against a Radical Left Marxist in the Runoff on Sunday, June 21st \u2014 The results of this Election are very important to the future of Colombia and its relationship to the United States which, if Abelardo wins, and because of his competence and love of his Country, will have the total support and strength of the United States behind him. Because of his tremendous accomplishments in life, and his political support for me, it is my Honor to give Abelardo my Complete and Total Endorsement. GET OUT AND VOTE FOR \"EL TIGRE\" ABELARDO DE LA ESPRIELLA \u2014 HE WILL NOT LET THE WONDERFUL PEOPLE OF COLOMBIA DOWN. It will rise to a new height of Greatness! President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116768689781682400",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T02:12:05.293Z",
       "text": "It is my Great Honor to endorse Congressman Mike Kennedy, M.D., to represent the wonderful people of Utah's 4th Congressional District! A Proven Leader, Mike has served his Community well as a Family Physician, Lawyer, and Highly Respected State Legislator, prior to becoming a distinguished Congressman. In Congress, he is fighting tirelessly to Grow our Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Unleash American Energy DOMINANCE, Keep our Border SECURE, Stop Migrant Crime, Strengthen our Military/Veterans, and Protect our always under siege Second Amendment. Mike Kennedy has my Complete and Total Endorsement \u2014 HE WILL NOT LET YOU DOWN!",
       "url": "https://truthsocial.com/@realDonaldTrump/116768684458318874",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T02:11:56.516Z",
       "text": "It is my Great Honor to endorse Congresswoman Celeste Maloy to represent the tremendous people of Utah's 3rd Congressional District! Celeste has a strong Record of Success, and resounding support from her Community. In Congress, she is working hard to Keep our Border SECURE, Stop Migrant Crime, Support our incredible Military/Veterans, Grow our Economy, Unleash American Energy DOMINANCE, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., and Protect our always under siege Second Amendment. Celeste Maloy has my Complete and Total Endorsement \u2014 SHE WILL NOT LET YOU DOWN!",
       "url": "https://truthsocial.com/@realDonaldTrump/116768683883291622",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T02:07:14.651Z",
       "text": "It is my Great Honor to endorse Congressman Blake Moore to represent the fantastic people of Utah's 2nd Congressional District!As the Vice Chairman of the House Republican Conference, Blake is doing an incredible job advancing our America First Agenda. He is working hard to Grow our Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Unleash American Energy DOMINANCE, Keep our Border SECURE, Stop Migrant Crime, Strengthen our Military/Veterans, and Protect our always under siege Second Amendment.Blake Moore has my Complete and Total Endorsement \u2014 HE WILL NOT LET YOU DOWN!",
       "url": "https://truthsocial.com/@realDonaldTrump/116768665410839599",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T01:51:49.319Z",
       "text": "Thank you to Great Republican Senator, Eric Schmitt!",
       "url": "https://truthsocial.com/@realDonaldTrump/116768604766339426",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-18T01:28:46.612Z",
       "text": "Congratulations to Commissioner Brian Rolapp, the PGA Tour, and the Governing Bodies, and also, the Great U.S. Attorney for the Southern District of New York, Jay Clayton, for a BIG VICTORY where the USGA wanted to roll back the distance of a Golf Ball, for whatever reason, and now they are precluded from doing so, at least for a long number of years. It was a ridiculous idea, that nobody wanted, especially PGA Tour Players, and people that don't want to go to a Course to be told that their drives will be going 20 yards shorter. What the USGA should do is agree that, far into the future, they will not allow the current ball to go further. In other words, they will keep the ball the same! The game of Golf is \"hot as a pistol.\" The last thing we should do is tell people that, for no reason whatsoever, you will not be able to hit a ball as far as you used to. Has anyone ever heard of anything so ridiculous? President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116768514151266766",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T18:23:13.677Z",
       "text": "I greatly appreciate Jackson Lahmeyer's hard work under difficult circumstances \u2014 He has always been with me, and I will always be with him. But, when it comes to the current Congressional race for Oklahoma's 1st Congressional District, I will be supporting America First Patriot, Mark Tedford. Mark is Pro Trump and MAGA all the way! A Proven Leader, Mark has served his Community as a Highly Respected State Legislator and Businessman, prior to running for Congress. Mark Tedford has my Complete and Total Endorsement to be the next Representative from Oklahoma's 1st Congressional District \u2014 HE WILL NEVER LET YOU DOWN!",
       "url": "https://truthsocial.com/@realDonaldTrump/116766840824918491",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T14:01:23.728Z",
       "text": "I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for Dinner with French and other European Leaders, and then back home tonight! The trip was a Great Success but, mostly what people wanted to talk about, is the fact that Iran will not have a Nuclear Weapon, and that the Strait of Hormuz will immediately be opened! Great Numbers in all categories for the United States Economy with more people working today than have ever worked before. Over 19.1 Trillion being invested in the U.S.A. with Factories and everything else happening but, importantly, recent Stock Market numbers are through the roof because of the settlement and, likewise, Oil Prices are tumbling down! President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116765811260304660",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T08:33:19.345Z",
       "text": "Thank you Greg and group. No wonder you're Number One \u2014 By far!",
       "url": "https://truthsocial.com/@realDonaldTrump/116764521224175623",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T07:54:52.919Z",
       "text": "The Republicans agreed with Dumocrats to remove very fair, and talented, William Pulte, from serving as Acting DNI in return for getting FISA approved by the Dumocrats. However, the Republicans moved so fast with the hearings of the Great Jay Clayton, current U.S. Attorney for the Southern District of New York, that Pulte would be gone before the Dumocrats would vote on FISA. Now, the Dumocrats are saying they will vote against FISA \u2014 So, the Republicans wound up having fulfilled their commitment, but Dumocrats broke the Deal. In addition, the newly nominated U.S. Attorney, Jamie McDonald, must be confirmed and blue slipped. Because of the ridiculous views of Republicans on blue slipping (Dumocrats are often willing to nix it), I may not be able to get the extraordinary Sullivan & Cromwell Partner, Jamie, approved, and I don't want to take Jay Clayton away from the great job he is doing until Jamie is in place. Therefore, to add a slight bit of intrigue but, for the Good of the Nation, and the People of our Country, I will not approve FISA without THE SAVE AMERICA ACT going along with it. Not complicated, actually, the Republicans fell into a trap. Regarding the approval of our Great Patriot, Jay Clayton, we are cancelling the Senate Hearing RE: DNI today, and will not be going forward until Jamie McDonald is approved to be U.S. Attorney. In the meantime, Bill Pulte will remain as the Acting Director of National Intelligence. Thank you for your attention to this matter! President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116764370070279119",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T06:50:56.880Z",
       "text": "Jesse Watters: Trump knows when you run the room, you set the volume: https://www.foxnews.com/video/6398602574112",
       "url": "https://truthsocial.com/@realDonaldTrump/116764118671718350",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T06:50:09.022Z",
       "text": "So happy for highly respected Congressman Mike Collins. He will win his Senate Race in Georgia against a pathetic failed Dumocrat Senator, Os(jerk!)off, who is a joke in D.C. Nobody even knows who he is!!! I'll be doing Big TRUMP Rallies for Mike in Georgia! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116764115535577197",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T06:20:42.169Z",
       "text": "Rick Jackson ran a great TRUMP Campaign. Very smart! Was with me on Saturday Night making a pitch. Amazing!!! He won against a great guy, Burt Jones, who has a fantastic future!!! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116763999742755145",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T05:02:15.657Z",
       "text": "Congratulations to Rick Jackson, who very successfully campaigned on being \"TRUMP,\" and won. He will be your next Governor of Georgia. Can't wait! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116763691297203565",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-17T04:42:19.311Z",
       "text": "I HAD A LOT OF BIG ELECTION WINS LAST NIGHT. THANK YOU TO ALL!!! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116763612893094366",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-16T16:12:24.312Z",
       "text": "Biden DOJ targeted parents at school board meetings despite FBI, sheriffs' objections, memos show: https://justthenews.com/government/federal-agencies/afl",
       "url": "https://truthsocial.com/@realDonaldTrump/116760664101169055",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-16T16:12:00.779Z",
       "text": "FBI stopped alleged terror plot to attack UFC 250 event with drones and snipers, officials said: https://justthenews.com/government/security/fbi-stopped-alleged-terror-plot-attack-ufc-250-event-drones-and-snipers",
       "url": "https://truthsocial.com/@realDonaldTrump/116760662558632411",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-16T16:06:57.335Z",
       "text": "Former Trump economist says Iran deal means big economic boom for US: https://justthenews.com/nation/free-speech/trumps-former-economist-says-iran-deal-means-big-economic-boom-us",
       "url": "https://truthsocial.com/@realDonaldTrump/116760642672400305",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-16T16:06:33.381Z",
       "text": "US attorney in California suspects voter fraud investigation will result in charges: https://justthenews.com/government/courts-law/us-attorney-california-suspects-voter-fraud-investigation-will-result-charges",
       "url": "https://truthsocial.com/@realDonaldTrump/116760641102604510",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T23:17:52.376Z",
       "text": "Iran has agreed to never have a Nuclear Weapon! Also, the story that the U.S. is paying Iran 300 million Dollars is Fake News, put out by the Dumocrats!!! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116756674797972374",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:11:00.819Z",
       "text": "Sadly, if you import people from Third World Countries, you quickly become a Third World Country \u2014 And there's not a thing you can do about it. MAKE AMERICA GREAT AGAIN! President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116754288530173924",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:10:38.146Z",
       "text": "'Thank You, President Trump': Reflecting Pool in D.C. Wows After Trump Renovations: https://www.breitbart.com/politics/2026/06/08/thank-you-president-trump-reflecting-pool-d-c-wows-after-trump-renovations/",
       "url": "https://truthsocial.com/@realDonaldTrump/116754287044319129",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:10:22.474Z",
       "text": "Trump makes a splash with Oval Office chart comparing reflecting pool to skyscrapers: https://www.washingtonexaminer.com/news/white-house/4594088/trump-makes-splash-oval-office-chart-reflecting-pool-skyscrapers/",
       "url": "https://truthsocial.com/@realDonaldTrump/116754286017145061",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:10:07.005Z",
       "text": "U.S. Counts Far More Hormuz Ship Transits Than Commercial Tracking Data Shows: https://gcaptain.com/u-s-counts-far-more-hormuz-ship-transits-than-commercial-tracking-data-shows/",
       "url": "https://truthsocial.com/@realDonaldTrump/116754285003421395",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:09:39.102Z",
       "text": "Dems replace 'mother' with 'gestating parent' in latest woke rewrite of NY law: https://nypost.com/2026/06/03/us-news/dems-replace-mother-with-gestating-parent-in-latest-woke-rewrite-of-nys-law/",
       "url": "https://truthsocial.com/@realDonaldTrump/116754283174782714",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T13:06:11.624Z",
       "text": "Ships are starting to move, many loaded up with Oil, out of the Strait of Hormuz. They are going along the Southern \"Highway,\" which is totally safe, secure, and pristine. There are other areas of travel, also!!! President DJT",
       "url": "https://truthsocial.com/@realDonaldTrump/116754269577470122",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T12:03:59.109Z",
       "text": "RT @realDonaldTrumpTrump scores once-elusive peace deal with Iran, easing oil prices ahead of elections: https://justthenews.com/government/security/montrump-etches-iran-peace-deal-after-months-false-starts",
       "url": "https://truthsocial.com/@realDonaldTrump/116754024963336496",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:03:55.716Z",
-      "text": "RT @realDonaldTrumpUnder the disastrous Open Border Policy of Crooked Joe Biden and his traitorous DHS Secretary Alejandro Mayorkas, TENS OF MILLIONS of criminals, including over 13,000 STONE-COLD MURDERERS, poured into our Country from Prisons and Jails, from Mental Institutions and Insane Asylums. Needless to say, they were NOT always the safest drivers! Car Insurance Premiums rose to RECORD HIGHS, forcing Law-abiding American Citizens to subsidize the \"free riding\" Biden Illegals. After over a year of ZERO ILLEGAL IMMIGRATION, and our highly successful efforts to REVERSE the Biden Invasion, Car Insurance Premiums have come tumbling down. MAKE AMERICA SAFE AGAIN! President DONALD J. TRUMP",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754024740902171",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:03:52.239Z",
-      "text": "RT @realDonaldTrumpOn July 4th, at The Lincoln Memorial and Washington Monument, in beautiful and safe Washington D.C., we are going to host the most spectacular TRUMP RALLY of them all, a \"TRIBUTE TO AMERICA.\" Starting at 7 P.M. EST, this HUGE Celebration will honor our Country's People, Spirit, Strength, Resolve, and Triumphs. With the backdrop of the Lincoln Memorial and surrounding the beautifully new Reflecting Pool, more than 300 Members of our strong and talented Military Bands, Orchestras, and Ceremonial Units, will perform Patriotic Melodies and American Classics, and my Playlist (We will have none of those people that put you to sleep and constantly complain!), as we celebrate our Country, and Rally into the next 250 years. This ensemble will be the largest formation of Joint Military Music and Ceremonial performances in History. There will be incredible Flyovers and Airshows featuring our Top Military Pilots and Equipment, and I will deliver keynote remarks that you will not want to miss. To conclude the program, and commemorate this Historic Occasion, I will be launching, what will be, the LARGEST FIREWORKS SHOW IN HISTORY, right here in our Nation's Capital. Do not miss it. See you on JULY 4th in Washington, D.C. President DONALD J. TRUMP",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754024513118460",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:03:49.719Z",
-      "text": "RT @realDonaldTrumpWednesday, June 24th, will be the \"kick off\" of our summer long Celebration of 250 Years of American Independence! Come and enjoy a night filled with beautiful music from our talented U.S. Army and Marine Corps Military Bands (ONLY THE HITS THAT YOU KNOW AND LOVE!), the highly gifted Christopher Macchio, and our friend, Lee Greenwood, performing the Greatest Hit of All Time, GOD BLESS THE U.S.A. You will also bear witness to impressive Military flyovers featuring precision Fighter Jets and Stealth Bombers, which will be flown by our U.S. Military Pilots, who have proven to be the most Elite Pilots anywhere in the World. This Patriotic Tribute will take place on the Main Stage at the Freedom 250 Great American State Fair located on our Majestic National Mall, in what is now one of the safest Cities in the World, Washington D.C., which we are beautifying to levels never seen before. See you at 7 P.M. EST on Wednesday, June 24th. We are going to have fun, and celebrate America! President DONALD J. TRUMP",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754024347896013",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:03:45.857Z",
-      "text": "RT @realDonaldTrumpThe UFC at the White House last night was incredible. The weather was scheduled to be horrendous, and it turned out to be PERFECT! So much for weather predicting. The Fighters were outstanding \u2014 Bo Nickal, Justin Gaethje, Ciryl Gane, Sean O'Malley, Josh Hokit, Mauricio Ruffy, and Diego Lopes were all unbelievable! Most people have never seen anything like that kind of human speed and power before. The White House has never looked more beautiful. The setting was unsurpassed! Congratulations to Dana White, and his unbelievable UFC. One of the most exciting days in the History of our fabled White House! President DONALD J. TRUMP",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754024094818608",
-      "ticker_mentions": []
+      "ticker_mentions": [],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T12:03:41.567Z",
@@ -293,31 +369,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116754023813635526",
       "ticker_mentions": [
         "AMZN"
-      ]
-    },
-    {
-      "ts": "2026-06-15T12:03:36.807Z",
-      "text": "RT @realDonaldTrumpThe Dumocrats want FISA because that's what they used to go after me for three years during my First Term! I'm against FISA if it doesn't come with The Save America Act (Full version!) firmly attached to it. MAKE AMERICA GREAT AGAIN! THE SAVE AMERICA ACT!1. ALL VOTERS MUST SHOW PHOTO I.D. (IDENTIFICATION!).2. ALL VOTERS MUST SHOW PROOF OF CITIZENSHIP.3. NO MAIL-IN BALLOTS (EXCEPT FOR ILLNESS, DISABILITY, MILITARY, OR TRAVEL!).4. NO MEN IN WOMEN'S SPORTS.5. NO TRANSGENDER MUTILIZATION SURGERY FOR OUR CHILDREN.Thank you for your attention to this matter! President DONALD J. TRUMP",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754023501669536",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:02:54.092Z",
-      "text": "Congressman Barry Moore, an America First Patriot who has been with me from the very beginning (He was the first Elected Official in the Country to Endorse me!), is running for the United States Senate in Alabama, a place I love and WON BIG in 2016, 2020, and 2024, getting the Highest Vote in that Great State's History.A very successful Businessman, Civic Leader, and Highly Respected State Legislator prior to becoming a distinguished Congressman, Barry has dedicated his life to serving his Community. As your next Senator, Barry will continue to fight tirelessly to Grow our Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Champion American Energy DOMINANCE, Keep our Border SECURE, Stop Migrant Crime, Ensure LAW AND ORDER, Strengthen our Brave Military/Veterans, Safeguard our Elections, and Defend our always under siege Second Amendment.Barry Moore is a good friend, fighter, and WINNER, and has my Complete and Total Endorsement to be the next United States Senator from Alabama. Election Day for the Republican Runoff is Tuesday, June 16th. GET OUT AND VOTE FOR BARRY \u2014 HE WILL NEVER LET YOU DOWN!Find your Voting Location here: https://swampthevoteusa.com/alabama/",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754020702467123",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:02:41.942Z",
-      "text": "It is my Great Honor to endorse \"MAGA\" Mike Collins, a Highly Respected Congressman who has been with me from the very beginning, and is running for the United States Senate in Georgia, a very special place to me, and where we just had a BIG Presidential Election Win with the Most Votes Received by any single Candidate in Georgia's History, for any Election. Mike is strongly supported by the most Highly Respected MAGA Patriots in Georgia and beyond, and many Republicans in the U.S. House and Senate \u2014 He is a WARRIOR and WINNER!A very successful Businessman prior to becoming a distinguished U.S. Congressman, Mike has brilliantly served his Community, during a career loaded with accolades and wins, always fighting tirelessly for our America First Agenda. As your next Senator, Mike will continue to work hard to Grow the Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Champion American Energy DOMINANCE, Strengthen our incredible Military/Veterans, Advance Election Integrity, Keep our Border SECURE, Stop Migrant Crime, Murderers, and other Criminals from illegally entering our Country, Ensure LAW AND ORDER, and Protect our always under siege Second Amendment.Mike, who like me is all about AMERICA FIRST, is running against a Radical Left Dumocrat named Jon Ossoff, a weak and pathetic Senator who tried to raise Taxes by over 4 Trillion Dollars, and voted against all of our Tax Cuts, including NO TAX ON TIPS, NO TAX ON SOCIAL SECURITY, and NO TAX ON OVERTIME. Ossoff voted for Men in Women's Sports, Transgender for Everyone, Open Borders, and Record High Taxes that, under Crooked Joe Biden, destroyed the American Economy, including 401(k)s and Market Numbers, which are now at the highest point, EVER! He is an Open Border Advocate wanting Criminals of every variety, including 11,888 Murderers, to pour into our Country totally unchecked and unvetted. We are the opposite! I created the Strongest Border in History, and Congressman Mike Collins backed me up all the way. Jon Ossoff wants to abolish our Borders, stop deporting Criminal Illegal Aliens, and supports dangerous \"Soft on Crime\" Policies like cashless bail, that let repeat Violent Criminals roam free on our streets. He voted AGAINST Voter I.D., and also, fought strongly against Proof of Citizenship, but is in favor of allowing Illegal Aliens to vote in our Sacred Elections. He is a Radical Left Lunatic, a Dumocrat, and doesn't represent the values of the Great People of Georgia. I beat him years ago in a Congressional Race where he was winning by a lot until I offered my Endorsement, my Candidate won, easily, and that's going to happen again because Jon Ossoff doesn't have what it takes. He is a laughingstock in Washington, he is weak and pathetic! All he's got is money provided by Radical Left people looking to destroy our Country. He is Reckless, Radical, and Dangerous. But first things first! Mike has to beat a Republican Opponent before he gets to Ossoff. I don't know Derek Dooley, and neither does anyone else, but he seems like a nice person. Unfortunately, he has lived outside of Georgia for most of his life, didn't vote in 2020 or 2016, and said that I lost Georgia in 2020 when, in actuality, the facts have now proven that I won by a lot!Mike Collins is a true Friend, Fighter, and WARRIOR, who has been with us from the very beginning, and has my Complete and Total Endorsement to be your next United States Senator. Unlike \"lightweight\" Jon Ossoff, a totally ineffective RADICAL LEFT LOSER who has failed the Great People of Georgia so badly, Mike Collins is a winner who will never let you down. THANK YOU FOR YOUR GREAT SUPPORT GEORGIA. We now have the Strongest Border, the Best Stock Market, and the Most Success that our Country has ever seen and, by the way, we also have the Islamic Republic of Iran which has just agreed to never have a Nuclear Weapon, and the Hormuz Strait will be opening shortly. Gas prices will plummet, and Affordability will be far better than the numbers from the Record Inflation Driven Biden Administration years. Election Day for the Republican Runoff is Tuesday, June 16th. MAKE AMERICA GREAT AGAIN \u2014 Vote for Mike Collins for Senate! Find your Voting Location here: https://swampthevoteusa.com/georgia/",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754019906128212",
-      "ticker_mentions": []
-    },
-    {
-      "ts": "2026-06-15T12:02:27.757Z",
-      "text": "Highly Respected and very popular Lieutenant Governor, Burt Jones, is running to be the next Governor of the Great State of Georgia, a very special place to me in that we had a BIG Presidential Election Win on November 5, 2024!As the first member of the Georgia State Assembly to Endorse \"DONALD J. TRUMP\" for President, Burt was strongly committed to my Campaign in 2016, 2020, and 2024, and worked tirelessly to help us WIN. He has been with us from the very beginning. I know his family well, and have seen Burt tested at the most difficult levels and times \u2014 He is a WARRIOR, a successful Businessman, former SEC Championship winning Georgia Bulldogs football player (Known for his toughness!), and now, as Lieutenant Governor, Burt has proven he has the Courage and Wisdom to deliver strong results for the incredible people of his wonderful State, and our Nation. As your next Governor, Burt Jones will fight hard to Grow the Economy, Cut Taxes and Regulations, Promote MADE IN THE U.S.A., Champion American Energy DOMINANCE, Keep our Border SECURE, Strengthen our Military/Veterans, Ensure LAW AND ORDER, Advance Election Integrity, and Defend our always under siege Second Amendment.Burt Jones has my Complete and Total Endorsement to be the next Governor of the Wonderful State of Georgia. Election Day for the Republican Runoff is Tuesday, June 16th. GET OUT AND VOTE FOR BURT \u2014 HE WILL NEVER LET YOU DOWN!Find your Voting Location here: https://swampthevoteusa.com/georgia/",
-      "url": "https://truthsocial.com/@realDonaldTrump/116754018976262039",
-      "ticker_mentions": []
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-15T10:14:20.162Z",
@@ -325,7 +378,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116753593805396252",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-06-05T23:32:44.179Z",
@@ -333,7 +387,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116700110138790417",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-19T15:26:50.469Z",
@@ -341,7 +396,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116601940244807949",
       "ticker_mentions": [
         "RUM"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-18T20:02:55.209Z",
@@ -349,7 +405,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116597363520973268",
       "ticker_mentions": [
         "RUM"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-18T19:38:30.824Z",
@@ -357,7 +414,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116597267550913003",
       "ticker_mentions": [
         "RUM"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-13T04:54:32.609Z",
@@ -368,7 +426,8 @@
         "NVDA",
         "BA",
         "GS"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-13T03:11:02.315Z",
@@ -379,7 +438,8 @@
         "NVDA",
         "BA",
         "GS"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-13T03:09:25.703Z",
@@ -390,7 +450,8 @@
         "NVDA",
         "BA",
         "GS"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-05-07T11:15:41.540Z",
@@ -398,7 +459,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116533004958135086",
       "ticker_mentions": [
         "AAPL"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-29T23:04:28.719Z",
@@ -406,7 +468,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116490493540315586",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-29T22:20:21.698Z",
@@ -414,7 +477,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116490320065457761",
       "ticker_mentions": [
         "INTC"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-27T17:26:09.205Z",
@@ -422,7 +486,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116477838570626860",
       "ticker_mentions": [
         "DIS"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-22T03:17:59.955Z",
@@ -430,7 +495,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116446191940811375",
       "ticker_mentions": [
         "INTC"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-21T23:35:34.680Z",
@@ -438,7 +504,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116445317344745621",
       "ticker_mentions": [
         "BA"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-21T16:21:36.176Z",
@@ -446,7 +513,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116443610885264454",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-21T10:42:16.256Z",
@@ -454,7 +522,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116442276577696798",
       "ticker_mentions": [
         "AAPL"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-20T19:01:30.675Z",
@@ -462,7 +531,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116438577360067480",
       "ticker_mentions": [
         "BA"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-20T17:35:37.313Z",
@@ -470,7 +540,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116438239629407600",
       "ticker_mentions": [
         "BA"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-17T19:21:26.920Z",
@@ -478,7 +549,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116421668823698549",
       "ticker_mentions": [
         "AAPL"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-16T21:38:10.521Z",
@@ -486,7 +558,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116416544142618799",
       "ticker_mentions": [
         "BA"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-10T14:32:02.752Z",
@@ -494,7 +567,8 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116380894672815869",
       "ticker_mentions": [
         "PLTR"
-      ]
+      ],
+      "source": "truth_social"
     },
     {
       "ts": "2026-04-09T23:34:40.767Z",
@@ -502,10 +576,60 @@
       "url": "https://truthsocial.com/@realDonaldTrump/116377366086619888",
       "ticker_mentions": [
         "AMZN"
-      ]
+      ],
+      "source": "truth_social"
+    }
+  ],
+  "news_posts": [
+    {
+      "ts": "2026-06-18T09:57:16+00:00",
+      "text": "Apple to Make Chips in US With Intel, Trump Says",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9PVEJ1QnZPbEhDSEZGcDNxTTRVYTZlOUVkWnJWbWpZSEdhYk93dmExTlNzVG9HM2RxZ04xZVRlUmZyazZ6QU0tRmlPVDlsQWdZTExkNW42Xzl0U1J3QU1CQTRabVZOREEyRW96STN5TUQyb3lFSnlaY2ItalV2LXM?oc=5",
+      "ticker_mentions": [
+        "AAPL",
+        "INTC"
+      ],
+      "source": "news"
+    },
+    {
+      "ts": "2026-06-18T09:48:00+00:00",
+      "text": "Intel Stock Surges as Trump Says It Has Won a Huge Customer",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONkRZeWtCSnZwck04eUhaWm1HYl9RN0NuYjF4ekpRYi1XSm1CNWRiaTNBVlhkLUxkcHpWSUF2a3RXeXJsdHl3TW9QUG1NNE5rSHBtVmY1ZDRRYUZtNExxWFd1b0E1ejRFa1JVUS1VRkdBc1kzZ2szblItSUVtY2RiOU1tVkZzSWc?oc=5",
+      "ticker_mentions": [
+        "INTC"
+      ],
+      "source": "news"
+    },
+    {
+      "ts": "2026-06-18T09:35:34+00:00",
+      "text": "Intel Shares Soar After Trump Says It Struck Apple Chip Deal",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNYlM2ZEprdFdVelV2Tkd4NFlubFJYTXFadUxtVXkxSF9scFg5dk91U0dKR3pkWENoXy1CVXppRjZta2hYZS1qa1BsTDJaWTNRR2ZwaVJrNzN0d1BrWlVJQVFOZUZLa1lLTnFVXy1xLXN3Mm1wdnh4RGtiM19vbDgyZzQtZzhqZXRKTkZPbEJyNzNkRHIySl9UZzBpZXJaZUIzdUdEbzQzLUFuVnhhbDFNV0VKOE5hazVGcjRJUHFBaw?oc=5",
+      "ticker_mentions": [
+        "AAPL",
+        "INTC"
+      ],
+      "source": "news"
     }
   ],
   "presidential_documents": [
+    {
+      "title": "Flag Day and National Flag Week, 2026",
+      "type": "Presidential Document",
+      "signing_date": "2026-06-18",
+      "publication_date": "2026-06-18",
+      "document_number": "2026-12436",
+      "html_url": "https://www.federalregister.gov/documents/2026/06/18/2026-12436/flag-day-and-national-flag-week-2026",
+      "abstract": null
+    },
+    {
+      "title": "National Homeownership Month, 2026",
+      "type": "Presidential Document",
+      "signing_date": "2026-06-18",
+      "publication_date": "2026-06-18",
+      "document_number": "2026-12435",
+      "html_url": "https://www.federalregister.gov/documents/2026/06/18/2026-12435/national-homeownership-month-2026",
+      "abstract": null
+    },
     {
       "title": "Presidential Determination and Delegation of Authority Under Section 708 of the Defense Production Act of 1950, as Amended",
       "type": "Presidential Document",
@@ -846,24 +970,6 @@
       "publication_date": "2026-04-23",
       "document_number": "2026-08010",
       "html_url": "https://www.federalregister.gov/documents/2026/04/23/2026-08010/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended",
-      "abstract": null
-    },
-    {
-      "title": "Presidential Determination Concerning the Air Force's Jet Fighter Training Operations in Idaho, Oregon, and Nevada",
-      "type": "Presidential Document",
-      "signing_date": "2026-04-23",
-      "publication_date": "2026-04-23",
-      "document_number": "2026-08009",
-      "html_url": "https://www.federalregister.gov/documents/2026/04/23/2026-08009/presidential-determination-concerning-the-air-forces-jet-fighter-training-operations-in-idaho-oregon",
-      "abstract": null
-    },
-    {
-      "title": "Accelerating Medical Treatments for Serious Mental Illness",
-      "type": "Presidential Document",
-      "signing_date": "2026-04-22",
-      "publication_date": "2026-04-22",
-      "document_number": "2026-07907",
-      "html_url": "https://www.federalregister.gov/documents/2026/04/22/2026-07907/accelerating-medical-treatments-for-serious-mental-illness",
       "abstract": null
     }
   ]

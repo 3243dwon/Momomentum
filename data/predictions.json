@@ -1,8 +1,214 @@
 {
-  "generated_at": "2026-06-18T00:25:35.026069-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-18T06:37:53.201639-04:00",
+  "event_count": 1,
+  "prediction_count": 8,
+  "not_yet_priced_in": 8,
+  "events": [
+    {
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "primary_drivers": [
+        "Foundry market share shift from TSMC to Intel Foundry Services",
+        "US onshoring capex pull-forward for advanced node tools",
+        "Validation of Intel 18A/14A as a viable leading-edge foundry for hyperscalers/fabless"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "AMAT",
+          "rationale": "Largest WFE vendor; Intel ramping 18A/14A capacity for Apple/NVDA/TSLA wafers requires incremental deposition/etch/CMP tools, plus US fab buildout drives sustained capex orders.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Etch/deposition leader with strong exposure to Intel's logic ramps; new foundry customer wins increase wafer starts and tool pull at Arizona/Ohio fabs.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "Process control intensity is highest at leading-edge nodes; Intel taking on multiple external customers at 18A increases yield-learning urgency and KLA tool buys.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "EUV/High-NA dependency for Intel 18A and 14A ramps; more foundry customers = more wafer demand = more EUV scanner orders, though ASML already books most Intel slots.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ACMR",
+          "rationale": "Cleaning/plating equipment supplier leveraged to incremental US fab buildout and capacity expansion at Intel.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "TSM",
+          "rationale": "Apple is TSMC's #1 customer (~25% of revenue) on N3/N2; any shift of Apple silicon wafers to Intel Foundry directly cannibalizes TSMC's leading-edge mix and pricing power.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GFS",
+          "rationale": "GlobalFoundries' pitch as the US-onshored foundry alternative is undermined if Intel becomes the de facto US foundry for marquee customers, even though GFS plays at trailing nodes.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UMC",
+          "rationale": "Taiwan foundry peer that re-rates negatively on any geopolitical/onshoring wafer reallocation theme away from Taiwan.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "trigger_ticker": "INTC",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "headlines": [
+        "After Nvidia And Tesla, Trump Confirms Apple Has Agreed To Build Chips With Intel Amid US Manufacturing Push: 'When Was The Last Time...'"
+      ],
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Largest WFE vendor; Intel ramping 18A/14A capacity for Apple/NVDA/TSLA wafers requires incremental deposition/etch/CMP tools, plus US fab buildout drives sustained capex orders.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Etch/deposition leader with strong exposure to Intel's logic ramps; new foundry customer wins increase wafer starts and tool pull at Arizona/Ohio fabs.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": 1.43,
+      "rel_volume": 1.09,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "TSM",
+      "direction": "bearish",
+      "rationale": "Apple is TSMC's #1 customer (~25% of revenue) on N3/N2; any shift of Apple silicon wafers to Intel Foundry directly cannibalizes TSMC's leading-edge mix and pricing power.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "KLAC",
+      "direction": "bullish",
+      "rationale": "Process control intensity is highest at leading-edge nodes; Intel taking on multiple external customers at 18A increases yield-learning urgency and KLA tool buys.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": 0.59,
+      "rel_volume": 1.21,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "ASML",
+      "direction": "bullish",
+      "rationale": "EUV/High-NA dependency for Intel 18A and 14A ramps; more foundry customers = more wafer demand = more EUV scanner orders, though ASML already books most Intel slots.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "ACMR",
+      "direction": "bullish",
+      "rationale": "Cleaning/plating equipment supplier leveraged to incremental US fab buildout and capacity expansion at Intel.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "GFS",
+      "direction": "bearish",
+      "rationale": "GlobalFoundries' pitch as the US-onshored foundry alternative is undermined if Intel becomes the de facto US foundry for marquee customers, even though GFS plays at trailing nodes.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    },
+    {
+      "ticker": "UMC",
+      "direction": "bearish",
+      "rationale": "Taiwan foundry peer that re-rates negatively on any geopolitical/onshoring wafer reallocation theme away from Taiwan.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "INTC",
+      "event_summary": "Trump confirmed that Apple has agreed to have Intel manufacture chips for it, joining previously announced Nvidia and Tesla deals under a US manufacturing push.",
+      "news_url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
+      "source_news_ids": [
+        "18fe30cb991534fb"
+      ],
+      "created_at": "2026-06-18T06:37:53.201639-04:00"
+    }
+  ]
 }
