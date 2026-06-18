@@ -551,3 +551,61 @@ export interface DealsData {
   deal_count: number;
   deals: Deal[];
 }
+
+// --- Catalyst calendar (/catalysts): portfolio-driven forward event calendar.
+// Keep in sync with scanner/catalysts.py + scanner/llm/catalyst_notes.py. ---
+export type CatalystType = 'earnings' | 'ex_dividend' | 'macro' | 'witching';
+// Forward earnings from FMP are aggregator estimates; dividends/macro/witching
+// are scheduled or declared. The badge makes that distinction visible.
+export type CatalystConfidence = 'confirmed' | 'estimated';
+
+export interface CatalystEvent {
+  id: string;
+  ticker?: string; // absent on macro/witching events
+  type: CatalystType;
+  label: string;
+  date: string; // YYYY-MM-DD
+  days_until: number;
+  impact: Impact;
+  confidence: CatalystConfidence;
+  detail?: string;
+  source: string;
+}
+
+export type CatalystStance =
+  | 'add-on-weakness'
+  | 'trim-into-strength'
+  | 'hold'
+  | 'watch'
+  | 'reduce-risk';
+
+export interface CatalystNote {
+  stance: CatalystStance;
+  read: string;
+  next_catalyst: string;
+  bull: string;
+  bear: string;
+  confidence: Confidence;
+}
+
+export interface PortfolioHolding {
+  ticker: string;
+  shares?: number | null;
+  cost_basis?: number | null;
+  note?: string | null;
+}
+
+export interface CatalystsData {
+  generated_at: string;
+  status: 'ok' | 'no_key' | 'no_portfolio' | string;
+  source?: string;
+  horizon_days: number;
+  portfolio_count: number;
+  holdings: PortfolioHolding[];
+  catalyst_count: number;
+  by_ticker: Record<string, CatalystEvent[]>;
+  macro: CatalystEvent[];
+  notes_by_ticker: Record<string, CatalystNote>;
+  notes_generated_at?: string | null;
+  disclaimer?: string;
+}

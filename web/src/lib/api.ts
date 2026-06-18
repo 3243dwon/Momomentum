@@ -17,7 +17,8 @@ import type {
   PredictionPerformance,
   LedgerData,
   BriefingData,
-  DealsData
+  DealsData,
+  CatalystsData
 } from './types';
 
 type Fetch = typeof fetch;
@@ -125,4 +126,8 @@ export async function loadAll(fetch: Fetch) {
 
 export async function loadDeals(fetch: Fetch) {
   return getJson<DealsData>(fetch, 'deals.json');
+}
+
+export async function loadCatalysts(fetch: Fetch) {
+  return getJson<CatalystsData>(fetch, 'catalysts.json');
 }

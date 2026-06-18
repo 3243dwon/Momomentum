@@ -1,0 +1,12 @@
+{
+  "_comment": "Hand-edit your holdings. Each entry needs a `ticker`; `shares` and `cost_basis` (total cost in your account currency) are optional and only used to label position size / unrealized P&L. The catalyst scanner reads this to build your dated add/trim calendar at /catalysts, and pushes a Feishu heads-up when an event is near. Seeded 2026-06-18 from David's Trading 212 ISA.",
+  "holdings": [
+    { "ticker": "INTC", "shares": 8 },
+    { "ticker": "NVDA", "shares": 8 },
+    { "ticker": "ORCL", "shares": 15 },
+    { "ticker": "NOK", "shares": 174 },
+    { "ticker": "NBIS", "shares": 1 },
+    { "ticker": "KO", "shares": 5 },
+    { "ticker": "SPCX", "shares": 10, "note": "SpaceX — IPO'd Jun 2026; FMP may not yet cover earnings/dividend dates for a brand-new listing." }
+  ]
+}

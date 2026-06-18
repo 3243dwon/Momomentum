@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, opening, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, catalysts, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, opening, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
@@ -380,6 +380,20 @@ def run(
             )
     except Exception as e:
         log.warning("Trump pulse fetch/notify raised: %s", e)
+
+    # Catalyst calendar (scanner.catalysts): the portfolio-driven forward event
+    # calendar — next earnings / ex-dividend per holding + a US macro calendar +
+    # the quarterly triple-witching (FMP + computed), with an Opus per-holding
+    # trim/add read. Throttled (~12h) so FMP calls stay tiny and Opus regen is
+    # rare; fail-soft. When alerts are on, ping Feishu for a near catalyst.
+    try:
+        cat_payload = catalysts.fetch_and_save(
+            client=client, rows=enriched_rows, syntheses=syntheses, now=now,
+        )
+        if use_alerts and cat_payload:
+            catalysts.notify_due_catalysts(cat_payload, now)
+    except Exception as e:
+        log.warning("Catalyst calendar raised: %s", e)
 
     # Evaluate past alerts + recommendations whose 1d/3d/5d horizons elapsed.
     from datetime import timezone as _tz
