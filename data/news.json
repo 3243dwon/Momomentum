@@ -1,23 +1,152 @@
 {
-  "generated_at": "2026-06-17T20:18:06.715041-04:00",
+  "generated_at": "2026-06-18T00:25:35.026069-04:00",
   "ticker_news": {
+    "INTC": [
+      {
+        "id": "034e25274d27f7e0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Jim Cramer Names Intel His Favorite Stock, Says Chipmaker 'Will Work' Because Of This Reason",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53267532/jim-cramer-names-intel-his-favorite-stock-and-says-it-will-work",
+        "published_at": "2026-06-18T03:48:45+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "jim_cramer_intc_bullish_pick",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "eac01ae9d4b5cb05",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Cathie Wood's Ark Invest Sells Robinhood Stock Into 8% Rally, Loads Up On Coinbase And Block",
+        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/53267466/cathie-woods-ark-invest-sells-robinhood-stock-into-8-rally-loads-up-on-coinbase-and-block",
+        "published_at": "2026-06-18T03:22:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "ark_invest_portfolio_moves_june_2026",
+        "tickers_mentioned": [
+          "COIN",
+          "BLOCK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "6853445d63711f3f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Smartbird, Nebius Group, IceCure Medical, Robinhood And Meta: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53267102/smartbird-nebius-group-icecure-medical-robinhood-and-meta-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-18T01:30:10+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stock_roundup_multiple_tickers_june_2026",
+        "tickers_mentioned": [
+          "HOOD",
+          "NBIS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
     "META": [
       {
-        "id": "1e5b3b6ff44ab4d9",
+        "id": "6853445d63711f3f",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "META",
         "scope": "ticker",
-        "title": "Apple Will Raise Prices Due To Soaring Memory Costs: CEO Tim Cook Says 'This Is A 100-Year Flood'",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
-        "published_at": "2026-06-17T22:19:18+00:00",
-        "type": "guidance",
-        "impact": "high",
-        "dedup_group": "apple_price_increases_memory_costs",
+        "title": "Smartbird, Nebius Group, IceCure Medical, Robinhood And Meta: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53267102/smartbird-nebius-group-icecure-medical-robinhood-and-meta-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-18T01:30:10+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stock_roundup_multiple_tickers_june_2026",
         "tickers_mentioned": [
-          "AAPL"
+          "HOOD",
+          "NBIS"
         ],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
+      },
+      {
+        "id": "5efe18ef67af3841",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "META",
+        "scope": "ticker",
+        "title": "'Sad' That No One Will Tell Snap CEO The Truth, Says Analyst On Company's 'Horrendous' Product Design For $2,195 AR Glasses",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53267487/snap-analyst-slams-horrendous-design-of-2195-ar-glasses",
+        "published_at": "2026-06-18T03:33:48+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "snap_ar_glasses_analyst_critique",
+        "tickers_mentioned": [
+          "SNAP"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NBIS": [
+      {
+        "id": "6853445d63711f3f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NBIS",
+        "scope": "ticker",
+        "title": "Smartbird, Nebius Group, IceCure Medical, Robinhood And Meta: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/53267102/smartbird-nebius-group-icecure-medical-robinhood-and-meta-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-18T01:30:10+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "stock_roundup_multiple_tickers_june_2026",
+        "tickers_mentioned": [
+          "HOOD",
+          "NBIS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNAP": [
+      {
+        "id": "5efe18ef67af3841",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNAP",
+        "scope": "ticker",
+        "title": "'Sad' That No One Will Tell Snap CEO The Truth, Says Analyst On Company's 'Horrendous' Product Design For $2,195 AR Glasses",
+        "url": "https://www.benzinga.com/markets/tech/26/06/53267487/snap-analyst-slams-horrendous-design-of-2195-ar-glasses",
+        "published_at": "2026-06-18T03:33:48+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "snap_ar_glasses_analyst_critique",
+        "tickers_mentioned": [
+          "SNAP"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "aa21d63ddc0efa95",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin In Red Even As Trump Signs Iran Peace Deal: Analyst Says BTC In 'Fragile Recovery Phase'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53267211/bitcoin-ethereum-xrp-dogecoin-slip-despite-trumps-iran-peace-deal-analyst-calls-btc-recovery-fragile",
+        "published_at": "2026-06-18T02:06:32+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "crypto_mixed_trump_iran_deal",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
       }
     ]
   },

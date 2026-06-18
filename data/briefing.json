@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-17T20:18:06.715041-04:00",
+  "generated_at": "2026-06-18T00:25:35.026069-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on label holds despite SPY -1.3%; CYTK/HWM/ING desk longs live \u2014 RXT +21% leads overnight movers",
+  "headline": "Risk-on regime intact; SPY/QQQ soft but desk holds CYTK/HWM/ING longs \u2014 RXT +21% still leads the tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.27% / QQQ -1.01% day-over-day but both above 50d MA; VXX stress 0.95 \u2014 soft tape, not a breakdown. Entries viable, mind the drift."
+    "line": "SPY -1.27% / QQQ -1.01% on day, both above 50d; VXX stress 0.95 \u2014 pullback in uptrend, not a regime break. Entries viable but expect chop."
   },
   "actions": [
     {
@@ -21,7 +21,7 @@
       "entry": 283.24,
       "stop": 262.02,
       "target": 325.68,
-      "line": "Half size \u2014 solid trend, no fresh catalyst; Signal agrees, Risk medium, Research neutral. R/R ~2:1."
+      "line": "Half size \u2014 solid trend, Risk medium, Research neutral. No fresh catalyst; ride structure."
     },
     {
       "ticker": "ING",
@@ -29,43 +29,39 @@
       "entry": 31.21,
       "stop": 29.45,
       "target": 34.74,
-      "line": "Quarter size starter \u2014 Signal/Risk lean green, Research against; weak 1d, early-stage. R/R ~2:1."
+      "line": "Quarter size \u2014 early-stage, weak 1d, Research against. Small starter only."
     }
   ],
   "watch": [
     {
-      "ticker": "SNDK",
-      "type": "ripple",
-      "line": "High-conf bullish ripple off META; pure-play NAND supplier with high op-leverage on ASP tailwind \u2014 not yet priced."
-    },
-    {
-      "ticker": "LRCX",
-      "type": "ripple",
-      "line": "Med-conf bullish off META; memory tightness pulls forward capex, Lam takes largest equipment share."
-    },
-    {
       "ticker": "RXT",
       "type": "mover",
-      "line": "+21.5% on 2x volume, MACD bullish \u2014 overnight leader, watch for continuation or fade at open."
+      "line": "+21.5% overnight, rel-vol 2.0x, MACD bullish \u2014 needs RTH confirmation before any chase."
     },
     {
       "ticker": "EOSE",
       "type": "mover",
-      "line": "+11.75%, unusual volume (2.1x) \u2014 flag for energy storage catalyst check pre-open."
+      "line": "+11.75%, unusual volume (2.08x) \u2014 watch for follow-through open; no catalyst confirmed."
+    },
+    {
+      "ticker": "MRNA",
+      "type": "mover",
+      "line": "+11.55%, overbought flag \u2014 likely catalyst-driven; monitor news before entry."
     },
     {
       "ticker": "CVNA",
       "type": "mover",
-      "line": "-10.2%, unusual volume (2.1x), MACD bearish \u2014 short-side setup forming; needs clean level."
+      "line": "-10.19%, unusual vol (2.07x), MACD bearish \u2014 potential short setup if RTH selling continues."
+    },
+    {
+      "ticker": "FRMI",
+      "type": "mover",
+      "line": "+9.63%, unusual vol (2.22x), overbought \u2014 highest relative volume on the board; watch for reversal."
     }
   ],
-  "changed": [
-    "OCUL no longer in desk takes \u2014 dropped from active picks",
-    "ING added as new quarter-size long",
-    "Regime label unchanged but macro Warsh hawkish shock now absent from overnight scan"
-  ],
+  "changed": [],
   "caveats": [
-    "Overnight scan as of 2026-06-17 20:18 ET \u2014 prices stale until pre-market open; gap risk on all levels.",
-    "Risk-on regime label conflicts with SPY/QQQ both down >1% on the day \u2014 treat with caution until RTH tape confirms."
+    "OVERNIGHT scan as of 2026-06-18 00:25 ET \u2014 prices stale until pre-market opens; gaps at RTH open may invalidate listed entry levels.",
+    "No catalysts, ripple calls, or macro events flagged this scan \u2014 movers lack confirmed fundamental drivers; treat as technically driven until news surfaces."
   ]
 }
