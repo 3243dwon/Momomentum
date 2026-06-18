@@ -69,6 +69,29 @@ FMP_API_KEY = os.environ.get("FMP_API_KEY")
 # most, so once every 6 hours is plenty and leaves headroom on the daily cap.
 POLITICAL_REFRESH_SECONDS = 6 * 60 * 60
 
+# Catalyst calendar (scanner.catalysts) — the portfolio-driven, forward-looking
+# event calendar. Reads data/portfolio.json (your holdings) and pulls each
+# name's next earnings + ex-dividend dates, plus a US macro calendar
+# (FOMC / CPI / jobs / PCE) from FMP, and computes the quarterly triple-witching
+# locally. An Opus pass then writes a per-holding "trim/add read". Surfaced at
+# /catalysts and pushed to Feishu when a catalyst is near. Shares FMP_API_KEY
+# with the political feed; both stay far under the 250/day cap. Set
+# CATALYST_ENABLED=0 to disable the tier entirely.
+CATALYST_ENABLED = (os.environ.get("CATALYST_ENABLED", "true").strip().lower()
+                    not in ("0", "false", "no", "off"))
+# How far forward to surface scheduled events.
+CATALYST_HORIZON_DAYS = 120
+# Refresh interval — earnings/ex-div dates don't move intraday, so twice a day
+# is plenty and keeps FMP calls (~2 per holding + 1 macro) tiny.
+CATALYST_REFRESH_SECONDS = 12 * 60 * 60
+# Push a Feishu heads-up when a catalyst is this many calendar days out or less
+# (and hasn't been pinged yet).
+CATALYST_NOTIFY_DAYS = 3
+# Model for the per-holding trim/add read. Opus by default (the same macro-
+# reasoning tier); override to a cheaper model if the twice-daily note regen
+# ever adds up.
+CATALYST_NOTES_MODEL = os.environ.get("CATALYST_NOTES_MODEL", OPUS_MODEL)
+
 # Serenity (@aleabitoreddit) — momentum polls the X API directly, 24/7, in its
 # own workflow (serenity-poll.yml). Pay-per-use: ~$0.005 per tweet returned, and
 # empty polls (since_id) are free. Needs an X API OAuth2 app-only bearer token.

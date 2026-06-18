@@ -129,6 +129,11 @@
         >Predict</a
       >
       <a
+        href="/catalysts"
+        class="hidden rounded px-2.5 py-1.5 transition-colors sm:block {$page.url.pathname.startsWith('/catalysts') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
+        >Events</a
+      >
+      <a
         href="/review"
         class="hidden rounded px-2.5 py-1.5 transition-colors sm:block {$page.url.pathname.startsWith('/review') ? 'bg-ink-700 text-zinc-100' : 'text-zinc-400 hover:bg-ink-800'}"
         >Review</a
@@ -159,6 +164,7 @@
       { href: '/ask', label: 'Ask', active: $page.url.pathname.startsWith('/ask'), icon: 'M8 10h8M8 14h5M21 12a8.96 8.96 0 01-9 9 8.96 8.96 0 01-4.2-1L3 21l1-4.8A8.96 8.96 0 013 12a9 9 0 1118 0z' },
       { href: '/deals', label: 'Deals', active: $page.url.pathname.startsWith('/deals'), icon: 'M9 15l6-6M10.5 7.5l1-1a3.5 3.5 0 015 5l-1 1M13.5 16.5l-1 1a3.5 3.5 0 01-5-5l1-1' },
       { href: '/predictions', label: 'Predict', active: $page.url.pathname.startsWith('/predictions'), icon: 'M17.5 9.5a5.5 5.5 0 11-11 0 5.5 5.5 0 0111 0zM8.5 14.5 7 19h10l-1.5-4.5' },
+      { href: '/catalysts', label: 'Events', active: $page.url.pathname.startsWith('/catalysts'), icon: 'M7 3v3m10-3v3M4 8.5h16M5 5h14a1 1 0 011 1v13a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z' },
       { href: '/review', label: 'Review', active: $page.url.pathname.startsWith('/review'), icon: 'M9 5h6m-7 4h8m-8 4h8m-8 4h5M6 3h12a1 1 0 011 1v16a1 1 0 01-1 1H6a1 1 0 01-1-1V4a1 1 0 011-1z' }
     ] as item (item.href)}
       <a
