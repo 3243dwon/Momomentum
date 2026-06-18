@@ -28,9 +28,16 @@ DESK_PERFORMANCE_FILE = config.DATA_DIR / "desk_performance.json"
 PREDICTIONS_LOG = config.CACHE_DIR / "predictions_log.jsonl"
 PREDICTION_PERFORMANCE_FILE = config.DATA_DIR / "prediction_performance.json"
 LEDGER_FILE = config.DATA_DIR / "ledger.json"            # committed; permanent public record
+# Early-entry (scanner.opening) catch-list tier. Log lives in the evictable
+# cache like the others; stats + the ledger entries below are committed.
+EARLY_ENTRY_LOG = config.CACHE_DIR / "early_entry_log.jsonl"
+EARLY_ENTRY_PERFORMANCE_FILE = config.DATA_DIR / "early_entry_performance.json"
 
 RETENTION_DAYS = 45
 HORIZONS = [1, 3, 5]  # days
+# Early-entry is an intraday-momentum call: 0d = return to the entry-day close
+# is the primary grade; 1d/3d measure follow-through.
+EARLY_HORIZONS = [0, 1, 3]  # trading days
 HIGH_SCORE = 7  # recommendation score >= this is bucketed as a high-conviction pick
 # Flat round-trip slippage drag applied to net stats (docs/perf-roadmap.md:
 # 0.3-0.8% is realistic for the mid/small caps the scanner surfaces).
@@ -747,6 +754,40 @@ def write_ledger(now: datetime) -> dict:
                 "long" if e.get("direction", "bullish") == "bullish" else "short",
                 e.get("confidence"), e.get("price_at_prediction"),
             ))
+
+        # Early-entry catch-list calls. Only FIRED candidates are calls (the
+        # eligible-but-passed control cohort is measured in the stats, not the
+        # public ledger). Graded at EARLY_HORIZONS; 0d (entry-day close) drives
+        # the hit/miss status.
+        for e in _read_entries(EARLY_ENTRY_LOG):
+            ts = _parse_ts(e.get("ts", ""))
+            if ts is None or ts < cutoff or not e.get("ticker") or not e.get("fired"):
+                continue
+            direction = e.get("direction", "long")
+            price = e.get("price_at_entry")
+            outcomes = {
+                f"{h}d": (e.get("evaluations", {}).get(f"{h}d") or {}).get("signed_return_pct")
+                for h in EARLY_HORIZONS
+            }
+            if price is None:
+                status = "untracked"
+            elif outcomes.get("0d") is not None:
+                status = "hit" if outcomes["0d"] > 0 else "miss"
+            else:
+                status = "pending"
+            entries.append({
+                "id": _ledger_id("early_entry", f"catch_{direction}", e["ticker"], e.get("ts", "")),
+                "ts": e.get("ts", ""),
+                "kind": "early_entry",
+                "type": f"catch_{direction}",
+                "ticker": e["ticker"],
+                "direction": direction,
+                "confidence": None,
+                "price": price,
+                "thesis": e.get("thesis") or "",
+                "outcomes": outcomes,
+                "status": status,
+            })
 
         entries.sort(key=lambda x: x["ts"], reverse=True)
         entries = entries[:LEDGER_MAX_ENTRIES]

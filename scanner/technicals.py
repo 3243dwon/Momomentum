@@ -359,6 +359,9 @@ def fetch_intraday(symbols: list[str]) -> dict[str, dict]:
                     "last": round(last, 2),
                     "above_vwap": (last > vwap) if vwap else None,
                     "bars": len(sub),
+                    # Cumulative session volume so far (the real numerator for a
+                    # time-of-day relative-volume read; scanner.opening uses it).
+                    "session_vol": int(total_vol) if total_vol else None,
                 }
             except Exception:
                 pass

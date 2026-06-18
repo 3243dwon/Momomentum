@@ -96,3 +96,31 @@ RIPPLE_TRIGGER_TYPES = ("ma", "product", "guidance", "earnings")
 # changed / caveats) for the web front page. Set BRIEFING_ENABLED=0 to disable.
 BRIEFING_ENABLED = (os.environ.get("BRIEFING_ENABLED", "true").strip().lower()
                     not in ("0", "false", "no", "off"))
+
+# Opening catch-list (scanner.opening) — the early-entry tier. Once per trading
+# day, on the first RTH scan after the 09:30 open (~10:00 ET), flag liquid names
+# that gapped and are HOLDING above/below VWAP on the opening range — a
+# confirmed-continuation list price-stamped at the live snapshot price, scored
+# by-close/+1d/+3d so it proves itself. Honest about the data: IEX feed + the
+# ~20-min historical-bar lag mean this reads ~09:40 structure at ~10:00, on
+# liquid large-caps only. Set OPENING_ENABLED=0 to disable the tier entirely.
+OPENING_ENABLED = (os.environ.get("OPENING_ENABLED", "true").strip().lower()
+                   not in ("0", "false", "no", "off"))
+# Minimum overnight gap (live price vs prev close) to be an eligible candidate.
+OPENING_MIN_GAP_PCT = 3.0
+# Liquidity floor — IEX only prints densely enough on liquid names for the
+# gap/VWAP/live-price reads to be trustworthy. S&P 500 / NDX membership also
+# qualifies regardless of this threshold.
+OPENING_MIN_AVG_VOL = 2_000_000
+# A candidate "fires" (enters the actionable catch list) only if it's HOLDING
+# near VWAP — above (long) / below (short) by no more than this, so we catch the
+# hold, not a blown-off chase.
+OPENING_MAX_VWAP_DIST_PCT = 3.0
+# ...and hasn't given back more than this from the opening high (long) / low
+# (short) — a name fading off its extreme at 10:00 is not catching.
+OPENING_MAX_GIVEBACK_PCT = 6.0
+# Cap the actionable list per side; the rest stay logged as the control cohort.
+OPENING_MAX_PER_SIDE = 5
+# Soft preference: time-of-day relative volume at/above this is rewarded in the
+# rank (never a hard gate — IEX fractional volume biases the absolute low).
+OPENING_RVOL_TOD_MIN = 1.0

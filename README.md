@@ -52,6 +52,8 @@ Tier-0 routing is the cost lever: rules filter 2,500 tickers down to ~100 before
 
 **Delta tracking** persists prior top-20 movers, detects rank jumps (≥15 positions), new entrants, and momentum acceleration — surfacing early movers before they become headlines.
 
+**Opening catch-list** (`scanner/opening.py`) is the early-entry tier — the answer to "stop only seeing the winners after the close." Once per trading day, on the first regular-hours scan after the 09:30 open (~10:00 ET), it flags liquid names that gapped overnight and are *still holding* above (long) / below (short) VWAP on the opening range — a confirmed-continuation list with entry/stop/target levels priced off the **live** snapshot, not yesterday's close. It's honest about the data: the feed is IEX and historical bars carry a ~20-min lag, so a 10:00 read sees ~09:40 structure — which is *why* "still holding 30 minutes in" is the signal, and why a hard liquidity gate excludes thin small-caps. Accountable from day one: every call is graded against the **settled daily close** at 0d/+1d/+3d, and the names that were eligible (gapped + liquid) but *didn't* fire the gate are logged as a **control cohort**, so `data/early_entry_performance.json` reports the only number that matters — does the signal beat just buying any gapper (`fired_vs_control_edge_net`)? If it doesn't, the tier should be retired. Disable with `OPENING_ENABLED=0`.
+
 **Alert tiers:**
 - **A0 catalyst**: synthesis verdict says news explains the move + ticker also has a big move/unusual volume — always fires
 - **A1 ripple**: a popular stock's news predicts a second-order move on *another* name that hasn't happened yet (the not-yet-priced-in calls only) — always fires

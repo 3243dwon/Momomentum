@@ -27,7 +27,7 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, opening, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
@@ -140,13 +140,28 @@ def run(
 
     routed, watchlist = router.route(rows, deltas, window) if rows else ([], sorted(router.load_watchlist()))
 
+    # Opening catch-list (scanner.opening): once per trading day, on the first
+    # RTH scan after the open. When it's due, widen the snapshot pass to the
+    # whole popular universe so FRESH gappers — which the router (keyed off
+    # yesterday's tape) would otherwise never enrich — get a gap read and
+    # intraday bars. Normal scans keep the cheap routed-only behavior.
+    run_catch = opening.should_run_today(now, window)
+
     # Pre-market gap + intraday VWAP/HOD/LOD for routed tickers only
     # (cheap because Tier 0 already cut us down to ~50-200 names).
     routed_for_intraday = sorted(set(routed) | set(watchlist))
+    snapshot_targets = set(routed_for_intraday)
+    if run_catch:
+        snapshot_targets |= universe.popular()
     snapshots: dict[str, dict] = {}
     intraday: dict[str, dict] = {}
-    if routed_for_intraday:
-        snapshots = technicals.fetch_snapshots(routed_for_intraday)
+    if snapshot_targets:
+        snapshots = technicals.fetch_snapshots(sorted(snapshot_targets))
+        if run_catch:
+            gappers = opening.gapper_candidates(snapshots)
+            if gappers:
+                routed_for_intraday = sorted(set(routed_for_intraday) | set(gappers))
+                log.info("Catch list: %d fresh gappers admitted for intraday", len(gappers))
         if window in (windows.Window.RTH, windows.Window.AH_PRE, windows.Window.AH_POST):
             intraday = technicals.fetch_intraday(routed_for_intraday)
 
@@ -249,6 +264,21 @@ def run(
     # every pick so the PM agent can reference real numbers and the UI has one
     # source of truth. Runs regardless of LLM availability.
     levels_mod.attach_levels(recommendations, enriched_rows)
+
+    # Opening catch-list — the early-entry tier. Built off the enriched rows
+    # (live snapshot price + opening-range VWAP), once per trading day. Skip the
+    # write when no intraday bars landed yet so the next scan retries rather than
+    # burning the once-a-day slot on empty data. Fail-soft — never blocks a scan.
+    if run_catch:
+        try:
+            catch = opening.build_catch_list(enriched_rows, regime, now, window)
+            if catch.get("_has_intraday"):
+                opening.write_catch_list(catch, now)
+                opening.log_catch_list(catch, now, regime=regime)
+            else:
+                log.info("Catch list: no intraday bars yet; will retry next scan")
+        except Exception as e:
+            log.warning("Catch list build raised: %s", e)
 
     # Tier-4 agent desk: review each pick through Signal/Research/Risk/PM and
     # attach rec["desk"]. Runs only when the LLM client is available; fails soft
@@ -358,10 +388,12 @@ def run(
     performance.evaluate_pending(_alpaca, _utc_now)
     performance.evaluate_pending_recommendations(_alpaca, _utc_now)
     performance.evaluate_pending_predictions(_alpaca, _utc_now)
+    opening.evaluate_pending_early_entries(_alpaca, _utc_now)
     performance.compile_stats(datetime.now(config.MARKET_TZ))
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
     performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
     performance.compile_prediction_stats(datetime.now(config.MARKET_TZ))
+    opening.compile_early_entry_stats(datetime.now(config.MARKET_TZ))
     # Mom 建议关注 (CN/HK) tracker — mark prior picks to market at 3/5/10 trading
     # days via Yahoo and roll up a hit-rate. Separate from the US Alpaca pipeline
     # above; fail-soft so it never blocks the scan.
