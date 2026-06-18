@@ -1,70 +1,61 @@
 {
-  "generated_at": "2026-06-18T17:23:11.284713-04:00",
+  "generated_at": "2026-06-18T19:47:59.784706-04:00",
   "window": "AH_POST",
-  "headline": "Risk-on holds: QQQ +2.4%, broad tape green; FCEL +19.7%, QS +16.6% lead movers; 3 desk takes active",
+  "headline": "Risk-on intact AH: QQQ +2.4%, SPY +1.0%; desk trims to 2 takes \u2014 AU & FULC long setups live",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03%, QQQ +2.4%, VXX stress 0.93 \u2014 vol suppressed, trend intact above 50d; AH tape still constructive for entries."
+    "line": "SPY +1.03% above 50d, QQQ +2.4%; VXX stress ratio 0.93 \u2014 low fear, tape supportive for momentum entries."
   },
   "actions": [
+    {
+      "ticker": "AU",
+      "direction": "long",
+      "entry": 90.92,
+      "stop": 88.96,
+      "target": 94.83,
+      "line": "Fresh catalyst, neutral RSI, clean regime \u2014 full size; R/R ~2:1."
+    },
     {
       "ticker": "FULC",
       "direction": "long",
       "entry": 3.69,
       "stop": 3.52,
       "target": 4.03,
-      "line": "Fresh MACD cross, RSI 32 early entry \u2014 half size, tight $0.17 stop."
-    },
-    {
-      "ticker": "WMB",
-      "direction": "long",
-      "entry": 73.14,
-      "stop": 72.18,
-      "target": 75.06,
-      "line": "Regime-aligned energy infra, no red flags \u2014 half size, $0.96 risk to $1.92 reward."
-    },
-    {
-      "ticker": "RVMD",
-      "direction": "long",
-      "entry": 162.84,
-      "stop": 159.28,
-      "target": 169.96,
-      "line": "Signal + regime agree, research neutral no veto \u2014 half size, 2:1 R/R."
+      "line": "Signal constructive but 5d momentum weak, research neutral \u2014 half size only."
     }
   ],
   "watch": [
     {
       "ticker": "QS",
       "type": "mover",
-      "line": "+16.6%, 2.31\u00d7 volume \u2014 unusual vol confirms conviction; watch for follow-through open."
+      "line": "+16.6%, 2.31\u00d7 vol \u2014 unusual volume on a big move; watch for follow-through or fade at open."
+    },
+    {
+      "ticker": "FCEL",
+      "type": "mover",
+      "line": "+19.7% on avg volume \u2014 big move without volume confirmation; gap-fill risk elevated."
+    },
+    {
+      "ticker": "ENTG",
+      "type": "mover",
+      "line": "+13.6% on 1.83\u00d7 vol \u2014 semis/materials name; check catalyst before chasing."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7%, 2.4\u00d7 volume \u2014 high-vol flush; watch for stabilization before any fade/bounce play."
+      "line": "-13.7% on 2.4\u00d7 vol \u2014 heaviest unusual volume of the scan; potential bounce or continuation short."
     },
     {
-      "ticker": "ARCT",
-      "type": "ripple",
-      "line": "mRNA platform re-rating via MRNA; CSL partnership adds legitimacy \u2014 medium confidence bullish read-through."
-    },
-    {
-      "ticker": "RCAT",
-      "type": "ripple",
-      "line": "Drone sector consolidation premium off ONDS M&A \u2014 medium confidence, small-cap volatility risk."
-    },
-    {
-      "ticker": "DPRO",
-      "type": "ripple",
-      "line": "Draganfly direct peer to ONDS Cyberhawk deal (utilities/energy drone inspection) \u2014 medium confidence."
+      "ticker": "KMX",
+      "type": "mover",
+      "line": "+13.3% on 1.65\u00d7 vol \u2014 consumer discretionary strength; watch for sector read-through."
     }
   ],
   "changed": [
-    "Previous leadership was TTWO/MRVL/INTC (gaming + semis); this scan: FCEL/QS/TNGX (clean energy + biotech flush) lead movers \u2014 sector rotation",
-    "Three new desk takes (FULC, WMB, RVMD) now active; no carries from prior briefing"
+    "Desk takes dropped from 3 to 2 \u2014 one pick removed vs prior briefing."
   ],
   "caveats": [
-    "AH_POST scan as of 17:23 ET 2026-06-18 \u2014 prices are post-close and may gap significantly at next RTH open; desk take entries may not be achievable.",
-    "SPY 200d data unavailable this scan \u2014 full trend confirmation incomplete; regime reads risk_on on 50d + QQQ/VXX alone."
+    "AH_POST scan as of 2026-06-18 19:47 ET \u2014 prices are post-market and may not reflect overnight/pre-market moves; treat levels as indicative.",
+    "No catalysts or ripple signals flagged this scan; moves in FCEL, QS, ENTG lack confirmed news \u2014 trade accordingly."
   ]
 }

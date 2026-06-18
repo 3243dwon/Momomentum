@@ -1,176 +1,19 @@
 {
-  "generated_at": "2026-06-18T17:23:11.284713-04:00",
+  "generated_at": "2026-06-18T19:47:59.784706-04:00",
   "ticker_news": {
-    "ASTS": [
+    "AU": [
       {
-        "id": "98f1c41252a87a20",
+        "id": "93cc296a3f945718",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "ASTS",
+        "ticker": "AU",
         "scope": "ticker",
-        "title": "3 Space Stocks to Buy Now That SpaceX Is Off the Table",
-        "url": "https://www.benzinga.com/opinion/26/06/53290998/3-space-stocks-to-buy-now-that-spacex-is-off-the-table",
-        "published_at": "2026-06-18T19:56:10+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "space_stocks_recommendation_spacex",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "AR": [
-      {
-        "id": "08f6baf497ab4822",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "AR",
-        "scope": "ticker",
-        "title": "Oil Stocks Trade As If Iran War Never Happened: 10 Falling Knives To Watch",
-        "url": "https://www.benzinga.com/markets/commodities/26/06/53289695/xle-xop-energy-stocks-erase-iran-war-rally",
-        "published_at": "2026-06-18T19:21:12+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "oil_stocks_iran_war_selloff",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CVX": [
-      {
-        "id": "33bc83d0960338af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CVX",
-        "scope": "ticker",
-        "title": "The 14-Point US-Iran Deal Broken Down: What It Means For Oil Prices",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/53284836/the-14-point-us-iran-deal-broken-down-what-it-means-for-oil-prices",
-        "published_at": "2026-06-18T17:00:24+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "us_iran_deal_oil_prices",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "JPM": [
-      {
-        "id": "23619a7cad6e13a1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "JPM",
-        "scope": "ticker",
-        "title": "AI Trade Is Moving From Nvidia To The Bond Market",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53285836/ai-trade-is-moving-from-nvidia-to-the-bond-market",
-        "published_at": "2026-06-18T17:27:53+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "ai_trade_shift_nvidia_bonds",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "META": [
-      {
-        "id": "23619a7cad6e13a1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "AI Trade Is Moving From Nvidia To The Bond Market",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53285836/ai-trade-is-moving-from-nvidia-to-the-bond-market",
-        "published_at": "2026-06-18T17:27:53+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "ai_trade_shift_nvidia_bonds",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MRNA": [
-      {
-        "id": "0bd446e458c4edb1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MRNA",
-        "scope": "ticker",
-        "title": "Bulls Pile Into Moderna As FDA Decision Nears, Ignites 60% Surge In This ETF",
-        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53288987/bulls-pile-into-moderna-as-fda-decision-nears-ignites-60-surge-in-this-etf",
-        "published_at": "2026-06-18T19:00:20+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "mrna_fda_decision_imminent",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "ONDS": [
-      {
-        "id": "730cfa8e204aedbd",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ONDS",
-        "scope": "ticker",
-        "title": "Why Ondas Is Spending $125 Million To Buy Cyberhawk",
-        "url": "https://www.benzinga.com/m-a/26/06/53285724/why-ondas-is-spending-125-million-to-buy-cyberhawk",
-        "published_at": "2026-06-18T17:24:33+00:00",
-        "type": "ma",
-        "impact": "high",
-        "dedup_group": "onds_125m_cyberhawk_acquisition",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "PFE": [
-      {
-        "id": "322d693e74f207ef",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PFE",
-        "scope": "ticker",
-        "title": "Pfizer Stock Drops Today As CFO Steps Down In August",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53284645/pfizer-stock-drops-today-as-cfo-steps-down-in-august",
-        "published_at": "2026-06-18T16:54:17+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "pfe_cfo_departure_august",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "STM": [
-      {
-        "id": "0d98d80ea695a385",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "STM",
-        "scope": "ticker",
-        "title": "Here's How Much $100 Invested In STMicroelectronics 15 Years Ago Would Be Worth Today",
-        "url": "https://www.benzinga.com/insights/news/26/06/53291244/heres-how-much-100-invested-in-stmicroelectronics-15-years-ago-would-be-worth-today",
-        "published_at": "2026-06-18T20:00:37+00:00",
+        "title": "$100 Invested In Anglogold Ashanti 5 Years Ago Would Be Worth This Much Today",
+        "url": "https://www.benzinga.com/insights/news/26/06/53294471/100-invested-in-anglogold-ashanti-5-years-ago-would-be-worth-this-much-today",
+        "published_at": "2026-06-18T22:15:37+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "stm_historical_return_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TGTX": [
-      {
-        "id": "6cba6603c45b9d9d",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TGTX",
-        "scope": "ticker",
-        "title": "TG Therapeutics Stock Rises Thursday: What's Driving The Gains?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53289968/tg-therapeutics-stock-rises-thursday-whats-driving-the-gains",
-        "published_at": "2026-06-18T19:29:40+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tgtx_stock_gains_thursday",
+        "dedup_group": "au_performance_retrospective",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
