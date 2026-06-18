@@ -1,237 +1,40 @@
 {
-  "generated_at": "2026-06-18T06:37:53.201639-04:00",
+  "generated_at": "2026-06-18T07:53:07.395163-04:00",
   "ticker_news": {
-    "HOOD": [
-      {
-        "id": "c224d5ba83c40550",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Bitcoin Is Stuck Near $64,000, But These Crypto Stocks Are Flashing Strong Momentum",
-        "url": "https://www.benzinga.com/markets/equities/26/06/53270008/bitcoin-is-stuck-near-64000-but-these-crypto-stocks-are-flashing-strong-momentum",
-        "published_at": "2026-06-18T10:21:00+00:00",
-        "type": "macro_commodity",
-        "impact": "low",
-        "dedup_group": "bitcoin_64k_crypto_stocks_momentum",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "DELL": [
-      {
-        "id": "34eff0e2f744e119",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DELL",
-        "scope": "ticker",
-        "title": "What's Going On With Dell Technologies Stock Thursday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53269717/whats-going-on-with-dell-technologies-stock-thursday-3",
-        "published_at": "2026-06-18T10:08:13+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dell_daily_movement",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
     "INTC": [
       {
-        "id": "fb29f0b2fa9b52a0",
+        "id": "d522e8d95cbf641d",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "Ray Dalio Says US Is 'On The Brink' As Debt And Political Risks Mount",
-        "url": "https://www.benzinga.com/news/politics/26/06/53269199/ray-dalio-says-us-is-on-the-brink-as-debt-and-political-risks-mount",
-        "published_at": "2026-06-18T09:33:15+00:00",
-        "type": "macro_geopol",
+        "title": "Why Is Intel Stock Soaring Thursday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/53271124/why-is-intel-stock-soaring-thursday",
+        "published_at": "2026-06-18T11:24:31+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "ray_dalio_us_debt_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "18fe30cb991534fb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "After Nvidia And Tesla, Trump Confirms Apple Has Agreed To Build Chips With Intel Amid US Manufacturing Push: 'When Was The Last Time...'",
-        "url": "https://www.benzinga.com/news/26/06/53268744/after-nvidia-and-tesla-trump-confirms-apple-has-agreed-to-build-chips-with-intel-amid-us-manufacturing-push-when-was-the-last-time",
-        "published_at": "2026-06-18T08:15:53+00:00",
-        "type": "product",
-        "impact": "high",
-        "dedup_group": "apple_intel_chip_partnership_trump",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "KMX": [
-      {
-        "id": "241df016053160af",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KMX",
-        "scope": "ticker",
-        "title": "Dow Dips Over 500 Points As Fed Signals Future Tightening: Investor Sentiment Declines, Greed Index Remains In 'Fear' Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/53268634/dow-dips-over-500-points-as-fed-signals-future-tightening-investor-sentiment-declines-greed-index-remains-in-fear-zone",
-        "published_at": "2026-06-18T07:49:31+00:00",
-        "type": "macro_fed",
-        "impact": "low",
-        "dedup_group": "fed_signals_tightening_market_reaction",
+        "dedup_group": "intc_stock_move_june_18",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "META": [
       {
-        "id": "5e39e74382d6d694",
+        "id": "84dc1eb69ee3acc1",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "META",
         "scope": "ticker",
-        "title": "Elizabeth Warren Says Every 4-Year-Old In America Could Get Health Care If Elon Musk Did This",
-        "url": "https://www.benzinga.com/news/politics/26/06/53269934/elizabeth-warren-says-every-4-year-old-in-america-could-get-health-care-if-elon-musk-did-this",
-        "published_at": "2026-06-18T10:15:15+00:00",
+        "title": "The Meta-Scale Multiplier: Why The Data Center Race Is A Power Grid Story",
+        "url": "https://www.benzinga.com/markets/commodities/26/06/53270429/the-meta-scale-multiplier-why-the-data-center-race-is-a-power-grid-story",
+        "published_at": "2026-06-18T10:43:18+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "warren_healthcare_musk_commentary",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "bd2af16698bb6537",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "Gary Black Says SpaceX's 'Meme Stock' Run 'May Be Ending, Despite Bulls Having Their 'I Told You So' Moment",
-        "url": "https://www.benzinga.com/news/space/26/06/53267671/gary-black-says-spacexs-meme-stock-run-may-be-ending-despite-bulls-i-told-you-so-moment",
-        "published_at": "2026-06-18T04:52:40+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "gary_black_spacex_meme_stock_opinion",
-        "tickers_mentioned": [
-          "SPACEX"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ORCL": [
-      {
-        "id": "8139ef0513940a61",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ORCL",
-        "scope": "ticker",
-        "title": "Elon Musk Nears 20% Voting Power In Tesla After Exercising Stock Options",
-        "url": "https://www.benzinga.com/markets/tech/26/06/53267681/elon-musk-nears-20-voting-power-in-tesla-after-exercising-stock-options",
-        "published_at": "2026-06-18T04:57:18+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "elon_musk_tesla_voting_power",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "37eb5b6850528418",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Anthony Scaramucci Sees Bitcoin Rallying In Q4 2026 And Admits To Owning 'A Lot Of It' \u2014 Michael Saylor 'Definitely Not In Trouble'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53267654/anthony-scaramucci-sees-bitcoin-rallying-in-q4-says-he-owns-a-lot-of-it",
-        "published_at": "2026-06-18T04:45:16+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "scaramucci_bitcoin_q4_2026_outlook",
+        "dedup_group": "meta_data_center_power_grid_analysis",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Trump announced Intel will partner with Apple on U.S. chip design, sending Intel shares up 9%.",
-      "primary_drivers": [
-        "Reshoring of semiconductor design/manufacturing to US \u2014 direct revenue/utilization boost for Intel foundry",
-        "Validation of Intel Foundry Services with a marquee customer (Apple), de-risking the IFS thesis",
-        "Competitive displacement risk for incumbent Apple silicon partners (TSMC)"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "INTC",
-          "rationale": "Direct beneficiary \u2014 Apple as a foundry/design partner validates Intel Foundry Services, drives utilization of 18A/Ohio fabs, and adds a credible anchor customer beyond internal products.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "ASML",
-          "rationale": "Intel is ASML's largest High-NA EUV customer; greater Intel foundry volume with Apple as customer accelerates lithography tool pull-through at Intel's US fabs.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "AMAT",
-          "rationale": "Applied Materials supplies deposition/etch tools to Intel; expanded US fab utilization and capex tied to landing Apple as a foundry customer lifts WFE order book.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LRCX",
-          "rationale": "Lam Research has heavy exposure to Intel's logic/foundry tool spend; Apple anchor customer supports continued Ohio/Arizona buildout capex.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "KLAC",
-          "rationale": "Process control tools tied to Intel's leading-edge ramp; Apple partnership strengthens the case for sustained 18A/14A node investment.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "TSM",
-          "rationale": "TSMC currently manufactures essentially all of Apple's A-series and M-series silicon; any shift of Apple chip design/manufacturing work to Intel directly erodes TSMC's most profitable leading-edge customer share.",
-          "confidence": "high",
-          "horizon": "months"
-        },
-        {
-          "ticker": "SMCI",
-          "rationale": "Indirect \u2014 narrative pivots semiconductor capital away from Taiwan-dependent supply chains; less direct exposure but rotation risk as flows chase Intel ecosystem.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AMD",
-          "rationale": "A revitalized Intel with Apple validation strengthens Intel's competitive standing in client/server CPUs and foundry, pressuring AMD's narrative premium.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ARM",
-          "rationale": "Apple is a foundational Arm architecture licensee; any Intel-Apple co-design effort that contemplates x86 or alternative ISA elements is a tail risk to Arm's perceived Apple lock-in.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "apple_intel_chip_partnership_trump",
-      "source_news_ids": [
-        "afde9297bbecc564"
-      ],
-      "headlines": [
-        "Intel surges 9% after Trump says company will partner with Apple on U.S. chip design"
-      ]
-    }
-  ]
+  "macro_events": []
 }

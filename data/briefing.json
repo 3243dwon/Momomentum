@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-18T06:37:53.201639-04:00",
+  "generated_at": "2026-06-18T07:53:07.395163-04:00",
   "window": "AH_PRE",
-  "headline": "INTC +9% on Trump/Apple chip deal dominates tape; WFE ripple (AMAT/LRCX) not priced, TSM bearish risk",
+  "headline": "Risk-on regime masks SPY/QQQ pullback; RXT +21% leads broad mover list, desk fades noise with 4 technical longs",
   "market_state": {
     "regime": "risk_on",
-    "line": "Risk-on label but SPY -1.27% / QQQ -1.01% on day; VXX stress 0.95 low. Broad tape soft \u2014 entries need discipline, don't chase."
+    "line": "SPY -1.27% / QQQ -1.01% on the day but both above 50d; VXX stress 0.95 \u2014 subdued vol, regime holds risk-on despite intraday dip."
   },
   "actions": [
     {
@@ -13,15 +13,15 @@
       "entry": 78.14,
       "stop": 77.01,
       "target": 80.4,
-      "line": "Half size; Signal+Risk aligned bullish, research clean \u2014 tightest R/R on the desk today."
+      "line": "Half size. Momentum setup intact; research skeptical but low conviction \u2014 signal+risk green."
     },
     {
-      "ticker": "INTC",
+      "ticker": "OCUL",
       "direction": "long",
-      "entry": 121.08,
-      "stop": 114.45,
-      "target": 134.35,
-      "line": "Quarter size only \u2014 Apple/foundry catalyst confirmed but Signal warns of chasing at current levels."
+      "entry": 9.63,
+      "stop": 9.31,
+      "target": 10.27,
+      "line": "Quarter size. No catalyst, clean technicals only \u2014 small bet on the setup."
     },
     {
       "ticker": "HWM",
@@ -29,43 +29,42 @@
       "entry": 283.24,
       "stop": 262.02,
       "target": 325.68,
-      "line": "Quarter size; Signal+Risk constructive on aerospace/defense names, research neutral \u2014 wide stop reflects medium severity."
+      "line": "Quarter size. Signal+risk constructive vs research against; wide stop reflects medium severity risk."
     }
   ],
   "watch": [
     {
-      "ticker": "AMAT",
-      "type": "ripple",
-      "line": "High-confidence INTC ripple: largest WFE vendor, direct beneficiary of Intel 18A/14A capacity ramp for Apple/foundry customers."
-    },
-    {
-      "ticker": "LRCX",
-      "type": "ripple",
-      "line": "High-confidence INTC ripple: etch/dep leader, new foundry customer wins pull incremental tool orders at AZ/OH fabs."
-    },
-    {
-      "ticker": "TSM",
-      "type": "ripple",
-      "line": "High-confidence INTC ripple BEARISH: Apple is ~25% of TSMC revenue \u2014 any wafer shift to Intel Foundry hits leading-edge mix."
-    },
-    {
       "ticker": "RXT",
       "type": "mover",
-      "line": "+21.5% on 2x rel vol, MACD bullish \u2014 tape leader; no desk take yet, watch for pullback entry setup."
+      "line": "+21.5% on 2x rel vol, MACD bullish \u2014 biggest move on the tape, watch for continuation or fade setup at open."
+    },
+    {
+      "ticker": "EOSE",
+      "type": "mover",
+      "line": "+11.75% with unusual volume (2.08x) \u2014 energy storage name, worth monitoring for follow-through."
     },
     {
       "ticker": "MRNA",
       "type": "mover",
-      "line": "+11.6% on 2x rel vol, overbought flag \u2014 catalyst unclear, watch for confirmation before engaging."
+      "line": "+11.55% overbought flag \u2014 biotech squeeze, no catalyst listed; fade risk elevated."
+    },
+    {
+      "ticker": "CVNA",
+      "type": "mover",
+      "line": "-10.19% on 2.07x vol, MACD bearish + unusual volume \u2014 only big red on the board, short interest worth watching."
+    },
+    {
+      "ticker": "FRMI",
+      "type": "mover",
+      "line": "+9.63% unusual volume (2.22x) but overbought \u2014 highest rel vol on the board, momentum vs mean-reversion tension."
     }
   ],
   "changed": [
-    "INTC added to actions \u2014 Trump/Apple chip deal is the new dominant catalyst replacing RXT as headline driver.",
-    "OCUL added as new desk take (quarter size).",
-    "Previous headline referenced ING long \u2014 replaced by OCUL/INTC in current desk."
+    "Previous headline driven by INTC/Apple chip deal and WFE ripple; this scan shows no catalysts or ripple events \u2014 broad mover list with no macro narrative",
+    "Desk adds 4 new technical longs (CYTK, OCUL, HWM, ING); no carries from prior INTC/AMAT/LRCX theme"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 06:37 ET Jun 18 2026 \u2014 prices stale, spreads wide; RTH open may gap significantly from these levels.",
-    "INTC entry at 121.08 assumes no additional gap-up at open; if price opens above entry materially, Signal's 'chasing' warning applies with greater force."
+    "AH/Pre-market scan (2026-06-18 ~07:53 ET) \u2014 prices as of scan time, pre-RTH; levels may gap significantly at 09:30 open.",
+    "All 4 desk takes are against or without research support \u2014 pure momentum/technical bets; position sizing reflects that (half/quarter only)."
   ]
 }
