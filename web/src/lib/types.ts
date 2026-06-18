@@ -402,6 +402,7 @@ export interface TruthPost {
   text: string;
   url: string | null;
   ticker_mentions: string[];
+  source?: 'truth_social' | 'news';
 }
 export interface PresidentialDocument {
   title: string;
@@ -423,10 +424,12 @@ export interface TrumpPulseData {
   sources: Record<string, string>;
   window_days?: number;
   truth_post_count: number;
+  news_post_count?: number;
   document_count: number;
   tickers_mentioned: string[];
   mention_summary?: Record<string, MentionDetail>;
   truth_posts: TruthPost[];
+  news_posts?: TruthPost[];
   presidential_documents: PresidentialDocument[];
 }
 

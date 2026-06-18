@@ -104,15 +104,22 @@ export function buildFeed(opts: {
     });
   }
 
-  // Trump posts only earn a slot when they actually name tickers.
-  for (const post of opts.pulse?.truth_posts ?? []) {
+  // Trump posts AND news-reported comments earn a slot when they name tickers.
+  // News comments ("Trump says Apple to work with Intel") are the catalyst class
+  // Truth Social misses, so they flow into the same stream, tagged by source.
+  const trumpPosts = [...(opts.pulse?.truth_posts ?? []), ...(opts.pulse?.news_posts ?? [])];
+  for (const post of trumpPosts) {
     if (!post.ticker_mentions?.length || !post.ts) continue;
+    const id = `trump:${post.url ?? post.ts}`;
+    if (seen.has(id)) continue;
+    seen.add(id);
     items.push({
-      id: `trump:${post.ts}`,
+      id,
       kind: 'trump',
       ts: post.ts,
       tickers: post.ticker_mentions,
       title: post.text.length > 200 ? post.text.slice(0, 200) + '…' : post.text,
+      detail: post.source === 'news' ? 'via news' : 'Truth Social',
       url: post.url
     });
   }

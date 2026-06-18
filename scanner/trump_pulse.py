@@ -50,6 +50,21 @@ _FEDREG_DAYS_LOOKBACK = 60  # roughly 2 months of EOs / proclamations
 _USER_AGENT = "Momentum-Scanner makutanaka816@gmail.com"
 _COMPANY_ALIASES_FILE = config.DATA_DIR / "company_aliases.json"
 
+# Trump's market-moving COMMENTS increasingly arrive as press remarks reported
+# by news wires (Reuters / CNBC / Bloomberg) — "Trump says Apple to work with
+# Intel", "U.S. to take 10% Intel stake" — NOT as Truth Social posts or signed
+# EOs. Truth Social + Federal Register miss every one of those. We close the gap
+# with a Google News RSS query for Trump business news, then keep only the
+# headlines that name a universe ticker (same high-precision extraction as
+# posts). Free, no key required.
+_TRUMP_NEWS_RSS = "https://news.google.com/rss/search"
+_TRUMP_NEWS_QUERY = (
+    "Trump (stock OR shares OR tariff OR tariffs OR chips OR semiconductor OR "
+    "stake OR acquisition OR merger OR deal OR company OR factory OR plant OR "
+    "investment OR trade OR sanctions OR antitrust) when:3d"
+)
+_TRUMP_NEWS_LIMIT = 60
+
 # Common 2-4 letter words that look like tickers but aren't. Filtering these
 # out cuts the false-positive rate on ticker extraction dramatically. Lower
 # case in the set, comparison is case-insensitive vs. uppercase matches.
@@ -324,6 +339,51 @@ def fetch_truth_social(universe: set[str], aliases: dict[str, list[str]], now: d
     return posts, source
 
 
+def fetch_trump_news(universe: set[str], aliases: dict[str, list[str]], now: datetime) -> list[dict]:
+    """Trump's market-moving COMMENTS as reported by news wires — the catalyst
+    class Truth Social + Federal Register can't see. Google News RSS, then keep
+    only headlines that name a universe ticker (same extraction as posts), so the
+    noise of general Trump political news is filtered to market-relevant comments.
+    Returns {ts, text, url, ticker_mentions, source} dicts, newest-ish first."""
+    from urllib.parse import quote
+
+    url = f"{_TRUMP_NEWS_RSS}?q={quote(_TRUMP_NEWS_QUERY)}&hl=en-US&gl=US&ceid=US:en"
+    resp = _fetch(url)
+    if resp is None or resp.status_code != 200:
+        log.warning("Trump news RSS returned %s", resp.status_code if resp else "no-response")
+        return []
+
+    out: list[dict] = []
+    seen_urls: set[str] = set()
+    for it in _parse_rss_items(resp.text):
+        title = _strip_html(it.get("title") or "")
+        if not title:
+            continue
+        # Google News appends " - Publisher"; drop it before extraction + display
+        # so the publisher name can't be mistaken for a company and the feed reads
+        # clean.
+        headline = re.sub(r"\s+[-–—]\s+[^-–—]+$", "", title).strip() or title
+        tickers = _extract_tickers(headline, universe, aliases)
+        if not tickers:
+            continue
+        link = it.get("link")
+        if link and link in seen_urls:
+            continue
+        if link:
+            seen_urls.add(link)
+        out.append({
+            "ts": _parse_rss_date(it.get("pubDate")),
+            "text": headline,
+            "url": link,
+            "ticker_mentions": tickers,
+            "source": "news",
+        })
+        if len(out) >= _TRUMP_NEWS_LIMIT:
+            break
+    out.sort(key=lambda x: x["ts"] or "", reverse=True)
+    return out
+
+
 def fetch_presidential_documents() -> list[dict]:
     """Pull Trump's signed Presidential Documents (EOs, proclamations, memos)
     from Federal Register in the last ~60 days. Returns the most recent first."""
@@ -421,6 +481,10 @@ def fetch_and_save(now: datetime | None = None) -> dict:
     universe = _load_universe()
     aliases = _load_aliases()
     posts, truth_source = fetch_truth_social(universe, aliases, now)
+    for p in posts:
+        p.setdefault("source", "truth_social")
+    # Third source: Trump comments reported by news wires that name a ticker.
+    news_posts = fetch_trump_news(universe, aliases, now)
     docs = fetch_presidential_documents()
 
     # Build a per-ticker mention summary over the whole window: how many times
@@ -448,25 +512,34 @@ def fetch_and_save(now: datetime | None = None) -> dict:
     seen_urls = {p.get("url") for p in display_posts}
     kept = display_posts + [p for p in mention_posts if p.get("url") not in seen_urls]
 
+    # Fold the news-reported comments' tickers into the mentioned set so the
+    # dashboard badges (which key off tickers_mentioned) light up for them too.
+    news_tickers = {t for p in news_posts for t in p["ticker_mentions"]}
+    all_tickers = sorted(set(mention_summary.keys()) | news_tickers)
+
     payload = {
         "generated_at": now.isoformat(),
         "sources": {
             "truth_social": truth_source,
+            "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
             "presidential_documents": "federalregister.gov API (president=donald-trump)",
         },
         "window_days": _TRUTH_LOOKBACK_DAYS,
         "truth_post_count": len(posts),
+        "news_post_count": len(news_posts),
         "document_count": len(docs),
-        "tickers_mentioned": sorted(mention_summary.keys()),
+        "tickers_mentioned": all_tickers,
         "mention_summary": mention_summary,
         "truth_posts": kept,
+        "news_posts": news_posts,
         "presidential_documents": docs,
     }
     PULSE_FILE.write_text(json.dumps(payload, indent=2))
     log.info(
-        "Trump pulse: %d posts in %dd window via %s (%d tickers named), %d docs",
+        "Trump pulse: %d posts in %dd window via %s (%d named) + %d news comments "
+        "(%d named), %d docs",
         len(posts), _TRUTH_LOOKBACK_DAYS, truth_source.split()[0],
-        len(mention_summary), len(docs),
+        len(mention_summary), len(news_posts), len(news_tickers), len(docs),
     )
     return payload
 
@@ -529,7 +602,13 @@ def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
             if t not in tickers:
                 tickers.append(t)
     shown = ", ".join(tickers[:5]) + (f" +{len(tickers) - 5}" if len(tickers) > 5 else "")
-    title = f"🇺🇸 Trump named {shown} on Truth Social"
+    sources = {p.get("source", "truth_social") for p in posts}
+    if sources == {"news"}:
+        title = f"🇺🇸 Trump on {shown} (via news)"
+    elif sources == {"truth_social"}:
+        title = f"🇺🇸 Trump named {shown} on Truth Social"
+    else:
+        title = f"🇺🇸 Trump on the tape: {shown}"
 
     lines: list[str] = []
     for p in posts:
@@ -544,9 +623,12 @@ def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
                 chips.append(f"**{t}**{star}")
         excerpt = _clip((p.get("text") or "").replace("\n", " ").strip(), 60)
         line = " ".join(chips) + f' · "{excerpt}"'
+        meta = []
         when = _rel_time(p.get("ts"), now)
         if when:
-            line += f" · {when}"
+            meta.append(when)
+        meta.append("via news" if p.get("source") == "news" else "Truth Social")
+        line += " · " + " · ".join(meta)
         lines.append(line)
 
     # The /political route was killed (redirects to /); deep-link to the
@@ -565,7 +647,8 @@ def notify_fresh_mentions(payload: dict, rows: list[dict], watchlist: set[str],
     """Ping Feishu for NEW Trump stock mentions. Dedupes by post URL and only
     considers posts within the recency window. Returns cards sent (0 or 1)."""
     now = now or datetime.now(timezone.utc)
-    mention_posts = [p for p in payload.get("truth_posts", []) if p.get("ticker_mentions") and p.get("url")]
+    candidates = list(payload.get("truth_posts", [])) + list(payload.get("news_posts", []))
+    mention_posts = [p for p in candidates if p.get("ticker_mentions") and p.get("url")]
     if not mention_posts:
         return 0
 
