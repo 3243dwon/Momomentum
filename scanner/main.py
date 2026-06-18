@@ -388,12 +388,21 @@ def run(
     performance.evaluate_pending(_alpaca, _utc_now)
     performance.evaluate_pending_recommendations(_alpaca, _utc_now)
     performance.evaluate_pending_predictions(_alpaca, _utc_now)
-    opening.evaluate_pending_early_entries(_alpaca, _utc_now)
+    # Early-entry grading + stats are brand-new live-Alpaca paths; keep them
+    # fail-soft so a first-run surprise can never break the scan or the ledger
+    # write below.
+    try:
+        opening.evaluate_pending_early_entries(_alpaca, _utc_now)
+    except Exception as e:
+        log.warning("Early-entry eval raised: %s", e)
     performance.compile_stats(datetime.now(config.MARKET_TZ))
     performance.compile_recommendation_stats(datetime.now(config.MARKET_TZ))
     performance.compile_desk_stats(datetime.now(config.MARKET_TZ))
     performance.compile_prediction_stats(datetime.now(config.MARKET_TZ))
-    opening.compile_early_entry_stats(datetime.now(config.MARKET_TZ))
+    try:
+        opening.compile_early_entry_stats(datetime.now(config.MARKET_TZ))
+    except Exception as e:
+        log.warning("Early-entry stats raised: %s", e)
     # Mom 建议关注 (CN/HK) tracker — mark prior picks to market at 3/5/10 trading
     # days via Yahoo and roll up a hit-rate. Separate from the US Alpaca pipeline
     # above; fail-soft so it never blocks the scan.

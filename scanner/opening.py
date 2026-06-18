@@ -366,8 +366,12 @@ def evaluate_pending_early_entries(alpaca_client, now: datetime) -> None:
         return
 
     tickers = sorted({entries[i]["ticker"] for i in need})
-    min_ts = min(performance._parse_ts(entries[i]["ts"]) for i in need)
-    start_dt = (min_ts or now).astimezone(timezone.utc) - timedelta(days=3)
+    # Robust against a corrupt ts on any single log line — never let it crash
+    # grading for every other call.
+    parsed = [performance._parse_ts(entries[i]["ts"]) for i in need]
+    parsed = [p for p in parsed if p is not None]
+    min_ts = min(parsed) if parsed else now
+    start_dt = min_ts.astimezone(timezone.utc) - timedelta(days=3)
     end_dt = datetime.now(timezone.utc) - timedelta(minutes=20)
 
     closes_by_ticker: dict[str, list[tuple]] = {}
