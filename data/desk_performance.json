@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-18T11:40:01.466207-04:00",
+  "generated_at": "2026-06-18T14:33:05.334289-04:00",
   "window_days": 30,
-  "total_with_desk": 398,
+  "total_with_desk": 404,
   "by_decision": {
     "take": {
-      "count": 174,
+      "count": 176,
       "horizons": {
         "1d": {
-          "evaluated": 167,
-          "hit_rate": 0.395,
-          "avg_return_pct": -0.92
+          "evaluated": 170,
+          "hit_rate": 0.388,
+          "avg_return_pct": -0.95
         },
         "3d": {
           "evaluated": 153,
@@ -24,12 +24,12 @@
       }
     },
     "pass": {
-      "count": 221,
+      "count": 225,
       "horizons": {
         "1d": {
-          "evaluated": 209,
-          "hit_rate": 0.435,
-          "avg_return_pct": -0.98
+          "evaluated": 211,
+          "hit_rate": 0.436,
+          "avg_return_pct": -0.97
         },
         "3d": {
           "evaluated": 194,
@@ -86,12 +86,12 @@
   },
   "by_agreement": {
     "majority": {
-      "count": 218,
+      "count": 222,
       "horizons": {
         "1d": {
-          "evaluated": 209,
-          "hit_rate": 0.368,
-          "avg_return_pct": -1.01
+          "evaluated": 212,
+          "hit_rate": 0.363,
+          "avg_return_pct": -1.03
         },
         "3d": {
           "evaluated": 195,
@@ -106,12 +106,12 @@
       }
     },
     "unanimous": {
-      "count": 137,
+      "count": 139,
       "horizons": {
         "1d": {
-          "evaluated": 127,
-          "hit_rate": 0.472,
-          "avg_return_pct": -0.54
+          "evaluated": 129,
+          "hit_rate": 0.473,
+          "avg_return_pct": -0.53
         },
         "3d": {
           "evaluated": 116,
@@ -168,12 +168,12 @@
   },
   "by_veto": {
     "no_veto": {
-      "count": 291,
+      "count": 295,
       "horizons": {
         "1d": {
-          "evaluated": 283,
-          "hit_rate": 0.41,
-          "avg_return_pct": -1.06
+          "evaluated": 286,
+          "hit_rate": 0.406,
+          "avg_return_pct": -1.07
         },
         "3d": {
           "evaluated": 263,
@@ -188,12 +188,12 @@
       }
     },
     "veto": {
-      "count": 107,
+      "count": 109,
       "horizons": {
         "1d": {
-          "evaluated": 96,
-          "hit_rate": 0.448,
-          "avg_return_pct": -0.57
+          "evaluated": 98,
+          "hit_rate": 0.449,
+          "avg_return_pct": -0.56
         },
         "3d": {
           "evaluated": 87,
@@ -209,7 +209,7 @@
     }
   },
   "take_minus_pass_edge": {
-    "1d": 0.06,
+    "1d": 0.02,
     "3d": 0.36,
     "5d": 0.75
   }

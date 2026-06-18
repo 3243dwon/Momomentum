@@ -1,63 +1,63 @@
 {
-  "generated_at": "2026-06-18T11:34:01.917562-04:00",
+  "generated_at": "2026-06-18T14:28:04.844214-04:00",
   "window": "RTH",
-  "headline": "Iran peace deal ignites semi rip \u2014 INTC +8.6%, MRVL +11.7%; desk takes INTC & VRT long at half size",
+  "headline": "GTA 6 window confirmed: TTWO +5.6% leads; semis extend \u2014 MRVL +12.4%, INTC +11.7%; QQQ +2.35%",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.79%, QQQ +1.87%; VXX stress ratio 0.94 \u2014 vol crushed, risk-on rotation into semis/cyclicals on geopolitical unwind. Green light for e"
+    "line": "SPY +0.99%, QQQ +2.35%, VXX stress 0.93 \u2014 semis ripping, tape strong; hawkish Warsh repricing is the lurking headwind for high-multiple name"
   },
   "actions": [
     {
-      "ticker": "INTC",
+      "ticker": "TTWO",
       "direction": "long",
-      "entry": 131.46,
-      "stop": 120.94,
-      "target": 152.49,
-      "line": "Trump/Iran catalyst drove +8.6%; desk buys half size \u2014 signal neutral on low vol but risk green, R/R ~2:1."
+      "entry": 240.93,
+      "stop": 236.07,
+      "target": 250.64,
+      "line": "GTA 6 window catalyst +5.6%; stretched 5d but real news justifies quarter-size long."
     },
     {
-      "ticker": "VRT",
+      "ticker": "RVMD",
       "direction": "long",
-      "entry": 333.0,
-      "stop": 306.36,
-      "target": 386.28,
-      "line": "No fresh catalyst but signal agrees and risk is green; half size, ~2:1 R/R on data-center infrastructure momentum."
+      "entry": 161.87,
+      "stop": 158.23,
+      "target": 169.15,
+      "line": "Signal + risk green, research neutral no veto; clean technical setup at half size."
     }
   ],
   "watch": [
     {
-      "ticker": "TSM",
+      "ticker": "MRVL",
+      "type": "mover",
+      "line": "MRVL +12.4% relv 1.17 \u2014 semi momentum extending from yesterday's Iran-deal rip; watch for continuation or exhaustion."
+    },
+    {
+      "ticker": "MSFT",
       "type": "ripple",
-      "line": "High-confidence bear ripple from INTC: Apple volume shift to Intel foundry directly cannibalizes TSMC's N3/N2 mix."
+      "line": "GTA 6 window boosts Xbox/Game Pass attach and Microsoft Store cut \u2014 bullish ripple, medium confidence, not priced."
     },
     {
-      "ticker": "QS",
-      "type": "catalyst",
-      "line": "QuantumScape +14.9% on news, rel-vol 1.12 \u2014 only mover with above-avg volume confirmation. Watch for follow-through."
-    },
-    {
-      "ticker": "KMX",
-      "type": "catalyst",
-      "line": "KMX +6.5% on strong print; bullish ripple to ALLY, COF (auto lending), SAH (used-car comps) \u2014 none priced in yet."
-    },
-    {
-      "ticker": "WMT",
+      "ticker": "EA",
       "type": "ripple",
-      "line": "KR -5.8% on margin/traffic miss \u2014 standard share-gain read-through to WMT and COST; SFM faces sympathy de-rate."
+      "line": "GTA 6 calendar crowding risk \u2014 bearish ripple for AAA competitor; Battlefield/sports titles may need to move, pressuring FY timing."
     },
     {
-      "ticker": "AMAT",
+      "ticker": "GME",
       "type": "ripple",
-      "line": "Medium-confidence bull ripple: INTC advanced-node ramp drives incremental WFE orders; AMAT is INTC's largest equipment supplier."
+      "line": "Physical preorder + collector-edition traffic rare positive for brick-and-mortar retail; medium confidence."
+    },
+    {
+      "ticker": "TNGX",
+      "type": "mover",
+      "line": "TNGX -12.6% relv 1.64 \u2014 notable flush on elevated volume; monitor for stabilization catalyst."
     }
   ],
   "changed": [
-    "Regime same (risk_on) but now driven by Iran peace deal catalyst \u2014 prior scan flagged SPY/QQQ pullback, today both are firmly bid",
-    "Desk trimmed from 4 technical longs to 2 (INTC + VRT); INTC now has a hard fundamental catalyst vs. prior scan's technical-only picks",
-    "RXT +21% leadership gone; semi complex (INTC, MRVL, SNDK) now dominates mover list"
+    "Desk drops INTC & VRT; new takes are TTWO (quarter, GTA 6 catalyst) and RVMD (half, technical)",
+    "Semi leadership shifts from INTC/VRT to MRVL (+12.4%) and SNDK (+11.7%) as Iran-deal momentum extends",
+    "GTA 6 confirmation replaces geopolitics as the dominant single-stock catalyst"
   ],
   "caveats": [
-    "RTH scan as of 11:34 ET 2026-06-18 \u2014 prices and levels stale by time of read; INTC entry at 131.46 may already be through given intraday momentum.",
-    "INTC ripple logic (TSM bear, AMAT bull) assumes Apple-to-Intel foundry shift is real and sustained \u2014 still speculative; size accordingly."
+    "RTH scan as of 14:28 ET 2026-06-18; prices stale by seconds to minutes \u2014 verify quotes before entry.",
+    "Hawkish Warsh repricing is a live macro risk: higher-for-longer rates compress long-duration multiples and could cap upside on TTWO and RVMD if sentiment shifts intraday."
   ]
 }
