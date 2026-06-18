@@ -1,8 +1,306 @@
 {
-  "generated_at": "2026-06-17T18:03:47.354492-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-17T20:18:06.715041-04:00",
+  "event_count": 1,
+  "prediction_count": 12,
+  "not_yet_priced_in": 7,
+  "events": [
+    {
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "primary_drivers": [
+        "Memory (DRAM/NAND) supply shortage driving spot and contract prices higher",
+        "Cost pass-through by hyperscaler/OEM hardware buyers",
+        "Margin pressure on every device/server maker that consumes memory"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MU",
+          "rationale": "Pure-play US memory maker (DRAM + NAND); Apple publicly confirming a structural supply shortage validates higher contract pricing and ASPs directly flowing to Micron's revenue/margins.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SNDK",
+          "rationale": "Pure-play NAND supplier (post-WDC spin); same pricing tailwind as Micron with even higher operating leverage on NAND ASPs.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "WDC",
+          "rationale": "HDD-heavy post-spin but still benefits as enterprise storage demand shifts to HDDs when NAND tightens/prices spike.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Dominant supplier of NAND/DRAM etch & deposition equipment; sustained memory tightness pulls forward memory-maker capex, of which Lam captures the largest share.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Major memory wafer fab equipment supplier; benefits from same memory capex pull-forward, though less memory-mix than Lam.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ACLS",
+          "rationale": "Ion implant exposure to memory fabs; smaller-cap leveraged play on memory capex cycle re-acceleration.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DELL",
+          "rationale": "Server and PC OEM with massive DRAM/NAND BOM exposure; AI server margins already thin, and memory is the single largest cost line \u2014 pass-through is harder than for Apple.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HPQ",
+          "rationale": "PC OEM with low single-digit margins; memory cost spike is a direct gross-margin hit and PC demand is price-elastic, limiting pass-through.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HPE",
+          "rationale": "Server vendor with heavy DRAM content per unit; AI/enterprise server gross margins compressed by memory inflation.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "SMCI",
+          "rationale": "AI server assembler running on thin margins; every GPU server ships with terabytes of DRAM and NVMe \u2014 memory spike directly compresses already-pressured margins.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LOGI",
+          "rationale": "Consumer electronics peripherals maker; memory in webcams/peripherals plus weaker consumer wallet share if Apple hikes prices and absorbs consumer spend.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GRMN",
+          "rationale": "Consumer device maker using NAND/DRAM in wearables/auto; smaller scale means worse memory contract pricing than Apple, hitting margins.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "META",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "headlines": [
+        "Apple Will Raise Prices Due To Soaring Memory Costs: CEO Tim Cook Says 'This Is A 100-Year Flood'"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "SNDK",
+      "direction": "bullish",
+      "rationale": "Pure-play NAND supplier (post-WDC spin); same pricing tailwind as Micron with even higher operating leverage on NAND ASPs.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": -1.64,
+      "rel_volume": 0.92,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Dominant supplier of NAND/DRAM etch & deposition equipment; sustained memory tightness pulls forward memory-maker capex, of which Lam captures the largest share.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": 1.43,
+      "rel_volume": 1.09,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Major memory wafer fab equipment supplier; benefits from same memory capex pull-forward, though less memory-mix than Lam.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "HPE",
+      "direction": "bearish",
+      "rationale": "Server vendor with heavy DRAM content per unit; AI/enterprise server gross margins compressed by memory inflation.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -0.43,
+      "rel_volume": 1.07,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "ACLS",
+      "direction": "bullish",
+      "rationale": "Ion implant exposure to memory fabs; smaller-cap leveraged play on memory capex cycle re-acceleration.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "LOGI",
+      "direction": "bearish",
+      "rationale": "Consumer electronics peripherals maker; memory in webcams/peripherals plus weaker consumer wallet share if Apple hikes prices and absorbs consumer spend.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "GRMN",
+      "direction": "bearish",
+      "rationale": "Consumer device maker using NAND/DRAM in wearables/auto; smaller scale means worse memory contract pricing than Apple, hitting margins.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "MU",
+      "direction": "bullish",
+      "rationale": "Pure-play US memory maker (DRAM + NAND); Apple publicly confirming a structural supply shortage validates higher contract pricing and ASPs directly flowing to Micron's revenue/margins.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "partial",
+      "pct_1d": 2.32,
+      "rel_volume": 0.9,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "DELL",
+      "direction": "bearish",
+      "rationale": "Server and PC OEM with massive DRAM/NAND BOM exposure; AI server margins already thin, and memory is the single largest cost line \u2014 pass-through is harder than for Apple.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 3.71,
+      "rel_volume": 0.78,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "HPQ",
+      "direction": "bearish",
+      "rationale": "PC OEM with low single-digit margins; memory cost spike is a direct gross-margin hit and PC demand is price-elastic, limiting pass-through.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": -4.57,
+      "rel_volume": 0.91,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "SMCI",
+      "direction": "bearish",
+      "rationale": "AI server assembler running on thin margins; every GPU server ships with terabytes of DRAM and NVMe \u2014 memory spike directly compresses already-pressured margins.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": -4.89,
+      "rel_volume": 0.8,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bullish",
+      "rationale": "HDD-heavy post-spin but still benefits as enterprise storage demand shifts to HDDs when NAND tightens/prices spike.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 4.59,
+      "rel_volume": 1.53,
+      "trigger_ticker": "META",
+      "event_summary": "Apple's Tim Cook warned of a \"100-year flood\" in memory costs and said Apple will raise prices to offset soaring DRAM/NAND input costs.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53266186/apple-will-raise-prices-due-to-soaring-memory-costs-ceo-tim-cook-says-this-is-a-100-year-flood",
+      "source_news_ids": [
+        "1e5b3b6ff44ab4d9"
+      ],
+      "created_at": "2026-06-17T20:18:06.715041-04:00"
+    }
+  ]
 }
