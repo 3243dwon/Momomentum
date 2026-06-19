@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-19T04:56:40.278555+00:00",
+  "generated_at": "2026-06-19T12:14:49.348626+00:00",
   "sources": {
     "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
     "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
     "presidential_documents": "federalregister.gov API (president=donald-trump)"
   },
   "window_days": 90,
-  "truth_post_count": 1257,
-  "news_post_count": 4,
+  "truth_post_count": 1258,
+  "news_post_count": 0,
   "document_count": 40,
   "tickers_mentioned": [
     "AAPL",
@@ -77,6 +77,13 @@
     }
   },
   "truth_posts": [
+    {
+      "ts": "2026-06-19T05:07:08.539Z",
+      "text": "UFC FREEDOM 250! \ud83c\uddfa\ud83c\uddf8\ud83e\udd85",
+      "url": "https://truthsocial.com/@realDonaldTrump/116775035111874680",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
     {
       "ts": "2026-06-19T03:21:17.030Z",
       "text": "Iranian resistance leader, former national security aide praise Trump's deal with Tehran: https://justthenews.com/government/security/iranian-resistance-leader-former-national-security-aide-praise-trumps-mou",
@@ -357,13 +364,6 @@
       "source": "truth_social"
     },
     {
-      "ts": "2026-06-17T04:42:19.311Z",
-      "text": "I HAD A LOT OF BIG ELECTION WINS LAST NIGHT. THANK YOU TO ALL!!! President DJT",
-      "url": "https://truthsocial.com/@realDonaldTrump/116763612893094366",
-      "ticker_mentions": [],
-      "source": "truth_social"
-    },
-    {
       "ts": "2026-06-15T12:03:41.567Z",
       "text": "RT @realDonaldTrumpEric Metaxas, a great guy, has written an incredible new book, \"Revolution: The Birth of the Greatest Nation in the History of the World.\" As we celebrate our Nation's 250th Birthday, Eric honors the Faith, Wisdom, and Courage of the Great Patriots who sacrificed so much to secure our Independence. These stories of our shared past inspire us to build a future bigger, greater, and stronger than ever before. THE BEST IS YET TO COME! Get your copy today:https://www.amazon.com/Revolution-Birth-Greatest-Nation-History/dp/1631440888",
       "url": "https://truthsocial.com/@realDonaldTrump/116754023813635526",
@@ -580,48 +580,7 @@
       "source": "truth_social"
     }
   ],
-  "news_posts": [
-    {
-      "ts": "2026-06-18T23:56:47+00:00",
-      "text": "Intel shares surge 11% after Trump touts deal with Apple",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05dFU1UDZ5YVJoUHVqak85ZGNyaGktVnhndVhqSTcybkNtWk9UMTBNazhHMjdBMzUwNVlyUzlPRy1VYmNjYVJmWU8wN08wWDUta09XVUdWVXgxOEEtWTJiQmMteEE1UjA?oc=5",
-      "ticker_mentions": [
-        "AAPL",
-        "INTC"
-      ],
-      "source": "news"
-    },
-    {
-      "ts": "2026-06-18T23:36:07+00:00",
-      "text": "President Trump claims Apple has agreed to buy chips from Intel, boosting its stock",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeFQtSU9qYUE0SVBwR1dzTVFPMlJ3UXowckxoVzEzR0oyME5UQl9lR0U2bVVycHFTdTRKU1UwQUtYUEpwZm9ybWE2R3Z3Mjgwd20tUEdzaU45T0V5OV9BaXBXRDhCMFNVRms3MU1PRXZDdllXUDVfUTF3Vk1raFVqbDIwaGlkcTh4R3M0WkdsQWk3QQ?oc=5",
-      "ticker_mentions": [
-        "AAPL",
-        "INTC"
-      ],
-      "source": "news"
-    },
-    {
-      "ts": "2026-06-18T22:10:25+00:00",
-      "text": "President Trump announces Intel, Apple chip deal",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWWdBMDJhblFxZUt0OXJYSUUzNU54aHlUbkwwVG10eFpXdVNPM0NoV3NYNXEzNUd5NkNyRDV1N2RZWTJoX3RQdEQ0NjdFNXFLQnhob1U1WEdaNzVKZm8yMVdQYmhzNlZyejB0YnVmaHdOUE9FZzZLSElMMkJRVXF6eldEZkh2dDhwakxSVVhFeGc?oc=5",
-      "ticker_mentions": [
-        "AAPL",
-        "INTC"
-      ],
-      "source": "news"
-    },
-    {
-      "ts": "2026-06-18T16:02:54+00:00",
-      "text": "Apple to Buy Computer Chips From Intel, Trump Says",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1jZWpDbTdNTGNZTTlvNXBHTGVPQWhFY2ZEWFUtaHA2aXNYTGt2SDIwUDlrN0c0MDJtS0JUaExmdDBYRW95SUZzSWVZUU9pMFVRTW11TVhWb01fY3JacWRZcHJHLXdxTEl2akJaZXJGQWpHbkczNHFvWjQzLTJxTDQ?oc=5",
-      "ticker_mentions": [
-        "AAPL",
-        "INTC"
-      ],
-      "source": "news"
-    }
-  ],
+  "news_posts": [],
   "presidential_documents": [
     {
       "title": "Flag Day and National Flag Week, 2026",

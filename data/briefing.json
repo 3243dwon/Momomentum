@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T06:45:16.443442-04:00",
+  "generated_at": "2026-06-19T08:10:50.447167-04:00",
   "window": "AH_PRE",
-  "headline": "Risk-on intact pre-market: QS +16.6% on 2.3x vol leads tape; FULC & AU both desk longs at quarter-size",
+  "headline": "Risk-on holds pre-market; Warsh hawkish surprise pressures rate-sensitive longs \u2014 FULC only desk take",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03% | QQQ +2.4% | VXX stress 0.93 \u2014 vol suppressed, SPY above 50d; tape green across the board, entries favored."
+    "line": "SPY +1.03% above 50d, QQQ +2.4%; VXX stress 0.93 \u2014 tape green but Warsh higher-for-longer adds duration headwind to entries."
   },
   "actions": [
     {
@@ -13,50 +13,42 @@
       "entry": 3.69,
       "stop": 3.52,
       "target": 4.03,
-      "line": "Quarter-size long; signal agrees, risk clean, weak trend keeps size minimal. R:R ~2:1."
-    },
-    {
-      "ticker": "AU",
-      "direction": "long",
-      "entry": 90.92,
-      "stop": 88.96,
-      "target": 94.83,
-      "line": "Quarter-size long; three-way neutral, clean $1.96 risk, modest conviction only. R:R ~2:1."
+      "line": "Clean technical setup, quarter-size; signal agrees, low risk severity, no catalyst needed."
     }
   ],
   "watch": [
     {
-      "ticker": "QS",
-      "type": "mover",
-      "line": "QS +16.6% on 2.31x rel vol \u2014 unusual volume + big move; watch for continuation or fade setup at open."
+      "ticker": "MRNA",
+      "type": "catalyst",
+      "line": "+3.5% \u2014 flu vaccine regulatory win; mRNA platform validation rippling into small-caps."
     },
     {
-      "ticker": "FCEL",
+      "ticker": "ARCT",
+      "type": "ripple",
+      "line": "mRNA/saRNA flu programs de-risked by MRNA approval; medium-confidence sympathy, not yet priced."
+    },
+    {
+      "ticker": "QS",
       "type": "mover",
-      "line": "FCEL +19.7% but rel vol only 1.0x \u2014 big price move without volume confirmation; gap-fade risk."
+      "line": "+16.6% on 2.3x vol \u2014 led yesterday's tape; watch for continuation or fade at open."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "TNGX -13.7% on 2.4x vol \u2014 highest rel vol on the scan; watch for dead-cat or further flush."
+      "line": "-13.7% on 2.4x vol \u2014 big flush with unusual volume; bio blow-up, avoid until stabilizes."
     },
     {
-      "ticker": "ENTG",
-      "type": "mover",
-      "line": "ENTG +13.6% on 1.83x vol \u2014 semis strength, no catalyst flagged; watch for RTH follow-through."
-    },
-    {
-      "ticker": "KMX",
-      "type": "mover",
-      "line": "KMX +13.3% \u2014 likely earnings-driven; monitor for post-gap setup once range establishes."
+      "ticker": "CUE",
+      "type": "ripple",
+      "line": "Low-confidence MRNA sympathy play on platform validation; small size only if MRNA holds bid."
     }
   ],
   "changed": [
-    "AU added to desk takes (was FULC-only last scan)",
-    "10 movers vs 19 flagged in prior headline \u2014 fewer big-move names this window"
+    "AU desk long from prior briefing is no longer present \u2014 FULC now the sole take",
+    "Macro shift: Warsh signals higher-for-longer, countering risk-on tape narrative"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 06:45 ET 2026-06-19; prices are pre-RTH and may gap significantly at open \u2014 levels stale by bell.",
-    "SPY 200d status unknown this scan; long-term trend context incomplete."
+    "AH/Pre-market scan as of 08:10 ET 2026-06-19; prices stale until RTH open \u2014 gaps likely on Warsh headlines.",
+    "Warsh hawkish pivot is macro-in-flux: duration-heavy or rate-sensitive setups carry elevated overnight risk until Fed path reprices."
   ]
 }

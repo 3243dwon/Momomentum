@@ -1,76 +1,73 @@
 {
-  "generated_at": "2026-06-19T06:45:16.443442-04:00",
+  "generated_at": "2026-06-19T08:10:50.447167-04:00",
   "ticker_news": {
-    "FOXA": [
+    "MRNA": [
       {
-        "id": "8b8ee87b15c6dee7",
+        "id": "4d33af30829e10ae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "FOXA",
+        "ticker": "MRNA",
         "scope": "ticker",
-        "title": "'Big Short' Investor Steve Eisman Roasts Fox's $22 Billion Roku Deal: 'Good Luck'",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60000568/big-short-investor-steve-eisman-roasts-foxs-22-billion-roku-deal-good-luck",
-        "published_at": "2026-06-19T08:16:04+00:00",
-        "type": "ma",
-        "impact": "medium",
-        "dedup_group": "fox_roku_acquisition_22b_deal",
-        "tickers_mentioned": [
-          "ROKU"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "JBLU": [
-      {
-        "id": "846f6d1e8a3872e9",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "JBLU",
-        "scope": "ticker",
-        "title": "Elizabeth Warren Reminds Summer Travelers That Trump Weakened Airline Protections, Says Refunds Should Be Cash, Not Vouchers Or Points",
-        "url": "https://www.benzinga.com/news/travel/26/06/60000557/elizabeth-warren-says-airline-refunds-should-be-cash-not-vouchers-or-points",
-        "published_at": "2026-06-19T08:14:10+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "elizabeth_warren_airline_refunds_commentary",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "818322930ba53f9f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Exploring The Competitive Space: Micron Technology Versus Industry Peers In Semiconductors &amp; Semiconductor Equipment",
-        "url": "https://www.benzinga.com/news/26/06/60000896/exploring-competitive-space-micron-technology-versus-industry-peers-semiconductors-amp-semiconductor",
-        "published_at": "2026-06-19T09:58:28+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "micron_competitive_analysis",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "KR": [
-      {
-        "id": "fed599bc78f8e60e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KR",
-        "scope": "ticker",
-        "title": "Transcript: Kroger Q1 2026 Earnings Conference Call",
-        "url": "https://www.benzinga.com/news/26/06/60000323/transcript-kroger-q1-2026-earnings-conference-call",
-        "published_at": "2026-06-19T07:10:39+00:00",
-        "type": "earnings",
-        "impact": "medium",
-        "dedup_group": "kroger_q1_2026_earnings",
+        "title": "Moderna's Flu Vaccine Clears Key FDA Panel Vote As Advisory Committee Backs Shot 9-0",
+        "url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0",
+        "published_at": "2026-06-19T12:06:23+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "mrna_flu_vaccine_fda_panel_approval",
         "tickers_mentioned": [],
         "route_to_synthesis": true
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "New Fed Chair Kevin Warsh, appointed by Trump with expectations of rate cuts, signals a more hawkish stance than anticipated \u2014 pushing back against near-term cuts.",
+      "primary_drivers": [
+        "Higher-for-longer rate path raises discount rates and pressures long-duration assets",
+        "Stronger USD and higher real yields",
+        "Net interest margin support for banks; pressure on rate-sensitive borrowers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "JPM",
+          "rationale": "Higher-for-longer rates support net interest margin on its massive deposit base; large-cap money center bank is the cleanest beneficiary of a steeper/higher rate curve without the duration risk smaller banks carry.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Schwab earns substantial spread income on client cash sweeps; a delay in cuts directly supports NIM and reduces cash-sorting headwinds that plagued the stock in 2023-24.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MCO",
+          "rationale": "Hawkish Fed surprise reduces refi/issuance tailwind but signals Fed independence/credibility \u2014 Warsh's hawkish framing supports the long-duration credibility premium; secondary play, lower confidence.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple growth name whose valuation depends heavily on terminal cash flows discounted at lower rates; hawkish surprise compresses the multiple of the most extended momentum names.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income \u2014 REITs trade as bond proxies; higher-for-longer rates raise their cost of capital and make their dividend yield less attractive vs Treasuries.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "fed_warsh_rate_expectations_hawkish_signal",
+      "source_news_ids": [
+        "d34fb4227b5343f8"
+      ],
+      "headlines": [
+        "Trump picked Kevin Warsh to cut rates. The new Fed chief just told us he has other plans."
+      ]
+    }
+  ]
 }

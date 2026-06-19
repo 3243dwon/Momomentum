@@ -1,8 +1,122 @@
 {
-  "generated_at": "2026-06-19T06:45:16.443442-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-19T08:10:50.447167-04:00",
+  "event_count": 1,
+  "prediction_count": 4,
+  "not_yet_priced_in": 2,
+  "events": [
+    {
+      "event_summary": "FDA advisory committee voted 9-0 to back Moderna's mRNA-based flu vaccine, clearing a key regulatory hurdle toward approval.",
+      "primary_drivers": [
+        "mRNA platform validation in seasonal flu, broadening beyond COVID",
+        "Competitive threat to incumbent flu vaccine franchises",
+        "Read-through to other mRNA developers' regulatory paths"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "PFE",
+          "rationale": "Partnered with BioNTech on mRNA flu/COVID combo; favorable panel read-through to PFE's own flu vaccine pipeline and the combo opportunity.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ARCT",
+          "rationale": "Small-cap mRNA/saRNA developer with flu programs; regulatory validation of mRNA flu de-risks its platform and program optionality.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CUE",
+          "rationale": "Small mRNA-adjacent name often trades as a sympathy play on mRNA platform validation events.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NVAX",
+          "rationale": "Protein-based vaccine platform competing for share of mind/capital with mRNA; mRNA flu success undermines protein-platform investment thesis.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "MRNA",
+      "source_news_ids": [
+        "4d33af30829e10ae"
+      ],
+      "headlines": [
+        "Moderna's Flu Vaccine Clears Key FDA Panel Vote As Advisory Committee Backs Shot 9-0"
+      ],
+      "news_url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "ARCT",
+      "direction": "bullish",
+      "rationale": "Small-cap mRNA/saRNA developer with flu programs; regulatory validation of mRNA flu de-risks its platform and program optionality.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MRNA",
+      "event_summary": "FDA advisory committee voted 9-0 to back Moderna's mRNA-based flu vaccine, clearing a key regulatory hurdle toward approval.",
+      "news_url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0",
+      "source_news_ids": [
+        "4d33af30829e10ae"
+      ],
+      "created_at": "2026-06-19T08:10:50.447167-04:00"
+    },
+    {
+      "ticker": "CUE",
+      "direction": "bullish",
+      "rationale": "Small mRNA-adjacent name often trades as a sympathy play on mRNA platform validation events.",
+      "confidence": "low",
+      "horizon": "intraday",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MRNA",
+      "event_summary": "FDA advisory committee voted 9-0 to back Moderna's mRNA-based flu vaccine, clearing a key regulatory hurdle toward approval.",
+      "news_url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0",
+      "source_news_ids": [
+        "4d33af30829e10ae"
+      ],
+      "created_at": "2026-06-19T08:10:50.447167-04:00"
+    },
+    {
+      "ticker": "NVAX",
+      "direction": "bearish",
+      "rationale": "Protein-based vaccine platform competing for share of mind/capital with mRNA; mRNA flu success undermines protein-platform investment thesis.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "partial",
+      "pct_1d": -3.79,
+      "rel_volume": 1.17,
+      "trigger_ticker": "MRNA",
+      "event_summary": "FDA advisory committee voted 9-0 to back Moderna's mRNA-based flu vaccine, clearing a key regulatory hurdle toward approval.",
+      "news_url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0",
+      "source_news_ids": [
+        "4d33af30829e10ae"
+      ],
+      "created_at": "2026-06-19T08:10:50.447167-04:00"
+    },
+    {
+      "ticker": "PFE",
+      "direction": "bullish",
+      "rationale": "Partnered with BioNTech on mRNA flu/COVID combo; favorable panel read-through to PFE's own flu vaccine pipeline and the combo opportunity.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "contradicted",
+      "pct_1d": -2.74,
+      "rel_volume": 2.63,
+      "trigger_ticker": "MRNA",
+      "event_summary": "FDA advisory committee voted 9-0 to back Moderna's mRNA-based flu vaccine, clearing a key regulatory hurdle toward approval.",
+      "news_url": "https://www.benzinga.com/markets/biotech/26/06/60001383/modernas-flu-vaccine-clears-key-fda-panel-vote-as-advisory-committee-backs-shot-9-0",
+      "source_news_ids": [
+        "4d33af30829e10ae"
+      ],
+      "created_at": "2026-06-19T08:10:50.447167-04:00"
+    }
+  ]
 }
