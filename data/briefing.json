@@ -1,61 +1,53 @@
 {
-  "generated_at": "2026-06-18T19:47:59.784706-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on intact AH: QQQ +2.4%, SPY +1.0%; desk trims to 2 takes \u2014 AU & FULC long setups live",
+  "generated_at": "2026-06-19T00:53:22.190211-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on holds overnight: QQQ +2.4%, SPY +1.0%; FULC lone desk take, 19 movers with big moves across tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03% above 50d, QQQ +2.4%; VXX stress ratio 0.93 \u2014 low fear, tape supportive for momentum entries."
+    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress 0.93 \u2014 low fear, trend bid. Overnight entries face gap/liquidity risk at open."
   },
   "actions": [
-    {
-      "ticker": "AU",
-      "direction": "long",
-      "entry": 90.92,
-      "stop": 88.96,
-      "target": 94.83,
-      "line": "Fresh catalyst, neutral RSI, clean regime \u2014 full size; R/R ~2:1."
-    },
     {
       "ticker": "FULC",
       "direction": "long",
       "entry": 3.69,
-      "stop": 3.52,
-      "target": 4.03,
-      "line": "Signal constructive but 5d momentum weak, research neutral \u2014 half size only."
+      "stop": 3.39,
+      "target": 4.28,
+      "line": "MACD cross + RSI 32 oversold bounce; research neutral, not opposed. Quarter size \u2014 low conviction, low risk."
     }
   ],
   "watch": [
     {
       "ticker": "QS",
       "type": "mover",
-      "line": "+16.6%, 2.31\u00d7 vol \u2014 unusual volume on a big move; watch for follow-through or fade at open."
+      "line": "+16.6%, 2.31x vol \u2014 unusual volume on big move; worth tracking for continuation at open."
     },
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+19.7% on avg volume \u2014 big move without volume confirmation; gap-fill risk elevated."
-    },
-    {
-      "ticker": "ENTG",
-      "type": "mover",
-      "line": "+13.6% on 1.83\u00d7 vol \u2014 semis/materials name; check catalyst before chasing."
+      "line": "+19.7% on 1.0x rel vol \u2014 big move without volume confirmation; fade risk elevated."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7% on 2.4\u00d7 vol \u2014 heaviest unusual volume of the scan; potential bounce or continuation short."
+      "line": "-13.7%, 2.4x vol \u2014 heaviest relative volume in scan; catalyst unclear, watch for washout."
+    },
+    {
+      "ticker": "ENTG",
+      "type": "mover",
+      "line": "+13.6% on 1.83x vol \u2014 semis name with elevated overnight move; may follow QQQ momentum."
     },
     {
       "ticker": "KMX",
       "type": "mover",
-      "line": "+13.3% on 1.65\u00d7 vol \u2014 consumer discretionary strength; watch for sector read-through."
+      "line": "+13.3% on 1.65x vol \u2014 large gap; watch for RTH continuation or fill on open."
     }
   ],
   "changed": [
-    "Desk takes dropped from 3 to 2 \u2014 one pick removed vs prior briefing."
+    "AU long take from previous briefing no longer present \u2014 desk trimmed to FULC only"
   ],
   "caveats": [
-    "AH_POST scan as of 2026-06-18 19:47 ET \u2014 prices are post-market and may not reflect overnight/pre-market moves; treat levels as indicative.",
-    "No catalysts or ripple signals flagged this scan; moves in FCEL, QS, ENTG lack confirmed news \u2014 trade accordingly."
+    "OVERNIGHT scan as of 2026-06-19 00:53 ET \u2014 prices stale, spreads wide; all levels subject to significant gap at RTH open.",
+    "No catalysts or macro events flagged this scan \u2014 big mover moves are unattributed; gap fill risk is higher without fundamental driver."
   ]
 }
