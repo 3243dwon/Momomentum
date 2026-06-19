@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T14:58:36.177609-04:00",
-  "window": "RTH",
-  "headline": "Risk-on holds into close \u2014 QQQ +2.4%, VXX subdued; VRT added full-size alongside MRVL & FULC",
+  "generated_at": "2026-06-19T16:42:10.641776-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on intact AH \u2014 QQQ +2.4%, MRVL & FULC carried forward at quarter size; VRT dropped from takes",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress ratio 0.93 \u2014 tape is clean; entries have tailwind but chasing risk is real near HOD."
+    "line": "SPY +1.03%, QQQ +2.4%, VXX stress ratio 0.93 \u2014 tape strong, SPY above 50d; breadth supports momentum longs."
   },
   "actions": [
     {
@@ -13,15 +13,7 @@
       "entry": 310.97,
       "stop": 286.09,
       "target": 360.73,
-      "line": "Quarter size on pullback \u2014 signal flags chasing; research+risk green."
-    },
-    {
-      "ticker": "VRT",
-      "direction": "long",
-      "entry": 333.19,
-      "stop": 306.53,
-      "target": 386.5,
-      "line": "Full size \u2014 all three desks agree; RSI 57, fresh MACD cross, textbook risk-on setup."
+      "line": "Momentum surge in risk_on regime; extended RSI keeps size at quarter \u2014 room to 360.73, hard stop 286.09."
     },
     {
       "ticker": "FULC",
@@ -29,42 +21,42 @@
       "entry": 3.69,
       "stop": 3.39,
       "target": 4.28,
-      "line": "Half size \u2014 low RSI entry, fresh MACD cross; research neutral but signal+risk green."
+      "line": "MACD cross + RSI 32.1 oversold vs. research headwind \u2014 split verdict, quarter size only."
     }
   ],
   "watch": [
     {
       "ticker": "QS",
       "type": "mover",
-      "line": "+16.6% on 2.31\u00d7 volume \u2014 unusual volume + big move, no catalyst tagged; watch for follow-through or fade."
+      "line": "+16.6%, 2.31\u00d7 rel vol \u2014 unusual volume on a big_move warrants watching for follow-through."
     },
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+19.7% biggest 1d move in scan; rel volume only 1\u00d7 suggests technical, not news-driven \u2014 fragile."
+      "line": "+19.7% top gainer on the day; rel vol only 1.0\u00d7 \u2014 move may lack conviction, watch for fade."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7% on 2.4\u00d7 volume \u2014 heaviest unusual-volume loser; potential short setup if bounce is sold."
+      "line": "-13.7%, 2.4\u00d7 rel vol \u2014 elevated sell pressure; potential short setup if weakness extends."
     },
     {
       "ticker": "ENTG",
       "type": "mover",
-      "line": "+13.6% on 1.83\u00d7 vol \u2014 semis/materials name ripping with market; watch for desk upgrade to take."
+      "line": "+13.6%, 1.83\u00d7 rel vol \u2014 semis / materials name moving with QQQ strength; track for continuation."
     },
     {
       "ticker": "KMX",
       "type": "mover",
-      "line": "+13.3% on 1.65\u00d7 vol \u2014 consumer discretionary leadership in risk-on tape; no desk take yet."
+      "line": "+13.3%, 1.65\u00d7 rel vol \u2014 consumer-facing earnings mover; watch for next-session follow-through."
     }
   ],
   "changed": [
-    "VRT added as full-size long \u2014 new desk take not in previous briefing.",
-    "Desk now has three active takes (MRVL, VRT, FULC) vs two prior."
+    "VRT removed from desk takes \u2014 no longer in this scan's picks",
+    "MRVL and FULC both carried forward at quarter size"
   ],
   "caveats": [
-    "RTH scan as of 14:58 ET \u2014 prices are ~2 mins from close; fills on all three takes depend on EOD and next-open action.",
-    "No catalysts or macro events flagged this scan \u2014 moves in FCEL, QS, TNGX are unattributed; thin catalyst context raises gap-risk overnight."
+    "AH_POST window \u2014 prices as of 16:42 ET; AH liquidity is thin and fills on MRVL/FULC levels may differ materially at next RTH open.",
+    "No catalysts or macro events flagged this scan; movers lack narrative context and could be noise without confirmation."
   ]
 }
