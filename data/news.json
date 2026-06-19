@@ -1,70 +1,229 @@
 {
-  "generated_at": "2026-06-19T12:08:42.987533-04:00",
+  "generated_at": "2026-06-19T14:58:36.177609-04:00",
   "ticker_news": {
     "CSCO": [
       {
-        "id": "9e5eb9dd02b95a9b",
+        "id": "aed987fa97b93099",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "CSCO",
         "scope": "ticker",
-        "title": "If You Invested $100 In Cisco Systems Stock 10 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/news/26/06/60001853/if-you-invested-100-cisco-systems-stock-10-years-ago-you-would-have-much-today",
-        "published_at": "2026-06-19T14:45:33+00:00",
+        "title": "The Nasdaq 100 Has Tripled Since 2020, But These 10 Mega-Caps Are Still Underwater",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60002396/worst-performing-mega-cap-stocks-since-covid-alibaba-disney-salesforce-pfizer-verizon",
+        "published_at": "2026-06-19T17:43:25+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "csco_10yr_retrospective",
+        "dedup_group": "nasdaq_100_underperformers_recap",
+        "tickers_mentioned": [
+          "CSCO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "PFE": [
+      {
+        "id": "aed987fa97b93099",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PFE",
+        "scope": "ticker",
+        "title": "The Nasdaq 100 Has Tripled Since 2020, But These 10 Mega-Caps Are Still Underwater",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60002396/worst-performing-mega-cap-stocks-since-covid-alibaba-disney-salesforce-pfizer-verizon",
+        "published_at": "2026-06-19T17:43:25+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nasdaq_100_underperformers_recap",
+        "tickers_mentioned": [
+          "CSCO"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CVNA": [
+      {
+        "id": "27074e3bf8142110",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CVNA",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks Whale Activity In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002365/7-consumer-discretionary-stocks-whale-activity-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_activity_alert",
+        "tickers_mentioned": [
+          "QS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QS": [
+      {
+        "id": "27074e3bf8142110",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QS",
+        "scope": "ticker",
+        "title": "7 Consumer Discretionary Stocks Whale Activity In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002365/7-consumer-discretionary-stocks-whale-activity-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "consumer_discretionary_whale_activity_alert",
+        "tickers_mentioned": [
+          "QS"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "FCEL": [
+      {
+        "id": "e3fc42b3aa00f0c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks With Whale Alerts In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002364/10-industrials-stocks-whale-alerts-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "industrials_whale_activity_alert",
+        "tickers_mentioned": [
+          "FCEL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "GEV": [
+      {
+        "id": "e3fc42b3aa00f0c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GEV",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks With Whale Alerts In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002364/10-industrials-stocks-whale-alerts-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "industrials_whale_activity_alert",
+        "tickers_mentioned": [
+          "FCEL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "VRT": [
+      {
+        "id": "e3fc42b3aa00f0c0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "10 Industrials Stocks With Whale Alerts In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002364/10-industrials-stocks-whale-alerts-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "industrials_whale_activity_alert",
+        "tickers_mentioned": [
+          "FCEL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "7e3d7a3e5d2d10d5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002363/10-information-technology-stocks-whale-activity-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_stocks_whale_activity_alert",
+        "tickers_mentioned": [
+          "MU",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "7e3d7a3e5d2d10d5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002363/10-information-technology-stocks-whale-activity-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_stocks_whale_activity_alert",
+        "tickers_mentioned": [
+          "MU",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "7e3d7a3e5d2d10d5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "10 Information Technology Stocks Whale Activity In Today\u2019s Session",
+        "url": "https://www.benzinga.com/markets/options/26/06/60002363/10-information-technology-stocks-whale-activity-today-s-session",
+        "published_at": "2026-06-19T17:35:22+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_stocks_whale_activity_alert",
+        "tickers_mentioned": [
+          "MU",
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVTS": [
+      {
+        "id": "032f049798660d74",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVTS",
+        "scope": "ticker",
+        "title": "$1000 Invested In Navitas Semiconductor 5 Years Ago Would Be Worth This Much Today",
+        "url": "https://www.benzinga.com/news/26/06/60002257/1000-invested-navitas-semiconductor-5-years-ago-would-be-worth-much-today",
+        "published_at": "2026-06-19T16:45:44+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "navitas_semiconductor_historical_return",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "GLW": [
+    "LRCX": [
       {
-        "id": "1e2d0962fb598db6",
+        "id": "81bc6dfece1672dc",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GLW",
+        "ticker": "LRCX",
         "scope": "ticker",
-        "title": "$1000 Invested In Corning 15 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/news/26/06/60002059/1000-invested-corning-15-years-ago-would-be-worth-much-today",
-        "published_at": "2026-06-19T15:45:35+00:00",
+        "title": "Here\u2019s How Much You Would Have Made Owning Lam Research Stock In The Last 10 Years",
+        "url": "https://www.benzinga.com/news/26/06/60002234/here-s-how-much-you-would-have-made-owning-lam-research-stock-last-10-years",
+        "published_at": "2026-06-19T16:30:48+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "gly_historical_return_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ENPH": [
-      {
-        "id": "0a32ea28cdd3a6aa",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ENPH",
-        "scope": "ticker",
-        "title": "If You Invested $1000 In Enphase Energy Stock 10 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/news/26/06/60001948/if-you-invested-1000-enphase-energy-stock-10-years-ago-you-would-have-much-today",
-        "published_at": "2026-06-19T15:15:30+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "enph_historical_return_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "8a1b663ab44eaee5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Michael Saylor Says Bitcoin's Path From $70,000 To $7 Million Is 'Inevitable'\u2014Under One Condition",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60001600/michael-saylor-says-bitcoins-path-from-70000-to-7-million-is-inevitable-under-one-condition",
-        "published_at": "2026-06-19T13:15:49+00:00",
-        "type": "rumor",
-        "impact": "low",
-        "dedup_group": "mstr_saylor_btc_7m_bullish_commentary",
+        "dedup_group": "lam_research_historical_return",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
