@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T08:10:50.447167-04:00",
+  "generated_at": "2026-06-19T20:12:56.151071-04:00",
   "status": "no_key",
   "source": "FMP /stable/{earnings,dividends,economic-calendar} + computed triple-witching",
   "horizon_days": 120,
@@ -85,61 +85,61 @@
   "notes_by_ticker": {
     "INTC": {
       "stance": "trim-into-strength",
-      "read": "INTC is up 10.5% today and 14.4% on the week with no dated company catalyst on the board \u2014 that's a momentum move, not a fundamentals-anchored one, and today is triple witching which can amplify and then unwind index/options flow. With no earnings or ex-div date to anchor a hold, the asymmetry on a stretched 8-share position tilts toward harvesting some of the spike rather than chasing.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (options/futures expiry, flow event, not company-specific)",
-      "bull": "Momentum + short-cover dynamics into expiry can extend the squeeze through the close and into next week.",
-      "bear": "No company catalyst means the +14% move is flow-driven; post-witching unwind plus mean reversion can give most of it back.",
+      "read": "INTC is up 10.5% today and 14.4% on the week into a price level (\u2248$134) that looks stretched for a name with no dated company catalyst on the board \u2014 no confirmed earnings, no ex-div in the window provided. With today being triple witching, a chunk of this move could be options-driven gamma/positioning rather than fundamental, which is exactly the kind of strength to fade partially rather than chase.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (options expiry, positioning unwind)",
+      "bull": "Momentum + short-covering into expiry can extend the squeeze, and any leaked foundry/AI customer news would re-rate the name higher from here.",
+      "bear": "Post-expiry gamma unwind plus no dated catalyst to defend the move means the easiest path is a give-back next week.",
       "confidence": "medium"
     },
     "NVDA": {
       "stance": "watch",
-      "read": "No dated company catalyst on the board for NVDA \u2014 next earnings isn't scheduled in your feed, so there's no binary print to lean into. The tape is constructive (+2.8% on the day, +2.7% on the week) at $210, and today happens to be triple witching, which can amplify intraday moves but isn't a fundamental driver. Without an earnings date or guide event, this is a hold-and-watch until either an AI-cycle datapoint or the next print gets confirmed.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (options expiry, flow event, not fundamental)",
-      "bull": "Trend intact, leadership name reasserting on the week with no catalyst overhang into expiry flows.",
-      "bear": "No dated fundamental catalyst means the position rides macro/positioning; witching-day strength can unwind into next week.",
+      "read": "No dated company catalyst on the tape for NVDA right now \u2014 next earnings isn't scheduled in the feed, so there's no binary window to lean into. Price is firm (+2.8% on the day, +2.7% on the week at $210), which is constructive but not stretched enough to force a trim absent a known event. Today's triple witching can amplify intraday noise into the close; treat any post-expiry gap as signal, not setup.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (macro, not company-specific)",
+      "bull": "Trend is intact and tape is bid \u2014 no catalyst means no reason to interrupt a working position.",
+      "bear": "Without a dated print to anchor to, a sentiment or AI-spend headline can swing the name in either direction unhedged.",
       "confidence": "low"
     },
     "ORCL": {
       "stance": "watch",
-      "read": "No dated company catalyst on the board for ORCL right now \u2014 just triple witching today and again in September, which is positioning noise, not a fundamental driver. Price is barely changed on the day and week ($184.31, +0.4% / +0.2%), so there's no stretched move to fade or weakness to press. The actionable window is the next earnings print (typically mid-Sep for Oracle's FQ1), where OCI growth and RPO guide will reset the AI-infra narrative that's been carrying this name.",
-      "next_catalyst": "2026-09-18 \u2014 triple witching (no company catalyst on calendar; FQ1 earnings typically land mid-September, not yet dated here)",
-      "bull": "OCI backlog and AI capacity bookings keep compounding, and any pre-earnings drift higher into the September print rewards holders.",
-      "bear": "Capex intensity and margin pressure from the AI buildout could disappoint at the next print, and a flat tape into witching offers no edge either way.",
+      "read": "No company-specific dated catalyst on the board for ORCL right now \u2014 just triple witching today and again in September, which is positioning noise, not a fundamental driver. Price is barely moved on the day (+0.43%) and flat on the week (+0.17%), so there's no stretched move to fade and no washout to lean into. The actionable window will open once the next FQ1 earnings date gets confirmed (typically mid-September), where AI/OCI backlog and capex guide will set the tone.",
+      "next_catalyst": "2026-09-18 \u2014 Triple witching (no ORCL-specific catalyst dated; earnings TBD)",
+      "bull": "OCI/AI backlog continues to compound and the next print re-rates the multiple higher on raised capex absorption.",
+      "bear": "Hyperscaler capex digestion or a soft RPO print into Sept witching unwinds the AI-premium multiple.",
       "confidence": "low"
     },
     "NOK": {
       "stance": "watch",
-      "read": "NOK is down 2.3% today and 4.3% on the week with no dated company catalyst on the board \u2014 no confirmed earnings, no ex-div in hand \u2014 so there's no specific event creating an add/trim window here. The nearest scheduled event is triple witching today, which is a flow/positioning event, not a NOK-specific driver. Without a dated catalyst, the honest read is to let the next earnings date or a dividend declaration set the clock before leaning in.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (macro flow event, not NOK-specific)",
-      "bull": "Quality network-equipment exposure pulling back on no news; a dated earnings or dividend confirmation would reset the setup.",
-      "bear": "Drift lower with no near-term company catalyst to break the downtrend and no visible support from a print or payout.",
+      "read": "NOK is down 4.3% on the week with no company-specific dated catalyst on the board \u2014 no confirmed earnings or ex-div in the feed, just triple witching today which is a flow event, not a fundamental one. Without a near-term print to anchor an add or trim window, this is a wait-for-the-catalyst name; the weakness isn't deep enough to force action and there's no event to trim into. Next real signal will be the Q2 print when it gets scheduled.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (flow event, not fundamental)",
+      "bull": "Networks/AI infra exposure plus dividend support; a confirmed earnings date with stable guide opens an add window.",
+      "bear": "No dated catalyst means drift risk \u2014 the -4.3% week can extend without an event to reset sentiment.",
       "confidence": "low"
     },
     "NBIS": {
       "stance": "trim-into-strength",
-      "read": "NBIS is up 29% in five days into today's triple witching with no company-specific dated catalyst on the tape \u2014 that's a stretched tape running into a known liquidity/gamma unwind event, not a fundamental setup. Without an earnings or product date to anchor the move, the asymmetry favors taking some off into the strength and letting the post-witching tape define the next entry. If it holds the breakout through next week, you re-engage; if dealer flows reverse, you've already booked the easy part.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (today)",
-      "bull": "Momentum leader with no overhead supply; post-witching the squeeze can extend into the next AI capex print cycle.",
-      "bear": "+29% in a week into triple witching with no dated company catalyst \u2014 pure positioning unwind risk once gamma rolls off.",
+      "read": "NBIS is up 29% in five sessions with no dated company catalyst on the board \u2014 that's a momentum-driven extension, not a fundamentally re-rated print. Triple witching today (2026-06-19) can amplify both directions through dealer hedging in a name this volatile, so the asymmetric window is into strength rather than chasing. Without an earnings or guidance event tethering the move, the burden of proof shifts to price holding the breakout after expiry flows clear.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (today); index/options expiry flows",
+      "bull": "AI-infra momentum + post-expiry positioning reset could keep the squeeze going if buyers absorb the unwind.",
+      "bear": "+29% in a week with no dated catalyst leaves the name exposed to a gamma unwind once today's expiry prints.",
       "confidence": "medium"
     },
     "KO": {
       "stance": "watch",
-      "read": "Tiny 5-share KO position with no dated company catalysts on the board \u2014 no earnings or ex-div date in the feed \u2014 and the tape is just softly bleeding (-3.2% over five sessions). With nothing binary in front of it, today's triple witching is the only near-term event, and that's a flow/volatility tell, not a KO-specific catalyst. Wait for the next earnings or ex-dividend date to populate before defining an add or trim window.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (macro flows, not KO-specific)",
-      "bull": "Defensive staple drifting lower into no event risk \u2014 weakness without a catalyst is usually the better entry on quality compounders.",
-      "bear": "No dated company catalyst means no forcing function; the slow bleed can continue on rates/FX with nothing to break the trend.",
+      "read": "Tiny 5-share KO position is down 3.2% on the week with no company-specific dated catalysts on the board \u2014 no confirmed earnings, no ex-div in the feed \u2014 so there's no event-driven window to lean into here. Today is triple witching, which can amp up index-level noise in a defensive name like KO but isn't a fundamental catalyst. Without a dated print or dividend date to anchor an add/trim window, the honest call is to wait for the next earnings or ex-div to populate before acting.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (macro only; no KO-specific catalyst on calendar)",
+      "bull": "Defensive staple pulling back into a quad-witch \u2014 a bounce off support with a dated ex-div or Q2 print would give a real add window.",
+      "bear": "No company catalyst means the -3% drift can extend on macro/tape pressure with nothing scheduled to break the slide.",
       "confidence": "low"
     },
     "SPCX": {
       "stance": "watch",
-      "read": "SPCX is a brand-new June 2026 listing with no confirmed earnings or dividend dates in the feed yet \u2014 there's no dated company catalyst to anchor an add/trim window against. Today is also triple witching, which can amplify noise in a thinly-seasoned IPO without telling you anything fundamental. Best posture is to let the first earnings date get confirmed and let the post-IPO lockup/float picture clarify before sizing decisions.",
-      "next_catalyst": "2026-06-19 \u2014 Triple witching (no company-specific catalyst yet on the tape)",
-      "bull": "First-mover liquid SpaceX exposure; scarcity premium and index/ETF inclusion flows can dominate price action in the early post-IPO window.",
-      "bear": "No earnings history, unknown lockup expiry, and IPO-era volatility \u2014 triple witching today can magnify supply/demand air pockets in a name with thin float.",
+      "read": "Brand-new June 2026 IPO with no confirmed earnings or dividend dates in the feed yet \u2014 there's no dated company catalyst to trade around, just today's triple witching which can amplify intraday noise in a thin, freshly-listed name. The first real window will be the IPO lockup expiry (typically ~180 days, so roughly Dec 2026) and the debut earnings print; until one of those gets a confirmed date, this is a watch, not an add or trim.",
+      "next_catalyst": "2026-06-19 \u2014 Triple witching (only dated event on the tape; no SPCX-specific catalyst confirmed yet)",
+      "bull": "Scarcity name with rare private-market exposure now public; pre-lockup float is tight and any confirmed first-print date could re-rate the stock.",
+      "bear": "No earnings history, no confirmed catalysts, and a ~180-day lockup overhang looming into late 2026 that can cap upside well before the first print.",
       "confidence": "low"
     }
   },
-  "notes_generated_at": "2026-06-19T08:10:50.447167-04:00",
+  "notes_generated_at": "2026-06-19T20:12:56.151071-04:00",
   "disclaimer": "Forward earnings dates are third-party aggregator estimates, not company-confirmed \u2014 confirm against the company's IR release (~2 weeks ahead). Dividends, macro prints and witching are scheduled/confirmed. Not investment advice."
 }

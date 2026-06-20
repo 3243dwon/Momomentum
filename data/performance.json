@@ -1,87 +1,87 @@
 {
-  "generated_at": "2026-06-19T18:10:03.859289-04:00",
+  "generated_at": "2026-06-19T20:15:47.530567-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
-  "total_alerts": 2324,
+  "total_alerts": 2341,
   "per_type": {
-    "catalyst": {
-      "count": 76,
-      "direction_basis": "move",
-      "horizons": {
-        "1d": {
-          "evaluated": 75,
-          "hit_rate": 0.64,
-          "avg_return_pct": 3.43,
-          "hit_rate_net": 0.6,
-          "avg_return_net_pct": 2.93
-        },
-        "3d": {
-          "evaluated": 67,
-          "hit_rate": 0.597,
-          "avg_return_pct": 3.52,
-          "hit_rate_net": 0.567,
-          "avg_return_net_pct": 3.02
-        },
-        "5d": {
-          "evaluated": 63,
-          "hit_rate": 0.556,
-          "avg_return_pct": 1.95,
-          "hit_rate_net": 0.556,
-          "avg_return_net_pct": 1.45
-        }
-      }
-    },
     "watchlist": {
-      "count": 536,
+      "count": 538,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 506,
-          "hit_rate": 0.403,
-          "avg_return_pct": -0.89,
-          "hit_rate_net": 0.34,
-          "avg_return_net_pct": -1.39
+          "evaluated": 508,
+          "hit_rate": 0.402,
+          "avg_return_pct": -0.88,
+          "hit_rate_net": 0.337,
+          "avg_return_net_pct": -1.38
         },
         "3d": {
-          "evaluated": 455,
-          "hit_rate": 0.492,
-          "avg_return_pct": -0.56,
-          "hit_rate_net": 0.451,
-          "avg_return_net_pct": -1.06
+          "evaluated": 452,
+          "hit_rate": 0.489,
+          "avg_return_pct": -0.58,
+          "hit_rate_net": 0.447,
+          "avg_return_net_pct": -1.08
         },
         "5d": {
-          "evaluated": 404,
-          "hit_rate": 0.488,
-          "avg_return_pct": -0.73,
-          "hit_rate_net": 0.463,
-          "avg_return_net_pct": -1.23
+          "evaluated": 401,
+          "hit_rate": 0.484,
+          "avg_return_pct": -0.75,
+          "hit_rate_net": 0.459,
+          "avg_return_net_pct": -1.25
         }
       }
     },
     "big_move": {
-      "count": 457,
+      "count": 454,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 444,
-          "hit_rate": 0.459,
-          "avg_return_pct": 0.36,
-          "hit_rate_net": 0.414,
-          "avg_return_net_pct": -0.14
+          "evaluated": 441,
+          "hit_rate": 0.458,
+          "avg_return_pct": 0.41,
+          "hit_rate_net": 0.413,
+          "avg_return_net_pct": -0.09
         },
         "3d": {
-          "evaluated": 419,
-          "hit_rate": 0.516,
-          "avg_return_pct": 1.4,
-          "hit_rate_net": 0.477,
-          "avg_return_net_pct": 0.9
+          "evaluated": 414,
+          "hit_rate": 0.517,
+          "avg_return_pct": 1.46,
+          "hit_rate_net": 0.478,
+          "avg_return_net_pct": 0.96
         },
         "5d": {
-          "evaluated": 387,
-          "hit_rate": 0.581,
-          "avg_return_pct": 3.34,
-          "hit_rate_net": 0.568,
-          "avg_return_net_pct": 2.84
+          "evaluated": 382,
+          "hit_rate": 0.584,
+          "avg_return_pct": 3.43,
+          "hit_rate_net": 0.571,
+          "avg_return_net_pct": 2.93
+        }
+      }
+    },
+    "catalyst": {
+      "count": 75,
+      "direction_basis": "move",
+      "horizons": {
+        "1d": {
+          "evaluated": 74,
+          "hit_rate": 0.635,
+          "avg_return_pct": 3.45,
+          "hit_rate_net": 0.595,
+          "avg_return_net_pct": 2.95
+        },
+        "3d": {
+          "evaluated": 66,
+          "hit_rate": 0.591,
+          "avg_return_pct": 3.54,
+          "hit_rate_net": 0.561,
+          "avg_return_net_pct": 3.04
+        },
+        "5d": {
+          "evaluated": 62,
+          "hit_rate": 0.548,
+          "avg_return_pct": 1.95,
+          "hit_rate_net": 0.548,
+          "avg_return_net_pct": 1.45
         }
       }
     },
@@ -113,14 +113,14 @@
       }
     },
     "serenity_match": {
-      "count": 1046,
+      "count": 1065,
       "direction_basis": "thesis",
       "horizons": {
         "1d": {
-          "evaluated": 931,
-          "hit_rate": 0.483,
+          "evaluated": 951,
+          "hit_rate": 0.478,
           "avg_return_pct": -0.1,
-          "hit_rate_net": 0.438,
+          "hit_rate_net": 0.432,
           "avg_return_net_pct": -0.6
         },
         "3d": {

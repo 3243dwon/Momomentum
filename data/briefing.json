@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-19T18:07:41.977395-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on holds AH \u2014 QQQ +2.4%, MRVL & FULC remain quarter-size takes; broad mover tape led by FCEL +19.7%",
+  "generated_at": "2026-06-19T20:12:56.151071-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on steady overnight \u2014 QQQ +2.4%, SPY +1.0%; MRVL & FULC carry as lone quarter-size takes",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress 0.93 \u2014 low fear, green tape; extended names warrant size discipline on entries."
+    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress 0.93 \u2014 tape is clean, but extended moves limit fresh entries."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 310.97,
       "stop": 286.09,
       "target": 360.73,
-      "line": "Strong 1d surge in risk_on regime; RSI extended \u2192 quarter size only."
+      "line": "Strong 1d surge in risk_on regime; extended RSI keeps size at quarter \u2014 R/R ~2:1."
     },
     {
       "ticker": "FULC",
@@ -21,39 +21,39 @@
       "entry": 3.69,
       "stop": 3.39,
       "target": 4.28,
-      "line": "MACD cross + RSI 32.1 oversold; research skeptical \u2014 split verdict, quarter size."
+      "line": "MACD cross + RSI 32 oversold; research pushes back \u2014 split verdict, quarter size only."
     }
   ],
   "watch": [
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "Fuel cell +19.7% on big_move flag; no catalyst tagged \u2014 needs volume confirmation next session."
+      "line": "+19.7% on 1x rel vol \u2014 big_move flag, no catalyst confirmed; watch for continuation or fade at open."
     },
     {
       "ticker": "QS",
       "type": "mover",
-      "line": "Solid-state battery play +16.6%, rel vol 2.31 \u2014 unusual volume behind move, watch for follow-through."
+      "line": "+16.6% on 2.31x rel vol \u2014 unusual volume + big move; potential squeeze, needs catalyst check."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7% on unusual volume 2.4x \u2014 sharp flush, watch for dead-cat or base formation."
+      "line": "-13.7% on 2.4x rel vol \u2014 heaviest relative volume in scan; likely event-driven, monitor for dead-cat."
     },
     {
       "ticker": "ENTG",
       "type": "mover",
-      "line": "Semis adjacent +13.6%, rel vol 1.83 \u2014 fits risk-on semi theme alongside MRVL."
+      "line": "+13.6% on 1.83x vol \u2014 semis sympathy with MRVL/QQQ surge; watch for follow-through."
     },
     {
       "ticker": "KMX",
       "type": "mover",
-      "line": "+13.3% on rel vol 1.65 \u2014 consumer discretionary strength, no catalyst; monitor for setup."
+      "line": "+13.3% on 1.65x vol \u2014 big_move, no flags beyond that; earnings or guidance revision likely."
     }
   ],
   "changed": [],
   "caveats": [
-    "AH_POST window \u2014 prices as of 18:07 ET 2026-06-19; AH liquidity thin, levels may gap materially at next RTH open.",
-    "No catalysts or macro events flagged this scan; mover moves lack confirmed drivers \u2014 headline risk remains."
+    "OVERNIGHT window \u2014 prices as of 2026-06-19 20:12 ET; pre-market gaps at open can invalidate these levels.",
+    "No catalysts or macro events flagged this scan \u2014 mover moves lack confirmed drivers; treat size discipline as non-negotiable."
   ]
 }
