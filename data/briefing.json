@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-19T20:12:56.151071-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on steady overnight \u2014 QQQ +2.4%, SPY +1.0%; MRVL & FULC carry as lone quarter-size takes",
+  "generated_at": "2026-06-21T15:50:53.492298-04:00",
+  "window": "WEEKEND",
+  "headline": "Risk-on holds into weekend \u2014 QQQ +2.4%, SPY +1.0%; HAS, FULC, ING all quarter-size longs on desk",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress 0.93 \u2014 tape is clean, but extended moves limit fresh entries."
+    "line": "SPY +1.03% above 50d, QQQ +2.4%, VXX stress ratio 0.93 \u2014 tape is firm; low vol favors entries but weekend gap risk is real."
   },
   "actions": [
     {
-      "ticker": "MRVL",
+      "ticker": "HAS",
       "direction": "long",
-      "entry": 310.97,
-      "stop": 286.09,
-      "target": 360.73,
-      "line": "Strong 1d surge in risk_on regime; extended RSI keeps size at quarter \u2014 R/R ~2:1."
+      "entry": 84.75,
+      "stop": 82.83,
+      "target": 88.58,
+      "line": "Quarter-size long; signal agrees, no hard catalyst \u2014 desk accepts split opinion at reduced size."
     },
     {
       "ticker": "FULC",
@@ -21,39 +21,51 @@
       "entry": 3.69,
       "stop": 3.39,
       "target": 4.28,
-      "line": "MACD cross + RSI 32 oversold; research pushes back \u2014 split verdict, quarter size only."
+      "line": "Quarter-size long; clean MACD, advisors neutral \u2014 early-stage bounce, both sides not against."
+    },
+    {
+      "ticker": "ING",
+      "direction": "long",
+      "entry": 31.34,
+      "stop": 29.97,
+      "target": 34.07,
+      "line": "Quarter-size long; signal agrees, research calls it noise \u2014 cautious size reflects the split."
     }
   ],
   "watch": [
     {
-      "ticker": "FCEL",
-      "type": "mover",
-      "line": "+19.7% on 1x rel vol \u2014 big_move flag, no catalyst confirmed; watch for continuation or fade at open."
-    },
-    {
       "ticker": "QS",
       "type": "mover",
-      "line": "+16.6% on 2.31x rel vol \u2014 unusual volume + big move; potential squeeze, needs catalyst check."
+      "line": "+16.6%, rel vol 2.31x \u2014 unusual volume on big move warrants Monday open watch."
+    },
+    {
+      "ticker": "FCEL",
+      "type": "mover",
+      "line": "+19.7% on flat volume \u2014 big move without conviction; check for news before chasing."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7% on 2.4x rel vol \u2014 heaviest relative volume in scan; likely event-driven, monitor for dead-cat."
+      "line": "-13.7%, rel vol 2.4x \u2014 high-volume flush; watch for dead-cat or base into Monday."
     },
     {
       "ticker": "ENTG",
       "type": "mover",
-      "line": "+13.6% on 1.83x vol \u2014 semis sympathy with MRVL/QQQ surge; watch for follow-through."
+      "line": "+13.6% on elevated volume \u2014 semis/materials strength; monitor for follow-through."
     },
     {
       "ticker": "KMX",
       "type": "mover",
-      "line": "+13.3% on 1.65x vol \u2014 big_move, no flags beyond that; earnings or guidance revision likely."
+      "line": "+13.3% \u2014 consumer discretionary standout; check earnings/guidance catalyst before Monday."
     }
   ],
-  "changed": [],
+  "changed": [
+    "MRVL dropped off desk takes \u2014 HAS and ING are new quarter-size longs this scan",
+    "FULC retained from prior scan",
+    "Three takes active vs two prior"
+  ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-06-19 20:12 ET; pre-market gaps at open can invalidate these levels.",
-    "No catalysts or macro events flagged this scan \u2014 mover moves lack confirmed drivers; treat size discipline as non-negotiable."
+    "WEEKEND scan \u2014 prices as of 15:50 ET Friday; all levels are stale until Monday pre-market and gap risk is elevated.",
+    "No catalysts or macro events flagged; all three takes are signal-driven with split advisor opinion \u2014 size discipline (quarter) is the risk control."
   ]
 }
