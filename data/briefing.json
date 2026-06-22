@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T17:32:43.464026-04:00",
+  "generated_at": "2026-06-22T19:23:16.779412-04:00",
   "window": "AH_POST",
-  "headline": "Risk-on holds; desk rotates to WMB/SW/NVO/TXN \u2014 DFTX +50% leads movers again on 5x vol",
+  "headline": "Risk-on intact; desk adds ARDX/OCUL to WMB/SW book \u2014 DFTX +50% still leads on 5x vol",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.33% / QQQ -0.12%, both above 50d. VXX stress 0.93 \u2014 vol suppressed. Slight fade but regime intact; entries viable, size discipline wa"
+    "line": "SPY -0.33% / QQQ -0.12%, both above 50d. VXX stress 0.93 \u2014 vol suppressed, regime holds. AH drift, thin tape."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 74.95,
       "stop": 74.21,
       "target": 76.43,
-      "line": "Clean technical trend, no news needed \u2014 Signal+Risk aligned. Half size."
+      "line": "Half size. Early momentum, clean risk. Both neutral advisors, no veto. R/R ~2:1."
     },
     {
       "ticker": "SW",
@@ -21,51 +21,50 @@
       "entry": 45.41,
       "stop": 44.67,
       "target": 46.9,
-      "line": "Solid trend, clean entry, no catalyst required \u2014 Signal+Risk in sync. Half size."
+      "line": "Half size. Signal agrees strongly, no veto, clean setup. R/R ~2:1."
     },
     {
-      "ticker": "NVO",
+      "ticker": "ARDX",
       "direction": "long",
-      "entry": 45.89,
-      "stop": 45.3,
-      "target": 47.06,
-      "line": "Research+Risk bullish but chasing +6.25% 1D spike \u2014 quarter size only."
+      "entry": 6.36,
+      "stop": 6.23,
+      "target": 6.62,
+      "line": "Quarter size only. +11.68% 5d raises late-entry risk; medium severity, no veto."
     }
   ],
   "watch": [
     {
-      "ticker": "TXN",
-      "type": "catalyst",
-      "line": "Desk take (long, entry 332.27 / stop 325.39 / tgt 346.03) \u2014 quarter size; signal cautious on +10% run post-catalyst."
-    },
-    {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+50% on 5.45x rel vol, overbought flags \u2014 watch for continuation or flush at open."
+      "line": "+50.05% on 5.45x vol, overbought flag \u2014 watching for fade or continuation setup."
     },
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "+15.7% on 1.84x vol \u2014 momentum follow-through candidate heading into RTH."
-    },
-    {
-      "ticker": "RBLX",
-      "type": "catalyst",
-      "line": "-8.2% on ~3x normal vol \u2014 distribution signal; watch for further downside or stabilization."
+      "line": "+15.67% on 1.84x vol, big move \u2014 no desk take yet, monitor for pullback entry."
     },
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+13.9% on 2.13x vol, overbought \u2014 bio mover, fade risk elevated."
+      "line": "+13.94% on 2.13x vol, overbought \u2014 unusual volume confirms interest, no setup yet."
+    },
+    {
+      "ticker": "VIAV",
+      "type": "mover",
+      "line": "+12.12% on 1.91x vol \u2014 clean big move, no overbought flag, worth tracking for follow-through."
+    },
+    {
+      "ticker": "SPCE",
+      "type": "mover",
+      "line": "-10.67% on below-avg vol \u2014 low conviction flush, watch for stabilization."
     }
   ],
   "changed": [
-    "ARDX no longer a desk take \u2014 replaced by WMB, SW, NVO, TXN",
-    "DFTX rel vol ticked down slightly (5.45x vs ~4x prior) but remains top mover",
-    "Desk take count expanded from 1 to 4 picks this scan"
+    "Desk dropped NVO and TXN from book; added ARDX (quarter) and OCUL (quarter)",
+    "DFTX +50% on 5x vol persists for second consecutive scan \u2014 no fade yet"
   ],
   "caveats": [
-    "AH_POST scan \u2014 prices as of 17:32 ET; spreads wide, liquidity thin. All levels are for next RTH open; gap risk is real.",
-    "NVO and TXN sized to quarter on extended 1D moves \u2014 chasing risk elevated if gap-up continues overnight."
+    "AH_POST scan (2026-06-22 ~19:23 ET) \u2014 prices as of scan time, AH liquidity thin, levels may gap at next RTH open.",
+    "Four open longs now on book; ARDX and OCUL are quarter-size for risk reason \u2014 do not size up without re-eval at open."
   ]
 }
