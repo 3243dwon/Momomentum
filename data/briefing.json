@@ -1,71 +1,55 @@
 {
-  "generated_at": "2026-06-22T08:13:11.421808-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on extends \u2014 QQQ +2.4%, VXX stress low; MRVL, AU, FULC desk longs unchanged heading into open",
+  "generated_at": "2026-06-22T09:38:26.729081-04:00",
+  "window": "RTH",
+  "headline": "Risk-on holds \u2014 QQQ +0.72%, VXX stress low; NVO lone desk long, quarter-size toe-hold only",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.03%, QQQ +2.4%, VXX stress ratio 0.93 (benign). SPY above 50d. Tape green \u2014 momentum entries favored, but late-entry risk flagged on "
+    "line": "SPY +0.41% above 50d, QQQ +0.72%, VXX stress ratio 0.91 \u2014 tape constructive, low urgency to chase."
   },
   "actions": [
     {
-      "ticker": "MRVL",
+      "ticker": "NVO",
       "direction": "long",
-      "entry": 310.97,
-      "stop": 286.09,
-      "target": 360.73,
-      "line": "Half size. Research + risk aligned; signal warns late entry but RSI not extreme. R/R ~1.96."
-    },
-    {
-      "ticker": "AU",
-      "direction": "long",
-      "entry": 90.92,
-      "stop": 84.75,
-      "target": 103.25,
-      "line": "Quarter size only. Signal + research neutral, momentum stalling \u2014 keep size tight. R/R ~2.0."
-    },
-    {
-      "ticker": "FULC",
-      "direction": "long",
-      "entry": 3.69,
-      "stop": 3.39,
-      "target": 4.28,
-      "line": "Half size. RSI 32 oversold, signal agrees, risk clean \u2014 early-stage, not a chase. R/R ~1.97."
+      "entry": 44.91,
+      "stop": 42.76,
+      "target": 49.21,
+      "line": "Toe-hold long \u2014 risk-on regime aligned, but signal/research skeptical; quarter size only. R:R ~2:1."
     }
   ],
   "watch": [
     {
-      "ticker": "QS",
-      "type": "mover",
-      "line": "+16.6%, rel vol 2.31x \u2014 unusual volume on big move, watch for continuation or fade setup."
+      "ticker": "DFTX",
+      "type": "catalyst",
+      "line": "+52.3% on positive Phase 3 data; rel-vol only 0.62 and overbought \u2014 wait for vol confirmation before any interest."
     },
     {
-      "ticker": "FCEL",
+      "ticker": "SMCI",
       "type": "mover",
-      "line": "+19.7% biggest 1d mover on the scan; vol flat (1.0x) \u2014 move lacks volume conviction, fade risk."
+      "line": "+9.38% big move, low rel-vol 0.15 \u2014 AI server theme, watch for vol pickup."
     },
     {
-      "ticker": "TNGX",
+      "ticker": "DELL",
       "type": "mover",
-      "line": "-13.7%, rel vol 2.4x \u2014 heavy unusual volume sell-off, watch for dead-cat or further breakdown."
+      "line": "+8.08% sympathetic to SMCI/AI infra theme; rel-vol 0.05 \u2014 thin tape, no chase."
     },
     {
-      "ticker": "ENTG",
+      "ticker": "KEEL",
       "type": "mover",
-      "line": "+13.6%, rel vol 1.83x \u2014 semis name moving with QQQ surge, no desk take yet."
+      "line": "+13.24%, MACD bullish cross, but rel-vol 0.18 and overbought \u2014 wait for pullback setup."
     },
     {
-      "ticker": "KMX",
+      "ticker": "SPCE",
       "type": "mover",
-      "line": "+13.3%, rel vol 1.65x \u2014 used-auto name, big gap; watch for post-earnings-style exhaustion."
+      "line": "-9.41% big flush, rel-vol near zero \u2014 no catalyst found, avoid."
     }
   ],
   "changed": [
-    "No regime change \u2014 risk_on holds",
-    "No new desk takes added or dropped vs prior scan",
-    "Macro catalyst narrative (Iran deal / China tech curbs) absent from current scan data"
+    "Prior desk longs MRVL, AU, FULC replaced by single NVO quarter-size position",
+    "QQQ momentum cooled sharply: +0.72% vs prior +2.4%",
+    "Ripple and macro event queues now empty"
   ],
   "caveats": [
-    "AH/Pre-market scan window (2026-06-22 08:13 ET) \u2014 prices as of scan time, may not reflect opening prints or pre-market crosses.",
-    "SPY 200d status unknown this scan; regime confidence is partial without that anchor."
+    "RTH scan as of 09:38 ET \u2014 prices and levels are 22+ minutes stale from open; fills on NVO may differ materially.",
+    "DFTX and KEEL moves are high-% but both show sub-0.2 rel-volume \u2014 size and conviction signals are weak; treat as news-driven noise until volume confirms."
   ]
 }
