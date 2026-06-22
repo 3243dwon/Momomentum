@@ -1,194 +1,329 @@
 {
-  "generated_at": "2026-06-22T00:57:49.665885-04:00",
-  "ticker_news": {},
-  "macro_events": [
-    {
-      "event_summary": "U.S. and Iran reach a roadmap for a final nuclear/sanctions deal and agree to wind down military operations in Lebanon, signaling major Middle East de-escalation.",
-      "primary_drivers": [
-        "Middle East geopolitical risk premium collapse lowers crude oil prices",
-        "Potential return of Iranian oil supply (~1-1.5 mb/d) to global markets if sanctions ease",
-        "Reduced defense spending urgency and lower demand for munitions/missile defense"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "LUV",
-          "rationale": "Domestic US airline with no fuel hedging program; jet fuel is ~25-30% of operating costs. A sharp drop in crude from removal of Iran risk premium and potential supply return flows directly to margin expansion.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DAL",
-          "rationale": "Large fuel cost exposure (~20%+ of opex) and owns Monroe refinery, but net beneficiary of lower crude. Also benefits from improved international travel sentiment to Middle East/Europe corridors.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Cruise operator with Mediterranean itineraries directly affected by Middle East tensions; bunker fuel is a major cost. De-escalation reopens Eastern Med routes and lowers fuel bill simultaneously.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to oil. Lower crude compresses input costs while demand sentiment improves on lower recession-via-oil-spike risk.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Diesel/transportation costs are a meaningful component of retail logistics; lower oil supports consumer discretionary income and reduces freight cost pressure on grocery margins.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Integrated major with upstream production levered to Brent crude price. A collapse in geopolitical risk premium plus potential 1+ mb/d Iranian barrels returning to market directly compresses realized prices and upstream earnings.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with highest oil-price beta among large caps and significant debt load; earnings and FCF are extremely sensitive to a $5-10 drop in WTI from risk premium unwind.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Prime contractor on PAC-3, THAAD missile defense and Hellfire \u2014 systems with surging demand from Middle East conflicts. De-escalation in Lebanon reduces near-term foreign military sales urgency and replenishment orders.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Major supplier of Patriot interceptors and Stinger missiles consumed/ordered during Middle East operations. Reduced regional kinetic activity weakens the FY26+ munitions reorder cycle thesis.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Heavy exposure to missile defense and munitions tied to Israel/Gulf customers. Lebanon de-escalation reduces urgency of supplemental defense appropriations that have been a tailwind.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "SLB",
-          "rationale": "Oilfield services revenue tracks E&P capex, which is highly sensitive to oil price. Sustained crude downside from Iran supply return cuts into international drilling activity guidance.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "Apache has direct Egyptian production exposure and high oil-price beta; loses on both lower realized prices and removal of any Egypt geopolitical premium.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "us_iran_roadmap_lebanon_ceasefire",
-      "source_news_ids": [
-        "7a3f8d193c39d63f"
-      ],
-      "headlines": [
-        "U.S., Iran agree on roadmap for final deal and plan to end military operations in Lebanon"
-      ]
-    },
-    {
-      "event_summary": "China imposed trade curbs (export controls and procurement exclusions) on dozens of US firms in retaliation for the Pentagon's blacklist of Chinese companies.",
-      "primary_drivers": [
-        "Loss of China revenue/market access for targeted US firms",
-        "Escalation of US-China decoupling boosting domestic/allied substitutes",
-        "Rare earth and critical input supply risk to US defense and tech supply chains"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "MP",
-          "rationale": "MP Materials is the primary US-listed rare earth miner; any Chinese restriction on critical minerals procurement/exports directly elevates domestic supply value. Defense contracts and DoD funding accelerate on each escalation.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "USAR",
-          "rationale": "USA Rare Earth \u2014 pure-play domestic rare earth and magnet supply chain story; benefits from any narrative of China weaponizing critical mineral exports.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin has near-zero China revenue exposure but is a Pentagon prime contractor; escalation reinforces sustained defense budget tailwind and onshoring of defense supply chain.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "PLTR",
-          "rationale": "Palantir's growth thesis is tied to Western defense/intel decoupling from China; geopolitical escalation reinforces narrative and government deal flow.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TSM",
-          "rationale": "Taiwan Semi benefits at the margin as US firms restricted from China procurement seek non-Chinese foundry capacity, though TSM itself has China customer exposure \u2014 net positive on substitution.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "BA",
-          "rationale": "Boeing is a perennial top target in US-China retaliation cycles; China is a major commercial aircraft customer and procurement exclusion or order delays directly hit backlog and deliveries.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon has historically appeared on Chinese unreliable entity / sanctions lists due to Taiwan arms sales; procurement exclusions remove any residual China civil aerospace (Collins/Pratt) revenue.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "GD",
-          "rationale": "General Dynamics (Gulfstream business jets and defense) faces direct China procurement bans given its defense-Taiwan exposure profile \u2014 Gulfstream loses HNW China buyers.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "QCOM",
-          "rationale": "Qualcomm derives ~45-60% of revenue from China (Xiaomi, Oppo, Vivo); any export control retaliation or Chinese unreliable entity designation directly threatens licensing and chip sales.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Tesla has ~20% revenue from China (Shanghai Gigafactory + China sales); broad retaliation environment risks consumer backlash and regulatory friction even if not directly named.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "AMAT",
-          "rationale": "Applied Materials has significant China semicap revenue exposure; tit-for-tat export controls expand China's 'unreliable entity' procurement exclusions to US semicap equipment vendors.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CAT",
-          "rationale": "Caterpillar's China construction equipment sales are vulnerable to procurement exclusions and SOE buyer pressure during retaliation cycles.",
-          "confidence": "low",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HON",
-          "rationale": "Honeywell has aerospace and industrial automation exposure to China and has been named in prior Chinese unreliable entity actions tied to Taiwan defense sales.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        }
-      ],
-      "dedup_group": "china_trade_curbs_us_pentagon_blacklist",
-      "source_news_ids": [
-        "3faf81d1de179164"
-      ],
-      "headlines": [
-        "China imposes trade curbs on dozens of U.S. firms in retaliation for Pentagon blacklist"
-      ]
-    }
-  ]
+  "generated_at": "2026-06-22T08:13:11.421808-04:00",
+  "ticker_news": {
+    "AU": [
+      {
+        "id": "7cb1a4410bf9bc4b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AU",
+        "scope": "ticker",
+        "title": "SL Science Holding, Alamos Gold And Other Big Stocks Moving Lower In Monday\u2019s Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60010892/sl-science-holding-alamos-gold-and-other-big-stocks-moving-lower-in-mondays-pre-market-session",
+        "published_at": "2026-06-22T12:02:04+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "au_premarket_movement_jun22",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "GLW": [
+      {
+        "id": "5ad18c617e3b122a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GLW",
+        "scope": "ticker",
+        "title": "MACOM Technology And Corning On CNBC\u2019s \u2018Final Trades\u2019",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60010598/macom-technology-and-corning-on-cnbcs-final-trades",
+        "published_at": "2026-06-22T11:52:43+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "macom_corning_cnbc_final_trades",
+        "tickers_mentioned": [
+          "MACOM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "fb6cf6fe703b396d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Intel's Apple-Driven Surge Gets A Harsh Verdict: 'It's Becoming A Meme Stock'",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60008008/intels-apple-driven-surge-gets-a-harsh-verdict-its-becoming-a-meme-stock",
+        "published_at": "2026-06-22T09:41:37+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intc_apple_driven_surge_meme_stock_verdict",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "6f4a2f1017a600e2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow Future Drop As Trump Threatens 'Toll' Collection At Strait Of Hormuz\u2014Getty Images, Intel, Hyperscale In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60007817/stock-market-today-sp-500-dow-future-drop-as-trump-threatens-toll-collection-at-strait-of-hormuz-getty-images-intel-hyperscale-in-focus",
+        "published_at": "2026-06-22T09:07:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_hormuz_strait_toll_threat",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3a44ff55d2f7f87a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Nasdaq Jumps Nearly 500 Points On Iran Peace Deal Hopes: Investor Sentiment Improves, Greed Index Remains In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60007369/nasdaq-jumps-nearly-500-points-on-iran-peace-deal-hopes-investor-sentiment-improves-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-22T07:56:51+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "iran_peace_deal_market_reaction",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSM": [
+      {
+        "id": "fb6cf6fe703b396d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Intel's Apple-Driven Surge Gets A Harsh Verdict: 'It's Becoming A Meme Stock'",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60008008/intels-apple-driven-surge-gets-a-harsh-verdict-its-becoming-a-meme-stock",
+        "published_at": "2026-06-22T09:41:37+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "intc_apple_driven_surge_meme_stock_verdict",
+        "tickers_mentioned": [
+          "INTC"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d59bc9c724e3fa21",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "What's Going On With Taiwan Semiconductor Stock Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60009009/whats-going-on-with-taiwan-semiconductor-stock-monday-3",
+        "published_at": "2026-06-22T10:45:06+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tsm_market_commentary_jun22",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "CVX": [
+      {
+        "id": "c750b3409c559f88",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CVX",
+        "scope": "ticker",
+        "title": "'A Spike Like You Never Saw Before:' Dan Dicker Says Oil Could Jump From $75 To $135 A Barrel",
+        "url": "https://www.benzinga.com/markets/commodities/26/06/60007622/a-spike-like-you-never-saw-before-dan-dicker-says-oil-could-jump-from-75-to-135-a-barrel",
+        "published_at": "2026-06-22T08:31:19+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "oil_price_commentary_dicker_jun22",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DELL": [
+      {
+        "id": "c8cd5cf4d53dbf58",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Tesla Quietly Files Megapod Trademark \u2014 An AI Data Center Play That Could See Elon Musk Challenging Nvidia's Dominance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60006991/tesla-files-megapod-trademark-as-elon-musk-eyes-ai-data-center-market",
+        "published_at": "2026-06-22T07:05:10+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tesla_megapod_trademark_ai_datacenter",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "SMCI": [
+      {
+        "id": "c8cd5cf4d53dbf58",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMCI",
+        "scope": "ticker",
+        "title": "Tesla Quietly Files Megapod Trademark \u2014 An AI Data Center Play That Could See Elon Musk Challenging Nvidia's Dominance",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60006991/tesla-files-megapod-trademark-as-elon-musk-eyes-ai-data-center-market",
+        "published_at": "2026-06-22T07:05:10+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "tesla_megapod_trademark_ai_datacenter",
+        "tickers_mentioned": [
+          "TSLA"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "MU": [
+      {
+        "id": "39108626565c7372",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "5 Stocks In The Spotlight Last Week:  Wall Street's Most Accurate Analysts Weigh In",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60010378/5-stocks-in-the-spotlight-last-week-wall-streets-most-accurate-analysts-weigh-in-9",
+        "published_at": "2026-06-22T11:42:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mu_spotlight_analyst_weigh_in",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f61f8e7dc4462e28",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron Stock Climbs Over 3% In Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60008042/micron-stock-climbs-over-3-in-pre-market-whats-going-on",
+        "published_at": "2026-06-22T09:46:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "wdc_premarket_move_jun22",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "23d50b528556c8df",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Evaluating Micron Technology Against Peers In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/news/26/06/60008135/evaluating-micron-technology-against-peers-semiconductors-amp-semiconductor-equipment-industry",
+        "published_at": "2026-06-22T09:58:41+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mu_peer_evaluation_semiconductors",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "73920efac09337c7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nvidia Supplier SK Hynix Overtakes Samsung Electronics To Become South Korea\u2019s Most Valuable Company",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60006946/sk-hynix-overtakes-samsung-to-become-south-koreas-most-valuable-company",
+        "published_at": "2026-06-22T06:57:31+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "sk_hynix_samsung_valuable_company_ranking",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PFE": [
+      {
+        "id": "3c7d54a50cb970af",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PFE",
+        "scope": "ticker",
+        "title": "Less Volume, More Premium: Post-Ozempic Economics Are Killing The Quantity Model",
+        "url": "https://www.benzinga.com/news/health-care/26/06/60009773/less-volume-more-premium-post-ozempic-economics-are-killing-the-quantity-model",
+        "published_at": "2026-06-22T11:15:57+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "pfe_ozempic_economics_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "f61f8e7dc4462e28",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "Micron Stock Climbs Over 3% In Pre-Market: What's Going On?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60008042/micron-stock-climbs-over-3-in-pre-market-whats-going-on",
+        "published_at": "2026-06-22T09:46:09+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "wdc_premarket_move_jun22",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "5b23b721f260ef7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "Why Is SanDisk Stock Surging Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60010635/why-is-sandisk-stock-surging-monday",
+        "published_at": "2026-06-22T11:55:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "wdc_premarket_move_jun22",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "2b5176c78c649fc1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Competitor Analysis: Evaluating Marvell Technology And Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/news/26/06/60008138/competitor-analysis-evaluating-marvell-technology-and-competitors-semiconductors-amp-semiconductor-e",
+        "published_at": "2026-06-22T09:59:02+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "mrvl_competitor_analysis_semiconductors",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "5b23b721f260ef7b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Why Is SanDisk Stock Surging Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60010635/why-is-sandisk-stock-surging-monday",
+        "published_at": "2026-06-22T11:55:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "wdc_premarket_move_jun22",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": []
 }

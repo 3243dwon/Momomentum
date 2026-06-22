@@ -1,19 +1,27 @@
 {
-  "generated_at": "2026-06-22T00:57:49.665885-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on holds overnight \u2014 same 3 desk longs live; macro: Iran deal + China tech curbs dominate tape",
+  "generated_at": "2026-06-22T08:13:11.421808-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on extends \u2014 QQQ +2.4%, VXX stress low; MRVL, AU, FULC desk longs unchanged heading into open",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.0%, QQQ +2.4% Friday; VXX stress ratio 0.93 (low fear). Overnight: bid intact, but macro cross-currents (oil drop, China curbs) tight"
+    "line": "SPY +1.03%, QQQ +2.4%, VXX stress ratio 0.93 (benign). SPY above 50d. Tape green \u2014 momentum entries favored, but late-entry risk flagged on "
   },
   "actions": [
     {
-      "ticker": "HAS",
+      "ticker": "MRVL",
       "direction": "long",
-      "entry": 84.75,
-      "stop": 82.83,
-      "target": 88.58,
-      "line": "Quarter-size long. Clean signal, low risk; no catalyst so size stays small. R:R ~2:1."
+      "entry": 310.97,
+      "stop": 286.09,
+      "target": 360.73,
+      "line": "Half size. Research + risk aligned; signal warns late entry but RSI not extreme. R/R ~1.96."
+    },
+    {
+      "ticker": "AU",
+      "direction": "long",
+      "entry": 90.92,
+      "stop": 84.75,
+      "target": 103.25,
+      "line": "Quarter size only. Signal + research neutral, momentum stalling \u2014 keep size tight. R/R ~2.0."
     },
     {
       "ticker": "FULC",
@@ -21,47 +29,43 @@
       "entry": 3.69,
       "stop": 3.39,
       "target": 4.28,
-      "line": "Quarter-size long. Early-stage bounce, clean MACD. Both advisors neutral \u2014 not a conviction fade."
-    },
-    {
-      "ticker": "ING",
-      "direction": "long",
-      "entry": 31.34,
-      "stop": 29.97,
-      "target": 34.07,
-      "line": "Quarter-size long. Signal agrees; research calls it noise \u2014 warrants cautious size only."
+      "line": "Half size. RSI 32 oversold, signal agrees, risk clean \u2014 early-stage, not a chase. R/R ~1.97."
     }
   ],
   "watch": [
     {
       "ticker": "QS",
       "type": "mover",
-      "line": "+16.6%, rel-vol 2.3x \u2014 unusual volume surge overnight; watch for follow-through or fade at open."
+      "line": "+16.6%, rel vol 2.31x \u2014 unusual volume on big move, watch for continuation or fade setup."
     },
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+19.7% big move; energy/hydrogen names getting a look as Iran deal reprices energy complex."
-    },
-    {
-      "ticker": "ENTG",
-      "type": "mover",
-      "line": "+13.6% \u2014 semi materials name ripping; China export curbs could cut both ways here, monitor."
+      "line": "+19.7% biggest 1d mover on the scan; vol flat (1.0x) \u2014 move lacks volume conviction, fade risk."
     },
     {
       "ticker": "TNGX",
       "type": "mover",
-      "line": "-13.7%, rel-vol 2.4x \u2014 hard flush with volume. Watch for dead-cat or continued bleed at RTH open."
+      "line": "-13.7%, rel vol 2.4x \u2014 heavy unusual volume sell-off, watch for dead-cat or further breakdown."
     },
     {
-      "ticker": "SMR",
-      "type": "macro",
-      "line": "+12.9% \u2014 small modular reactor name; Iran nuclear deal could pressure uranium/nuclear sentiment, watch for reversal."
+      "ticker": "ENTG",
+      "type": "mover",
+      "line": "+13.6%, rel vol 1.83x \u2014 semis name moving with QQQ surge, no desk take yet."
+    },
+    {
+      "ticker": "KMX",
+      "type": "mover",
+      "line": "+13.3%, rel vol 1.65x \u2014 used-auto name, big gap; watch for post-earnings-style exhaustion."
     }
   ],
-  "changed": [],
+  "changed": [
+    "No regime change \u2014 risk_on holds",
+    "No new desk takes added or dropped vs prior scan",
+    "Macro catalyst narrative (Iran deal / China tech curbs) absent from current scan data"
+  ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-22 ~00:57 ET \u2014 prices stale until RTH open; gaps likely given macro headlines. Verify fills at open before entering.",
-    "Iran deal + China tech curbs are material macro shifts not yet in overnight price action for all names \u2014 energy, defense, and China-exposed semis could gap unpredictably at RTH open."
+    "AH/Pre-market scan window (2026-06-22 08:13 ET) \u2014 prices as of scan time, may not reflect opening prints or pre-market crosses.",
+    "SPY 200d status unknown this scan; regime confidence is partial without that anchor."
   ]
 }

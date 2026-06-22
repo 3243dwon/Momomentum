@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T01:01:14.425386-04:00",
+  "generated_at": "2026-06-22T08:17:38.059401-04:00",
   "window_days": 30,
-  "total_with_desk": 424,
+  "total_with_desk": 426,
   "by_decision": {
     "take": {
-      "count": 184,
+      "count": 185,
       "horizons": {
         "1d": {
           "evaluated": 181,
@@ -17,14 +17,14 @@
           "avg_return_pct": -1.19
         },
         "5d": {
-          "evaluated": 166,
-          "hit_rate": 0.572,
-          "avg_return_pct": -1.17
+          "evaluated": 167,
+          "hit_rate": 0.575,
+          "avg_return_pct": -1.1
         }
       }
     },
     "pass": {
-      "count": 237,
+      "count": 238,
       "horizons": {
         "1d": {
           "evaluated": 234,
@@ -86,7 +86,7 @@
   },
   "by_agreement": {
     "majority": {
-      "count": 231,
+      "count": 232,
       "horizons": {
         "1d": {
           "evaluated": 227,
@@ -99,14 +99,14 @@
           "avg_return_pct": -1.2
         },
         "5d": {
-          "evaluated": 208,
-          "hit_rate": 0.582,
-          "avg_return_pct": -1.25
+          "evaluated": 209,
+          "hit_rate": 0.584,
+          "avg_return_pct": -1.19
         }
       }
     },
     "unanimous": {
-      "count": 149,
+      "count": 150,
       "horizons": {
         "1d": {
           "evaluated": 147,
@@ -168,7 +168,7 @@
   },
   "by_veto": {
     "no_veto": {
-      "count": 311,
+      "count": 312,
       "horizons": {
         "1d": {
           "evaluated": 305,
@@ -181,14 +181,14 @@
           "avg_return_pct": -1.2
         },
         "5d": {
-          "evaluated": 282,
-          "hit_rate": 0.592,
-          "avg_return_pct": -1.1
+          "evaluated": 283,
+          "hit_rate": 0.594,
+          "avg_return_pct": -1.06
         }
       }
     },
     "veto": {
-      "count": 113,
+      "count": 114,
       "horizons": {
         "1d": {
           "evaluated": 113,
@@ -211,6 +211,6 @@
   "take_minus_pass_edge": {
     "1d": 0.05,
     "3d": 0.62,
-    "5d": 0.97
+    "5d": 1.04
   }
 }
