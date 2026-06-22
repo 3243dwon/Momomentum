@@ -1,119 +1,119 @@
 {
-  "generated_at": "2026-06-21T15:54:48.243728-04:00",
+  "generated_at": "2026-06-22T01:01:14.372458-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
-  "total_alerts": 2271,
+  "total_alerts": 2264,
   "per_type": {
     "watchlist": {
-      "count": 518,
+      "count": 517,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 513,
-          "hit_rate": 0.392,
+          "evaluated": 507,
+          "hit_rate": 0.393,
           "avg_return_pct": -0.73,
-          "hit_rate_net": 0.316,
+          "hit_rate_net": 0.32,
           "avg_return_net_pct": -1.23
         },
         "3d": {
-          "evaluated": 473,
-          "hit_rate": 0.459,
-          "avg_return_pct": -0.48,
-          "hit_rate_net": 0.416,
-          "avg_return_net_pct": -0.98
+          "evaluated": 482,
+          "hit_rate": 0.452,
+          "avg_return_pct": -0.47,
+          "hit_rate_net": 0.409,
+          "avg_return_net_pct": -0.97
         },
         "5d": {
-          "evaluated": 422,
-          "hit_rate": 0.464,
-          "avg_return_pct": -0.63,
-          "hit_rate_net": 0.431,
-          "avg_return_net_pct": -1.13
+          "evaluated": 426,
+          "hit_rate": 0.458,
+          "avg_return_pct": -0.75,
+          "hit_rate_net": 0.425,
+          "avg_return_net_pct": -1.25
         }
       }
     },
     "big_move": {
-      "count": 398,
+      "count": 377,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 396,
-          "hit_rate": 0.422,
-          "avg_return_pct": -0.0,
-          "hit_rate_net": 0.371,
-          "avg_return_net_pct": -0.5
+          "evaluated": 373,
+          "hit_rate": 0.426,
+          "avg_return_pct": 0.03,
+          "hit_rate_net": 0.383,
+          "avg_return_net_pct": -0.47
         },
         "3d": {
-          "evaluated": 379,
-          "hit_rate": 0.496,
-          "avg_return_pct": 0.94,
-          "hit_rate_net": 0.451,
-          "avg_return_net_pct": 0.44
+          "evaluated": 362,
+          "hit_rate": 0.497,
+          "avg_return_pct": 1.02,
+          "hit_rate_net": 0.461,
+          "avg_return_net_pct": 0.52
         },
         "5d": {
-          "evaluated": 353,
-          "hit_rate": 0.598,
-          "avg_return_pct": 3.73,
-          "hit_rate_net": 0.561,
-          "avg_return_net_pct": 3.23
-        }
-      }
-    },
-    "delta_new_top20": {
-      "count": 177,
-      "direction_basis": "move",
-      "horizons": {
-        "1d": {
-          "evaluated": 176,
-          "hit_rate": 0.466,
-          "avg_return_pct": -1.32,
-          "hit_rate_net": 0.455,
-          "avg_return_net_pct": -1.82
-        },
-        "3d": {
-          "evaluated": 173,
-          "hit_rate": 0.445,
-          "avg_return_pct": -1.81,
-          "hit_rate_net": 0.439,
-          "avg_return_net_pct": -2.31
-        },
-        "5d": {
-          "evaluated": 154,
-          "hit_rate": 0.519,
-          "avg_return_pct": -1.4,
-          "hit_rate_net": 0.494,
-          "avg_return_net_pct": -1.9
+          "evaluated": 336,
+          "hit_rate": 0.61,
+          "avg_return_pct": 3.95,
+          "hit_rate_net": 0.571,
+          "avg_return_net_pct": 3.45
         }
       }
     },
     "catalyst": {
-      "count": 69,
+      "count": 68,
       "direction_basis": "move",
       "horizons": {
         "1d": {
-          "evaluated": 69,
-          "hit_rate": 0.623,
-          "avg_return_pct": 2.87,
-          "hit_rate_net": 0.58,
-          "avg_return_net_pct": 2.37
+          "evaluated": 68,
+          "hit_rate": 0.632,
+          "avg_return_pct": 2.92,
+          "hit_rate_net": 0.588,
+          "avg_return_net_pct": 2.42
         },
         "3d": {
-          "evaluated": 68,
-          "hit_rate": 0.588,
-          "avg_return_pct": 2.72,
-          "hit_rate_net": 0.559,
-          "avg_return_net_pct": 2.22
+          "evaluated": 67,
+          "hit_rate": 0.597,
+          "avg_return_pct": 2.76,
+          "hit_rate_net": 0.567,
+          "avg_return_net_pct": 2.26
         },
         "5d": {
-          "evaluated": 60,
-          "hit_rate": 0.55,
-          "avg_return_pct": 2.0,
-          "hit_rate_net": 0.55,
-          "avg_return_net_pct": 1.5
+          "evaluated": 59,
+          "hit_rate": 0.559,
+          "avg_return_pct": 2.12,
+          "hit_rate_net": 0.559,
+          "avg_return_net_pct": 1.62
+        }
+      }
+    },
+    "delta_new_top20": {
+      "count": 175,
+      "direction_basis": "move",
+      "horizons": {
+        "1d": {
+          "evaluated": 174,
+          "hit_rate": 0.466,
+          "avg_return_pct": -1.36,
+          "hit_rate_net": 0.454,
+          "avg_return_net_pct": -1.86
+        },
+        "3d": {
+          "evaluated": 174,
+          "hit_rate": 0.437,
+          "avg_return_pct": -1.82,
+          "hit_rate_net": 0.431,
+          "avg_return_net_pct": -2.32
+        },
+        "5d": {
+          "evaluated": 154,
+          "hit_rate": 0.519,
+          "avg_return_pct": -1.53,
+          "hit_rate_net": 0.494,
+          "avg_return_net_pct": -2.03
         }
       }
     },
     "serenity_match": {
-      "count": 1083,
+      "count": 1101,
       "direction_basis": "thesis",
       "horizons": {
         "1d": {
@@ -124,18 +124,18 @@
           "avg_return_net_pct": -0.58
         },
         "3d": {
-          "evaluated": 911,
-          "hit_rate": 0.557,
-          "avg_return_pct": 0.7,
-          "hit_rate_net": 0.519,
-          "avg_return_net_pct": 0.2
+          "evaluated": 971,
+          "hit_rate": 0.538,
+          "avg_return_pct": 0.65,
+          "hit_rate_net": 0.496,
+          "avg_return_net_pct": 0.15
         },
         "5d": {
-          "evaluated": 700,
-          "hit_rate": 0.533,
-          "avg_return_pct": 1.07,
-          "hit_rate_net": 0.493,
-          "avg_return_net_pct": 0.57
+          "evaluated": 750,
+          "hit_rate": 0.524,
+          "avg_return_pct": 1.01,
+          "hit_rate_net": 0.487,
+          "avg_return_net_pct": 0.51
         }
       }
     },
@@ -151,11 +151,11 @@
           "avg_return_net_pct": 1.07
         },
         "3d": {
-          "evaluated": 20,
-          "hit_rate": 0.55,
-          "avg_return_pct": 0.61,
-          "hit_rate_net": 0.45,
-          "avg_return_net_pct": 0.11
+          "evaluated": 21,
+          "hit_rate": 0.524,
+          "avg_return_pct": 0.58,
+          "hit_rate_net": 0.429,
+          "avg_return_net_pct": 0.08
         },
         "5d": {
           "evaluated": 12,

@@ -1,119 +1,194 @@
 {
-  "generated_at": "2026-06-21T15:50:53.492298-04:00",
-  "ticker_news": {
-    "INTC": [
-      {
-        "id": "b276064e2b77c295",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "NVIDIA Stock Has Slipped By 10% From YTD High As Pros Predict 46% Jump",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005608/nvidia-stock-has-slipped-by-10-from-ytd-high-as-pros-predict-46-jump",
-        "published_at": "2026-06-21T18:31:10+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "nvda_analyst_price_target_46pct",
-        "tickers_mentioned": [
-          "NVDA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "981e58e16d2d3466",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "DRAM ETF Assets Hit $21 Billion AUM, But Key Risks May Lead To A Reversal",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005624/dram-etf-assets-hit-21-billion-aum-but-key-risks-may-lead-to-a-reversal",
-        "published_at": "2026-06-21T18:40:54+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dram_etf_21b_aum_risks",
-        "tickers_mentioned": [
-          "SNDK",
-          "MU"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b51cd88582a9ff1c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Top Three Catalysts For Dow, Nasdaq 100, and S&P 500 This Week",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005536/top-three-catalysts-for-dow-nasdaq-100-and-sp-500-this-week",
-        "published_at": "2026-06-21T17:51:27+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "top_catalysts_week_dow_nasdaq_sp500",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "95bd8d8094482a1b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Top Four S&P 500 Stocks To Watch Next Week: MU, CCL, FDX, PAYX",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005355/top-four-sp-500-stocks-to-watch-next-week-mu-ccl-fdx-payx",
-        "published_at": "2026-06-21T15:01:10+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "top_sp500_stocks_watch_next_week",
-        "tickers_mentioned": [
-          "CCL",
-          "FDX",
-          "PAYX"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "981e58e16d2d3466",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "DRAM ETF Assets Hit $21 Billion AUM, But Key Risks May Lead To A Reversal",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005624/dram-etf-assets-hit-21-billion-aum-but-key-risks-may-lead-to-a-reversal",
-        "published_at": "2026-06-21T18:40:54+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dram_etf_21b_aum_risks",
-        "tickers_mentioned": [
-          "SNDK",
-          "MU"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "WDC": [
-      {
-        "id": "981e58e16d2d3466",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WDC",
-        "scope": "ticker",
-        "title": "DRAM ETF Assets Hit $21 Billion AUM, But Key Risks May Lead To A Reversal",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60005624/dram-etf-assets-hit-21-billion-aum-but-key-risks-may-lead-to-a-reversal",
-        "published_at": "2026-06-21T18:40:54+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "dram_etf_21b_aum_risks",
-        "tickers_mentioned": [
-          "SNDK",
-          "MU"
-        ],
-        "route_to_synthesis": false
-      }
-    ]
-  },
-  "macro_events": []
+  "generated_at": "2026-06-22T00:57:49.665885-04:00",
+  "ticker_news": {},
+  "macro_events": [
+    {
+      "event_summary": "U.S. and Iran reach a roadmap for a final nuclear/sanctions deal and agree to wind down military operations in Lebanon, signaling major Middle East de-escalation.",
+      "primary_drivers": [
+        "Middle East geopolitical risk premium collapse lowers crude oil prices",
+        "Potential return of Iranian oil supply (~1-1.5 mb/d) to global markets if sanctions ease",
+        "Reduced defense spending urgency and lower demand for munitions/missile defense"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LUV",
+          "rationale": "Domestic US airline with no fuel hedging program; jet fuel is ~25-30% of operating costs. A sharp drop in crude from removal of Iran risk premium and potential supply return flows directly to margin expansion.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Large fuel cost exposure (~20%+ of opex) and owns Monroe refinery, but net beneficiary of lower crude. Also benefits from improved international travel sentiment to Middle East/Europe corridors.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with Mediterranean itineraries directly affected by Middle East tensions; bunker fuel is a major cost. De-escalation reopens Eastern Med routes and lowers fuel bill simultaneously.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Commodity chemicals producer with naphtha/ethane feedstock costs tied to oil. Lower crude compresses input costs while demand sentiment improves on lower recession-via-oil-spike risk.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Diesel/transportation costs are a meaningful component of retail logistics; lower oil supports consumer discretionary income and reduces freight cost pressure on grocery margins.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Integrated major with upstream production levered to Brent crude price. A collapse in geopolitical risk premium plus potential 1+ mb/d Iranian barrels returning to market directly compresses realized prices and upstream earnings.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US E&P with highest oil-price beta among large caps and significant debt load; earnings and FCF are extremely sensitive to a $5-10 drop in WTI from risk premium unwind.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Prime contractor on PAC-3, THAAD missile defense and Hellfire \u2014 systems with surging demand from Middle East conflicts. De-escalation in Lebanon reduces near-term foreign military sales urgency and replenishment orders.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Major supplier of Patriot interceptors and Stinger missiles consumed/ordered during Middle East operations. Reduced regional kinetic activity weakens the FY26+ munitions reorder cycle thesis.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "Heavy exposure to missile defense and munitions tied to Israel/Gulf customers. Lebanon de-escalation reduces urgency of supplemental defense appropriations that have been a tailwind.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services revenue tracks E&P capex, which is highly sensitive to oil price. Sustained crude downside from Iran supply return cuts into international drilling activity guidance.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Apache has direct Egyptian production exposure and high oil-price beta; loses on both lower realized prices and removal of any Egypt geopolitical premium.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "us_iran_roadmap_lebanon_ceasefire",
+      "source_news_ids": [
+        "7a3f8d193c39d63f"
+      ],
+      "headlines": [
+        "U.S., Iran agree on roadmap for final deal and plan to end military operations in Lebanon"
+      ]
+    },
+    {
+      "event_summary": "China imposed trade curbs (export controls and procurement exclusions) on dozens of US firms in retaliation for the Pentagon's blacklist of Chinese companies.",
+      "primary_drivers": [
+        "Loss of China revenue/market access for targeted US firms",
+        "Escalation of US-China decoupling boosting domestic/allied substitutes",
+        "Rare earth and critical input supply risk to US defense and tech supply chains"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MP",
+          "rationale": "MP Materials is the primary US-listed rare earth miner; any Chinese restriction on critical minerals procurement/exports directly elevates domestic supply value. Defense contracts and DoD funding accelerate on each escalation.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "USAR",
+          "rationale": "USA Rare Earth \u2014 pure-play domestic rare earth and magnet supply chain story; benefits from any narrative of China weaponizing critical mineral exports.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin has near-zero China revenue exposure but is a Pentagon prime contractor; escalation reinforces sustained defense budget tailwind and onshoring of defense supply chain.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Palantir's growth thesis is tied to Western defense/intel decoupling from China; geopolitical escalation reinforces narrative and government deal flow.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "TSM",
+          "rationale": "Taiwan Semi benefits at the margin as US firms restricted from China procurement seek non-Chinese foundry capacity, though TSM itself has China customer exposure \u2014 net positive on substitution.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "BA",
+          "rationale": "Boeing is a perennial top target in US-China retaliation cycles; China is a major commercial aircraft customer and procurement exclusion or order delays directly hit backlog and deliveries.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Raytheon has historically appeared on Chinese unreliable entity / sanctions lists due to Taiwan arms sales; procurement exclusions remove any residual China civil aerospace (Collins/Pratt) revenue.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "GD",
+          "rationale": "General Dynamics (Gulfstream business jets and defense) faces direct China procurement bans given its defense-Taiwan exposure profile \u2014 Gulfstream loses HNW China buyers.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "QCOM",
+          "rationale": "Qualcomm derives ~45-60% of revenue from China (Xiaomi, Oppo, Vivo); any export control retaliation or Chinese unreliable entity designation directly threatens licensing and chip sales.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TSLA",
+          "rationale": "Tesla has ~20% revenue from China (Shanghai Gigafactory + China sales); broad retaliation environment risks consumer backlash and regulatory friction even if not directly named.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials has significant China semicap revenue exposure; tit-for-tat export controls expand China's 'unreliable entity' procurement exclusions to US semicap equipment vendors.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CAT",
+          "rationale": "Caterpillar's China construction equipment sales are vulnerable to procurement exclusions and SOE buyer pressure during retaliation cycles.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HON",
+          "rationale": "Honeywell has aerospace and industrial automation exposure to China and has been named in prior Chinese unreliable entity actions tied to Taiwan defense sales.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "china_trade_curbs_us_pentagon_blacklist",
+      "source_news_ids": [
+        "3faf81d1de179164"
+      ],
+      "headlines": [
+        "China imposes trade curbs on dozens of U.S. firms in retaliation for Pentagon blacklist"
+      ]
+    }
+  ]
 }
