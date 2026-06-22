@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T09:42:12.946212-04:00",
+  "generated_at": "2026-06-22T14:18:32.816665-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizons": [
@@ -8,7 +8,7 @@
     "3d"
   ],
   "horizon_note": "0d = entry-day close; graded against the settled daily close",
-  "total_calls": 29,
+  "total_calls": 56,
   "untracked_count": 0,
   "fired_vs_control_edge_net": {
     "0d": 0.26,
@@ -17,7 +17,7 @@
   },
   "by_fired": {
     "fired": {
-      "count": 5,
+      "count": 10,
       "horizons": {
         "0d": {
           "evaluated": 5,
@@ -43,7 +43,7 @@
       }
     },
     "control": {
-      "count": 24,
+      "count": 46,
       "horizons": {
         "0d": {
           "evaluated": 24,
@@ -71,7 +71,7 @@
   },
   "by_direction": {
     "long": {
-      "count": 5,
+      "count": 10,
       "horizons": {
         "0d": {
           "evaluated": 5,
@@ -125,7 +125,7 @@
       }
     },
     "5-8": {
-      "count": 2,
+      "count": 5,
       "horizons": {
         "0d": {
           "evaluated": 2,
@@ -133,6 +133,32 @@
           "avg_return_pct": 1.03,
           "hit_rate_net": 1.0,
           "avg_return_net_pct": 0.53
+        },
+        "1d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        },
+        "3d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
+        }
+      }
+    },
+    "3-5": {
+      "count": 2,
+      "horizons": {
+        "0d": {
+          "evaluated": 0,
+          "hit_rate": null,
+          "avg_return_pct": null,
+          "hit_rate_net": null,
+          "avg_return_net_pct": null
         },
         "1d": {
           "evaluated": 0,

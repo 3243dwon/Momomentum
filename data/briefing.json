@@ -1,55 +1,63 @@
 {
-  "generated_at": "2026-06-22T09:38:26.729081-04:00",
+  "generated_at": "2026-06-22T14:14:17.295492-04:00",
   "window": "RTH",
-  "headline": "Risk-on holds \u2014 QQQ +0.72%, VXX stress low; NVO lone desk long, quarter-size toe-hold only",
+  "headline": "Risk-on intact but tape fading; ARDX cleanest desk take, DFTX +54% leads movers on 4\u00d7 vol",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.41% above 50d, QQQ +0.72%, VXX stress ratio 0.91 \u2014 tape constructive, low urgency to chase."
+    "line": "SPY -0.22% / QQQ -0.16%, both above 50d; VXX stress 0.92 \u2014 subdued vol. Regime holds but intraday drift is a headwind for entries."
   },
   "actions": [
     {
-      "ticker": "NVO",
+      "ticker": "ARDX",
       "direction": "long",
-      "entry": 44.91,
-      "stop": 42.76,
-      "target": 49.21,
-      "line": "Toe-hold long \u2014 risk-on regime aligned, but signal/research skeptical; quarter size only. R:R ~2:1."
+      "entry": 6.37,
+      "stop": 6.19,
+      "target": 6.73,
+      "line": "Cleanest technicals in cohort, no veto, low risk \u2014 half size. R/R ~2:1."
+    },
+    {
+      "ticker": "SGHC",
+      "direction": "long",
+      "entry": 13.81,
+      "stop": 13.51,
+      "target": 14.4,
+      "line": "Clean risk in risk-on regime, but weak 5d momentum keeps conviction low \u2014 quarter size only."
     }
   ],
   "watch": [
     {
       "ticker": "DFTX",
-      "type": "catalyst",
-      "line": "+52.3% on positive Phase 3 data; rel-vol only 0.62 and overbought \u2014 wait for vol confirmation before any interest."
+      "type": "mover",
+      "line": "+53.8% on 4.18\u00d7 rel vol, overbought flags \u2014 watch for fade/reversal setup."
     },
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "+9.38% big move, low rel-vol 0.15 \u2014 AI server theme, watch for vol pickup."
+      "line": "+19.2% big move, vol only 1.39\u00d7 \u2014 check catalyst; AI-server names running."
     },
     {
-      "ticker": "DELL",
+      "ticker": "COHR",
       "type": "mover",
-      "line": "+8.08% sympathetic to SMCI/AI infra theme; rel-vol 0.05 \u2014 thin tape, no chase."
+      "line": "+11.2% with MACD bullish cross, 1\u00d7 vol \u2014 coherent photonics/AI move, no overbought flag."
+    },
+    {
+      "ticker": "TE",
+      "type": "mover",
+      "line": "+16.1% big move, moderate vol \u2014 sector context unclear without catalyst; monitor."
     },
     {
       "ticker": "KEEL",
       "type": "mover",
-      "line": "+13.24%, MACD bullish cross, but rel-vol 0.18 and overbought \u2014 wait for pullback setup."
-    },
-    {
-      "ticker": "SPCE",
-      "type": "mover",
-      "line": "-9.41% big flush, rel-vol near zero \u2014 no catalyst found, avoid."
+      "line": "+11.5% MACD bullish, overbought \u2014 momentum real but stretched; wait for pullback."
     }
   ],
   "changed": [
-    "Prior desk longs MRVL, AU, FULC replaced by single NVO quarter-size position",
-    "QQQ momentum cooled sharply: +0.72% vs prior +2.4%",
-    "Ripple and macro event queues now empty"
+    "Desk leadership rotated: NVO replaced by ARDX (half-size, higher conviction) + SGHC (quarter-size)",
+    "QQQ flipped from +0.72% to -0.16% \u2014 intraday tape softening",
+    "DFTX +54% on 4\u00d7 vol is new dominant mover this scan"
   ],
   "caveats": [
-    "RTH scan as of 09:38 ET \u2014 prices and levels are 22+ minutes stale from open; fills on NVO may differ materially.",
-    "DFTX and KEEL moves are high-% but both show sub-0.2 rel-volume \u2014 size and conviction signals are weak; treat as news-driven noise until volume confirms."
+    "RTH scan as of 14:14 ET 2026-06-22; prices may be stale by minutes \u2014 verify quotes before entry.",
+    "Both desk takes are small-size with below-average conviction; no catalysts or macro events are flagged to support a vol expansion thesis."
   ]
 }
