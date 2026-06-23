@@ -1,63 +1,71 @@
 {
-  "generated_at": "2026-06-23T13:20:53.288388-04:00",
-  "window": "RTH",
-  "headline": "Semi flush deepens: MU -11%, SNDK -13%, QQQ -2.6% \u2014 desk pivots to defensive longs CWAN & DHC",
+  "generated_at": "2026-06-23T16:10:51.953455-04:00",
+  "window": "AH_POST",
+  "headline": "Semi rout extends (MU -13%, SNDK -14%, QQQ -3.3%) \u2014 desk rotates to JNJ, CNP, PNC quarter-size longs",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.89% but above 50d; QQQ -2.56% leading lower. VXX stress ratio 0.97 \u2014 vol not spiking yet. Semi sector wrecked; entries risk slippage."
+    "line": "Regime says risk-on but QQQ -3.3% / SPY -1.4% tells a different story; VXX stress near flat (0.98). Semi carnage dominates tape \u2014 entries on"
   },
   "actions": [
     {
-      "ticker": "CWAN",
+      "ticker": "JNJ",
       "direction": "long",
-      "entry": 24.55,
-      "stop": 24.36,
-      "target": 24.94,
-      "line": "Clean momentum setup; Signal+Risk aligned, Research skeptical low-conviction. Half size."
+      "entry": 239.2,
+      "stop": 235.21,
+      "target": 247.19,
+      "line": "Quarter-size long on 3.4% spike \u2014 split conviction, no hard catalyst, but risk setup supportive."
     },
     {
-      "ticker": "DHC",
+      "ticker": "CNP",
       "direction": "long",
-      "entry": 9.15,
-      "stop": 9.02,
-      "target": 9.41,
-      "line": "Signal+Risk aligned; Research dissents at conviction 2 \u2014 not a veto. Half size."
+      "entry": 43.52,
+      "stop": 43.14,
+      "target": 44.27,
+      "line": "Quarter-size utility long; signal agrees but risk-on regime limits conviction \u2014 tight 38\u00a2 stop."
+    },
+    {
+      "ticker": "PNC",
+      "direction": "long",
+      "entry": 238.7,
+      "stop": 230.17,
+      "target": 255.76,
+      "line": "Quarter-size financials momentum play; elevated RSI + rate risk cap size \u2014 $17 target vs $8.5 stop."
     }
   ],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "-22.76%, rel vol 2.73x \u2014 unusual volume + MACD bearish. Biggest flush with real conviction behind it."
+      "line": "PRIM -21.5%, rel-vol 4.7x, MACD bearish \u2014 biggest AH flush, watch for continuation or dead-cat setup."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "-11.13% continuation from prior semi flush \u2014 watch for dead-cat or capitulation level."
+      "line": "MU -13.2% extending yesterday's -11% \u2014 semi sector capitulation or more to go."
     },
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "-12.97% on low rel vol (0.84x) \u2014 big move without volume support, fade setup developing."
-    },
-    {
-      "ticker": "VRT",
-      "type": "mover",
-      "line": "-9.83% on 1.21x rel vol \u2014 elevated volume on sell-off warrants monitoring for follow-through."
+      "line": "SNDK -13.7% in sympathy with MU \u2014 storage/NAND names remain under pressure."
     },
     {
       "ticker": "INFQ",
       "type": "mover",
-      "line": "+12.78% only green large mover today \u2014 potential counter-trend name if tape stabilizes."
+      "line": "INFQ +12.4% lone green outlier on 1.7x volume \u2014 watch for follow-through catalyst."
+    },
+    {
+      "ticker": "AXTI",
+      "type": "mover",
+      "line": "AXTI -15.7% big move, no catalyst flagged \u2014 potential compounding semi/materials washout."
     }
   ],
   "changed": [
-    "Semi flush extends \u2014 MU remains in freefall, SNDK and AXTI join the carnage",
-    "Previous macro/jobs catalyst not repeated; no new catalysts flagged this scan",
-    "Desk shifts to non-semi defensive longs CWAN and DHC vs prior scan's risk-off tape"
+    "Desk dropped CWAN & DHC; new takes are JNJ, CNP, PNC \u2014 rotation from prior defensive picks to healthcare/utility/financials.",
+    "Semi rout deepened: MU now -13.2% (was -11%), SNDK -13.7% (was -13%), QQQ -3.3% (was -2.6%).",
+    "PRIM -21.5% on 4.7x volume is new top mover \u2014 not present in prior scan."
   ],
   "caveats": [
-    "RTH scan as of 13:20 ET \u2014 prices may be stale by minutes; verify quotes before entry, particularly on fast-moving semi names.",
-    "Regime labeled risk_on despite QQQ -2.56% intraday \u2014 SPY 200d data absent; regime read may lag actual tape stress."
+    "AH_POST window (scan ~16:10 ET 2026-06-23) \u2014 prices are post-close estimates; spreads wide, fills may differ significantly at next open.",
+    "Regime label is risk_on despite broad index selling; VXX stress ratio 0.98 (near neutral) \u2014 regime signal may lag intraday reality. All three desk takes are quarter-size reflecting low conviction."
   ]
 }
