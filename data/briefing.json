@@ -1,70 +1,61 @@
 {
-  "generated_at": "2026-06-22T19:23:16.779412-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on intact; desk adds ARDX/OCUL to WMB/SW book \u2014 DFTX +50% still leads on 5x vol",
+  "generated_at": "2026-06-22T23:58:40.187991-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on holds; desk stays WMB + SW \u2014 DFTX +50% on 5x vol still dominates overnight tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.33% / QQQ -0.12%, both above 50d. VXX stress 0.93 \u2014 vol suppressed, regime holds. AH drift, thin tape."
+    "line": "SPY -0.33% / QQQ -0.12% but both regime-positive; VXX stress 0.93 \u2014 vol suppressed, pullback shallow, entries favorable."
   },
   "actions": [
     {
       "ticker": "WMB",
       "direction": "long",
       "entry": 74.95,
-      "stop": 74.21,
-      "target": 76.43,
-      "line": "Half size. Early momentum, clean risk. Both neutral advisors, no veto. R/R ~2:1."
+      "stop": 70.71,
+      "target": 83.43,
+      "line": "Half size; signal+risk green, research dissents \u2014 stop well-defined, $8.48 R target."
     },
     {
       "ticker": "SW",
       "direction": "long",
       "entry": 45.41,
-      "stop": 44.67,
-      "target": 46.9,
-      "line": "Half size. Signal agrees strongly, no veto, clean setup. R/R ~2:1."
-    },
-    {
-      "ticker": "ARDX",
-      "direction": "long",
-      "entry": 6.36,
-      "stop": 6.23,
-      "target": 6.62,
-      "line": "Quarter size only. +11.68% 5d raises late-entry risk; medium severity, no veto."
+      "stop": 42.86,
+      "target": 50.52,
+      "line": "Quarter size; RSI 64 slightly elevated, research dissents \u2014 tight $2.55 stop, $5.11 target."
     }
   ],
   "watch": [
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+50.05% on 5.45x vol, overbought flag \u2014 watching for fade or continuation setup."
+      "line": "+50% on 5.45x rel vol, overbought \u2014 extended, watch for fade or continuation trigger."
     },
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "+15.67% on 1.84x vol, big move \u2014 no desk take yet, monitor for pullback entry."
+      "line": "+15.7% on 1.84x vol \u2014 big move, no catalyst flagged; monitor for follow-through."
     },
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+13.94% on 2.13x vol, overbought \u2014 unusual volume confirms interest, no setup yet."
+      "line": "+13.9% unusual vol, overbought \u2014 biotech spike, no catalyst; fade risk elevated."
     },
     {
       "ticker": "VIAV",
       "type": "mover",
-      "line": "+12.12% on 1.91x vol \u2014 clean big move, no overbought flag, worth tracking for follow-through."
+      "line": "+12.1% on 1.91x vol \u2014 clean big move, no overbought flag yet; level to watch."
     },
     {
       "ticker": "SPCE",
       "type": "mover",
-      "line": "-10.67% on below-avg vol \u2014 low conviction flush, watch for stabilization."
+      "line": "-10.7% on below-avg vol \u2014 low-conviction dump; watch for stabilization."
     }
   ],
   "changed": [
-    "Desk dropped NVO and TXN from book; added ARDX (quarter) and OCUL (quarter)",
-    "DFTX +50% on 5x vol persists for second consecutive scan \u2014 no fade yet"
+    "ARDX and OCUL no longer in the book \u2014 dropped from desk takes this scan."
   ],
   "caveats": [
-    "AH_POST scan (2026-06-22 ~19:23 ET) \u2014 prices as of scan time, AH liquidity thin, levels may gap at next RTH open.",
-    "Four open longs now on book; ARDX and OCUL are quarter-size for risk reason \u2014 do not size up without re-eval at open."
+    "OVERNIGHT scan as of 2026-06-22 23:58 ET \u2014 prices stale until pre-market opens; gaps at open may invalidate levels.",
+    "Research dissents on both active takes (WMB, SW) \u2014 conviction is signal/risk-driven, not fundamental consensus."
   ]
 }
