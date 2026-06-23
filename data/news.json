@@ -1,72 +1,273 @@
 {
-  "generated_at": "2026-06-23T03:55:48.750291-04:00",
+  "generated_at": "2026-06-23T07:21:33.328520-04:00",
   "ticker_news": {
-    "MU": [
+    "INTC": [
       {
-        "id": "c243c528a02dca56",
+        "id": "73eff75e10f5b8f3",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "Micron Announces Strategic Agreement With Anthropic Spanning Memory, Storage AI Architecture And Enterprise Claude Adoption",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60034685/micron-and-anthropic-strike-strategic-ai-partnership-spanning-memory-storage-and-claude",
-        "published_at": "2026-06-23T07:14:51+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "micron_anthropic_strategic_agreement",
-        "tickers_mentioned": [
-          "ANTHROPIC"
-        ],
-        "route_to_synthesis": true
+        "title": "Why Is Intel Stock Falling Tuesday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60036877/why-is-intel-stock-falling-tuesday",
+        "published_at": "2026-06-23T10:55:46+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_falling_june23",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
       },
       {
-        "id": "bd44144f48931f0a",
+        "id": "3a4c09d6030a111f",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "INTC",
         "scope": "ticker",
-        "title": "Nasdaq Dips Over 1% As Tech Stocks Fall: Investor Sentiment Improves, Greed Index Remains In \u2018Fear\u2019 Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/60034272/nasdaq-dips-over-1-as-tech-stocks-fall-investor-sentiment-improves-greed-index-remains-in-fear-zone",
-        "published_at": "2026-06-23T06:14:02+00:00",
-        "type": "macro_econ",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60035209/sp500-june-23-open-up-or-down-polymarket-tech-selloff-fed-inflation",
+        "published_at": "2026-06-23T08:44:16+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "nasdaq_tech_selloff_june23",
+        "dedup_group": "sp500_market_open_preview",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "PRIM": [
+    "GOOG": [
       {
-        "id": "109466e47cda460d",
+        "id": "7de9102e2e0036ea",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PRIM",
+        "ticker": "GOOG",
         "scope": "ticker",
-        "title": "Carnival, Primoris Services And 3 Stocks To Watch Heading Into Tuesday",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60034113/carnival-primoris-services-and-3-stocks-to-watch-heading-into-tuesday",
-        "published_at": "2026-06-23T05:30:40+00:00",
+        "title": "Tech Investor Dan Niles Cuts Back On Mag7 Bets Despite Massive Gains, Flags 'Speed Bump' Ahead: 'What Does September Guidance Look Like?'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60036876/tech-investor-dan-niles-cuts-back-on-mag7-bets-despite-massive-gains-flags-speed-bump-ahead-what-does-september-guidance-look-like",
+        "published_at": "2026-06-23T10:55:43+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dan_niles_cuts_mag7_positions",
+        "tickers_mentioned": [
+          "MU",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3a4c09d6030a111f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOG",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60035209/sp500-june-23-open-up-or-down-polymarket-tech-selloff-fed-inflation",
+        "published_at": "2026-06-23T08:44:16+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "stocks_to_watch_carousel",
+        "dedup_group": "sp500_market_open_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "GOOGL": [
+      {
+        "id": "7de9102e2e0036ea",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOGL",
+        "scope": "ticker",
+        "title": "Tech Investor Dan Niles Cuts Back On Mag7 Bets Despite Massive Gains, Flags 'Speed Bump' Ahead: 'What Does September Guidance Look Like?'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60036876/tech-investor-dan-niles-cuts-back-on-mag7-bets-despite-massive-gains-flags-speed-bump-ahead-what-does-september-guidance-look-like",
+        "published_at": "2026-06-23T10:55:43+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dan_niles_cuts_mag7_positions",
         "tickers_mentioned": [
-          "CCL"
+          "MU",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3a4c09d6030a111f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOGL",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60035209/sp500-june-23-open-up-or-down-polymarket-tech-selloff-fed-inflation",
+        "published_at": "2026-06-23T08:44:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "7de9102e2e0036ea",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Tech Investor Dan Niles Cuts Back On Mag7 Bets Despite Massive Gains, Flags 'Speed Bump' Ahead: 'What Does September Guidance Look Like?'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60036876/tech-investor-dan-niles-cuts-back-on-mag7-bets-despite-massive-gains-flags-speed-bump-ahead-what-does-september-guidance-look-like",
+        "published_at": "2026-06-23T10:55:43+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dan_niles_cuts_mag7_positions",
+        "tickers_mentioned": [
+          "MU",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3a4c09d6030a111f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60035209/sp500-june-23-open-up-or-down-polymarket-tech-selloff-fed-inflation",
+        "published_at": "2026-06-23T08:44:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_market_open_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "11e4bf5d7720fdfb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Analyzing Micron Technology In Comparison To Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+        "url": "https://www.benzinga.com/news/26/06/60035764/analyzing-micron-technology-comparison-competitors-semiconductors-amp-semiconductor-equipment-indust",
+        "published_at": "2026-06-23T09:58:35+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mu_competitor_analysis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "106b9697fcf3f7aa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Why Is Micron Technology Stock Falling Tuesday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60035650/why-is-micron-technology-stock-falling-tuesday",
+        "published_at": "2026-06-23T09:46:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mu_intraday_move_explainer",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DELL": [
+      {
+        "id": "904c2fd57991b6bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Trump Admits Regret Over Selling IBM Stock Too Soon After Praising CEO For 'Leading Fab' In US Chip Push\u2014 'Not A Good Move'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60035619/trump-admits-regret-over-selling-ibm-stock-too-soon-after-praising-ceo-for-leading-fab-in-us-chip-push-not-a-good-move",
+        "published_at": "2026-06-23T09:39:47+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "trump_ibm_stock_regret",
+        "tickers_mentioned": [
+          "IBM"
         ],
         "route_to_synthesis": false
       }
     ],
     "PLTR": [
       {
-        "id": "dbf4ff3ff5b92921",
+        "id": "a3a134ad505e729c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "PLTR",
         "scope": "ticker",
-        "title": "Peter Schiff Says Elon Musk Lost 'More Than' Warren Buffett Worth Of Fortune In One Day, But 'Don't Feel Sorry For Him': Here's Why",
-        "url": "https://www.benzinga.com/news/space/26/06/60033981/peter-schiff-says-elon-musk-lost-more-than-warren-buffetts-fortune-in-a-day",
-        "published_at": "2026-06-23T04:38:27+00:00",
+        "title": "Top 3 Tech Stocks You'll Regret Missing This Quarter",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60036204/top-3-tech-stocks-youll-regret-missing-this-quarter",
+        "published_at": "2026-06-23T10:14:05+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "schiff_musk_buffett_opinion",
+        "dedup_group": "pltr_quarterly_watchlist",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PRIM": [
+      {
+        "id": "9d08fdd7df23cc1e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PRIM",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones, S&P 500 Future Drop Despite Trump's 60-Day Waiver On Iran Sanctions\u2014Infleqtion, SpaceX, Primoris In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60035618/stock-market-today-dow-jones-sp-500-future-drop-despite-trumps-60-day-waiver-on-iran-sanctions-infleqtion-spacex-primoris-in-focus",
+        "published_at": "2026-06-23T09:39:29+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_iran_sanctions_60day_waiver",
+        "tickers_mentioned": [
+          "PRIM"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e609e42b0a30b348",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PRIM",
+        "scope": "ticker",
+        "title": "Why Tianci International Shares Are Trading Higher By Around 88%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/06/60035542/why-tianci-international-shares-are-trading-higher-by-around-88-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-23T09:22:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "premarket_movers_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSEM": [
+      {
+        "id": "e609e42b0a30b348",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSEM",
+        "scope": "ticker",
+        "title": "Why Tianci International Shares Are Trading Higher By Around 88%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/06/60035542/why-tianci-international-shares-are-trading-higher-by-around-88-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-23T09:22:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "premarket_movers_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "VRT": [
+      {
+        "id": "d040b3730efaa0af",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "Vertiv Shares Close Nearly 4% Higher After Key Trading Signal",
+        "url": "https://www.benzinga.com/Opinion/26/06/60036183/vertiv-shares-close-nearly-4-percent-higher-after-key-trading-signal",
+        "published_at": "2026-06-23T10:13:14+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "vrt_trading_signal_close_up_jun23",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
