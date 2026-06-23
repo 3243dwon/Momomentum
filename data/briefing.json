@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-22T23:58:40.187991-04:00",
+  "generated_at": "2026-06-23T03:55:48.750291-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on holds; desk stays WMB + SW \u2014 DFTX +50% on 5x vol still dominates overnight tape",
+  "headline": "Risk-on intact; desk holds WMB + SW \u2014 SMCI +15.7% & ABSI +13.9% join DFTX atop overnight tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.33% / QQQ -0.12% but both regime-positive; VXX stress 0.93 \u2014 vol suppressed, pullback shallow, entries favorable."
+    "line": "SPY -0.33% / QQQ -0.12% but both above 50d; VXX stress 0.93 \u2014 low vol, shallow dip, entries viable."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 74.95,
       "stop": 70.71,
       "target": 83.43,
-      "line": "Half size; signal+risk green, research dissents \u2014 stop well-defined, $8.48 R target."
+      "line": "Half size. Signal+Risk green; Research dissents but regime clean, stop well-defined. R/R ~2:1."
     },
     {
       "ticker": "SW",
@@ -21,41 +21,41 @@
       "entry": 45.41,
       "stop": 42.86,
       "target": 50.52,
-      "line": "Quarter size; RSI 64 slightly elevated, research dissents \u2014 tight $2.55 stop, $5.11 target."
+      "line": "Quarter size. Signal+Risk aligned; Research dissents; RSI 64 slightly elevated \u2014 caution on sizing."
     }
   ],
   "watch": [
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+50% on 5.45x rel vol, overbought \u2014 extended, watch for fade or continuation trigger."
+      "line": "+50% on 5.45x vol, overbought flag \u2014 extended from entry; watch for RTH open continuation or fade."
     },
     {
       "ticker": "SMCI",
       "type": "mover",
-      "line": "+15.7% on 1.84x vol \u2014 big move, no catalyst flagged; monitor for follow-through."
+      "line": "+15.7% on 1.84x vol \u2014 no overbought flag yet; watch for setup on open."
     },
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+13.9% unusual vol, overbought \u2014 biotech spike, no catalyst; fade risk elevated."
+      "line": "+13.9% on 2.13x vol, overbought \u2014 high relative vol confirms interest, but extended."
     },
     {
       "ticker": "VIAV",
       "type": "mover",
-      "line": "+12.1% on 1.91x vol \u2014 clean big move, no overbought flag yet; level to watch."
+      "line": "+12.1% on 1.91x vol \u2014 clean big move, no overbought flag; worth watching for follow-through."
     },
     {
-      "ticker": "SPCE",
+      "ticker": "TE",
       "type": "mover",
-      "line": "-10.7% on below-avg vol \u2014 low-conviction dump; watch for stabilization."
+      "line": "+11.6% on 1.76x vol \u2014 no overbought flag; orderly move, monitor for RTH entry structure."
     }
   ],
   "changed": [
-    "ARDX and OCUL no longer in the book \u2014 dropped from desk takes this scan."
+    "SMCI +15.7% and ABSI +13.9% are new additions to overnight leadership alongside DFTX"
   ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-22 23:58 ET \u2014 prices stale until pre-market opens; gaps at open may invalidate levels.",
-    "Research dissents on both active takes (WMB, SW) \u2014 conviction is signal/risk-driven, not fundamental consensus."
+    "OVERNIGHT scan as of 03:55 ET 2026-06-23 \u2014 prices pre-market, may gap materially at RTH open.",
+    "No catalysts or macro events in this scan; movers lack confirmed drivers \u2014 fade risk elevated on overbought names."
   ]
 }
