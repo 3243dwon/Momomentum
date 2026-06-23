@@ -1,46 +1,63 @@
 {
-  "generated_at": "2026-06-23T10:56:54.091527-04:00",
+  "generated_at": "2026-06-23T13:20:53.288388-04:00",
   "window": "RTH",
-  "headline": "Semi/tech tape-wide flush \u2014 MU, QCOM, GLW all -10%+ as factory jobs hit crisis-era lows",
+  "headline": "Semi flush deepens: MU -11%, SNDK -13%, QQQ -2.6% \u2014 desk pivots to defensive longs CWAN & DHC",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.98% / QQQ -2.63%; regime still labeled risk_on but semis getting wrecked \u2014 VXX stress ratio 0.97 (muted panic), stay tight on entries"
+    "line": "SPY -0.89% but above 50d; QQQ -2.56% leading lower. VXX stress ratio 0.97 \u2014 vol not spiking yet. Semi sector wrecked; entries risk slippage."
   },
-  "actions": [],
+  "actions": [
+    {
+      "ticker": "CWAN",
+      "direction": "long",
+      "entry": 24.55,
+      "stop": 24.36,
+      "target": 24.94,
+      "line": "Clean momentum setup; Signal+Risk aligned, Research skeptical low-conviction. Half size."
+    },
+    {
+      "ticker": "DHC",
+      "direction": "long",
+      "entry": 9.15,
+      "stop": 9.02,
+      "target": 9.41,
+      "line": "Signal+Risk aligned; Research dissents at conviction 2 \u2014 not a veto. Half size."
+    }
+  ],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "Gap -25.8% on 1.72\u00d7 rel vol \u2014 only name with real volume behind the move; MACD bearish confirmed."
+      "line": "-22.76%, rel vol 2.73x \u2014 unusual volume + MACD bearish. Biggest flush with real conviction behind it."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "-10.2%, semi bellwether; factory job data accelerates demand-collapse thesis \u2014 watch for oversold bounce setup."
+      "line": "-11.13% continuation from prior semi flush \u2014 watch for dead-cat or capitulation level."
     },
     {
-      "ticker": "QCOM",
+      "ticker": "SNDK",
       "type": "mover",
-      "line": "-10.1%, low rel vol suggests distribution not panic \u2014 may have further to go."
-    },
-    {
-      "ticker": "GLW",
-      "type": "mover",
-      "line": "-10.3%; optical/fiber play dragged with semis \u2014 macro capex-cut narrative hits directly."
+      "line": "-12.97% on low rel vol (0.84x) \u2014 big move without volume support, fade setup developing."
     },
     {
       "ticker": "VRT",
-      "type": "macro",
-      "line": "-10.2%; data-center power infra name \u2014 capex contraction macro event a direct headwind, watch for stabilization level."
+      "type": "mover",
+      "line": "-9.83% on 1.21x rel vol \u2014 elevated volume on sell-off warrants monitoring for follow-through."
+    },
+    {
+      "ticker": "INFQ",
+      "type": "mover",
+      "line": "+12.78% only green large mover today \u2014 potential counter-trend name if tape stabilizes."
     }
   ],
   "changed": [
-    "Desk clears all positions \u2014 no takes this scan vs. ARDX + SW last briefing",
-    "Regime still risk_on but QQQ -2.63% and broad semi selloff contradicts label",
-    "Manufacturing jobs catalyst new \u2014 financial-crisis/COVID comp is a regime-level warning"
+    "Semi flush extends \u2014 MU remains in freefall, SNDK and AXTI join the carnage",
+    "Previous macro/jobs catalyst not repeated; no new catalysts flagged this scan",
+    "Desk shifts to non-semi defensive longs CWAN and DHC vs prior scan's risk-off tape"
   ],
   "caveats": [
-    "RTH scan as of 10:56 ET 2026-06-23; prices and levels reflect that moment \u2014 intraday moves may have extended materially.",
-    "No desk takes this scan; watch names are observational only. Semi flush on low rel vol (most names 0.4\u20130.56\u00d7) could mean move is not exhausted \u2014 no climax volume to fade against."
+    "RTH scan as of 13:20 ET \u2014 prices may be stale by minutes; verify quotes before entry, particularly on fast-moving semi names.",
+    "Regime labeled risk_on despite QQQ -2.56% intraday \u2014 SPY 200d data absent; regime read may lag actual tape stress."
   ]
 }
