@@ -1,71 +1,63 @@
 {
-  "generated_at": "2026-06-24T09:24:39.475191-04:00",
-  "window": "AH_PRE",
-  "headline": "Semis flush continues \u2014 MU -13%, SNDK -14%; PRIM -21% on vol spike; 3 longs held at reduced size",
+  "generated_at": "2026-06-24T12:24:19.046964-04:00",
+  "window": "RTH",
+  "headline": "Risk-on tape; TOST index add leads catalyst bench \u2014 2 longs on desk, ABSI/DFTX leading movers overbought",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.4%, QQQ -3.3%; VXX stress near flat (0.98) \u2014 tech leading lower, regime labeled risk_on but tape is risk_off; thin pre-mkt entries ri"
+    "line": "SPY +0.61% above 50d, QQQ +0.34%, VXX stress ratio 0.97 \u2014 low vol, trend intact; momentum entries favored."
   },
   "actions": [
     {
-      "ticker": "CWAN",
+      "ticker": "TOST",
       "direction": "long",
-      "entry": 24.55,
-      "stop": 24.36,
-      "target": 24.94,
-      "line": "Half size \u2014 bullish signal, low risk; research skepticism caps sizing. R/R 0.19 risk / 0.39 reward."
+      "entry": 26.18,
+      "stop": 25.29,
+      "target": 27.96,
+      "line": "S&P MidCap index add driving mechanical demand; signal agrees \u2014 quarter size on forced-buyer flow."
     },
     {
-      "ticker": "ANNX",
+      "ticker": "SHC",
       "direction": "long",
-      "entry": 5.28,
-      "stop": 4.86,
-      "target": 6.12,
-      "line": "Quarter size \u2014 no catalyst, extension risk; all desks neutral/cautious. R/R 0.42 risk / 0.84 reward."
-    },
-    {
-      "ticker": "IOVA",
-      "direction": "long",
-      "entry": 4.43,
-      "stop": 4.29,
-      "target": 4.71,
-      "line": "Quarter size \u2014 strong signal agree but 8.85% prior-day move demands smallest size. R/R 0.14 risk / 0.28 reward."
+      "entry": 16.52,
+      "stop": 16.27,
+      "target": 17.03,
+      "line": "Signal and risk aligned, clean momentum entry; research neutral, no opposition \u2014 half size."
     }
   ],
   "watch": [
     {
-      "ticker": "PRIM",
-      "type": "mover",
-      "line": "PRIM -21.5% on 4.7x relative volume + MACD bearish \u2014 investigate catalyst before fading or following."
-    },
-    {
-      "ticker": "AMAT",
-      "type": "ripple",
-      "line": "Bearish ripple from MU \u2014 memory capex read-through hits AMAT deposition/etch orders; not yet priced in."
-    },
-    {
-      "ticker": "ONTO",
-      "type": "ripple",
-      "line": "Bearish ripple from MU \u2014 HBM-levered metrology thesis under pressure if MU's AI-memory commentary disappointed."
-    },
-    {
       "ticker": "ABSI",
-      "type": "catalyst",
-      "line": "ABSI -12.4% on announced catalyst (details in alert); unusual for biotech \u2014 watch for follow-through or bounce setup."
+      "type": "mover",
+      "line": "+35% on 1.47x rel vol \u2014 overbought flag; watch for fade or continuation setup after consolidation."
     },
     {
-      "ticker": "MU",
+      "ticker": "DFTX",
       "type": "mover",
-      "line": "MU -13.2% driving semi sector flush; watch for stabilization level as anchor for AMAT/ONTO ripple timing."
+      "line": "+21% on 2.49x rel vol \u2014 highest volume mover on the board; overbought, needs base before entry."
+    },
+    {
+      "ticker": "RKT",
+      "type": "mover",
+      "line": "+13.3% on below-avg vol \u2014 no catalyst visible; move lacks conviction, monitor for volume confirmation."
+    },
+    {
+      "ticker": "GLW",
+      "type": "mover",
+      "line": "+10.9% on 1.13x rel vol \u2014 notable large-cap move; watch for follow-through."
+    },
+    {
+      "ticker": "NVTS",
+      "type": "mover",
+      "line": "-12.4% on low rel vol \u2014 supply-side pressure without panic volume; potential dead-cat or short setup later."
     }
   ],
   "changed": [
-    "PRIM added as high-priority mover watch \u2014 4.7x rel vol + 21% drop not present last scan",
-    "ABSI catalyst alert now explicit vs prior scan",
-    "Semi ripple risk (AMAT, ONTO) surfaced from MU flush"
+    "Previous scan flagged semis flush (MU, SNDK) and PRIM vol spike \u2014 those no longer lead; ABSI/DFTX now top movers",
+    "PRIM reversal: previously -21%, now +10.4%",
+    "Desk reduced from 3 longs (previous) to 2 longs this scan"
   ],
   "caveats": [
-    "AH/Pre-market window (scan 09:24 ET pre-open 2026-06-24) \u2014 prices as of scan time, spreads wide, fills uncertain at stated entries.",
-    "Regime reads risk_on structurally (SPY above 50d) but intraday tape is risk_off; all three longs are small/quarter size \u2014 sector headwind is real."
+    "RTH scan as of 12:24 ET 2026-06-24; prices and levels reflect that moment and may be stale intraday.",
+    "TOST entry mechanically driven by index rebalancing \u2014 forced-buyer demand can reverse sharply post-addition; desk already flagged quarter size."
   ]
 }
