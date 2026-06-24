@@ -1,37 +1,78 @@
 {
-  "generated_at": "2026-06-23T20:01:56.037858-04:00",
+  "generated_at": "2026-06-24T00:00:49.230543-04:00",
   "ticker_news": {
-    "TSLA": [
+    "MU": [
       {
-        "id": "0cd0b8a6d3e2bdae",
+        "id": "f850d881cfffd7f8",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "MU",
         "scope": "ticker",
-        "title": "If You Invested $1000 In Tesla Stock 10 Years Ago, You Would Have This Much Today",
-        "url": "https://www.benzinga.com/news/26/06/60060661/if-you-invested-1000-tesla-stock-10-years-ago-you-would-have-much-today",
-        "published_at": "2026-06-23T22:45:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_historical_returns_recap",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin Drop Further Amid Global Chip Sell-Off: Analyst Flags 'The Most Important Level' For BTC",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60061465/bitcoin-ethereum-xrp-dogecoin-drop-amid-chip-sell-off-analyst-flags-key-btc-level",
+        "published_at": "2026-06-24T02:12:12+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "crypto_selloff_chip_pressure_june2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "VSH": [
+    "MSTR": [
       {
-        "id": "e73b9bef30797c26",
+        "id": "f850d881cfffd7f8",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "VSH",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "$1000 Invested In Vishay Intertechnology 10 Years Ago Would Be Worth This Much Today",
-        "url": "https://www.benzinga.com/news/26/06/60060940/1000-invested-vishay-intertechnology-10-years-ago-would-be-worth-much-today",
-        "published_at": "2026-06-23T23:32:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "vsh_historical_returns_recap",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin Drop Further Amid Global Chip Sell-Off: Analyst Flags 'The Most Important Level' For BTC",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60061465/bitcoin-ethereum-xrp-dogecoin-drop-amid-chip-sell-off-analyst-flags-key-btc-level",
+        "published_at": "2026-06-24T02:12:12+00:00",
+        "type": "macro_commodity",
+        "impact": "medium",
+        "dedup_group": "crypto_selloff_chip_pressure_june2026",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSLA": [
+      {
+        "id": "c00bd1f254d0264e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Cathie Wood Goes On A Massive Shopping Spree: Ark Adds Tesla, Palantir, Cerebras, Amazon And Alphabet To The Cart",
+        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/60061670/cathie-wood-goes-on-a-massive-shopping-spree-ark-adds-tesla-palantir-cerebras-amazon-and-alphabet-to-the-cart",
+        "published_at": "2026-06-24T03:11:40+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ark_portfolio_activity_june2026",
+        "tickers_mentioned": [
+          "PLTR",
+          "CEREBS",
+          "AMZN",
+          "GOOGL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "4ba74969300a242c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Cerebras Systems, FedEx, Atlantic International, Backblaze And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60061358/cerebras-systems-fedex-atlantic-international-backblaze-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-24T01:39:06+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "investor_radar_recap_june2026",
+        "tickers_mentioned": [
+          "CEREBS",
+          "FDX",
+          "BLKB"
+        ],
         "route_to_synthesis": false
       }
     ]

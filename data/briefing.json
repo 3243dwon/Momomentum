@@ -1,45 +1,45 @@
 {
-  "generated_at": "2026-06-23T20:01:56.037858-04:00",
+  "generated_at": "2026-06-24T00:00:49.230543-04:00",
   "window": "OVERNIGHT",
-  "headline": "Semi/tech carnage extends overnight: MU -13%, SNDK -14%, QQQ -3.3%; no desk takes, nothing actionable yet",
+  "headline": "Broad overnight selloff deepens: PRIM -21%, semis/tech still bleeding, QQQ -3.3%; desk flat, nothing actionable",
   "market_state": {
     "regime": "risk_on",
-    "line": "Regime says risk_on but tape disagrees \u2014 SPY -1.4%, QQQ -3.3%, VXX stress ratio ~1.0; semis lead down, wait for stabilization before entries"
+    "line": "SPY -1.4% but still >50d MA; QQQ -3.3% leading pain; VXX ratio 0.98 \u2014 vol not spiking yet. Dip-buy setups need confirmation at open."
   },
   "actions": [],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "-21.5% on 4.7x rel vol + MACD bearish cross \u2014 highest-conviction breakdown on the board, watch for continuation or bounce setup at open."
+      "line": "-21.5% on 4.7x vol + MACD bearish \u2014 largest overnight mover, watch for dead-cat or flush continuation at open."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "-13.2% on elevated vol; semi bellwether move likely to set tone for chip complex at RTH open."
+      "line": "-13.2% \u2014 semi carnage persists from prior session; watch for capitulation level or sector stabilization."
     },
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "-13.7% alongside MU \u2014 storage semis in sync; watch for capitulation wick or dead-cat at key levels."
+      "line": "-13.7% \u2014 running alongside MU; semi sector still in distribution, no floor confirmed."
+    },
+    {
+      "ticker": "AXTI",
+      "type": "mover",
+      "line": "-15.7% big move, moderate vol \u2014 no catalyst flagged; check for news pre-open."
     },
     {
       "ticker": "INFQ",
       "type": "mover",
-      "line": "Only notable green: +12.4% on 1.7x vol \u2014 lone momentum name in a sea of red, needs catalyst confirmation."
-    },
-    {
-      "ticker": "FLNC",
-      "type": "mover",
-      "line": "-15.6% energy storage name; low rel vol (1.07x) suggests thin overnight tape, gap may fill or extend at open."
+      "line": "+12.4% lone green outlier on 1.7x vol \u2014 notable divergence in a red tape; worth monitoring for follow-through."
     }
   ],
   "changed": [
-    "Desk dropped lone CWAN long take \u2014 actions now empty",
-    "Semi rout broadening: SNDK and AXTI join MU in double-digit losses overnight"
+    "PRIM added as dominant mover: -21.5% on 4.7x vol, not present in prior headline",
+    "AXTI, FLNC, ABSI, EOSE new big-move losers added to overnight list"
   ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 20:01 ET scan time; after-hours liquidity is thin and levels can shift materially before RTH open.",
-    "Regime label 'risk_on' is structurally derived (SPY above 50d MA) and lags intraday/overnight price action; current tape behavior is risk-off in character."
+    "OVERNIGHT scan as of 2026-06-24 00:00 ET \u2014 prices are pre-RTH and may gap significantly at the open; all levels stale until market opens.",
+    "Regime labeled risk_on despite broad -1.4% to -3.3% tape \u2014 SPY/200d MA data is null; treat regime signal with caution until confirmed at open."
   ]
 }
