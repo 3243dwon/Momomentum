@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-24T16:51:08.692012-04:00",
+  "generated_at": "2026-06-24T18:20:49.978926-04:00",
   "window": "AH_POST",
-  "headline": "Risk-on intact; PAYX miss ripples bearish across HCM peers \u2014 SHC/UAA/VTEX on desk",
+  "headline": "Risk-on holds; ABSI +37% leads a noisy AH tape \u2014 desk carries one lite long in SHC",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress 0.98 \u2014 low fear. Soft tape but no regime crack; entries viable."
+    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress ratio 0.98 \u2014 vol contained. Regime intact, breadth soft."
   },
   "actions": [
     {
@@ -13,59 +13,42 @@
       "entry": 16.7,
       "stop": 16.34,
       "target": 17.42,
-      "line": "Technical breakout, clean R/R 2:1 \u2014 half size, no fundamental catalyst to lean on."
-    },
-    {
-      "ticker": "UAA",
-      "direction": "long",
-      "entry": 6.06,
-      "stop": 5.94,
-      "target": 6.3,
-      "line": "Signal agreement, tight stop \u2014 half size; modest volume keeps conviction capped."
-    },
-    {
-      "ticker": "VTEX",
-      "direction": "long",
-      "entry": 3.7,
-      "stop": 3.57,
-      "target": 3.97,
-      "line": "Signal agree but 1-day spike vs weak 5d flags chop risk \u2014 quarter size only."
+      "line": "Quarter-size long \u2014 signal/risk green but no catalyst; desk trimmed size for research skepticism. R/R ~2:1."
     }
   ],
   "watch": [
     {
-      "ticker": "PCTY",
-      "type": "ripple",
-      "line": "Closest SMB HCM pure-play to PAYX \u2014 high-confidence bearish read-through on bookings/seat growth. Not priced in."
-    },
-    {
-      "ticker": "ADP",
-      "type": "ripple",
-      "line": "SMB payroll exposure via RUN; PAYX cautious macro signal applies \u2014 medium confidence bearish."
-    },
-    {
-      "ticker": "PAYX",
-      "type": "catalyst",
-      "line": "Beat but cautious SMB hiring outlook -1.7% AH; driving sector-wide HCM repricing."
-    },
-    {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+36.5% on 2.94x vol \u2014 overbought flag; no desk take. Watch for fade setup next session."
+      "line": "+36.5%, rel-vol 2.9x, overbought \u2014 watch for fade setup if move stalls at open tomorrow."
+    },
+    {
+      "ticker": "DFTX",
+      "type": "mover",
+      "line": "+16.5%, rel-vol 3.5x, overbought \u2014 highest relative volume on the board; needs a catalyst to confirm."
     },
     {
       "ticker": "COUR",
       "type": "mover",
-      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought tag; catalyst unclear, monitor."
+      "line": "+12.7%, rel-vol 2.6x \u2014 unusual volume without overbought flag; cleaner momentum profile than ABSI/DFTX."
+    },
+    {
+      "ticker": "AVEX",
+      "type": "mover",
+      "line": "-14.5% on modest vol \u2014 no oversold flag yet; watch for stabilization level before any bounce thesis."
+    },
+    {
+      "ticker": "SOC",
+      "type": "mover",
+      "line": "-11.3%, oversold flag \u2014 only name on the losers board flagged oversold; potential mean-reversion candidate."
     }
   ],
   "changed": [
-    "Semis/MU ripple watch replaced by PAYX HCM ripple cluster (PCTY/ADP/PAYC)",
-    "VTEX added to desk takes; SHW dropped",
-    "ABSI remains a top mover but overbought \u2014 no action"
+    "UAA and VTEX dropped off desk takes \u2014 SHC is now the sole action",
+    "No active catalysts or ripple calls this scan vs. PAYX/HCM narrative last briefing"
   ],
   "caveats": [
-    "AH_POST scan \u2014 prices as of 16:51 ET 2026-06-24; AH liquidity thin, levels may gap at next RTH open.",
-    "All three desk takes are technical-only (research neutral) \u2014 no fundamental catalyst backing size; treat as half/quarter accordingly."
+    "AH_POST window \u2014 prices as of 18:20 ET; AH liquidity thin, levels may gap significantly at next RTH open.",
+    "SHC take is quarter-size with internal research disagreement on lack of catalyst \u2014 conviction is deliberately low."
   ]
 }
