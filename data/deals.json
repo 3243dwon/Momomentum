@@ -1,8 +1,154 @@
 {
- "generated_at": "2026-06-24T16:28:44.575118+00:00",
+ "generated_at": "2026-06-24T19:00:35.207384+00:00",
  "window_days": 30,
- "deal_count": 6,
+ "deal_count": 7,
  "deals": [
+  {
+   "id": "5fff4180af59",
+   "ts": "2026-06-24T14:56:35.274298-04:00",
+   "primary_ticker": "MU",
+   "counterparty": null,
+   "headline": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+   "drivers": [
+    "HBM/AI memory demand read-through to the broader AI supply chain",
+    "Memory pricing cycle re-rating for DRAM/NAND peers",
+    "Loss of scarcity premium if SK Hynix lists in the US as a competing HBM pure-play"
+   ],
+   "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+   "predictions": [
+    {
+     "ticker": "LRCX",
+     "direction": "long",
+     "mechanism": "Memory capex leverage \u2014 Lam has highest DRAM/NAND wafer fab equipment exposure (~30%+ memory). Bullish MU capex/HBM capacity commentary pulls forward WFE orders.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "long",
+     "mechanism": "Micron is a key HBM3E supplier into Nvidia's Blackwell/Hopper GPUs; strong MU HBM commentary and bit-growth guide validates Nvidia data-center demand and supply ramp.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "AMAT",
+     "direction": "long",
+     "mechanism": "Significant memory WFE exposure; HBM requires advanced packaging/hybrid bonding tools where AMAT is positioned. Reads directly off MU capacity guide.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "AEHR",
+     "direction": "long",
+     "mechanism": "Test equipment small-cap with HBM/AI burn-in exposure; trades as a high-beta proxy on MU HBM commentary.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "AVGO",
+     "direction": "short",
+     "mechanism": "Custom ASIC/AI accelerator narrative leans on HBM availability; any MU commentary about HBM allocation tightening favoring Nvidia hurts merchant-silicon HBM access story.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "WDC",
+     "direction": "long",
+     "mechanism": "Pure-play NAND peer post-SanDisk spin \u2014 re-rates on MU NAND pricing/bit guide as the cleanest US-listed read-through.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "KLAC",
+     "direction": "long",
+     "mechanism": "Process control intensity rises with HBM stacking yields; benefits from any MU capacity expansion commentary.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "WDC",
+     "direction": "short",
+     "mechanism": "Cuts both ways \u2014 if MU signals NAND oversupply or pricing rollover, WDC as pure-play NAND peer gets hit hardest. Asymmetric downside if guide disappoints.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "SMCI",
+     "direction": "short",
+     "mechanism": "If MU flags HBM tightness or AI server demand softness, AI server builders dependent on memory-rich SKUs see margin/volume risk.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 9,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "e7fa7a909953",
    "ts": "2026-06-24T09:24:39.475191-04:00",

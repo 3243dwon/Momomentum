@@ -1,63 +1,63 @@
 {
-  "generated_at": "2026-06-24T12:24:19.046964-04:00",
+  "generated_at": "2026-06-24T14:56:35.274298-04:00",
   "window": "RTH",
-  "headline": "Risk-on tape; TOST index add leads catalyst bench \u2014 2 longs on desk, ABSI/DFTX leading movers overbought",
+  "headline": "Risk-on holds; MU ripple drives semis watch \u2014 SHC + SHW on desk, ABSI/DFTX overbought movers",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.61% above 50d, QQQ +0.34%, VXX stress ratio 0.97 \u2014 low vol, trend intact; momentum entries favored."
+    "line": "SPY -0.23% / QQQ -1.01%, both above 50d; VXX stress ratio 0.99 = vol flat. Tech soft but no panic \u2014 entries viable, mind QQQ drag."
   },
   "actions": [
     {
-      "ticker": "TOST",
-      "direction": "long",
-      "entry": 26.18,
-      "stop": 25.29,
-      "target": 27.96,
-      "line": "S&P MidCap index add driving mechanical demand; signal agrees \u2014 quarter size on forced-buyer flow."
-    },
-    {
       "ticker": "SHC",
       "direction": "long",
-      "entry": 16.52,
-      "stop": 16.27,
-      "target": 17.03,
-      "line": "Signal and risk aligned, clean momentum entry; research neutral, no opposition \u2014 half size."
+      "entry": 16.54,
+      "stop": 16.31,
+      "target": 17.01,
+      "line": "Half size. Signal + risk green, research neutral. Clean setup, no catalyst overhang. R/R ~2:1."
+    },
+    {
+      "ticker": "SHW",
+      "direction": "long",
+      "entry": 336.4,
+      "stop": 331.11,
+      "target": 346.98,
+      "line": "Quarter size. Research + risk agree; signal flags parabolic concern. Sized down accordingly. R/R ~2:1."
     }
   ],
   "watch": [
     {
+      "ticker": "LRCX",
+      "type": "ripple",
+      "line": "High-confidence MU ripple. ~30%+ memory WFE exposure; bullish MU capex/HBM guide pulls forward Lam orders."
+    },
+    {
+      "ticker": "NVDA",
+      "type": "ripple",
+      "line": "Medium-confidence MU ripple. Strong HBM3E commentary validates Blackwell/Hopper data-center demand \u2014 not priced yet."
+    },
+    {
+      "ticker": "AMAT",
+      "type": "ripple",
+      "line": "Medium-confidence MU ripple. HBM hybrid bonding tool exposure reads directly off MU capacity guide."
+    },
+    {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+35% on 1.47x rel vol \u2014 overbought flag; watch for fade or continuation setup after consolidation."
+      "line": "+33.9%, rel-vol 2.4x, overbought flags. Extended \u2014 no clean entry; watch for fade or consolidation."
     },
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+21% on 2.49x rel vol \u2014 highest volume mover on the board; overbought, needs base before entry."
-    },
-    {
-      "ticker": "RKT",
-      "type": "mover",
-      "line": "+13.3% on below-avg vol \u2014 no catalyst visible; move lacks conviction, monitor for volume confirmation."
-    },
-    {
-      "ticker": "GLW",
-      "type": "mover",
-      "line": "+10.9% on 1.13x rel vol \u2014 notable large-cap move; watch for follow-through."
-    },
-    {
-      "ticker": "NVTS",
-      "type": "mover",
-      "line": "-12.4% on low rel vol \u2014 supply-side pressure without panic volume; potential dead-cat or short setup later."
+      "line": "+18.1%, rel-vol 3.0x, overbought. Highest relative volume on the board \u2014 momentum but extended."
     }
   ],
   "changed": [
-    "Previous scan flagged semis flush (MU, SNDK) and PRIM vol spike \u2014 those no longer lead; ABSI/DFTX now top movers",
-    "PRIM reversal: previously -21%, now +10.4%",
-    "Desk reduced from 3 longs (previous) to 2 longs this scan"
+    "Catalyst bench cleared \u2014 TOST index-add catalyst from prior scan no longer present.",
+    "MU ripple chain (LRCX/NVDA/AMAT) now top of watch, replacing prior catalyst leadership.",
+    "Desk composition unchanged: same 2 longs (SHC/SHW)."
   ],
   "caveats": [
-    "RTH scan as of 12:24 ET 2026-06-24; prices and levels reflect that moment and may be stale intraday.",
-    "TOST entry mechanically driven by index rebalancing \u2014 forced-buyer demand can reverse sharply post-addition; desk already flagged quarter size."
+    "RTH scan as of 14:56 ET 2026-06-24; prices stale by scan latency \u2014 confirm live quotes before entry.",
+    "QQQ -1.01% is a notable headwind for tech-adjacent longs; SHW parabolic flag + QQQ softness warrants discipline on quarter-size."
   ]
 }

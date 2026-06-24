@@ -1,8 +1,248 @@
 {
-  "generated_at": "2026-06-24T12:24:19.046964-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-24T14:56:35.274298-04:00",
+  "event_count": 1,
+  "prediction_count": 9,
+  "not_yet_priced_in": 5,
+  "events": [
+    {
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "primary_drivers": [
+        "HBM/AI memory demand read-through to the broader AI supply chain",
+        "Memory pricing cycle re-rating for DRAM/NAND peers",
+        "Loss of scarcity premium if SK Hynix lists in the US as a competing HBM pure-play"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NVDA",
+          "rationale": "Micron is a key HBM3E supplier into Nvidia's Blackwell/Hopper GPUs; strong MU HBM commentary and bit-growth guide validates Nvidia data-center demand and supply ramp.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Memory capex leverage \u2014 Lam has highest DRAM/NAND wafer fab equipment exposure (~30%+ memory). Bullish MU capex/HBM capacity commentary pulls forward WFE orders.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Significant memory WFE exposure; HBM requires advanced packaging/hybrid bonding tools where AMAT is positioned. Reads directly off MU capacity guide.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "Process control intensity rises with HBM stacking yields; benefits from any MU capacity expansion commentary.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WDC",
+          "rationale": "Pure-play NAND peer post-SanDisk spin \u2014 re-rates on MU NAND pricing/bit guide as the cleanest US-listed read-through.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AEHR",
+          "rationale": "Test equipment small-cap with HBM/AI burn-in exposure; trades as a high-beta proxy on MU HBM commentary.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "WDC",
+          "rationale": "Cuts both ways \u2014 if MU signals NAND oversupply or pricing rollover, WDC as pure-play NAND peer gets hit hardest. Asymmetric downside if guide disappoints.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SMCI",
+          "rationale": "If MU flags HBM tightness or AI server demand softness, AI server builders dependent on memory-rich SKUs see margin/volume risk.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AVGO",
+          "rationale": "Custom ASIC/AI accelerator narrative leans on HBM availability; any MU commentary about HBM allocation tightening favoring Nvidia hurts merchant-silicon HBM access story.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "trigger_ticker": "MU",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "headlines": [
+        "Micron Earnings Reaction To Test AI Trade; SK Hynix US Listing Is Bad News For MU",
+        "Micron Reports Tonight. The Real Story May Be Nvidia"
+      ],
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Memory capex leverage \u2014 Lam has highest DRAM/NAND wafer fab equipment exposure (~30%+ memory). Bullish MU capex/HBM capacity commentary pulls forward WFE orders.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -1.89,
+      "rel_volume": 0.61,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "NVDA",
+      "direction": "bullish",
+      "rationale": "Micron is a key HBM3E supplier into Nvidia's Blackwell/Hopper GPUs; strong MU HBM commentary and bit-growth guide validates Nvidia data-center demand and supply ramp.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": -1.27,
+      "rel_volume": 0.47,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Significant memory WFE exposure; HBM requires advanced packaging/hybrid bonding tools where AMAT is positioned. Reads directly off MU capacity guide.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "AEHR",
+      "direction": "bullish",
+      "rationale": "Test equipment small-cap with HBM/AI burn-in exposure; trades as a high-beta proxy on MU HBM commentary.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "AVGO",
+      "direction": "bearish",
+      "rationale": "Custom ASIC/AI accelerator narrative leans on HBM availability; any MU commentary about HBM allocation tightening favoring Nvidia hurts merchant-silicon HBM access story.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bullish",
+      "rationale": "Pure-play NAND peer post-SanDisk spin \u2014 re-rates on MU NAND pricing/bit guide as the cleanest US-listed read-through.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "contradicted",
+      "pct_1d": -8.02,
+      "rel_volume": 1.55,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "KLAC",
+      "direction": "bullish",
+      "rationale": "Process control intensity rises with HBM stacking yields; benefits from any MU capacity expansion commentary.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": -3.56,
+      "rel_volume": 0.83,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bearish",
+      "rationale": "Cuts both ways \u2014 if MU signals NAND oversupply or pricing rollover, WDC as pure-play NAND peer gets hit hardest. Asymmetric downside if guide disappoints.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": -8.02,
+      "rel_volume": 1.55,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    },
+    {
+      "ticker": "SMCI",
+      "direction": "bearish",
+      "rationale": "If MU flags HBM tightness or AI server demand softness, AI server builders dependent on memory-rich SKUs see margin/volume risk.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": -4.65,
+      "rel_volume": 0.45,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron reports earnings tonight in a print framed as a key test of the AI/HBM trade, with added overhang from a potential SK Hynix US listing that would give investors a direct pure-play HBM alternative.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60077439/micron-earnings-reaction-to-test-ai-trade-sk-hynix-us-listing-is-bad-news-for-mu",
+      "source_news_ids": [
+        "bb46bc75307d0bed",
+        "4bef67b42bb17ced"
+      ],
+      "created_at": "2026-06-24T14:56:35.274298-04:00"
+    }
+  ]
 }
