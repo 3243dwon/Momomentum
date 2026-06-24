@@ -1,7 +1,24 @@
 {
-  "generated_at": "2026-06-23T22:20:31.414466+00:00",
+  "generated_at": "2026-06-24T00:04:38.319697+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "dd10a113cef1",
+      "ts": "2026-06-24T00:01:56.037858+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "ANNX",
+      "direction": "long",
+      "confidence": null,
+      "price": 5.28,
+      "thesis": "+4.9% today; 5d uptrend +14%; 1.9x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "e71f2942d51f",
       "ts": "2026-06-23T22:17:37.193581+00:00",
@@ -3668,11 +3685,11 @@
       "price": 49.15,
       "thesis": "+6.9% today; 5d uptrend +12%; 2.4x volume",
       "outcomes": {
-        "1d": null,
+        "1d": -6.66,
         "3d": null,
         "5d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "2b97a74da0cc",
@@ -3685,11 +3702,11 @@
       "price": 9.98,
       "thesis": "+6.1% today; 5d uptrend +12%; 2.2x volume",
       "outcomes": {
-        "1d": null,
+        "1d": 1.3,
         "3d": null,
         "5d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "9f79a9c96dbc",
@@ -8481,23 +8498,6 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -0.6,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "732a6c11327f",
-      "ts": "2026-06-19T16:08:42.987533+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "RARE",
-      "direction": "long",
-      "confidence": null,
-      "price": 27.45,
-      "thesis": "+2.0% today; 5d uptrend +14%; 2.2x volume",
-      "outcomes": {
-        "1d": 0.0,
-        "3d": 5.76,
         "5d": null
       },
       "status": "miss"

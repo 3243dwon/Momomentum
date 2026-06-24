@@ -1,54 +1,45 @@
 {
-  "generated_at": "2026-06-23T18:17:37.193581-04:00",
-  "window": "AH_POST",
-  "headline": "Semi rout deepens, broad tape down (SPY -1.4%, QQQ -3.3%); desk takes lone CWAN long half-size",
+  "generated_at": "2026-06-23T20:01:56.037858-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Semi/tech carnage extends overnight: MU -13%, SNDK -14%, QQQ -3.3%; no desk takes, nothing actionable yet",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.43% / QQQ -3.32% but regime stays risk_on; VXX stress ratio benign at 0.98. Semis lead damage \u2014 thin conviction for new longs."
+    "line": "Regime says risk_on but tape disagrees \u2014 SPY -1.4%, QQQ -3.3%, VXX stress ratio ~1.0; semis lead down, wait for stabilization before entries"
   },
-  "actions": [
-    {
-      "ticker": "CWAN",
-      "direction": "long",
-      "entry": 24.55,
-      "stop": 24.36,
-      "target": 24.94,
-      "line": "Bullish signal, tight $0.19 risk to stop; kept half-size on neutral research backdrop."
-    }
-  ],
+  "actions": [],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "-21.5% on 4.7\u00d7 volume, MACD bearish \u2014 biggest mover of scan, needs catalyst ID before fade attempt."
+      "line": "-21.5% on 4.7x rel vol + MACD bearish cross \u2014 highest-conviction breakdown on the board, watch for continuation or bounce setup at open."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "-13.2% extends semi rout flagged last scan; watch for AH stabilisation or continued bleed."
+      "line": "-13.2% on elevated vol; semi bellwether move likely to set tone for chip complex at RTH open."
     },
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "-13.7% alongside MU \u2014 semi contagion still unresolved."
-    },
-    {
-      "ticker": "AXTI",
-      "type": "mover",
-      "line": "-15.7% big move, 1.5\u00d7 vol; semi-adjacent semi-conductor materials name to track."
+      "line": "-13.7% alongside MU \u2014 storage semis in sync; watch for capitulation wick or dead-cat at key levels."
     },
     {
       "ticker": "INFQ",
       "type": "mover",
-      "line": "+12.4% sole green outlier on 1.7\u00d7 vol \u2014 only upside mover in a broadly red tape."
+      "line": "Only notable green: +12.4% on 1.7x vol \u2014 lone momentum name in a sea of red, needs catalyst confirmation."
+    },
+    {
+      "ticker": "FLNC",
+      "type": "mover",
+      "line": "-15.6% energy storage name; low rel vol (1.07x) suggests thin overnight tape, gap may fill or extend at open."
     }
   ],
   "changed": [
-    "Desk drops defensive JNJ/CNP/PNC rotation from last scan; sole active take is CWAN long half-size.",
-    "Semi rout continues (MU, SNDK) but leadership shifts to PRIM -21.5% as worst AH mover."
+    "Desk dropped lone CWAN long take \u2014 actions now empty",
+    "Semi rout broadening: SNDK and AXTI join MU in double-digit losses overnight"
   ],
   "caveats": [
-    "AH_POST window \u2014 prices as of 18:17 ET; AH liquidity is thin and levels may gap materially at tomorrow's open.",
-    "Regime reads risk_on despite SPY/QQQ red day \u2014 VXX ratio 0.98 not yet confirming stress; treat regime label cautiously until RTH confirmation."
+    "OVERNIGHT window \u2014 prices as of 20:01 ET scan time; after-hours liquidity is thin and levels can shift materially before RTH open.",
+    "Regime label 'risk_on' is structurally derived (SPY above 50d MA) and lags intraday/overnight price action; current tape behavior is risk-off in character."
   ]
 }
