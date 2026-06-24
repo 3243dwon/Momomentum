@@ -1,63 +1,71 @@
 {
-  "generated_at": "2026-06-24T14:56:35.274298-04:00",
-  "window": "RTH",
-  "headline": "Risk-on holds; MU ripple drives semis watch \u2014 SHC + SHW on desk, ABSI/DFTX overbought movers",
+  "generated_at": "2026-06-24T16:51:08.692012-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on intact; PAYX miss ripples bearish across HCM peers \u2014 SHC/UAA/VTEX on desk",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.23% / QQQ -1.01%, both above 50d; VXX stress ratio 0.99 = vol flat. Tech soft but no panic \u2014 entries viable, mind QQQ drag."
+    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress 0.98 \u2014 low fear. Soft tape but no regime crack; entries viable."
   },
   "actions": [
     {
       "ticker": "SHC",
       "direction": "long",
-      "entry": 16.54,
-      "stop": 16.31,
-      "target": 17.01,
-      "line": "Half size. Signal + risk green, research neutral. Clean setup, no catalyst overhang. R/R ~2:1."
+      "entry": 16.7,
+      "stop": 16.34,
+      "target": 17.42,
+      "line": "Technical breakout, clean R/R 2:1 \u2014 half size, no fundamental catalyst to lean on."
     },
     {
-      "ticker": "SHW",
+      "ticker": "UAA",
       "direction": "long",
-      "entry": 336.4,
-      "stop": 331.11,
-      "target": 346.98,
-      "line": "Quarter size. Research + risk agree; signal flags parabolic concern. Sized down accordingly. R/R ~2:1."
+      "entry": 6.06,
+      "stop": 5.94,
+      "target": 6.3,
+      "line": "Signal agreement, tight stop \u2014 half size; modest volume keeps conviction capped."
+    },
+    {
+      "ticker": "VTEX",
+      "direction": "long",
+      "entry": 3.7,
+      "stop": 3.57,
+      "target": 3.97,
+      "line": "Signal agree but 1-day spike vs weak 5d flags chop risk \u2014 quarter size only."
     }
   ],
   "watch": [
     {
-      "ticker": "LRCX",
+      "ticker": "PCTY",
       "type": "ripple",
-      "line": "High-confidence MU ripple. ~30%+ memory WFE exposure; bullish MU capex/HBM guide pulls forward Lam orders."
+      "line": "Closest SMB HCM pure-play to PAYX \u2014 high-confidence bearish read-through on bookings/seat growth. Not priced in."
     },
     {
-      "ticker": "NVDA",
+      "ticker": "ADP",
       "type": "ripple",
-      "line": "Medium-confidence MU ripple. Strong HBM3E commentary validates Blackwell/Hopper data-center demand \u2014 not priced yet."
+      "line": "SMB payroll exposure via RUN; PAYX cautious macro signal applies \u2014 medium confidence bearish."
     },
     {
-      "ticker": "AMAT",
-      "type": "ripple",
-      "line": "Medium-confidence MU ripple. HBM hybrid bonding tool exposure reads directly off MU capacity guide."
+      "ticker": "PAYX",
+      "type": "catalyst",
+      "line": "Beat but cautious SMB hiring outlook -1.7% AH; driving sector-wide HCM repricing."
     },
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+33.9%, rel-vol 2.4x, overbought flags. Extended \u2014 no clean entry; watch for fade or consolidation."
+      "line": "+36.5% on 2.94x vol \u2014 overbought flag; no desk take. Watch for fade setup next session."
     },
     {
-      "ticker": "DFTX",
+      "ticker": "COUR",
       "type": "mover",
-      "line": "+18.1%, rel-vol 3.0x, overbought. Highest relative volume on the board \u2014 momentum but extended."
+      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought tag; catalyst unclear, monitor."
     }
   ],
   "changed": [
-    "Catalyst bench cleared \u2014 TOST index-add catalyst from prior scan no longer present.",
-    "MU ripple chain (LRCX/NVDA/AMAT) now top of watch, replacing prior catalyst leadership.",
-    "Desk composition unchanged: same 2 longs (SHC/SHW)."
+    "Semis/MU ripple watch replaced by PAYX HCM ripple cluster (PCTY/ADP/PAYC)",
+    "VTEX added to desk takes; SHW dropped",
+    "ABSI remains a top mover but overbought \u2014 no action"
   ],
   "caveats": [
-    "RTH scan as of 14:56 ET 2026-06-24; prices stale by scan latency \u2014 confirm live quotes before entry.",
-    "QQQ -1.01% is a notable headwind for tech-adjacent longs; SHW parabolic flag + QQQ softness warrants discipline on quarter-size."
+    "AH_POST scan \u2014 prices as of 16:51 ET 2026-06-24; AH liquidity thin, levels may gap at next RTH open.",
+    "All three desk takes are technical-only (research neutral) \u2014 no fundamental catalyst backing size; treat as half/quarter accordingly."
   ]
 }

@@ -1,8 +1,98 @@
 {
- "generated_at": "2026-06-24T19:00:35.207384+00:00",
+ "generated_at": "2026-06-24T20:55:29.699662+00:00",
  "window_days": 30,
- "deal_count": 7,
+ "deal_count": 8,
  "deals": [
+  {
+   "id": "429e09e1e62e",
+   "ts": "2026-06-24T16:51:08.692012-04:00",
+   "primary_ticker": "PAYX",
+   "counterparty": null,
+   "headline": "Paychex beat earnings but issued a cautious forward outlook, signaling softness in SMB hiring/payroll activity.",
+   "drivers": [
+    "SMB payroll/employment demand softening read-through",
+    "HCM peer guidance re-rating",
+    "SMB-exposed financial services demand signal"
+   ],
+   "news_url": "https://www.benzinga.com/markets/earnings/26/06/60077687/paychex-issues-cautious-outlook-stock-falls",
+   "predictions": [
+    {
+     "ticker": "PCTY",
+     "direction": "short",
+     "mechanism": "Paylocity is the closest SMB-focused HCM pure-play peer; a cautious PAYX outlook on SMB hiring directly read-throughs to PCTY's bookings and seat growth.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ADP",
+     "direction": "short",
+     "mechanism": "Largest payroll processor with significant SMB exposure via RUN; same macro signal on employment checks/new business formation that drove PAYX caution applies, though ADP is more diversified.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "PAYC",
+     "direction": "short",
+     "mechanism": "Paycom shares the HCM software peer-group multiple and gets re-rated on SMB/mid-market payroll demand concerns even though it's slightly more upmarket.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "INTU",
+     "direction": "short",
+     "mechanism": "QuickBooks Payroll and Mailchimp serve the same SMB cohort PAYX flagged as cautious; signals weaker SMB software spending into back half.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "UPWK",
+     "direction": "short",
+     "mechanism": "Soft SMB hiring environment flagged by PAYX implies slower contract-labor demand on Upwork, a marginal read-through.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 5,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "5fff4180af59",
    "ts": "2026-06-24T14:56:35.274298-04:00",
