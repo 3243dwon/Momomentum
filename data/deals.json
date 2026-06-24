@@ -1,8 +1,112 @@
 {
- "generated_at": "2026-06-12T05:51:09.003133+00:00",
+ "generated_at": "2026-06-24T13:28:00.411385+00:00",
  "window_days": 30,
- "deal_count": 5,
+ "deal_count": 6,
  "deals": [
+  {
+   "id": "e7fa7a909953",
+   "ts": "2026-06-24T09:24:39.475191-04:00",
+   "primary_ticker": "MU",
+   "counterparty": null,
+   "headline": "Micron (MU) is down 13.2% on its earnings day, suggesting a disappointing print or guidance for the memory sector.",
+   "drivers": [
+    "Memory cycle read-through (DRAM/NAND pricing and demand)",
+    "HBM/AI memory demand reset",
+    "Capex pullback signal for memory equipment vendors"
+   ],
+   "news_url": "https://www.benzinga.com/news/earnings/26/06/60065159/earnings-scheduled-june-24-2026",
+   "predictions": [
+    {
+     "ticker": "AMAT",
+     "direction": "short",
+     "mechanism": "Large memory equipment exposure; memory capex digestion read-through hits AMAT's deposition/etch orders.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ONTO",
+     "direction": "short",
+     "mechanism": "HBM-levered metrology play; if MU's HBM commentary disappointed, ONTO's AI-memory thesis takes a hit.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "WDC",
+     "direction": "short",
+     "mechanism": "Pure-play NAND/HDD peer; Micron weak guide directly signals softer NAND pricing and demand into WDC's next quarter.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "LRCX",
+     "direction": "short",
+     "mechanism": "Memory is ~half of Lam's WFE revenue; a MU guide-down typically precedes memory capex cuts at MU/Samsung/SK Hynix.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "STX",
+     "direction": "short",
+     "mechanism": "Storage peer levered to same cloud/enterprise data storage demand cycle MU just flagged as weakening.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "KLAC",
+     "direction": "short",
+     "mechanism": "Process control tools for memory fabs; capex slowdown at memory makers pressures order book.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 6,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "43f6d42c792c",
    "ts": "2026-06-11T15:39:10.573868-04:00",

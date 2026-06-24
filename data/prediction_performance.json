@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-24T06:56:46.039229-04:00",
+  "generated_at": "2026-06-24T09:27:59.999740-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizon_note": "calls graded at 1/3/5d regardless of stated horizon",
-  "total_predictions": 152,
+  "total_predictions": 158,
   "untracked_count": 0,
   "by_confidence": {
     "high": {
-      "count": 29,
+      "count": 31,
       "horizons": {
         "1d": {
           "evaluated": 29,
@@ -33,7 +33,7 @@
       }
     },
     "medium": {
-      "count": 67,
+      "count": 71,
       "horizons": {
         "1d": {
           "evaluated": 67,
@@ -50,11 +50,11 @@
           "avg_return_net_pct": 0.85
         },
         "5d": {
-          "evaluated": 65,
-          "hit_rate": 0.538,
-          "avg_return_pct": 0.86,
-          "hit_rate_net": 0.523,
-          "avg_return_net_pct": 0.36
+          "evaluated": 67,
+          "hit_rate": 0.522,
+          "avg_return_pct": 0.71,
+          "hit_rate_net": 0.507,
+          "avg_return_net_pct": 0.21
         }
       }
     },
@@ -76,18 +76,18 @@
           "avg_return_net_pct": -0.01
         },
         "5d": {
-          "evaluated": 54,
-          "hit_rate": 0.481,
-          "avg_return_pct": 0.23,
-          "hit_rate_net": 0.463,
-          "avg_return_net_pct": -0.27
+          "evaluated": 56,
+          "hit_rate": 0.5,
+          "avg_return_pct": 0.27,
+          "hit_rate_net": 0.482,
+          "avg_return_net_pct": -0.23
         }
       }
     }
   },
   "by_priced_in": {
     "no": {
-      "count": 99,
+      "count": 101,
       "horizons": {
         "1d": {
           "evaluated": 99,
@@ -104,11 +104,11 @@
           "avg_return_net_pct": 0.34
         },
         "5d": {
-          "evaluated": 97,
+          "evaluated": 99,
           "hit_rate": 0.485,
-          "avg_return_pct": 0.17,
-          "hit_rate_net": 0.464,
-          "avg_return_net_pct": -0.33
+          "avg_return_pct": 0.12,
+          "hit_rate_net": 0.465,
+          "avg_return_net_pct": -0.38
         }
       }
     },
@@ -130,16 +130,16 @@
           "avg_return_net_pct": 2.27
         },
         "5d": {
-          "evaluated": 22,
-          "hit_rate": 0.727,
-          "avg_return_pct": 4.83,
-          "hit_rate_net": 0.682,
-          "avg_return_net_pct": 4.33
+          "evaluated": 23,
+          "hit_rate": 0.696,
+          "avg_return_pct": 4.54,
+          "hit_rate_net": 0.652,
+          "avg_return_net_pct": 4.04
         }
       }
     },
     "yes": {
-      "count": 14,
+      "count": 18,
       "horizons": {
         "1d": {
           "evaluated": 14,
@@ -182,10 +182,10 @@
           "avg_return_net_pct": 0.73
         },
         "5d": {
-          "evaluated": 15,
-          "hit_rate": 0.6,
+          "evaluated": 16,
+          "hit_rate": 0.625,
           "avg_return_pct": 1.64,
-          "hit_rate_net": 0.6,
+          "hit_rate_net": 0.625,
           "avg_return_net_pct": 1.14
         }
       }
@@ -193,7 +193,7 @@
   },
   "by_horizon": {
     "weeks": {
-      "count": 59,
+      "count": 62,
       "horizons": {
         "1d": {
           "evaluated": 59,
@@ -210,16 +210,16 @@
           "avg_return_net_pct": 1.37
         },
         "5d": {
-          "evaluated": 58,
-          "hit_rate": 0.621,
-          "avg_return_pct": 2.01,
-          "hit_rate_net": 0.586,
-          "avg_return_net_pct": 1.51
+          "evaluated": 59,
+          "hit_rate": 0.627,
+          "avg_return_pct": 2.0,
+          "hit_rate_net": 0.593,
+          "avg_return_net_pct": 1.5
         }
       }
     },
     "days": {
-      "count": 45,
+      "count": 48,
       "horizons": {
         "1d": {
           "evaluated": 45,
@@ -236,11 +236,11 @@
           "avg_return_net_pct": -1.37
         },
         "5d": {
-          "evaluated": 43,
-          "hit_rate": 0.256,
-          "avg_return_pct": -3.03,
-          "hit_rate_net": 0.256,
-          "avg_return_net_pct": -3.53
+          "evaluated": 45,
+          "hit_rate": 0.244,
+          "avg_return_pct": -3.08,
+          "hit_rate_net": 0.244,
+          "avg_return_net_pct": -3.58
         }
       }
     },
@@ -262,11 +262,11 @@
           "avg_return_net_pct": -2.07
         },
         "5d": {
-          "evaluated": 3,
-          "hit_rate": 0.333,
-          "avg_return_pct": -3.85,
-          "hit_rate_net": 0.0,
-          "avg_return_net_pct": -4.35
+          "evaluated": 4,
+          "hit_rate": 0.5,
+          "avg_return_pct": -2.65,
+          "hit_rate_net": 0.25,
+          "avg_return_net_pct": -3.15
         }
       }
     },

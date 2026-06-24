@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-24T06:54:18.953429-04:00",
+  "generated_at": "2026-06-24T09:24:39.475191-04:00",
   "window": "AH_PRE",
-  "headline": "Semis/tech flush deepens \u2014 MU -13%, SNDK -14%; desk holds same 3 longs into pre-mkt weakness",
+  "headline": "Semis flush continues \u2014 MU -13%, SNDK -14%; PRIM -21% on vol spike; 3 longs held at reduced size",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.4%, QQQ -3.3% \u2014 label says risk_on but tape is pure risk-off; VXX stress ratio 0.98 signals vol near elevated. Entries need confirmat"
+    "line": "SPY -1.4%, QQQ -3.3%; VXX stress near flat (0.98) \u2014 tech leading lower, regime labeled risk_on but tape is risk_off; thin pre-mkt entries ri"
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 24.55,
       "stop": 24.36,
       "target": 24.94,
-      "line": "Half size. Bullish signal, low risk, tight 19\u00a2 stop; research skepticism caps size."
+      "line": "Half size \u2014 bullish signal, low risk; research skepticism caps sizing. R/R 0.19 risk / 0.39 reward."
     },
     {
       "ticker": "ANNX",
@@ -21,7 +21,7 @@
       "entry": 5.28,
       "stop": 4.86,
       "target": 6.12,
-      "line": "Quarter size. No catalyst, extension risk; all three desks neutral/cautious \u2014 smallest size warranted."
+      "line": "Quarter size \u2014 no catalyst, extension risk; all desks neutral/cautious. R/R 0.42 risk / 0.84 reward."
     },
     {
       "ticker": "IOVA",
@@ -29,39 +29,43 @@
       "entry": 4.43,
       "stop": 4.29,
       "target": 4.71,
-      "line": "Quarter size. Strong signal agreement but came off an 8.85% single-day move \u2014 size managed accordingly."
+      "line": "Quarter size \u2014 strong signal agree but 8.85% prior-day move demands smallest size. R/R 0.14 risk / 0.28 reward."
     }
   ],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "\u221221.5%, rel vol 4.7\u00d7 \u2014 MACD bearish confirmation; largest unusual-volume flush on the board."
+      "line": "PRIM -21.5% on 4.7x relative volume + MACD bearish \u2014 investigate catalyst before fading or following."
+    },
+    {
+      "ticker": "AMAT",
+      "type": "ripple",
+      "line": "Bearish ripple from MU \u2014 memory capex read-through hits AMAT deposition/etch orders; not yet priced in."
+    },
+    {
+      "ticker": "ONTO",
+      "type": "ripple",
+      "line": "Bearish ripple from MU \u2014 HBM-levered metrology thesis under pressure if MU's AI-memory commentary disappointed."
+    },
+    {
+      "ticker": "ABSI",
+      "type": "catalyst",
+      "line": "ABSI -12.4% on announced catalyst (details in alert); unusual for biotech \u2014 watch for follow-through or bounce setup."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "\u221213.2% \u2014 semi sector lead; watch for washout vs continued distribution heading into RTH open."
-    },
-    {
-      "ticker": "SNDK",
-      "type": "mover",
-      "line": "\u221213.7% \u2014 semi/storage names correlated with MU move; could offer fade setup if sector stabilizes."
-    },
-    {
-      "ticker": "INFQ",
-      "type": "mover",
-      "line": "+12.4%, rel vol 1.7\u00d7 \u2014 lone green outlier on a red tape; track for sustained follow-through."
-    },
-    {
-      "ticker": "AXTI",
-      "type": "mover",
-      "line": "\u221215.7% big move, vol in line \u2014 no unusual volume so conviction lower; monitor for bounce setup."
+      "line": "MU -13.2% driving semi sector flush; watch for stabilization level as anchor for AMAT/ONTO ripple timing."
     }
   ],
-  "changed": [],
+  "changed": [
+    "PRIM added as high-priority mover watch \u2014 4.7x rel vol + 21% drop not present last scan",
+    "ABSI catalyst alert now explicit vs prior scan",
+    "Semi ripple risk (AMAT, ONTO) surfaced from MU flush"
+  ],
   "caveats": [
-    "AH/Pre-market scan window (as of 06:54 ET 2026-06-24). Prices are indicative \u2014 spreads wide, liquidity thin; levels may gap materially at RTH open.",
-    "Regime labeled risk_on but SPY/QQQ both down hard and VXX stress near 1.0 \u2014 regime tag likely stale. Treat tape as risk-off until RTH confirms otherwise."
+    "AH/Pre-market window (scan 09:24 ET pre-open 2026-06-24) \u2014 prices as of scan time, spreads wide, fills uncertain at stated entries.",
+    "Regime reads risk_on structurally (SPY above 50d) but intraday tape is risk_off; all three longs are small/quarter size \u2014 sector headwind is real."
   ]
 }
