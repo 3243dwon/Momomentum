@@ -1,78 +1,306 @@
 {
-  "generated_at": "2026-06-24T00:00:49.230543-04:00",
+  "generated_at": "2026-06-24T05:39:09.911628-04:00",
   "ticker_news": {
+    "INTC": [
+      {
+        "id": "8ae9ff2f7def784b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Micron Earnings Echo Nvidia's 2023 Moment? Futurum CEO Says Memory Chips Are 'The GPUs Of Three Years Ago,' Reiterates $1,500 Target",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60062500/micron-earnings-could-echo-nvidias-2023-moment-says-futurum-ceo",
+        "published_at": "2026-06-24T06:54:36+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "micron_ai_gpu_positioning",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
     "MU": [
       {
-        "id": "f850d881cfffd7f8",
+        "id": "8ae9ff2f7def784b",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP, Dogecoin Drop Further Amid Global Chip Sell-Off: Analyst Flags 'The Most Important Level' For BTC",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60061465/bitcoin-ethereum-xrp-dogecoin-drop-amid-chip-sell-off-analyst-flags-key-btc-level",
-        "published_at": "2026-06-24T02:12:12+00:00",
-        "type": "macro_commodity",
+        "title": "Micron Earnings Echo Nvidia's 2023 Moment? Futurum CEO Says Memory Chips Are 'The GPUs Of Three Years Ago,' Reiterates $1,500 Target",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60062500/micron-earnings-could-echo-nvidias-2023-moment-says-futurum-ceo",
+        "published_at": "2026-06-24T06:54:36+00:00",
+        "type": "analyst",
         "impact": "medium",
-        "dedup_group": "crypto_selloff_chip_pressure_june2026",
+        "dedup_group": "micron_ai_gpu_positioning",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bf8a6449bab54292",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron Earnings Could Decide Whether ASML's AI Boom Has Years Left To Run, Says Analyst",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60063535/micron-earnings-could-decide-whether-asmls-ai-boom-has-years-left-to-run-says-analyst",
+        "published_at": "2026-06-24T09:32:50+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "micron_earnings_asml_ai_sustainability",
+        "tickers_mentioned": [
+          "ASML"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0aad5737860a29d5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones Futures Slip, S&P 500 Gains As Trump Targets Energy Firms Overcharging At The Pump\u2014FedEx, Cerebras, Micron In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60063311/stock-market-today-dow-jones-futures-slip-sp-500-gains-as-trump-targets-energy-firms-overcharging-at-the-pump-fedex-cerebras-micron-in-focus",
+        "published_at": "2026-06-24T09:02:14+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_240624",
+        "tickers_mentioned": [
+          "FDX",
+          "CBRS"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "5009f790cf09663c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60063179/sp500-june-24-open-up-or-down-polymarket-micron-earnings-oil-prices-ai-selloff",
+        "published_at": "2026-06-24T08:45:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_240624",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "602c89a3ce509000",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Dan Ives Says The AI Revolution Is In The 3rd Inning, Calls Chip Sell-Off A 'Gut Check Moment' As Micron Earnings Loom",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60062350/dan-ives-says-ai-revolution-is-in-the-third-inning-calls-chip-sell-off-a-gut-check-moment",
+        "published_at": "2026-06-24T06:26:56+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "dan_ives_chip_selloff_commentary",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "b3e23f56ccc78842",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nasdaq Tumbles Over 2% Amid Plunge In Semiconductor Shares: Investor Sentiment Declines, Greed Index Remains In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60062001/nasdaq-tumbles-over-2-amid-plunge-in-semiconductor-shares-investor-sentiment-declines-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-24T05:22:27+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_semis_decline_240624",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3f5f2fcf4b74f20d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Micron, FedEx And 3 Stocks To Watch Heading Into Wednesday",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60061974/micron-fedex-and-3-stocks-to-watch-heading-into-wednesday",
+        "published_at": "2026-06-24T05:13:28+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "watchlist_240624",
+        "tickers_mentioned": [
+          "FDX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "5009f790cf09663c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60063179/sp500-june-24-open-up-or-down-polymarket-micron-earnings-oil-prices-ai-selloff",
+        "published_at": "2026-06-24T08:45:01+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_240624",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "b3e23f56ccc78842",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Nasdaq Tumbles Over 2% Amid Plunge In Semiconductor Shares: Investor Sentiment Declines, Greed Index Remains In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60062001/nasdaq-tumbles-over-2-amid-plunge-in-semiconductor-shares-investor-sentiment-declines-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-24T05:22:27+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "nasdaq_semis_decline_240624",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "3a37feffe7b7d3b3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Qualcomm Eyes TikTok Parent ByteDance For Custom Chip Design Services: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60062938/qualcomm-eyes-tiktok-parent-bytedance-for-custom-chip-design-services-report",
+        "published_at": "2026-06-24T07:55:32+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "qualcomm_bytedance_chip_design",
+        "tickers_mentioned": [
+          "MRVL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "3a37feffe7b7d3b3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm Eyes TikTok Parent ByteDance For Custom Chip Design Services: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60062938/qualcomm-eyes-tiktok-parent-bytedance-for-custom-chip-design-services-report",
+        "published_at": "2026-06-24T07:55:32+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "qualcomm_bytedance_chip_design",
+        "tickers_mentioned": [
+          "MRVL"
+        ],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "f850d881cfffd7f8",
+        "id": "87fbb8e82ff3d2d0",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP, Dogecoin Drop Further Amid Global Chip Sell-Off: Analyst Flags 'The Most Important Level' For BTC",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60061465/bitcoin-ethereum-xrp-dogecoin-drop-amid-chip-sell-off-analyst-flags-key-btc-level",
-        "published_at": "2026-06-24T02:12:12+00:00",
-        "type": "macro_commodity",
+        "title": "Peter Schiff Says Bitcoiners Ignoring Troubles Of Wall Street's 'Biggest' BTC Owner: The Bridge Is 'Collapsing'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60062766/peter-schiff-says-bitcoiners-are-ignoring-troubles-at-wall-streets-biggest-btc-holder",
+        "published_at": "2026-06-24T07:29:05+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "schiff_mstr_bitcoin_criticism",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "TSM": [
+      {
+        "id": "602c89a3ce509000",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Dan Ives Says The AI Revolution Is In The 3rd Inning, Calls Chip Sell-Off A 'Gut Check Moment' As Micron Earnings Loom",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60062350/dan-ives-says-ai-revolution-is-in-the-third-inning-calls-chip-sell-off-a-gut-check-moment",
+        "published_at": "2026-06-24T06:26:56+00:00",
+        "type": "analyst",
         "impact": "medium",
-        "dedup_group": "crypto_selloff_chip_pressure_june2026",
+        "dedup_group": "dan_ives_chip_selloff_commentary",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ebcbd41df11f967c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSM",
+        "scope": "ticker",
+        "title": "Forget The Magnificent 7 And MANGOS\u2014Billionaire Philippe Laffont Adds These Two 'Non-Tech' Giants To His New 'Mag 12'",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60062788/forget-the-magnificent-7-and-mangos-billionaire-philippe-laffont-adds-these-two-non-tech-giants-to-his-new-mag-12",
+        "published_at": "2026-06-24T07:33:15+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "laffont_mag12_portfolio",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "ORCL": [
+      {
+        "id": "8976a38e8d5c8f07",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ORCL",
+        "scope": "ticker",
+        "title": "Elizabeth Warren Warns AI Could Eliminate Millions Of Jobs As Oracle Becomes Latest Big Tech To Reveal 21,000 Workforce Cuts: 'We Shouldn't Wait\u2026'",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60061898/elizabeth-warren-warns-ai-could-eliminate-millions-of-jobs-after-oracles-latest-cuts",
+        "published_at": "2026-06-24T04:39:50+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "orcl_workforce_cuts_warren_comment",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "TSLA": [
       {
-        "id": "c00bd1f254d0264e",
+        "id": "260e26e183f80bdc",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Cathie Wood Goes On A Massive Shopping Spree: Ark Adds Tesla, Palantir, Cerebras, Amazon And Alphabet To The Cart",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/60061670/cathie-wood-goes-on-a-massive-shopping-spree-ark-adds-tesla-palantir-cerebras-amazon-and-alphabet-to-the-cart",
-        "published_at": "2026-06-24T03:11:40+00:00",
-        "type": "analyst",
+        "title": "Howard Lutnick Warns Of Chinese Robot Threat, Signals Crackdown On 'The Arms Race That Is Coming': Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60063359/howard-lutnick-warns-of-chinese-robot-threat-signals-crackdown-on-the-arms-race-that-is-coming-report",
+        "published_at": "2026-06-24T09:04:20+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "ark_portfolio_activity_june2026",
-        "tickers_mentioned": [
-          "PLTR",
-          "CEREBS",
-          "AMZN",
-          "GOOGL"
-        ],
+        "dedup_group": "lutnick_china_robot_warning",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "4ba74969300a242c",
+        "id": "cb81bee7ef42344a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "Cerebras Systems, FedEx, Atlantic International, Backblaze And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60061358/cerebras-systems-fedex-atlantic-international-backblaze-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-24T01:39:06+00:00",
-        "type": "analyst",
+        "title": "Elon Musk Says Tesla's Model Y And Model 3 Have The Highest US-Made Content",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60063138/elon-musk-says-teslas-model-y-and-model-3-have-the-highest-us-made-content",
+        "published_at": "2026-06-24T08:34:15+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "investor_radar_recap_june2026",
-        "tickers_mentioned": [
-          "CEREBS",
-          "FDX",
-          "BLKB"
-        ],
+        "dedup_group": "tesla_model_y_3_domestic_content",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]

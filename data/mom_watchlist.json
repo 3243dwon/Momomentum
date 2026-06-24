@@ -6,11 +6,11 @@
       "code": "512480.SH",
       "yahoo": "512480.SS",
       "direction": "long",
-      "thesis_zh": "美光/闪迪/安森美再度暴跌10%+，短线A股半导体跟跌压力升级，但ETF已积累10.6%安全垫、国产替代中期逻辑未破，沿用中期看多但提示短线波动加大。",
+      "thesis_zh": "存储链第四日暴跌短线压力升级，但ETF已有10.6%安全垫、国产替代中期逻辑未破，沿用中期看多并以ETF表达分散个股止盈风险。",
       "confidence": "medium",
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-24",
-      "times_recommended": 24,
+      "times_recommended": 25,
       "entry_price": 2.253999948501587,
       "entry_date": "2026-06-16",
       "currency": "CNY",
@@ -20,9 +20,15 @@
           "price": 2.493,
           "return_pct": 10.6,
           "signed_return_pct": 10.6
+        },
+        "5d": {
+          "date": "2026-06-24",
+          "price": 2.652,
+          "return_pct": 17.66,
+          "signed_return_pct": 17.66
         }
       },
-      "status": "pending",
+      "status": "hit",
       "archived": false
     },
     {
@@ -56,11 +62,11 @@
       "code": "601899.SH",
       "yahoo": "601899.SS",
       "direction": "long",
-      "thesis_zh": "金银股延续回调+今夜FCX铜业-7%双重短线压力（同时打击金与铜业务），但美制造业疲弱+降息预期支撑中期金价，沿用中期看多。",
+      "thesis_zh": "今日FCX铜业-7%+金银股-4.66%双重短线压力延续，但美制造业疲弱+降息预期支撑中期金铜价格，沿用中期看多（注意已-9.2%回撤）。",
       "confidence": "medium",
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-24",
-      "times_recommended": 19,
+      "times_recommended": 20,
       "entry_price": 30.290000915527344,
       "entry_date": "2026-06-16",
       "currency": "CNY",
@@ -87,11 +93,11 @@
       "code": "513180.SH",
       "yahoo": "513180.SS",
       "direction": "short",
-      "thesis_zh": "美股半导体存储链连续第三天暴跌且幅度扩大（25只大盘半导体大跌），港股科技外资风险偏好继续恶化，沿用看空。",
+      "thesis_zh": "美股半导体连续四日大跌且25只大盘股普跌，港股科技外资风险偏好继续恶化，沿用看空。",
       "confidence": "medium",
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-24",
-      "times_recommended": 17,
+      "times_recommended": 18,
       "entry_price": 0.5899999737739563,
       "entry_date": "2026-06-16",
       "currency": "CNY",
@@ -101,9 +107,15 @@
           "price": 0.577,
           "return_pct": -2.2,
           "signed_return_pct": 2.2
+        },
+        "5d": {
+          "date": "2026-06-24",
+          "price": 0.57,
+          "return_pct": -3.39,
+          "signed_return_pct": 3.39
         }
       },
-      "status": "pending",
+      "status": "hit",
       "archived": false
     },
     {
@@ -112,16 +124,47 @@
       "code": "600276.SH",
       "yahoo": "600276.SS",
       "direction": "long",
-      "thesis_zh": "美股医药板块连续两日集体走强（GEHC+5.1%、MRK+3.6%、JNJ+3.4%、VEEV+4.3%），A股创新药龙头继续承接防御性资金，沿用看多。",
+      "thesis_zh": "美股医药连续第三日走强（GEHC+5.1%、JNJ+3.4%、MRK+3.6%），A股创新药龙头继续承接防御性资金，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-23",
       "last_seen": "2026-06-24",
-      "times_recommended": 3,
+      "times_recommended": 4,
       "entry_price": 49.36000061035156,
       "entry_date": "2026-06-22",
       "currency": "CNY",
       "evaluations": {},
       "status": "pending",
+      "archived": false
+    },
+    {
+      "id": "845ce600fe72",
+      "name_zh": "中际旭创",
+      "code": "300308.SZ",
+      "yahoo": "300308.SZ",
+      "direction": "short",
+      "thesis_zh": "美光模块/硬件链Coherent-10.4%、迈威尔-9.5%继续崩塌，高估值光模块情绪进一步恶化，沿用看空。",
+      "confidence": "medium",
+      "first_seen": "2026-06-17",
+      "last_seen": "2026-06-24",
+      "times_recommended": 19,
+      "entry_price": 1248.0899658203125,
+      "entry_date": "2026-06-16",
+      "currency": "CNY",
+      "evaluations": {
+        "3d": {
+          "date": "2026-06-22",
+          "price": 1358.24,
+          "return_pct": 8.83,
+          "signed_return_pct": -8.83
+        },
+        "5d": {
+          "date": "2026-06-24",
+          "price": 1311.92,
+          "return_pct": 5.11,
+          "signed_return_pct": -5.11
+        }
+      },
+      "status": "miss",
       "archived": false
     },
     {
@@ -147,37 +190,6 @@
         }
       },
       "status": "pending",
-      "archived": false
-    },
-    {
-      "id": "845ce600fe72",
-      "name_zh": "中际旭创",
-      "code": "300308.SZ",
-      "yahoo": "300308.SZ",
-      "direction": "short",
-      "thesis_zh": "美股半导体硬件链全面崩塌（Coherent-10.4%、迈威尔-9.5%），高估值光模块情绪进一步恶化，沿用看空。",
-      "confidence": "medium",
-      "first_seen": "2026-06-17",
-      "last_seen": "2026-06-23",
-      "times_recommended": 18,
-      "entry_price": 1248.0899658203125,
-      "entry_date": "2026-06-16",
-      "currency": "CNY",
-      "evaluations": {
-        "3d": {
-          "date": "2026-06-22",
-          "price": 1358.24,
-          "return_pct": 8.83,
-          "signed_return_pct": -8.83
-        },
-        "5d": {
-          "date": "2026-06-24",
-          "price": 1311.92,
-          "return_pct": 5.11,
-          "signed_return_pct": -5.11
-        }
-      },
-      "status": "miss",
       "archived": false
     },
     {
@@ -342,5 +354,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-06-24T04:04:15.170007+00:00"
+  "generated_at": "2026-06-24T09:43:14.808780+00:00"
 }
