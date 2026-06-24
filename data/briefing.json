@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-24T05:39:09.911628-04:00",
+  "generated_at": "2026-06-24T06:54:18.953429-04:00",
   "window": "AH_PRE",
-  "headline": "Selloff stabilizes: desk opens 3 longs (CWAN, ANNX, IOVA) as semis/tech remain under pressure",
+  "headline": "Semis/tech flush deepens \u2014 MU -13%, SNDK -14%; desk holds same 3 longs into pre-mkt weakness",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -1.4% / QQQ -3.3%, both still above 50d; VXX ratio 0.98 \u2014 vol not spiking but semis/tech pain is real. Pullback entries viable, keep siz"
+    "line": "SPY -1.4%, QQQ -3.3% \u2014 label says risk_on but tape is pure risk-off; VXX stress ratio 0.98 signals vol near elevated. Entries need confirmat"
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 24.55,
       "stop": 24.36,
       "target": 24.94,
-      "line": "Bullish signal, low veto risk; half-size on research skepticism. R/R ~2:1, tight stop."
+      "line": "Half size. Bullish signal, low risk, tight 19\u00a2 stop; research skepticism caps size."
     },
     {
       "ticker": "ANNX",
@@ -21,7 +21,7 @@
       "entry": 5.28,
       "stop": 4.86,
       "target": 6.12,
-      "line": "Quarter-size only \u2014 no catalyst, extension risk flagged. All three agents neutral/cautious."
+      "line": "Quarter size. No catalyst, extension risk; all three desks neutral/cautious \u2014 smallest size warranted."
     },
     {
       "ticker": "IOVA",
@@ -29,42 +29,39 @@
       "entry": 4.43,
       "stop": 4.29,
       "target": 4.71,
-      "line": "Strong signal agreement but came off +8.85% day; quarter-size, medium risk. Watch for fade."
+      "line": "Quarter size. Strong signal agreement but came off an 8.85% single-day move \u2014 size managed accordingly."
     }
   ],
   "watch": [
     {
       "ticker": "PRIM",
       "type": "mover",
-      "line": "-21.5%, 4.7x rel vol, MACD bearish \u2014 still bleeding. No entry yet; watch for base."
+      "line": "\u221221.5%, rel vol 4.7\u00d7 \u2014 MACD bearish confirmation; largest unusual-volume flush on the board."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "-13.2% on semi-sector contagion; bellwether for broader tech recovery."
+      "line": "\u221213.2% \u2014 semi sector lead; watch for washout vs continued distribution heading into RTH open."
     },
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "-13.7% \u2014 memory names getting hit hard alongside MU; watch for sector flush signal."
+      "line": "\u221213.7% \u2014 semi/storage names correlated with MU move; could offer fade setup if sector stabilizes."
     },
     {
       "ticker": "INFQ",
       "type": "mover",
-      "line": "+12.4% lone green outlier on the board; vol elevated, no catalyst flagged \u2014 investigate before touching."
+      "line": "+12.4%, rel vol 1.7\u00d7 \u2014 lone green outlier on a red tape; track for sustained follow-through."
     },
     {
-      "ticker": "FLNC",
+      "ticker": "AXTI",
       "type": "mover",
-      "line": "-15.6% energy storage name; watch if sector dragging or company-specific."
+      "line": "\u221215.7% big move, vol in line \u2014 no unusual volume so conviction lower; monitor for bounce setup."
     }
   ],
-  "changed": [
-    "Desk now active with 3 long takes (CWAN half, ANNX quarter, IOVA quarter) \u2014 prior scan had nothing actionable.",
-    "Regime still risk_on but SPY/QQQ levels unchanged; selloff not deepening further."
-  ],
+  "changed": [],
   "caveats": [
-    "AH/Pre-market scan as of 05:39 ET 2026-06-24 \u2014 prices are pre-RTH and may gap significantly at open.",
-    "Three desk longs in a tape where QQQ is -3.3% and semis are getting crushed \u2014 all taken at half/quarter size for good reason; execution fills may differ materially from entry levels."
+    "AH/Pre-market scan window (as of 06:54 ET 2026-06-24). Prices are indicative \u2014 spreads wide, liquidity thin; levels may gap materially at RTH open.",
+    "Regime labeled risk_on but SPY/QQQ both down hard and VXX stress near 1.0 \u2014 regime tag likely stale. Treat tape as risk-off until RTH confirms otherwise."
   ]
 }
