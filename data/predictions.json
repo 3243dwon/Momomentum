@@ -1,8 +1,868 @@
 {
-  "generated_at": "2026-06-25T09:22:34.473841-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-25T12:28:58.114871-04:00",
+  "event_count": 4,
+  "prediction_count": 32,
+  "not_yet_priced_in": 15,
+  "events": [
+    {
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "primary_drivers": [
+        "M&A re-rating of life science tools peers as takeout candidates",
+        "Strategic scarcity of pure-play bioreagent/proteomics assets",
+        "Competitive removal \u2014 Bio-Techne becomes part of a deeper-pocketed strategic"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "RGEN",
+          "rationale": "Pure-play bioprocessing tools name with similar scale (~$10B mcap range) and concentrated end-market overlap with Bio-Techne \u2014 primary read-through takeout candidate as strategics chase reagent/bioprocess assets.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "QTRX",
+          "rationale": "Sub-scale proteomics/biomarker tools peer \u2014 Bio-Techne's Simple Western/ProteinSimple franchise overlaps; consolidation read-through raises takeout odds.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NTRA",
+          "rationale": "Not a direct peer but part of broader life-sci diagnostics M&A basket that historically re-rates on large strategic deals from European pharma.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MASS",
+          "rationale": "908 Devices \u2014 small analytical/bioprocess tools name that gets sympathy bid as strategics signal willingness to pay full premiums for tools assets.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AVTR",
+          "rationale": "Bioprocessing/lab consumables peer; group multiple expands as Merck KGaA validates premium valuations in the space (deal ~6-7x sales).",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DHR",
+          "rationale": "Danaher's Cytiva/Pall bioprocess unit now faces a deeper-pocketed, more vertically integrated Merck KGaA Life Science combined with Bio-Techne's growth factor/media franchise \u2014 direct competitive pressure in cell & gene therapy reagents.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "TMO",
+          "rationale": "Thermo's BioProduction segment competes directly with Bio-Techne's GMP proteins and Merck KGaA's media \u2014 combined entity strengthens the #2 competitor in high-margin bioreagents.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "A",
+          "rationale": "Agilent's cell analysis and genomics franchises overlap with Bio-Techne's antibody/assay tools; consolidation creates a stronger competitor and removes a potential acquisition target for Agilent itself.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "TECH",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "headlines": [
+        "Merck Germany Lands Bio-Techne In $11.3 Billion Cash Deal"
+      ],
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal"
+    },
+    {
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "primary_drivers": [
+        "Memory pricing/demand re-rate across DRAM and HBM peers",
+        "AI capex pull-through to HBM supply chain and memory equipment vendors",
+        "Read-through to hyperscaler/AI server demand strength"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "WDC",
+          "rationale": "Pure-play NAND peer; Micron's NAND commentary and pricing read-through directly re-rates Western Digital's flash business.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SNDK",
+          "rationale": "Recently spun-out NAND pure-play (Sandisk); benefits directly from Micron's confirmation of NAND pricing/demand strength.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research has highest memory-capex exposure among WFE names; Micron beat + guide signals memory capex sustaining/accelerating, especially for HBM and NAND.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials has meaningful DRAM/HBM tool exposure; Micron's HBM ramp commentary supports memory WFE order book.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "Process control intensity rising in HBM/advanced DRAM nodes; Micron HBM ramp lifts KLA memory order outlook.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ONTO",
+          "rationale": "Onto Innovation has direct HBM packaging/metrology exposure (Dragonfly); HBM demand validation from Micron lifts order visibility.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "AVGO",
+          "rationale": "Not a direct loser, but HBM supply going to NVDA/AMD GPUs competes for budget with custom ASIC memory \u2014 minor; mostly neutral. Low conviction.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "trigger_ticker": "MU",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "headlines": [
+        "Wall Street Cheers Micron's Earnings Surprise\u2014Can The Stock Keep Climbing?",
+        "Dow Surges 250 Points; Micron Posts Upbeat Q3 Earnings"
+      ],
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise"
+    },
+    {
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "primary_drivers": [
+        "Memory capex pull-forward \u2014 fab buildout drives equipment orders",
+        "Tight HBM/DRAM supply read-through lifts memory peers' pricing",
+        "Capital-return signal validates the memory upcycle"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research is a primary etch/deposition supplier for DRAM and HBM stacking; Micron fab buildout directly translates into WFE orders, with memory ~40%+ of Lam's revenue.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials supplies deposition and process control tools to memory fabs; Micron's billions in capex flows directly into AMAT's DRAM equipment bookings.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "KLAC",
+          "rationale": "KLA's process control/inspection tools are critical for HBM yield ramp; Micron capex expansion lifts KLA's memory-segment bookings.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ACLS",
+          "rationale": "Axcelis ion implant tools have meaningful memory exposure; new DRAM fabs require implanters and Micron is a named customer.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ENTG",
+          "rationale": "Entegris supplies materials/filtration consumables that scale with new fab wafer starts; Micron capacity additions grow recurring consumables revenue.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ASML",
+          "rationale": "EUV/DUV lithography is required for advanced DRAM nodes Micron is building; capex commitment supports ASML memory orderbook.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "WDC",
+          "rationale": "If Micron is signaling HBM/DRAM tightness but also adding NAND-adjacent capacity, NAND-heavy Western Digital faces capacity overhang risk; also doesn't benefit from HBM AI mix.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "STX",
+          "rationale": "Pure HDD play with no HBM/DRAM exposure; relative read-through is negative as capital flows to memory peers' AI narrative, and additional NAND capacity long-term pressures storage pricing.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "MU",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "headlines": [
+        "Micron Is Spending Billions On New Fabs\u2014And Still Says It'll Return 100% Of Excess Cash To Shareholders"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders"
+    },
+    {
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "primary_drivers": [
+        "Extended memory pricing umbrella for all DRAM/NAND producers",
+        "HBM capacity tightness drives capex pull-forward in memory equipment",
+        "Read-through to memory packaging/test and HBM ecosystem suppliers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "WDC",
+          "rationale": "NAND pure-play; tight memory supply lifts NAND ASPs and earnings power alongside DRAM read-through.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "SNDK",
+          "rationale": "Recently separated NAND pure-play (Sandisk); direct beneficiary of memory pricing umbrella extension.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research is the dominant etch/deposition supplier for DRAM and NAND; multi-year memory shortage forces capex pull-forward at Micron, Samsung, SK Hynix.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Applied Materials has heavy memory wafer-fab equipment exposure; HBM and DRAM capacity adds drive tool orders.",
+          "confidence": "high",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ACLS",
+          "rationale": "Axcelis ion implant tools have meaningful memory exposure; capacity expansion cycle restores order book.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "ONTO",
+          "rationale": "Onto Innovation's HBM inspection/metrology tools are designed-in at advanced packaging lines; HBM scarcity drives tool demand.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DELL",
+          "rationale": "Server OEM with high DRAM bill-of-materials; sustained memory shortage pressures gross margins and could constrain AI server build volumes.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "HPE",
+          "rationale": "Same dynamic \u2014 server/storage OEM exposed to elevated DRAM/HBM input costs with limited pass-through power.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AAPL",
+          "rationale": "Large DRAM/NAND buyer for iPhone and Mac; multi-year memory tightness raises BOM costs on consumer devices with sticky pricing.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "MU",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "headlines": [
+        "Micron CEO Says AI Memory Shortage Could Last Beyond 2028: These ETFs Are Positioned To Profit",
+        "Micron CEO Says AI Memory Shortage Could Last Beyond 2028: These ETFs Are Positioned To Profit",
+        "Micron CEO Says AI Memory Shortage Could Last Beyond 2028: These ETFs Are Positioned To Profit",
+        "Micron CEO Says AI Memory Shortage Could Last Beyond 2028: These ETFs Are Positioned To Profit"
+      ],
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "RGEN",
+      "direction": "bullish",
+      "rationale": "Pure-play bioprocessing tools name with similar scale (~$10B mcap range) and concentrated end-market overlap with Bio-Techne \u2014 primary read-through takeout candidate as strategics chase reagent/bioprocess assets.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Applied Materials supplies deposition and process control tools to memory fabs; Micron's billions in capex flows directly into AMAT's DRAM equipment bookings.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Applied Materials has heavy memory wafer-fab equipment exposure; HBM and DRAM capacity adds drive tool orders.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "QTRX",
+      "direction": "bullish",
+      "rationale": "Sub-scale proteomics/biomarker tools peer \u2014 Bio-Techne's Simple Western/ProteinSimple franchise overlaps; consolidation read-through raises takeout odds.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AMAT",
+      "direction": "bullish",
+      "rationale": "Applied Materials has meaningful DRAM/HBM tool exposure; Micron's HBM ramp commentary supports memory WFE order book.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ONTO",
+      "direction": "bullish",
+      "rationale": "Onto Innovation has direct HBM packaging/metrology exposure (Dragonfly); HBM demand validation from Micron lifts order visibility.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ACLS",
+      "direction": "bullish",
+      "rationale": "Axcelis ion implant tools have meaningful memory exposure; new DRAM fabs require implanters and Micron is a named customer.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ASML",
+      "direction": "bullish",
+      "rationale": "EUV/DUV lithography is required for advanced DRAM nodes Micron is building; capex commitment supports ASML memory orderbook.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ACLS",
+      "direction": "bullish",
+      "rationale": "Axcelis ion implant tools have meaningful memory exposure; capacity expansion cycle restores order book.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ONTO",
+      "direction": "bullish",
+      "rationale": "Onto Innovation's HBM inspection/metrology tools are designed-in at advanced packaging lines; HBM scarcity drives tool demand.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "NTRA",
+      "direction": "bullish",
+      "rationale": "Not a direct peer but part of broader life-sci diagnostics M&A basket that historically re-rates on large strategic deals from European pharma.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "MASS",
+      "direction": "bullish",
+      "rationale": "908 Devices \u2014 small analytical/bioprocess tools name that gets sympathy bid as strategics signal willingness to pay full premiums for tools assets.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "A",
+      "direction": "bearish",
+      "rationale": "Agilent's cell analysis and genomics franchises overlap with Bio-Techne's antibody/assay tools; consolidation creates a stronger competitor and removes a potential acquisition target for Agilent itself.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AVGO",
+      "direction": "bearish",
+      "rationale": "Not a direct loser, but HBM supply going to NVDA/AMD GPUs competes for budget with custom ASIC memory \u2014 minor; mostly neutral. Low conviction.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AAPL",
+      "direction": "bearish",
+      "rationale": "Large DRAM/NAND buyer for iPhone and Mac; multi-year memory tightness raises BOM costs on consumer devices with sticky pricing.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "HPE",
+      "direction": "bearish",
+      "rationale": "Same dynamic \u2014 server/storage OEM exposed to elevated DRAM/HBM input costs with limited pass-through power.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "partial",
+      "pct_1d": -3.01,
+      "rel_volume": 0.46,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "DHR",
+      "direction": "bearish",
+      "rationale": "Danaher's Cytiva/Pall bioprocess unit now faces a deeper-pocketed, more vertically integrated Merck KGaA Life Science combined with Bio-Techne's growth factor/media franchise \u2014 direct competitive pressure in cell & gene therapy reagents.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "contradicted",
+      "pct_1d": 2.78,
+      "rel_volume": 0.72,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "TMO",
+      "direction": "bearish",
+      "rationale": "Thermo's BioProduction segment competes directly with Bio-Techne's GMP proteins and Merck KGaA's media \u2014 combined entity strengthens the #2 competitor in high-margin bioreagents.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "contradicted",
+      "pct_1d": 3.43,
+      "rel_volume": 0.83,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bearish",
+      "rationale": "If Micron is signaling HBM/DRAM tightness but also adding NAND-adjacent capacity, NAND-heavy Western Digital faces capacity overhang risk; also doesn't benefit from HBM AI mix.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 7.21,
+      "rel_volume": 0.94,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "STX",
+      "direction": "bearish",
+      "rationale": "Pure HDD play with no HBM/DRAM exposure; relative read-through is negative as capital flows to memory peers' AI narrative, and additional NAND capacity long-term pressures storage pricing.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": 4.07,
+      "rel_volume": 1.24,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bullish",
+      "rationale": "Pure-play NAND peer; Micron's NAND commentary and pricing read-through directly re-rates Western Digital's flash business.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": 7.21,
+      "rel_volume": 0.94,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "SNDK",
+      "direction": "bullish",
+      "rationale": "Recently spun-out NAND pure-play (Sandisk); benefits directly from Micron's confirmation of NAND pricing/demand strength.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": 18.2,
+      "rel_volume": 1.14,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Lam Research has highest memory-capex exposure among WFE names; Micron beat + guide signals memory capex sustaining/accelerating, especially for HBM and NAND.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 5.5,
+      "rel_volume": 1.03,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Lam Research is a primary etch/deposition supplier for DRAM and HBM stacking; Micron fab buildout directly translates into WFE orders, with memory ~40%+ of Lam's revenue.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 5.5,
+      "rel_volume": 1.03,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "WDC",
+      "direction": "bullish",
+      "rationale": "NAND pure-play; tight memory supply lifts NAND ASPs and earnings power alongside DRAM read-through.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 7.21,
+      "rel_volume": 0.94,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "SNDK",
+      "direction": "bullish",
+      "rationale": "Recently separated NAND pure-play (Sandisk); direct beneficiary of memory pricing umbrella extension.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 18.2,
+      "rel_volume": 1.14,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "LRCX",
+      "direction": "bullish",
+      "rationale": "Lam Research is the dominant etch/deposition supplier for DRAM and NAND; multi-year memory shortage forces capex pull-forward at Micron, Samsung, SK Hynix.",
+      "confidence": "high",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 5.5,
+      "rel_volume": 1.03,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "AVTR",
+      "direction": "bullish",
+      "rationale": "Bioprocessing/lab consumables peer; group multiple expands as Merck KGaA validates premium valuations in the space (deal ~6-7x sales).",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 4.44,
+      "rel_volume": 0.37,
+      "trigger_ticker": "TECH",
+      "event_summary": "Merck KGaA (Germany) is acquiring Bio-Techne (TECH) for $11.3B cash, consolidating a major life sciences tools/reagents player.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60096364/merck-germany-lands-bio-techne-in-11-3-billion-cash-deal",
+      "source_news_ids": [
+        "fb971df188013af7"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "KLAC",
+      "direction": "bullish",
+      "rationale": "Process control intensity rising in HBM/advanced DRAM nodes; Micron HBM ramp lifts KLA memory order outlook.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 7.8,
+      "rel_volume": 0.52,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron posted upbeat Q3 earnings with a strong beat, sending shares up ~16% and signaling robust memory (DRAM/HBM/NAND) demand tied to AI infrastructure buildout.",
+      "news_url": "https://www.benzinga.com/Opinion/26/06/60100721/wall-street-cheers-micron-earnings-surprise",
+      "source_news_ids": [
+        "e312e9122e675ced",
+        "0568a275ec919219"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "KLAC",
+      "direction": "bullish",
+      "rationale": "KLA's process control/inspection tools are critical for HBM yield ramp; Micron capex expansion lifts KLA's memory-segment bookings.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 7.8,
+      "rel_volume": 0.52,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "ENTG",
+      "direction": "bullish",
+      "rationale": "Entegris supplies materials/filtration consumables that scale with new fab wafer starts; Micron capacity additions grow recurring consumables revenue.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": 4.66,
+      "rel_volume": 0.48,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron is committing billions to new memory fab capacity while pledging to return 100% of excess free cash flow to shareholders, signaling both a strong demand outlook (HBM/DRAM) and confidence in cycle economics.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60095272/micron-is-spending-billions-on-new-fabs-and-still-says-itll-return-100-of-excess-cash-to-shareholders",
+      "source_news_ids": [
+        "a6ec136008faf1e2"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    },
+    {
+      "ticker": "DELL",
+      "direction": "bearish",
+      "rationale": "Server OEM with high DRAM bill-of-materials; sustained memory shortage pressures gross margins and could constrain AI server build volumes.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "yes",
+      "pct_1d": -4.87,
+      "rel_volume": 0.64,
+      "trigger_ticker": "MU",
+      "event_summary": "Micron CEO says AI-driven memory (DRAM/HBM) shortage could persist beyond 2028, signaling a multi-year tight supply cycle.",
+      "news_url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60094351/micron-ceo-says-ai-memory-shortage-could-last-beyond-2028-these-etfs-are-positioned-to-profit",
+      "source_news_ids": [
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87",
+        "bb124ac84adf8d87"
+      ],
+      "created_at": "2026-06-25T12:28:58.114871-04:00"
+    }
+  ]
 }

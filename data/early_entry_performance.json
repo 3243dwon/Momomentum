@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T09:27:21.527744-04:00",
+  "generated_at": "2026-06-25T12:35:08.380419-04:00",
   "window_days": 30,
   "slippage_round_trip_pct": 0.5,
   "horizons": [
@@ -8,7 +8,7 @@
     "3d"
   ],
   "horizon_note": "0d = entry-day close; graded against the settled daily close",
-  "total_calls": 112,
+  "total_calls": 140,
   "untracked_count": 0,
   "fired_vs_control_edge_net": {
     "0d": -0.12,
@@ -17,7 +17,7 @@
   },
   "by_fired": {
     "fired": {
-      "count": 20,
+      "count": 25,
       "horizons": {
         "0d": {
           "evaluated": 20,
@@ -43,7 +43,7 @@
       }
     },
     "control": {
-      "count": 92,
+      "count": 115,
       "horizons": {
         "0d": {
           "evaluated": 92,
@@ -71,7 +71,7 @@
   },
   "by_direction": {
     "long": {
-      "count": 20,
+      "count": 25,
       "horizons": {
         "0d": {
           "evaluated": 20,
@@ -99,7 +99,7 @@
   },
   "by_gap_band": {
     "8+": {
-      "count": 4,
+      "count": 8,
       "horizons": {
         "0d": {
           "evaluated": 4,
@@ -125,7 +125,7 @@
       }
     },
     "5-8": {
-      "count": 10,
+      "count": 11,
       "horizons": {
         "0d": {
           "evaluated": 10,

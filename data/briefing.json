@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-25T09:22:34.473841-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on holds; desk slate SHC/UAA/VTEX/ATEC live \u2014 macro dominated by hot PCE vs. falling crude crosscurrent",
+  "generated_at": "2026-06-25T12:28:58.114871-04:00",
+  "window": "RTH",
+  "headline": "Semis lead risk-on surge: MU +16%, QCOM +9% on earnings/guidance; desk rotates to CWAN, QCOM, TMO",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d; VXX stress 0.98 \u2014 vol benign. Micron beat lifting semis; hot PCE keeps cut hopes capped."
+    "line": "QQQ +0.71%, SPY +0.02%, VXX stress ratio 0.97 \u2014 vol suppressed, semis carrying the tape; momentum entries viable but chase risk real on exte"
   },
   "actions": [
     {
-      "ticker": "SHC",
+      "ticker": "CWAN",
       "direction": "long",
-      "entry": 16.7,
-      "stop": 16.34,
-      "target": 17.42,
-      "line": "Quarter size \u2014 signal/risk agree, research neutral; R/R ~2:1, tight stop at 16.34."
+      "entry": 24.56,
+      "stop": 24.09,
+      "target": 25.51,
+      "line": "Clean momentum setup; signal + risk aligned. Half size."
     },
     {
-      "ticker": "UAA",
+      "ticker": "QCOM",
       "direction": "long",
-      "entry": 6.06,
-      "stop": 5.94,
-      "target": 6.3,
-      "line": "Half size \u2014 cleanest risk on the slate, low severity; 12\u00a2 stop, 24\u00a2 to target."
+      "entry": 214.4,
+      "stop": 201.82,
+      "target": 239.56,
+      "line": "Durable catalyst (guidance beat), research + risk aligned; quarter size on chase risk/split signal."
     },
     {
-      "ticker": "VTEX",
+      "ticker": "TMO",
       "direction": "long",
-      "entry": 3.7,
-      "stop": 3.57,
-      "target": 3.97,
-      "line": "Quarter size \u2014 strong signal, but volatile 1d gap flags medium risk; 13\u00a2 stop, 27\u00a2 target."
+      "entry": 508.93,
+      "stop": 468.22,
+      "target": 590.36,
+      "line": "Three neutrals, no veto in risk-on regime; RSI elevated \u2014 quarter size only."
     }
   ],
   "watch": [
     {
-      "ticker": "ABSI",
-      "type": "mover",
-      "line": "+36.5% on 2.94x volume \u2014 overbought flag; watch for fade setup after open."
+      "ticker": "AMAT",
+      "type": "ripple",
+      "line": "High-confidence MU read-through: Micron capex floods into AMAT DRAM/HBM tool bookings. Not priced in."
     },
     {
-      "ticker": "DFTX",
-      "type": "mover",
-      "line": "+16.5% on 3.45x vol \u2014 highest rel-vol on scan, overbought; fade or continuation to monitor."
+      "ticker": "RGEN",
+      "type": "ripple",
+      "line": "High-confidence TECH takeout ripple: pure-play bioprocessing tools, similar scale, primary read-through M&A target."
     },
     {
-      "ticker": "COUR",
-      "type": "mover",
-      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought flag; worth tracking for follow-through."
+      "ticker": "MU",
+      "type": "catalyst",
+      "line": "+15.7% on Q3 beat; memory capex commentary drives semi equipment ripple chain."
     },
     {
-      "ticker": "AVEX",
-      "type": "mover",
-      "line": "-14.5% on 1.88x vol \u2014 big gap down, no catalyst listed; watch for stabilization/bounce level."
+      "ticker": "TECH",
+      "type": "catalyst",
+      "line": "+19.7% on Merck KGaA cash takeout bid; 7x rel volume, overbought \u2014 watch peers for M&A re-rating."
     },
     {
-      "ticker": "SOC",
-      "type": "mover",
-      "line": "-11.3% oversold on 1.13x vol \u2014 oversold flag; potential mean-reversion candidate post-open."
+      "ticker": "ONTO",
+      "type": "ripple",
+      "line": "Medium-confidence MU ripple: HBM packaging/metrology play via Dragonfly; Micron HBM ramp lifts order visibility."
     }
   ],
   "changed": [
-    "Macro cross-current added: hot Core PCE (4%+ 3yr high) vs. collapsing crude \u2014 rate-hike chatter resurfacing",
-    "Bitcoin multi-year low flagged \u2014 crypto contagion risk to leveraged/crypto-adjacent names",
-    "Micron beat adds AI/semi tailwind to risk-on backdrop"
+    "Desk slate fully rotated \u2014 prior picks SHC/UAA/VTEX/ATEC replaced by CWAN/QCOM/TMO",
+    "Semi earnings catalysts (MU +16%, QCOM +9%) now dominate tape vs. prior macro crosscurrent framing",
+    "Hot Core PCE / rate-hike risk persists from prior scan but no longer headline driver"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 09:22 ET 2026-06-25 \u2014 prices stale pre-open; all four desk entries are limit levels that may gap through at RTH open.",
-    "Hot PCE + possible Fed hike discussion is a live regime-change risk for long-duration/growth longs \u2014 VTEX and ATEC most exposed if front-end yields spike further."
+    "RTH scan as of 12:28 ET 2026-06-25; prices and levels are as of scan time and may be stale intraday \u2014 verify before entry.",
+    "Core PCE at 3-year high raises rate-hike tail risk; long-duration names (TMO) and high-multiple semis are most exposed if real yields reprice further."
   ]
 }
