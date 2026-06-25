@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-25T04:05:14.405888+00:00",
+  "generated_at": "2026-06-25T10:49:08.969481+00:00",
   "sources": {
     "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
     "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
     "presidential_documents": "federalregister.gov API (president=donald-trump)"
   },
   "window_days": 90,
-  "truth_post_count": 1276,
-  "news_post_count": 0,
-  "document_count": 36,
+  "truth_post_count": 1277,
+  "news_post_count": 1,
+  "document_count": 38,
   "tickers_mentioned": [
     "AAPL",
     "AMZN",
@@ -77,6 +77,13 @@
     }
   },
   "truth_posts": [
+    {
+      "ts": "2026-06-25T09:30:57.585Z",
+      "text": "After testy exchange, Senate hands Trump win by rejecting bill to rein in his war on Iran: https://justthenews.com/government/congress/after-testy-exchange-senate-hands-trump-win-rejecting-bill-rein-his-war-iran",
+      "url": "https://truthsocial.com/@realDonaldTrump/116810046344255729",
+      "ticker_mentions": [],
+      "source": "truth_social"
+    },
     {
       "ts": "2026-06-25T03:45:00.999Z",
       "text": "The two major earthquakes that just hit the great people of Venezuela are both massive in scale and have left a devastating number of deaths. The U.S.A. stands ready, willing, and able to help! I have instructed all agencies of our government to get ready to move quickly. We will be there for our new and great friends. Early reports are not good!!! President DJT",
@@ -351,13 +358,6 @@
       "source": "truth_social"
     },
     {
-      "ts": "2026-06-23T00:51:36.152Z",
-      "text": "Iranian resistance leader, former national security aide praise Trump's deal with Tehran: https://justthenews.com/government/security/iranian-resistance-leader-former-national-security-aide-praise-trumps-mou",
-      "url": "https://truthsocial.com/@realDonaldTrump/116796679527851962",
-      "ticker_mentions": [],
-      "source": "truth_social"
-    },
-    {
       "ts": "2026-06-18T04:29:38.755Z",
       "text": "The Technology the World relies on was invented in America. We all remember \"Intel Inside.\" Stupid Presidents took our Economy for granted, and let Taiwan and others steal our Semiconductor Factories. They forgot to protect our Industries with TARIFFS. When I won my Second Term (Third, actually!), it was clear America needed its Semiconductor Industry to come back to the U.S.A. We design everything, but we need to BUILD it here, NOW! So I decided to help Intel because we need to design and build our Chips right here in America. First, we helped bring in Nvidia, and they agreed to build their first level Chips with Intel. Next, Elon agreed to build his TerraFab, the largest Chip Factory in the World, designed together with Intel's Technology team. And, finally, Apple has agreed to work with Intel to design and build its Chips in America. We decided to help Intel in exchange for 10% of their shares. Is that too much or, too little? They were worth around 100 Billion Dollars when we made our offer. Now they are worth over 600 BILLION DOLLARS! Nine months, and they've increased in value over HALF A TRILLION DOLLARS. America's stake is now over 60 Billion Dollars. When was the last time a President made America money?? Thank you for your attention to this matter! President DONALD J. TRUMP",
       "url": "https://truthsocial.com/@realDonaldTrump/116769225357410422",
@@ -594,8 +594,36 @@
       "source": "truth_social"
     }
   ],
-  "news_posts": [],
+  "news_posts": [
+    {
+      "ts": "2026-06-25T08:37:09+00:00",
+      "text": "Exclusive: Trump\u2019s Intel Push Won\u2019t Kill TSMC\u2014Why The World\u2019s \u2018Indispensable Backbone\u2019 Remains A Buy",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNWnZaZFJEYUdIbThsaU9fb1VYYW01LUpSSHZSZXpCbFZ6Rmt3cDRwS0E0ajdyRE5ScHpKcVYxanI4alNZaFExNUlyemZra0tnSXpiRDlJd1J5YkJiZlhnMnVpZnlvY0ktaFM4Nkg3bW9UWldPVmpGRVVycUpCdjJreGlEangtbnlJNmtuSjBpbzUyLWNwcnBvRTZmRlBIXzctZUdpM2FIbkVKWkpZcDVkeVl5UGR4aUxOY0FpbXFVRzVCZ3NU?oc=5",
+      "ticker_mentions": [
+        "INTC"
+      ],
+      "source": "news"
+    }
+  ],
   "presidential_documents": [
+    {
+      "title": "Ushering in the Next Frontier of Quantum Innovation",
+      "type": "Presidential Document",
+      "signing_date": "2026-06-25",
+      "publication_date": "2026-06-25",
+      "document_number": "2026-12910",
+      "html_url": "https://www.federalregister.gov/documents/2026/06/25/2026-12910/ushering-in-the-next-frontier-of-quantum-innovation",
+      "abstract": null
+    },
+    {
+      "title": "Securing the Nation Against Advanced Cryptographic Attacks",
+      "type": "Presidential Document",
+      "signing_date": "2026-06-25",
+      "publication_date": "2026-06-25",
+      "document_number": "2026-12909",
+      "html_url": "https://www.federalregister.gov/documents/2026/06/25/2026-12909/securing-the-nation-against-advanced-cryptographic-attacks",
+      "abstract": null
+    },
     {
       "title": "Continuation of the National Emergency With Respect to the Western Balkans",
       "type": "Presidential Document",
