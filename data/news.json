@@ -1,5 +1,440 @@
 {
-  "generated_at": "2026-06-25T06:46:41.423633-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-06-25T09:22:34.473841-04:00",
+  "ticker_news": {
+    "ABSI": [
+      {
+        "id": "ec7a6608da701834",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ABSI",
+        "scope": "ticker",
+        "title": "Micron To Rally More Than 57%? Here Are 10 Top Analyst Forecasts For Thursday",
+        "url": "https://www.benzinga.com/news/26/06/60095710/micron-to-rally-more-than-57-here-are-10-top-analyst-forecasts-for-thursday",
+        "published_at": "2026-06-25T13:06:49+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "analyst_forecasts_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "f6e3efdf9c97ceae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin May Be Undervalued, But AI Remains The Biggest Opportunity, Grayscale Exec Says",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60096021/bitcoin-may-be-undervalued-but-ai-remains-the-biggest-opportunity-grayscale-exec-says",
+        "published_at": "2026-06-25T13:16:07+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "grayscale_bitcoin_ai_opportunity_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NUVB": [
+      {
+        "id": "26781a0ee1bb8889",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NUVB",
+        "scope": "ticker",
+        "title": "H.B. Fuller, Trip.com, Hertz Global And Other Big Stocks Moving Lower In Thursday Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60094084/h-b-fuller-trip-com-hertz-global-and-other-big-stocks-moving-lower-in-thursday-pre-market-session",
+        "published_at": "2026-06-25T12:08:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "premarket_movers_mixed_session",
+        "tickers_mentioned": [
+          "HBF",
+          "TRIP",
+          "HTZ"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MKC": [
+      {
+        "id": "9692b0bf84e5cbc1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MKC",
+        "scope": "ticker",
+        "title": "Earnings Scheduled For June 25, 2026",
+        "url": "https://www.benzinga.com/news/earnings/26/06/60092579/earnings-scheduled-june-25-2026",
+        "published_at": "2026-06-25T11:11:18+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "mck_q2_earnings_june_25_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "May/June PCE inflation prints above 4% \u2014 hotter than Fed target \u2014 but collapsing crude oil prices are expected to feed through to lower headline CPI/PCE in coming months.",
+      "primary_drivers": [
+        "Sticky core inflation above 4% delays Fed cuts / keeps real rates higher for longer",
+        "Falling crude oil = direct headline disinflation via energy CPI component and lower input costs for transport/chemicals",
+        "Mixed signal: bearish for energy producers, bullish for energy consumers and rate-sensitive disinflation beneficiaries on the lag"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "LUV",
+          "rationale": "Jet fuel is ~25-30% of Southwest's operating costs and it hedges less than peers; a sustained crude decline drops unit costs straight to EBIT. Direct cost-input exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Fuel is the second-largest cost line at Delta (~20%+ of opex). Falling crude directly expands margins and Delta has explicitly guided fuel cost sensitivity in prior quarters.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Ethane/naphtha feedstocks track crude; lower oil compresses input costs for commodity chemicals while end-product prices lag, widening spreads.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Lower diesel/gasoline reduces both Walmart's trucking distribution costs and frees up low-income consumer wallet share at the pump \u2014 dual tailwind from the oil leg of the story.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "UPS",
+          "rationale": "Diesel is a major variable cost; falling crude lowers fuel surcharges lag but improves underlying margin. Direct input cost exposure.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Upstream realizations move directly with crude; 'tumbling oil prices' compresses earnings per barrel. Largest US integrated, most index-weighted casualty.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Permian-heavy pure-play E&P with high oil beta and leveraged balance sheet \u2014 earnings and FCF highly sensitive to WTI; downside leverage to falling crude.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HAL",
+          "rationale": "Oilfield services demand follows E&P capex, which contracts when oil falls. North America completions activity is the most price-sensitive segment Halliburton dominates.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "pce_inflation_june_2026_4pct",
+      "source_news_ids": [
+        "2aa439b93fb1bba1"
+      ],
+      "headlines": [
+        "U.S. inflation tops 4%, PCE shows, but tumbling oil prices to bring price relief soon"
+      ]
+    },
+    {
+      "event_summary": "Bitcoin has crashed to multi-year lows, with ethereum also selling off sharply.",
+      "primary_drivers": [
+        "Direct mark-to-market losses on crypto holdings and crypto-denominated revenue",
+        "Lower trading volumes and transaction fees on crypto platforms",
+        "Reduced demand for mining hardware/hosting and collapse in mining economics"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "HOOD",
+          "rationale": "Equity/options trading volumes tend to pick up share of wallet when crypto craters as retail rotates back into stocks; however crypto is ~15-20% of HOOD revenue so net effect is mixed \u2014 listed as low-confidence relative beneficiary on rotation, not absolute.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "MSTR",
+          "rationale": "MicroStrategy holds hundreds of thousands of BTC on balance sheet; equity trades as a leveraged proxy on bitcoin price. Multi-year BTC lows directly impair NAV and could trigger convertible debt concerns.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "COIN",
+          "rationale": "Coinbase revenue is ~majority transaction fees tied to crypto trading volume and price levels; bear market crushes both volumes and custody AUM fees. Direct earnings hit.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "MARA",
+          "rationale": "Marathon Digital is a pure-play BTC miner \u2014 revenue is BTC mined \u00d7 BTC price. At multi-year lows many miners go cash-flow negative, especially post-halving, raising dilution/solvency risk.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RIOT",
+          "rationale": "Same mechanism as MARA \u2014 pure-play bitcoin miner with high fixed power/hosting costs; sustained low BTC prices push hashprice below breakeven for most US miners.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CLSK",
+          "rationale": "CleanSpark is a pure-play bitcoin miner with direct revenue exposure to BTC spot price; multi-year lows compress margins and may force equity raises.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "HOOD",
+          "rationale": "Robinhood's crypto trading line (~15-25% of transaction revenue depending on quarter) collapses on volume and price drawdown. Direct revenue hit even if equities offset partially.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "HUT",
+          "rationale": "Hut 8 miner with BTC treasury holdings \u2014 double exposure via mining revenue and balance-sheet BTC marks.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "bitcoin_ethereum_price_decline_june_2026",
+      "source_news_ids": [
+        "09eb2454d64541ee"
+      ],
+      "headlines": [
+        "Bitcoin and ethereum prices today, Thursday, June 25, 2026: Bitcoin hits its lowest levels in years"
+      ]
+    },
+    {
+      "event_summary": "Micron's earnings beat eased fears about AI demand sustainability, lifting tech stocks broadly, while oil prices continued to decline.",
+      "primary_drivers": [
+        "AI memory/HBM demand validation read-through to semis",
+        "Lower oil prices reduce input costs and ease inflation concerns",
+        "Risk-on rotation into AI capex beneficiaries"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "MU",
+          "rationale": "Direct subject of the earnings beat \u2014 HBM3E and DRAM pricing/demand confirmed strong, validating the AI memory cycle.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "WDC",
+          "rationale": "Closest memory/storage peer to Micron \u2014 NAND pricing and AI storage demand commentary from MU reads directly across to Western Digital.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "NVDA",
+          "rationale": "MU's HBM sell-through confirms Nvidia GPU end-demand is robust; HBM is gated supply for H100/B200, so MU strength validates Nvidia's order book.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMAT",
+          "rationale": "Memory capex commentary from MU drives WFE (wafer fab equipment) orders; Applied Materials has highest memory equipment exposure among large-cap semicap.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LRCX",
+          "rationale": "Lam Research is heavily levered to memory etch/deposition capex; MU guidance on fab spend is the most direct leading indicator.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DAL",
+          "rationale": "Falling oil cuts jet fuel costs \u2014 Delta has historically high fuel-cost sensitivity and limited hedging vs peers.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "XOM",
+          "rationale": "Continued oil price decline directly compresses upstream realizations; Exxon is the most-traded proxy for crude weakness.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale producer with high oil-price beta and leveraged balance sheet \u2014 among most sensitive large-caps to falling crude.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SLB",
+          "rationale": "Oilfield services demand softens when crude falls and E&P capex guidance gets cut; Schlumberger is the bellwether.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "APA",
+          "rationale": "Small/mid-cap E&P with high oil-price leverage; falls disproportionately on continued crude weakness.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "inflation_gdp_june_2026",
+      "source_news_ids": [
+        "a835cd75573a3e52"
+      ],
+      "headlines": [
+        "Tech stocks surge as Micron earnings ease AI fears, oil falls further"
+      ]
+    },
+    {
+      "event_summary": "Core PCE inflation hit a 3-year high, reviving discussion of a possible Fed rate hike rather than cuts.",
+      "primary_drivers": [
+        "Higher-for-longer / rising rate expectations lifting front-end yields and the dollar",
+        "Discount rate compression on long-duration equities",
+        "Net interest margin tailwind for asset-sensitive banks",
+        "Real-asset / inflation hedge demand"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab is highly asset-sensitive; higher front-end rates reduce bank sweep cash drag and lift NIM. Also benefits from reduced fears of cash sorting reversal if rates stay elevated.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Large-cap money-center bank with positive asset sensitivity to short rates; a hawkish repricing of the front end directly lifts NII guidance trajectory.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "MCO",
+          "rationale": "Higher-for-longer rates extend the refinancing wall and push more issuers to roll debt at higher coupons, driving rating-action volume; Moody's revenue is rate-volatility sensitive.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CME",
+          "rationale": "Renewed rate-hike debate spikes SOFR/Fed Funds futures and Treasury futures volumes \u2014 CME's highest-margin complex. Direct revenue link to rate-path uncertainty.",
+          "confidence": "high",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "NEM",
+          "rationale": "Sticky inflation with the Fed losing credibility on the 2% target is a classic gold tailwind; Newmont is the most liquid US-listed pure-play gold miner with operating leverage to spot gold.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "XOM",
+          "rationale": "Energy is one of the few sectors with positive earnings revisions in a sticky-inflation regime; also a real-asset hedge with shareholder return policy tied to cash flows, not multiple expansion.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DHI",
+          "rationale": "Homebuilders depend on mortgage rates; renewed hike talk pushes 10Y and 30Y mortgage rates back up, killing affordability and cancellation rates worsen. D.R. Horton is the entry-level pure-play.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "Z",
+          "rationale": "Zillow's transaction-volume model is directly tied to existing home sales, which collapse when mortgage rates spike. Hawkish surprise = lower turnover = lower Premier Agent and mortgage revenue.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "High-multiple, long-duration growth name trading on terminal value; among the most rate-sensitive in the AI-momentum cohort given >60x forward sales.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income \u2014 large-cap net-lease REIT with long-duration cash flows and AFFO growth dependent on spread investing. Higher rates compress investment spreads and the dividend-yield comp gets less attractive vs. T-bills.",
+          "confidence": "high",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "fed_preferred_inflation_june_2026",
+      "source_news_ids": [
+        "9532e72b9cb27560"
+      ],
+      "headlines": [
+        "Fed's preferred inflation measure hits three-year high, keeping talk of possible rate hike in play"
+      ]
+    },
+    {
+      "event_summary": "May PCE inflation came in hot at over 4.0% YoY with consumer spending remaining strong, signaling sticky inflation and pushing back expectations for Fed rate cuts.",
+      "primary_drivers": [
+        "Higher-for-longer rates \u2192 higher discount rate on long-duration equities",
+        "Net interest margin expansion for banks with asset-sensitive balance sheets",
+        "Inflation hedge demand \u2192 real assets and pricing-power names",
+        "Stronger USD pressure on multinationals with FX translation exposure"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Energy majors benefit from inflation tailwinds; commodity prices typically embedded in PCE strength, and XOM has demonstrated pricing power with strong free cash flow that re-rates higher in inflationary regimes.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Largest US money-center bank with asset-sensitive balance sheet \u2014 delayed Fed cuts keep NIM elevated. Strong consumer spending also reduces credit loss provisioning concerns on card book.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "COF",
+          "rationale": "Capital One is a pure-play consumer credit name; 'strong consumer spending' directly boosts card purchase volume and interchange revenue, while higher-for-longer rates support card yield spreads.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "SCHW",
+          "rationale": "Charles Schwab benefits directly from higher-for-longer short rates via money market sweep spreads and reduced cash sorting pressure; rate-cut delay extends NIM tailwind.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CVX",
+          "rationale": "Integrated oil major with inflation-linked revenue and high dividend yield acts as inflation hedge; benefits from same commodity pass-through driving PCE prints.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "Z",
+          "rationale": "Zillow revenue tied to housing transaction volume; elevated mortgage rates from hot PCE freeze existing home sales activity, the core of its Premier Agent and mortgage segments.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "O",
+          "rationale": "Realty Income is a long-duration triple-net REIT highly sensitive to the 10-year yield; hot PCE pushing yields up directly compresses cap rate valuations.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ROKU",
+          "rationale": "Unprofitable mid-cap growth name with no near-term earnings; valuation is pure DCF on out-year cash flows, gets re-rated lower when discount rate stays elevated.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "dedup_group": "us_pce_inflation_may_2026",
+      "source_news_ids": [
+        "9347c0f16e0419ff"
+      ],
+      "headlines": [
+        "US PCE inflation measure tops 4.0% in May; consumer spending strong"
+      ]
+    }
+  ]
 }

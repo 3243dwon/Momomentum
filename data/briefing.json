@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-25T06:46:41.423633-04:00",
+  "generated_at": "2026-06-25T09:22:34.473841-04:00",
   "window": "AH_PRE",
-  "headline": "Risk-on intact, SPY flat; desk slate unchanged \u2014 SHC/UAA/VTEX/ATEC all live pre-open",
+  "headline": "Risk-on holds; desk slate SHC/UAA/VTEX/ATEC live \u2014 macro dominated by hot PCE vs. falling crude crosscurrent",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress 0.98 \u2014 vol suppressed. Soft drift, not a reversal."
+    "line": "SPY -0.04% / QQQ -0.42%, both above 50d; VXX stress 0.98 \u2014 vol benign. Micron beat lifting semis; hot PCE keeps cut hopes capped."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 16.7,
       "stop": 16.34,
       "target": 17.42,
-      "line": "Quarter size \u2014 signal agrees, research neutral, medium risk; R/R ~2:1."
+      "line": "Quarter size \u2014 signal/risk agree, research neutral; R/R ~2:1, tight stop at 16.34."
     },
     {
       "ticker": "UAA",
@@ -21,7 +21,7 @@
       "entry": 6.06,
       "stop": 5.94,
       "target": 6.3,
-      "line": "Half size \u2014 clean low-risk setup, signal agrees; research neutral but non-blocking."
+      "line": "Half size \u2014 cleanest risk on the slate, low severity; 12\u00a2 stop, 24\u00a2 to target."
     },
     {
       "ticker": "VTEX",
@@ -29,39 +29,43 @@
       "entry": 3.7,
       "stop": 3.57,
       "target": 3.97,
-      "line": "Quarter size \u2014 strong signal but volatile 1d gap flags medium risk; tight stop."
+      "line": "Quarter size \u2014 strong signal, but volatile 1d gap flags medium risk; 13\u00a2 stop, 27\u00a2 target."
     }
   ],
   "watch": [
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+36.5%, rel-vol 2.94x \u2014 overbought flag; watch for fade or continuation catalyst."
+      "line": "+36.5% on 2.94x volume \u2014 overbought flag; watch for fade setup after open."
     },
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+16.5%, rel-vol 3.45x \u2014 highest relative volume on the board; overbought, no desk take."
+      "line": "+16.5% on 3.45x vol \u2014 highest rel-vol on scan, overbought; fade or continuation to monitor."
     },
     {
       "ticker": "COUR",
       "type": "mover",
-      "line": "+12.7%, rel-vol 2.55x \u2014 unusual volume without overbought flag; cleaner if it holds."
+      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought flag; worth tracking for follow-through."
     },
     {
       "ticker": "AVEX",
       "type": "mover",
-      "line": "-14.5% on 1.88x vol \u2014 large down move, no oversold flag yet; wait for base."
+      "line": "-14.5% on 1.88x vol \u2014 big gap down, no catalyst listed; watch for stabilization/bounce level."
     },
     {
       "ticker": "SOC",
       "type": "mover",
-      "line": "-11.3%, oversold flag \u2014 potential mean-reversion watch if tape firms."
+      "line": "-11.3% oversold on 1.13x vol \u2014 oversold flag; potential mean-reversion candidate post-open."
     }
   ],
-  "changed": [],
+  "changed": [
+    "Macro cross-current added: hot Core PCE (4%+ 3yr high) vs. collapsing crude \u2014 rate-hike chatter resurfacing",
+    "Bitcoin multi-year low flagged \u2014 crypto contagion risk to leveraged/crypto-adjacent names",
+    "Micron beat adds AI/semi tailwind to risk-on backdrop"
+  ],
   "caveats": [
-    "AH/Pre-market scan as of 06:46 ET 2026-06-25 \u2014 prices stale vs. RTH open; levels can gap through entries.",
-    "No catalysts, ripple calls, or macro events fired this scan \u2014 movers lack a known driver."
+    "AH/Pre-market scan as of 09:22 ET 2026-06-25 \u2014 prices stale pre-open; all four desk entries are limit levels that may gap through at RTH open.",
+    "Hot PCE + possible Fed hike discussion is a live regime-change risk for long-duration/growth longs \u2014 VTEX and ATEC most exposed if front-end yields spike further."
   ]
 }
