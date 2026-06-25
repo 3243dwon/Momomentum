@@ -1,7 +1,41 @@
 {
-  "generated_at": "2026-06-24T22:23:57.416055+00:00",
+  "generated_at": "2026-06-25T00:19:46.673059+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "04d60deb6a29",
+      "ts": "2026-06-25T00:16:44.997302+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "COHR",
+      "direction": "long",
+      "confidence": null,
+      "price": 392.76,
+      "thesis": "\ud83e\udde0 Serenity COHR +3.0% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "a1e52afeb27e",
+      "ts": "2026-06-25T00:16:44.997302+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "VTEX",
+      "direction": "long",
+      "confidence": null,
+      "price": 3.7,
+      "thesis": "\ud83d\ude80 VTEX +5.7% on 3.2x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "ade52c124a81",
       "ts": "2026-06-24T22:20:49.978926+00:00",
@@ -3430,11 +3464,11 @@
       "price": 5.28,
       "thesis": "+4.9% today; 5d uptrend +14%; 1.9x volume",
       "outcomes": {
-        "1d": null,
+        "1d": 0.57,
         "3d": null,
         "5d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "e71f2942d51f",
@@ -8463,40 +8497,6 @@
       "thesis": "\ud83e\udde0 Serenity GOOGL -3.0% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -2.81,
-        "3d": null,
-        "5d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "bdc897658a5c",
-      "ts": "2026-06-22T13:38:26.729081+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "SPCE",
-      "direction": "short",
-      "confidence": null,
-      "price": 3.23,
-      "thesis": "\ud83e\udde0 Serenity SPCE -9.4% \u26aa",
-      "outcomes": {
-        "1d": 6.66,
-        "3d": null,
-        "5d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "7f2e668e2016",
-      "ts": "2026-06-22T13:38:26.729081+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "RKLB",
-      "direction": "long",
-      "confidence": null,
-      "price": 102.07,
-      "thesis": "\ud83e\udde0 Serenity RKLB -4.9% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -3.63,
         "3d": null,
         "5d": null
       },

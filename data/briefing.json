@@ -1,54 +1,70 @@
 {
-  "generated_at": "2026-06-24T18:20:49.978926-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on holds; ABSI +37% leads a noisy AH tape \u2014 desk carries one lite long in SHC",
+  "generated_at": "2026-06-24T20:16:44.997302-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on intact; desk adds 3 lites overnight \u2014 SHC half, ATEC/UAA/VTEX quarters",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress ratio 0.98 \u2014 vol contained. Regime intact, breadth soft."
+    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress 0.98 \u2014 low vol, risk-on backdrop; overnight liquidity thin, respect wide spreads on entr"
   },
   "actions": [
     {
       "ticker": "SHC",
       "direction": "long",
       "entry": 16.7,
-      "stop": 16.34,
-      "target": 17.42,
-      "line": "Quarter-size long \u2014 signal/risk green but no catalyst; desk trimmed size for research skepticism. R/R ~2:1."
+      "stop": 15.36,
+      "target": 19.37,
+      "line": "Bullish cross + 5.5% day; signal strong, risk clean \u2014 half size, best R/R of the desk."
+    },
+    {
+      "ticker": "ATEC",
+      "direction": "long",
+      "entry": 8.71,
+      "stop": 8.15,
+      "target": 9.83,
+      "line": "Pure tech momentum play; signal agrees but research against \u2014 quarter size only."
+    },
+    {
+      "ticker": "VTEX",
+      "direction": "long",
+      "entry": 3.7,
+      "stop": 3.46,
+      "target": 4.19,
+      "line": "Signal high conviction, but late-squeeze risk real \u2014 quarter size, tight stop."
     }
   ],
   "watch": [
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+36.5%, rel-vol 2.9x, overbought \u2014 watch for fade setup if move stalls at open tomorrow."
+      "line": "+36.5%, 2.94\u00d7 vol, overbought \u2014 watch for fade setup at open if momentum stalls."
     },
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+16.5%, rel-vol 3.5x, overbought \u2014 highest relative volume on the board; needs a catalyst to confirm."
+      "line": "+16.5%, 3.45\u00d7 vol, overbought \u2014 highest rel-vol on the tape, gap-fill risk into RTH."
     },
     {
       "ticker": "COUR",
       "type": "mover",
-      "line": "+12.7%, rel-vol 2.6x \u2014 unusual volume without overbought flag; cleaner momentum profile than ABSI/DFTX."
+      "line": "+12.7%, 2.55\u00d7 vol \u2014 no overbought flag yet, cleaner than ABSI/DFTX if catalyst confirmed."
     },
     {
       "ticker": "AVEX",
       "type": "mover",
-      "line": "-14.5% on modest vol \u2014 no oversold flag yet; watch for stabilization level before any bounce thesis."
+      "line": "-14.5%, 1.88\u00d7 vol \u2014 notable downside, watch for dead-cat bounce or continued flush at open."
     },
     {
-      "ticker": "SOC",
+      "ticker": "UAA",
       "type": "mover",
-      "line": "-11.3%, oversold flag \u2014 only name on the losers board flagged oversold; potential mean-reversion candidate."
+      "line": "Desk took quarter long 6.06 / stop 5.61 / tgt 6.96 \u2014 signal neutral, research against; monitor for disqualifier."
     }
   ],
   "changed": [
-    "UAA and VTEX dropped off desk takes \u2014 SHC is now the sole action",
-    "No active catalysts or ripple calls this scan vs. PAYX/HCM narrative last briefing"
+    "Desk expanded from 1 take (SHC) to 4 takes: added ATEC, UAA, VTEX as quarter-size longs",
+    "UAA added despite split signal/research view \u2014 minimum size only"
   ],
   "caveats": [
-    "AH_POST window \u2014 prices as of 18:20 ET; AH liquidity thin, levels may gap significantly at next RTH open.",
-    "SHC take is quarter-size with internal research disagreement on lack of catalyst \u2014 conviction is deliberately low."
+    "OVERNIGHT window \u2014 prices as of 2026-06-24 20:16 ET; quotes are post-close and may gap significantly by RTH open.",
+    "No catalyst or macro data populated this scan \u2014 mover moves are unattributed; verify news before trading ABSI/DFTX/AVEX."
   ]
 }
