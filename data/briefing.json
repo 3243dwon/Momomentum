@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-24T20:16:44.997302-04:00",
+  "generated_at": "2026-06-25T00:01:17.546875-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on intact; desk adds 3 lites overnight \u2014 SHC half, ATEC/UAA/VTEX quarters",
+  "headline": "Risk-on holds; Hormuz tension adds oil/defense tail risk \u2014 desk slate unchanged at SHC/ATEC/UAA/VTEX",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d. VXX stress 0.98 \u2014 low vol, risk-on backdrop; overnight liquidity thin, respect wide spreads on entr"
+    "line": "SPY -0.04% / QQQ -0.42%, both above 50d; VXX stress ratio 0.98 \u2014 low vol, risk-on bias intact but QQQ softness worth watching."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 16.7,
       "stop": 15.36,
       "target": 19.37,
-      "line": "Bullish cross + 5.5% day; signal strong, risk clean \u2014 half size, best R/R of the desk."
+      "line": "Bullish cross + 5.5% day; signal strong, risk clean \u2014 half size."
     },
     {
       "ticker": "ATEC",
@@ -21,7 +21,7 @@
       "entry": 8.71,
       "stop": 8.15,
       "target": 9.83,
-      "line": "Pure tech momentum play; signal agrees but research against \u2014 quarter size only."
+      "line": "Pure tech momentum play; signal agrees, research against \u2014 quarter size only."
     },
     {
       "ticker": "VTEX",
@@ -29,42 +29,41 @@
       "entry": 3.7,
       "stop": 3.46,
       "target": 4.19,
-      "line": "Signal high conviction, but late-squeeze risk real \u2014 quarter size, tight stop."
+      "line": "Signal conviction high but late-squeeze risk flagged \u2014 quarter size only."
     }
   ],
   "watch": [
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+36.5%, 2.94\u00d7 vol, overbought \u2014 watch for fade setup at open if momentum stalls."
+      "line": "+36.5% on 2.94x vol \u2014 overbought flag; watch for fade or continuation catalyst."
     },
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+16.5%, 3.45\u00d7 vol, overbought \u2014 highest rel-vol on the tape, gap-fill risk into RTH."
+      "line": "+16.5% on 3.45x vol \u2014 highest rel-vol in scan, overbought; no desk take yet."
     },
     {
       "ticker": "COUR",
       "type": "mover",
-      "line": "+12.7%, 2.55\u00d7 vol \u2014 no overbought flag yet, cleaner than ABSI/DFTX if catalyst confirmed."
+      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought flag; cleaner setup candidate."
     },
     {
       "ticker": "AVEX",
       "type": "mover",
-      "line": "-14.5%, 1.88\u00d7 vol \u2014 notable downside, watch for dead-cat bounce or continued flush at open."
+      "line": "-14.5% on elevated vol \u2014 potential dead-cat watch or short thesis if bounce fails."
     },
     {
-      "ticker": "UAA",
+      "ticker": "SOC",
       "type": "mover",
-      "line": "Desk took quarter long 6.06 / stop 5.61 / tgt 6.96 \u2014 signal neutral, research against; monitor for disqualifier."
+      "line": "-11.3% oversold flag \u2014 watch for mean-reversion setup if market holds risk-on."
     }
   ],
   "changed": [
-    "Desk expanded from 1 take (SHC) to 4 takes: added ATEC, UAA, VTEX as quarter-size longs",
-    "UAA added despite split signal/research view \u2014 minimum size only"
+    "Hormuz escalation adds macro oil/shipping tail risk not present in prior scan"
   ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-06-24 20:16 ET; quotes are post-close and may gap significantly by RTH open.",
-    "No catalyst or macro data populated this scan \u2014 mover moves are unattributed; verify news before trading ABSI/DFTX/AVEX."
+    "OVERNIGHT scan (2026-06-25 00:01 ET) \u2014 prices as of scan time, pre-RTH; levels may gap materially at open.",
+    "Hormuz headline is fluid; energy/defense names can reprice fast \u2014 reassess macro exposure at RTH open."
   ]
 }
