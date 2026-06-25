@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-25T15:08:00.287340-04:00",
-  "window": "RTH",
-  "headline": "Semis still in command: MU +15.8% catalyst holds, desk adds ACHC + LRCX; TECH +19.8% on 11x volume",
+  "generated_at": "2026-06-25T17:47:38.775005-04:00",
+  "window": "AH_POST",
+  "headline": "Semis + storage surge AH: SNDK +21.8%, MU +16%, TECH +20% on 13x vol; desk unanimous on QXO",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.59%, SPY flat, VXX stress 0.97 \u2014 vol suppressed, semis driving; tape favors momentum longs into close."
+    "line": "QQQ +0.8%, SPY flat, VXX stress 0.97 \u2014 low fear, risk-on tape; AH breadth supports continuation entries."
   },
   "actions": [
     {
-      "ticker": "MU",
+      "ticker": "QXO",
       "direction": "long",
-      "entry": 1213.88,
-      "stop": 1154.37,
-      "target": 1332.91,
-      "line": "Post-earnings HBM/DRAM surge \u2014 durable thesis, signal warns extension; half size."
+      "entry": 17.98,
+      "stop": 17.11,
+      "target": 19.73,
+      "line": "Unanimous desk conviction \u2014 signal/research/risk all agree; cleanest setup in the book, full size."
     },
     {
       "ticker": "ACHC",
       "direction": "long",
-      "entry": 26.04,
-      "stop": 25.48,
-      "target": 27.16,
-      "line": "Clean risk_on setup, low risk severity, tight stop; research neutral keeps it half size."
+      "entry": 26.2,
+      "stop": 25.55,
+      "target": 27.5,
+      "line": "Bullish signal, clean risk; research neutral no veto \u2014 majority take, half size."
     },
     {
       "ticker": "LRCX",
       "direction": "long",
-      "entry": 393.39,
-      "stop": 379.37,
-      "target": 421.43,
-      "line": "Semi-equipment rides MU wave; split verdict (signal yes, research says noise) + fading 5d momentum \u2192 quarter only."
+      "entry": 401.83,
+      "stop": 382.42,
+      "target": 440.65,
+      "line": "Research agrees, semi-sector tailwind from MU/SNDK move; split desk keeps size at quarter."
     }
   ],
   "watch": [
     {
-      "ticker": "AMAT",
-      "type": "ripple",
-      "line": "Medium-confidence ripple from MU \u2014 heavy HBM/DRAM equipment exposure, capex pull-forward not priced."
+      "ticker": "SNDK",
+      "type": "mover",
+      "line": "+21.8% AH, rel-vol 2x, MACD bullish \u2014 storage names catching MU's bid; watch for RTH gap-and-hold."
     },
     {
       "ticker": "TECH",
       "type": "mover",
-      "line": "+19.8% on 11.2x rel volume, overbought flags \u2014 watch for fade or vol exhaustion."
+      "line": "+20% on 13x volume, overbought flag \u2014 extended but institutional footprint is real; wait for base."
     },
     {
-      "ticker": "SNDK",
+      "ticker": "MU",
       "type": "mover",
-      "line": "+18.8%, MACD bullish, but sub-2x rel vol \u2014 semi sympathy play, needs volume confirmation."
+      "line": "+16% on 2x vol, MACD bullish \u2014 semi catalyst holding; key confirmation for LRCX trade."
     },
     {
-      "ticker": "ACLS",
-      "type": "ripple",
-      "line": "Low-confidence MU ripple \u2014 ion implant memory fab exposure, small-cap leveraged memory capex bet."
-    },
-    {
-      "ticker": "TSHA",
+      "ticker": "LKQ",
       "type": "mover",
-      "line": "-11.3% on 4.4x rel volume \u2014 unusual sell-side pressure, worth monitoring for continuation."
+      "line": "Desk take but quarter-size only on low conviction \u2014 on watch if momentum improves into RTH open."
+    },
+    {
+      "ticker": "GLW",
+      "type": "mover",
+      "line": "+11.5% on 1.7x vol, no overbought flag yet \u2014 fiber/connectivity name quietly ripping with semis."
     }
   ],
   "changed": [
-    "Desk rotated out: CWAN, QCOM, TMO dropped; ACHC and LRCX added as new takes.",
-    "TECH emerged as top mover at +19.8% on 11x volume \u2014 not in prior scan.",
-    "MU carry-through confirmed; QCOM no longer in top movers leadership."
+    "QXO added as new unanimous full-size desk take \u2014 highest conviction pick this scan.",
+    "SNDK +21.8% now top mover, surpassing MU as storage/semi leadership widens.",
+    "LKQ added to desk takes (quarter size, low conviction) \u2014 not present last scan."
   ],
   "caveats": [
-    "RTH scan as of 15:08 ET \u2014 prices 52 min from close, levels may shift materially into the bell.",
-    "MU and semi-ripple plays (AMAT, ACLS) are extended intraday; chasing into close carries gap-fill risk overnight."
+    "AH_POST window \u2014 prices as of 17:47 ET; AH liquidity thin, levels may gap significantly at next RTH open.",
+    "Semi/storage surge is broad but several names (TECH, NRIX, SLS) are overbought-flagged \u2014 chasing these increases fade risk."
   ]
 }
