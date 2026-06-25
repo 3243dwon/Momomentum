@@ -1,69 +1,69 @@
 {
-  "generated_at": "2026-06-25T00:01:17.546875-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on holds; Hormuz tension adds oil/defense tail risk \u2014 desk slate unchanged at SHC/ATEC/UAA/VTEX",
+  "generated_at": "2026-06-25T05:31:42.007850-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on holds, tape quiet; desk slate stable \u2014 SHC/UAA/VTEX/ATEC all live",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.04% / QQQ -0.42%, both above 50d; VXX stress ratio 0.98 \u2014 low vol, risk-on bias intact but QQQ softness worth watching."
+    "line": "SPY flat (-0.04%), QQQ soft (-0.42%), VXX stress ratio 0.98 \u2014 vol benign, SPY above 50d; no macro events or catalysts in queue."
   },
   "actions": [
     {
       "ticker": "SHC",
       "direction": "long",
       "entry": 16.7,
-      "stop": 15.36,
-      "target": 19.37,
-      "line": "Bullish cross + 5.5% day; signal strong, risk clean \u2014 half size."
+      "stop": 16.34,
+      "target": 17.42,
+      "line": "Quarter size \u2014 signal agrees but research neutral + medium risk; tight stop at 16.34."
     },
     {
-      "ticker": "ATEC",
+      "ticker": "UAA",
       "direction": "long",
-      "entry": 8.71,
-      "stop": 8.15,
-      "target": 9.83,
-      "line": "Pure tech momentum play; signal agrees, research against \u2014 quarter size only."
+      "entry": 6.06,
+      "stop": 5.94,
+      "target": 6.3,
+      "line": "Half size \u2014 clean low risk, research neutral non-blocking; best R/R on the slate."
     },
     {
       "ticker": "VTEX",
       "direction": "long",
       "entry": 3.7,
-      "stop": 3.46,
-      "target": 4.19,
-      "line": "Signal conviction high but late-squeeze risk flagged \u2014 quarter size only."
+      "stop": 3.57,
+      "target": 3.97,
+      "line": "Quarter size \u2014 signal strongly agrees but volatile 1d gap flags medium risk; disciplined sizing."
     }
   ],
   "watch": [
     {
       "ticker": "ABSI",
       "type": "mover",
-      "line": "+36.5% on 2.94x vol \u2014 overbought flag; watch for fade or continuation catalyst."
+      "line": "+36.5%, 2.94x vol, overbought \u2014 watch for fade or continuation setup after open."
     },
     {
       "ticker": "DFTX",
       "type": "mover",
-      "line": "+16.5% on 3.45x vol \u2014 highest rel-vol in scan, overbought; no desk take yet."
+      "line": "+16.5%, 3.45x vol, overbought \u2014 highest relative volume on scan; no catalyst on file."
     },
     {
       "ticker": "COUR",
       "type": "mover",
-      "line": "+12.7% on 2.55x vol \u2014 unusual volume without overbought flag; cleaner setup candidate."
+      "line": "+12.7%, 2.55x vol \u2014 unusual volume without overbought flag; cleaner mover to track."
     },
     {
       "ticker": "AVEX",
       "type": "mover",
-      "line": "-14.5% on elevated vol \u2014 potential dead-cat watch or short thesis if bounce fails."
+      "line": "-14.5%, 1.88x vol \u2014 notable downside; watch for stabilization or dead-cat."
     },
     {
-      "ticker": "SOC",
+      "ticker": "NVTS",
       "type": "mover",
-      "line": "-11.3% oversold flag \u2014 watch for mean-reversion setup if market holds risk-on."
+      "line": "-14.3%, 1.09x vol \u2014 big drop on near-average volume; gap fill risk or oversold bounce candidate."
     }
   ],
   "changed": [
-    "Hormuz escalation adds macro oil/shipping tail risk not present in prior scan"
+    "Hormuz/oil-defense tail risk language dropped \u2014 no macro events flagged this scan."
   ],
   "caveats": [
-    "OVERNIGHT scan (2026-06-25 00:01 ET) \u2014 prices as of scan time, pre-RTH; levels may gap materially at open.",
-    "Hormuz headline is fluid; energy/defense names can reprice fast \u2014 reassess macro exposure at RTH open."
+    "AH/Pre-market window (scan 2026-06-25 05:31 ET) \u2014 prices stale vs. RTH close; spreads wide, levels shift at open.",
+    "No catalysts or ripple calls in this scan \u2014 mover moves (ABSI, DFTX, AVEX) lack identified drivers; treat as unconfirmed."
   ]
 }

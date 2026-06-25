@@ -1,133 +1,42 @@
 {
-  "generated_at": "2026-06-25T00:01:17.546875-04:00",
+  "generated_at": "2026-06-25T05:31:42.007850-04:00",
   "ticker_news": {
-    "MSTR": [
+    "COIN": [
       {
-        "id": "43be118d0cbd1ef5",
+        "id": "6bf2a3b4c26f0e5c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSTR",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "Bitcoin Hits 20-Month Low, Ethereum, Dogecoin, XRP Also Decline: Analyst Identifies 'Genuine Battleground' For Beleaguered BTC Amid 'Extreme Fear'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60088280/bitcoin-hits-20-month-low-as-extreme-fear-grips-crypto-market-analyst-flags-key-btc-battleground",
-        "published_at": "2026-06-25T01:58:33+00:00",
-        "type": "macro_commodity",
-        "impact": "medium",
-        "dedup_group": "bitcoin_crypto_decline_2026",
+        "title": "Ray Dalio Says This Management Habit Can Deliver \u2018Exponential\u2019 Returns",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60090295/ray-dalio-says-this-management-habit-can-deliver-exponential-returns",
+        "published_at": "2026-06-25T08:38:22+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ray_dalio_management_commentary",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PAYX": [
+      {
+        "id": "446db57c3c2e2dbd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PAYX",
+        "scope": "ticker",
+        "title": "Nasdaq Falls Over 100 Points Amid Decline In Chip Stocks: Investor Sentiment Declines, Greed Index Remains In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60088845/nasdaq-falls-over-100-points-amid-decline-in-chip-stocks-investor-sentiment-declines-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-25T05:11:29+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nasdaq_chip_decline_sentiment_recap",
+        "tickers_mentioned": [
+          "QQQ"
+        ],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "Iran declared a newly established alternative shipping route through the Strait of Hormuz \"unacceptable and dangerous\" and warned vessels against transiting without Iranian approval, escalating tensions over the world's most critical oil chokepoint.",
-      "primary_drivers": [
-        "Oil supply risk premium from potential Hormuz disruption (~20% of global oil flows)",
-        "Tanker rerouting and war-risk insurance spike lifting shipping rates",
-        "Defense/geopolitical risk hedging flows"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "FANG",
-          "rationale": "Diamondback is a pure-play Permian US onshore E&P with no Gulf/Hormuz exposure; benefits directly from higher WTI as Hormuz risk premium widens with zero offsetting tanker/transit risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "XOM",
-          "rationale": "Exxon's upstream earnings have ~$0.5B EBITDA sensitivity per $1 Brent; while it has some Middle East exposure, its integrated US/Guyana production dominates and benefits from a sustained crude premium.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "FRO",
-          "rationale": "Frontline operates VLCCs; Hormuz transit threats force rerouting around Africa, lengthening ton-miles and spiking VLCC day rates \u2014 direct revenue benefit. War-risk premiums also lift charter economics.",
-          "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "INSW",
-          "rationale": "International Seaways product/crude tanker fleet benefits from the same ton-mile expansion and rate spike as Hormuz routing is disrupted; pure-play tanker leverage.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Lockheed makes THAAD, PAC-3 Patriot interceptors and Aegis \u2014 direct restocking demand from Gulf allies (Saudi, UAE) and US CENTCOM positioning as Iran escalates. Clear order-flow catalyst.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Raytheon's missile defense (Patriot, SM-3, SM-6) and Tomahawk franchises see direct demand from Gulf escalation; also benefits from naval munitions restock.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Occidental is US-onshore Permian-heavy with high oil-price beta; Buffett-backed name typically rallies hard on geopolitical crude spikes. No Hormuz transit risk.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "TRGP",
-          "rationale": "Targa Resources midstream benefits indirectly via higher Permian volumes and NGL pricing as US barrels gain relative value vs. Hormuz-trapped Gulf crude.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "DAL",
-          "rationale": "Delta has the largest jet-fuel exposure among US carriers (~$0.30 EPS per $1/bbl crude over a year, no fuel hedges) and runs international routes that may face Middle East airspace rerouting costs.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "United runs significant Gulf-routed international flying (India, Tel Aviv historically) and is unhedged on fuel; double hit from crude spike and potential airspace closures.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is 100% domestic but jet fuel is ~25% of opex and the airline is structurally low-margin; crude spike compresses earnings immediately, and its hedge book is thinner than a decade ago.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Carnival's bunker fuel costs rise directly with crude; also has Middle East/Red Sea itineraries that may require cancellation/rerouting, hitting yields.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DOW",
-          "rationale": "Dow's ethylene/polyethylene cracker economics get hit by higher naphtha and energy input costs from a crude spike; commodity chemicals have weak pass-through in a soft demand environment.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "WMT",
-          "rationale": "Walmart faces diesel/transport cost passthrough on its supply chain and consumer discretionary pressure as gasoline prices rise \u2014 historically underperforms in sharp oil spikes despite defensive label.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TSLA",
-          "rationale": "Counterintuitively pressured: high-beta consumer discretionary with China/global exposure; sharp oil spike historically correlates with risk-off megacap tech selloffs even though EVs are a long-term hedge.",
-          "confidence": "low",
-          "horizon": "intraday"
-        }
-      ],
-      "dedup_group": "iran_hormuz_tanker_tension",
-      "source_news_ids": [
-        "7fb6434d0b58a3d8"
-      ],
-      "headlines": [
-        "Iran declares new Hormuz route 'unacceptable and dangerous,' warns against ships transiting without approval"
-      ]
-    }
-  ]
+  "macro_events": []
 }
