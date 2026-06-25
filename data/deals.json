@@ -1,8 +1,140 @@
 {
- "generated_at": "2026-06-25T16:35:08.583202+00:00",
+ "generated_at": "2026-06-25T19:12:10.417920+00:00",
  "window_days": 30,
- "deal_count": 12,
+ "deal_count": 13,
  "deals": [
+  {
+   "id": "cfb168ec3362",
+   "ts": "2026-06-25T15:08:00.287340-04:00",
+   "primary_ticker": "MU",
+   "counterparty": "AAPL",
+   "headline": "Apple's reported AI memory ramp validates Micron's bullish HBM/AI DRAM thesis, sending MU up ~16%.",
+   "drivers": [
+    "HBM/AI DRAM demand validation lifts entire memory pricing cycle",
+    "Apple AI device memory content increase reads through to mobile DRAM/NAND suppliers",
+    "Memory capex pull-forward benefits WFE/equipment vendors"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60108831/apple-just-confirmed-microns-biggest-ai-prediction",
+   "predictions": [
+    {
+     "ticker": "AMAT",
+     "direction": "long",
+     "mechanism": "Major exposure to memory equipment; benefits from MU/Samsung/Hynix HBM and DRAM capacity additions to serve Apple AI demand.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ACLS",
+     "direction": "long",
+     "mechanism": "Ion implant exposure to memory fabs; smaller-cap leveraged play on memory capex pull-forward.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "WDC",
+     "direction": "long",
+     "mechanism": "Pure-play NAND peer; tighter memory supply and rising AI storage demand lifts NAND ASPs and re-rates WDC alongside MU.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "SMCI",
+     "direction": "short",
+     "mechanism": "Higher HBM/DRAM input costs compress AI server margins if memory pricing umbrella keeps rising into tight supply.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "SNDK",
+     "direction": "long",
+     "mechanism": "Recently spun-out NAND pure-play directly leveraged to the same memory pricing cycle Apple's AI ramp is tightening.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "LRCX",
+     "direction": "long",
+     "mechanism": "Lead WFE supplier for DRAM/HBM and 3D NAND; memory capex pull-forward from AI ramp drives order book.",
+     "confidence": "high",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "KLAC",
+     "direction": "long",
+     "mechanism": "Process control tools needed for HBM stacking and advanced DRAM nodes; rides the same memory capex wave.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "DELL",
+     "direction": "short",
+     "mechanism": "AI server BOM cost rises as memory tightens; gross margin pressure on PowerEdge AI configurations.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 8,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "8c949cf8415b",
    "ts": "2026-06-25T12:28:58.114871-04:00",
@@ -642,11 +774,11 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 8.15,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "NVDA",
@@ -656,11 +788,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -1.7,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "AMAT",
@@ -670,11 +802,11 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 13.99,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "AEHR",
@@ -684,11 +816,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 5.86,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "AVGO",
@@ -698,11 +830,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.14,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "WDC",
@@ -712,11 +844,11 @@
      "horizon": "days",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 8.48,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "KLAC",
@@ -726,11 +858,11 @@
      "horizon": "weeks",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 9.41,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "WDC",
@@ -740,11 +872,11 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -8.48,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "SMCI",
@@ -754,17 +886,17 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 0.6,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 9,
-    "graded": 0,
-    "hit": 0
+    "graded": 9,
+    "hit": 6
    }
   },
   {

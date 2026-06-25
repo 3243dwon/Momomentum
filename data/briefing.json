@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-25T12:28:58.114871-04:00",
+  "generated_at": "2026-06-25T15:08:00.287340-04:00",
   "window": "RTH",
-  "headline": "Semis lead risk-on surge: MU +16%, QCOM +9% on earnings/guidance; desk rotates to CWAN, QCOM, TMO",
+  "headline": "Semis still in command: MU +15.8% catalyst holds, desk adds ACHC + LRCX; TECH +19.8% on 11x volume",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.71%, SPY +0.02%, VXX stress ratio 0.97 \u2014 vol suppressed, semis carrying the tape; momentum entries viable but chase risk real on exte"
+    "line": "QQQ +0.59%, SPY flat, VXX stress 0.97 \u2014 vol suppressed, semis driving; tape favors momentum longs into close."
   },
   "actions": [
     {
-      "ticker": "CWAN",
+      "ticker": "MU",
       "direction": "long",
-      "entry": 24.56,
-      "stop": 24.09,
-      "target": 25.51,
-      "line": "Clean momentum setup; signal + risk aligned. Half size."
+      "entry": 1213.88,
+      "stop": 1154.37,
+      "target": 1332.91,
+      "line": "Post-earnings HBM/DRAM surge \u2014 durable thesis, signal warns extension; half size."
     },
     {
-      "ticker": "QCOM",
+      "ticker": "ACHC",
       "direction": "long",
-      "entry": 214.4,
-      "stop": 201.82,
-      "target": 239.56,
-      "line": "Durable catalyst (guidance beat), research + risk aligned; quarter size on chase risk/split signal."
+      "entry": 26.04,
+      "stop": 25.48,
+      "target": 27.16,
+      "line": "Clean risk_on setup, low risk severity, tight stop; research neutral keeps it half size."
     },
     {
-      "ticker": "TMO",
+      "ticker": "LRCX",
       "direction": "long",
-      "entry": 508.93,
-      "stop": 468.22,
-      "target": 590.36,
-      "line": "Three neutrals, no veto in risk-on regime; RSI elevated \u2014 quarter size only."
+      "entry": 393.39,
+      "stop": 379.37,
+      "target": 421.43,
+      "line": "Semi-equipment rides MU wave; split verdict (signal yes, research says noise) + fading 5d momentum \u2192 quarter only."
     }
   ],
   "watch": [
     {
       "ticker": "AMAT",
       "type": "ripple",
-      "line": "High-confidence MU read-through: Micron capex floods into AMAT DRAM/HBM tool bookings. Not priced in."
-    },
-    {
-      "ticker": "RGEN",
-      "type": "ripple",
-      "line": "High-confidence TECH takeout ripple: pure-play bioprocessing tools, similar scale, primary read-through M&A target."
-    },
-    {
-      "ticker": "MU",
-      "type": "catalyst",
-      "line": "+15.7% on Q3 beat; memory capex commentary drives semi equipment ripple chain."
+      "line": "Medium-confidence ripple from MU \u2014 heavy HBM/DRAM equipment exposure, capex pull-forward not priced."
     },
     {
       "ticker": "TECH",
-      "type": "catalyst",
-      "line": "+19.7% on Merck KGaA cash takeout bid; 7x rel volume, overbought \u2014 watch peers for M&A re-rating."
+      "type": "mover",
+      "line": "+19.8% on 11.2x rel volume, overbought flags \u2014 watch for fade or vol exhaustion."
     },
     {
-      "ticker": "ONTO",
+      "ticker": "SNDK",
+      "type": "mover",
+      "line": "+18.8%, MACD bullish, but sub-2x rel vol \u2014 semi sympathy play, needs volume confirmation."
+    },
+    {
+      "ticker": "ACLS",
       "type": "ripple",
-      "line": "Medium-confidence MU ripple: HBM packaging/metrology play via Dragonfly; Micron HBM ramp lifts order visibility."
+      "line": "Low-confidence MU ripple \u2014 ion implant memory fab exposure, small-cap leveraged memory capex bet."
+    },
+    {
+      "ticker": "TSHA",
+      "type": "mover",
+      "line": "-11.3% on 4.4x rel volume \u2014 unusual sell-side pressure, worth monitoring for continuation."
     }
   ],
   "changed": [
-    "Desk slate fully rotated \u2014 prior picks SHC/UAA/VTEX/ATEC replaced by CWAN/QCOM/TMO",
-    "Semi earnings catalysts (MU +16%, QCOM +9%) now dominate tape vs. prior macro crosscurrent framing",
-    "Hot Core PCE / rate-hike risk persists from prior scan but no longer headline driver"
+    "Desk rotated out: CWAN, QCOM, TMO dropped; ACHC and LRCX added as new takes.",
+    "TECH emerged as top mover at +19.8% on 11x volume \u2014 not in prior scan.",
+    "MU carry-through confirmed; QCOM no longer in top movers leadership."
   ],
   "caveats": [
-    "RTH scan as of 12:28 ET 2026-06-25; prices and levels are as of scan time and may be stale intraday \u2014 verify before entry.",
-    "Core PCE at 3-year high raises rate-hike tail risk; long-duration names (TMO) and high-multiple semis are most exposed if real yields reprice further."
+    "RTH scan as of 15:08 ET \u2014 prices 52 min from close, levels may shift materially into the bell.",
+    "MU and semi-ripple plays (AMAT, ACLS) are extended intraday; chasing into close carries gap-fill risk overnight."
   ]
 }
