@@ -1,68 +1,230 @@
 {
-  "generated_at": "2026-06-26T06:54:48.919164-04:00",
+  "generated_at": "2026-06-26T09:13:54.343426-04:00",
   "ticker_news": {
-    "MU": [
+    "INFQ": [
       {
-        "id": "35877297c1c87963",
+        "id": "d19b8fae6a13b431",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MU",
+        "ticker": "INFQ",
         "scope": "ticker",
-        "title": "Micron Stock Takes A Breather After Explosive AI-Fueled Rally",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60120901/micron-stock-takes-a-breather-after-explosive-ai-fueled-rally",
-        "published_at": "2026-06-26T10:12:34+00:00",
+        "title": "Top Wall Street Analyst Says This Quantum Computing Stock Is 'Meaningfully Mispriced'\u2014 Sees 25% Upside As Trump's Quantum Push Gathers Steam",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/60123587/top-wall-street-analyst-says-this-quantum-computing-stock-is-meaningfully-mispriced-sees-25-upside-as-trumps-quantum-push-gathers-steam",
+        "published_at": "2026-06-26T12:58:08+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "infq_quantum_mispriced_upside",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "COLD": [
+      {
+        "id": "f6ce2796a7921eb2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COLD",
+        "scope": "ticker",
+        "title": "This Essex Property Trust Analyst Turns Bullish; Here Are Top 4 Upgrades For Friday",
+        "url": "https://www.benzinga.com/news/26/06/60123453/this-essex-property-trust-analyst-turns-bullish-here-are-top-4-upgrades-for-friday",
+        "published_at": "2026-06-26T12:48:30+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "essex_property_trust_bullish_upgrade",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "AROC": [
+      {
+        "id": "ee3503f20f3247dd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AROC",
+        "scope": "ticker",
+        "title": "Top 3 Energy Stocks That May Implode In June",
+        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/06/60123358/top-3-energy-stocks-that-may-implode-in-june",
+        "published_at": "2026-06-26T12:41:05+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "mu_rally_consolidation",
+        "dedup_group": "energy_stocks_downside_risk",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DKNG": [
+      {
+        "id": "2e9f888fcd04c449",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DKNG",
+        "scope": "ticker",
+        "title": "DraftKings Shares Climb After Company Unveils DKeX, Its Own Prediction Markets Exchange",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60123330/draftkings-shares-climb-after-company-unveils-dkex-its-own-prediction-markets-exchange",
+        "published_at": "2026-06-26T12:38:41+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "dkng_dkex_prediction_markets_launch",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "AAOI": [
+      {
+        "id": "8092d8da9dafa5fa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "AAOI",
+        "scope": "ticker",
+        "title": "ON Semiconductor, SanDisk And Other Big Stocks Moving Lower In Friday\u2019s Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122571/on-semiconductor-sandisk-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-06-26T12:03:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_premarket_jun26",
+        "tickers_mentioned": [
+          "ON",
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "8092d8da9dafa5fa",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "ON Semiconductor, SanDisk And Other Big Stocks Moving Lower In Friday\u2019s Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122571/on-semiconductor-sandisk-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
+        "published_at": "2026-06-26T12:03:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_movers_premarket_jun26",
+        "tickers_mentioned": [
+          "ON",
+          "SNDK"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "61e084a17835a717",
+        "id": "e72b172053f91260",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Why Is Sandisk Stock Falling Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60122988/why-is-sandisk-stock-falling-friday",
+        "published_at": "2026-06-26T12:24:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sandisk_stock_decline",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "853a4e71eae22f99",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Analyzing Micron Technology In Comparison To Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
-        "url": "https://www.benzinga.com/news/26/06/60120317/analyzing-micron-technology-comparison-competitors-semiconductors-amp-semiconductor-equipment-indust",
-        "published_at": "2026-06-26T09:58:32+00:00",
+        "title": "Dan Ives Says Microsoft And Meta Are Being Treated Like 'Bear Market' Stocks",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60123475/dan-ives-says-microsoft-and-meta-are-being-treated-like-bear-market-stocks",
+        "published_at": "2026-06-26T12:49:09+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "mu_competitive_analysis",
+        "dedup_group": "msft_meta_bear_market_treatment",
+        "tickers_mentioned": [
+          "META"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e72b172053f91260",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Why Is Sandisk Stock Falling Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60122988/why-is-sandisk-stock-falling-friday",
+        "published_at": "2026-06-26T12:24:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sandisk_stock_decline",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSFT": [
       {
-        "id": "170ad7ec9ebb5030",
+        "id": "853a4e71eae22f99",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Investigating Microsoft's Standing In Software Industry Compared To Competitors",
-        "url": "https://www.benzinga.com/news/26/06/60120387/investigating-microsoft-s-standing-software-industry-compared-competitors",
-        "published_at": "2026-06-26T09:58:38+00:00",
+        "title": "Dan Ives Says Microsoft And Meta Are Being Treated Like 'Bear Market' Stocks",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60123475/dan-ives-says-microsoft-and-meta-are-being-treated-like-bear-market-stocks",
+        "published_at": "2026-06-26T12:49:09+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "msft_competitive_analysis",
-        "tickers_mentioned": [],
+        "dedup_group": "msft_meta_bear_market_treatment",
+        "tickers_mentioned": [
+          "META"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "3e3f18485be9b3ee",
+        "id": "0f3cc35cd60eb0e8",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Why Apple Just Suffered Its Worst Crash In Over A Year",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60120292/why-apple-just-suffered-its-worst-crash-in-over-a-year",
-        "published_at": "2026-06-26T09:42:55+00:00",
+        "title": "\u2018Maleficent 7\u2019? Analyst Warns Microsoft Could Crash To $250",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60122272/magnificent-seven-maleficent-7-microsoft-technical-analysis-sp500",
+        "published_at": "2026-06-26T11:51:58+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "msft_analyst_bearish_call_jun26",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "f7c2acfdb616b648",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Why Is Triller Group Stock Surging On Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122315/why-is-triller-group-stock-surging-on-friday",
+        "published_at": "2026-06-26T11:54:50+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "aapl_sell_off_analysis",
+        "dedup_group": "triller_group_stock_surge",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "425d2c66ca58dbee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Qualcomm, Merck, Rockwell Automation And A Real Estate Stock On CNBC\u2019s \u2018Final Trades\u2019",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60122085/qualcomm-merck-rockwell-automation-and-a-real-estate-stock-on-cnbcs-final-trades",
+        "published_at": "2026-06-26T11:32:39+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cnbc_final_trades_jun26",
         "tickers_mentioned": [
-          "AAPL"
+          "MRK",
+          "ROK"
         ],
         "route_to_synthesis": false
       }

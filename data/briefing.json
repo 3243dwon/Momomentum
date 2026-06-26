@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-26T06:54:48.919164-04:00",
+  "generated_at": "2026-06-26T09:13:54.343426-04:00",
   "window": "AH_PRE",
-  "headline": "Risk-on intact; semis dominate movers (SNDK +22%, MU +16%); desk holds ACHC + QXO, adds LKQ",
+  "headline": "Risk-on holds; semis still lead (SNDK +22%, MU +16%, TECH +20%); desk adds LRCX to ACHC/LKQ/QXO slate",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.8%, SPY flat, both above 50d; VXX stress 0.97 \u2014 vol suppressed, tape favors momentum longs."
+    "line": "QQQ +0.8%, SPY flat but above 50d; VXX stress ratio 0.97 \u2014 vol suppressed, tape supportive for momentum entries pre-open."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 26.2,
       "stop": 25.55,
       "target": 27.5,
-      "line": "Half size \u2014 signal strong, risk clean; low-severity setup with no research red flags."
+      "line": "Half size momentum play \u2014 signal strong, risk clean, no research veto."
     },
     {
       "ticker": "QXO",
@@ -21,50 +21,49 @@
       "entry": 17.98,
       "stop": 17.11,
       "target": 19.73,
-      "line": "Half size \u2014 solid conviction signal, favorable R/R ~2:1, low-severity risk, research neutral."
+      "line": "Half size \u2014 orderly momentum, clean RSI, signal and risk both constructive."
     },
     {
-      "ticker": "LKQ",
+      "ticker": "LRCX",
       "direction": "long",
-      "entry": 26.74,
-      "stop": 26.43,
-      "target": 27.36,
-      "line": "Quarter size \u2014 signal agrees but modest momentum caps conviction; tight stop, clean risk."
+      "entry": 401.83,
+      "stop": 382.42,
+      "target": 440.65,
+      "line": "Quarter size only \u2014 research/risk lean positive but signal flags overextension."
     }
   ],
   "watch": [
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "+21.8%, rel vol 2.0x, MACD bullish \u2014 semis leading; watch for continuation or exhaustion at highs."
+      "line": "+21.8%, rel vol 1.98, MACD bullish \u2014 semi strength persists into pre-market."
     },
     {
       "ticker": "TECH",
       "type": "mover",
-      "line": "+20%, rel vol 13x \u2014 extreme volume spike, overbought; fade or gap-fill setup if volume fades."
+      "line": "+20%, rel vol 12.98 \u2014 highest volume ratio in the scan; overbought but watch for continuation or fade setup."
     },
     {
       "ticker": "MU",
       "type": "mover",
-      "line": "+16%, rel vol 2.0x, MACD bullish \u2014 semi strength confirming sector bid; watch for follow-through."
+      "line": "+16%, rel vol 2.02, MACD bullish \u2014 semi ripple from SNDK; could set up intraday if it pulls back."
     },
     {
       "ticker": "NRIX",
       "type": "mover",
-      "line": "+16.3%, rel vol 2.2x, overbought \u2014 biotech runner; no catalyst flagged, handle with care."
+      "line": "+16.3%, rel vol 2.15, overbought \u2014 bio-type move, high risk of giveback at open."
     },
     {
       "ticker": "GLW",
       "type": "mover",
-      "line": "+11.5%, rel vol 1.7x \u2014 notable industrial/fiber mover without a catalyst tag; worth monitoring for story."
+      "line": "+11.5%, rel vol 1.71 \u2014 clean breakout, no overbought flag; worth tracking for momentum follow-through."
     }
   ],
   "changed": [
-    "LKQ added to desk actions (new quarter-size long).",
-    "No meaningful regime or leadership change \u2014 semis still dominating, risk-on holds."
+    "Desk adds LRCX (quarter size) \u2014 new vs previous briefing"
   ],
   "caveats": [
-    "AH/Pre-market scan (2026-06-26 ~06:54 ET) \u2014 prices as of scan time; spreads wide, fills will differ at RTH open.",
-    "No catalysts or macro events flagged this scan; mover moves may lack a known driver \u2014 confirm before sizing up."
+    "AH/Pre-market scan as of 09:13 ET 2026-06-26; prices are pre-open and may gap significantly at RTH open \u2014 entry levels may not be reachable.",
+    "No catalysts or macro events flagged this scan; mover strength is momentum-only, making continuation less certain without a fundamental anchor."
   ]
 }
