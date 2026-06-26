@@ -1,46 +1,46 @@
 {
-  "generated_at": "2026-06-26T14:55:20.374617-04:00",
-  "window": "RTH",
-  "headline": "Regime flips mixed: QQQ -1.18%, SPY sub-50d; ON extends crash -24.5%; desk has no live takes",
+  "generated_at": "2026-06-26T16:49:03.509985-04:00",
+  "window": "AH_POST",
+  "headline": "Macro one-two punch: U.S. strikes Iran (oil risk) + Kashkari hawkish pivot; tape stays mixed, no desk takes",
   "market_state": {
     "regime": "mixed",
-    "line": "SPY -0.25% below 50d, QQQ -1.18%, VXX stress near flat (0.98) \u2014 tape softening, tech leading down; no edge for new entries."
+    "line": "SPY -0.54% sub-50d, QQQ -1.49%; VXX stress ratio 0.98 \u2014 vol contained but geopolitical + rate shock keeps sellers in control."
   },
   "actions": [],
   "watch": [
     {
       "ticker": "ON",
       "type": "mover",
-      "line": "-24.5% on 2.49\u00d7 vol \u2014 capitulation or dead-cat setup; no desk take yet, watch for flush/stabilization."
+      "line": "-23.82% on 3.3x vol \u2014 crash extends from prior session; watch for dead-cat vs. capitulation structure AH."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "-12.15% with MACD bearish, 1.73\u00d7 vol \u2014 storage sector under pressure alongside STX."
+      "line": "-13.12% on 2.25x vol, MACD bearish \u2014 storage sector pain, follow STX for sector read."
     },
     {
       "ticker": "STX",
       "type": "mover",
-      "line": "-10.42% MACD bearish, 1.93\u00d7 vol \u2014 confirms storage/HDD sector breakdown; WDC/STX pair worth watching."
-    },
-    {
-      "ticker": "ATAI",
-      "type": "mover",
-      "line": "+12.66% unusual vol (2.2\u00d7), overbought \u2014 extended, fade risk high without catalyst confirmation."
+      "line": "-12.49% on 3.1x vol, MACD bearish \u2014 correlated sell with WDC; storage sector under pressure."
     },
     {
       "ticker": "MRNA",
       "type": "mover",
-      "line": "+9.91% overbought flag, 1.52\u00d7 vol \u2014 bio squeeze; needs catalyst to hold gains."
+      "line": "+12.64% on 2x vol, overbought \u2014 catalyst unknown; fading without news in AH is high risk."
+    },
+    {
+      "ticker": "ATAI",
+      "type": "mover",
+      "line": "+15.07% on 3.29x vol, overbought \u2014 unusual volume spike; needs catalyst confirmation before chasing."
     }
   ],
   "changed": [
-    "Regime flipped from risk-on to mixed",
-    "Desk cleared all takes \u2014 MTCH/UBER/TRU positions gone, actions list now empty",
-    "QQQ weakness deepened: -0.76% prior \u2192 -1.18% now"
+    "Macro shock added: U.S. strikes Iran \u2014 Hormuz oil supply risk now dominant tape driver",
+    "Kashkari hawkish pivot introduces rate-hike repricing; compresses long-duration multiples",
+    "ON crash largely unchanged (-23.82% vs -24.5% prior); regime and no-takes status\u6301\u7eed"
   ],
   "caveats": [
-    "RTH scan as of 14:55 ET 2026-06-26 \u2014 prices stale by minutes; last 65 min of session remain, moves can extend.",
-    "No desk takes and no catalysts or macro events in this scan \u2014 watch list is mover-driven only, not fundamental."
+    "AH_POST window \u2014 prices as of 16:49 ET; AH liquidity is thin and spreads wide, levels may gap materially at next RTH open.",
+    "Two simultaneous macro shocks (geopolitical + Fed hawkish pivot) create tail-risk in both directions \u2014 historical correlations less reliable in these regimes."
   ]
 }
