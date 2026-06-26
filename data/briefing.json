@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-26T05:36:03.982898-04:00",
+  "generated_at": "2026-06-26T06:54:48.919164-04:00",
   "window": "AH_PRE",
-  "headline": "Risk-on holds: semis still leading (+SNDK +22%, MU +16%); desk rotates to ACHC + QXO, drops LRCX",
+  "headline": "Risk-on intact; semis dominate movers (SNDK +22%, MU +16%); desk holds ACHC + QXO, adds LKQ",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.8%, SPY flat but above 50d; VXX stress ratio 0.97 \u2014 vol suppressed, tape favors momentum longs into open."
+    "line": "QQQ +0.8%, SPY flat, both above 50d; VXX stress 0.97 \u2014 vol suppressed, tape favors momentum longs."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 26.2,
       "stop": 25.55,
       "target": 27.5,
-      "line": "Half size; clean risk setup, signal strong, no research red flags. R/R ~2:1."
+      "line": "Half size \u2014 signal strong, risk clean; low-severity setup with no research red flags."
     },
     {
       "ticker": "QXO",
@@ -21,7 +21,7 @@
       "entry": 17.98,
       "stop": 17.11,
       "target": 19.73,
-      "line": "Half size; highest desk conviction this scan \u2014 solid signal, low-severity risk, $1.75 target range."
+      "line": "Half size \u2014 solid conviction signal, favorable R/R ~2:1, low-severity risk, research neutral."
     },
     {
       "ticker": "LKQ",
@@ -29,43 +29,42 @@
       "entry": 26.74,
       "stop": 26.43,
       "target": 27.36,
-      "line": "Quarter size; clean risk but modest momentum \u2014 tight stop, limited upside, low-conviction carry."
+      "line": "Quarter size \u2014 signal agrees but modest momentum caps conviction; tight stop, clean risk."
     }
   ],
   "watch": [
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "+21.8%, rel-vol 2x, MACD bullish \u2014 semi momentum still running, watch for continuation or fade."
-    },
-    {
-      "ticker": "MU",
-      "type": "mover",
-      "line": "+16%, unusual vol + MACD bullish \u2014 earnings-driven semi strength, may ripple to peers."
+      "line": "+21.8%, rel vol 2.0x, MACD bullish \u2014 semis leading; watch for continuation or exhaustion at highs."
     },
     {
       "ticker": "TECH",
       "type": "mover",
-      "line": "+20%, rel-vol 13x \u2014 extreme volume spike with overbought flag; watch for reversal setup."
+      "line": "+20%, rel vol 13x \u2014 extreme volume spike, overbought; fade or gap-fill setup if volume fades."
+    },
+    {
+      "ticker": "MU",
+      "type": "mover",
+      "line": "+16%, rel vol 2.0x, MACD bullish \u2014 semi strength confirming sector bid; watch for follow-through."
     },
     {
       "ticker": "NRIX",
       "type": "mover",
-      "line": "+16.3%, overbought + unusual vol \u2014 extended, no desk take; monitor for pullback entry."
+      "line": "+16.3%, rel vol 2.2x, overbought \u2014 biotech runner; no catalyst flagged, handle with care."
     },
     {
       "ticker": "GLW",
       "type": "mover",
-      "line": "+11.5%, big move \u2014 no catalyst flagged; worth tracking if semi/tech bid broadens."
+      "line": "+11.5%, rel vol 1.7x \u2014 notable industrial/fiber mover without a catalyst tag; worth monitoring for story."
     }
   ],
   "changed": [
-    "Desk drops LRCX long from prior scan",
-    "Desk adds ACHC and QXO as new takes",
-    "LKQ retained but still quarter-size, low conviction"
+    "LKQ added to desk actions (new quarter-size long).",
+    "No meaningful regime or leadership change \u2014 semis still dominating, risk-on holds."
   ],
   "caveats": [
-    "AH/Pre-market scan as of 05:36 ET 2026-06-26 \u2014 prices may be stale by open; gaps and liquidity shifts expected at RTH.",
-    "SPY 200d status unknown this scan; regime read is based on 50d positioning and VXX only \u2014 treat risk_on label with that gap in mind."
+    "AH/Pre-market scan (2026-06-26 ~06:54 ET) \u2014 prices as of scan time; spreads wide, fills will differ at RTH open.",
+    "No catalysts or macro events flagged this scan; mover moves may lack a known driver \u2014 confirm before sizing up."
   ]
 }
