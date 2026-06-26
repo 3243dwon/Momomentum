@@ -1,61 +1,175 @@
 {
-  "generated_at": "2026-06-26T00:08:31.263692-04:00",
+  "generated_at": "2026-06-26T05:36:03.982898-04:00",
   "ticker_news": {
+    "DJT": [
+      {
+        "id": "eae8155fed78ad14",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DJT",
+        "scope": "ticker",
+        "title": "Trump Media's 96% Stock Collapse Is A 'Harbinger Of What's To Come,' Peter Schiff Says",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60119936/trump-medias-96-stock-collapse-is-a-harbinger-of-whats-to-come-peter-schiff-says",
+        "published_at": "2026-06-26T08:56:07+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dji_collapse_schiff_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "COIN": [
+      {
+        "id": "077aa76e13be92b8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "COIN",
+        "scope": "ticker",
+        "title": "Michael Dell Says Texas Is 'Home' And Where Dell Has Always Belonged, Elon Musk Chimes In",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60118947/michael-dell-says-texas-is-home-and-elon-musk-reacts",
+        "published_at": "2026-06-26T05:34:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "dell_musk_texas_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DELL": [
+      {
+        "id": "077aa76e13be92b8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DELL",
+        "scope": "ticker",
+        "title": "Michael Dell Says Texas Is 'Home' And Where Dell Has Always Belonged, Elon Musk Chimes In",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60118947/michael-dell-says-texas-is-home-and-elon-musk-reacts",
+        "published_at": "2026-06-26T05:34:16+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "dell_musk_texas_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "1702fb36dc25a8a1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market Today: Dow Jones Inches Up, S&P 500 And Nasdaq Futures Slip As Tech Selloff Gathers Pace\u2014 Apple, Beyond Air In Focus",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60120170/stock-market-today-dow-jones-inches-up-sp-500-and-nasdaq-futures-slip-as-tech-selloff-gathers-pace-apple-beyond-air-in-focus",
+        "published_at": "2026-06-26T09:28:10+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_recap_tech_selloff_june26",
+        "tickers_mentioned": [
+          "AAPL"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "5599b4a4245140be",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60120031/sp500-june-26-open-up-or-down-polymarket-tech-selloff-micron-ai-stocks",
+        "published_at": "2026-06-26T09:00:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_preview_june26",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "39db85f45d82fef4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nasdaq Falls For Fourth Day Amid Decline In Apple Shares: Investor Sentiment Declines, Greed Index Remains In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60119325/nasdaq-falls-for-fourth-day-amid-decline-in-apple-shares-investor-sentiment-declines-greed-index-remains-in-fear-zone",
+        "published_at": "2026-06-26T06:49:52+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nasdaq_decline_apple_sentiment_june26",
+        "tickers_mentioned": [
+          "AAPL"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
     "MSFT": [
       {
-        "id": "4799dbeb7cec4e76",
+        "id": "5599b4a4245140be",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Apple, Triller Group, BlackBerry, Synaptics And Microsoft: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60118381/apple-triller-group-blackberry-synaptics-and-microsoft-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-26T01:40:20+00:00",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60120031/sp500-june-26-open-up-or-down-polymarket-tech-selloff-micron-ai-stocks",
+        "published_at": "2026-06-26T09:00:00+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "msft_roundup_coverage_june_2026",
+        "dedup_group": "market_open_preview_june26",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "10c8ea5f1174bb4e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSFT",
+        "scope": "ticker",
+        "title": "Xbox Prices Surge Again As Microsoft Expects Memory Costs To Double By Fall 2027, Joins Apple, Sony And Nintendo In Wave Of Hardware Price Hikes",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60119125/xbox-prices-rise-again-as-microsoft-warns-memory-costs-could-double-by-2027",
+        "published_at": "2026-06-26T06:26:59+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "xbox_price_hike_memory_costs_2027",
         "tickers_mentioned": [
           "AAPL",
-          "TLLR",
-          "BB"
+          "SNE",
+          "NTDO"
         ],
+        "route_to_synthesis": false
+      }
+    ],
+    "QCOM": [
+      {
+        "id": "5599b4a4245140be",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "QCOM",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60120031/sp500-june-26-open-up-or-down-polymarket-tech-selloff-micron-ai-stocks",
+        "published_at": "2026-06-26T09:00:00+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_preview_june26",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "f2e0d77add29c570",
+        "id": "9f36c5f802196837",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP, Dogecoin Slump As Fed's Favourite Inflation Barometer Hits 3-Year High: Analyst Weighs If July Will Bring Relief To BTC Investors",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60118471/bitcoin-ethereum-xrp-and-dogecoin-slump-as-key-inflation-data-dims-hopes-for-july-relief",
-        "published_at": "2026-06-26T02:15:56+00:00",
-        "type": "macro_econ",
-        "impact": "medium",
-        "dedup_group": "crypto_inflation_pce_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PLTR": [
-      {
-        "id": "48d931b4a4b9d6bd",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PLTR",
-        "scope": "ticker",
-        "title": "Cathie Wood Snaps Up $3.3 Million Worth Of Palantir Stock, Buys Cerebras Shares, But Dumps Alibaba Amid Anthropic Controversy",
-        "url": "https://www.benzinga.com/news/26/06/60118569/cathie-wood-snaps-up-3-3-million-worth-of-palantir-stock-buys-cerebras-shares-but-dumps-alibaba-amid-anthropic-controversy",
-        "published_at": "2026-06-26T02:47:31+00:00",
-        "type": "analyst",
+        "title": "Exposure To Elon Musk's SpaceX Is Sending Triller Group Stock Soaring After Hours: Here's What You Should Know",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60119301/exposure-to-elon-musks-spacex-is-sending-triller-group-stock-soaring-after-hours-heres-what-you-should-know",
+        "published_at": "2026-06-26T06:43:18+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "cathie_wood_pltr_buy_june_2026",
-        "tickers_mentioned": [
-          "AAPL",
-          "ALIBABA"
-        ],
+        "dedup_group": "triller_spacex_exposure_rally",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]

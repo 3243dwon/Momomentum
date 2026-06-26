@@ -1,63 +1,71 @@
 {
-  "generated_at": "2026-06-26T00:08:31.263692-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on overnight: semis dominate tape \u2014 MU +16%, SNDK +22%; desk holds LKQ + adds LRCX long",
+  "generated_at": "2026-06-26T05:36:03.982898-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on holds: semis still leading (+SNDK +22%, MU +16%); desk rotates to ACHC + QXO, drops LRCX",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.8%, SPY flat, VXX stress 0.97 \u2014 low fear, semis leading hard. Thin overnight tape; gap risk on opens."
+    "line": "QQQ +0.8%, SPY flat but above 50d; VXX stress ratio 0.97 \u2014 vol suppressed, tape favors momentum longs into open."
   },
   "actions": [
+    {
+      "ticker": "ACHC",
+      "direction": "long",
+      "entry": 26.2,
+      "stop": 25.55,
+      "target": 27.5,
+      "line": "Half size; clean risk setup, signal strong, no research red flags. R/R ~2:1."
+    },
+    {
+      "ticker": "QXO",
+      "direction": "long",
+      "entry": 17.98,
+      "stop": 17.11,
+      "target": 19.73,
+      "line": "Half size; highest desk conviction this scan \u2014 solid signal, low-severity risk, $1.75 target range."
+    },
     {
       "ticker": "LKQ",
       "direction": "long",
       "entry": 26.74,
-      "stop": 25.19,
-      "target": 29.84,
-      "line": "Half size. Signal/risk aligned bullish; research low-conviction but setup is clean. R/R ~2:1."
-    },
-    {
-      "ticker": "LRCX",
-      "direction": "long",
-      "entry": 401.83,
-      "stop": 369.68,
-      "target": 466.12,
-      "line": "Quarter size. Neutral signal/research, no veto \u2014 RSI 65+ after 7% day flags late-entry risk; size reflects that."
+      "stop": 26.43,
+      "target": 27.36,
+      "line": "Quarter size; clean risk but modest momentum \u2014 tight stop, limited upside, low-conviction carry."
     }
   ],
   "watch": [
     {
-      "ticker": "MU",
-      "type": "mover",
-      "line": "+16%, unusual vol, MACD bullish \u2014 semi earnings lift; watch for RTH follow-through or fade."
-    },
-    {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "+21.8%, rel vol 2x, MACD bullish \u2014 riding semi wave with MU; gap-and-go or exhaustion at open."
+      "line": "+21.8%, rel-vol 2x, MACD bullish \u2014 semi momentum still running, watch for continuation or fade."
+    },
+    {
+      "ticker": "MU",
+      "type": "mover",
+      "line": "+16%, unusual vol + MACD bullish \u2014 earnings-driven semi strength, may ripple to peers."
     },
     {
       "ticker": "TECH",
       "type": "mover",
-      "line": "+20%, rel vol 13x \u2014 extreme volume spike, overbought flag; not chasing but watch for setup on pullback."
+      "line": "+20%, rel-vol 13x \u2014 extreme volume spike with overbought flag; watch for reversal setup."
     },
     {
       "ticker": "NRIX",
       "type": "mover",
-      "line": "+16.3%, overbought \u2014 high relative vol; needs consolidation before any entry."
+      "line": "+16.3%, overbought + unusual vol \u2014 extended, no desk take; monitor for pullback entry."
     },
     {
       "ticker": "GLW",
       "type": "mover",
-      "line": "+11.5% \u2014 no catalyst flagged; worth watching RTH open for confirmation of move."
+      "line": "+11.5%, big move \u2014 no catalyst flagged; worth tracking if semi/tech bid broadens."
     }
   ],
   "changed": [
-    "ACHC dropped from desk takes \u2014 no longer in actions",
-    "LRCX added as new desk take (quarter size, long)",
-    "QXO no longer featured in headline leadership"
+    "Desk drops LRCX long from prior scan",
+    "Desk adds ACHC and QXO as new takes",
+    "LKQ retained but still quarter-size, low conviction"
   ],
   "caveats": [
-    "Overnight scan as of 2026-06-26 00:08 ET \u2014 prices are pre-RTH and may gap significantly at the 9:30 open; entries/stops reflect scan-time levels.",
-    "Semi movers (MU, SNDK, TECH) are overbought/extended overnight \u2014 LRCX long entry at RTH open carries gap-up overpay risk given RSI 65+ already flagged by desk."
+    "AH/Pre-market scan as of 05:36 ET 2026-06-26 \u2014 prices may be stale by open; gaps and liquidity shifts expected at RTH.",
+    "SPY 200d status unknown this scan; regime read is based on 50d positioning and VXX only \u2014 treat risk_on label with that gap in mind."
   ]
 }
