@@ -1,232 +1,738 @@
 {
-  "generated_at": "2026-06-26T09:13:54.343426-04:00",
+  "generated_at": "2026-06-26T12:20:21.055112-04:00",
   "ticker_news": {
-    "INFQ": [
+    "COIN": [
       {
-        "id": "d19b8fae6a13b431",
+        "id": "f643d85b07dbc977",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "INFQ",
+        "ticker": "COIN",
         "scope": "ticker",
-        "title": "Top Wall Street Analyst Says This Quantum Computing Stock Is 'Meaningfully Mispriced'\u2014 Sees 25% Upside As Trump's Quantum Push Gathers Steam",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/60123587/top-wall-street-analyst-says-this-quantum-computing-stock-is-meaningfully-mispriced-sees-25-upside-as-trumps-quantum-push-gathers-steam",
-        "published_at": "2026-06-26T12:58:08+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "infq_quantum_mispriced_upside",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "title": "Bitcoin And MSTR Are Reeling, But Polymarket Continues To Onboard Users To Crypto",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60129757/bitcoin-and-mstr-are-reeling-but-polymarket-continues-to-onboard-users-to-crypto",
+        "published_at": "2026-06-26T15:03:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "bitcoin_polymarket_adoption",
+        "tickers_mentioned": [
+          "MSTR"
+        ],
+        "route_to_synthesis": false
       }
     ],
-    "COLD": [
+    "ON": [
       {
-        "id": "f6ce2796a7921eb2",
+        "id": "33d650a48e370845",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "COLD",
+        "ticker": "ON",
         "scope": "ticker",
-        "title": "This Essex Property Trust Analyst Turns Bullish; Here Are Top 4 Upgrades For Friday",
-        "url": "https://www.benzinga.com/news/26/06/60123453/this-essex-property-trust-analyst-turns-bullish-here-are-top-4-upgrades-for-friday",
-        "published_at": "2026-06-26T12:48:30+00:00",
+        "title": "Crude Oil Falls 4%; US Consumer Sentiment Rises In June",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60132782/crude-oil-falls-4-us-consumer-sentiment-rises-in-june",
+        "published_at": "2026-06-26T16:17:29+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "crude_oil_consumer_sentiment_june",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d99cfe0cca8127af",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ON",
+        "scope": "ticker",
+        "title": "ON Semiconductor To Rally More Than 15%? Here Are 10 Top Analyst Forecasts For Friday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60124122/on-semiconductor-to-rally-more-than-15-here-are-10-top-analyst-forecasts-for-friday",
+        "published_at": "2026-06-26T13:15:58+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "essex_property_trust_bullish_upgrade",
+        "dedup_group": "on_analyst_forecast_jun26",
+        "tickers_mentioned": [
+          "ON"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "bdec49d48bca1357",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ON",
+        "scope": "ticker",
+        "title": "These Analysts Revise Their Forecasts On Synaptics",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60124251/these-analysts-revise-their-forecasts-on-synaptics-after-better-than-expected-q3-results",
+        "published_at": "2026-06-26T13:20:43+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "snps_analyst_revisions_june26",
+        "tickers_mentioned": [
+          "SNPS"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2d257549273bd9c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ON",
+        "scope": "ticker",
+        "title": "Why Is ON Semiconductor Stock Falling On Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60123546/why-is-on-semiconductor-stock-falling-on-friday",
+        "published_at": "2026-06-26T12:55:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "on_friday_routine_decline",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "01a42466988f5bc3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ON",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Friday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122671/12-information-technology-stocks-moving-friday-s-pre-market-session",
+        "published_at": "2026-06-26T12:05:37+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tech_premarket_friday_routine",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "AROC": [
+    "SNDK": [
       {
-        "id": "ee3503f20f3247dd",
+        "id": "722ee36d24d85003",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "AROC",
+        "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Top 3 Energy Stocks That May Implode In June",
-        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/06/60123358/top-3-energy-stocks-that-may-implode-in-june",
-        "published_at": "2026-06-26T12:41:05+00:00",
+        "title": "The Memory Oligopoly: How Micron And 6 Other Names Now Set The Price For The AI Race",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60128618/memory-cartel-micron-ai-prices",
+        "published_at": "2026-06-26T14:42:15+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "memory_oligopoly_ai_pricing",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "FCEL": [
+      {
+        "id": "33d650a48e370845",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "Crude Oil Falls 4%; US Consumer Sentiment Rises In June",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60132782/crude-oil-falls-4-us-consumer-sentiment-rises-in-june",
+        "published_at": "2026-06-26T16:17:29+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "crude_oil_consumer_sentiment_june",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8f6b01e398c2b1da",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "What's Going On With The Boost In FuelCell Stock?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60130854/whats-going-on-with-the-boost-in-fuelcell-stock",
+        "published_at": "2026-06-26T15:27:42+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "energy_stocks_downside_risk",
+        "dedup_group": "fcel_boost_routine",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "376d242f06108582",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FCEL",
+        "scope": "ticker",
+        "title": "Apogee Enterprises Posts Strong Q1 Earnings, Joins ACADIA Pharmaceuticals, Crocs And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127443/apogee-enterprises-posts-strong-q1-earnings-joins-acadia-pharmaceuticals-crocs-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-26T14:18:56+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "apogee_q1_earnings",
+        "tickers_mentioned": [
+          "ACAD",
+          "CROX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "HOOD": [
+      {
+        "id": "1c76983e2e7f6e3d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "Robinhood Is Built To Compound As Young Investors Enter Peak Wealth Years: Analyst",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/60132285/robinhood-is-built-to-compound-as-young-investors-enter-peak-wealth-years-analyst",
+        "published_at": "2026-06-26T16:03:20+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "hood_analyst_bullish_thesis",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e391549d1fb0f3d0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "HOOD",
+        "scope": "ticker",
+        "title": "This Robinhood Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Friday",
+        "url": "https://www.benzinga.com/news/26/06/60123599/this-robinhood-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-friday",
+        "published_at": "2026-06-26T12:58:27+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "hood_analyst_initiation_buy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "DJT": [
+      {
+        "id": "c8dff19aeeb572dc",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DJT",
+        "scope": "ticker",
+        "title": "Donald Trump Saw Nearly $800M Wiped Out On Paper As DJT Lost Almost Half Its Value This Year",
+        "url": "https://www.benzinga.com/trading-ideas/technicals/26/06/60131505/donald-trump-saw-nearly-800m-wiped-out-on-paper-djt-value-this-year",
+        "published_at": "2026-06-26T15:42:38+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "djt_paper_loss_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "DKNG": [
       {
-        "id": "2e9f888fcd04c449",
+        "id": "ed06a8de507ee267",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "DKNG",
         "scope": "ticker",
-        "title": "DraftKings Shares Climb After Company Unveils DKeX, Its Own Prediction Markets Exchange",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60123330/draftkings-shares-climb-after-company-unveils-dkex-its-own-prediction-markets-exchange",
-        "published_at": "2026-06-26T12:38:41+00:00",
+        "title": "DraftKings Stock Emerges As 2026 World Cup Winner: Prediction Market, Sportsbook Break Records",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60129130/draftkings-stock-emerges-as-2026-world-cup-winner-prediction-market-sportsbook-break-records",
+        "published_at": "2026-06-26T14:53:10+00:00",
         "type": "product",
         "impact": "medium",
-        "dedup_group": "dkng_dkex_prediction_markets_launch",
+        "dedup_group": "dkng_world_cup_sportsbook_records",
         "tickers_mentioned": [],
-        "route_to_synthesis": true
+        "route_to_synthesis": false
       }
     ],
-    "AAOI": [
+    "LLY": [
       {
-        "id": "8092d8da9dafa5fa",
+        "id": "376d242f06108582",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "AAOI",
+        "ticker": "LLY",
         "scope": "ticker",
-        "title": "ON Semiconductor, SanDisk And Other Big Stocks Moving Lower In Friday\u2019s Pre-Market Session",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122571/on-semiconductor-sandisk-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
-        "published_at": "2026-06-26T12:03:03+00:00",
-        "type": "other",
+        "title": "Apogee Enterprises Posts Strong Q1 Earnings, Joins ACADIA Pharmaceuticals, Crocs And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127443/apogee-enterprises-posts-strong-q1-earnings-joins-acadia-pharmaceuticals-crocs-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-26T14:18:56+00:00",
+        "type": "earnings",
         "impact": "low",
-        "dedup_group": "market_movers_premarket_jun26",
+        "dedup_group": "apogee_q1_earnings",
         "tickers_mentioned": [
-          "ON",
-          "SNDK"
+          "ACAD",
+          "CROX"
         ],
         "route_to_synthesis": false
       }
     ],
-    "SNDK": [
+    "MRNA": [
       {
-        "id": "8092d8da9dafa5fa",
+        "id": "376d242f06108582",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SNDK",
+        "ticker": "MRNA",
         "scope": "ticker",
-        "title": "ON Semiconductor, SanDisk And Other Big Stocks Moving Lower In Friday\u2019s Pre-Market Session",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122571/on-semiconductor-sandisk-and-other-big-stocks-moving-lower-in-fridays-pre-market-session",
-        "published_at": "2026-06-26T12:03:03+00:00",
-        "type": "other",
+        "title": "Apogee Enterprises Posts Strong Q1 Earnings, Joins ACADIA Pharmaceuticals, Crocs And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127443/apogee-enterprises-posts-strong-q1-earnings-joins-acadia-pharmaceuticals-crocs-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-26T14:18:56+00:00",
+        "type": "earnings",
         "impact": "low",
-        "dedup_group": "market_movers_premarket_jun26",
+        "dedup_group": "apogee_q1_earnings",
         "tickers_mentioned": [
-          "ON",
-          "SNDK"
+          "ACAD",
+          "CROX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NOW": [
+      {
+        "id": "376d242f06108582",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOW",
+        "scope": "ticker",
+        "title": "Apogee Enterprises Posts Strong Q1 Earnings, Joins ACADIA Pharmaceuticals, Crocs And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127443/apogee-enterprises-posts-strong-q1-earnings-joins-acadia-pharmaceuticals-crocs-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-26T14:18:56+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "apogee_q1_earnings",
+        "tickers_mentioned": [
+          "ACAD",
+          "CROX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SLS": [
+      {
+        "id": "376d242f06108582",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "Apogee Enterprises Posts Strong Q1 Earnings, Joins ACADIA Pharmaceuticals, Crocs And Other Big Stocks Moving Higher On Friday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127443/apogee-enterprises-posts-strong-q1-earnings-joins-acadia-pharmaceuticals-crocs-and-other-big-stocks-moving-higher-on-friday",
+        "published_at": "2026-06-26T14:18:56+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "apogee_q1_earnings",
+        "tickers_mentioned": [
+          "ACAD",
+          "CROX"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "e72b172053f91260",
+        "id": "32267fce2ee3f8bd",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SNDK",
+        "ticker": "SLS",
         "scope": "ticker",
-        "title": "Why Is Sandisk Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60122988/why-is-sandisk-stock-falling-friday",
-        "published_at": "2026-06-26T12:24:02+00:00",
+        "title": "SELLAS Stock Hits New Highs: What's Happening Today?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60129193/sellas-stock-hits-new-highs-whats-happening-today",
+        "published_at": "2026-06-26T14:54:17+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sandisk_stock_decline",
+        "dedup_group": "sls_new_highs",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "e8e0d6e978f41373",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60124354/whats-going-on-with-intel-stock-friday-4",
+        "published_at": "2026-06-26T13:26:26+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_friday_routine",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "55707938e2b1ec1f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Taiwan Semiconductor Stock Friday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60121505/whats-going-on-with-taiwan-semiconductor-stock-friday-3",
+        "published_at": "2026-06-26T10:59:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tsm_friday_routine",
+        "tickers_mentioned": [
+          "TSM"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "ESTC": [
+      {
+        "id": "d99cfe0cca8127af",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ESTC",
+        "scope": "ticker",
+        "title": "ON Semiconductor To Rally More Than 15%? Here Are 10 Top Analyst Forecasts For Friday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60124122/on-semiconductor-to-rally-more-than-15-here-are-10-top-analyst-forecasts-for-friday",
+        "published_at": "2026-06-26T13:15:58+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "on_analyst_forecast_jun26",
+        "tickers_mentioned": [
+          "ON"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MKC": [
+      {
+        "id": "d99cfe0cca8127af",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MKC",
+        "scope": "ticker",
+        "title": "ON Semiconductor To Rally More Than 15%? Here Are 10 Top Analyst Forecasts For Friday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60124122/on-semiconductor-to-rally-more-than-15-here-are-10-top-analyst-forecasts-for-friday",
+        "published_at": "2026-06-26T13:15:58+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "on_analyst_forecast_jun26",
+        "tickers_mentioned": [
+          "ON"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "3cc8d695881a05f5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MKC",
+        "scope": "ticker",
+        "title": "These Analysts Revise Their Forecasts On McCormick After Q2 Results",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60128549/these-analysts-revise-their-forecasts-on-mccormick-after-q2-results",
+        "published_at": "2026-06-26T14:40:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "mkc_q2_earnings_analyst_revision",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NU": [
+      {
+        "id": "e391549d1fb0f3d0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NU",
+        "scope": "ticker",
+        "title": "This Robinhood Analyst Begins Coverage On A Bullish Note; Here Are Top 5 Initiations For Friday",
+        "url": "https://www.benzinga.com/news/26/06/60123599/this-robinhood-analyst-begins-coverage-on-a-bullish-note-here-are-top-5-initiations-for-friday",
+        "published_at": "2026-06-26T12:58:27+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "hood_analyst_initiation_buy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "706a69ea2a8e3d5a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NU",
+        "scope": "ticker",
+        "title": "Nu Holdings' US Launch Could Unlock 'Substantial' Value For Latin America's Largest Neobank",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/60130595/nu-holdings-us-launch-could-unlock-substantial-value-for-latin-americas-largest-neobank",
+        "published_at": "2026-06-26T15:20:01+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "nu_us_launch",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "NXT": [
+      {
+        "id": "4c4da7b59edf04a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NXT",
+        "scope": "ticker",
+        "title": "Russell 2000's 'Graduating Class' Just Turned Into Mid-Caps",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60130333/russell-2000s-graduating-class-just-turned-into-mid-caps",
+        "published_at": "2026-06-26T15:14:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxt_russell_index_rebalance",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SMTC": [
+      {
+        "id": "4c4da7b59edf04a0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SMTC",
+        "scope": "ticker",
+        "title": "Russell 2000's 'Graduating Class' Just Turned Into Mid-Caps",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60130333/russell-2000s-graduating-class-just-turned-into-mid-caps",
+        "published_at": "2026-06-26T15:14:12+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nxt_russell_index_rebalance",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MU": [
       {
-        "id": "853a4e71eae22f99",
+        "id": "722ee36d24d85003",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Dan Ives Says Microsoft And Meta Are Being Treated Like 'Bear Market' Stocks",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60123475/dan-ives-says-microsoft-and-meta-are-being-treated-like-bear-market-stocks",
-        "published_at": "2026-06-26T12:49:09+00:00",
+        "title": "The Memory Oligopoly: How Micron And 6 Other Names Now Set The Price For The AI Race",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60128618/memory-cartel-micron-ai-prices",
+        "published_at": "2026-06-26T14:42:15+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "memory_oligopoly_ai_pricing",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "8f96bf406c66beee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "'There's An Execution Crisis In Ethereum': Is ETH Losing To Hotter Tech Trades Like MU And NVDA?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60128408/theres-an-execution-crisis-in-ethereum-is-eth-losing-to-hotter-tech-trades-like-mu-and-nvda",
+        "published_at": "2026-06-26T14:38:06+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "msft_meta_bear_market_treatment",
+        "dedup_group": "eth_vs_semiconductor_commentary",
         "tickers_mentioned": [
-          "META"
+          "ETH",
+          "NVDA"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "e72b172053f91260",
+        "id": "2cea8d7ac675209a",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MU",
         "scope": "ticker",
-        "title": "Why Is Sandisk Stock Falling Friday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60122988/why-is-sandisk-stock-falling-friday",
-        "published_at": "2026-06-26T12:24:02+00:00",
+        "title": "One Chart Shows Nvidia's AI Monopoly Is Slowly Fading",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60128112/one-chart-shows-nvidias-ai-monopoly-is-slowly-fading",
+        "published_at": "2026-06-26T14:31:49+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "nvidia_ai_monopoly_fading",
+        "tickers_mentioned": [
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f0a3e8cef15b3f00",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "What Is Going On With Broadcom Stock On Friday?",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60127352/what-is-going-on-with-broadcom-stock-on-friday",
+        "published_at": "2026-06-26T14:16:55+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "sandisk_stock_decline",
+        "dedup_group": "broadcom_friday_volatility",
+        "tickers_mentioned": [
+          "AVGO"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "860cfd4cb8d59f81",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Nvidia's AI Memory Supplier Is Coming To Wall Street: Here's Why It Matters For Micron",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60125440/nvidias-ai-memory-supplier-is-coming-to-wall-street-heres-why-it-matters-for-micron",
+        "published_at": "2026-06-26T13:45:37+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "micron_ipo_wall_street",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "169f1a19282603ac",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Magnificent Seven\u2019s Black June Triggers $1 Billion Exodus From MAGS ETF",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60124389/magnificent-seven-selloff-june-mags-etf-outflows",
+        "published_at": "2026-06-26T13:27:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mag7_exodus_jun26",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "STX": [
+      {
+        "id": "722ee36d24d85003",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "STX",
+        "scope": "ticker",
+        "title": "The Memory Oligopoly: How Micron And 6 Other Names Now Set The Price For The AI Race",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60128618/memory-cartel-micron-ai-prices",
+        "published_at": "2026-06-26T14:42:15+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "memory_oligopoly_ai_pricing",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "722ee36d24d85003",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "The Memory Oligopoly: How Micron And 6 Other Names Now Set The Price For The AI Race",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60128618/memory-cartel-micron-ai-prices",
+        "published_at": "2026-06-26T14:42:15+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "memory_oligopoly_ai_pricing",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SBET": [
+      {
+        "id": "8f96bf406c66beee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SBET",
+        "scope": "ticker",
+        "title": "'There's An Execution Crisis In Ethereum': Is ETH Losing To Hotter Tech Trades Like MU And NVDA?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60128408/theres-an-execution-crisis-in-ethereum-is-eth-losing-to-hotter-tech-trades-like-mu-and-nvda",
+        "published_at": "2026-06-26T14:38:06+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "eth_vs_semiconductor_commentary",
+        "tickers_mentioned": [
+          "ETH",
+          "NVDA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NFLX": [
+      {
+        "id": "7a7cf7729a5961e5",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NFLX",
+        "scope": "ticker",
+        "title": "Netflix Stock Edges Higher Friday: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60127167/netflix-stock-edges-higher-friday-whats-driving-the-move",
+        "published_at": "2026-06-26T14:14:02+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nflx_friday_move_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSFT": [
       {
-        "id": "853a4e71eae22f99",
+        "id": "169f1a19282603ac",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Dan Ives Says Microsoft And Meta Are Being Treated Like 'Bear Market' Stocks",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60123475/dan-ives-says-microsoft-and-meta-are-being-treated-like-bear-market-stocks",
-        "published_at": "2026-06-26T12:49:09+00:00",
+        "title": "Magnificent Seven\u2019s Black June Triggers $1 Billion Exodus From MAGS ETF",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60124389/magnificent-seven-selloff-june-mags-etf-outflows",
+        "published_at": "2026-06-26T13:27:27+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "mag7_exodus_jun26",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "NOK": [
+      {
+        "id": "91ce76a8728ab391",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NOK",
+        "scope": "ticker",
+        "title": "What's Going On With Nokia Stock Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60123749/whats-going-on-with-nokia-stock-friday-2",
+        "published_at": "2026-06-26T12:59:55+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "nok_friday_routine",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PLTR": [
+      {
+        "id": "bf817e65acf63775",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PLTR",
+        "scope": "ticker",
+        "title": "Why Is Palantir Stock Surging On Friday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60130028/why-is-palantir-stock-surging-on-friday",
+        "published_at": "2026-06-26T15:06:48+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "pltr_friday_move_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "UBER": [
+      {
+        "id": "c1ce709547835a96",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UBER",
+        "scope": "ticker",
+        "title": "Uber's Robotaxi Vision Could Take Years To Play Out: Analyst",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60131596/ubers-robotaxi-vision-could-take-years-to-play-out-analyst",
+        "published_at": "2026-06-26T15:44:18+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "msft_meta_bear_market_treatment",
-        "tickers_mentioned": [
-          "META"
-        ],
+        "dedup_group": "uber_robotaxi_timeline",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       },
       {
-        "id": "0f3cc35cd60eb0e8",
+        "id": "78e58209588fc689",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "MSFT",
+        "ticker": "UBER",
         "scope": "ticker",
-        "title": "\u2018Maleficent 7\u2019? Analyst Warns Microsoft Could Crash To $250",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60122272/magnificent-seven-maleficent-7-microsoft-technical-analysis-sp500",
-        "published_at": "2026-06-26T11:51:58+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "msft_analyst_bearish_call_jun26",
+        "title": "Uber Scores Last-Minute Win As Gavin Newsom Signs Deal That Ends $50 Million California Ballot Showdown",
+        "url": "https://www.benzinga.com/news/travel/26/06/60122847/uber-scores-last-minute-win-as-gavin-newsom-signs-deal-that-ends-50-million-california-ballot-showdown",
+        "published_at": "2026-06-26T12:11:51+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "uber_california_newsom_deal",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "f7c2acfdb616b648",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Why Is Triller Group Stock Surging On Friday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60122315/why-is-triller-group-stock-surging-on-friday",
-        "published_at": "2026-06-26T11:54:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "triller_group_stock_surge",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "425d2c66ca58dbee",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Qualcomm, Merck, Rockwell Automation And A Real Estate Stock On CNBC\u2019s \u2018Final Trades\u2019",
-        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60122085/qualcomm-merck-rockwell-automation-and-a-real-estate-stock-on-cnbcs-final-trades",
-        "published_at": "2026-06-26T11:32:39+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "cnbc_final_trades_jun26",
-        "tickers_mentioned": [
-          "MRK",
-          "ROK"
-        ],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       }
     ]
   },

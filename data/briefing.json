@@ -1,69 +1,71 @@
 {
-  "generated_at": "2026-06-26T09:13:54.343426-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on holds; semis still lead (SNDK +22%, MU +16%, TECH +20%); desk adds LRCX to ACHC/LKQ/QXO slate",
+  "generated_at": "2026-06-26T12:20:21.055112-04:00",
+  "window": "RTH",
+  "headline": "Risk-on intact but QQQ slips -0.76%; ON crashes -23%; desk rotates to MTCH/UBER/TRU on technicals",
   "market_state": {
     "regime": "risk_on",
-    "line": "QQQ +0.8%, SPY flat but above 50d; VXX stress ratio 0.97 \u2014 vol suppressed, tape supportive for momentum entries pre-open."
+    "line": "SPY flat (-0.05%) above 50d, QQQ -0.76%, VXX stress near 1.0 \u2014 risk-on label holds but tech pressure warrants tight stops."
   },
   "actions": [
     {
-      "ticker": "ACHC",
+      "ticker": "MTCH",
       "direction": "long",
-      "entry": 26.2,
-      "stop": 25.55,
-      "target": 27.5,
-      "line": "Half size momentum play \u2014 signal strong, risk clean, no research veto."
+      "entry": 36.56,
+      "stop": 35.99,
+      "target": 37.71,
+      "line": "Pure technical setup, no catalyst \u2014 half size; R/R ~2:1, tight 57\u00a2 stop."
     },
     {
-      "ticker": "QXO",
+      "ticker": "UBER",
       "direction": "long",
-      "entry": 17.98,
-      "stop": 17.11,
-      "target": 19.73,
-      "line": "Half size \u2014 orderly momentum, clean RSI, signal and risk both constructive."
+      "entry": 75.67,
+      "stop": 73.36,
+      "target": 80.28,
+      "line": "Durable catalyst confirmed by research; weak volume keeps it half size \u2014 $4.61 target run."
     },
     {
-      "ticker": "LRCX",
+      "ticker": "TRU",
       "direction": "long",
-      "entry": 401.83,
-      "stop": 382.42,
-      "target": 440.65,
-      "line": "Quarter size only \u2014 research/risk lean positive but signal flags overextension."
+      "entry": 69.97,
+      "stop": 67.49,
+      "target": 74.93,
+      "line": "Signal agrees but volume anemic (0.37x), research neutral \u2014 quarter size only; $4.96 target."
     }
   ],
   "watch": [
     {
-      "ticker": "SNDK",
+      "ticker": "ON",
       "type": "mover",
-      "line": "+21.8%, rel vol 1.98, MACD bullish \u2014 semi strength persists into pre-market."
+      "line": "-22.8% on 1.9x volume \u2014 biggest single-name blow-up this scan; watch for semi-sector contagion."
     },
     {
-      "ticker": "TECH",
+      "ticker": "FCEL",
       "type": "mover",
-      "line": "+20%, rel vol 12.98 \u2014 highest volume ratio in the scan; overbought but watch for continuation or fade setup."
+      "line": "+21.5% with MACD bullish cross \u2014 low rel-vol (0.75x) limits conviction; monitor for follow-through."
     },
     {
-      "ticker": "MU",
+      "ticker": "MRNA",
       "type": "mover",
-      "line": "+16%, rel vol 2.02, MACD bullish \u2014 semi ripple from SNDK; could set up intraday if it pulls back."
+      "line": "+11.8% overbought flag \u2014 needs a pullback base before any entry is clean."
     },
     {
-      "ticker": "NRIX",
+      "ticker": "ATAI",
       "type": "mover",
-      "line": "+16.3%, rel vol 2.15, overbought \u2014 bio-type move, high risk of giveback at open."
+      "line": "+12.2% overbought on 1.64x volume \u2014 elevated but extended; watch for fade or consolidation."
     },
     {
-      "ticker": "GLW",
+      "ticker": "WDC",
       "type": "mover",
-      "line": "+11.5%, rel vol 1.71 \u2014 clean breakout, no overbought flag; worth tracking for momentum follow-through."
+      "line": "-10.5% MACD bearish \u2014 storage names under pressure alongside ON; short-side setup brewing."
     }
   ],
   "changed": [
-    "Desk adds LRCX (quarter size) \u2014 new vs previous briefing"
+    "Semis leadership gone \u2014 ON -23% replaces prior SNDK/MU/TECH upside as the dominant move",
+    "Full desk slate replaced: MTCH/UBER/TRU in, LRCX/ACHC/LKQ/QXO out",
+    "No catalysts or ripple calls this scan vs prior slate activity"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 09:13 ET 2026-06-26; prices are pre-open and may gap significantly at RTH open \u2014 entry levels may not be reachable.",
-    "No catalysts or macro events flagged this scan; mover strength is momentum-only, making continuation less certain without a fundamental anchor."
+    "RTH scan as of 12:20 ET 2026-06-26; prices reflect that moment and may be stale \u2014 re-check levels before entry.",
+    "Risk-on regime label lags intraday reality: QQQ -0.76% and VXX stress at 0.98 suggest tape is softer than the label implies \u2014 size accordingly."
   ]
 }
