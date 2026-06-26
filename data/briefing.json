@@ -1,70 +1,63 @@
 {
-  "generated_at": "2026-06-25T19:22:04.869077-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on tape holds AH; desk adds ACHC + LKQ alongside QXO as semis surge cools into close",
+  "generated_at": "2026-06-26T00:08:31.263692-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on overnight: semis dominate tape \u2014 MU +16%, SNDK +22%; desk holds LKQ + adds LRCX long",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY flat/above 50d, QQQ +0.8%, VXX stress 0.97 \u2014 low fear, constructive for momentum entries AH."
+    "line": "QQQ +0.8%, SPY flat, VXX stress 0.97 \u2014 low fear, semis leading hard. Thin overnight tape; gap risk on opens."
   },
   "actions": [
-    {
-      "ticker": "ACHC",
-      "direction": "long",
-      "entry": 26.2,
-      "stop": 25.55,
-      "target": 27.5,
-      "line": "Half size; Signal+Risk green, Research low-conviction. Clean risk-on momentum, defined $0.65 risk."
-    },
     {
       "ticker": "LKQ",
       "direction": "long",
       "entry": 26.74,
-      "stop": 26.43,
-      "target": 27.36,
-      "line": "Quarter size; Research against but tight $0.31 stop limits damage. Modest setup, take the small r/r."
+      "stop": 25.19,
+      "target": 29.84,
+      "line": "Half size. Signal/risk aligned bullish; research low-conviction but setup is clean. R/R ~2:1."
     },
     {
-      "ticker": "QXO",
+      "ticker": "LRCX",
       "direction": "long",
-      "entry": 17.98,
-      "stop": 17.11,
-      "target": 19.73,
-      "line": "Half size; Signal+Risk both constructive. RSI sweet spot, controlled climb, $1.75 target room."
+      "entry": 401.83,
+      "stop": 369.68,
+      "target": 466.12,
+      "line": "Quarter size. Neutral signal/research, no veto \u2014 RSI 65+ after 7% day flags late-entry risk; size reflects that."
     }
   ],
   "watch": [
     {
-      "ticker": "SNDK",
-      "type": "mover",
-      "line": "+21.8%, MACD bullish, 2x vol \u2014 storage/NAND move; watch for RTH continuation or fade setup."
-    },
-    {
       "ticker": "MU",
       "type": "mover",
-      "line": "+16%, MACD bullish, 2x vol \u2014 semi earnings-relief trade; check if move holds at open."
+      "line": "+16%, unusual vol, MACD bullish \u2014 semi earnings lift; watch for RTH follow-through or fade."
+    },
+    {
+      "ticker": "SNDK",
+      "type": "mover",
+      "line": "+21.8%, rel vol 2x, MACD bullish \u2014 riding semi wave with MU; gap-and-go or exhaustion at open."
     },
     {
       "ticker": "TECH",
       "type": "mover",
-      "line": "+20% on 13x vol, overbought flag \u2014 extended; watch for RTH gap-fade opportunity."
+      "line": "+20%, rel vol 13x \u2014 extreme volume spike, overbought flag; not chasing but watch for setup on pullback."
     },
     {
       "ticker": "NRIX",
       "type": "mover",
-      "line": "+16.3%, unusual vol, overbought \u2014 needs catalyst confirmation before chase."
+      "line": "+16.3%, overbought \u2014 high relative vol; needs consolidation before any entry."
     },
     {
       "ticker": "GLW",
       "type": "mover",
-      "line": "+11.5% on 1.7x vol \u2014 no overbought flag; cleaner structure if move sustains into open."
+      "line": "+11.5% \u2014 no catalyst flagged; worth watching RTH open for confirmation of move."
     }
   ],
   "changed": [
-    "Desk expanded to three names: ACHC (half) and LKQ (quarter) added alongside existing QXO.",
-    "Semi/storage surge (SNDK, MU, TECH) now in watch-only \u2014 no desk takes on the big movers."
+    "ACHC dropped from desk takes \u2014 no longer in actions",
+    "LRCX added as new desk take (quarter size, long)",
+    "QXO no longer featured in headline leadership"
   ],
   "caveats": [
-    "AH_POST window \u2014 prices as of 19:22 ET 2026-06-25; AH liquidity is thin, spreads wider, levels may gap significantly at RTH open.",
-    "Two of three desk takes have Research skeptical/against \u2014 size discipline (half/quarter) is load-bearing here."
+    "Overnight scan as of 2026-06-26 00:08 ET \u2014 prices are pre-RTH and may gap significantly at the 9:30 open; entries/stops reflect scan-time levels.",
+    "Semi movers (MU, SNDK, TECH) are overbought/extended overnight \u2014 LRCX long entry at RTH open carries gap-up overpay risk given RSI 65+ already flagged by desk."
   ]
 }

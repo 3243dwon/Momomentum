@@ -1,20 +1,61 @@
 {
-  "generated_at": "2026-06-25T19:22:04.869077-04:00",
+  "generated_at": "2026-06-26T00:08:31.263692-04:00",
   "ticker_news": {
-    "TEM": [
+    "MSFT": [
       {
-        "id": "00aaff636d32fd4a",
+        "id": "4799dbeb7cec4e76",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TEM",
+        "ticker": "MSFT",
         "scope": "ticker",
-        "title": "Nancy Pelosi Has Added These 9 Stocks To Her Portfolio Since 2025, Including Three Magnificent Seven Names",
-        "url": "https://www.benzinga.com/news/politics/26/06/60117738/nancy-pelosi-has-added-these-9-stocks-to-her-portfolio-since-2025-including-three-magnificent-seven-names",
-        "published_at": "2026-06-25T22:09:31+00:00",
+        "title": "Apple, Triller Group, BlackBerry, Synaptics And Microsoft: Why These 5 Stocks Are On Investors' Radars Today",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60118381/apple-triller-group-blackberry-synaptics-and-microsoft-why-these-5-stocks-are-on-investors-radars-today",
+        "published_at": "2026-06-26T01:40:20+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "msft_roundup_coverage_june_2026",
+        "tickers_mentioned": [
+          "AAPL",
+          "TLLR",
+          "BB"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "f2e0d77add29c570",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Bitcoin, Ethereum, XRP, Dogecoin Slump As Fed's Favourite Inflation Barometer Hits 3-Year High: Analyst Weighs If July Will Bring Relief To BTC Investors",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60118471/bitcoin-ethereum-xrp-and-dogecoin-slump-as-key-inflation-data-dims-hopes-for-july-relief",
+        "published_at": "2026-06-26T02:15:56+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "crypto_inflation_pce_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "PLTR": [
+      {
+        "id": "48d931b4a4b9d6bd",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "PLTR",
+        "scope": "ticker",
+        "title": "Cathie Wood Snaps Up $3.3 Million Worth Of Palantir Stock, Buys Cerebras Shares, But Dumps Alibaba Amid Anthropic Controversy",
+        "url": "https://www.benzinga.com/news/26/06/60118569/cathie-wood-snaps-up-3-3-million-worth-of-palantir-stock-buys-cerebras-shares-but-dumps-alibaba-amid-anthropic-controversy",
+        "published_at": "2026-06-26T02:47:31+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "pelosi_portfolio_trades_2025_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "cathie_wood_pltr_buy_june_2026",
+        "tickers_mentioned": [
+          "AAPL",
+          "ALIBABA"
+        ],
         "route_to_synthesis": false
       }
     ]
