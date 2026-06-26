@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-26T16:25:20.758307+00:00",
+ "generated_at": "2026-06-26T18:59:20.908244+00:00",
  "window_days": 30,
  "deal_count": 13,
  "deals": [
@@ -170,11 +170,11 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 5.62,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "NTRA",
@@ -184,11 +184,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.33,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "MASS",
@@ -198,11 +198,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.02,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "A",
@@ -240,11 +240,11 @@
      "horizon": "months",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 0.89,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "AVTR",
@@ -254,17 +254,17 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -0.15,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 8,
-    "graded": 0,
-    "hit": 0
+    "graded": 5,
+    "hit": 2
    }
   },
   {
@@ -288,11 +288,11 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -1.12,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ONTO",
@@ -302,11 +302,11 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -9.65,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "AVGO",
@@ -316,11 +316,11 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 3.97,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "WDC",
@@ -330,11 +330,11 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -14.45,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "SNDK",
@@ -344,11 +344,11 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -6.8,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "LRCX",
@@ -358,11 +358,11 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -4.02,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "KLAC",
@@ -372,17 +372,17 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -5.32,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 7,
-    "graded": 0,
-    "hit": 0
+    "graded": 7,
+    "hit": 1
    }
   },
   {
@@ -406,11 +406,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -1.12,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ACLS",
@@ -420,11 +420,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -4.01,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ASML",
@@ -434,11 +434,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.23,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "WDC",
@@ -448,11 +448,11 @@
      "horizon": "weeks",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 14.45,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "STX",
@@ -462,11 +462,11 @@
      "horizon": "weeks",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 11.51,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "LRCX",
@@ -476,11 +476,11 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -4.02,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "KLAC",
@@ -490,11 +490,11 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -5.32,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ENTG",
@@ -504,17 +504,17 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -11.9,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 8,
-    "graded": 0,
-    "hit": 0
+    "graded": 8,
+    "hit": 2
    }
   },
   {
@@ -538,11 +538,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -1.12,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ACLS",
@@ -552,11 +552,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -4.01,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ONTO",
@@ -566,11 +566,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -9.65,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "AAPL",
@@ -580,11 +580,11 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.13,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "HPE",
@@ -594,11 +594,11 @@
      "horizon": "months",
      "priced_in": "partial",
      "outcomes": {
-      "1d": null,
+      "1d": 7.8,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "WDC",
@@ -608,11 +608,11 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -14.45,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "SNDK",
@@ -622,11 +622,11 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -6.8,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "LRCX",
@@ -636,11 +636,11 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -4.02,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "DELL",
@@ -650,17 +650,17 @@
      "horizon": "months",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 6.03,
       "3d": null,
       "5d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 9,
-    "graded": 0,
-    "hit": 0
+    "graded": 9,
+    "hit": 2
    }
   },
   {

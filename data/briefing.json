@@ -1,71 +1,46 @@
 {
-  "generated_at": "2026-06-26T12:20:21.055112-04:00",
+  "generated_at": "2026-06-26T14:55:20.374617-04:00",
   "window": "RTH",
-  "headline": "Risk-on intact but QQQ slips -0.76%; ON crashes -23%; desk rotates to MTCH/UBER/TRU on technicals",
+  "headline": "Regime flips mixed: QQQ -1.18%, SPY sub-50d; ON extends crash -24.5%; desk has no live takes",
   "market_state": {
-    "regime": "risk_on",
-    "line": "SPY flat (-0.05%) above 50d, QQQ -0.76%, VXX stress near 1.0 \u2014 risk-on label holds but tech pressure warrants tight stops."
+    "regime": "mixed",
+    "line": "SPY -0.25% below 50d, QQQ -1.18%, VXX stress near flat (0.98) \u2014 tape softening, tech leading down; no edge for new entries."
   },
-  "actions": [
-    {
-      "ticker": "MTCH",
-      "direction": "long",
-      "entry": 36.56,
-      "stop": 35.99,
-      "target": 37.71,
-      "line": "Pure technical setup, no catalyst \u2014 half size; R/R ~2:1, tight 57\u00a2 stop."
-    },
-    {
-      "ticker": "UBER",
-      "direction": "long",
-      "entry": 75.67,
-      "stop": 73.36,
-      "target": 80.28,
-      "line": "Durable catalyst confirmed by research; weak volume keeps it half size \u2014 $4.61 target run."
-    },
-    {
-      "ticker": "TRU",
-      "direction": "long",
-      "entry": 69.97,
-      "stop": 67.49,
-      "target": 74.93,
-      "line": "Signal agrees but volume anemic (0.37x), research neutral \u2014 quarter size only; $4.96 target."
-    }
-  ],
+  "actions": [],
   "watch": [
     {
       "ticker": "ON",
       "type": "mover",
-      "line": "-22.8% on 1.9x volume \u2014 biggest single-name blow-up this scan; watch for semi-sector contagion."
-    },
-    {
-      "ticker": "FCEL",
-      "type": "mover",
-      "line": "+21.5% with MACD bullish cross \u2014 low rel-vol (0.75x) limits conviction; monitor for follow-through."
-    },
-    {
-      "ticker": "MRNA",
-      "type": "mover",
-      "line": "+11.8% overbought flag \u2014 needs a pullback base before any entry is clean."
-    },
-    {
-      "ticker": "ATAI",
-      "type": "mover",
-      "line": "+12.2% overbought on 1.64x volume \u2014 elevated but extended; watch for fade or consolidation."
+      "line": "-24.5% on 2.49\u00d7 vol \u2014 capitulation or dead-cat setup; no desk take yet, watch for flush/stabilization."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "-10.5% MACD bearish \u2014 storage names under pressure alongside ON; short-side setup brewing."
+      "line": "-12.15% with MACD bearish, 1.73\u00d7 vol \u2014 storage sector under pressure alongside STX."
+    },
+    {
+      "ticker": "STX",
+      "type": "mover",
+      "line": "-10.42% MACD bearish, 1.93\u00d7 vol \u2014 confirms storage/HDD sector breakdown; WDC/STX pair worth watching."
+    },
+    {
+      "ticker": "ATAI",
+      "type": "mover",
+      "line": "+12.66% unusual vol (2.2\u00d7), overbought \u2014 extended, fade risk high without catalyst confirmation."
+    },
+    {
+      "ticker": "MRNA",
+      "type": "mover",
+      "line": "+9.91% overbought flag, 1.52\u00d7 vol \u2014 bio squeeze; needs catalyst to hold gains."
     }
   ],
   "changed": [
-    "Semis leadership gone \u2014 ON -23% replaces prior SNDK/MU/TECH upside as the dominant move",
-    "Full desk slate replaced: MTCH/UBER/TRU in, LRCX/ACHC/LKQ/QXO out",
-    "No catalysts or ripple calls this scan vs prior slate activity"
+    "Regime flipped from risk-on to mixed",
+    "Desk cleared all takes \u2014 MTCH/UBER/TRU positions gone, actions list now empty",
+    "QQQ weakness deepened: -0.76% prior \u2192 -1.18% now"
   ],
   "caveats": [
-    "RTH scan as of 12:20 ET 2026-06-26; prices reflect that moment and may be stale \u2014 re-check levels before entry.",
-    "Risk-on regime label lags intraday reality: QQQ -0.76% and VXX stress at 0.98 suggest tape is softer than the label implies \u2014 size accordingly."
+    "RTH scan as of 14:55 ET 2026-06-26 \u2014 prices stale by minutes; last 65 min of session remain, moves can extend.",
+    "No desk takes and no catalysts or macro events in this scan \u2014 watch list is mover-driven only, not fundamental."
   ]
 }
