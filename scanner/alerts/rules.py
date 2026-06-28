@@ -47,6 +47,23 @@ def _score_alert(alert: dict) -> float:
     return base
 
 
+def _cap_by_type(alerts: list[dict], alert_type: str, cap: int) -> tuple[list[dict], int]:
+    """Trim a single always-fire alert type to at most `cap`, keeping the
+    strongest by _score_alert. Returns (kept_alerts, dropped_count) where
+    kept_alerts is the input list with the over-cap entries of `alert_type`
+    removed (all other types untouched, original order preserved). Filters by
+    reference — the surviving dicts are the same objects, so record_dispatched()
+    can still pop their `_signal_abs`. cap < 0 disables the cap."""
+    if cap < 0:
+        return alerts, 0
+    matching = [a for a in alerts if a.get("type") == alert_type]
+    if len(matching) <= cap:
+        return alerts, 0
+    keep = set(id(a) for a in sorted(matching, key=_score_alert, reverse=True)[:cap])
+    kept = [a for a in alerts if a.get("type") != alert_type or id(a) in keep]
+    return kept, len(matching) - cap
+
+
 def _fmt_pct(x: float | None) -> str:
     if x is None:
         return "?"
@@ -199,7 +216,7 @@ def build_alerts(
         rel_vol = r.get("rel_volume") or 0
         vol = r.get("volume") or 0
 
-        if t in watchlist and abs(pct) >= 1.5:
+        if t in watchlist and abs(pct) >= config.WATCHLIST_ALERT_MIN_MOVE_PCT:
             synth = syntheses.get(t, {}).get("summary")
             title = f"⭐ {t} {_fmt_pct(pct)}" + (f" · {_clip(synth, 40)}" if synth else " watchlist")
             _emit(
@@ -240,47 +257,15 @@ def build_alerts(
                 signal=pct,
             )
 
-    # === B. Delta alerts ===
-    for t in deltas.get("new_top20_entrants", []):
-        r = by_ticker.get(t, {})
-        synth = syntheses.get(t, {}).get("summary")
-        _emit(
-            alerts, throttle,
-            ticker=t, alert_type="delta_new_top20",
-            title=f"📈 {t} {_fmt_pct(r.get('pct_1d'))} new top-20",
-            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), synth,
-                          qualifier="new top-20"),
-            signal=r.get("pct_1d"),
-        )
-
-    for jump in deltas.get("rank_jumps", []):
-        t = jump["ticker"]
-        r = by_ticker.get(t, {})
-        synth = syntheses.get(t, {}).get("summary")
-        qual = (
-            f"rank ↑{jump['from'] - jump['to']}"
-            if jump["from"] > jump["to"]
-            else f"rank #{jump['from']}→#{jump['to']}"
-        )
-        _emit(
-            alerts, throttle,
-            ticker=t, alert_type="delta_rank_jump",
-            title=f"⚡ {t} rank #{jump['from']}→#{jump['to']}",
-            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), synth,
-                          qualifier=qual),
-            signal=r.get("pct_1d"),
-        )
-
-    for t in deltas.get("momentum_accel", []):
-        r = by_ticker.get(t, {})
-        _emit(
-            alerts, throttle,
-            ticker=t, alert_type="delta_accel",
-            title=f"🌡️ {t} {_fmt_pct(r.get('pct_1d'))} accelerating",
-            body_md=_line(t, r.get("pct_1d"), suffix, r.get("rel_volume"), None,
-                          qualifier="3-scan accel"),
-            signal=r.get("pct_1d"),
-        )
+    # === B. Delta alerts (DISABLED) ===
+    # Pure movers-leaderboard mechanics (entered top-20 / jumped ranks /
+    # 3-scan acceleration) with no catalyst attached — the lowest-signal
+    # alerts in the system. Trimmed to quiet the Feishu channel; a move that
+    # actually matters still surfaces as a `catalyst` or `big_move` alert.
+    # Also gated by config.DELTA_ALERTS_ENABLED (default False, Contract G):
+    # restoring the family requires BOTH un-commenting the three loops
+    # (delta_new_top20 / delta_rank_jump / delta_accel) and flipping the flag
+    # to True. Any future delta emit MUST stay behind `if config.DELTA_ALERTS_ENABLED:`.
 
     # === C. Macro alerts ===
     for analysis in macro_analyses:
@@ -308,6 +293,14 @@ def build_alerts(
     # lengjing's per-tweet Feishu ping (which fires for every tweet regardless of
     # price); here we only ping when his call coincides with a live move.
     for m in serenity_matches or []:
+        # Gating (Contract G): kill-switch for the whole stream, plus a raised
+        # move floor (up from the 3.0 hot-move floor in serenity.compute_matches).
+        # Drop watchlist-only names with no live move (pct_1d None) — the noisy
+        # case — and anything moving less than the throttle threshold.
+        if not config.SERENITY_MATCH_ENABLED:
+            continue
+        if m.get("pct_1d") is None or abs(m["pct_1d"]) < config.SERENITY_MATCH_MIN_MOVE_PCT:
+            continue
         t = m["ticker"]
         pct = m.get("pct_1d")
         stance = m.get("stance", "neutral")
@@ -377,6 +370,13 @@ def build_alerts(
         else:
             standard.append(a)
 
+    # Gating (Contract G): per-type caps on the always-fire bucket. watchlist
+    # and serenity_match bypass MAX_STANDARD_ALERTS_PER_SCAN, so they get their
+    # own caps here, ranked by _score_alert (strongest survive). catalyst /
+    # macro:* / ripple are NOT capped — they are the system's differentiators.
+    high, wl_dropped = _cap_by_type(high, "watchlist", config.WATCHLIST_MAX_PER_SCAN)
+    high, sm_dropped = _cap_by_type(high, "serenity_match", config.SERENITY_MATCH_MAX_PER_SCAN)
+
     standard.sort(key=_score_alert, reverse=True)
     dropped = max(0, len(standard) - config.MAX_STANDARD_ALERTS_PER_SCAN)
     standard = standard[: config.MAX_STANDARD_ALERTS_PER_SCAN]
@@ -387,8 +387,10 @@ def build_alerts(
     final = high + standard
 
     log.info(
-        "Alerts: %d total (%d high-conviction always-fire, %d standard kept, %d standard dropped by cap %d)",
-        len(final), len(high), len(standard), dropped, config.MAX_STANDARD_ALERTS_PER_SCAN,
+        "Alerts: %d total (%d high-conviction always-fire [watchlist −%d, serenity −%d by per-type cap], "
+        "%d standard kept, %d standard dropped by cap %d)",
+        len(final), len(high), wl_dropped, sm_dropped,
+        len(standard), dropped, config.MAX_STANDARD_ALERTS_PER_SCAN,
     )
     return final, throttle
 

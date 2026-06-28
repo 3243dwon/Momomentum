@@ -22,6 +22,33 @@ MARKET_TZ = ZoneInfo("America/New_York")
 MIN_PRICE = 3.0
 MIN_AVG_VOLUME_20D = 100_000  # includes mid + small caps; below this %chg gets noisy
 
+
+def _env_float(name: str, default: float) -> float:
+    """Read a float env var, falling back to `default` on absence or garbage.
+    Wrapped so a malformed override never raises at import time (config is
+    imported everywhere)."""
+    try:
+        return float(os.environ[name])
+    except (KeyError, ValueError, TypeError):
+        return default
+
+
+def _env_int(name: str, default: int) -> int:
+    """Int counterpart of _env_float (same fail-soft contract)."""
+    try:
+        return int(os.environ[name])
+    except (KeyError, ValueError, TypeError):
+        return default
+
+
+# Gating (Contract G) — dollar-volume liquidity floor. price * avg_volume_20d
+# must clear this for a name to stay in the scan. The predicate lives in
+# scanner.universe.passes_liquidity_floor and is APPLIED in
+# scanner.technicals._compute_row (where price*volume is known). ~$5M/day keeps
+# liquid mid-caps (RKLB-class) and drops the untradeable tail. Set to 0 to
+# disable the floor entirely.
+MIN_DOLLAR_VOLUME = _env_float("GATING_MIN_DOLLAR_VOLUME", 5_000_000.0)
+
 TOP_N_MOVERS = 20
 
 PCT_MOVE_THRESHOLD_RTH = 3.0
@@ -35,6 +62,36 @@ ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
 # High-conviction alerts (catalyst, macro, watchlist) always fire — no cap.
 # Standard alerts (big_move, delta_*) get capped to avoid noise flood.
 MAX_STANDARD_ALERTS_PER_SCAN = 5
+
+# Gating (Contract G) — reversible flags that prune/throttle the noisier alert
+# streams. Defaults ship the pruned/throttled state; flip the env flag to
+# restore the prior behavior. Read in scanner.alerts.rules.build_alerts. The
+# bool flags follow the CATALYST_ENABLED/OPENING_ENABLED idiom; numeric flags
+# parse fail-soft via _env_float/_env_int above.
+#
+# Master switch for the delta_* family (delta_new_top20 / delta_rank_jump /
+# delta_accel). Those emit loops are already commented out in rules.py; this
+# flag is the belt-and-braces guarantee they stay dead — re-enabling requires
+# BOTH un-commenting the loops AND flipping this to True.
+DELTA_ALERTS_ENABLED = (os.environ.get("GATING_DELTA_ALERTS", "false").strip().lower()
+                        not in ("0", "false", "no", "off"))
+# serenity_match and watchlist are high-conviction "always-fire" types (they
+# bypass MAX_STANDARD_ALERTS_PER_SCAN), so throttling them means raising the
+# move bar AND adding a per-type cap, both applied in rules.py.
+#
+# Whole serenity_match stream kill-switch (default on).
+SERENITY_MATCH_ENABLED = (os.environ.get("GATING_SERENITY_MATCH", "true").strip().lower()
+                          not in ("0", "false", "no", "off"))
+# Re-checked move floor at the serenity emit site (up from the 3.0 hot-move
+# floor in scanner.serenity.compute_matches). Watchlist-only names with no live
+# move (pct_1d None) are dropped under this gate.
+SERENITY_MATCH_MIN_MOVE_PCT = _env_float("GATING_SERENITY_MIN_MOVE", 5.0)
+# Per-type cap for the always-fire serenity_match bucket.
+SERENITY_MATCH_MAX_PER_SCAN = _env_int("GATING_SERENITY_MAX", 2)
+# Watchlist alert move floor — replaces the hardcoded 1.5 literal in rules.py.
+WATCHLIST_ALERT_MIN_MOVE_PCT = _env_float("GATING_WATCHLIST_MIN_MOVE", 3.0)
+# Per-type cap for the always-fire watchlist bucket.
+WATCHLIST_MAX_PER_SCAN = _env_int("GATING_WATCHLIST_MAX", 3)
 
 # Hard caps per scan to bound monthly LLM spend. When over, we score and
 # send the most-informative candidates first.

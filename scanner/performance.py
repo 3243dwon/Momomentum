@@ -34,10 +34,11 @@ EARLY_ENTRY_LOG = config.CACHE_DIR / "early_entry_log.jsonl"
 EARLY_ENTRY_PERFORMANCE_FILE = config.DATA_DIR / "early_entry_performance.json"
 
 RETENTION_DAYS = 45
-HORIZONS = [1, 3, 5]  # days
+HORIZONS = [1, 3, 5, 10, 21]  # days — 10d/21d capture catalyst drift (max graded hold)
 # Early-entry is an intraday-momentum call: 0d = return to the entry-day close
 # is the primary grade; 1d/3d measure follow-through.
 EARLY_HORIZONS = [0, 1, 3]  # trading days
+SPY_SYMBOL = "SPY"  # benchmark leg for excess-vs-market on recommendation picks
 HIGH_SCORE = 7  # recommendation score >= this is bucketed as a high-conviction pick
 # Flat round-trip slippage drag applied to net stats (docs/perf-roadmap.md:
 # 0.3-0.8% is realistic for the mid/small caps the scanner surfaces).
@@ -106,6 +107,13 @@ def _extract_features(row: dict) -> dict:
         "sector": row.get("sector"),
         "flags": row.get("flags") or [],
     }
+
+
+def _segment(ticker: str, popular_set: set[str]) -> str:
+    """Universe segment for a pick: "large" if the ticker is in the popular
+    (S&P 500 ∪ NDX) set, else "tail". On an unbuilt universe.json popular_set
+    is empty, so every pick tags "tail" (graceful degrade)."""
+    return "large" if ticker in popular_set else "tail"
 
 
 def _alert_direction(alert: dict, pct: float) -> tuple[int, str]:
@@ -203,9 +211,15 @@ def _fetch_current_prices(alpaca_client, tickers: list[str]) -> dict[str, float]
 
 
 def _evaluate_log(alpaca_client, now: datetime, log_path: Path,
-                  price_key: str, sign_fn) -> None:
+                  price_key: str, sign_fn, bench_key: str | None = None) -> None:
     """For each entry in log_path past a horizon without an eval, fetch the
-    current price and record a return signed by sign_fn(entry) (+1 / -1)."""
+    current price and record a return signed by sign_fn(entry) (+1 / -1).
+
+    When `bench_key` is set (the entry field holding the pick-time SPY price,
+    e.g. "spy_price_at_pick"), SPY is added to the SAME live snapshot batch so
+    excess-vs-SPY is computed point-in-time off the identical end snapshot as
+    the stock leg — no separate / as-of SPY bar, no look-ahead. Callers that
+    pass no bench_key (alerts / predictions) behave byte-identically."""
     if alpaca_client is None:
         return
     entries = _read_entries(log_path)
@@ -230,9 +244,16 @@ def _evaluate_log(alpaca_client, now: datetime, log_path: Path,
     if not pending:
         return
 
-    prices = _fetch_current_prices(alpaca_client, sorted({t for _, t, _ in pending}))
+    # SPY rides in the same batch as the real picks — one shared snapshot. It is
+    # never iterated as a pick (the loop walks `pending`, built from real
+    # tickers only); it's read solely via prices.get(SPY_SYMBOL).
+    fetch_tickers = {t for _, t, _ in pending}
+    if bench_key:
+        fetch_tickers.add(SPY_SYMBOL)
+    prices = _fetch_current_prices(alpaca_client, sorted(fetch_tickers))
     if not prices:
         return
+    spy_now = prices.get(SPY_SYMBOL) if bench_key else None
 
     updated = 0
     for idx, ticker, h in pending:
@@ -245,11 +266,21 @@ def _evaluate_log(alpaca_client, now: datetime, log_path: Path,
         current = prices[ticker]
         return_pct = (current / entry_price - 1) * 100
         signed = return_pct * sign_fn(entry)
-        entry.setdefault("evaluations", {})[f"{h}d"] = {
+        ev: dict = {
             "price": round(current, 2),
             "return_pct": round(return_pct, 2),
             "signed_return_pct": round(signed, 2),
         }
+        # Excess-vs-SPY: same start anchor (spy_price_at_pick) + same end
+        # snapshot (spy_now) as the stock leg. Computed from unrounded legs,
+        # rounded once. Skipped silently for legacy rows without spy_price_at_pick.
+        if bench_key:
+            spy_at_pick = entry.get(bench_key)
+            if spy_at_pick and spy_now:
+                spy_return_pct = (spy_now / spy_at_pick - 1) * 100
+                ev["spy_return_pct"] = round(spy_return_pct, 2)
+                ev["excess_return_pct"] = round(signed - spy_return_pct, 2)
+        entry.setdefault("evaluations", {})[f"{h}d"] = ev
         updated += 1
 
     if updated:
@@ -265,9 +296,10 @@ def evaluate_pending(alpaca_client, now: datetime) -> None:
 
 def evaluate_pending_recommendations(alpaca_client, now: datetime) -> None:
     """Evaluate recommendation outcomes (long pick → +return is a hit; short
-    pick → −return is a hit)."""
+    pick → −return is a hit). bench_key adds the SPY excess leg (recs only)."""
     _evaluate_log(alpaca_client, now, RECS_LOG, "price_at_pick",
-                  lambda e: 1 if e.get("direction") == "long" else -1)
+                  lambda e: 1 if e.get("direction") == "long" else -1,
+                  bench_key="spy_price_at_pick")
 
 
 def evaluate_pending_predictions(alpaca_client, now: datetime) -> None:
@@ -277,24 +309,39 @@ def evaluate_pending_predictions(alpaca_client, now: datetime) -> None:
                   lambda e: 1 if e.get("direction") == "bullish" else -1)
 
 
-def _horizon_stats(returns: list[float]) -> dict:
+def _horizon_stats(returns: list[float], excess: list | None = None) -> dict:
     """Gross AND net-of-slippage stats for one horizon bucket. Net applies the
-    flat SLIPPAGE_PCT round-trip drag to every signed return."""
+    flat SLIPPAGE_PCT round-trip drag to every signed return.
+
+    When `excess` is supplied (same length as `returns`; None entries allowed
+    for legacy rows that predate spy_price_at_pick), the bucket also carries
+    avg_excess_pct (mean of non-None excess) + hit_rate_excess (share of
+    non-None excess > 0). excess=None keeps the original shape byte-for-byte."""
     n = len(returns)
     if not n:
-        return {
+        out = {
             "evaluated": 0,
             "hit_rate": None, "avg_return_pct": None,
             "hit_rate_net": None, "avg_return_net_pct": None,
         }
+        if excess is not None:
+            out["avg_excess_pct"] = None
+            out["hit_rate_excess"] = None
+        return out
     net = [r - SLIPPAGE_PCT for r in returns]
-    return {
+    out = {
         "evaluated": n,
         "hit_rate": round(sum(1 for r in returns if r > 0) / n, 3),
         "avg_return_pct": round(sum(returns) / n, 2),
         "hit_rate_net": round(sum(1 for r in net if r > 0) / n, 3),
         "avg_return_net_pct": round(sum(net) / n, 2),
     }
+    if excess is not None:
+        vals = [x for x in excess if x is not None]
+        m = len(vals)
+        out["avg_excess_pct"] = round(sum(vals) / m, 2) if m else None
+        out["hit_rate_excess"] = round(sum(1 for x in vals if x > 0) / m, 3) if m else None
+    return out
 
 
 def compile_stats(now: datetime) -> dict:
@@ -360,6 +407,16 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
     """
     by_ticker = {r["ticker"]: r for r in rows}
 
+    # SPY pick-time price (excess-vs-market start anchor) + the popular set for
+    # universe_segment, both resolved ONCE per call. popular() fails soft to an
+    # empty set on an unbuilt universe.json -> every pick tags "tail".
+    spy_at_pick = (regime or {}).get("spy_price")
+    try:
+        from scanner import universe as _universe
+        popular_set = _universe.popular()
+    except Exception:
+        popular_set = set()
+
     dedup_cutoff = now.astimezone(timezone.utc) - timedelta(hours=REC_DEDUP_HOURS)
     recently_logged: set[tuple[str, str]] = set()
     for e in _read_entries(RECS_LOG):
@@ -385,6 +442,8 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
                 "score": rec.get("score", 0),
                 "thesis": "; ".join((rec.get("reasons") or [])[:3]),
                 "price_at_pick": row["price"],
+                "spy_price_at_pick": spy_at_pick,
+                "universe_segment": _segment(t, popular_set),
                 "evaluations": {},
                 "features": _extract_features(row),
             }
@@ -422,42 +481,53 @@ def compile_recommendation_stats(now: datetime) -> dict:
     cutoff = (now - timedelta(days=30)).isoformat()
     recent = [e for e in entries if e["ts"] >= cutoff]
 
-    buckets: dict[str, dict] = {}
-    for e in recent:
-        direction = e.get("direction", "long")
-        band = "hi" if e.get("score", 0) >= HIGH_SCORE else "lo"
-        key = f"{direction}_{band}"
-        bucket = buckets.setdefault(
-            key,
-            {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}},
-        )
-        bucket["count"] += 1
+    def _new() -> dict:
+        return {"count": 0, "horizons": {h: {"returns": [], "excess": []} for h in HORIZONS}}
+
+    def _add(bucketmap: dict, key: str, e: dict) -> None:
+        b = bucketmap.setdefault(key, _new())
+        b["count"] += 1
         for h in HORIZONS:
             ev = e.get("evaluations", {}).get(f"{h}d")
             if not ev:
                 continue
-            bucket["horizons"][h]["n"] += 1
-            if ev["signed_return_pct"] > 0:
-                bucket["horizons"][h]["hits"] += 1
-            bucket["horizons"][h]["returns"].append(ev["signed_return_pct"])
+            b["horizons"][h]["returns"].append(ev["signed_return_pct"])
+            # Excess is None for legacy rows / horizons missing the SPY leg;
+            # _horizon_stats skips the Nones when averaging.
+            b["horizons"][h]["excess"].append(ev.get("excess_return_pct"))
+
+    def _finalize(bucketmap: dict) -> dict:
+        return {
+            key: {
+                "count": stats["count"],
+                "horizons": {
+                    f"{h}d": _horizon_stats(hs["returns"], hs["excess"])
+                    for h, hs in stats["horizons"].items()
+                },
+            }
+            for key, stats in bucketmap.items()
+        }
+
+    # Same direction×band bucketing, plus a NEW per_segment view keyed by
+    # universe_segment (large/tail). per_bucket keeps its shape (now with the
+    # previously-missing net fields + excess), per_segment is additive.
+    by_bucket: dict[str, dict] = {}
+    by_segment: dict[str, dict] = {}
+    for e in recent:
+        direction = e.get("direction", "long")
+        band = "hi" if e.get("score", 0) >= HIGH_SCORE else "lo"
+        _add(by_bucket, f"{direction}_{band}", e)
+        _add(by_segment, f"{direction}_{e.get('universe_segment', 'tail')}", e)
 
     out: dict = {
         "generated_at": now.isoformat(),
         "window_days": 30,
+        "slippage_round_trip_pct": SLIPPAGE_PCT,
         "total_picks": len(recent),
         "high_score": HIGH_SCORE,
-        "per_bucket": {},
+        "per_bucket": _finalize(by_bucket),
+        "per_segment": _finalize(by_segment),
     }
-    for key, stats in buckets.items():
-        horizons = {}
-        for h, hs in stats["horizons"].items():
-            n = hs["n"]
-            horizons[f"{h}d"] = {
-                "evaluated": n,
-                "hit_rate": round(hs["hits"] / n, 3) if n else None,
-                "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
-            }
-        out["per_bucket"][key] = {"count": stats["count"], "horizons": horizons}
 
     RECOMMENDATION_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
     log.info(
@@ -482,7 +552,7 @@ def compile_desk_stats(now: datetime) -> dict:
     recent = [e for e in entries if e["ts"] >= cutoff and e.get("desk")]
 
     def _new() -> dict:
-        return {"count": 0, "horizons": {h: {"n": 0, "hits": 0, "returns": []} for h in HORIZONS}}
+        return {"count": 0, "horizons": {h: {"returns": [], "excess": []} for h in HORIZONS}}
 
     def _add(bucketmap: dict, key: str, e: dict) -> None:
         b = bucketmap.setdefault(key, _new())
@@ -491,10 +561,8 @@ def compile_desk_stats(now: datetime) -> dict:
             ev = e.get("evaluations", {}).get(f"{h}d")
             if not ev:
                 continue
-            b["horizons"][h]["n"] += 1
-            if ev["signed_return_pct"] > 0:
-                b["horizons"][h]["hits"] += 1
             b["horizons"][h]["returns"].append(ev["signed_return_pct"])
+            b["horizons"][h]["excess"].append(ev.get("excess_return_pct"))
 
     by_decision: dict[str, dict] = {}
     by_agreement: dict[str, dict] = {}
@@ -506,28 +574,30 @@ def compile_desk_stats(now: datetime) -> dict:
         _add(by_veto, "veto" if d.get("risk_veto") else "no_veto", e)
 
     def _finalize(bucketmap: dict) -> dict:
-        out: dict = {}
-        for key, stats in bucketmap.items():
-            horizons = {}
-            for h, hs in stats["horizons"].items():
-                n = hs["n"]
-                horizons[f"{h}d"] = {
-                    "evaluated": n,
-                    "hit_rate": round(hs["hits"] / n, 3) if n else None,
-                    "avg_return_pct": round(sum(hs["returns"]) / n, 2) if n else None,
-                }
-            out[key] = {"count": stats["count"], "horizons": horizons}
-        return out
+        return {
+            key: {
+                "count": stats["count"],
+                "horizons": {
+                    f"{h}d": _horizon_stats(hs["returns"], hs["excess"])
+                    for h, hs in stats["horizons"].items()
+                },
+            }
+            for key, stats in bucketmap.items()
+        }
 
     decision_stats = _finalize(by_decision)
 
     # The desk's edge: take avg − pass avg per horizon. Positive => the agents
-    # are correctly separating winners from losers (the whole point).
-    edge: dict[str, float | None] = {}
-    for h in HORIZONS:
-        take = decision_stats.get("take", {}).get("horizons", {}).get(f"{h}d", {}).get("avg_return_pct")
-        passed = decision_stats.get("pass", {}).get("horizons", {}).get(f"{h}d", {}).get("avg_return_pct")
-        edge[f"{h}d"] = round(take - passed, 2) if (take is not None and passed is not None) else None
+    # are correctly separating winners from losers (the whole point). Mirrored
+    # on net (post-slippage) and excess (vs SPY); excess edge is null until
+    # spy_price_at_pick was logged AND SPY fetched — expected early sparsity.
+    def _edge(field: str) -> dict[str, float | None]:
+        out: dict[str, float | None] = {}
+        for h in HORIZONS:
+            take = decision_stats.get("take", {}).get("horizons", {}).get(f"{h}d", {}).get(field)
+            passed = decision_stats.get("pass", {}).get("horizons", {}).get(f"{h}d", {}).get(field)
+            out[f"{h}d"] = round(take - passed, 2) if (take is not None and passed is not None) else None
+        return out
 
     out = {
         "generated_at": now.isoformat(),
@@ -536,10 +606,13 @@ def compile_desk_stats(now: datetime) -> dict:
         "by_decision": decision_stats,
         "by_agreement": _finalize(by_agreement),
         "by_veto": _finalize(by_veto),
-        "take_minus_pass_edge": edge,
+        "take_minus_pass_edge": _edge("avg_return_pct"),
+        "take_minus_pass_edge_net": _edge("avg_return_net_pct"),
+        "take_minus_pass_edge_excess": _edge("avg_excess_pct"),
     }
     DESK_PERFORMANCE_FILE.write_text(json.dumps(out, indent=2))
-    log.info("Desk stats: %d picks with verdicts in 30d; take−pass edge %s", len(recent), edge)
+    log.info("Desk stats: %d picks with verdicts in 30d; take−pass edge %s",
+             len(recent), out["take_minus_pass_edge"])
     return out
 
 

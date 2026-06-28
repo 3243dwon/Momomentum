@@ -7,12 +7,32 @@ late entry. The web Recommended section renders the picks computed here,
 and scanner.performance tracks their 1/3/5-day outcomes.
 
 Single source of truth — keep web/src/lib/types.ts Recommendation in sync
-with the dict shape emitted by compute().
+with the dict shape emitted by compute() (now incl. entry_style, base_ready,
+horizon_days; horizon stays the legacy 'long'/'short' hold-bucket string).
 """
 from __future__ import annotations
 
 MIN_SCORE = 5
 MAX_PER_SIDE = 6
+
+# --- Catalyst durability + drift (consumes row["synthesis"], contract A/B) ----
+# durability_weight is the catalyst's drift potential (0=soft … 3=structural).
+# DURABILITY_POINTS scales the news-verdict score by that weight: structural=4
+# is intentionally >= the old flat +3 so existing high-conviction picks are not
+# demoted below MIN_SCORE the day this ships (back-compat asserted in tests).
+DURABILITY_POINTS = {0: 1, 1: 2, 2: 3, 3: 4}  # soft/surprise/guidance/structural
+# Derive the weight when only the durability label is present (no weight key).
+_DURABILITY_WEIGHT = {"soft": 0, "surprise": 1, "guidance": 2, "structural": 3}
+# priced_in gate: reward tape that hasn't discounted the catalyst (or is
+# positioned the wrong way), penalize a fully-discounted move. A soft gate —
+# "yes" at -3 can drop a borderline pick below MIN_SCORE, but a strong technical
+# setup can still survive (not a hard reject).
+PRICED_IN_DELTA = {"no": 1, "contradicted": 2, "partial": 0, "yes": -3}
+# Suggested hold in TRADING days, scaled by drift potential. Max is 21 == the
+# longest graded horizon in performance.HORIZONS, so we never suggest a hold the
+# grader can't score. Distinct from the legacy string rec["horizon"].
+HORIZON_DAYS = {0: 3, 1: 5, 2: 10, 3: 21}  # soft/surprise/guidance/structural
+DEFAULT_HORIZON_DAYS = 3  # no-catalyst technical picks inherit the soft horizon
 
 
 def _score_row(row: dict, direction: str) -> dict | None:
@@ -108,19 +128,48 @@ def _score_row(row: dict, direction: str) -> dict | None:
                 cautions.append(f"RSI {rsi:.0f} washed out")
 
     # News catalyst — a synthesis-confirmed move is the highest-quality signal.
+    # Durability scales the points (a definitive contract drifts longer than a
+    # sentiment note), and priced_in gates them (a fully-discounted move fades).
+    # Tolerate the catalyst fields being absent or malformed: synthesize.py only
+    # ships verdict/confidence today; durability/durability_weight/priced_in
+    # arrive later (contract A/B). Everything reads through isinstance/.get() so
+    # a non-dict synthesis never raises.
     syn = row.get("synthesis")
-    if syn:
+    is_syn = isinstance(syn, dict)
+    dw = 0
+    if is_syn:
         verdict = syn.get("verdict")
-        if verdict == "news_explains_move":
-            high = syn.get("confidence") == "high"
-            score += 3 if high else 2
-            reasons.append("news-confirmed catalyst" if high else "news-driven move")
-        elif verdict == "partial_explanation":
-            score += 1
-            reasons.append("partly news-driven")
+        dw = syn.get("durability_weight")
+        if dw is None:
+            dw = _DURABILITY_WEIGHT.get(syn.get("durability"))
+        # Clamp to the contract's 0..3 domain — a missing or out-of-range weight
+        # (the catalyst unit owns that field) falls back to soft so the points /
+        # horizon lookups below can never raise on a malformed synthesis.
+        if dw not in DURABILITY_POINTS:
+            dw = 0
+        if verdict in ("news_explains_move", "partial_explanation"):
+            pts = DURABILITY_POINTS[dw]
+            if syn.get("confidence") != "high":
+                pts = max(pts - 1, 1)
+            if verdict == "partial_explanation":
+                pts = max(pts - 1, 1)
+            score += pts
+            tier = next((k for k, v in _DURABILITY_WEIGHT.items() if v == dw), "soft")
+            reasons.append(f"{tier} catalyst" if verdict == "news_explains_move"
+                           else f"partly news-driven ({tier})")
         elif verdict == "move_unexplained_by_news":
             score -= 1
             cautions.append("unexplained move")
+
+        # priced_in gate — reward un-discounted / contradicted tape, fade "yes".
+        pi = syn.get("priced_in")
+        score += PRICED_IN_DELTA.get(pi, 0)
+        if pi == "yes":
+            cautions.append("catalyst priced in")
+        elif pi == "contradicted":
+            reasons.append("tape positioned wrong way")
+        elif pi == "no":
+            reasons.append("catalyst not priced in")
     else:
         news_count = row.get("news_count") or 0
         if news_count > 0:
@@ -138,8 +187,18 @@ def _score_row(row: dict, direction: str) -> dict | None:
     # Horizon: news-backed picks have a thesis to hold beyond the next tick;
     # pure-technical picks are intraday/days price-action trades.
     catalyst_backed = bool(
-        syn and syn.get("verdict") in ("news_explains_move", "partial_explanation")
+        is_syn and syn.get("verdict") in ("news_explains_move", "partial_explanation")
     )
+    # Drift-scaled hold in trading days (soft 3 … structural 21). No-catalyst
+    # technical picks inherit the soft horizon rather than null.
+    horizon_days = HORIZON_DAYS.get(dw, DEFAULT_HORIZON_DAYS) if catalyst_backed \
+        else DEFAULT_HORIZON_DAYS
+    # base_ready: a catalyst-backed name that hasn't gone vertical is a "buy the
+    # base" setup. caution_level is the only consolidation proxy on the row
+    # (stretched/caution/absent), so this is a v1 fidelity gap — true range-
+    # contraction-after-the-event detection isn't derivable from current fields.
+    base_ready = catalyst_backed and row.get("caution_level") != "stretched"
+    entry_style = "base" if base_ready else "spike"
     return {
         "ticker": row["ticker"],
         "direction": direction,
@@ -147,6 +206,9 @@ def _score_row(row: dict, direction: str) -> dict | None:
         "horizon": "long" if catalyst_backed else "short",
         "reasons": reasons,
         "cautions": cautions,
+        "entry_style": entry_style,
+        "base_ready": base_ready,
+        "horizon_days": horizon_days,
     }
 
 

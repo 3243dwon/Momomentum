@@ -34,10 +34,39 @@ SYNTH_TOOL = {
                 "enum": ["news_explains_move", "partial_explanation", "move_unexplained_by_news"],
             },
             "confidence": {"type": "string", "enum": ["high", "medium", "low"]},
+            "durability": {
+                "type": "string",
+                "enum": ["structural", "guidance", "surprise", "soft"],
+                "description": (
+                    "Catalyst kind, ordered by how long the drift typically lasts. "
+                    "structural = M&A / definitive contract / FDA approval / major regulatory "
+                    "or legal outcome (longest drift). guidance = forward guidance raised or cut. "
+                    "surprise = earnings/revenue beat or miss vs estimate. soft = analyst note / "
+                    "sentiment / generic PR (little drift). Omit when no news explains the move."
+                ),
+            },
+            "priced_in": {
+                "type": "string",
+                "enum": ["no", "partial", "yes", "contradicted"],
+                "description": (
+                    "Where the tape already sits relative to the catalyst. no = the move "
+                    "hasn't happened yet (most room left). partial = started moving. yes = "
+                    "already fully discounted (fade it). contradicted = tape moved the WRONG "
+                    "way vs the catalyst (highest edge). Defaults to no when omitted."
+                ),
+            },
         },
+        # durability/priced_in are deliberately NON-required: a model may omit them
+        # and the post-call normalizer fills sane defaults. durability_weight is NOT
+        # in the schema — it's derived deterministically in Python from durability.
         "required": ["summary", "supporting_news_ids", "verdict", "confidence"],
     },
 }
+
+# Deterministic durability → weight map. Computed in Python (never LLM-emitted) so
+# the weight can never disagree with the label. Consumed by the scorer as
+# row["synthesis"]["durability_weight"].
+_DURABILITY_WEIGHT = {"soft": 0, "surprise": 1, "guidance": 2, "structural": 3}
 
 SYSTEM_PROMPT = """You are the synthesis tier of a stock momentum scanner.
 
@@ -67,6 +96,34 @@ explanation of today's move.
 - `high`: clear causal link between news and move, magnitude proportional.
 - `medium`: plausible link but other factors likely involved.
 - `low`: weak inference, lots of guessing.
+
+## Durability — how long the catalyst keeps driving the stock
+
+Tag the dominant catalyst by kind, ordered longest-drift to shortest:
+
+- `structural`: M&A, a definitive contract, FDA approval, a major regulatory or
+  legal outcome. The thesis itself changed — drift persists for weeks.
+- `guidance`: forward guidance raised or cut. Re-rates the forward model.
+- `surprise`: an earnings/revenue beat or miss vs estimate. A one-time print.
+- `soft`: analyst note, sentiment, generic PR. Little or no durable drift.
+
+Pick the single strongest catalyst present. Omit `durability` entirely when the
+verdict is `move_unexplained_by_news` (no catalyst to grade).
+
+## Priced-in — is the move already in the tape?
+
+Judge how much of the catalyst the price has ALREADY absorbed today, using the
+same notion the ripple tier uses and the same ~2% single-day magnitude yardstick:
+
+- `no`: the catalyst-implied move hasn't really happened yet (roughly < ~2% in the
+  direction the news implies). Most room left.
+- `partial`: started moving the implied way (~2%+ but not fully).
+- `yes`: already moved the full implied way (~4%+). Largely discounted — fade risk.
+- `contradicted`: the tape moved the WRONG way vs the catalyst (e.g. good news,
+  stock sold off ~2%+). The highest-edge disagreement between news and price.
+
+This is a direction-aware read of today's price action vs what the news implies —
+not a fixed threshold. Default to `no` if you genuinely can't tell.
 
 ## What you should NOT do
 
@@ -102,6 +159,32 @@ def _format_user(ticker: str, technicals: dict, news_items: list[dict]) -> str:
         ],
     }
     return json.dumps(payload, indent=2)
+
+
+def _durability_weight(durability: str | None) -> int:
+    """Map a durability label to its drift weight (0..3). Unknown/None → 0."""
+    return _DURABILITY_WEIGHT.get(durability, 0)
+
+
+def _normalize(synthesis: dict) -> dict:
+    """Guarantee durability/durability_weight/priced_in on a stored synthesis dict.
+
+    The model may omit (or fill garbage into) the two new NON-required fields, so we
+    coerce them in place: an invalid/absent durability collapses to None (weight 0)
+    and an invalid/absent priced_in collapses to "no". This is the contract the
+    scorer relies on — it never has to recompute or guard for missing keys.
+    """
+    durability = synthesis.get("durability")
+    if durability not in _DURABILITY_WEIGHT:
+        durability = None
+    synthesis["durability"] = durability
+    synthesis["durability_weight"] = _durability_weight(durability)
+
+    priced_in = synthesis.get("priced_in")
+    if priced_in not in ("no", "partial", "yes", "contradicted"):
+        priced_in = "no"
+    synthesis["priced_in"] = priced_in
+    return synthesis
 
 
 def _synthesize_one(client: LLMClient, ticker: str, technicals: dict, news_items: list[dict]) -> dict | None:
@@ -181,6 +264,6 @@ def synthesize(
     out: dict[str, dict] = {}
     for (ticker, _tech, _routed), result in results:
         if result:
-            out[ticker] = result
+            out[ticker] = _normalize(result)
     log.info("Sonnet: produced %d syntheses", len(out))
     return out
