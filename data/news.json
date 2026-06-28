@@ -1,5 +1,184 @@
 {
-  "generated_at": "2026-06-26T20:12:17.053151-04:00",
-  "ticker_news": {},
-  "macro_events": []
+  "generated_at": "2026-06-28T15:37:43.328401-04:00",
+  "ticker_news": {
+    "MSTR": [
+      {
+        "id": "e3d09e34ae478979",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Here\u2019s Why The Crypto Market Is Crashing This Year",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60147290/heres-why-the-crypto-market-is-crashing-this-year",
+        "published_at": "2026-06-28T19:20:41+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "crypto_market_crash_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e20ff025f6ad48d6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Peter Schiff Explains Why Michael Saylor Has No Easy Way Out as MSTR, STRC Plunge",
+        "url": "https://www.benzinga.com/crypto/26/06/60147262/peter-schiff-explains-why-michael-saylor-has-no-easy-way-out-as-mstr-strc-plunge",
+        "published_at": "2026-06-28T19:11:20+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "mstr_crypto_decline_commentary",
+        "tickers_mentioned": [
+          "STRC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "e3d09e34ae478979",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Here\u2019s Why The Crypto Market Is Crashing This Year",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60147290/heres-why-the-crypto-market-is-crashing-this-year",
+        "published_at": "2026-06-28T19:20:41+00:00",
+        "type": "macro_commodity",
+        "impact": "low",
+        "dedup_group": "crypto_market_crash_june_2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MU": [
+      {
+        "id": "6534008b3cfa1d58",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Dow Jones and Nasdaq 100: Top 4 Events Investors Should Watch This Week",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60147274/dow-jones-and-nasdaq-100-top-4-events-investors-should-watch-this-week",
+        "published_at": "2026-06-28T19:16:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_watch_roundup_week",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "a2d702dc4d197ff9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MU",
+        "scope": "ticker",
+        "title": "Top Three S&P 500 Stocks To Watch This Week: Nike, Micron, Amazon",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60147235/top-three-sp-500-stocks-to-watch-this-week-nike-micron-amazon",
+        "published_at": "2026-06-28T18:51:03+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sp500_stocks_watch_week",
+        "tickers_mentioned": [
+          "NKE",
+          "AMZN"
+        ],
+        "route_to_synthesis": false
+      }
+    ]
+  },
+  "macro_events": [
+    {
+      "event_summary": "Iran nuclear/diplomatic talks stall as fresh fighting erupts and Trump threatens military annihilation, with reported attacks involving Kuwait and Bahrain raising Gulf conflict escalation risk.",
+      "primary_drivers": [
+        "Middle East war risk premium on crude oil (Strait of Hormuz transit risk ~20% of seaborne oil)",
+        "Defense procurement and missile-defense demand from escalating kinetic activity",
+        "Safe-haven flight to gold and defensive assets"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "XOM",
+          "rationale": "Largest US integrated oil major with significant upstream leverage; every $5 sustained move in Brent flows directly to E&P earnings. Direct beneficiary of Gulf risk premium on crude.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "OXY",
+          "rationale": "Pure-play US shale leverage (Permian) with highest beta to WTI among large-caps; benefits doubly as Gulf supply risk lifts US barrel pricing and tightens spreads.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Maker of THAAD and PAC-3 missile-defense systems already deployed in Gulf (Kuwait, Bahrain CENTCOM bases); reported attacks on Gulf states drive immediate replenishment orders and FMS interest.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "RTX",
+          "rationale": "Patriot missile + Tomahawk manufacturer; direct munitions consumption if US forces engage. Gulf allies (Kuwait, Bahrain, Saudi, UAE) are existing Patriot customers and will accelerate restocking.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NOC",
+          "rationale": "B-21, Global Hawk ISR, and IBCS air-defense integrator \u2014 direct exposure to a Persian Gulf strike campaign and air-defense network demand.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FANG",
+          "rationale": "Permian pure-play with no international exposure; oil price spike flows fully to FCF with no offsetting Gulf operational risk.",
+          "confidence": "medium",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "DAL",
+          "rationale": "Jet fuel is ~25% of opex; sustained Brent spike compresses unit margins, and trans-Atlantic/Middle East routing disruption raises costs. Highest oil sensitivity among US majors.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UAL",
+          "rationale": "Operates Gulf-adjacent routes (Dubai, Tel Aviv via partners) plus high fuel cost gearing; double exposure to fuel spike and route closures/insurance premiums.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AAL",
+          "rationale": "Most leveraged US airline balance sheet; least able to absorb fuel cost shock, weakest hedging book among legacies.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "CCL",
+          "rationale": "Cruise operator with bunker fuel cost exposure plus discretionary travel demand destruction risk if conflict broadens; Mediterranean itineraries directly affected.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "WMT",
+          "rationale": "Diesel/transportation cost passthrough into thin-margin retail; oil shocks historically compress retailer gross margins with 1-quarter lag.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "DOW",
+          "rationale": "Naphtha/ethane feedstock costs rise with crude; commodity chemicals can't fully pass through into a weakening demand backdrop.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        }
+      ],
+      "dedup_group": "iran_us_tensions_trump_june2026",
+      "source_news_ids": [
+        "1b8b8dedbb6a083e"
+      ],
+      "headlines": [
+        "Iran talks on hold after fighting breaks out and Trump once again threatens annihilation"
+      ]
+    }
+  ]
 }

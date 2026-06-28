@@ -1,42 +1,45 @@
 {
-  "generated_at": "2026-06-26T20:12:17.053151-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Overnight scan flat on catalysts; ON -24% / WDC -13% / STX -12% dominate tape; no desk takes.",
+  "generated_at": "2026-06-28T15:37:43.328401-04:00",
+  "window": "WEEKEND",
+  "headline": "Weekend scan: ON/WDC/STX damage holds; Gulf escalation adds oil/defense bid; no desk takes.",
   "market_state": {
     "regime": "mixed",
-    "line": "SPY -0.54%, QQQ -1.49%, VXX stress ratio 0.98 \u2014 vol near neutral but tech selling pressure persists; tape not safe for longs."
+    "line": "SPY -0.54% / QQQ -1.49%, both below 50d. VXX stress ratio 0.98 \u2014 vol not spiking but not benign. No edge for new longs."
   },
   "actions": [],
   "watch": [
     {
       "ticker": "ON",
       "type": "mover",
-      "line": "-23.82% on 3.3\u00d7 vol \u2014 earnings/guide miss; watch for dead-cat or continued flush at open."
+      "line": "-23.82% on 3.3\u00d7 volume \u2014 largest single-name damage on tape; watch for dead-cat vs. continued flush Monday open."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "-13.12% on 2.25\u00d7 vol, MACD bearish \u2014 storage sector under pressure alongside STX."
+      "line": "-13.12% on 2.25\u00d7 vol, MACD bearish; storage sector under pressure alongside STX."
     },
     {
       "ticker": "STX",
       "type": "mover",
-      "line": "-12.49% on 3.1\u00d7 vol, MACD bearish \u2014 pairs with WDC; storage sector distribution in play."
+      "line": "-12.49% on 3.1\u00d7 vol, MACD bearish; confirms storage/HDD sector rotation out \u2014 sector read, not just single name."
     },
     {
       "ticker": "MRNA",
       "type": "mover",
-      "line": "+12.64% on 2\u00d7 vol, overbought \u2014 watch for news-driven follow-through or reversal at open."
+      "line": "+12.64% on 2\u00d7 vol, overbought flag; watch for fade vs. follow-through \u2014 no catalyst confirmed in scan."
     },
     {
-      "ticker": "ATAI",
+      "ticker": "FCEL",
       "type": "mover",
-      "line": "+15.07% on 3.3\u00d7 vol, overbought \u2014 unusual volume spike; needs catalyst confirmation before chasing."
+      "line": "+22.16%, MACD bullish; Gulf energy risk premium may sustain alt-energy interest Monday."
     }
   ],
-  "changed": [],
+  "changed": [
+    "Previous headline flagged overnight scan; this is weekend window \u2014 same wreckage (ON/WDC/STX) still leading tape.",
+    "New macro input: Gulf conflict escalation (Iran talks stalled, Kuwait/Bahrain involvement) adds oil/defense risk premium not present in prior scan."
+  ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-06-26 20:12 ET; spreads wide, liquidity thin until RTH open.",
-    "No catalysts or ripple signals in this scan; ON/WDC/STX moves lack confirmed catalyst \u2014 size risk accordingly."
+    "WEEKEND scan window \u2014 prices as of 2026-06-28 15:37 ET Friday close. No price discovery until Monday premarket; gaps likely given Gulf macro developments.",
+    "No desk takes and no confirmed catalysts in scan data. Movers are size reads only \u2014 no setup conviction until Monday tape confirms direction."
   ]
 }
