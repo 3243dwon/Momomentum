@@ -280,6 +280,58 @@
     return lines;
   });
 
+  // ---------- Universe segment (large-cap vs tail) ----------
+
+  const SEGMENT_ORDER = ['long_large', 'long_tail', 'short_large', 'short_tail'];
+
+  function segmentLabel(key: string): { label: string; emoji: string } {
+    const [dir, seg] = key.split('_');
+    const dirLabel = dir === 'long' ? 'Long' : 'Short';
+    const segLabel = seg === 'large' ? 'large-cap · S&P/NDX' : 'tail · mid/small';
+    return { label: `${dirLabel} · ${segLabel}`, emoji: seg === 'large' ? '🏛️' : '🐟' };
+  }
+
+  interface SegmentRow {
+    key: string;
+    label: string;
+    emoji: string;
+    stats: AlertTypeStats;
+  }
+
+  const segmentRows = $derived.by(() => {
+    const seg = recPerf?.per_segment;
+    if (!seg) return [] as SegmentRow[];
+    const out: SegmentRow[] = [];
+    const seen = new Set<string>();
+    for (const key of SEGMENT_ORDER) {
+      if (!seg[key]) continue;
+      seen.add(key);
+      out.push({ key, ...segmentLabel(key), stats: seg[key] });
+    }
+    for (const [key, stats] of Object.entries(seg)) {
+      if (seen.has(key)) continue;
+      out.push({ key, ...segmentLabel(key), stats });
+    }
+    return out;
+  });
+
+  // The universe-size question, answered with data: do large-cap longs out-earn
+  // the tail at the same 5d horizon? Needs n>=10 a side before it's worth stating.
+  const segmentTakeaway = $derived.by(() => {
+    const seg = recPerf?.per_segment;
+    const lg = seg?.['long_large']?.horizons?.['5d'];
+    const tl = seg?.['long_tail']?.horizons?.['5d'];
+    if (lg?.avg_return_pct == null || tl?.avg_return_pct == null) return null;
+    if ((lg.evaluated ?? 0) < 10 || (tl.evaluated ?? 0) < 10) return null;
+    const diff = lg.avg_return_pct - tl.avg_return_pct;
+    if (Math.abs(diff) < 0.3) {
+      return { text: 'large-cap and tail longs perform about the same at 5d — the tail isn’t dragging', tone: 'flat' as Tone };
+    }
+    return diff > 0
+      ? { text: `large-cap longs beat the tail by ${diff.toFixed(1)}% at 5d — the universe tail is dilutive`, tone: 'bad' as Tone }
+      : { text: `tail longs beat large-cap by ${(-diff).toFixed(1)}% at 5d — the tail earns its place`, tone: 'good' as Tone };
+  });
+
   // ---------- Ledger ----------
 
   const LEDGER_CAP = 100;
@@ -502,6 +554,9 @@
                   {#if hs?.avg_return_net_pct != null}
                     <div class="text-[10px] text-zinc-600">net {fmtPct(hs.avg_return_net_pct)}</div>
                   {/if}
+                  {#if hs?.avg_excess_pct != null}
+                    <div class="text-[10px] {returnClass(hs.avg_excess_pct)}">vs SPY {fmtPct(hs.avg_excess_pct)}</div>
+                  {/if}
                 </td>
               {/each}
             </tr>
@@ -511,6 +566,65 @@
     </div>
   {/if}
 </section>
+
+<!-- 2b · Large-cap vs tail -->
+{#if segmentRows.length > 0}
+  <section class="mb-8" use:reveal>
+    <header class="mb-3 flex items-center justify-between">
+      <h2 class="text-sm font-semibold tracking-tight">Large-cap vs tail</h2>
+      <span class="text-[10px] uppercase tracking-wider text-zinc-500">
+        do picks outside the S&amp;P/NDX earn their place
+      </span>
+    </header>
+
+    {#if segmentTakeaway}
+      <p class="mb-2 flex items-baseline gap-2 text-sm {TONE_CLASS[segmentTakeaway.tone]}">
+        <span class="inline-block h-1.5 w-1.5 shrink-0 translate-y-[-1px] rounded-full {TONE_DOT[segmentTakeaway.tone]}"></span>
+        {segmentTakeaway.text}
+      </p>
+    {/if}
+
+    <div class="card overflow-x-auto">
+      <table class="w-full min-w-[560px] text-xs">
+        <thead class="bg-ink-800/40 text-[10px] uppercase tracking-wider text-zinc-500">
+          <tr>
+            <th class="px-3 py-2 text-left">Segment</th>
+            <th class="px-3 py-2 text-right">Picks</th>
+            <th class="px-3 py-2 text-right">5d hit</th>
+            <th class="px-3 py-2 text-right">5d avg</th>
+            <th class="px-3 py-2 text-right">5d vs SPY</th>
+            <th class="px-3 py-2 text-right">21d avg <span class="text-zinc-600">· drift</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          {#each segmentRows as row (row.key)}
+            {@const h5 = row.stats.horizons['5d']}
+            {@const h21 = row.stats.horizons['21d']}
+            <tr class="border-t border-ink-700/40">
+              <td class="whitespace-nowrap px-3 py-2">
+                <span class="mr-1">{row.emoji}</span><span class="font-medium">{row.label}</span>
+              </td>
+              <td class="num px-3 py-2 text-right text-zinc-400">{row.stats.count}</td>
+              <td class="num px-3 py-2 text-right {hitClass(h5?.hit_rate ?? null)}">
+                {h5?.hit_rate != null ? `${(h5.hit_rate * 100).toFixed(0)}%` : '—'}
+                {#if h5?.evaluated != null}<span class="text-[10px] text-zinc-600"> ({h5.evaluated})</span>{/if}
+              </td>
+              <td class="num px-3 py-2 text-right {returnClass(h5?.avg_return_pct ?? null)}">
+                {h5?.avg_return_pct != null ? fmtPct(h5.avg_return_pct) : '—'}
+              </td>
+              <td class="num px-3 py-2 text-right {returnClass(h5?.avg_excess_pct ?? null)}">
+                {h5?.avg_excess_pct != null ? fmtPct(h5.avg_excess_pct) : '—'}
+              </td>
+              <td class="num px-3 py-2 text-right {returnClass(h21?.avg_return_pct ?? null)}">
+                {h21?.avg_return_pct != null ? fmtPct(h21.avg_return_pct) : '—'}
+              </td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  </section>
+{/if}
 
 <!-- 3 · Calibration -->
 <section class="mb-8" use:reveal>
@@ -627,6 +741,11 @@
     If the conviction score is predictive, the score {recPerf?.high_score ?? 7}+ rows should beat
     the under-{recPerf?.high_score ?? 7} rows. If the desk's take ≈ pass, the agents aren't adding
     signal — that's the cue to cut the desk's per-scan cost.
+  </p>
+  <p>
+    "vs SPY" is the pick's excess return over SPY across the same window — the only number that
+    separates skill from a rising tape. Large-cap = in the S&amp;P 500 or NASDAQ-100; tail =
+    everything else. 21d is the catalyst-drift horizon (max graded hold).
   </p>
   {#if predPerf?.horizon_note}
     <p>{predPerf.horizon_note}</p>
