@@ -23,8 +23,23 @@
 
   const isLong = rec.direction === 'long';
   const levels = $derived(rec.levels ?? computeLevels(row, rec.direction));
+  // The scanner's hard_stop (risk.py) overrides the heuristic stop when present;
+  // fold it into the levels so the grid, the sizing line AND the plan narrative
+  // all cite the same stop (with a recomputed R:R), never a split read.
+  const effectiveLevels = $derived.by(() => {
+    if (!levels) return null;
+    const stop = rec.hard_stop ?? levels.stop;
+    if (stop === levels.stop) return levels;
+    const risk = isLong ? levels.entry - stop : stop - levels.entry;
+    const reward = isLong ? levels.target - levels.entry : levels.entry - levels.target;
+    return { ...levels, stop, rr: risk > 0 ? reward / risk : null };
+  });
   const plan = $derived(
-    rec.desk?.plan && rec.desk.decision === 'take' ? rec.desk.plan : levels ? quickPlan(levels) : null
+    rec.desk?.plan && rec.desk.decision === 'take'
+      ? rec.desk.plan
+      : effectiveLevels
+        ? quickPlan(effectiveLevels)
+        : null
   );
   // Track record for this pick's score band — the conviction number with a
   // receipt attached.
@@ -38,7 +53,9 @@
   // scanner (same pattern as computeLevels for the levels themselves).
   const sizing = $derived(
     rec.risk ??
-      (levels ? sizePosition(REFERENCE_EQUITY, levels.entry, rec.hard_stop ?? levels.stop) : null)
+      (effectiveLevels
+        ? sizePosition(REFERENCE_EQUITY, effectiveLevels.entry, effectiveLevels.stop)
+        : null)
   );
 
   // Drift strength: structural (M&A/FDA) holds longest, soft (PR) least.
@@ -132,19 +149,19 @@
     </div>
   {/if}
 
-  {#if levels}
+  {#if effectiveLevels}
     <div class="mt-2 grid grid-cols-3 gap-2 rounded border border-ink-700/60 bg-ink-900/40 p-2 text-center">
       <div>
         <div class="text-[9px] uppercase tracking-wider text-zinc-500">entry</div>
-        <div class="num text-sm text-zinc-100">${fmtPrice(levels.entry)}</div>
+        <div class="num text-sm text-zinc-100">${fmtPrice(effectiveLevels.entry)}</div>
       </div>
       <div>
         <div class="text-[9px] uppercase tracking-wider text-zinc-500">stop</div>
-        <div class="num text-sm text-signal-down">${fmtPrice(rec.hard_stop ?? levels.stop)}</div>
+        <div class="num text-sm text-signal-down">${fmtPrice(effectiveLevels.stop)}</div>
       </div>
       <div>
         <div class="text-[9px] uppercase tracking-wider text-zinc-500">target</div>
-        <div class="num text-sm text-signal-up">${fmtPrice(levels.target)}</div>
+        <div class="num text-sm text-signal-up">${fmtPrice(effectiveLevels.target)}</div>
       </div>
     </div>
 
