@@ -6,12 +6,20 @@ export type Impact = 'high' | 'medium' | 'low';
 export type Confidence = 'high' | 'medium' | 'low';
 export type Verdict = 'news_explains_move' | 'partial_explanation' | 'move_unexplained_by_news';
 export type Horizon = 'intraday' | 'days' | 'weeks' | 'months';
+// Catalyst drift potential — structural (M&A/FDA) drifts longest, soft (PR) least.
+export type Durability = 'structural' | 'guidance' | 'surprise' | 'soft';
 
 export interface Synthesis {
   summary: string;
   supporting_news_ids: string[];
   verdict: Verdict;
   confidence: Confidence;
+  /** Catalyst durability (scanner/llm/synthesize.py). null when no catalyst. */
+  durability?: Durability | null;
+  /** Deterministic 0..3 weight derived from durability (soft=0…structural=3). */
+  durability_weight?: number;
+  /** Whether the tape has discounted the catalyst — the not-yet-priced-in gate. */
+  priced_in?: PricedIn;
 }
 
 export interface ScanRow {
@@ -113,6 +121,17 @@ export interface TradeLevels {
 
 // A pick from the backend scanner.recommend module, joined to its ScanRow by
 // ticker for display. Keep in sync with scanner/recommend.py compute().
+// Position sizing from scanner/risk.py size_position(), attached per pick. The
+// frontend lib/levels.ts mirrors this as a client-side fallback before the
+// scanner populates it.
+export interface RiskSizing {
+  shares: number;
+  notional: number;
+  risk_amount: number;
+  pct_of_equity: number;
+  capped: boolean;
+}
+
 export interface Recommendation {
   ticker: string;
   direction: RecDirection;
@@ -122,6 +141,14 @@ export interface Recommendation {
   cautions: string[];
   desk?: DeskVerdict | null;
   levels?: TradeLevels | null;
+  /** Buy-the-base vs chase-the-spike (scanner/recommend.py). */
+  entry_style?: 'base' | 'spike';
+  base_ready?: boolean;
+  /** Suggested hold in trading days — longer for higher-durability catalysts. */
+  horizon_days?: number;
+  /** Position sizing + protective stop (scanner/risk.py); rides on the pick. */
+  risk?: RiskSizing | null;
+  hard_stop?: number | null;
 }
 
 export interface Recommendations {
@@ -293,6 +320,9 @@ export interface HorizonStats {
   /** Net of the 0.5% round-trip slippage drag (perf-roadmap). */
   hit_rate_net?: number | null;
   avg_return_net_pct?: number | null;
+  /** Excess return vs SPY over the same window (recommendation picks only). */
+  avg_excess_pct?: number | null;
+  hit_rate_excess?: number | null;
 }
 
 export interface AlertTypeStats {
@@ -301,6 +331,9 @@ export interface AlertTypeStats {
     '1d'?: HorizonStats;
     '3d'?: HorizonStats;
     '5d'?: HorizonStats;
+    // 10d/21d capture catalyst drift — only present on recommendation/desk rollups.
+    '10d'?: HorizonStats;
+    '21d'?: HorizonStats;
   };
 }
 
@@ -319,7 +352,10 @@ export interface RecommendationPerformance {
   window_days: number;
   total_picks: number;
   high_score: number;
+  slippage_round_trip_pct?: number;
   per_bucket: Record<string, AlertTypeStats>;
+  /** Returns split by universe segment, keyed "<direction>_large" / "_tail". */
+  per_segment?: Record<string, AlertTypeStats>;
 }
 
 // desk_performance.json — keep in sync with scanner/performance.compile_desk_stats().

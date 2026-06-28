@@ -19,9 +19,14 @@
 //   rr              = reward ÷ risk.
 // Shorts mirror this (resistance above, stop above, target below).
 
-import type { ScanRow, TradeLevels } from './types';
+import type { ScanRow, TradeLevels, RiskSizing } from './types';
 
-export type { TradeLevels };
+export type { TradeLevels, RiskSizing };
+
+// Reference account equity for position sizing — mirrors scanner.main
+// SIZING_REFERENCE_EQUITY (~£12k ISA). A yardstick for the suggested share
+// count / concentration %, NOT a live brokerage balance.
+export const REFERENCE_EQUITY = 12_000;
 
 // A deterministic plain-language trade plan built from the levels — the
 // fallback so there's ALWAYS written guidance on a pick, even before the
@@ -102,4 +107,41 @@ export function computeLevels(row: ScanRow, side: 'long' | 'short'): TradeLevels
     const rr = (price - target) / risk;
     return { side, entry: price, pivot: resistance, pivotLabel: 'resistance', stop, target, rr };
   }
+}
+
+// Client-side mirror of scanner/risk.py size_position(). Fixed-fractional: risk
+// `equity * riskPct` over the per-share stop distance |entry − stop|, then clamp
+// so one position's notional never exceeds `equity * maxPositionPct` (capped=true
+// when that bites). Returns null on degenerate inputs (non-finite, entry ≤ 0,
+// entry == stop) so the card simply hides sizing. Direction-agnostic — only the
+// absolute entry/stop distance matters, so it's identical for longs and shorts.
+export function sizePosition(
+  equity: number,
+  entry: number,
+  stop: number,
+  riskPct = 0.0075,
+  maxPositionPct = 0.25
+): RiskSizing | null {
+  if (![equity, entry, stop].every((n) => Number.isFinite(n))) return null;
+  if (equity <= 0 || entry <= 0) return null;
+  const dist = Math.abs(entry - stop);
+  if (dist <= 0) return null;
+
+  let shares = Math.floor((equity * riskPct) / dist);
+  const maxNotional = equity * maxPositionPct;
+  let capped = false;
+  if (shares * entry > maxNotional) {
+    shares = Math.floor(maxNotional / entry);
+    capped = true;
+  }
+  if (shares < 0) shares = 0;
+
+  const notional = shares * entry;
+  return {
+    shares,
+    notional: Math.round(notional * 100) / 100,
+    risk_amount: Math.round(shares * dist * 100) / 100,
+    pct_of_equity: equity ? Math.round((notional / equity) * 10000) / 10000 : 0,
+    capped
+  };
 }
