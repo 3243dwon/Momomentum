@@ -39,6 +39,15 @@ WINDOW_DAYS = 30              # rolling window for compiled stats
 ACTIVE_MAX_AGE_DAYS = 28
 MAX_PICKS = 300              # cap stored history
 
+# A pick is "benched" — suppressed from re-recommendation — once it has lost at
+# EVERY horizon we've marked so far, across at least BENCH_MIN_HORIZONS of them
+# (the 连续跑输 pattern, e.g. 紫金矿业: 3d −2.2% then 5d −9.2%). One isolated bad
+# mark isn't enough, and a single green horizon clears it. The bench is a COOLDOWN
+# not a ban: it lifts once a name hasn't been recommended for BENCH_LOOKBACK_DAYS,
+# and a genuine direction flip is a different pick id so it's never caught.
+BENCH_MIN_HORIZONS = 2
+BENCH_LOOKBACK_DAYS = 28
+
 _DIR_LONG = {"long", "buy", "多", "看多", "做多", "bull", "bullish"}
 _DIR_SHORT = {"short", "sell", "空", "看空", "做空", "bear", "bearish"}
 
@@ -115,6 +124,25 @@ def _running_return(pick: dict) -> float | None:
     return None
 
 
+def _signed_marks(pick: dict) -> list[float]:
+    """Every recorded horizon mark (signed return), in 3/5/10-day order."""
+    ev = pick.get("evaluations", {}) or {}
+    out = []
+    for h in HORIZONS:
+        cell = ev.get(f"{h}d")
+        if cell and cell.get("signed_return_pct") is not None:
+            out.append(cell["signed_return_pct"])
+    return out
+
+
+def _is_sustained_loser(pick: dict) -> bool:
+    """True if the pick went the wrong way at EVERY measured horizon, across at
+    least BENCH_MIN_HORIZONS of them — the 连续跑输 pattern. Signed, so it respects
+    direction (a short that fell is a winner, not a loser)."""
+    marks = _signed_marks(pick)
+    return len(marks) >= BENCH_MIN_HORIZONS and all(m < 0 for m in marks)
+
+
 def _active_picks(state: dict) -> list[dict]:
     return [p for p in state.get("picks", []) if not p.get("archived")]
 
@@ -166,12 +194,55 @@ def track_record() -> dict:
         return {}
 
 
-def recent_context(limit: int = 8) -> dict:
-    """What to feed the Opus prompt: the still-active picks (so it carries them
-    forward) + the rolling track record (so it's anchored to reality)."""
+def benched_map(now: datetime | None = None) -> dict[str, dict]:
+    """Pick ids currently benched for sustained underperformance → a small reason
+    dict (for the prompt, the card, and logging). Keyed on the canonical pick id
+    (code+direction) so it lines up with commit()/preview() identity.
+
+    A name is benched when its freshest pick is a 连续跑输 loser AND was last
+    recommended within BENCH_LOOKBACK_DAYS — so the bench is a cooldown, not a ban.
+    """
+    now = now or datetime.now(timezone.utc)
     try:
         state = _load()
-        active = sorted(_active_picks(state), key=lambda p: p.get("last_seen", ""), reverse=True)
+    except Exception:
+        return {}
+    # Freshest pick per id — an id recurs (archived + active) when a name is
+    # re-recommended after its prior call aged out; judge on the latest one.
+    latest: dict[str, dict] = {}
+    for p in state.get("picks", []):
+        pid = p.get("id")
+        if not pid:
+            continue
+        cur = latest.get(pid)
+        if cur is None or p.get("last_seen", "") > cur.get("last_seen", ""):
+            latest[pid] = p
+    out: dict[str, dict] = {}
+    for pid, p in latest.items():
+        if _age_days(p.get("last_seen", ""), now) > BENCH_LOOKBACK_DAYS:
+            continue
+        if _is_sustained_loser(p):
+            out[pid] = {
+                "name_zh": p.get("name_zh"),
+                "code": p.get("code"),
+                "direction": p.get("direction"),
+                "running_return_pct": _running_return(p),
+                "marks": _signed_marks(p),
+            }
+    return out
+
+
+def recent_context(limit: int = 8, now: datetime | None = None) -> dict:
+    """What to feed the Opus prompt: the still-active picks (so it carries them
+    forward) + the rolling track record (so it's anchored to reality) + the benched
+    names (so it stops re-recommending sustained losers like 紫金矿业)."""
+    try:
+        state = _load()
+        benched = benched_map(now)
+        active = [
+            p for p in sorted(_active_picks(state), key=lambda p: p.get("last_seen", ""), reverse=True)
+            if p.get("id") not in benched  # don't nudge Opus to carry a benched name
+        ]
         picks = [{
             "name_zh": p.get("name_zh"),
             "code": p.get("code"),
@@ -181,10 +252,38 @@ def recent_context(limit: int = 8) -> dict:
             "running_return_pct": _running_return(p),
             "status": p.get("status"),
         } for p in active[:limit]]
-        return {"previously_recommended": picks, "track_record": track_record()}
+        benched_list = [{
+            "name_zh": b.get("name_zh"),
+            "code": b.get("code"),
+            "direction": b.get("direction"),
+            "running_return_pct": b.get("running_return_pct"),
+        } for b in benched.values()]
+        return {"previously_recommended": picks, "track_record": track_record(), "benched": benched_list}
     except Exception as e:
         log.warning("mom_watchlist.recent_context failed: %s", e)
-        return {"previously_recommended": [], "track_record": {}}
+        return {"previously_recommended": [], "track_record": {}, "benched": []}
+
+
+def filter_benched(raw_watchlist: list, now: datetime | None = None) -> tuple[list, list]:
+    """Split Opus's raw watchlist into (kept, dropped) by the bench list — the
+    DETERMINISTIC backstop. Even if Opus re-recommends a benched name despite the
+    prompt, it never reaches the card or the tracker. Matching is on canonical
+    (code+direction) id, so a real direction flip (a fresh thesis) is NOT dropped."""
+    benched = benched_map(now)
+    if not benched:
+        return list(raw_watchlist or []), []
+    kept, dropped = [], []
+    for item in raw_watchlist or []:
+        norm = _normalize_pick(item)
+        if not norm:
+            kept.append(item)  # unparseable — leave it for downstream to skip
+            continue
+        pid = _pick_id(norm["code"], norm["direction"])
+        if pid in benched:
+            dropped.append({**norm, **benched[pid]})
+        else:
+            kept.append(item)  # preserve Opus's original object form for commit/preview
+    return kept, dropped
 
 
 # ── write path (after a digest is sent) ──────────────────────────────────────
