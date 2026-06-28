@@ -1,13 +1,17 @@
 """Build the ticker universe: S&P 500 + NASDAQ 100 + NYSE common stocks.
 
 Liquidity and price floors are applied after yfinance returns price data —
-this module just assembles the candidate list.
+this module just assembles the candidate list. The dollar-volume liquidity
+floor predicate (passes_liquidity_floor) lives here for ownership, but is
+APPLIED in scanner.technicals._compute_row, where price * avg_volume_20d is
+known (this module has only ticker symbols, no price/volume).
 """
 from __future__ import annotations
 
 import io
 import json
 import logging
+import math
 import re
 from datetime import datetime, timezone
 from pathlib import Path
@@ -43,6 +47,40 @@ def _valid_ticker(t: str) -> bool:
     if any(c in t for c in "^$."):
         return False
     return bool(re.fullmatch(r"[A-Z0-9\-]+", t))
+
+
+def passes_liquidity_floor(
+    price: float | None,
+    avg_volume: float | None,
+    min_dollar_volume: float | None = None,
+) -> bool:
+    """Dollar-volume liquidity floor (Contract G): True when the name trades at
+    least `min_dollar_volume` of notional per day (price * avg_volume >= floor,
+    inclusive).
+
+    Fail-OPEN (returns True) when either input is None/NaN: technicals already
+    drops truly missing-data rows via its own MIN_PRICE / MIN_AVG_VOLUME_20D
+    floors, and snapshot/intraday rows may legitimately lack avg_volume_20d, so
+    failing closed here would silently drop valid rows. Floor defaults to
+    config.MIN_DOLLAR_VOLUME; pass min_dollar_volume=0 to disable the gate.
+
+    APPLICATION (wiring agent inserts this; not done in this module): in
+    scanner.technicals._compute_row, immediately after the existing MIN_PRICE /
+    MIN_AVG_VOLUME_20D checks (~line 105):
+        if not universe.passes_liquidity_floor(last_close, avg_volume_20d):
+            return None
+    """
+    floor = config.MIN_DOLLAR_VOLUME if min_dollar_volume is None else min_dollar_volume
+    if floor <= 0:
+        return True
+    if price is None or avg_volume is None:
+        return True
+    try:
+        if math.isnan(price) or math.isnan(avg_volume):
+            return True
+    except TypeError:
+        return True
+    return price * avg_volume >= floor
 
 
 def fetch_sp500() -> tuple[set[str], dict[str, str]]:

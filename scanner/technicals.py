@@ -16,7 +16,7 @@ from typing import Iterable
 
 import pandas as pd
 
-from scanner import config
+from scanner import config, universe
 
 log = logging.getLogger(__name__)
 
@@ -102,6 +102,11 @@ def _compute_row(ticker: str, sub: pd.DataFrame) -> dict | None:
     if last_close < config.MIN_PRICE:
         return None
     if not math.isnan(avg_volume_20d) and avg_volume_20d < config.MIN_AVG_VOLUME_20D:
+        return None
+    # Dollar-volume liquidity floor (Contract G). Fail-open on NaN inputs so a
+    # missing avg_volume never silently drops a name; gate disabled when
+    # config.MIN_DOLLAR_VOLUME <= 0.
+    if not universe.passes_liquidity_floor(last_close, avg_volume_20d):
         return None
 
     rsi = _rsi(close)

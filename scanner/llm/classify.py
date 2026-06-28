@@ -99,6 +99,11 @@ You do NOT write prose, summaries, or analysis — only the structured output.
 - **macro_commodity**: oil/gas, gold, copper, crypto-as-asset-class moves driven by supply or policy.
 - **other**: anything not covered above (use sparingly).
 
+These types feed the downstream durability read: `ma`/`litigation`/`product` (when it's
+a definitive contract or regulatory approval) are the structural, longest-drift catalysts;
+`guidance` is its own tier; `earnings` is a surprise; `analyst`/`rumor` are soft. Classify
+the underlying event honestly and that mapping falls out — don't second-guess durability here.
+
 ## Impact scoring (be honest — most items are low)
 
 - **high**: directly explains a 3%+ move OR materially changes the investment thesis OR is a genuine surprise that the market hasn't already priced.

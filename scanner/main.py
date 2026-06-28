@@ -27,13 +27,19 @@ import logging
 import sys
 from datetime import datetime
 
-from scanner import briefing, catalysts, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, opening, performance, political, recommend, regime as regime_mod, render, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
+from scanner import briefing, catalysts, config, deals, desk, levels as levels_mod, mom_digest, mom_watchlist, news, opening, performance, political, recommend, regime as regime_mod, render, risk, router, serenity, state, technicals, trump_pulse, universe, weekly_events, windows
 from scanner.alerts import feishu
 from scanner.alerts import rules as alert_rules
 from scanner.llm import classify, macro, ripple, synthesize
 from scanner.llm.client import get_client
 
 log = logging.getLogger("scanner")
+
+# Reference account equity for position sizing (scanner.risk). The risk module's
+# outputs are fractions of this base (pct_of_equity etc.), so this only sets the
+# absolute scale of the suggested share count / notional shown alongside a pick —
+# it is NOT a live brokerage balance. Anchored to David's ~£12k ISA (memory).
+SIZING_REFERENCE_EQUITY = 12_000.0
 
 
 def _rank_news_for_haiku(
@@ -265,6 +271,27 @@ def run(
     # source of truth. Runs regardless of LLM availability.
     levels_mod.attach_levels(recommendations, enriched_rows)
 
+    # Position sizing (scanner.risk) — attach rec["risk"] to every surfaced pick.
+    # Entry comes from the levels just attached (falling back to the row's live
+    # price); the hard stop is risk.hard_stop (fixed 7-8% rule, no ATR on rows
+    # yet). size_position is direction-agnostic, so longs and shorts size off the
+    # absolute entry-stop distance. Fail-soft per pick — a degenerate price never
+    # blocks the scan.
+    _rows_by_ticker = {r["ticker"]: r for r in enriched_rows}
+    for _side in ("longs", "shorts"):
+        for _rec in recommendations.get(_side, []):
+            _direction = _rec.get("direction", "long")
+            _levels = _rec.get("levels") or {}
+            _entry = _levels.get("entry")
+            if _entry is None:
+                _row = _rows_by_ticker.get(_rec.get("ticker")) or {}
+                _entry = _row.get("price") or _row.get("last_close")
+            if _entry is None:
+                continue
+            _stop = risk.hard_stop(_entry, _direction)
+            _rec["risk"] = risk.size_position(SIZING_REFERENCE_EQUITY, _entry, _stop)
+            _rec["hard_stop"] = _stop
+
     # Opening catch-list — the early-entry tier. Built off the enriched rows
     # (live snapshot price + opening-range VWAP), once per trading day. Skip the
     # write when no intraday bars landed yet so the next scan retries rather than
@@ -308,15 +335,19 @@ def run(
     # polling, Claude extraction, the Feishu push and writing data/serenity.json.
     # The scan only reads that feed and cross-references it against the live
     # universe to add serenity_match alerts (price coincidence). Fail-soft.
+    # Skip the cross-reference entirely when the serenity_match stream is gated
+    # off (Contract G). rules.build_alerts also drops these alerts defensively,
+    # but short-circuiting here avoids the feed-load + match work when disabled.
     serenity_matches: list[dict] = []
-    try:
-        serenity_tweets = serenity.load_feed()
-        if serenity_tweets:
-            serenity_matches = serenity.compute_matches(
-                serenity_tweets, rows, set(router.load_watchlist()),
-            )
-    except Exception as e:
-        log.warning("Serenity match raised: %s", e)
+    if config.SERENITY_MATCH_ENABLED:
+        try:
+            serenity_tweets = serenity.load_feed()
+            if serenity_tweets:
+                serenity_matches = serenity.compute_matches(
+                    serenity_tweets, rows, set(router.load_watchlist()),
+                )
+        except Exception as e:
+            log.warning("Serenity match raised: %s", e)
 
     alerts: list[dict] = []
     if use_alerts:
