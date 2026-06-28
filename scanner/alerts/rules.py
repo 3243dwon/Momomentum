@@ -92,6 +92,7 @@ def _line(
     rel_vol: float | None,
     thesis: str | None,
     qualifier: str | None = None,
+    tag: str | None = None,
 ) -> str:
     """One-line alert body: `**TICK +5.5%** 2.8x · *thesis* [→](deep link)`.
     Rel volume only when notable (>=1.5x). Thesis (italic, clipped ~110) when a
@@ -103,7 +104,29 @@ def _line(
         head += f" · *{_clip(thesis, 110)}*"
     elif qualifier:
         head += f" · {qualifier}"
+    if tag:
+        head += f" · {tag}"
     return head + f" [→]({_SITE_URL}/t/{ticker})"
+
+
+# Compact `durability · priced-in` tag for a catalyst push (scanner overhaul).
+_DURABILITY_TAG = {"structural": "structural", "guidance": "guidance",
+                   "surprise": "surprise", "soft": "soft"}
+_PRICED_TAG = {"no": "not priced in", "contradicted": "tape disagrees",
+               "partial": "partly priced"}
+
+
+def _catalyst_tag(synth: dict | None) -> str | None:
+    """`durability · priced-in` from the synthesis fields, or None when neither
+    is present (e.g. a pre-overhaul row)."""
+    if not synth:
+        return None
+    parts: list[str] = []
+    if synth.get("durability") in _DURABILITY_TAG:
+        parts.append(_DURABILITY_TAG[synth["durability"]])
+    if synth.get("priced_in") in _PRICED_TAG:
+        parts.append(_PRICED_TAG[synth["priced_in"]])
+    return " · ".join(parts) or None
 
 
 def _macro_side(items: list[dict]) -> str:
@@ -205,7 +228,7 @@ def build_alerts(
             alerts, throttle,
             ticker=t, alert_type="catalyst",
             title=_clip(title, 60),
-            body_md=_line(t, pct, suffix, rel_vol, thesis),
+            body_md=_line(t, pct, suffix, rel_vol, thesis, tag=_catalyst_tag(synth)),
             signal=pct,
         )
 

@@ -367,6 +367,16 @@ def run(
         )
         performance.log_alerts(dispatched, rows, now, regime=regime)
 
+        # Today's-picks card: the recommend.py picks (sizing / durability /
+        # priced-in / levels) pushed as one card, separate from the alert
+        # firehose and on its own longer cooldown so a persistent lineup isn't
+        # re-pushed every scan. Fail-soft — never blocks the scan.
+        if config.PICKS_PUSH_ENABLED:
+            try:
+                feishu.send_picks(recommendations, _rows_by_ticker, now)
+            except Exception as e:
+                log.warning("Picks push raised: %s", e)
+
     # Scan briefing: one Sonnet call condensing this scan into data/briefing.json
     # for the web front page. Fail-soft — never blocks the scan; on any error
     # the previous briefing.json stays in place.

@@ -115,6 +115,20 @@ FEISHU_SIGNING_SECRET = os.environ.get("FEISHU_SIGNING_SECRET")
 FEISHU_MOM_WEBHOOK_URL = os.environ.get("FEISHU_MOM_WEBHOOK_URL")
 FEISHU_MOM_SIGNING_SECRET = os.environ.get("FEISHU_MOM_SIGNING_SECRET")
 
+# Today's-picks Feishu push (scanner.alerts.feishu.send_picks). The recommend.py
+# picks — carrying sizing / durability / priced-in / levels — go out as ONE card
+# on the primary webhook, separate from the alert firehose, so the navigator
+# block lands in the push channel and not just the website. Its own (longer)
+# cooldown so a pick that persists all day isn't re-pushed every 2-3h scan.
+PICKS_PUSH_ENABLED = (os.environ.get("PICKS_PUSH_ENABLED", "true").strip().lower()
+                      not in ("0", "false", "no", "off"))
+# Re-push cooldown per (ticker, direction): a pick already shown within this many
+# hours is suppressed, so a stable lineup pushes at most ~twice/day while a
+# brand-new pick still fires immediately.
+PICKS_PUSH_COOLDOWN_HOURS = _env_int("PICKS_PUSH_COOLDOWN_HOURS", 12)
+# Max picks per card (longs first, then shorts, by score).
+PICKS_PUSH_MAX = _env_int("PICKS_PUSH_MAX", 5)
+
 USER_AGENT = "MomentumScanner/0.1 (github.com/yourhandle/momentum)"
 
 # Financial Modeling Prep — free tier (250 req/day, 500MB/30d) covers the

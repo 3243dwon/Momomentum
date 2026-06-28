@@ -16,14 +16,14 @@ import hmac
 import json
 import logging
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Literal
 
 import requests
 
 from scanner import config
-from scanner.alerts.rules import _clip
+from scanner.alerts.rules import _clip, _SITE_URL
 
 log = logging.getLogger(__name__)
 
@@ -316,3 +316,168 @@ def send_consolidated(alerts: list[dict]) -> tuple[int, list[dict]]:
             sent += 1
             delivered.extend(macro_alerts)
     return sent, delivered
+
+
+# --- Today's-picks card ------------------------------------------------------
+# The recommend.py picks (sizing / durability / priced-in / levels) as ONE card,
+# separate from the alert firehose. A dedicated state file gives picks their own
+# (longer) re-push cooldown so a name that sits in the lineup all day isn't
+# re-pushed every 2-3h scan — only a fresh entrant (or the ~twice-daily refresh)
+# fires a card.
+
+PICKS_PUSH_STATE = config.CACHE_DIR / "picks_push.json"
+
+_DURABILITY_PUSH_LABEL = {
+    "structural": "structural",
+    "guidance": "guidance",
+    "surprise": "surprise",
+    "soft": "soft",
+}
+_PRICED_PUSH_LABEL = {
+    "no": "not priced in",
+    "contradicted": "tape disagrees",
+    "partial": "partly priced",
+}
+
+
+def _load_picks_state() -> dict:
+    try:
+        return json.loads(PICKS_PUSH_STATE.read_text())
+    except Exception:
+        return {}
+
+
+def _save_picks_state(state: dict) -> None:
+    try:
+        PICKS_PUSH_STATE.write_text(json.dumps(state, indent=2))
+    except Exception as e:
+        log.warning("Could not persist picks-push state: %s", e)
+
+
+def _pick_key(rec: dict) -> str:
+    return f"{rec.get('ticker')}::{rec.get('direction', 'long')}"
+
+
+def _pick_fresh(state: dict, key: str, now: datetime, cooldown_h: int) -> bool:
+    """True when this pick hasn't been pushed within cooldown_h hours."""
+    last = state.get(key)
+    if not last:
+        return True
+    try:
+        last_dt = datetime.fromisoformat(last)
+    except Exception:
+        return True
+    return (now - last_dt) >= timedelta(hours=cooldown_h)
+
+
+def _pick_block(rec: dict, row: dict | None) -> str:
+    """Two-line markdown for one pick: the navigator read, then the trade. Every
+    field is included only when present, so an un-enriched pick (pre new scanner,
+    no synthesis/risk) still renders cleanly with score + levels."""
+    t = rec.get("ticker", "?")
+    is_long = rec.get("direction", "long") == "long"
+    emoji = "📈" if is_long else "📉"
+
+    syn = (row or {}).get("synthesis") or {}
+    tags: list[str] = []
+    if syn.get("durability") in _DURABILITY_PUSH_LABEL:
+        tags.append(_DURABILITY_PUSH_LABEL[syn["durability"]])
+    if syn.get("priced_in") in _PRICED_PUSH_LABEL:
+        tags.append(_PRICED_PUSH_LABEL[syn["priced_in"]])
+    if rec.get("entry_style") == "base":
+        tags.append("buy the base")
+    elif rec.get("entry_style") == "spike":
+        tags.append("wait for base")
+    tag_str = (" · " + " · ".join(tags)) if tags else ""
+    line1 = f"{emoji} **{t}** · score {rec.get('score', '?')}{tag_str}"
+
+    bits: list[str] = []
+    r = rec.get("risk") or {}
+    shares = r.get("shares")
+    if shares:
+        size = f"{'buy' if is_long else 'short'} {shares} sh"
+        extra = []
+        if r.get("notional"):
+            extra.append(f"${r['notional']:,.0f}")
+        if r.get("pct_of_equity"):
+            extra.append(f"{r['pct_of_equity'] * 100:.0f}% book")
+        if extra:
+            size += " (" + " · ".join(extra) + ")"
+        bits.append(size)
+
+    lv = rec.get("levels") or {}
+    entry = lv.get("entry")
+    stop = rec.get("hard_stop") or lv.get("stop")
+    if entry is not None:
+        bits.append(f"entry ${entry:.2f}")
+    if stop is not None:
+        bits.append(f"stop ${stop:.2f}")
+    if rec.get("horizon_days"):
+        bits.append(f"hold ~{rec['horizon_days']}d")
+
+    link = f"[→]({_SITE_URL}/t/{t})"
+    line2 = (" · ".join(bits) + " " + link) if bits else link
+    return f"{line1}\n{line2}"
+
+
+def build_picks_card(picks: list[dict], rows_by_ticker: dict) -> dict:
+    """The consolidated 'Today's picks' interactive card from recommend.py recs
+    (each already carrying levels/risk; synthesis read from rows_by_ticker)."""
+    blocks = [_pick_block(rec, rows_by_ticker.get(rec.get("ticker"))) for rec in picks]
+    body = "\n\n".join(blocks) if blocks else "_(no picks)_"
+    n = len(picks)
+    title = f"📊 Today's picks ({n})" if n != 1 else "📊 Today's pick"
+    return {
+        "msg_type": "interactive",
+        "card": {
+            "config": {"wide_screen_mode": True},
+            "header": {
+                "title": {"tag": "plain_text", "content": title},
+                "template": "green",
+            },
+            "elements": [{"tag": "div", "text": {"tag": "lark_md", "content": body}}],
+        },
+    }
+
+
+def send_picks(
+    recommendations: dict, rows_by_ticker: dict, now: datetime | None = None
+) -> tuple[int, list[dict]]:
+    """Push the top recommend.py picks as ONE card to the primary webhook,
+    deduped by a longer per-(ticker,direction) cooldown so a persistent lineup
+    isn't re-pushed every scan. Returns (cards_sent, picks_pushed); a no-op
+    (0, []) when disabled, no webhook, or nothing fresh.
+
+    The card fires when ANY of the top picks is fresh (a new entrant or the
+    ~twice-daily refresh); it then shows the full current lineup and re-stamps
+    every pick, so a stable lineup stays quiet until churn or the next refresh."""
+    if not config.PICKS_PUSH_ENABLED:
+        return 0, []
+    now = now or datetime.now(timezone.utc)
+
+    picks = ((recommendations.get("longs") or []) + (recommendations.get("shorts") or []))[
+        : max(0, config.PICKS_PUSH_MAX)
+    ]
+    if not picks:
+        return 0, []
+
+    state = _load_picks_state()
+    cooldown = config.PICKS_PUSH_COOLDOWN_HOURS
+    if not any(_pick_fresh(state, _pick_key(p), now, cooldown) for p in picks):
+        return 0, []  # stable lineup, all within cooldown — stay quiet
+
+    card = build_picks_card(picks, rows_by_ticker)
+    stub = {
+        "type": "picks",
+        "title": card["card"]["header"]["title"]["content"],
+        "body_md": card["card"]["elements"][0]["text"]["content"],
+        "n_picks": len(picks),
+        "tickers": [p.get("ticker") for p in picks],
+    }
+    if not _post_card(card, stub):
+        return 0, []
+
+    for p in picks:
+        state[_pick_key(p)] = now.isoformat()
+    _save_picks_state(state)
+    return 1, picks
