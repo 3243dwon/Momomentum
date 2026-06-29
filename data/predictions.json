@@ -1,382 +1,441 @@
 {
-  "generated_at": "2026-06-29T12:39:13.952941-04:00",
+  "generated_at": "2026-06-29T15:05:49.924726-04:00",
   "event_count": 2,
-  "prediction_count": 14,
-  "not_yet_priced_in": 9,
+  "prediction_count": 17,
+  "not_yet_priced_in": 16,
   "events": [
     {
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
       "primary_drivers": [
-        "Vertical integration in space \u2014 launcher acquiring a satellite constellation operator validates the SpaceX model and re-rates pure-play satcom operators",
-        "M&A premium gets applied to other publicly-traded satellite operators as potential next targets",
-        "Competitive threat to incumbent launch providers losing a captive Iridium customer relationship"
+        "Creation of a new aerospace pure-play comparable that re-rates peer multiples",
+        "Conglomerate breakup precedent pressures other multi-industrial holdcos to follow",
+        "Index/ETF rebalancing flows around the spin and reverse split"
       ],
       "beneficiaries": [
         {
-          "ticker": "IRDM",
-          "rationale": "Iridium is the target \u2014 shareholders receive the takeout premium directly. (Listing as the deal target, not a third-party ripple \u2014 IRDM is the company being acquired, so it will move on the deal terms themselves.)",
+          "ticker": "GE",
+          "rationale": "Aerospace pure-play (GE Aerospace) is the direct comp for the new Honeywell Aerospace spinco; fresh listing forces sell-side to mark GE multiples to the new pure-play benchmark and validates GE's own breakup thesis.",
           "confidence": "high",
-          "horizon": "days"
+          "horizon": "weeks"
         },
         {
-          "ticker": "ASTS",
-          "rationale": "Pure-play satellite-direct-to-device operator gets re-rated as the next logical vertical-integration / M&A target now that a launcher has shown willingness to pay up for an in-orbit constellation; scarcity value of public satcom pure-plays just went up.",
+          "ticker": "RTX",
+          "rationale": "Pratt & Whitney/Collins competes directly with Honeywell Aerospace in avionics and APUs; a focused aerospace spinco intensifies competitive read-through and re-rates RTX's aero segment SOTP value.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "GSAT",
-          "rationale": "Globalstar \u2014 small-cap MSS satellite operator with a constellation, direct comp to Iridium. Acquisition multiple paid for IRDM sets a floor valuation read-through and revives M&A speculation (Apple relationship makes it strategic).",
+          "ticker": "TDG",
+          "rationale": "Aerospace aftermarket pure-play; new standalone Honeywell Aerospace comp gives investors another high-multiple aero benchmark, supporting TDG's premium multiple narrative.",
           "confidence": "medium",
           "horizon": "weeks"
         },
         {
-          "ticker": "VSAT",
-          "rationale": "Viasat \u2014 another publicly traded satellite operator with global L-band/Ka-band assets; gets dragged into the 'who else gets bought by a launcher' re-rating trade.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "MMM",
+          "rationale": "Last remaining unbroken diversified industrial conglomerate; HON breakup completion increases activist/strategic pressure for MMM to accelerate its own portfolio simplification.",
+          "confidence": "medium",
+          "horizon": "months"
         },
         {
-          "ticker": "PL",
-          "rationale": "Planet Labs \u2014 satellite data pure-play, also fits the 'strategic constellation acquired by a vertically-integrating space company' template; secondary read-through target.",
-          "confidence": "low",
-          "horizon": "days"
+          "ticker": "EMR",
+          "rationale": "Automation pure-play peer to the slimmed-down Honeywell parent (industrial automation/process); RemainCo HON becomes a direct comp, tightening EMR's relative valuation discussion.",
+          "confidence": "medium",
+          "horizon": "weeks"
         },
         {
-          "ticker": "LUNR",
-          "rationale": "Intuitive Machines \u2014 small-cap space pure-play that benefits from sector-wide multiple expansion as the space M&A theme heats up and capital rotates into space names.",
+          "ticker": "ROP",
+          "rationale": "Recently transformed industrial-to-software conglomerate; benefits from the 'simplification works' narrative reinforced by HON completing its split.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "weeks"
         }
       ],
       "losers": [
         {
-          "ticker": "LMT",
-          "rationale": "Lockheed Martin \u2014 historical Iridium NEXT prime contractor; loses a long-term satellite-build/services customer relationship as RKLB pulls future constellation buildout in-house using its own bus/components.",
-          "confidence": "low",
-          "horizon": "months"
-        },
-        {
-          "ticker": "BA",
-          "rationale": "Boeing \u2014 competing launch/satellite integrator (via ULA stake and satellite division) loses an addressable customer as Iridium's future launches go captive to Rocket Lab/Neutron instead of being competitively bid.",
-          "confidence": "low",
+          "ticker": "ROK",
+          "rationale": "Pure-play automation competitor will face a larger, more focused HON RemainCo concentrated on industrial automation \u2014 increased competitive intensity in factory automation and process control.",
+          "confidence": "medium",
           "horizon": "months"
         }
       ],
-      "trigger_ticker": "RKLB",
+      "trigger_ticker": "HON",
       "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
+        "529e1ea01b425d4d"
       ],
       "headlines": [
-        "Rocket Lab Just Became More Like SpaceX\u2014And Less Like A Rocket Company",
-        "Rocket Lab Is Buying Iridium\u2014Here's Why Investors Are Excited"
+        "Honeywell Completes Aerospace Spin-Off And Reverse Split: What Shareholders Need To Know"
       ],
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company"
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know"
     },
     {
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
       "primary_drivers": [
-        "Sum-of-the-parts unlock revives breakup/spin playbook across media conglomerates",
-        "Pure-play cable vs. pure-play content valuation reset",
-        "Increased M&A optionality for the spun media assets in a consolidating streaming landscape"
+        "Amazon share-gain in mid-year promotional retail spend pressures big-box and mall peers",
+        "Strong Prime Day volume = read-through to Amazon's logistics/fulfillment ecosystem and ad-tech sellers",
+        "Confirmation of resilient US discretionary consumer lifts pure-play e-commerce enablers"
       ],
       "beneficiaries": [
         {
-          "ticker": "WBD",
-          "rationale": "Direct read-through: WBD has been pursuing its own studios/streaming vs. networks split; a successful CMCSA tax-free spin validates the structure and re-rates WBD's SOTP discount.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "DIS",
-          "rationale": "Disney has faced activist pressure to separate linear from streaming/parks; a tax-free NBCU spin sets a precedent and lowers the perceived execution risk of a similar Disney action.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "CHTR",
-          "rationale": "Cable-only pure-play; RemainCo Comcast becomes a cleaner broadband/cable comp, lifting the read-through multiple on Charter as the market re-rates connectivity separately from media.",
+          "ticker": "SHOP",
+          "rationale": "Strong Prime Day reads as healthy online discretionary demand; Shopify merchants run competing summer sales and benefit from the same consumer pulse, plus Shopify's Amazon 'Buy with Prime' integration drives incremental GMV.",
           "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "AMC",
-          "rationale": "An independent NBCU/Universal Studios with cleaner theatrical economics is incrementally positive for exhibitors, who benefit if Universal doubles down on theatrical windows post-separation.",
+          "ticker": "GXO",
+          "rationale": "Largest pure-play contract logistics operator; record Prime Day volumes validate e-commerce fulfillment demand and tighten warehouse capacity utilization industry-wide.",
           "confidence": "low",
           "horizon": "weeks"
+        },
+        {
+          "ticker": "TTD",
+          "rationale": "Surging Amazon ad ecosystem activity around Prime Day confirms strong programmatic/retail-media ad spend; The Trade Desk is the largest independent DSP benefiting from the same advertiser budget expansion.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "UPS",
+          "rationale": "Even as Amazon insources, the broader e-commerce parcel volume surge during Prime Day spills into UPS's ground network for non-Amazon sellers running competing promos.",
+          "confidence": "low",
+          "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "NFLX",
-          "rationale": "An independent, M&A-able NBCU (Peacock + studio library) raises the probability of a stronger consolidated streaming competitor; pricing/content cost umbrella tightens on the SVOD leader.",
-          "confidence": "low",
-          "horizon": "months"
+          "ticker": "WMT",
+          "rationale": "Walmart ran its own competing 'Walmart Deals' event against Prime Day; Amazon's record blowout implies Walmart's event under-delivered on share, pressuring its e-commerce growth narrative.",
+          "confidence": "high",
+          "horizon": "days"
         },
         {
-          "ticker": "FOXA",
-          "rationale": "Fox is one of the few remaining un-split media conglomerates; if NBCU spin succeeds, investor pressure mounts on Murdoch family to act, but in near term Fox looks structurally stale vs. cleaner peers.",
+          "ticker": "BBY",
+          "rationale": "Consumer electronics is a top Prime Day category; Amazon's record take directly cannibalizes Best Buy's mid-year electronics sell-through and TV/laptop margin.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "M",
+          "rationale": "Department store discretionary apparel/home spend gets siphoned to Amazon during the promotional window; Macy's already comping negatively is most exposed.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "KSS",
+          "rationale": "Mid-tier department store with weak e-commerce; loses incremental mid-year wallet share to Amazon's deepest-ever promotional event.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "W",
+          "rationale": "Wayfair's home category overlaps heavily with Prime Day home deals; pure-play online home retailer most directly displaced by Amazon's record home/furniture sell-through.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ETSY",
+          "rationale": "Discretionary online marketplace whose sellers can't match Prime shipping/pricing during the event; Amazon's blowout pulls forward gift-and-home spend away from Etsy sellers.",
           "confidence": "low",
-          "horizon": "weeks"
+          "horizon": "days"
         }
       ],
-      "trigger_ticker": "CMCSA",
+      "trigger_ticker": "TGT",
       "source_news_ids": [
-        "ae47e57e585a8421"
+        "6f1fffab2bcd2c04"
       ],
       "headlines": [
-        "Comcast To Separate Into Two Public Companies In Tax-Free NBCUniversal Spin-Off \u2014 Stock Rises"
+        "Amazon Stock Surges 4%: Record $26.4 Billion Prime Day Blowout Crushes Wall Street Estimates"
       ],
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises"
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates"
     }
   ],
   "predictions": [
     {
-      "ticker": "WBD",
+      "ticker": "GE",
       "direction": "bullish",
-      "rationale": "Direct read-through: WBD has been pursuing its own studios/streaming vs. networks split; a successful CMCSA tax-free spin validates the structure and re-rates WBD's SOTP discount.",
+      "rationale": "Aerospace pure-play (GE Aerospace) is the direct comp for the new Honeywell Aerospace spinco; fresh listing forces sell-side to mark GE multiples to the new pure-play benchmark and validates GE's own breakup thesis.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 1.28,
+      "rel_volume": 0.66,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "source_news_ids": [
+        "529e1ea01b425d4d"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "WMT",
+      "direction": "bearish",
+      "rationale": "Walmart ran its own competing 'Walmart Deals' event against Prime Day; Amazon's record blowout implies Walmart's event under-delivered on share, pressuring its e-commerce growth narrative.",
       "confidence": "high",
       "horizon": "days",
       "priced_in": "no",
-      "pct_1d": 1.16,
-      "rel_volume": 0.4,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "pct_1d": -0.47,
+      "rel_volume": 0.52,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
       "source_news_ids": [
-        "ae47e57e585a8421"
+        "6f1fffab2bcd2c04"
       ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
     },
     {
-      "ticker": "GSAT",
-      "direction": "bullish",
-      "rationale": "Globalstar \u2014 small-cap MSS satellite operator with a constellation, direct comp to Iridium. Acquisition multiple paid for IRDM sets a floor valuation read-through and revives M&A speculation (Apple relationship makes it strategic).",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
-      "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "DIS",
-      "direction": "bullish",
-      "rationale": "Disney has faced activist pressure to separate linear from streaming/parks; a tax-free NBCU spin sets a precedent and lowers the perceived execution risk of a similar Disney action.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": 0.01,
-      "rel_volume": 0.51,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
-      "source_news_ids": [
-        "ae47e57e585a8421"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "CHTR",
-      "direction": "bullish",
-      "rationale": "Cable-only pure-play; RemainCo Comcast becomes a cleaner broadband/cable comp, lifting the read-through multiple on Charter as the market re-rates connectivity separately from media.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
-      "source_news_ids": [
-        "ae47e57e585a8421"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "LMT",
+      "ticker": "BBY",
       "direction": "bearish",
-      "rationale": "Lockheed Martin \u2014 historical Iridium NEXT prime contractor; loses a long-term satellite-build/services customer relationship as RKLB pulls future constellation buildout in-house using its own bus/components.",
-      "confidence": "low",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
-      "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "BA",
-      "direction": "bearish",
-      "rationale": "Boeing \u2014 competing launch/satellite integrator (via ULA stake and satellite division) loses an addressable customer as Iridium's future launches go captive to Rocket Lab/Neutron instead of being competitively bid.",
-      "confidence": "low",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
-      "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "AMC",
-      "direction": "bullish",
-      "rationale": "An independent NBCU/Universal Studios with cleaner theatrical economics is incrementally positive for exhibitors, who benefit if Universal doubles down on theatrical windows post-separation.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
-      "source_news_ids": [
-        "ae47e57e585a8421"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "NFLX",
-      "direction": "bearish",
-      "rationale": "An independent, M&A-able NBCU (Peacock + studio library) raises the probability of a stronger consolidated streaming competitor; pricing/content cost umbrella tightens on the SVOD leader.",
-      "confidence": "low",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": 1.6,
-      "rel_volume": 0.69,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
-      "source_news_ids": [
-        "ae47e57e585a8421"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "FOXA",
-      "direction": "bearish",
-      "rationale": "Fox is one of the few remaining un-split media conglomerates; if NBCU spin succeeds, investor pressure mounts on Murdoch family to act, but in near term Fox looks structurally stale vs. cleaner peers.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": 0.37,
-      "rel_volume": 0.31,
-      "trigger_ticker": "CMCSA",
-      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
-      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
-      "source_news_ids": [
-        "ae47e57e585a8421"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "LUNR",
-      "direction": "bullish",
-      "rationale": "Intuitive Machines \u2014 small-cap space pure-play that benefits from sector-wide multiple expansion as the space M&A theme heats up and capital rotates into space names.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "partial",
-      "pct_1d": 2.22,
-      "rel_volume": 0.32,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
-      "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
-      ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
-    },
-    {
-      "ticker": "IRDM",
-      "direction": "bullish",
-      "rationale": "Iridium is the target \u2014 shareholders receive the takeout premium directly. (Listing as the deal target, not a third-party ripple \u2014 IRDM is the company being acquired, so it will move on the deal terms themselves.)",
+      "rationale": "Consumer electronics is a top Prime Day category; Amazon's record take directly cannibalizes Best Buy's mid-year electronics sell-through and TV/laptop margin.",
       "confidence": "high",
       "horizon": "days",
-      "priced_in": "yes",
-      "pct_1d": 22.37,
-      "rel_volume": 3.56,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
       "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
+        "6f1fffab2bcd2c04"
       ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
     },
     {
-      "ticker": "ASTS",
+      "ticker": "RTX",
       "direction": "bullish",
-      "rationale": "Pure-play satellite-direct-to-device operator gets re-rated as the next logical vertical-integration / M&A target now that a launcher has shown willingness to pay up for an in-orbit constellation; scarcity value of public satcom pure-plays just went up.",
+      "rationale": "Pratt & Whitney/Collins competes directly with Honeywell Aerospace in avionics and APUs; a focused aerospace spinco intensifies competitive read-through and re-rates RTX's aero segment SOTP value.",
       "confidence": "medium",
       "horizon": "weeks",
-      "priced_in": "yes",
-      "pct_1d": 15.86,
-      "rel_volume": 0.69,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "priced_in": "no",
+      "pct_1d": -0.06,
+      "rel_volume": 0.35,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
       "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
+        "529e1ea01b425d4d"
       ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
     },
     {
-      "ticker": "VSAT",
+      "ticker": "TDG",
       "direction": "bullish",
-      "rationale": "Viasat \u2014 another publicly traded satellite operator with global L-band/Ka-band assets; gets dragged into the 'who else gets bought by a launcher' re-rating trade.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "yes",
-      "pct_1d": 22.23,
-      "rel_volume": 0.64,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "rationale": "Aerospace aftermarket pure-play; new standalone Honeywell Aerospace comp gives investors another high-multiple aero benchmark, supporting TDG's premium multiple narrative.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
       "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
+        "529e1ea01b425d4d"
       ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
     },
     {
-      "ticker": "PL",
+      "ticker": "MMM",
       "direction": "bullish",
-      "rationale": "Planet Labs \u2014 satellite data pure-play, also fits the 'strategic constellation acquired by a vertically-integrating space company' template; secondary read-through target.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "yes",
-      "pct_1d": 13.86,
+      "rationale": "Last remaining unbroken diversified industrial conglomerate; HON breakup completion increases activist/strategic pressure for MMM to accelerate its own portfolio simplification.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": -0.48,
       "rel_volume": 0.63,
-      "trigger_ticker": "RKLB",
-      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
-      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
       "source_news_ids": [
-        "2e966d3483984448",
-        "92562015ee931376"
+        "529e1ea01b425d4d"
       ],
-      "created_at": "2026-06-29T12:39:13.952941-04:00"
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "EMR",
+      "direction": "bullish",
+      "rationale": "Automation pure-play peer to the slimmed-down Honeywell parent (industrial automation/process); RemainCo HON becomes a direct comp, tightening EMR's relative valuation discussion.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -0.48,
+      "rel_volume": 0.79,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "source_news_ids": [
+        "529e1ea01b425d4d"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "ROK",
+      "direction": "bearish",
+      "rationale": "Pure-play automation competitor will face a larger, more focused HON RemainCo concentrated on industrial automation \u2014 increased competitive intensity in factory automation and process control.",
+      "confidence": "medium",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "source_news_ids": [
+        "529e1ea01b425d4d"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "SHOP",
+      "direction": "bullish",
+      "rationale": "Strong Prime Day reads as healthy online discretionary demand; Shopify merchants run competing summer sales and benefit from the same consumer pulse, plus Shopify's Amazon 'Buy with Prime' integration drives incremental GMV.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": -1.43,
+      "rel_volume": 0.91,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "M",
+      "direction": "bearish",
+      "rationale": "Department store discretionary apparel/home spend gets siphoned to Amazon during the promotional window; Macy's already comping negatively is most exposed.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "KSS",
+      "direction": "bearish",
+      "rationale": "Mid-tier department store with weak e-commerce; loses incremental mid-year wallet share to Amazon's deepest-ever promotional event.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "W",
+      "direction": "bearish",
+      "rationale": "Wayfair's home category overlaps heavily with Prime Day home deals; pure-play online home retailer most directly displaced by Amazon's record home/furniture sell-through.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 0.47,
+      "rel_volume": 0.49,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "ROP",
+      "direction": "bullish",
+      "rationale": "Recently transformed industrial-to-software conglomerate; benefits from the 'simplification works' narrative reinforced by HON completing its split.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "HON",
+      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "source_news_ids": [
+        "529e1ea01b425d4d"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "GXO",
+      "direction": "bullish",
+      "rationale": "Largest pure-play contract logistics operator; record Prime Day volumes validate e-commerce fulfillment demand and tighten warehouse capacity utilization industry-wide.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "TTD",
+      "direction": "bullish",
+      "rationale": "Surging Amazon ad ecosystem activity around Prime Day confirms strong programmatic/retail-media ad spend; The Trade Desk is the largest independent DSP benefiting from the same advertiser budget expansion.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 1.91,
+      "rel_volume": 0.78,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "UPS",
+      "direction": "bullish",
+      "rationale": "Even as Amazon insources, the broader e-commerce parcel volume surge during Prime Day spills into UPS's ground network for non-Amazon sellers running competing promos.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": -0.27,
+      "rel_volume": 0.33,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
+    },
+    {
+      "ticker": "ETSY",
+      "direction": "bearish",
+      "rationale": "Discretionary online marketplace whose sellers can't match Prime shipping/pricing during the event; Amazon's blowout pulls forward gift-and-home spend away from Etsy sellers.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "contradicted",
+      "pct_1d": 2.24,
+      "rel_volume": 0.4,
+      "trigger_ticker": "TGT",
+      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
+      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "source_news_ids": [
+        "6f1fffab2bcd2c04"
+      ],
+      "created_at": "2026-06-29T15:05:49.924726-04:00"
     }
   ]
 }

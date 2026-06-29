@@ -1,71 +1,71 @@
 {
-  "generated_at": "2026-06-29T12:39:13.952941-04:00",
+  "generated_at": "2026-06-29T15:05:49.924726-04:00",
   "window": "RTH",
-  "headline": "Regime flips risk-on: CMCSA spin-off + RKLB/IRDM deal ignite space & media; 3 desk takes live.",
+  "headline": "Risk-on holds: HON spin-off reshapes aero/industrial comps; space names still ripping; 4 desk takes live.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.26%, QQQ +2.06%, VXX stress 0.94 \u2014 tape ripping, above 50d, entries chasing but vol is supportive."
+    "line": "SPY +1.58% above 50d, QQQ +2.55%, VXX stress 0.94 \u2014 broad tape green, vol crushed; momentum entries have tailwind."
   },
   "actions": [
     {
-      "ticker": "CMCSA",
+      "ticker": "FRSH",
       "direction": "long",
-      "entry": 24.78,
-      "stop": 22.8,
-      "target": 28.74,
-      "line": "Tax-free NBCU spin catalyst; half size \u2014 late-entry crowding risk after +11% 5d."
+      "entry": 10.2,
+      "stop": 9.94,
+      "target": 10.72,
+      "line": "Bullish momentum, clean risk; half-size \u2014 research neutral but no veto."
     },
     {
       "ticker": "DINO",
       "direction": "long",
-      "entry": 71.69,
-      "stop": 70.35,
-      "target": 74.38,
-      "line": "Clean technicals, low-severity risk flags, Research neutral but signal + setup align \u2014 full size."
+      "entry": 71.38,
+      "stop": 70.6,
+      "target": 72.95,
+      "line": "Bullish signal, low-severity risk flags; half-size \u2014 research neutral, no veto."
     },
     {
-      "ticker": "PBF",
+      "ticker": "WRBY",
       "direction": "long",
-      "entry": 46.35,
-      "stop": 45.6,
-      "target": 47.85,
-      "line": "Refiner momentum play; quarter size only \u2014 exhaustion flags after +18% 5d, weak Research."
+      "entry": 30.22,
+      "stop": 29.09,
+      "target": 32.48,
+      "line": "Signal + research agree but medium risk flags; quarter-size \u2014 crowded after 12% run."
     }
   ],
   "watch": [
     {
-      "ticker": "WBD",
+      "ticker": "GE",
       "type": "ripple",
-      "line": "High-confidence CMCSA read-through: spin validates SOTP structure, re-rates WBD's discount."
+      "line": "HON aero spin-off forces sell-side to re-mark pure-play aero multiples \u2014 GE Aerospace direct beneficiary. High conf."
+    },
+    {
+      "ticker": "BBY",
+      "type": "ripple",
+      "line": "Amazon Prime Day blowout cannibalizes Best Buy's mid-year electronics sell-through & TV/laptop margin. High conf bearish."
+    },
+    {
+      "ticker": "WMT",
+      "type": "ripple",
+      "line": "Walmart Deals event likely under-delivered vs Amazon's record Prime Day \u2014 e-commerce share narrative pressured. High conf bearish."
     },
     {
       "ticker": "IRDM",
-      "type": "catalyst",
-      "line": "+22.4% on RKLB acquisition announcement \u2014 unusual volume (3.56x) confirms conviction."
+      "type": "mover",
+      "line": "+25% on 5.15\u00d7 rel vol, MACD bullish \u2014 top mover this scan; space theme in full extension."
     },
     {
-      "ticker": "GSAT",
+      "ticker": "RTX",
       "type": "ripple",
-      "line": "Direct IRDM comp; acquisition multiple sets valuation floor, revives MSS satellite M&A spec."
-    },
-    {
-      "ticker": "GOOGL",
-      "type": "catalyst",
-      "line": "+4.6% \u2014 Alphabet added to the Dow; index-rebalance buying flow not fully absorbed."
-    },
-    {
-      "ticker": "CHTR",
-      "type": "ripple",
-      "line": "CMCSA RemainCo becomes cleaner broadband pure-play, lifts Charter's re-rate multiple."
+      "line": "HON aero spinco intensifies aero-segment SOTP re-rate for Pratt/Collins. Medium conf bullish."
     }
   ],
   "changed": [
-    "Regime flipped from mixed to risk_on (SPY +1.26%, QQQ +2.06%)",
-    "Three desk takes live vs. zero last scan",
-    "Leadership rotated: storage/semi wreckage replaced by space (IRDM/RKLB) and media spin (CMCSA) as dominant themes"
+    "Catalyst leadership shifted from CMCSA spin-off to HON aero spin-off, generating 8 ripple calls across aero/industrial/retail",
+    "Desk takes expanded from 3 to 4 \u2014 EBAY added this scan",
+    "Space names (IRDM, RKLB) remain top movers but no longer the primary catalyst driver"
   ],
   "caveats": [
-    "RTH scan as of 12:39 ET 2026-06-29 \u2014 prices are point-in-time; fast-moving names (IRDM +22%, CMCSA) may have gapped further from desk entry levels.",
-    "CMCSA and PBF entries carry momentum-exhaustion risk flagged by desk; size discipline (half/quarter) is load-bearing here."
+    "RTH scan as of 15:05 ET 2026-06-29 \u2014 prices may be stale by minutes; verify before entry, especially on extended movers like IRDM (+25%) and VSAT (+22%).",
+    "HON ripple calls (GE, RTX, TDG, MMM, EMR, ROK) are not priced in per model but spin-off is a known event \u2014 check if aero comps already moved before fading or chasing."
   ]
 }
