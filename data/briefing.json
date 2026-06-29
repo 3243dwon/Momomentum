@@ -1,44 +1,45 @@
 {
-  "generated_at": "2026-06-29T00:23:19.756256-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Overnight: ON/WDC/STX damage persists; crude >$70 on Iran clash; mixed tape, no desk takes.",
+  "generated_at": "2026-06-29T07:09:14.805239-04:00",
+  "window": "AH_PRE",
+  "headline": "Pre-mkt mixed: ON/WDC/STX still bleeding; US-Iran ceasefire drains oil risk premium \u2014 no desk takes.",
   "market_state": {
     "regime": "mixed",
-    "line": "SPY -0.54%, QQQ -1.49%, SPY below 50d; VXX stress ~flat (0.98). Tech/semis leading down; oil geopolitics the only bid."
+    "line": "SPY -0.54%, QQQ -1.49%; SPY below 50d; VXX stress ~flat (0.98x). Iran ceasefire = tail risk off, but tech tape still weak \u2014 don't buy dips b"
   },
   "actions": [],
   "watch": [
     {
       "ticker": "ON",
       "type": "mover",
-      "line": "-23.82% on 3.3x vol \u2014 overnight damage holding; watch for exhaustion or dead-cat setup at open."
+      "line": "-23.82% on 3.31x vol \u2014 catastrophic gap, watch for dead-cat bounce or capitulation continuation pre-open."
     },
     {
       "ticker": "WDC",
       "type": "mover",
-      "line": "-13.12% on 2.25x vol, MACD bearish; storage sector pressure alongside STX."
+      "line": "-13.12%, 2.25x vol, MACD bearish \u2014 storage sector in freefall alongside STX; supply/demand fears."
     },
     {
       "ticker": "STX",
       "type": "mover",
-      "line": "-12.49% on 3.1x vol, MACD bearish; storage selloff has legs, watch sector contagion."
+      "line": "-12.49%, 3.1x vol, MACD bearish \u2014 high-vol HDD pair trade with WDC; both flagging unusual volume."
     },
     {
       "ticker": "MRNA",
       "type": "mover",
-      "line": "+12.64% on 2x vol, overbought flag \u2014 fading catalyst risk into open."
+      "line": "+12.64%, 2.01x vol, overbought \u2014 bio catalyst move; watch for fade as overbought signal flashes."
     },
     {
       "ticker": "FCEL",
-      "type": "mover",
-      "line": "+22.16%, MACD bullish \u2014 energy/alt-energy catching crude bid; watch if Iran risk premium sustains."
+      "type": "macro",
+      "line": "+22.16%, MACD bullish \u2014 Iran ceasefire removes crude risk premium; alternative energy names may see rotation."
     }
   ],
   "changed": [
-    "No meaningful change from weekend scan \u2014 ON/WDC/STX damage and Gulf escalation oil bid remain the same drivers; overnight scan confirms continuation, no new takes or catalysts added."
+    "Iran-US ceasefire removes crude risk premium flagged in prior headline \u2014 oil tail risk now off.",
+    "Regime context unchanged (mixed), but geopolitical macro driver has flipped from risk-off to risk-on catalyst."
   ],
   "caveats": [
-    "OVERNIGHT scan window (2026-06-29 ~00:23 ET) \u2014 prices as of scan time, pre-RTH; spreads wide, moves may gap significantly at open.",
-    "No desk takes this scan; crude/Iran macro event is the key wildcard \u2014 E&P and tanker names not in scan data but likely to see elevated opens."
+    "AH/Pre-market scan window (as of 07:09 ET 2026-06-29); prices are stale \u2014 spreads wide, moves may gap further or reverse at RTH open.",
+    "No desk takes this scan; all watch names are observational only \u2014 unusual moves with no vetted entry/stop/target."
   ]
 }

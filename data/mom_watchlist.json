@@ -6,11 +6,11 @@
       "code": "600276.SH",
       "yahoo": "600276.SS",
       "direction": "long",
-      "thesis_zh": "美股大药企LLY+7%、SYK+5.1%继续走强，A股创新药承接防御资金的逻辑未变，沿用看多。",
-      "confidence": "medium",
+      "thesis_zh": "美股LLY+7%、SYK+5.1%继续走强，A股创新药承接防御资金逻辑未变，已浮盈6.6%沿用看多。",
+      "confidence": "high",
       "first_seen": "2026-06-23",
       "last_seen": "2026-06-29",
-      "times_recommended": 16,
+      "times_recommended": 17,
       "entry_price": 49.36000061035156,
       "entry_date": "2026-06-22",
       "currency": "CNY",
@@ -37,11 +37,11 @@
       "code": "603259.SH",
       "yahoo": "603259.SS",
       "direction": "long",
-      "thesis_zh": "今日MRNA+12.6%、LLY+7%、VEEV+8.3%再度普涨，CXO映射逻辑延续，已浮盈10.5%沿用看多。",
-      "confidence": "medium",
+      "thesis_zh": "MRNA+12.6%、VEEV+8.3%、LLY+7%覆盖CXO全链条客户，映射逻辑延续，已浮盈10.5%沿用看多。",
+      "confidence": "high",
       "first_seen": "2026-06-24",
       "last_seen": "2026-06-29",
-      "times_recommended": 13,
+      "times_recommended": 14,
       "entry_price": 106.30999755859375,
       "entry_date": "2026-06-23",
       "currency": "CNY",
@@ -79,7 +79,7 @@
         }
       },
       "status": "pending",
-      "archived": false
+      "archived": true
     },
     {
       "id": "7c1ccd3c9021",
@@ -112,11 +112,11 @@
       "code": "513180.SH",
       "yahoo": "513180.SS",
       "direction": "short",
-      "thesis_zh": "美股半导体存储链ON/WDC/STX集体暴跌，叠加油价上行强化美元，港股科技双重承压，沿用看空。",
-      "confidence": "medium",
+      "thesis_zh": "美股存储链ON/WDC/STX集体崩盘，港股科技短线情绪承压，沿用看空。",
+      "confidence": "high",
       "first_seen": "2026-06-17",
       "last_seen": "2026-06-29",
-      "times_recommended": 29,
+      "times_recommended": 30,
       "entry_price": 0.5899999737739563,
       "entry_date": "2026-06-16",
       "currency": "CNY",
@@ -135,6 +135,55 @@
         }
       },
       "status": "hit",
+      "archived": false
+    },
+    {
+      "id": "4a8a5706495d",
+      "name_zh": "中国国航",
+      "code": "601111.SH",
+      "yahoo": "601111.SS",
+      "direction": "long",
+      "thesis_zh": "美伊停火、油价风险溢价消退，航空燃油成本下行预期强化，对应美股DAL/LUV/UAL受益逻辑，A股航司是最直接映射，沿用看多并加码。",
+      "confidence": "high",
+      "first_seen": "2026-06-18",
+      "last_seen": "2026-06-29",
+      "times_recommended": 3,
+      "entry_price": 6.46999979019165,
+      "entry_date": "2026-06-17",
+      "currency": "CNY",
+      "evaluations": {
+        "3d": {
+          "date": "2026-06-23",
+          "price": 6.12,
+          "return_pct": -5.41,
+          "signed_return_pct": -5.41
+        },
+        "5d": {
+          "date": "2026-06-25",
+          "price": 6.54,
+          "return_pct": 1.08,
+          "signed_return_pct": 1.08
+        }
+      },
+      "status": "hit",
+      "archived": false
+    },
+    {
+      "id": "587c9a0991e6",
+      "name_zh": "中国海洋石油",
+      "code": "0883.HK",
+      "yahoo": "0883.HK",
+      "direction": "short",
+      "thesis_zh": "**逻辑反转：**美伊停火、原油风险溢价快速消退，前期看多逻辑失效，港股纯油气龙头转为承压，调向看空。",
+      "confidence": "high",
+      "first_seen": "2026-06-29",
+      "last_seen": "2026-06-29",
+      "times_recommended": 1,
+      "entry_price": 20.860000610351562,
+      "entry_date": "2026-06-26",
+      "currency": "HKD",
+      "evaluations": {},
+      "status": "pending",
       "archived": false
     },
     {
@@ -197,37 +246,6 @@
         }
       },
       "status": "miss",
-      "archived": false
-    },
-    {
-      "id": "4a8a5706495d",
-      "name_zh": "中国国航",
-      "code": "601111.SH",
-      "yahoo": "601111.SS",
-      "direction": "long",
-      "thesis_zh": "原油价格大幅下跌、未来几月料压低航空燃油成本，对应美股DAL/LUV受益逻辑，A股航空龙头是最直接映射（新增）。",
-      "confidence": "medium",
-      "first_seen": "2026-06-18",
-      "last_seen": "2026-06-25",
-      "times_recommended": 2,
-      "entry_price": 6.46999979019165,
-      "entry_date": "2026-06-17",
-      "currency": "CNY",
-      "evaluations": {
-        "3d": {
-          "date": "2026-06-23",
-          "price": 6.12,
-          "return_pct": -5.41,
-          "signed_return_pct": -5.41
-        },
-        "5d": {
-          "date": "2026-06-25",
-          "price": 6.54,
-          "return_pct": 1.08,
-          "signed_return_pct": 1.08
-        }
-      },
-      "status": "hit",
       "archived": false
     },
     {
@@ -485,5 +503,5 @@
       "archived": false
     }
   ],
-  "generated_at": "2026-06-29T04:27:46.705459+00:00"
+  "generated_at": "2026-06-29T11:13:16.669508+00:00"
 }
