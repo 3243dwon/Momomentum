@@ -1,441 +1,168 @@
 {
-  "generated_at": "2026-06-29T15:05:49.924726-04:00",
-  "event_count": 2,
-  "prediction_count": 17,
-  "not_yet_priced_in": 16,
+  "generated_at": "2026-06-29T17:38:09.022295-04:00",
+  "event_count": 1,
+  "prediction_count": 6,
+  "not_yet_priced_in": 5,
   "events": [
     {
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
       "primary_drivers": [
-        "Creation of a new aerospace pure-play comparable that re-rates peer multiples",
-        "Conglomerate breakup precedent pressures other multi-industrial holdcos to follow",
-        "Index/ETF rebalancing flows around the spin and reverse split"
+        "Conglomerate-discount unlock via spin/split sets a template for peers",
+        "Activist/strategic pressure on other legacy media to separate linear-TV decay from growth assets",
+        "Re-rating of pure-play streaming and pure-play cable comps"
       ],
       "beneficiaries": [
         {
-          "ticker": "GE",
-          "rationale": "Aerospace pure-play (GE Aerospace) is the direct comp for the new Honeywell Aerospace spinco; fresh listing forces sell-side to mark GE multiples to the new pure-play benchmark and validates GE's own breakup thesis.",
+          "ticker": "DIS",
+          "rationale": "Benzinga headline explicitly poses the question \u2014 Disney is the most obvious next candidate to spin/split linear networks (ABC/cable) from Parks + streaming. Activists (Peltz/Trian history) have already pushed this; Comcast's move puts fresh pressure on Iger to act.",
           "confidence": "high",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Pratt & Whitney/Collins competes directly with Honeywell Aerospace in avionics and APUs; a focused aerospace spinco intensifies competitive read-through and re-rates RTX's aero segment SOTP value.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TDG",
-          "rationale": "Aerospace aftermarket pure-play; new standalone Honeywell Aerospace comp gives investors another high-multiple aero benchmark, supporting TDG's premium multiple narrative.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "MMM",
-          "rationale": "Last remaining unbroken diversified industrial conglomerate; HON breakup completion increases activist/strategic pressure for MMM to accelerate its own portfolio simplification.",
-          "confidence": "medium",
-          "horizon": "months"
-        },
-        {
-          "ticker": "EMR",
-          "rationale": "Automation pure-play peer to the slimmed-down Honeywell parent (industrial automation/process); RemainCo HON becomes a direct comp, tightening EMR's relative valuation discussion.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "ROP",
-          "rationale": "Recently transformed industrial-to-software conglomerate; benefits from the 'simplification works' narrative reinforced by HON completing its split.",
-          "confidence": "low",
-          "horizon": "weeks"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "ROK",
-          "rationale": "Pure-play automation competitor will face a larger, more focused HON RemainCo concentrated on industrial automation \u2014 increased competitive intensity in factory automation and process control.",
-          "confidence": "medium",
-          "horizon": "months"
-        }
-      ],
-      "trigger_ticker": "HON",
-      "source_news_ids": [
-        "529e1ea01b425d4d"
-      ],
-      "headlines": [
-        "Honeywell Completes Aerospace Spin-Off And Reverse Split: What Shareholders Need To Know"
-      ],
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know"
-    },
-    {
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "primary_drivers": [
-        "Amazon share-gain in mid-year promotional retail spend pressures big-box and mall peers",
-        "Strong Prime Day volume = read-through to Amazon's logistics/fulfillment ecosystem and ad-tech sellers",
-        "Confirmation of resilient US discretionary consumer lifts pure-play e-commerce enablers"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "SHOP",
-          "rationale": "Strong Prime Day reads as healthy online discretionary demand; Shopify merchants run competing summer sales and benefit from the same consumer pulse, plus Shopify's Amazon 'Buy with Prime' integration drives incremental GMV.",
-          "confidence": "medium",
           "horizon": "days"
         },
         {
-          "ticker": "GXO",
-          "rationale": "Largest pure-play contract logistics operator; record Prime Day volumes validate e-commerce fulfillment demand and tighten warehouse capacity utilization industry-wide.",
-          "confidence": "low",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "TTD",
-          "rationale": "Surging Amazon ad ecosystem activity around Prime Day confirms strong programmatic/retail-media ad spend; The Trade Desk is the largest independent DSP benefiting from the same advertiser budget expansion.",
-          "confidence": "low",
+          "ticker": "WBD",
+          "rationale": "Warner Bros Discovery is already pursuing a split of its streaming/studios from its linear-TV/cable-networks unit. Comcast validating the same playbook re-rates WBD's sum-of-the-parts story and accelerates investor focus on its own separation timeline.",
+          "confidence": "high",
           "horizon": "days"
         },
         {
-          "ticker": "UPS",
-          "rationale": "Even as Amazon insources, the broader e-commerce parcel volume surge during Prime Day spills into UPS's ground network for non-Amazon sellers running competing promos.",
+          "ticker": "CHTR",
+          "rationale": "If Comcast's cable arm is spun as a stand-alone, it creates a clearer pure-play comp for Charter and could prompt M&A speculation about cable consolidation between SpinCo and Charter.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "AMCX",
+          "rationale": "Pure-play cable-network owner \u2014 if SpinCo separates the declining linear bundle, AMC Networks' standalone valuation framework gets refreshed (though direction is ambiguous; could re-rate either way).",
           "confidence": "low",
           "horizon": "days"
         }
       ],
       "losers": [
         {
-          "ticker": "WMT",
-          "rationale": "Walmart ran its own competing 'Walmart Deals' event against Prime Day; Amazon's record blowout implies Walmart's event under-delivered on share, pressuring its e-commerce growth narrative.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "BBY",
-          "rationale": "Consumer electronics is a top Prime Day category; Amazon's record take directly cannibalizes Best Buy's mid-year electronics sell-through and TV/laptop margin.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "M",
-          "rationale": "Department store discretionary apparel/home spend gets siphoned to Amazon during the promotional window; Macy's already comping negatively is most exposed.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "KSS",
-          "rationale": "Mid-tier department store with weak e-commerce; loses incremental mid-year wallet share to Amazon's deepest-ever promotional event.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "W",
-          "rationale": "Wayfair's home category overlaps heavily with Prime Day home deals; pure-play online home retailer most directly displaced by Amazon's record home/furniture sell-through.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ETSY",
-          "rationale": "Discretionary online marketplace whose sellers can't match Prime shipping/pricing during the event; Amazon's blowout pulls forward gift-and-home spend away from Etsy sellers.",
+          "ticker": "NFLX",
+          "rationale": "If Comcast's streaming/Peacock assets get re-grouped into a more focused, better-capitalized growth vehicle alongside WBD's potential streaming SpinCo, the streaming competitive set becomes more rational and aggressive \u2014 marginal incremental competition for Netflix's subscriber growth.",
           "confidence": "low",
-          "horizon": "days"
+          "horizon": "months"
+        },
+        {
+          "ticker": "T",
+          "rationale": "AT&T already executed its own media spin (WBD) \u2014 Comcast doing the same removes AT&T's relative 'cleaner story' advantage among legacy carriers/media and could shift relative fund flows toward the new SpinCos.",
+          "confidence": "low",
+          "horizon": "weeks"
         }
       ],
-      "trigger_ticker": "TGT",
+      "trigger_ticker": "CMCSA",
       "source_news_ids": [
-        "6f1fffab2bcd2c04"
+        "647b2db397266acb"
       ],
       "headlines": [
-        "Amazon Stock Surges 4%: Record $26.4 Billion Prime Day Blowout Crushes Wall Street Estimates"
+        "Comcast Stock Soars On Split News, Does Disney Need To Make A Similar Move?"
       ],
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates"
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move"
     }
   ],
   "predictions": [
     {
-      "ticker": "GE",
+      "ticker": "DIS",
       "direction": "bullish",
-      "rationale": "Aerospace pure-play (GE Aerospace) is the direct comp for the new Honeywell Aerospace spinco; fresh listing forces sell-side to mark GE multiples to the new pure-play benchmark and validates GE's own breakup thesis.",
-      "confidence": "high",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": 1.28,
-      "rel_volume": 0.66,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
-      "source_news_ids": [
-        "529e1ea01b425d4d"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "WMT",
-      "direction": "bearish",
-      "rationale": "Walmart ran its own competing 'Walmart Deals' event against Prime Day; Amazon's record blowout implies Walmart's event under-delivered on share, pressuring its e-commerce growth narrative.",
+      "rationale": "Benzinga headline explicitly poses the question \u2014 Disney is the most obvious next candidate to spin/split linear networks (ABC/cable) from Parks + streaming. Activists (Peltz/Trian history) have already pushed this; Comcast's move puts fresh pressure on Iger to act.",
       "confidence": "high",
       "horizon": "days",
       "priced_in": "no",
-      "pct_1d": -0.47,
-      "rel_volume": 0.52,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "pct_1d": -0.14,
+      "rel_volume": 0.9,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
       "source_news_ids": [
-        "6f1fffab2bcd2c04"
+        "647b2db397266acb"
       ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
     },
     {
-      "ticker": "BBY",
-      "direction": "bearish",
-      "rationale": "Consumer electronics is a top Prime Day category; Amazon's record take directly cannibalizes Best Buy's mid-year electronics sell-through and TV/laptop margin.",
+      "ticker": "WBD",
+      "direction": "bullish",
+      "rationale": "Warner Bros Discovery is already pursuing a split of its streaming/studios from its linear-TV/cable-networks unit. Comcast validating the same playbook re-rates WBD's sum-of-the-parts story and accelerates investor focus on its own separation timeline.",
       "confidence": "high",
       "horizon": "days",
       "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
+      "pct_1d": 1.65,
+      "rel_volume": 0.87,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
       "source_news_ids": [
-        "6f1fffab2bcd2c04"
+        "647b2db397266acb"
       ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
     },
     {
-      "ticker": "RTX",
+      "ticker": "CHTR",
       "direction": "bullish",
-      "rationale": "Pratt & Whitney/Collins competes directly with Honeywell Aerospace in avionics and APUs; a focused aerospace spinco intensifies competitive read-through and re-rates RTX's aero segment SOTP value.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": -0.06,
-      "rel_volume": 0.35,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
-      "source_news_ids": [
-        "529e1ea01b425d4d"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "TDG",
-      "direction": "bullish",
-      "rationale": "Aerospace aftermarket pure-play; new standalone Honeywell Aerospace comp gives investors another high-multiple aero benchmark, supporting TDG's premium multiple narrative.",
+      "rationale": "If Comcast's cable arm is spun as a stand-alone, it creates a clearer pure-play comp for Charter and could prompt M&A speculation about cable consolidation between SpinCo and Charter.",
       "confidence": "medium",
       "horizon": "weeks",
       "priced_in": "no",
       "pct_1d": null,
       "rel_volume": null,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
       "source_news_ids": [
-        "529e1ea01b425d4d"
+        "647b2db397266acb"
       ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
     },
     {
-      "ticker": "MMM",
+      "ticker": "AMCX",
       "direction": "bullish",
-      "rationale": "Last remaining unbroken diversified industrial conglomerate; HON breakup completion increases activist/strategic pressure for MMM to accelerate its own portfolio simplification.",
-      "confidence": "medium",
+      "rationale": "Pure-play cable-network owner \u2014 if SpinCo separates the declining linear bundle, AMC Networks' standalone valuation framework gets refreshed (though direction is ambiguous; could re-rate either way).",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
+      "source_news_ids": [
+        "647b2db397266acb"
+      ],
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
+    },
+    {
+      "ticker": "NFLX",
+      "direction": "bearish",
+      "rationale": "If Comcast's streaming/Peacock assets get re-grouped into a more focused, better-capitalized growth vehicle alongside WBD's potential streaming SpinCo, the streaming competitive set becomes more rational and aggressive \u2014 marginal incremental competition for Netflix's subscriber growth.",
+      "confidence": "low",
       "horizon": "months",
       "priced_in": "no",
-      "pct_1d": -0.48,
-      "rel_volume": 0.63,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "pct_1d": 0.18,
+      "rel_volume": 1.11,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
       "source_news_ids": [
-        "529e1ea01b425d4d"
+        "647b2db397266acb"
       ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
     },
     {
-      "ticker": "EMR",
-      "direction": "bullish",
-      "rationale": "Automation pure-play peer to the slimmed-down Honeywell parent (industrial automation/process); RemainCo HON becomes a direct comp, tightening EMR's relative valuation discussion.",
-      "confidence": "medium",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": -0.48,
-      "rel_volume": 0.79,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
-      "source_news_ids": [
-        "529e1ea01b425d4d"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "ROK",
+      "ticker": "T",
       "direction": "bearish",
-      "rationale": "Pure-play automation competitor will face a larger, more focused HON RemainCo concentrated on industrial automation \u2014 increased competitive intensity in factory automation and process control.",
-      "confidence": "medium",
-      "horizon": "months",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
-      "source_news_ids": [
-        "529e1ea01b425d4d"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "SHOP",
-      "direction": "bullish",
-      "rationale": "Strong Prime Day reads as healthy online discretionary demand; Shopify merchants run competing summer sales and benefit from the same consumer pulse, plus Shopify's Amazon 'Buy with Prime' integration drives incremental GMV.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": -1.43,
-      "rel_volume": 0.91,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "M",
-      "direction": "bearish",
-      "rationale": "Department store discretionary apparel/home spend gets siphoned to Amazon during the promotional window; Macy's already comping negatively is most exposed.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "KSS",
-      "direction": "bearish",
-      "rationale": "Mid-tier department store with weak e-commerce; loses incremental mid-year wallet share to Amazon's deepest-ever promotional event.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "W",
-      "direction": "bearish",
-      "rationale": "Wayfair's home category overlaps heavily with Prime Day home deals; pure-play online home retailer most directly displaced by Amazon's record home/furniture sell-through.",
-      "confidence": "medium",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": 0.47,
-      "rel_volume": 0.49,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "ROP",
-      "direction": "bullish",
-      "rationale": "Recently transformed industrial-to-software conglomerate; benefits from the 'simplification works' narrative reinforced by HON completing its split.",
+      "rationale": "AT&T already executed its own media spin (WBD) \u2014 Comcast doing the same removes AT&T's relative 'cleaner story' advantage among legacy carriers/media and could shift relative fund flows toward the new SpinCos.",
       "confidence": "low",
       "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "HON",
-      "event_summary": "Honeywell completed the spin-off of its Aerospace business and executed a reverse split, creating a new standalone aerospace pure-play and re-rating the remaining industrial/automation parent.",
-      "news_url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
+      "priced_in": "yes",
+      "pct_1d": -4.01,
+      "rel_volume": 1.3,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a corporate split (separating cable/content businesses), and the stock is rallying ~4.6% on 3x volume, prompting market speculation about similar value-unlock moves at other media conglomerates.",
+      "news_url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
       "source_news_ids": [
-        "529e1ea01b425d4d"
+        "647b2db397266acb"
       ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "GXO",
-      "direction": "bullish",
-      "rationale": "Largest pure-play contract logistics operator; record Prime Day volumes validate e-commerce fulfillment demand and tighten warehouse capacity utilization industry-wide.",
-      "confidence": "low",
-      "horizon": "weeks",
-      "priced_in": "no",
-      "pct_1d": null,
-      "rel_volume": null,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "TTD",
-      "direction": "bullish",
-      "rationale": "Surging Amazon ad ecosystem activity around Prime Day confirms strong programmatic/retail-media ad spend; The Trade Desk is the largest independent DSP benefiting from the same advertiser budget expansion.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": 1.91,
-      "rel_volume": 0.78,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "UPS",
-      "direction": "bullish",
-      "rationale": "Even as Amazon insources, the broader e-commerce parcel volume surge during Prime Day spills into UPS's ground network for non-Amazon sellers running competing promos.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "no",
-      "pct_1d": -0.27,
-      "rel_volume": 0.33,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
-    },
-    {
-      "ticker": "ETSY",
-      "direction": "bearish",
-      "rationale": "Discretionary online marketplace whose sellers can't match Prime shipping/pricing during the event; Amazon's blowout pulls forward gift-and-home spend away from Etsy sellers.",
-      "confidence": "low",
-      "horizon": "days",
-      "priced_in": "contradicted",
-      "pct_1d": 2.24,
-      "rel_volume": 0.4,
-      "trigger_ticker": "TGT",
-      "event_summary": "Amazon's Prime Day generated a record $26.4B, crushing estimates and signaling Amazon is taking incremental share of US discretionary retail spend during the mid-year promo window.",
-      "news_url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-      "source_news_ids": [
-        "6f1fffab2bcd2c04"
-      ],
-      "created_at": "2026-06-29T15:05:49.924726-04:00"
+      "created_at": "2026-06-29T17:38:09.022295-04:00"
     }
   ]
 }

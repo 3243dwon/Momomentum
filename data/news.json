@@ -1,757 +1,500 @@
 {
-  "generated_at": "2026-06-29T15:05:49.924726-04:00",
+  "generated_at": "2026-06-29T17:38:09.022295-04:00",
   "ticker_news": {
-    "GEV": [
+    "GOOG": [
       {
-        "id": "e90ca97de8bda54a",
+        "id": "f422d14b9be881c8",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GEV",
+        "ticker": "GOOG",
         "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167719/10-industrials-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
+        "title": "Prudent Investors Pay Attention To News From Korea; Buying On Talks From Iran After Strikes",
+        "url": "https://www.benzinga.com/Opinion/26/06/60175404/prudent-investors-pay-attention-to-news-from-korea-buying-on-talks-from-iran-after-strikes",
+        "published_at": "2026-06-29T21:21:18+00:00",
+        "type": "macro_geopol",
         "impact": "low",
-        "dedup_group": "whale_alerts_industrials_jun29",
+        "dedup_group": "korea_iran_geopolitical_context",
+        "tickers_mentioned": [
+          "TSLA",
+          "GOOG"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "NVDA": [
+      {
+        "id": "f422d14b9be881c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Prudent Investors Pay Attention To News From Korea; Buying On Talks From Iran After Strikes",
+        "url": "https://www.benzinga.com/Opinion/26/06/60175404/prudent-investors-pay-attention-to-news-from-korea-buying-on-talks-from-iran-after-strikes",
+        "published_at": "2026-06-29T21:21:18+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "korea_iran_geopolitical_context",
+        "tickers_mentioned": [
+          "TSLA",
+          "GOOG"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e2d4dc7218d52da9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "'AI Equals Memory': Why The AI Boom Now Runs Through Micron, SK Hynix And Samsung",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60173329/ai-equals-memory-why-the-ai-boom-now-runs-through-micron-sk-hynix-and-samsung",
+        "published_at": "2026-06-29T20:10:19+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ai_memory_chain_thesis",
+        "tickers_mentioned": [
+          "MU",
+          "SK",
+          "SSNLF"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f4e0907b4a39781c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Big Shorts In Palantir, Rocket Lab, MSTR Crush S&P 500 In June's Hottest Trades",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/60171950/short-selling-palantir-rocket-lab-mstr-crush-sp-500",
+        "published_at": "2026-06-29T19:38:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "june_shorts_crush_trades",
+        "tickers_mentioned": [
+          "PLTR",
+          "RKLB",
+          "MSTR"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ee865cb98ec3aade",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "NVDA",
+        "scope": "ticker",
+        "title": "Super Micro Taiwan Offices Raided \u2014 Stock Takes Another Hit",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60171652/super-micro-taiwan-offices-raided-stock-takes-another-hit",
+        "published_at": "2026-06-29T19:30:35+00:00",
+        "type": "litigation",
+        "impact": "high",
+        "dedup_group": "smci_taiwan_raid",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "TSLA": [
+      {
+        "id": "f422d14b9be881c8",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Prudent Investors Pay Attention To News From Korea; Buying On Talks From Iran After Strikes",
+        "url": "https://www.benzinga.com/Opinion/26/06/60175404/prudent-investors-pay-attention-to-news-from-korea-buying-on-talks-from-iran-after-strikes",
+        "published_at": "2026-06-29T21:21:18+00:00",
+        "type": "macro_geopol",
+        "impact": "low",
+        "dedup_group": "korea_iran_geopolitical_context",
+        "tickers_mentioned": [
+          "TSLA",
+          "GOOG"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "CMCSA": [
+      {
+        "id": "647b2db397266acb",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CMCSA",
+        "scope": "ticker",
+        "title": "Comcast Stock Soars On Split News, Does Disney Need To Make A Similar Move?",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60175253/comcast-stock-soars-on-split-news-does-disney-need-to-make-a-similar-move",
+        "published_at": "2026-06-29T21:13:10+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "cmcsa_stock_split_news",
+        "tickers_mentioned": [
+          "DIS"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "ASTS": [
+      {
+        "id": "d727c44975493b72",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ASTS",
+        "scope": "ticker",
+        "title": "Telecom Stocks Face Heavy Selling Pressure Monday: Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60172872/telecom-stocks-face-heavy-selling-pressure-monday-heres-why",
+        "published_at": "2026-06-29T20:02:51+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "telecom_sector_selling_pressure",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "RDW": [
+    "RKLB": [
       {
-        "id": "e90ca97de8bda54a",
+        "id": "d727c44975493b72",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RDW",
+        "ticker": "RKLB",
         "scope": "ticker",
-        "title": "10 Industrials Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167719/10-industrials-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_industrials_jun29",
+        "title": "Telecom Stocks Face Heavy Selling Pressure Monday: Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60172872/telecom-stocks-face-heavy-selling-pressure-monday-heres-why",
+        "published_at": "2026-06-29T20:02:51+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "telecom_sector_selling_pressure",
         "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f4e0907b4a39781c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Big Shorts In Palantir, Rocket Lab, MSTR Crush S&P 500 In June's Hottest Trades",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/60171950/short-selling-palantir-rocket-lab-mstr-crush-sp-500",
+        "published_at": "2026-06-29T19:38:39+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "june_shorts_crush_trades",
+        "tickers_mentioned": [
+          "PLTR",
+          "RKLB",
+          "MSTR"
+        ],
         "route_to_synthesis": false
       }
     ],
-    "APLD": [
+    "VZ": [
       {
-        "id": "643c73a9efeaa25b",
+        "id": "d727c44975493b72",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "APLD",
+        "ticker": "VZ",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "CBRS": [
-      {
-        "id": "643c73a9efeaa25b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "CBRS",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
+        "title": "Telecom Stocks Face Heavy Selling Pressure Monday: Here's Why",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60172872/telecom-stocks-face-heavy-selling-pressure-monday-heres-why",
+        "published_at": "2026-06-29T20:02:51+00:00",
+        "type": "macro_econ",
+        "impact": "medium",
+        "dedup_group": "telecom_sector_selling_pressure",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "INTC": [
       {
-        "id": "643c73a9efeaa25b",
+        "id": "a028a784b3f3972c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "INTC",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "KEEL": [
-      {
-        "id": "643c73a9efeaa25b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "KEEL",
-        "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
+        "title": "Intel Shares Rise Nearly 8% After Key Trading Signal",
+        "url": "https://www.benzinga.com/Opinion/26/06/60175704/intel-shares-rise-nearly-8-percent-after-key-trading-signal",
+        "published_at": "2026-06-29T21:34:40+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "intc_trading_signal_rally",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "MSTR": [
       {
-        "id": "643c73a9efeaa25b",
+        "id": "b8ef7567bce4c0b4",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
+        "title": "Michael Saylor Says Strategy Will Stay Disciplined On MSTR Issuance, But Peter Schiff Warns It Has Become A 'Bitcoin Seller'",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60172540/michael-saylor-says-strategy-will-stay-disciplined-on-mstr-issuance-but-peter-schiff-warns-it-has-become-a-bitcoin-seller",
+        "published_at": "2026-06-29T19:56:18+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
+        "dedup_group": "mstr_saylor_schiff_bitcoin_debate",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
+      },
       {
-        "id": "643c73a9efeaa25b",
+        "id": "f4e0907b4a39781c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SNDK",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "10 Information Technology Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167718/10-information-technology-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
+        "title": "Big Shorts In Palantir, Rocket Lab, MSTR Crush S&P 500 In June's Hottest Trades",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/60171950/short-selling-palantir-rocket-lab-mstr-crush-sp-500",
+        "published_at": "2026-06-29T19:38:39+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "whale_alerts_tech_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ALAB": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ALAB",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
+        "dedup_group": "june_shorts_crush_trades",
         "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ASTS": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ASTS",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "GLW": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GLW",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "GOOGL": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
+          "PLTR",
+          "RKLB",
+          "MSTR"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "39d36417628399f5",
+        "id": "16cf236055342151",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GOOGL",
+        "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Hedge Funds Cut Magnificent Seven Exposure\u2014Which ETFs Are Most At Risk?",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60166681/hedge-funds-cut-magnificent-seven-exposure-which-etfs-are-most-at-risk",
-        "published_at": "2026-06-29T17:17:03+00:00",
-        "type": "analyst",
+        "title": "Bitcoin Reclaims $60,000 As Ethereum, XRP, Dogecoin Rise After Strategy Unveils BTC Monetization Plan",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60171180/bitcoin-reclaims-60000-as-ethereum-xrp-dogecoin-rise-after-strategy-unveils-btc-monetization-plan",
+        "published_at": "2026-06-29T19:16:19+00:00",
+        "type": "product",
         "impact": "medium",
-        "dedup_group": "hedge_funds_mag_7_exposure_cuts",
+        "dedup_group": "mstr_bitcoin_monetization_plan",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "542f8654ed2a8083",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "GOOGL",
-        "scope": "ticker",
-        "title": "AI Stocks Are On Sale \u2014 Dan Ives Calls It Another 'Gut Check' For Tech Investors",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60166403/ai-stocks-on-sale-dan-ives-gut-check-tech-investors",
-        "published_at": "2026-06-29T17:11:07+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ai_stocks_valuation_pullback_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "IRDM": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "IRDM",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       }
     ],
     "KLAC": [
       {
-        "id": "0f9063ef47781488",
+        "id": "f4e0907b4a39781c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "KLAC",
         "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
+        "title": "Big Shorts In Palantir, Rocket Lab, MSTR Crush S&P 500 In June's Hottest Trades",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/60171950/short-selling-palantir-rocket-lab-mstr-crush-sp-500",
+        "published_at": "2026-06-29T19:38:39+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
+        "dedup_group": "june_shorts_crush_trades",
         "tickers_mentioned": [
-          "TSLA"
+          "PLTR",
+          "RKLB",
+          "MSTR"
         ],
         "route_to_synthesis": false
       }
     ],
-    "META": [
+    "AZN": [
       {
-        "id": "0f9063ef47781488",
+        "id": "9fc680ede93956b3",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "META",
+        "ticker": "AZN",
         "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "39d36417628399f5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "Hedge Funds Cut Magnificent Seven Exposure\u2014Which ETFs Are Most At Risk?",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60166681/hedge-funds-cut-magnificent-seven-exposure-which-etfs-are-most-at-risk",
-        "published_at": "2026-06-29T17:17:03+00:00",
-        "type": "analyst",
+        "title": "AstraZeneca Advances Rare Bone Disease Pipeline While Enhertu Expands In Europe",
+        "url": "https://www.benzinga.com/news/health-care/26/06/60165934/astrazeneca-advances-rare-bone-disease-pipeline-while-enhertu-expands-in-europe",
+        "published_at": "2026-06-29T16:59:13+00:00",
+        "type": "product",
         "impact": "medium",
-        "dedup_group": "hedge_funds_mag_7_exposure_cuts",
+        "dedup_group": "azn_pipeline_advancement_enhertu_europe",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      },
-      {
-        "id": "542f8654ed2a8083",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "AI Stocks Are On Sale \u2014 Dan Ives Calls It Another 'Gut Check' For Tech Investors",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60166403/ai-stocks-on-sale-dan-ives-gut-check-tech-investors",
-        "published_at": "2026-06-29T17:11:07+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "ai_stocks_valuation_pullback_june_2026",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "7db722da18f14f29",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "META",
-        "scope": "ticker",
-        "title": "Attention Kalshi, Polymarket! Robinhood, Coinbase, DraftKings Are Coming For Your Lunch, Bernstein Writes",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60164990/attention-kalshi-polymarket-robinhood-coinbase-draftkings-are-coming-for-your-lunch-bernstein-writes",
-        "published_at": "2026-06-29T16:38:48+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "retail_betting_platform_competitive_threat",
-        "tickers_mentioned": [
-          "HOOD",
-          "COIN",
-          "DKNG"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RBLX": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RBLX",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "RKLB",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TSLA": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "39d36417628399f5",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "Hedge Funds Cut Magnificent Seven Exposure\u2014Which ETFs Are Most At Risk?",
-        "url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60166681/hedge-funds-cut-magnificent-seven-exposure-which-etfs-are-most-at-risk",
-        "published_at": "2026-06-29T17:17:03+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "hedge_funds_mag_7_exposure_cuts",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "5ea1ac8f50732137",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TSLA",
-        "scope": "ticker",
-        "title": "What's Going On With Tesla Stock Today?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60170823/whats-going-on-with-tesla-stock-today-15",
-        "published_at": "2026-06-29T19:05:23+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "tsla_daily_movement_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "VZ": [
-      {
-        "id": "0f9063ef47781488",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "VZ",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Soars As Semis Rebound, Tesla Jumps: Stock Market Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60166806/stock-market-today-nasdaq-100-semis-rebound-tesla-monday",
-        "published_at": "2026-06-29T17:19:33+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nasdaq_semis_rebound_june_29",
-        "tickers_mentioned": [
-          "TSLA"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "FCEL": [
-      {
-        "id": "ae092e2f6652c182",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FCEL",
-        "scope": "ticker",
-        "title": "12 Industrials Stocks Moving In Monday's Intraday Session",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60166203/12-industrials-stocks-moving-monday-s-intraday-session",
-        "published_at": "2026-06-29T17:05:47+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "industrials_intraday_moves_june29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "DELL": [
-      {
-        "id": "30ce3cde02d3fba0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DELL",
-        "scope": "ticker",
-        "title": "Why Is Axon Stock Surging On Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60162264/why-is-axon-stock-surging-on-monday",
-        "published_at": "2026-06-29T15:29:44+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "axon_stock_surge_monday",
-        "tickers_mentioned": [
-          "AXON"
-        ],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "25c8ea113951ee44",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "DELL",
-        "scope": "ticker",
-        "title": "Trump Bought Up To $5 Million In Axon Stock Weeks Before ICE Sought $220 Million Taser Contract: Report",
-        "url": "https://www.benzinga.com/news/politics/26/06/60157208/trump-bought-up-to-5-million-in-axon-stock-weeks-before-ice-sought-220-million-taser-contract-report",
-        "published_at": "2026-06-29T13:58:10+00:00",
-        "type": "rumor",
-        "impact": "medium",
-        "dedup_group": "trump_axon_stock_ice_taser_contract",
-        "tickers_mentioned": [
-          "AXON"
-        ],
-        "route_to_synthesis": true
       }
     ],
     "SLS": [
       {
-        "id": "43ce32a2db8d46a3",
+        "id": "61c31205c3b96314",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SLS",
         "scope": "ticker",
-        "title": "10 Health Care Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167720/10-health-care-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
+        "title": "Sellas Life Sciences Shares Break Out To New 52-Week High: What's Driving The Momentum?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60172925/sellas-life-sciences-shares-break-out-to-new-52-week-high-whats-driving-the-momentum",
+        "published_at": "2026-06-29T20:03:34+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "whale_alerts_healthcare_jun29",
+        "dedup_group": "sls_52week_high_breakout",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "NBIS": [
+    "STX": [
       {
-        "id": "bff784f3c43e83b5",
+        "id": "e2d4dc7218d52da9",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "NBIS",
+        "ticker": "STX",
         "scope": "ticker",
-        "title": "What's Going On With Nebius Group Stock Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60169237/whats-going-on-with-nebius-group-stock-monday-2",
-        "published_at": "2026-06-29T18:13:50+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nbis_daily_movement_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PURR": [
-      {
-        "id": "43ce32a2db8d46a3",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PURR",
-        "scope": "ticker",
-        "title": "10 Health Care Stocks With Whale Alerts In Today\u2019s Session",
-        "url": "https://www.benzinga.com/markets/options/26/06/60167720/10-health-care-stocks-whale-alerts-today-s-session",
-        "published_at": "2026-06-29T17:35:22+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "whale_alerts_healthcare_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PANW": [
-      {
-        "id": "5f945d3378863efe",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PANW",
-        "scope": "ticker",
-        "title": "What's Going On With Palo Alto Networks Stock Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60167268/whats-going-on-with-palo-alto-networks-stock-monday-2",
-        "published_at": "2026-06-29T17:28:05+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "panw_daily_movement_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PLTR": [
-      {
-        "id": "542f8654ed2a8083",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PLTR",
-        "scope": "ticker",
-        "title": "AI Stocks Are On Sale \u2014 Dan Ives Calls It Another 'Gut Check' For Tech Investors",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60166403/ai-stocks-on-sale-dan-ives-gut-check-tech-investors",
-        "published_at": "2026-06-29T17:11:07+00:00",
+        "title": "'AI Equals Memory': Why The AI Boom Now Runs Through Micron, SK Hynix And Samsung",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60173329/ai-equals-memory-why-the-ai-boom-now-runs-through-micron-sk-hynix-and-samsung",
+        "published_at": "2026-06-29T20:10:19+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "ai_stocks_valuation_pullback_june_2026",
-        "tickers_mentioned": [],
+        "dedup_group": "ai_memory_chain_thesis",
+        "tickers_mentioned": [
+          "MU",
+          "SK",
+          "SSNLF"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WDC": [
+      {
+        "id": "e2d4dc7218d52da9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WDC",
+        "scope": "ticker",
+        "title": "'AI Equals Memory': Why The AI Boom Now Runs Through Micron, SK Hynix And Samsung",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60173329/ai-equals-memory-why-the-ai-boom-now-runs-through-micron-sk-hynix-and-samsung",
+        "published_at": "2026-06-29T20:10:19+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ai_memory_chain_thesis",
+        "tickers_mentioned": [
+          "MU",
+          "SK",
+          "SSNLF"
+        ],
         "route_to_synthesis": false
       },
       {
-        "id": "d2d997644c7ecbcb",
+        "id": "4b477fbf32bf387b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "PLTR",
+        "ticker": "WDC",
         "scope": "ticker",
-        "title": "Why Is Palantir Technologies Stock Gaining Monday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60161699/why-is-palantir-technologies-stock-gaining-monday",
-        "published_at": "2026-06-29T15:12:43+00:00",
+        "title": "Here\u2019s How Much You Would Have Made Owning Western Digital Stock In The Last 10 Years",
+        "url": "https://www.benzinga.com/news/26/06/60172690/here-s-how-much-you-would-have-made-owning-western-digital-stock-last-10-years",
+        "published_at": "2026-06-29T20:00:23+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "pltr_stock_move_june_29",
+        "dedup_group": "wdc_10_year_performance_recap",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d010b7f9352dba74",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PLTR",
-        "scope": "ticker",
-        "title": "What's Going On With NVIDIA Stock Monday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60158136/whats-going-on-with-nvidia-stock-monday-8",
-        "published_at": "2026-06-29T14:08:31+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "nvidia_stock_move_june_29",
-        "tickers_mentioned": [
-          "NVIDIA"
-        ],
         "route_to_synthesis": false
       }
     ],
-    "HON": [
+    "MRNA": [
       {
-        "id": "529e1ea01b425d4d",
+        "id": "f4e0907b4a39781c",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "HON",
+        "ticker": "MRNA",
         "scope": "ticker",
-        "title": "Honeywell Completes Aerospace Spin-Off And Reverse Split: What Shareholders Need To Know",
-        "url": "https://www.benzinga.com/markets/stock-split/26/06/60166310/honeywell-completes-aerospace-spin-off-and-reverse-split-what-shareholders-need-to-know",
-        "published_at": "2026-06-29T17:08:28+00:00",
-        "type": "ma",
-        "impact": "high",
-        "dedup_group": "hon_aerospace_spinoff_complete_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": true
-      }
-    ],
-    "HOOD": [
-      {
-        "id": "7db722da18f14f29",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "HOOD",
-        "scope": "ticker",
-        "title": "Attention Kalshi, Polymarket! Robinhood, Coinbase, DraftKings Are Coming For Your Lunch, Bernstein Writes",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60164990/attention-kalshi-polymarket-robinhood-coinbase-draftkings-are-coming-for-your-lunch-bernstein-writes",
-        "published_at": "2026-06-29T16:38:48+00:00",
+        "title": "Big Shorts In Palantir, Rocket Lab, MSTR Crush S&P 500 In June's Hottest Trades",
+        "url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/60171950/short-selling-palantir-rocket-lab-mstr-crush-sp-500",
+        "published_at": "2026-06-29T19:38:39+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "retail_betting_platform_competitive_threat",
+        "dedup_group": "june_shorts_crush_trades",
         "tickers_mentioned": [
-          "HOOD",
-          "COIN",
-          "DKNG"
+          "PLTR",
+          "RKLB",
+          "MSTR"
         ],
         "route_to_synthesis": false
       }
     ],
-    "LUV": [
+    "SMCI": [
       {
-        "id": "082df610d64e8b30",
+        "id": "ee865cb98ec3aade",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "LUV",
+        "ticker": "SMCI",
         "scope": "ticker",
-        "title": "Airline Stocks Spent 6 Years Below Covid Highs: Hormuz Snapped That Trend In Two Months",
-        "url": "https://www.benzinga.com/news/travel/26/06/60155624/airline-etf-tops-covid-high-after-oil-price-collapse",
-        "published_at": "2026-06-29T13:31:18+00:00",
-        "type": "other",
-        "impact": "medium",
-        "dedup_group": "airline_stocks_hormuz_geopolitical_recovery",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "WEN": [
-      {
-        "id": "578174161fb04f49",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WEN",
-        "scope": "ticker",
-        "title": "Why Is Wendy\u2019s Stock Rising On Monday?",
-        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60168642/why-is-wendys-stock-rising-on-monday",
-        "published_at": "2026-06-29T17:55:41+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "wen_stock_rise_inquiry_jun29",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "TMUS": [
-      {
-        "id": "f508de00966ff545",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TMUS",
-        "scope": "ticker",
-        "title": "Elon Musk's SpaceX Set To Join Nasdaq-100",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60165396/elon-musks-spacex-set-to-join-nasdaq-100",
-        "published_at": "2026-06-29T16:49:27+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "spacex_nasdaq100_inclusion",
-        "tickers_mentioned": [
-          "SPACEX"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "TGT": [
-      {
-        "id": "6f1fffab2bcd2c04",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "TGT",
-        "scope": "ticker",
-        "title": "Amazon Stock Surges 4%: Record $26.4 Billion Prime Day Blowout Crushes Wall Street Estimates",
-        "url": "https://www.benzinga.com/markets/large-cap/26/06/60165094/amazon-stock-surges-4-record-26-4-billion-prime-day-blowout-crushes-wall-street-estimates",
-        "published_at": "2026-06-29T16:42:28+00:00",
-        "type": "product",
+        "title": "Super Micro Taiwan Offices Raided \u2014 Stock Takes Another Hit",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60171652/super-micro-taiwan-offices-raided-stock-takes-another-hit",
+        "published_at": "2026-06-29T19:30:35+00:00",
+        "type": "litigation",
         "impact": "high",
-        "dedup_group": "amazon_prime_day_2026_record_26b",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "WRBY": [
-      {
-        "id": "d3ccc82035c419ba",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "WRBY",
-        "scope": "ticker",
-        "title": "Warby Parker Has 'Plenty More Than Meets The Eye', Analyst Says",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/initiation/26/06/60162488/warby-parker-has-plenty-more-than-meets-the-eye-analyst-says",
-        "published_at": "2026-06-29T15:33:53+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "wrby_analyst_bullish_call_jun29",
+        "dedup_group": "smci_taiwan_raid",
         "tickers_mentioned": [],
-        "route_to_synthesis": false
+        "route_to_synthesis": true
       }
     ]
   },
-  "macro_events": []
+  "macro_events": [
+    {
+      "event_summary": "Supreme Court rules presidents can fire commissioners of independent agencies like the FTC, overturning Humphrey's Executor precedent and giving Trump direct control over previously independent regulators.",
+      "primary_drivers": [
+        "Reduced antitrust enforcement risk as FTC becomes politically accountable to a deregulatory administration",
+        "Higher probability of pending/blocked M&A deals being approved or unwound consent decrees",
+        "Spillover to other independent agencies (FCC, SEC, NLRB, FERC) now subject to direct executive control"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "KR",
+          "rationale": "Kroger-Albertsons merger was blocked by FTC in 2024; a Trump-controlled FTC dramatically raises odds of a revived deal or at least a friendlier posture toward grocery consolidation. Direct, specific exposure.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "ACI",
+          "rationale": "Albertsons is the other side of the blocked Kroger merger; same mechanism \u2014 FTC pivot makes revived combination or alternative consolidation viable.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "TPR",
+          "rationale": "Tapestry-Capri merger was blocked by FTC on handbag market concentration grounds; ruling materially raises probability of deal revival or that future luxury M&A faces less scrutiny.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CPRI",
+          "rationale": "Capri Holdings is the target in the FTC-blocked Tapestry deal; deal revival odds rise sharply with politically accountable FTC.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "META",
+          "rationale": "Currently in FTC antitrust trial seeking Instagram/WhatsApp divestiture; Trump-controlled FTC could drop or settle the case, removing major structural overhang.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "AMZN",
+          "rationale": "Active FTC antitrust suit against Amazon's marketplace practices; politically controlled FTC raises odds of settlement or weakened enforcement.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "GS",
+          "rationale": "M&A advisory revenue is direct beneficiary of looser antitrust posture across all independent agencies; deal volume and completion rates rise with regulatory clarity.",
+          "confidence": "medium",
+          "horizon": "months"
+        },
+        {
+          "ticker": "JPM",
+          "rationale": "Largest M&A advisor by fees; also benefits from broader deregulatory tilt at SEC/CFPB which are also independent agencies now subject to same ruling logic.",
+          "confidence": "medium",
+          "horizon": "months"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LMND",
+          "rationale": "Insurtech and other fintechs that have benefited from CFPB/FTC consumer protection enforcement against incumbent competitors lose that regulatory tailwind as agencies become deregulatory.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "dedup_group": "supreme_court_presidents_fire_regulators_ftc",
+      "source_news_ids": [
+        "469e40207e5d8bed"
+      ],
+      "headlines": [
+        "Supreme Court lets presidents fire independent regulators, rules for Trump in FTC case"
+      ]
+    }
+  ]
 }
