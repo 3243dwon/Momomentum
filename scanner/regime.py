@@ -13,7 +13,6 @@ gracefully — no scan ever crashes because regime data is unavailable.
 from __future__ import annotations
 
 import logging
-import math
 from datetime import datetime, timedelta, timezone
 
 import pandas as pd

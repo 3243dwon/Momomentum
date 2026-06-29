@@ -18,6 +18,7 @@ max-position cap and the default stop width. NOT investment advice.
 from __future__ import annotations
 
 from math import floor, isfinite
+from typing import TypeGuard
 
 # Risk budget for a single trade, as a fraction of account equity. 0.75% is the
 # conservative end of the classic 0.5-1% fixed-fractional rule — small enough
@@ -37,8 +38,9 @@ ATR_STOP_MULT = 1.5
 MAX_GROSS_EXPOSURE = 1.5
 
 
-def _finite(x) -> bool:
-    """True for a real, finite number (rejects None, NaN, inf)."""
+def _finite(x: object) -> TypeGuard[float]:
+    """True for a real, finite number (rejects None, NaN, inf). A TypeGuard so
+    a passing value is narrowed to float — callers lose the None branch."""
     return isinstance(x, (int, float)) and not isinstance(x, bool) and isfinite(x)
 
 

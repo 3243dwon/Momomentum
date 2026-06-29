@@ -169,7 +169,6 @@ def build_alerts(
     alerts: list[dict] = []
 
     watchlist = router.load_watchlist()
-    by_ticker = {r["ticker"]: r for r in rows}
 
     pct_threshold = (
         config.PCT_MOVE_THRESHOLD_RTH

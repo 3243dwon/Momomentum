@@ -319,7 +319,7 @@ def _horizon_stats(returns: list[float], excess: list | None = None) -> dict:
     non-None excess > 0). excess=None keeps the original shape byte-for-byte."""
     n = len(returns)
     if not n:
-        out = {
+        out: dict[str, float | None] = {
             "evaluated": 0,
             "hit_rate": None, "avg_return_pct": None,
             "hit_rate_net": None, "avg_return_net_pct": None,
@@ -418,7 +418,7 @@ def log_recommendations(recommendations: dict, rows: list[dict], now: datetime,
         popular_set = set()
 
     dedup_cutoff = now.astimezone(timezone.utc) - timedelta(hours=REC_DEDUP_HOURS)
-    recently_logged: set[tuple[str, str]] = set()
+    recently_logged: set[tuple[str | None, str]] = set()
     for e in _read_entries(RECS_LOG):
         ts = _parse_ts(e.get("ts", ""))
         if ts is not None and ts >= dedup_cutoff:
@@ -678,8 +678,8 @@ def log_predictions(predictions: list[dict], rows: list[dict], now: datetime,
         new_entries.append(entry)
     if new_entries:
         with open(PREDICTIONS_LOG, "a") as f:
-            for e in new_entries:
-                f.write(json.dumps(e) + "\n")
+            for rec in new_entries:
+                f.write(json.dumps(rec) + "\n")
         log.info(
             "Logged %d predictions for performance tracking (%d untracked, no price)",
             len(new_entries), untracked,
@@ -842,10 +842,11 @@ def write_ledger(now: datetime) -> dict:
                 f"{h}d": (e.get("evaluations", {}).get(f"{h}d") or {}).get("signed_return_pct")
                 for h in EARLY_HORIZONS
             }
+            zerod = outcomes.get("0d")
             if price is None:
                 status = "untracked"
-            elif outcomes.get("0d") is not None:
-                status = "hit" if outcomes["0d"] > 0 else "miss"
+            elif zerod is not None:
+                status = "hit" if zerod > 0 else "miss"
             else:
                 status = "pending"
             entries.append({

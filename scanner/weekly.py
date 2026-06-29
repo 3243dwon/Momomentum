@@ -20,13 +20,13 @@ import json
 import logging
 import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 import pandas as pd
 
 from scanner import config, regime as regime_mod, technicals, weekly_events, weekly_performance
 from scanner.alerts import feishu
-from scanner.llm.client import get_client, LLMClient
+from scanner.llm.client import get_client
 
 log = logging.getLogger("weekly")
 

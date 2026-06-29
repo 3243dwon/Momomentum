@@ -1,0 +1,6 @@
+# Dev / CI tooling — the quality gates run by .github/workflows/ci.yml.
+# Not needed to run the scanner itself (runtime deps live in requirements.txt).
+# Pinned so local runs match CI exactly.
+ruff==0.15.20
+mypy==2.1.0
+pytest>=8.0

@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import json
 import logging
-from pathlib import Path
 
 from scanner import config
 from scanner.windows import Window
@@ -42,7 +41,6 @@ def route(rows: list[dict], deltas: dict, window: Window) -> tuple[list[str], li
         else config.PCT_MOVE_THRESHOLD_AH
     )
 
-    by_ticker = {r["ticker"]: r for r in rows}
     delta_set = set(deltas.get("new_top20_entrants", []))
     delta_set.update(j["ticker"] for j in deltas.get("rank_jumps", []))
     delta_set.update(deltas.get("momentum_accel", []))

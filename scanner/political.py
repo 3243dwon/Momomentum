@@ -24,10 +24,10 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 import time
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
 import httpx
 
@@ -61,8 +61,7 @@ _TRUMP_TRUST_CIK = "0002050191"
 # policy: https://www.sec.gov/os/accessing-edgar-data. Without an email-like
 # string the request gets 403. Override via SEC_USER_AGENT env var if you
 # want a different contact than the repo owner's commit email.
-import os as _os
-_SEC_UA = _os.environ.get(
+_SEC_UA = os.environ.get(
     "SEC_USER_AGENT",
     "Momentum-Scanner makutanaka816@gmail.com",
 )
