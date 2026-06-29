@@ -22,6 +22,13 @@ python_version = "3.11"
 # ship without type stubs, so don't fail on their missing types. We're checking
 # OUR logic, not theirs.
 ignore_missing_imports = true
+# Report errors ONLY in the `files` below. mypy still follows imports into other
+# scanner modules (technicals, regime…) for type info, but doesn't flag THEIR
+# errors yet — so the gate stays scoped to the money-critical modules and is
+# identical whether optional deps (alpaca-py) are installed locally or in CI.
+# (Without this, CI resolves alpaca's real types and flags technicals.py, which
+# is out of scope until it's added to `files`.)
+follow_imports = "silent"
 warn_unused_ignores = true
 warn_redundant_casts = true
 # Scope: the money-critical modules first (risk + grading), per the /health rec.
