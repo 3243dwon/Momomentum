@@ -1,7 +1,83 @@
 {
-  "generated_at": "2026-06-29T11:13:54.210541+00:00",
+  "generated_at": "2026-06-29T12:41:01.194593+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "9bee2a8eb424",
+      "ts": "2026-06-29T12:38:14.471057+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "DELL",
+      "direction": "short",
+      "confidence": null,
+      "price": 394.31,
+      "thesis": "\u2b50 DELL -3.6% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "8f3c99eaaafa",
+      "ts": "2026-06-29T12:38:14.471057+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "INTC",
+      "direction": "short",
+      "confidence": null,
+      "price": 127.68,
+      "thesis": "\u2b50 INTC -4.0% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "905e78dae612",
+      "ts": "2026-06-29T12:38:14.471057+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "CBRS",
+      "direction": "long",
+      "confidence": null,
+      "price": 181.81,
+      "thesis": "\ud83e\udde0 Serenity CBRS +7.6% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "d51cbc831bc7",
+      "ts": "2026-06-29T12:38:14.471057+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "MU",
+      "direction": "long",
+      "confidence": null,
+      "price": 1123.84,
+      "thesis": "\ud83e\udde0 Serenity MU -7.5% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "0588d92c2672",
       "ts": "2026-06-29T11:09:14.805239+00:00",
@@ -9405,82 +9481,6 @@
         "21d": null
       },
       "status": "hit"
-    },
-    {
-      "id": "cfd1e16cbadb",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "HOOD",
-      "direction": "short",
-      "confidence": null,
-      "price": 99.5,
-      "thesis": "\ud83e\udde0 Serenity HOOD -3.6% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": 4.7,
-        "3d": 0.79,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "f5a49a9a072f",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "VSH",
-      "direction": "long",
-      "confidence": null,
-      "price": 55.53,
-      "thesis": "\ud83e\udde0 Serenity VSH -6.1% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": 11.4,
-        "3d": 1.39,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "93994fb06116",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "NVTS",
-      "direction": "long",
-      "confidence": null,
-      "price": 18.73,
-      "thesis": "\ud83e\udde0 Serenity NVTS -12.4% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -3.1,
-        "3d": -8.01,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "56a45eaa7b78",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "RKLB",
-      "direction": "long",
-      "confidence": null,
-      "price": 87.46,
-      "thesis": "\ud83e\udde0 Serenity RKLB -8.0% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -7.38,
-        "3d": -3.3,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
     }
   ]
 }

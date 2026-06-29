@@ -1,532 +1,60 @@
 {
-  "generated_at": "2026-06-29T07:09:14.805239-04:00",
+  "generated_at": "2026-06-29T08:38:14.471057-04:00",
   "ticker_news": {
-    "DKNG": [
+    "ASTS": [
       {
-        "id": "e025db7823f2e272",
+        "id": "5122dddee94e4e26",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "DKNG",
+        "ticker": "ASTS",
         "scope": "ticker",
-        "title": "Rachel Cruze Says Sports Betting, Crypto Are Putting Young Americans' Finances At Risk",
-        "url": "https://www.benzinga.com/personal-finance/financial-advisors/26/06/60149960/rachel-cruze-young-men-throwing-money-away-on-sports-betting",
-        "published_at": "2026-06-29T10:01:37+00:00",
+        "title": "What's Going On With AST SpaceMobile Stock Monday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60151757/whats-going-on-with-ast-spacemobile-stock-monday-3",
+        "published_at": "2026-06-29T11:16:59+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "rachel_cruze_sports_betting_crypto_risks",
+        "dedup_group": "asts_monday_recap",
         "tickers_mentioned": [],
         "route_to_synthesis": false
-      },
+      }
+    ],
+    "RKLB": [
       {
-        "id": "bc3e55a26459a366",
+        "id": "e513bda23cb05586",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "DKNG",
+        "ticker": "RKLB",
         "scope": "ticker",
-        "title": "Americans Bet Twice As Much On Sports Last Year As Amazon Earned, Anthony Pompliano Says: Stocks And ETFs In Focus",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60149156/americans-bet-twice-as-much-on-sports-last-year-as-amazon-earned-anthony-pompliano-says-stocks-and-etfs-in-focus",
-        "published_at": "2026-06-29T08:03:19+00:00",
+        "title": "RKLB Stock Surges Over 11% in Monday Premarket: What\u2019s Going On?",
+        "url": "https://www.benzinga.com/m-a/26/06/60152421/rklb-stock-surges-over-11-in-monday-premarket-whats-going-on",
+        "published_at": "2026-06-29T11:47:42+00:00",
+        "type": "rumor",
+        "impact": "medium",
+        "dedup_group": "rklb_june_29_premarket_surge",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "UBER": [
+      {
+        "id": "e4b9194eaf8b6677",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "UBER",
+        "scope": "ticker",
+        "title": "Nvidia, Meta, Uber And An Energy Stock On CNBC\u2019s \u2018Final Trades\u2019",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60151810/nvidia-meta-uber-energy-stock-cnbc-final-trades",
+        "published_at": "2026-06-29T11:18:25+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "flut_sports_betting_macro_commentary",
+        "dedup_group": "cnbc_final_trades_roundup",
         "tickers_mentioned": [
-          "AMZN"
+          "NVDA",
+          "META"
         ],
-        "route_to_synthesis": false
-      }
-    ],
-    "FLUT": [
-      {
-        "id": "e025db7823f2e272",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLUT",
-        "scope": "ticker",
-        "title": "Rachel Cruze Says Sports Betting, Crypto Are Putting Young Americans' Finances At Risk",
-        "url": "https://www.benzinga.com/personal-finance/financial-advisors/26/06/60149960/rachel-cruze-young-men-throwing-money-away-on-sports-betting",
-        "published_at": "2026-06-29T10:01:37+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "rachel_cruze_sports_betting_crypto_risks",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "bc3e55a26459a366",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "FLUT",
-        "scope": "ticker",
-        "title": "Americans Bet Twice As Much On Sports Last Year As Amazon Earned, Anthony Pompliano Says: Stocks And ETFs In Focus",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60149156/americans-bet-twice-as-much-on-sports-last-year-as-amazon-earned-anthony-pompliano-says-stocks-and-etfs-in-focus",
-        "published_at": "2026-06-29T08:03:19+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "flut_sports_betting_macro_commentary",
-        "tickers_mentioned": [
-          "AMZN"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "INTC": [
-      {
-        "id": "6c875a7ca8144cd0",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Why Is Intel Stock Gaining Monday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60149746/why-is-intel-stock-gaining-monday-2",
-        "published_at": "2026-06-29T09:50:09+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "intc_monday_gainers_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "182cd90eff0fc419",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "INTC",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Flashes Warning Signs After 5-Day Slide: Is The Tech Rally Running Out Of Steam?",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/60149061/nasdaq-100-flashes-warning-signs-after-5-day-slide-is-the-tech-rally-running-out-of-steam",
-        "published_at": "2026-06-29T07:49:09+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_100_technical_weakness_5day",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MU": [
-      {
-        "id": "182cd90eff0fc419",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Flashes Warning Signs After 5-Day Slide: Is The Tech Rally Running Out Of Steam?",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/60149061/nasdaq-100-flashes-warning-signs-after-5-day-slide-is-the-tech-rally-running-out-of-steam",
-        "published_at": "2026-06-29T07:49:09+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_100_technical_weakness_5day",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "547837d32e20f72b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "5 Stock Picks Last Week From Wall Street's Most Accurate Analysts",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60151000/5-stock-picks-last-week-from-wall-streets-most-accurate-analysts-31",
-        "published_at": "2026-06-29T10:45:10+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "weekly_wall_street_stock_picks_fluff",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "80bcdaaf85587d51",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "What's Going On With Micron Stock Monday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60150771/whats-going-on-with-micron-stock-monday-4",
-        "published_at": "2026-06-29T10:31:57+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "mu_what_is_happening_today_recap",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "430d9a2eb8991b86",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Exploring The Competitive Space: Micron Technology Versus Industry Peers In Semiconductors &amp; Semiconductor Equipment",
-        "url": "https://www.benzinga.com/news/26/06/60149774/exploring-competitive-space-micron-technology-versus-industry-peers-semiconductors-amp-semiconductor",
-        "published_at": "2026-06-29T09:58:41+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "mu_competitive_peer_comparison_industry",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "d00d9d79f925b05e",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Micron Stock Has Surged Over 800% In The Past 12 Months And This Analyst Has A Bullish Prediction: 'Will Likely Exit 2028 At...'",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60149686/micron-stock-risen-over-800-12-months-this-analyst-has-bullish-prediction",
-        "published_at": "2026-06-29T09:34:22+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "mu_800_percent_gain_analyst_bullish_2028",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "310d54fee1f88862",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60148258/stock-market-will-sp-500-open-up-or-down-today-5",
-        "published_at": "2026-06-29T05:48:47+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "sp500_daily_market_direction_preview",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "ead8b70407b7764b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MU",
-        "scope": "ticker",
-        "title": "Apple's Reported Push To Buy Chinese Memory Chips Isn't About Lower Prices, It's About Surviving A Worsening AI-Driven Supply Crunch, Says Analyst",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60148183/analyst-says-apples-reported-push-to-buy-chinese-memory-chips-is-about-surviving-the-ai-supply-crunch",
-        "published_at": "2026-06-29T05:26:31+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "apple_china_memory_chip_buying_ai_supply",
-        "tickers_mentioned": [
-          "AAPL"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNDK": [
-      {
-        "id": "182cd90eff0fc419",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "Nasdaq 100 Flashes Warning Signs After 5-Day Slide: Is The Tech Rally Running Out Of Steam?",
-        "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/60149061/nasdaq-100-flashes-warning-signs-after-5-day-slide-is-the-tech-rally-running-out-of-steam",
-        "published_at": "2026-06-29T07:49:09+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_100_technical_weakness_5day",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "547837d32e20f72b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNDK",
-        "scope": "ticker",
-        "title": "5 Stock Picks Last Week From Wall Street's Most Accurate Analysts",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60151000/5-stock-picks-last-week-from-wall-streets-most-accurate-analysts-31",
-        "published_at": "2026-06-29T10:45:10+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "weekly_wall_street_stock_picks_fluff",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "QCOM": [
-      {
-        "id": "547837d32e20f72b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "5 Stock Picks Last Week From Wall Street's Most Accurate Analysts",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/06/60151000/5-stock-picks-last-week-from-wall-streets-most-accurate-analysts-31",
-        "published_at": "2026-06-29T10:45:10+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "weekly_wall_street_stock_picks_fluff",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "f02a57facbcc927c",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Qualcomm Now Has The Pieces To Compete Across The AI Stack: Analyst",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60149718/qualcomm-now-has-the-pieces-to-compete-across-the-ai-stack-analyst",
-        "published_at": "2026-06-29T09:35:26+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "qcom_ai_stack_competitive_positioning",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "5101e3ed0e0a974a",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "QCOM",
-        "scope": "ticker",
-        "title": "Stock Market Today: Dow Jones, S&P 500 Futures Gain As Trump Admin Says US, Iran Will 'Stand Down'\u2014Verizon, HP, Universe Pharmaceuticals In Focus",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60149448/stock-market-today-dow-jones-sp-500-futures-gain-as-trump-admin-says-us-iran-will-stand-down-verizon-hp-universe-pharmaceuticals-in-focus",
-        "published_at": "2026-06-29T09:11:20+00:00",
-        "type": "macro_geopol",
-        "impact": "medium",
-        "dedup_group": "us_iran_tensions_standdown",
-        "tickers_mentioned": [
-          "VZ",
-          "HPQ",
-          "UNV"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SNOW": [
-      {
-        "id": "5d24e139cad94f2b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SNOW",
-        "scope": "ticker",
-        "title": "Exclusive: Zeta Global, Snowflake Say OSI Could Standardize Marketing Data For Enterprise AI",
-        "url": "https://www.benzinga.com/news/26/06/60150818/zeta-global-snowflake-osi-standardize-ai-marketing-data",
-        "published_at": "2026-06-29T10:33:53+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "zeta_snowflake_osi_marketing_data_standardization",
-        "tickers_mentioned": [
-          "SNOW"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "ZETA": [
-      {
-        "id": "5d24e139cad94f2b",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ZETA",
-        "scope": "ticker",
-        "title": "Exclusive: Zeta Global, Snowflake Say OSI Could Standardize Marketing Data For Enterprise AI",
-        "url": "https://www.benzinga.com/news/26/06/60150818/zeta-global-snowflake-osi-standardize-ai-marketing-data",
-        "published_at": "2026-06-29T10:33:53+00:00",
-        "type": "product",
-        "impact": "medium",
-        "dedup_group": "zeta_snowflake_osi_marketing_data_standardization",
-        "tickers_mentioned": [
-          "SNOW"
-        ],
-        "route_to_synthesis": true
-      }
-    ],
-    "MSFT": [
-      {
-        "id": "174b47c5670200a1",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "MSFT Is Down 23% In 2026: Why This Strategist Says Investors Are 'Significantly Overselling' The Stock",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60150497/msft-is-down-23-in-2026-why-this-strategist-says-investors-are-significantly-overselling-the-stock",
-        "published_at": "2026-06-29T10:20:58+00:00",
-        "type": "analyst",
-        "impact": "medium",
-        "dedup_group": "msft_23_percent_2026_decline_oversold_call",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "b75f331e8234dc03",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Evaluating Microsoft Against Peers In Software Industry",
-        "url": "https://www.benzinga.com/news/26/06/60149772/evaluating-microsoft-against-peers-software-industry",
-        "published_at": "2026-06-29T09:58:31+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "msft_software_peer_comparison",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      },
-      {
-        "id": "310d54fee1f88862",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSFT",
-        "scope": "ticker",
-        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
-        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60148258/stock-market-will-sp-500-open-up-or-down-today-5",
-        "published_at": "2026-06-29T05:48:47+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "sp500_daily_market_direction_preview",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "PLTR": [
-      {
-        "id": "6ccc92d8e9078ccd",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "PLTR",
-        "scope": "ticker",
-        "title": "Putin Says Russia Is Going Through 'Difficult Period' As Ukraine's Drone Strikes Fuel Supply Crunch",
-        "url": "https://www.benzinga.com/news/politics/26/06/60149756/putin-says-russia-is-going-through-difficult-period-as-ukraines-drone-strikes-fuel-supply-crunch",
-        "published_at": "2026-06-29T09:52:19+00:00",
-        "type": "macro_geopol",
-        "impact": "low",
-        "dedup_group": "putin_russia_ukraine_supply_crunch",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "MSTR": [
-      {
-        "id": "03b9857b54541798",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "MSTR",
-        "scope": "ticker",
-        "title": "Michael Saylor Destroyed Shareholder Value Instead Of Creating It, Says Peter Schiff: 'Bitcoin Is Overvalued'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60148925/peter-schiff-says-michael-saylor-destroyed-shareholder-value-because-bitcoin-is-overvalued",
-        "published_at": "2026-06-29T07:25:22+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "schiff_critiques_saylor_bitcoin",
-        "tickers_mentioned": [],
-        "route_to_synthesis": false
-      }
-    ],
-    "ON": [
-      {
-        "id": "38bfe728487303ec",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ON",
-        "scope": "ticker",
-        "title": "Nasdaq Falls For Fifth Session Amid Decline In Chip Shares: Fear & Greed Index In \u2018Extreme Fear\u2019 Zone",
-        "url": "https://www.benzinga.com/markets/market-summary/26/06/60148636/nasdaq-falls-for-fifth-session-amid-decline-in-chip-shares-fear-greed-index-in-extreme-fear-zone",
-        "published_at": "2026-06-29T06:37:29+00:00",
-        "type": "macro_econ",
-        "impact": "low",
-        "dedup_group": "nasdaq_chip_decline_sentiment",
-        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ]
   },
-  "macro_events": [
-    {
-      "event_summary": "US and Iran agreed to halt attacks, easing Middle East tensions and removing a geopolitical risk premium from oil prices.",
-      "primary_drivers": [
-        "Lower geopolitical risk premium in crude oil",
-        "Reduced threat to Strait of Hormuz shipping/supply",
-        "Risk-on rotation as tail risk fades"
-      ],
-      "beneficiaries": [
-        {
-          "ticker": "DAL",
-          "rationale": "Jet fuel is ~25-30% of operating costs; de-escalation caps crude and lowers fuel hedging pressure. Delta has historically shown high negative beta to oil spikes.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "UAL",
-          "rationale": "Same jet fuel cost sensitivity as DAL; United has heavy international/long-haul exposure where fuel burn is largest, so easing oil disproportionately helps unit economics.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "LUV",
-          "rationale": "Southwest is the most fuel-cost-sensitive major US carrier (single-fleet domestic, less hedged in recent years); direct beneficiary of crude rolling off the risk premium.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "CCL",
-          "rationale": "Bunker fuel is a major cost line for cruise operators and Middle East itineraries (Red Sea/Gulf) become viable again; double benefit on cost and routing.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "ZIM",
-          "rationale": "Container shipper with Red Sea/Suez routing exposure \u2014 de-escalation reduces rerouting around Africa, lowering bunker burn and transit times. Direct operational impact.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "FDX",
-          "rationale": "Global air freight network with heavy jet fuel exposure; lower crude flows directly to fuel surcharge unwind and margin relief.",
-          "confidence": "medium",
-          "horizon": "days"
-        }
-      ],
-      "losers": [
-        {
-          "ticker": "XOM",
-          "rationale": "Loss of geopolitical risk premium pressures Brent/WTI; ExxonMobil's upstream earnings have direct leverage to realized crude prices.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "OXY",
-          "rationale": "Pure-play US E&P with high crude-price beta and leveraged balance sheet; underperforms peers on oil pullbacks. Buffett-owned, often a sentiment proxy.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "APA",
-          "rationale": "High-beta E&P with material international (Egypt) exposure; loses both the price premium and any war-premium on Middle East-adjacent production.",
-          "confidence": "high",
-          "horizon": "days"
-        },
-        {
-          "ticker": "HAL",
-          "rationale": "Oilfield services demand tracks crude price expectations; lower sustained oil reduces incentive for incremental drilling, pressuring completion activity.",
-          "confidence": "medium",
-          "horizon": "weeks"
-        },
-        {
-          "ticker": "LMT",
-          "rationale": "Defense names that rallied on Middle East escalation give back the geopolitical bid; Lockheed is the most-traded escalation proxy via missile/air defense exposure.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "RTX",
-          "rationale": "Patriot/missile defense systems were direct beneficiaries of escalation narrative; de-escalation removes the near-term order-flow optimism premium.",
-          "confidence": "medium",
-          "horizon": "days"
-        },
-        {
-          "ticker": "NOC",
-          "rationale": "Defense peer that traded with the Iran headline complex; rotation out of defense on de-escalation. Lower confidence than LMT/RTX since order book is longer-cycle.",
-          "confidence": "low",
-          "horizon": "days"
-        }
-      ],
-      "dedup_group": "us_iran_ceasefire_oil_stabilization",
-      "source_news_ids": [
-        "efe1301d7d27c08f"
-      ],
-      "headlines": [
-        "Oil steadies as US and Iran agree to halt attacks"
-      ]
-    }
-  ]
+  "macro_events": []
 }
