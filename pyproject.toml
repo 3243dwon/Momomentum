@@ -34,3 +34,14 @@ warn_redundant_casts = true
 # Scope: the money-critical modules first (risk + grading), per the /health rec.
 # CI type-checks exactly these two; expand the list as modules get annotated.
 files = ["scanner/risk.py", "scanner/performance.py"]
+
+[tool.pytest.ini_options]
+# Put the repo root on sys.path so tests can `import scanner` no matter how
+# pytest is invoked. CI runs the `pytest` console script (sys.path[0] is the
+# script dir, not cwd), so without this the repo root is absent and collection
+# fails with "No module named 'scanner'". Most test files carry a manual
+# sys.path shim for standalone/unittest runs, but test_backtest.py and
+# test_grading.py don't — they relied on a sibling's shim mutating the shared
+# sys.path first, which only held by collection order. This makes it explicit.
+pythonpath = ["."]
+testpaths = ["tests"]
