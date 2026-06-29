@@ -1,7 +1,121 @@
 {
-  "generated_at": "2026-06-29T21:42:36.396969+00:00",
+  "generated_at": "2026-06-29T23:04:10.716127+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "3d4637b55cf6",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "INTC",
+      "direction": "long",
+      "confidence": null,
+      "price": 131.69,
+      "thesis": "\u2b50 INTC +3.1% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "b1463204f52c",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "ONDS",
+      "direction": "long",
+      "confidence": null,
+      "price": 8.03,
+      "thesis": "\u2b50 ONDS +3.5% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "99c2e9d0872b",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "RKLB",
+      "direction": "long",
+      "confidence": null,
+      "price": 98.02,
+      "thesis": "\ud83e\udde0 Serenity RKLB +15.9% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "fab4ec7edd10",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "ALAB",
+      "direction": "long",
+      "confidence": null,
+      "price": 456.33,
+      "thesis": "\ud83e\udde0 Serenity ALAB +16.9% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "73a104e5911c",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "KHC",
+      "direction": "long",
+      "confidence": null,
+      "price": 24.18,
+      "thesis": "+2.0% today; 5d uptrend +10%; MACD bullish cross",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "dc5e93ea11c6",
+      "ts": "2026-06-29T23:01:24.504635+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "UNP",
+      "direction": "long",
+      "confidence": null,
+      "price": 272.99,
+      "thesis": "+1.7% today; 5d uptrend +5%; MACD bullish cross",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "5626ea38c9b2",
       "ts": "2026-06-29T21:38:09.022295+00:00",
@@ -2702,7 +2816,7 @@
       "thesis": "\u2b50 INTC -4.0% watchlist",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -2.84,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2721,7 +2835,7 @@
       "thesis": "\u2b50 NOK -6.8% watchlist",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -0.15,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2740,7 +2854,7 @@
       "thesis": "\u2b50 ORCL -2.6% watchlist",
       "outcomes": {
         "1d": 0.2,
-        "3d": null,
+        "3d": 0.58,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2759,7 +2873,7 @@
       "thesis": "\u2b50 RKLB +4.8% watchlist",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 17.33,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2778,7 +2892,7 @@
       "thesis": "\u2b50 DELL -3.6% watchlist",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -5.06,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2797,7 +2911,7 @@
       "thesis": "\ud83e\udde0 Serenity RKLB +4.8% \ud83d\udd34bear",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -17.33,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2816,7 +2930,7 @@
       "thesis": "\ud83e\udde0 Serenity TSEM -7.3% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 2.24,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2835,7 +2949,7 @@
       "thesis": "\ud83e\udde0 Serenity LITE -5.5% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 4.52,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2854,7 +2968,7 @@
       "thesis": "\ud83e\udde0 Serenity SNDK -10.4% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -0.37,
-        "3d": null,
+        "3d": -1.89,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2873,7 +2987,7 @@
       "thesis": "\ud83e\udde0 Serenity POET -7.0% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 4.13,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2892,7 +3006,7 @@
       "thesis": "\ud83e\udde0 Serenity ASTS +8.9% \ud83d\udd34bear",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -22.14,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2911,7 +3025,7 @@
       "thesis": "\ud83e\udde0 Serenity PLTR +5.1% \ud83d\udd34bear",
       "outcomes": {
         "1d": -0.42,
-        "3d": null,
+        "3d": -2.6,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2930,7 +3044,7 @@
       "thesis": "\ud83e\udde0 Serenity CRM +5.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": 0.25,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2949,7 +3063,7 @@
       "thesis": "\ud83e\udde0 Serenity INTC -4.0% \u26aa",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -2.84,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2968,7 +3082,7 @@
       "thesis": "\ud83e\udde0 Serenity UBER +5.2% \u26aa",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": -0.79,
         "5d": null,
         "10d": null,
         "21d": null
@@ -2987,7 +3101,7 @@
       "thesis": "\ud83e\udde0 Serenity MRVL -5.7% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 3.55,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3006,7 +3120,7 @@
       "thesis": "\ud83e\udde0 Serenity COHR -6.7% \u26aa",
       "outcomes": {
         "1d": -0.0,
-        "3d": null,
+        "3d": -2.93,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3025,7 +3139,7 @@
       "thesis": "\ud83e\udde0 Serenity VSH -6.1% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 0.12,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3044,7 +3158,7 @@
       "thesis": "\ud83e\udde0 Serenity MSFT +5.5% \u26aa",
       "outcomes": {
         "1d": 0.07,
-        "3d": null,
+        "3d": -0.71,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3063,7 +3177,7 @@
       "thesis": "\ud83d\ude80 ARDX -8.5% on 6.3x vol",
       "outcomes": {
         "1d": -0.09,
-        "3d": null,
+        "3d": 6.05,
         "5d": null,
         "10d": null,
         "21d": null
@@ -9357,120 +9471,6 @@
         "21d": null
       },
       "status": "hit"
-    },
-    {
-      "id": "6051021fd970",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "COHR",
-      "direction": "long",
-      "confidence": null,
-      "price": 392.76,
-      "thesis": "\ud83e\udde0 Serenity COHR +3.0% \u26aa",
-      "outcomes": {
-        "1d": 3.68,
-        "3d": -3.25,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "6aa58c3cdec6",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "IREN",
-      "direction": "short",
-      "confidence": null,
-      "price": 50.3,
-      "thesis": "\ud83e\udde0 Serenity IREN -8.1% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": 5.1,
-        "3d": 7.06,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "a2011939fda5",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "HOOD",
-      "direction": "short",
-      "confidence": null,
-      "price": 97.18,
-      "thesis": "\ud83e\udde0 Serenity HOOD -5.8% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": 3.83,
-        "3d": -1.57,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "dddce75bc261",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "VSH",
-      "direction": "long",
-      "confidence": null,
-      "price": 55.58,
-      "thesis": "\ud83e\udde0 Serenity VSH -6.0% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": 7.86,
-        "3d": 1.3,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "f91c6f31b96b",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "NVTS",
-      "direction": "long",
-      "confidence": null,
-      "price": 18.32,
-      "thesis": "\ud83e\udde0 Serenity NVTS -14.3% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -3.38,
-        "3d": -5.95,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "d0b0eda12384",
-      "ts": "2026-06-25T04:01:17.546875+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "RKLB",
-      "direction": "long",
-      "confidence": null,
-      "price": 85.4,
-      "thesis": "\ud83e\udde0 Serenity RKLB -10.2% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -1.16,
-        "3d": -0.97,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
     }
   ]
 }
