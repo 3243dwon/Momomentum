@@ -1,8 +1,382 @@
 {
-  "generated_at": "2026-06-29T08:38:14.471057-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-29T12:39:13.952941-04:00",
+  "event_count": 2,
+  "prediction_count": 14,
+  "not_yet_priced_in": 9,
+  "events": [
+    {
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "primary_drivers": [
+        "Vertical integration in space \u2014 launcher acquiring a satellite constellation operator validates the SpaceX model and re-rates pure-play satcom operators",
+        "M&A premium gets applied to other publicly-traded satellite operators as potential next targets",
+        "Competitive threat to incumbent launch providers losing a captive Iridium customer relationship"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "IRDM",
+          "rationale": "Iridium is the target \u2014 shareholders receive the takeout premium directly. (Listing as the deal target, not a third-party ripple \u2014 IRDM is the company being acquired, so it will move on the deal terms themselves.)",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ASTS",
+          "rationale": "Pure-play satellite-direct-to-device operator gets re-rated as the next logical vertical-integration / M&A target now that a launcher has shown willingness to pay up for an in-orbit constellation; scarcity value of public satcom pure-plays just went up.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "GSAT",
+          "rationale": "Globalstar \u2014 small-cap MSS satellite operator with a constellation, direct comp to Iridium. Acquisition multiple paid for IRDM sets a floor valuation read-through and revives M&A speculation (Apple relationship makes it strategic).",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "VSAT",
+          "rationale": "Viasat \u2014 another publicly traded satellite operator with global L-band/Ka-band assets; gets dragged into the 'who else gets bought by a launcher' re-rating trade.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PL",
+          "rationale": "Planet Labs \u2014 satellite data pure-play, also fits the 'strategic constellation acquired by a vertically-integrating space company' template; secondary read-through target.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "LUNR",
+          "rationale": "Intuitive Machines \u2014 small-cap space pure-play that benefits from sector-wide multiple expansion as the space M&A theme heats up and capital rotates into space names.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed Martin \u2014 historical Iridium NEXT prime contractor; loses a long-term satellite-build/services customer relationship as RKLB pulls future constellation buildout in-house using its own bus/components.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BA",
+          "rationale": "Boeing \u2014 competing launch/satellite integrator (via ULA stake and satellite division) loses an addressable customer as Iridium's future launches go captive to Rocket Lab/Neutron instead of being competitively bid.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "RKLB",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "headlines": [
+        "Rocket Lab Just Became More Like SpaceX\u2014And Less Like A Rocket Company",
+        "Rocket Lab Is Buying Iridium\u2014Here's Why Investors Are Excited"
+      ],
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company"
+    },
+    {
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "primary_drivers": [
+        "Sum-of-the-parts unlock revives breakup/spin playbook across media conglomerates",
+        "Pure-play cable vs. pure-play content valuation reset",
+        "Increased M&A optionality for the spun media assets in a consolidating streaming landscape"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "WBD",
+          "rationale": "Direct read-through: WBD has been pursuing its own studios/streaming vs. networks split; a successful CMCSA tax-free spin validates the structure and re-rates WBD's SOTP discount.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DIS",
+          "rationale": "Disney has faced activist pressure to separate linear from streaming/parks; a tax-free NBCU spin sets a precedent and lowers the perceived execution risk of a similar Disney action.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CHTR",
+          "rationale": "Cable-only pure-play; RemainCo Comcast becomes a cleaner broadband/cable comp, lifting the read-through multiple on Charter as the market re-rates connectivity separately from media.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "AMC",
+          "rationale": "An independent NBCU/Universal Studios with cleaner theatrical economics is incrementally positive for exhibitors, who benefit if Universal doubles down on theatrical windows post-separation.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "NFLX",
+          "rationale": "An independent, M&A-able NBCU (Peacock + studio library) raises the probability of a stronger consolidated streaming competitor; pricing/content cost umbrella tightens on the SVOD leader.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "FOXA",
+          "rationale": "Fox is one of the few remaining un-split media conglomerates; if NBCU spin succeeds, investor pressure mounts on Murdoch family to act, but in near term Fox looks structurally stale vs. cleaner peers.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "CMCSA",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "headlines": [
+        "Comcast To Separate Into Two Public Companies In Tax-Free NBCUniversal Spin-Off \u2014 Stock Rises"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "WBD",
+      "direction": "bullish",
+      "rationale": "Direct read-through: WBD has been pursuing its own studios/streaming vs. networks split; a successful CMCSA tax-free spin validates the structure and re-rates WBD's SOTP discount.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 1.16,
+      "rel_volume": 0.4,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "GSAT",
+      "direction": "bullish",
+      "rationale": "Globalstar \u2014 small-cap MSS satellite operator with a constellation, direct comp to Iridium. Acquisition multiple paid for IRDM sets a floor valuation read-through and revives M&A speculation (Apple relationship makes it strategic).",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "DIS",
+      "direction": "bullish",
+      "rationale": "Disney has faced activist pressure to separate linear from streaming/parks; a tax-free NBCU spin sets a precedent and lowers the perceived execution risk of a similar Disney action.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 0.01,
+      "rel_volume": 0.51,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "CHTR",
+      "direction": "bullish",
+      "rationale": "Cable-only pure-play; RemainCo Comcast becomes a cleaner broadband/cable comp, lifting the read-through multiple on Charter as the market re-rates connectivity separately from media.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "LMT",
+      "direction": "bearish",
+      "rationale": "Lockheed Martin \u2014 historical Iridium NEXT prime contractor; loses a long-term satellite-build/services customer relationship as RKLB pulls future constellation buildout in-house using its own bus/components.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "BA",
+      "direction": "bearish",
+      "rationale": "Boeing \u2014 competing launch/satellite integrator (via ULA stake and satellite division) loses an addressable customer as Iridium's future launches go captive to Rocket Lab/Neutron instead of being competitively bid.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "AMC",
+      "direction": "bullish",
+      "rationale": "An independent NBCU/Universal Studios with cleaner theatrical economics is incrementally positive for exhibitors, who benefit if Universal doubles down on theatrical windows post-separation.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "NFLX",
+      "direction": "bearish",
+      "rationale": "An independent, M&A-able NBCU (Peacock + studio library) raises the probability of a stronger consolidated streaming competitor; pricing/content cost umbrella tightens on the SVOD leader.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": 1.6,
+      "rel_volume": 0.69,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "FOXA",
+      "direction": "bearish",
+      "rationale": "Fox is one of the few remaining un-split media conglomerates; if NBCU spin succeeds, investor pressure mounts on Murdoch family to act, but in near term Fox looks structurally stale vs. cleaner peers.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 0.37,
+      "rel_volume": 0.31,
+      "trigger_ticker": "CMCSA",
+      "event_summary": "Comcast announced a tax-free spin-off of NBCUniversal, splitting into two separately traded public companies.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60155050/comcast-to-separate-into-two-public-companies-in-tax-free-nbcuniversal-spin-off-stock-rises",
+      "source_news_ids": [
+        "ae47e57e585a8421"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "LUNR",
+      "direction": "bullish",
+      "rationale": "Intuitive Machines \u2014 small-cap space pure-play that benefits from sector-wide multiple expansion as the space M&A theme heats up and capital rotates into space names.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "partial",
+      "pct_1d": 2.22,
+      "rel_volume": 0.32,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "IRDM",
+      "direction": "bullish",
+      "rationale": "Iridium is the target \u2014 shareholders receive the takeout premium directly. (Listing as the deal target, not a third-party ripple \u2014 IRDM is the company being acquired, so it will move on the deal terms themselves.)",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": 22.37,
+      "rel_volume": 3.56,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "ASTS",
+      "direction": "bullish",
+      "rationale": "Pure-play satellite-direct-to-device operator gets re-rated as the next logical vertical-integration / M&A target now that a launcher has shown willingness to pay up for an in-orbit constellation; scarcity value of public satcom pure-plays just went up.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 15.86,
+      "rel_volume": 0.69,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "VSAT",
+      "direction": "bullish",
+      "rationale": "Viasat \u2014 another publicly traded satellite operator with global L-band/Ka-band assets; gets dragged into the 'who else gets bought by a launcher' re-rating trade.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": 22.23,
+      "rel_volume": 0.64,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    },
+    {
+      "ticker": "PL",
+      "direction": "bullish",
+      "rationale": "Planet Labs \u2014 satellite data pure-play, also fits the 'strategic constellation acquired by a vertically-integrating space company' template; secondary read-through target.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "yes",
+      "pct_1d": 13.86,
+      "rel_volume": 0.63,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab is acquiring Iridium Communications, pivoting from a pure launch provider into a vertically-integrated satellite operator/services company in the SpaceX/Starlink mold.",
+      "news_url": "https://www.benzinga.com/m-a/26/06/60157434/rocket-lab-just-became-more-like-spacex-and-less-like-a-rocket-company",
+      "source_news_ids": [
+        "2e966d3483984448",
+        "92562015ee931376"
+      ],
+      "created_at": "2026-06-29T12:39:13.952941-04:00"
+    }
+  ]
 }

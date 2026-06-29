@@ -1,45 +1,71 @@
 {
-  "generated_at": "2026-06-29T08:38:14.471057-04:00",
-  "window": "AH_PRE",
-  "headline": "Mixed tape persists: ON -24%, WDC/STX -13% lead storage/semi wreckage; FCEL+MRNA+DKNG bounce \u2014 no desk takes.",
+  "generated_at": "2026-06-29T12:39:13.952941-04:00",
+  "window": "RTH",
+  "headline": "Regime flips risk-on: CMCSA spin-off + RKLB/IRDM deal ignite space & media; 3 desk takes live.",
   "market_state": {
-    "regime": "mixed",
-    "line": "SPY -0.54% below 50d, QQQ -1.49%; VXX stress ratio 0.98 \u2014 vol near neutral but tech drag real. Entry risk elevated."
+    "regime": "risk_on",
+    "line": "SPY +1.26%, QQQ +2.06%, VXX stress 0.94 \u2014 tape ripping, above 50d, entries chasing but vol is supportive."
   },
-  "actions": [],
+  "actions": [
+    {
+      "ticker": "CMCSA",
+      "direction": "long",
+      "entry": 24.78,
+      "stop": 22.8,
+      "target": 28.74,
+      "line": "Tax-free NBCU spin catalyst; half size \u2014 late-entry crowding risk after +11% 5d."
+    },
+    {
+      "ticker": "DINO",
+      "direction": "long",
+      "entry": 71.69,
+      "stop": 70.35,
+      "target": 74.38,
+      "line": "Clean technicals, low-severity risk flags, Research neutral but signal + setup align \u2014 full size."
+    },
+    {
+      "ticker": "PBF",
+      "direction": "long",
+      "entry": 46.35,
+      "stop": 45.6,
+      "target": 47.85,
+      "line": "Refiner momentum play; quarter size only \u2014 exhaustion flags after +18% 5d, weak Research."
+    }
+  ],
   "watch": [
     {
-      "ticker": "ON",
-      "type": "mover",
-      "line": "-23.82% on 3.3x vol \u2014 largest single-name wreck in scan; watch for washout/support stabilization."
+      "ticker": "WBD",
+      "type": "ripple",
+      "line": "High-confidence CMCSA read-through: spin validates SOTP structure, re-rates WBD's discount."
     },
     {
-      "ticker": "WDC",
-      "type": "mover",
-      "line": "-13.12% on 2.25x vol, MACD bearish \u2014 storage sector pressure, contagion risk to STX/SNDK."
+      "ticker": "IRDM",
+      "type": "catalyst",
+      "line": "+22.4% on RKLB acquisition announcement \u2014 unusual volume (3.56x) confirms conviction."
     },
     {
-      "ticker": "STX",
-      "type": "mover",
-      "line": "-12.49% on 3.1x vol, MACD bearish \u2014 mirrors WDC; HDD/storage complex in coordinated unwind."
+      "ticker": "GSAT",
+      "type": "ripple",
+      "line": "Direct IRDM comp; acquisition multiple sets valuation floor, revives MSS satellite M&A spec."
     },
     {
-      "ticker": "MRNA",
-      "type": "mover",
-      "line": "+12.64% on 2x vol, overbought flag \u2014 gap-and-trap risk; need catalyst confirmation before chasing."
+      "ticker": "GOOGL",
+      "type": "catalyst",
+      "line": "+4.6% \u2014 Alphabet added to the Dow; index-rebalance buying flow not fully absorbed."
     },
     {
-      "ticker": "FCEL",
-      "type": "mover",
-      "line": "+22.16%, MACD bullish \u2014 clean technical signal but no catalyst sourced; watch for pre-mkt follow-through."
+      "ticker": "CHTR",
+      "type": "ripple",
+      "line": "CMCSA RemainCo becomes cleaner broadband pure-play, lifts Charter's re-rate multiple."
     }
   ],
   "changed": [
-    "Oil risk-premium caveat (US-Iran ceasefire) from prior headline absent \u2014 no macro events in this scan.",
-    "SNDK joins storage bleed list explicitly (-10.4%); sector damage broadening."
+    "Regime flipped from mixed to risk_on (SPY +1.26%, QQQ +2.06%)",
+    "Three desk takes live vs. zero last scan",
+    "Leadership rotated: storage/semi wreckage replaced by space (IRDM/RKLB) and media spin (CMCSA) as dominant themes"
   ],
   "caveats": [
-    "AH/Pre-market scan as of 2026-06-29 08:38 ET \u2014 prices are pre-open and may gap significantly at RTH open.",
-    "No desk takes, no catalysts, no ripple calls loaded this scan; movers have no confirmed fundamental driver \u2014 size accordingly."
+    "RTH scan as of 12:39 ET 2026-06-29 \u2014 prices are point-in-time; fast-moving names (IRDM +22%, CMCSA) may have gapped further from desk entry levels.",
+    "CMCSA and PBF entries carry momentum-exhaustion risk flagged by desk; size discipline (half/quarter) is load-bearing here."
   ]
 }
