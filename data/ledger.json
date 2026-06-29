@@ -1,7 +1,178 @@
 {
-  "generated_at": "2026-06-28T19:42:50.265249+00:00",
+  "generated_at": "2026-06-29T04:27:46.706762+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "ae61d9e8733b",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "NOK",
+      "direction": "short",
+      "confidence": null,
+      "price": 13.0,
+      "thesis": "\u2b50 NOK -6.8% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "626d166ec97a",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "RKLB",
+      "direction": "long",
+      "confidence": null,
+      "price": 84.57,
+      "thesis": "\u2b50 RKLB +4.8% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "0105a8d46e00",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "CSCO",
+      "direction": "short",
+      "confidence": null,
+      "price": 113.45,
+      "thesis": "\u2b50 CSCO -4.6% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "9b24f6f49e54",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "SNDK",
+      "direction": "long",
+      "confidence": null,
+      "price": 2092.28,
+      "thesis": "\ud83e\udde0 Serenity SNDK -10.4% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "d860da5909e2",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "ASTS",
+      "direction": "short",
+      "confidence": null,
+      "price": 71.45,
+      "thesis": "\ud83e\udde0 Serenity ASTS +8.9% \ud83d\udd34bear",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "376c6afd11d3",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "ON",
+      "direction": "short",
+      "confidence": null,
+      "price": 90.38,
+      "thesis": "\ud83d\ude80 ON -23.8% on 3.3x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "fc9939ae4703",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "STX",
+      "direction": "short",
+      "confidence": null,
+      "price": 896.74,
+      "thesis": "\ud83d\ude80 STX -12.5% on 3.1x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "f4a534ea41af",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "WEN",
+      "direction": "long",
+      "confidence": null,
+      "price": 7.8,
+      "thesis": "+6.4% today; 5d uptrend +15%; 2.6x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "907e7ae50279",
+      "ts": "2026-06-29T04:23:19.756256+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "SHW",
+      "direction": "long",
+      "confidence": null,
+      "price": 344.02,
+      "thesis": "+1.4% today; 5d uptrend +7%; 2.1x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "69a9c98a84ed",
       "ts": "2026-06-28T19:37:43.328401+00:00",
@@ -3595,7 +3766,7 @@
       "thesis": "\u2b50 DELL -5.7% watchlist",
       "outcomes": {
         "1d": 3.63,
-        "3d": null,
+        "3d": 3.63,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3614,7 +3785,7 @@
       "thesis": "\u2b50 ORCL -3.1% watchlist",
       "outcomes": {
         "1d": 2.82,
-        "3d": null,
+        "3d": 2.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3633,7 +3804,7 @@
       "thesis": "\u2b50 RKLB -5.5% watchlist",
       "outcomes": {
         "1d": -4.82,
-        "3d": null,
+        "3d": -4.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3652,7 +3823,7 @@
       "thesis": "\ud83e\udde0 Serenity MU +16.0% \ud83d\udd34bear",
       "outcomes": {
         "1d": 7.05,
-        "3d": null,
+        "3d": 7.05,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3671,7 +3842,7 @@
       "thesis": "\ud83e\udde0 Serenity SNDK +21.8% \ud83d\udd34bear",
       "outcomes": {
         "1d": 10.74,
-        "3d": null,
+        "3d": 10.74,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3690,7 +3861,7 @@
       "thesis": "\ud83e\udde0 Serenity AAOI -5.8% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -2.01,
-        "3d": null,
+        "3d": -2.01,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3709,7 +3880,7 @@
       "thesis": "\ud83e\udde0 Serenity POET -4.9% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -6.99,
-        "3d": null,
+        "3d": -6.99,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3728,7 +3899,7 @@
       "thesis": "\ud83e\udde0 Serenity ASTS -3.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -8.9,
-        "3d": null,
+        "3d": -8.9,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3747,7 +3918,7 @@
       "thesis": "\ud83e\udde0 Serenity RKLB -5.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -4.82,
-        "3d": null,
+        "3d": -4.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3766,7 +3937,7 @@
       "thesis": "\ud83e\udde0 Serenity PLTR -5.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -5.58,
-        "3d": null,
+        "3d": -5.58,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3785,7 +3956,7 @@
       "thesis": "\ud83e\udde0 Serenity INTC +0.8% \u26aa",
       "outcomes": {
         "1d": -3.96,
-        "3d": null,
+        "3d": -3.96,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3804,7 +3975,7 @@
       "thesis": "\ud83e\udde0 Serenity MXL +11.1% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 2.2,
-        "3d": null,
+        "3d": 2.2,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3823,7 +3994,7 @@
       "thesis": "\ud83e\udde0 Serenity COHR +3.7% \u26aa",
       "outcomes": {
         "1d": -6.69,
-        "3d": null,
+        "3d": -6.69,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3842,7 +4013,7 @@
       "thesis": "\ud83e\udde0 Serenity IREN -5.1% \ud83d\udd34bear",
       "outcomes": {
         "1d": 2.05,
-        "3d": null,
+        "3d": 2.05,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3861,7 +4032,7 @@
       "thesis": "\ud83e\udde0 Serenity HOOD -3.8% \ud83d\udd34bear",
       "outcomes": {
         "1d": -5.62,
-        "3d": null,
+        "3d": -5.62,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3880,7 +4051,7 @@
       "thesis": "\ud83e\udde0 Serenity VSH +7.9% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -6.09,
-        "3d": null,
+        "3d": -6.09,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3899,7 +4070,7 @@
       "thesis": "\ud83e\udde0 Serenity MSFT -3.6% \u26aa",
       "outcomes": {
         "1d": -5.54,
-        "3d": null,
+        "3d": -5.54,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3918,7 +4089,7 @@
       "thesis": "\ud83e\udde0 Serenity NVTS -3.4% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -2.66,
-        "3d": null,
+        "3d": -2.66,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3937,7 +4108,7 @@
       "thesis": "\ud83d\ude80 TECH +20.0% on 13.0x vol",
       "outcomes": {
         "1d": 0.47,
-        "3d": null,
+        "3d": 0.47,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3956,7 +4127,7 @@
       "thesis": "\ud83d\ude80 TSHA -10.7% on 5.1x vol",
       "outcomes": {
         "1d": -2.25,
-        "3d": null,
+        "3d": -2.25,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3975,7 +4146,7 @@
       "thesis": "\ud83d\ude80 NUVB -10.5% on 5.3x vol",
       "outcomes": {
         "1d": 3.36,
-        "3d": null,
+        "3d": 3.36,
         "5d": null,
         "10d": null,
         "21d": null
@@ -3994,7 +4165,7 @@
       "thesis": "\ud83d\ude80 JEF -9.0% on 4.9x vol",
       "outcomes": {
         "1d": 6.98,
-        "3d": null,
+        "3d": 6.98,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4013,7 +4184,7 @@
       "thesis": "\u2b50 RKLB -5.5% \u00b7 RKLB is down 5.53% on the session with\u2026",
       "outcomes": {
         "1d": -4.82,
-        "3d": null,
+        "3d": -4.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4032,7 +4203,7 @@
       "thesis": "\u2b50 DELL -5.7% watchlist",
       "outcomes": {
         "1d": 3.63,
-        "3d": null,
+        "3d": 3.63,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4051,7 +4222,7 @@
       "thesis": "\u2b50 ORCL -3.1% \u00b7 ORCL is down 3.1% today and nearly 17%\u2026",
       "outcomes": {
         "1d": 2.82,
-        "3d": null,
+        "3d": 2.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4070,7 +4241,7 @@
       "thesis": "\ud83e\udde0 Serenity MU +16.0% \ud83d\udd34bear",
       "outcomes": {
         "1d": 7.05,
-        "3d": null,
+        "3d": 7.05,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4089,7 +4260,7 @@
       "thesis": "\ud83e\udde0 Serenity SNDK +21.8% \ud83d\udd34bear",
       "outcomes": {
         "1d": 10.74,
-        "3d": null,
+        "3d": 10.74,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4108,7 +4279,7 @@
       "thesis": "\ud83e\udde0 Serenity AAOI -5.8% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -2.01,
-        "3d": null,
+        "3d": -2.01,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4127,7 +4298,7 @@
       "thesis": "\ud83e\udde0 Serenity POET -4.9% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -6.99,
-        "3d": null,
+        "3d": -6.99,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4146,7 +4317,7 @@
       "thesis": "\ud83e\udde0 Serenity ASTS -3.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -8.9,
-        "3d": null,
+        "3d": -8.9,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4165,7 +4336,7 @@
       "thesis": "\ud83e\udde0 Serenity RKLB -5.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -4.82,
-        "3d": null,
+        "3d": -4.82,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4184,7 +4355,7 @@
       "thesis": "\ud83e\udde0 Serenity PLTR -5.5% \ud83d\udd34bear",
       "outcomes": {
         "1d": -5.58,
-        "3d": null,
+        "3d": -5.58,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4203,7 +4374,7 @@
       "thesis": "\ud83e\udde0 Serenity INTC +0.8% \u26aa",
       "outcomes": {
         "1d": -3.96,
-        "3d": null,
+        "3d": -3.96,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4222,7 +4393,7 @@
       "thesis": "\ud83e\udde0 Serenity MXL +11.1% \ud83d\udfe2bull",
       "outcomes": {
         "1d": 2.2,
-        "3d": null,
+        "3d": 2.2,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4241,7 +4412,7 @@
       "thesis": "\ud83e\udde0 Serenity COHR +3.7% \u26aa",
       "outcomes": {
         "1d": -6.69,
-        "3d": null,
+        "3d": -6.69,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4260,7 +4431,7 @@
       "thesis": "\ud83e\udde0 Serenity IREN -5.1% \ud83d\udd34bear",
       "outcomes": {
         "1d": 2.05,
-        "3d": null,
+        "3d": 2.05,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4279,7 +4450,7 @@
       "thesis": "\ud83e\udde0 Serenity HOOD -3.8% \ud83d\udd34bear",
       "outcomes": {
         "1d": -5.62,
-        "3d": null,
+        "3d": -5.62,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4298,7 +4469,7 @@
       "thesis": "\ud83e\udde0 Serenity VSH +7.9% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -6.09,
-        "3d": null,
+        "3d": -6.09,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4317,7 +4488,7 @@
       "thesis": "\ud83e\udde0 Serenity MSFT -3.6% \u26aa",
       "outcomes": {
         "1d": -5.54,
-        "3d": null,
+        "3d": -5.54,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4336,7 +4507,7 @@
       "thesis": "\ud83e\udde0 Serenity NVTS -3.4% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -2.66,
-        "3d": null,
+        "3d": -2.66,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4355,7 +4526,7 @@
       "thesis": "\ud83d\ude80 TECH +20.0% on 13.0x vol",
       "outcomes": {
         "1d": 0.47,
-        "3d": null,
+        "3d": 0.47,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4374,7 +4545,7 @@
       "thesis": "\ud83d\ude80 TSHA -10.7% on 5.1x vol",
       "outcomes": {
         "1d": -2.25,
-        "3d": null,
+        "3d": -2.25,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4393,7 +4564,7 @@
       "thesis": "\ud83d\ude80 NUVB -10.5% on 5.3x vol",
       "outcomes": {
         "1d": 3.36,
-        "3d": null,
+        "3d": 3.36,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4412,7 +4583,7 @@
       "thesis": "\ud83d\ude80 JEF -9.0% on 4.9x vol",
       "outcomes": {
         "1d": 6.98,
-        "3d": null,
+        "3d": 6.98,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4431,7 +4602,7 @@
       "thesis": "\ud83d\udcc8 GLW +11.5% new top-20",
       "outcomes": {
         "1d": -2.77,
-        "3d": null,
+        "3d": -2.77,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4450,7 +4621,7 @@
       "thesis": "+2.0% today; 5d uptrend +7%; 2.2x volume",
       "outcomes": {
         "1d": 1.01,
-        "3d": null,
+        "3d": 1.01,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4469,7 +4640,7 @@
       "thesis": "+1.9% today; 5d uptrend +5%; MACD positive",
       "outcomes": {
         "1d": 1.22,
-        "3d": null,
+        "3d": 1.22,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4488,7 +4659,7 @@
       "thesis": "+4.0% today; 5d uptrend +1%; 3.1x volume",
       "outcomes": {
         "1d": -3.43,
-        "3d": null,
+        "3d": -3.43,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4507,7 +4678,7 @@
       "thesis": "+6.1% today; 5d uptrend +9%; 2.4x volume",
       "outcomes": {
         "1d": -1.0,
-        "3d": null,
+        "3d": -1.0,
         "5d": null,
         "10d": null,
         "21d": null
@@ -4526,7 +4697,7 @@
       "thesis": "-3.6% today; 5d downtrend -7%; 2.3x volume",
       "outcomes": {
         "1d": -5.54,
-        "3d": null,
+        "3d": -5.54,
         "5d": null,
         "10d": null,
         "21d": null
@@ -9308,169 +9479,6 @@
         "5d": null,
         "10d": null,
         "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "7c56620eff39",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "TOST",
-      "direction": "long",
-      "confidence": null,
-      "price": 26.18,
-      "thesis": "+6.9% today; 5d uptrend +4%; MACD positive",
-      "outcomes": {
-        "1d": 0.74,
-        "3d": 3.28,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "cf5983cb6c14",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "SHC",
-      "direction": "long",
-      "confidence": null,
-      "price": 16.52,
-      "thesis": "+4.4% today; 5d uptrend +3%; MACD bullish cross",
-      "outcomes": {
-        "1d": 4.45,
-        "3d": 5.21,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "6b1500107159",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "WY",
-      "direction": "long",
-      "confidence": null,
-      "price": 25.43,
-      "thesis": "+4.0% today; 5d uptrend +3%; MACD bullish cross",
-      "outcomes": {
-        "1d": 0.1,
-        "3d": -0.47,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "c08b1cedaa9e",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "TMO",
-      "direction": "long",
-      "confidence": null,
-      "price": 488.24,
-      "thesis": "+4.0% today; 5d uptrend +3%; MACD bullish cross",
-      "outcomes": {
-        "1d": 4.28,
-        "3d": 5.02,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "111787b78512",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "ATAI",
-      "direction": "long",
-      "confidence": null,
-      "price": 4.25,
-      "thesis": "+4.0% today; 5d uptrend +3%; MACD bullish cross",
-      "outcomes": {
-        "1d": 11.29,
-        "3d": 24.0,
-        "5d": null,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "dfdaa1d2c3d5",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "early_entry",
-      "type": "catch_long",
-      "ticker": "GLW",
-      "direction": "long",
-      "confidence": null,
-      "price": 214.38,
-      "thesis": "+10.5% gap; holding above VWAP; 2.4x vol (time-of-day); +2.8% vs VWAP; 1.2% off HOD",
-      "outcomes": {
-        "0d": -4.03,
-        "1d": 7.02,
-        "3d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "a9b9da571fa2",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "early_entry",
-      "type": "catch_long",
-      "ticker": "LEN",
-      "direction": "long",
-      "confidence": null,
-      "price": 93.28,
-      "thesis": "+6.8% gap; holding above VWAP; 1.8x vol (time-of-day); +0.2% vs VWAP; 0.9% off HOD",
-      "outcomes": {
-        "0d": -0.34,
-        "1d": 0.57,
-        "3d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "0fc371ca46a6",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "early_entry",
-      "type": "catch_long",
-      "ticker": "UBER",
-      "direction": "long",
-      "confidence": null,
-      "price": 74.88,
-      "thesis": "+7.4% gap; holding above VWAP; 2.1x vol (time-of-day); +1.8% vs VWAP; 1.1% off HOD",
-      "outcomes": {
-        "0d": -1.36,
-        "1d": -3.53,
-        "3d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "95e0fea8884d",
-      "ts": "2026-06-24T16:24:19.046964+00:00",
-      "kind": "early_entry",
-      "type": "catch_long",
-      "ticker": "IQV",
-      "direction": "long",
-      "confidence": null,
-      "price": 183.84,
-      "thesis": "+7.3% gap; holding above VWAP; 1.0x vol (time-of-day); +0.6% vs VWAP; 0.3% off HOD",
-      "outcomes": {
-        "0d": 1.0,
-        "1d": 1.33,
-        "3d": null
       },
       "status": "hit"
     }
