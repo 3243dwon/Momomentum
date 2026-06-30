@@ -1,8 +1,507 @@
 {
-  "generated_at": "2026-06-30T13:07:56.387129-04:00",
-  "event_count": 0,
-  "prediction_count": 0,
-  "not_yet_priced_in": 0,
-  "events": [],
-  "predictions": []
+  "generated_at": "2026-06-30T16:03:29.062461-04:00",
+  "event_count": 3,
+  "prediction_count": 19,
+  "not_yet_priced_in": 14,
+  "events": [
+    {
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "primary_drivers": [
+        "Small-launch market share shift from SpaceX/incumbents to Rocket Lab",
+        "Iridium constellation refresh capex visibility",
+        "Read-through re-rating for pure-play space/launch peers"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "IRDM",
+          "rationale": "Iridium itself \u2014 locking in a launch provider de-risks its next-gen constellation refresh schedule and capex plan; cheaper/more flexible launch cadence than legacy options.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "ASTS",
+          "rationale": "Pure-play space/satellite peer that re-rates on small-launch demand validation; AST SpaceMobile depends on continued availability of non-SpaceX launch capacity for its BlueBird constellation.",
+          "confidence": "medium",
+          "horizon": "days"
+        },
+        {
+          "ticker": "PL",
+          "rationale": "Planet Labs operates a smallsat constellation requiring routine refresh launches; a credible non-SpaceX launch option strengthens its supply chain bargaining power.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "BKSY",
+          "rationale": "BlackSky relies on small-launch providers (has historically used RKLB Electron) for its EO constellation; deal validates the launch cadence/pricing model it depends on.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "LUNR",
+          "rationale": "Space pure-play peer that tends to trade in sympathy on launch/space contract wins; sector-wide re-rate on commercial space momentum.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed (via ULA JV with Boeing) is the legacy launcher for government/comms missions; continued share loss of medium-lift commercial launches to Rocket Lab/SpaceX pressures ULA economics.",
+          "confidence": "low",
+          "horizon": "months"
+        },
+        {
+          "ticker": "BA",
+          "rationale": "Boeing's ULA JV stake \u2014 same dynamic as LMT; commercial launch wins migrating to new entrants erodes ULA's addressable market.",
+          "confidence": "low",
+          "horizon": "months"
+        }
+      ],
+      "trigger_ticker": "RKLB",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "headlines": [
+        "Rocket Lab Stock Rises As Iridium Deal Sparks Positive Analyst Response"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response"
+    },
+    {
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "primary_drivers": [
+        "Defense drone demand re-rating on AVAV print",
+        "Read-through to small/loitering munition and counter-UAS budgets",
+        "Sentiment lift across pure-play drone names"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "KTOS",
+          "rationale": "Pure-play defense drone/target-drone maker (Valkyrie, Kratos UAS); AVAV's strong DoD-driven order book signals an expanding small-UAS and loyal-wingman budget envelope that flows directly to Kratos.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "RCAT",
+          "rationale": "Red Cat is a small-UAS pure-play (Teal/SRR) competing for the same Army Short-Range Reconnaissance dollars AVAV's Switchblade/Puma serve; momentum traders rotate the AVAV beat into the cheapest drone proxy.",
+          "confidence": "high",
+          "horizon": "days"
+        },
+        {
+          "ticker": "DPRO",
+          "rationale": "Draganfly is another small drone pure-play that trades as a high-beta sympathy name on any AVAV/drone budget headline.",
+          "confidence": "medium",
+          "horizon": "intraday"
+        },
+        {
+          "ticker": "LMT",
+          "rationale": "Lockheed is AVAV's JV partner on loitering munitions and a major counter-UAS prime; an AVAV blowout validates the loitering-munition demand cycle for Lockheed's missile segment.",
+          "confidence": "low",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "PLTR",
+          "rationale": "Palantir's Maven/TITAN integrates UAS data; a stronger defense-tech procurement backdrop signaled by AVAV supports software-layer beneficiaries.",
+          "confidence": "low",
+          "horizon": "days"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "AVAV",
+          "rationale": "Not a loser, but flagged: post-blowout, sympathy names like ONDS/KTOS/RCAT can outrun AVAV intraday as flow rotates to higher-beta proxies \u2014 not a fundamental short.",
+          "confidence": "low",
+          "horizon": "intraday"
+        }
+      ],
+      "trigger_ticker": "ONDS",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "headlines": [
+        "AeroVironment's Q4 Blowout Triggers Drone Stock Melt-Up"
+      ],
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up"
+    },
+    {
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "primary_drivers": [
+        "M&A close timeline pushed out \u2014 arb spread widens, deal certainty falls",
+        "Industry consolidation pause \u2014 read-through to other potential media combinations",
+        "Competitive landscape stays fragmented longer, helping standalone streamers/studios"
+      ],
+      "beneficiaries": [
+        {
+          "ticker": "NFLX",
+          "rationale": "A delayed/jeopardized WBD-Paramount combo means the merged streaming scale challenger to Netflix is pushed out further; subscriber competitive pressure remains diffuse.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "CMCSA",
+          "rationale": "Comcast/NBCU has reportedly weighed its own bid for WBD assets; a stalled Paramount deal keeps the door open for a competing offer or asset carve-out, particularly for Warner studios/HBO.",
+          "confidence": "medium",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "NWSA",
+          "rationale": "News Corp and other potential interlopers gain optionality to bid on WBD pieces (sports rights, studios) if UK CMA forces divestitures or kills the deal.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "losers": [
+        {
+          "ticker": "PSKY",
+          "rationale": "Paramount Skydance bears regulatory risk, financing carrying cost, and potential need to sweeten terms or accept UK divestitures \u2014 deal economics deteriorate the longer CMA review drags.",
+          "confidence": "high",
+          "horizon": "weeks"
+        },
+        {
+          "ticker": "FWONK",
+          "rationale": "Liberty Media / John Malone complex has been positioned for media consolidation; a stalled flagship deal cools the broader consolidation thesis and re-rating of media holdcos.",
+          "confidence": "low",
+          "horizon": "days"
+        },
+        {
+          "ticker": "FUBO",
+          "rationale": "A delayed WBD-Paramount merger means continued fragmented carriage negotiations remain costly; consolidated distributor leverage that was expected to pressure vMVPDs is postponed but so is rationalization of bundle economics.",
+          "confidence": "low",
+          "horizon": "weeks"
+        }
+      ],
+      "trigger_ticker": "WBD",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "headlines": [
+        "Paramount Skydance's $110 Billion WBD Deal Hits UK Regulatory Hurdle Despite US Approval"
+      ],
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval"
+    }
+  ],
+  "predictions": [
+    {
+      "ticker": "IRDM",
+      "direction": "bullish",
+      "rationale": "Iridium itself \u2014 locking in a launch provider de-risks its next-gen constellation refresh schedule and capex plan; cheaper/more flexible launch cadence than legacy options.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 0.5,
+      "rel_volume": 2.11,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "KTOS",
+      "direction": "bullish",
+      "rationale": "Pure-play defense drone/target-drone maker (Valkyrie, Kratos UAS); AVAV's strong DoD-driven order book signals an expanding small-UAS and loyal-wingman budget envelope that flows directly to Kratos.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "PSKY",
+      "direction": "bearish",
+      "rationale": "Paramount Skydance bears regulatory risk, financing carrying cost, and potential need to sweeten terms or accept UK divestitures \u2014 deal economics deteriorate the longer CMA review drags.",
+      "confidence": "high",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "BKSY",
+      "direction": "bullish",
+      "rationale": "BlackSky relies on small-launch providers (has historically used RKLB Electron) for its EO constellation; deal validates the launch cadence/pricing model it depends on.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "DPRO",
+      "direction": "bullish",
+      "rationale": "Draganfly is another small drone pure-play that trades as a high-beta sympathy name on any AVAV/drone budget headline.",
+      "confidence": "medium",
+      "horizon": "intraday",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "CMCSA",
+      "direction": "bullish",
+      "rationale": "Comcast/NBCU has reportedly weighed its own bid for WBD assets; a stalled Paramount deal keeps the door open for a competing offer or asset carve-out, particularly for Warner studios/HBO.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": 1.41,
+      "rel_volume": 1.26,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "LMT",
+      "direction": "bearish",
+      "rationale": "Lockheed (via ULA JV with Boeing) is the legacy launcher for government/comms missions; continued share loss of medium-lift commercial launches to Rocket Lab/SpaceX pressures ULA economics.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "BA",
+      "direction": "bearish",
+      "rationale": "Boeing's ULA JV stake \u2014 same dynamic as LMT; commercial launch wins migrating to new entrants erodes ULA's addressable market.",
+      "confidence": "low",
+      "horizon": "months",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "LMT",
+      "direction": "bullish",
+      "rationale": "Lockheed is AVAV's JV partner on loitering munitions and a major counter-UAS prime; an AVAV blowout validates the loitering-munition demand cycle for Lockheed's missile segment.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "PLTR",
+      "direction": "bullish",
+      "rationale": "Palantir's Maven/TITAN integrates UAS data; a stronger defense-tech procurement backdrop signaled by AVAV supports software-layer beneficiaries.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": 0.9,
+      "rel_volume": 1.03,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "AVAV",
+      "direction": "bearish",
+      "rationale": "Not a loser, but flagged: post-blowout, sympathy names like ONDS/KTOS/RCAT can outrun AVAV intraday as flow rotates to higher-beta proxies \u2014 not a fundamental short.",
+      "confidence": "low",
+      "horizon": "intraday",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "NWSA",
+      "direction": "bullish",
+      "rationale": "News Corp and other potential interlopers gain optionality to bid on WBD pieces (sports rights, studios) if UK CMA forces divestitures or kills the deal.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": -1.7,
+      "rel_volume": 1.0,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "FWONK",
+      "direction": "bearish",
+      "rationale": "Liberty Media / John Malone complex has been positioned for media consolidation; a stalled flagship deal cools the broader consolidation thesis and re-rating of media holdcos.",
+      "confidence": "low",
+      "horizon": "days",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "FUBO",
+      "direction": "bearish",
+      "rationale": "A delayed WBD-Paramount merger means continued fragmented carriage negotiations remain costly; consolidated distributor leverage that was expected to pressure vMVPDs is postponed but so is rationalization of bundle economics.",
+      "confidence": "low",
+      "horizon": "weeks",
+      "priced_in": "no",
+      "pct_1d": null,
+      "rel_volume": null,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "RCAT",
+      "direction": "bullish",
+      "rationale": "Red Cat is a small-UAS pure-play (Teal/SRR) competing for the same Army Short-Range Reconnaissance dollars AVAV's Switchblade/Puma serve; momentum traders rotate the AVAV beat into the cheapest drone proxy.",
+      "confidence": "high",
+      "horizon": "days",
+      "priced_in": "partial",
+      "pct_1d": 3.15,
+      "rel_volume": 1.12,
+      "trigger_ticker": "ONDS",
+      "event_summary": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+      "source_news_ids": [
+        "95478d5983b6e1a3"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "ASTS",
+      "direction": "bullish",
+      "rationale": "Pure-play space/satellite peer that re-rates on small-launch demand validation; AST SpaceMobile depends on continued availability of non-SpaceX launch capacity for its BlueBird constellation.",
+      "confidence": "medium",
+      "horizon": "days",
+      "priced_in": "partial",
+      "pct_1d": 2.46,
+      "rel_volume": 1.1,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "LUNR",
+      "direction": "bullish",
+      "rationale": "Space pure-play peer that tends to trade in sympathy on launch/space contract wins; sector-wide re-rate on commercial space momentum.",
+      "confidence": "low",
+      "horizon": "intraday",
+      "priced_in": "partial",
+      "pct_1d": 2.0,
+      "rel_volume": 0.64,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "NFLX",
+      "direction": "bullish",
+      "rationale": "A delayed/jeopardized WBD-Paramount combo means the merged streaming scale challenger to Netflix is pushed out further; subscriber competitive pressure remains diffuse.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "contradicted",
+      "pct_1d": -3.21,
+      "rel_volume": 0.78,
+      "trigger_ticker": "WBD",
+      "event_summary": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+      "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+      "source_news_ids": [
+        "d63f062c29954bba"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    },
+    {
+      "ticker": "PL",
+      "direction": "bullish",
+      "rationale": "Planet Labs operates a smallsat constellation requiring routine refresh launches; a credible non-SpaceX launch option strengthens its supply chain bargaining power.",
+      "confidence": "medium",
+      "horizon": "weeks",
+      "priced_in": "yes",
+      "pct_1d": 6.03,
+      "rel_volume": 1.28,
+      "trigger_ticker": "RKLB",
+      "event_summary": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+      "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+      "source_news_ids": [
+        "0492b4839de1f8a5"
+      ],
+      "created_at": "2026-06-30T16:03:29.062461-04:00"
+    }
+  ]
 }

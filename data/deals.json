@@ -1,8 +1,368 @@
 {
- "generated_at": "2026-06-30T17:12:29.566594+00:00",
+ "generated_at": "2026-06-30T20:07:56.149974+00:00",
  "window_days": 30,
- "deal_count": 20,
+ "deal_count": 23,
  "deals": [
+  {
+   "id": "64614f1b6ad5",
+   "ts": "2026-06-30T16:03:29.062461-04:00",
+   "primary_ticker": "RKLB",
+   "counterparty": null,
+   "headline": "Rocket Lab won a launch contract from Iridium, drawing positive analyst response and lifting RKLB shares.",
+   "drivers": [
+    "Small-launch market share shift from SpaceX/incumbents to Rocket Lab",
+    "Iridium constellation refresh capex visibility",
+    "Read-through re-rating for pure-play space/launch peers"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196681/rocket-lab-stock-rises-as-iridium-deal-sparks-positive-analyst-response",
+   "predictions": [
+    {
+     "ticker": "IRDM",
+     "direction": "long",
+     "mechanism": "Iridium itself \u2014 locking in a launch provider de-risks its next-gen constellation refresh schedule and capex plan; cheaper/more flexible launch cadence than legacy options.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "BKSY",
+     "direction": "long",
+     "mechanism": "BlackSky relies on small-launch providers (has historically used RKLB Electron) for its EO constellation; deal validates the launch cadence/pricing model it depends on.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "LMT",
+     "direction": "short",
+     "mechanism": "Lockheed (via ULA JV with Boeing) is the legacy launcher for government/comms missions; continued share loss of medium-lift commercial launches to Rocket Lab/SpaceX pressures ULA economics.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "BA",
+     "direction": "short",
+     "mechanism": "Boeing's ULA JV stake \u2014 same dynamic as LMT; commercial launch wins migrating to new entrants erodes ULA's addressable market.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ASTS",
+     "direction": "long",
+     "mechanism": "Pure-play space/satellite peer that re-rates on small-launch demand validation; AST SpaceMobile depends on continued availability of non-SpaceX launch capacity for its BlueBird constellation.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "LUNR",
+     "direction": "long",
+     "mechanism": "Space pure-play peer that tends to trade in sympathy on launch/space contract wins; sector-wide re-rate on commercial space momentum.",
+     "confidence": "low",
+     "horizon": "intraday",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "PL",
+     "direction": "long",
+     "mechanism": "Planet Labs operates a smallsat constellation requiring routine refresh launches; a credible non-SpaceX launch option strengthens its supply chain bargaining power.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 7,
+    "graded": 0,
+    "hit": 0
+   }
+  },
+  {
+   "id": "609537e65669",
+   "ts": "2026-06-30T16:03:29.062461-04:00",
+   "primary_ticker": "ONDS",
+   "counterparty": null,
+   "headline": "AeroVironment posted a Q4 blowout, sparking a sector-wide melt-up in drone/defense-tech stocks including Ondas (ONDS).",
+   "drivers": [
+    "Defense drone demand re-rating on AVAV print",
+    "Read-through to small/loitering munition and counter-UAS budgets",
+    "Sentiment lift across pure-play drone names"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/movers/26/06/60196369/aerovironments-q4-blowout-triggers-drone-stock-melt-up",
+   "predictions": [
+    {
+     "ticker": "KTOS",
+     "direction": "long",
+     "mechanism": "Pure-play defense drone/target-drone maker (Valkyrie, Kratos UAS); AVAV's strong DoD-driven order book signals an expanding small-UAS and loyal-wingman budget envelope that flows directly to Kratos.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "DPRO",
+     "direction": "long",
+     "mechanism": "Draganfly is another small drone pure-play that trades as a high-beta sympathy name on any AVAV/drone budget headline.",
+     "confidence": "medium",
+     "horizon": "intraday",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "LMT",
+     "direction": "long",
+     "mechanism": "Lockheed is AVAV's JV partner on loitering munitions and a major counter-UAS prime; an AVAV blowout validates the loitering-munition demand cycle for Lockheed's missile segment.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "PLTR",
+     "direction": "long",
+     "mechanism": "Palantir's Maven/TITAN integrates UAS data; a stronger defense-tech procurement backdrop signaled by AVAV supports software-layer beneficiaries.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "AVAV",
+     "direction": "short",
+     "mechanism": "Not a loser, but flagged: post-blowout, sympathy names like ONDS/KTOS/RCAT can outrun AVAV intraday as flow rotates to higher-beta proxies \u2014 not a fundamental short.",
+     "confidence": "low",
+     "horizon": "intraday",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "RCAT",
+     "direction": "long",
+     "mechanism": "Red Cat is a small-UAS pure-play (Teal/SRR) competing for the same Army Short-Range Reconnaissance dollars AVAV's Switchblade/Puma serve; momentum traders rotate the AVAV beat into the cheapest drone proxy.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 6,
+    "graded": 0,
+    "hit": 0
+   }
+  },
+  {
+   "id": "6575b51181b3",
+   "ts": "2026-06-30T16:03:29.062461-04:00",
+   "primary_ticker": "WBD",
+   "counterparty": null,
+   "headline": "Paramount Skydance's $110B bid for Warner Bros Discovery cleared US regulators but is now stuck on a UK competition review, delaying deal close.",
+   "drivers": [
+    "M&A close timeline pushed out \u2014 arb spread widens, deal certainty falls",
+    "Industry consolidation pause \u2014 read-through to other potential media combinations",
+    "Competitive landscape stays fragmented longer, helping standalone streamers/studios"
+   ],
+   "news_url": "https://www.benzinga.com/markets/equities/26/06/60188845/paramount-skydances-110-billion-wbd-deal-hits-uk-regulatory-hurdle-despite-us-approval",
+   "predictions": [
+    {
+     "ticker": "PSKY",
+     "direction": "short",
+     "mechanism": "Paramount Skydance bears regulatory risk, financing carrying cost, and potential need to sweeten terms or accept UK divestitures \u2014 deal economics deteriorate the longer CMA review drags.",
+     "confidence": "high",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "CMCSA",
+     "direction": "long",
+     "mechanism": "Comcast/NBCU has reportedly weighed its own bid for WBD assets; a stalled Paramount deal keeps the door open for a competing offer or asset carve-out, particularly for Warner studios/HBO.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NWSA",
+     "direction": "long",
+     "mechanism": "News Corp and other potential interlopers gain optionality to bid on WBD pieces (sports rights, studios) if UK CMA forces divestitures or kills the deal.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "FWONK",
+     "direction": "short",
+     "mechanism": "Liberty Media / John Malone complex has been positioned for media consolidation; a stalled flagship deal cools the broader consolidation thesis and re-rating of media holdcos.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "FUBO",
+     "direction": "short",
+     "mechanism": "A delayed WBD-Paramount merger means continued fragmented carriage negotiations remain costly; consolidated distributor leverage that was expected to pressure vMVPDs is postponed but so is rationalization of bundle economics.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NFLX",
+     "direction": "long",
+     "mechanism": "A delayed/jeopardized WBD-Paramount combo means the merged streaming scale challenger to Netflix is pushed out further; subscriber competitive pressure remains diffuse.",
+     "confidence": "medium",
+     "horizon": "weeks",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 6,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "e8dddb5aed3a",
    "ts": "2026-06-30T10:26:41.654496-04:00",
@@ -424,13 +784,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 0.99,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "TDG",
@@ -440,13 +800,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 0.51,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "MMM",
@@ -456,13 +816,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.86,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "EMR",
@@ -472,13 +832,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 0.22,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "ROK",
@@ -488,13 +848,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.7,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ROP",
@@ -504,19 +864,19 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 1.18,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 7,
-    "graded": 0,
-    "hit": 0
+    "graded": 6,
+    "hit": 4
    }
   },
   {
@@ -540,13 +900,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 1.33,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "BBY",
@@ -556,13 +916,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.51,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "SHOP",
@@ -586,13 +946,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 3.14,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "KSS",
@@ -602,13 +962,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 4.83,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "W",
@@ -618,13 +978,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.52,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "GXO",
@@ -634,13 +994,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 0.95,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "TTD",
@@ -664,13 +1024,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.41,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ETSY",
@@ -680,19 +1040,19 @@
      "horizon": "days",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 5.57,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 10,
-    "graded": 0,
-    "hit": 0
+    "graded": 8,
+    "hit": 7
    }
   },
   {
@@ -972,7 +1332,7 @@
      "outcomes": {
       "1d": -4.19,
       "3d": -4.19,
-      "5d": null,
+      "5d": 11.02,
       "10d": null,
       "21d": null
      },
@@ -988,7 +1348,7 @@
      "outcomes": {
       "1d": -2.14,
       "3d": -2.14,
-      "5d": null,
+      "5d": 7.23,
       "10d": null,
       "21d": null
      },
@@ -1004,7 +1364,7 @@
      "outcomes": {
       "1d": -13.54,
       "3d": -13.54,
-      "5d": null,
+      "5d": -4.59,
       "10d": null,
       "21d": null
      },
@@ -1020,7 +1380,7 @@
      "outcomes": {
       "1d": 2.68,
       "3d": 2.68,
-      "5d": null,
+      "5d": 6.83,
       "10d": null,
       "21d": null
      },
@@ -1036,7 +1396,7 @@
      "outcomes": {
       "1d": -8.54,
       "3d": -8.54,
-      "5d": null,
+      "5d": -0.32,
       "10d": null,
       "21d": null
      },
@@ -1052,7 +1412,7 @@
      "outcomes": {
       "1d": -3.91,
       "3d": -3.91,
-      "5d": null,
+      "5d": 10.19,
       "10d": null,
       "21d": null
      },
@@ -1068,7 +1428,7 @@
      "outcomes": {
       "1d": -3.94,
       "3d": -3.94,
-      "5d": null,
+      "5d": 17.24,
       "10d": null,
       "21d": null
      },
@@ -1084,7 +1444,7 @@
      "outcomes": {
       "1d": 3.36,
       "3d": 3.36,
-      "5d": null,
+      "5d": -5.72,
       "10d": null,
       "21d": null
      },

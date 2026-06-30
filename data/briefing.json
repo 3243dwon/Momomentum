@@ -1,54 +1,70 @@
 {
-  "generated_at": "2026-06-30T13:07:56.387129-04:00",
-  "window": "RTH",
-  "headline": "Risk-on intact; TSM lone desk take \u2014 QQQ +1.73% leads, FCEL/FIGR/RARE headline movers",
+  "generated_at": "2026-06-30T16:03:29.062461-04:00",
+  "window": "AH_POST",
+  "headline": "Risk-on holds; TSLA/VLTO/TSM all desk takes \u2014 QQQ +1.67%, semis & defense drones in play",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.82% above 50d, QQQ +1.73% \u2014 broad tech bid, VXX stress ratio 0.93 (low vol). Green light for momentum entries."
+    "line": "SPY +0.78%, QQQ +1.67%, VXX stress 0.93 \u2014 broad bid, tech leading; extension risk real but no vol warning yet."
   },
   "actions": [
     {
+      "ticker": "TSLA",
+      "direction": "long",
+      "entry": 420.37,
+      "stop": 411.25,
+      "target": 438.6,
+      "line": "Full size \u2014 fresh news catalyst, unanimous desk, low risk vs. reward."
+    },
+    {
+      "ticker": "VLTO",
+      "direction": "long",
+      "entry": 88.61,
+      "stop": 85.44,
+      "target": 94.95,
+      "line": "Half size \u2014 signal/risk aligned, pure-technical setup, zero news; sizing down accordingly."
+    },
+    {
       "ticker": "TSM",
       "direction": "long",
-      "entry": 469.64,
-      "stop": 458.5,
-      "target": 491.92,
-      "line": "Half-size long; signal+risk aligned bullish, research neutral/no red flags. R/R ~2:1."
+      "entry": 477.24,
+      "stop": 461.54,
+      "target": 508.65,
+      "line": "Half size \u2014 bullish signal but research/risk cautious on extension; half respects medium severity."
     }
   ],
   "watch": [
     {
+      "ticker": "IRDM",
+      "type": "ripple",
+      "line": "High-conf bullish ripple off RKLB deal \u2014 launch cost de-risked, constellation refresh capex plan improves."
+    },
+    {
+      "ticker": "KTOS",
+      "type": "ripple",
+      "line": "High-conf bullish ripple off ONDS/AVAV \u2014 expanding DoD small-UAS budget flows directly to Kratos drone programs."
+    },
+    {
+      "ticker": "PSKY",
+      "type": "ripple",
+      "line": "High-conf bearish ripple off WBD \u2014 CMA review drag erodes deal economics; regulatory/financing risk mounting."
+    },
+    {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+25.9% but rel-vol only 0.9 and overbought \u2014 conviction thin, watch for volume confirmation before any chase."
+      "line": "+21% on 2.08x vol, flagged overbought \u2014 watch for fade setup if momentum stalls in AH."
     },
     {
-      "ticker": "FIGR",
+      "ticker": "SNDK",
       "type": "mover",
-      "line": "+14.1% with rel-vol 1.65 \u2014 above-average volume backing the move; cleanest of the big movers."
-    },
-    {
-      "ticker": "RARE",
-      "type": "mover",
-      "line": "+10.5%, rel-vol 1.71, overbought \u2014 high-volume squeeze, watch for pullback entry setup."
-    },
-    {
-      "ticker": "JOBY",
-      "type": "catalyst",
-      "line": "+5.0% on Toyota partnership announcement \u2014 eVTOL catalyst, watch for follow-through or fade."
-    },
-    {
-      "ticker": "VZ",
-      "type": "catalyst",
-      "line": "-3.2% on Dow removal \u2014 index-fund forced selling may not be done; watch for stabilization level."
+      "line": "+10.7%, MACD bullish crossover \u2014 semi-adjacent name with cleaner technical structure than FCEL."
     }
   ],
   "changed": [
-    "GEV and RKLB desk takes dropped \u2014 TSM is now the only active take.",
-    "RKLB/IRDM M&A ripple watch cleared from the board."
+    "Desk takes expanded: TSLA (full) and VLTO (half) added alongside TSM \u2014 was TSM lone take last scan.",
+    "FCEL/FIGR still in movers but no longer headline catalysts; SNDK MACD signal new this scan."
   ],
   "caveats": [
-    "RTH scan as of 13:07 ET 2026-06-30; prices stale by minutes \u2014 verify before entry.",
-    "FCEL and WOLF big moves on sub-1.0 relative volume \u2014 momentum fragile without conviction buying."
+    "AH post-market scan as of 16:03 ET 2026-06-30; prices and levels are as of scan time and may gap materially at next open.",
+    "Three simultaneous desk takes in risk-on tape \u2014 correlation risk if tech/semi bid reverses overnight; TSLA news catalyst unverified in this data."
   ]
 }
