@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T04:06:35.797503+00:00",
+  "generated_at": "2026-06-30T11:16:02.739604+00:00",
   "sources": {
     "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
     "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
@@ -7,8 +7,8 @@
   },
   "window_days": 90,
   "truth_post_count": 1316,
-  "news_post_count": 0,
-  "document_count": 38,
+  "news_post_count": 1,
+  "document_count": 39,
   "tickers_mentioned": [
     "AAPL",
     "AMZN",
@@ -16,6 +16,7 @@
     "DIS",
     "GS",
     "HHS",
+    "HOOD",
     "INTC",
     "NVDA",
     "PLTR",
@@ -610,8 +611,27 @@
       "source": "truth_social"
     }
   ],
-  "news_posts": [],
+  "news_posts": [
+    {
+      "ts": "2026-06-30T10:45:30+00:00",
+      "text": "Robinhood Launches Trump Accounts App Ahead Of July 4 Rollout",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQTkxUVG1mYk9sMHdvc3FIY3hub3dHT2VSYk80RUw0SGUzZlN5Q1UzaHZyN25rV0FmSjRYZXRyOFFpRmZMTlpFUHliMGkzbEFYNUZmSkxPQll0MTVXUndlMGRVUFBMNmx3blFqa0Y1aGNxekV0NmY1S1Y5YjRTU1BIcGZMSHFyQURYVkZ0amJlSVFfUWhDZERFRU9CVGVzWFpZNjNScEtMeFdGTUNwLVdUWjdqcEFtNnFlVFE?oc=5",
+      "ticker_mentions": [
+        "HOOD"
+      ],
+      "source": "news"
+    }
+  ],
   "presidential_documents": [
+    {
+      "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
+      "type": "Presidential Document",
+      "signing_date": "2026-06-30",
+      "publication_date": "2026-06-30",
+      "document_number": "2026-13254",
+      "html_url": "https://www.federalregister.gov/documents/2026/06/30/2026-13254/advancing-regenerative-agriculture-and-strengthening-american-farm-resilience",
+      "abstract": null
+    },
     {
       "title": "Ushering in the Next Frontier of Quantum Innovation",
       "type": "Presidential Document",
