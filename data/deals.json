@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-30T14:31:24.642309+00:00",
+ "generated_at": "2026-06-30T17:12:29.566594+00:00",
  "window_days": 30,
  "deal_count": 20,
  "deals": [
@@ -758,13 +758,13 @@
      "horizon": "days",
      "priced_in": "partial",
      "outcomes": {
-      "1d": null,
+      "1d": 5.79,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "IRDM",
@@ -802,13 +802,13 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 12.71,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "PL",
@@ -818,19 +818,19 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 8.81,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 8,
-    "graded": 0,
-    "hit": 0
+    "graded": 3,
+    "hit": 3
    }
   },
   {
@@ -854,13 +854,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.89,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "DIS",
@@ -870,13 +870,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.22,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "CHTR",
@@ -886,13 +886,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -4.43,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "AMC",
@@ -902,13 +902,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.23,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "NFLX",
@@ -918,13 +918,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.67,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "FOXA",
@@ -934,19 +934,19 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.25,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 6,
-    "graded": 0,
-    "hit": 0
+    "graded": 6,
+    "hit": 1
    }
   },
   {
@@ -1134,7 +1134,7 @@
      "outcomes": {
       "1d": 5.62,
       "3d": 12.68,
-      "5d": null,
+      "5d": 11.11,
       "10d": null,
       "21d": null
      },
@@ -1262,7 +1262,7 @@
      "outcomes": {
       "1d": -1.12,
       "3d": -3.72,
-      "5d": null,
+      "5d": 13.08,
       "10d": null,
       "21d": null
      },
@@ -1278,7 +1278,7 @@
      "outcomes": {
       "1d": -9.65,
       "3d": -7.6,
-      "5d": null,
+      "5d": 9.53,
       "10d": null,
       "21d": null
      },
@@ -1394,7 +1394,7 @@
      "outcomes": {
       "1d": -1.12,
       "3d": -3.72,
-      "5d": null,
+      "5d": 13.08,
       "10d": null,
       "21d": null
      },
@@ -1410,7 +1410,7 @@
      "outcomes": {
       "1d": -4.01,
       "3d": -2.08,
-      "5d": null,
+      "5d": 4.94,
       "10d": null,
       "21d": null
      },
@@ -1542,7 +1542,7 @@
      "outcomes": {
       "1d": -1.12,
       "3d": -3.72,
-      "5d": null,
+      "5d": 13.08,
       "10d": null,
       "21d": null
      },
