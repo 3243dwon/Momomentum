@@ -1,127 +1,261 @@
 {
-  "generated_at": "2026-06-30T00:03:15.275250-04:00",
+  "generated_at": "2026-06-30T05:48:48.294068-04:00",
   "ticker_news": {
+    "ONDS": [
+      {
+        "id": "8242536a8a36d6e4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "ONDS",
+        "scope": "ticker",
+        "title": "AeroVironment's 'Crushing' Earnings Spark Drone 'Super Cycle' Talk: Stocks And ETFs To Watch",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/60179094/aerovironments-crushing-earnings-spark-drone-super-cycle-talk-stocks-and-etfs-to-watch",
+        "published_at": "2026-06-30T09:23:33+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "rcat_aerovironment_earnings_drone_cycle",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "RCAT": [
+      {
+        "id": "8242536a8a36d6e4",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RCAT",
+        "scope": "ticker",
+        "title": "AeroVironment's 'Crushing' Earnings Spark Drone 'Super Cycle' Talk: Stocks And ETFs To Watch",
+        "url": "https://www.benzinga.com/markets/earnings/26/06/60179094/aerovironments-crushing-earnings-spark-drone-super-cycle-talk-stocks-and-etfs-to-watch",
+        "published_at": "2026-06-30T09:23:33+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "rcat_aerovironment_earnings_drone_cycle",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
     "GOOGL": [
       {
-        "id": "4b2127e34f4353ea",
+        "id": "2fcc151ee17fde8b",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "GOOGL",
         "scope": "ticker",
-        "title": "Google's Dow Entry May Have Captured Headlines, But The Real Story Is Samsung And SK Hynix's 'Capex Builout,' Says Gene Munster",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60177115/gene-munster-says-googles-dow-entry-isnt-the-real-story-its-the-samsung-and-sk-hynix-capex-buildout",
-        "published_at": "2026-06-30T03:45:46+00:00",
-        "type": "analyst",
-        "impact": "low",
-        "dedup_group": "gene_munster_samsung_sk_hynix_capex",
-        "tickers_mentioned": [
-          "SSNLF",
-          "SKH"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "ASTS": [
-      {
-        "id": "8ab887062a2cbb4f",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "ASTS",
-        "scope": "ticker",
-        "title": "AeroVironment, Rocket Lab, AST SpaceMobile, Super Micro Computer And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60176735/aerovironment-rocket-lab-ast-spacemobile-super-micro-computer-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-30T01:22:35+00:00",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/06/60179071/sp500-june-30-open-up-or-down-polymarket-iran-ceasefire-dow-record-ai-stocks",
+        "published_at": "2026-06-30T09:13:05+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "investor_radar_roundup_6_30",
+        "dedup_group": "sp500_market_open_preview",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "786d34ffbeb844b2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOGL",
+        "scope": "ticker",
+        "title": "Tesla's Robotaxi Math Doesn't Work With Human Safety Drivers, Gary Black Says",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60178839/teslas-robotaxi-math-doesnt-work-with-human-safety-drivers-gary-black-says",
+        "published_at": "2026-06-30T08:49:52+00:00",
+        "type": "rumor",
+        "impact": "low",
+        "dedup_group": "tesla_robotaxi_safety_driver_concerns",
         "tickers_mentioned": [
-          "AVOP",
-          "RKLB",
-          "ASTS",
           "TSLA"
         ],
         "route_to_synthesis": false
-      }
-    ],
-    "RKLB": [
+      },
       {
-        "id": "8ab887062a2cbb4f",
+        "id": "99cb12bba2b2035b",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "RKLB",
+        "ticker": "GOOGL",
         "scope": "ticker",
-        "title": "AeroVironment, Rocket Lab, AST SpaceMobile, Super Micro Computer And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60176735/aerovironment-rocket-lab-ast-spacemobile-super-micro-computer-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-30T01:22:35+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "investor_radar_roundup_6_30",
+        "title": "Uber Ends Waymo Robotaxi Partnership In Phoenix, Plans New AV Tie-Up: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60177451/uber-ends-waymo-robotaxi-partnership-in-phoenix-plans-new-av-tie-up-report",
+        "published_at": "2026-06-30T05:44:25+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "uber_waymo_partnership_ends_phoenix",
         "tickers_mentioned": [
-          "AVOP",
-          "RKLB",
-          "ASTS",
+          "UBER",
           "TSLA"
         ],
+        "route_to_synthesis": true
+      },
+      {
+        "id": "25b302913dbbc341",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GOOGL",
+        "scope": "ticker",
+        "title": "Nasdaq Jumps Over 500 Points, Dow Settles Above 52,000: Investor Sentiment Improves, Greed Index In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60177378/nasdaq-jumps-over-500-points-dow-settles-above-52000-investor-sentiment-improves-greed-index-in-fear-zone",
+        "published_at": "2026-06-30T05:29:04+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "nasdaq_dow_sentiment_rally_june2026",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
-    "SMCI": [
+    "DELL": [
       {
-        "id": "8ab887062a2cbb4f",
+        "id": "f5d4851a8982fa0a",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "SMCI",
+        "ticker": "DELL",
         "scope": "ticker",
-        "title": "AeroVironment, Rocket Lab, AST SpaceMobile, Super Micro Computer And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60176735/aerovironment-rocket-lab-ast-spacemobile-super-micro-computer-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-30T01:22:35+00:00",
-        "type": "other",
+        "title": "Trump Accounts Could Land An Unexpected Boost As SpaceX Reportedly Weighs Stock Donation",
+        "url": "https://www.benzinga.com/news/politics/26/06/60179015/trump-accounts-could-land-an-unexpected-boost-as-spacex-reportedly-weighs-stock-donation",
+        "published_at": "2026-06-30T09:07:37+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "investor_radar_roundup_6_30",
-        "tickers_mentioned": [
-          "AVOP",
-          "RKLB",
-          "ASTS",
-          "TSLA"
-        ],
+        "dedup_group": "spacex_stock_donation_rumor",
+        "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "TSLA": [
       {
-        "id": "8ab887062a2cbb4f",
+        "id": "786d34ffbeb844b2",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "TSLA",
         "scope": "ticker",
-        "title": "AeroVironment, Rocket Lab, AST SpaceMobile, Super Micro Computer And Tesla: Why These 5 Stocks Are On Investors' Radars Today",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60176735/aerovironment-rocket-lab-ast-spacemobile-super-micro-computer-and-tesla-why-these-5-stocks-are-on-investors-radars-today",
-        "published_at": "2026-06-30T01:22:35+00:00",
-        "type": "other",
+        "title": "Tesla's Robotaxi Math Doesn't Work With Human Safety Drivers, Gary Black Says",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60178839/teslas-robotaxi-math-doesnt-work-with-human-safety-drivers-gary-black-says",
+        "published_at": "2026-06-30T08:49:52+00:00",
+        "type": "rumor",
         "impact": "low",
-        "dedup_group": "investor_radar_roundup_6_30",
+        "dedup_group": "tesla_robotaxi_safety_driver_concerns",
         "tickers_mentioned": [
-          "AVOP",
-          "RKLB",
-          "ASTS",
           "TSLA"
         ],
         "route_to_synthesis": false
+      },
+      {
+        "id": "99cb12bba2b2035b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TSLA",
+        "scope": "ticker",
+        "title": "Uber Ends Waymo Robotaxi Partnership In Phoenix, Plans New AV Tie-Up: Report",
+        "url": "https://www.benzinga.com/markets/tech/26/06/60177451/uber-ends-waymo-robotaxi-partnership-in-phoenix-plans-new-av-tie-up-report",
+        "published_at": "2026-06-30T05:44:25+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "uber_waymo_partnership_ends_phoenix",
+        "tickers_mentioned": [
+          "UBER",
+          "TSLA"
+        ],
+        "route_to_synthesis": true
       }
     ],
     "MSTR": [
       {
-        "id": "e603345f5c0c2f62",
+        "id": "ab72365986c3e562",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum Gain, XRP, Dogecoin Flat As Trump Announces Next Round Of US-Iran Talks: Analyst Flags Signal Marking 'Generational Buying Opportunities'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60176902/bitcoin-and-ethereum-gain-as-trump-announces-new-us-iran-talks-analyst-sees-generational-buying-signal",
-        "published_at": "2026-06-30T02:04:34+00:00",
-        "type": "macro_geopol",
+        "title": "Tom Lee Tells Anthony Scaramucci That Michael Saylor's Bitcoin-Buying Firm Will Stage A 'Big Recovery,' But He Has These Words Of Advice",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60177745/tom-lee-tells-anthony-scaramucci-michael-saylors-bitcoin-firm-will-stage-a-big-recovery",
+        "published_at": "2026-06-30T06:30:44+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "trump_iran_talks_crypto_analyst",
+        "dedup_group": "mstr_tom_lee_recovery_commentary",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "24734d38eb6ec6c3",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Strategy's New Capital Plan Draws Optimism, While Critics Warn Of A 'Dead Cat Bounce' In Michael Saylor-Chaired Bitcoin Treasury Company",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60177368/strategys-new-capital-plan-draws-optimism-as-critics-warn-of-a-dead-cat-bounce",
+        "published_at": "2026-06-30T05:27:57+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "mstr_capital_plan_announcement",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "IRDM": [
+      {
+        "id": "10c429906b779fa6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "IRDM",
+        "scope": "ticker",
+        "title": "Rocket Lab\u2019s Iridium Deal Gets Stock Trending After Hours: RKLB Stock Gains",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60177441/rocket-labs-iridium-deal-sends-rklb-stock-higher-after-hours",
+        "published_at": "2026-06-30T05:42:21+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "rklb_iridium_deal",
+        "tickers_mentioned": [
+          "RKLB"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "10c429906b779fa6",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab\u2019s Iridium Deal Gets Stock Trending After Hours: RKLB Stock Gains",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60177441/rocket-labs-iridium-deal-sends-rklb-stock-higher-after-hours",
+        "published_at": "2026-06-30T05:42:21+00:00",
+        "type": "product",
+        "impact": "high",
+        "dedup_group": "rklb_iridium_deal",
+        "tickers_mentioned": [
+          "RKLB"
+        ],
+        "route_to_synthesis": true
+      }
+    ],
+    "CMCSA": [
+      {
+        "id": "25b302913dbbc341",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "CMCSA",
+        "scope": "ticker",
+        "title": "Nasdaq Jumps Over 500 Points, Dow Settles Above 52,000: Investor Sentiment Improves, Greed Index In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60177378/nasdaq-jumps-over-500-points-dow-settles-above-52000-investor-sentiment-improves-greed-index-in-fear-zone",
+        "published_at": "2026-06-30T05:29:04+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "nasdaq_dow_sentiment_rally_june2026",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "VZ": [
+      {
+        "id": "25b302913dbbc341",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VZ",
+        "scope": "ticker",
+        "title": "Nasdaq Jumps Over 500 Points, Dow Settles Above 52,000: Investor Sentiment Improves, Greed Index In \u2018Fear\u2019 Zone",
+        "url": "https://www.benzinga.com/markets/market-summary/26/06/60177378/nasdaq-jumps-over-500-points-dow-settles-above-52000-investor-sentiment-improves-greed-index-in-fear-zone",
+        "published_at": "2026-06-30T05:29:04+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "nasdaq_dow_sentiment_rally_june2026",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }

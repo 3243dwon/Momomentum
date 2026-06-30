@@ -1,19 +1,27 @@
 {
-  "generated_at": "2026-06-30T00:03:15.275250-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on intact; space/satellite names lead overnight \u2014 desk adds UNP to FRSH + KHC lineup.",
+  "generated_at": "2026-06-30T05:48:48.294068-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on holds; satellite/space sweep leads \u2014 IRDM +25%, RKLB +16%; desk stays FRSH, CMCSA, KHC long.",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +1.58%, QQQ +2.60%, SPY >50d MA; VXX stress 0.94 \u2014 tape is green and vol suppressed, momentum entries favored."
+    "line": "SPY +1.58%, QQQ +2.6%; SPY above 50d; VXX stress ratio 0.94 (low fear). Trend favors momentum entries, no macro speed bumps."
   },
   "actions": [
     {
       "ticker": "FRSH",
       "direction": "long",
       "entry": 10.2,
-      "stop": 9.38,
-      "target": 11.83,
-      "line": "Half size; signal+risk aligned, RSI not extreme despite research overbought noise."
+      "stop": 10.0,
+      "target": 10.6,
+      "line": "Half size. Signal+Risk aligned bullish; research neutral caps size. R/R 1:2."
+    },
+    {
+      "ticker": "CMCSA",
+      "direction": "long",
+      "entry": 24.19,
+      "stop": 22.42,
+      "target": 27.73,
+      "line": "Half size. Research+Risk aligned; mixed MACD signal keeps it at half. R/R ~2:1."
     },
     {
       "ticker": "KHC",
@@ -21,50 +29,43 @@
       "entry": 24.18,
       "stop": 22.25,
       "target": 28.05,
-      "line": "Quarter size; signal agrees, risk medium \u2014 weak 1d action keeps size small."
-    },
-    {
-      "ticker": "UNP",
-      "direction": "long",
-      "entry": 272.99,
-      "stop": 256.58,
-      "target": 305.8,
-      "line": "Quarter size; both advisors neutral, risk clean/low \u2014 low-conviction grind, smallest allocation."
+      "line": "Quarter size. Low conviction \u2014 signal+research both neutral, momentum fading. Regime carries it."
     }
   ],
   "watch": [
     {
       "ticker": "IRDM",
-      "type": "mover",
-      "line": "IRDM +25.3%, rel-vol 6.7x, MACD bullish \u2014 satellite/space theme leading overnight with unusual volume."
+      "type": "catalyst",
+      "line": "+25.3%, 6.7\u00d7 vol \u2014 major announcement; MACD bullish. Primary mover this scan."
+    },
+    {
+      "ticker": "RKLB",
+      "type": "catalyst",
+      "line": "+15.9% on new deal secured; watch for follow-through into open."
+    },
+    {
+      "ticker": "LMT",
+      "type": "ripple",
+      "line": "Bearish ripple from RKLB deal \u2014 potential spacecraft share loss for incumbent primes; low confidence."
+    },
+    {
+      "ticker": "BA",
+      "type": "ripple",
+      "line": "Bearish ripple \u2014 RKLB Neutron displacing ULA on commercial medium-lift; low confidence."
     },
     {
       "ticker": "VSAT",
       "type": "mover",
-      "line": "VSAT +23.9%, MACD bullish \u2014 correlated space mover, lower vol but confirmed trend signal."
-    },
-    {
-      "ticker": "ALAB",
-      "type": "mover",
-      "line": "ALAB +16.9%, MACD bullish \u2014 AI/semiconductor name tagging along with broad risk-on tape."
-    },
-    {
-      "ticker": "RKLB",
-      "type": "mover",
-      "line": "RKLB +15.9% \u2014 space/launch cluster still bid; watch for continuation or fade at open."
-    },
-    {
-      "ticker": "GLW",
-      "type": "mover",
-      "line": "GLW +14.6%, rel-vol ~2x \u2014 fiber/connectivity angle; monitor for desk candidacy if holds."
+      "line": "+23.9%, MACD bullish \u2014 riding IRDM/satellite tailwind; no desk take yet."
     }
   ],
   "changed": [
-    "Desk adds UNP (quarter size) as a third take \u2014 new vs. previous two-pick lineup.",
-    "Space/satellite cluster (IRDM, VSAT, RKLB) back in focus overnight after previous scan flagged a fade."
+    "UNP dropped from desk lineup \u2014 no longer in takes.",
+    "CMCSA added to desk actions vs. prior briefing.",
+    "IRDM catalyst now explicitly driving satellite sweep theme."
   ],
   "caveats": [
-    "OVERNIGHT scan as of 2026-06-30 00:03 ET \u2014 prices are pre-open and can gap significantly by RTH; all levels should be revalidated at the open.",
-    "No catalyst or macro events flagged this scan; big moves in IRDM/VSAT/FCEL lack a confirmed news driver \u2014 risk of gap-fill reversal at open."
+    "AH/Pre-market scan as of 05:48 ET 2026-06-30 \u2014 prices may be stale vs. RTH open; gaps and liquidity shifts expected.",
+    "Satellite/space cluster (IRDM, VSAT, RKLB, ASTS) moved 15\u201325% in a single session \u2014 chasing at open carries elevated mean-reversion risk."
   ]
 }
