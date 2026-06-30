@@ -1,131 +1,493 @@
 {
-  "generated_at": "2026-06-30T07:13:21.489182-04:00",
+  "generated_at": "2026-06-30T10:26:41.654496-04:00",
   "ticker_news": {
-    "GOOGL": [
+    "ARM": [
       {
-        "id": "d42b3fa72c434919",
+        "id": "f46fb6c76098c943",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "GOOGL",
+        "ticker": "ARM",
         "scope": "ticker",
-        "title": "Box CEO Aaron Levie Says AI Race Hinges On Whether 'Open Weights AI' Stays 'A Close Second'",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60180609/box-ceo-aaron-levie-says-ai-race-hinges-on-whether-open-weights-ai-stays-a-close-second",
-        "published_at": "2026-06-30T10:59:39+00:00",
+        "title": "Nvidia Isn't The Expensive AI Stock Anymore\u2014AMD, Palantir And ARM Are",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60188138/nvidia-isnt-the-expensive-ai-stock-anymore-amd-palantir-and-arm-are",
+        "published_at": "2026-06-30T14:10:58+00:00",
         "type": "analyst",
         "impact": "low",
-        "dedup_group": "box_ceo_open_weights_ai_commentary",
+        "dedup_group": "nvda_valuation_vs_amd_arm_palantir",
         "tickers_mentioned": [
-          "TSLA"
+          "NVDA",
+          "AMD",
+          "PLTR"
         ],
         "route_to_synthesis": false
       }
     ],
-    "TSLA": [
+    "FCEL": [
       {
-        "id": "d42b3fa72c434919",
+        "id": "187cd6fe9c9858ae",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "FCEL",
         "scope": "ticker",
-        "title": "Box CEO Aaron Levie Says AI Race Hinges On Whether 'Open Weights AI' Stays 'A Close Second'",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60180609/box-ceo-aaron-levie-says-ai-race-hinges-on-whether-open-weights-ai-stays-a-close-second",
-        "published_at": "2026-06-30T10:59:39+00:00",
-        "type": "analyst",
+        "title": "AEVEX, Abivax, Watts Water Technologies And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60187346/aevex-abivax-watts-water-technologies-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-30T14:01:23+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "box_ceo_open_weights_ai_commentary",
+        "dedup_group": "tw_market_momentum_roundup",
         "tickers_mentioned": [
-          "TSLA"
+          "AEVEX",
+          "ABVX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "TW": [
+      {
+        "id": "187cd6fe9c9858ae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "TW",
+        "scope": "ticker",
+        "title": "AEVEX, Abivax, Watts Water Technologies And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60187346/aevex-abivax-watts-water-technologies-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-30T14:01:23+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tw_market_momentum_roundup",
+        "tickers_mentioned": [
+          "AEVEX",
+          "ABVX"
         ],
         "route_to_synthesis": false
       },
       {
-        "id": "15c25374b7b165c3",
+        "id": "c9c62d7747520816",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "TSLA",
+        "ticker": "TW",
         "scope": "ticker",
-        "title": "Insights Into Tesla's Performance Versus Peers In Automobiles Sector",
-        "url": "https://www.benzinga.com/news/26/06/60179355/insights-tesla-s-performance-versus-peers-automobiles-sector",
-        "published_at": "2026-06-30T09:59:10+00:00",
+        "title": "This Owens Corning Analyst Turns Bullish; Here Are Top 3 Upgrades For Tuesday",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/upgrades/26/06/60183634/this-owens-corning-analyst-turns-bullish-here-are-top-3-upgrades-for-tuesday",
+        "published_at": "2026-06-30T12:46:07+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "owc_analyst_upgrade",
+        "tickers_mentioned": [
+          "OC"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "WOLF": [
+      {
+        "id": "187cd6fe9c9858ae",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "WOLF",
+        "scope": "ticker",
+        "title": "AEVEX, Abivax, Watts Water Technologies And Other Big Stocks Moving Higher On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60187346/aevex-abivax-watts-water-technologies-and-other-big-stocks-moving-higher-on-tuesday",
+        "published_at": "2026-06-30T14:01:23+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "tesla_sector_performance_analysis",
+        "dedup_group": "tw_market_momentum_roundup",
+        "tickers_mentioned": [
+          "AEVEX",
+          "ABVX"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "b86be6c71e00113a",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "Darden Restaurants To Rally Around 19%? Here Are 10 Top Analyst Forecasts For Tuesday",
+        "url": "https://www.benzinga.com/news/26/06/60184571/darden-restaurants-to-rally-around-19-here-are-10-top-analyst-forecasts-for-tuesday",
+        "published_at": "2026-06-30T13:04:56+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "dri_analyst_forecasts_roundup",
+        "tickers_mentioned": [
+          "DRI"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0e11a684ee6900e2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "MSTR Teeters Below $95, But Benchmark Targets Record $570 Share Price",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60182115/mstr-teeters-below-95-but-benchmark-targets-record-570-share-price",
+        "published_at": "2026-06-30T12:00:54+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "mstr_benchmark_price_target",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "DFTX": [
+      {
+        "id": "762fad80bdcbade2",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DFTX",
+        "scope": "ticker",
+        "title": "Top 3 Health Care Stocks That May Keep You Up At Night In June",
+        "url": "https://www.benzinga.com/trading-ideas/short-ideas/26/06/60183874/top-3-health-care-stocks-that-may-keep-you-up-at-night-in-june",
+        "published_at": "2026-06-30T12:55:04+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "dftx_healthcare_watchlist_june",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "0a38c8858cddbee7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Intel Stock Tuesday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/06/60183420/whats-going-on-with-intel-stock-tuesday-8",
+        "published_at": "2026-06-30T12:39:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_moves_daily_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "d64950a778135ca1",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "What's Going On With Taiwan Semiconductor Stock Tuesday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60181264/whats-going-on-with-taiwan-semiconductor-stock-tuesday-6",
+        "published_at": "2026-06-30T11:32:07+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "tsm_stock_movement_june30",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "DLR": [
+      {
+        "id": "64a490ec62b7d25c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "DLR",
+        "scope": "ticker",
+        "title": "Concentrix Reports Downbeat Q2 Earnings, Joins Nuvectis Pharma, Vishay Intertechnology And Other Big Stocks Moving Lower In Tuesday\u2019s Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60182200/concentrix-reports-downbeat-q2-earnings-joins-nuvectis-pharma-vishay-intertechnology-and-other-big-stocks-moving-lower-in-tuesdays-pre-market-session",
+        "published_at": "2026-06-30T12:03:07+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "concentrix_q2_downbeat",
+        "tickers_mentioned": [
+          "CNXM",
+          "NVCT",
+          "VSH"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "VSH": [
+      {
+        "id": "64a490ec62b7d25c",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "Concentrix Reports Downbeat Q2 Earnings, Joins Nuvectis Pharma, Vishay Intertechnology And Other Big Stocks Moving Lower In Tuesday\u2019s Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60182200/concentrix-reports-downbeat-q2-earnings-joins-nuvectis-pharma-vishay-intertechnology-and-other-big-stocks-moving-lower-in-tuesdays-pre-market-session",
+        "published_at": "2026-06-30T12:03:07+00:00",
+        "type": "earnings",
+        "impact": "low",
+        "dedup_group": "concentrix_q2_downbeat",
+        "tickers_mentioned": [
+          "CNXM",
+          "NVCT",
+          "VSH"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "0083ff3d266213e7",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "Stock Market Today: S&P 500, Dow, Nasdaq Futures Gain As Trump Demands Lower Gas Prices 'Immediately'\u2014 Vishay Intertechnology, AeroVironment, Nike In Focus (UPDATED)",
+        "url": "https://www.benzinga.com/markets/equities/26/06/60179297/stock-market-today-sp-500-dow-futures-rise-as-trump-demands-lower-gas-prices-immediately-vishay-intertechnology-aerovironment-nike-in-focus",
+        "published_at": "2026-06-30T12:33:27+00:00",
+        "type": "macro_geopol",
+        "impact": "medium",
+        "dedup_group": "trump_gas_prices_demand",
+        "tickers_mentioned": [
+          "VSH",
+          "AVAV",
+          "NKE"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "67c5578f7ec42696",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60182440/12-information-technology-stocks-moving-tuesday-s-pre-market-session",
+        "published_at": "2026-06-30T12:05:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "vsh_it_premarket_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "e7706c789573433f",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VSH",
+        "scope": "ticker",
+        "title": "Why AeroVironment Shares Are Trading Higher By Over 21%; Here Are 20 Stocks Moving Premarket",
+        "url": "https://www.benzinga.com/news/26/06/60179918/why-aerovironment-shares-are-trading-higher-by-over-21-here-are-20-stocks-moving-premarket",
+        "published_at": "2026-06-30T10:10:45+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "avav_premarket_movers_roundup",
+        "tickers_mentioned": [
+          "AVAV"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "GLW": [
+      {
+        "id": "2fb2eed700dd5827",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "GLW",
+        "scope": "ticker",
+        "title": "IBM, Verizon, Corning And A Health Care Stock On CNBC\u2019s \u2018Final Trades\u2019",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60181792/ibm-verizon-corning-and-a-health-care-stock-on-cnbcs-final-trades",
+        "published_at": "2026-06-30T11:50:24+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cnbc_final_trades_vz_glw",
+        "tickers_mentioned": [
+          "IBM",
+          "GLW"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "VZ": [
+      {
+        "id": "2fb2eed700dd5827",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VZ",
+        "scope": "ticker",
+        "title": "IBM, Verizon, Corning And A Health Care Stock On CNBC\u2019s \u2018Final Trades\u2019",
+        "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/06/60181792/ibm-verizon-corning-and-a-health-care-stock-on-cnbcs-final-trades",
+        "published_at": "2026-06-30T11:50:24+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "cnbc_final_trades_vz_glw",
+        "tickers_mentioned": [
+          "IBM",
+          "GLW"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "ea9b4c686eff1cc0",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VZ",
+        "scope": "ticker",
+        "title": "Why BTC Digital Stock Is Rocketing On Tuesday",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60188534/why-btc-digital-stock-is-rocketing-on-tuesday",
+        "published_at": "2026-06-30T14:18:08+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "btc_digital_stock_move_june30",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }
     ],
     "DELL": [
       {
-        "id": "f04e2f36be7a5ebb",
+        "id": "aa6813a489bd64e0",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "DELL",
         "scope": "ticker",
-        "title": "Robinhood Launches Trump Accounts App Ahead Of July 4 Rollout",
-        "url": "https://www.benzinga.com/markets/equities/26/06/60180486/robinhood-launches-trump-accounts-app-ahead-of-july-4-rollout",
-        "published_at": "2026-06-30T10:45:30+00:00",
-        "type": "product",
+        "title": "Why Is Axon Enterprise Stock Surging On Tuesday?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60181594/why-is-axon-enterprise-stock-surging-on-tuesday",
+        "published_at": "2026-06-30T11:39:52+00:00",
+        "type": "other",
         "impact": "low",
-        "dedup_group": "robinhood_trump_accounts_app_launch",
+        "dedup_group": "dell_ticker_mismatch_daily_recap",
         "tickers_mentioned": [
-          "HOOD"
+          "AXON"
         ],
         "route_to_synthesis": false
       }
     ],
-    "KLAC": [
+    "TSM": [
       {
-        "id": "27ea0d53d97829bb",
+        "id": "d64950a778135ca1",
         "source": "alpaca",
         "publisher": "benzinga",
-        "ticker": "KLAC",
+        "ticker": "TSM",
         "scope": "ticker",
-        "title": "Why Is Applied Materials Stock Gaining Tuesday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/06/60180416/why-is-applied-materials-stock-gaining-tuesday",
-        "published_at": "2026-06-30T10:38:20+00:00",
+        "title": "What's Going On With Taiwan Semiconductor Stock Tuesday?",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60181264/whats-going-on-with-taiwan-semiconductor-stock-tuesday-6",
+        "published_at": "2026-06-30T11:32:07+00:00",
         "type": "other",
         "impact": "low",
-        "dedup_group": "applied_materials_gain_tuesday",
-        "tickers_mentioned": [
-          "KLAC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "LRCX": [
-      {
-        "id": "27ea0d53d97829bb",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "LRCX",
-        "scope": "ticker",
-        "title": "Why Is Applied Materials Stock Gaining Tuesday?",
-        "url": "https://www.benzinga.com/analyst-stock-ratings/reiteration/26/06/60180416/why-is-applied-materials-stock-gaining-tuesday",
-        "published_at": "2026-06-30T10:38:20+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "applied_materials_gain_tuesday",
-        "tickers_mentioned": [
-          "KLAC"
-        ],
-        "route_to_synthesis": false
-      }
-    ],
-    "SMCI": [
-      {
-        "id": "a6d1ccab68331973",
-        "source": "alpaca",
-        "publisher": "benzinga",
-        "ticker": "SMCI",
-        "scope": "ticker",
-        "title": "What Is Going On With Super Micro Stock On Tuesday?",
-        "url": "https://www.benzinga.com/markets/tech/26/06/60180033/what-is-going-on-with-super-micro-stock-on-tuesday-2",
-        "published_at": "2026-06-30T10:23:29+00:00",
-        "type": "other",
-        "impact": "low",
-        "dedup_group": "super_micro_stock_movement_tuesday",
+        "dedup_group": "tsm_stock_movement_june30",
         "tickers_mentioned": [],
         "route_to_synthesis": false
+      }
+    ],
+    "VRT": [
+      {
+        "id": "59bdfb84f2a26522",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "Heatwave Strengthens Bullish Case For Utility ETFs, HVAC Stocks Amid Surging Power Demand",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/06/60187918/heatwave-strengthens-bullish-case-for-utility-etfs-hvac-stocks-amid-surging-power-demand",
+        "published_at": "2026-06-30T14:08:14+00:00",
+        "type": "macro_econ",
+        "impact": "low",
+        "dedup_group": "heatwave_utility_hvac_demand",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "92f7ef89adff5fe9",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "VRT",
+        "scope": "ticker",
+        "title": "Forget AMD And Micron \u2014 The Next Wave Of AI Winners Are The Ones Nobody Talks About",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60180041/forget-amd-and-micron-the-next-wave-of-ai-winners-are-the-ones-nobody-talks-about",
+        "published_at": "2026-06-30T10:23:37+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "ai_winners_beyond_amd_micron",
+        "tickers_mentioned": [
+          "AMD",
+          "MU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "RDW": [
+      {
+        "id": "32a177993ed74d9b",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RDW",
+        "scope": "ticker",
+        "title": "Redwire Lands Taiwan Coast Guard Drone Deal",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60187558/redwire-lands-taiwan-coast-guard-drone-deal",
+        "published_at": "2026-06-30T14:04:03+00:00",
+        "type": "product",
+        "impact": "medium",
+        "dedup_group": "rdw_taiwan_coast_guard_drone_contract",
+        "tickers_mentioned": [],
+        "route_to_synthesis": true
+      }
+    ],
+    "SLS": [
+      {
+        "id": "a7dfce640c1f0f25",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SLS",
+        "scope": "ticker",
+        "title": "SELLAS Life Sciences Shares Fall Tuesday: What's Driving The Move?",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60185904/sellas-life-sciences-shares-fall-tuesday-whats-driving-the-move",
+        "published_at": "2026-06-30T13:39:51+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "sls_premarket_move_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "5adf49775abd3938",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Could SanDisk Be The Biggest AI Memory Winner? Bernstein Points To Hidden Advantage Over Micron",
+        "url": "https://www.benzinga.com/analyst-stock-ratings/analyst-color/26/06/60182809/could-sandisk-be-the-biggest-ai-memory-winner-bernstein-points-to-hidden-advantage-over-micron",
+        "published_at": "2026-06-30T12:18:30+00:00",
+        "type": "analyst",
+        "impact": "medium",
+        "dedup_group": "sndk_bernstein_ai_memory_thesis",
+        "tickers_mentioned": [
+          "MU"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
+    "SEDG": [
+      {
+        "id": "67c5578f7ec42696",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SEDG",
+        "scope": "ticker",
+        "title": "12 Information Technology Stocks Moving In Tuesday's Pre-Market Session",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60182440/12-information-technology-stocks-moving-tuesday-s-pre-market-session",
+        "published_at": "2026-06-30T12:05:40+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "vsh_it_premarket_roundup",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "RKLB": [
+      {
+        "id": "f7123ecaf7508900",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "RKLB",
+        "scope": "ticker",
+        "title": "Rocket Lab Stock In Focus After Announcing $8 Billion Acquisition Of Iridium Communications",
+        "url": "https://www.benzinga.com/trading-ideas/movers/26/06/60181688/rocket-lab-stock-in-focus-after-announcing-8-billion-acquisition-of-iridium-communications",
+        "published_at": "2026-06-30T11:45:41+00:00",
+        "type": "ma",
+        "impact": "high",
+        "dedup_group": "rklb_acquires_irdm_8b",
+        "tickers_mentioned": [
+          "IRDM"
+        ],
+        "route_to_synthesis": true
       }
     ]
   },
