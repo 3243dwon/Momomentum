@@ -1,7 +1,140 @@
 {
-  "generated_at": "2026-06-30T20:07:56.061515+00:00",
+  "generated_at": "2026-06-30T22:20:39.471072+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "bff2c9ce5ed9",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "INTC",
+      "direction": "long",
+      "confidence": null,
+      "price": 139.55,
+      "thesis": "\u2b50 INTC +6.0% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "1740a2920721",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "RKLB",
+      "direction": "long",
+      "confidence": null,
+      "price": 101.63,
+      "thesis": "\u2b50 RKLB +3.7% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "20b9af22dcc8",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "watchlist",
+      "ticker": "DELL",
+      "direction": "long",
+      "confidence": null,
+      "price": 431.59,
+      "thesis": "\u2b50 DELL +4.2% watchlist",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "f2502874ee93",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "SNDK",
+      "direction": "long",
+      "confidence": null,
+      "price": 2270.19,
+      "thesis": "\ud83e\udde0 Serenity SNDK +10.7% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "500a5ff576f1",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "MRVL",
+      "direction": "long",
+      "confidence": null,
+      "price": 297.59,
+      "thesis": "\ud83e\udde0 Serenity MRVL +7.1% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "c69780b35aeb",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "DLR",
+      "direction": "short",
+      "confidence": null,
+      "price": 179.57,
+      "thesis": "\ud83d\ude80 DLR -5.8% on 3.8x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "29d078cb9c37",
+      "ts": "2026-06-30T22:17:36.220900+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "SNDK",
+      "direction": "long",
+      "confidence": null,
+      "price": 2270.19,
+      "thesis": "5d uptrend +16%; MACD bullish cross; above VWAP",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "0dabae6650e5",
       "ts": "2026-06-30T20:03:29.062461+00:00",
@@ -2074,13 +2207,13 @@
       "price": 24.2,
       "thesis": "\ud83c\udfaf CMCSA +4.6% \u00b7 Comcast surged 4.58% on nearly 3x\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 1.36,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "7b72c1a365d5",
@@ -2093,13 +2226,13 @@
       "price": 28.15,
       "thesis": "\ud83c\udfaf SMCI -8.1% \u00b7 Taiwanese authorities raided Super\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": -4.19,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "2c4c3c6f0d42",
@@ -2112,13 +2245,13 @@
       "price": 98.02,
       "thesis": "\u2b50 RKLB +15.9% \u00b7 RKLB surged 15.9% with no high-impact\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 3.64,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "2dd03333dda9",
@@ -2131,13 +2264,13 @@
       "price": 117.65,
       "thesis": "\u2b50 CSCO +3.7% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -0.17,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "7fd7c5b2006c",
@@ -2150,13 +2283,13 @@
       "price": 414.27,
       "thesis": "\u2b50 DELL +5.1% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": 4.12,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "e9809f1eb849",
@@ -2169,13 +2302,13 @@
       "price": 86.72,
       "thesis": "\ud83e\udde0 Serenity ASTS +21.4% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 1.95,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "cf4b0feb59cf",
@@ -2188,13 +2321,13 @@
       "price": 216.16,
       "thesis": "\ud83e\udde0 Serenity CBRS +18.9% \u26aa",
       "outcomes": {
-        "1d": null,
+        "1d": 1.7,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "cd63f235d1eb",
@@ -2207,13 +2340,13 @@
       "price": 98.66,
       "thesis": "\ud83d\udd2e DIS \ud83d\udcc8 via CMCSA",
       "outcomes": {
-        "1d": null,
+        "1d": -2.43,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "c16c333d0928",
@@ -2226,13 +2359,13 @@
       "price": 27.12,
       "thesis": "\ud83d\udd2e WBD \ud83d\udcc8 via CMCSA",
       "outcomes": {
-        "1d": null,
+        "1d": -1.81,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "39d95670b5eb",
@@ -2245,13 +2378,13 @@
       "price": 54.59,
       "thesis": "\ud83d\ude80 IRDM +25.3% on 6.7x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 0.48,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "2447721f3dd4",
@@ -2264,13 +2397,13 @@
       "price": 15.41,
       "thesis": "\ud83d\ude80 SLS +24.4% on 3.6x vol",
       "outcomes": {
-        "1d": null,
+        "1d": -4.19,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "3cbcdd40d61e",
@@ -2283,13 +2416,13 @@
       "price": 51.0,
       "thesis": "\ud83d\ude80 FBIN +10.9% on 3.0x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 7.7,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "5b8e8f787eab",
@@ -2302,13 +2435,13 @@
       "price": 227.81,
       "thesis": "\ud83d\ude80 HON -6.1% on 3.3x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 1.73,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "ddfbbabfb571",
@@ -2321,13 +2454,13 @@
       "price": 29.25,
       "thesis": "+3.4% today; 5d uptrend +5%; MACD bullish cross",
       "outcomes": {
-        "1d": null,
+        "1d": 0.99,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "cec1ccb3d11d",
@@ -2340,13 +2473,13 @@
       "price": 463.33,
       "thesis": "+6.3% today; 5d uptrend +1%; 1.8x volume",
       "outcomes": {
-        "1d": null,
+        "1d": 4.4,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "e1c3fa6b6ec3",
@@ -2359,13 +2492,13 @@
       "price": 71.81,
       "thesis": "+2.1% today; 5d uptrend +11%; MACD positive",
       "outcomes": {
-        "1d": null,
+        "1d": 0.47,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "94e2a9cde4c2",
@@ -2378,13 +2511,13 @@
       "price": 98.66,
       "thesis": "Benzinga headline explicitly poses the question \u2014 Disney is the most obvious next candidate to spin/split linear networks (ABC/cable) from Parks + streaming. Activists (Peltz/Trian history) have alrea",
       "outcomes": {
-        "1d": null,
+        "1d": -2.43,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "ca6aa76e0b6c",
@@ -2397,13 +2530,13 @@
       "price": 27.12,
       "thesis": "Warner Bros Discovery is already pursuing a split of its streaming/studios from its linear-TV/cable-networks unit. Comcast validating the same playbook re-rates WBD's sum-of-the-parts story and accele",
       "outcomes": {
-        "1d": null,
+        "1d": -1.81,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "c2b1416ea651",
@@ -2416,13 +2549,13 @@
       "price": 146.16,
       "thesis": "If Comcast's cable arm is spun as a stand-alone, it creates a clearer pure-play comp for Charter and could prompt M&A speculation about cable consolidation between SpinCo and Charter.",
       "outcomes": {
-        "1d": null,
+        "1d": -2.73,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "5d563413c578",
@@ -2435,13 +2568,13 @@
       "price": 10.04,
       "thesis": "Pure-play cable-network owner \u2014 if SpinCo separates the declining linear bundle, AMC Networks' standalone valuation framework gets refreshed (though direction is ambiguous; could re-rate either way).",
       "outcomes": {
-        "1d": null,
+        "1d": -0.3,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "5bde2dbd21a2",
@@ -2454,13 +2587,13 @@
       "price": 73.76,
       "thesis": "If Comcast's streaming/Peacock assets get re-grouped into a more focused, better-capitalized growth vehicle alongside WBD's potential streaming SpinCo, the streaming competitive set becomes more ratio",
       "outcomes": {
-        "1d": null,
+        "1d": 3.21,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "351030f55207",
@@ -2473,13 +2606,13 @@
       "price": 21.79,
       "thesis": "AT&T already executed its own media spin (WBD) \u2014 Comcast doing the same removes AT&T's relative 'cleaner story' advantage among legacy carriers/media and could shift relative fund flows toward the new",
       "outcomes": {
-        "1d": null,
+        "1d": 5.07,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "61d5afa731e5",
@@ -8212,7 +8345,7 @@
       "outcomes": {
         "1d": -4.82,
         "3d": -4.82,
-        "5d": null,
+        "5d": -25.91,
         "10d": null,
         "21d": null
       },
@@ -8231,7 +8364,7 @@
       "outcomes": {
         "1d": 3.63,
         "3d": 3.63,
-        "5d": null,
+        "5d": -5.42,
         "10d": null,
         "21d": null
       },
@@ -8250,7 +8383,7 @@
       "outcomes": {
         "1d": 2.82,
         "3d": 2.82,
-        "5d": null,
+        "5d": 4.14,
         "10d": null,
         "21d": null
       },
@@ -8269,7 +8402,7 @@
       "outcomes": {
         "1d": 7.05,
         "3d": 7.05,
-        "5d": null,
+        "5d": 5.59,
         "10d": null,
         "21d": null
       },
@@ -8288,7 +8421,7 @@
       "outcomes": {
         "1d": 10.74,
         "3d": 10.74,
-        "5d": null,
+        "5d": 4.05,
         "10d": null,
         "21d": null
       },
@@ -8307,7 +8440,7 @@
       "outcomes": {
         "1d": -2.01,
         "3d": -2.01,
-        "5d": null,
+        "5d": 6.91,
         "10d": null,
         "21d": null
       },
@@ -8326,7 +8459,7 @@
       "outcomes": {
         "1d": -6.99,
         "3d": -6.99,
-        "5d": null,
+        "5d": 1.33,
         "10d": null,
         "21d": null
       },
@@ -8345,7 +8478,7 @@
       "outcomes": {
         "1d": -8.9,
         "3d": -8.9,
-        "5d": null,
+        "5d": -34.75,
         "10d": null,
         "21d": null
       },
@@ -8364,7 +8497,7 @@
       "outcomes": {
         "1d": -4.82,
         "3d": -4.82,
-        "5d": null,
+        "5d": -25.91,
         "10d": null,
         "21d": null
       },
@@ -8383,7 +8516,7 @@
       "outcomes": {
         "1d": -5.58,
         "3d": -5.58,
-        "5d": null,
+        "5d": -8.7,
         "10d": null,
         "21d": null
       },
@@ -8402,7 +8535,7 @@
       "outcomes": {
         "1d": -3.96,
         "3d": -3.96,
-        "5d": null,
+        "5d": 4.97,
         "10d": null,
         "21d": null
       },
@@ -8421,7 +8554,7 @@
       "outcomes": {
         "1d": 2.2,
         "3d": 2.2,
-        "5d": null,
+        "5d": 35.72,
         "10d": null,
         "21d": null
       },
@@ -8440,7 +8573,7 @@
       "outcomes": {
         "1d": -6.69,
         "3d": -6.69,
-        "5d": null,
+        "5d": -3.15,
         "10d": null,
         "21d": null
       },
@@ -8459,7 +8592,7 @@
       "outcomes": {
         "1d": 2.05,
         "3d": 2.05,
-        "5d": null,
+        "5d": 4.2,
         "10d": null,
         "21d": null
       },
@@ -8478,7 +8611,7 @@
       "outcomes": {
         "1d": -5.62,
         "3d": -5.62,
-        "5d": null,
+        "5d": -7.3,
         "10d": null,
         "21d": null
       },
@@ -8497,7 +8630,7 @@
       "outcomes": {
         "1d": -6.09,
         "3d": -6.09,
-        "5d": null,
+        "5d": -10.24,
         "10d": null,
         "21d": null
       },
@@ -8516,7 +8649,7 @@
       "outcomes": {
         "1d": -5.54,
         "3d": -5.54,
-        "5d": null,
+        "5d": -5.82,
         "10d": null,
         "21d": null
       },
@@ -8535,7 +8668,7 @@
       "outcomes": {
         "1d": -2.66,
         "3d": -2.66,
-        "5d": null,
+        "5d": 1.27,
         "10d": null,
         "21d": null
       },
@@ -8554,7 +8687,7 @@
       "outcomes": {
         "1d": 0.47,
         "3d": 0.47,
-        "5d": null,
+        "5d": -0.04,
         "10d": null,
         "21d": null
       },
@@ -8573,7 +8706,7 @@
       "outcomes": {
         "1d": -2.25,
         "3d": -2.25,
-        "5d": null,
+        "5d": -9.58,
         "10d": null,
         "21d": null
       },
@@ -8592,7 +8725,7 @@
       "outcomes": {
         "1d": 3.36,
         "3d": 3.36,
-        "5d": null,
+        "5d": 2.16,
         "10d": null,
         "21d": null
       },
@@ -8611,7 +8744,7 @@
       "outcomes": {
         "1d": 6.98,
         "3d": 6.98,
-        "5d": null,
+        "5d": 5.12,
         "10d": null,
         "21d": null
       },
@@ -8630,7 +8763,7 @@
       "outcomes": {
         "1d": -2.77,
         "3d": -2.77,
-        "5d": null,
+        "5d": 11.27,
         "10d": null,
         "21d": null
       },
@@ -8649,7 +8782,7 @@
       "outcomes": {
         "1d": 1.01,
         "3d": 1.01,
-        "5d": null,
+        "5d": -1.57,
         "10d": null,
         "21d": null
       },
@@ -8668,7 +8801,7 @@
       "outcomes": {
         "1d": 1.22,
         "3d": 1.22,
-        "5d": null,
+        "5d": 3.74,
         "10d": null,
         "21d": null
       },
@@ -8687,7 +8820,7 @@
       "outcomes": {
         "1d": -3.43,
         "3d": -3.43,
-        "5d": null,
+        "5d": -4.96,
         "10d": null,
         "21d": null
       },
@@ -8706,7 +8839,7 @@
       "outcomes": {
         "1d": -1.0,
         "3d": -1.0,
-        "5d": null,
+        "5d": -3.73,
         "10d": null,
         "21d": null
       },
@@ -8725,7 +8858,7 @@
       "outcomes": {
         "1d": -5.54,
         "3d": -5.54,
-        "5d": null,
+        "5d": -5.82,
         "10d": null,
         "21d": null
       },
@@ -9334,139 +9467,6 @@
         "1d": -3.91,
         "3d": -3.91,
         "5d": 10.19,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "25345132ca3b",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "prediction",
-      "type": "ripple",
-      "ticker": "KLAC",
-      "direction": "long",
-      "confidence": "medium",
-      "price": 257.7,
-      "thesis": "Process control tools needed for HBM stacking and advanced DRAM nodes; rides the same memory capex wave.",
-      "outcomes": {
-        "1d": -3.94,
-        "3d": -3.94,
-        "5d": 17.24,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "24e8bb088944",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "prediction",
-      "type": "ripple",
-      "ticker": "DELL",
-      "direction": "short",
-      "confidence": "low",
-      "price": 408.02,
-      "thesis": "AI server BOM cost rises as memory tightens; gross margin pressure on PowerEdge AI configurations.",
-      "outcomes": {
-        "1d": 3.36,
-        "3d": 3.36,
-        "5d": -5.72,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "20cec1db66ab",
-      "ts": "2026-06-25T16:28:58.114871+00:00",
-      "kind": "alert",
-      "type": "catalyst",
-      "ticker": "MU",
-      "direction": "long",
-      "confidence": null,
-      "price": 1211.91,
-      "thesis": "\ud83c\udfaf MU +15.7% \u00b7 Micron surged ~16% after posting a Q3\u2026",
-      "outcomes": {
-        "1d": -5.58,
-        "3d": -6.78,
-        "5d": -4.12,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "9280f0075561",
-      "ts": "2026-06-25T16:28:58.114871+00:00",
-      "kind": "alert",
-      "type": "catalyst",
-      "ticker": "QCOM",
-      "direction": "long",
-      "confidence": null,
-      "price": 214.4,
-      "thesis": "\ud83c\udfaf QCOM +8.6% \u00b7 Qualcomm surged 8.6% after issuing\u2026",
-      "outcomes": {
-        "1d": -9.32,
-        "3d": -12.03,
-        "5d": -13.57,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "19fa38ede7ef",
-      "ts": "2026-06-25T16:28:58.114871+00:00",
-      "kind": "alert",
-      "type": "catalyst",
-      "ticker": "TECH",
-      "direction": "long",
-      "confidence": null,
-      "price": 70.5,
-      "thesis": "\ud83c\udfaf TECH +19.7% \u00b7 Merck KGaA (Germany) announced a cash\u2026",
-      "outcomes": {
-        "1d": 0.74,
-        "3d": 0.71,
-        "5d": 0.18,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "ebb1afbd3b7e",
-      "ts": "2026-06-25T16:28:58.114871+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "ORCL",
-      "direction": "short",
-      "confidence": null,
-      "price": 152.33,
-      "thesis": "\u2b50 ORCL -3.3% \u00b7 ORCL is down 3.3% today and nearly 17%\u2026",
-      "outcomes": {
-        "1d": 2.11,
-        "3d": 2.61,
-        "5d": 3.83,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "4aeea38f1a77",
-      "ts": "2026-06-25T16:28:58.114871+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "RKLB",
-      "direction": "short",
-      "confidence": null,
-      "price": 81.21,
-      "thesis": "\u2b50 RKLB -4.9% \u00b7 RKLB is down ~5% today and ~25% over\u2026",
-      "outcomes": {
-        "1d": -2.8,
-        "3d": -4.14,
-        "5d": -27.07,
         "10d": null,
         "21d": null
       },

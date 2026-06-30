@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-06-30T20:07:56.149974+00:00",
+ "generated_at": "2026-06-30T22:20:39.561811+00:00",
  "window_days": 30,
  "deal_count": 23,
  "deals": [
@@ -690,13 +690,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.73,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "AMCX",
@@ -706,13 +706,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.3,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "NFLX",
@@ -745,7 +745,7 @@
    ],
    "stats": {
     "calls": 6,
-    "graded": 0,
+    "graded": 2,
     "hit": 0
    }
   },
