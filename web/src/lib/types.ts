@@ -268,10 +268,6 @@ export interface PredictionPerformance {
   horizon_note?: string;
 }
 
-export interface Watchlist {
-  tickers: string[];
-}
-
 export type WeeklyClassification = 'real_momentum' | 'fakeout' | 'unclear';
 export type WeeklyPrediction = 'continuation' | 'reversal' | 'rangebound';
 

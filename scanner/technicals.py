@@ -148,7 +148,7 @@ def _fetch_batch(symbols: list[str], start_dt: datetime, end_dt: datetime) -> di
         return {}
 
     # Retry with backoff: without this, a single transient Alpaca hiccup silently
-    # wipes the whole batch (observed: batch 0 losing all watchlist + top S&P 500
+    # wipes the whole batch (observed: batch 0 losing all top S&P 500
     # tickers for an entire scan). An empty response on a full batch of liquid
     # names is treated as a transient failure, not a real no-data result.
     bars = None
@@ -260,7 +260,7 @@ def scan(tickers: Iterable[str]) -> list[dict]:
 
 
 # === Pre-market gap + intraday VWAP / HOD / LOD =============================
-# Run only on routed (mover/watchlist/news-bearer) tickers — keeps cost down
+# Run only on routed (mover/news-bearer) tickers — keeps cost down
 # and matches the pro workflow: pinpoint catalyst names first, then drill.
 
 def fetch_snapshots(symbols: list[str]) -> dict[str, dict]:

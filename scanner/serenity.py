@@ -290,26 +290,24 @@ def poll_and_process() -> int:
 
 
 # ── live-scan cross-reference (used by the scan for serenity_match) ──
-def compute_matches(tweets: list[dict], rows: list[dict], watchlist: set[str]) -> list[dict]:
+def compute_matches(tweets: list[dict], rows: list[dict]) -> list[dict]:
     """Hot matches: tickers Serenity named that are ALSO moving (≥
-    config.SERENITY_HOT_MOVE_PCT) or on the watchlist this scan. Tweets are
-    newest-first so the most-recent context wins per ticker."""
+    config.SERENITY_HOT_MOVE_PCT) this scan. Tweets are newest-first so the
+    most-recent context wins per ticker."""
     by_ticker = {r["ticker"]: r for r in rows}
     hot: dict[str, dict] = {}
     for tw in tweets:
         for t in tw.get("tickers", []) or []:
             row = by_ticker.get(t)
-            on_wl = t in watchlist
-            if row is None and not on_wl:
+            if row is None:
                 continue
-            pct = row.get("pct_1d") if row else None
+            pct = row.get("pct_1d")
             moving = pct is not None and abs(pct) >= config.SERENITY_HOT_MOVE_PCT
-            if moving or on_wl:
+            if moving:
                 hot.setdefault(t, {
                     "ticker": t,
                     "pct_1d": pct,
-                    "rel_volume": row.get("rel_volume") if row else None,
-                    "on_watchlist": on_wl,
+                    "rel_volume": row.get("rel_volume"),
                     "stance": tw.get("stance", "neutral"),
                     "summary": tw.get("summaryEn") or (tw.get("text", "")[:160]),
                     "url": tw.get("url", ""),

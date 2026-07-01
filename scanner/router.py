@@ -6,7 +6,6 @@ tickers passing this filter ever reach Haiku/Sonnet.
 """
 from __future__ import annotations
 
-import json
 import logging
 
 from scanner import config
@@ -14,27 +13,10 @@ from scanner.windows import Window
 
 log = logging.getLogger(__name__)
 
-WATCHLIST_FILE = config.DATA_DIR / "watchlist.json"
 
-
-def load_watchlist() -> set[str]:
-    if not WATCHLIST_FILE.exists():
-        return set()
-    try:
-        return set(json.loads(WATCHLIST_FILE.read_text()).get("tickers", []))
-    except Exception:
-        return set()
-
-
-def route(rows: list[dict], deltas: dict, window: Window) -> tuple[list[str], list[str]]:
-    """Return (route_to_news, watchlist_only_tickers).
-
-    route_to_news = the tickers we'll fetch news for AND ask Haiku/Sonnet about.
-    watchlist_only_tickers = pinned in UI but no LLM treatment unless they also
-                             passed a real signal.
-    """
-    watchlist = load_watchlist()
-
+def route(rows: list[dict], deltas: dict, window: Window) -> list[str]:
+    """Return route_to_news: the tickers we'll fetch news for AND ask
+    Haiku/Sonnet about."""
     pct_threshold = (
         config.PCT_MOVE_THRESHOLD_RTH
         if window == Window.RTH
@@ -57,11 +39,9 @@ def route(rows: list[dict], deltas: dict, window: Window) -> tuple[list[str], li
             routed.add(t)
         elif t in delta_set:
             routed.add(t)
-        elif t in watchlist and abs(pct) >= 1.5:
-            routed.add(t)
 
     log.info(
         "Tier 0 routing: %d/%d tickers routed to news+LLM",
         len(routed), len(rows),
     )
-    return sorted(routed), sorted(watchlist)
+    return sorted(routed)
