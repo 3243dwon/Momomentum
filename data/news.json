@@ -1,20 +1,60 @@
 {
-  "generated_at": "2026-06-30T18:17:36.220900-04:00",
+  "generated_at": "2026-06-30T20:10:02.668253-04:00",
   "ticker_news": {
+    "INTC": [
+      {
+        "id": "af5b373efadd2481",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Here's How Much $100 Invested In Intel 10 Years Ago Would Be Worth Today",
+        "url": "https://www.benzinga.com/news/26/06/60206100/here-s-how-much-100-invested-intel-10-years-ago-would-be-worth-today",
+        "published_at": "2026-06-30T22:45:28+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_10yr_performance_recap",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MSTR": [
+      {
+        "id": "1908023b7faf49ee",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MSTR",
+        "scope": "ticker",
+        "title": "More Bark, More Beta: Corgi Debuts 31 Single-Stock ETFs Covering Nvidia, Tesla And More",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/06/60205989/more-bark-more-beta-corgi-debuts-31-single-stock-etfs-covering-nvidia-tesla-and-more",
+        "published_at": "2026-06-30T22:17:14+00:00",
+        "type": "product",
+        "impact": "low",
+        "dedup_group": "corgi_etf_launch_31funds",
+        "tickers_mentioned": [
+          "NVDA",
+          "TSLA"
+        ],
+        "route_to_synthesis": false
+      }
+    ],
     "SNDK": [
       {
-        "id": "8cdd329bdfa6d0e3",
+        "id": "1908023b7faf49ee",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "SNDK",
         "scope": "ticker",
-        "title": "Sandisk Shares Rise 6% After Key Trading Signal",
-        "url": "https://www.benzinga.com/Opinion/26/06/60204533/sandisk-shares-rise-6-percent-after-key-trading-signal",
-        "published_at": "2026-06-30T20:50:29+00:00",
-        "type": "analyst",
+        "title": "More Bark, More Beta: Corgi Debuts 31 Single-Stock ETFs Covering Nvidia, Tesla And More",
+        "url": "https://www.benzinga.com/etfs/new-etfs/26/06/60205989/more-bark-more-beta-corgi-debuts-31-single-stock-etfs-covering-nvidia-tesla-and-more",
+        "published_at": "2026-06-30T22:17:14+00:00",
+        "type": "product",
         "impact": "low",
-        "dedup_group": "sndk_technical_trading_signal",
-        "tickers_mentioned": [],
+        "dedup_group": "corgi_etf_launch_31funds",
+        "tickers_mentioned": [
+          "NVDA",
+          "TSLA"
+        ],
         "route_to_synthesis": false
       }
     ]

@@ -1,70 +1,63 @@
 {
-  "generated_at": "2026-06-30T18:17:36.220900-04:00",
-  "window": "AH_POST",
-  "headline": "Risk-on intact; VLTO/TSM/SNDK desk takes active \u2014 QQQ +1.67%, semis driving the tape",
+  "generated_at": "2026-06-30T20:10:02.668253-04:00",
+  "window": "OVERNIGHT",
+  "headline": "Risk-on holds; TSM/RBRK desk takes live \u2014 QQQ +1.67%, semis/tech still driving overnight tape",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.78%, QQQ +1.67%, both above 50d. VXX stress 0.93 \u2014 vol crushed. Tape favors momentum longs; chasing extended names the risk."
+    "line": "SPY +0.78% above 50d, QQQ +1.67%, VXX stress 0.93 \u2014 vol suppressed, momentum clear; overnight entries favored with tight stops."
   },
   "actions": [
-    {
-      "ticker": "VLTO",
-      "direction": "long",
-      "entry": 88.61,
-      "stop": 85.44,
-      "target": 94.95,
-      "line": "Half size; clean risk structure, research tepid \u2014 signal confirms."
-    },
     {
       "ticker": "TSM",
       "direction": "long",
       "entry": 477.24,
       "stop": 439.06,
       "target": 553.6,
-      "line": "Half size; fresh MACD cross, low risk, research neutral \u2014 semi leadership tailwind."
+      "line": "Clean MACD cross, signal agrees; half-size per research-neutral stance. R/R ~2.0x."
     },
     {
-      "ticker": "SNDK",
+      "ticker": "RBRK",
       "direction": "long",
-      "entry": 2270.19,
-      "stop": 2123.08,
-      "target": 2564.41,
-      "line": "Quarter size only; catalyst confirmed by research, but 10.68% spike = medium risk on entry."
+      "entry": 80.25,
+      "stop": 73.83,
+      "target": 93.09,
+      "line": "Late-stage momentum with elevated RSI \u2014 signal agrees but risk flags force quarter-size. R/R ~2.0x."
     }
   ],
   "watch": [
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+21.1%, rel vol 2.1x, overbought \u2014 watch for AH fade or continuation trigger on pullback."
+      "line": "+21% on 2.08x rel vol, overbought flag \u2014 extended, watch for fade or consolidation entry."
     },
     {
-      "ticker": "VSAT",
+      "ticker": "SNDK",
       "type": "mover",
-      "line": "+16.9%, no unusual vol flag \u2014 big move without crowd; worth a closer look for cause."
+      "line": "+10.68%, MACD bullish cross, normal vol \u2014 semi strength; was a prior desk take, worth re-evaluating next scan."
     },
     {
       "ticker": "FIGR",
       "type": "mover",
-      "line": "+13.4%, rel vol 2.1x \u2014 unusual volume confirms conviction; catalyst unclear, monitor."
+      "line": "+13.42% on 2.14x rel vol \u2014 unusual volume surge, no catalyst in feed; monitor for follow-through."
+    },
+    {
+      "ticker": "VRT",
+      "type": "mover",
+      "line": "+8.98% \u2014 data-center/power theme continuing; no setup yet but in the right sector."
     },
     {
       "ticker": "KLAC",
       "type": "mover",
-      "line": "+8.3%, rel vol 1.35x, overbought \u2014 semi move mirrors TSM thesis; extended here."
-    },
-    {
-      "ticker": "FBIN",
-      "type": "mover",
-      "line": "+7.8%, rel vol 2.1x, overbought \u2014 unusual volume spike late session, needs a base before entry."
+      "line": "+8.31% on 1.35x vol, overbought \u2014 semi equipment bid; watch for pullback to VWAP for clean entry."
     }
   ],
   "changed": [
-    "TSLA dropped from desk takes \u2014 no longer active in this scan",
-    "SNDK added as new quarter-size desk take on 10.68% catalyst move"
+    "VLTO dropped from active desk takes \u2014 no longer in this scan's desk_takes list.",
+    "RBRK added as new desk take (quarter-size, elevated RSI flagged).",
+    "TSM retained; SNDK demoted to watch."
   ],
   "caveats": [
-    "AH_POST scan as of 18:17 ET 2026-06-30 \u2014 prices are after-hours and may not reflect lit-market open levels; entries/stops set for next RTH open.",
-    "SNDK entry at $2,270 on a 10.68% intraday spike \u2014 gap risk on open is material; size discipline (quarter) is load-bearing here."
+    "OVERNIGHT window \u2014 prices as of 2026-06-30 20:10 ET; liquidity thin, spreads wide, levels may gap materially by RTH open.",
+    "RBRK carry risk is real: elevated RSI + late-stage momentum flag means stop at 73.83 could be tested quickly on any risk-off flush."
   ]
 }

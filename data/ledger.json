@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-06-30T22:20:39.471072+00:00",
+  "generated_at": "2026-07-01T00:13:26.944109+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "5575d1225d25",
+      "ts": "2026-07-01T00:10:02.668253+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "INTC",
+      "direction": "long",
+      "confidence": null,
+      "price": 139.55,
+      "thesis": "\ud83e\udde0 Serenity INTC +6.0% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "866cdd7fae9c",
+      "ts": "2026-07-01T00:10:02.668253+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "ALAB",
+      "direction": "long",
+      "confidence": null,
+      "price": 482.69,
+      "thesis": "\ud83e\udde0 Serenity ALAB +5.8% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "a93a3bbc85c2",
+      "ts": "2026-07-01T00:10:02.668253+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "JCI",
+      "direction": "long",
+      "confidence": null,
+      "price": 146.3,
+      "thesis": "+4.1% today; 5d uptrend +4%; 2.2x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "bff2c9ce5ed9",
       "ts": "2026-06-30T22:17:36.220900+00:00",
@@ -2093,13 +2150,13 @@
       "price": 131.69,
       "thesis": "\u2b50 INTC +3.1% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": 5.97,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "b1463204f52c",
@@ -2112,13 +2169,13 @@
       "price": 8.03,
       "thesis": "\u2b50 ONDS +3.5% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": 2.74,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "99c2e9d0872b",
@@ -2131,13 +2188,13 @@
       "price": 98.02,
       "thesis": "\ud83e\udde0 Serenity RKLB +15.9% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 3.64,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "fab4ec7edd10",
@@ -2150,13 +2207,13 @@
       "price": 456.33,
       "thesis": "\ud83e\udde0 Serenity ALAB +16.9% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 5.68,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "73a104e5911c",
@@ -2169,13 +2226,13 @@
       "price": 24.18,
       "thesis": "+2.0% today; 5d uptrend +10%; MACD bullish cross",
       "outcomes": {
-        "1d": null,
+        "1d": -2.36,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "dc5e93ea11c6",
@@ -2188,13 +2245,13 @@
       "price": 272.99,
       "thesis": "+1.7% today; 5d uptrend +5%; MACD bullish cross",
       "outcomes": {
-        "1d": null,
+        "1d": -0.41,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "5626ea38c9b2",
@@ -9410,63 +9467,6 @@
         "1d": -13.54,
         "3d": -13.54,
         "5d": -4.59,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "59aa57e01470",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "prediction",
-      "type": "ripple",
-      "ticker": "SMCI",
-      "direction": "short",
-      "confidence": "low",
-      "price": 31.48,
-      "thesis": "Higher HBM/DRAM input costs compress AI server margins if memory pricing umbrella keeps rising into tight supply.",
-      "outcomes": {
-        "1d": 2.68,
-        "3d": 2.68,
-        "5d": 6.83,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "46ae17cab3d4",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "prediction",
-      "type": "ripple",
-      "ticker": "SNDK",
-      "direction": "long",
-      "confidence": "high",
-      "price": 2279.25,
-      "thesis": "Recently spun-out NAND pure-play directly leveraged to the same memory pricing cycle Apple's AI ramp is tightening.",
-      "outcomes": {
-        "1d": -8.54,
-        "3d": -8.54,
-        "5d": -0.32,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "66f3b176d9d9",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "prediction",
-      "type": "ripple",
-      "ticker": "LRCX",
-      "direction": "long",
-      "confidence": "high",
-      "price": 393.39,
-      "thesis": "Lead WFE supplier for DRAM/HBM and 3D NAND; memory capex pull-forward from AI ramp drives order book.",
-      "outcomes": {
-        "1d": -3.91,
-        "3d": -3.91,
-        "5d": 10.19,
         "10d": null,
         "21d": null
       },
