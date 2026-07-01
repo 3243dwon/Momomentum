@@ -209,7 +209,7 @@ def synthesize(
 
     Synthesizes for:
       - any ticker with high-impact news flagged route_to_synthesis, AND
-      - tickers in must_synthesize (watchlist + new top-20 entrants) that have
+      - tickers in must_synthesize (new top-20 entrants + rank jumps) that have
         at least one news item. No-news tickers are skipped — running Sonnet
         just to get verdict='move_unexplained_by_news' isn't worth the spend.
     """

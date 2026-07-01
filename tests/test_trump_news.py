@@ -97,7 +97,7 @@ def test_notify_includes_news():
             }],
         }
         rows = [{"ticker": "INTC", "pct_1d": 6.2}, {"ticker": "AAPL", "pct_1d": 1.1}]
-        n = trump_pulse.notify_fresh_mentions(payload, rows, {"INTC"}, now)
+        n = trump_pulse.notify_fresh_mentions(payload, rows, now)
     finally:
         feishu.send = orig_send
         trump_pulse._load_notified = orig_notified_load

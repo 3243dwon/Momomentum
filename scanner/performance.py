@@ -121,7 +121,7 @@ def _alert_direction(alert: dict, pct: float) -> tuple[int, str]:
 
     Alert types that carry an actual stance — ripple (bullish/bearish) and
     serenity_match (tweet stance) — are graded on the THESIS direction.
-    Pure momentum types (big_move, watchlist, delta_*, catalyst) have no
+    Pure momentum types (big_move, delta_*, catalyst) have no
     stance; their sign-of-move "direction" measures continuation, and the
     basis tag lets the UI label those stats honestly.
     """

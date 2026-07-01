@@ -4,14 +4,13 @@
 
   type Props = {
     rows: ScanRow[];
-    watchlist: string[];
     newEntrants: Set<string>;
     accelSet: Set<string>;
     rankJumpMap: Map<string, RankJump>;
     newsByTicker: Record<string, NewsItem[]>;
   };
 
-  let { rows, watchlist, newEntrants, accelSet, rankJumpMap, newsByTicker }: Props = $props();
+  let { rows, newEntrants, accelSet, rankJumpMap, newsByTicker }: Props = $props();
 
   type SortKey = 'ticker' | 'price' | 'pct_1d' | 'pct_5d' | 'rel_volume' | 'rsi_14' | 'volume';
   let sortKey = $state<SortKey>('pct_1d');
@@ -20,8 +19,6 @@
   // sign, consistently. (pct_1d used to be abs while pct_5d was signed.)
   const ABS_KEYS: SortKey[] = ['pct_1d', 'pct_5d'];
   let query = $state('');
-
-  const watchSet = new Set(watchlist);
 
   function setSort(k: SortKey) {
     if (sortKey === k) {
@@ -97,7 +94,6 @@
             <td class="px-3 py-1.5">
               <a href={`/t/${row.ticker}`} class="font-semibold hover:text-signal-info">
                 {row.ticker}
-                {#if watchSet.has(row.ticker)}<span class="ml-1 text-zinc-500">★</span>{/if}
               </a>
             </td>
             <td class="num px-3 py-1.5 text-right text-zinc-300">${fmtPrice(row.price)}</td>
@@ -126,7 +122,7 @@
     {#each visible as row (row.ticker)}
       <a href={`/t/${row.ticker}`} class="row-link flex items-center justify-between gap-2 px-3 py-2">
         <div class="flex flex-col">
-          <span class="text-sm font-semibold">{row.ticker}{#if watchSet.has(row.ticker)}<span class="ml-1 text-zinc-500">★</span>{/if}</span>
+          <span class="text-sm font-semibold">{row.ticker}</span>
           <span class="text-[10px] text-zinc-500">${fmtPrice(row.price)} · vol {fmtRelVol(row.rel_volume)}</span>
         </div>
         <div class="flex items-baseline gap-2">

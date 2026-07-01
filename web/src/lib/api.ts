@@ -4,7 +4,6 @@ import type {
   ScanData,
   NewsData,
   DeltaData,
-  Watchlist,
   WeeklyData,
   PerformanceData,
   RecommendationPerformance,
@@ -62,10 +61,6 @@ export async function loadDeltas(fetch: Fetch) {
   return getJson<DeltaData>(fetch, 'deltas.json');
 }
 
-export async function loadWatchlist(fetch: Fetch) {
-  return getJson<Watchlist>(fetch, 'watchlist.json');
-}
-
 export async function loadWeekly(fetch: Fetch) {
   return getJson<WeeklyData>(fetch, 'weekly.json');
 }
@@ -115,13 +110,12 @@ export async function loadBriefing(fetch: Fetch) {
 }
 
 export async function loadAll(fetch: Fetch) {
-  const [scan, news, deltas, watchlist] = await Promise.all([
+  const [scan, news, deltas] = await Promise.all([
     loadScan(fetch),
     loadNews(fetch),
-    loadDeltas(fetch),
-    loadWatchlist(fetch)
+    loadDeltas(fetch)
   ]);
-  return { scan, news, deltas, watchlist };
+  return { scan, news, deltas };
 }
 
 export async function loadDeals(fetch: Fetch) {

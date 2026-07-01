@@ -10,11 +10,10 @@
 
   // Same order + names as the scoreboard table — the trial must never
   // disagree with the table it introduces. No emoji: the stage is typographic.
-  const ORDER = ['catalyst', 'big_move', 'watchlist', 'delta_new_top20', 'serenity_match', 'ripple'];
+  const ORDER = ['catalyst', 'big_move', 'delta_new_top20', 'serenity_match', 'ripple'];
   const LABELS: Record<string, string> = {
     catalyst: 'Catalyst',
     big_move: 'Big move',
-    watchlist: 'Watchlist',
     delta_new_top20: 'New top-20',
     serenity_match: 'Serenity match',
     ripple: 'Ripple'
