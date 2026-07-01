@@ -1,55 +1,71 @@
 {
-  "generated_at": "2026-07-01T16:01:13.814112-04:00",
+  "generated_at": "2026-07-01T18:20:22.954243-04:00",
   "window": "AH_POST",
-  "headline": "Semi wreckage deepens (KLAC -11.6%, TER -11.7%, ALAB -10.7%); RDDT +13.8% lone bright spot; NTNX long on deck",
+  "headline": "Semi pain spreads to NBIS -17%, CRWV -14%, GLW -14%; RDDT +14% holds; desk adds META & GEN to NTNX longs",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.13% / QQQ -1.46%; SPY holds >50d; VXX stress 0.94 \u2014 regime says risk_on but semis bleeding hard, tighten entries."
+    "line": "SPY -0.13% / QQQ -1.46%; SPY above 50d, VXX stress 0.94 \u2014 label is risk_on but tech selling is real; entries need discipline."
   },
   "actions": [
+    {
+      "ticker": "META",
+      "direction": "long",
+      "entry": 612.97,
+      "stop": 563.93,
+      "target": 711.05,
+      "line": "Quarter size \u2014 VWAP overextension flagged; risk/research agree on setup, desk trims for it."
+    },
     {
       "ticker": "NTNX",
       "direction": "long",
       "entry": 51.2,
       "stop": 47.1,
       "target": 59.39,
-      "line": "Early long setup in risk_on \u2014 signal agrees, clean 8% risk, half-size; research neutral, no veto."
+      "line": "Half size \u2014 signal & risk aligned, research neutral-not-opposed; clean technical r/r."
+    },
+    {
+      "ticker": "GEN",
+      "direction": "long",
+      "entry": 26.11,
+      "stop": 24.02,
+      "target": 30.29,
+      "line": "Half size \u2014 strongest trend on the board; signal + risk clean, research neutral."
     }
   ],
   "watch": [
     {
-      "ticker": "SMCI",
-      "type": "catalyst",
-      "line": "SMCI -5.7% AH \u2014 Taiwanese authorities detained personnel; legal/supply chain risk escalating, avoid longs."
-    },
-    {
-      "ticker": "RDDT",
+      "ticker": "NBIS",
       "type": "mover",
-      "line": "RDDT +13.78%, MACD bullish, 2x rel vol \u2014 momentum intact but extended after today's rip."
+      "line": "-17% on 2\u00d7 volume AH \u2014 watch for stabilization level before any fade/bounce play."
     },
     {
       "ticker": "CRWV",
       "type": "mover",
-      "line": "CRWV -13.88%, 3x rel vol \u2014 sharpest vol-weighted seller; watch for bounce setup if support holds."
+      "line": "-13.9% on 3\u00d7 volume, heaviest relative vol on the scan; continuation risk overnight."
     },
     {
-      "ticker": "NBIS",
+      "ticker": "RDDT",
       "type": "mover",
-      "line": "NBIS -17.0%, 2x rel vol \u2014 largest % drop in scan; need catalyst clarity before fading."
+      "line": "+13.8% on 2\u00d7 volume with MACD bullish \u2014 lone large-cap winner; monitor for follow-through open."
+    },
+    {
+      "ticker": "KLAC",
+      "type": "mover",
+      "line": "-11.6% on 2.2\u00d7 volume; semi wreckage from prior scan continues, no sign of floor yet."
     },
     {
       "ticker": "GLW",
       "type": "mover",
-      "line": "GLW -13.53% on big move flag \u2014 not typical semi name, check if SMCI supply chain spillover."
+      "line": "-13.5% big move \u2014 joins semi/tech selloff; watch if it drags optical/fiber names tomorrow."
     }
   ],
   "changed": [
-    "Semi carnage continues but leadership shifted: LRCX off the tape, TER/ALAB/CRWV/NBIS added to wreckage",
-    "SMCI new catalyst (Taiwan detention) adds legal risk overhang to the complex",
-    "NTNX long take now active \u2014 no desk picks in prior scan"
+    "Desk adds two new longs: META (quarter size, overextension caveat) and GEN (half size, strongest trend).",
+    "Sell-side damage broadens \u2014 NBIS -17% and CRWV -14% now lead losers, displacing KLAC/TER as headline pain.",
+    "No new catalysts or ripple calls this scan vs prior."
   ],
   "caveats": [
-    "AH_POST scan as of 16:01 ET Jul 1 2026 \u2014 prices are post-close and may not reflect final prints; liquidity thin, spreads wider than RTH.",
-    "Regime reads risk_on on SPY metrics alone, but QQQ -1.46% and broad semi selloff suggest intraday conditions were materially weaker than label implies."
+    "AH_POST window scan as of 18:20 ET Jul 1 \u2014 prices are post-market and may gap significantly at next RTH open; all levels are stale by open.",
+    "Risk_on label is regime-model output; QQQ -1.46% and broad tech selling are inconsistent with it \u2014 treat regime as mixed in practice."
   ]
 }

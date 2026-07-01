@@ -1,7 +1,102 @@
 {
-  "generated_at": "2026-07-01T20:05:35.967267+00:00",
+  "generated_at": "2026-07-01T22:23:33.820243+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "6b0d2a8a35cf",
+      "ts": "2026-07-01T22:20:22.954243+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "NBIS",
+      "direction": "long",
+      "confidence": null,
+      "price": 229.17,
+      "thesis": "\ud83e\udde0 Serenity NBIS -17.0% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "83c43c81b341",
+      "ts": "2026-07-01T22:20:22.954243+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "RDDT",
+      "direction": "long",
+      "confidence": null,
+      "price": 197.55,
+      "thesis": "\ud83e\udde0 Serenity RDDT +13.8% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "8fac16fd680d",
+      "ts": "2026-07-01T22:20:22.954243+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "CRWV",
+      "direction": "short",
+      "confidence": null,
+      "price": 85.69,
+      "thesis": "\ud83d\ude80 CRWV -13.9% on 3.0x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "726ca289f0ac",
+      "ts": "2026-07-01T22:20:22.954243+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "NKE",
+      "direction": "long",
+      "confidence": null,
+      "price": 43.13,
+      "thesis": "\ud83d\ude80 NKE +5.1% on 4.0x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "d6dad90b2e61",
+      "ts": "2026-07-01T22:20:22.954243+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "GIS",
+      "direction": "long",
+      "confidence": null,
+      "price": 37.8,
+      "thesis": "+8.6% today; 5d uptrend +9%; 2.1x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "3546b7f6727f",
       "ts": "2026-07-01T20:01:13.814112+00:00",
@@ -1067,13 +1162,13 @@
       "price": 139.55,
       "thesis": "\u2b50 INTC +6.0% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -8.96,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "1740a2920721",
@@ -1086,13 +1181,13 @@
       "price": 101.63,
       "thesis": "\u2b50 RKLB +3.7% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -1.56,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "20b9af22dcc8",
@@ -1105,13 +1200,13 @@
       "price": 431.59,
       "thesis": "\u2b50 DELL +4.2% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -1.47,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "f2502874ee93",
@@ -1124,13 +1219,13 @@
       "price": 2270.19,
       "thesis": "\ud83e\udde0 Serenity SNDK +10.7% \u26aa",
       "outcomes": {
-        "1d": null,
+        "1d": -10.4,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "500a5ff576f1",
@@ -1143,13 +1238,13 @@
       "price": 297.59,
       "thesis": "\ud83e\udde0 Serenity MRVL +7.1% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": -8.65,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "c69780b35aeb",
@@ -1162,13 +1257,13 @@
       "price": 179.57,
       "thesis": "\ud83d\ude80 DLR -5.8% on 3.8x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 1.78,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "29d078cb9c37",
@@ -1181,13 +1276,13 @@
       "price": 2270.19,
       "thesis": "5d uptrend +16%; MACD bullish cross; above VWAP",
       "outcomes": {
-        "1d": null,
+        "1d": -10.4,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "0dabae6650e5",
@@ -5951,7 +6046,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -2.84,
-        "5d": null,
+        "5d": 0.49,
         "10d": null,
         "21d": null
       },
@@ -5970,7 +6065,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -0.15,
-        "5d": null,
+        "5d": 1.15,
         "10d": null,
         "21d": null
       },
@@ -5989,7 +6084,7 @@
       "outcomes": {
         "1d": 0.2,
         "3d": 0.58,
-        "5d": null,
+        "5d": 3.96,
         "10d": null,
         "21d": null
       },
@@ -6008,7 +6103,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 17.33,
-        "5d": null,
+        "5d": 18.29,
         "10d": null,
         "21d": null
       },
@@ -6027,7 +6122,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -5.06,
-        "5d": null,
+        "5d": -7.84,
         "10d": null,
         "21d": null
       },
@@ -6046,7 +6141,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -17.33,
-        "5d": null,
+        "5d": -18.29,
         "10d": null,
         "21d": null
       },
@@ -6065,7 +6160,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 2.24,
-        "5d": null,
+        "5d": -1.74,
         "10d": null,
         "21d": null
       },
@@ -6084,7 +6179,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 4.52,
-        "5d": null,
+        "5d": -1.64,
         "10d": null,
         "21d": null
       },
@@ -6103,7 +6198,7 @@
       "outcomes": {
         "1d": -0.37,
         "3d": -1.89,
-        "5d": null,
+        "5d": -2.78,
         "10d": null,
         "21d": null
       },
@@ -6122,7 +6217,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 4.13,
-        "5d": null,
+        "5d": 2.75,
         "10d": null,
         "21d": null
       },
@@ -6141,7 +6236,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -22.14,
-        "5d": null,
+        "5d": -21.64,
         "10d": null,
         "21d": null
       },
@@ -6160,7 +6255,7 @@
       "outcomes": {
         "1d": -0.42,
         "3d": -2.6,
-        "5d": null,
+        "5d": -11.43,
         "10d": null,
         "21d": null
       },
@@ -6179,7 +6274,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": 0.25,
-        "5d": null,
+        "5d": -3.11,
         "10d": null,
         "21d": null
       },
@@ -6198,7 +6293,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -2.84,
-        "5d": null,
+        "5d": 0.49,
         "10d": null,
         "21d": null
       },
@@ -6217,7 +6312,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -0.79,
-        "5d": null,
+        "5d": -4.43,
         "10d": null,
         "21d": null
       },
@@ -6236,7 +6331,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 3.55,
-        "5d": null,
+        "5d": 2.26,
         "10d": null,
         "21d": null
       },
@@ -6255,7 +6350,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -2.93,
-        "5d": null,
+        "5d": 3.0,
         "10d": null,
         "21d": null
       },
@@ -6274,7 +6369,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 0.12,
-        "5d": null,
+        "5d": -9.13,
         "10d": null,
         "21d": null
       },
@@ -6293,7 +6388,7 @@
       "outcomes": {
         "1d": 0.07,
         "3d": -0.71,
-        "5d": null,
+        "5d": 3.16,
         "10d": null,
         "21d": null
       },
@@ -6312,7 +6407,7 @@
       "outcomes": {
         "1d": -0.09,
         "3d": 6.05,
-        "5d": null,
+        "5d": 6.77,
         "10d": null,
         "21d": null
       },
@@ -6331,7 +6426,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -3.7,
-        "5d": null,
+        "5d": -3.16,
         "10d": null,
         "21d": null
       },
@@ -6350,7 +6445,7 @@
       "outcomes": {
         "1d": 0.52,
         "3d": 1.33,
-        "5d": null,
+        "5d": -7.89,
         "10d": null,
         "21d": null
       },
@@ -6369,7 +6464,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -4.55,
-        "5d": null,
+        "5d": -17.81,
         "10d": null,
         "21d": null
       },
@@ -6388,7 +6483,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -3.22,
-        "5d": null,
+        "5d": -9.91,
         "10d": null,
         "21d": null
       },
@@ -6407,7 +6502,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": 1.86,
-        "5d": null,
+        "5d": -4.85,
         "10d": null,
         "21d": null
       },
@@ -6426,7 +6521,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 1.9,
-        "5d": null,
+        "5d": -7.5,
         "10d": null,
         "21d": null
       },
@@ -6445,7 +6540,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -7.95,
-        "5d": null,
+        "5d": -2.11,
         "10d": null,
         "21d": null
       },
@@ -6464,7 +6559,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 0.69,
-        "5d": null,
+        "5d": 0.9,
         "10d": null,
         "21d": null
       },
@@ -6483,7 +6578,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 4.01,
-        "5d": null,
+        "5d": 14.37,
         "10d": null,
         "21d": null
       },
@@ -6502,7 +6597,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 0.9,
-        "5d": null,
+        "5d": -0.35,
         "10d": null,
         "21d": null
       },
@@ -6521,7 +6616,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -0.99,
-        "5d": null,
+        "5d": 5.95,
         "10d": null,
         "21d": null
       },
@@ -6540,7 +6635,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -1.43,
-        "5d": null,
+        "5d": 4.78,
         "10d": null,
         "21d": null
       },
@@ -6559,7 +6654,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 1.3,
-        "5d": null,
+        "5d": 14.3,
         "10d": null,
         "21d": null
       },
@@ -6578,7 +6673,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -1.31,
-        "5d": null,
+        "5d": 1.92,
         "10d": null,
         "21d": null
       },
@@ -6597,7 +6692,7 @@
       "outcomes": {
         "1d": -0.17,
         "3d": -4.95,
-        "5d": null,
+        "5d": -6.66,
         "10d": null,
         "21d": null
       },
@@ -6616,7 +6711,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": -2.12,
-        "5d": null,
+        "5d": 1.32,
         "10d": null,
         "21d": null
       },
@@ -6635,7 +6730,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": 2.96,
-        "5d": null,
+        "5d": 6.62,
         "10d": null,
         "21d": null
       },
@@ -6654,7 +6749,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -3.49,
-        "5d": null,
+        "5d": -8.51,
         "10d": null,
         "21d": null
       },
@@ -6673,7 +6768,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": 2.13,
-        "5d": null,
+        "5d": 0.58,
         "10d": null,
         "21d": null
       },
@@ -9362,101 +9457,6 @@
         "1d": 3.36,
         "3d": 3.36,
         "5d": 2.16,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "ff12b9cb7776",
-      "ts": "2026-06-26T04:08:31.263692+00:00",
-      "kind": "alert",
-      "type": "big_move",
-      "ticker": "JEF",
-      "direction": "short",
-      "confidence": null,
-      "price": 52.7,
-      "thesis": "\ud83d\ude80 JEF -9.0% on 4.9x vol",
-      "outcomes": {
-        "1d": 6.98,
-        "3d": 6.98,
-        "5d": 5.12,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "2bcf526cf9fd",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "RKLB",
-      "direction": "short",
-      "confidence": null,
-      "price": 80.68,
-      "thesis": "\u2b50 RKLB -5.5% \u00b7 RKLB is down 5.53% on the session with\u2026",
-      "outcomes": {
-        "1d": -4.82,
-        "3d": -4.82,
-        "5d": -25.91,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "d609555715b2",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "DELL",
-      "direction": "short",
-      "confidence": null,
-      "price": 409.18,
-      "thesis": "\u2b50 DELL -5.7% watchlist",
-      "outcomes": {
-        "1d": 3.63,
-        "3d": 3.63,
-        "5d": -5.42,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "8e114edd2325",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "watchlist",
-      "ticker": "ORCL",
-      "direction": "short",
-      "confidence": null,
-      "price": 152.66,
-      "thesis": "\u2b50 ORCL -3.1% \u00b7 ORCL is down 3.1% today and nearly 17%\u2026",
-      "outcomes": {
-        "1d": 2.82,
-        "3d": 2.82,
-        "5d": 4.14,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "f642f7a8fce4",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "MU",
-      "direction": "short",
-      "confidence": null,
-      "price": 1215.46,
-      "thesis": "\ud83e\udde0 Serenity MU +16.0% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": 7.05,
-        "3d": 7.05,
-        "5d": 5.59,
         "10d": null,
         "21d": null
       },
