@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-01T17:24:10.019525+00:00",
+ "generated_at": "2026-07-01T20:05:36.081182+00:00",
  "window_days": 30,
  "deal_count": 24,
  "deals": [
@@ -186,13 +186,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 1.52,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "BKSY",
@@ -202,13 +202,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.76,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "LMT",
@@ -218,13 +218,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.38,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "BA",
@@ -234,13 +234,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.98,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ASTS",
@@ -250,13 +250,13 @@
      "horizon": "days",
      "priced_in": "partial",
      "outcomes": {
-      "1d": null,
+      "1d": -3.15,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "LUNR",
@@ -266,13 +266,13 @@
      "horizon": "intraday",
      "priced_in": "partial",
      "outcomes": {
-      "1d": null,
+      "1d": -5.61,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "PL",
@@ -282,19 +282,19 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -4.68,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 7,
-    "graded": 0,
-    "hit": 0
+    "graded": 7,
+    "hit": 2
    }
   },
   {
@@ -318,13 +318,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 6.37,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "DPRO",
@@ -334,13 +334,13 @@
      "horizon": "intraday",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -1.29,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "LMT",
@@ -350,13 +350,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.38,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "PLTR",
@@ -366,13 +366,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 7.72,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "AVAV",
@@ -382,13 +382,13 @@
      "horizon": "intraday",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -4.53,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "RCAT",
@@ -407,8 +407,8 @@
    ],
    "stats": {
     "calls": 6,
-    "graded": 0,
-    "hit": 0
+    "graded": 5,
+    "hit": 3
    }
   },
   {
@@ -432,13 +432,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.25,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "CMCSA",
@@ -448,13 +448,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.22,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "NWSA",
@@ -464,13 +464,13 @@
      "horizon": "weeks",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 3.91,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "FWONK",
@@ -480,13 +480,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -3.43,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "FUBO",
@@ -510,19 +510,19 @@
      "horizon": "weeks",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": 3.92,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 6,
-    "graded": 0,
-    "hit": 0
+    "graded": 5,
+    "hit": 2
    }
   },
   {

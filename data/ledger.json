@@ -1,7 +1,121 @@
 {
-  "generated_at": "2026-07-01T17:24:09.920796+00:00",
+  "generated_at": "2026-07-01T20:05:35.967267+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "3546b7f6727f",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "alert",
+      "type": "catalyst",
+      "ticker": "SMCI",
+      "direction": "short",
+      "confidence": null,
+      "price": 27.66,
+      "thesis": "\ud83c\udfaf SMCI -5.7% \u00b7 Taiwanese authorities detained SMCI\u2026",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "490056d54133",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "NBIS",
+      "direction": "long",
+      "confidence": null,
+      "price": 229.17,
+      "thesis": "\ud83e\udde0 Serenity NBIS -17.0% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "bb51b1bace94",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "RDDT",
+      "direction": "long",
+      "confidence": null,
+      "price": 197.55,
+      "thesis": "\ud83e\udde0 Serenity RDDT +13.8% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "83085759258f",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "CRWV",
+      "direction": "short",
+      "confidence": null,
+      "price": 85.69,
+      "thesis": "\ud83d\ude80 CRWV -13.9% on 3.0x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "8bfff9d6ed16",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "NKE",
+      "direction": "long",
+      "confidence": null,
+      "price": 43.13,
+      "thesis": "\ud83d\ude80 NKE +5.1% on 4.0x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "1999486a9fd3",
+      "ts": "2026-07-01T20:01:13.814112+00:00",
+      "kind": "pick",
+      "type": "rec_short",
+      "ticker": "SMCI",
+      "direction": "short",
+      "confidence": null,
+      "price": 27.66,
+      "thesis": "-5.7% today; 5d downtrend -15%; MACD negative",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "504805816875",
       "ts": "2026-07-01T17:20:13.071386+00:00",
@@ -1086,13 +1200,13 @@
       "price": 431.59,
       "thesis": "\u2b50 DELL +4.2% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -1.47,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "0d68c9a45f1f",
@@ -1105,13 +1219,13 @@
       "price": 139.55,
       "thesis": "\u2b50 INTC +6.0% \u00b7 INTC is up ~6% today but the only\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": -8.94,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "9aa47b744211",
@@ -1124,13 +1238,13 @@
       "price": 101.63,
       "thesis": "\u2b50 RKLB +3.7% \u00b7 Rocket Lab secured a deal with\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": -1.59,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "4bb99cc89415",
@@ -1143,13 +1257,13 @@
       "price": 2270.19,
       "thesis": "\ud83e\udde0 Serenity SNDK +10.7% \u26aa",
       "outcomes": {
-        "1d": null,
+        "1d": -11.36,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "fd4015796e6f",
@@ -1162,13 +1276,13 @@
       "price": 297.59,
       "thesis": "\ud83e\udde0 Serenity MRVL +7.1% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": -8.4,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "658bf57faa83",
@@ -1181,13 +1295,13 @@
       "price": 54.87,
       "thesis": "\ud83d\udd2e IRDM \ud83d\udcc8 via RKLB",
       "outcomes": {
-        "1d": null,
+        "1d": 1.52,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "87e7763f1da8",
@@ -1200,13 +1314,13 @@
       "price": 24.53,
       "thesis": "\ud83d\udd2e CMCSA \ud83d\udcc8 via WBD",
       "outcomes": {
-        "1d": null,
+        "1d": -3.22,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "bc98abdf79f4",
@@ -1219,13 +1333,13 @@
       "price": 179.57,
       "thesis": "\ud83d\ude80 DLR -5.8% on 3.8x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 1.78,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "aa65350ea509",
@@ -1238,13 +1352,13 @@
       "price": 420.37,
       "thesis": "+2.1% today; 5d uptrend +10%; MACD bullish cross",
       "outcomes": {
-        "1d": null,
+        "1d": 0.96,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "e8189331e467",
@@ -1257,13 +1371,13 @@
       "price": 88.61,
       "thesis": "+0.5% today; 5d uptrend +5%; 2.4x volume",
       "outcomes": {
-        "1d": null,
+        "1d": 1.97,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "45c735ab7cde",
@@ -1276,13 +1390,13 @@
       "price": 51.99,
       "thesis": "+0.0% today; 2.2x volume; MACD positive",
       "outcomes": {
-        "1d": null,
+        "1d": -0.02,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "6bc7671e6f9c",
@@ -1295,13 +1409,13 @@
       "price": 30.68,
       "thesis": "5d uptrend +10%; 2.1x volume; MACD positive",
       "outcomes": {
-        "1d": null,
+        "1d": 6.49,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "96dfaa7a84c6",
@@ -1314,13 +1428,13 @@
       "price": 223.88,
       "thesis": "-1.7% today; 5d downtrend -4%; 2.8x volume",
       "outcomes": {
-        "1d": null,
+        "1d": 0.96,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "3a1be780d1ba",
@@ -1333,13 +1447,13 @@
       "price": 54.87,
       "thesis": "Iridium itself \u2014 locking in a launch provider de-risks its next-gen constellation refresh schedule and capex plan; cheaper/more flexible launch cadence than legacy options.",
       "outcomes": {
-        "1d": null,
+        "1d": 1.52,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "67328d475113",
@@ -1352,13 +1466,13 @@
       "price": 49.855,
       "thesis": "Pure-play defense drone/target-drone maker (Valkyrie, Kratos UAS); AVAV's strong DoD-driven order book signals an expanding small-UAS and loyal-wingman budget envelope that flows directly to Kratos.",
       "outcomes": {
-        "1d": null,
+        "1d": 6.37,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "6a028ff2c6be",
@@ -1371,13 +1485,13 @@
       "price": 9.85,
       "thesis": "Paramount Skydance bears regulatory risk, financing carrying cost, and potential need to sweeten terms or accept UK divestitures \u2014 deal economics deteriorate the longer CMA review drags.",
       "outcomes": {
-        "1d": null,
+        "1d": -3.25,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "3d26d883a3da",
@@ -1390,13 +1504,13 @@
       "price": 27.94,
       "thesis": "BlackSky relies on small-launch providers (has historically used RKLB Electron) for its EO constellation; deal validates the launch cadence/pricing model it depends on.",
       "outcomes": {
-        "1d": null,
+        "1d": 2.76,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "bbd98c070b27",
@@ -1409,13 +1523,13 @@
       "price": 5.41,
       "thesis": "Draganfly is another small drone pure-play that trades as a high-beta sympathy name on any AVAV/drone budget headline.",
       "outcomes": {
-        "1d": null,
+        "1d": -1.29,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "aa4be9a844b2",
@@ -1428,13 +1542,13 @@
       "price": 24.53,
       "thesis": "Comcast/NBCU has reportedly weighed its own bid for WBD assets; a stalled Paramount deal keeps the door open for a competing offer or asset carve-out, particularly for Warner studios/HBO.",
       "outcomes": {
-        "1d": null,
+        "1d": -3.22,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "302cf8da5abd",
@@ -1447,13 +1561,13 @@
       "price": 509.14,
       "thesis": "Lockheed (via ULA JV with Boeing) is the legacy launcher for government/comms missions; continued share loss of medium-lift commercial launches to Rocket Lab/SpaceX pressures ULA economics.",
       "outcomes": {
-        "1d": null,
+        "1d": -2.38,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "55969ed7306a",
@@ -1466,13 +1580,13 @@
       "price": 216.48,
       "thesis": "Boeing's ULA JV stake \u2014 same dynamic as LMT; commercial launch wins migrating to new entrants erodes ULA's addressable market.",
       "outcomes": {
-        "1d": null,
+        "1d": -0.98,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "302cf8da5abd",
@@ -1485,13 +1599,13 @@
       "price": 509.14,
       "thesis": "Lockheed is AVAV's JV partner on loitering munitions and a major counter-UAS prime; an AVAV blowout validates the loitering-munition demand cycle for Lockheed's missile segment.",
       "outcomes": {
-        "1d": null,
+        "1d": 2.38,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "ac7d0de1470c",
@@ -1504,13 +1618,13 @@
       "price": 116.7,
       "thesis": "Palantir's Maven/TITAN integrates UAS data; a stronger defense-tech procurement backdrop signaled by AVAV supports software-layer beneficiaries.",
       "outcomes": {
-        "1d": null,
+        "1d": 7.72,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "1ea81c52d0b2",
@@ -1523,13 +1637,13 @@
       "price": 165.03,
       "thesis": "Not a loser, but flagged: post-blowout, sympathy names like ONDS/KTOS/RCAT can outrun AVAV intraday as flow rotates to higher-beta proxies \u2014 not a fundamental short.",
       "outcomes": {
-        "1d": null,
+        "1d": -4.53,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "28b561dfa34e",
@@ -1542,13 +1656,13 @@
       "price": 24.82,
       "thesis": "News Corp and other potential interlopers gain optionality to bid on WBD pieces (sports rights, studios) if UK CMA forces divestitures or kills the deal.",
       "outcomes": {
-        "1d": null,
+        "1d": 3.91,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "7be383853f6a",
@@ -1561,13 +1675,13 @@
       "price": 95.14,
       "thesis": "Liberty Media / John Malone complex has been positioned for media consolidation; a stalled flagship deal cools the broader consolidation thesis and re-rating of media holdcos.",
       "outcomes": {
-        "1d": null,
+        "1d": -3.43,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "deb90943cd1c",
@@ -1580,13 +1694,13 @@
       "price": 9.22,
       "thesis": "A delayed WBD-Paramount merger means continued fragmented carriage negotiations remain costly; consolidated distributor leverage that was expected to pressure vMVPDs is postponed but so is rationaliza",
       "outcomes": {
-        "1d": null,
+        "1d": -9.33,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "773804270f1d",
@@ -1599,13 +1713,13 @@
       "price": 10.63,
       "thesis": "Red Cat is a small-UAS pure-play (Teal/SRR) competing for the same Army Short-Range Reconnaissance dollars AVAV's Switchblade/Puma serve; momentum traders rotate the AVAV beat into the cheapest drone ",
       "outcomes": {
-        "1d": null,
+        "1d": -0.75,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "3881d7d015a7",
@@ -1618,13 +1732,13 @@
       "price": 88.85,
       "thesis": "Pure-play space/satellite peer that re-rates on small-launch demand validation; AST SpaceMobile depends on continued availability of non-SpaceX launch capacity for its BlueBird constellation.",
       "outcomes": {
-        "1d": null,
+        "1d": -3.15,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "bbbcf23211f3",
@@ -1637,13 +1751,13 @@
       "price": 21.38,
       "thesis": "Space pure-play peer that tends to trade in sympathy on launch/space contract wins; sector-wide re-rate on commercial space momentum.",
       "outcomes": {
-        "1d": null,
+        "1d": -5.61,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "281cd21408bb",
@@ -1656,13 +1770,13 @@
       "price": 71.39,
       "thesis": "A delayed/jeopardized WBD-Paramount combo means the merged streaming scale challenger to Netflix is pushed out further; subscriber competitive pressure remains diffuse.",
       "outcomes": {
-        "1d": null,
+        "1d": 3.92,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "9dd05a3b4d31",
@@ -1675,13 +1789,13 @@
       "price": 33.15,
       "thesis": "Planet Labs operates a smallsat constellation requiring routine refresh launches; a credible non-SpaceX launch option strengthens its supply chain bargaining power.",
       "outcomes": {
-        "1d": null,
+        "1d": -4.68,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "ac826cc235fa",
@@ -5285,7 +5399,7 @@
       "thesis": "\u2b50 RKLB +4.8% watchlist",
       "outcomes": {
         "1d": 17.33,
-        "3d": null,
+        "3d": 18.26,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5304,7 +5418,7 @@
       "thesis": "\u2b50 CSCO -4.6% watchlist",
       "outcomes": {
         "1d": -3.7,
-        "3d": null,
+        "3d": -3.16,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5323,7 +5437,7 @@
       "thesis": "\u2b50 NOK -6.8% watchlist",
       "outcomes": {
         "1d": -0.15,
-        "3d": null,
+        "3d": 0.77,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5342,7 +5456,7 @@
       "thesis": "\ud83e\udde0 Serenity SNDK -10.4% \ud83d\udfe2bull",
       "outcomes": {
         "1d": -1.89,
-        "3d": null,
+        "3d": -3.83,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5361,7 +5475,7 @@
       "thesis": "\ud83e\udde0 Serenity ASTS +8.9% \ud83d\udd34bear",
       "outcomes": {
         "1d": -22.14,
-        "3d": null,
+        "3d": -20.44,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5380,7 +5494,7 @@
       "thesis": "\ud83d\ude80 ON -23.8% on 3.3x vol",
       "outcomes": {
         "1d": 1.86,
-        "3d": null,
+        "3d": -4.85,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5399,7 +5513,7 @@
       "thesis": "\ud83d\ude80 STX -12.5% on 3.1x vol",
       "outcomes": {
         "1d": -7.95,
-        "3d": null,
+        "3d": -2.11,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5418,7 +5532,7 @@
       "thesis": "\ud83d\ude80 XENE +5.2% on 3.4x vol",
       "outcomes": {
         "1d": 0.69,
-        "3d": null,
+        "3d": 0.9,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5437,7 +5551,7 @@
       "thesis": "+4.2% today; 5d uptrend +4%; 2.2x volume",
       "outcomes": {
         "1d": -1.31,
-        "3d": null,
+        "3d": 1.92,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5456,7 +5570,7 @@
       "thesis": "+6.9% today; 5d uptrend +14%; 2.3x volume",
       "outcomes": {
         "1d": 0.81,
-        "3d": null,
+        "3d": 0.31,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5475,7 +5589,7 @@
       "thesis": "+0.1% today; 5d uptrend +1%; 2.9x volume",
       "outcomes": {
         "1d": 0.0,
-        "3d": null,
+        "3d": 0.0,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5494,7 +5608,7 @@
       "thesis": "+1.0% today; 5d uptrend +6%; 2.2x volume",
       "outcomes": {
         "1d": 3.12,
-        "3d": null,
+        "3d": -1.18,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5513,7 +5627,7 @@
       "thesis": "+0.0% today; 5d uptrend +1%; 2.2x volume",
       "outcomes": {
         "1d": -1.55,
-        "3d": null,
+        "3d": -4.17,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5532,7 +5646,7 @@
       "thesis": "+6.4% today; 5d uptrend +5%; 2.1x volume",
       "outcomes": {
         "1d": 4.13,
-        "3d": null,
+        "3d": 2.87,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5551,7 +5665,7 @@
       "thesis": "-2.8% today; 5d downtrend -7%; 2.7x volume",
       "outcomes": {
         "1d": 1.25,
-        "3d": null,
+        "3d": -2.74,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5570,7 +5684,7 @@
       "thesis": "-3.4% today; 5d downtrend -2%; 2.6x volume",
       "outcomes": {
         "1d": -2.12,
-        "3d": null,
+        "3d": 1.32,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5589,7 +5703,7 @@
       "thesis": "-8.7% today; 5d downtrend -11%; 2.5x volume",
       "outcomes": {
         "1d": 2.96,
-        "3d": null,
+        "3d": 6.62,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5608,7 +5722,7 @@
       "thesis": "-5.4% today; 5d downtrend -15%; 2.5x volume",
       "outcomes": {
         "1d": -3.49,
-        "3d": null,
+        "3d": -8.51,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5627,7 +5741,7 @@
       "thesis": "-0.9% today; 5d downtrend -8%; 2.1x volume",
       "outcomes": {
         "1d": 2.13,
-        "3d": null,
+        "3d": 0.58,
         "5d": null,
         "10d": null,
         "21d": null
@@ -5646,7 +5760,7 @@
       "thesis": "-3.4% today; 5d downtrend -2%; 1.9x volume",
       "outcomes": {
         "1d": 0.99,
-        "3d": null,
+        "3d": 11.12,
         "5d": null,
         "10d": null,
         "21d": null
@@ -6578,7 +6692,7 @@
       "outcomes": {
         "1d": 0.64,
         "3d": 1.24,
-        "5d": null,
+        "5d": 4.38,
         "10d": null,
         "21d": null
       },
@@ -6597,7 +6711,7 @@
       "outcomes": {
         "1d": 0.64,
         "3d": 15.98,
-        "5d": null,
+        "5d": 19.02,
         "10d": null,
         "21d": null
       },
@@ -6616,7 +6730,7 @@
       "outcomes": {
         "1d": 1.82,
         "3d": -1.89,
-        "5d": null,
+        "5d": -1.28,
         "10d": null,
         "21d": null
       },
@@ -6635,7 +6749,7 @@
       "outcomes": {
         "1d": -1.53,
         "3d": -6.24,
-        "5d": null,
+        "5d": -9.5,
         "10d": null,
         "21d": null
       },
@@ -6654,7 +6768,7 @@
       "outcomes": {
         "1d": 0.05,
         "3d": -2.52,
-        "5d": null,
+        "5d": 0.52,
         "10d": null,
         "21d": null
       },
@@ -6673,7 +6787,7 @@
       "outcomes": {
         "1d": -1.25,
         "3d": -0.55,
-        "5d": null,
+        "5d": -0.47,
         "10d": null,
         "21d": null
       },
@@ -6692,7 +6806,7 @@
       "outcomes": {
         "1d": -1.68,
         "3d": -1.57,
-        "5d": null,
+        "5d": -10.13,
         "10d": null,
         "21d": null
       },
@@ -6711,7 +6825,7 @@
       "outcomes": {
         "1d": -0.64,
         "3d": -15.98,
-        "5d": null,
+        "5d": -19.02,
         "10d": null,
         "21d": null
       },
@@ -6730,7 +6844,7 @@
       "outcomes": {
         "1d": 1.43,
         "3d": 1.67,
-        "5d": null,
+        "5d": -0.33,
         "10d": null,
         "21d": null
       },
@@ -6749,7 +6863,7 @@
       "outcomes": {
         "1d": 1.22,
         "3d": 4.64,
-        "5d": null,
+        "5d": -0.44,
         "10d": null,
         "21d": null
       },
@@ -6768,7 +6882,7 @@
       "outcomes": {
         "1d": -1.58,
         "3d": -5.03,
-        "5d": null,
+        "5d": -5.0,
         "10d": null,
         "21d": null
       },
@@ -6787,7 +6901,7 @@
       "outcomes": {
         "1d": 1.29,
         "3d": 5.47,
-        "5d": null,
+        "5d": 4.07,
         "10d": null,
         "21d": null
       },
@@ -6806,7 +6920,7 @@
       "outcomes": {
         "1d": -0.52,
         "3d": -20.58,
-        "5d": null,
+        "5d": -21.07,
         "10d": null,
         "21d": null
       },
@@ -6825,7 +6939,7 @@
       "outcomes": {
         "1d": -0.82,
         "3d": -3.49,
-        "5d": null,
+        "5d": -11.87,
         "10d": null,
         "21d": null
       },
@@ -6844,7 +6958,7 @@
       "outcomes": {
         "1d": -1.3,
         "3d": -1.43,
-        "5d": null,
+        "5d": -4.45,
         "10d": null,
         "21d": null
       },
@@ -6863,7 +6977,7 @@
       "outcomes": {
         "1d": 0.05,
         "3d": -2.52,
-        "5d": null,
+        "5d": 0.52,
         "10d": null,
         "21d": null
       },
@@ -6882,7 +6996,7 @@
       "outcomes": {
         "1d": 1.29,
         "3d": -0.11,
-        "5d": null,
+        "5d": -3.19,
         "10d": null,
         "21d": null
       },
@@ -6901,7 +7015,7 @@
       "outcomes": {
         "1d": 0.94,
         "3d": 3.85,
-        "5d": null,
+        "5d": 3.5,
         "10d": null,
         "21d": null
       },
@@ -6920,7 +7034,7 @@
       "outcomes": {
         "1d": -0.17,
         "3d": -1.85,
-        "5d": null,
+        "5d": 2.84,
         "10d": null,
         "21d": null
       },
@@ -6939,7 +7053,7 @@
       "outcomes": {
         "1d": -2.24,
         "3d": -5.69,
-        "5d": null,
+        "5d": -12.56,
         "10d": null,
         "21d": null
       },
@@ -6958,7 +7072,7 @@
       "outcomes": {
         "1d": 2.35,
         "3d": 0.53,
-        "5d": null,
+        "5d": -7.0,
         "10d": null,
         "21d": null
       },
@@ -6977,7 +7091,7 @@
       "outcomes": {
         "1d": 0.54,
         "3d": -0.36,
-        "5d": null,
+        "5d": 3.64,
         "10d": null,
         "21d": null
       },
@@ -6996,7 +7110,7 @@
       "outcomes": {
         "1d": 1.33,
         "3d": 6.49,
-        "5d": null,
+        "5d": 8.1,
         "10d": null,
         "21d": null
       },
@@ -7015,7 +7129,7 @@
       "outcomes": {
         "1d": 1.58,
         "3d": 5.03,
-        "5d": null,
+        "5d": 5.0,
         "10d": null,
         "21d": null
       },
@@ -7034,7 +7148,7 @@
       "outcomes": {
         "1d": -4.37,
         "3d": -0.42,
-        "5d": null,
+        "5d": -17.46,
         "10d": null,
         "21d": null
       },
@@ -7053,7 +7167,7 @@
       "outcomes": {
         "1d": -2.63,
         "3d": -2.54,
-        "5d": null,
+        "5d": 2.63,
         "10d": null,
         "21d": null
       },
@@ -7072,7 +7186,7 @@
       "outcomes": {
         "1d": -1.4,
         "3d": -1.77,
-        "5d": null,
+        "5d": 0.91,
         "10d": null,
         "21d": null
       },
@@ -7091,7 +7205,7 @@
       "outcomes": {
         "1d": 2.95,
         "3d": 3.24,
-        "5d": null,
+        "5d": 3.88,
         "10d": null,
         "21d": null
       },
@@ -7110,7 +7224,7 @@
       "outcomes": {
         "1d": 0.44,
         "3d": 7.58,
-        "5d": null,
+        "5d": 16.78,
         "10d": null,
         "21d": null
       },
@@ -7129,7 +7243,7 @@
       "outcomes": {
         "1d": 0.0,
         "3d": 0.0,
-        "5d": null,
+        "5d": 0.0,
         "10d": null,
         "21d": null
       },
@@ -7148,7 +7262,7 @@
       "outcomes": {
         "1d": 1.02,
         "3d": -1.29,
-        "5d": null,
+        "5d": -7.78,
         "10d": null,
         "21d": null
       },
@@ -7167,7 +7281,7 @@
       "outcomes": {
         "1d": 1.33,
         "3d": 6.49,
-        "5d": null,
+        "5d": 8.1,
         "10d": null,
         "21d": null
       },
@@ -7186,7 +7300,7 @@
       "outcomes": {
         "1d": 0.04,
         "3d": 0.83,
-        "5d": null,
+        "5d": -2.69,
         "10d": null,
         "21d": null
       },
@@ -7205,7 +7319,7 @@
       "outcomes": {
         "1d": -1.93,
         "3d": 2.02,
-        "5d": null,
+        "5d": -2.83,
         "10d": null,
         "21d": null
       },
@@ -7224,7 +7338,7 @@
       "outcomes": {
         "1d": -0.0,
         "3d": -0.88,
-        "5d": null,
+        "5d": 4.32,
         "10d": null,
         "21d": null
       },
@@ -7243,7 +7357,7 @@
       "outcomes": {
         "1d": -1.4,
         "3d": -1.77,
-        "5d": null,
+        "5d": 0.91,
         "10d": null,
         "21d": null
       },
@@ -9347,120 +9461,6 @@
         "21d": null
       },
       "status": "hit"
-    },
-    {
-      "id": "88b4f5e86702",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "SNDK",
-      "direction": "short",
-      "confidence": null,
-      "price": 2335.46,
-      "thesis": "\ud83e\udde0 Serenity SNDK +21.8% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": 10.74,
-        "3d": 10.74,
-        "5d": 4.05,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "e242ab87d287",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "AAOI",
-      "direction": "long",
-      "confidence": null,
-      "price": 138.52,
-      "thesis": "\ud83e\udde0 Serenity AAOI -5.8% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -2.01,
-        "3d": -2.01,
-        "5d": 6.91,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "428d751b3ce0",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "POET",
-      "direction": "long",
-      "confidence": null,
-      "price": 10.16,
-      "thesis": "\ud83e\udde0 Serenity POET -4.9% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -6.99,
-        "3d": -6.99,
-        "5d": 1.33,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "c6b6887ad911",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "ASTS",
-      "direction": "short",
-      "confidence": null,
-      "price": 65.61,
-      "thesis": "\ud83e\udde0 Serenity ASTS -3.5% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": -8.9,
-        "3d": -8.9,
-        "5d": -34.75,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "f8560106e2d7",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "RKLB",
-      "direction": "short",
-      "confidence": null,
-      "price": 80.68,
-      "thesis": "\ud83e\udde0 Serenity RKLB -5.5% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": -4.82,
-        "3d": -4.82,
-        "5d": -25.91,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "14fc4f0be803",
-      "ts": "2026-06-25T21:47:38.775005+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "PLTR",
-      "direction": "short",
-      "confidence": null,
-      "price": 107.3,
-      "thesis": "\ud83e\udde0 Serenity PLTR -5.5% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": -5.58,
-        "3d": -5.58,
-        "5d": -8.7,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
     }
   ]
 }

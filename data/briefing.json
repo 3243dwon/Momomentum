@@ -1,71 +1,55 @@
 {
-  "generated_at": "2026-07-01T13:20:13.071386-04:00",
-  "window": "RTH",
-  "headline": "Risk-on intact: META/COIN/RDDT lead; semis (LRCX -11%, KLAC -11%) hammered on rotation",
+  "generated_at": "2026-07-01T16:01:13.814112-04:00",
+  "window": "AH_POST",
+  "headline": "Semi wreckage deepens (KLAC -11.6%, TER -11.7%, ALAB -10.7%); RDDT +13.8% lone bright spot; NTNX long on deck",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.2% above 50d, QQQ -1% \u2014 semi selloff dragging Nasdaq; VXX stress ratio 0.94 = low vol. Momentum longs viable, semi longs avoid."
+    "line": "SPY -0.13% / QQQ -1.46%; SPY holds >50d; VXX stress 0.94 \u2014 regime says risk_on but semis bleeding hard, tighten entries."
   },
   "actions": [
     {
-      "ticker": "META",
+      "ticker": "NTNX",
       "direction": "long",
-      "entry": 618.4,
-      "stop": 607.61,
-      "target": 639.99,
-      "line": "Full size. Dual catalyst: technicals + newsflow. Unanimous desk, clean regime. R:R ~2:1."
-    },
-    {
-      "ticker": "IBM",
-      "direction": "long",
-      "entry": 290.89,
-      "stop": 267.62,
-      "target": 337.43,
-      "line": "Half size. Clean technical setup, no fresh catalyst. Signal + risk agree, research neutral."
-    },
-    {
-      "ticker": "SOFI",
-      "direction": "long",
-      "entry": 18.68,
-      "stop": 18.2,
-      "target": 19.64,
-      "line": "Quarter size. Newsflow real but overbought concern flagged \u2014 split desk, tight leash."
+      "entry": 51.2,
+      "stop": 47.1,
+      "target": 59.39,
+      "line": "Early long setup in risk_on \u2014 signal agrees, clean 8% risk, half-size; research neutral, no veto."
     }
   ],
   "watch": [
     {
-      "ticker": "LRCX",
-      "type": "mover",
-      "line": "LRCX -10.8% on elevated volume \u2014 semi sector under pressure, watch for oversold bounce setup."
+      "ticker": "SMCI",
+      "type": "catalyst",
+      "line": "SMCI -5.7% AH \u2014 Taiwanese authorities detained personnel; legal/supply chain risk escalating, avoid longs."
     },
     {
-      "ticker": "KLAC",
+      "ticker": "RDDT",
       "type": "mover",
-      "line": "KLAC -10.6% confirming broad semi rotation; no entry yet, needs stabilization."
+      "line": "RDDT +13.78%, MACD bullish, 2x rel vol \u2014 momentum intact but extended after today's rip."
     },
     {
       "ticker": "CRWV",
       "type": "mover",
-      "line": "CRWV -12.7% continues yesterday's dump, rel vol 1.82 \u2014 potential dead-cat watch."
+      "line": "CRWV -13.88%, 3x rel vol \u2014 sharpest vol-weighted seller; watch for bounce setup if support holds."
     },
     {
-      "ticker": "COIN",
+      "ticker": "NBIS",
       "type": "mover",
-      "line": "COIN +11.3% MACD bullish, crypto bid; not a desk take but actionable if Bitcoin holds."
+      "line": "NBIS -17.0%, 2x rel vol \u2014 largest % drop in scan; need catalyst clarity before fading."
     },
     {
-      "ticker": "NKE",
-      "type": "catalyst",
-      "line": "NKE +3% on quarterly results \u2014 consumer staples/discretionary read-through worth monitoring."
+      "ticker": "GLW",
+      "type": "mover",
+      "line": "GLW -13.53% on big move flag \u2014 not typical semi name, check if SMCI supply chain spillover."
     }
   ],
   "changed": [
-    "Semi selloff (LRCX -11%, KLAC -11%) now the dominant risk \u2014 not flagged prior scan",
-    "CRWV extends losses (-12.7%) vs yesterday's -13% catalyst",
-    "MSTR +12% and COIN +11% signal crypto bid emerging as new leadership"
+    "Semi carnage continues but leadership shifted: LRCX off the tape, TER/ALAB/CRWV/NBIS added to wreckage",
+    "SMCI new catalyst (Taiwan detention) adds legal risk overhang to the complex",
+    "NTNX long take now active \u2014 no desk picks in prior scan"
   ],
   "caveats": [
-    "RTH scan as of 13:20 ET \u2014 prices reflect intraday snapshot, levels may have moved materially by read time",
-    "QQQ -1% divergence from SPY in a 'risk-on' regime signals semi-specific rotation, not broad risk-off \u2014 treat sector calls accordingly"
+    "AH_POST scan as of 16:01 ET Jul 1 2026 \u2014 prices are post-close and may not reflect final prints; liquidity thin, spreads wider than RTH.",
+    "Regime reads risk_on on SPY metrics alone, but QQQ -1.46% and broad semi selloff suggest intraday conditions were materially weaker than label implies."
   ]
 }
