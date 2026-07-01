@@ -1,71 +1,55 @@
 {
-  "generated_at": "2026-07-01T07:27:36.620555-04:00",
-  "window": "AH_PRE",
-  "headline": "Risk-on intact; desk adds GEV (quarter-size) as VLTO/TSM half-size longs carry forward \u2014 semis/tech still lead",
+  "generated_at": "2026-07-01T10:44:26.779056-04:00",
+  "window": "RTH",
+  "headline": "META +10.7% on in-house AI cloud report crushes CRWV -13%; GS cuts recession odds \u2014 risk-on holds",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.78% above 50d, QQQ +1.67%, VXX stress 0.93 \u2014 low-vol bid; tape supports momentum entries off open."
+    "line": "SPY -0.05% / QQQ -1.17%; VXX stress 0.94 (calm). Tech dragged by AI-cloud rotation, not macro \u2014 regime intact above 50d."
   },
   "actions": [
     {
-      "ticker": "VLTO",
+      "ticker": "CRM",
       "direction": "long",
-      "entry": 88.65,
-      "stop": 85.44,
-      "target": 95.07,
-      "line": "Half-size long; signal+risk agree, research neutral \u2014 R/R ~2.0x into 95.07."
-    },
-    {
-      "ticker": "TSM",
-      "direction": "long",
-      "entry": 477.24,
-      "stop": 439.06,
-      "target": 553.6,
-      "line": "Half-size long; signal agrees, research neutral limits size \u2014 semi tailwind, R/R ~2.0x."
-    },
-    {
-      "ticker": "GEV",
-      "direction": "long",
-      "entry": 1174.33,
-      "stop": 1129.82,
-      "target": 1263.36,
-      "line": "Quarter-size long; research+catalyst agree, signal against \u2014 late entry, R/R ~2.0x."
+      "entry": 164.16,
+      "stop": 162.01,
+      "target": 168.47,
+      "line": "Quarter-size only \u2014 signal flags extended entry after +7.5% 5D; R/R acceptable with tight $2.15 stop."
     }
   ],
   "watch": [
     {
-      "ticker": "FCEL",
-      "type": "mover",
-      "line": "+21% on 2.1x volume, overbought \u2014 watch for fade or continuation trigger post-open."
+      "ticker": "AVGO",
+      "type": "ripple",
+      "line": "Meta AI cloud buildout = more Broadcom custom ASIC (MTIA) + networking silicon content \u2014 bullish ripple from CRWV catalyst, medium confidence."
     },
     {
-      "ticker": "FIGR",
+      "ticker": "META",
       "type": "mover",
-      "line": "+13.4% on 2.1x volume, unusual activity \u2014 dropped from desk takes this scan, monitor for re-entry setup."
+      "line": "+10.7% on report it's building in-house AI cloud; MACD bullish, rel-vol 1.01 \u2014 strongest name on the tape."
     },
     {
-      "ticker": "SNDK",
-      "type": "mover",
-      "line": "+10.8% with MACD bullish cross \u2014 no unusual volume yet but momentum building."
+      "ticker": "CRWV",
+      "type": "catalyst",
+      "line": "-13.3% as Meta AI cloud report signals disintermediation risk for GPU-cloud providers."
     },
     {
-      "ticker": "TW",
-      "type": "mover",
-      "line": "+8.2% on 1.6x volume, MACD bullish \u2014 financials/data moving with semis."
+      "ticker": "ORCL",
+      "type": "ripple",
+      "line": "Meta's cloud entry adds well-capitalized competitor to OCI's AI GPU-cloud tier \u2014 bearish ripple, low confidence."
     },
     {
-      "ticker": "KLAC",
+      "ticker": "AA",
       "type": "mover",
-      "line": "+8.3% on 1.4x volume, overbought \u2014 semi leadership confirmed but extended."
+      "line": "-10.9%, flagged oversold; GS recession-probability cut is a direct tailwind for aluminum cyclicals \u2014 watch for bounce setup."
     }
   ],
   "changed": [
-    "GEV (quarter-size long) added to desk takes this scan.",
-    "FIGR rotated off desk takes \u2014 was quarter-size long in prior briefing.",
-    "Regime and semi/tech leadership unchanged."
+    "Previous picks (GEV, VLTO, TSM) no longer in desk_takes; CRM is the sole active take this scan.",
+    "Dominant theme shifted from semis/tech leadership to META AI-cloud rotation story crushing GPU-cloud names.",
+    "GS recession probability cut added as constructive macro catalyst \u2014 not present last scan."
   ],
   "caveats": [
-    "AH/Pre-market scan as of 07:27 ET Jul 1 2026 \u2014 prices may gap significantly at RTH open; levels are indicative.",
-    "FIGR dropped from desk takes with no catalyst or ripple data in feed \u2014 reason opaque; treat as unconfirmed."
+    "RTH scan as of 10:44 ET 2026-07-01; prices and levels may be stale by the time you read this \u2014 verify before entry.",
+    "Top movers (NBIS, GLW, CRWV, AA) all show rel-volume below 1.0, meaning moves lack strong conviction \u2014 fade/mean-reversion risk is elevated."
   ]
 }

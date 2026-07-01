@@ -1,8 +1,170 @@
 {
- "generated_at": "2026-07-01T11:31:08.331219+00:00",
+ "generated_at": "2026-07-01T14:50:09.433575+00:00",
  "window_days": 30,
- "deal_count": 23,
+ "deal_count": 24,
  "deals": [
+  {
+   "id": "2ace8eca0d5e",
+   "ts": "2026-07-01T10:44:26.779056-04:00",
+   "primary_ticker": "CRWV",
+   "counterparty": null,
+   "headline": "CoreWeave shares dropped sharply on a report that Meta is building its own AI cloud business, threatening the neocloud model of renting GPU capacity to hyperscalers.",
+   "drivers": [
+    "Hyperscaler insourcing threatens neocloud GPU rental demand",
+    "Meta becoming a competing AI cloud provider compresses pricing umbrella for GPU-as-a-service",
+    "Read-through that mega-customers may reduce third-party GPU capacity commitments"
+   ],
+   "news_url": "https://www.benzinga.com/trading-ideas/movers/26/07/60217060/coreweave-stock-drops-sharply-on-report-of-meta-ai-cloud-business",
+   "predictions": [
+    {
+     "ticker": "AVGO",
+     "direction": "long",
+     "mechanism": "Meta's in-house AI cloud/silicon ambitions rely on Broadcom for custom ASIC (MTIA) design and networking silicon \u2014 more Meta AI infrastructure = more Broadcom content.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ORCL",
+     "direction": "short",
+     "mechanism": "OCI's AI cloud growth story partly relies on being the 'neutral' GPU capacity provider to AI labs and enterprises; a Meta AI cloud entrant adds a well-capitalized competitor in the GPU-cloud tier.",
+     "confidence": "low",
+     "horizon": "weeks",
+     "priced_in": "no",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NVDA",
+     "direction": "short",
+     "mechanism": "CRWV is a top-5 Nvidia customer; if neocloud demand softens because hyperscalers insource, one channel of GPU pull-through weakens \u2014 though Meta insourcing still buys Nvidia GPUs, so net impact is modest.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "partial",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "ARM",
+     "direction": "long",
+     "mechanism": "Meta's custom silicon (MTIA) and hyperscaler in-house chip efforts lean on Arm-based architectures; hyperscaler cloud buildouts favor Arm CPU designs over x86.",
+     "confidence": "low",
+     "horizon": "months",
+     "priced_in": "contradicted",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "NBIS",
+     "direction": "short",
+     "mechanism": "Nebius is a direct neocloud peer to CRWV with the same GPU-rental business model; if hyperscalers insource, the entire neocloud pricing/demand thesis re-rates lower.",
+     "confidence": "high",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "META",
+     "direction": "long",
+     "mechanism": "Direct subject of the report \u2014 building its own AI cloud business monetizes its massive GPU buildout and reduces dependence on third-party neoclouds like CRWV.",
+     "confidence": "medium",
+     "horizon": "months",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "IREN",
+     "direction": "short",
+     "mechanism": "Pivoting from bitcoin mining to AI/HPC GPU cloud rental \u2014 same neocloud model that gets compressed if Meta and other hyperscalers build in-house alternatives.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "APLD",
+     "direction": "short",
+     "mechanism": "Applied Digital's HPC hosting business targets the same AI compute rental customers; hyperscaler insourcing shrinks the addressable market for neocloud hosts.",
+     "confidence": "medium",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    },
+    {
+     "ticker": "CIFR",
+     "direction": "short",
+     "mechanism": "Cipher Mining's HPC/AI hosting pivot faces the same demand-side threat \u2014 if Meta builds its own cloud, third-party AI hosts lose a potential anchor tenant category.",
+     "confidence": "low",
+     "horizon": "days",
+     "priced_in": "yes",
+     "outcomes": {
+      "1d": null,
+      "3d": null,
+      "5d": null,
+      "10d": null,
+      "21d": null
+     },
+     "status": "pending"
+    }
+   ],
+   "stats": {
+    "calls": 9,
+    "graded": 0,
+    "hit": 0
+   }
+  },
   {
    "id": "64614f1b6ad5",
    "ts": "2026-06-30T16:03:29.062461-04:00",
@@ -384,13 +546,13 @@
      "horizon": "intraday",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.0,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "GSAT",
@@ -400,13 +562,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 0.36,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "IRDM",
@@ -416,13 +578,13 @@
      "horizon": "intraday",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.0,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "ASTS",
@@ -432,13 +594,13 @@
      "horizon": "days",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.06,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "LMT",
@@ -448,13 +610,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -2.41,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "IRDM",
@@ -464,13 +626,13 @@
      "horizon": "intraday",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": 2.0,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "PL",
@@ -480,13 +642,13 @@
      "horizon": "weeks",
      "priced_in": "partial",
      "outcomes": {
-      "1d": null,
+      "1d": 2.24,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "VSAT",
@@ -496,13 +658,13 @@
      "horizon": "months",
      "priced_in": "contradicted",
      "outcomes": {
-      "1d": null,
+      "1d": -5.04,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "RDW",
@@ -512,19 +674,19 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": -2.65,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     }
    ],
    "stats": {
     "calls": 9,
-    "graded": 0,
-    "hit": 0
+    "graded": 9,
+    "hit": 4
    }
   },
   {
