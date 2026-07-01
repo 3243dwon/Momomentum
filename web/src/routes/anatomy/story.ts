@@ -83,7 +83,6 @@ export const PRIORITY_LADDER: LadderRung[] = [
   { type: 'ripple', priority: 95 },
   { type: 'macro', priority: 90 },
   { type: 'serenity_match', priority: 85 },
-  { type: 'watchlist', priority: 80 },
   { type: 'big_move', priority: 60 },
   { type: 'delta_new_top20', priority: 45 },
   { type: 'delta_rank_jump', priority: 40 },
@@ -92,7 +91,7 @@ export const PRIORITY_LADDER: LadderRung[] = [
 
 // scanner/config.py MAX_STANDARD_ALERTS_PER_SCAN — the hard cap on standard
 // alerts (big_move, delta_*) per scan. High-conviction types (catalyst,
-// watchlist, macro, serenity_match, ripple) always fire (rules.py two-tier cap).
+// macro, serenity_match, ripple) always fire (rules.py two-tier cap).
 export const MAX_STANDARD_ALERTS_PER_SCAN = 5;
 
 // data/audit/2026-06-01/alert_152008_trump_pulse.json — a real dispatch that

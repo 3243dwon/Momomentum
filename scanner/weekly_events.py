@@ -8,8 +8,7 @@ from __future__ import annotations
 
 import json
 import logging
-from datetime import datetime, timedelta, timezone
-from pathlib import Path
+from datetime import datetime, timedelta
 
 from scanner import config
 
@@ -33,12 +32,9 @@ def _save(events: list[dict]) -> None:
     EVENTS_FILE.write_text(json.dumps(events, indent=2))
 
 
-def _notable(row: dict, watchlist: set[str]) -> bool:
+def _notable(row: dict) -> bool:
     """Should this row be logged as an event worth analyzing later?"""
     flags = row.get("flags", []) or []
-    pct = abs(row.get("pct_1d") or 0)
-    if row["ticker"] in watchlist and pct >= 1.0:
-        return True
     if "big_move" in flags or "unusual_volume" in flags:
         return True
     return False
@@ -50,7 +46,6 @@ def record(
     syntheses: dict[str, dict],
     window: str,
     now: datetime,
-    watchlist: set[str],
 ) -> None:
     """Append notable rows from the current scan as events."""
     events = _load()
@@ -59,7 +54,7 @@ def record(
 
     for r in rows:
         t = r["ticker"]
-        if not _notable(r, watchlist):
+        if not _notable(r):
             continue
         synth = syntheses.get(t)
         events.append(

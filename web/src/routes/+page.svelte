@@ -36,7 +36,6 @@
   const scan = $derived(data.scan);
   const news = $derived(data.news);
   const deltas = $derived(data.deltas);
-  const watchlist = $derived(data.watchlist?.tickers ?? []);
   const briefing = $derived(data.briefing);
 
   // Tickers Trump mentioned on Truth Social recently — used to light up the
@@ -132,10 +131,6 @@
   const serenityTrust = $derived(signalTrust(data.performance, 'serenity_match'));
   const serenityWarning = $derived(
     serenityTrust?.grade === 'noise' ? `signal class: ${serenityTrust.label}` : null
-  );
-
-  const watchlistRows = $derived(
-    watchlist.map((t) => ({ ticker: t, row: rowsByTicker.get(t) }))
   );
 
   let filters = $state<Filters>({
@@ -393,38 +388,6 @@
     </section>
   {/if}
 
-  {#if watchlistRows.length > 0}
-    <details open class="mb-8 group">
-      <summary class="mb-3 flex cursor-pointer list-none items-center justify-between select-none">
-        <h2 class="text-sm font-semibold tracking-tight">
-          <span class="inline-block w-3 text-zinc-500 transition-transform group-open:rotate-90">▸</span>
-          Watchlist
-          <span class="ml-1 text-[10px] font-normal text-zinc-500">
-            ({watchlistRows.length})
-          </span>
-        </h2>
-        <span class="hidden text-[10px] uppercase tracking-wider text-zinc-500 sm:block">
-          {watchlistRows.map(({ ticker }) => ticker).join(' · ')}
-        </span>
-      </summary>
-      <div class="card overflow-hidden">
-        {#each watchlistRows as { row, ticker } (ticker)}
-          {#if row}
-            <TickerRow row={row} pinned news={news?.ticker_news[ticker] ?? []} trumpMention={trumpMentions.has(ticker)} />
-          {:else}
-            <a href={`/t/${ticker}`} class="ticker-row text-sm opacity-60">
-              <span></span>
-              <span class="font-semibold tracking-tight">{ticker} <span class="text-zinc-500">★</span></span>
-              <span class="col-span-2 text-[10px] uppercase tracking-wider text-zinc-500">
-                awaiting next scan
-              </span>
-            </a>
-          {/if}
-        {/each}
-      </div>
-    </details>
-  {/if}
-
   <details class="group">
     <summary class="mb-3 flex cursor-pointer list-none items-center justify-between select-none">
       <h2 class="text-sm font-semibold tracking-tight">
@@ -437,6 +400,6 @@
       <span class="text-[10px] uppercase tracking-wider text-zinc-500">sortable · filterable</span>
     </summary>
     <FilterBar bind:filters />
-    <ScanTable rows={filteredRows} {watchlist} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
+    <ScanTable rows={filteredRows} {newEntrants} {accelSet} {rankJumpMap} newsByTicker={news?.ticker_news ?? {}} />
   </details>
 {/if}

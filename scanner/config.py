@@ -59,8 +59,8 @@ MIN_AH_VOLUME = 100_000
 RANK_JUMP_THRESHOLD = 15  # raised from 10 — only significant rank shifts
 
 ALERT_COOLDOWN_SECONDS = 2 * 60 * 60
-# High-conviction alerts (catalyst, macro, watchlist) always fire — no cap.
-# Standard alerts (big_move, delta_*) get capped to avoid noise flood.
+# High-conviction alerts (catalyst, macro, serenity_match, ripple) always fire
+# — no cap. Standard alerts (big_move, delta_*) get capped to avoid noise flood.
 MAX_STANDARD_ALERTS_PER_SCAN = 5
 
 # Gating (Contract G) — reversible flags that prune/throttle the noisier alert
@@ -75,23 +75,18 @@ MAX_STANDARD_ALERTS_PER_SCAN = 5
 # BOTH un-commenting the loops AND flipping this to True.
 DELTA_ALERTS_ENABLED = (os.environ.get("GATING_DELTA_ALERTS", "false").strip().lower()
                         not in ("0", "false", "no", "off"))
-# serenity_match and watchlist are high-conviction "always-fire" types (they
-# bypass MAX_STANDARD_ALERTS_PER_SCAN), so throttling them means raising the
-# move bar AND adding a per-type cap, both applied in rules.py.
+# serenity_match is a high-conviction "always-fire" type (it bypasses
+# MAX_STANDARD_ALERTS_PER_SCAN), so throttling it means raising the move bar AND
+# adding a per-type cap, both applied in rules.py.
 #
 # Whole serenity_match stream kill-switch (default on).
 SERENITY_MATCH_ENABLED = (os.environ.get("GATING_SERENITY_MATCH", "true").strip().lower()
                           not in ("0", "false", "no", "off"))
 # Re-checked move floor at the serenity emit site (up from the 3.0 hot-move
-# floor in scanner.serenity.compute_matches). Watchlist-only names with no live
-# move (pct_1d None) are dropped under this gate.
+# floor in scanner.serenity.compute_matches).
 SERENITY_MATCH_MIN_MOVE_PCT = _env_float("GATING_SERENITY_MIN_MOVE", 5.0)
 # Per-type cap for the always-fire serenity_match bucket.
 SERENITY_MATCH_MAX_PER_SCAN = _env_int("GATING_SERENITY_MAX", 2)
-# Watchlist alert move floor — replaces the hardcoded 1.5 literal in rules.py.
-WATCHLIST_ALERT_MIN_MOVE_PCT = _env_float("GATING_WATCHLIST_MIN_MOVE", 3.0)
-# Per-type cap for the always-fire watchlist bucket.
-WATCHLIST_MAX_PER_SCAN = _env_int("GATING_WATCHLIST_MAX", 3)
 
 # Hard caps per scan to bound monthly LLM spend. When over, we score and
 # send the most-informative candidates first.
@@ -155,12 +150,12 @@ CATALYST_NOTES_MODEL = os.environ.get("CATALYST_NOTES_MODEL", OPUS_MODEL)
 # Set empty to disable the Serenity poller entirely.
 X_BEARER_TOKEN = (os.environ.get("X_BEARER_TOKEN") or "").strip() or None
 # A Serenity-named ticker counts as a "hot match" (serenity_match alert) when
-# it's moving at least this much in the live scan, or it's on the watchlist.
+# it's moving at least this much in the live scan.
 SERENITY_HOT_MOVE_PCT = 3.0
 
 # Ripple (forward second-order catalyst) — Opus reasons about which OTHER names
 # a popular stock's high-impact news helps or hurts, ideally BEFORE those names
-# move. Cost-bounded by design: only popular triggers (S&P 500 / NDX / watchlist),
+# move. Cost-bounded by design: only popular triggers (S&P 500 / NDX),
 # only high-impact company news, deduped per story, hard-capped per scan, Opus.
 # Set to 0 to disable the ripple tier entirely.
 MAX_RIPPLE_EVENTS_PER_SCAN = 4

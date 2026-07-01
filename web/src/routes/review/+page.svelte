@@ -85,7 +85,6 @@
   const SIGNAL_LABELS: Record<string, { label: string; emoji: string }> = {
     catalyst: { label: 'Catalyst', emoji: '🎯' },
     big_move: { label: 'Big move', emoji: '🚀' },
-    watchlist: { label: 'Watchlist', emoji: '⭐' },
     delta_new_top20: { label: 'New top-20', emoji: '📈' },
     serenity_match: { label: 'Serenity match', emoji: '🧠' },
     ripple: { label: 'Ripple', emoji: '🔮' },
@@ -95,7 +94,11 @@
     weekly: { label: 'Weekly', emoji: '📊' }
   };
 
-  const SIGNAL_ORDER = ['catalyst', 'big_move', 'watchlist', 'delta_new_top20', 'serenity_match', 'ripple'];
+  const SIGNAL_ORDER = ['catalyst', 'big_move', 'delta_new_top20', 'serenity_match', 'ripple'];
+  // The watchlist signal was retired; historical audit entries within the rolling
+  // window still carry type='watchlist', so drop them from both the scoreboard and
+  // the ledger rather than surfacing a dead signal class.
+  const RETIRED_TYPES = new Set(['watchlist']);
   const REC_BUCKET_ORDER = ['long_hi', 'long_lo', 'short_hi', 'short_lo'];
 
   function bucketLabel(key: string, highScore: number): { label: string; emoji: string } {
@@ -128,7 +131,7 @@
       }
       // Anything new the pipeline starts logging shows up instead of vanishing.
       for (const [type, stats] of Object.entries(perf.per_type)) {
-        if (seen.has(type)) continue;
+        if (seen.has(type) || RETIRED_TYPES.has(type)) continue;
         const meta = SIGNAL_LABELS[type] ?? { label: type, emoji: '•' };
         out.push({ key: `sig_${type}`, ...meta, stats, trust: signalTrust(perf, type, '1d'), gradedAt: '1d' });
       }
@@ -339,6 +342,7 @@
   const ledgerEntries = $derived.by(() => {
     if (!ledger?.entries?.length) return [] as LedgerEntry[];
     return [...ledger.entries]
+      .filter((e) => !RETIRED_TYPES.has(e.type ?? ''))
       .sort((a, b) => new Date(b.ts).getTime() - new Date(a.ts).getTime())
       .slice(0, LEDGER_CAP);
   });

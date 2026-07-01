@@ -8,7 +8,7 @@ config.MAX_ALERTS_PER_SCAN so Feishu doesn't flood on noisy days.
 Alert types fired (matched to design):
   A. Catalyst       \u2014 news-explained move + volume (highest priority)
   B. Macro          \u2014 macro event with beneficiary analysis
-  C. Threshold      \u2014 watchlist move, big move + volume spike
+  C. Threshold      \u2014 big move + volume spike
   D. Delta          \u2014 new top-20 entrant, rank jump, momentum acceleration
 """
 from __future__ import annotations
@@ -16,7 +16,7 @@ from __future__ import annotations
 import logging
 import os
 
-from scanner import config, router
+from scanner import config
 from scanner.alerts.throttle import Throttle
 from scanner.windows import Window
 
@@ -31,7 +31,6 @@ ALERT_TYPE_PRIORITY = {
     "ripple": 95,
     "macro": 90,
     "serenity_match": 85,
-    "watchlist": 80,
     "big_move": 60,
     "delta_new_top20": 45,
     "delta_rank_jump": 40,
@@ -168,9 +167,6 @@ def build_alerts(
     throttle = Throttle()
     alerts: list[dict] = []
 
-    watchlist = router.load_watchlist()
-    by_ticker = {r["ticker"]: r for r in rows}
-
     pct_threshold = (
         config.PCT_MOVE_THRESHOLD_RTH
         if window == Window.RTH
@@ -215,18 +211,6 @@ def build_alerts(
         pct = r.get("pct_1d") or 0
         rel_vol = r.get("rel_volume") or 0
         vol = r.get("volume") or 0
-
-        if t in watchlist and abs(pct) >= config.WATCHLIST_ALERT_MIN_MOVE_PCT:
-            synth = syntheses.get(t, {}).get("summary")
-            title = f"⭐ {t} {_fmt_pct(pct)}" + (f" · {_clip(synth, 40)}" if synth else " watchlist")
-            _emit(
-                alerts, throttle,
-                ticker=t, alert_type="watchlist",
-                title=_clip(title, 60),
-                body_md=_line(t, pct, suffix, rel_vol, synth),
-                signal=pct,
-            )
-            continue
 
         if abs(pct) >= pct_threshold and rel_vol >= config.REL_VOLUME_THRESHOLD and vol >= ah_min_volume:
             # Gate: raw big movers without supporting signal are noise (perf
@@ -288,15 +272,15 @@ def build_alerts(
         )
 
     # === D. Serenity matches (high-signal, always fires) ===
-    # Serenity (@aleabitoreddit) named a ticker that is ALSO moving or on the
-    # watchlist this scan — rare and high-conviction. This is additive to
-    # lengjing's per-tweet Feishu ping (which fires for every tweet regardless of
-    # price); here we only ping when his call coincides with a live move.
+    # Serenity (@aleabitoreddit) named a ticker that is ALSO moving this scan —
+    # rare and high-conviction. This is additive to lengjing's per-tweet Feishu
+    # ping (which fires for every tweet regardless of price); here we only ping
+    # when his call coincides with a live move.
     for m in serenity_matches or []:
         # Gating (Contract G): kill-switch for the whole stream, plus a raised
         # move floor (up from the 3.0 hot-move floor in serenity.compute_matches).
-        # Drop watchlist-only names with no live move (pct_1d None) — the noisy
-        # case — and anything moving less than the throttle threshold.
+        # Defensively drop names with no live move (pct_1d None) and anything
+        # moving less than the throttle threshold.
         if not config.SERENITY_MATCH_ENABLED:
             continue
         if m.get("pct_1d") is None or abs(m["pct_1d"]) < config.SERENITY_MATCH_MIN_MOVE_PCT:
@@ -357,11 +341,12 @@ def build_alerts(
         ripple_pushed += 1
 
     # Two-tier cap:
-    #   - High-conviction (catalyst, macro:*, watchlist) always fires — if Sonnet
-    #     or Opus surfaced it as a real signal, you should never miss it.
+    #   - High-conviction (catalyst, macro:*, serenity_match, ripple) always
+    #     fires — if Sonnet or Opus surfaced it as a real signal, you should
+    #     never miss it.
     #   - Standard (big_move, delta_*) is capped by signal magnitude so heavy
     #     broad-market move days don't flood the Feishu channel.
-    high_conviction_types = {"catalyst", "watchlist", "serenity_match", "ripple"}
+    high_conviction_types = {"catalyst", "serenity_match", "ripple"}
     high, standard = [], []
     for a in alerts:
         t = a.get("type", "")
@@ -370,11 +355,10 @@ def build_alerts(
         else:
             standard.append(a)
 
-    # Gating (Contract G): per-type caps on the always-fire bucket. watchlist
-    # and serenity_match bypass MAX_STANDARD_ALERTS_PER_SCAN, so they get their
-    # own caps here, ranked by _score_alert (strongest survive). catalyst /
-    # macro:* / ripple are NOT capped — they are the system's differentiators.
-    high, wl_dropped = _cap_by_type(high, "watchlist", config.WATCHLIST_MAX_PER_SCAN)
+    # Gating (Contract G): per-type cap on the always-fire bucket. serenity_match
+    # bypasses MAX_STANDARD_ALERTS_PER_SCAN, so it gets its own cap here, ranked
+    # by _score_alert (strongest survive). catalyst / macro:* / ripple are NOT
+    # capped — they are the system's differentiators.
     high, sm_dropped = _cap_by_type(high, "serenity_match", config.SERENITY_MATCH_MAX_PER_SCAN)
 
     standard.sort(key=_score_alert, reverse=True)
@@ -387,9 +371,9 @@ def build_alerts(
     final = high + standard
 
     log.info(
-        "Alerts: %d total (%d high-conviction always-fire [watchlist −%d, serenity −%d by per-type cap], "
+        "Alerts: %d total (%d high-conviction always-fire [serenity −%d by per-type cap], "
         "%d standard kept, %d standard dropped by cap %d)",
-        len(final), len(high), wl_dropped, sm_dropped,
+        len(final), len(high), sm_dropped,
         len(standard), dropped, config.MAX_STANDARD_ALERTS_PER_SCAN,
     )
     return final, throttle

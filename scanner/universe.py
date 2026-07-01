@@ -221,10 +221,10 @@ def popular() -> set[str]:
     return set(sources.get("sp500", [])) | set(sources.get("ndx", []))
 
 
-def prioritize(tickers: list[str], watchlist: set[str]) -> list[str]:
+def prioritize(tickers: list[str]) -> list[str]:
     """Reorder tickers so a partial scan still hits the most informative names.
 
-    Priority: watchlist → S&P 500 → NDX-100 → everything else (alphabetical).
+    Priority: S&P 500 → NDX-100 → everything else (alphabetical).
     No ticker appears twice.
     """
     if not UNIVERSE_FILE.exists():
@@ -243,7 +243,6 @@ def prioritize(tickers: list[str], watchlist: set[str]) -> list[str]:
                 ordered.append(t)
                 seen.add(t)
 
-    push(sorted(t for t in watchlist if t in universe))
     push(sorted(sp500))
     push(sorted(ndx))
     push(t for t in tickers if t not in seen)

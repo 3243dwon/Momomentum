@@ -26,7 +26,6 @@ import logging
 import os
 import re
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
 import httpx
 
@@ -591,7 +590,7 @@ def _rel_time(ts: str | None, now: datetime) -> str:
 
 
 def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
-                         watchlist: set[str], now: datetime) -> dict:
+                         now: datetime) -> dict:
     """Render fresh mention posts into a Feishu alert dict — one line per post."""
     from scanner.alerts.rules import _clip
 
@@ -615,12 +614,11 @@ def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
         chips: list[str] = []
         for t in p["ticker_mentions"]:
             row = rows_by_ticker.get(t)
-            star = "⭐" if t in watchlist else ""
             pct = (row or {}).get("pct_1d")
             if pct is not None:
-                chips.append(f"**{t}** {pct:+.1f}%{star}")
+                chips.append(f"**{t}** {pct:+.1f}%")
             else:
-                chips.append(f"**{t}**{star}")
+                chips.append(f"**{t}**")
         excerpt = _clip((p.get("text") or "").replace("\n", " ").strip(), 60)
         line = " ".join(chips) + f' · "{excerpt}"'
         meta = []
@@ -642,7 +640,7 @@ def _build_mention_alert(posts: list[dict], rows_by_ticker: dict[str, dict],
     }
 
 
-def notify_fresh_mentions(payload: dict, rows: list[dict], watchlist: set[str],
+def notify_fresh_mentions(payload: dict, rows: list[dict],
                           now: datetime | None = None) -> int:
     """Ping Feishu for NEW Trump stock mentions. Dedupes by post URL and only
     considers posts within the recency window. Returns cards sent (0 or 1)."""
@@ -675,7 +673,7 @@ def notify_fresh_mentions(payload: dict, rows: list[dict], watchlist: set[str],
 
     fresh = fresh[:_NOTIFY_MAX_POSTS]
     rows_by_ticker = {r["ticker"]: r for r in rows}
-    alert = _build_mention_alert(fresh, rows_by_ticker, watchlist, now)
+    alert = _build_mention_alert(fresh, rows_by_ticker, now)
 
     from scanner.alerts import feishu
     sent = feishu.send(alert)

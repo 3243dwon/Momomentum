@@ -1,4 +1,4 @@
-// Normalize ScanRow + delta/news/watchlist signals into the spec's flag
+// Normalize ScanRow + delta/news signals into the spec's flag
 // vocabulary. IconCluster reads from this single array so we don't sprinkle
 // per-signal conditionals across the templates.
 
@@ -14,14 +14,12 @@ export type TickerFlag =
   | 'macd-up'
   | 'macd-down'
   | 'rank-jump'
-  | 'watchlist'
   | 'news-hot';
 
 export interface FlagInput {
   row: ScanRow;
   isNewEntrant?: boolean;
   isAccel?: boolean;
-  pinned?: boolean;
   jump?: RankJump;
   newsHigh?: boolean;
   trumpMention?: boolean;
@@ -29,7 +27,7 @@ export interface FlagInput {
 
 // Order here = display priority. IconCluster shows the first N, truncates rest.
 // Tuned so the most action-relevant signals (Trump mention, stretched,
-// news-hot, volume) win over cosmetic ones (watchlist star, sector tier).
+// news-hot, volume) win over cosmetic ones (sector tier).
 // trump-mention is first — it's rare and high-signal, never truncate it.
 const PRIORITY: TickerFlag[] = [
   'trump-mention',
@@ -41,12 +39,11 @@ const PRIORITY: TickerFlag[] = [
   'macd-up',
   'macd-down',
   'overbought',
-  'extended',
-  'watchlist'
+  'extended'
 ];
 
 export function flagsFor(input: FlagInput): TickerFlag[] {
-  const { row, isNewEntrant, isAccel, pinned, jump, newsHigh, trumpMention } = input;
+  const { row, isNewEntrant, isAccel, jump, newsHigh, trumpMention } = input;
   const out = new Set<TickerFlag>();
 
   if (trumpMention) out.add('trump-mention');
@@ -61,10 +58,7 @@ export function flagsFor(input: FlagInput): TickerFlag[] {
 
   if (isNewEntrant) out.add('new-top-20');
   if (jump || isAccel) out.add('rank-jump');
-  // Note: 'pinned' is intentionally not added here — TickerRow renders the ★
-  // inline next to the ticker name, so duplicating it in the cluster is noise.
   if (newsHigh) out.add('news-hot');
-  void pinned;
 
   return PRIORITY.filter((f) => out.has(f));
 }
@@ -82,8 +76,7 @@ export const FLAG_META: Record<TickerFlag, { label: string; tip: string; tone: T
   'macd-up':     { label: 'MACD↑', tip: 'MACD bullish cross — momentum turning up',                                           tone: 'up' },
   'macd-down':   { label: 'MACD↓', tip: 'MACD bearish cross — momentum turning down',                                         tone: 'down' },
   overbought:    { label: 'OB',    tip: 'Overbought (RSI > 70) — short-term pullback risk',                                  tone: 'warn' },
-  extended:      { label: 'EXT',   tip: 'Extended above moving averages — minor caution, not a strong sell signal',          tone: 'warn' },
-  watchlist:     { label: '★',     tip: 'On your watchlist',                                                                  tone: 'mute' }
+  extended:      { label: 'EXT',   tip: 'Extended above moving averages — minor caution, not a strong sell signal',          tone: 'warn' }
 };
 
 export type Tone = 'up' | 'down' | 'warn' | 'info' | 'mute' | 'trump';

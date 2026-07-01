@@ -1,0 +1,47 @@
+# Tooling config only (no build-system/project table — this repo runs from
+# source, deps live in requirements*.txt). Holds the ruff + mypy gates that
+# `.github/workflows/ci.yml` and local dev share.
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+# The scanner + tests are the code we own; bundled stocks/ and the venv aren't.
+extend-exclude = ["stocks", ".venv", "data"]
+
+[tool.ruff.lint]
+# Start with ruff's high-signal defaults — pyflakes (F) + the error-level
+# pycodestyle checks (E4 imports, E7 statements, E9 syntax). These catch real
+# bugs (unused/undefined names, bare excepts, broken syntax), not style nits.
+# Deliberately NOT enabling E501/line-length or stylistic rules yet, so the gate
+# stays adoptable; widen the set once the team's used to it.
+select = ["E4", "E7", "E9", "F"]
+
+[tool.mypy]
+python_version = "3.11"
+# Lenient adoption: third-party deps (pandas, alpaca, anthropic, feedparser…)
+# ship without type stubs, so don't fail on their missing types. We're checking
+# OUR logic, not theirs.
+ignore_missing_imports = true
+# Report errors ONLY in the `files` below. mypy still follows imports into other
+# scanner modules (technicals, regime…) for type info, but doesn't flag THEIR
+# errors yet — so the gate stays scoped to the money-critical modules and is
+# identical whether optional deps (alpaca-py) are installed locally or in CI.
+# (Without this, CI resolves alpaca's real types and flags technicals.py, which
+# is out of scope until it's added to `files`.)
+follow_imports = "silent"
+warn_unused_ignores = true
+warn_redundant_casts = true
+# Scope: the money-critical modules first (risk + grading), per the /health rec.
+# CI type-checks exactly these two; expand the list as modules get annotated.
+files = ["scanner/risk.py", "scanner/performance.py"]
+
+[tool.pytest.ini_options]
+# Put the repo root on sys.path so tests can `import scanner` no matter how
+# pytest is invoked. CI runs the `pytest` console script (sys.path[0] is the
+# script dir, not cwd), so without this the repo root is absent and collection
+# fails with "No module named 'scanner'". Most test files carry a manual
+# sys.path shim for standalone/unittest runs, but test_backtest.py and
+# test_grading.py don't — they relied on a sibling's shim mutating the shared
+# sys.path first, which only held by collection order. This makes it explicit.
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -17,8 +17,6 @@ import json
 import logging
 import time
 from datetime import datetime, timezone
-from pathlib import Path
-from typing import Literal
 
 import requests
 
@@ -49,7 +47,6 @@ ALERT_AUDIT_DIR = config.AUDIT_DIR
 
 HEADER_TEMPLATES = {
     "catalyst": "carmine",
-    "watchlist": "blue",
     "big_move": "orange",
     "unusual_volume": "yellow",
     "delta_new_top20": "purple",
@@ -155,7 +152,6 @@ _TICKER_SECTIONS = [
     ("catalyst",        "🎯", "Catalysts"),
     ("ripple",          "🔮", "Ripple"),
     ("serenity_match",  "🧠", "Serenity"),
-    ("watchlist",       "⭐", "Watchlist"),
     ("big_move",        "🚀", "Big moves"),
     ("delta_new_top20", "📈", "New top-20"),
     ("delta_rank_jump", "⚡", "Rank jumps"),
@@ -194,8 +190,6 @@ def _pick_ticker_template(alerts: list[dict]) -> str:
         return "carmine"
     if "serenity_match" in types:
         return "indigo"
-    if "watchlist" in types:
-        return "blue"
     if "big_move" in types:
         return "orange"
     return "purple"  # delta_*

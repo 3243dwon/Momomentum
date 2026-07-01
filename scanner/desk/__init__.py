@@ -234,8 +234,8 @@ _RISK_SYS = (
 )
 _PM_SYS = (
     "You are the PORTFOLIO MANAGER on a momentum desk. You see three advisor "
-    "verdicts (signal/research/risk) per candidate, the regime, whether it's on "
-    "the book (watchlist), and pre-computed trade levels (entry, support/"
+    "verdicts (signal/research/risk) per candidate, the regime, and pre-computed "
+    "trade levels (entry, support/"
     "resistance, stop, target, R:R). Reconcile the advisors into a final decision "
     "and size. Honor the Risk veto unless you have a strong reason to override "
     "(say so via agreement='pm_override'). 'take' with size full/half/quarter; "
@@ -263,7 +263,7 @@ def _call(client: LLMClient, model: str, system: str, payload: list[dict],
 
 
 def review(recommendations: dict, rows: list[dict], regime: dict | None,
-           watchlist: set[str], client: LLMClient | None,
+           client: LLMClient | None,
            now: datetime | None = None) -> int:
     """Run the desk over the recommend.py picks, attaching rec['desk'] in place.
     Returns the number of picks reviewed. No-op (0) when no client or no picks.
@@ -317,7 +317,6 @@ def review(recommendations: dict, rows: list[dict], regime: dict | None,
             "ticker": t,
             "direction": r["direction"],
             "score": r.get("score"),
-            "on_watchlist": t in watchlist,
             "regime_label": regime.get("label"),
             "levels": r.get("levels"),
             "signal": signal.get(t),

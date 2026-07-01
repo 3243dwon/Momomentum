@@ -6,7 +6,6 @@ not installed in this venv, so these are stdlib unittest. Run with:
 """
 from __future__ import annotations
 
-import math
 import random
 import unittest
 

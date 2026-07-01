@@ -46,10 +46,9 @@ def _rank_news_for_haiku(
     ticker_news: dict[str, list[dict]],
     macro_news: list[dict],
     rows: list[dict],
-    watchlist: set[str],
 ) -> list[dict]:
     """Score each news item so that if we hit the Haiku cap, we classify the
-    most informative items first (bigger movers, watchlist, macro)."""
+    most informative items first (bigger movers, macro)."""
     by_ticker = {r["ticker"]: r for r in rows}
 
     def score(item: dict) -> float:
@@ -57,8 +56,6 @@ def _rank_news_for_haiku(
             return 40.0  # all macro gets classified before low-signal ticker news
         t = item.get("ticker")
         s = 0.0
-        if t in watchlist:
-            s += 50
         row = by_ticker.get(t or "")
         if row:
             pct = abs(row.get("pct_1d") or 0)
@@ -76,16 +73,13 @@ def _rank_synthesis_targets(
     candidates: set[str],
     ticker_news_enriched: dict[str, list[dict]],
     rows: list[dict],
-    watchlist: set[str],
 ) -> list[str]:
-    """Order synthesis candidates by priority. Watchlist first, then big movers
-    with news, then big movers, then rest."""
+    """Order synthesis candidates by priority. Big movers with news first, then
+    big movers, then rest."""
     by_ticker = {r["ticker"]: r for r in rows}
 
     def score(t: str) -> float:
         s = 0.0
-        if t in watchlist:
-            s += 200  # always synthesize watchlist first
         row = by_ticker.get(t)
         if row:
             s += abs(row.get("pct_1d") or 0) * 10
@@ -115,36 +109,22 @@ def run(
     window = windows.detect(now)
     log.info("Market window: %s at %s", window.value, now.isoformat())
 
-    # Always run the technicals scan so the UI shows prices/watchlist even
-    # off-hours. yfinance returns the last available close on weekends, and
-    # Tier 0 routing filters out non-movers before any LLM cost is incurred.
+    # Always run the technicals scan so the UI shows prices even off-hours.
+    # yfinance returns the last available close on weekends, and Tier 0 routing
+    # filters out non-movers before any LLM cost is incurred.
     tickers = universe.load(force_rebuild=rebuild_universe)
-    # Prioritize watchlist + S&P 500 + NDX before any partial-scan limit kicks in,
-    # so a small --limit run still surfaces the most informative names.
-    tickers = universe.prioritize(tickers, set(router.load_watchlist()))
+    # Prioritize S&P 500 + NDX before any partial-scan limit kicks in, so a small
+    # --limit run still surfaces the most informative names.
+    tickers = universe.prioritize(tickers)
     if limit:
         tickers = tickers[:limit]
     uni_size = len(tickers)
     log.info("Loaded universe: %d tickers", uni_size)
     rows = technicals.scan(tickers)
 
-    # Watchlist safety net: the first Alpaca batch has been returning empty
-    # consistently (not just transiently), which silently drops every watchlist
-    # ticker from the scan. Re-fetch the missing ones in a tiny dedicated pass
-    # — different batch composition tends to succeed where batch 0 didn't.
-    watchlist_set = router.load_watchlist()
-    scanned_set = {r["ticker"] for r in rows}
-    missing_wl = sorted(t for t in watchlist_set if t not in scanned_set)
-    if missing_wl:
-        log.info("Watchlist safety net: re-fetching %d missing: %s", len(missing_wl), missing_wl)
-        extra = technicals.scan(missing_wl)
-        if extra:
-            rows.extend(extra)
-            log.info("Watchlist safety net: recovered %d/%d", len(extra), len(missing_wl))
-
     deltas = state.compute_and_persist(rows, now)
 
-    routed, watchlist = router.route(rows, deltas, window) if rows else ([], sorted(router.load_watchlist()))
+    routed = router.route(rows, deltas, window) if rows else []
 
     # Opening catch-list (scanner.opening): once per trading day, on the first
     # RTH scan after the open. When it's due, widen the snapshot pass to the
@@ -155,7 +135,7 @@ def run(
 
     # Pre-market gap + intraday VWAP/HOD/LOD for routed tickers only
     # (cheap because Tier 0 already cut us down to ~50-200 names).
-    routed_for_intraday = sorted(set(routed) | set(watchlist))
+    routed_for_intraday = sorted(set(routed))
     snapshot_targets = set(routed_for_intraday)
     if run_catch:
         snapshot_targets |= universe.popular()
@@ -188,7 +168,7 @@ def run(
     client = get_client() if (use_llm and use_news) else None
     if client and (ticker_news or macro_news):
         # --- Haiku budget: cap to MAX_HAIKU_NEWS_ITEMS_PER_SCAN ---
-        all_items = _rank_news_for_haiku(ticker_news, macro_news, rows, router.load_watchlist())
+        all_items = _rank_news_for_haiku(ticker_news, macro_news, rows)
         if len(all_items) > config.MAX_HAIKU_NEWS_ITEMS_PER_SCAN:
             log.info(
                 "Haiku budget: %d items → capping to %d",
@@ -204,13 +184,10 @@ def run(
         macro_news_dedup = classify.dedup(macro_news_enriched)
 
         # --- Sonnet budget: score tickers, cap at MAX_SONNET_SYNTHESES ---
-        scanned_tickers = {r["ticker"] for r in rows}
-        watchlist_set = router.load_watchlist()
         must_synth = set(deltas.get("new_top20_entrants", []))
         must_synth.update(j["ticker"] for j in deltas.get("rank_jumps", []))
-        must_synth.update(t for t in watchlist_set if t in scanned_tickers)
         ranked_synth_targets = _rank_synthesis_targets(
-            must_synth, ticker_news_enriched, rows, watchlist_set,
+            must_synth, ticker_news_enriched, rows,
         )[: config.MAX_SONNET_SYNTHESES_PER_SCAN]
         log.info(
             "Sonnet budget: %d candidates → synthesizing top %d",
@@ -238,9 +215,9 @@ def run(
 
         # --- Ripple (Opus): forward second-order predictions from popular-stock
         # news. Who ELSE does this story help/hurt — before they move? Triggers
-        # are gated to popular names (S&P 500 / NDX / watchlist) and high-impact
-        # company news, deduped per story and hard-capped, so the spend is small.
-        popular = universe.popular() | router.load_watchlist()
+        # are gated to popular names (S&P 500 / NDX) and high-impact company
+        # news, deduped per story and hard-capped, so the spend is small.
+        popular = universe.popular()
         trigger_groups = ripple.select_trigger_events(
             ticker_news_enriched, popular, rows, config.MAX_RIPPLE_EVENTS_PER_SCAN,
         )
@@ -311,7 +288,7 @@ def run(
     # attach rec["desk"]. Runs only when the LLM client is available; fails soft
     # so a desk error never blocks the scan. See docs/agent-desk.md.
     try:
-        desk.review(recommendations, enriched_rows, regime, set(router.load_watchlist()), client)
+        desk.review(recommendations, enriched_rows, regime, client)
     except Exception as e:
         log.warning("Desk review raised: %s", e)
 
@@ -326,7 +303,6 @@ def run(
         syntheses=syntheses,
         window=window.value,
         now=now,
-        watchlist=set(router.load_watchlist()),
     )
     render.write_news(ticker_news_enriched, macro_analyses, now)
     render.write_predictions(ripple_events, ripple_predictions, now)
@@ -344,7 +320,7 @@ def run(
             serenity_tweets = serenity.load_feed()
             if serenity_tweets:
                 serenity_matches = serenity.compute_matches(
-                    serenity_tweets, rows, set(router.load_watchlist()),
+                    serenity_tweets, rows,
                 )
         except Exception as e:
             log.warning("Serenity match raised: %s", e)
@@ -406,7 +382,7 @@ def run(
         pulse_payload = trump_pulse.fetch_and_save()
         if use_alerts:
             trump_pulse.notify_fresh_mentions(
-                pulse_payload, rows, set(router.load_watchlist()),
+                pulse_payload, rows,
                 datetime.now(_tz2.utc),
             )
     except Exception as e:
