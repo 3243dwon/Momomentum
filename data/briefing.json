@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-06-30T20:10:02.668253-04:00",
+  "generated_at": "2026-07-01T00:19:24.343734-04:00",
   "window": "OVERNIGHT",
-  "headline": "Risk-on holds; TSM/RBRK desk takes live \u2014 QQQ +1.67%, semis/tech still driving overnight tape",
+  "headline": "Risk-on intact overnight; TSM & RBRK takes carry forward \u2014 semis/tech lead, FCEL +21% wildcard",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.78% above 50d, QQQ +1.67%, VXX stress 0.93 \u2014 vol suppressed, momentum clear; overnight entries favored with tight stops."
+    "line": "SPY +0.78% above 50d, QQQ +1.67%; VXX stress 0.93 \u2014 low fear, momentum tape, entries have green air."
   },
   "actions": [
     {
@@ -13,7 +13,7 @@
       "entry": 477.24,
       "stop": 439.06,
       "target": 553.6,
-      "line": "Clean MACD cross, signal agrees; half-size per research-neutral stance. R/R ~2.0x."
+      "line": "Clean MACD cross, signal agrees; half-size per research-neutral stance. R/R ~2.0."
     },
     {
       "ticker": "RBRK",
@@ -21,43 +21,42 @@
       "entry": 80.25,
       "stop": 73.83,
       "target": 93.09,
-      "line": "Late-stage momentum with elevated RSI \u2014 signal agrees but risk flags force quarter-size. R/R ~2.0x."
+      "line": "Late-stage momentum, elevated RSI \u2014 desk trimmed to quarter. Tight stop, 2.0x R/R."
     }
   ],
   "watch": [
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+21% on 2.08x rel vol, overbought flag \u2014 extended, watch for fade or consolidation entry."
-    },
-    {
-      "ticker": "SNDK",
-      "type": "mover",
-      "line": "+10.68%, MACD bullish cross, normal vol \u2014 semi strength; was a prior desk take, worth re-evaluating next scan."
+      "line": "+21.1%, 2.1x vol, overbought \u2014 watch for fade setup or confirmation catalyst before touching."
     },
     {
       "ticker": "FIGR",
       "type": "mover",
-      "line": "+13.42% on 2.14x rel vol \u2014 unusual volume surge, no catalyst in feed; monitor for follow-through."
+      "line": "+13.4%, 2.1x vol with unusual volume flag \u2014 needs a news hook; no desk take yet."
+    },
+    {
+      "ticker": "SNDK",
+      "type": "mover",
+      "line": "+10.7%, MACD bullish cross \u2014 semi-adjacent name worth adding to watch if semis keep leading."
+    },
+    {
+      "ticker": "TW",
+      "type": "mover",
+      "line": "+8.2%, MACD bullish, 1.6x vol \u2014 clean setup developing; no take yet but on-deck."
     },
     {
       "ticker": "VRT",
       "type": "mover",
-      "line": "+8.98% \u2014 data-center/power theme continuing; no setup yet but in the right sector."
-    },
-    {
-      "ticker": "KLAC",
-      "type": "mover",
-      "line": "+8.31% on 1.35x vol, overbought \u2014 semi equipment bid; watch for pullback to VWAP for clean entry."
+      "line": "+9.0%, 1.3x vol \u2014 AI infra proxy running with semis; monitor for entry structure."
     }
   ],
   "changed": [
-    "VLTO dropped from active desk takes \u2014 no longer in this scan's desk_takes list.",
-    "RBRK added as new desk take (quarter-size, elevated RSI flagged).",
-    "TSM retained; SNDK demoted to watch."
+    "No regime change \u2014 risk_on holds from prior scan",
+    "FCEL +21% now the loudest mover on tape, not in prior headline"
   ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-06-30 20:10 ET; liquidity thin, spreads wide, levels may gap materially by RTH open.",
-    "RBRK carry risk is real: elevated RSI + late-stage momentum flag means stop at 73.83 could be tested quickly on any risk-off flush."
+    "OVERNIGHT window \u2014 prices as of 2026-07-01 00:19 ET; levels may gap significantly at RTH open.",
+    "No new catalysts or macro events flagged this scan; mover moves lack confirmed news drivers."
   ]
 }

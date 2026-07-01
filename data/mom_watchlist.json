@@ -6,11 +6,11 @@
       "code": "600276.SH",
       "yahoo": "600276.SS",
       "direction": "long",
-      "thesis_zh": "美股医药下跌集中在骨科器械和减肥药大药企，对A股创新药传导有限，已浮盈6.6%，沿用看多。",
+      "thesis_zh": "美股医药下跌集中在骨科器械+减肥药大厂，与A股创新药错位，已浮盈6.6%，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-23",
       "last_seen": "2026-07-01",
-      "times_recommended": 25,
+      "times_recommended": 26,
       "entry_price": 49.36000061035156,
       "entry_date": "2026-06-22",
       "currency": "CNY",
@@ -37,11 +37,11 @@
       "code": "603259.SH",
       "yahoo": "603259.SS",
       "direction": "long",
-      "thesis_zh": "美股医药疲弱集中在器械与大药企、对CXO影响有限，已浮盈17%，独立逻辑延续，沿用看多。",
+      "thesis_zh": "美股医药疲弱不涉CXO赛道，独立逻辑延续，已浮盈17%，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-24",
       "last_seen": "2026-07-01",
-      "times_recommended": 21,
+      "times_recommended": 22,
       "entry_price": 106.30999755859375,
       "entry_date": "2026-06-23",
       "currency": "CNY",
@@ -68,11 +68,11 @@
       "code": "512480.SH",
       "yahoo": "512480.SS",
       "direction": "long",
-      "thesis_zh": "美股半导体再度普涨、11只成分股大涨，西数+10.7%、KLAC+8.3%，A股设备/存储链映射逻辑延续，已浮盈17.7%，沿用看多。",
+      "thesis_zh": "美股半导体今日11只成分股大涨，存储+设备+模拟+CPU全面开花，A股设备/存储链映射逻辑延续，浮盈17.7%，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-17",
       "last_seen": "2026-07-01",
-      "times_recommended": 44,
+      "times_recommended": 45,
       "entry_price": 2.253999948501587,
       "entry_date": "2026-06-16",
       "currency": "CNY",
@@ -99,11 +99,11 @@
       "code": "513180.SH",
       "yahoo": "513180.SS",
       "direction": "long",
-      "thesis_zh": "美股科技板块连续多日强势，恒生科技板块与美股相关度最高，港股映射最直接，沿用看多。",
+      "thesis_zh": "美股科技连续多日强势、今日半导体再度普涨，港股映射最直接，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-29",
       "last_seen": "2026-07-01",
-      "times_recommended": 8,
+      "times_recommended": 9,
       "entry_price": 0.5419999957084656,
       "entry_date": "2026-06-26",
       "currency": "CNY",
@@ -117,11 +117,11 @@
       "code": "601111.SH",
       "yahoo": "601111.SS",
       "direction": "long",
-      "thesis_zh": "油价风险溢价消退逻辑延续、今日无反向催化，航空燃油成本下行预期未变，已浮盈1.1%，沿用看多。",
+      "thesis_zh": "油价风险溢价消退逻辑延续、今日无反向催化，航空燃油成本下行预期未变，沿用看多。",
       "confidence": "medium",
       "first_seen": "2026-06-18",
       "last_seen": "2026-07-01",
-      "times_recommended": 6,
+      "times_recommended": 7,
       "entry_price": 6.46999979019165,
       "entry_date": "2026-06-17",
       "currency": "CNY",
@@ -156,7 +156,14 @@
       "entry_price": 71.79000091552734,
       "entry_date": "2026-06-26",
       "currency": "CNY",
-      "evaluations": {},
+      "evaluations": {
+        "3d": {
+          "date": "2026-07-01",
+          "price": 69.04,
+          "return_pct": -3.83,
+          "signed_return_pct": 3.83
+        }
+      },
       "status": "pending",
       "archived": false
     },
@@ -223,9 +230,15 @@
           "price": 18.34,
           "return_pct": -16.29,
           "signed_return_pct": -16.29
+        },
+        "5d": {
+          "date": "2026-07-01",
+          "price": 17.45,
+          "return_pct": -20.36,
+          "signed_return_pct": -20.36
         }
       },
-      "status": "pending",
+      "status": "miss",
       "archived": false
     },
     {
@@ -285,10 +298,16 @@
           "price": 27.5,
           "return_pct": -9.21,
           "signed_return_pct": -9.21
+        },
+        "10d": {
+          "date": "2026-07-01",
+          "price": 25.51,
+          "return_pct": -15.78,
+          "signed_return_pct": -15.78
         }
       },
       "status": "miss",
-      "archived": false
+      "archived": true
     },
     {
       "id": "18593baf23f7",
@@ -310,9 +329,15 @@
           "price": 80.26,
           "return_pct": -3.65,
           "signed_return_pct": 3.65
+        },
+        "5d": {
+          "date": "2026-07-01",
+          "price": 80.7,
+          "return_pct": -3.12,
+          "signed_return_pct": 3.12
         }
       },
-      "status": "pending",
+      "status": "hit",
       "archived": false
     },
     {
@@ -372,10 +397,16 @@
           "price": 1311.92,
           "return_pct": 5.11,
           "signed_return_pct": -5.11
+        },
+        "10d": {
+          "date": "2026-07-01",
+          "price": 1246.47,
+          "return_pct": -0.13,
+          "signed_return_pct": 0.13
         }
       },
       "status": "miss",
-      "archived": false
+      "archived": true
     },
     {
       "id": "587c9a0991e6",
@@ -459,10 +490,16 @@
           "price": 24.39,
           "return_pct": -13.66,
           "signed_return_pct": -13.66
+        },
+        "10d": {
+          "date": "2026-07-01",
+          "price": 23.59,
+          "return_pct": -16.5,
+          "signed_return_pct": -16.5
         }
       },
       "status": "miss",
-      "archived": false
+      "archived": true
     },
     {
       "id": "2e08ad897d6b",
@@ -539,11 +576,17 @@
           "price": 46.56,
           "return_pct": 0.13,
           "signed_return_pct": 0.13
+        },
+        "10d": {
+          "date": "2026-07-01",
+          "price": 43.34,
+          "return_pct": -6.8,
+          "signed_return_pct": -6.8
         }
       },
       "status": "hit",
-      "archived": false
+      "archived": true
     }
   ],
-  "generated_at": "2026-07-01T00:13:25.523462+00:00"
+  "generated_at": "2026-07-01T04:22:30.581098+00:00"
 }
