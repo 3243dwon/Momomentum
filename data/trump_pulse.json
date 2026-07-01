@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-07-01T04:22:24.574504+00:00",
+  "generated_at": "2026-07-01T11:31:02.725596+00:00",
   "sources": {
     "truth_social": "ix.cnn.io archive (33k posts, 90d window)",
     "news_comments": "Google News RSS (Trump market-comment headlines naming a ticker)",
     "presidential_documents": "federalregister.gov API (president=donald-trump)"
   },
   "window_days": 90,
-  "truth_post_count": 1326,
-  "news_post_count": 1,
-  "document_count": 39,
+  "truth_post_count": 1325,
+  "news_post_count": 3,
+  "document_count": 40,
   "tickers_mentioned": [
     "AAPL",
     "AMZN",
+    "AXON",
     "BA",
     "DIS",
     "GS",
@@ -612,6 +613,15 @@
   ],
   "news_posts": [
     {
+      "ts": "2026-07-01T10:50:00+00:00",
+      "text": "Trump\u2019s Crypto Billions, Apple Stock, and More From His Latest Financial Filing",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYUZrbl80QVZnRlVpbHdaMUltaUtTdGl3RVlqVG1BTGZFQVZIS3NyNWJadkRxbm9YeFVPOXBrTFFmYTMySERLam1vOUo1eE1yTE45dGlUdUlZN2t3WFhPU0MtMks4YnBjc2UyMjlkYmlGaWItcmp4VTlPcXRuSzFaaW5yYjRJYkloZmc?oc=5",
+      "ticker_mentions": [
+        "AAPL"
+      ],
+      "source": "news"
+    },
+    {
       "ts": "2026-06-30T22:48:00+00:00",
       "text": "Trump discloses expanding financial empire, including Apple stock, celebration coins and crypto",
       "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQkxXcV9tc1hBa0ppeFV5MTdRb004dmVzUWxFOGxTdHlNWVRNUDdIcW1TMDZKenVteVJRTThqcEpzMEY5b3Y3eDB6UGhyaXFKaHVUc3dtZjZweF9uTTVfZUwwSUJEN1NGU2xGT1N4YTJmYmZQaEhqMTZ4U2l3eWNGV0NlZ3NfMDZJRVZDTTlEV0RfLWNXR1ZhOEpyQ0pkMlVUUFJCUXRrcEo5cEM4WU9xR1hnaEpMNlp5LXFvUWVKdy0zSFAwZ3FvWFZaTTZUU2gzSVE?oc=5",
@@ -619,9 +629,27 @@
         "AAPL"
       ],
       "source": "news"
+    },
+    {
+      "ts": "2026-06-30T13:08:47+00:00",
+      "text": "Axon Enterprise (AXON) Stock Drew Ethics Questions After Trump Bought $5 Million In Shares",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTHVaTUhSdkhYY1RZNTNoWW5uSTNiS0hQbFE0ZlgzOEtaeVVpcFVacUI1S0lCS19Id1k5OUE2WWR2NktkZ0hVMV9wZ1F2R2hvYkxGTk50aXZJWW1ieVFsbi1rRnpKX2gzMEwtQnVrbGJ6c1lLNG1xTFUwZl9FMlJMZi1POFE3aGF0TTNLLVM2ZlI1alNrNEFSU2FEdG4?oc=5",
+      "ticker_mentions": [
+        "AXON"
+      ],
+      "source": "news"
     }
   ],
   "presidential_documents": [
+    {
+      "title": "Presidential Determination Concerning the Department of the Air Force's Rehabilitation and Revitalization of the Joint Base Andrews Golf Course",
+      "type": "Presidential Document",
+      "signing_date": "2026-07-01",
+      "publication_date": "2026-07-01",
+      "document_number": "2026-13408",
+      "html_url": "https://www.federalregister.gov/documents/2026/07/01/2026-13408/presidential-determination-concerning-the-department-of-the-air-forces-rehabilitation-and",
+      "abstract": null
+    },
     {
       "title": "Advancing Regenerative Agriculture and Strengthening American Farm Resilience",
       "type": "Presidential Document",

@@ -1,7 +1,121 @@
 {
-  "generated_at": "2026-07-01T10:01:38.707466+00:00",
+  "generated_at": "2026-07-01T11:31:08.243139+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "9e28a12854ac",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "INTC",
+      "direction": "long",
+      "confidence": null,
+      "price": 139.55,
+      "thesis": "\ud83e\udde0 Serenity INTC +6.0% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "7c3ad7b4404b",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "ALAB",
+      "direction": "long",
+      "confidence": null,
+      "price": 482.24,
+      "thesis": "\ud83e\udde0 Serenity ALAB +5.7% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "bfb0f2ff5062",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "CGNX",
+      "direction": "long",
+      "confidence": null,
+      "price": 72.47,
+      "thesis": "+6.0% today; 5d uptrend +13%; 2.3x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "79a47a4e34f7",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "LRCX",
+      "direction": "long",
+      "confidence": null,
+      "price": 433.49,
+      "thesis": "+5.5% today; 5d uptrend +17%; 1.9x volume",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "1a6b049c25a1",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "TSM",
+      "direction": "long",
+      "confidence": null,
+      "price": 477.24,
+      "thesis": "+4.9% today; 5d uptrend +9%; MACD bullish cross",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "50628b9ab17a",
+      "ts": "2026-07-01T11:27:36.620555+00:00",
+      "kind": "pick",
+      "type": "rec_long",
+      "ticker": "GEV",
+      "direction": "long",
+      "confidence": null,
+      "price": 1174.33,
+      "thesis": "+6.6% today; 5d uptrend +13%; MACD positive",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "bd319fe71681",
       "ts": "2026-07-01T09:57:55.162011+00:00",
@@ -1751,13 +1865,13 @@
       "price": 131.69,
       "thesis": "\u2b50 INTC +3.1% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": 5.97,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "072e6cb86d61",
@@ -1770,13 +1884,13 @@
       "price": 8.03,
       "thesis": "\u2b50 ONDS +3.5% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": 2.74,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "d6146bdc6bcd",
@@ -1789,13 +1903,13 @@
       "price": 98.02,
       "thesis": "\ud83e\udde0 Serenity RKLB +15.9% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 3.64,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "1fea524bc957",
@@ -1808,13 +1922,13 @@
       "price": 456.33,
       "thesis": "\ud83e\udde0 Serenity ALAB +16.9% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 5.68,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "865247cd04d5",
@@ -9353,120 +9467,6 @@
         "1d": 1.54,
         "3d": 1.54,
         "5d": 3.7,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "8fd17b5f8d9c",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "HOOD",
-      "direction": "short",
-      "confidence": null,
-      "price": 93.29,
-      "thesis": "\ud83e\udde0 Serenity HOOD -4.0% \ud83d\udd34bear",
-      "outcomes": {
-        "1d": -5.81,
-        "3d": -5.81,
-        "5d": -7.49,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "bbd09732dc10",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "VSH",
-      "direction": "long",
-      "confidence": null,
-      "price": 60.26,
-      "thesis": "\ud83e\udde0 Serenity VSH +8.4% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -6.57,
-        "3d": -6.57,
-        "5d": -10.7,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "e85f4b4579cc",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "serenity_match",
-      "ticker": "NVTS",
-      "direction": "long",
-      "confidence": null,
-      "price": 17.62,
-      "thesis": "\ud83e\udde0 Serenity NVTS -3.8% \ud83d\udfe2bull",
-      "outcomes": {
-        "1d": -2.21,
-        "3d": -2.21,
-        "5d": 1.73,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "34af4d711884",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "big_move",
-      "ticker": "TECH",
-      "direction": "long",
-      "confidence": null,
-      "price": 70.55,
-      "thesis": "\ud83d\ude80 TECH +19.8% on 11.2x vol",
-      "outcomes": {
-        "1d": 0.64,
-        "3d": 0.64,
-        "5d": 0.13,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "47a0d7f4af75",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "big_move",
-      "ticker": "TSHA",
-      "direction": "short",
-      "confidence": null,
-      "price": 6.17,
-      "thesis": "\ud83d\ude80 TSHA -11.3% on 4.4x vol",
-      "outcomes": {
-        "1d": -2.92,
-        "3d": -2.92,
-        "5d": -10.29,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "8c66776bb17f",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "big_move",
-      "ticker": "JEF",
-      "direction": "short",
-      "confidence": null,
-      "price": 51.73,
-      "thesis": "\ud83d\ude80 JEF -10.7% on 4.0x vol",
-      "outcomes": {
-        "1d": 5.24,
-        "3d": 5.24,
-        "5d": 3.34,
         "10d": null,
         "21d": null
       },
