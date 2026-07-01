@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-01T04:22:30.677402+00:00",
+ "generated_at": "2026-07-01T10:01:38.812038+00:00",
  "window_days": 30,
  "deal_count": 23,
  "deals": [
@@ -562,13 +562,13 @@
      "horizon": "months",
      "priced_in": "no",
      "outcomes": {
-      "1d": null,
+      "1d": -0.88,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "miss"
     },
     {
      "ticker": "IRDM",
@@ -578,13 +578,13 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 0.48,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "ASTS",
@@ -594,13 +594,13 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 1.95,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "PL",
@@ -610,13 +610,13 @@
      "horizon": "weeks",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 6.01,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     },
     {
      "ticker": "RDW",
@@ -626,19 +626,19 @@
      "horizon": "days",
      "priced_in": "yes",
      "outcomes": {
-      "1d": null,
+      "1d": 4.44,
       "3d": null,
       "5d": null,
       "10d": null,
       "21d": null
      },
-     "status": "pending"
+     "status": "hit"
     }
    ],
    "stats": {
     "calls": 6,
-    "graded": 0,
-    "hit": 0
+    "graded": 5,
+    "hit": 4
    }
   },
   {

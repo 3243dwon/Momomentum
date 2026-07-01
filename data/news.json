@@ -1,19 +1,136 @@
 {
-  "generated_at": "2026-07-01T00:19:24.343734-04:00",
+  "generated_at": "2026-07-01T05:57:55.162011-04:00",
   "ticker_news": {
     "MSTR": [
       {
-        "id": "eeac47a04ee22ba4",
+        "id": "a9b7d441d8a5833c",
         "source": "alpaca",
         "publisher": "benzinga",
         "ticker": "MSTR",
         "scope": "ticker",
-        "title": "Bitcoin, Ethereum, XRP, Dogecoin Slide as 'Extreme Fear' Persists: Analyst Notes Half of BTC Circulating Network Now Sitting 'Underwater'",
-        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/60206712/bitcoin-ethereum-xrp-and-dogecoin-slide-as-extreme-fear-persists-analyst-says-half-of-btc-supply-is-underwater",
-        "published_at": "2026-07-01T01:46:34+00:00",
-        "type": "macro_commodity",
+        "title": "Peter Schiff Takes Aim at Michael Saylor's Strategy Again: 'Will Have to Sell a Lot More' Bitcoin to Maintain Dollar Reserve",
+        "url": "https://www.benzinga.com/crypto/cryptocurrency/26/07/60209515/peter-schiff-takes-aim-at-michael-saylors-strategy-again-will-have-to-sell-a-lot-more-bitcoin-to-maintain-dollar-reserve",
+        "published_at": "2026-07-01T09:48:10+00:00",
+        "type": "analyst",
         "impact": "low",
-        "dedup_group": "crypto_market_fear_btc_eth_xrp_doge_decline",
+        "dedup_group": "schiff_criticizes_mstr_bitcoin_strategy",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "INTC": [
+      {
+        "id": "4d10f5014c47b229",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Jim Cramer Says Wall Street Is Rewarding AI Makers While 'Punishing' Their Biggest Customers",
+        "url": "https://www.benzinga.com/markets/tech/26/07/60209505/jim-cramer-says-wall-street-is-rewarding-ai-makers-while-punishing-their-biggest-customers",
+        "published_at": "2026-07-01T09:46:20+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_ai_makers_vs_customers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "fc677c76a93ca353",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Trump Administration's Intel Bet Has Surged Over 470%\u2014Nancy Pelosi Stock Tracker Says You're 'Overthinking' Stock Picks",
+        "url": "https://www.benzinga.com/markets/equities/26/07/60208994/trump-administrations-intel-bet-has-surged-over-470-nancy-pelosi-stock-tracker-says-youre-overthinking-stock-picks",
+        "published_at": "2026-07-01T08:52:21+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "intc_trump_admin_surge_470pct",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "f15414b596c3095d",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "INTC",
+        "scope": "ticker",
+        "title": "Stock Market: Will S&P 500 Open Up Or Down Today?",
+        "url": "https://www.benzinga.com/markets/prediction-markets/26/07/60208782/sp500-july-1-open-up-or-down-polymarket-first-half-2026-quarter-ai-chip-stocks-fed",
+        "published_at": "2026-07-01T08:22:13+00:00",
+        "type": "other",
+        "impact": "low",
+        "dedup_group": "market_open_outlook_sp500",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "SNDK": [
+      {
+        "id": "4d10f5014c47b229",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Jim Cramer Says Wall Street Is Rewarding AI Makers While 'Punishing' Their Biggest Customers",
+        "url": "https://www.benzinga.com/markets/tech/26/07/60209505/jim-cramer-says-wall-street-is-rewarding-ai-makers-while-punishing-their-biggest-customers",
+        "published_at": "2026-07-01T09:46:20+00:00",
+        "type": "analyst",
+        "impact": "low",
+        "dedup_group": "cramer_ai_makers_vs_customers",
+        "tickers_mentioned": [
+          "SNDK"
+        ],
+        "route_to_synthesis": false
+      },
+      {
+        "id": "2ebd8992eb1beb21",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "SNDK",
+        "scope": "ticker",
+        "title": "Apple CEO Tim Cook Flags 'Extreme Shortage' While DRAM ETF Smashes $25 Billion, Surging Over 170% Since Listing",
+        "url": "https://www.benzinga.com/etfs/sector-etfs/26/07/60208442/apple-ceo-tim-cook-flags-extreme-shortage-while-dram-etf-smashes-25-billion-surging-over-170-since-listing",
+        "published_at": "2026-07-01T07:44:21+00:00",
+        "type": "other",
+        "impact": "medium",
+        "dedup_group": "cook_dram_shortage_etf_surge",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "MRVL": [
+      {
+        "id": "65251c903778a34e",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "MRVL",
+        "scope": "ticker",
+        "title": "Fed's Beth Hammack Warns AI Spending Could Keep Inflation Hot and Force Interest Rates Higher: 'Not Seeing A Lot Of Restraint...'",
+        "url": "https://www.benzinga.com/markets/economic-data/26/07/60209276/feds-beth-hammack-warns-ai-spending-could-keep-inflation-hot-and-force-interest-rates-higher-not-seeing-a-lot-of-restraint",
+        "published_at": "2026-07-01T09:09:19+00:00",
+        "type": "macro_fed",
+        "impact": "high",
+        "dedup_group": "fed_hammack_ai_spending_inflation_rates",
+        "tickers_mentioned": [],
+        "route_to_synthesis": false
+      }
+    ],
+    "FIGR": [
+      {
+        "id": "159747a028a85454",
+        "source": "alpaca",
+        "publisher": "benzinga",
+        "ticker": "FIGR",
+        "scope": "ticker",
+        "title": "Figure Technology Q1 2026 Earnings Call Transcript",
+        "url": "https://www.benzinga.com/news/26/07/60208421/figure-technology-q1-2026-earnings-call-transcript",
+        "published_at": "2026-07-01T07:38:21+00:00",
+        "type": "earnings",
+        "impact": "medium",
+        "dedup_group": "figr_q1_2026_earnings",
         "tickers_mentioned": [],
         "route_to_synthesis": false
       }

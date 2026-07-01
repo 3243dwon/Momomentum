@@ -1,62 +1,70 @@
 {
-  "generated_at": "2026-07-01T00:19:24.343734-04:00",
-  "window": "OVERNIGHT",
-  "headline": "Risk-on intact overnight; TSM & RBRK takes carry forward \u2014 semis/tech lead, FCEL +21% wildcard",
+  "generated_at": "2026-07-01T05:57:55.162011-04:00",
+  "window": "AH_PRE",
+  "headline": "Risk-on holds into open; TSM half-size & two quarter-size longs (VLTO, FIGR) on the board \u2014 semis/tech lead",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY +0.78% above 50d, QQQ +1.67%; VXX stress 0.93 \u2014 low fear, momentum tape, entries have green air."
+    "line": "SPY +0.78% above 50d, QQQ +1.67% \u2014 broad strength, VXX stress low (0.93). Tape supportive for breakout entries."
   },
   "actions": [
+    {
+      "ticker": "VLTO",
+      "direction": "long",
+      "entry": 88.65,
+      "stop": 85.44,
+      "target": 95.07,
+      "line": "Quarter size \u2014 signal/risk constructive, research skeptical; R/R ~2:1."
+    },
+    {
+      "ticker": "FIGR",
+      "direction": "long",
+      "entry": 30.68,
+      "stop": 28.99,
+      "target": 34.05,
+      "line": "Quarter size \u2014 +13% on 2.1x vol; research agrees, signal neutral on spike; tight stop at 28.99."
+    },
     {
       "ticker": "TSM",
       "direction": "long",
       "entry": 477.24,
       "stop": 439.06,
       "target": 553.6,
-      "line": "Clean MACD cross, signal agrees; half-size per research-neutral stance. R/R ~2.0."
-    },
-    {
-      "ticker": "RBRK",
-      "direction": "long",
-      "entry": 80.25,
-      "stop": 73.83,
-      "target": 93.09,
-      "line": "Late-stage momentum, elevated RSI \u2014 desk trimmed to quarter. Tight stop, 2.0x R/R."
+      "line": "Half size \u2014 MACD cross, low severity; research skeptical but no veto; R/R ~2:1."
     }
   ],
   "watch": [
     {
       "ticker": "FCEL",
       "type": "mover",
-      "line": "+21.1%, 2.1x vol, overbought \u2014 watch for fade setup or confirmation catalyst before touching."
-    },
-    {
-      "ticker": "FIGR",
-      "type": "mover",
-      "line": "+13.4%, 2.1x vol with unusual volume flag \u2014 needs a news hook; no desk take yet."
+      "line": "+21% on 2.1x vol, overbought flag \u2014 no desk take; watch for fade or continuation setup."
     },
     {
       "ticker": "SNDK",
       "type": "mover",
-      "line": "+10.7%, MACD bullish cross \u2014 semi-adjacent name worth adding to watch if semis keep leading."
+      "line": "+10.8%, MACD bullish signal \u2014 semi sympathy with TSM; monitor for entry."
     },
     {
-      "ticker": "TW",
+      "ticker": "KLAC",
       "type": "mover",
-      "line": "+8.2%, MACD bullish, 1.6x vol \u2014 clean setup developing; no take yet but on-deck."
+      "line": "+8.3% on 1.4x vol, overbought \u2014 semi strength echoing TSM thesis."
     },
     {
       "ticker": "VRT",
       "type": "mover",
-      "line": "+9.0%, 1.3x vol \u2014 AI infra proxy running with semis; monitor for entry structure."
+      "line": "+8.97% \u2014 data-center/power name moving with tech leadership."
+    },
+    {
+      "ticker": "FBIN",
+      "type": "mover",
+      "line": "+7.7% on 2.1x vol, overbought \u2014 unusual volume spike; watch for catalyst clarity."
     }
   ],
   "changed": [
-    "No regime change \u2014 risk_on holds from prior scan",
-    "FCEL +21% now the loudest mover on tape, not in prior headline"
+    "RBRK take no longer present \u2014 dropped from desk; VLTO added as new quarter-size long",
+    "FIGR upgraded from mover watch to desk take (quarter size)"
   ],
   "caveats": [
-    "OVERNIGHT window \u2014 prices as of 2026-07-01 00:19 ET; levels may gap significantly at RTH open.",
-    "No new catalysts or macro events flagged this scan; mover moves lack confirmed news drivers."
+    "AH/Pre-market scan as of 05:57 ET 2026-07-01 \u2014 prices stale; spreads wide pre-open, entries may gap materially at RTH open.",
+    "FIGR entry on a +13% overnight spike \u2014 intraday signal neutral; size accordingly and confirm level holds at open before triggering."
   ]
 }

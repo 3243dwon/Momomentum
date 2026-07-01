@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-07-01T04:22:30.582808+00:00",
+  "generated_at": "2026-07-01T10:01:38.707466+00:00",
   "window_days": 30,
   "entries": [
+    {
+      "id": "bd319fe71681",
+      "ts": "2026-07-01T09:57:55.162011+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "SNDK",
+      "direction": "long",
+      "confidence": null,
+      "price": 2272.05,
+      "thesis": "\ud83e\udde0 Serenity SNDK +10.8% \u26aa",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "53b6ad0a5af4",
+      "ts": "2026-07-01T09:57:55.162011+00:00",
+      "kind": "alert",
+      "type": "serenity_match",
+      "ticker": "MRVL",
+      "direction": "long",
+      "confidence": null,
+      "price": 297.59,
+      "thesis": "\ud83e\udde0 Serenity MRVL +7.1% \ud83d\udfe2bull",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
+    {
+      "id": "d48e78250230",
+      "ts": "2026-07-01T09:57:55.162011+00:00",
+      "kind": "alert",
+      "type": "big_move",
+      "ticker": "DLR",
+      "direction": "short",
+      "confidence": null,
+      "price": 179.71,
+      "thesis": "\ud83d\ude80 DLR -5.7% on 3.9x vol",
+      "outcomes": {
+        "1d": null,
+        "3d": null,
+        "5d": null,
+        "10d": null,
+        "21d": null
+      },
+      "status": "pending"
+    },
     {
       "id": "411ac2788e99",
       "ts": "2026-07-01T04:19:24.343734+00:00",
@@ -1770,13 +1827,13 @@
       "price": 54.59,
       "thesis": "\ud83c\udfaf IRDM +25.3% \u00b7 Iridium surged 25% after announcing a\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 0.48,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "383c38bf5737",
@@ -1789,13 +1846,13 @@
       "price": 98.02,
       "thesis": "\ud83c\udfaf RKLB +15.9% \u00b7 Rocket Lab secured a deal with\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 3.64,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "1c4ced584966",
@@ -1808,13 +1865,13 @@
       "price": 98.02,
       "thesis": "\u2b50 RKLB +15.9% \u00b7 Rocket Lab secured a deal with\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 3.64,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "134822bae0ca",
@@ -1827,13 +1884,13 @@
       "price": 117.65,
       "thesis": "\u2b50 CSCO +3.7% watchlist",
       "outcomes": {
-        "1d": null,
+        "1d": -0.17,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "197d1b4b92af",
@@ -1846,13 +1903,13 @@
       "price": 414.27,
       "thesis": "\u2b50 DELL +5.1% \u00b7 DELL is up 5% today but the single\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 4.12,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "8d72a68f66a2",
@@ -1865,13 +1922,13 @@
       "price": 86.72,
       "thesis": "\ud83e\udde0 Serenity ASTS +21.4% \ud83d\udfe2bull",
       "outcomes": {
-        "1d": null,
+        "1d": 1.95,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "d7505273e258",
@@ -1884,13 +1941,13 @@
       "price": 216.16,
       "thesis": "\ud83e\udde0 Serenity CBRS +18.9% \u26aa",
       "outcomes": {
-        "1d": null,
+        "1d": 1.7,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "535c652a73a3",
@@ -1903,13 +1960,13 @@
       "price": 54.59,
       "thesis": "\ud83d\ude80 IRDM +25.3% \u00b7 Iridium surged 25% after announcing a\u2026",
       "outcomes": {
-        "1d": null,
+        "1d": 0.48,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "1e33915c6133",
@@ -1922,13 +1979,13 @@
       "price": 15.41,
       "thesis": "\ud83d\ude80 SLS +24.4% on 3.6x vol",
       "outcomes": {
-        "1d": null,
+        "1d": -4.19,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "78566771f2dc",
@@ -1941,13 +1998,13 @@
       "price": 51.0,
       "thesis": "\ud83d\ude80 FBIN +10.9% on 3.0x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 7.7,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "54f6151bb641",
@@ -1960,13 +2017,13 @@
       "price": 227.81,
       "thesis": "\ud83d\ude80 HON -6.1% on 3.3x vol",
       "outcomes": {
-        "1d": null,
+        "1d": 1.73,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "b5b4ad8d06eb",
@@ -1979,13 +2036,13 @@
       "price": 502.06,
       "thesis": "Lockheed has historically been Iridium's satellite bus/integration partner via Thales Alenia; any RKLB share in spacecraft work (not just launch) signals share loss for incumbent primes on commercial ",
       "outcomes": {
-        "1d": null,
+        "1d": -1.41,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "874678be9e75",
@@ -1998,13 +2055,13 @@
       "price": 214.6,
       "thesis": "Boeing's ULA launch JV loses incremental commercial medium-lift business as RKLB's Neutron gets designed in for constellation customers historically served by Atlas/Vulcan or Falcon.",
       "outcomes": {
-        "1d": null,
+        "1d": -0.88,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "miss"
     },
     {
       "id": "9375d49fc3d2",
@@ -2017,13 +2074,13 @@
       "price": 54.59,
       "thesis": "Iridium is the customer on the other side of the deal \u2014 locking in a launch provider for its next-gen constellation derisks its capex timeline and future service continuity.",
       "outcomes": {
-        "1d": null,
+        "1d": 0.48,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "28cca5a93d19",
@@ -2036,13 +2093,13 @@
       "price": 86.72,
       "thesis": "Pure-play space peer; RKLB winning a marquee commercial constellation contract lifts the comp multiple for satellite/launch names and validates commercial demand beyond government.",
       "outcomes": {
-        "1d": null,
+        "1d": 1.95,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "f9e9aca9a867",
@@ -2055,13 +2112,13 @@
       "price": 31.26,
       "thesis": "Planet Labs is a small-sat operator that benefits from a more competitive, lower-cost launch market \u2014 RKLB's Neutron progress pressures launch pricing for constellation operators.",
       "outcomes": {
-        "1d": null,
+        "1d": 6.01,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "af40a9082ecd",
@@ -2074,13 +2131,13 @@
       "price": 11.71,
       "thesis": "Redwire is a space infrastructure/components supplier that benefits from increased constellation activity and sentiment read-through on commercial space capex.",
       "outcomes": {
-        "1d": null,
+        "1d": 4.44,
         "3d": null,
         "5d": null,
         "10d": null,
         "21d": null
       },
-      "status": "pending"
+      "status": "hit"
     },
     {
       "id": "c8f7a2840087",
@@ -7680,7 +7737,7 @@
       "outcomes": {
         "1d": 2.82,
         "3d": 2.82,
-        "5d": null,
+        "5d": 4.14,
         "10d": null,
         "21d": null
       },
@@ -7699,7 +7756,7 @@
       "outcomes": {
         "1d": -4.82,
         "3d": -4.82,
-        "5d": null,
+        "5d": -25.91,
         "10d": null,
         "21d": null
       },
@@ -7718,7 +7775,7 @@
       "outcomes": {
         "1d": 3.63,
         "3d": 3.63,
-        "5d": null,
+        "5d": -5.42,
         "10d": null,
         "21d": null
       },
@@ -7737,7 +7794,7 @@
       "outcomes": {
         "1d": -7.05,
         "3d": -7.05,
-        "5d": null,
+        "5d": -5.59,
         "10d": null,
         "21d": null
       },
@@ -7756,7 +7813,7 @@
       "outcomes": {
         "1d": -4.82,
         "3d": -4.82,
-        "5d": null,
+        "5d": -25.91,
         "10d": null,
         "21d": null
       },
@@ -7775,7 +7832,7 @@
       "outcomes": {
         "1d": -2.01,
         "3d": -2.01,
-        "5d": null,
+        "5d": 6.91,
         "10d": null,
         "21d": null
       },
@@ -7794,7 +7851,7 @@
       "outcomes": {
         "1d": -10.74,
         "3d": -10.74,
-        "5d": null,
+        "5d": -4.05,
         "10d": null,
         "21d": null
       },
@@ -7813,7 +7870,7 @@
       "outcomes": {
         "1d": -6.99,
         "3d": -6.99,
-        "5d": null,
+        "5d": 1.33,
         "10d": null,
         "21d": null
       },
@@ -7832,7 +7889,7 @@
       "outcomes": {
         "1d": -8.9,
         "3d": -8.9,
-        "5d": null,
+        "5d": -34.75,
         "10d": null,
         "21d": null
       },
@@ -7851,7 +7908,7 @@
       "outcomes": {
         "1d": -5.58,
         "3d": -5.58,
-        "5d": null,
+        "5d": -8.7,
         "10d": null,
         "21d": null
       },
@@ -7870,7 +7927,7 @@
       "outcomes": {
         "1d": -3.96,
         "3d": -3.96,
-        "5d": null,
+        "5d": 4.97,
         "10d": null,
         "21d": null
       },
@@ -7889,7 +7946,7 @@
       "outcomes": {
         "1d": 2.2,
         "3d": 2.2,
-        "5d": null,
+        "5d": 35.72,
         "10d": null,
         "21d": null
       },
@@ -7908,7 +7965,7 @@
       "outcomes": {
         "1d": -6.69,
         "3d": -6.69,
-        "5d": null,
+        "5d": -3.15,
         "10d": null,
         "21d": null
       },
@@ -7927,7 +7984,7 @@
       "outcomes": {
         "1d": 2.05,
         "3d": 2.05,
-        "5d": null,
+        "5d": 4.2,
         "10d": null,
         "21d": null
       },
@@ -7946,7 +8003,7 @@
       "outcomes": {
         "1d": -5.62,
         "3d": -5.62,
-        "5d": null,
+        "5d": -7.3,
         "10d": null,
         "21d": null
       },
@@ -7965,7 +8022,7 @@
       "outcomes": {
         "1d": -6.09,
         "3d": -6.09,
-        "5d": null,
+        "5d": -10.24,
         "10d": null,
         "21d": null
       },
@@ -7984,7 +8041,7 @@
       "outcomes": {
         "1d": -5.54,
         "3d": -5.54,
-        "5d": null,
+        "5d": -5.82,
         "10d": null,
         "21d": null
       },
@@ -8003,7 +8060,7 @@
       "outcomes": {
         "1d": -2.66,
         "3d": -2.66,
-        "5d": null,
+        "5d": 1.27,
         "10d": null,
         "21d": null
       },
@@ -8022,7 +8079,7 @@
       "outcomes": {
         "1d": 0.47,
         "3d": 0.47,
-        "5d": null,
+        "5d": -0.04,
         "10d": null,
         "21d": null
       },
@@ -8041,7 +8098,7 @@
       "outcomes": {
         "1d": -2.25,
         "3d": -2.25,
-        "5d": null,
+        "5d": -9.58,
         "10d": null,
         "21d": null
       },
@@ -8060,7 +8117,7 @@
       "outcomes": {
         "1d": 3.36,
         "3d": 3.36,
-        "5d": null,
+        "5d": 2.16,
         "10d": null,
         "21d": null
       },
@@ -8079,7 +8136,7 @@
       "outcomes": {
         "1d": 6.98,
         "3d": 6.98,
-        "5d": null,
+        "5d": 5.12,
         "10d": null,
         "21d": null
       },
@@ -9410,63 +9467,6 @@
         "1d": 5.24,
         "3d": 5.24,
         "5d": 3.34,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "1d1ae8e40e24",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "big_move",
-      "ticker": "NUVB",
-      "direction": "short",
-      "confidence": null,
-      "price": 5.87,
-      "thesis": "\ud83d\ude80 NUVB -9.4% on 3.5x vol",
-      "outcomes": {
-        "1d": 4.51,
-        "3d": 4.51,
-        "5d": 3.32,
-        "10d": null,
-        "21d": null
-      },
-      "status": "hit"
-    },
-    {
-      "id": "55c9b9c7591a",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "alert",
-      "type": "delta_new_top20",
-      "ticker": "FCEL",
-      "direction": "short",
-      "confidence": null,
-      "price": 19.17,
-      "thesis": "\ud83d\udcc8 FCEL -11.0% new top-20",
-      "outcomes": {
-        "1d": -25.09,
-        "3d": -25.09,
-        "5d": -87.85,
-        "10d": null,
-        "21d": null
-      },
-      "status": "miss"
-    },
-    {
-      "id": "416ffe4e979f",
-      "ts": "2026-06-25T19:08:00.287340+00:00",
-      "kind": "pick",
-      "type": "rec_long",
-      "ticker": "ACHC",
-      "direction": "long",
-      "confidence": null,
-      "price": 26.04,
-      "thesis": "+4.2% today; 5d uptrend +11%; 2.3x volume",
-      "outcomes": {
-        "1d": 4.99,
-        "3d": 4.99,
-        "5d": 13.34,
         "10d": null,
         "21d": null
       },
