@@ -1,55 +1,71 @@
 {
-  "generated_at": "2026-07-01T10:44:26.779056-04:00",
+  "generated_at": "2026-07-01T13:20:13.071386-04:00",
   "window": "RTH",
-  "headline": "META +10.7% on in-house AI cloud report crushes CRWV -13%; GS cuts recession odds \u2014 risk-on holds",
+  "headline": "Risk-on intact: META/COIN/RDDT lead; semis (LRCX -11%, KLAC -11%) hammered on rotation",
   "market_state": {
     "regime": "risk_on",
-    "line": "SPY -0.05% / QQQ -1.17%; VXX stress 0.94 (calm). Tech dragged by AI-cloud rotation, not macro \u2014 regime intact above 50d."
+    "line": "SPY +0.2% above 50d, QQQ -1% \u2014 semi selloff dragging Nasdaq; VXX stress ratio 0.94 = low vol. Momentum longs viable, semi longs avoid."
   },
   "actions": [
     {
-      "ticker": "CRM",
+      "ticker": "META",
       "direction": "long",
-      "entry": 164.16,
-      "stop": 162.01,
-      "target": 168.47,
-      "line": "Quarter-size only \u2014 signal flags extended entry after +7.5% 5D; R/R acceptable with tight $2.15 stop."
+      "entry": 618.4,
+      "stop": 607.61,
+      "target": 639.99,
+      "line": "Full size. Dual catalyst: technicals + newsflow. Unanimous desk, clean regime. R:R ~2:1."
+    },
+    {
+      "ticker": "IBM",
+      "direction": "long",
+      "entry": 290.89,
+      "stop": 267.62,
+      "target": 337.43,
+      "line": "Half size. Clean technical setup, no fresh catalyst. Signal + risk agree, research neutral."
+    },
+    {
+      "ticker": "SOFI",
+      "direction": "long",
+      "entry": 18.68,
+      "stop": 18.2,
+      "target": 19.64,
+      "line": "Quarter size. Newsflow real but overbought concern flagged \u2014 split desk, tight leash."
     }
   ],
   "watch": [
     {
-      "ticker": "AVGO",
-      "type": "ripple",
-      "line": "Meta AI cloud buildout = more Broadcom custom ASIC (MTIA) + networking silicon content \u2014 bullish ripple from CRWV catalyst, medium confidence."
+      "ticker": "LRCX",
+      "type": "mover",
+      "line": "LRCX -10.8% on elevated volume \u2014 semi sector under pressure, watch for oversold bounce setup."
     },
     {
-      "ticker": "META",
+      "ticker": "KLAC",
       "type": "mover",
-      "line": "+10.7% on report it's building in-house AI cloud; MACD bullish, rel-vol 1.01 \u2014 strongest name on the tape."
+      "line": "KLAC -10.6% confirming broad semi rotation; no entry yet, needs stabilization."
     },
     {
       "ticker": "CRWV",
-      "type": "catalyst",
-      "line": "-13.3% as Meta AI cloud report signals disintermediation risk for GPU-cloud providers."
-    },
-    {
-      "ticker": "ORCL",
-      "type": "ripple",
-      "line": "Meta's cloud entry adds well-capitalized competitor to OCI's AI GPU-cloud tier \u2014 bearish ripple, low confidence."
-    },
-    {
-      "ticker": "AA",
       "type": "mover",
-      "line": "-10.9%, flagged oversold; GS recession-probability cut is a direct tailwind for aluminum cyclicals \u2014 watch for bounce setup."
+      "line": "CRWV -12.7% continues yesterday's dump, rel vol 1.82 \u2014 potential dead-cat watch."
+    },
+    {
+      "ticker": "COIN",
+      "type": "mover",
+      "line": "COIN +11.3% MACD bullish, crypto bid; not a desk take but actionable if Bitcoin holds."
+    },
+    {
+      "ticker": "NKE",
+      "type": "catalyst",
+      "line": "NKE +3% on quarterly results \u2014 consumer staples/discretionary read-through worth monitoring."
     }
   ],
   "changed": [
-    "Previous picks (GEV, VLTO, TSM) no longer in desk_takes; CRM is the sole active take this scan.",
-    "Dominant theme shifted from semis/tech leadership to META AI-cloud rotation story crushing GPU-cloud names.",
-    "GS recession probability cut added as constructive macro catalyst \u2014 not present last scan."
+    "Semi selloff (LRCX -11%, KLAC -11%) now the dominant risk \u2014 not flagged prior scan",
+    "CRWV extends losses (-12.7%) vs yesterday's -13% catalyst",
+    "MSTR +12% and COIN +11% signal crypto bid emerging as new leadership"
   ],
   "caveats": [
-    "RTH scan as of 10:44 ET 2026-07-01; prices and levels may be stale by the time you read this \u2014 verify before entry.",
-    "Top movers (NBIS, GLW, CRWV, AA) all show rel-volume below 1.0, meaning moves lack strong conviction \u2014 fade/mean-reversion risk is elevated."
+    "RTH scan as of 13:20 ET \u2014 prices reflect intraday snapshot, levels may have moved materially by read time",
+    "QQQ -1% divergence from SPY in a 'risk-on' regime signals semi-specific rotation, not broad risk-off \u2014 treat sector calls accordingly"
   ]
 }
